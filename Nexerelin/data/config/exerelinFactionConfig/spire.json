@@ -1,0 +1,30 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Splinter Group",
+    
+    "morality":"good",
+
+    "alignments":{
+        "diplomatic":0.5,
+        "hierarchical":0.5,
+        "militarist":1,
+    },
+	"diplomacyTraits":["selfrighteous", "helps_allies", "law_and_order"],
+    
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+        
+    "invasionFleetSizeMod":-0.15,
+    "responseFleetSizeMod":-0.15,
+    
+    "patrolSizeMult":0.85,
+    
+    "dropPrisoners":false,
+    
+    "startShipsSolo":[["spire_corvette_Standoff"]],
+    "startShipsCombatSmall":[["spire_destroyer_Assault", "spire_corvette_Lance"]],
+    "startShipsTradeSmall":[["spire_stealthship_Strike", "spire_corvette_Beam"]],
+    "startShipsCombatLarge":[["spire_cruiser_Line", "spire_frigate_Skirmisher"]],
+    "startShipsTradeLarge":[["spire_colonyship_Standard", "spire_destroyer_Support"]],
+}

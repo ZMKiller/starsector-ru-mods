@@ -1,0 +1,55 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 23,
+    "fluxVents": 18,
+    "goalVariant": true,
+    "hullId": "ls_eagle_ds",
+    "hullMods": [
+        "ls_git_finda",
+        "ls_explody_propella",
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_eagle_ds_dakka",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_deth_kannon",
+                "WS 002": "ls_supashoota_turret",
+                "WS 003": "ls_supashoota_turret"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_deffgun",
+                "WS 005": "ls_deffgun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "ls_grot_rail",
+                "WS 009": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": { }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "ls_twin_shoota",
+                "WS 006": "ls_big_shoota",
+                "WS 007": "ls_big_shoota"
+            }
+        }
+    ]
+}

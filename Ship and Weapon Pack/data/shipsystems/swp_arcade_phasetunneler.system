@@ -1,0 +1,36 @@
+{
+    "id":"swp_arcade_phasetunneler",
+    "type":"TELEPORTER",
+    "aiType":"PHASE_TELEPORTER",
+    "statsScript":"data.scripts.shipsystems.SWP_PhaseTunnelerStats",
+
+    "jitterColor":[255,255,255,150],
+    "jitterCopies":5,
+    "jitterRange":25,
+    "jitterRangeRadiusFraction":0.5,
+
+    "engineGlowLengthMult":0,
+    "engineGlowWidthMult":0,
+    "engineGlowGlowMult":0,
+
+    "range":2000,
+    "randomRange":0,
+
+    "vulnerableChargeup":true,
+    "vulnerableChargedown":true,
+    "renderCopyDuringTeleport":true,
+
+    "fadeActivationSoundOnChargedown":false,
+
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":2000,
+        "averageSpeedIncrease":250,
+        "threatRange":1000,
+        "threatAmount":20,
+        "threatAngle":0,
+        "threatArc":360,
+    }
+}

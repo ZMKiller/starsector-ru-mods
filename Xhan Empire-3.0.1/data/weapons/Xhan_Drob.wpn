@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "LINKED",
+  "displayArcRadius": 400,
+  "fireSoundTwo": "OCCUKLOP_FIRE_SOUND",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/xhan_Drob_barrel_HARDPOINT.png",
+  "hardpointOffsets": [
+    19.5,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/xhan_Drob_HARDPOINT.png",
+  "id": "Xhan_Drob",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "particleColor": [
+      255,
+      155,
+      105,
+      185
+    ],
+    "particleCount": 12,
+    "particleDuration": 0.35,
+    "particleSizeMin": 8,
+    "particleSizeRange": 10,
+    "spread": 16
+  },
+  "projectileSpecId": "Occuklop_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/xhan_Drob_barrel_TURRET.png",
+  "turretOffsets": [
+    15.5,
+    0
+  ],
+  "turretSprite": "graphics/weapons/xhan_Drob_TURRET.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 3
+}

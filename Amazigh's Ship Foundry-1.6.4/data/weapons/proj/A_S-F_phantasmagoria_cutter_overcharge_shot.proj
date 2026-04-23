@@ -1,0 +1,22 @@
+{
+	"id":"A_S-F_phantasmagoria_cutter_overcharge_shot",
+	"specClass":"projectile",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.phantasmagoria.ASF_cutterOverchargeOnHitEffect",
+
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":65.0,
+	"width":9,
+	"fadeTime":0.25,
+	"fringeColor":[150,100,255,165],
+	"coreColor":[255,255,255,255],
+	"glowColor":[100,190,255,90],
+	"glowRadius":16,
+	"hitGlowRadius":25,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png",
+	"passThroughMissiles":true,	
+}

@@ -1,0 +1,150 @@
+{
+  "hullName": "Aetos AS-1500",
+  "hullId": "sfcaetos",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/PAGSM/ships/cruiser_eagle_tanker_diktat_v1.png",
+  "style": "MIDLINE",
+  "height": 230,
+  "width": 172,
+  "center": [86, 115],
+  "collisionRadius": 130.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 147.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 0,
+      "locations": [22, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": -0,
+      "locations": [39, 45]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 0,
+      "locations": [39, -45]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 0,
+      "locations": [63, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": -0,
+      "locations": [-23, 73]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": 0,
+      "locations": [-23, -73]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 180,
+      "locations": [-76, 31]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -180,
+      "locations": [-76, -31]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [104, 26]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [104, -26]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [100, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-113.5, 31],
+      "length": 70,
+      "width": 30,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-113.5, -31],
+      "length": 70,
+      "width": 30,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    91, -37.5,
+    -38.5, -85.5,
+    -66.5, -54,
+    -109.5, -47.5,
+    -108.5, -14.5,
+    -61, -11,
+    -61, 11,
+    -108.5, 14.5,
+    -109.5, 47.5,
+    -66.5, 54,
+    -38.5, 85.5,
+    91, 37.5
+  ]
+}

@@ -1,0 +1,23 @@
+{
+	"id":"swp_phaseshuntdrive",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.scripts.shipsystems.ai.SWP_PhaseShuntDriveAI",
+
+	"statsScript":"data.scripts.shipsystems.SWP_PhaseShuntDriveStats",
+
+	"jitterColor":[255,150,200,50],
+	"jitterCopies":5,
+	"jitterRange":10,
+	"jitterRangeRadiusFraction":0.05,
+
+	"fadeActivationSoundOnChargedown":false,
+
+	"useSound":"swp_phaseshuntdrive_activate",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

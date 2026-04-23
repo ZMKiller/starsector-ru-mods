@@ -1,0 +1,163 @@
+{
+  "hullName": "Albatross",
+  "hullId": "swp_albatross",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/swp/ships/albatross/swp_albatross.png",
+  "style": "MIDLINE",
+  "coversColor": "255,255,255,255",
+  "height": 138,
+  "width": 138,
+  "center": [69, 78],
+  "collisionRadius": 100,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 97,
+  "viewOffset": 0,
+  "builtInMods": [
+    "blast_doors"
+  ],
+  "builtInWings": [
+    "swp_flakdrone_wing",
+    "swp_flakdrone_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-38, -49]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [-38, 49]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -43, 13,
+        -36.5, -0,
+        -36.5, 7.5,
+        -36.5, -6.5,
+        -43, -14
+      ]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [39, 37]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [39, -37]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [58, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 60,
+      "locations": [26, 49]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -60,
+      "locations": [26, -49]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 130,
+      "locations": [-50, 55]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -130,
+      "locations": [-50, -55]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-77, 33],
+      "length": 70,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-77, -33],
+      "length": 70,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    55.5, -13.5,
+    45, -28,
+    43, -41.5,
+    1, -58,
+    -21, -50.5,
+    -22, -58,
+    -52, -67.5,
+    -54.5, -43.5,
+    -66.5, -43.5,
+    -76.5, -28.5,
+    -58, -17.5,
+    -58, 17.5,
+    -76.5, 28.5,
+    -66.5, 43.5,
+    -54.5, 43.5,
+    -52, 67.5,
+    -22, 58,
+    -21, 50.5,
+    1, 58,
+    43, 41.5,
+    45, 28,
+    55.5, 13.5,
+    58, -0
+  ]
+}

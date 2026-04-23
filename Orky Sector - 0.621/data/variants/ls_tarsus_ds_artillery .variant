@@ -1,0 +1,31 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 17,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "ls_tarsus_ds",
+    "hullMods": [
+        "ls_explody_propella",
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_tarsus_ds_artillery",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "ls_deth_kannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_flakka_dakka",
+                "WS 001": "ls_big_shoota",
+                "WS 000": "ls_big_shoota"
+            }
+        }
+    ]
+}

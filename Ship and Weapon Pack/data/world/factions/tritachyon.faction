@@ -1,0 +1,81 @@
+{
+    "hullFrequency":{
+        "hulls":{
+            "swp_hecate":0.5, # Avoid diluting better ships
+
+            "swp_arachne":0.5, # Uncommon because it would be annoying to fight a lot of these
+            "swp_archon":0.5, # Uncommon because it would be annoying to fight a lot of these
+            "swp_beholder":0.5, # Uncommon because they're too specialized to be common
+            "swp_nightwalker":0.33, # Rare tech, similar to Scarab
+            "swp_sunder_u":0.25, # Rare because it thematically overlaps a lot with the Sunder (LG)
+            "swp_vortex":0.5, # Rare tech
+        },
+    },
+    "knownShips":{
+        "hulls":[
+            "swp_nautilus",
+            "swp_circe",
+
+            "swp_hecate",
+
+            "swp_arachne",
+            "swp_archon",
+            "swp_beholder",
+            "swp_nightwalker",
+            "swp_sunder_u",
+            "swp_vortex",
+
+            "swp_zenith",
+            "swp_eos",
+
+            "swp_chronos",
+        ],
+    },
+    "priorityShips":{
+        "hulls":[
+            "swp_chronos",
+
+            # Won't actually cause them to spawn by itself; needs a special plugin in addition
+            "swp_vortex",
+            "swp_eos",
+        ],
+    },
+    "knownFighters":{
+        "fighters":[
+            "swp_falx_wing",
+            "swp_hexblade_wing",
+        ],
+    },
+    "knownWeapons":{
+        "weapons":[
+            "swp_hornet",
+            "swp_iontorpedo",
+
+            "swp_flareburst",
+            "swp_tornado",
+
+            "swp_trebuchet",
+
+            "swp_lightphaselance",
+
+            "swp_ionblaster",
+            "swp_lightninggun",
+        ],
+    },
+    "weaponSellFrequency":{
+        "swp_iontorpedo":5,
+
+        "swp_flareburst":5,
+
+        "swp_lightphaselance":5,
+
+        "swp_ionblaster":5,
+        "swp_lightninggun":5,
+    },
+    # Allow SWP's hightech combat freighters to spawn
+    # Note, the Eos and Vortex will NOT spawn normally!
+    #   Instead, a plugin is created to hijack the standard FleetFactory for Tri-Tachyon fleets.
+    "factionDoctrine":{
+        "combatFreighterProbability":0.5,
+    },
+},

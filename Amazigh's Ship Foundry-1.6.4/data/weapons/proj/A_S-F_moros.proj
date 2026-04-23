@@ -1,0 +1,60 @@
+{
+	"id":"A_S-F_moros",
+	"specClass":"missile",
+	"missileType":"ROCKET",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_MorosOnFireEffect",
+
+	"sprite":"graphics/missiles/A_S-F_moros.png",
+	"size":[10,20],
+	"center":[5,10],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[200,150,140,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":70,
+					 "coreRadius":45, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":4.0,
+					 "particleSizeRange":5.0,
+					 "particleDuration":1,
+					 "particleCount":80,
+					 "particleColor":[180,225,100,200],
+					 "explosionColor":[190,70,110,255],
+					 "detailedExplosionFlashColorFringe":[215,150,140,255],
+					 "detailedExplosionFlashRadius":200,
+					 "useDetailedExplosion":true
+					},
+	"armingTime":0, # very fast, so no arm time!
+	"flameoutTime":1.2,
+	"noEngineGlowTime":0.0,
+	"fadeTime":0.6,
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":400,
+				  "dec":200},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9.5, 0],
+
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[200,150,140,255],
+						"glowSizeMult":1.6,
+						# "glowAlternateColor":[190,250,55,155],
+						"contrailDuration":0.9,
+						"contrailWidthMult":1.0,
+						"contrailWidthAddedFractionAtEnd":1.6,# can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.1f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0.5, # how far away from engine it starts
+						"contrailColor":[200,150,140,150], # 180,120,110,140
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":9,
+				    "length":45.0,
+				    "angle":180.0}]
+}

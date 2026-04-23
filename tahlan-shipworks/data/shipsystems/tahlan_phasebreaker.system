@@ -1,0 +1,33 @@
+{
+	"id":"tahlan_phasebreaker",
+	"type":"PHASE_CLOAK",
+	"aiType":"PHASE_CLOAK",
+	
+	"statsScript":"org.niatahl.tahlan.shipsystems.PhaseBreakerV2Stats",
+	"runScriptWhilePaused":true, # only for the player's ship
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	"blockActionsWhileChargingDown":false,
+	
+	"canNotCauseOverload":true,
+	
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
+	
+	"effectColor1":[255,73,159,255],
+	"effectColor2":[186,0,111,150],
+	
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.8,
+	"soundFilterGainHF":0.25,
+	
+	"shipAlpha":1, # handled in stats script
+	#"shipAlpha":0.25,
+	
+	"useSound":"system_phase_cloak_activate",
+	#"deactivateSound":"system_phase_cloak_deactivate",
+	"deactivateSound":"system_phase_cloak_deactivate",
+	"outOfUsesSound":"system_phase_cloak_collision",
+}

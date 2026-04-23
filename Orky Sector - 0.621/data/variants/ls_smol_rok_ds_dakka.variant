@@ -1,0 +1,38 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 0,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "ls_smol_rok_ds",
+    "hullMods": [
+        "ls_git_finda",
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_smol_rok_ds_dakka",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_lobba",
+                "WS 001": "ls_lobba"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_twin_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_supashoota_turret",
+                "WS 005": "ls_supashoota_turret"
+            }
+        }
+    ]
+}

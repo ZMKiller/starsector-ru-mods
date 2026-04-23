@@ -1,0 +1,38 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 0,
+    "fluxVents": 6,
+    "goalVariant": false,
+    "hullId": "ls_big_rok_ds_left",
+    "hullMods": [
+        "heavyarmor"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_big_rok_ds_left_dakka",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_jet_shoota",
+                "WS 002": "ls_jet_shoota",
+                "WS 003": "ls_jet_shoota"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_deffstorm_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_flakka_dakka",
+                "WS 005": "ls_big_shoota"
+            }
+        }
+    ]
+}

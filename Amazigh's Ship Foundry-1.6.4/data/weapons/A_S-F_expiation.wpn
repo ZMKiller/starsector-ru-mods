@@ -1,0 +1,23 @@
+{
+	"id":"A_S-F_expiation",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"everyFrameEffect": "org.amazigh.foundry.scripts.ASF_ExpiationWeaponScript",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretSprite":"graphics/weapons/autopulse_laser_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/autopulse_laser_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/autopulse_laser_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/autopulse_laser_hardpoint_glow.png",	
+	"turretOffsets":[33, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[48, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW",
+	"glowColor":[0,255,100,200],
+	"autocharge":false,
+	"interruptibleBurst":true,
+	"projectileSpecId":"A_S-F_expiation_1_shot",
+	"fireSoundOne":"A_S-F_painter_loop", #A_S-F_painter_loop
+	"fireSoundTwo":"",
+}

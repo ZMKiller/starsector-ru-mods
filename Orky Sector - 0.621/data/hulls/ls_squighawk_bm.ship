@@ -1,0 +1,125 @@
+{
+    "hullName": "Squighawk (BM)",
+    "hullId": "ls_squighawk_bm",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_squighawk_bm.png",
+    "height": 125,
+    "width": 96,
+    "center": [
+        48, 56
+    ],
+    "collisionRadius": 80,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 78,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_badmoons",
+        "rugged"
+    ],
+    "builtInWeapons": {
+        "WS 001": "ls_torpedo_bm_rail"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    33.5,       -9
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    24.5,       17
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                     -21,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -48, 17.5
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -48, -17.5
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -25, 31
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 36,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -25, -31
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 36,
+            "style": "MIDLINE"
+        }
+    ],
+    "bounds": [
+            26.5,      -25,
+            -8.5,      -42,
+           -25.5,      -35,
+           -25.5,      -28,
+           -48.5,      -24,
+        
+           -48.5,       24,
+           -25.5,       28,
+           -25.5,       35,
+            -8.5,       42,
+              20,     28.5,
+        
+            23.5,       11,
+            54.5,        7,
+              35,     -0.5,
+              35,      -19
+    # 14 points total.
+    ]
+}

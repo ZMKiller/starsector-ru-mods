@@ -1,0 +1,51 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 10,
+    "fluxVents": 16,
+    "goalVariant": true,
+    "hullId": "ls_venture_bm",
+    "hullMods": [
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_venture_bm_dakka",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "ls_grot_launcha",
+                "WS 003": "ls_grot_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_mega_bolta",
+                "WS 008": "ls_bolta",
+                "WS 009": "ls_bolta",
+                "WS 001": "ls_snazzgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_kustom_shoota",
+                "WS 006": "ls_kustom_shoota"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_lobba",
+                "WS 004": "ls_lobba"
+            }
+        }
+    ],
+    "wings": [
+        "ls_attack_fighta_bm_wing"
+    ]
+}

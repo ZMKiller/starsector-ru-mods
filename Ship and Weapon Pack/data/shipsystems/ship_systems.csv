@@ -1,0 +1,36 @@
+name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u (base cap),cr/u,max uses,regen,charge up,active,down,cooldown,toggle,noDissipation,noHardDissipation,hardFlux,noFiring,noTurning,noStrafing,noAccel,noShield,noVent,isPhaseCloak,tags,icon
+Сенсорный массив,swp_sensorarray,,0.5,,,,0.05,,,,0.5,,0.5,0,TRUE,,,,,,,,,,,hide_in_codex,graphics/icons/hullsys/drone_sensor.png
+Фазовый привод,swp_excelsiorphase,,,,,,,,,,0.2,,0.2,2,TRUE,,TRUE,TRUE,TRUE,,,,TRUE,,TRUE,"restricted, defensive, movement",graphics/icons/hullsys/phase_cloak.png
+Фазовый шунт,swp_phaseshuntdrive,,,,,,0.05,,3,0.25,0.1,,0.25,0.65,,,,TRUE,,,,,,,,"restricted, defensive",graphics/icons/hullsys/quantum_disruptor.png
+Форсажные сопла,swp_punisherjets,,,,,,,,2,0.15,0.4,1.2,0.4,0,,,,,,,,,,,,movement,graphics/icons/hullsys/plasma_jets.png
+Сенсорный дрон (одиночный),swp_drone_sensorx1,,,,,,,,2,,0,,0,0,,,,,,,,,,,,hide_in_codex,graphics/icons/hullsys/drone_sensor.png
+Лучевые дроны,swp_drone_ray,,,,,,,,4,0.1,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_sensor.png
+Максимальный привод,swp_victoryjets,,,,,,,,,,0.5,4,1,10,TRUE,,,,,,,,,,,movement,graphics/icons/hullsys/combat_burn.png
+Фазовый телепортер (медленный),swp_phaseteleportervortex,,,,,,0.3,,,,0.5,0,0.5,19,,TRUE,,TRUE,,,,,,,,hide_in_codex,graphics/icons/hullsys/displacer.png
+Хроно-ускорение,swp_chronoboost,1,,,,,0.2,,,,1,10,1,10,,,,,,,,,,,,,graphics/icons/hullsys/temporal_shell.png
+Ускоритель времени,swp_timeaccelerator,1,,,,,0.1,,3,0.1,0.5,3,0.5,1,,,,,,,,,,,,,graphics/icons/hullsys/temporal_shell.png
+Поле ускорения времени,swp_timefield,1,0.3,,,,0.3,,,,2,8,2,20,,,,,,,,,,,,,graphics/icons/hullsys/temporal_shell.png
+Фазовый плащ (молния),swp_lightningcloak,,,,,,,,,,0.5,,0.5,2,TRUE,,TRUE,TRUE,TRUE,,,,TRUE,,TRUE,hide_in_codex,graphics/icons/hullsys/phase_cloak.png
+Инвокация,swp_invocation,,,,,,,,,,0.1,1.8,0.1,10,,,,,,,,,,,,offensive,graphics/icons/hullsys/high_energy_focus.png
+Дроны ПВО,swp_pddrones,,,,,,,,10,,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
+Быстрый загрузчик боеприпасов,swp_ammoloader,,,,,,0.1,,3,0.1,1,0,0,0,,,,,,,,,,,,offensive,graphics/icons/hullsys/ammo_feeder.png
+Минный удар,swp_mine_strike_lt,,,,,,0.05,,5,0.2,0.25,,0.25,0,,,,,,,,,,,,"restricted, offensive",graphics/icons/hullsys/mine_strike.png
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Энергетический овердрайв,swp_boss_energyoverdrive,,,,,,,,,,1,5,0.5,20,,,,,,,,,,,,"restricted, offensive",graphics/icons/hullsys/high_energy_focus.png
+Щит Зевса,swp_boss_zeusshield,,,0.0125,,,,,,,0.5,,0.5,0,TRUE,,,TRUE,TRUE,,,,,,,"restricted, defensive",graphics/icons/hullsys/fortress_shield.png
+Сопла Ники,swp_boss_nikejets,,,,,,,,2,0.075,1,5,1,0,,,,,,,,,,,,"restricted, movement",graphics/icons/hullsys/maneuvering_jets.png
+Привод Ареса,swp_boss_aresdrive,,,,,,,,,,0.5,6.5,1,10,TRUE,,,,,,,,,,,"restricted, movement",graphics/icons/hullsys/burn_drive.png
+Фазовый плащ (улучшенный),swp_boss_cloak,,,,,,,,,,0.33,,0.33,1.33,TRUE,,TRUE,TRUE,TRUE,,,,TRUE,,TRUE,restricted,graphics/icons/hullsys/phase_cloak.png
+Дроны луча смерти,swp_boss_drone_death_ray,,,,,,,,9,0.1,0,,0,0,,,,,,,,,,,,restricted,graphics/icons/hullsys/drone_sensor.png
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Супер-форсаж,swp_arcade_superjet,,,,,,,,7,0.5,0.2,0.5,0.2,0,,,,,,,,,,,,hide_in_codex,graphics/icons/hullsys/burn_drive.png
+Вихрь Фейри,swp_arcade_faerievortex,,,,,,,,,,0.1,3,0.5,15,,,TRUE,TRUE,TRUE,,,,TRUE,,TRUE,hide_in_codex,graphics/icons/hullsys/phase_cloak.png
+Смещение Фейри,swp_arcade_faeriedisplacer,,,,,,0.3,,,,0.5,,0.25,15,,TRUE,,TRUE,,,,,,,,hide_in_codex,graphics/icons/hullsys/displacer.png
+Ломатель щитов,swp_arcade_shieldbreaker,,,,,,0.5,,,,1.5,0.1,0.1,30,,,,TRUE,,,,,TRUE,,,hide_in_codex,graphics/icons/hullsys/high_energy_focus.png
+Фазовый туннелер,swp_arcade_phasetunneler,,,,,,0.4,,,,0.9,0,1.75,20,,TRUE,,TRUE,,,,,,,,hide_in_codex,graphics/icons/hullsys/displacer.png
+Силовой выброс,swp_arcade_forceburst,,,,,,,,,,0.7,0.1,0.1,7,,,,,,TRUE,TRUE,TRUE,TRUE,,TRUE,hide_in_codex,graphics/icons/hullsys/phase_cloak.png
+Временной сдвиг,swp_arcade_forceimpeder,,0.5,,,0.2,,,,,8,1,1,45,,,,TRUE,,,,,TRUE,,,hide_in_codex,graphics/icons/hullsys/temporal_shell.png
+Призматические дроны,swp_arcade_cristariumdrones,,,,,,,,10,0.05,0,,0,0,,,,,,,,,,,,hide_in_codex,graphics/icons/hullsys/drone_pd_high.png
+Призматический луч,swp_arcade_prismaticray,,,,,,,,,,0.1,3,5,30,,,,TRUE,,,,,TRUE,,TRUE,hide_in_codex,graphics/icons/hullsys/phase_cloak.png
+Сонидо,swp_arcade_sonido,,,,,,0.08,,,,0.15,0,0.15,0,,TRUE,,TRUE,,,,,,,,hide_in_codex,graphics/icons/hullsys/displacer.png
+Омега-привод,swp_arcade_omegadrive,,,,,,,,,,0.5,8,0.5,45,,,,TRUE,,,,,TRUE,,TRUE,hide_in_codex,graphics/icons/hullsys/phase_cloak.png

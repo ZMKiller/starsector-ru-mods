@@ -1,0 +1,21 @@
+{
+    "baseHullId":"uw_infernus",
+    "skinHullId":"uw_tim_u134",
+    "hullName":"",
+	"hullDesignation":"Legacy Battlewagon",
+    "descriptionId":"uw_infernus",
+    "descriptionPrefix":"The Infernal Machine is the legendary origin of what is now known as the Infernus pattern. Once thought lost, the Infernal Machine's drifting hulk has been recovered and restored to space-worthiness. Though not yet returned to her former strength, the Infernal Machine promises a triumphant return.\n\nThe Infernal Machine has been upgraded with a pair of Borer Drone wings, a Hellfire Cannon, and an up-sized ordnance package.",
+    "tags":[],
+    "baseValueMult":0.9,
+    "addHints":[HIDE_IN_CODEX],
+    "ordnancePoints":265,
+    "spriteName": "graphics/uw/ships/uw_infernalmachine_fs.png",
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":["operations_center"],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "removeBuiltInWings":[],
+    "builtInMods":["augmentedengines"],
+    "builtInWeapons":{
+    },
+}

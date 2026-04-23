@@ -1,0 +1,51 @@
+{
+	"id":"PAMED_holoemit",
+	"specClass":"projectile",
+	"type":"SYSTEM",
+	"size":"SMALL",
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"hardpointAngleOffsets": [
+    45,
+    -45
+    ],
+	"turretOffsets": [
+    0,
+    0,
+    0,
+    0
+    ],
+	"hardpointOffsets": [
+    0,
+    0,
+    0,
+    0
+    ],
+	"turretAngleOffsets": [
+    45,
+    -45
+    ],
+	"barrelMode":"ALTERNATING",
+	"interruptibleBurst":false,
+	#"animationType":"SMOKE",
+	#"smokeSpec":{"particleSizeMin":1.0,
+	#			 "particleSizeRange":5.0,
+	#			 "cloudParticleCount":15,
+	#			 "cloudDuration":0.75,
+	#			 "cloudRadius":40.0,
+	#			 "blowbackParticleCount":0,
+	#			 "blowbackDuration":0.0,
+	#			 "blowbackLength":0.0,
+	#			 "blowbackSpread":0.0,
+	#			 "particleColor":[133,30,235,255]},
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":15.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":360.0,
+					   "particleSizeMin":1.0,
+					   "particleSizeRange":5.0,
+					   "particleDuration":0.25,
+					   "particleCount":25,
+					   "particleColor":[133,30,235,155]},				 
+	"projectileSpecId":"PAMED_hologram",
+	"fireSoundTwo":"PAMED_HOLOGRAM_FIRE_SOUND",
+}

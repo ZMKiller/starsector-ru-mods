@@ -1,0 +1,116 @@
+{
+    "hullName": "Squighound (ES)",
+    "hullId": "ls_hound_es",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_hound_es.png",
+    "height": 84,
+    "width": 62,
+    "center": [
+        31, 42
+    ],
+    "collisionRadius": 74,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 64,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_evilsuns",
+        "ls_ramma",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_big_drill"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                    34.5,       -7
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 290,
+            "angle": 145,
+            "locations": [
+                     -11,        4
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -32.5, 22.5
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 108,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -32.5, -22.5
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 108,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -38.5, 6.5
+            ],
+            "length": 80,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 108,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -38.5, -6.5
+            ],
+            "length": 80,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 108,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+              12,      -16,
+               6,      -27,
+           -32.5,      -28,
+             -33,    -12.5,
+           -38.5,      -12,
+        
+           -38.5,       12,
+             -33,     12.5,
+           -32.5,       28,
+               6,     27.5,
+              12,       13,
+        
+            35.5,     14.5,
+              32,        4,
+              42,       -1,
+              42,      -14
+    # 14 points total.
+    ]
+}

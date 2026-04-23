@@ -1,0 +1,22 @@
+{
+	"id":"A_S-F_compac_bolt_fake",
+	"specClass":"projectile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_compacOnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_compacOnHitEffect",
+
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":30.0,
+	"width":5,
+	"fadeTime":0.2,
+	"fringeColor":[200,100,180,255],
+	"coreColor":[255,235,245,255],
+	"glowColor":[200,100,180,50],
+	"glowRadius":10,
+	"hitGlowRadius":20,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

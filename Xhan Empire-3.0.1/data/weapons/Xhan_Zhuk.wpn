@@ -1,0 +1,49 @@
+{
+  "id": "Xhan_Zhuk",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_Zhuk_Torpedo",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "displayArcRadius": 1000,
+  "turretSprite": "graphics/weapons/Xhan_zhuk_TURRET.png",
+  "hardpointSprite": "graphics/weapons/Xhan_zhuk_HARDPOINT.png",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    4,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    6.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 16,
+    "particleSizeRange": 18,
+    "cloudParticleCount": 8,
+    "cloudDuration": 1.5,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 4,
+    "blowbackDuration": 2,
+    "blowbackLength": 22,
+    "blowbackSpread": 15,
+    "particleColor": [
+      25,
+      50,
+      25,
+      105
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_ZHUK_FIRE_SOUND"
+}

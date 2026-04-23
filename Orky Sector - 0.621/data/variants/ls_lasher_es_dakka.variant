@@ -1,0 +1,46 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_lasher_es",
+    "hullMods": [
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_lasher_es_dakka",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_supashoota_turret",
+                "WS 002": "ls_supashoota_turret"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "ls_rokkit_launcha",
+                "WS 001": "ls_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_lobba"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_big_shoota",
+                "WS 005": "ls_big_shoota",
+                "WS 000": "ls_twin_shoota"
+            }
+        }
+    ]
+}

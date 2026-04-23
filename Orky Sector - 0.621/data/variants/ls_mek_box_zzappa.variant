@@ -1,0 +1,38 @@
+{
+    "displayName": "Zzappa",
+    "fluxCapacitors": 11,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "ls_mek_box_ds",
+    "hullMods": [
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_mek_box_zzappa",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+
+                "WS 000": "ls_bubble_chukka",
+                "WS 001": "ls_bubble_chukka",
+                "WS 005": "vulcan",
+                "WS 006": "vulcan"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "ls_zzap_kannon"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "ls_grot_launcha" }
+        }
+    ],
+    "wings": [
+        "ls_kan_ds_wing"
+    ]
+}

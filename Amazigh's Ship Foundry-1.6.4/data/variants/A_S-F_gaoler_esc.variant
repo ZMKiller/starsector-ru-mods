@@ -1,0 +1,42 @@
+{
+  "variantId": "A_S-F_gaoler_esc",
+  "hullId": "A_S-F_gaoler",
+  "displayName": "Escort",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 8,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_bramble"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "taclaser",
+        "WS0003": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_micropulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xyphos_wing",
+    "A_S-F_incisor_wing"
+  ]
+}

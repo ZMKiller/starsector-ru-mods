@@ -1,0 +1,222 @@
+{
+  "hullName": "Porroko",
+  "hullId": "A_S-F_porroko",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/A_S-F_porroko.png",
+  "style": "MIDLINE",
+  "height": 186,
+  "width": 204,
+  "center": [102, 94],
+  "collisionRadius": 120,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 117,
+  "viewOffset": 0,
+  "builtInMods": [
+    "A_S-F_ArtyMount",
+    "A_S-F_ArtyWepMidline"
+  ],
+  "builtInWeapons": {
+    "WS0006": "A_S-F_narc"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [84, -11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [68, -11]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 15,
+      "locations": [50, 17]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 45,
+      "locations": [25, 54]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -45,
+      "locations": [25, -54]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -20,
+      "locations": [2, -20]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 35,
+      "locations": [51, 42]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -35,
+      "locations": [51, -42]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 80,
+      "locations": [27, 78]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -80,
+      "locations": [27, -78]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 230,
+      "angle": 180,
+      "locations": [-76, -0]
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 90,
+      "locations": [-37, 40]
+    },
+    {
+      "id": "WS0013",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": -90,
+      "locations": [-37, -40]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-74, 47],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-74, -47],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-90, 30],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-90, -30],
+      "length": 64,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    86, -19,
+    85, -28,
+    45, -64,
+    38, -81,
+    30, -88,
+    9, -89,
+    -7, -71,
+    -10, -61,
+    -20, -59,
+    -24, -55,
+    -51, -55,
+    -53.5, -53,
+    -66, -56,
+    -73, -52,
+    -73, -43,
+    -69, -38,
+    -81, -38,
+    -89, -34,
+    -89, -26,
+    -81, -21,
+    -87, -14,
+    -92, -5,
+    -92, 5,
+    -87, 14,
+    -81, 21,
+    -89, 26,
+    -89, 34,
+    -81, 38,
+    -69, 38,
+    -73, 43,
+    -73, 52,
+    -66, 56,
+    -53.5, 53,
+    -51, 55,
+    -24, 55,
+    -20, 59,
+    -10, 61,
+    -7, 71,
+    9, 89,
+    30, 88,
+    38, 81,
+    45, 64,
+    85, 28,
+    85, 22,
+    89, 19,
+    89, -2
+  ]
+}

@@ -1,0 +1,51 @@
+{
+    "displayName": "Heavily Modified",
+    "fluxCapacitors": 6,
+    "fluxVents": 5,
+    "hullId": "colossus2",
+    "hullMods": [
+        "swp_extrememods2",
+        "heavyarmor",
+        "armoredweapons",
+        "swp_pdconversion",
+        "missleracks"
+    ],
+    "permaMods": [
+        "swp_extrememods2",
+        "heavyarmor",
+        "armoredweapons",
+        "swp_pdconversion"
+    ],
+    "sMods": [
+        "heavyarmor",
+        "armoredweapons",
+        "swp_pdconversion"
+    ],
+    "tags": ["no_autofit"],
+    "variantId": "swp_colossus2_mod",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "swp_reliant",
+                "WS 002": "swp_reliant",
+                "WS 003": "swp_reliant",
+                "WS 004": "swp_reliant",
+                "WS 009": "swp_reliant",
+                "WS 010": "swp_reliant",
+                "WS 011": "swp_reliant",
+                "WS 012": "swp_reliant",
+                "WS 013": "swp_reliant",
+                "WS 014": "swp_reliant",
+                "WS 015": "swp_reliant",
+                "WS 016": "swp_reliant"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 017": "hammerrack"}
+        }
+    ]
+}

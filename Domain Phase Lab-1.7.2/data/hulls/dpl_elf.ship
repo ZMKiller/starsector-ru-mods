@@ -1,0 +1,129 @@
+{
+  "hullName": "Elf",
+  "hullId": "dpl_elf",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/phase/dpl_elf.png",
+  "style": "HIGH_TECH",
+  "height": 112,
+  "width": 94,
+  "center": [47, 56],
+  "collisionRadius": 111.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 101,
+  "viewOffset": 0,
+  "builtInMods": [
+    "delicate",
+    "phasefield"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-23, 25]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [-23, -25]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [17, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-52, 24.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-52, -24.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-52, 17.5],
+      "length": 26,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-52, -17.5],
+      "length": 26,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-56.5, 3.5],
+      "length": 24,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-56.5, -3.5],
+      "length": 24,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-56.5, 10.5],
+      "length": 35,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-56.5, -10.5],
+      "length": 35,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    57, -6,
+    -4.5, -21.5,
+    -20.5, -44.5,
+    -33.5, -49.5,
+    -41.5, -30.5,
+    -50.5, -30.5,
+    -57.5, -17.5,
+    -57.5, 17.5,
+    -50.5, 30.5,
+    -41.5, 30.5,
+    -33.5, 49.5,
+    -20.5, 44.5,
+    -4.5, 21.5,
+    57, 6
+  ]
+}

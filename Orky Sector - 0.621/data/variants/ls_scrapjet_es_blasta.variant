@@ -1,0 +1,45 @@
+{
+    "displayName": "Blasta",
+    "fluxCapacitors": 16,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "ls_scrapjet_es",
+    "hullMods": [
+        "heavyarmor",
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_scrapjet_es_blasta",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_splasha_attackgun_builtin"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_kill_kannon",
+                "WS 000": "ls_kill_kannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_grot_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "ls_jet_shoota",
+                "WS 003": "ls_jet_shoota"
+            }
+        }
+    ]
+}

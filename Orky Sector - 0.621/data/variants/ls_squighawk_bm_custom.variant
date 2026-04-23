@@ -1,0 +1,37 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 10,
+    "fluxVents": 7,
+    "goalVariant": false,
+    "hullId": "ls_squighawk_bm",
+    "hullMods": [
+        "unstable_injector",
+        "auxiliarythrusters",
+        "hardenedshieldemitter"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_squighawk_bm_custom",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_snazz_cannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_torpedo_bm_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_flakka_dakka"
+            }
+        }
+    ]
+}

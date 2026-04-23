@@ -1,0 +1,40 @@
+{
+	"baseHullId":"ls_miko_comet",
+	"skinHullId":"ls_miko_red_comet",
+	"hullName":"Red Komet (ES)",
+	"descriptionPrefix":"Wot, diz? I'z won it ovvah some game with some pansy. Da fastest ship I'z seen, and now itz proppa red! Orky modification of this ship seems fairly superficial at this point, it is not too late to restore the ship to its base form.",
+	"tags":["no_sell, no_dealer, restricted"],
+	"tech":"High Tech",
+	"spriteName":"graphics/ships/ls_miko_redcomet_es.png",
+	"restoreToBaseHull":true,
+	"baseValueMult":1,
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	#"systemId":"ammofeed",
+	"ordnancePoints":45,
+	"builtInMods":["ls_evilsuns", "ls_mek", "ls_orky"],
+	#"builtInMods":["andrada_mods"],
+	"builtInWeapons":{
+        "WS0002": "ls_komet_blasta",
+        "WS0003": "ls_cometshoota_es_l",
+        "WS0004": "ls_cometshoota_es_r"
+
+    },
+	"engineSlotChanges":{
+		"0":{
+			#"width": 0,
+          	#"length": 210,
+          	#"angle": 210,
+          	"style": "LOW_TECH",
+		},
+		"1":{"style":"LOW_TECH"},
+		"2":{"style":"LOW_TECH"},
+		"3":{"style":"LOW_TECH"},
+		"4":{"style":"LOW_TECH"},
+		"5":{"style":"LOW_TECH"},
+		"6":{"style":"LOW_TECH"},
+		"7":{"style":"LOW_TECH"},
+	},  
+}

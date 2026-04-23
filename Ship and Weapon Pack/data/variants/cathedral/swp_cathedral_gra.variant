@@ -1,0 +1,52 @@
+{
+    "displayName": "Grand",
+    "fluxCapacitors": 20,
+    "fluxVents": 19,
+    "goalVariant": true,
+    "hullId": "swp_cathedral",
+    "hullMods": [
+        "ecm",
+        "nav_relay"
+    ],
+    "modules": [
+        {"SECTION_BASE": "swp_cathedral_base_std"},
+        {"SECTION_REAR": "swp_cathedral_rear_std"},
+        {"SECTION_GUN_LEFT": "swp_cathedral_gun_left_std"},
+        {"SECTION_GUN_RIGHT": "swp_cathedral_gun_right_std"},
+        {"SECTION_FIGHTER_LEFT": "swp_cathedral_fighter_left_std"},
+        {"SECTION_FIGHTER_RIGHT": "swp_cathedral_fighter_right_std"},
+        {"SECTION_FRONT": "swp_cathedral_front_std"}
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_cathedral_gra",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "lightac",
+                "WS0005": "lightac",
+                "WS0006": "lightac",
+                "WS0007": "lightac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "swp_redeemer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "miningblaster",
+                "WS0003": "miningblaster"
+            }
+        }
+    ],
+    "wings": [
+        "broadsword_wing",
+        "broadsword_wing"
+    ]
+}

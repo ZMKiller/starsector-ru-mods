@@ -1,0 +1,114 @@
+{
+  "hullName": "Vavatch",
+  "hullId": "TTE_vavatch",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTE_vavatch.png",
+  "style": "HIGH_TECH",
+  "height": 141,
+  "width": 78,
+  "center": [38, 70.5],
+  "collisionRadius": 88.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 87.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt",
+    "civgrade"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-24.5, 25]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-24.5, -26]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 0,
+      "locations": [28, -26]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -0,
+      "locations": [28, 25]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-64, 26],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-63.5, -25],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67.5, -12],
+      "length": 32.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67.5, 12],
+      "length": 32.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    68.5, -14.5,
+    43.5, -28.5,
+    35.5, -36,
+    -11, -35.5,
+    -19.5, -34,
+    -46.5, -39.5,
+    -53.5, -32,
+    -66.5, -30,
+    -66.5, -22.5,
+    -63.5, -18,
+    -71, -15,
+    -71, 16,
+    -65.5, 19,
+    -66.5, 22,
+    -65.5, 31.5,
+    -53, 32.5,
+    -49, 39,
+    -21, 35,
+    -11, 36.5,
+    32.5, 37,
+    43.5, 26.5,
+    68, 15
+  ]
+}

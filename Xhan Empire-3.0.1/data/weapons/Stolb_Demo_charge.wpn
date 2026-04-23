@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 600,
+  "fireSoundTwo": "STOLB_FIRE",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/Stolb_Barrel_HARDPOINT.png",
+  "hardpointOffsets": [
+    50.5,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/Stolb_Demolition_charge_HARDPOINT.png",
+  "id": "Stolb_Demo_charge",
+  "muzzleFlashSpec": {
+    "length": 65,
+    "particleColor": [
+      255,
+      120,
+      50,
+      245
+    ],
+    "particleCount": 50,
+    "particleDuration": 0.75,
+    "particleSizeMin": 10,
+    "particleSizeRange": 35,
+    "spread": 15
+  },
+  "projectileSpecId": "Stolb_grenade",
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/Stolb_Barrel_TURRET.png",
+  "turretOffsets": [
+    49.5,
+    0
+  ],
+  "turretSprite": "graphics/weapons/Stolb_Demolition_charge_TURRET.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 10
+}

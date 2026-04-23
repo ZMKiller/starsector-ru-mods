@@ -1,0 +1,48 @@
+{
+    "displayName": "Kannon",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "ls_mudfish_bm",
+    "hullMods": [
+        "targetingunit",
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_mudfish_bm_kannon",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_blast_klaw_l",
+                "WS 001": "ls_blast_klaw_r"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_deth_kannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "ls_mini_rokkit_launcha",
+                "WS 005": "ls_mini_rokkit_launcha",
+                "WS 008": "ls_mini_rokkit_launcha",
+                "WS 007": "ls_mini_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_big_shoota",
+                "WS 004": "ls_big_shoota"
+            }
+        }
+    ]
+}

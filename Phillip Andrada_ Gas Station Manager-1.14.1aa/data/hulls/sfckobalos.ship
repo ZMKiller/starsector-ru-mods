@@ -1,0 +1,109 @@
+{
+  "hullName": "Kobalos KS-50",
+  "hullId": "sfckobalos",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/phase_tanker_frigatev1.png",
+  "style": "HIGH_TECH",
+  "height": 93,
+  "width": 112,
+  "center": [56, 46.5],
+  "collisionRadius": 105,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 92.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery",
+    "phasefield",
+    "delicate"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [35.5, 18.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [35.5, -18.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [21.5, 31],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -0,
+      "locations": [21.5, -31],
+      "renderOrderMod": 100
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-46, 15.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-46, -15.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-43, -24.5],
+      "length": 15,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-43, 24.5],
+      "length": 15,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    43.5, -18,
+    33, -49.5,
+    24, -50,
+    12.5, -56,
+    7, -43.5,
+    -16.5, -33.5,
+    -41, -33,
+    -41, 33,
+    -16.5, 33.5,
+    7, 43.5,
+    12.5, 56,
+    24, 50,
+    33, 49.5,
+    43.5, 18
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "quality":0.5,
+    "displayName":"Support Fighter",
+    "hullId":"uw_revolver",
+    "variantId":"uw_revolver_Support",
+    "fluxVents":0,
+    "fluxCapacitors":0,
+    "hullMods":[],
+
+    # mode is either LINKED or ALTERNATING
+    # slot ids (WS ***) must match what's in the .ship file
+    "weaponGroups":[
+        {"mode":"LINKED",
+         "weapons":{
+                    "WS0001":"uw_shredder",
+                   },
+        },
+        {"mode":"LINKED",
+         "weapons":{
+                    "WS0002":"mininglaser",
+                    "WS0003":"mininglaser",
+                   },
+        },
+    ],
+}

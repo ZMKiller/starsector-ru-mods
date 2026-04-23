@@ -1,0 +1,23 @@
+{
+    "baseHullId":"uw_infernus",
+    "skinHullId":"uw_tim_u1234_f1_s1_w1_a1",
+    "hullName":"",
+	"hullDesignation":"Doomwagon",
+    "descriptionId":"uw_infernus",
+    "descriptionPrefix":"The Infernal Machine has returned in full regalia to retake the Persean Sector. She was once known as the origin of the Infernus pattern, but now the Infernal Machine has grown far beyond her own legend. This heavily modified and powerfully upgraded doomwagon exists in a category of her own, capable of toppling even the greatest empire with the right pirate lord at the helm. Beware, for Harcourt's masterpiece has been born again, and she shall be baptized in the fires of her victims!\n\nThe Infernal Machine has been upgraded with a pair of Terminator Drone wings, an Operations Center, an Advanced Targeting Core, the Diablo Cannon, an up-sized ordnance package, and a battlespace mine deployer.",
+    "tags":[],
+    "baseValueMult":2,
+    "addHints":[HIDE_IN_CODEX],
+    "ordnancePoints":265,
+    "spriteName": "graphics/uw/ships/uw_infernalmachine_fs.png",
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "removeBuiltInWings":["borer_wing", "borer_wing"],
+    "builtInMods":["augmentedengines", "advancedcore", "uw_minefield"],
+    "builtInWeapons":{
+        "WS0001": "uw_diablo"
+    },
+    "builtInWings":["terminator_wing", "terminator_wing"],
+}

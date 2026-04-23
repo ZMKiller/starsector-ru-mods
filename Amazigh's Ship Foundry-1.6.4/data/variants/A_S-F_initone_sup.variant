@@ -1,0 +1,58 @@
+{
+  "variantId": "A_S-F_initone_sup",
+  "hullId": "A_S-F_initone",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_omer",
+        "WS0005": "A_S-F_omer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_sakset"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ionbeam",
+        "WS0003": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "taclaser",
+        "WS0007": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "lrpdlaser",
+        "WS0009": "lrpdlaser",
+        "WS0010": "A_S-F_plas_burster"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

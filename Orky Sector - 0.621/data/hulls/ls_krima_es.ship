@@ -1,0 +1,176 @@
+{
+    "hullName": "Krima (ES)",
+    "hullId": "ls_krima_es",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_krima_es.png",
+    "height": 136,
+    "width": 94,
+    "center": [
+        47, 68
+    ],
+    "collisionRadius": 90,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 88,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_evilsuns",
+        "ls_mek",
+        "ls_snazzdakka"
+    ],
+    "builtInWeapons": {
+        "WS 003": "ls_mini_rokkit_pod_krima",
+        "WS 004": "ls_mini_rokkit_pod_krima"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "HYBRID",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                      22,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 80,
+            "locations": [
+                     1.5,       26
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 280,
+            "locations": [
+                     1.5,      -26
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    33.5,     22.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    33.5,    -22.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -43, 12.5
+            ],
+            "length": 64,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -43, -12.5
+            ],
+            "length": 64,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -40, 25.5
+            ],
+            "length": 64,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -40, -25.5
+            ],
+            "length": 64,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -33, 34.5
+            ],
+            "length": 24,
+            "width": 4,
+            "angle": 135,
+            "contrailSize": 128,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -33, -34.5
+            ],
+            "length": 24,
+            "width": 4,
+            "angle": -135,
+            "contrailSize": 128,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -66,     -3.5,
+             -45,     -6.5,
+           -43.5,    -17.5,
+           -34.5,      -36,
+           -34.5,    -45.5,
+        
+             -12,      -35,
+               3,    -43.5,
+            34.5,      -24,
+              66,    -13.5,
+            37.5,     -7.5,
+        
+            37.5,      7.5,
+              66,     13.5,
+            34.5,       24,
+               3,     43.5,
+             -12,       35,
+        
+           -34.5,     45.5,
+           -34.5,       36,
+           -43.5,     17.5,
+             -45,      6.5,
+             -66,      3.5
+    # 20 points total.
+    ]
+}

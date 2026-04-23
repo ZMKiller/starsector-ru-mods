@@ -1,0 +1,157 @@
+{
+    "hullName": "Wayfarer (BM)",
+    "hullId": "ls_wayfarer_bm",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_wayfarer_bm.png",
+    "height": 114,
+    "width": 86,
+    "center": [
+        43, 54
+    ],
+    "collisionRadius": 85,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 73,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_badmoons",
+        "rugged"
+    ],
+    "builtInWeapons": {
+        "WS 004": "ls_tpc"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 60,
+            "locations": [
+                       7,       30
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": -90,
+            "locations": [
+                       1,      -30
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": -150,
+            "locations": [
+                     -34,      -28
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 120,
+            "locations": [
+                     -34,       28
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                      46,       -1
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -48.5, 11
+            ],
+            "length": 54,
+            "width": 20,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -48.5, -11
+            ],
+            "length": 54,
+            "width": 20,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -47.5, 29
+            ],
+            "length": 24,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 26,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -47.5, -29
+            ],
+            "length": 24,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 26,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -47.5, 24.5
+            ],
+            "length": 24,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 26,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -47.5, -24.5
+            ],
+            "length": 24,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 26,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -48.5,      -34,
+              34,      -36,
+            54.5,      -16,
+            54.5,       16,
+              34,       36,
+        
+           -48.5,       34
+    ]
+}

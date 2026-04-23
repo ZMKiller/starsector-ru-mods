@@ -1,0 +1,41 @@
+{
+  "variantId": "XHAN_Vukan_Hunter",
+  "hullId": "XHAN_Vukan",
+  "displayName": "Hunter",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "harpoonpod",
+        "WS0002": "harpoonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pdlaser",
+        "WS0004": "pdlaser",
+        "WS0006": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

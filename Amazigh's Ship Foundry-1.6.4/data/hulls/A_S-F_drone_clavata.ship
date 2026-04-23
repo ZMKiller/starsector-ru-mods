@@ -1,0 +1,69 @@
+{
+  "hullName": "Clavata",
+  "hullId": "A_S-F_drone_clavata",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/phase/A_S-F_clavata.png",
+  "style": "HIGH_TECH",
+  "height": 28,
+  "width": 40,
+  "center": [20, 13],
+  "collisionRadius": 20,
+  "shieldCenter": [-1, -0],
+  "shieldRadius": 19,
+  "viewOffset": 0,
+  "builtInMods": [
+    "A_S-F_GlisterEngines",
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 130,
+      "angle": 180,
+      "locations": [-9, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-0.5, 12],
+      "length": 15,
+      "width": 5,
+      "angle": 130,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-0.5, -12],
+      "length": 15,
+      "width": 5,
+      "angle": -130,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-3.5, 10.5],
+      "length": 10,
+      "width": 3,
+      "angle": 165,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-3.5, -10.5],
+      "length": 10,
+      "width": 3,
+      "angle": -165,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    3, -17,
+    -11, -0,
+    3, 17,
+    10, -0
+  ]
+}

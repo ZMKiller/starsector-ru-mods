@@ -1,0 +1,17 @@
+id,trigger,conditions,script,text,options,notes
+sun_sl_sal_printDefaultDefenders,TriggerAutomatedDefenses,$hasDefenders == true score:100,SL_SalvageDefenderInteraction,По мере приближения вашего $shipOrFleet рядом с $shortName фиксируются новые энергетические сигнатуры.,,
+sun_sl_sal_printDebrisDefenders,TriggerAutomatedDefenses,$customType == debris_field_shared score:101,SL_SalvageDefenderInteraction,По мере приближения вашего $shipOrFleet рядом с более крупными обломками фиксируются новые энергетические сигнатуры.,,
+sun_sl_sal_triggerProbeDefenders,TriggerAutomatedDefenses,$customType == derelict_probe score:101,SL_SalvageDefenderInteraction,По мере приближения вашего $shipOrFleet в трюме зонда активируются сразу несколько энергетических сигнатур.,,
+sun_sl_sal_triggerSurveyShipDefenders,TriggerAutomatedDefenses,$customType == derelict_survey_ship score:101,SL_SalvageDefenderInteraction,По мере приближения вашего $shipOrFleet множественные энергетические сигнатуры активируются в разных точках на изуродованном корпусе исследовательского корабля и внутри него.,,
+sun_sl_sal_triggerMothershipDefendersBoth,TriggerAutomatedDefenses,"$customType == derelict_mothership score:101
+$hasStation
+$hasNonStation",SL_SalvageDefenderInteraction,"По мере приближения вашего $shipOrFleet в потемневших рабочих отсеках огромного остова материнского корабля активируются многочисленные мощные энергетические сигнатуры. Сенсоры также фиксируют, что на самом материнском корабле включаются несколько оружейных установок.",,
+sun_sl_sal_triggerMothershipDefendersOnlyDrones,TriggerAutomatedDefenses,"$customType == derelict_mothership score:101
+$hasNonStation",SL_SalvageDefenderInteraction,По мере приближения вашего $shipOrFleet в потемневших рабочих отсеках огромного остова материнского корабля активируются многочисленные мощные энергетические сигнатуры.,,
+sun_sl_sal_triggerMothershipDefendersOnlyItself,TriggerAutomatedDefenses,"$customType == derelict_mothership score:101
+$hasStation",SL_SalvageDefenderInteraction,"По мере приближения вашего $shipOrFleet сенсоры фиксируют, как в темных расщелинах огромного остова материнского корабля включаются несколько оружейных установок.",,
+sun_sl_psi_defenderDesc,TriggerAutomatedDefenses,$psi_planet score:1020,SL_SalvageDefenderInteraction,"По мере приближения вашего $shipOrFleet сенсоры фиксируют множественные контакты, поднимающиеся из мутных багровых глубин.",,
+sun_sl_marketHostileSel,DialogOptionSelected,$option == marketConsiderHostile score:1001,SL_ShowMarketDefenses showDefenses,,,
+sun_sl_sal_famousWreckDetails,DialogOptionSelected,"$option == salExplore
+$sun_sl_customType == famousWreck score:1001","SL_ShowFamousDerelict
+SetShortcut defaultLeave ESCAPE",,,

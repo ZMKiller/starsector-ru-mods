@@ -1,0 +1,49 @@
+{
+	"id":"A_S-F_sprocket_srm",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/A_S-F_sprocket_srm.png",
+	"size":[8,16],	
+	"center":[4,8],
+	"collisionRadius":12,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,255,100,190],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":80, # purely visual
+	"flameoutTime":0.5, # fadeout duration
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration
+  	"engineSpec":{"turnAcc":500,
+				  "turnRate":150,
+				  "acc":500,
+				  "dec":450},
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":50,
+					 "coreRadius":35,
+					 "collisionClass":PROJECTILE_FF,
+					 "collisionClassByFighter":PROJECTILE_FF,
+					 "particleSizeMin":2.0,
+					 "particleSizeRange":4.0,
+					 "particleDuration":0.45,
+					 "particleCount":35,
+					 "particleColor":[100,255,150,255]},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-6, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[125,255,100,255],
+						"glowSizeMult":2,
+						"contrailDuration":0.45,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2.2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[75,80,75,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":30.0,
+				    "angle":180.0},
+				    ]
+}

@@ -1,0 +1,43 @@
+{
+  "variantId": "A_S-F_misside_std",
+  "hullId": "A_S-F_misside",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "A_S-F_twister",
+        "WS0002": "A_S-F_twister",
+        "WS0003": "A_S-F_twister",
+        "WS0004": "A_S-F_twister"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightac",
+        "WS0007": "lightac"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

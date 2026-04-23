@@ -1,0 +1,58 @@
+{
+  "variantId": "A_S-F_initone_std",
+  "hullId": "A_S-F_initone",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 13,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "advancedoptics",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "phasebeam",
+        "WS0003": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ioncannon",
+        "WS0007": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_bramble",
+        "WS0005": "A_S-F_bramble"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "pdlaser",
+        "WS0009": "pdlaser",
+        "WS0010": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,47 @@
+{
+  "variantId": "A_S-F_superlasher_supp",
+  "hullId": "A_S-F_superlasher",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_omer",
+        "WS0005": "A_S-F_omer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightneedler",
+        "WS0003": "lightneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "A_S-F_bramble"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

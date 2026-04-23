@@ -1,0 +1,176 @@
+{
+    # Note: With LunaLib, most (but not all) of these settings can be modified and saved ingame
+	# for such settings, this file only serves to provide the default values
+    
+    "directoryDialogKey": 45,   # integer, default 45 (X)
+    
+    "enableStrategicAI":true,	# goal-directed AI for NPC factions
+    
+    "ceasefireNotificationPopup": true,
+    # 0 = no filter, 1 = popup only events affecting player/commissioner faction, 2 = filter out all events
+    # war/peace events are always shown
+    "diplomacyEventFilterLevel":0,
+    # more or less the same as above
+    "agentEventFilterLevel":0,
+    # 0 = standard behavior, most intel delivered instantly, 
+    # 1 = important intel delivered instantly, rest added when near comm relay
+    # 2 = almost no intel delivered instantly, rest added when near comm relay
+    "nexIntelQueued":0,
+    #if false, missions are added directly. if true, missions are delivered when in relay range.
+    "queuedNexMissions":false,
+    
+    "enableVictory":true,	# set to false to disable victory conditions (does not affect 'story-based' victories by any mod)
+    
+    # Random sector settings
+    "minimumPlanets": 3,
+    #"minimumStations": 3,
+    "forcePiratesInSystemChance": 0.3,  # this proportion of systems will always be seeded with at least one pirate market
+    
+    "fleetBonusFpPerPlayerLevel": 1,	# not actually used, except for vengeance and mining harassment fleets
+    
+    "prisonerRepatriateRepValue": 0.04,
+    "prisonerBaseRansomValue": 10000,
+    "prisonerRansomValueIncrementPerLevel": 2000,
+    "prisonerLootChancePer10Fp": 0.025,
+    
+    "crewLootMult": 0.02,   # loot about this many crew per enemy crew in killed ships
+    
+    "legacyInsurance": false,	# free insurance paid by commissioning faction
+    "playerInsuranceMult": 0.8,
+    
+    "agentBaseSalary":2000,
+    "agentSalaryPerLevel":1000,
+    "maxAgents":2,
+    "agentStealAllShips":true,	# true = can steal all ships known to faction, false = only what's for sale on that particular market at that moment
+    "useAgentSpecializations":true,
+    
+    # Invasion stuff
+    # most of these are also used by raids
+    
+    # if false, replaces NPC invasions (including revenge counter-invasion mechanic) with raids
+    "enableInvasions": true,
+    "legacyInvasions": false,	# old invasion system before v0.10.3 revamp
+    "invasionsOnlyAfterPlayerColony": false,	# if true, factions will only invade after player faction is configured (as happens upon first having a colony)
+    "allowInvadeStoryCritical":false,    # block NPC invasions from targeting story-critical markets
+    "allowInvadeStartingMarkets":true,	# if false, markets that exist at the start of the game cannot be invaded by NPCs, only by player
+    "allowPirateInvasions": false,
+    "retakePirateMarkets": true,	# allow factions to invade markets that pirates currently hold but didn't at start of game, even if allowPirateInvasions is false
+    "fleetRequestCostPerFP": 400,  # used for player-requested fleets
+    "fleetRequestCapMult":1,
+    "fleetRequestIncrementMult":1,
+    "invasionFleetSizeMult": 1,
+    "responseFleetSizeMult": 1,
+    "invasionGracePeriod": 90,  # factions won't accumulate invasion points for this many days at start
+    "pointsRequiredForInvasionFleet": 30000,    # name is a bit misleading, but anyway bigger number = longer delay between invasion fleets
+    # invasion points are added daily
+    "baseInvasionPointsPerFaction": 30,
+    "invasionPointsPerPlayerLevel": 1,
+    "invasionPointEconomyMult": 0.5, # multiplier for invasion point gains from economic assets
+    "creditLossOnColonyLossMult": 0.4,
+    "allowNPCSatBomb": false,	# NPC factions can launch saturation bombardment missions in place of some invasions, raids and vengeance fleets
+    "permaHateFromPlayerSatBomb": 0.24f,	# sat bombing permanently lowers max relationship with relevant factions by this much (doubled for actual victim)
+    
+    "groundBattleDamageMult":1,				# modifier to damage dealt during ground battle resolution; lower this to make battles last longer
+    "groundBattleGarrisonSizeMult":1,		# also used in legacy invasions
+    "groundBattleInvasionTroopSizeMult":1,	# applied on fleet spawn, also used in legacy invasions
+    "groundBattleGarrisonXP":0.25,			# same effects as for player marines
+    "groundBattleInvasionTroopXP":0.5,
+    
+    "enableDiplomacy":true,
+    "allowRandomDiplomacyTraits":true,	# randomize diplomacy traits when faction relations are randomized
+    "useRelationshipBounds": true,		# if false, disregard min/max faction relationships in faction config
+    
+    "enableAlliances": true,	# will not dissolve existing alliances if changed, or affect scripted alliances (e.g. Iron Shell with Hegemony)
+    "allianceGracePeriod": 120,	# no alliances can form for this long at start
+    "allianceFormationInterval": 30,    # try to form a new alliance every N days on average
+    "ignoreAlignmentForAlliances": false,
+    "predefinedAllianceNameChance": 1,	# use one of two pre-written names for alliances based on the two founding factions (currently only vanilla factions are supported)
+    "npcAllianceOffers": true,
+    
+    "baseTariffMult": 0.6,  # 1.0 = base tariff (usually 30%)
+    "freeMarketTariffMult": 0.5,    # 0.5 = halved tariffs
+    "doubleSubmarketWeapons": false,	# if true, double the amount of weapons generated on most submarkets (old behavior)
+    "buyShipBasePriceMult": 1.6,	# in mission with NPCs buying one of your ships
+    
+    #"prismInHyperspace": false,	# if false, Prism will get its own star system. Setting to true is likely to crash, not recommended
+    "prismMaxWeapons": 27,
+    "prismNumShips": 14,
+    "prismNumWings": 6,
+    "prismNumBossShips": 0,    # int; boss ships being the IBB super ships seen in Ship/Weapon Pack
+    "prismRenewBossShips": false,   # if false, once a boss ship is bought or captured it won't appear in the market again
+    "prismUseIBBProgressForBossShips": true,    # must progress through the IBB (famous bounty) sidequest in SWP to unlock new boss ships for sale; also applies to HVBs
+    "prismTariff": 2.0,  # float, 1.0 = 100% tariff; modified by relationship with independents
+    "prismBlueprintPriceMult":1.5,
+    
+    "warWearinessDivisor": 10000,   # float; higher means factions take longer on average to sign a ceasefire
+    "warWearinessDivisorModPerLevel": 75,
+    "minWarWearinessForPeace": 5000,    # float
+    "warWearinessCeasefireReduction": 3000, # float; note the reduction is applied to both parties
+    "warWearinessPeaceTreatyReduction": 6000,
+    "acceptCeasefiresOnTimeout": false,	# if true, when the timer for a ceasefire offer to player expires it accepts instead of rejecting
+    
+    "factionRespawnInterval": 120,   # will spawn an invasion fleet for a randomly selected not-alive faction this often
+    "maxFactionRespawns": 3,    # factions can launch respawn fleets this many times (not counting initial entry into sector); <0 = unlimited
+    
+    "warmongerPenalty": 0,   # take reputation hit from starting a war? (may not be supported any longer) 0 = never, 1 = not for followers, 2 = always
+    
+    "followersAgents": false,		# does player faction use agents on its own? (default false)
+    "followersDiplomacy": true,		# does player faction participate in diplomacy on its own? (default true)
+    "followersInvasions": false,	# does player faction launch invasions on its own? (default false)
+    
+    "allyVictories":true,	# player gets victory screen if they are Friendly or Cooperative with actual winner
+    "countPiratesForVictory": false,
+    "useConfigRelationshipsInNonRandomSector": false,	# use relations defined in the faction config. Specific factions can set this to true for themselves as well
+    "leaveEliminatedFaction": true, # if our faction is wiped out, leave it
+    
+    "enableRevengeFleets": 2,  # 0 = disabled, 1 = only on hard mode, 2 = always (point generation halved on not-hard)
+    "revengePointsPerEnemyFP": 0.05,
+    "revengePointsForMarketCaptureMult": 2,
+    "vengeanceFleetSizeMult": 0.8,
+    # old vengeance fleets have the intel item, spawn at a location, then chase you around the map
+    # new vengeance fleets just appear outside a system and try to catch you, like some vanilla encounters
+    "useNewVengeanceEncounters": false,
+    
+    "specialForcesPointMult": 1,	# rate at which factions spawn special task groups
+    "specialForcesSizeMult": 1,
+	"specialForcesMaintMult": 0.75,	# multiplier for supplies/fuel/salary costs of player STGs; 1 makes it equal to what the player would pay for those ships/crew/officers in own fleet
+    
+    "enableAntioch": true, # adds Antioch for Templars in random mode, replacing their normal worlds
+    "enableAvesta": true,   # adds Avesta Station for Ahriman Association, in addition to their normal markets (random mode only)
+    "enableUnos": true, # adds Unos for ApproLight, attached to homeworld (random mode only)
+    
+    "factionRuler": false,  # gain same powers over a normal faction as you'd have with followers (probably not fully functional)
+    
+    "corvusModeLandmarks": false,	# adds some decorative landmarks in non-random Sector (will always be present in random Sector)
+    "useEnhancedStartRelations": true,	# nicer starting relations between factions in non-random sector; e.g. League and Diktat are now only welcoming instead of cooperative
+    "useEnhancedCoreWorlds": true,	# increases defenses and/or economic capacity of some core worlds in non-random sector
+    "useEnhancedAdmins": true,	# gives named NPC admins some special skills
+    
+    #"useCustomBattleCreationPlugin": true,	# affects things like map size and number of objectives. Not used (since 0.11.1b and probably much earlier)
+    
+    "officerDeaths": false,	# officer permadeath (may be buggy)
+    "officerDaredevilBonus": false,	# 50% experience bonus for officers in a frigate, 25% in a destroyer
+    
+    "stabilizePackageEffect": 2,
+    "rebellionMult": 1,	# higher mult means unrest will boil over into rebellion more quickly
+    
+    "enableColonyExpeditions": true,
+    "allowNPCColonyGrowth": true,
+    "maxNPCNewColonySize": 6,	# for new colonies created by colony expedition event
+    "hardModeColonyGrowthMult": 0.75,
+    "hardModeColonyIncomeMult": 0.9,
+    "colonyExpeditionInterval": 270,	# days, starts in cycle 207; also note nex_expeditionDelayPerExistingColony in settings.json
+    "colonyExpeditionsOnlyAfterPlayerColony": false,
+    "colonizeOutsideCore": true,
+    
+    "enablePunitiveExpeditions": false,	# if false, vs. competitor and free port expeditions will not happen (territorial ones still will)
+    "enableNexColonyCrises": true,		# enable colony crises added by Nex (currently only the free port one)
+    "autoResistAIInspections": true,	# default to resisting Hegemony AI inspections
+    
+    "updateMarketDescOnCapture": true,	# change market descriptions to reflect new controlling factions (only affects some markets, in non-random sector)
+
+    # DO NOT TOUCH!
+    # to make factions not appear, use the menu options
+    "builtInFactions":["hegemony", "tritachyon", "sindrian_diktat", "lions_guard", "persean", "luddic_church", "luddic_path", "knights_of_ludd", "pirates",
+           "derelict", "remnant", "player", "independent", "scavengers", "neutral", "poor", "sleeper", "omega", "dweller", "threat"],
+}

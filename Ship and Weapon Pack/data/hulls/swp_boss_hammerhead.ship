@@ -1,0 +1,201 @@
+{
+  "hullName": "Phillipshead",
+  "hullId": "swp_boss_hammerhead",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/swp/ships/boss/swp_boss_hammerhead.png",
+  "style": "MIDLINE",
+  "height": 184,
+  "width": 110,
+  "center": [55, 82.5],
+  "collisionRadius": 131.503799,
+  "shieldCenter": [7.5, -0],
+  "shieldRadius": 120,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [90, 31]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [90, -31]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 45,
+      "locations": [62.5, 16]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -45,
+      "locations": [62.5, -16]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 80,
+      "locations": [-10.5, 39]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -80,
+      "locations": [-10.5, -39]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [87, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 50,
+      "locations": [64.5, 41]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": -50,
+      "locations": [64.5, -41]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 135,
+      "locations": [-58.5, 26]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -135,
+      "locations": [-58.5, -26]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-81.5, 16],
+      "length": 41,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-81.5, -16],
+      "length": 41,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-81, 26],
+      "length": 37,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-81, -26],
+      "length": 37,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-79.5, 37],
+      "length": 31.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-79.5, -37],
+      "length": 31.5,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -44.5, -9,
+    -69, -9,
+    -78, -17.5,
+    -71, -44,
+    -50, -41,
+    -43, -46,
+    -24.5, -42,
+    -16.5, -53.5,
+    -1.5, -47,
+    -1.5, -47,
+    21, -28.5,
+    53.5, -25.5,
+    52, -41.5,
+    60.5, -51,
+    97, -46.5,
+    90.5, -25,
+    93, -15.5,
+    93, 13.5,
+    90.5, 23,
+    97, 44.5,
+    60.5, 49,
+    52, 39.5,
+    60, 30.5,
+    53.5, 23.5,
+    21, 26.5,
+    -1.5, 47,
+    -16.5, 53.5,
+    -24.5, 42,
+    -43, 46,
+    -50, 41,
+    -71, 42,
+    -78, 15.5,
+    -69, 7,
+    -44.5, 7
+  ]
+}

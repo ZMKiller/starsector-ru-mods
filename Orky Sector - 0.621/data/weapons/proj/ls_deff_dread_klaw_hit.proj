@@ -1,0 +1,29 @@
+{
+	"id":"ls_deff_dread_klaw_hit",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"onHitEffect":"data.weapons.ls_deff_dread_klaw_onhit",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":6.0,
+	#"length":0,
+	"hitGlowRadius":32,
+	"width":24,
+	"fadeTime":0.1,
+	"fringeColor":[100,255,100,0],
+	"coreColor":[100,255,100,0],
+	#"fringeColor":[255,50,50,0],
+	#"coreColor":[255,255,200,0],	
+	"glowColor":[100,255,100,0],
+	"glowRadius":0,
+	"textureType":"ROUGH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":"",
+	#"bulletSprite":"",
+
+					}
+}

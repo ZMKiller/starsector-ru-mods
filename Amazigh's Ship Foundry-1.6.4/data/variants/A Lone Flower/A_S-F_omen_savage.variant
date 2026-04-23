@@ -1,0 +1,33 @@
+{
+  "variantId": "A_S-F_omen_savage",
+  "hullId": "omen",
+  "displayName": "Savage",
+  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 3,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missile_autoloader",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "A_S-F_sprocket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "ioncannon",
+        "WS 002": "ioncannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

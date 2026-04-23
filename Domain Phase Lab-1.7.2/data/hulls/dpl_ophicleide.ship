@@ -1,0 +1,105 @@
+{
+  "hullName": "Ophicleide",
+  "hullId": "dpl_ophicleide",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dpl_ophicleide.png",
+  "style": "HIGH_TECH",
+  "height": 96,
+  "width": 70,
+  "center": [35, 48],
+  "collisionRadius": 100.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 92,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [-20, 19]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [-20, -19]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": 0,
+      "locations": [17, 17]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": -0,
+      "locations": [17, -17]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [42, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-48, 10],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-48, -10],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-47, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    49, -12,
+    42.5, -12,
+    46, -19,
+    32.5, -30,
+    11.5, -36,
+    -9.5, -36.5,
+    -29.5, -32,
+    -48, -19.5,
+    -48, 19.5,
+    -29.5, 32,
+    -9.5, 36.5,
+    11.5, 36,
+    32.5, 30,
+    46, 19,
+    42.5, 12,
+    49, 12
+  ]
+}

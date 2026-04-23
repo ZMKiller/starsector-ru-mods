@@ -1,0 +1,34 @@
+{
+  "variantId": "PAMED_odonata_Tease",
+  "hullId": "PAMED_odonata",
+  "displayName": "Tease",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxcoil",
+    "fluxdistributor",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "pulselaser",
+        "WS0003": "pulselaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ioncannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,31 @@
+{
+    "displayName": "Stealth",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "ls_escort_karrier",
+    "hullMods": [],
+    "quality": 1.0,
+    "variantId": "ls_escort_karrier_stealth",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_jet_shoota",
+                "WS 002": "ls_big_shoota"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_big_shoota"
+            }
+        }
+    ],
+    "wings": [
+        "ls_night_squawk_ba_wing",
+        "ls_night_squawk_ba_wing"
+    ]
+}

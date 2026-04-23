@@ -1,0 +1,50 @@
+{
+  "hullName": "Tanker Drone (SFC)",
+  "hullId": "sfctankerdrone",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/PAGSM/ships/fighters/sfctankerdronev1.png",
+  "style": "MIDLINE",
+  "height": 27,
+  "width": 32,
+  "center": [16, 13.5],
+  "collisionRadius": 29.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 23.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [7, 7.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12, 11],
+      "length": 15,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-12, -11],
+      "length": 15,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    4.5, -12,
+    -10, -12.5,
+    -10, 12.5,
+    4.5, 12.5,
+    9, 9
+  ]
+}

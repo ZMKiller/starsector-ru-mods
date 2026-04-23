@@ -1,0 +1,20 @@
+{
+	"id":"A_S-F_klabu_shot",
+	"specClass":"projectile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.arktech.ASF_KlabuOnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.arktech.ASF_KlabuOnHitEffect",
+
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":50.0,
+	"hitGlowRadius":80,
+	"width":10,
+	"fadeTime":0.25,
+	"fringeColor":[255,180,60,225],	# 255,180,60,225
+	"coreColor":[255,225,195,215],	# 255,200,180,180
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_large_yellow.png"
+}

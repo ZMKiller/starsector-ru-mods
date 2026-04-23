@@ -1,0 +1,56 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 20,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "swp_boss_phaeton",
+    "hullMods": [
+        "targetingunit",
+        "heavyarmor",
+        "eccm",
+        "missleracks"
+    ],
+    "permaMods": [
+        "targetingunit",
+        "heavyarmor",
+        "eccm"
+    ],
+    "sMods": [
+        "targetingunit",
+        "heavyarmor",
+        "eccm"
+    ],
+    "variantId": "swp_boss_phaeton_cus",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "swp_boss_camoturret",
+                "WS0004": "swp_boss_camoturret"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "swp_iontorpedo",
+                "WS0002": "swp_iontorpedo"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "hveldriver"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "vulcan",
+                "WS 002": "vulcan",
+                "WS0001": "vulcan"
+            }
+        }
+    ]
+}

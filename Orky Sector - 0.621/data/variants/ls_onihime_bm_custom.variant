@@ -1,0 +1,46 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 12,
+    "fluxVents": 18,
+    "goalVariant": true,
+    "hullId": "ls_onihime_bm",
+    "hullMods": [
+        "ls_grot_rigger",
+        "auxiliarythrusters"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_onihime_bm_custom",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_mega_bubble_blasta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "ls_snazz_cannon",
+                "WS 005": "ls_snazz_cannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_grot_rail",
+                "WS 002": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_bubble_chukka",
+                "WS 004": "ls_bubble_chukka"
+            }
+        }
+    ]
+}

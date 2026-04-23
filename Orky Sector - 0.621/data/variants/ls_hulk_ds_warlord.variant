@@ -1,0 +1,68 @@
+{
+    "displayName": "Warlord",
+    "fluxCapacitors": 0,
+    "fluxVents": 27,
+    "goalVariant": true,
+    "hullId": "ls_hulk_ds",
+    "hullMods": [
+        "targetingunit",
+        "autorepair",
+        "ls_explody_propella",
+        "armoredweapons",
+        "shield_shunt",
+        "ls_bosspole"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_hulk_ds_warlord",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_deth_kannon",
+                "WS 004": "ls_mega_bolta",
+                "WS 000": "ls_rokkit_belcha",
+                "WS 011": "ls_shoota_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "ls_deffstorm_bolta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "ls_grot_hanger",
+                "WS 007": "ls_grot_hanger"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_bubble_chukka",
+                "WS 003": "ls_big_shoota",
+                "WS 009": "ls_flakka_dakka",
+                "WS 010": "ls_flakka_dakka",
+                "WS 014": "ls_flakka_dakka"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_flakka_dakka",
+                "WS 005": "ls_flakka_dakka"
+            }
+        }
+    ],
+    "wings": [
+        "ls_attack_fighta_ds_wing",
+        "ls_drilla_kan_ds_wing",
+        "ls_attack_fighta_ds_wing"
+    ]
+}

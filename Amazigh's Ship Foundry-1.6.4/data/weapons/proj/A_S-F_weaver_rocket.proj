@@ -1,0 +1,54 @@
+{
+	"id":"A_S-F_weaver_rocket",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_OmerOnFireEffect",
+
+	"sprite":"graphics/missiles/A_S-F_weaver_rocket.png",
+	"size":[8,14],
+	"center":[4,7],
+	"collisionRadius":9,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[255,140,0,200],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+	"flameoutTime":1,
+	"noEngineGlowTime":0.4,
+	"fadeTime":0.5,
+	"engineSpec":{"turnAcc":240,
+				  "turnRate":60,
+				  "acc":360,
+				  "dec":10},
+
+	"explosionSpec":{"duration":0.2f, # not visual
+					 "radius":50,
+					 "coreRadius":40,
+					 "collisionClass":PROJECTILE_FF,
+					 "collisionClassByFighter":PROJECTILE_FF,
+					 "particleSizeMin":2.0,
+					 "particleSizeRange":5.0,
+					 "particleDuration":0.5,
+					 "particleCount":45,
+					 "particleColor":[255,100,20,255]},
+
+	"engineSlots":[{"id":"ES1",
+					"loc":[-7, 0],
+
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,120,20,255],
+						"contrailDuration":.75,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":1.9f, # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[80,75,75,145],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":3.5,
+				    "length":22.0,
+				    "angle":180.0}]
+}

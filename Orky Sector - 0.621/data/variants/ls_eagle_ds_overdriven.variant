@@ -1,0 +1,49 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 10,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "ls_eagle_ds",
+    "hullMods": [
+        "ls_orky_override",
+        "magazines"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_eagle_ds_overdriven",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 005": "ls_kill_kannon",
+                "WS 004": "ls_kill_kannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_bubble_chukka",
+                "WS 006": "ls_bubble_chukka",
+                "WS 010": "ls_twin_shoota"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_deffstorm_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 009": "ls_burna",
+                "WS 008": "ls_burna",
+                "WS 002": "ls_skorcha",
+                "WS 003": "ls_skorcha"
+            }
+        }
+    ]
+}

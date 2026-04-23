@@ -1,0 +1,31 @@
+{
+    "displayName": "Ramma",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "ls_brute_go",
+    "hullMods": [
+        "ls_grot_rigger",
+        "ls_ard_case",
+        "blast_doors"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_brute_go_ramma",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_big_shoota",
+                "WS 002": "ls_big_shoota"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_rokkit_launcha"
+            }
+        }
+    ]
+}

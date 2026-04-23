@@ -1,0 +1,59 @@
+{
+  "variantId": "A_S-F_initone_ass2",
+  "hullId": "A_S-F_initone",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 8,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "armoredweapons",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "gazer",
+        "WS0005": "gazer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mjolnir"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "lightac",
+        "WS0009": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ioncannon",
+        "WS0007": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "heavyburst",
+        "WS0003": "heavyburst",
+        "WS0010": "heavyburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

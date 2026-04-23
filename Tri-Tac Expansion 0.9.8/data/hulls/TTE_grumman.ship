@@ -1,0 +1,69 @@
+{
+  "hullName": "Grumman",
+  "hullId": "TTE_grumman",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/grumman.png",
+  "style": "HIGH_TECH",
+  "height": 36,
+  "width": 34,
+  "center": [17, 18],
+  "collisionRadius": 22,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 21.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 0,
+      "locations": [3, 9]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": -0,
+      "locations": [3, -9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, 5],
+      "length": 17,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-16, -5],
+      "length": 17,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    18.5, -3.5,
+    6.5, -6.5,
+    7.5, -18,
+    1, -19,
+    -8.5, -8.5,
+    -18.5, -12,
+    -18.5, 12,
+    -8.5, 8.5,
+    1, 19,
+    7.5, 18,
+    6.5, 6.5,
+    18.5, 3.5
+  ]
+}

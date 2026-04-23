@@ -1,0 +1,43 @@
+{
+    "displayName": "Mekka",
+    "fluxCapacitors": 18,
+    "fluxVents": 19,
+    "goalVariant": true,
+    "hullId": "ls_hammerhead_ds",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "ls_hammerhead_ds_mek",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "ls_bolta",
+                "WS 004": "ls_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_tellyporta_blasta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_bubble_chukka",
+                "WS 005": "ls_bubble_chukka"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_zzappa",
+                "WS 001": "ls_zzappa"
+            }
+        }
+    ]
+}

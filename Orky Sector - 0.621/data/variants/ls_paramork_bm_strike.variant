@@ -1,0 +1,48 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 6,
+    "fluxVents": 2,
+    "goalVariant": true,
+    "hullId": "ls_paramork_bm",
+    "hullMods": [
+        "ls_grot_oiler",
+        "ls_bosspole"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_paramork_bm_strike",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_flakka_dakka",
+                "WS 000": "ls_flakka_dakka",
+                "WS 005": "ls_kustom_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_grot_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_mini_rokkit_launcha",
+                "WS 003": "ls_mini_rokkit_launcha"
+            }
+        }
+    ],
+    "modules": {
+        "WS 006": "ls_paramork_engine_l_custom",
+        "WS 007": "ls_paramork_engine_r_custom"
+    },
+    "wings": [
+        "ls_fighta_bomma_bm_wing",
+        "ls_fighta_bomma_bm_wing",
+        "ls_fighta_bomma_bm_wing"
+    ]
+}

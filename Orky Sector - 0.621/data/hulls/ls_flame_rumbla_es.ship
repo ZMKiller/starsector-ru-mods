@@ -1,0 +1,212 @@
+{
+    "hullName": "Flame Rumbla (ES)",
+    "hullId": "ls_flame_rumbla_es",
+    "hullSize": "CRUISER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_flame_rumbla.png",
+    "height": 218,
+    "width": 181,
+    "center": [
+        90.5, 109
+    ],
+    "collisionRadius": 146,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 140,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_evilsuns",
+        "ls_pump",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_splasha_attackgun_builtin",
+        "WS 001": "ls_splasha_attackgun_builtin"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 30,
+            "angle": 0,
+            "locations": [
+                    28.5,     49.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 30,
+            "angle": 0,
+            "locations": [
+                     2.5,      -57
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    72.5,    -23.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 30,
+            "angle": 0,
+            "locations": [
+                    58.5,    -61.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 30,
+            "locations": [
+                      73,     10.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 90,
+            "locations": [
+                       2,     69.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": -60,
+            "locations": [
+                      23,      -79
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -120,
+            "locations": [
+                     -50,    -62.5
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 120,
+            "locations": [
+                   -39.5,       36
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -48,      -47,
+                   -47.5,    -32.5,
+                     -28,       64
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -96.5, 0.5
+            ],
+            "length": 60,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -95.5, 23.5
+            ],
+            "length": 68,
+            "width": 20,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -95.5, -22.5
+            ],
+            "length": 68,
+            "width": 20,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+            86.5,       14,
+            86.5,        3,
+            72.5,      -13,
+            69.5,      -38,
+            37.5,    -50.5,
+        
+            56.5,    -55.5,
+            56.5,    -67.5,
+              32,      -71,
+            31.5,      -87,
+              16,      -87,
+        
+            11.5,    -81.5,
+           -36.5,      -81,
+             -85,    -54.5,
+             -81,      -34,
+           -95.5,      -34,
+        
+             -96,       34,
+           -77.5,       34,
+           -57.5,     62.5,
+             -42,       62,
+             -42,       73,
+        
+           -35.5,     78.5,
+             -20,     78.5,
+           -10.5,       68,
+               0,       77,
+            42.5,     76.5,
+        
+            56.5,     46.5
+    # 26 points total.
+    ]
+}

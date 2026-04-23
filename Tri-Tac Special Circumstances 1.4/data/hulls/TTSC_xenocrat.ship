@@ -1,0 +1,400 @@
+{
+  "hullName": "Xenocrat",
+  "hullId": "TTSC_xenocrat",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/TTSC_xenocrat.png",
+  "style": "HIGH_TECH",
+  "height": 344,
+  "width": 329,
+  "center": [164.5, 172],
+  "collisionRadius": 254,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 243.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "hiressensors",
+    "operations_center"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        1, 80,
+        -15.5, 67.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        2, -80.5,
+        -14, -69.5
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [28, -107.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [28, 107.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [35, -50.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [35, 50.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [-39, 84.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [-39, -84.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [105.5, -35.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [105.5, 35.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [121.5, -0]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": -0,
+      "locations": [73, 98.5]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 0,
+      "locations": [73, -98.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": -0,
+      "locations": [3, -99.5]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 0,
+      "locations": [3, 99.5]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-24, -115.5]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-24, 115.5]
+    },
+    {
+      "id": "WS0016",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-76, -109]
+    },
+    {
+      "id": "WS0017",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-76, 109]
+    },
+    {
+      "id": "WS0018",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-129, -125.5]
+    },
+    {
+      "id": "WS0019",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-129, 125.5]
+    },
+    {
+      "id": "WS0020",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -180,
+      "locations": [-126, -67.5]
+    },
+    {
+      "id": "WS0021",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 180,
+      "locations": [-126, 67.5]
+    },
+    {
+      "id": "WS0022",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 0,
+      "locations": [67, -51.5]
+    },
+    {
+      "id": "WS0023",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": -0,
+      "locations": [67, 51.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-157.5, 145],
+      "length": 58,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-157.5, -145],
+      "length": 58,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-165, -110],
+      "length": 58,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-165, 110],
+      "length": 58,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-167.5, -78],
+      "length": 58,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-167.5, 78],
+      "length": 58,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-168, -69.5],
+      "length": 58,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-168, 69.5],
+      "length": 58,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-166.5, -61.5],
+      "length": 58,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-166.5, 61.5],
+      "length": 58,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-157, -130],
+      "length": 86.5,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-157, 130],
+      "length": 86.5,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-162, -98],
+      "length": 86.5,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-162, 98],
+      "length": 86.5,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-155.5, -50.5],
+      "length": 86.5,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-155.5, 50.5],
+      "length": 86.5,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    143.5, -45.5,
+    197, -120.5,
+    71.5, -128,
+    2.5, -155,
+    -51.5, -134.5,
+    -116.5, -175,
+    -187.5, -149.5,
+    -174, -36.5,
+    -174, 36.5,
+    -187.5, 149.5,
+    -116.5, 175,
+    -51.5, 134.5,
+    2.5, 155,
+    71.5, 128,
+    197, 120.5,
+    143.5, 45.5
+  ]
+}

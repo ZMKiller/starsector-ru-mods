@@ -1,0 +1,32 @@
+{
+	"id":"A_S-F_phantasmagoria_micro_missile",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"MEDIUM",
+	
+	"turretSprite":"",
+	"turretGlowSprite":"",
+	"hardpointSprite":"",
+	"hardpointGlowSprite":"",
+
+	"hardpointOffsets":[2.5,29, 2.5,-29, 1.5,29, 1.5,-29, 0.5,29, 0.5,-29, -0.5,29, -0.5,-29, -5,28.5, -5,-28.5, -6,28.5, -6,-28.5, -7,28.5, -7,-28.5, -8,28.5, -8,-28.5],
+	"turretOffsets":[2.5,29, 2.5,-29, 1.5,29, 1.5,-29, 0.5,29, 0.5,-29, -0.5,29, -0.5,-29, -5,28.5, -5,-28.5, -6,28.5, -6,-28.5, -7,28.5, -7,-28.5, -8,28.5, -8,-28.5],
+	"hardpointAngleOffsets":[86, -86, 90, -90, 94, -94, 98, -98, 102, -102, 106, -106, 110, -110, 114, -114],
+	"turretAngleOffsets":[86, -86, 90, -90, 94, -94, 98, -98, 102, -102, 106, -106, 110, -110, 114, -114],
+
+	"barrelMode":"DUAL",
+	"animationType":"GLOW_AND_FLASH",
+	"glowColor":[85,140,255,255],
+
+	"interruptibleBurst":false,
+	"muzzleFlashSpec":{"length":13.0,
+					   "spread":130.0,
+					   "particleSizeMin":2.0,
+					   "particleSizeRange":8.0,
+					   "particleDuration":0.15,
+					   "particleCount":25,
+					   "particleColor":[85,140,255,255]},
+
+	"projectileSpecId":"A_S-F_phantasmagoria_micro_missile",
+	"fireSoundTwo":"A_S-F_phantasmagoria_micro_missile_fire",
+}

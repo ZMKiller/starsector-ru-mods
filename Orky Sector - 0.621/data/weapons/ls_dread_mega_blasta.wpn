@@ -1,0 +1,27 @@
+{
+	"id":"ls_dread_mega_blasta",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"turretSprite":"",
+	"turretGlowSprite":"",
+	"hardpointSprite":"",
+	"hardpointGlowSprite":"",
+	"glowColor":[150,255,150,255],
+	"turretOffsets":[1, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[1, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":35.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":12.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":8.0,
+					   "particleDuration":0.2,
+					   "particleCount":14,
+					   "particleColor":[150,255,150,255]},	
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"ls_mega_blasta_shot",  # projectile that will be fired
+	"fireSoundTwo":"kustom_blasta_fire",
+}

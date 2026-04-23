@@ -1,0 +1,391 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+Orky Ship,ls_orky,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_orky,"Dis 'ere ship have been made propa orky by the da boyz. Now it goez fasta and krump stuff real good! WAAAGH!
+
+Ork's love for speed inevitably result in various modifications made to make their ships go fasta. On the other hand, their complete disregard for maintenance and proper targetting also hinder their ship's reliability and accuracy, but these ships also tend to lack vulernable bits to be damaged in battle.
+
+- Top speed increased by %s/%s/%s/%s su
+- Ballistic and energy weapon range reduced by %s 
+- Weapon recoil increased by %s
+- Peak CR time reduced by %s
+- Weapon and engine durability increased by %s
+- Ship deals %s more collision damage and receives %s less damage from exploding ships.
+
+The orky modification already made a mockery of standard safety protocol, installing regular safety overrides on this ship is pointless. ",,,graphics/hullmods/orky.png
+Deathskulls,ls_deathskull,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_deathskulls,"That git iz now a proppa dee-re-lik good for lootin'. Now, were iz me blue paints, hur hur.
+
+Even amongst the Orks, the Deathskulls are known for their thieving and looting ways. Therefore it is no surprise they hoard significant amount of looted bits stored in every nook and cranny of their ships, allowing spare bits to be readily available when repair are needed. 
+
+The Deathskulls holds a superstition that the color blue will somehow bring them luck. Strangely enough, it seems their blue-painted ship are indeed able avoid some damage often enough to be a statistical anomaly.
+
+- Weapon and engine repair speed increased by %s
+- Gain %s/%s/%s/%s points of armor for damage calculation only, fighter gets %s
+",,,graphics/hullmods/DS.png
+Mek Speshul,ls_mek,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_mek,"Dis ship have da biggest and shininest generatas that give yer zzappas and blastas all da proper juice! Oi, don't touch that!
+
+This ship has been especially 'kustomized' by a mek boy and is even more deranged than the usual ork warship. Various handy bits and gubbins increase ship repair rate by %s , and supercharged generators increase energy weapon damage by %s . 
+
+However, overcharged and often hazardous power system layout makes the ship extremely vulnerable to failure in its power systems, causing a %s increase in overload duration and increase EMP damage taken by %s .",,,graphics/hullmods/mek.png
+Bad Moons,ls_badmoons,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_badmoons,"We'z got da most teef, da snazziest ship, and da most dakka! Dats why wez da best!
+
+The Bad Moons are the richest of all the Ork klanz, serving as a sort of merchant caste. These Orks prefer a posh and refined lifestyle, at least by Ork standards, but also spend their considerable wealth to purchase the most snazzy gear and gubbins. This resulted in a generally higher standard of equipment for orks. 
+
+In combat, The Bad Moons are also know to prefer to hang back and brandish their overwhelming ranged fire power instead of 'getting stuck in'.
+
+- Increase Max CR by %s
+- Increase energy and ballistic range by %s/%s/%s/%s
+- Fighter energy nad ballistic range increased by %s",,,graphics/hullmods/BM.png
+Evil Suns,ls_evilsuns,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_evilsuns,"Red unz go fasta!
+
+Evil Sunz are an Ork clan who are dedicated to speed and making as loud a noise as possible when in combat. The adopted the ork belief that things painted red will travel faster, and just like the deathskull's belief that blue is a lucky color, this has resulted in an actually noticiable increase in their ship's speed and mobility. 
+
+- Increase manuverability by %s 
+- Increase ship top speed by %s/%s/%s/%s su
+- Increase fighter top speed %s su",,,graphics/hullmods/ES.png
+Snakebites,ls_snakebites,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_snakebites,"Da old wayz iz da best!
+
+The snakebites are a rather primitive ork clan dedicated to the 'old ways', replacing many electronic in their ship with primitive counter part or squigs means they they are next to immune to electronic warfare, and their tough-as-nails ship are surprisingly hard to put down for good.
+
+- Reduce EMP damage taken by %s .
+- Non-fighter ships can slowly repair up to %s or %s of their max HP in battle, whichever is higher. ",,,graphics/hullmods/SB.png
+Blood Axes,ls_bloodaxes,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_bloodaxes,"Fink, you git! Fink! Getting duff'ed up before you can get stuck'in iz just wasteful it iz!
+
+The Blood Axes are an extremely unorthodox clan of orks known for using tactics, camouflage, and would even consider retreat as something to be done intentionally. Despite having no actual understanding of camouflage and electronic warfare, their attempt to imitate these 'taktiks' have somehow resoulted in similar results.
+
+- Ships sensor profile reduced by %s
+- Each ship contribute %s/%s/%s/%s ECM rating based on size of the ship
+- Damage taken from non-missile projectile fired by ships at least %s/%s/%s/%s/%s",,,graphics/hullmods/BA.png
+Goffs,ls_goffs,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_goffs,"We'z da biggest and strongest! Tink ovvuawise? Come hav a go then, yer runty little git!
+
+The Goffs are the largest and strongest ork clan, with largest and strongest orks. Unlike most other orks, Goffs take fighting extremely seriously and shuns most fancy tricks and tech, preferring to charge enemy head on and overwhelm with their heavy prow armor and close range weapons.
+
+- Ship Armor increased by %s in the front portion of the ship.
+- Ship Armor decreased by %s in the side and rear of the ship.",,,graphics/hullmods/ls_GO.png
+Kommandoz,ls_kommando,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_kommando,"Da uvva gitz can say wot dey want, but all dey do is gettin all shot up by oomies wiv half decent dakka. If yooz want da jobz done quick, proppa, and all sneaky-like, yooz call da Kommandoz.
+
+Kommando are a subgroup of orks that actually favor stealthy approach to warfare. Instead of charging in and guns blazinging, they prefer to hide in the darkness of the void before striking where the target is the weakest. Their various tricks and disguise used to hide themselves somehow works and reduce their sensor signature by %s. Their ability to sniff out vulernable targets also increase their damage to weapon and engine by %s. 
+
+Their disguise is so effective that for %s/%s/%s/%s seconds after the battle start (depending on hull size), Kommando ships have NO collision and cannot be hit unless they fire any weapon or enter within approximately %s/%s/%s/%s of an enemy ship or fighter. ",,,graphics/hullmods/ls_Kommando.png
+Fox Fervor,mikohime_dash,0,,,,,,,TRUE,,0,0,0,0,data.shipsystems.mikohime_dash,"Whoever designed this system has an almost ork-like obsession with speed. Despite the massive time-warping effect of this engine, the precieved timeflow of all living creatures in its area of effect is locked to the normal time-stream, creating a sense of extreme acceleration. 
+
+Press C in combat to shift the ship in the direction of the ship's current velocity, while multiplying ship timeflow by 4x for a brief moment. This will not affect the precieved time flow of those controlling it. Excess flux of the ship is also vented as EMP arcs if there are enemy targets within 500 SU, up to 8 arcs can be generated each dash. Quickly regenerate up to 4 charges. 
+
+THIS SYSTEM IS DELICATE AND WILL NOT FUNCTION IF SHIP HAS D-Mods",.,.,graphics/hullmods/maiden_serenade_refit.png
+Maiden Serenade (Looted),ls_onihime_serenade,0,,,,,,,TRUE,,0,0,0,0,data.shipsystems.ls_onihime_serenade,"The origin of this system and its original capability has been lost under a mess of orky wiring and generators. Allows gradual built up of charges in the engine that can be released by pressing 'C' during battle to grant a massive burst of speed along the ship's current direction of movement, the excessive power can also speed up reload of the ship's energy weapon and their ammo briefly. 
+
+Highly sensitive system means this system WILL NOT FUNCTION whilst the ship has any D-mods.",.,.,graphics/hullmods/maiden_serenade_refit.png
+Red Sun Boosta,ls_redsun_boosta,0,,,,,,,TRUE,,0,0,0,0,data.shipsystems.ls_redsun_boosta,"Press C in combat to activate a dash that also temporarily increase ship mass and flux dissipation, can store up to 4 charges.
+
+Highly sensitive system means this system WILL NOT FUNCTION whilst the ship has any D-mods.",,,graphics/hullmods/maiden_serenade_refit.png
+Mega Bommer,ls_Bommer,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_bommer,"Da big bommaz iz wot yooz need when you need some gitz krumped good! Nuff dakka or bommas to blast or bomm any gitz with plenty to spare!
+
+This ship is a specialized ork Bommer craft, with large internal bay to carry %s more Missile and Ballistic Weapon Ammo, if those ammo regenerate, they also regenerate %s faster. However, these bays are generally not efficient in storing long range missile and their fuel, as a result, any large missile with a max range greater than %s will not receive additional ammo. 
+
+Ork Bommer sometime specialize in delivering heavy ballistic payload, accordingly, any large ballistic weapon on this ship will additionally gain %s rate of fire and flux cost reduction.
+
+Not compatible with expanded magazine or missile racks. ",,,graphics/hullmods/ls_bomma.png
+Da Rok,ls_rok,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_rok,"Ork Roks are hollowed out asteroids repurposed for war. These ramshackle construction often comes with various combat modules bolted around the rocky core. 
+
+The rock itself is generally not armored, but its rocky mass can absorb low strength weapons, giving it an additional %s effective armor that cannot be destroyed by weapon hit. The sheer mass of the Rok also makes penetrating kinetic weapon ineffective, reducing kinetic weapon damage to hull and armor by %s . The protection offered by volumes of rocks and a general lack of critical ship systems, also reduce crew loss and damage to the ship's weapon by %s .
+
+Not compatible with Unstable Injector, Heavy Armor or 'Ard Case.
+
+The Rok's module will not be able to install Converted Hanger, Shield Conversion, Unstable Injector, and Supa Overdrive. Though the main rok's super-overdrive effect is applied to the modules.",,,graphics/hullmods/ls_rok.png
+Roky,ls_half_rok,,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_half_rok,"Portions of this ship is built upon and supported by chunks of asteroids, while the ship has grown to subsume the asteroid pieces, the rocky interior still provides some structural protection, giving it an additional %s effective armor that cannot be destroyed by weapon hit. The protection offered by volumes of rocks and a general lack of critical ship systems, also reduce crew loss and damage to the ship's weapon by %s .",,,graphics/hullmods/ls_rok.png
+Supa Gitfinda,ls_supa_gitfinda,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_supa_git_finda,"This improved gitafinda built into an orky ship is far more advanced, improving autofire accuracy by %s and reducing the recoil of weapons by %s . The ship's range is also massively increased (by ork standards) by %s . 
+
+Not compatible with most other fire-control hullmods.",,,graphics/hullmods/ls_supa_gitfinda.png
+Ramma,ls_ramma,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_ramma,"Only pansy gitz muck'bout wiv dem dakka gubbinz! Getting stuck'in iz wotz real proppa orky!
+
+A ship dedicated towards close range ramming attack with various weapons, being built to tear through armored hull while padded with all sort of junks to absorbthe inevitable explosion when they hit something good, but less effective against kinetic penetration when compared to real armor. All this focus on gettin'stuck in means there is little effort to make the ship able to shoot worth a zog. 
+
+-Weapon range is heavily reduced beyond %s. (If Supa Override is installed, weapon range penalty from Supa Override applies instead) 
+
+-Kinetic damage to the ship's armor increased by %s 
+
+-Damage of this ship's explosion, and ship explosion damage taken both reduced to %s
+
+-%s
+
+This ship will behave more aggressively in battle and attempt to ram enemies when engaging. Not compatible with most range increasing hullmods and unstable injector.",,,graphics/hullmods/ls_ramma.png
+Ramshackle,ls_ramshackle,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_ramshackle,"The ramshackle construction of this ship makes it very easy to bail out of our put back together if damaged. Reduce crew loss in combat by %s and the ship will be recovered with an addtionall %s to %s of Hull and CR. After battle, the ship will repair up to %s of the damage received instantly at no cost.",,,graphics/hullmods/ls_ramshackle.png
+Buzza Generata,ls_buzza_generata,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_buzza_generata,"If the ship is installed with Supa Override increase time flow of ship by %s when the ship system is active, and by a further %s if shield shunt is also installed. However, the routing of power to the generator for this effect reduce weapon rof by %s and top speed by %s . 
+
+If Supa Override is not installed, the generator reroute excess power to shield, reducing shield damage taken by %s.",,,graphics/hullmods/ls_buzza_generata.png
+Landa,ls_landa,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_landa,"Landing shuttle specialized to land a mob of ork boyz on da ground and provide support. Increases the effective strength of planetary raids by %s, up to the total number of marines in the fleet.",,,graphics/hullmods/ls_landa.png
+Ray-on Generata,ls_loadsa_generata,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_loadsa_generata,"A crude orky imitation of the Aperion's unique reactor, where sheer volume of generators are installed to mimic partial effect of the original, depending on the output configuration. If the ship is installed with Supa Override increase time flow of ship by %s when the ship system is active, and by a further %s if shield shunt is also installed.
+
+If Supa Override is not installed, the generator reroute excess power to shield, reducing shield damage taken by %s.",,,graphics/hullmods/ls_loadsa_generata.png
+Basilisk's Gaze,ls_basilisk_gaze,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_basilisk_gaze,"Advanced Point Defense system integration greatly improves the performance of any PD weapon installed on this ship. 
+
+Reduce OP cost of all small PD weapon by %s .PD weapon are immune to flares and have the best possible accuracy.Damage to fighter and missiles are increased by %s , PD weapon range is increased by %s and they are now immune to flares. Beam PD weapon range are increased by %s instead. ",,,graphics/hullmods/ls_basilisk_gaze.png
+Mork's Gaze,ls_mork_gaze,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_mork_gaze,"Bastardized basilisk gaze system modified to improve performance of small ballistic and energy weapons. 
+
+Reduce OP cost of all small ballistic and energy weapon by %s. Damage to fighter and missiles are increased by %s , PD weapon range is increased by %s and they are now immune to flares. Furthermore, all weapon recoil is reduced by %s ,improving the ork's poor accuracy. ",,,graphics/hullmods/ls_mork_gaze.png
+Orky Core,ls_orky_core,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_orky_core,"Boss! Wez looted one of dem sparkly thingz, it even flies one of dem smooth botes dat da boyz cant fly! So yooz can go krump da useless gitz while da sparkly thing do da flyin fer ya!
+
+Ork meks have some how managed to subdue an AI core through a mix of zzappy gubbinz, bonk with spanner, and green paint. Regardless, this AI core now controls this formally automated ship together with a small ork crew. The AI control offset much of the ork's terrible gunnery skills, whilest allow various orky gubbinz to be installed. However, such forceful control of an AI core is inheriently unstable, causing various issues.
+
+- %s
+- Reduce max CR by %s 
+- Minor chance to cause %s in combat. ",,,graphics/hullmods/ls_orky_core.png
+Ram Prow,ls_ram_prow_ship,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_ram_prow_ship,"A reinforced ram prow is attached to the front of this ship, with %s HP and %s Armor. When the parent ship activate its ship system, the ram prow will activate a low power damper field, reducing all damage taken by %s . The Prow itself is reinfroced with various junk padding, reducing explosive damage recieved by %s .
+
+The Prow will also recieve the half the benefit from Ard Case or Heavy Armor installed on the Parent Ship. ",,,graphics/hullmods/ls_ram_prow.png
+Weird Ship,ls_weird,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_weird,"This ship is build to house ork pskyers known as weird boys, extremely volitile and unstable orks that can magnify the ork's innate psychic ability to empower various systems.
+
+This ship provide %s cound as two ships for mob rule, (does not stack with Golden Paint). Each ship contributing to mob rule additionally provide this ship with %s Energy Weapon damage, shield efficiency, and system cooldown reduction.
+
+Furthermore, the ship also gains up to %s Speed, mobility, and energy weapon damage as flux level increase, with the effect maxed out at max flux level. ",,,graphics/hullmods/ls_weird.png
+Snazzy Dakka,ls_snazzdakka,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_snazzdakka,"This ship is specialized to carry the largest and fanciest dakka the orkz got.
+
+The ship's ballstic and energy ammo regeneration rate is increased by  %s , and the large weapons on the ship receive a bonus depends on the weapon's rate of fire.
+
+If the weapon's rate of fire is greater than  %s per second, that weapon gains  %s  base range.
+
+Otherwise the weapon would gain  %s  rate of fire bonus if ballistic, and  %s  flux cost reduction if energy. ",,,graphics/hullmods/ls_snazzdakka.png
+More iz Bigga!,ls_more_is_big,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_more_is_big,"Certain mekboy annoyed the fact that the size of their guns are limited by the gitz called 'phsiks' came to the glorious realization that having a more gunz means you have bigger gunz as well. Whoever doubted the claim soon find out that all that dakka can sure make any smart-gitz a lot smaller. As a result, this ship is designed to carry overwhelming firepower in the form of dakka and rokkits, even if they have to be smaller than usual be crammed into every nook and cranny of the ship.
+
+All of the weapons on the ship's small ballistic and composite mounts gain %s base range. 
+All small ballistic weapon has their OP cost reduced by %s .
+All small ballistic and missile weapon with a base range below 1600 SU have their clip size increased by %s .
+Missile wepaon have their rate of fire reduced by %s . ",,,graphics/hullmods/ls_more_is_big.png
+Shouty Toobz,ls_big_megaphone,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_big_megaphone,"This ship is equipped with cuttin' edge ork takital kommand un' kontrol syshutum. Giant megaphone of some sort that broadcast a warboss' command directly into the ears of their underlings. The ways in which these broadcast are transmitted to other ork ships across the void of space ranges from half-a-weirdboy brain to signal kannonz connected directly to da shoty toob.
+
+While commanded by the player, the ship increase the player's command point recovery rate by %s. The ship's Max CR is increased by %s regardless. 
+
+In battle, each deployed ship with Shouty Toobz increase the max ships used for calculating mob rule buff by %s , up to a maximum of %s ships (the cap is shared with bonus provided by bosspole, mounting a boss pole on this ship will not provide more cap). 
+
+This ship count as %s ships for the purpose of calculating mob rule bonus, not stacking with other similar bonus.
+
+Can only be installed on Orky Ships and not compatible with Operations Center.",,,graphics/hullmods/ls_megaphone.png
+Escort Karrier,ls_escort_karrier,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_escort_karrier,"The Blood Axes are unique amongst the Orks by having something all other clan lacked. Patience. The are the only ones who can accept the concept of 'not krumping now can mean betta krumping later', and their fly boys can actually be seen with dedicated carriers that work with larger ork warships to carry out effective coordinated strikes that could impress even human carrier commanders.
+
+While within %s SU of a larger ork ship, fighter refit speed increased by up to %s . This effect is %s if the ship is a capital ship. ",,,graphics/hullmods/ls_escort_karrier.png
+Orky Sub,ls_orky_sub,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_orky_sub,"An exceptional specimen of proper ork utilization of Phase technologies, these ramshackle 'subs' operate much like maritime submersibles the orks would build for plantary invasions, dipping in and out of p-space to launch a barrage of fire before going into hiding. Their potentially intentional alteration to the phase coil greatly slowed down the time flow effect the ship would gain by entering p-space and reduced engine performance in exchange of surprisingly low energy requirement for prolonged dive.
+
+Phase timeflow effect reduced by %s
+While phased, the ship's max speed is further reduced to %s of normal
+However, while phased, the ship's speed %s ",,,graphics/hullmods/ls_orky_sub.png
+Kan,ls_kan,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_kan,"Ork Kans are crude combat mechs piloted by Ork or Gretchins, they are far sturdier than conventional fighters and the amount of junks piled upon them makes them very difficult to destroy without heavy firepower.
+
+Weapon and Engine Durability increased by %s (Strike Craft only gains %s )
+
+Projectile and Missile hit that deals less than %s of the ship's current hp as damage will have their damage reduced by up to %s .
+
+Smaller size of these craft prevent the use of Hard Shell.",,,graphics/hullmods/ls_kan.png
+,,,,,,,,,,,,,,,,,,,
+Boss Pole,ls_bosspole,0,,Orky,special,Support,3000,,,,0,0,12,20,data.hullmods.ls_bosspole,"A real warboss haz plenty of 'eads for his pointy stikk.
+
+A boss pole marks this ship as the ride of a  powerful ork nob or warboss, under its watch, ork crew work extra hard. While commanded by the player, it increase the player's command point recovery rate by %s. The ship's Max CR is increased by %s regardless. 
+
+In battle, each deployed ship with Bosspole increase the max ships used for calculating mob rule buff by %s , up to a maximum of %s ships.
+
+Can only be installed on Orky Ships and not compatible with Operations Center.",,,graphics/hullmods/ls_bosspole.png
+Supa Overdrive,ls_orky_override,0,,Orky,"special, engines, offensive","Special, Engines,Weapons",4000,,,,15,30,45,60,data.hullmods.ls_orky_override,"Yooz will nevva have nuff dakka or nuff speed. But this is close.
+
+A ludicrous overcharge of the ship's reactor and system, at this point even Ork's latent psychic ability struggles to hold this ship together. 
+
+Increase ship speed by %s/%s/%s based on hull size, acceleration is massively increased while deceleration button is removed, you pansy git!
+
+Peak Operating time is further reduced by %s. Range Beyond 500su is reduced to %s. 
+
+Flux Dissipation Rate is increased by %s , but ship can no longer actively vent. Weapon Flux cost is also decreased by %s and ballistic and energy weapon damage is increased by %s.
+
+All these insane modifications makes all ship system more vulernable to damage, increase weapon and engine damage taken by %s.
+
+Can only be installed on Cruiser or smaller Orky ships. 
+
+",,,graphics/hullmods/ls_orky_override.png
+'Ard Case,ls_ard_case,0,,Orky,defensive,Defenses,2500,,,,8,15,20,40,data.hullmods.ls_ard_case,"A proppa methul bawks around all da squishy bits with all da looted ard bits.
+
+The bolted on nature of this armor reduces armor effective to %s of normal. However, the excessive amount of bolt on plates also increase armor value by %s/%s/%s/%s based on hull size. Excessive bulk of the outer plating interfare with shield generation and increase shield damage taken by %s .
+
+Can only be installed on orky ships and not compatible with heavy armor.",,"Increase HE and Frag Damage taken by %s , shield damage taken and upkeep further increased by %s , but gains an additional %s armor.",graphics/hullmods/ls_ard_case.png
+Bitza Generata,ls_blitza,1,,Orky,offensive,Weapons,3000,,,,3,5,7,10,data.hullmods.ls_blitza,"Special generata that makes all da fancy blasta go fasta. Can be overcharged to go even fasta, and who doesn't like fasta!
+
+Increase energy projectile speed by %s  and energy ammo regen by %s .
+
+When mounted on non-ork ship, the inefficent generata increase energy weapon flux cost by %s .",,"Increase energy weapon rof by %s  , but also cause ship's weapon to have a malfunction chance of %s .",graphics/hullmods/ls_blitza.png
+Thunda Charga,ls_thunda_charga,2,,Orky,offensive,Weapons,4000,,,,8,15,20,30,data.hullmods.ls_thunda_charga,"Now dis will give da gitz a proppa zzapp! 
+
+Special capciator that increase flux cost and decrease rate of fire of energy weapon by  %s, but the overcharged blast significantly improve energy weapon damage by %s
+
+Trying to use these on regular ships will inevitably interfare with onboard electronics, reducing energy weapon range by %s and Max CR by %s .",,,graphics/hullmods/ls_thunda_charga.png
+'Xplody Propellant,ls_explody_propella,0,,Orky,offensive,Weapons,2000,,,,5,10,15,20,data.hullmods.ls_explody_propella,"What makes dakka go fasta? Dakka yer dakka!
+
+Explosive propellant over charge all ballistic weapons and grant a flat range bonus of %s. This unstable method of firing will increase recoil by %s and increase weapon damage taken by %s. Super charged projectile also travel %s faster.
+
+Only orks wouold be mad enough to use this kind of propellant.",,"Ballistic range increase by %s instead, but storage for explosive propellant also cause ship to take %s damage to hull and armor.",graphics/hullmods/ls_explody_propella.png
+Gitfinda,ls_git_finda,1,,Orky,offensive,Weapons,3000,,,,3,5,7,10,data.hullmods.ls_git_finda,"Dere dey are ya gitz, dakka dat place!
+
+Strange targetting equipment that could range from giant telescope to special squigs, increase autofire accuracy by %s and reduce recoil by %s.
+
+On ork ship, also increase Non-Beam PD weapon Range by %s .",,Increase ballistic and energy weapon range by %s,graphics/hullmods/ls_gitfinda.png
+Powah Pump,ls_pump,1,,Orky,offensive,Weapons,3000,,,,3,5,10,15,data.hullmods.ls_pump,"Da bigga boss needs da bigga pump!
+
+Increase range of all ork flamer weapon by %s SU.
+
+Mounting this on non-orky ship will cause maintenance issues, reducing max CR by %s , and the dangerous piping are prone to bursting, increasing crew combat loss by %s .",,,graphics/hullmods/ls_pump.png
+Rokkit Runts,ls_rokkit_runt,0,,Orky,offensive,Weapons,5000,,,,6,10,15,25,data.hullmods.ls_rokkit_runts,"Oi, dont ya dare drop me rokkit ya runty grot! Or yooz da next un I shove into da launch toob!
+
+A large group of gretchin loader and ammo carrier together with expanded missile magazine greatly increase missile ammo capacity by %s and ammo regeneration rate by %s , however, the capacity bonus applies only to missile with less than %s range. Lots of hand to reload the missile also increase missile rate of fire by %s . However, Poor ammo handling of the Grots also increase explosive damage this ship receive by %s . 
+
+If installed on non-orky ship, %s damage this ship receive will be increased by %s . ",,,graphics/hullmods/ls_rokkit_runt.png
+Grot Rigger,ls_grot_rigger,1,,Orky,"defensive, special","Special, Defenses",6000,,,,8,16,24,40,data.hullmods.ls_grot_rigger,"Please! N-no more kicking! Wez gonna make it nice and strong!
+
+A large team of gretchin repair crew can jury rigg and maintain various part of the ship with questionable effectiveness. Increase the rate of weapon and engine repair in combat by %s . Also increase Peak CR time of ships by %s/%s/%s/%s seconds respectively.
+
+While in combat, can slowly repairt the ship's HP when the ship's HP is below %s , up to %s or %s of the ship's max HP, which ever is higher. 
+
+If used on non-orky ships, the grot's horrible maintenance habit will reduce the ship's max CR by %s. Not compatible with hardened subsytem or Automated Repair Unit.",,,graphics/hullmods/ls_grot_rigger.png
+Grot Oiler,ls_grot_oiler,1,,Orky,offensive,Fighters,5000,,,,5,10,15,25,data.hullmods.ls_grot_oiler,"We'z gonna fill her up right and proppa boss!
+
+A large team of grots is charged with repairing on refueling of strike crafts in the hanger increase the rate strike crafts are refitted and launched by %s . However, their poor maintenance habit and care of fighter part also increase the rate replacement rate decrease due to fighter loss by %s .
+
+Not compatible with expanded deck crew. If used on non-orky ships, the grot's horrible maintenance habit will reduce the ship's max CR by %s.",,,graphics/hullmods/ls_grot_oiler.png
+Golden Paint,ls_golden_paint,1,,Bad Moons,defensive,Defenses,6000,,,,4,6,9,12,data.hullmods.ls_golden_paint,"Da flashiest paint we can find! With this, yer krooza will be ded flashy and xplody! Bad? Who doesnt like a big boom?!
+
+A highly reflective coating of gold or whatever other shiny stuff was used to cover the ship's hull, reducing EMP and Energy damage taken by armor and hull by %s. But yellow is also da explody color, increasing HE damage taken by armor and hull by %s.
+
+The flashy coating is also extra inspiring to da boyz, making this ship count as %s ships for mob rule if the ship is also orky.
+
+Maintaining this on non-orky ship require constant maintenance to actually have an effect, increasing monthly supply cost by %s.
+
+",,,graphics/hullmods/ls_golden_paint.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+# STOMPA BUILDER,,,,,,,,,,,,,,,,,,,
+Effigy,ls_effigy,0,,Orky,,,,,TRUE,,0,0,0,0,data.hullmods.ls_effigy,"Stompas and Gargants are Effigy of Gork and Mork, designed to personify the ork gods and serve as an inspiration to orks on the battlefield. While not as agile as smaller ork mechs, they are nevertheless mobile enough mostly manuver around collision and explosions.
+
+Increase weapon and engine HP by %s 
+Reduce collision and ship explosion damage taken by %s
+
+The following effect do not stack with other similar effects:
+Count as %s ships for the purpose of calculating mob rule bonus
+Increase the max ships used for calculating mob rule buff by %s , up to a maximum of %s ships.
+
+Not compatible with 'Ard Case.",,,graphics/hullmods/ls_effigy2.png
+Kustomized Stompa (DS),ls_stompa_swap_ds,,,Deathskulls,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_ds,Swappable Weapons,,,
+Kustomized Stompa (BA),ls_stompa_swap_ba,,,Blood Axes,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_ba,Swappable Weapons,,,
+Kustomized Stompa (BM),ls_stompa_swap_bm,,,Bad Moons,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_bm,Swappable Weapons,,,
+Kustomized Stompa (ES),ls_stompa_swap_es,,,Evil Sunz,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_es,Swappable Weapons,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+# BELLYS,,,,,,,,,,,,,,,,,,,
+Belly: Armor,ls_selector_stompa_bellyarmor,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_bellyarmor,"Apply additional armor plating, increase armor by %s
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
+Belly: Lobba,ls_selector_stompa_belly_lobba,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_belly_lobba,"Add a belly lobba firing flak shells.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
+Belly: Flamer,ls_selector_stompa_belly_flamer,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_belly_flamer,"Add a belly flamer.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
+Belly: Hanger,ls_selector_stompa_belly_hanger,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_belly_hanger,"Add a belly hanger for grot bombs, large opening reduce armor by %s
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
+Belly: Gun,ls_selector_stompa_bellygun,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_bellygun,"Add a slow firing, but monstrously powerful bellygun, large opening reduce armor by %s
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
+,,,,,,,,,,,,,,,,,,,
+# HEADS:,,,,,,,,,,,,,,,,,,,
+Head: Big Horn,ls_selector_stompa_head_horn,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_horn,"Add a big horned head to the stompa, increase armor by %s and improve ramming damage.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
+Head: Big Hat,ls_selector_stompa_head_hat,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_hat,"Add an important looking hat to the stompa, provide %s ECM rating for the fleet and cause the stompa to count as %s ships for the purpose of calculating Mob Rules (replacing the effect from Effigy)
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
+Head: Powah Burna,ls_selector_stompa_head_burna,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_burna,"Add a head with a built in high pressure burna with improved performance.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
+Head: Krusha Kannon,ls_selector_stompa_head_krusha,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_krusha,"Add a head with a built in Krusha Kannon, cramped space severely limit its rate of fire, however. 
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
+Head: Rokkit Toob,ls_selector_stompa_head_missile,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_missile,"Add a head with a built-in smart rokkit tubes, effective against smaller targets.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
+Head: Eye of Mork,ls_selector_stompa_head_eye,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_eye,"Add a built in eye of mork to the stompa's head with limited charges, exposed circuit next to the control cockpit increase emp damage taken by %s
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
+,,,,,,,,,,,,,,,,,,,
+# GUN_ARM,,,,,,,,,,,,,,,,,,,
+R Arm: Deth Kannon,ls_selector_stompa_arm_deth,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_deth,"Add a Deth Kannon firing very powerful HE shells
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
+R Arm: Supa Gatla,ls_selector_stompa_arm_gatla,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_gatla,"Add a supa-gatla able to spit out terrifying about of bolts able to shread shield and pressure light armor.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
+R Arm: Splasha Attack Gun,ls_selector_stompa_arm_splasha,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_splasha,"Add a massive flamer able to overheat a target's flux grid and melt exposed hull.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
+R Arm: Snazz Megakannon,ls_selector_stompa_arm_snazz,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_snazz,"Add a fancy snazz mega kannon able to deal a variety of deadly effect on hit.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
+R Arm: Grabba Smasha,ls_selector_stompa_arm_grabba,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_grabba,"Add a Grabba-Smasha to pull target close for a good krumpin.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
+R Arm: Rotary Krusha,ls_selector_stompa_arm_krusha,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_krusha,"Add a rotary krusha kannon able to rapidly fire a variety of shell to handle almost any targets, limited by its magazine size.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
+,,,,,,,,,,,,,,,,,,,
+# TECH_ARM,,,,,,,,,,,,,,,,,,,
+L Arm: Mega Choppa,ls_selector_stompa_arm_choppa,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_choppa,"Add a powerful mega-choppa able to destroy almost any target up close. 
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_l_arm_selector.png
+L Arm: Lifta Droppa,ls_selector_stompa_arm_lifta,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_lifta,"Add a lifta-droppa beam that allows the stompa to pick up smaller ships and toss them.
+
+Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_l_arm_selector.png
+,,,,,,,,,,,,,,,,,,,
+Ard Boyz,ls_orky_commission,,,Orky,,,,FALSE,TRUE,,0,0,0,0,data.hullmods.ls_orky_commission,"Now yooz working for da clanz, yooz get da 'ardest gitz working for ya.
+
+Tougher Ork ard boyz take over control of your ships, their toughness means they are harder to kill in battle, and also handle the unreliable ork ships better. A greater concentration of orks on even non-orky ships means those ship can somewhat contribute to the psychic field of the orks.
+
+- Crew loss in combat reduced by %s
+- PEAK CR Time increased by %s on orky ships only
+- Every non-orky ship now count as %s ships for calculating mob rule bonus. (Note that they will not receive benefit from mob rule)",,,graphics/hullmods/ls_ard_boyz.png
+,,,,,,,,,,,,,,,,,,,
+Mob Rule,ls_mob_rule,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_orky,,,,graphics/hullmods/ls_mob_rule.png
+Rok Module,ls_RokModule,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_RokModule,Reduce Explosive Damage on destruction by half,,,graphics/hullmods/reduced_explosion.png
+Temporal Forcefield,ls_temporal_forcefield,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.shipsystems.ls_temporal_forcefield,,,,
+Temporal Shield,ls_temporal_shield,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.shipsystems.ls_temporal_shield,,,,
+Ram Prow,ls_ram_prow,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_ram_prow,"Reduce Explosive Damage on destruction, reduce a quarter of high explosive damage recieved",,,
+Armor Module,ls_armor_module,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_armor_module,,,,
+Ard Field,ls_ard_field,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.shipsystems.ls_ard_field,,,,
+Paramork Engines,ls_paramork_engine,0,,Orky,,,,,TRUE,,0,0,0,0,data.hullmods.ls_paramork_engine,"The ship is propelled by two extra modular engine that provides it with an additional %s of top speed and increased mobility in combat. This bonus is lost if these engines are destroyed. 
+
+Each engine has %s HP and %s armor, these can be increased further by Heavy Armor or Ard Case installed on the main body. (Considered frigate for the purpose of calculating bonus amount.
+
+The highly unusual engine arrangement prevent the installation of Supa Override or Unstable Injector.",,,
+Boosta Module,ls_stompa_factory_engine,0,,Orky,,,,,TRUE,,0,0,0,0,data.hullmods.ls_stompa_factory_engine,The ship is propelled by two extra modular engine that provides it with majority of its speed and mobility.,,,
+,,,,,,,,,,,,,,,,,,,
+Fighta Ace,ls_fighta_ace,0,,Orky,,,,,TRUE,,0,0,0,0,data.shipsystems.ls_fighta_ace,"This git knooz wot his doing.
+
+Can use a quick combat dash with multiple charges, damage taken reduced during the dash.",,,graphics/hullmods/ls_killboy.png
+Deff Skwardon,ls_deff_skwardon_hullmod,0,,Orky,,,,,TRUE,,0,0,0,0,data.hullmods.ls_deff_skwardon_hullmod,"Elite Ork Fighta-Bomma Skwadron lead by boss Uzgob ""Mavaork"". The Deff Skwardron are known to gettin da job done even when they got 'fragged to zog'. 
+
+Damage to Fighter and Missile increased by %s .
+Frag and Kinetic damage taken reduced by %s .
+
+After combat start, spawns the two wingmen. If Uzgob is destroyed or land to refit, the wingmen will ditch to get a new plane when their boss return to the battle field. 
+
+%s
+An absolute madboy who can't fly or shoot worth a zog, but can be counted to get the job done one way or another.
+750 HP, 150 Armor
+2x Gatla Blasta
+2x Mini Rokkit Pod
+
+When slightly damaged, will go berserk and attempt to ram nearby enemy, gain massive damage reduction for the duration of the effect.
+
+%s
+Never shot down (self-claimed), 219 kills (27 confirmed).
+2x Big Shoota
+2x Grot Shoota
+2x Smart Rokkit
+
+Fire Fancy Flare that iz supposed to do stuff.",,,graphics/hullmods/ls_killboy.png
+,,,,,,,,,,,,,,,,,,,
+Lao Baa Squadron,ls_baa,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_baa,"The Lao Baa mercenary groups are known for their tenancity in combat and their ship modification shows this, increasek peak CR duration by %s and reduce duration of overload by %s. Their well tuned ship also has improved OP and comes with built-in Miemieko drones providng powerful defensive support.",,,graphics/hullmods/ls_baa.png
+Apeiron Reactor,ls_apeiron_reactor,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_apeiron_reactor,"Original spec reactor of the Aperion class gunship, improving the ship's timeflow by %s.",,,graphics/hullmods/ls_apeiron_reactor.png
+Lambda Engineering,ls_lambda_engineering,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_lambda_engineering,"The mysterious Lambda research lab incorporated many cutting edge tech into this vessal to give it a great burst of firepower before falling back to vent. These modification results in %s increase in rate of fire and ammo regeneration for energy weapon, and flux cost is reduced by the same amount. Overcharged flux outflow pipe also %s increase in vent rate.
+
+There is some speculation that the tech employed aren't fully human in nature. ",,,graphics/hullmods/ls_lambda.png

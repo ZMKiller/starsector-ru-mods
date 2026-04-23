@@ -1,0 +1,28 @@
+{
+    "displayName": "Nullifier",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "hullId": "hyperion",
+    "hullMods": [
+        "eccm",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_hyperion_nullifier",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ionbeam",
+                "WS 002": "ionbeam"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "typhoon"}
+        }
+    ]
+}

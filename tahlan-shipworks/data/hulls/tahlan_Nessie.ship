@@ -1,0 +1,254 @@
+{
+  "hullName": "Nessie",
+  "hullId": "tahlan_Nessie",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/tahlan/ships/tahlan_Nessie.png",
+  "style": "LOW_TECH",
+  "height": 153,
+  "width": 232,
+  "center": [116, 85],
+  "collisionRadius": 160.5,
+  "shieldCenter": [0.5, 0],
+  "shieldRadius": 142,
+  "viewOffset": 0,
+  "builtInMods": [
+    "phasefield",
+    "delicate"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 83,
+      "angle": -12,
+      "locations": [43, 32]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 83,
+      "angle": 12,
+      "locations": [43, -32]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 31,
+      "locations": [43, 94]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -31,
+      "locations": [43, -94]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 119.5,
+      "locations": [-10, 97]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -119.5,
+      "locations": [-10, -97]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": 145.5,
+      "locations": [-37.5, 10]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": -145.5,
+      "locations": [-37.5, -10]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [63, 81]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [63, -81]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [62.5, 46]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [62.5, -46]
+    },
+    {
+      "id": "WS0013",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [7, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-36, 75.5],
+      "length": 46,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-36, -75.5],
+      "length": 46,
+      "width": 24,
+      "angle": -180,
+      "contrailSize": 100,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-32, 97],
+      "length": 19.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-32, -97],
+      "length": 19.5,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, 19],
+      "length": 23,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, -19],
+      "length": 23,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, 25],
+      "length": 21,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, -25],
+      "length": 21,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, 12],
+      "length": 21,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, -12],
+      "length": 21,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -72.5, -7,
+    -83, -11,
+    -83, -28,
+    -73, -33.5,
+    -32.5, -33,
+    -17.5, -47.5,
+    -37.5, -60,
+    -28.5, -104.5,
+    -10, -115,
+    2.5, -105,
+    45.5, -115,
+    65.5, -98,
+    62, -23,
+    48.5, -20,
+    15.5, -27.5,
+    5.5, -16.5,
+    20, -0,
+    5.5, 16.5,
+    15.5, 27.5,
+    48.5, 20,
+    62, 23,
+    65.5, 98,
+    45.5, 115,
+    2.5, 105,
+    -10, 115,
+    -28.5, 104.5,
+    -37.5, 60,
+    -17.5, 47.5,
+    -32.5, 33,
+    -73, 33.5,
+    -83, 28,
+    -83, 11,
+    -72.5, 7
+  ]
+}

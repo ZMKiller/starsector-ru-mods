@@ -1,0 +1,140 @@
+{
+  "hullName": "Vortex",
+  "hullId": "swp_vortex",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/swp/ships/swp_vortex.png",
+  "style": "HIGH_TECH",
+  "height": 171,
+  "width": 134,
+  "center": [67, 80],
+  "collisionRadius": 111.396812,
+  "shieldCenter": [4, 0],
+  "shieldRadius": 105.120171,
+  "viewOffset": 0,
+  "builtInMods": [
+    "surveying_equipment"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-39, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 45,
+      "locations": [31, 32]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -45,
+      "locations": [31, -32]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 90,
+      "locations": [-37, 51]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -90,
+      "locations": [-37, -51]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        47.5, 6,
+        38, 5,
+        55, 11
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        38, -4.5,
+        47.5, -5.5,
+        55, -11
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-78, 11],
+      "length": 80,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-78, -11],
+      "length": 80,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67, 52],
+      "length": 80,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67, -52],
+      "length": 80,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    63.5, -14.5,
+    74, -30.5,
+    -48, -66,
+    -65, -55,
+    -52, -23.5,
+    -75, -15.5,
+    -79, 0,
+    -75, 15.5,
+    -52, 23.5,
+    -65, 55,
+    -48, 66,
+    66.5, 37.5,
+    72.5, 22,
+    63.5, 14.5
+  ]
+}

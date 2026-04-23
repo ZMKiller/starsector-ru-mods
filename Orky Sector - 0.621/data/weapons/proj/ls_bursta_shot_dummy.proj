@@ -1,0 +1,24 @@
+{
+	"id":"ls_bursta_shot_dummy",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"onFireEffect":"data.weapons.ls_bursta_onfire",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":0,
+	"hitGlowRadius":0,
+	"width":0,
+	"fadeTime":0.1,
+	"fringeColor":[255,165,30,0],
+	#"coreColor":[255,225,175,0],
+	"coreColor":[255,255,255,0],
+	"glowColor":[255,155,55,0],
+	"glowRadius":0,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":""
+	#"bulletSprite":"graphics/missiles/shell_round_lrg.png"
+}

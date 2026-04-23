@@ -1,0 +1,26 @@
+{
+	"id":"ls_nail_blasta",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/ls_nail_blasta_turret.png",
+	"hardpointSprite":"graphics/weapons/ls_nail_blasta_hardpoint.png",
+	"hardpointGlowSprite":"graphics/weapons/ls_nail_blasta_glow.png",
+	"glowColor":[100,100,225,200],
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[18, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[18, 0],
+	"hardpointAngleOffsets":[0],	
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":15.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":20.0,
+					   "particleSizeMin":4.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.1,
+					   "particleCount":24,
+					   "particleColor":[120,120,50,125]},
+	"projectileSpecId":"ls_nail_blasta_shot",  # projectile that will be fired
+	"fireSoundTwo":"nail_blasta_sound",	
+}

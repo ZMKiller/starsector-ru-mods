@@ -1,0 +1,181 @@
+{
+  "hullName": "Murmidon (LG)",
+  "hullId": "sfcmurmidonlg",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_torso.png",
+  "style": "MIDLINE",
+  "height": 116,
+  "width": 118,
+  "center": [59, 58],
+  "collisionRadius": 102,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 108,
+  "viewOffset": 0,
+  "builtInMods": [
+    "andrada_mods",
+    "solar_shielding"
+  ],
+  "builtInWeapons": {
+    "WS0001": "sfcmurmidonheadlg",
+    "WS0006": "sfcmurmidonrightshoulderlg",
+    "WS0007": "sfcmurmidonleftshoulderlg",
+    "WS0008": "sfcmurmidonblasterlg",
+    "WS0009": "sfcmurmidoncannonlg",
+    "WS0010": "sfcmurmidonleftwinglg",
+    "WS0011": "sfcmurmidonrightwinglg"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [6, -0],
+      "renderOrderMod": 400
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [36, 22]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": -0,
+      "locations": [36, -22]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [11, 21],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [11, -21],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [15, -59.5],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [15, 59.5],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 25,
+      "locations": [18, 58.5],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": -25,
+      "locations": [18, -58.5],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0010",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": 0,
+      "locations": [-15, 34],
+      "renderOrderMod": 250
+    },
+    {
+      "id": "WS0011",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": -0,
+      "locations": [-15, -34],
+      "renderOrderMod": 250
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-37.5, 37],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-37.5, -37],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-36.5, -26.5],
+      "length": 40,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-36.5, 26.5],
+      "length": 40,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    54.5, -22.5,
+    19.5, -44.5,
+    8, -57,
+    -22.5, -48.5,
+    -22.5, 48.5,
+    8, 57,
+    19.5, 44.5,
+    54.5, 22.5
+  ]
+}

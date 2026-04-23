@@ -1,0 +1,119 @@
+{
+    "hullName": "Smol Rok (SB)",
+    "hullId": "ls_rok_sb",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_rok_sb_back.png",
+    "height": 92,
+    "width": 92,
+    "center": [
+        46, 46
+    ],
+    "collisionRadius": 80,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 80,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_snakebites",
+        "ls_ramshackle",
+        "ls_ramma",
+        "rugged",
+        "ls_landa"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 75,
+            "locations": [
+                   -16.5,       25
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 90,
+            "locations": [
+                     3.5,     34.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    15.5,     -0.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -39.5, 8
+            ],
+            "length": 48,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -39.5, -8
+            ],
+            "length": 48,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -39.5, 21
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -39.5, -21
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+            20.5,     38.5,
+            14.5,     16.5,
+              14,      -12,
+             7.5,      -23,
+            -3.5,      -40,
+        
+           -26.5,      -39,
+           -27.5,    -32.5,
+           -39.5,    -26.5,
+           -39.5,     25.5,
+             -31,     38.5
+    ]
+}

@@ -1,0 +1,22 @@
+{
+	"id":"ls_phas_engine_exhaust",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"DECORATIVE",
+	"size":"LARGE",
+	"everyFrameEffect":"data.weapons.ls_flamer_effect",
+	"showDamageWhenDecorative":true,
+	"renderBelowAllWeapons":false,	
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"turretOffsets":[6, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[6, -0],
+	"hardpointAngleOffsets":[0],	
+	"glowColor":[255,200,0,200],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW",
+	"projectileSpecId":"ls_skorcha_shot",
+	"unaffectedByProjectileSpeedBonuses":true,
+	"noImpactSounds":true,
+
+}

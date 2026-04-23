@@ -1,0 +1,78 @@
+{
+  "variantId": "A_S-F_margrave_elt",
+  "hullId": "A_S-F_margrave",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "magazines",
+    "missile_autoloader"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "A_S-F_lerna",
+        "WS0004": "A_S-F_lerna"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "gazer",
+        "WS0006": "gazer",
+        "WS0007": "gazer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mjolnir"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ionbeam",
+        "WS0012": "taclaser",
+        "WS0014": "taclaser",
+        "WS0016": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "irautolance",
+        "WS0010": "irautolance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "guardian"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "flak",
+        "WS0013": "pdburst",
+        "WS0015": "pdburst",
+        "WS0017": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

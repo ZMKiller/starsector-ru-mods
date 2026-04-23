@@ -1,0 +1,28 @@
+{
+	"id":"ls_magnum",  # this id must match what's in the spreadsheet
+	"everyFrameEffect":"data.weapons.ls_magnum_effect",
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"displayArcRadius":800,
+	"turretSprite":"graphics/weapons/ls_magnum_turret.png",
+	"turretGlowSprite":"graphics/weapons/ls_magnum_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/ls_magnum_hardpoint.png",
+	"hardpointGlowSprite":"graphics/weapons/ls_magnum_hardpoint_glow.png",
+	"turretOffsets":[26,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[27,0],
+	"hardpointAngleOffsets":[0],
+	"glowColor":[100,200,100,125],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":15.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":30.0,
+					   "particleSizeMin":4.0,
+					   "particleSizeRange":4.0,
+					   "particleDuration":0.3,
+					   "particleCount":100,
+					   "particleColor":[100,200,100,125]},
+	"projectileSpecId":"ls_magnum_shot",  # projectile that will be fired
+	"fireSoundTwo":"ls_magnum_pulse",
+}

@@ -1,0 +1,67 @@
+{
+  "variantId": "A_S-F_ocklynge_sup",
+  "hullId": "A_S-F_ocklynge",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 21,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "converted_hangar",
+    "targetingunit",
+    "pointdefenseai",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "A_S-F_thicket",
+        "WS0005": "A_S-F_thicket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "A_S-F_kaksos"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "A_S-F_kaksos"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "devastator",
+        "WS0002": "devastator",
+        "WS0003": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "mininglaser",
+        "WS0009": "mininglaser",
+        "WS0010": "mininglaser",
+        "WS0011": "mininglaser",
+        "WS0012": "mininglaser",
+        "WS0013": "mininglaser",
+        "WS0014": "mininglaser",
+        "WS0015": "mininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "broadsword_wing"
+  ]
+}

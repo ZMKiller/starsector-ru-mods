@@ -1,0 +1,204 @@
+{
+  "hullName": "Crius Mk.II",
+  "hullId": "sfcpathercrius",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/PAGSM/ships/tanker_heavycruiserv3_pather.png",
+  "style": "MIDLINE",
+  "height": 196,
+  "width": 166,
+  "center": [83, 83],
+  "collisionRadius": 154,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 135,
+  "viewOffset": 0,
+  "builtInMods": [
+    "unstable_injector"
+  ],
+  "builtInWeapons": {
+    "WS0002": "pusherplate_lt"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-80, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-80, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 0,
+      "locations": [0.5, -0],
+      "renderOrderMod": 500
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [2, 43],
+      "renderOrderMod": 400
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [2, -43],
+      "renderOrderMod": 400
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 90,
+      "locations": [-18, 61],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -90,
+      "locations": [-18, -61],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 90,
+      "locations": [25, 69],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -90,
+      "locations": [25, -69],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [66.5, 53],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [66.5, -53],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [100, 55],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0013",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [100, -55],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0014",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [63, -0],
+      "renderOrderMod": 100
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-66, 70],
+      "length": 50,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-66, -70],
+      "length": 50,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71, 48.5],
+      "length": 80,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 70,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71, -48.5],
+      "length": 80,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 70,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    69.5, -31.5,
+    101, -35,
+    104.5, -73,
+    -70, -80,
+    -70, 80,
+    104.5, 73,
+    101, 35,
+    69.5, 31.5
+  ]
+}

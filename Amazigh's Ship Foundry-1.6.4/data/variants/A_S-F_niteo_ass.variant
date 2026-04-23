@@ -1,0 +1,59 @@
+{
+  "variantId": "A_S-F_niteo_ass",
+  "hullId": "A_S-F_niteo",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "frontemitter",
+    "magazines",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_akvavit"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "A_S-F_moros",
+        "WS0006": "A_S-F_moros"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "A_S-F_ir_autopulse",
+        "WS0003": "A_S-F_ir_autopulse",
+        "WS0007": "ioncannon",
+        "WS0008": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

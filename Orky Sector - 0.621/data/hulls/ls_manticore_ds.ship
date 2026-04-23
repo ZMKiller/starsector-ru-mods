@@ -1,0 +1,183 @@
+{
+    "hullName": "Manticore (DS)",
+    "hullId": "ls_manticore_ds",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_manticore.png",
+    "height": 154,
+    "width": 164,
+    "center": [
+        82, 77
+    ],
+    "collisionRadius": 130,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 118,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ballistic_rangefinder",
+        "ls_orky",
+        "ls_deathskull",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    28.5,       43
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    28.5,      -43
+            ]
+        },
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    61.5,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                      16,        0
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    33.5,       71
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    33.5,      -71
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -68, 16.5
+            ],
+            "length": 42,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -68, -16.5
+            ],
+            "length": 42,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -64, 30.5
+            ],
+            "length": 36,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -64, -30.5
+            ],
+            "length": 36,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -41.5, 43.5
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -41.5, -43.5
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -63,    -34.5,
+             -41,      -38,
+             -41,      -47,
+           -21.5,      -47,
+              18,      -79,
+        
+            25.5,      -59,
+            24.5,    -31.5,
+              31,      -22,
+              70,      -13,
+              70,       13,
+        
+              31,       22,
+            24.5,     31.5,
+            25.5,       59,
+              18,       79,
+           -21.5,       47,
+        
+             -41,       47,
+             -41,       38,
+             -63,     34.5,
+           -65.5,        0
+    # 19 points total.
+    ]
+}

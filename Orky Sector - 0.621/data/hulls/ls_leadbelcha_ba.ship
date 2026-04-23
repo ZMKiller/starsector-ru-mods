@@ -1,0 +1,144 @@
+{
+    "hullName": "Leadbelcha (BA)",
+    "hullId": "ls_leadbelcha_ba",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_leadbelcha_ba.png",
+    "height": 100,
+    "width": 98,
+    "center": [
+        49, 50
+    ],
+    "collisionRadius": 76,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 70,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_bloodaxes",
+        "rugged",
+        "ls_ramshackle",
+        "ls_more_is_big"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 60,
+            "locations": [
+                      16,       21
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -60,
+            "locations": [
+                      16,      -21
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 90,
+            "locations": [
+                      -9,     26.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 270,
+            "locations": [
+                      -9,    -26.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "renderOrderMod": 10,
+            "arc": 240,
+            "angle": 0,
+            "locations": [
+                      11,        0
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "renderOrderMod": 50,
+            "arc": 240,
+            "angle": 0,
+            "locations": [
+                   -10.5,        0
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": 180,
+            "locations": [
+                   -27.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -40.5, 15.5
+            ],
+            "length": 48,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 54,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -40.5, -15.5
+            ],
+            "length": 48,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 54,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -41,    -19.5,
+             -12,    -23.5,
+               5,    -33.5,
+            20.5,      -33,
+              36,    -16.5,
+        
+              36,     16.5,
+            20.5,       33,
+               5,     33.5,
+             -12,     23.5,
+             -41,     19.5
+    ]
+}

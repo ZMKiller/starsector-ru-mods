@@ -1,0 +1,84 @@
+{
+  "variantId": "sfcepimetheus_Experimental",
+  "hullId": "sfcepimetheus",
+  "displayName": "Experimental",
+  "goalVariant": true,
+  "fluxCapacitors": 40,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "advancedoptics",
+    "eccm",
+    "stabilizedshieldemitter",
+    "missleracks",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0015": "sabotpod",
+        "WS0016": "sabotpod",
+        "WS0019": "sabotpod",
+        "WS0020": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "sabot",
+        "WS0006": "sabot",
+        "WS0007": "sabot",
+        "WS0008": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0022": "sfcamcannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0017": "hil",
+        "WS0018": "hil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "irpulse",
+        "WS0012": "irpulse",
+        "WS0021": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdburst",
+        "WS0002": "pdburst",
+        "WS0003": "pdburst",
+        "WS0004": "pdburst",
+        "WS0009": "pdburst",
+        "WS0010": "pdburst",
+        "WS0013": "pdburst",
+        "WS0014": "pdburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

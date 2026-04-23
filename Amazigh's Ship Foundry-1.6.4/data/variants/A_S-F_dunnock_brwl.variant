@@ -1,0 +1,41 @@
+{
+  "variantId": "A_S-F_dunnock_brwl",
+  "hullId": "A_S-F_dunnock",
+  "displayName": "Brawler",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "heavyarmor",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "A_S-F_kaksos"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightmortar",
+        "WS0004": "lightmortar"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

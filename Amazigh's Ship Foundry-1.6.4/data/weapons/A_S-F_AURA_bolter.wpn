@@ -1,0 +1,30 @@
+{
+	"id":"A_S-F_AURA_bolter",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+
+	"everyFrameEffect": "org.amazigh.foundry.scripts.arktech.ASF_bolterOnFireScript",
+
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/A_S-F_AURA_bolter_base.png",
+	"turretGunSprite":"graphics/weapons/A_S-F_AURA_bolter_recoil.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_AURA_bolter_base.png",
+	"hardpointGunSprite":"graphics/weapons/A_S-F_AURA_bolter_recoil.png",
+	"visualRecoil":4.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[23, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[35, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":35.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":22,
+					   "particleSizeMin":8.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.16,
+					   "particleCount":13,
+					   "particleColor":[235,255,150,165]},
+	"projectileSpecId":"A_S-F_bolter_shot",  # projectile that will be fired
+	"fireSoundTwo":"A_S-F_bolter_fire",
+}

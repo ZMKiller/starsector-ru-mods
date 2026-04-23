@@ -1,0 +1,243 @@
+{
+    # Reserved engine style ids (can not be used):
+    # "CUSTOM"
+
+    "ABYSSAL":{
+        "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+		"contrailDuration":0,
+		"contrailWidthMult":0.67,
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		
+		"type":"GLOW", # GLOW or SMOKE; additive or regular blend mode
+						
+		"glowSprite":"graphics/fx/rat_abyssal_glow.png",
+		"glowOutline":"graphics/fx/rat_abyssal_flame.png",
+		"omegaMode":true,
+		"glowSizeMult":0.5,
+		"glowAlternateColor":[130, 27, 150,255],
+		
+		"engineColor":[130, 27, 150,255],
+		"contrailColor":[130, 27, 150,75],
+        "contrailCampaignColor":[130, 27, 150, 50],
+		
+    },
+
+	  "ABYSSAL_RED":{
+        "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+		"contrailDuration":0,
+		"contrailWidthMult":0.67,
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		
+		"type":"GLOW", # GLOW or SMOKE; additive or regular blend mode
+						
+		"glowSprite":"graphics/fx/rat_abyssal_glow.png",
+		"glowOutline":"graphics/fx/rat_abyssal_flame.png",
+		"omegaMode":true,
+		"glowSizeMult":0.5,
+		"glowAlternateColor":[242, 48, 65,255],
+		
+		"engineColor":[242, 48, 65,255],
+		"contrailColor":[242, 48, 65,75],
+        "contrailCampaignColor":[242, 48, 65, 50],
+		
+    },
+	
+	"ABYSSAL_SIERRA":{
+        "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+		"contrailDuration":0,
+		"contrailWidthMult":0.67,
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		
+		"type":"GLOW", # GLOW or SMOKE; additive or regular blend mode
+						
+		"glowSprite":"graphics/fx/rat_abyssal_glow.png",
+		"glowOutline":"graphics/fx/rat_abyssal_flame.png",
+		"omegaMode":true,
+		"glowSizeMult":0.5,
+		"glowAlternateColor":[125,125,225,255],
+		
+		"engineColor":[125,125,225,255],
+		"contrailColor":[125,125,225,25],
+		"contrailCampaignColor":[125,125,225,25],
+		
+    },
+	
+	"ABYSSAL_NOTRAIL":{
+        "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+		"contrailDuration":0,
+		"contrailWidthMult":0.67,
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		
+		"type":"GLOW", # GLOW or SMOKE; additive or regular blend mode
+						
+		"glowSprite":"graphics/fx/rat_abyssal_glow.png",
+		"glowOutline":"graphics/fx/rat_abyssal_flame.png",
+		"omegaMode":true,
+		"glowSizeMult":0.5,
+		"glowAlternateColor":[130, 27, 150,255],
+		
+		"engineColor":[130, 27, 150,255],
+		"contrailColor":[130, 27, 150,75],
+        "contrailCampaignColor":[130, 27, 150, 50],
+		
+    },
+	
+	"ABYSSAL_NOGLOW":{
+        "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+		"contrailDuration":0,
+		"contrailWidthMult":0.67,
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		
+		"type":"GLOW", # GLOW or SMOKE; additive or regular blend mode
+						
+		"glowSprite":"graphics/fx/rat_abyssal_glow.png",
+		"glowOutline":"graphics/fx/rat_abyssal_flame.png",
+		"omegaMode":true,
+		"glowSizeMult":0.0,
+		"glowAlternateColor":[130, 27, 150,255],
+		
+		"engineColor":[130, 27, 150,255],
+		"contrailColor":[130, 27, 150,75],
+        "contrailCampaignColor":[130, 27, 150, 50],
+		
+    },
+	
+	"PRIMORDIAL":{
+        "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+		#"contrailDuration":0,
+		#"contrailWidthMult":0.67,
+		#"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		#"contrailMinSeg":5, # min segment length, in pixels
+		#"contrailMaxSpeedMult":1f,
+		#"contrailAngularVelocityMult":0f,
+		
+		#"type":"SMOKE", # GLOW or SMOKE; additive or regular blend mode
+						
+		#"glowSprite":"graphics/fx/rat_abyssal_glow.png",
+		#"glowOutline":"graphics/fx/rat_abyssal_flame.png",
+		
+		"contrailDuration":1.0,
+		"contrailWidthMult":0.9,
+		"contrailWidthAddedFractionAtEnd":-0.2f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		
+		"type":"SMOKE", # GLOW or SMOKE; additive or regular blend mode
+						
+		"glowSprite":"graphics/fx/rat_primordial_glow.png",
+		"glowOutline":"graphics/fx/rat_primordial_flame.png",
+		
+		"omegaMode":true,
+		"glowSizeMult":0.8,
+		"glowAlternateColor":[178, 36, 69,255],
+		
+		"engineColor":[178, 36, 69,255],
+		"contrailColor":[145, 0, 51,75],
+        "contrailCampaignColor":[178, 36, 69, 50],
+		
+    },
+	
+	"PRIMORDIAL_CONSTRUCT":{
+        "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+		#"contrailDuration":0,
+		#"contrailWidthMult":0.67,
+		#"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		#"contrailMinSeg":5, # min segment length, in pixels
+		#"contrailMaxSpeedMult":1f,
+		#"contrailAngularVelocityMult":0f,
+		
+		#"type":"SMOKE", # GLOW or SMOKE; additive or regular blend mode
+						
+		#"glowSprite":"graphics/fx/rat_abyssal_glow.png",
+		#"glowOutline":"graphics/fx/rat_abyssal_flame.png",
+		
+		"contrailDuration":0,
+		"contrailWidthMult":0,
+		"contrailWidthAddedFractionAtEnd":-0.2f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		
+		"type":"SMOKE", # GLOW or SMOKE; additive or regular blend mode
+						
+		"glowSprite":"graphics/fx/rat_primordial_glow.png",
+		"glowOutline":"graphics/fx/rat_primordial_flame.png",
+		
+		"omegaMode":true,
+		"glowSizeMult":0.8,
+		"glowAlternateColor":[178, 36, 69,255],
+		
+		"engineColor":[178, 36, 69,255],
+		"contrailColor":[0, 0, 0,0],
+        "contrailCampaignColor":[0, 0, 0, 0],
+		
+    },
+	
+	"PRIMORDIAL_SECONDARY":{
+        "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+		"contrailDuration":0,
+		"contrailWidthMult":0.67,
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		
+		"type":"GLOW", # GLOW or SMOKE; additive or regular blend mode
+						
+		"glowSprite":"graphics/fx/rat_abyssal_glow.png",
+		"glowOutline":"graphics/fx/rat_abyssal_flame.png",
+		"omegaMode":true,
+		"glowSizeMult":0,
+		"glowAlternateColor":[0, 0, 0,0],
+		
+		"engineColor":[140, 0, 250,50],
+		"contrailColor":[140, 0, 250,75],
+        "contrailCampaignColor":[140, 0, 250, 50],
+		
+    },
+	
+	"EXO_TECH":{					
+		"engineColor":[248,172,44,255],
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0f,
+		"contrailAngularVelocityMult":0f,
+		"contrailColor":[248,172,44,0],
+		"contrailCampaignColor":[248,172,44,25],
+		"type":"GLOW" # GLOW or SMOKE
+	},
+	
+	"EXO_TECH_NO_GLOW":{					
+		"engineColor":[248,172,44,255],
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0f,
+		"contrailAngularVelocityMult":0f,
+		"contrailColor":[248,172,44,0],
+		"contrailCampaignColor":[248,172,44,25],
+		"type":"GLOW", # GLOW or SMOKE
+		
+		"glowSizeMult":0.35,
+		#"glowAlternateColor":[0, 0, 0,0],
+	},
+	
+	
+}

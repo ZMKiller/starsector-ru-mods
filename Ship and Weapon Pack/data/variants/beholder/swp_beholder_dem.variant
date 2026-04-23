@@ -1,0 +1,38 @@
+{
+    "displayName": "DEM",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "swp_beholder",
+    "hullMods": [
+        "missleracks",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_beholder_dem",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "taclaser",
+                "WS0005": "taclaser",
+                "WS0006": "taclaser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "gorgonpod",
+                "WS0002": "gorgonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "ioncannon"}
+        }
+    ]
+}

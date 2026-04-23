@@ -1,0 +1,49 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 10,
+    "fluxVents": 16,
+    "goalVariant": true,
+    "hullId": "swp_boss_medusa",
+    "hullMods": [
+        "targetingunit",
+        "heavyarmor",
+        "hardenedshieldemitter",
+        "swp_pdconversion"
+    ],
+    "permaMods": [
+        "targetingunit",
+        "heavyarmor",
+        "hardenedshieldemitter"
+    ],
+    "sMods": [
+        "targetingunit",
+        "heavyarmor",
+        "hardenedshieldemitter"
+    ],
+    "variantId": "swp_boss_medusa_cus",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "phasebeam",
+                "WS 004": "phasebeam",
+                "WS 006": "phasebeam",
+                "WS 007": "phasebeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 008": "heavymg"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "pdburst",
+                "WS 003": "pdburst"
+            }
+        }
+    ]
+}

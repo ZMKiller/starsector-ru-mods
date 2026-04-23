@@ -1,0 +1,54 @@
+{
+  "variantId": "sfcbia_Defender",
+  "hullId": "sfcbia",
+  "displayName": "Defender",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 19,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lrpdlaser",
+        "WS0002": "lrpdlaser",
+        "WS0005": "phasecl",
+        "WS0006": "swarmer",
+        "WS0007": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pulselaser",
+        "WS0004": "pulselaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "hil"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

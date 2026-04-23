@@ -1,0 +1,35 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 5,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_brawler_ds",
+    "hullMods": [
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_brawler_ds_dakka",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_bolta",
+                "WS 002": "ls_rokkit_launcha",
+                "WS 003": "ls_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_kill_kannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": { }
+        }
+    ]
+}

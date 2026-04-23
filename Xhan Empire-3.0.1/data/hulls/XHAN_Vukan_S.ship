@@ -1,0 +1,119 @@
+{
+  "hullName": "Vukan(S)",
+  "hullId": "XHAN_Vukan_S",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HVB/Xhan_Vukan_HVB.png",
+  "style": "MIDLINE",
+  "coversColor": "200,200,231,255",
+  "height": 174,
+  "width": 178,
+  "center": [89, 81],
+  "collisionRadius": 145,
+  "shieldCenter": [-7, -0],
+  "shieldRadius": 121.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [8, 53]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [8, -53]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [20, 20]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [20, -20]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 0,
+      "locations": [43, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 180,
+      "locations": [-17, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42, 20],
+      "length": 48,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-42, -20],
+      "length": 48,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-61, -0],
+      "length": 57,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    92, -0,
+    72, -16,
+    52, -26,
+    47.5, -36,
+    15, -41.5,
+    14.5, -60.5,
+    -79.5, -87.5,
+    -78.5, -70.5,
+    -18.5, -34.5,
+    -45, -26.5,
+    -70, -0,
+    -45, 26.5,
+    -18.5, 34.5,
+    -78.5, 70.5,
+    -79.5, 87.5,
+    14.5, 60.5,
+    15, 41.5,
+    47.5, 36,
+    52, 26,
+    72, 16
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "hullName": "Homomdan",
+  "hullId": "TTSC_homomdan",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTSC_homomdan .png",
+  "style": "HIGH_TECH",
+  "height": 118,
+  "width": 74,
+  "center": [36.5, 59],
+  "collisionRadius": 68.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 66,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "shielded_holds",
+    "phasefield",
+    "surveying_equipment"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-11, 25.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-11, -26.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [42, 18.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [42, -15.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [36.5, -0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-56.5, 14.5],
+      "length": 30,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-56.5, -15.5],
+      "length": 30,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    59, -9.5,
+    45.5, -25.5,
+    31, -37,
+    17, -32,
+    5, -33.5,
+    -48, -38.5,
+    -55.5, -24.5,
+    -63, -25,
+    -63, 28,
+    -55.5, 27.5,
+    -49, 40,
+    5, 36.5,
+    18, 32,
+    32, 37,
+    42, 27,
+    59, 12.5
+  ]
+}

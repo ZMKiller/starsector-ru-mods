@@ -1,0 +1,179 @@
+{
+  "hullName": "Lanner (P)",
+  "hullId": "A_S-F_lanner_p",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/A_S-F_lanner_p.png",
+  "style": "MIDLINE",
+  "height": 166,
+  "width": 172,
+  "center": [86, 83],
+  "collisionRadius": 140,
+  "shieldCenter": [8, -0],
+  "shieldRadius": 132,
+  "viewOffset": 0,
+  "builtInMods": [
+    "augmentedengines",
+    "unstable_injector"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [47, 17]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -25,
+      "locations": [46, -30]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 55,
+      "locations": [30, 47]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -55,
+      "locations": [30, -47]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 7,
+      "angle": 0,
+      "locations": [50, 74]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 7,
+      "angle": -0,
+      "locations": [50, -74]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 120,
+      "locations": [-23, 49]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -120,
+      "locations": [-23, -49]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-76, 39],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, 18],
+      "length": 48,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-50, 7],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-50, -7],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, -18],
+      "length": 48,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-76, -39],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-35, 71],
+      "length": 40,
+      "width": 12,
+      "angle": 150,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-35, -71],
+      "length": 40,
+      "width": 12,
+      "angle": -150,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    49, -47,
+    49, -80,
+    21, -84,
+    -3, -70,
+    -14, -77,
+    -65, -56,
+    -71, -25,
+    -49, -24,
+    -49, 23,
+    -71, 25,
+    -65, 56,
+    -14, 78,
+    -3, 70,
+    21, 84,
+    49, 80,
+    50, 36,
+    55, -4,
+    64, -6,
+    67, -37
+  ]
+}

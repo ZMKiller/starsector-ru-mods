@@ -1,0 +1,136 @@
+{
+  "hullName": "Peryton",
+  "hullId": "A_S-F_peryton",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/A_S-F_peryton.png",
+  "style": "LOW_TECH",
+  "height": 153,
+  "width": 132,
+  "center": [66, 86],
+  "collisionRadius": 110,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 106,
+  "viewOffset": 0,
+  "builtInMods": [
+    "A_S-F_bulkracks",
+    "missleracks"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [45, -16]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [45, -44]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 20,
+      "locations": [36, 18]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 80,
+      "locations": [27, 49]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-18, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 100,
+      "locations": [-12, 30]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -100,
+      "locations": [-12, -30]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-84, 17],
+      "length": 80,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, -17],
+      "length": 80,
+      "width": 24,
+      "angle": -180,
+      "contrailSize": 24,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-82, 25],
+      "length": 32,
+      "width": 8,
+      "angle": 170,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-82, -25],
+      "length": 32,
+      "width": 8,
+      "angle": -170,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -84, -12,
+    -84, -22,
+    -57, -37,
+    -17, -41,
+    16, -61,
+    48, -61,
+    53, -57,
+    53, -7,
+    62, -0,
+    62, 24,
+    42, 61,
+    16, 61,
+    -17, 41,
+    -57, 37,
+    -84, 22,
+    -84, 12,
+    -68, -0
+  ]
+}

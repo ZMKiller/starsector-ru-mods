@@ -1,0 +1,22 @@
+{
+	"id":"Gorel_Plas_Shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"onHitEffect":"org.xhan.weapons.XHAN_GorelOnHit",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":50.0,
+	"width":35,
+	"fadeTime":0.3,
+	"fringeColor":[153,255,51,255],
+	"coreColor":[153,255,51,255],
+	"glowColor":[153,255,51,255],
+	"glowRadius":45,
+	"hitGlowRadius":100,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":"graphics/missiles/Gorel_plasmashot.png"	
+}

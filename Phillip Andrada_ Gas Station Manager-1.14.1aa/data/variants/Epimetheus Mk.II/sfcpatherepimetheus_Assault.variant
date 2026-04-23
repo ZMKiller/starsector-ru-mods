@@ -1,0 +1,70 @@
+{
+  "variantId": "sfcpatherepimetheus_Assault",
+  "hullId": "sfcpatherepimetheus",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 30,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "heavyarmor",
+    "high_scatter_amp"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0021": "hurricane",
+        "WS0022": "hurricane"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0018": "annihilatorpod",
+        "WS0019": "annihilator",
+        "WS0020": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "railgun",
+        "WS0012": "railgun",
+        "WS0013": "railgun",
+        "WS0014": "railgun",
+        "WS0017": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sfcheavypdlaser",
+        "WS0002": "sfcheavypdlaser",
+        "WS0003": "pdlaser",
+        "WS0004": "pdlaser",
+        "WS0005": "pdlaser",
+        "WS0006": "pdlaser",
+        "WS0007": "pdlaser",
+        "WS0008": "pdlaser",
+        "WS0009": "pdlaser",
+        "WS0010": "pdlaser",
+        "WS0015": "pdlaser",
+        "WS0016": "sfcheavypdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

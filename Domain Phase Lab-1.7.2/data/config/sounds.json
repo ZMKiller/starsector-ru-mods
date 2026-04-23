@@ -1,0 +1,96 @@
+{
+#collapseopen INTEL
+	"dpl_ship_explosion":{"sounds":[
+			{"file":"sounds/sfx_impacts/dpl_explosion_01.ogg","pitch":1,"volume":1.0},
+		]
+	},
+	
+	"dpl_heavy_energy":{"sounds":[
+			{"file":"sounds/sfx_impacts/dpl_energy_hit_04.ogg","pitch":1,"volume":1.0},
+		],
+	},
+	
+	"dpl_collision_ships":{"sounds":[
+			{"file":"sounds/sfx_impacts/dpl_collision_ship_vs_ship_01.ogg","pitch":1,"volume":1.0},
+		],
+	},
+	
+	"dpl_col_ship_ast":{"sounds":[
+			{"file":"sounds/sfx_impacts/dpl_col_ship_ast.ogg","pitch":1,"volume":1.0},
+		],
+	},
+	
+	"dpl_hit_heavy":{"sounds":[
+			{"file":"sounds/sfx_impacts/dpl_gun_hit_heavy_01.ogg","pitch":1,"volume":1.0},
+		],
+	},
+	
+	"dpl_targeting_laser3_loop":
+	[
+		{"file":"sounds/sfx_wpn_missiles/dpl_targeting_laser3.ogg","pitch":1,"volume":1.0},
+	],
+
+    	"dpl_anomaly_payload":
+	[
+		{"file":"sounds/sfx_wpn_missiles/dpl_anomaly_load.ogg","pitch":1.0,"volume":0.8},
+	],
+	
+	"dpl_railgun_firing":
+	[
+		{"file":"sounds/sfx_wpn_energy/dpl_railgun_firing.ogg","pitch":1.0,"volume":0.8},
+	],
+	
+	"dpl_railgun_windup":
+	[
+		{"file":"sounds/sfx_wpn_energy/dpl_railgun_windup.ogg","pitch":1.0,"volume":0.4},
+	],
+	
+	"dpl_railgun_hit_light":
+	[
+		{"file":"sounds/sfx_wpn_energy/dpl_railgun_hit.ogg","pitch":1.0,"volume":0.6},
+	],
+	
+	"dpl_railgun_hit_solid":
+	[
+		{"file":"sounds/sfx_wpn_energy/dpl_railgun_hit.ogg","pitch":1.0,"volume":0.7},
+	],
+	
+	"dpl_railgun_hit_heavy":
+	[
+		{"file":"sounds/sfx_wpn_energy/dpl_railgun_hit.ogg","pitch":1.0,"volume":0.8},
+	],
+	
+	"music":{
+		"dpl_theme":[
+			{"file":"dpl_theme.ogg","source":"sounds/music","volume":0.25}
+		],
+		
+		"dpl_market_friendly":[
+			{"file":"dpl_market_friendly.ogg","source":"sounds/music","volume":0.25}
+		],
+		
+		"dpl_market_neutral":[
+			{"file":"dpl_market_neutral.ogg","source":"sounds/music","volume":0.25}
+		],
+		
+		"dpl_market_hostile":[
+			{"file":"dpl_market_hostile.ogg","source":"sounds/music","volume":0.25}
+		],
+		
+		"dpl_encounter_friendly":[
+			{"file":"dpl_encounter_friendly.ogg","source":"sounds/music","volume":0.15}
+		],
+		
+		"dpl_encounter_neutral":[
+			{"file":"dpl_encounter_neutral.ogg","source":"sounds/music","volume":0.15}
+		],
+		
+		"dpl_encounter_hostile":[
+			{"file":"dpl_encounter_hostile.ogg","source":"sounds/music","volume":0.15}
+		],
+		
+		"dpl_music_pilgrimage":[
+			{"file":"dpl_music_pilgrimage.ogg","source":"sounds/music","volume":0.3}
+		],
+	},
+}

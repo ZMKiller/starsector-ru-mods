@@ -1,0 +1,72 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 30,
+    "fluxVents": 35,
+    "goalVariant": true,
+    "hullId": "uw_succubus",
+    "hullMods": [
+        "missleracks",
+        "eccm",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_succubus_sup",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "amblaster",
+                "WS0010": "amblaster"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "squall",
+                "WS0002": "squall"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "phasecl"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "ionbeam",
+                "WS0005": "ionbeam",
+                "WS0006": "ionbeam",
+                "WS0007": "ionbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "taclaser",
+                "WS0012": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0008": "heavyburst"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "pdlaser",
+                "WS0014": "pdlaser",
+                "WS0015": "pdlaser",
+                "WS0016": "pdlaser",
+                "WS0017": "pdlaser"
+            }
+        }
+    ]
+}

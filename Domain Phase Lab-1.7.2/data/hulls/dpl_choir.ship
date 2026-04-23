@@ -1,0 +1,56 @@
+{
+  "hullName": "Choir",
+  "hullId": "dpl_choir",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/dpl_choir.png",
+  "style": "HIGH_TECH",
+  "height": 33,
+  "width": 36,
+  "center": [18, 16.5],
+  "collisionRadius": 35.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 33,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "dpl_siren_single",
+    "WS0002": "dpl_siren_single"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [4, 8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [4, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11, -0],
+      "length": 28,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    15.5, -12,
+    -9.5, -14.5,
+    -16.5, -8,
+    -16.5, 8,
+    -9.5, 14.5,
+    15.5, 12
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "displayName": "Demolisher",
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "goalVariant": true,
+  "hullId": "XHAN_Cheborog",
+  "hullMods": [
+    "targetingunit",
+    "missleracks"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "Cheborog_Demolisher",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Stolb_Demo_charge",
+        "WS0002": "Stolb_Demo_charge"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "Sharik_Demo_Torp"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "Shtir_Autocannon",
+        "WS0004": "Shtir_Autocannon",
+        "WS0007": "Shtir_Autocannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "Igol_point_def",
+        "WS0012": "Chok_point_def"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,23 @@
+{
+    "id":"swp_chronoboost",
+    "type":"STAT_MOD",
+    "aiType":"TEMPORAL_SHELL",
+
+    "statsScript":"data.scripts.shipsystems.SWP_ChronoBoostStats",
+
+    "soundFilterType":"LOWPASS",
+    "soundFilterGain":0.75,
+    "soundFilterGainHF":0.5,
+
+    "fadeActivationSoundOnChargedown":true,
+    "useSound":"swp_chrono_boost_activate",
+    "loopSound":"swp_chrono_boost_loop",
+    "deactivateSound":"swp_chrono_boost_deactivate",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":100,
+        "burstMovementPotential":0,
+        "averageSpeedMult":1.5,
+    }
+}

@@ -1,0 +1,116 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+EnableAutoShieldOnAfterSystem,Deploy shield after system,Boolean,false,,"If system folds shield deploy it after system ends if it was deployed when you activated the system
+
+(Side Note: if you manually deactivate shield in exact moment you activate ship system this will deploy shields after system ends)
+(not recomended to use quite unstable doesn't work on some modded systems, some effects like time flow increases might also break it)",,,
+EnableAutoShieldOnAfterOverload,Deploy shield after overload,Boolean,true,,Press RMB while overloaded/venting to deploy shield/activate phase cloak right after overload/venting ends,,,
+,,,,,,,,
+settign_header_1,,Header,Shield assist,,"Settings for shield auto targetting, controls shield for you",0,4,
+DefaultShieldSnapMode,Default Shield Snap Mode,Int,1,,"0 - No snapping
+1 - Snaps to ship's target follow mouse if no target
+2 - Snaps to current target and stay snap to it even if target changes
+3 - Snaps to current position relative to the ship
+4 - Snaps to current position relative to the world",0,4,
+SaveModeBetweenEncounters,Save Mode Between Encounters,Boolean,false,,Saves selected mode between combat encounters,,,
+ShieldSnappingMenuKey,Radial Menu key,Keycode,59,,,,,
+ShieldSnappingMenuTextRender,Enable Mode Labels,Boolean,true,,Show text labels for modes on radial menu,,,
+ShieldSnappingMenuInnerR,Radius Of Central Circle,Int,25,,,5,50,
+ShieldSnappingMenuRingThinknes,Ring Thickness,Int,125,,,10,250,
+ShieldSnappingMenuTheme,Radial menu color scheme,Int,1,,"1 - Use player faction colors
+2 - Copy player's shield colors
+3 - Use combat UI colors
+",1,3,
+ShieldSnappingSlowDown,Menu Slow-mo,Int,95,,"Percentage value by which game slows down then menu is active
+100 pauses the game 0 removes slowdown",0,100,
+ShieldSnappingResetMouse,Reset Mouse,Boolean,false,,When menu deactivated puts mouse in position it was when menu was activated,,,
+settign_header_LegacyShieldSnapping,,Header,Legacy Shield snapping,,,,,
+EnableLegacyShieldSnapping,Enable legacy mode,Boolean,false,,Use keybind for each individual mode instead of radial menu,,,
+snapIfTarget,Snap If Target,Keycode,59,,Snaps to ship's target follow mouse if no target,,,
+rememberTarget,Remember Target,Keycode,60,,Snaps to current target and stay snap to it even if target changes,,,
+shipSide,Ship Side,Keycode,61,,Snaps to current position relative to the ship,,,
+direction,Direction,Keycode,62,,Snaps to current position relative to the world,,,
+,,,,,,,,
+settign_header_2,System Notify settings,Header,System Notify settings,,,,,
+EnableSystemNotify,Enable System Notify,Boolean,true,,,,,
+TextSize,Text Size,Int,30,,,,,
+systemNotifcustomColors,Custom Text color,Boolean,false,,"Enable custom color for text, if disabled uses UI color including from UI mods",,,
+OnTextColorNew,On Text Color,Color,#00ff00,,,,,
+OffTextColorNew,Off Text Color,Color,#ff0000,,,,,
+AllowForPlayerShip,Allow For Player Ship,Boolean,false,,Shows system notify on player ship,,,
+,,,,,,,,
+settign_header_3,Misc,Header,Clock,,,,,
+EnableClock,Enable Clock,Boolean,true,,Real time clock in campaign in left top corner under game date,,,
+12HourCLock,12 Hour Clock,Boolean,false,,12 hours AM/PM style clock,,,
+,,,,,,,,
+settign_header_4,Order Drawer,Header,Order Drawer,,,,,
+orderDrawEnable,Enable Order Draw,Boolean,true,,Enable drawing of fleet orders in combat,,,
+orderSize,Order icon size,Double,1,,Change size of icons,0,20,
+,,,,,,,,
+settign_header_5,General,Header,General,,,,,Ship Direction Marker
+DisableMarkerOnPause,Disable marker while paused,Boolean,true,,Draw markers while game paused.,,,Ship Direction Marker
+PayerMarkerOnAtStartOfCombat,Draw on player,Boolean,true,,Enable marker on player ship (can still be toggled with a key),,,Ship Direction Marker
+TargetMarkerOnAtStartOfCombat,Draw on target,Boolean,true,,Enable marker on player's target (can still be toggled with a key),,,Ship Direction Marker
+DrawOnAll,Draw on all,Boolean,false,,Enable markers on all ships (can still be toggled with a key),,,Ship Direction Marker
+DrawOnAllFighters,Draw on fighters,Boolean,false,,Enable markers on markers on fighters (can still be toggled with a key)(beware performance impact) ,,,Ship Direction Marker
+,,,,,,,,
+settign_header_6,Keybinds,Header,Keybinds,,,,,Ship Direction Marker
+PlayerShipToggleButton,Toggle player,Keycode,26,,Button to toggle marker on player ship,,,Ship Direction Marker
+TargetShipToggleButton,Toggle target,Keycode,27,,Button to toggle marker on player's target,,,Ship Direction Marker
+DrawOnAllShipsToggleButton,Toggle all ships,Keycode,40,,Button to toggle markers on all other ships,,,Ship Direction Marker
+IncludeFightersInDrawOnAllToggle,Toggle fighters,Keycode,43,,Button to toggle markers on fighters (beware performance impact),,,Ship Direction Marker
+,,,,,,,,
+settign_header_7,Marker color,Header,Marker color,,,,,Ship Direction Marker
+customColors,Custom marker color,Boolean,false,,"Enabler custom colors for markers, if disabled uses UI color including from UI mods",,,Ship Direction Marker
+allyColor,Ally color,Color,#00ff00,,,,,Ship Direction Marker
+enemyColor,Enemy color,Color,#ff0000,,,,,Ship Direction Marker
+,,,,,,,,
+BetterSensorBurst,Better Sensor Burst,Boolean,true,,Do not disable Sustained Burn when using Active Sensor Burst. Fleet will move slowly for the cool-down duration (instead of doing full stop),,,TransponderOff
+BetterRemoteSurvey,Better Remote Survey,Boolean,true,,Do not disable Sustained Burn when using Remote Survey. Fleet will still stand still for duration of ability.,,,TransponderOff
+PartialSurveyAsYouFly,Partial Survey As You Fly,Boolean,true,,Automatically provide partial survey for planets within your sensor range.,,,TransponderOff
+ScavengeAsYouFly,Scavenge As You Fly,Boolean,true,,Use Scavenge ability as soon as it is usable. There is a new ability (with blue scavenge icon) that is used to turn this functionality on,,,TransponderOff
+Transpoffder,Transpoffder,Boolean,true,,Automatically turn off fleet transponder whenever transitioning to Hyperspace,,,TransponderOff
+,,,,,,,,
+settign_header_ammoDraw,Ready Fire Indicator,Header,Weapon Ammo Indicator,,,,,Combat Information
+rfi_header_text,Draws cooldown or ammo near weapon,text,Draws cooldown or ammo near weapon,,,,,Combat Information
+rfi_enable,Enable,Boolean,true,,,,,Combat Information
+rfi_onlyPhase,Only draw for phase ships,Boolean,false,,,,,Combat Information
+rfi_drawonActive,Draw on selected weapons,Boolean,false,,,,,Combat Information
+rfi_ignorePD,Don't draw on PD weapons,Boolean,true,,,,,Combat Information
+rfi_ignoreSMALL,Don't draw on small weapons,Boolean,false,,,,,Combat Information
+rfi_minCD,Minimal refire delay to draw,Double,3,,Coutns without burst duration,,,Combat Information
+rfi_minReload,Minimal total reload time to draw,Double,3,,,,,Combat Information
+rfi_offset,Bar offset,Double,5,,,-20,20,Combat Information
+rfi_scale,Size scale,Double,1,,,0,5,Combat Information
+rfi_scaleX,Width scale,Double,1,,,0,5,Combat Information
+rfi_scaleY,Height scale,Double,1,,,0,5,Combat Information
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+#luna_versionHeader,Version Checker,Header,Version Checker,,,,,
+#luna_enableVC,Enable Version Checker,Boolean,true,,"Enables Version Checker if set to true. Change is only applied when the game is [restarted]. 
+
+This only disables Lunalibs version checker, not ones added by other mods like Nexerelin.",,,
+,,,,,,,,
+#luna_debugHeader,Debug Header,Header,Debug,,,,,
+#luna_DebugEntries,Debug Menu Entries,Int,25,,Controls how many entries can show up in the Debug Menu's Search Screens. Higher quantities will lead to lag.,10,50,
+#luna_DevmodeKeybind,Devmode Keybind,Keycode,0,,Changes the keybind for the devmode toggle.,,,
+#luna_UIDebugKeybind,UI Debug Panel,Keycode,0,,"When pressed in the campaign, opens a debug panel showcasing different UI elements added by Lunalib. Only useful for mod developers.",,,
+,,,,,,,,
+,,,,,,,,
+#luna_exampleHeader,Example Header,Header,Example Section,,,,,Examples
+#luna_exampleText,Example Text Field,Text,"Any value below is merely an example for Modders. 
+None of the Settings here do anything.
+",,,,,Examples
+#luna_exampleString,Example String,String,some string,,"Strings will accept any characters put in, with no filtering.",,,Examples
+#luna_exampleBoolean,Example Boolean,Boolean,true,,A button that switches between true and false.,,,Examples
+#luna_exampleInt,Example Int,Int,100,,"Int Fields will only accept whole Numbers, and block any other character from being entered.",-50,200,Examples
+#luna_exampleDouble,Example Double,Double,10.2,,Doubles allow only numbers and a single decimal dot (.) ,0,20,Examples
+#luna_exampleKeybind,Example Keybind,Keycode,0,,"Lets users register a keybind. The saved keycodes are the same as used by org.lwjgl.input.Keyboard and Starsectors InputEventAPI.
+
+Make sure to set a condition for your input checks to not accept numbers of 0, as lwjgl sets both unbound & unknown characters to that value.",,,Examples
+#luna_newExampleColor,Example Color,Color,#f22e6e,,"Creates a color picker, giving both a hex text field and three sliders for the HSV color selection.
+",,,Examples
+#luna_exampleRadio,Example Radio,Radio,None,"None, Hegemony, Tritachyon, Persean League, Sindrian, Independent","Creates a radio button selector. 
+
+The defaultValue decides which one is selected by default, the secondaryValue creates the list of choices with a comma seperated String. 
+Can be retrieved as a String.",,,Examples

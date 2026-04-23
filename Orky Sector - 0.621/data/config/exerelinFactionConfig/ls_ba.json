@@ -1,0 +1,80 @@
+{
+  "playableFaction": true,
+  "corvusCompatible": true,
+  "rebelFleetSuffix": "Treasonous Gitz",
+   "invasionSupportFleetName":"Waaagh! Skawdron",
+   "responseFleetName":"Rapid Response Skawdron",
+   "defenceFleetName":"Da Garrishun",
+
+  "difficultyString":"hard",
+  "startRelationships": {
+		"independent":0.2,
+		"pirates":0.2,						
+		"persean":0.1,						
+		"tritachyon":0.4,
+		"hegemony":-0.3,
+		"lions_guard":0.1,
+		"sindrian_diktat":0.1,
+		"luddic_church":-0.6,
+		"luddic_path":-0.6,
+		"remnant":-0.6,
+		"ls_es":-0.2,
+		"ls_ds":-0.2,
+		"ls_bm":0.2,
+},
+
+    "invasionPointMult":1.25,
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":0.9,
+    },
+
+  "diplomacyPositiveChance": {"default": 0.5},
+  "diplomacyNegativeChance": {"default": 0.7},
+  "morality": "evil",
+    "alignments":{
+        "hierarchical":-0.25,
+        "ideological":0.5,
+        "militarist":1,
+        "corporate":-0.5,
+        "diplomatic":-0.5,
+
+    },
+    "diplomacyTraits":["foreverwar", "anarchist"],
+  "vengeanceLevelNames": ["Git", "Grod", "Waaaaagh!"],
+  "vengeanceFleetNames": ["Kommando Killteam", "Kill Skwadron", "Great Waaaaagh! Fleet"],
+  "startShipsSolo": [["ls_wayfarer_ba_custom"]],
+  "startShipsCombatSmall": [
+    ["ls_nebula_ba_custom", "ls_sunfish_ba_custom", "ls_laberus_ds_loota"]
+  ],
+  "startShipsCombatLarge": [
+    ["ls_falken_ba_custom", "ls_escort_karrier_strike", "ls_back_stabbaz_ba_ramma"]
+  ],
+  "startShipsCarrierSmall": [["ls_escort_karrier_strike", "ls_zagblitz_ba_meka"]],
+  "startShipsSuper": [
+    ["ls_orka_ba_taktikal"]
+
+  ],
+
+
+  "startSpecialItems": [
+    [["ls_ba_bp_package", ""]],
+    [["ls_orky_bp_package", ""]],
+    [["low_tech_package", ""]],
+    [["modspec", "ls_bosspole"]],
+    [["modspec", "ls_explody_propella"]],
+    [["modspec", "ls_git_finda"]],
+    [["modspec", "ls_ard_case"]],
+
+
+  ],
+    "colonyExpeditionChance":0.5,
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+
+  "defenceStations": [
+    {"ids": ["orbitalstation", "battlestation", "starfortress"]},
+  ],
+
+  "bonusSeeds": [
+    {"id": "nanoforge_corrupted", "count": 1},
+  ]
+}

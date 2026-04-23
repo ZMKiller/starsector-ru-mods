@@ -1,0 +1,33 @@
+{
+  "variantId": "sfcslent_Offense",
+  "hullId": "sfcslent",
+  "displayName": "Offense",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 10,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightneedler",
+        "WS0002": "lightneedler",
+        "WS0003": "lightneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "breachpod"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

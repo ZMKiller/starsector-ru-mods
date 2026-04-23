@@ -1,0 +1,18 @@
+{
+	"id":"Xhan_Kobraz_shot",
+	"specClass":"projectile",
+	#"spawnType":"BEAM",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":20.0,
+	"width":15.0,
+	"fadeTime":0.7,
+	"fringeColor":[81,255,69,120],
+	"coreColor":[66,255,186,255],
+	"hitGlowRadius":10,	
+	#"coreColor":[153,255,51,255],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0	
+}

@@ -1,0 +1,205 @@
+{
+  "hullName": "Quietus",
+  "hullId": "TTE_quietus",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/TTE_quietus.png",
+  "style": "HIGH_TECH",
+  "height": 279,
+  "width": 161,
+  "center": [80.5, 139.5],
+  "collisionRadius": 162,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 159,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt",
+    "shielded_holds"
+  ],
+  "builtInWings": [
+    "TTE_dajeil_standard_wing",
+    "TTE_dajeil_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [-19, 31]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [-19, -31]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-105.5, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [44.5, 29.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [44.5, -29.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [83, 38.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [83, -38.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-58.5, 49.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-58.5, -49.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        71, 21,
+        71.5, 27
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        71, -20,
+        75, -27
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-135.5, 15],
+      "length": 54,
+      "width": 35,
+      "angle": 180,
+      "contrailSize": 35,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-135.5, -15],
+      "length": 54,
+      "width": 35,
+      "angle": -180,
+      "contrailSize": 35,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-123, -44.5],
+      "length": 51,
+      "width": 25,
+      "angle": -180,
+      "contrailSize": 25,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-123, 44.5],
+      "length": 51,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-134, 33],
+      "length": 32,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-134, -33],
+      "length": 32,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    140, -16.5,
+    101, -51,
+    95, -48.5,
+    53, -66.5,
+    16.5, -63,
+    -15, -80.5,
+    -58.5, -78,
+    -82, -54.5,
+    -129.5, -68.5,
+    -135, -57,
+    -127, -47,
+    -139.5, -35.5,
+    -139.5, 35.5,
+    -127, 47,
+    -135, 57,
+    -129.5, 68.5,
+    -82, 54.5,
+    -58.5, 78,
+    -15, 80.5,
+    16.5, 63,
+    53, 66.5,
+    95, 48.5,
+    101, 51,
+    140, 16.5
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "hullName": "Porpax PX-50",
+  "hullId": "sfcporpax",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/tanker_frigate_monitor_diktat_v1.png",
+  "style": "MIDLINE",
+  "height": 70,
+  "width": 110,
+  "center": [55, 35],
+  "collisionRadius": 64.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 83,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery",
+    "fluxshunt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [4, 24]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -0,
+      "locations": [4, -24]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [19, 47]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": -0,
+      "locations": [19, -47]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 0,
+      "locations": [-6, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-24.5, -36.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24.5, 36.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24.5, -23.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24.5, 23.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24.5, 9],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24.5, -9],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24.5, -0],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    29.5, -12.5,
+    17.5, -27.5,
+    24.5, -33,
+    25, -52,
+    -20, -51,
+    -20, 51,
+    25, 52,
+    24.5, 33,
+    17.5, 27.5,
+    29.5, 12.5
+  ]
+}

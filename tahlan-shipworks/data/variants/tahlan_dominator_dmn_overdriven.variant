@@ -1,0 +1,67 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 0,
+    "fluxVents": 15,
+    "goalVariant": true,
+    "hullId": "tahlan_dominator_dmn",
+    "hullMods": [
+        "safetyoverrides",
+        "stabilizedshieldemitter",
+        "hardenedshieldemitter",
+        "tahlan_daemonboost"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_dominator_dmn_overdriven",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "chaingun",
+                "WS0006": "chaingun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "locust",
+                "WS0002": "locust"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "heavymg",
+                "WS0005": "heavymg",
+                "WS0007": "heavymg"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "dualflak",
+                "WS0011": "dualflak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "vulcan",
+                "WS0012": "lightdualmg",
+                "WS0013": "lightdualmg",
+                "WS0014": "vulcan",
+                "WS0015": "vulcan",
+                "WS0016": "vulcan"
+            }
+        }
+    ],
+    "wings": [
+        "tahlan_thunder_dmn_wing",
+        "tahlan_lux_dmn_wing"
+    ]
+}

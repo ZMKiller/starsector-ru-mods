@@ -1,0 +1,29 @@
+{
+	"id":"ls_gigashoota_coaxial",  # this id must match what's in the spreadsheet
+	"everyFrameEffect":"data.weapons.ls_deff_arsenal_coaxial",
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"displayArcRadius":400,
+	"turretSprite":"graphics/weapons/ls_stompa/ls_deff_arsenal_stompa_gigashoota.png",
+	"turretGunSprite":"graphics/weapons/ls_stompa/ls_deff_arsenal_stompa_gigashoota_barrel.png",
+	"hardpointSprite":"graphics/weapons/ls_stompa/ls_deff_arsenal_stompa_gigashoota.png",
+	"hardpointGunSprite":"graphics/weapons/ls_stompa/ls_deff_arsenal_stompa_gigashoota_barrel.png",
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":6.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[33, -11.5],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[33, -11.5],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":28.0,
+					   "particleSizeMin":8.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":0.2,
+					   "particleCount":12,
+					   "particleColor":[255,185,115,215]},
+	"projectileSpecId":"ls_mini_bolta_shot",  # projectile that will be fired
+	"fireSoundTwo":"supa_shootas_sound",
+}

@@ -1,0 +1,73 @@
+{
+  "variantId": "dpl_orchestra_flagship",
+  "hullId": "dpl_orchestra",
+  "displayName": "Flagship",
+  "goalVariant": true,
+  "fluxCapacitors": 47,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "advancedoptics",
+    "turretgyros",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dpl_graviton_lance",
+        "WS0002": "dpl_graviton_lance",
+        "WS0005": "dpl_lightning_lance",
+        "WS0006": "dpl_lightning_lance",
+        "WS0007": "dpl_lightning_lance",
+        "WS0008": "dpl_lightning_lance",
+        "WS0009": "dpl_lightning_lance",
+        "WS0024": "dpl_gc"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pdburst",
+        "WS0010": "pdburst",
+        "WS0011": "pdburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "pdburst",
+        "WS0012": "pdburst",
+        "WS0016": "pdburst"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0013": "dpl_shield_side_general"
+    },
+    {
+      "WS0014": "dpl_shield_side_general"
+    },
+    {
+      "WS0015": "dpl_shield_frontal_general"
+    },
+    {
+      "WS0017": "dpl_AA_Side_standard"
+    },
+    {
+      "WS0018": "dpl_AA_Side_standard"
+    },
+    {
+      "WS0019": "dpl_AA_Side_standard"
+    },
+    {
+      "WS0020": "dpl_AA_Side_standard"
+    }
+  ],
+  "wings": []
+}

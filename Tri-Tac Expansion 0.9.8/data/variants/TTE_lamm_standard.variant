@@ -1,0 +1,41 @@
+{
+  "variantId": "TTE_lamm_standard",
+  "hullId": "TTE_lamm",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 19,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliary_fuel_tanks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TTE_pdpulse",
+        "WS0002": "TTE_pdpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "TTE_pdpulse",
+        "WS0004": "TTE_pdpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "TTE_pdpulse",
+        "WS0006": "TTE_pdpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

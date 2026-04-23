@@ -1,0 +1,51 @@
+{
+  "hullName": "Silence Drone",
+  "hullId": "dpl_silence_drone",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/drones/drone_phase.png",
+  "style": "HIGH_TECH",
+  "height": 24,
+  "width": 20,
+  "center": [10, 12],
+  "collisionRadius": 27,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 24.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_heavy_pdair"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    10, -4,
+    0.5, -9,
+    -7, -9,
+    -10.5, -5,
+    -10.5, 5,
+    -7, 9,
+    0.5, 9,
+    10, 4
+  ]
+}

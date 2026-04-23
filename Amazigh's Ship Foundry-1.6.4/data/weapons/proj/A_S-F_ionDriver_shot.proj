@@ -1,0 +1,19 @@
+{
+	"id":"A_S-F_ionDriver_shot",
+	"specClass":"projectile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_ionDriver_onFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_ionDriver_onHit",
+
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":95.0,
+	"width":22.0,
+	"fadeTime":0.3,
+	"fringeColor":[25,110,165,255],
+	"coreColor":[220,230,255,200],
+	"textureType":"ROUGH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0
+}

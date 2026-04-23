@@ -1,0 +1,46 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 15,
+    "fluxVents": 19,
+    "goalVariant": true,
+    "hullId": "swp_vulture",
+    "hullMods": [
+        "dedicated_targeting_core",
+        "unstable_injector"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_vulture_att",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "pulselaser"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "sabotpod",
+                "WS0005": "sabotpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "heavymortar",
+                "WS0003": "heavymortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "lrpdlaser",
+                "WS0007": "lrpdlaser",
+                "WS0008": "lrpdlaser"
+            }
+        }
+    ]
+}

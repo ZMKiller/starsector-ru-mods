@@ -1,0 +1,32 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 5,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "ls_rok_ds",
+    "hullMods": [
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_rok_ds_custom",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_mega_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_twin_shoota"
+            }
+        }
+    ],
+    "modules": {
+        "WS 003": "ls_rok_ds_right_custom",
+        "WS 002": "ls_rok_ds_left_custom"
+    }
+}

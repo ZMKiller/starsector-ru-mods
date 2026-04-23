@@ -1,0 +1,35 @@
+{
+    "displayName": "Anti-Fighter",
+    "fluxCapacitors": 14,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "swp_albatross",
+    "hullMods": [
+        "defensive_targeting_array",
+        "expanded_deck_crew",
+        "magazines",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_albatross_esc",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "irautolance",
+                "WS0002": "irautolance"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "gazer",
+                "WS0004": "gazer"
+            }
+        }
+    ],
+    "wings": []
+}

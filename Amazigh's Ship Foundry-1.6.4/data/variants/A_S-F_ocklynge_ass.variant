@@ -1,0 +1,77 @@
+{
+  "variantId": "A_S-F_ocklynge_ass",
+  "hullId": "A_S-F_ocklynge",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "reinforcedhull",
+    "heavyarmor",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "pilum",
+        "WS0005": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hellbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hellbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "hellbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "lightac",
+        "WS0010": "lightac",
+        "WS0012": "lightac",
+        "WS0014": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "lightac",
+        "WS0011": "lightac",
+        "WS0013": "lightac",
+        "WS0015": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "flak",
+        "WS0007": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

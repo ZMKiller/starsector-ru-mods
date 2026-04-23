@@ -1,0 +1,22 @@
+{
+	"id":"A_S-F_heatstroke_sub_shot",
+	"specClass":"projectile",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.supe.ASF_heatstrokeSubOnHitEffect",
+
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":25.0,
+	"hitGlowRadius":75,
+	"width":6,
+	"fadeTime":0.5,
+	"fringeColor":[255,101,77,180],
+	"coreColor":[255,220,200,200],
+	"glowColor":[255,101,77,110],
+	"glowRadius":30,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+
+	"bulletSprite":"graphics/missiles/A_S-F_heatstroke_sub_shell.png" # shell_medium_red.png
+}

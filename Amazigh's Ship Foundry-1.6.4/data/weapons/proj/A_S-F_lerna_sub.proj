@@ -1,0 +1,61 @@
+{
+	"id":"A_S-F_lerna_sub",
+	"specClass":"missile",
+	"missileType":"MIRV",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_dem_mssl_onHit",
+
+	"sprite":"graphics/missiles/A_S-F_lerna_mdem_sub.png",
+	"size":[11,18],	
+	"center":[5.5,9],
+	"collisionRadius":13,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,205,205,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+
+	"armingTime":0.75,
+
+	"engineSpec":{"turnAcc":270,
+				  "turnRate":180,
+				  "acc":10,
+				  "dec":500}, #50
+
+	"behaviorSpec":{"behavior":"MIRV",
+
+					"slowToMaxSpeed":true,
+
+					"splitRange":500,
+					"splitRangeRange":0,
+					"minTimeToSplit":0.75,
+					"canSplitEarly":false,
+					"splitSound":"heavy_blaster_fire",
+					"numShots":3,
+					"damage":100,
+					"impact":4,
+					"emp":300,
+					"damageType":ENERGY,
+					"hitpoints":10,
+					"arc":0,
+					"arcOffset":0,
+					"evenSpread":true,
+					"spreadSpeed":600,
+					"spreadSpeedRange":0,
+					"projectileRange": 700,
+					"projectileSpec":"A_S-F_dem_ion_shot",
+					"debrisSmall":2,
+					"debrisMedium":0,
+					"debrisLarge":0,
+					#"emptySpec":"type_1_mirv_empty",
+					"smokeSpec":{"particleSizeMin":10.0,
+								 "particleSizeRange":8.0,	#10
+								 "cloudParticleCount":3,	#5
+								 "cloudDuration":0.5,
+								 "cloudRadius":10.0,		#15
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[50,125,125,100]}
+					}
+}
+			

@@ -1,0 +1,51 @@
+{
+  "variantId": "PAMED_carillon_elite",
+  "hullId": "PAMED_carillon",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 8,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "heavyblaster",
+        "WS0010": "heavyblaster",
+        "WS0011": "heavyblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ioncannon",
+        "WS0002": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightneedler",
+        "WS0004": "lightneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdburst",
+        "WS0008": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

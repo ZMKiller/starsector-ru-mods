@@ -1,0 +1,20 @@
+# The filename matches an id in `magic_paintjobs.csv`.
+# All fields are optional.
+# More info: https://starsector.wiki.gg/wiki/MagicLib#Engines_and_Shields
+{
+  "engines":{
+    "color":[0,0,0,0],
+    "glowAlternateColor":[0,0,0,0],
+    "glowSizeMult": 1
+    # Not sure if contrails do anything on ships, except maybe Manuv. Jets
+    "contrailColor":[0,0,0,0],
+    "contrailSpawnDistMult":1,
+    "contrailWidthMultiplier":1,
+  },
+  "shield":{
+    "innerColor":[0,0,0,0],
+    "ringColor":[0,0,0,0],
+    "innerRotationRate":1,
+    "ringRotationRate":1
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "hullName": "Main Escort",
+  "hullId": "dpl_end_main",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/singularity/dpl_end_main.png",
+  "style": "HIGH_TECH",
+  "height": 118,
+  "width": 110,
+  "center": [55, 59],
+  "collisionRadius": 87.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 77,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12, 48]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [12, -48]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [16, 30]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [16, -30]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [21, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-55, 24],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-55, -24],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-61, 8],
+      "length": 53.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-61, -8],
+      "length": 53.5,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    63.5, -14,
+    22, -26.5,
+    18, -49.5,
+    3, -57.5,
+    -20.5, -52.5,
+    -28, -35.5,
+    -53, -32,
+    -62, -18,
+    -62, 18,
+    -53, 32,
+    -28, 35.5,
+    -20.5, 52.5,
+    3, 57.5,
+    18, 49.5,
+    22, 26.5,
+    63.5, 14
+  ]
+}

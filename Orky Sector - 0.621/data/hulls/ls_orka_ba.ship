@@ -1,0 +1,166 @@
+{
+    "hullName": "Orka (BA)",
+    "hullId": "ls_orka_ba",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_orka/ls_orka_ba.png",
+    "height": 150,
+    "width": 100,
+    "center": [
+        50, 75
+    ],
+    "collisionRadius": 100,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 80,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_bloodaxes",
+        "ls_orky_sub",
+        "phasefield",
+        "delicate"
+    ],
+    "builtInWeapons": {
+        "WS 002": "ls_torpedo_bm_rail",
+        "WS 003": "ls_torpedo_bm_rail"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    50.5,       23
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    50.5,      -23
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                    55.5,      8.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                    55.5,     -8.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                      34,        0
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 180,
+            "locations": [
+                     -58,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -57, 20.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -57, -20.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -57, 28.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -57, -28.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -71,       -4,
+             -58,      -14,
+             -57,      -31,
+             -39,    -32.5,
+             -30,      -36,
+        
+           -19.5,      -25,
+              -4,    -31.5,
+              46,    -33.5,
+            68.5,       -4,
+            68.5,        4,
+        
+              46,     33.5,
+              -4,     31.5,
+           -19.5,       25,
+             -30,       36,
+             -39,     32.5,
+        
+             -57,       31,
+             -58,       14,
+             -71,        4
+    # 18 points total.
+    ]
+}

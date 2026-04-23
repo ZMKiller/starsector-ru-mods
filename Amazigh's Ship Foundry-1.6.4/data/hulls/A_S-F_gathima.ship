@@ -1,0 +1,121 @@
+{
+  "hullName": "Gathima",
+  "hullId": "A_S-F_gathima",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_gathima.png",
+  "style": "LOW_TECH",
+  "height": 100,
+  "width": 90,
+  "center": [45, 52],
+  "collisionRadius": 75,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 73,
+  "viewOffset": 0,
+  "builtInMods": [
+    "A_S-F_GaderogaHullmod"
+  ],
+  "builtInWeapons": {
+    "WS0002": "A_S-F_kombora",
+    "WS0003": "A_S-F_kombora"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": 0,
+      "locations": [1, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [32, 28]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [32, -28]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 65,
+      "locations": [-10, 22]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -65,
+      "locations": [-10, -22]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 180,
+      "locations": [-41, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-48, 26],
+      "length": 48,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-48, -26],
+      "length": 48,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-33, 36],
+      "length": 24,
+      "width": 8,
+      "angle": 165,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-33, -36],
+      "length": 24,
+      "width": 8,
+      "angle": -165,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    42, -32,
+    -7, -40,
+    -29, -37,
+    -49, -0,
+    -29, 37,
+    -7, 40,
+    42, 32,
+    46, -0
+  ]
+}

@@ -1,0 +1,24 @@
+{
+	"id":"ls_mega_bubble_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"onHitEffect":"data.weapons.ls_mega_bubble_blasta_effect",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":40.0,
+	#"length":0,
+	"hitGlowRadius":80,
+	"width":30,
+	"fadeTime":0.5,
+	"fringeColor":[255,255,255,255],
+	"coreColor":[255,255,255,255],
+	#"fringeColor":[255,50,50,0],
+	#"coreColor":[255,255,200,0],	
+	"textureScrollSpeed":32.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"bulletSprite":"graphics/weapons/ls_nice_bubble.png",
+	#"bulletSprite":"",
+
+					}
+}

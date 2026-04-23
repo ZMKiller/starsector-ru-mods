@@ -1,0 +1,40 @@
+{
+	"id":"A_S-F_bramble_bomb",
+	"specClass":"missile",
+	"missileType":"BOMB_WITH_SLOW",
+	"sprite":"graphics/missiles/A_S-F_bramble_bomb.png",
+	"size":[8,10],	
+	"center":[4,5],
+	"collisionRadius":9,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,155,125,225],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+	"flameoutTime":0.05, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.05, # time spent without the engine glow being rendered
+	"fadeTime":0.05, # fadeout duration
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":95,
+					 "coreRadius":50, # full damage within core radius
+					 "collisionClass":MISSILE_FF,
+					 "collisionClassByFighter":MISSILE_FF},
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"onExplosionEffect":"org.amazigh.foundry.scripts.ASF_BrambleOnExplEffect",
+					"slowToMaxSpeed":true,
+					"range":50,
+					"explosionSpec":{"duration":0.1f,
+									 "radius":90,
+									 "coreRadius":75, # full damage within core radius
+									 "collisionClass":PROJECTILE_FIGHTER,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":3.0,
+									 "particleSizeRange":3.0,
+									 "particleDuration":1,
+									 "particleCount":110,
+									 "particleColor":[255,155,125,175],
+									 "sound":"explosion_flak"},
+					},
+	"engineSpec":{"turnAcc":100,
+				  "turnRate":10,
+				  "acc":320, #40
+				  "dec":400} #40
+}

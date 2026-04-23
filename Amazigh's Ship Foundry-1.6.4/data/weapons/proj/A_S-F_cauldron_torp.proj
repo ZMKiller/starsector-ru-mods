@@ -1,0 +1,59 @@
+{
+	"id":"A_S-F_cauldron_torp",
+	"specClass":"missile",
+	"missileType":"ROCKET",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_cauldron_onHit",
+
+	"sprite":"graphics/missiles/A_S-F_cauldron_torp.png",
+	"size":[14,22],	
+	"center":[7,11],
+	"collisionRadius":18,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[220,80,240,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":275, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":210,
+					 "coreRadius":105, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":5.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":140,
+					 "particleColor":[225,160,250,255],
+					 "explosionColor":[220,80,240,255],
+					 "detailedExplosionFlashColorFringe":[220,80,240,255],
+					 "detailedExplosionFlashRadius":350,
+					 "useDetailedExplosion":true
+					 },
+	"flameoutTime":2.5, # total time from flameout to full fadeout
+	"armingTime":0.5,
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration					 
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":550,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-11, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[220,80,240,255],
+						"contrailDuration":1.8,
+						"contrailWidthMult":1.5,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[220,80,240,50],
+						"glowSizeMult":2.4,
+						"glowAlternateColor":[220,0,240,255],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":9.0,
+				    "length":72.0,
+				    "angle":180.0}]
+}

@@ -1,0 +1,62 @@
+{
+    "displayName": "Long Range",
+    "fluxCapacitors": 41,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "swp_liberator",
+    "hullMods": [
+        "turretgyros",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_liberator_lr",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "gauss",
+                "WS0002": "gauss"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "reaper",
+                "WS0009": "reaper",
+                "WS0010": "reaper",
+                "WS0011": "reaper"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "heavymauler",
+                "WS0006": "heavymauler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "hveldriver",
+                "WS0004": "hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "flak",
+                "WS0012": "vulcan",
+                "WS0013": "vulcan",
+                "WS0014": "vulcan",
+                "WS0015": "vulcan"
+            }
+        }
+    ],
+    "wings": ["longbow_wing"]
+}

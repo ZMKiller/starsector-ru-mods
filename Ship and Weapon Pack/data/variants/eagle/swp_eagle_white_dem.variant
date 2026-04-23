@@ -1,0 +1,42 @@
+{
+    "displayName": "DEM",
+    "fluxCapacitors": 2,
+    "fluxVents": 2,
+    "hullId": "swp_eagle_white",
+    "hullMods": [
+        "missile_autoloader",
+        "swp_pdconversion",
+        "safetyoverrides"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_eagle_white_dem",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "phasebeam",
+                "WS 006": "phasebeam",
+                "WS 009": "phasebeam"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "gorgon",
+                "WS 002": "gorgon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "heavymg",
+                "WS 008": "heavymg",
+                "WS 013": "heavymg"
+            }
+        }
+    ]
+}

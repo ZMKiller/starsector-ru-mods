@@ -1,0 +1,56 @@
+{
+  "hullName": "Shnerk",
+  "hullId": "XHAN_Shnerk",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/XHAN_Shnerk.png",
+  "style": "XHANTECH",
+  "height": 46,
+  "width": 46,
+  "center": [23, 19],
+  "collisionRadius": 41.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 38,
+  "viewOffset": 0,
+  "builtInMods": [
+    "insulatedengine",
+    "XHAN_Gen3_armor"
+  ],
+  "builtInWeapons": {
+    "WS0001": "XHAN_gorel_fighter"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-7.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-18, -14],
+      "length": 45,
+      "width": 23,
+      "angle": 180,
+      "contrailSize": 23,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-18, 14],
+      "length": 45,
+      "width": 23,
+      "angle": -180,
+      "contrailSize": 23,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    3.5, 20,
+    -15.5, 21,
+    -15.5, -21,
+    23.5, -8.5
+  ]
+}

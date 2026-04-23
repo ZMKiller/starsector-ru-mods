@@ -1,0 +1,55 @@
+{
+  "variantId": "A_S-F_lustre_sup",
+  "hullId": "A_S-F_lustre",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "A_S-F_albatreos"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "A_S-F_omer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "A_S-F_macron",
+        "WS0004": "A_S-F_macron"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lrpdlaser",
+        "WS0007": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

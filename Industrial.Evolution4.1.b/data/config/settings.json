@@ -1,0 +1,372 @@
+{
+  #Documentation is for nerds
+
+  #-------------------------------------------------------------------------------
+  #-------------------------------------------------------------------------------
+
+  #USE THE LUNALIB INGAME UI
+  #INSTEAD OF MODIFYING THE SETTINGS HERE
+
+  #-------------------------------------------------------------------------------
+  #-------------------------------------------------------------------------------
+
+
+  #Vanilla changes:
+  "IndEvo_CommerceBalanceChanges":TRUE, #Commerce balance changes. Can be disabled during an ongoing campaign to revert to vanilla behaviour (might need to re-dock).
+
+  #No gurantees for stability if you fuck with anything past here because I did not test it and probably never will.
+
+  #Enabled industries
+  #Note that disabling the Variable industries will not stop VPCs from dropping - you will have to remove the entries from drop_groups.csv to achive that.
+  #Change to FALSE if you wish to disable the industry.
+  #Only works before game start!
+  "IndEvo_AdAssem": TRUE,
+  "IndEvo_AdManuf": TRUE,
+  "IndEvo_ComForge": TRUE,
+  "IndEvo_ComArray": TRUE,
+  "IndEvo_IntArray":TRUE,
+  "IndEvo_AdInfra": TRUE,
+  "IndEvo_ScrapYard": TRUE, #disable this to disable starship components. No, you can not have one without the other, go suck a dick. Dont forget the drop group.
+  "IndEvo_SupCom": TRUE,
+  "IndEvo_embassy": TRUE, #also disables Ambassador management scripts
+  "IndEvo_pirateHaven": TRUE,
+  "IndEvo_senate": TRUE,
+  "IndEvo_dryDock": TRUE,
+  "IndEvo_Academy": TRUE,
+  "IndEvo_EngHub": TRUE,
+  "IndEvo_ReqCenter": TRUE,
+  "IndEvo_PrivatePort": TRUE,
+  "IndEvo_SwitchableRefining": TRUE,
+  "IndEvo_SwitchableMining": TRUE,
+
+  #USE LUNALIB INSTEAD OF MODIFYING THE SETTINGS HERE
+
+  #Campaign Features
+  "IndEvo_GovernmentLarpMode": FALSE, #makes all governments behave like the default one, turning it into a cosmetic choice only.
+  "IndEvo_GovernmentMaxSize": 3, #Specifies how large a colony may be to in order to change the government type. Building up a stable colony and then changing is cheating and takes away from how these are supposed to work: higher rewards for higher difficulties.
+  "IndEvo_pets":TRUE, #Also disables all pet-related stuff including the industry.
+  "IndEvo_Enable_Derelicts": TRUE, #Also includes salvage events and station types
+  "IndEvo_AutomatedShipyardNum":1.5f, #Amount of Coronal Taps * number = amount of shipyards. Default taps is 2, so default shipyards is 3 (2 * 1.5). Rounds up.
+  "IndEvo_SpecialApplicationChance": 0.9f, #master chance for a special event to be applied to an entity that does not have one. Note that the chance is actually lower as every entity has a defined chance to resolve to nothing.
+  "IndEvo_derelictDeliverToGathering": FALSE, #All derelict industry output will be delivered to the gathering point instead of local storage. Remember - courier port exists.
+  "IndEvo_enable_derelict_stations": TRUE, #Enables the custom station types
+  "IndEvo_derelictStationAmount": 0.2f, #amount of additional stations with custom types spawned on top of existing ones (0.2 = 20% additional)
+  "IndEvo_DerInfraBuildRed": 0.5f, #derelict infra build cost and time reductuction
+  "IndEvo_PartsDropInCampaign": TRUE, #makes starship components drop from combat - Relic components will still drop even if you disable this.
+  "IndEvo_relicComponentHardbattleFPAdvantage":1.5f, #how much more FP an enemy fleet has to have for it to drop relic components on death
+  "IndEvo_relicComponentFPDestroyedFract":0.5f, #how much of said fleet you have to destroy for it to drop relic components
+  "IndEvo_shipPickerRowCount":8, #the row amount in most of the ship picker dialogues in the mod. This one is for DemonX3#6370 who badgered me to add this for a year straight.
+
+  #Minefields
+  "IndEvo_Enable_minefields": TRUE, #might need new game idk
+  "IndEvo_Minefield_HitChance_frigate":0.02f, #Every ship in the fleet is added up and adds to the chance of getting hit by a mine
+  "IndEvo_Minefield_HitChance_destroyer":0.04f,
+  "IndEvo_Minefield_HitChance_cruiser":0.06f,
+  "IndEvo_Minefield_HitChance_capital":0.12f,
+  "IndEvo_Minefield_NoHitUntilSum":0.5f, #the minimum fleet size needed before mines can explode in your face when going slow
+  "IndEvo_Minefield_CivilianShipImpactMult":0.5f, #civ ships count half ect
+  "IndEvo_Minefield_PhaseShipImpactMult":0.3f,
+
+  #General Artillery
+  "IndEvo_Enable_Artillery": TRUE, #only works on new game. Disabling this means you have weak bones. There used to be another insult here but the weak boned snowflakes were offended by it because it was too true.
+  "IndEvo_Artillery_spawnWeight":1f, #how likely a system is to have an artillery station. Reduce this number to make them rarer. 1 = between 5-10% of all systems will have one.
+  "IndEvo_Artillery_minDelayBetweenShots":2f,
+  "IndEvo_Artillery_maxDelayBetweenShots":3f,
+  "IndEvo_Artillery_minCooldown":13f,
+  "IndEvo_Artillery_maxCooldown":15f,
+  "IndEvo_Artillery_cooldownNPCMult":2f, #multiplies cooldown for NPC fleets because they get demolished otherwise
+  "IndEvo_Artillery_minRange":500f,
+  "IndEvo_Artillery_maxRange":12000f, # =6 map cells
+  "IndEvo_Artillery_WatchtowerRange":4000f,
+  "IndEvo_Artillery_defense_FP":100f, #base fleet size that spawns to defend artillery stations. Has to be 1 at minimum or it crashes.
+
+  #USE LUNALIB INSTEAD OF MODIFYING THE SETTINGS HERE
+
+  #mortar artillery
+  "IndEvo_Artillery_mortar_projectilesPerShot":8,
+  "IndEvo_Artillery_mortar_projectilesImpactTime":5f,
+  "IndEvo_Artillery_mortar_explosionSize":300f,
+
+  #Railgun artillery
+  "IndEvo_Artillery_railgun_projectilesPerShot":3, #if you increase this you should also increase the fuzz mult
+  "IndEvo_Artillery_railgun_projectilesImpactTime":1.5f,
+  "IndEvo_Artillery_railgun_shotFuzzMult":0.4f, #by how much the shots miss their target, higher = more
+
+  #Missile Artillery
+  "IndEvo_Artillery_missile_projectilesPerShot":4, #must be divisible by 2
+  "IndEvo_Artillery_missile_projectilesImpactTime":8f,
+  "IndEvo_Artillery_missile_maxCoveredArea":800f, #maximum area the missiles cover - also depends on fuzz
+  "IndEvo_Artillery_missile_fuzz":1f, #how accurate the missiles anticipate your location, less than 1 makes em kinda useless
+  "IndEvo_Artillery_missile_explosionRadius":200f,
+  "IndEvo_Artillery_missile_duration":10f,
+
+  #Engineering Hub
+  "IndEvo_EngHubIgnoreWhitelists": FALSE, #Yes, this is the one you are looking for - this turns off the whitelist and allows any ship to be reverse engineered
+  "IndEvo_AutoshipBPToGatheringPoint":FALSE,
+
+  #Salvage Yards
+  "IndEvo_RarePartsAmountPerFP": 2,
+  "IndEvo_SYBaseDMods": 5,
+  "IndEvo_SYPartValueMult": 1.2f,
+  "IndEvo_SYHullDeliveryTime":60,
+  "IndEvo_SYDModMoveBaseCostMult":0.8f,
+
+  #Privateer Base
+  "IndEvo_RaidForUnknownOnly": FALSE, #Allows the Priateer base to raid for blueprints you already know. Setting this to TRUE will make it only generate BPs you do not know, instead of a mix.
+  "IndEvo_PrivateerDeliverToGatheringPoint": FALSE, #Auto-deliver the looted items to the gathering point. Remember - courier port exists.
+
+  #RiftGen
+  "IndEvo_RG_cooldownTime": 90,
+  "IndEvo_RG_range": 9, # in LY
+
+  #USE LUNALIB INSTEAD OF MODIFYING THE SETTINGS HERE
+
+  #Laboratory
+  "IndEvo_reslab_autoDeliverToClosestDecon": FALSE, #Auto-deliver restored forge templates to the closest HullDecon  Remember - courier port exists.
+
+  #HullDecon
+  "IndEvo_DeconIgnoreWhitelists": TRUE, #leave this one alone, you want the engineering hub, look a few lines above
+  "IndEvo_hullDecon_autoDeliverToClosestForge": FALSE, #Auto-deliver finished forge templates to the closest HullForge  Remember - courier port exists.
+  "IndEvo_hullDecon_days_FRIGATE": 10,
+  "IndEvo_hullDecon_days_DESTROYER": 20,
+  "IndEvo_hullDecon_days_CRUISER": 30,
+  "IndEvo_hullDecon_days_CAPITAL_SHIP": 40,
+
+  #HullForge
+  "IndEvo_hullForge_autoQueueShipsUntilEmpty": TRUE, #Print ships off a template until it is empty - FALSE = deposit in storage after one run
+  "IndEvo_hullForge_autoDeliverToClosestLab": FALSE, #Auto-deliver degraded forge templates to the closest lab - or empty ones to a Deconstructor (AI Core Effect only)  Remember - courier port exists.
+  "IndEvo_hullForge_days_FRIGATE": 5,
+  "IndEvo_hullForge_days_DESTROYER": 10,
+  "IndEvo_hullForge_days_CRUISER": 15,
+  "IndEvo_hullForge_days_CAPITAL_SHIP": 20,
+
+  #Supercomputer:
+  #Core run time in days until burn out. Tooltips will be broken if number is not a multiple of 31.
+  "IndEvo_alpha_core_runtime": 558,
+  "IndEvo_beta_core_runtime": 279,
+  "IndEvo_gamma_core_runtime": 93,
+
+  #Restoration Dock:
+  #AI mode restoration Fees per dMod
+  "IndEvo_restoFee_FRIGATE": 1000,
+  "IndEvo_restoFee_DESTROYER": 3000,
+  "IndEvo_restoFee_CRUISER": 7000,
+  "IndEvo_restoFee_CAPITAL": 10000,
+
+  #Academy:
+  "IndEvo_dailyOfficerSpawnChance": 0.15f,
+  "IndEvo_dailyAdminSpawnChance": 0.10f,
+  "IndEvo_personalityTrainingDayCount": 93,
+  "IndEvo_personalityTrainingCost": 30000,
+  "IndEvo_adminTrainingDayCount": 124,
+  "IndEvo_adminTrainingCost": 20000,
+  "IndEvo_monthlyAIStorageCost": 2000,
+
+  #USE LUNALIB INSTEAD OF MODIFYING THE SETTINGS HERE
+
+  #Variable Industries
+  "IndEvo_VarInd_deliverToProductionPoint": FALSE, #Auto-deliver to production point (default - To local storage)  Remember - courier port exists.
+
+  #Variable industriy deposition amounts:
+  #This is calculated: Amount = (round(((increase*ln(marketSize-2)+amount)/10))*10)*ai_core_factor
+  "IndEvo_AdAssem_amounts": {
+        "IndEvo_parts":55,
+        "supplies": 90,
+        "fuel": 300,
+        "marines": 50,
+        "heavy_machinery": 60,
+        "domestic_goods": 180,
+        "drugs": 50,
+        "hand_weapons": 20,
+        "luxury_goods": 90,
+        "logIncrease": 55,
+  },
+
+  "IndEvo_AdManuf_amounts": {
+        "IndEvo_parts":125,
+        "supplies": 210,
+        "fuel": 600,
+        "marines": 90,
+        "heavy_machinery": 140,
+        "domestic_goods": 420,
+        "drugs": 110,
+        "hand_weapons": 40,
+        "luxury_goods": 210,
+        "logIncrease": 150,
+  },
+
+  "IndEvo_ComForge_amounts": {
+        "IndEvo_parts":280,
+        "supplies": 480,
+        "fuel": 1200,
+        "marines": 240,
+        "heavy_machinery": 320,
+        "domestic_goods": 960,
+        "drugs": 240,
+        "hand_weapons": 100,
+        "luxury_goods": 480,
+        "logIncrease": 250,
+  },
+
+  #vanilla override - do not touch!
+  "adminSalaryTier1":10000,
+  "adminSalaryTier2":20000,
+  "adminSalaryTier3":30000,
+
+  #---------------- If you touch anything below here dont come complaining when it crashes -------------------
+
+  "IndEvo_embassyList": "data/config/indEvo/embassy_whitelist.csv",
+  "IndEvo_reverseList": "data/config/indEvo/reverse_engineering_whitelist.csv",
+  "IndEvo_printList": "data/config/indEvo/printing_whitelist.csv",
+  "IndEvo_shipingList": "data/config/indEvo/shipping_submarkets_whitelist.csv",
+  "IndEvo_custOrderList": "data/config/indEvo/custom_order_blacklist.csv",
+  "IndEvo_buerauList": "data/config/indEvo/bureau_industry_whitelist.csv",
+  "IndEvo_ruindList": "data/config/indEvo/ruins_industry_whitelist.csv",
+  "IndEvo_cloudList": "graphics/clouds/clouds.csv",
+  "IndEvo_labList":"data/config/indEvo/lab_commodity_whitelist.csv",
+  "IndEvo_treeList": "data/config/indEvo/world_tree_whitelist.csv",
+  "IndEvo_ruralList": "data/config/indEvo/rural_polity_blacklist.csv",
+  "IndEvo_arcologiesList": "data/config/indEvo/hidden_arcologies_blacklist.csv",
+  "IndEvo_arcologiesCondList": "data/config/indEvo/hidden_arcologies_supressed_whitelist.csv",
+  "oldstory_csv_path": "data/campaign/stories.csv",
+
+  #wheeeeeeeeeeeeeeeeeeeeeeeeee
+  "IndEvo_ToggleMagicRandomSelector": false,
+
+  "ruleCommandPackages":[
+  "indevo.exploration.surveystories.dialogue.rules",
+  "indevo.industries.academy.rules",
+  "indevo.industries.embassy.rules",
+  "indevo.industries.senate.rules",
+  "indevo.industries.derelicts.rules",
+  "indevo.industries.salvageyards.rules",
+  "indevo.industries.artillery.rules",
+  "indevo.industries.courierport.dialogue",
+  "indevo.abilities.splitfleet.dialogue",
+  "indevo.dialogue.research.dialogue",
+  "indevo.dialogue.rules",
+  "indevo.exploration.gacha.rules",
+  "indevo.dialogue.beacons.dialogue",
+  "indevo.exploration.crucible.dialogue",
+  "indevo.exploration.meteor.rules"
+  ],
+
+  "designTypeColors":{
+  "Experimental":[50, 168, 82, 255],
+  "Nvidia Corporation":[118, 185, 0, 255],
+  "Consumable":[100,10,200,255],
+  "Cryochamber":[80,150,255,255],
+  "Industrial.Evolution":[245,240,240,255],
+  "Galatia Academy":[245,240,240,255],
+  "Domain System Defence":[100,100,100,255]
+},
+
+  "bonusXP": {
+  "IndEvo_SYDoubleCapBonusXP": 0.5,
+  },
+
+  "graphics": {
+      "fx":{
+          "IndEvo_concussionExplosionFX":"graphics/fx/concussion_explosion.png",
+          "IndEvo_transpoofer_glow":"graphics/fx/IndEvo_consumable_transpoofer_glow.png",
+          "IndEvo_beacon_glow": "graphics/fx/IndEvo_consumable_warning_beacon_light.png",
+          "IndEvo_trail_stream":"graphics/fx/trails_stream.png",
+          "IndEvo_trail_foggy":"graphics/fx/trails_foggy.png",
+          "IndEvo_trail_spatter":"graphics/fx/trails_spatter.png",
+          "IndEvo_stream_fringe":"graphics/fx/IndEvo_stream_fringe.png",
+          "IndEvo_stream_core":"graphics/fx/IndEvo_stream_core.png",
+          "IndEvo_target":"graphics/fx/IndEvo_target.png",
+          "IndEvo_target_reticule":"graphics/fx/IndEvo_target_only.png",
+          "IndEvo_danger_notif":"graphics/fx/IndEvo_danger_notif.png",
+          "IndEvo_line":"graphics/fx/IndEvo_straight_line.png",
+          "IndEvo_target_cone": "graphics/fx/IndEvo_target_cone.png",
+          "IndEvo_missile_target": "graphics/fx/IndEvo_missileTarget.png",
+          "IndEvo_carrier_missile": "graphics/mines/campaign_missile_carrier.png",
+          "IndEvo_sub_missile": "graphics/mines/campaign_missile_submunition.png",
+          "IndEvo_sub_missile_explosion": "graphics/fx/missile_explosion.png",
+          "IndEvo_mortar_burn": "graphics/fx/IndEvo_mortar_burn.png",
+          "IndEvo_mortar_glow": "graphics/fx/IndEvo_mortar_glow.png",
+          "IndEvo_mortar_smoke": "graphics/fx/IndEvo_mortar_smoke.png",
+          "IndEvo_mortar_wave": "graphics/fx/IndEvo_mortar_wave.png",
+          "IndEvo_eye_0": "graphics/fx/IndEvo_watchtower_0.png",
+          "IndEvo_eye_1": "graphics/fx/IndEvo_watchtower_1.png",
+          "IndEvo_eye_2": "graphics/fx/IndEvo_watchtower_2.png",
+          "IndEvo_eye_3": "graphics/fx/IndEvo_watchtower_3.png",
+          "IndEvo_missile_targetting_reticule":"graphics/fx/IndEvo_direction_reticule.png",
+          "IndEvo_missile_targetting_arrow":"graphics/fx/IndEvo_targeting_arrow.png",
+          "IndEvo_warning_sign":"graphics/fx/IndEvo_warning.png",
+      },
+      "IndEvo": {
+          "IndEvo_consumable_missile_explosive":"graphics/mines/IndEvo_consumable_missile_explosive.png",
+          "IndEvo_consumable_missile_concussive":"graphics/mines/IndEvo_consumable_missile_concussive.png",
+          "IndEvo_consumable_missile_smoke":"graphics/mines/IndEvo_consumable_missile_smoke.png",
+          "IndEvo_consumable_missile_intercept":"graphics/mines/IndEvo_consumable_missile_intercept.png",
+          "whirl_round":"graphics/fx/IndEvo_whirl_glow.png",
+          "crucible_mass":"graphics/fx/IndEvo_crucible_mass2.png",
+          "portrait_aristocrat":"graphics/portraits/indevo_persean_aristocrat.png",
+          "pets_large":"graphics/icons/misc/pet_icon.png",
+          "pets_small":"graphics/hullmods/pet_icon_hullmod.png",
+          "pop_underworld":"graphics/industry/population/underworld.png",
+          "pop_rural":"graphics/industry/population/rural_polities_1.png",
+          "pop_hidden":"graphics/industry/population/underground_arcology.png",
+          "pop_hidden_water":"graphics/industry/population/underwater_arcology.png",
+          "pop_monks":"graphics/industry/population/monastic_orders.png",
+          "pop_resort":"graphics/industry/population/resort_planet.png",
+          "pop_corpos":"graphics/industry/population/arcology.png",
+          "pop_helldivers":"graphics/industry/population/managed_democracy.png",
+          "pop_warhammer":"graphics/industry/population/forgeworld.png",
+          "pop_outpost":"graphics/industry/population/outpost.png",
+          "warphouse":"graphics/industry/warphouse.png",
+          "icon":"graphics/icons/IndEvo.png",
+          "ore_mining":"graphics/industry/ore_mining.png",
+          "rare_mining":"graphics/industry/rare_ore_mining.png",
+          "volatile_mining":"graphics/industry/volatile_extraction.png",
+          "organics_mining":"graphics/industry/organics_extraction.png",
+          "rare_ore_refining":"graphics/industry/rare_ore_refining.png",
+          "ore_refining":"graphics/industry/ore_refining.png",
+          "kadur_megachurch":"graphics/industry/flavour/megachurch_kadur.png",
+          "palace_light_2":"graphics/industry/flavour/palace_light_2.png",
+          "dysonswarm_texture":"graphics/planets/dyson_swarm.png",
+          "amb_pers": "graphics/industry/embassy/emb_league.png",
+          "amb_heg": "graphics/industry/embassy/emb_hegemony.png",
+          "amb_tt": "graphics/industry/embassy/emb_tritach.png",
+          "amb_church": "graphics/industry/embassy/emb_church.png",
+          "amb_sind": "graphics/industry/embassy/emb_sindria.png",
+          "amb_mod": "graphics/industry/embassy/emb_modded.png",
+          "assembler": "graphics/industry/assembler_active.png",
+          "manufactorium": "graphics/industry/manufactorium_active.png",
+          "comforge": "graphics/industry/comforge_active.png",
+          "supcom_cold": "graphics/industry/supcom_cold.png",
+          "supcom_vcold": "graphics/industry/supcom_vcold.png",
+          "VPCRemovalIcon": "graphics/icons/reports/vpcgone.png",
+          "productionwarning": "graphics/icons/reports/prodwarn.png",
+          "alpha_core": "graphics/icons/reports/ai_core_alpha.png",
+          "beta_core": "graphics/icons/reports/ai_core_beta.png",
+          "gamma_core": "graphics/icons/reports/ai_core_gamma.png",
+          "notification": "graphics/icons/reports/notifikation.png",
+          "warning": "graphics/icons/reports/achtung.png",
+          "reputation": "graphics/icons/reports/rep.png",
+          "trainingdone": "graphics/icons/reports/traindone.png",
+          "FTIcon": "graphics/icons/cargo/forge_template_empty.png",
+          "revBP": "graphics/icons/reports/blueprint_deco.png",
+          "rift_flare": "graphics/planets/IndEvo_flash.png",
+          "rift_hole": "graphics/planets/IndEvo_blackhole.png",
+          "mine4": "graphics/mines/mine4.png",
+          "mineGlow": "graphics/mines/mineGlow.png",
+          "shortFrame": "graphics/fx/IndEvo_short_frame.png",
+          "frameBG": "graphics/fx/IndEvo_BG_mask.png",
+          "broadFrame": "graphics/fx/IndEvo_frame.png",
+          "invisibleHull": "graphics/fx/IndEvo_frame.png",
+          "shield_texture": "graphics/planets/IndEvo_planetary_shield_invisible.png",
+          "vignette_square": "graphics/overlay/indevo_overlay_mixed.png",
+          "vignette_shallow": "graphics/overlay/indevo_overlay_square_shallow.png",
+          "galatia_proj": "graphics/icons/intel/galatia_new_proj.png",
+          "gearwheel": "graphics/stations/gear_wheel_no_colour.png",
+          "fx_flash":"graphics/fx/IndEvo_flash_new.png",
+          "fx_succy_storm_desat":"graphics/fx/IndEvo_blackhole_desat.png",
+          "beacon_custom": "graphics/icons/intel/beacon_custom.png",
+          "log_gachastation":"graphics/icons/intel/log_cryosleeper.png",
+          "meteor_storm":"graphics/icons/intel/indEvo_roids.png"
+      },
+  },
+}

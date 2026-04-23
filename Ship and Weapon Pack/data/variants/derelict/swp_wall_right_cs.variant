@@ -1,0 +1,50 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 3,
+    "fluxVents": 30,
+    "hullId": "swp_wall_right",
+    "hullMods": ["dedicated_targeting_core"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_wall_right_cs",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "mark9"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "harpoonpod",
+                "WS0006": "harpoonpod",
+                "WS0008": "harpoon",
+                "WS0009": "harpoon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "lightdualac"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "heavyac",
+                "WS0005": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "swp_tripleflak"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0010": "lightmg"}
+        }
+    ]
+}

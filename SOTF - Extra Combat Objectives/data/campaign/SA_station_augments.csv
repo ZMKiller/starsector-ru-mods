@@ -1,0 +1,11 @@
+id,name,knowledge_tags,usage_tags,codex_tags,manufac,plugin,drop_weight,sell_weight,combat_drop_chance,sprite_path,ap_cost,modid
+#EXAMPLE,,"if name = faction, goes to that fac.
+otherwise, defers to their faction.json knownHullmods tags field
+
+base_bp goes to all factions
+standard goes to all factions BUT player","format: type number
+combatgood, combatbad, logistics
+
+used in determining autofit, higher numbers = more likely (inverse for combatbad)
+military markets are far more likely to favor combat modification, non-military markets care less and can get logistics",hide_in_codex,,from your data folder,"if 0, never drops from loot","if 0, is never sold in markets","if 0, is never dropped in combat",,can be float,should match your modid
+SOTFECO_asbUplinkAugment,Координатор ASB,"hegemony, persean, merc, tahlan_legioinfernalis",combatgood17,,Common,SOTFECO.augments.ASBPlatforms,100,100,90,graphics/hullmods/ballistic_rangefinder.png,14,niko_SOTFMoreCombatObjectives

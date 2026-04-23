@@ -1,0 +1,59 @@
+{
+  "variantId": "sfcaetos_Beamer",
+  "hullId": "sfcaetos",
+  "displayName": "Beamer",
+  "goalVariant": true,
+  "fluxCapacitors": 16,
+  "fluxVents": 30,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "sfcamregular",
+        "WS0006": "sfcamregular"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "sfcmicropod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sfcambba"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "taclaser",
+        "WS0003": "taclaser",
+        "WS0004": "taclaser",
+        "WS0009": "ionbeam",
+        "WS0010": "ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "pdlaser",
+        "WS0008": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

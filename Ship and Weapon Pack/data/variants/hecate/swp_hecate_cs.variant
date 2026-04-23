@@ -1,0 +1,33 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 7,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "swp_hecate",
+    "hullMods": [
+        "missleracks",
+        "advancedoptics",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_hecate_cs",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "lrpdlaser",
+                "WS0004": "lrpdlaser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "swp_hornet",
+                "WS0002": "swp_hornet"
+            }
+        }
+    ]
+}

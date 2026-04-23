@@ -1,0 +1,152 @@
+{
+  "hullName": "Escarpment",
+  "hullId": "TTSC_escarpment",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/TTSC_escarpment.png",
+  "style": "HIGH_TECH",
+  "height": 190,
+  "width": 100,
+  "center": [50, 95],
+  "collisionRadius": 111.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 103.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -55.5, 31,
+        -50.5, 31
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -57, -30.5,
+        -50, -30
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 0,
+      "locations": [48, 12]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": -0,
+      "locations": [48, -12]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 180,
+      "locations": [-76, -18]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -180,
+      "locations": [-76, 18]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [1, 39]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [1, -39]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 0,
+      "locations": [2, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-90.5, 5.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-90.5, -5.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-89.5, 14.5],
+      "length": 44,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-89.5, -14.5],
+      "length": 44,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    97, -24.5,
+    44.5, -41.5,
+    13, -49.5,
+    -44, -62.5,
+    -100, -38.5,
+    -100, 38.5,
+    -44, 62.5,
+    13, 49.5,
+    44.5, 41.5,
+    97, 24.5
+  ]
+}

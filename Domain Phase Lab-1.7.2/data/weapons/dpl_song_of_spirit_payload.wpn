@@ -1,0 +1,28 @@
+{
+	"id":"dpl_song_of_spirit_payload",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretSprite":"graphics/fx/empty.png",
+	"turretGlowSprite":"graphics/fx/empty.png",
+	"hardpointSprite":"graphics/fx/empty.png",
+	"hardpointGlowSprite":"graphics/fx/empty.png",
+	"glowColor":[200,100,255,255],
+	"turretOffsets":[5, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[5, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"NONE",
+  	"textureType": ROUGH,
+	"muzzleFlashSpec":{"length":100.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":20.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.25,
+					   "particleCount":25,
+					   "particleColor":[200,50,255,255]},	
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"dpl_song_of_spirit_shot",  # projectile that will be fired
+	"fireSoundTwo":"shock_repeater_fire",
+}

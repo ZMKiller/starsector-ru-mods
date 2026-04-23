@@ -1,0 +1,55 @@
+Version 1.5.8
+- Update for 0.98a
+
+Version 1.5.7
+- Update for 0.97a
+- Add missing settings keys to settings.json
+
+Version 1.5.6
+- Kotlin
+- Fix logging for Gate Scanner
+- Abilities should now be added if they aren't detected in the player's available abilities
+- Fix check for minimum LunaLib version
+
+Version 1.5.5
+- Prevent users from using outdated version of LunaLib with mod
+- Fixed spelling error in variable naming
+
+Version 1.5.4
+- Fixed mod crash due to lack of LunaLib soft dependency in some situations
+- Renamed method for checking gate intel and inverted behavior
+- Added gate intel check to make sure scan ability cannot be reactivated if no new gates can be activated or have intel to be added.
+
+Version 1.5.3
+- LunaSettings integration
+- Allow gate scan to add inactive gates to intel without activating them
+
+Version 1.5.2
+- Updated for Starsector version 0.96a.
+- Refactored package names.
+
+Version 1.5.1
+- Added listeners to allow for discovered hypershunts and cryosleepers (when found not using the scanning abilities) to be added to the "Megastructures" intel tab.
+
+Version 1.5.0
+- Moves scanning functionality to abilities.
+- Added abilities to reveal the location of Coronal Hypershunts and Domain-era Cryosleepers.
+
+Version 1.4.1
+- Scanned gates are added to the intel screen. settings.json options are available for adding inactive gates to intel or scanning inactive gates during game startup.
+
+Version 1.4.0
+- Gates are scanned based on their being located in a system with a non-hidden market at save start when Nexerelin Skip Story or the Skip Story mod is enabled.
+
+Version 1.3
+- Fixed a crash caused by not having Nexerelin enabled.
+- Added support for the Skip Story mod.
+
+Version 1.2
+- Added version checking
+
+Version 1.1
+- Fixed the crash caused by gates with no gateData (Shadowyards Reconstruction Authority). Logs errors.
+
+Version 1.0
+-  Initial Release

@@ -1,0 +1,163 @@
+{
+  "hullName": "Module, Combat Citadel",
+  "hullId": "dpl_station_citadal",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/dpl_station_citadal.png",
+  "style": "HIGH_TECH",
+  "height": 250,
+  "width": 250,
+  "center": [125, 120],
+  "collisionRadius": 180,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 160,
+  "viewOffset": 0,
+  "moduleAnchor": [
+    -393,
+    0
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "do_not_fire_through",
+    "always_detaches",
+    "anchorrotation",
+    "missile_reload"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_phase_pd",
+    "WS0002": "dpl_phase_pd",
+    "WS0003": "irautolance",
+    "WS0004": "irautolance",
+    "WS0009": "pulselaser",
+    "WS0010": "pulselaser",
+    "WS0011": "ionbeam",
+    "WS0012": "ionbeam"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [-22, 56]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [-22, -56]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [61, 22]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [61, -22]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [52, 55]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [52, -55]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [22, 78]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [22, -78]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [84, -48]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [84, 48]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-31, 92]
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-31, -92]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    104.5, -6.5,
+    91.5, -56.5,
+    41, -95.5,
+    -24.5, -111.5,
+    -53.5, -105,
+    -55, -62,
+    -81, -27.5,
+    -81, 27.5,
+    -55, 62,
+    -53.5, 105,
+    -24.5, 111.5,
+    41, 95.5,
+    91.5, 56.5,
+    104.5, 6.5
+  ]
+}

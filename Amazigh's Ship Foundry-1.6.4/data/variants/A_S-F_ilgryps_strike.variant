@@ -1,0 +1,60 @@
+{
+  "variantId": "A_S-F_ilgryps_strike",
+  "hullId": "A_S-F_ilgryps",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "fluxdistributor",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "breachpod",
+        "WS0005": "breachpod",
+        "WS0006": "breach",
+        "WS0007": "breach"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ionpulser",
+        "WS0003": "ionpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "A_S-F_electroThermal_blaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "pdburst",
+        "WS0010": "pdburst",
+        "WS0011": "A_S-F_micropulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

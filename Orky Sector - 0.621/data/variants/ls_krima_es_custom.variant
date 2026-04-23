@@ -1,0 +1,38 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 5,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "ls_krima_es",
+    "hullMods": [
+        "ls_orky_override",
+        "magazines"
+    ],
+    "quality": 1.0,
+    "variantId": "ls_krima_es_custom",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_mini_rokkit_pod_krima",
+                "WS 004": "ls_mini_rokkit_pod_krima"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_deffstorm_bolta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_skorcha",
+                "WS 001": "ls_skorcha"
+            }
+        }
+    ]
+}

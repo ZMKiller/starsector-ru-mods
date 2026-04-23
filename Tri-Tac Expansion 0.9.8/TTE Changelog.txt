@@ -1,0 +1,145 @@
+v9.8 - *Save Game compatible - *Important: If you have accepted the Internal affairs bar quest, either finish it or delete it from your log before updating
+	-Removed the Internal Affairs mission due to outdated code causing issues - Sorry folks, did my best but I give up sorry :(
+	-Removed the Nexerelin requirement for the mod
+	-Added code to ensure no Nexerelin random sector generator nonsense - TY Histidine for your help with this!
+	-Deleted the forum and discord link for the "nonex" version as it is no longer needed
+	-IR PD Pulse Laser: added a missing description - sorry must have overlooked that when I added the weapon
+
+v0.9.7 - Save Game compatible - Note: The priority weapon change will only effect newly formed fleets and stations
+	-Dajeil Standard Wing: Removed a stray space between Dajeil and Standard - TY Arcai105 for the report - OCD sufferers rejoice! :)
+	-Removed all TTE weapons from the priority weapon list in the faction file - Ty Spikedot for noting they were being used almost exclusively by TT
+	-Heavy Ion Pulsar: Increased the range from 700 to 800 - Now matches the range of most other TTE weapons
+	-Energy Torpedo: Raised the base damage from 125 to 150
+	-Energy Torpedo Pod: Raised the base damage from 240 to 300 - Received a couple complaints about both that they were too weak
+	-Light Energy Flechette: Raised the base damage from 350 to 400
+	-Energy Flechette: Raised the base damage from 700 to 800
+	-Heavy Energy Flechette: Raised the base damage from 1100 to 1200 - Received some complaints about the damage levels as they are fragmentation weapons and should be higher
+
+v0.9.6 - Save Game compatible - Quick hot fix
+	-Braijsa variant: Replaced two PD Pulse Mining Lasers with 2 Light Energy Flechettes to fill out some open OP - TY Reckless Hi-Tech Prophet for your post
+	-Frightspear: Corrected a mistype on my part and it now correctly fires it's weapon - TY again Reckless Hi-Tech Prophet for noting it
+
+v0.9.5 - Save Game compatible - Quick hot fix
+	-Added the new light carrier to the known ships that TT uses - Woke up this morning and remembered I neglected that, sorry for the hassle
+
+v0.9.4 - Save Game compatible - Note: the IA fix does not take effect until a new game
+	-Fixed the issue with the Internal Affairs bar quest spawning multiple fleets - Much love to Bugatti for taking the time to fix it!
+	-Added 100 EMP damage to the Energy Torpedo and 200 EMP damage to the Energy Torpedo Pod - Had some complaints it wasn't enough 
+	-Added an interceptor, the Wingclipper: Armed with two PD Pulse Mining Lasers and a wing size of 6 for 4 OP
+	-Added a fighter, the Frightspear: Armed with one Light Energy Flechette and a wing size of 4 for 9 OP
+	-Added a new light carrier, the Liseiden: Armed with four small turrets and two hangers - I noted that vanilla High-Tech lacks a destroyer sized carrier
+	-Involucra: Replaced the fighters on the variant with the new fighters and raised the OP by 5	
+	-Gestra: Replaced the ship system from reserve wing to displacer - Makes more sense as it is direct combat oriented and the wings are meant for defense
+	-Added the new light carrier and two wings to the "all ships image" found on the mod forum page and discord link
+	
+v9.3 - Save Game compatible
+	-Olmedreca: Fixed a spelling oopsie in the variant tag from Stamdard to Standard - TY Kherae for noting it
+	-Braijsa: Increased the speed from 40 to 50 - TY Chaosmoose for noting it was a little sluggish
+	-Azadian: Increased the speed from 30 to 40, acceleration from 10 to 20 and flux dissipation from 1250 to 1300 - TY complex_i for noting it needed more variation vs the Paragon
+	@Bugatti I was unable to recreate your suggestion, if you have tested the IA fix you proposed please send it to me and I will add it to the next update TY
+
+v0.9.2 - Save Game compatible 
+	-Cleaned up the sprite for the Amorphia - TY Alfa-HR for reaching out and letting me know
+	-Ion Burst: Lowered the Kinetic damage by 50, increased the EMP damage by 50 and decreased the projectile speed from 1400 to 1200 - Most requested nerf enacted
+	-Caconym: Fixed an issue with the mounts being mislabeled - TY AlfadorZero & Amazigh for noting it
+
+v0.9.1 - Save Game compatible 
+	-Energy Torpedo: Doubled the EMP damage - Makes is more competitive vs the Salamander since the changes in 0.8.1
+	-Gelian: Raised the cost to deploy and supply per month to 28 - TY sycspysycspy for your commentary
+	-Ion Burst: Removed the 0.5 charge up and increased the charge down from 0.5 to 1 - TY sycspysycspy for your investigation  
+	-Added a new ship, the Meristinoux: A destroyer sized armed troop carrier - TY Le Roacher for noting TT lacked a dedicated troop carrier
+
+v0.9 -Not Compatible with game version .97a saves
+	-Updated code to work with version .98a of Starsector
+
+v0.8.1 - Save Game compatible - minor balancing patch
+	-Energy Torpedo: Raised the charge down from 3 to 4 on the small and 6 to 8 on the medium and lowered the range to 1500 - Received some feedback that it was too spammy
+	-Energy Torpedo Shot: Lowered the glow radius from 125 to 75 - Same but that the blue glow was taking over the screen
+
+v0.8 - Save Game compatible *you may need to re-arm any Amorphia in your fleet, see notes*
+	-Added a new ship, the Lupum - A TTE styled cruiser sized variation on the Wolf - Equipped with a phase skimmer and two medium missile mounts
+	-Added a new ship, the Chiark - A destroyer sized High-Tech civilian exploration & survey tug with high resolution sensors, salvage gantry and drive field stabilizers
+	-Added a new weapon, the Heavy Ion Pulsar - A large version of the vanilla Ion Pulsar
+	-Added two new energy torpedoes - One small for 3 OP and one medium for 8 OP - Guided and does energy damage with an EMP burst on hit
+	-Added a new bomber wing, the Grumman - Shielded with strong armor and armed with two small energy torpedoes
+	-Dajeil: Changed the BP from the High Tech BP to the TTE BP - oversight from the previous patch
+	-Amorphia: Raised the OP from 170 to 175 and replaced the two cobra wings with Grumman wings on the variant
+	-Fixed a grammatical error with the Dajeil's description
+	-Added the new ships and wing to the "All Ships Image" on the mod forum page and Discord post
+
+v 0.7 - Save Game compatible *See changelog notes
+	- Added the Tri-Tac crest to the LunaLib & TriOS menus
+	- Removed all TTE assets from the High tech blueprint package - Removes all TTE assets from non Tri-Tac markets (new game only)
+	- Added two new blueprint packages, one for TTE ships and one for TTE weapons - These packages can be found like any other (loot, salvage, etc)
+	- IR PD pulse laser: Lowered to damage from 50 to 45 and flux per shot from 40 to 38 - TY KalHirol for pointing out it was the same as the IR Pulse with 1 less OP
+	- TY KalHirol for asking me to review the deployment costs of the larger TTE ships, the following ships have been adjusted:
+		- Hofoen: Lowered the deployment cost, supplies to recover and supply per month from 48 to 45
+		- Azadian: Lowered the deployment cost, supplies to recover and supply per month from 65 to 62  
+		- Gurgeh: Lowered the deployment cost, supplies to recover and supply per month from 32 to 30
+		- Gelian: Lowered the deployment cost, supplies to recover and supply per month from 27 to 25
+		- Braijsa: Lowered the deployment cost, supplies to recover and supply per month from 26 to 25
+		- Involucra: Lowered the deployment cost, supplies to recover and supply per month from 21 to 20
+
+v0.6.1 - Save Game compatible
+	- Fixed a mount mismatch on the Azadian front hardpoints- TY Toad for noting it and letting me know
+	- Fixed a graphics error with the nonex version of the mod - TY denil380 for informing me and sorry for the hassle it caused you
+	- Removed the STRIKE hint on the Ion Burst - Initially this weapon was slow firing but the current version no longer needs this tag
+	- Changed the primary role of the Pulse Blaster to Anti-Armor and the Ion Burst to Anti-Shield - Had them as General which is for energy weapons
+
+v0.6 - Save Game compatible
+	- Fixed a weapon size mismatch on the Hoefen - You may need to rearm it if one is in your current fleet - TY last_misadventure for letting me know
+	- Reduced the range of the Pulse Blaster, Ion Burst, & Light Plasma Cannon from 1k to 800 and the OP to 12 Medium, 18 Large - Ty Village for your cometary
+	- Added a line (s,m,l) of Frag/EMP suppression Ion pulse weapons - Does equal amounts of Frag and EMP damage  - Test case idea, I'd appreciate feedback
+	- Fixed a mismatch with the nonoex version file - TY ButtercupSandwich and Nissa, Typo Fairy for letting me know
+
+v0.5.1 - Save Game compatible*
+	- Added Nexerelin as a dependency to support Random Core Worlds mode - *This will work with games saved with the 5.0 version using Nexerelin
+	- Added a secondary download link to a version for players who do not use Nexerelin - *This version will work with games saved with the 5.0 version if it was saved w/out Nex installed
+		- Note: In Random Core Worlds mode the mod will not generate stations and become a ship/weapon pack, the added simple event will still function
+	- Added the above Note to the "mod technical notes" spoiler tab on the forum page
+
+v0.5 - Save Game compatible
+	- I've read discussions on reddit and the forums regarding the lack of variety of non-beam energy in the medium slot so I added the following weapons to the TT lineup:
+		- Added a new Medium Energy High Explosive weapon, the Pulse Blaster - Has the effect of removing armor on armor and hull hits
+		- Added a new Medium Energy Kinetic Weapon, the Ion Burst - Has the effect of disabling weapons upon armor and hull hits
+		- Added a new Large Energy Weapon, the Light Plasma Cannon - A scaled down version of the Plasma Cannon for ships with a tighter OP budget
+	- Added a new Heavy Cruiser, the Braijsa - I noted a conversation on r/starsector regarding the lack of a Dominator style tank role ship for High Tech
+	- Added the new ship to the "All Ships Image" on the mod forum
+
+v0.4 - Save Game compatible
+	- Renamed the stations added by this mod to be more thematic - New game sector generation only - TY Coil for the suggestion
+	- Added a cruiser sized heavy freighter, the Rabaroansa - TY Sheito for suggesting a non-phase High-Tech Colossus analog 
+	- Added a new Hybrid Cruiser, the Involucra - TY KnightR for suggesting a High-Tech analog of the Mora
+	- Added the built in mod "Operations Center" to the Morat (destoyer) and the Hofoen (Battle Cruiser) - Gives a High-Tech flagship option for wolfpack as well as heavy ship fleets
+	- Reduced the wing count of the Dajeil drone from 6 to 4 - Though having the same DPS as the mining laser, the PD Pulse does not have the drawback of beams
+	- Touched up the image of the Genar - Noted some artifacts and breaks that needed some fixing
+	- Re-worded the descriptions for a better sentence flow and refinement of meaning - TY BladedQueen for your ongoing editing
+	- Added the two new ships as well as the touched up Genar to the "All Ships Image" on the mod forum
+	
+v0.3 - Save Game compatible
+	- Incorporated Inventor Racoon's quest mod "Internal Affairs" with permission - Adds a nice little starter quest for new TT captains that gives a contact at the end  
+		-Though the above mod has not been updated in some time, if you have it installed disable it as this is an updated .97a replacement and not compatible
+	- Changed the designation of the Jandraligeli and Chamlis from Combat Freighter to Combat Tanker as was intended - Fixing an oopsie
+	- Added a line of High-Tech Tankers (1 frigate, 1 destroyer, 1 capital) - I read complaints on reddit that it made no sense that Tri-Tac was forced to use low tech tankers 
+	- Fixed an issue with the file download link - TY Coil for letting me know 
+	- Changed the mod folder name from TTE to Tri-Tac Expansion - As always delete the old folder (TTE 0.2) - The mod ID remains the same 
+	- Re-made the "All Ships Image" on the mod forum to add the three new ships - Take a peek if you are interested :)	
+
+v0.2 - Save Game compatible
+	- Added a line (1 frigate, 1 destroyer, 1 capital) of Hybrid ships that are not quite battle carriers but do carry wings and can put up a good fight for their weight
+		-Note: The above addition will allow Tri-Tac to field some wings in their game made fleets and bypass their Carriers=0 setting
+	- Gave the descriptions another pass - TY BladedQueen for your suggestions and submissions
+	- Removed some extraneous lines in the generation scripts - Streamlines the memory load
+	- Added a bonus to energy projectile speed to the built in hull mod - This benefits pulse weapons and not beams
+	- Lowered the range bonus of the built in hull mod from 20% to 15% - In further testing I felt when combining it with a targeting core it was a little bit too much
+	- Added a new weapon, PD Pulse Mining Laser - Essentially a mining laser pulse analog with roughly the same stats - To give a lacking option and better take advantage of the hull mod 
+	- Re-designed the Dajeil wing by replacing the weapon to the new PD Pulse Mining Laser and giving it similar stats as the Borer wing but retaining the support role of the mining drone
+	- Re-made the "All Ships Image" on the mod forum to reflect the new ships from this and the previous patch
+
+v0.1.1 - Save Game compatible
+	- Added two new ships to the lineup - Both are combat freighters with shielded cargo holds, 1 frigate and 1 cruiser - I felt Tri-Tac smugglers would appreciate a High-Tech option
+	- Re-wrote several descriptions and fixed some grammatical errors - Rookie mistake oops. - TY BladedQueen for your observations
+	
+v0.1
+	- Initial release for review, testing and constructive criticism.
+		

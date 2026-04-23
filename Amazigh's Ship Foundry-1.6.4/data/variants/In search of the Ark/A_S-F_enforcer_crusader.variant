@@ -1,0 +1,52 @@
+{
+  "variantId": "A_S-F_enforcer_crusader",
+  "hullId": "enforcer",
+  "displayName": "Crusader",
+  "goalVariant": false,
+  "fluxCapacitors": 14,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "pointdefenseai",
+    "safetyoverrides",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "swarmer",
+        "WS 007": "swarmer",
+        "WS 008": "swarmer",
+        "WS 009": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "chaingun",
+        "WS 004": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "flak",
+        "WS 005": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

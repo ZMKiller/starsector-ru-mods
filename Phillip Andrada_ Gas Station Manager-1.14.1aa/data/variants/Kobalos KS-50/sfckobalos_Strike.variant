@@ -1,0 +1,31 @@
+{
+  "variantId": "sfckobalos_Strike",
+  "hullId": "sfckobalos",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "amblaster",
+        "WS0002": "amblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "sfcampulser",
+        "WS0004": "sfcampulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

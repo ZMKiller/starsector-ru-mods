@@ -1,0 +1,25 @@
+event_type,event_stage,p,target_rel,channels,subject,summary,assessment,image,icon,tags,sound_id,implementation notes
+exerelin_slaves_sold,report,,,player_intel_always,Slave trade $onOrAt $market,Rumors have surfaced concerning your sale of slaves $onOrAt $market. The lawful factions in the $location are appalled at your lack of respect for basic human dignity.,Reputation with $numFactions faction(s) reduced by an average of $repPenaltyAbs.,,,,,
+,,,,,,,,,,,,
+exerelin_warmonger,report,,,player_intel_always,Unprovoked attack on $faction,"Your unprovoked attack on $theFaction has angered some of the other factions, and caused great consternation for $thePlayerFaction.","Reputation with $playerFaction reduced by $repPenaltyMyFactionAbs, currently at $newRelationStr.
+Average reputation penalty with $numFactions other faction(s): $repPenaltyAvgAbs",,graphics/exerelin/icons/intel/war.png,,,
+exerelin_warmonger,report_noOwnFaction,,,player_intel_always,Unprovoked attack on $faction,Your unprovoked attack on $theFaction has angered some of the other factions.,Average reputation penalty with $numFactions other faction(s): $repPenaltyAvgAbs,,graphics/exerelin/icons/intel/war.png,,,
+,,,,,,,,,,,,
+exerelin_superweapon,weaponUsed,,,news,Superweapon used by $attackerFaction $onOrAt $market!,"$AttackerFaction forces have used a planet buster superweapon $onOrAt $market, causing shocking levels of destruction. This represents a serious escalation of their conflict with $TheFaction.","Stability reduced by $stabilityPenalty.
+Relations between $attackerFaction and $faction reduced by $relDeltaAbs, currently at $newRelationStr.",,graphics/icons/markets/meteor_strike.png,,,
+exerelin_superweapon,weaponUsed_player,,,news,Superweapon used by $attackerFaction $onOrAt $market!,"$AttackerFaction forces commanded by $playerName have used a planet buster superweapon $onOrAt $market, causing massive levels of destruction. This shocking action may well lead to a diplomatic crisis.","Stability reduced by $stabilityPenalty.
+Relations between $attackerFaction and $faction reduced by $relDeltaAbs, currently at $newRelationStr.
+Average reputation penalty with $numFactions other faction(s): $repPenaltyAvgAbs",,graphics/icons/markets/meteor_strike.png,,,
+,,,,,,,,,,,,
+# covert warfare,,,,,,,,,,,,
+,,,,,,,,,,,,
+nex_instigate_rebellion,success,,,player_intel,$AgentFaction instigates rebellion $onOrAt $market,$AgentFaction intelligence has organized a rebellion $onOrAt $market. Armed activity is expected to begin in the near future.,The rebellion should take $timeFrame to prepare for action.,,,,,
+nex_instigate_rebellion,success_player,,,player_intel_always,$AgentFaction instigates rebellion $onOrAt $market,Your agents have organized a rebellion $onOrAt $market. Armed activity is expected to begin in the near future.,The rebellion should take $timeFrame to prepare for action.,,,,,
+nex_instigate_rebellion,success_detected,,,player_intel_always,$AgentFaction instigates rebellion $onOrAt $market,$Faction counterintelligence has confirmed $agentFaction activity in organizing a rebellion $onOrAt $market. Armed activity is expected to begin in the near future.,"The rebellion should take $timeFrame to prepare for action.
+Relations between $faction and $agentFaction reduced by $repEffectAbs, currently at $newRelationStr.",,,,,
+nex_instigate_rebellion,success_detected_player,,,player_intel_always,$AgentFaction instigates rebellion $onOrAt $market,$Faction counterintelligence has confirmed your activity in organizing a rebellion $onOrAt $market. Armed activity is expected to begin in the near future.,"The rebellion should take $timeFrame to prepare for action.
+Relations between $faction and $agentFaction reduced by $repEffectAbs, currently at $newRelationStr.",,,,,
+nex_instigate_rebellion,failure,,,player_intel,$AgentFaction fails to instigate rebellion $onOrAt $market,"$AgentFaction agents have failed to organize a rebellion $onOrAt $market, although they were able to escape themselves.",,,,,,
+nex_instigate_rebellion,failure_player,,,player_intel_always,$AgentFaction fails to instigate rebellion $onOrAt $market,"Your agents have failed to organize a rebellion $onOrAt $market, although they were able to escape themselves.",,,,,,
+nex_instigate_rebellion,failure_detected,,,player_intel_always,$AgentFaction caught fomenting rebellion $onOrAt $market,$TheFaction has arrested and executed $agentFaction agents attempting to foment rebellion $onOrAt $market. $TheAgentFaction has disavowed the unfortunate operatives.,"Relations between $faction and $agentFaction reduced by $repEffectAbs, currently at $newRelationStr.",,,,,
+nex_instigate_rebellion,failure_detected_player,,,player_intel_always,$AgentFaction caught fomenting rebellion $onOrAt $market,$TheFaction has arrested and executed your agents attempting to foment rebellion $onOrAt $market.,"Relations between $faction and $agentFaction reduced by $repEffectAbs, currently at $newRelationStr.",,,,,

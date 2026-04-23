@@ -1,0 +1,46 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 5,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "swp_striker_luddic_church",
+    "hullMods": [
+        "converted_hangar",
+        "escort_package",
+        "defensive_targeting_array",
+        "ballistic_rangefinder"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_striker_luddic_church_sup",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "lightdualac",
+                "WS0006": "lightdualac",
+                "WS0007": "lightdualac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "breach",
+                "WS0002": "breach",
+                "WS0003": "breach",
+                "WS0004": "breach"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "lightdualmg",
+                "WS0009": "lightdualmg"
+            }
+        }
+    ],
+    "wings": ["talon_wing"]
+}

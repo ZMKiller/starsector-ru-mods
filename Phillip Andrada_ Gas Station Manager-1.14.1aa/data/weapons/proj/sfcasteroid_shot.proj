@@ -1,0 +1,34 @@
+{
+	"id":"sfcasteroid_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+    "explosionColor":[255,90,110,55],  # purely visual, will get a white additively blended core on top of this color
+    "explosionRadius":150, # purely visual
+    "explosionSpec":{"duration":0.1f, # not visual
+                     "radius":150,
+                     "coreRadius":100, # full damage within core radius
+                     "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+                     "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+                     "particleSizeMin":5.0,
+                     "particleSizeRange":3.0,
+                     "particleDuration":1,
+                     "particleCount":80,
+                     "particleColor":[255,145,165,255]},
+	"length":50.0,
+	"hitGlowRadius":150,
+	"width":12.0,
+	"fadeTime":0.5,
+	"fringeColor":[255,165,30,175],
+	#"coreColor":[255,225,175,225],
+	"coreColor":[255,255,255,200],
+	"glowColor":[255,165,30,105],
+	"glowRadius":60,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"bulletSprite":"graphics/missiles/shell_hellbore.png",
+	#"bulletSprite":"graphics/missiles/shell_round_lrg.png"
+	"onHitEffect":"data.scripts.weapons.sfcasteroid_onhit",
+}

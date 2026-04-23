@@ -1,0 +1,47 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "tahlan_dirge_fire",
+  #"fireSoundTwo": "tahlan_atrapos_loop",
+  "everyFrameEffect":"org.niatahl.tahlan.weapons.DisparaxOscillationScript",
+  "coreColor": [
+    226, 255, 155, 230
+  ],
+  "fringeColor": [
+    141, 255, 28, 255
+  ],
+  "glowColor": [
+    141, 255, 28, 150
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/tahlan/weapons/tahlan_atrapos_hp_glow.png",
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_atrapos_hp_base.png",
+  "id": "tahlan_dirge_lance",
+  "size": "SMALL",
+  "specClass": "beam",
+  "hitGlowRadius": 40,
+  "textureScrollSpeed": 400,
+  "pixelsPerTexel":3,
+  "width":8,
+  #"textureType": ROUGH,
+  "textureType": [
+    "graphics/tahlan/fx/tahlan_atrapos_beam_fringe.png",
+    "graphics/tahlan/fx/tahlan_atrapos_beam_core.png"
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/tahlan/weapons/tahlan_atrapos_turret_glow.png",
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/tahlan/weapons/tahlan_atrapos_turret_base.png",
+  "type": "ENERGY"
+}

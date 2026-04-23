@@ -1,0 +1,42 @@
+{
+  "variantId": "TTE_jandraligeli_standard",
+  "hullId": "TTE_jandraligeli",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pulselaser",
+        "WS0002": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "irpulse",
+        "WS0004": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "TTE_pdirpulse",
+        "WS0006": "TTE_pdirpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

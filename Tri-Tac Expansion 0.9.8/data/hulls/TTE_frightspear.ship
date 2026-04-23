@@ -1,0 +1,44 @@
+{
+  "hullName": "Frightspear",
+  "hullId": "TTE_frightspear",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/TTE_frightspear.png",
+  "style": "HIGH_TECH",
+  "height": 36,
+  "width": 32,
+  "center": [16, 18],
+  "collisionRadius": 25.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 24.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [4.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11, -0],
+      "length": 15,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    22, -12.5,
+    -18, -19.5,
+    -18, 19.5,
+    22, 12.5
+  ]
+}

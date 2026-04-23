@@ -1,0 +1,56 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 31,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "swp_liberator",
+    "hullMods": [
+        "fluxdistributor",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_liberator_eli",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "mjolnir",
+                "WS0002": "mjolnir"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "atropos",
+                "WS0009": "atropos",
+                "WS0010": "atropos",
+                "WS0011": "atropos"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "hveldriver",
+                "WS0004": "hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "flak",
+                "WS0006": "flak",
+                "WS0007": "flak",
+                "WS0012": "vulcan",
+                "WS0013": "vulcan",
+                "WS0014": "vulcan",
+                "WS0015": "vulcan"
+            }
+        }
+    ],
+    "wings": ["xyphos_wing"]
+}

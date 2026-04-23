@@ -1,0 +1,80 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 20,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "swp_solar",
+    "hullMods": [
+        "magazines",
+        "hardenedshieldemitter",
+        "targetingunit",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_solar_ass",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "cyclone",
+                "WS0004": "cyclone",
+                "WS0008": "typhoon",
+                "WS0009": "typhoon",
+                "WS0018": "reaper",
+                "WS0019": "reaper"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0012": "sabotpod",
+                "WS0013": "sabotpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "autopulse",
+                "WS0002": "autopulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "ionpulser",
+                "WS0007": "ionpulser",
+                "WS0010": "heavyblaster",
+                "WS0011": "heavyblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "gravitonbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "pdburst",
+                "WS0015": "pdburst",
+                "WS0016": "pdburst",
+                "WS0017": "pdburst",
+                "WS0020": "pdburst",
+                "WS0021": "pdburst",
+                "WS0024": "pdburst",
+                "WS0025": "pdburst"
+            }
+        }
+    ],
+    "wings": [
+        "lux_wing",
+        "lux_wing",
+        "lux_wing"
+    ]
+}

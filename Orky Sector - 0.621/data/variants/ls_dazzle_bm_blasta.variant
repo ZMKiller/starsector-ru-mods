@@ -1,0 +1,51 @@
+{
+    "displayName": "Blasta",
+    "fluxCapacitors": 14,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "ls_dazzle_bm",
+    "hullMods": [
+        "targetingunit"
+    ],
+    "quality": 0.5,
+    "variantId": "ls_dazzle_bm_blasta",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_snazz_cannon",
+                "WS 002": "ls_snazz_cannon",
+                "WS 001": "ls_snazz_cannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 012": "ls_torpedo_bm_rail",
+                "WS 011": "ls_torpedo_bm_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_grot_shoota",
+                "WS 003": "ls_grot_shoota",
+                "WS 006": "ls_grot_shoota",
+                "WS 005": "ls_grot_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "ls_grot_rail",
+                "WS 008": "ls_grot_rail",
+                "WS 007": "ls_grot_rail",
+                "WS 009": "ls_grot_rail"
+            }
+        }
+    ]
+}

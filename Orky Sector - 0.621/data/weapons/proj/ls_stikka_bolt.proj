@@ -1,0 +1,44 @@
+{
+	"id":"ls_stikka_bolt",
+	"specClass":"missile",
+	"missileType":"ROCKET",
+	"sprite":"graphics/weapons/stikka/ls_stikka_bolt.png",
+	"size":[6,23],	
+	"center":[3,11.5],
+	#"size":[10,21],	
+	#"center":[5,10.5],
+	"collisionRadius":24,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[225,225,225,200],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":30, # purely visual
+	"flameoutTime":1.0, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.2, # time spent without the engine glow being rendered
+	"fadeTime":0.3, # fadeout duration	
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":500,
+				  "dec":250},
+	"armingTime":0.3,
+	"engineSlots":[{"id":"ES1",
+					"loc":[-11.5, 0],
+				    #"style":"ROCKET_LOW_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,145,75,0],
+						"contrailDuration":.0,
+						"contrailWidthMult":0,
+						"contrailWidthAddedFractionAtEnd":0,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":0, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[0,0,0,0],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":0,
+				    "length":0,
+				    "angle":180.0}]
+}
+
+			

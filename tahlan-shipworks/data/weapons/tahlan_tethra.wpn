@@ -1,0 +1,55 @@
+{
+  "id": "tahlan_tethra",
+  "specClass": "projectile",
+  "projectileSpecId": "tahlan_tethra_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "everyFrameEffect": "org.niatahl.tahlan.weapons.BalorWeaponScript",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_tethra_turret_base.png",
+  "turretGunSprite": "graphics/tahlan/weapons/tahlan_tethra_turret_recoil.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_tethra_hp_base.png",
+  "hardpointGunSprite": "graphics/tahlan/weapons/tahlan_tethra_hp_recoil.png",
+  "renderAboveAllWeapons": 0,
+  "visualRecoil": 4,
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "turretOffsets": [
+    10.5,
+    3.5,
+    10.5,
+    -3.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    13,
+    3.5,
+    13,
+    -3.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 20,
+    "particleSizeMin": 8,
+    "particleSizeRange": 16,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [
+      255,
+      110,
+      50,
+      205
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "tahlan_tethra_fire"
+}

@@ -1,0 +1,137 @@
+{
+  "hullName": "Misside",
+  "hullId": "A_S-F_misside",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_misside.png",
+  "style": "MIDLINE",
+  "height": 66,
+  "width": 110,
+  "center": [55, 32],
+  "collisionRadius": 70,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 66,
+  "viewOffset": 0,
+  "builtInMods": [
+    "eccm"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [27, 32]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [27, -32]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-13, 36]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-13, -36]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [28, -8]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 50,
+      "locations": [7, 21]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -50,
+      "locations": [7, -21]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": 10,
+      "locations": [25, 10]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-29, 12],
+      "length": 52,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-29, -12],
+      "length": 52,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-28, -0],
+      "length": 60,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    27, -13,
+    18, -26,
+    24, -32,
+    11, -51,
+    6, -51,
+    -13, -36,
+    -3, -28,
+    -28, -18,
+    -28, 18,
+    -3, 28,
+    -13, 36,
+    6, 51,
+    11, 51,
+    24, 32,
+    18, 26,
+    25, 10,
+    20, 3,
+    27, -3
+  ]
+}

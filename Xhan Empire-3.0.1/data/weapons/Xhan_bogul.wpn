@@ -1,0 +1,52 @@
+{
+  "id": "Xhan_bogul",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_bogul_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "displayArcRadius": 400,
+  "turretSprite": "graphics/weapons/Xhan_Plasteen_Bogul_TURRET.png",
+  "turretGlowSprite": "graphics/weapons/Xhan_Plasteen_Bogul_TURRET_GLOW.png",
+  "turretGunSprite": "graphics/weapons/Xhan_Plasteen_Bogul_TURRET_BARREL.png",
+  "hardpointSprite": "graphics/weapons/Xhan_Plasteen_Bogul_HARDPOINT.png",
+  "hardpointGlowSprite": "graphics/weapons/Xhan_Plasteen_Bogul_HARDPOINT_GLOW.png",
+  "hardpointGunSprite": "graphics/weapons/Xhan_Plasteen_Bogul_HARDPOINT_BARREL.png",
+  "glowColor":[255,89,158,255],
+  "renderAboveAllWeapons": 0,
+  "visualRecoil": 2,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    11.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    13,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 12,
+    "spread": 16,
+    "particleSizeMin": 2,
+    "particleSizeRange": 10,
+    "particleDuration": 0.2,
+    "particleCount": 30,
+    "particleColor": [
+      105,
+      255,
+      150,
+      235
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_BOGUL_FIRE_SOUND"
+}

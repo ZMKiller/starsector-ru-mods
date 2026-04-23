@@ -1,0 +1,55 @@
+{
+	"id":"dpl_siren",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"onFireEffect":"com.fs.starfarer.api.impl.combat.dem.DEMEffect",
+	"behaviorSpec":{"behavior":"CUSTOM",
+		"minDelayBeforeTriggering":0,
+		"triggerDistance":[500,550],
+		"preferredMinFireDistance":[500,550],
+		"turnRateBoost":100,
+		"targetingTime":0.99,
+		"firingTime":1.25,
+		"targetingLaserId":"dpl_targetinglaser1",
+		"targetingLaserFireOffset":[8, 0],
+		"payloadWeaponId":"dpl_siren_payload",
+		"targetingLaserRange":600,
+		"targetingLaserArc":10,
+		"bombPumped":false,
+		"snapFacingToTargetIfCloseEnough":true,
+		"fadeOutEngineWhenFiring":false;
+		"destroyMissleWhenDoneFiring":true,
+		"destroyedExplosionColor":[250,200,30,205],
+	},
+	"sprite":"graphics/missiles/dpl_siren_dem.png",
+	"size":[11,20],	
+	"center":[5.5,10],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[250,200,30,205],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":120, # purely visual	
+	"engineSpec":{"turnAcc":420,
+				  "turnRate":140,
+				  "acc":1000,
+				  "dec":100},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-13, 0],
+				    #"style":"MISSILE_HIGH_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[250,200,30,205],
+						"contrailDuration":1,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[250,200,30,205],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":7.0,
+				    "length":40.0,
+				    "angle":180.0},
+				    ]
+}

@@ -1,0 +1,42 @@
+{
+  "variantId": "A_S-F_gleam_ass",
+  "hullId": "A_S-F_gleam",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_formia"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "A_S-F_moros",
+        "WS 005": "A_S-F_moros"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "ioncannon",
+        "WS 002": "irpulse",
+        "WS 003": "irpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,33 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 4,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "ls_shoota_skipper_es",
+    "hullMods": [
+        "targetingunit",
+        "ls_git_finda",
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_shoota_skipper_es_dakka",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_supashoota"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_lobba",
+                "WS 001": "ls_lobba",
+                "WS 003": "ls_supashoota_turret",
+                "WS 002": "ls_supashoota_turret"
+            }
+        }
+    ]
+}

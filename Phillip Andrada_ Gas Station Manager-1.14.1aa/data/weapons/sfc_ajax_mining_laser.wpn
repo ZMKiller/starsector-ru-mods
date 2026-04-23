@@ -1,0 +1,58 @@
+{
+  "id": "sfc_ajax_mining_laser",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "mountTypeOverride": "HYBRID",
+  "size": "SMALL",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_rightarm_mining.png",
+  "turretGlowSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_rightarm_mining_glow.png",
+  "hardpointSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_rightarm_mining.png",
+  "hardpointGlowSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_rightarm_mining_glow.png",
+  "glowColor": [
+    255,
+    155,
+    155,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    36.5,
+    -12.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    61,
+    -12.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    255,
+    0,
+    0,
+    175
+  ],
+  "coreColor": [
+    255,
+    155,
+    155,
+    255
+  ],
+  "width": 17,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 72,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "laser_loop"
+}

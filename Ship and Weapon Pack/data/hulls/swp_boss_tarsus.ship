@@ -1,0 +1,163 @@
+{
+  "hullName": "Carpal",
+  "hullId": "swp_boss_tarsus",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/swp/ships/boss/swp_boss_tarsus.png",
+  "style": "LOW_TECH",
+  "coversColor": "180,255,170,255",
+  "height": 205,
+  "width": 104,
+  "center": [52, 85],
+  "collisionRadius": 156.643707,
+  "shieldCenter": [13, -0],
+  "shieldRadius": 136.617172,
+  "viewOffset": 0,
+  "builtInMods": [
+    "distributed_fire_control"
+  ],
+  "builtInWeapons": {
+    "WS0002": "lidardish",
+    "WS0003": "lidardish"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 135,
+      "locations": [-43, 37]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": -135,
+      "locations": [-43, -37]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [108, 19]
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [108, -19]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -45,
+      "locations": [13, -16]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 230,
+      "angle": 65,
+      "locations": [20, 37]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [67, 19]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [67, -19]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-83, 26],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-79, 16.5],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-77, -0],
+      "length": 64,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-78, -16.5],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, -26],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    39.5, -10,
+    104, -4,
+    109.5, -27,
+    91, -39.5,
+    34.5, -41,
+    13, -37,
+    3, -44.5,
+    -15.5, -41.5,
+    -41.5, -50,
+    -76.5, -38,
+    -82.5, -25.5,
+    -73.5, -8,
+    -73.5, 8,
+    -82.5, 25.5,
+    -76.5, 38,
+    -41.5, 50,
+    -16, 42.5,
+    21, 47,
+    34.5, 41,
+    91, 39.5,
+    109.5, 27,
+    104, 4,
+    39.5, 10
+  ]
+}

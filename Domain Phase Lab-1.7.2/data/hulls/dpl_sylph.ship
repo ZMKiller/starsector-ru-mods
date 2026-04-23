@@ -1,0 +1,105 @@
+{
+  "hullName": "Sylph",
+  "hullId": "dpl_sylph",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/phase/dpl_sylph.png",
+  "style": "HIGH_TECH",
+  "height": 98,
+  "width": 98,
+  "center": [49, 49],
+  "collisionRadius": 106,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 94,
+  "viewOffset": 0,
+  "builtInMods": [
+    "delicate",
+    "phasefield"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [29, 16]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [29, -16]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [1, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-49.5, 31.5],
+      "length": 38.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-49.5, -31.5],
+      "length": 38.5,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-49, 18.5],
+      "length": 38.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-49, -18.5],
+      "length": 38.5,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-48.5, 24.5],
+      "length": 30,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-48.5, -24.5],
+      "length": 30,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    54, -31.5,
+    -32.5, -48,
+    -50.5, -38,
+    -50.5, 38,
+    -32.5, 48,
+    54, 31.5
+  ]
+}

@@ -1,0 +1,565 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+
+"ls_laberus_ds_dakka":6,
+		"ls_laberus_ds_loota":4,
+		"ls_looted_cerberus_ds_kannon":10,
+
+		"ls_mudskipper_ds_dakka":2,
+		"ls_mudskipper_ds_torpedo":2,
+		"ls_mudskipper_ds_rokkit":2,
+
+		"ls_brawler_ds_dakka":6,
+		"ls_brawler_ds_mek":2,
+		"ls_brawler_ds_supa":2,
+
+		"ls_shoota_skipper_ds_overdriven":3,
+		"ls_shoota_skipper_ds_rokkit":3,
+		"ls_shoota_skipper_ds_gunpod":3,
+
+		"ls_smol_rok_ds_dakka":2,
+		"ls_smol_rok_ds_overdriven":2,
+		"ls_smol_rok_ds_torpedo":2,
+
+		"ls_tur_ds_mek":3,
+		"ls_tur_ds_looted":3,
+		"ls_tur_ds_dakka":2,
+
+
+		"ls_kite_es_attack":4,
+		"ls_kite_es_torpedo":4,
+		"ls_kite_es_overdriven":2,
+
+		"ls_lasher_es_overdriven":3,
+		"ls_lasher_es_dakka":5,
+
+		"ls_shoota_skipper_es_torpedo":2,
+		"ls_shoota_skipper_es_dakka":3,
+		"ls_shoota_skipper_es_rokkit":2,
+
+		"ls_hound_es_drilla":5,
+
+		"ls_glimmer_bm_blasta":2,
+		"ls_glimmer_bm_zzapa":2,
+
+		"ls_wolf_bm_custom":4,
+		"ls_wolf_bm_overdriven":2,
+
+		"ls_wayfarer_bm_custom":3,
+
+		"ls_squighawk_bm_custom":2,
+		"ls_squighawk_bm_overdriven":2,
+
+		"ls_wayfarer_ba_custom": 5,
+
+		"ls_sunfish_ba_custom": 5,
+		"ls_sunfish_ba_mekka": 3,
+
+		"ls_zagblitz_ba_meka": 3,
+		"ls_zagblitz_ba_krusha": 4,
+
+		"ls_leadbelcha_ba_torpedo": 4,
+		"ls_leadbelcha_ba_dakka": 6,
+
+
+
+		"fallback":{"combatSmall":1},
+	},
+	"combatSmall":{
+
+		"ls_laberus_ds_dakka":6,
+		"ls_laberus_ds_loota":4,
+		"ls_looted_cerberus_ds_kannon":10,
+
+		"ls_mudskipper_ds_dakka":2,
+		"ls_mudskipper_ds_torpedo":2,
+		"ls_mudskipper_ds_rokkit":2,
+
+		"ls_brawler_ds_dakka":6,
+		"ls_brawler_ds_mek":2,
+		"ls_brawler_ds_supa":2,
+
+		"ls_shoota_skipper_ds_overdriven":3,
+		"ls_shoota_skipper_ds_rokkit":3,
+		"ls_shoota_skipper_ds_gunpod":3,
+
+		"ls_centurion_ds_mekka":3,
+		"ls_centurion_ds_dakka":4,
+		"ls_centurion_ds_escort":4,
+		"ls_centurion_ds_escort_mekka":2,
+
+		"ls_smol_rok_ds_dakka":2,
+		"ls_smol_rok_ds_overdriven":2,
+		"ls_smol_rok_ds_torpedo":2,
+
+		"ls_tur_ds_mek":3,
+		"ls_tur_ds_looted":3,
+		"ls_tur_ds_dakka":2,
+
+
+		"ls_kite_es_attack":4,
+		"ls_kite_es_torpedo":4,
+		"ls_kite_es_overdriven":2,
+
+		"ls_lasher_es_overdriven":3,
+		"ls_lasher_es_dakka":5,
+
+		"ls_shoota_skipper_es_torpedo":2,
+		"ls_shoota_skipper_es_dakka":3,
+		"ls_shoota_skipper_es_rokkit":2,
+
+		"ls_hound_es_drilla":5,
+
+		"ls_yaroudomo_buzza":3,
+
+		"ls_wolf_bm_custom":4,
+		"ls_wolf_bm_overdriven":2,
+
+		"ls_wayfarer_bm_custom":3,
+
+		"ls_bromen_bm_overdriven":2,
+		"ls_bromen_bm_custom":4,
+		"ls_bromen_bm_blasta":4,
+
+		"ls_centurion_bm_custom":5,
+
+		"ls_aperion_bm_custom":1,
+		"ls_aperion_bm_overdriven":1,
+
+		"ls_basilisk_bm_custom":4,
+
+		"ls_glimmer_bm_blasta":2,
+		"ls_glimmer_bm_zzapa":2,
+
+		"ls_squighawk_bm_custom":2,
+		"ls_squighawk_bm_overdriven":2,
+
+		"ls_scrappa_sb_custom":4,
+
+		"ls_rok_sb_custom":3,
+
+		"ls_sand_condor_sb_custom":1,
+
+		"ls_krima_bm_custom":2,
+		"ls_krima_es_custom":2,
+
+		"ls_wayfarer_ba_custom": 5,
+
+		"ls_sunfish_ba_custom": 5,
+		"ls_sunfish_ba_mekka": 3,
+
+		"ls_zagblitz_ba_meka": 3,
+		"ls_zagblitz_ba_krusha": 4,
+
+		"ls_leadbelcha_ba_torpedo": 4,
+		"ls_leadbelcha_ba_dakka": 6,
+
+		"ls_brute_go_ramma": 5,
+		
+		"fallback":{"combatMedium":0.5},
+	},
+	"combatMedium":{
+
+		"ls_stompa_ds_wrecka":3,
+		"ls_stompa_ds_blasta":2,
+		"ls_stompa_bm_blasta":2,
+		"ls_stompa_bm_kustom":2,
+		"ls_stompa_ba_kommand":3,
+		"ls_stompa_es_blitza":2,
+		"ls_stompa_es_skorcha":2,
+
+		"ls_mule_ds_basha":5,
+		"ls_mule_ds_raider":5,
+
+		"ls_tarsus_dakka_ds":3,	
+		"ls_tarsus_ds_flakka":3,
+		"ls_tarsus_ds_artillery":3,
+
+		"ls_hammerhead_ds_blasta":8,
+		"ls_hammerhead_ds_overdrive":4,
+
+		"ls_manticore_ds_dakka":5,
+		"ls_manticore_ds_overdriven":2,
+		"ls_manticore_ds_busta":3,
+
+
+		"ls_mek_box_zzappa":3,
+		"ls_mek_box_overdriven":2,
+		"ls_mek_box_killbox":3,
+		"ls_mek_box_ds_landa":3,
+
+		"ls_terror_ds_landa":3,
+
+		"ls_loota_ds_custom":3,
+
+		"ls_kill_bursta_ds_siege":2,
+
+		"ls_onihime_bm_custom":2,
+		"ls_miko_es_overdriven":1,
+		"ls_miko_es_bakuhatsu":1,
+
+		"ls_phaeton_es_missile":4,
+		"ls_phaeton_es_blasta":4,
+		"ls_phaeton_es_overdriven":2,
+
+		"ls_rok_ds_custom":4,
+		"ls_rok_ds_dakka":6,
+
+		"ls_scrapjet_es_overdriven":4,
+		"ls_scrapjet_es_blasta":6,
+
+		"ls_drilla_es_overdriven":3,
+		"ls_drilla_es_ard":5,
+
+		"ls_terror_es_blasta":4,
+		"ls_terror_es_landa":4,
+
+		"ls_hellsquig_es_overdriven":3,
+
+		"ls_stheno_bm_custom":2,
+		"ls_stheno_bm_tellyporta":2,
+
+
+		"ls_mule_bm_basha":4,
+		"ls_mule_bm_carrier":2,
+
+		"ls_mudfish_bm_overdriven":2,
+		"ls_mudfish_bm_kannon":2,
+		"ls_mudfish_bm_custom":2,
+
+		"ls_spine_rippa_sb_blasta":4,
+		"ls_spine_rippa_sb_support":2,
+		"ls_spine_rippa_sb_overdriven":2,
+
+		"ls_dazzle_bm_blasta":3,
+		"ls_dazzle_bm_support":2,
+
+		"ls_nebula_ba_custom": 5,
+		"ls_nebula_ba_kan_karrier": 3,
+
+		"ls_gore_stabba_ba_dakka": 5,
+		"ls_gore_stabba_ba_torpedo": 5,
+
+		"ls_buffalo_ba_custom": 2,
+
+		"ls_bone_breaka_go_basha": 5,
+		
+		"fallback":{"combatSmall":1},
+	},
+	"combatLarge":{
+		
+		"ls_venture_ds_basha":8,
+		"ls_venture_ds_rokkit":4,
+		"ls_venture_ds_overdriven":2,
+
+		"ls_mora_ds_custom":5,
+		"ls_heron_ds_mek":5,
+		"ls_heron_ds_mad":1,
+		"ls_heron_ds_elite":2,
+
+
+		"ls_eagle_ds_dakka":3,
+		"ls_eagle_ds_boss":3,
+		"ls_eagle_ds_overdriven":2,
+
+		"ls_megabommer_ds_bomma":2,
+		"ls_megabommer_ds_dakka":2,
+
+		"ls_big_rok_ds_custom":4,
+		"ls_big_rok_ds_dakka":4,
+
+		"ls_flame_rumbla_es_skorcha":6,
+		"ls_flame_rumbla_es_overdriven":2,
+
+		"ls_eagle_es_boss":2,
+		"ls_eagle_es_blasta":3,
+		"ls_eagle_es_overdriven":2,
+
+		"ls_smash_hamma_es_smasha":3,
+		"ls_smash_hamma_es_rokkit":3,
+		"ls_smash_hamma_es_overdriven":2,
+		"ls_smash_hamma_es_mekka":2,
+
+		"ls_venture_bm_dakka":8,
+
+		"ls_flashblasta_bm_custom":4,
+		"ls_flashblasta_bm_dakka":4,
+
+		"ls_moonfang_bm_custom":5,
+		"ls_moonfang_bm_overdriven":2,
+
+		"ls_falken_ba_custom":4,
+		"ls_falken_ba_krooza":4,
+		"ls_falken_ba_overdriven":2,
+
+		"ls_gutblasta_ba_dakka":4,
+		"ls_gutblasta_ba_kommand":4,
+
+		"ls_stompa_factory_custom":1,
+
+
+
+		
+		"fallback":{"combatMedium":1},
+	},
+	"combatCapital":{
+		"ls_hulk_ds_warlord":4,
+		"ls_hulk_ds_carrier":2,
+		"ls_star_krumpa_ds_warlord":6,
+		"ls_star_krumpa_ds_shredda":4,
+		"ls_skarfist_es_warlord":3,
+		"ls_skarfist_es_scrappa":3,
+		"ls_star_krumpa_es_warlord":5,
+
+		"ls_Snazdreg_bm_custom":5,
+		"ls_Snazdreg_bm_warlord":5,
+
+		"ls_paragork_bm_custom":5,
+
+		"ls_dredslaught_ba_custom": 4,
+		"ls_dredslaught_ba_kommand": 4,
+
+
+		"fallback":{"combatLarge":1},
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+
+		"ls_laberus_ds_dakka":6,
+		"ls_laberus_ds_loota":4,
+		"ls_looted_cerberus_ds_kannon":10,
+
+		"fallback":{"freighterSmall":1},
+	},
+	"combatFreighterMedium":{
+
+		"ls_mule_ds_basha":5,
+		"ls_mule_ds_raider":5,
+		"ls_terror_es_blasta":4,
+		"ls_terror_es_landa":4,
+		"ls_terror_ds_landa":4,
+		"ls_mule_bm_basha":3,
+		"ls_mule_bm_carrier":2,
+		"ls_loota_ds_custom":6,
+		"ls_gold_tooth_bm_escort":5,
+
+
+		"fallback":{"combatFreighterSmall":1},
+	},
+	"combatFreighterLarge":{
+		"ls_venture_ds_basha":5,
+		"ls_venture_bm_dakka":5,
+		"ls_mega_haula_flamewagon":4,
+		"ls_mega_haula_tanka":1,
+		"ls_flame_rumbla_es_skorcha":2,
+		"ls_skarfist_es_warlord":1,
+		"ls_skarfist_es_scrappa":1,
+
+		"ls_loot_horda_junka":3,
+
+
+
+
+		"fallback":{"combatFreighterMedium":1},
+	},
+	
+	"civilianRandom":{
+
+	},
+
+	# carriers
+	"carrierSmall":{
+
+		"ls_mek_box_zzappa":5,
+		"ls_wayfarer_ds_strike":8,
+		"ls_phaeton_es_missile":1,
+		"ls_phaeton_es_blasta":1,
+		"ls_dram_es_escort":3,
+		"ls_dram_es_strike":2,
+
+		"ls_terror_es_cv_strike":6,
+		"ls_terror_es_cv_support":4,
+		"ls_terror_ds_cv_strike":6,
+		"ls_mule_bm_carrier":2,
+		"ls_gold_tooth_bm_escort":4,
+		"ls_gold_tooth_bm_strike":4,
+
+		"ls_escort_karrier_strike":4,
+		"ls_escort_karrier_escort":3,
+		"ls_escort_karrier_stealth":2,
+		
+		"fallback":{"carrierMedium":0.5},
+		"fallback2":{"carrierLarge":0.25},
+	},
+	"carrierMedium":{
+		"ls_mora_ds_custom":4,
+		"ls_mora_ds_strike":6,
+		"ls_eagle_es_blasta":3,
+		"ls_eagle_es_boss":2,
+
+		"ls_paramork_bm_strike":3,
+		"ls_paramork_bm_brawla":3,
+
+		"fallback":{"carrierSmall":1},
+		"fallback2":{"carrierLarge":0.5},
+	},
+	"carrierLarge":{
+		"ls_hulk_ds_carrier":2,
+		"ls_skarfist_es_warlord":2,
+		"ls_skarfist_es_scrappa":2,
+		
+		"fallback":{"carrierMedium":1},
+		"fallback2":{"carrierSmall":1},
+	},
+
+	# phase ships
+	"phaseSmall":{
+		"ls_shade_es_shielded":3,
+		"ls_shade_es_meka":3,
+		"ls_shade_es_overdriven":3,
+
+		"ls_gremlin_ba_custom": 2,
+		"ls_gremlin_ba_mekka": 3,
+
+
+	},
+	"phaseMedium":{
+		"ls_bloodfang_ba_blasta": 2,
+		"ls_bloodfang_ba_custom": 2,
+
+		"ls_orka_ba_taktikal": 2,
+	},
+	"phaseLarge":{
+
+	},
+	"phaseCapital":{
+
+	},
+
+	# freighters and such
+	"freighterSmall":{
+		"ls_grunt_landa":5,
+		"fallback":{"freighterMedium":0.5},
+		"fallback2":{"freighterLarge":0.25},
+	},
+	"freighterMedium":{
+		"ls_haula_custom":10,
+		"fallback":{"freighterSmall":1},
+		"fallback2":{"freighterLarge":0.5},
+	},
+	"freighterLarge":{
+		"ls_mega_haula_tanka":10,
+		"ls_loot_horda_junka":10,
+		"fallback":{"freighterMedium":1},
+		"fallback2":{"freighterSmall":1},
+	},
+	
+	"tankerSmall":{
+
+		"fallback":{"tankerMedium":0.5},
+		"fallback2":{"tankerLarge":0.25},
+	},
+	"tankerMedium":{
+		"ls_haula_custom":10,
+		"fallback":{"tankerSmall":1},
+		"fallback2":{"tankerLarge":0.5},
+	},
+	"tankerLarge":{
+		"ls_mega_haula_tanka":10,
+		"ls_loot_horda_junka":5,
+		"fallback":{"tankerMedium":1},
+		"fallback2":{"tankerSmall":1},
+	},
+	
+	"personnelSmall":{
+		"ls_grunt_landa":5,
+		"fallback":{"personnelMedium":0.5},
+		"fallback2":{"personnelLarge":0.25},
+	},
+	"personnelMedium":{
+		"ls_terror_es_landa":5,
+		"fallback":{"personnelSmall":1},
+		"fallback2":{"personnelLarge":0.5},
+	},
+	"personnelLarge":{
+		"fallback":{"personnelMedium":1},
+		"fallback2":{"personnelSmall":1},
+	},
+	
+	"linerSmall":{
+		"ls_grunt_landa":5,
+		"fallback":{"linerMedium":0.5},
+		"fallback2":{"linerLarge":0.25},
+	},
+	"linerMedium":{
+
+		"fallback":{"linerSmall":1},
+		"fallback2":{"linerLarge":0.5},
+	},
+	"linerLarge":{
+
+		"fallback":{"linerMedium":1},
+		"fallback2":{"linerSmall":1},
+	},
+	
+	# utility ships
+	"tug":{
+
+		"fallback":{"utility":1},
+	},
+	"crig":{
+
+		"fallback":{"utility":1},
+	},
+	"utility":{
+		"ls_loota_ds_custom":5,
+	},
+	
+	"orbitalStationLowTech":{
+
+	},
+	
+	"battlestationLowTech":{
+
+	},
+	
+	
+
+
+	# Old/unused below this line
+	"fastAttack":{
+		"hound_d_Standard":10,
+		"wolf_d_Attack":10,	
+		"lasher_Standard":10,
+		"hound_Standard":10,
+		"tempest_Attack":10,
+		"hyperion_Attack":1,
+		"wolf_Assault":10,
+		"fallback":{"combatSmall":1},
+	},
+
+	"escortSmall":{
+		"wolf_CS":10,
+		"lasher_d_CS":10,
+		"wolf_d_Attack":10,
+		"lasher_CS":10,
+		"omen_PD":10,
+		"monitor_Escort":2,
+		"wolf_PD":10,
+		"fallback":{"combatSmall":1},
+	},
+	"escortMedium":{
+		"enforcer_d_Strike":10,
+		"hammerhead_d_CS":10,
+		"sunder_d_Assault":10,
+		"buffalo2_FS":10,
+		"enforcer_Assault":10,
+		"medusa_PD":10,
+		"fallback":{"combatMedium":1},
+	},
+	
+}

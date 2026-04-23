@@ -1,0 +1,23 @@
+{
+	"id":"ls_snazz_mega_cannon_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"onHitEffect":"data.weapons.ls_snazz_mega_cannon_onhit",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":108.0,
+	"width":32.0,
+	"fadeTime":0.3,
+	"fringeColor":[140,140,250,225],
+	"coreColor":[255,255,255,200],
+	"glowColor":[140,140,250,75],
+	"glowRadius":44,
+	"hitGlowRadius":48,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	#"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":1.0,
+}

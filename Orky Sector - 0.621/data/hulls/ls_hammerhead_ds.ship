@@ -1,0 +1,202 @@
+{
+    "hullName": "Hammerhead (DS)",
+    "hullId": "ls_hammerhead_ds",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_hammerhead_ds.png",
+    "height": 168,
+    "width": 114,
+    "center": [
+        57, 84
+    ],
+    "collisionRadius": 130,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 120,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_deathskull",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                    75.5,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                      62,       49
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                      62,      -49
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                    62.5,       22
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                    62.5,      -22
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 215,
+            "angle": 115,
+            "locations": [
+                     -29,       39
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 215,
+            "angle": 245,
+            "locations": [
+                     -29,      -39
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -78.5, 15
+            ],
+            "length": 65,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 70,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -78.5, -15
+            ],
+            "length": 65,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 70,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -80, 26.5
+            ],
+            "length": 65,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 70,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -80, -26.5
+            ],
+            "length": 65,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 70,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -81, 38
+            ],
+            "length": 65,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 70,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -81, -38
+            ],
+            "length": 65,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 70,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -45,       -3,
+             -78,       -8,
+             -81,    -43.5,
+             -62,      -41,
+           -25.5,    -55.5,
+        
+             3.5,    -27.5,
+              23,    -25.5,
+              28,    -50.5,
+            60.5,      -54,
+              81,      -34,
+        
+              68,    -32.5,
+            68.5,    -14.5,
+            80.5,     -8.5,
+            80.5,      8.5,
+            68.5,     14.5,
+        
+              68,     32.5,
+              81,       34,
+            60.5,       54,
+              28,     50.5,
+              23,     25.5,
+        
+             3.5,     27.5,
+           -25.5,     55.5,
+             -62,       41,
+             -81,     43.5,
+             -78,        8,
+        
+             -45,        3
+    # 26 points total.
+    ]
+}

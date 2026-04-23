@@ -1,0 +1,74 @@
+{
+    "ruleCommandPackages":[
+        "data.scripts.campaign.swprules",
+    ],
+    "plugins":{
+        "SWP_BlockedHullmodDisplayScript":"data.scripts.everyframe.SWP_BlockedHullmodDisplayScript",
+
+        "SWP_SystemLightInjector":"data.scripts.everyframe.SWP_SystemLightInjector",
+        "SWP_IBBPlugin":"data.scripts.everyframe.SWP_IBBPlugin",
+        "SWP_PluginStarter":"data.scripts.everyframe.SWP_PluginStarter",
+    },
+    "designTypeColors":{
+        "Sindrian Diktat":[180,0,120,255],
+        "Unique":[255,204,0,255],
+        "Unique Low Tech":[255,204,0,255],
+        "Unique Midline":[255,204,0,255],
+        "Unique High Tech":[255,204,0,255],
+        "Unique Explorarium":[255,204,0,255],
+        "Unique Luddic Path":[255,204,0,255],
+        "Unique Imperium":[255,204,0,255],
+    },
+    "bonusXP":{
+        "swp_differentbounty":1,
+        "swpBT_appeal":0.5,
+        "swpBT_silentHand":0.5,
+        "swpBT_coerceTannen":1,
+        "swpBT_recruitTannenHard":0,
+        "swpBT_recruitTannen":0,
+        "swpBT_recruitTannenEasy":0.5,
+        "swpBT_noProgressSmoothOver":0.5,
+        "swpBT_noProgressConvince":0,
+        "swpBT_shock":1,
+        "swpBT_uwContactPressure":1,
+        "swpBT_uwBarSneak":0.5,
+        "swpBT_thugLife":1,
+        "swpBT_thugTannen":0.5,
+        "swpBT_completionLie":0,
+	},
+    "graphics":{
+        "blueprint_packages":{
+            "swp_LG_package":"graphics/swp/icons/cargo/swp_bp_LG.png",
+        },
+        "swp_trails":{
+            "swp_cleantrail":"graphics/swp/fx/swp_cleantrail.png",
+            "swp_dirtytrail":"graphics/swp/fx/swp_dirtytrail.png",
+            "swp_fuzzytrail":"graphics/swp/fx/swp_fuzzytrail.png",
+            "swp_smoothtrail":"graphics/swp/fx/swp_smoothtrail.png",
+            "swp_zappytrail":"graphics/swp/fx/swp_zappytrail.png",
+        },
+        "swp_blast":{
+            "swp_empblast_core":"graphics/swp/fx/swp_empblast_core.png",
+            "swp_empblast_fringe":"graphics/swp/fx/swp_empblast_fringe.png",
+        },
+        "swp_indicators":{
+            "swp_excelsiorindicator":"graphics/ui/icons/64x_circle.png"
+        },
+        "characters":{
+            "swp_tannen":"graphics/swp/portraits/swp_tannen.png",
+            "swp_lee":"graphics/swp/portraits/swp_lee.png",
+            "swp_lee_ghost":"graphics/swp/portraits/swp_lee_ghost.png",
+            "swp_static":"graphics/swp/portraits/static.png",
+            "swp_elyon":"graphics/swp/portraits/swp_portrait_ai1.png",
+            "swp_rachmaninoff":"graphics/swp/portraits/swp_rachmaninoff.png",
+            "swp_mouse":"graphics/swp/portraits/swp_maus.png",
+        },
+        "illustrations":{
+            "swp_cargo_pod_drift":"graphics/illustrations/cargo_pod_drift.jpg",
+            "swp_harry":"graphics/illustrations/harry.jpg",
+        },
+		"swp":{
+			"swp_icon":"graphics/swp/icons/missions/swp_buried_treasure.png", 
+		},
+    },
+}

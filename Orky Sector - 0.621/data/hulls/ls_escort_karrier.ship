@@ -1,0 +1,132 @@
+{
+    "hullName": "Escort Karrier (BA)",
+    "hullId": "ls_escort_karrier",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_escort_karrier_ba.png",
+    "height": 148,
+    "width": 120,
+    "center": [
+        60, 74
+    ],
+    "collisionRadius": 100,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 98,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_bloodaxes",
+        "rugged",
+        "ls_ramshackle",
+        "ls_escort_karrier"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 30,
+            "locations": [
+                    55.5,       24
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 90,
+            "locations": [
+                      16,       35
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 270,
+            "locations": [
+                      16,      -35
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      44,     -0.5,
+                    29.5,        0
+            ]
+        },
+        {
+            "id": "LB 001",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      15,        0,
+                    -0.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -72.5, 21
+            ],
+            "length": 48,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 54,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -72.5, -21
+            ],
+            "length": 48,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 54,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -49.5,       -5,
+           -62.5,       -6,
+             -73,    -16.5,
+             -73,    -25.5,
+           -62.5,      -35,
+        
+            21.5,      -46,
+            57.5,      -27,
+            57.5,     14.5,
+            63.5,     16.5,
+            63.5,       31,
+        
+              47,     35.5,
+            21.5,       46,
+           -62.5,       35,
+             -73,     25.5,
+             -73,     16.5,
+        
+           -62.5,        6,
+           -49.5,        5
+    # 17 points total.
+    ]
+}

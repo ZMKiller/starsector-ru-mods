@@ -1,0 +1,33 @@
+{
+  "id": "zea_hosta_m",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+
+  "beamEffect":"org.selkie.zea.weapons.SparkleBeamEffect",
+
+  "turretSprite": "graphics/zea/weapons/zea_hosta_m_base.png",
+  "turretGlowSprite": "graphics/zea/weapons/zea_hosta_m_glow.png",
+  "hardpointSprite": "graphics/zea/weapons/zea_hosta_m_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/zea/weapons/zea_hosta_m_hardpoint_glow.png",
+  "fringeColor":[40,80,215,255],
+  "coreColor":[230,170,255,220],
+  "glowColor": [100,150,240,255],
+  "turretOffsets": [18,0],
+  "turretAngleOffsets": [0],
+  "hardpointOffsets": [18,0],
+  "hardpointAngleOffsets": [0],
+  #"darkCore":true,
+  "width":50.0,
+  "textureScrollSpeed":223.0,
+  "pixelsPerTexel":1.0,
+  #"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW",
+  #"textureType": ROUGH,
+  "textureType": [
+    "graphics/zea/fx/zea_beam_fringe.png",
+    "graphics/zea/fx/zea_hosta_beam_core.png"
+  ],
+  "fireSoundTwo": "tachyon_lance_fire"
+}

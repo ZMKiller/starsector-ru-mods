@@ -1,0 +1,27 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Splinter Group",
+    
+    "startRelationships":{ "tiandong": -0.6 },
+    "diplomacyPositiveChance":{ "tiandong":0.75 },
+    "diplomacyNegativeChance":{ "tiandong":1.5 },
+
+    "alignments":{
+        "corporate":1,
+        "militarist":0.5,
+    },
+    
+    "vengeanceLevelNames":["Grudge"],
+    "vengeanceFleetNames":["Enforcers"],
+    "vengeanceFleetNamesSingle":["an Enforcer fleet"],
+    
+    "customStations":["station_citadel_type"],
+    
+    "startShipsSolo":[["Fox_Frigate_standard"]],  # Aural
+    "startShipsCombatSmall":[["Fox_MDestroyer_standard", "fox_dfrigate_standard", "Fox_Corvette_standard"]], # Tacit, Rondure, Particle
+    "startShipsTradeSmall":[["Fox_LDestroyer_standard", "Fox_Drone_standard", "Fox_Hauler_standard"]],  # Comet, Porter, Stable
+    "startShipsCombatLarge":[["Fox_Cruiser_standard", "Fox_Minelayer_standard", "fox_dfrigate_closesupport"]], # Nova, Modem, Rondure
+    #"startShipsTradeLarge":["Fox_Carrier_standard", "Fox_Hauler_standard", "fox_heak_wing"],   # Inland, Stable, Heak
+}

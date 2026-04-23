@@ -1,0 +1,19 @@
+{
+	"id":"ls_flame_belcha_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.weapons.ls_flamer_effect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":80.0,
+	"width":40.0,
+	"hitGlowRadius":0,
+	"fadeTime":0.25,
+	"fringeColor":[175,100,0,100],
+	"coreColor":[255,150,0,100],
+	#"coreColor":[255,255,255,50],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0
+	
+}

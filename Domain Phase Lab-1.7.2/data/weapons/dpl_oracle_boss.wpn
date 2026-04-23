@@ -1,0 +1,39 @@
+{
+  "id": "dpl_oracle_boss",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  #"collisionClass": "RAY",
+  #"collisionClassByFighter": "RAY_FIGHTER",
+  "beamEffect":"data.scripts.weapons.dpl_OracleEffect",
+  "turretSprite": "graphics/weapons/dpl_oracle_turret_base.png",
+  "turretGlowSprite": "",
+  "hardpointSprite": "graphics/weapons/dpl_oracle_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/dpl_oracle_hardpoint_glow.png",
+  "renderAboveAllWeapons": 0,
+  "fringeColor":[135,105,235,255],
+  "coreColor":[255,255,255,255],
+  "glowColor":[155,100,255,255],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    148,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    169,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "beamFireOnlyOnFullCharge": false,
+  "width": 250,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 300.0,
+  "pixelsPerTexel": 1,
+  "pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF,FIGHTER,ASTEROID],
+  "fireSoundTwo":"tachyon_lance_fire",
+}

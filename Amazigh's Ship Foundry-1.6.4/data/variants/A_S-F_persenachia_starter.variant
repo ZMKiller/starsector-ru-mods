@@ -1,0 +1,42 @@
+{
+  "variantId": "A_S-F_persenachia_starter",
+  "hullId": "A_S-F_persenachia",
+  "displayName": "Experimental",
+  "goalVariant": false,
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull",
+    "fluxcoil",
+    "unstable_injector",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "A_S-F_ir_autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "irpulse",
+        "WS0004": "irpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

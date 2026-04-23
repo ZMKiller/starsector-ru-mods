@@ -1,0 +1,49 @@
+{
+	"id":"A_S-F_AURA_missile",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/rift_torpedo.png",
+	"size":[12,18],	
+	"center":[6,9],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[200,170,75,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":60, # purely visual
+
+	"reduceDamageWhileFading":true,
+	"useHitGlowWhenDestroyed":true,
+	"fizzleOnReachingWeaponRange":true,
+	"dudProbabilityOnFlameout":0,
+	"armingTime":0,
+	"flameoutTime":0.5,
+	"noEngineGlowTime":0.5,
+	"fadeTime":0.5,
+	"glowColor":[200,170,75,80], #150 A
+	"glowRadius":30, #20
+
+	"engineSpec":{"turnAcc":1080,
+				  "turnRate":540,
+				  "acc":720, #400
+				  "dec":50},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-2, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[250,150,75,10],
+						"glowSizeMult":1.1,
+						"glowAlternateColor":[250,150,75,190], #240 A
+						"contrailDuration":1,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":-1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[135,135,70,75],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":8.0,
+				    "length":33.0,
+				    "angle":180.0}]
+}

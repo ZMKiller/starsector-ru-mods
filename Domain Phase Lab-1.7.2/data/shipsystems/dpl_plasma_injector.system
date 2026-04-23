@@ -1,0 +1,26 @@
+{
+	"id":"dpl_plasma_injector",
+	"type":"STAT_MOD",
+	"aiType":"TEMPORAL_SHELL",
+	
+	"statsScript":"data.shipsystems.scripts.dpl_PlasmaInjectorStats",
+	
+	"engineGlowLengthMult":1,
+	"engineGlowWidthMult":1,
+	"engineGlowGlowMult":2,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":false,
+
+	"useSound":"system_plasma_jets",
+	"loopSound":"system_plasma_jets_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":50,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":50,
+	}
+}

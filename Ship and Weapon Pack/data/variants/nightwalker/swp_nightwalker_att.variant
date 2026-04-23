@@ -1,0 +1,39 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 15,
+    "fluxVents": 12,
+    "goalVariant": true,
+    "hullId": "swp_nightwalker",
+    "hullMods": [
+        "magazines",
+        "phase_anchor"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_nightwalker_att",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "autopulse"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "annihilator",
+                "WS0003": "annihilator",
+                "WS0004": "annihilator",
+                "WS0005": "annihilator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "pdburst",
+                "WS0007": "pdburst"
+            }
+        }
+    ]
+}

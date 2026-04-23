@@ -1,0 +1,28 @@
+{
+    "displayName": "Stunner",
+    "fluxCapacitors": 9,
+    "fluxVents": 5,
+    "hullId": "hyperion",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_hyperion_stunner",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "swp_ionblaster",
+                "WS 002": "swp_ionblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "heavyneedler"}
+        }
+    ]
+}

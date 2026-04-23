@@ -1,0 +1,19 @@
+{
+	"id":"dpl_doom_flamer_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.scripts.weapons.dpl_doom_flamerEffect",
+	
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":60.0,
+	"width":30.0,
+	"hitGlowRadius":0,
+	"fadeTime":0.25,
+	"fringeColor":[255,200,75,100],
+	"coreColor":[255,200,45,100],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0
+	
+}

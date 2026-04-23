@@ -1,0 +1,58 @@
+{
+  "variantId": "A_S-F_bathory_std2",
+  "hullId": "A_S-F_bathory",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 8,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "frontemitter",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "gazer",
+        "WS0005": "gazer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "irautolance",
+        "WS0003": "irautolance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightac",
+        "WS0007": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "lrpdlaser",
+        "WS0009": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

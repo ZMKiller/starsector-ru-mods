@@ -1,0 +1,134 @@
+{
+  "hullName": "Gestra",
+  "hullId": "TTE_gestra",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/TTE_gestra.png",
+  "style": "HIGH_TECH",
+  "height": 131,
+  "width": 122,
+  "center": [61, 65.5],
+  "collisionRadius": 81.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 79,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        23, 5,
+        22.5, 2.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        23, -1,
+        22.5, -4
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [-27.5, 22.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [-27.5, -22.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [3.5, 44]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [3.5, -44]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 285,
+      "angle": 180,
+      "locations": [-29.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-54, 39.5],
+      "length": 44,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-54, -39.5],
+      "length": 44,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-61, -0],
+      "length": 57.5,
+      "width": 35,
+      "angle": 180,
+      "contrailSize": 35,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    64.5, -16.5,
+    25.5, -34,
+    9.5, -38,
+    8, -52,
+    -28, -63.5,
+    -47.5, -45.5,
+    -58.5, -49.5,
+    -59, -19,
+    -68.5, -12,
+    -68.5, 12,
+    -59, 19,
+    -58.5, 49.5,
+    -47.5, 45.5,
+    -28, 63.5,
+    8, 52,
+    9.5, 38,
+    25.5, 34,
+    64.5, 16.5
+  ]
+}

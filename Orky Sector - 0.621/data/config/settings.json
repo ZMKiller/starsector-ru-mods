@@ -1,0 +1,74 @@
+{
+  "designTypeColors": {
+    "Orky": [0, 205, 0, 255],
+    "Deathskulls": [25, 150, 225, 255],
+    "Evil Sunz": [75, 200, 0, 255],
+    "Bad Moons": [245, 245, 20, 255],
+    "Snakebites": [160,85,45, 255],
+    "Blood Axes": [195,245,145,255],
+    "Goffs": [80,85,90,255],
+
+  },
+      "ruleCommandPackages":[
+		"data.utils.rulecmd", 
+		
+	],
+  	"graphics":{
+
+     	 "characters":{
+		"ls_dregmek":"graphics/portraits/ls_ork_ds1.png",
+		"ls_fawkes":"graphics/portraits/portrait_pirate07.png",
+		"ls_gitgrod":"graphics/portraits/ls_ork_ba1.png",
+
+
+       		 },
+
+	"illustrations":{
+		"ls_skargrim_comm":"graphics/portraits/ls_skargrim_comm.png",
+
+       		 },
+
+		"icons":{
+            "ls_rtw":"graphics/icons/mission/ls_rtw.png",
+
+		},
+
+
+      "fx":{
+"Imhanliu":"graphics/weapons/deco/ls_iamhanliu.png",
+        },
+
+ 		"ls_basilisk":{
+				"shield_bubble":"graphics/ships/ls_basilisk_bubble.png",
+				"burndrive":"graphics/icons/hullsys/burn_drive.png",
+		},
+  
+		"onihime":{
+				"burndrive":"graphics/icons/hullsys/burn_drive.png",
+		},
+		"hullmod":{
+				"mob_rule_icon":"graphics/hullmods/ls_mob_rule.png",
+				"killboy_icon":"graphics/hullmods/ls_killboy.png",
+				"goose_icon":"graphics/hullmods/ls_goose.png",
+
+		},
+
+
+
+      "blueprint_packages":{
+         "ls_orky_bp_package":"graphics/bp/ls_orky_bp.png",
+         "ls_bm_bp_package":"graphics/bp/ls_bm_bp.png",
+         "ls_es_bp_package":"graphics/bp/ls_es_bp.png",
+         "ls_ds_bp_package":"graphics/bp/ls_ds_bp.png",
+         "ls_sb_bp_package":"graphics/bp/ls_sb_bp.png",
+         "ls_ba_bp_package":"graphics/bp/ls_ba_bp.png",
+         "ls_go_bp_package":"graphics/bp/ls_go_bp.png",
+        	},
+	},
+    "plugins":{
+      "ls_mob_rule":"data.utils.ls_mob_rule",
+	"OrkShipsystemLights":"data.plugins.OrkShipsystemLights",
+    }
+
+
+}

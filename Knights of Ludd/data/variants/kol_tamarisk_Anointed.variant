@@ -1,0 +1,66 @@
+{
+    "displayName": "Anointed",
+    "fluxCapacitors": 6,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "kol_tamarisk",
+    "hullMods": [
+        "ballistic_rangefinder",
+        "magazines",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "kol_tamarisk_Anointed",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "miningblaster",
+                "WS0009": "miningblaster",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "annihilator",
+                "WS0005": "annihilator",
+                "WS0003": "annihilator",
+                "WS0002": "annihilator",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "kol_llyr",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "kol_drian",
+                "WS0010": "kol_drian",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "vulcan",
+                "WS0007": "vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"ARMOR_MODULE_TL": "kol_tamarisk_tl_Anointed"},
+        {"ARMOR_MODULE_TR": "kol_tamarisk_tr_Anointed"},
+        {"ARMOR_MODULE_LL": "kol_tamarisk_ll_Anointed"},
+        {"ARMOR_MODULE_LR": "kol_tamarisk_lr_Anointed"},
+    ],
+}

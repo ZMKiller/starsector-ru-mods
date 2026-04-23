@@ -1,0 +1,33 @@
+{
+  "variantId": "XHAN_Ketsil_CloseSupport",
+  "hullId": "XHAN_Ketsil",
+  "displayName": "Close Support",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Xhan_Drob",
+        "WS0002": "Xhan_Drob"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "Chok_point_def",
+        "WS0004": "Chok_point_def"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "Palka_wing"
+  ]
+}

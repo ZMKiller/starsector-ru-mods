@@ -1,0 +1,19 @@
+{
+	"id":"ls_burna_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.weapons.ls_burna_effect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":50.0,
+	"width":25.0,
+	"hitGlowRadius":0,
+	"fadeTime":0.25,
+	"fringeColor":[150,50,0,100],
+	"coreColor":[150,150,255,225],
+	#"coreColor":[255,255,255,50],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0
+	
+}

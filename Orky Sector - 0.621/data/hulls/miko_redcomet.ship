@@ -1,0 +1,220 @@
+{
+    "hullName": "Red Comet (Test Type)",
+    "hullId": "miko_redcomet",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/miko_redcomet.png",
+    "height": 129,
+    "width": 146,
+    "center": [
+        73, 60
+    ],
+    "collisionRadius": 80,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 76,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_deathskull",
+        "auxiliarythrusters",
+        "mikohime_dash"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+  "builtInWeapons": {
+    "WS0002": "miko_autokanon",
+    "WS0003": "ls_cometshoota_l",
+    "WS0004": "ls_cometshoota_r"
+  },
+    "weaponSlots": [
+        {
+            "id": "WS0001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 360,
+            "angle": 180,
+            "locations": [
+                    -0.5,        0
+            ]
+        },
+        {
+            "id": "WS0002",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                      37,        0
+            ]
+        },
+        {
+            "id": "WS0003",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    22.5,     23.5
+            ]
+        },
+        {
+            "id": "WS0004",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    22.5,    -23.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -30.5, -13
+            ],
+            "length": 54.5,
+            "width": 11,
+            "angle": -180,
+            "contrailSize": 11,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -27.5, 37
+            ],
+            "length": 54.5,
+            "width": 11,
+            "angle": 180,
+            "contrailSize": 11,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -29.5, -41
+            ],
+            "length": 23.181877,
+            "width": 10.020093,
+            "angle": -150,
+            "contrailSize": 10,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -29.5, 41
+            ],
+            "length": 23.181877,
+            "width": 10.020093,
+            "angle": 150,
+            "contrailSize": 10,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -29.5, -33
+            ],
+            "length": 23.181877,
+            "width": 10.020093,
+            "angle": 150,
+            "contrailSize": 10,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -29.5, 33
+            ],
+            "length": 23.181877,
+            "width": 10.020093,
+            "angle": -150,
+            "contrailSize": 10,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -30.5, 13
+            ],
+            "length": 54.5,
+            "width": 11,
+            "angle": 180,
+            "contrailSize": 11,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -27.5, -37
+            ],
+            "length": 54.5,
+            "width": 11,
+            "angle": 180,
+            "contrailSize": 11,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -47.5,       -3,
+           -29.5,       -5,
+             -33,       -9,
+             -33,    -16.5,
+           -14.5,    -28.5,
+        
+             -36,      -31,
+             -28,      -32,
+             -28,      -42,
+           -35.5,    -42.5,
+           -15.5,    -52.5,
+        
+           -16.5,      -68,
+             -11,    -69.5,
+              -4,    -60.5,
+             6.5,      -72,
+              12,      -72,
+        
+             8.5,    -56.5,
+               9,      -47,
+            33.5,    -42.5,
+            33.5,    -32.5,
+              18,      -28,
+        
+            22.5,      -19,
+            29.5,      -17,
+            37.5,      -20,
+              53,       -5,
+              53,        5,
+        
+            37.5,       20,
+            29.5,       17,
+            22.5,       19,
+              18,       28,
+            33.5,     32.5,
+        
+            33.5,     42.5,
+               9,       47,
+             8.5,     56.5,
+              12,       72,
+             6.5,       72,
+        
+              -4,     60.5,
+             -11,     69.5,
+           -16.5,       68,
+           -15.5,     52.5,
+           -35.5,     42.5,
+        
+             -28,       42,
+             -28,       32,
+             -36,       31,
+           -14.5,     28.5,
+             -33,     16.5,
+        
+             -33,        9,
+           -29.5,        5,
+           -47.5,        3
+    # 48 points total.
+    ]
+}

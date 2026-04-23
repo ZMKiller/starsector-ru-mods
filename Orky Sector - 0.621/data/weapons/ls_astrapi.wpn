@@ -1,0 +1,28 @@
+{
+	"id":"ls_astrapi",  # this id must match what's in the spreadsheet
+	"everyFrameEffect":"data.weapons.ls_ball_lightning_effect",
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"displayArcRadius":800,
+	"turretSprite":"graphics/weapons/ls_astrapi.png",
+	"turretGlowSprite":"graphics/weapons/ls_astrapi_glow.png",
+	"hardpointSprite":"graphics/weapons/ls_astrapi.png",
+	"hardpointGlowSprite":"graphics/weapons/ls_astrapi_glow.png",
+	"turretOffsets":[24,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[24,0],
+	"hardpointAngleOffsets":[0],
+	"glowColor":[100,100,250,125],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":15.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":30.0,
+					   "particleSizeMin":4.0,
+					   "particleSizeRange":4.0,
+					   "particleDuration":0.3,
+					   "particleCount":100,
+					   "particleColor":[100,100,250,125]},
+	"projectileSpecId":"ls_astrapi_shot",  # projectile that will be fired
+	"fireSoundTwo":"ls_magnum_pulse",
+}

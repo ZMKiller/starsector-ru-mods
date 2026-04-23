@@ -1,0 +1,90 @@
+{
+  "hullName": "Hecate",
+  "hullId": "swp_hecate",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/swp/ships/swp_hecate_ff.png",
+  "style": "HIGH_TECH",
+  "height": 79,
+  "width": 72,
+  "center": [36, 38],
+  "collisionRadius": 57.27565,
+  "shieldCenter": [0.5, 0],
+  "shieldRadius": 55,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [1, 22]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [1, -22]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 15,
+      "locations": [-21, 10]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -15,
+      "locations": [-21, -10]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-32, 16],
+      "length": 64,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, -16],
+      "length": 64,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-37, -0],
+      "length": 80,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    24, -15.5,
+    5, -16,
+    2, -35,
+    -29.5, -20,
+    -37, 0,
+    -29.5, 20,
+    2, 35,
+    5, 16,
+    24, 15.5,
+    39, 0
+  ]
+}

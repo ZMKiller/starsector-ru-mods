@@ -1,0 +1,56 @@
+{
+  "variantId": "sfcpatherdrachm_Hammerer",
+  "hullId": "sfcpatherdrachm",
+  "displayName": "Hammerer",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 6,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "safetyoverrides",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "hammerrack"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "hammer",
+        "WS0004": "hammer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightneedler",
+        "WS0003": "lightneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

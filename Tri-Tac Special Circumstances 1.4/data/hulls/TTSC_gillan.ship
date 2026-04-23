@@ -1,0 +1,150 @@
+{
+  "hullName": "Gillan",
+  "hullId": "TTSC_gillan",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/TTSC_gillan.png",
+  "style": "HIGH_TECH",
+  "height": 134,
+  "width": 132,
+  "center": [66, 67],
+  "collisionRadius": 83.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 80,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "repair_gantry",
+    "civgrade"
+  ],
+  "builtInWings": [
+    "TTSC_rascal_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [40.5, 29]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": -0,
+      "locations": [40.5, -29]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [14.5, 46]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [14.5, -46]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [41, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-41, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        11.5, -0,
+        18.5, -0
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-64.5, 12.5],
+      "length": 39.5,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-64.5, -12.5],
+      "length": 39.5,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-9, 54],
+      "length": 25,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-9, -54],
+      "length": 25,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-65, 26.5],
+      "length": 30.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-65, -26.5],
+      "length": 30.5,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    71, -38.5,
+    0.5, -77,
+    -21.5, -52.5,
+    -77.5, -40,
+    -77.5, 40,
+    -21.5, 52.5,
+    0.5, 77,
+    71, 38.5
+  ]
+}

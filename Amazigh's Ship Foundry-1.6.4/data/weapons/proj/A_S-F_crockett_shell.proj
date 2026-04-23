@@ -1,0 +1,25 @@
+{
+	"id":"A_S-F_crockett_shell",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_CrockettOnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_CrockettOnHitEffect",
+
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":46.0,
+	"hitGlowRadius":120,
+	"width":10.5,
+	"fadeTime":0.45,
+	"fringeColor":[250,170,30,175],
+	"coreColor":[255,255,255,200],
+	"glowColor":[255,160,35,100],		#[250,170,30,105]
+	"glowRadius":50,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":"graphics/missiles/shell_hellbore.png"
+}

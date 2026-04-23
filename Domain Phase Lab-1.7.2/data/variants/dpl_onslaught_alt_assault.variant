@@ -1,0 +1,62 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 47,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "dpl_onslaught_alt",
+    "hullMods": [
+        "fluxdistributor",
+        "dpl_energy_rangefinder",
+        "hardenedshieldemitter",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dpl_onslaught_alt_assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "heavyac",
+                "WS 003": "heavyac",
+                "WS 007": "heavyblaster",
+                "WS 016": "dpl_tpl",
+                "WS 017": "dpl_tpl",
+                "WS 021": "annihilatorpod",
+                "WS 022": "annihilatorpod",
+                "WS 023": "annihilatorpod",
+                "WS 024": "annihilatorpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "heavyneedler",
+                "WS 013": "heavyneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 018": "devastator",
+                "WS 020": "devastator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "vulcan",
+                "WS 004": "vulcan"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 019": "dpl_phase_pd"}
+        }
+    ]
+}

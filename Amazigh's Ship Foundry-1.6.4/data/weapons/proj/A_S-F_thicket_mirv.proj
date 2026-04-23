@@ -1,0 +1,73 @@
+{
+	"id":"A_S-F_thicket_mirv",
+	"specClass":"missile",
+	"missileType":"MIRV",
+	"sprite":"graphics/missiles/A_S-F_thicket.png",
+	"size":[16,22],	
+	"center":[8,11],
+	"collisionRadius":20,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,150,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+
+	"armingTime":0.5,
+
+	"engineSpec":{"turnAcc":450,
+				  "turnRate":120,
+				  "acc":500,
+				  "dec":250},
+
+	"engineSlots":[{"id":"ES1",
+					"loc":[-10.5, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[120,70,50,255],
+						"contrailDuration":1.5,
+						"contrailWidthMult":1.25,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":4, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[120,70,50,50],
+						"glowSizeMult":1.5,
+						"glowAlternateColor":[120,80,0,175],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":60.0,
+				    "angle":180.0}],
+
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":600,
+					"minTimeToSplit":1,
+					"canSplitEarly":false,
+					"splitSound":"bomb_bay_fire",
+					"numShots":3,
+					"damage":800,
+					"impact":10,
+					"emp":0,
+					"damageType":FRAGMENTATION,
+					"hitpoints":250,
+					"arc":160,
+					"spreadInaccuracy":20, #0
+					"arcOffset":0,
+					"evenSpread":true,
+					"spreadSpeed":160,
+					"spreadSpeedRange":40, #0
+					"projectileSpec":"A_S-F_thicket_sb",
+					#"emptySpec":"type_1_mirv_empty",
+					"smokeSpec":{"particleSizeMin":20.0, #30
+								 "particleSizeRange":10.0,	#20
+								 "cloudParticleCount":5,	#10
+								 "cloudDuration":1.0,
+								 "cloudRadius":10.0,		#20
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[150,100,50,100]}
+					}
+}
+			

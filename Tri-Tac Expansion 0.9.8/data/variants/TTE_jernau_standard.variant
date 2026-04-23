@@ -1,0 +1,35 @@
+{
+  "variantId": "TTE_jernau_standard",
+  "hullId": "TTE_jernau",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "irpulse",
+        "WS0002": "irpulse",
+        "WS0004": "irpulse",
+        "WS0005": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ioncannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

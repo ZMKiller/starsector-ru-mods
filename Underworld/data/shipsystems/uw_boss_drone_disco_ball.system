@@ -1,0 +1,35 @@
+{
+    "id":"uw_boss_drone_disco_ball",
+    "type":"DRONE_LAUNCHER",
+    "aiType":"DRONE_LAUNCHER_STANDARD",
+
+    "droneVariant":"uw_boss_disco_ball",
+
+    "allowFreeRoam":false,
+
+    "launchSpeed":25,
+    "launchDelay":2,
+    "maxDrones":1,
+    "droneBehavior":[
+        {"droneIndex":[0],
+         "defaultFacing":"MATCH_DRONE_HEADING",
+         "faceEnemy":true,
+         "holdRoamRange":0,
+         "freeRoamRange":0,
+         "targetPriority":[SHIP_TARGET, SHIP, FIGHTER],
+         "initialOrbitAngle":0,
+         "orbitRadius":-150,
+         "orbitDir":1,
+         "orbitSpeed":0,
+        },
+    ],
+
+    "useSound":"drone_launch",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

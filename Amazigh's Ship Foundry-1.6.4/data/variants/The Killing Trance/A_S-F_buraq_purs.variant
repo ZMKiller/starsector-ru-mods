@@ -1,0 +1,48 @@
+{
+  "variantId": "A_S-F_buraq_purs",
+  "hullId": "A_S-F_buraq",
+  "displayName": "Pursuer",
+  "goalVariant": false,
+  "fluxCapacitors": 19,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "eccm",
+    "solar_shielding"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_bipartisan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "ioncannon",
+        "WS0005": "ioncannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

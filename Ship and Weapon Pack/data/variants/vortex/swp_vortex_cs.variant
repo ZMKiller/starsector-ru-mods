@@ -1,0 +1,32 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 2,
+    "goalVariant": true,
+    "hullId": "swp_vortex",
+    "hullMods": ["ecm"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_vortex_cs",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "taclaser",
+                "WS0003": "taclaser",
+                "WS0004": "taclaser",
+                "WS0005": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "swp_flareburst"}
+        }
+    ],
+    "wings": [
+        "swp_falx_wing",
+        "swp_falx_wing"
+    ]
+}

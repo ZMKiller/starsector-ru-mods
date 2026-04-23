@@ -1,0 +1,122 @@
+0.10.1:
+- Replaced texture2d with texture in fragment shader.
+
+0.10.0:
+- Replaced tracked emitters UBO with SSBO
+    - Maximum number of dynamically anchored emitters increased from 1,024 to 10,000.
+    - Increased OpenGL requirement from 3.3 to 4.3.
+- Added IEmitter.setSmoothDynamic(boolean), which allows particles to transition from static (no particle-level anchor) to dynamic (position following an anchor) over their lifetime.
+- Added a much more expressive error message, along with instructions to soft-disable if your system doesn't support this mod.
+- Renamed particleengine.json to particleengine_settings.json.
+
+0.9.3:
+- Fixed issue where title screen wasn't being counted as a combat screen.
+
+0.9.2:
+- Now uses sprite.getTexWidth and sprite.getTexHeight added in Starsector 0.98.
+- Fallback to default particle if a sprite with a null texture is passed in.
+
+0.9.1:
+- No longer holds onto a CombatEngineAPI instance (potential for memory leaks).
+- (12:10 PM EST 5/26/2025) Changed license to LGPL (more permissive).
+
+0.9.0:
+- Now supports creating particles in the campaign layer.
+- IEmitter:
+    - added CampaignEngineLayers getCampaignLayer(), the layer the particles should be rendered to if called in the campaign layer.
+    - added boolean isAlwaysRenderInCampaign(), set this to true to persist particles through campaign screen transitions.
+- Can now call burst and stream directly from the emitter instead of having to go through Particles.
+- Numerous under-the-hood changes to more efficiently support campaign rendering, (hopefully) doesn't break anything.
+- No longer unloads loaded textures to prevent possible conflicts in case, e.g. Particle Engine loads a texture, another mod loads it later, then Particle Engine unloads it after it's done using it.
+- Note: particles are absolutely *not* stored in the save file, so they will not persist through a game exit/load cycle.
+
+0.8.0:
+- Recompiled for Java 17.
+- Changed game version to 0.98a.
+
+0.73:
+- Added hard-toggle switch in particleengine.json, turns off all particle effects using this mod while still allowing it to
+  run in the mod list.
+
+0.72:
+- Updated to 0.97a, no changes.
+
+0.71:
+
+- Fixed default particle falloff, now is actually using square falloff and should look like particlealpha64sq.png in graphics/fx
+- Made ParticleData.colorHSVA public
+- No longer hard crashes if glMapBufferRange encounters an error, and will log an error message into the console
+
+0.7:
+
+- Added preInitParticles, which is called only once per burst and can be used to avoid re-computation.
+- Shader now uses SpriteAPI's textureWidth and textureLength, scaling the image up when they are less than 1.
+- Shader now uses SpriteAPI's centerX and centerY if they are non-negative and sticks to using the standard
+  (0.5, 0.5) center otherwise.
+- Updated dynamic anchoring to also dynamically update the emitter's axis. Note: Particles.anchorEmitter still only anchors
+  position, not angle.
+- Fixed untextured particles' alpha being capped to 0.25.
+- Removed multiple extraneous getLocation calls when adding particle data to a float buffer
+- Halved maximum simultaneous active dynamic emitters, down to 1024 from 2048
+- Various optimizations
+
+0.62:
+
+- Fixed an issue where dynamically tracked particles could be jittery on their first frame.
+- Fixed a bug where the wrong emitters were being evicted when the tracked emitter buffer was full.
+- Greatly optimized the tracked emitter buffer handler. It now no longer holds on to stale emitters longer than necessary
+  and only binds the UBO data each frame up to its maximum used index.
+
+0.61:
+
+- Hotfix a crash when doWhenFinished is null
+- Fixed an issue where streams were finishing when they weren't supposed to
+- Fixed an issue where streams would no longer generate more than 1 burst per frame
+- Changed maxDuration in Particles.stream back to float from Float, set to negative value to never expire
+
+0.6:
+
+- Added anchorEmitter to Particles, which automates the task of setting the emitter's location to a combat entity's location
+  each frame as well as destroying streams when the anchored-to combat entity leaves play.
+- Added the ability to dynamically anchor particles to their emitters, allowing them to track and follow changes
+  in their emitters' locations. Applied on a per-emitter basis, using enableDynamicAnchoring.
+  Useful for particles that are meant to follow a combat entity.
+  - Note: emitter locations are stored in a UBO. Due to buffer size limitations, a maximum of 2048 emitters' locations
+    can be tracked at a time. If more than 2048 emitters are being tracked, stale ones will start to be deleted. Use
+    disableDynamicAnchoring to free an emitter's slot in the buffer.
+- Added an optional doWhenFinished parameter when creating particle streams.
+- Particles.stream now takes a Float for maxDuration rather than a float -- set it to null to make a stream never expire
+  naturally.
+- Particles.stream should now more accurately handle particles per burst, particles per second, and total duration.
+- Optimized the particle allocation process a bit; should be less taxing on the CPU.
+- Fixed an issue where createCopy was overriding the copy's sprite and blend mode settings
+
+0.5:
+
+- Added new classes, IEmitter and BaseIEmitter, that may be extended to generate custom particle emitters.
+  Particles can now depend on each other's properties (prior to generation).
+- Generified Particles.StreamAction. Note: this will break implementations using StreamAction, to fix, replace all StreamAction with StreamAction<Emitter>.
+- Changed license, relevant for v0.5+
+
+0.4:
+
+- Updated Starsector version to 0.96a-RC6
+- Changed default out-of-bounds range from 100 to 500
+- Changed default particle layer to ABOVE_PARTICLES_LOWER
+- Added early exit on Particles.burst if number of particles is <= 0
+
+0.3:
+
+- Emitters now support CombatEngineLayers, layer can be set via Emitter.setLayer.
+- Added Emitter.setInactiveBorder. Emitters outside the screen by more than this amount of world units will ignore particle generation calls.
+
+0.2:
+
+- Added mod thread id to version file
+- Removed axis from json output (it's an emitter property, not a particle property)
+- Added changing of emitter sprite and blend mode via setters
+- Added setSyncSize to Emitter, which allows random particle sizes that are the same in the x and y directions (uses the x direction values)
+
+0.1:
+
+- Initial release

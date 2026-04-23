@@ -1,0 +1,28 @@
+{
+	"id":"ls_kombi_shoota_fighter",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":250,
+	"turretSprite":"graphics/weapons/ls_kombi_shoota_turret.png",
+	"turretGunSprite":"graphics/weapons/ls_kombi_shoota_barrel_turret.png",
+	"hardpointSprite":"graphics/weapons/ls_kombi_shoota.png",
+	"hardpointGunSprite":"graphics/weapons/ls_kombi_shoota_barrel.png",
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":2.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[15, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[12, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":28.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.2,
+					   "particleCount":9,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"ls_kombi_shoota_shot",  # projectile that will be fired
+	"fireSoundTwo":"twin_shootas_sound",
+}

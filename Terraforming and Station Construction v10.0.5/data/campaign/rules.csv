@@ -1,0 +1,64 @@
+id,trigger,conditions,script,text,options,notes
+,,,,,,
+#Remnant Patrol Dialogue,,,,,,
+,,,,,,
+boggledRemnantPatrolDefaultGreeting,OpenCommLink,boggledIsRemnantPatrol score:1000,"$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Код AIS подтвержден. Приветствую, $playerName. Моя директива - защищать ваши активы в этой системе.""",,
+,,,,,,
+#Building Domain-era stable location structures,,,,,,
+,,,,,,
+stable_buildRelayDomainOpt,Stable_AddBuildOptions,boggledObjectiveCheckEnabled,,,40:SL_buildDomainRelay:Построить ретранслятор связи технологий Доминиона,
+stable_buildArrayDomainOpt,Stable_AddBuildOptions,boggledObjectiveCheckEnabled,,,50:SL_buildDomainArray:Построить сенсорный массив технологий Доминиона,
+stable_buildBuoyDomainOpt,Stable_AddBuildOptions,boggledObjectiveCheckEnabled,,,60:SL_buildDomainBuoy:Построить навигационный буй технологий Доминиона,
+stable_buildInactiveGateOpt,Stable_AddBuildOptions,boggledInactiveGateCheckEnabled,,,70:SL_buildInactiveGate:Построить неактивные Врата,
+stable_buildDomainRelay,DialogOptionSelected,$option == SL_buildDomainRelay,"$slBuildType = comm_relay 0
+boggledObjectivePrintDescription $slBuildType
+FireBest Stable_DomainBuildConfirmOptions",,,
+stable_buildDomainSensor,DialogOptionSelected,$option == SL_buildDomainArray,"$slBuildType = sensor_array 0
+boggledObjectivePrintDescription $slBuildType
+FireBest Stable_DomainBuildConfirmOptions",,,
+stable_buildDomainBuoy,DialogOptionSelected,$option == SL_buildDomainBuoy,"$slBuildType = nav_buoy 0
+boggledObjectivePrintDescription $slBuildType
+FireBest Stable_DomainBuildConfirmOptions",,,
+stable_buildInactiveGate,DialogOptionSelected,$option == SL_buildInactiveGate,"$slBuildType = inactive_gate 0
+boggledObjectivePrintDescription $slBuildType
+FireBest Stable_DomainBuildConfirmOptions",,,
+stable_confirmOptsDomain,Stable_DomainBuildConfirmOptions,boggledObjectiveCanBuild $slBuildType,,,"boggledDomainbuildProceed:Продолжить
+SL_cancelBuild:Отмена",
+stable_confirmOptsCantDomain,Stable_DomainBuildConfirmOptions,!boggledObjectiveCanBuild $slBuildType,SetEnabled boggledDomainbuildProceed false,,"boggledDomainbuildProceed:Продолжить
+SL_cancelBuild:Отмена",
+stable_buildProceedDomain,DialogOptionSelected,$option == boggledDomainbuildProceed,"boggledObjectiveBuild $slBuildType
+DismissDialog",,,
+,,,,,,
+#Upgrading sector-tech stable location structures,,,,,,
+,,,,,,
+stable_upgradeRelayDomainOpt,COB_AddOptions,"boggledObjectiveCheckEnabled
+$tag:makeshift
+$tag:comm_relay",,,21:SL_upgradeToDomainRelay:Улучшить этот ретранслятор до технологий Доминиона,
+stable_upgradeArrayDomainOpt,COB_AddOptions,"boggledObjectiveCheckEnabled
+$tag:makeshift
+$tag:sensor_array",,,21:SL_upgradeToDomainArray:Улучшить этот сенсорный массив до технологий Доминиона,
+stable_upgradeBuoyDomainOpt,COB_AddOptions,"boggledObjectiveCheckEnabled
+$tag:makeshift
+$tag:nav_buoy",,,21:SL_upgradeToDomainBuoy:Улучшить этот навигационный буй до технологий Доминиона,
+#,,,,,,
+stable_upgradeToDomainRelay,DialogOptionSelected,$option == SL_upgradeToDomainRelay,"$slBuildType = comm_relay 0
+boggledObjectivePrintDescription $slBuildType
+FireBest Stable_DomainUpgradeConfirmOptions",,,
+stable_upgradeToDomainArray,DialogOptionSelected,$option == SL_upgradeToDomainArray,"$slBuildType = sensor_array 0
+boggledObjectivePrintDescription $slBuildType
+FireBest Stable_DomainUpgradeConfirmOptions",,,
+stable_upgradeToDomainBuoy,DialogOptionSelected,$option == SL_upgradeToDomainBuoy,"$slBuildType = nav_buoy 0
+boggledObjectivePrintDescription $slBuildType
+FireBest Stable_DomainUpgradeConfirmOptions",,,
+#,,,,,,
+stable_confirmOptsDomainUpgrade,Stable_DomainUpgradeConfirmOptions,boggledObjectiveCanBuild $slBuildType,,,"boggledDomainUpgradeProceed:Продолжить
+SL_cancelUpgrade:Отмена",
+stable_confirmOptsCantDomainUpgrade,Stable_DomainUpgradeConfirmOptions,!boggledObjectiveCanBuild $slBuildType,SetEnabled boggledDomainUpgradeProceed false,,"boggledDomainUpgradeProceed:Продолжить
+SL_cancelUpgrade:Отмена",
+stable_upgradeProceedDomain,DialogOptionSelected,$option == boggledDomainUpgradeProceed,"boggledObjectiveBuild $slBuildType
+DismissDialog",,,
+stable_nevermindBoggledUpgrade,DialogOptionSelected,$option == SL_cancelUpgrade,"ShowDefaultVisual
+FireAll COB_AddOptions
+FireBest COB_DisableOptionsIfNeeded
+FireAll COB_DisableIndividualOptions",,,

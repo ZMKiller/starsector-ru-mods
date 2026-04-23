@@ -1,0 +1,36 @@
+{
+	"id":"swp_redeemer_sub_missile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+    "onHitEffect":"data.scripts.weapons.SWP_RedeemerSubOnHitEffect",
+	"sprite":"graphics/swp/missiles/swp_redeemer_sub_missile.png",
+	"size":[9,16],	
+	"center":[4.5,8],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[195,255,70,255],
+	"explosionRadius":75,
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":200,
+				  "acc":400,
+				  "dec":200},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-6, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[180,255,100,255],
+						"contrailDuration":2,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.2f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0.4, # how far away from engine it starts
+						"contrailColor":[180,255,100,50],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":8.0,
+				    "length":40.0,
+				    "angle":180.0}]
+}

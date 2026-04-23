@@ -1,0 +1,34 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    "useStrategicAI":false,
+    
+    "specialForcesMaxFleets":0,
+    
+    "startShipsSolo":[
+      ["swp_alastor_sta"],
+      ["centurion_Starting"],
+      # tutorial start
+      ["wolf_Starting", "kite_Starting"],
+      ["wolf_Starting", "shepherd_Starting"],
+      ["wayfarer_Starting", "kite_Starting"],
+      ["wayfarer_Starting", "shepherd_Starting"],
+    ],
+    "startShipsCombatSmall":[["hammerhead_Balanced", "vigilance_Starting", "kite_Standard"]],
+    "startShipsTradeSmall":[["mule_Starting", "cerberus_Standard", "mercury_Standard"]],
+    "startShipsCombatLarge":[
+      ["swp_vulture_sta", "swp_striker_ass", "wolf_Assault"],
+      ["eagle_Balanced", "sunder_Assault", "brawler_Elite"]
+    ],
+    "startShipsTradeLarge":[["colossus_Standard", "mule_Standard", "wayfarer_Standard"]],
+    "startShipsExplorerLarge":[["venture_Balanced", "tarsus_Standard", "shepherd_Frontier"]],
+    "startShipsCarrierSmall":[["drover_Strike", "monitor_Escort", "vigilance_AP"]],
+    "startShipsCarrierLarge":[["heron_Strike", "hammerhead_Balanced", "brawler_Elite"]],
+    "startShipsSuper":[["hyperion_Attack"]],
+    
+    "startSpecialItems":[
+        [["low_tech_package", ""], ["midline_package", ""], ["high_tech_package", ""], ["XIV_package", ""], ["missile_package", ""]],
+    ],
+    
+    "industrySeeds":[],	# don't seed stuff
+}

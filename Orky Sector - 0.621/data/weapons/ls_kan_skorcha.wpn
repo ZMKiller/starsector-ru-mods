@@ -1,0 +1,30 @@
+{
+	"id":"ls_kan_skorcha",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"mountTypeOverride":"HYBRID",
+	"size":"SMALL",
+	"everyFrameEffect":"data.weapons.ls_flamer_effect",
+	"turretSprite":"graphics/weapons/Kan/ls_kan_es_skorcha.png",
+	"hardpointSprite":"graphics/weapons/Kan/ls_kan_es_skorcha.png",
+	"turretOffsets":[10, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[10, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"unaffectedByProjectileSpeedBonuses":true,
+	#"animationType":"GLOW",
+	#"animationType":"GLOW_AND_FLASH",
+	"animationType":"GLOW",
+	"muzzleFlashSpec":{"length":30.0,   # only used if animationType = MUZZLE_FLASH or GLOW_AND_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":15.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.12,
+					   "particleCount":10,
+					   "particleColor":[255,200,0,200]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"ls_skorcha_shot",  # projectile that will be fired
+	"noImpactSounds":true,
+	#"fireSoundTwo":"cryoflamer_fire",
+}

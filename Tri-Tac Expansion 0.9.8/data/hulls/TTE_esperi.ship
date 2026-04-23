@@ -1,0 +1,121 @@
+{
+  "hullName": "Esperi",
+  "hullId": "TTE_esperi",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTE_esperi.png",
+  "style": "HIGH_TECH",
+  "height": 100,
+  "width": 92,
+  "center": [46.5, 48.5],
+  "collisionRadius": 69,
+  "shieldCenter": [0.5, -0],
+  "shieldRadius": 66.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt",
+    "shielded_holds"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 0,
+      "locations": [33.5, 30.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -0,
+      "locations": [34, -29.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 180,
+      "locations": [-22, 0.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-3.5, 36]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-3.5, -35]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42.5, -4.5],
+      "length": 35.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-42.5, 4.5],
+      "length": 35.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-41, 18],
+      "length": 31.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-41, -18],
+      "length": 31.5,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    16.5, -9,
+    53, -22,
+    52.5, -37,
+    44, -42.5,
+    3.5, -43.5,
+    -3, -48.5,
+    -27.5, -29.5,
+    -40.5, -29.5,
+    -49, -23,
+    -46.5, -11,
+    -46.5, 11,
+    -49, 23,
+    -40.5, 29.5,
+    -27.5, 29.5,
+    -3, 48.5,
+    3.5, 43.5,
+    44, 42.5,
+    52.5, 37,
+    53, 22,
+    16.5, 9
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 1000,
+  "fireSoundTwo": "reaper_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    10,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/Sharik_Missile_HARDPOINT.png",
+  "id": "Sharik_Demo_Torp",
+  "projectileSpecId": "Sharik_Missile",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "size": "MEDIUM",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 22,
+    "blowbackParticleCount": 4,
+    "blowbackSpread": 15,
+    "cloudDuration": 1.5,
+    "cloudParticleCount": 8,
+    "cloudRadius": 10,
+    "particleColor": [
+      50,
+      50,
+      50,
+      105
+    ],
+    "particleSizeMin": 16,
+    "particleSizeRange": 18
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    9,
+    0
+  ],
+  "turretSprite": "graphics/weapons/Sharik_Missile_TURRET.png",
+  "type": "MISSILE"
+}

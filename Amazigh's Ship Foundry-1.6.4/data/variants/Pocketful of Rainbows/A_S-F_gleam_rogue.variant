@@ -1,0 +1,48 @@
+{
+  "variantId": "A_S-F_gleam_rogue",
+  "hullId": "A_S-F_gleam",
+  "displayName": "Rogue",
+  "goalVariant": false,
+  "fluxCapacitors": 9,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "pointdefenseai",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "amblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "A_S-F_sprocket",
+        "WS 005": "A_S-F_sprocket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "irpulse",
+        "WS 003": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_formia"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

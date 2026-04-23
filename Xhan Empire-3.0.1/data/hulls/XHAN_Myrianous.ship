@@ -1,0 +1,144 @@
+{
+  "hullName": "Myrianous",
+  "hullId": "XHAN_Myrianous",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/boss/Xhan_Myrianous.png",
+  "style": "TRANSCENDENT_DIVINATION",
+  "height": 248,
+  "width": 152,
+  "center": [76, 138],
+  "collisionRadius": 207.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 186,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_BubbleShield",
+    "XHAN_TranscendentArmor",
+    "XHAN_Myria_Targeting"
+  ],
+  "builtInWeapons": {
+    "WS0008": "Xhan_PsyBlast",
+    "WS0009": "Xhan_MyriaEye"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": 11.5,
+      "locations": [78, 35]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": -11.5,
+      "locations": [78, -35]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 75,
+      "locations": [59, 59]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -75,
+      "locations": [59, -59]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 108,
+      "locations": [-15, 61]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -108,
+      "locations": [-15, -61]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 180,
+      "locations": [-71, -0]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2, -0]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": 0,
+      "locations": [44, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-80.5, 21],
+      "length": 47.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "XHAN_DIVINE_TECH3"
+    },
+    {
+      "location": [-80.5, -21],
+      "length": 47.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "XHAN_DIVINE_TECH3"
+    }
+  ],
+  "bounds": [
+    -136, -0,
+    -82.5, -14,
+    -79, -25,
+    -122.5, -37,
+    -81.5, -45.5,
+    -17, -69,
+    57, -69.5,
+    87, -58,
+    106.5, -18,
+    106.5, 18,
+    87, 58,
+    57, 69.5,
+    -17, 69,
+    -81.5, 45.5,
+    -122.5, 37,
+    -79, 25,
+    -82.5, 14
+  ]
+}

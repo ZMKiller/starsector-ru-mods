@@ -1,0 +1,41 @@
+{
+    "displayName": "Landa",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_terror_es",
+    "hullMods": [
+        "ls_ard_case",
+        "ls_grot_rigger"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_terror_es_landa",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_supashoota_turret",
+                "WS 001": "ls_supashoota_turret"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_twin_shoota",
+                "WS 004": "ls_twin_shoota",
+                "WS 003": "ls_skorcha",
+                "WS 002": "ls_skorcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_shoota_launcha",
+                "WS 007": "ls_shoota_launcha"
+            }
+        }
+    ]
+}

@@ -1,0 +1,227 @@
+{
+  "hullName": "Henki",
+  "hullId": "A_S-F_henki",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/A_S-F_henki.png",
+  "style": "MIDLINE",
+  "height": 152,
+  "width": 128,
+  "center": [64, 80],
+  "collisionRadius": 100,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 96,
+  "viewOffset": 0,
+  "builtInMods": [
+    "hiressensors",
+    "ballistic_rangefinder",
+    "A_S-F_plasmaTapShields"
+  ],
+  "builtInWeapons": {
+    "WS0007": "A_S-F_henki_l",
+    "WS0008": "A_S-F_henki_r"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [31, 0]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -115,
+      "locations": [-34, -35]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 115,
+      "locations": [-34, 35]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [55, 33]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [55, -33]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [64, 21]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [64, -21]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [56, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [1, 46.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [1, -46.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-48, 60],
+      "length": 30,
+      "width": 6,
+      "angle": 145,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-48, -60],
+      "length": 30,
+      "width": 6,
+      "angle": -145,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, 22.5],
+      "length": 52,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-56, 53],
+      "length": 60,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-56, -53],
+      "length": 60,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, -22.5],
+      "length": 52,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-51, 13.5],
+      "length": 48,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-51, -13.5],
+      "length": 48,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-45, 8],
+      "length": 22,
+      "width": 5,
+      "angle": -170,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-45, -8],
+      "length": 22,
+      "width": 5,
+      "angle": 170,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    52, -14,
+    64, -21,
+    51, -40,
+    9, -48,
+    -10, -58,
+    -47, -61,
+    -55, -57,
+    -57, -44,
+    -71, -43,
+    -77, -36,
+    -73, -32,
+    -48, -30,
+    -49, -11,
+    -40, -0,
+    -49, 11,
+    -48, 30,
+    -73, 32,
+    -77, 36,
+    -71, 43,
+    -57, 44,
+    -55, 57,
+    -47, 61,
+    -10, 58,
+    9, 48,
+    51, 40,
+    64, 21,
+    52, 14,
+    61, -0
+  ]
+}

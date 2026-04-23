@@ -1,0 +1,25 @@
+{
+	"id":"ls_blitza_bomm",
+	"specClass":"missile",
+	"missileType":"BOMB",
+	#"onHitEffect":"data.weapons.ls_blitza_bomm_onhit",
+	"sprite":"graphics/weapons/Projectiles/ls_big_bomm.png",
+	"glowSprite":"graphics/weapons/Projectiles/ls_big_bomm_glow.png",
+	"glowColor":[190,60,60,155],
+	"size":[14,28],	
+	"center":[7,14],
+	"collisionRadius":24,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[255,225,90,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":120, # purely visual	
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":120,
+					 "coreRadius":50, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS},				  
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":20,
+				  "dec":20},
+
+}

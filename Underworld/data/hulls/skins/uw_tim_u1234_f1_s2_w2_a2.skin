@@ -1,0 +1,124 @@
+{
+    "baseHullId":"uw_infernus",
+    "skinHullId":"uw_tim_u1234_f1_s2_w2_a2",
+    "hullName":"",
+	"hullDesignation":"Doomwagon",
+    "descriptionId":"uw_infernus",
+    "descriptionPrefix":"The Infernal Machine has returned in full regalia to retake the Persean Sector. She was once known as the origin of the Infernus pattern, but now the Infernal Machine has grown far beyond her own legend. This heavily modified and powerfully upgraded doomwagon exists in a category of her own, capable of toppling even the greatest empire with the right pirate lord at the helm. Beware, for Harcourt's masterpiece has been born again, and she shall be baptized in the fires of her victims!\n\nThe Infernal Machine has been upgraded with a pair of Terminator Drone wings, an Operations Center, a maneuvering thruster suite, a Hellfire Cannon, an advanced weapons package, and a state-of-the-art shield system.",
+    "tags":[],
+    "baseValueMult":2,
+    "addHints":[HIDE_IN_CODEX],
+    "systemId":"maneuveringjets",
+    "ordnancePoints":285,
+    "spriteName": "graphics/uw/ships/uw_infernalmachine_fs.png",
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "removeBuiltInWings":["borer_wing", "borer_wing"],
+    "builtInMods":["augmentedengines", "auxiliarythrusters", "unstable_injector", "uw_infernal_shield"],
+    "builtInWeapons":{
+    },
+    "builtInWings":["terminator_wing", "terminator_wing"],
+    "engineSlotChanges":{
+        "7":{
+            "length": 48,
+            "width": 12,
+            "angle": 160
+        },
+        "8":{
+            "length": 48,
+            "width": 12,
+            "angle": -160
+        },
+        "9":{
+            "length": 48,
+            "width": 12,
+            "angle": 170
+        },
+        "10":{
+            "length": 48,
+            "width": 12,
+            "angle": -170
+        },
+        "11":{
+            "length": 48,
+            "width": 12
+        },
+        "12":{
+            "length": 48,
+            "width": 12
+        },
+        "13":{
+            "length": 48,
+            "width": 12
+        },
+        "14":{
+            "length": 48,
+            "width": 12
+        },
+        "15":{
+            "length": 48,
+            "width": 12
+        },
+        "16":{
+            "length": 48,
+            "width": 12
+        },
+        "17":{
+            "length": 48,
+            "width": 12
+        },
+        "18":{
+            "length": 48,
+            "width": 12
+        },
+    },
+    "weaponSlotChanges":{
+        "WS0001":{
+            "arc": 360,
+        },
+        "WS0003":{
+            "type": "COMPOSITE",
+        },
+        "WS0004":{
+            "size": "LARGE",
+        },
+        "WS0005":{
+            "type": "HYBRID",
+        },
+        "WS0006":{
+            "type": "HYBRID",
+        },
+        "WS0007":{
+            "size": "LARGE",
+        },
+        "WS0008":{
+            "type": "HYBRID",
+        },
+        "WS0009":{
+            "type": "HYBRID",
+        },
+        "WS0010":{
+            "type": "COMPOSITE",
+        },
+        "WS0013":{
+            "type": "HYBRID",
+        },
+        "WS0014":{
+            "type": "HYBRID",
+        },
+        "WS0018":{
+            "type": "UNIVERSAL",
+        },
+        "WS0019":{
+            "type": "UNIVERSAL",
+        },
+        "WS0020":{
+            "type": "HYBRID",
+        },
+        "WS0021":{
+            "type": "HYBRID",
+        },
+    },
+}

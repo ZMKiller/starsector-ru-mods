@@ -1,0 +1,152 @@
+{
+  "hullName": "Kassarek",
+  "hullId": "XHAN_Kassarek",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Xhan_Kassarek.png",
+  "style": "PRIMEDIVINATION",
+  "height": 130,
+  "width": 106,
+  "center": [53, 80],
+  "collisionRadius": 84.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 80,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_Gen4_armor"
+  ],
+  "builtInWeapons": {
+    "WS0003": "XHAN_Szar_Point_Defense",
+    "WS0004": "XHAN_Szar_Point_Defense",
+    "WS0005": "XHAN_Szar_Point_Defense",
+    "WS0006": "XHAN_Szar_Point_Defense",
+    "WS0007": "XHAN_Szar_Point_Defense",
+    "WS0008": "XHAN_Szar_Point_Defense"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 340,
+      "angle": 0,
+      "locations": [10, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-23, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 180,
+      "angle": 123.5,
+      "locations": [-18, 44]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 180,
+      "angle": -123.5,
+      "locations": [-18, -44]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 180,
+      "angle": 41,
+      "locations": [31, 37]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 180,
+      "angle": -41,
+      "locations": [31, -37]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 180,
+      "angle": 23,
+      "locations": [40, 23]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 180,
+      "angle": -23,
+      "locations": [40, -23]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42, 10.5],
+      "length": 27,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "CUSTOM",
+      "styleId": "XHAN_DIVINE_TECH"
+    },
+    {
+      "location": [-42, -10.5],
+      "length": 27,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "CUSTOM",
+      "styleId": "XHAN_DIVINE_TECH"
+    },
+    {
+      "location": [-42, 10.5],
+      "length": 38.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "CUSTOM",
+      "styleId": "XHAN_DIVINE_TECH2"
+    },
+    {
+      "location": [-42, -10.5],
+      "length": 38.5,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "CUSTOM",
+      "styleId": "XHAN_DIVINE_TECH2"
+    }
+  ],
+  "bounds": [
+    -41.5, 7.5,
+    -47, 21.5,
+    -20, 45,
+    14.5, 50,
+    36.5, 35.5,
+    46, 9,
+    46, -9,
+    36.5, -35.5,
+    14.5, -50,
+    -20, -45,
+    -47, -21.5,
+    -41.5, -7.5,
+    -78.5, -0
+  ]
+}

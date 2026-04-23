@@ -1,0 +1,53 @@
+{
+    "SWP_RAY_DRONE":{
+        "engineColor":[100,255,100,255],
+        "contrailParticleSizeMult":8,
+        "contrailParticleDuration":2,
+        "contrailParticleFinalSizeMult":1,
+        "contrailMaxSpeedMult":0.5f,
+        "contrailAngularVelocityMult":0f,
+        "contrailColor":[100,255,100,25],
+        "glowSizeMult":3.5,
+        "glowAlternateColor":[0,255,0,255],
+        "type":"GLOW" # GLOW or SMOKE
+    },
+	"SWP_EXCELSIOR":{
+		"glowSprite":"graphics/swp/fx/swp_exengineglow.png",
+		"glowOutline":"graphics/swp/fx/swp_exengineflame.png",
+		"engineColor":[100,165,255,255],
+		"contrailParticleSizeMult":4,
+		"contrailParticleDuration":1,
+		"contrailParticleFinalSizeMult":2.5,
+		"contrailMaxSpeedMult":0.5f,
+		"contrailAngularVelocityMult":0f,
+		"contrailColor":[100,165,255,25],
+		"contrailCampaignColor":[100,165,255,75],
+		"type":"GLOW" # GLOW or SMOKE
+	},
+    "SWP_BOSS_RAY_DRONE":{
+        "engineColor":[175,50,205,255],
+        "contrailParticleSizeMult":12,
+        "contrailParticleDuration":2.5,
+        "contrailParticleFinalSizeMult":1,
+        "contrailMaxSpeedMult":0.5f,
+        "contrailAngularVelocityMult":0f,
+        "contrailColor":[175,50,205,25],
+        "glowSizeMult":4,
+        "glowAlternateColor":[205,0,255,255],
+        "type":"GLOW" # GLOW or SMOKE
+    },
+	"SWP_IMPERIUM_EXCELSIOR":{
+		"glowSprite":"graphics/swp/fx/swp_exengineglow.png",
+		"glowOutline":"graphics/swp/fx/swp_exengineflame.png",
+		"engineColor":[128,158,239,180],
+		"engineCampaignColor":[120,155,250,255],
+		"contrailParticleSizeMult":3,
+		"contrailParticleDuration":1.5,
+		"contrailParticleFinalSizeMult":2.25,
+		"contrailMaxSpeedMult":0.45,
+		"contrailAngularVelocityMult":0.2,
+		"contrailColor":[75,110,158,32],
+		"contrailCampaignColor":[70,110,163,75],
+		"type":"GLOW"
+	},
+}

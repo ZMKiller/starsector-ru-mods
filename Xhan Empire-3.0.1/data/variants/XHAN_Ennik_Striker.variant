@@ -1,0 +1,54 @@
+{
+  "variantId": "XHAN_Ennik_Striker",
+  "hullId": "XHAN_Ennik",
+  "displayName": "Striker",
+  "goalVariant": true,
+  "fluxCapacitors": 24,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Xhan_Tsebrek"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "Steizok_Autogun",
+        "WS0003": "Steizok_Autogun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "Shtir_Autocannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "Igol_point_def"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "Chok_point_def",
+        "WS0008": "Chok_point_def"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,888 @@
+ 3.0 (March 27, 2025)
+======================
+Updated to be compatible with Starsector 0.98a and Java 17
+Updated to Kotlin 2.1 and the K2 compiler
+Updated bundled libraries to take advantage of the move to Java 17:
+ - kotlin-stdlib: v1.6.21 -> v2.1.20
+ - kotlinx-coroutines: v1.6.4 (custom build) -> v1.10.1
+ - jetbrains-annotations: v23.0.0 -> REMOVED (now included in kotlin-stdlib)
+Changes to jar file locations:
+ - Moved LazyLib-Console.jar and Kotlin-Runtime.jar to jars/internal, to
+   better signify that they aren't meant to be added as mod dependencies
+Added org.lazywizard.lazylib.ShapeUtils:
+ - Copy of org.lazywizard.lazylib.opengl.DrawUtils, except its methods
+   return a list of vertices instead of drawing the requested shape
+Changes to CollisionUtils:
+ - Fixed getCollisionPoint(Vector2f lineStart, Vector2f lineEnd,
+   CombatEntityAPI target) returning null if entire line was within target's
+   bounds without touching a bounds segment (now returns copy of lineStart)
+ - getNearestPointOnBounds() no longer requires you to call bounds.update();
+   as with all other CollisionUtils methods it now calls update() itself
+Changes to ColorUtils:
+ - Added genRandomColor(), returns a Color with random RGB values
+Changes to FastTrig:
+ - atan() properly reduces its argument if it's not between -1 and 1
+   (credit to Genir for the bug report and the fix)
+Changes to LazyFont:
+ - Fixed display of fonts whose texture scaling doesn't match their texture size
+   (credit to Psiyon for the bug report and the fix)
+ - Added buildUntilLimit(String line, float fontSize, float maxWidth), which
+   returns a substring of line that will fit within maxWidth width
+ - Unicode smart quotes (single and double) are converted into basic quotes
+ - Attempting to create a DrawableString with missing character data will only
+   log a warning once per missing character, instead of every time one is used
+   (explanation: if the font doesn't define Ç, it will log a warning the first
+    time you try to draw one while replacing the missing character with either
+    a question mark, or empty space if the font doesn't define a question mark)
+ - LazyFont.loadFont() will now make up fake data for a space character if the
+   font file lacks one (it creates an invisible pixel with extra padding)
+ - Cached fallback char used when font doesn't contain a requested character;
+   very slight performance improvement
+ - Added missing Javadoc to LazyChar
+Changes to VectorUtils:
+ - Added toFloatArray(List<Vector2f> vectors), which converts a List of
+   Vector2fs into an array of floats containing their coordinates
+ - Added toVectorList(float[] coordinates), which converts a float array of
+   coordinates into a List of Vector2fs
+Removed org.lazywizard.lazylib.campaign.orbits.KeplerOrbit
+ - Removed at the request of its contributor
+Removed from org.lazywizard.lazylib.ui.LazyFont:
+ - Removed drawText(); use createText() instead
+ - Removed appendText(); use append() instead
+ - Removed getColor() and setColor(); use get/setBaseColor() instead
+ - Removed checkRebuild(); use triggerRebuildIfNeeded() instead
+
+ 2.8b (February 02, 2024)
+==========================
+Updated to be compatible with Starsector 0.97a
+Changes to LazyFont:
+ - Changed default blendSrc back to GL_SRC_ALPHA (was GL_ONE since 2.4c)
+Deprecated org.lazywizard.lazylib.campaign.orbits.KeplerOrbit:
+ - Deprecated at the request of its contributor
+
+ 2.8 (April 05, 2023)
+======================
+Updated to be compatible with Starsector 0.96a
+Updated bundled libraries:
+ - kotlin-stdlib: v1.5.31 -> v1.6.21
+ - kotlinx-coroutines: v1.5.2 -> v1.6.4 (custom build)
+ - These are the last versions that support Java 7
+Added org.lazywizard.lazylib.campaign.orbits.KeplerOrbit:
+ - Submitted by Liral, this provides more accurate orbits than EllipticalOrbit
+Changes to CombatUtils:
+ - Updated to use CombatEngineAPI's bin-lattice system where applicable, as
+   requested by several modders since those methods introduction
+
+ 2.7b (December 10, 2021)
+==========================
+Updated to be compatible with Starsector 0.95.1a
+Updated bundled libraries:
+ - jetbrains-annotations: v22.0.0 -> 23.0.0
+Changes to LazyFont.DrawableString:
+ - Center/right-aligned text no longer requires maxWidth to be set
+ - setRenderDebugBounds() now shows anchor and max size
+
+ 2.7 (October 22, 2021)
+========================
+Fixed links to online Starsector API in javadoc.zip
+Updated bundled libraries:
+ - kotlin-stdlib: v1.4.31 -> v1.5.31
+ - kotlinx-coroutines: v1.4.3 -> v1.5.2
+ - jetbrains-annotations: v20.1.0 -> 22.0.0
+Changes to CombatUtils:
+ - Fixed a bug where ships spawned by spawnShipOrWingDirectly() would
+   report the wrong fleet side in some circumstances
+Changes to LazyFont:
+ - Fixed log spam with some whitespace being considered unsupported characters
+Changes to LazyFont.DrawableString:
+ - Fixed minor memory leak when dispose() is not called before GC
+ - Added TextAlignment, setAlignment(), and getAlignment(). TextAlignment
+   controls whether text is drawn left-aligned (the default), right-aligned,
+   or centered
+ - Added TextAnchor, setAnchor(), and getAnchor(). TextAnchor controls the
+   origin when drawing text; for example, TextAnchor.TOP_LEFT (the default)
+   will mean draw() will start drawing at the top left, so the text will
+   appear below and to the right of the position passed into draw()
+ - Added setBaseColor() and getBaseColor() (replace setColor()/getColor())
+ - Added isRebuildNeeded() and triggerRebuildIfNeeded() (unnecessary 99% of
+   the time as rebuilding happens automatically, but useful in fringe cases)
+ - Cleaned up some out-of-date documentation
+Deprecated in LazyFont.DrawableString:
+ - Deprecated setColor() and getColor(), as users were assuming they set the
+   color of the next append. Added setBaseColor() and getBaseColor() as
+   replacements that better convey what these methods do (set/get the color of
+   all text that _doesn't_ have a color argument passed in)
+
+ 2.6 (March 26, 2021)
+======================
+Updated to be compatible with Starsector 0.95a
+Updated bundled libraries:
+ - kotlin-stdlib: v1.4.21 -> v1.4.31
+ - kotlinx-coroutines: v1.4.2 -> v1.4.3
+The Javadoc's index is now one single page
+Added org.lazywizard.lazylib.IOUtils:
+ - Contains methods to help with reading/writing files using the API
+ - byte[] readAllBytes(String filePath), an API-safe port of
+   java.nio.Files.readAllBytes()
+Changes to LazyFont.DrawableString:
+ - Added tab support (2x the base vertical height of the text)
+ - Added append(String text)
+ - Added append(String text, Color color)
+ - Added appendIndented(String text, int indent)
+ - Added appendIndented(String text, Color color, int indent)
+ - Added getBlendSrc(), setBlendSrc(int blendSrc), getBlendDest(), and
+   setBlendDest(int blendDest) to control color blending
+Deprecated in LazyFont.DrawableString:
+ - Deprecated all appendText() methods in favor of new append() equivalents.
+   The append() variants take any object and return the DrawableString so that
+   calls can be chained together
+
+ 2.5c (January 23, 2021)
+=========================
+Changes to LazyFont.DrawableString:
+ - Fixed rendering issues on some computers (thanks to Dream from the
+   Discord server for reporting the bug and testing the fix)
+ - Added colored substring support
+ - Added appendText(String text, Color color)
+ - Added appendText(String text, Color color, int indent)
+ - Appending colored text only colors that substring, and all subsequent
+   text will return to the base color chosen at DrawableString creation.
+   To change the base color, call DrawableString.setColor()
+
+ 2.5b (January 20, 2021)
+=========================
+Retroactively renamed v2.4g to v2.5
+Changes to LazyFont:
+ - Added getFontName()
+Changes to LazyFont.DrawableString:
+ - Fixed a crash with word-wrapped text that includes a hyphenated line break
+ - Added setRenderDebugBounds(), which draws a box showing the text's width,
+   height, and position
+
+ 2.5 (January 18, 2021)
+========================
+(originally released as v2.4g)
+Updated bundled libraries:
+ - kotlin-stdlib: v1.3.61 -> v1.4.21
+ - kotlinx-coroutines: v1.2.0 -> v1.4.2
+ - jetbrains-annotations: v13.0 -> v20.1.0
+ - removed kotlinx-atomicfu (this was an erroneous dependency added by
+   an earlier version of kotlinx-coroutines and wasn't used for anything)
+Changes to LazyFont:
+ - Rewrote DrawableString to use vertex buffers instead of display lists.
+   This should fix a bug that caused text corruption and visual glitches
+   when DrawableStrings were rendered in the campaign layer
+Deprecated in LazyFont:
+ - Deprecated drawText(String text, float x, float y, float fontSize,
+   float maxWidth, float maxHeight), use createText() instead
+
+ 2.4f (January 31, 2020)
+=========================
+Updated bundled Kotlin runtime library to v1.3.61
+Javadoc is now available online at https://lazywizard.github.io/lazylib
+Moved .version file hosting to GitHub
+
+ 2.4e (April 21, 2019)
+=======================
+Updated bundled Kotlin runtime library to v1.3.30
+Bundled Kotlin coroutines library v1.2.0
+Changes to CombatUtils:
+ - Reverted 2.4c changes due to bugs
+
+ 2.4d (March 03, 2019)
+=======================
+Changes to CombatUtils:
+ - Reverted changes to getEntitiesWithinRange() (it now only returns ships,
+   projectiles, missiles and asteroids as it did pre-2.4c)
+
+ 2.4c (March 01, 2019)
+=======================
+Updated bundled Kotlin runtime library to v1.3.21
+Changes to CombatUtils:
+ - All getXWithinRange() methods have been updated to use 0.9a's new
+   CollisionGridAPI, which should improve performance
+ - getEntitiesWithinRange() now includes BattleObjectiveAPIs
+Changes to LazyFont:
+ - Fixed text blending issue
+ - Blend mode is no longer automatically enabled during rendering - if you want
+   your text to be drawn blended, you must ensure GL_BLEND is enabled and set
+   the blend func (usually glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA))
+
+ 2.4b (November 16, 2018)
+==========================
+Changes to JSONUtils:
+ - loadCommonJSON(String filename, String defaultJSONPath) will save the newly
+   created CommonDataJSONObject to disk immediately if defaultJSONPath exists
+   and filename does not
+
+ 2.4 (November 16, 2018)
+=========================
+Updated to be compatible with Starsector 0.9a
+Updated bundled Kotlin runtime library to v1.3.10
+Added org.lazywizard.lazylib.JSONUtils.CommonDataJSONObject:
+ - Provides a wrapper around a standard JSONObject
+ - save() method saves JSON to common data folder (saves/common), which will
+   persist between saves (and presumably survive Starsector updates)
+ - Constructor takes the filename under saves/common to save the data to
+Changes to JSONUtils:
+ - Added clear(JSONObject toClear)
+ - Added loadCommonJSON(String filename)
+   (if file does not exist, returns an empty CommonDataJSONObject)
+ - Added loadCommonJSON(String filename, String defaultJSONPath)
+   (if file does not exist, copies existing data from defaultJSONPath)
+
+ 2.3 (November 12, 2018)
+=========================
+Bundled the Kotlin runtime library (v1.3.0) with LazyLib:
+ - Kotlin is an alternate JVM language that is 100% interoperable with Java
+ - "Core" LazyLib is and always shall be written in Java, though some features
+   such as the font classes are written in Kotlin for convenience's sake
+ - Kotlin extension methods can be found within the org.lazywizard.lazylib.ext
+   package in jars/LazyLib-Kotlin.jar (Java users can safely ignore this jar)
+Added @Nullable and @NotNull annotations where appropriate
+Added org.lazywizard.lazylib.ui.LazyFont:
+ - Represents a bitmap font (the same type Starsector itself uses)
+ - Load a font using the static method loadFont(String fontPath)
+ - Use createText() to create a reusable DrawableString, which can draw a
+   block of text repeatedly and very efficiently
+ - Use drawText() to manually draw text into a VBO or display list
+ - See LazyFont's javadoc for example usage
+Changes to CampaignUtils:
+ - Added getEntitiesWithRep(SectorEntityToken token, String entityTag,
+   IncludeRep include, RepLevel rep)
+ - Added toWorldCoordinates(Vector2f screenCoordinates)
+ - Added toScreenCoordinates(Vector2f worldCoordinates)
+Changes to CollectionUtils:
+ - Added implode(Enum toImplode)
+ - Added implode(Enum toImplode, String separator)
+Changes to CollisionUtils:
+ - Added getNearestPointOnBounds(Vector2f source, CombatEntityAPI entity)
+Changes to ColorUtils:
+ - Added glColor(Color color, float alpha)
+Changes to CombatUtils:
+ - Added toWorldCoordinates(Vector2f screenCoordinates)
+ - Added toScreenCoordinates(Vector2f worldCoordinates)
+Changes to FastTrig:
+ - Added atan() and atan2() that are much faster (though less accurate)
+   than the implementations in Java's core Math class
+   (roughly 5-20x faster; accurate to within 0.005 radians/~0.29 degrees)
+Changes to MathUtils:
+ - Added FPI and FTAU constants, contain Math.PI and Math.PI * 2 as floats
+ - Added clamp(float/int toClamp, float/int min, float/int max). This clamps
+   the passed value within the given range. Variants are provided for both
+   integers and floats.
+ - Added getNearestPointOnLine(Vector2f source, Vector2f lineStart,
+   Vector2f lineEnd)
+ - Added getPoint(Vector2f center, float radius, float angle). This acts as an
+   alias for the existing getPointOnCircumference(), which is both the most
+   commonly used method in LazyLib as well as one of the most awkwardly named
+Changes to ModUtils:
+ - Added isModEnabled(String modId)
+ - Added loadClassesIfClassIsPresent(String classCanonicalName,
+   List<String> classesToLoadCanonicalNames, boolean initializeClasses)
+ - Added getEnabledModIds()
+ - Added getOverrides(), returns vanilla files explicitly overridden by any
+   mod (ie: in that mod's mod_info.sjon 'replace' section)
+Changes to VectorUtils:
+ - getFacing() and getAngle() now use FastTrig's new atan2() implementation
+ - Added getFacingStrict() and getAngleStrict(), which are slower but more
+   accurate (these use the old pre-2.3 atan2() implementations)
+ - Added isZeroVector(Vector2f vector)
+ - Added resize(Vector2f vector, float length)
+ - Added resize(Vector2f vector, float length, Vector2f dest)
+ - Added clampLength(Vector2f vector, float maxLength)
+ - Added clampLength(Vector2f vector, float maxLength, Vector2f dest)
+ - Added clampLength(Vector2f vector, float minLength, float maxLength)
+ - Added clampLength(Vector2f toClamp, float minLength, float maxLength,
+   Vector2f dest)
+ - Added rotate(Vector2f toRotate, float angle), convenience method that
+   stores the result in toRotate
+ - Added rotateAroundPivot(Vector2f toRotate, Vector2f pivotPoint,
+   float angle), convenience method that stores the result in toRotate
+Removed from LazyLib:
+ - Removed isDevBuild()
+Removed from SimpleEntity:
+ - Removed Object constructor (it used reflection, which is now blocked;
+   remaining options are Vector2f, WeaponAPI, and ShipEngineAPI)
+Miscellaneous Javadoc improvements
+
+ 2.2 (April 21, 2017)
+=======================
+Updated to be compatible with Starsector 0.8a
+LazyLib Javadoc now links to LWJGL, Starsector, and JSON Javadocs
+Changes to CampaignUtils:
+ - Removed crew XP level argument from addShipToFleet()
+
+ 2.1b (March 16, 2017)
+=======================
+Switched version file hosting to Bitbucket
+
+ 2.1 (November 19, 2015)
+=========================
+Changes to AnchoredEntity:
+ - getLocation() no longer returns a direct reference to the anchor's location
+   when the anchored entity shares the same location
+Changes to CampaignUtils:
+ - Added addShipToFleet(String wingOrVariantId, FleetMemberType type,
+   CrewXPLevel level, CampaignFleetAPI fleet)
+ - Removed all getXOfType() methods, replaced with getXWithTag() (was filtering
+   using class, now uses entity tags)
+ - All methods that took a "Class entityClass" argument have had said argument
+   replaced with "String tag"
+ - getNearbyFleets(), getNearbyHostileFleets(), get NearestHostileFleet(),
+   and getHostileFleetsInSystem() only include fleets that are visible to the
+   sensors of the token passed in to the method
+ - Fixed a few getNearbyX() methods potentially including the token they are
+   searching around
+Changes to CollectionUtils:
+ - Added combinedList() and combinedSet() to simplify creating a List/Set from
+   multiple source Collections, take any number of Collections as arguments
+Changes to ColorUtils:
+ - Fixed: glColor() alphaMult value isn't multiplied correctly when argument
+   "overrideOriginalAlpha" is true
+
+ 2.0b (October 20, 2014)
+=========================
+Changes to CampaignUtils:
+ - Added getNearestEntityFromFaction(SectorEntityToken token, Class entityType,
+   FactionAPI faction)
+ - Added getNearbyEntitiesFromFaction(SectorEntityToken token, float range,
+   Class entityType, FactionAPI faction)
+ - Added getEntitiesFromFaction(LocationAPI location, Class entityType,
+   FactionAPI faction)
+ - Renamed getXByRep() methods to getXWithRep(), also made them no longer
+   include members of the passed in token's faction in their results
+
+ 2.0 (October 20, 2014)
+========================
+Updated to be compatible with Starsector .65a
+Renamed FleetUtils to CampaignUtils
+Changes to CampaignUtils:
+ - Changed all method arguments to use a SectorEntityToken instead of a
+   CampaignFleetAPI wherever applicable
+ - Removed methods that RepLevel now handles
+ - Removed methods that search for a specific subclass of SectorEntityToken
+   in favor of more generic methods
+ - Removed areAllies(CampaignFleetAPI fleet1, CampaignFleetAPI fleet2)
+ - Removed areEnemies(CampaignFleetAPI fleet1, CampaignFleetAPI fleet2)
+ - Removed areNeutral(CampaignFleetAPI fleet1, CampaignFleetAPI fleet2)
+ - Removed getNearestFleet(CampaignFleetAPI fleet)
+ - Removed getNearestAlliedFleet(CampaignFleetAPI fleet)
+ - Removed getNearbyAlliedFleets(CampaignFleetAPI fleet, float range)
+ - Removed getAlliedFleetsInSystem(CampaignFleetAPI fleet)
+ - Renamed getNearestEnemyFleet() to getNearestHostileFleet(), only returns
+   fleets who will actively attack on sight
+ - Renamed getNearbyEnemyFleets() to getNearbyHostileFleets(), only returns
+   fleets who will actively attack on sight
+ - Renamed getEnemyFleetsInSystem() to getHostileFleetsInSystem(), only returns
+   fleets who will actively attack on sight
+ - Removed getNearestStation(CampaignFleetAPI fleet)
+ - Removed getEnemyFleetsInSystem(CampaignFleetAPI)
+ - Added areSameFaction(SectorEntityToken token1, SectorEntityToken token2)
+ - Added areAtRep(SectorEntityToken token1, SectorEntityToken token2,
+   IncludeRep include, RepLevel rep)
+ - Added getReputation(SectorEntityToken token1, SectorEntityToken token2)
+ - Added getNearestEntityOfType(SectorEntityToken token, Class entityType)
+ - Added getNearbyEntitiesOfType(SectorEntityToken token, float range,
+   Class entityType)
+ - Added getNearestEntityWithRep(SectorEntityToken token, Class entityType,
+   IncludeRep include, RepLevel rep)
+ - Added getEntitiesWithRep(SectorEntityToken token, Class entityType,
+   IncludeRep include, RepLevel rep)
+ - Added getNearbyEntitiesWithRep(SectorEntityToken token, float range,
+   Class entityType, IncludeRep include, RepLevel rep)
+Changes to CargoUtils:
+ - Added isShipInMothballed(String fleetMemberId, CargoAPI cargo)
+Changes to CombatUtils:
+ - Added centerViewport(Vector2f newCenter)
+Changes to DefenseUtils:
+ - Added hasHullDamage(ShipAPI ship)
+ - Added hasArmorDamage(ShipAPI ship)
+ - Added getMostDamagedArmorCell(ShipAPI ship)
+Changes to EllipseUtils:
+ - Added Vector2f getRandomPointInEllipse(Vector2f ellipseCenter,
+   float ellipseWidth, float ellipseHeight, float ellipseAngleOffset)
+Changes to MathUtils:
+ - Added int getRandomNumberInRange(int min, int max)
+Changes to VectorUtils:
+ - Added List<Vector2f> rotate(List<Vector2f> toRotate, float angle)
+ - Added List<Vector2f> rotateAroundPivot(List<Vector2f> toRotate,
+   Vector2f pivotPoint, float angle)
+Changes to WeaponUtils:
+ - Fixed getNearestAllyInArc() returning the host ship
+ - Fixed getAlliesInArc() including the host ship
+Removed all pre-existing deprecated methods from the code
+Removed all methods with a 'sortByDistance' parameter
+ - Use Collections.sort(list, new CollectionUtils.SortXByDistance(location))
+   instead
+Removed from AIUtils:
+ - List<ShipAPI> getEnemiesOnMap(CombatEntityAPI entity, boolean sortByDistance)
+ - List<ShipAPI> getNearbyEnemies(CombatEntityAPI entity, float range,
+   boolean sortByDistance)
+ - List<ShipAPI> getAlliesOnMap(CombatEntityAPI entity, boolean sortByDistance)
+ - List<ShipAPI> getNearbyAllies(CombatEntityAPI entity, float range,
+   boolean sortByDistance)
+ - List<MissileAPI> getEnemyMissilesOnMap(CombatEntityAPI entity,
+   boolean sortByDistance)
+ - List<MissileAPI> getNearbyEnemyMissiles(CombatEntityAPI entity, float range,
+   boolean sortByDistance)
+Removed from CampaignUtils:
+ - List<CampaignFleetAPI> getEnemyFleetsInSystem(CampaignFleetAPI fleet,
+   boolean sortByDistance)
+ - List<CampaignFleetAPI> getNearbyEnemyFleets(CampaignFleetAPI fleet,
+   float range, boolean sortByDistance)
+ - List<CampaignFleetAPI> getAlliedFleetsInSystem(CampaignFleetAPI fleet,
+   boolean sortByDistance)
+ - List<CampaignFleetAPI> getNearbyAlliedFleets(CampaignFleetAPI fleet,
+   float range, boolean sortByDistance)
+Removed from CollectionUtils:
+ - Removed CollectionUtils$SortObjectivesByDistance
+   (use SortEntitiesByDistance instead)
+ - List<T> weightedRandom(Map<T, Float> pickFrom, int numToPick)
+ - T weightedRandom(Map<T, Float> pickFrom)
+Removed from CombatUtils:
+ - List<DamagingProjectileAPI> getProjectilesWithinRange(Vector2f location,
+   float range, boolean sortByDistance)
+ - List<MissileAPI> getMissilesWithinRange(Vector2f location, float range,
+   boolean sortByDistance)
+ - List<ShipAPI> getShipsWithinRange(Vector2f location, float range,
+   boolean sortByDistance)
+ - List<CombatEntityAPI> getAsteroidsWithinRange(Vector2f location,
+   float range, boolean sortByDistance)
+ - List<BattleObjectiveAPI> getObjectivesWithinRange(Vector2f location,
+   float range, boolean sortByDistance)
+ - List<CombatEntityAPI> getEntitiesWithinRange(Vector2f location,
+   float range, boolean sortByDistance)
+ - CombatEngineAPI getCombatEngine()
+ - float getElapsedCombatTimeIncludingPaused()
+ - float getElapsedCombatTime()
+ - float getTimeSinceLastFrame()
+Removed from DefenseUtils:
+ - Vector2f getArmorCellAtWorldCoord(ShipAPI ship, Vector2f loc)
+Removed from DrawUtils:
+ - drawArc(float centerX, float centerY, float radius, float startAngle,
+   float arcAngle, int numSegments
+Removed from MathUtils:
+ - float getFacing(Vector2f vector)
+   (moved to VectorUtils)
+ - float getAngle(Vector2f from, Vector2f to)
+   (moved to VectorUtils)
+ - Vector2f getDirectionalVector(Vector2f source, Vector2f destination)
+   (moved to VectorUtils)
+ - Vector2f getDirectionalVector(CombatEntityAPI source, Vector2f destination)
+ - Vector2f getDirectionalVector(CombatEntityAPI source,
+   CombatEntityAPI destination)
+ - boolean isPointWithinBounds(Vector2f point, CombatEntityAPI entity)
+   (moved to CollisionUtils)
+Removed from WeaponUtils:
+ - float calculateActualDamage(float baseDamage, WeaponAPI weapon)
+ - float calculateActualDamage(float baseDamage, WeaponAPI weapon,
+   ShipAPI target, DefenseType defense)
+ - float calculateDamagePerShot(WeaponAPI weapon)
+ - float calculateDamagePerShot(WeaponAPI weapon, ShipAPI target,
+   DefenseType defense)
+ - float calculateDamagePerSecond(WeaponAPI weapon)
+ - float calculateDamagePerSecond(WeaponAPI weapon, ShipAPI target,
+   DefenseType defense)
+ - float calculateDamagePerBurst(WeaponAPI weapon)
+ - float calculateDamagePerBurst(WeaponAPI weapon, ShipAPI target,
+   DefenseType defense)
+ - List<ShipAPI> getEnemiesInArc(WeaponAPI weapon, boolean sortByDistance)
+ - List<MissileAPI> getEnemyMissilesInArc(WeaponAPI weapon,
+   boolean sortByDistance)
+
+________________________________________________________________________________
+
+
+ 1.9b (August 27, 2014)
+========================
+Minor optimizations
+Added support for Version Checker update notifications
+Added org.lazywizard.lazylib.ModUtils:
+ - This class helps with non-gameplay related modding tasks
+ - isClassPresent(String classCanonicalName)
+Changes to SimpleEntity:
+ - Added a constructor for mimicking the location of a ShipEngineAPI
+ - Added getEngine() method, returns null if another constructor was used
+
+ 1.9 (July 04, 2014)
+=====================
+The game no longer crashes if a setting is missing from LazyLib's config file
+Added org.lazywizard.lazylib.EllipseUtils:
+ - By popular request, this includes methods to deal with elliptical shapes
+ - Put into its own class to avoid further clutter in MathUtils
+ - getPointOnEllipse(Vector2f ellipseCenter, float ellipseWidth,
+   float ellipseHeight, float ellipseAngleOffset, float angle)
+ - getRandomPointOnEllipse(Vector2f ellipseCenter, float ellipseWidth,
+   float ellipseHeight, float ellipseAngleOffset)
+ - isPointWithinEllipse(Vector2f point, Vector2f ellipseCenter,
+   float ellipseWidth, float ellipseHeight, float ellipseAngleOffset)
+Added org.lazywizard.lazylib.campaign.orbits.EllipticalOrbit:
+ - Implementation of OrbitAPI that travels along an elliptical path
+Added org.lazywizard.lazylib.opengl.ColorUtils:
+ - glColor(Color color)
+ - glColor(Color color, float alphaMult, boolean overrideOriginalAlpha)
+Changes to AIUtils:
+ - Added getBestInterceptPoint(Vector2f point, float speed,
+   Vector2f targetLoc, Vector2f targetVel) - all credit goes to Dark.Revenant
+Changes to CargoUtils:
+ - Added moveMothballedShips(CargoAPI from, CargoAPI to)
+Changes to CollisionUtils:
+ - Fixed getCollisionPoint() not properly updating the bounds facing/position
+Changes to CombatUtils:
+ - Fixed getFleetMember() returning null when a hulk is passed in
+ - Added spawnShipOrWingDirectly(String variantId, FleetMemberType type,
+   FleetSide side, float combatReadiness, Vector2f location, float facing)
+   NOTE: This does not work in campaign using the vanilla FleetEncounterContext!
+Changes to DrawUtils:
+ - Added drawEllipse(float centerX, float centerY, float width, float height,
+   float angleOffset, int numSegments, boolean drawFilled)
+Changes to MathUtils:
+ - isPointWithinCircle() now returns true for points along the circumference
+ - Optimized getPointsAlongCircumference() and large numbers of points
+ - Added getMidpoint(Vector2f point1, Vector2f point2)
+Changes to StringUtils:
+ - Fixed wrapString() appending a newline when the input string didn't have one
+ - Also fixed a rare bug with wrapString() where it wouldn't include the last
+   segment of a wrapped word if it was the final word in the entire String
+
+ 1.8c (March 07, 2014)
+=======================
+Changes to VectorUtils:
+ - Fixed rotate() and rotateAroundPivot() issues (they were using radians
+   instead of degrees like every other Starsector/LazyLib method does)
+
+ 1.8b (March 07, 2014)
+=======================
+Added "enableCaching" to lazylib_settings.json, on by default
+Changes to AIUtils:
+ - getEnemiesOnMap() will now store the results for faster consecutive calls
+   during the same frame if caching is enabled, also affects all other
+   enemy-filtering methods as they use getEnemiesOnMap() internally
+Changes to CollisionUtils:
+ - Fixed getCollisionPoint() actually returning the furthest collision instead
+   of the closest (oops)
+ - isPointOnSegment() is now only accurate to within 1/3 su,
+   use MathUtils.isPointOnLine() if you need strict accuracy
+Changes to LazyLib:
+ - Added isCachingEnabled()
+Changes to WeaponUtils:
+ - Fixed an edge case bug with isWithinArc() and entities just outside the arc
+
+ 1.8 (February 16, 2014)
+=========================
+Updated codebase to use Java 7 language features
+Log now includes class and line number of caller if 'logDeprecated' is true
+Changed all getXInRange()/getNearbyX() to use new MathUtils.isWithinRange()
+ - Should provide a noticeable speed boost for those methods dealing with an
+   object that has a collision/interaction radius
+Added org.lazywizard.lazylib.JSONUtils:
+ - toColor(JSONArray array), for reading colors from JSON/CSV files
+Added org.lazywizard.lazylib.StringUtils:
+ - wrapString(String toWrap, int maxLineLength)
+ - indent(String toIndent, String indentWith)
+Changes to AIUtils:
+ - getNearestEnemy() now includes collision radius in its checks
+ - getNearestAlly() now includes collision radius in its checks
+ - getNearestShip() now includes collision radius in its checks
+Changes to AnchoredEntity:
+ - Changed variables from private to protected for easier subclassing
+ - Added reanchor(CombatEntityAPI newAnchor, Vector2f newLocation)
+Changes to DrawUtils:
+ - Added drawFilled boolean parameter to drawArc(), deprecated old version
+Changes to MathUtils:
+ - Added isWithinRange(SectorEntityToken token1, SectorEntityToken token2,
+   float range)
+ - Added isWithinRange(SectorEntityToken token, Vector2f loc, float range)
+ - Added isWithinRange(CombatEntityAPI entity1, CombatEntityAPI entity2,
+   float range)
+ - Added isWithinRange(CombatEntityAPI entity, Vector2f loc, float range)
+ - Added isWithinRange(Vector2f loc1, Vector2f loc2, float range)
+Changes to FleetUtils:
+ - Added isShipInFleet(String fleetMemberId, CampaignFleetAPI fleet),
+   can be used with FleetMemberAPI.getId() or ShipAPI.getFleetMemberId()
+ - getNearestEnemyFleet() now includes interaction radius in its checks
+ - getNearestAlliedFleet() now includes interaction radius in its checks
+ - getNearestFleet() now includes interaction radius in its checks
+Changes to SimpleEntity:
+ - Changed variables from private to protected for easier subclassing
+Changes to VectorUtils:
+ - Added getDirectionalVector(Vector2f source, Vector2f destination)
+Changes to WeaponUtils:
+ - Fixed bug where isWithinArc() was using double the entity's actual collision
+   radius in its calculations
+ - getNearestAllyInArc() now includes collision radius in its checks
+ - getNearestEnemyInArc() now includes collision radius in its checks
+Deprecated in DrawUtils:
+ - Deprecated drawArc(float centerX, float centerY, float radius,
+   float startAngle, float arcAngle, int numSegments)
+Deprecated in MathUtils:
+ - Deprecated getDirectionalVector(Vector2f source, Vector2f destination),
+   moved to VectorUtils
+
+ 1.7 (December 18, 2013)
+=========================
+Swapped all usages of CombatUtils.getCombatEngine() to Global.getCombatEngine()
+Significant JavaDoc expansion, reformatting, and other readability improvements
+Deprecated all methods with a sortByDistance parameter
+ - Call Collections.sort() using one of CollectionUtils' Comparators instead
+Added lazylib_settings.json:
+ - "logDeprecated" sets whether to log usage of deprecated LazyLib methods,
+   useful for modders since these will eventually be removed from LazyLib
+ - "crashOnDeprecated", if true will throw a RuntimeException when a deprecated
+   LazyLib method is used (for modders to track down usage via the stacktrace)
+Added org.lazywizard.lazylib.opengl.DrawUtils:
+ - drawCircle(float centerX, float centerY, float radius, int numSegments)
+ - drawArc(float centerX, float centerY, float radius, float startAngle,
+   float arcAngle, int numSegments)
+Added org.lazywizard.lazylib.VectorUtils:
+ - getAngle(Vector2f from, Vector2f to) (moved from MathUtils)
+ - getFacing(Vector2f vector) (moved from MathUtils)
+ - getCrossProduct(Vector2f vector1, Vector2f vector2)
+ - rotate(Vector2f toRotate, float degrees, Vector2f dest)
+ - rotateAroundPivot(Vector2f toRotate, Vector2f pivotPoint, float angle,
+   Vector2f dest), rotates a Vector2f around another Vector2f
+Changes to CollectionUtils:
+ - Added CollectionFilter interface, contains accept(Object obj) method
+ - Added filter(Collection toFilter, CollectionFilter filter), allows
+   predicate-based Collection filtering
+ - Added filter(Collection toFilter, List filters), a more efficient way of
+   using multiple filters on a Collection at once
+ - These methods support generics
+Changes to CollisionUtils:
+ - Fixed getCollisionPoint() returning null when collision point lies directly
+   on the end of a line (this means getCollisionPoint(beam.getFrom(),
+   beam.getTo(), beam.getDamageTarget()) actually works again)
+ - Fixed getCollides() instantiating a new Line2D object each time it's called
+Changes to CombatUtils:
+ - No longer implements EveryFrameCombatPlugin (also removed LazyLibCombatHook)
+ - Updated getFleetMember() to use DeployedFleetMemberAPI introduced in .6.1a
+   (this means it now works in missions, not just in campaign battles)
+ - Added isVisibleToSide(CombatEntityAPI entity, int side)
+Changes to FleetUtils:
+ - Fixed null pointer exception when using these methods in hyperspace
+ - Added getRelation(CampaignFleetAPI fleet1, CampaignFleetAPI fleet2)
+ - Added getNearbyFleets(CampaignFleetAPI fleet, float range)
+Changes to MathUtils:
+ - Added getRandomPointInCone(Vector2f center, float radius, float minAngle,
+   float maxAngle), returns a random point in a two-dimensional cone
+ - Added getShortestRotation(float currAngle, float destAngle), returns the
+   smallest difference between two angles. This can also be used to find the
+   best turn direction
+Changes to SimpleEntity:
+ - Added a constructor for mimicking the location of a WeaponAPI w/o reflection
+ - Added getWeapon() method, returns null if another constructor was used
+ - Added getType() method, returns the type of constructor used for this object
+ - Added SimpleEntityType enumeration
+Changes to WeaponUtils:
+ - Added getAlliesInArc(WeaponAPI weapon)
+ - Added getNearestAllyInArc(WeaponAPI weapon)
+Deprecated in AIUtils:
+ - Deprecated getEnemiesOnMap(CombatEntityAPI entity, boolean sortByDistance)
+ - Deprecated getNearbyEnemies(CombatEntityAPI entity, float range,
+   boolean sortByDistance)
+ - Deprecated getAlliesOnMap(CombatEntityAPI entity, boolean sortByDistance)
+ - Deprecated getNearbyAllies(CombatEntityAPI entity, float range,
+   boolean sortByDistance)
+ - Deprecated getEnemyMissilesOnMap(CombatEntityAPI entity,
+   boolean sortByDistance)
+ - Deprecated getNearbyEnemyMissiles(CombatEntityAPI entity, float range,
+   boolean sortByDistance)
+Deprecated in CombatUtils:
+ - Deprecated getProjectilesWithinRange(Vector2f location, float range,
+   boolean sortByDistance)
+ - Deprecated getMissilesWithinRange(Vector2f location, float range,
+   boolean sortByDistance)
+ - Deprecated getShipsWithinRange(Vector2f location, float range,
+   boolean sortByDistance)
+ - Deprecated getAsteroidsWithinRange(Vector2f location, float range,
+   boolean sortByDistance)
+ - Deprecated getObjectivesWithinRange(Vector2f location, float range,
+   boolean sortByDistance)
+ - Deprecated getEntitiesWithinRange(Vector2f location, float range,
+   boolean sortByDistance)
+Deprecated in FleetUtils:
+ - Deprecated getEnemyFleetsInSystem(CampaignFleetAPI fleet,
+   boolean sortByDistance)
+ - Deprecated getNearbyEnemyFleets(CampaignFleetAPI fleet, float range,
+   boolean sortByDistance)
+ - Deprecated getAlliedFleetsInSystem(CampaignFleetAPI fleet,
+   boolean sortByDistance)
+ - Deprecated getNearbyAlliedFleets(CampaignFleetAPI fleet, float range,
+   boolean sortByDistance)
+Deprecated in MathUtils:
+ - Deprecated getFacing(Vector2f vector), moved to VectorUtils
+ - Deprecated getAngle(Vector2f from, Vector2f to), moved to VectorUtils
+ - Deprecated getDirectionalVector(CombatEntityAPI source, Vector2f destination)
+ - Deprecated getDirectionalVector(CombatEntityAPI source,
+   CombatEntityAPI destination)
+Deprecated in WeaponUtils:
+ - Deprecated getEnemiesInArc(WeaponAPI weapon, boolean sortByDistance)
+ - Deprecated getEnemyMissilesInArc(WeaponAPI weapon, boolean sortByDistance)
+
+ 1.6b (September 28, 2013)
+===========================
+Temporary fix for null pointer exceptions on title screen (fixed in .6.1a)
+Changes to CollisionUtils:
+ - Added isPointOnSegment(Vector2f point, SegmentAPI segment)
+Changes to LazyLib:
+ - Added getLogLevel(), returns logger level used by all LazyLib classes
+ - setLogLevel() now includes AnchoredEntity and SimpleEntity as well
+
+ 1.6 (September 27, 2013)
+==========================
+Updated the codebase to use the new .6a methods
+Deprecated several methods whose functionality is now included within the API
+Usage of deprecated methods is now reported in starsector.log if devMode=true
+Changes to AIUtils:
+ - All methods now only return entities that are visible on the battle map.
+   Note: this change may alter the behavior of existing scripts!
+   (use CombatUtils if you wish to find ships regardless of fog of war coverage)
+ - Changed canUseSystemThisFrame() so it only returns true when the system can
+   be toggled (essentially checks if the 'use system' key would do anything).
+   This was the intended behavior of this method, but some old scripts might
+   rely on the old, broken behavior and need to be changed.
+Changes to CollectionUtils:
+ - SortXByDistance constructors now have an optional includeRadius parameter
+   that sets if collision/interaction radius is considered (defaults to true)
+ - implode() now works with any Collection, not just one containing Strings
+ - Deprecated CollectionUtils.SortObjectivesByDistance as BattleObjectiveAPI
+   now extends CombatEntityAPI (use SortEntitiesByDistance instead)
+ - Deprecated weightedRandom(Map pickFrom) in favor of
+   com.fs.starfarer.api.util.WeightedRandomPicker
+ - Deprecated weightedRandom(Map pickFrom, int numToPick) in favor of
+   com.fs.starfarer.api.util.WeightedRandomPicker (call pick() multiple times)
+Changes to CombatUtils:
+ - Deprecated getCombatEngine() in favor of Global.getCombatEngine()
+ - Deprecated getElapsedCombatTime() in favor of
+   CombatEngineAPI,getTotalElapsedTime()
+ - Deprecated getElapsedCombatTimeIncludingPaused() in favor of
+   CombatEngineAPI,getTotalElapsedTime()
+ - Deprecated getTimeSinceLastFrame() in favor of
+   CombatEngineAPI.getElapsedInLastFrame()
+Changes to DefenseUtils:
+ - Deprecated getArmorCellAtWorldCoord(ShipAPI ship, Vector2f loc)
+   in favor of ArmorGridAPI.getCellAtLocation(Vector2f loc)
+Changes to LazyLib:
+ - Now logs the current LazyLib version on game load
+ - Added setLogLevel(Level level), sets the log level for all utility classes
+   (defaults to Level.DEBUG for dev builds, Level.ERROR for main releases)
+Changes to MathUtils:
+ - Added getRandomPointOnLine(Vector2f lineStart, Vector2f lineEnd)
+ - Added isPointOnLine(Vector2f point, Vector2f lineStart, Vector2f lineEnd)
+ - The various getDistance() methods involving SectorEntityTokens now
+   take interaction radius into account. Note: this change may alter the
+   behavior of existing scripts!
+ - getDistanceSquared() methods incorporating a radius are no longer marked
+   as deprecated, instead the documentation includes a warning that using
+   getDistance() may be just as efficient
+Changes to WeaponUtils:
+ - Fixed inaccuracies with getTimeToAim(), but method doesn't take ship
+   turn speed into account anymore
+ - All calculateDamage() methods are now marked as deprecated. There are just
+   too many factors going into damage for this to be testable (26 MutableStats
+   that affect damage dealt/taken as of .6a, let alone armor damage reduction).
+
+ 1.5 (August 01, 2013)
+=======================
+Re-added DefenseType enumeration (contains HULL, ARMOR, SHIELD, PHASE_OR_MISS)
+Added org.lazywizard.lazylib.combat.entities.AnchoredEntity:
+ - Alternative implementation of CombatEntityAPI that follows and rotates
+   alongside another CombatEntityAPI (the 'anchor')
+ - Includes a working getVelocity() implementation, unlike SimpleEntity
+Added org.lazywizard.lazylib.combat.DefenseUtils:
+ - Contains methods to convert between world and armor grid coordinates
+ - Can check what DefenseType is present at a specific point on a ship
+Changes to AIUtils:
+ - Fixed bug with canUseSystemThisFrame() always returning false for
+   active toggleable systems that have a cooldown
+Changes to CollisionUtils:
+ - Fixed bug with isPointInBounds() and points exactly on the boundary edges
+Changes to CombatUtils:
+ - Added getFleetMember(ShipAPI ship), returns the FleetMemberAPI whose
+   id matches this ship (or null if no match was found)
+Changes to MathUtils:
+ - Added equals(float a, float b), tests for 99.99999+% equality of floats
+ - Added getRandom(), returns an instance of java.util.Random
+   (this is the RNG used by LazyLib if you wanted to do seed manipulation)
+Changes to WeaponUtils:
+ - New methods to check how much damage you would deal to a specific target:
+ - Added calculateActualDamage(float baseDamage, WeaponAPI weapon,
+   ShipAPI target, DefenseType defense)
+ - Added calculateDamagePerShot(WeaponAPI weapon, ShipAPI target,
+   DefenseType defense)
+ - Added calculateDamagePerSecond(WeaponAPI weapon, ShipAPI target,
+   DefenseType defense)
+ - Added calculateDamagePerBurst(WeaponAPI weapon, ShipAPI target,
+   DefenseType defense)
+ - These methods are not 100% accurate yet, still tracking down some oddities
+
+ 1.4 (May 06, 2013)
+====================
+Added @since annotations (useful for finding the lowest library version needed)
+Miscellaneous other JavaDoc improvements
+Minor math optimizations related to the changes made in the 1.3 update
+Added SimpleEntity class (barebones implementation of CombatEntityAPI):
+ - Useful for spawnEmpArc(), which can target a CombatEntityAPI
+ - Has a constructor that takes a Vector2f, for a static location
+ - Can also take an Object that has a getLocation() method, for mobile targets
+   (useful for targeting a specific WeaponAPI). This uses reflection!
+Changes to CombatUtils:
+ - Added getTimeSinceLastFrame()
+Changes to MathUtils:
+ - Circle-based methods support a null center point (acts as a 0, 0 origin)
+ - Added getRandomNumberInRange(float min, float max)
+ - Added getEquidistantPointsInsideCircle(Vector2f center, float radius,
+   float spaceBetweenPoints)
+Changes to CollisionUtils:
+ - Made isPointWithinBounds() more efficient
+ - Added isPointWithinCollisionCircle(Vector2f point, CombatEntityAPI entity)
+Changes to AIUtils:
+ - Added getEnemyMissilesOnMap(CombatEntityAPI entity, [boolean sortByDistance])
+ - Added getNearbyEnemyMissiles(CombatEntityAPI entity, float range,
+   [boolean sortByDistance])
+ - Added getNearestMissile(CombatEntityAPI entity)
+ - Added getNearestEnemyMissile(CombatEntityAPI entity)
+Changes to WeaponUtils:
+ - Added getEnemiesInArc(WeaponAPI weapon, [boolean sortByDistance])
+ - Added getNearestEnemyInArc(WeaponAPI weapon)
+ - Added getEnemyMissilesInArc(WeaponAPI weapon, [boolean sortByDistance])
+ - Added getNearestEnemyMissileInArc(WeaponAPI weapon)
+ - Added aimTowardsPoint(WeaponAPI weapon, Vector2f point, float time)
+(method parameters in [brackets] signify optional parameters)
+
+
+ 1.3 (April 10, 2013)
+======================
+MathUtil's getDistance() methods now include collision radius, if applicable
+Note: this change may alter the behavior of existing scripts!
+Use the getDistance() methods that take two Vector2f for the old behavior
+
+ 1.2 (March 20, 2013)
+======================
+Greatly expanded FleetUtils (equivalent to AIUtils but for CampaignFleetAPIs)
+Added clampAngle() to MathUtils (normalizes angle between 0 and 360 degrees)
+Added applyForce() to CombatUtils (basic implementation of Newton's Second Law)
+Removed DefenseType and Line classes for now (unused internal data types)
+
+ 1.1 (February 27, 2013)
+=========================
+Added LazyLib class to org.lazywizard.lazylib (contains version information)
+Added a few missing JavaDoc entries and updated others for clarity
+All getWithinRange() methods now have an optional sort-by-distance parameter
+Added Comparators to CollectionUtils for sorting by distance from a Vector
+ - SortEntitiesByDistance(Vector2f location): sorts CombatEntityAPIs
+ - SortTokensByDistance(Vector2f location): sorts SectorEntityTokens
+ - SortObjectivesByDistance(Vector2f location): sorts BattleObjectiveAPIs
+
+ 1.0 (February 23, 2013)
+=========================
+Initial utility mod release, contains 12 classes and 62 methods.
+Added JavaDoc (included with mod download)
+Changes from bundled jar version:
+ - Removed Slick2D classes (save FastTrig)
+ - Added CollisionUtils class (bounds checking and collision detection)
+ - Rewrote WeaponUtils to use the new CollisionUtils instead of Slick2D
+ - Moved FastTrig from org.lazywizard.lazylib.geom to org.lazywizard.lazylib
+ - Fixed several bugs (including a broken getRandomPointInCircle())
+ - Slight optimization of math-heavy methods

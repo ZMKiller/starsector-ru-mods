@@ -1,0 +1,43 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 7,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "ls_tarsus_ds",
+    "hullMods": [
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_tarsus_dakka_ds",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "ls_deffstorm_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_rokkit_launcha",
+                "WS 001": "ls_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_big_lobba"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_big_shoota"
+            }
+        }
+    ]
+}

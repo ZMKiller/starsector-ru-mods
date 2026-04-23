@@ -1,0 +1,30 @@
+{
+    "id":"uw_shadowskim",
+    "type":"DISPLACER",
+    "aiType":"PHASE_DISPLACER",
+
+    "jitterColor":[75,200,255,155],
+    "jitterCopies":10,
+    "jitterRange":0,
+    "jitterRangeRadiusFraction":0.5,
+
+    "weaponGlowColor":[75,200,255,0],
+    "weaponTypes":[ENERGY],
+
+    "engineGlowColor":[75,200,255,125],
+
+    "range":600,
+    "randomRange":0,
+
+    "renderCopyDuringTeleport":true,
+
+    "fadeActivationSoundOnChargedown":false,
+    "useSound":"uw_shadow_skimmer",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":600,
+        "averageSpeedIncrease":30,
+    }
+}

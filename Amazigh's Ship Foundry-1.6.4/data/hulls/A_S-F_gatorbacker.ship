@@ -1,0 +1,126 @@
+{
+  "hullName": "Gatorbacker",
+  "hullId": "A_S-F_gatorbacker",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_gatorbacker.png",
+  "style": "LOW_TECH",
+  "height": 100,
+  "width": 94,
+  "center": [47, 50],
+  "collisionRadius": 69,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 67,
+  "viewOffset": 0,
+  "builtInMods": [
+    "A_S-F_GaderogaHullmod"
+  ],
+  "builtInWeapons": {
+    "WS0001": "A_S-F_zalak"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 0,
+      "locations": [-11, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 30,
+      "locations": [30, 26]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -30,
+      "locations": [30, -26]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 100,
+      "locations": [-8, 29]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -100,
+      "locations": [-8, -29]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-49, 26],
+      "length": 48,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-49, -26],
+      "length": 48,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-33, 36],
+      "length": 24,
+      "width": 8,
+      "angle": 172,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-33, -36],
+      "length": 24,
+      "width": 8,
+      "angle": -172,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, 15],
+      "length": 24,
+      "width": 8,
+      "angle": -175,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, -15],
+      "length": 24,
+      "width": 8,
+      "angle": 175,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    37, -29,
+    2, -45,
+    -46, -29,
+    -46, 29,
+    2, 45,
+    37, 29,
+    45, -0
+  ]
+}

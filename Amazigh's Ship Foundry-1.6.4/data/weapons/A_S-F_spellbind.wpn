@@ -1,0 +1,37 @@
+{
+	"id":"A_S-F_spellbind",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+
+	"everyFrameEffect": "org.amazigh.foundry.scripts.supe.ASF_spellbindWeaponScript",
+
+	"turretSprite":"graphics/weapons/A_S-F_spellbind_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_spellbind_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_spellbind_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_spellbind_hardpoint_glow.png",
+	"glowColor":[185,255,130,150], # was 200 alpha (too bright)
+	"turretOffsets":[19, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[24, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED",
+	"animationType": "GLOW_AND_FLASH",
+	"muzzleFlashSpec": {"length": 70,
+			"spread":28.0,
+			"particleSizeMin":5.0,
+			"particleSizeRange":9.0,
+			"particleDuration":0.49,
+			"particleCount":63,
+			"particleColor":[195,250,125,220]},
+
+	# "fringeColor":[125,200,25,120],
+	# "coreColor":[190,255,125,225],
+	# "glowColor":[185,255,130,200],
+
+	"interruptibleBurst":false,
+	"autocharge":true,
+
+	"projectileSpecId":"A_S-F_spellbind_shot",
+	"fireSoundTwo":"amsrm_fire",
+}

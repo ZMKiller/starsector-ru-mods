@@ -1,0 +1,25 @@
+{
+	"id":"A_S-F_strobe",  # this id must match what's in the spreadsheet
+	"specClass":"beam",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	#	"collisionClass":"RAY_FIGHTER",
+	#	"collisionClassByFighter":"RAY_FIGHTER",
+	"turretSprite":"graphics/weapons/A_S-F_strobe_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_strobe_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_strobe_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_strobe_hardpoint_glow.png",	
+	"turretOffsets":[7,0, 7,-3, 7,3],
+	"turretAngleOffsets":[0, 0, 0],
+	"hardpointOffsets":[12,0, 12,-3, 12,3],
+	"hardpointAngleOffsets":[0, 0, 0],
+	"fringeColor":[90,70,95,255], # 155,50,50
+	"coreColor":[255,255,255,100],
+	"glowColor":[160,130,185,255], # 255,100,100
+	"darkCore":false,
+	"width":7.0,
+	"textureType":SMOOTH,
+	"textureScrollSpeed":300.0,
+	"pixelsPerTexel":5.0,
+	"fireSoundOne":"A_S-F_strobe_fire",
+}

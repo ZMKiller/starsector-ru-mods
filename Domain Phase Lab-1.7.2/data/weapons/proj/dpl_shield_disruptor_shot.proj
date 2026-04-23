@@ -1,0 +1,15 @@
+{
+	"id":"dpl_shield_disruptor_shot",
+	"specClass":"projectile",
+	"spawnType":"PLASMA",
+	"onHitEffect":"data.scripts.weapons.dpl_shield_disruptorEffect",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"width":25.0,
+	"fadeTime":0.5,
+	"hitGlowRadius":60,
+	"fringeColor":[0,0,255,255],
+	"coreColor":[155,100,255,255],
+	"passThroughMissiles":true,	
+	"passThroughFighters":true,	
+}

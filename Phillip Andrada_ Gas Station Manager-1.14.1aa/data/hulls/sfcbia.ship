@@ -1,0 +1,159 @@
+{
+  "hullName": "Bia BA-150",
+  "hullId": "sfcbia",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/PAGSM/ships/tanker_fast_desteroyer_diktatv1.png",
+  "style": "MIDLINE",
+  "height": 177,
+  "width": 108,
+  "center": [53, 98],
+  "collisionRadius": 131.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 104.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 90,
+      "locations": [20, 34],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -90,
+      "locations": [20, -35],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [49, 37],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [49, -39],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-5, -40.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [1, 43]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [-11, 43]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [47, -1]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-59, 37],
+      "length": 45,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-59, -38],
+      "length": 45,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-97, 5],
+      "length": 50,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-97, -7],
+      "length": 50,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [43.5, -51.5],
+      "length": 10,
+      "width": 2,
+      "angle": -150,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [43.5, 51.5],
+      "length": 10,
+      "width": 2,
+      "angle": 150,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -91, 18,
+    -92.5, -20.5,
+    -57, -21.5,
+    -56.5, -45,
+    34, -45.5,
+    55, -52,
+    77.5, -14.5,
+    78, 19,
+    50.5, 52.5,
+    34, 45.5,
+    -57.5, 44,
+    -57.5, 18.5
+  ]
+}

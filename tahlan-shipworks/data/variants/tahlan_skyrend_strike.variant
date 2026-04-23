@@ -1,0 +1,66 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 0,
+    "fluxVents": 39,
+    "goalVariant": true,
+    "hullId": "tahlan_skyrend",
+    "hullMods": [
+        "magazines",
+        "targetingunit",
+        "hardenedshieldemitter",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_skyrend_strike",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "autopulse",
+                "WS0002": "autopulse"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0011": "typhoon",
+                "WS0012": "typhoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "phasebeam",
+                "WS0004": "phasebeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "heavyac",
+                "WS0006": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "pdburst",
+                "WS0008": "pdburst",
+                "WS0013": "pdburst",
+                "WS0014": "pdburst",
+                "WS0015": "pdburst",
+                "WS0016": "pdburst"
+            }
+        }
+    ],
+    "wings": [
+        "thunder_wing",
+        "thunder_wing"
+    ]
+}

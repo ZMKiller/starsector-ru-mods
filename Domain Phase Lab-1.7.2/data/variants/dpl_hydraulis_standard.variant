@@ -1,0 +1,31 @@
+{
+  "variantId": "dpl_hydraulis_standard",
+  "hullId": "dpl_hydraulis",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 17,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "stabilizedshieldemitter",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "heavyblaster",
+        "WS0006": "heavyblaster",
+        "WS0008": "sabotpod",
+        "WS0009": "sabotpod"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "dpl_anomaly_fighter"
+  ]
+}

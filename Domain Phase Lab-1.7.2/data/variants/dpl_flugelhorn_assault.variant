@@ -1,0 +1,36 @@
+{
+  "variantId": "dpl_flugelhorn_assault",
+  "hullId": "dpl_flugelhorn",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 14,
+  "fluxVents": 16,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "hardenedshieldemitter",
+    "stabilizedshieldemitter",
+    "fluxcoil",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "dpl_plasma_hammer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "gravitonbeam",
+        "WS0002": "gravitonbeam"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

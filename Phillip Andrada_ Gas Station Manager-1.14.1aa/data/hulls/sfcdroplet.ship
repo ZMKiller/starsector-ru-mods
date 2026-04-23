@@ -1,0 +1,55 @@
+{
+  "hullName": "Droplet",
+  "hullId": "sfcdroplet",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/PAGSM/ships/fighters/dropletv1.png",
+  "style": "MIDLINE",
+  "height": 30,
+  "width": 22,
+  "center": [11, 15],
+  "collisionRadius": 19,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 15.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-1, 6.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-1, -6.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10.5, -0],
+      "length": 55,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    9.5, -4.5,
+    -0.5, -7,
+    -10.5, -5,
+    -10.5, 5,
+    -0.5, 7,
+    9.5, 4.5
+  ]
+}

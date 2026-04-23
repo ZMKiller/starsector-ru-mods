@@ -1,0 +1,158 @@
+{
+  "hullName": "Revisionist",
+  "hullId": "TTSC_revisionist",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/TTSC_revisionist.png",
+  "style": "HIGH_TECH",
+  "height": 161,
+  "width": 142,
+  "center": [71, 80.5],
+  "collisionRadius": 112,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 107.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "shielded_holds",
+    "insulatedengine"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [-25.5, 56]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [-25.5, -56]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [59.5, 33]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [59.5, -33]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [49.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-76, 57],
+      "length": 39.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-76, -57],
+      "length": 39.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-73.5, -25],
+      "length": 39.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-73.5, 25],
+      "length": 39.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-74, -15.5],
+      "length": 39.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-74, 15.5],
+      "length": 39.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-75.5, -6.5],
+      "length": 39.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-75.5, 6.5],
+      "length": 39.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-75.5, -45.5],
+      "length": 55,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-75.5, 45.5],
+      "length": 55,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    86.5, -45.5,
+    -0.5, -56.5,
+    -26, -76,
+    -88, -74,
+    -88, 74,
+    -26, 76,
+    -0.5, 56.5,
+    86.5, 45.5
+  ]
+}

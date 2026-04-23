@@ -1,0 +1,47 @@
+{
+  "variantId": "XHAN_Pharrek_variant_EmperorsHammer",
+  "hullId": "XHAN_Pharrek",
+  "displayName": "Emperors Hammer",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "Xhan_Agmad",
+        "WS0004": "Xhan_Agmad"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Sharik_Demo_Torp",
+        "WS0002": "Sharik_Demo_Torp"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "Xhan_Ertshan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "Xhan_Pharrekcore"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

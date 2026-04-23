@@ -1,0 +1,82 @@
+{
+    "hullName": "ls_stompa_factory_stompa_2",
+    "hullId": "ls_stompa_factory_stompa_2",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_stompa_factory/ls_stompa_factory_stompa_module2.png",
+    "height": 70,
+    "width": 110,
+    "center": [
+        55, 35
+    ],
+    "collisionRadius": 0,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 60,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_deathskull",
+        "magazines",
+        "always_detaches",
+        "reduced_explosion"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_stompa_bellygun",
+        "WS 001": "ls_grot_shoota_single",
+        "WS 002": "ls_grot_shoota_single"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    22.5,      0.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "renderOrderMod": 100,
+            "arc": 90,
+            "angle": 30,
+            "locations": [
+                      10,      8.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "renderOrderMod": 100,
+            "arc": 90,
+            "angle": 330,
+            "locations": [
+                      10,     -8.5
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+            29.5,       -6,
+            14.5,      -25,
+            -9.5,    -24.5,
+           -24.5,     -9.5,
+           -24.5,      9.5,
+        
+            -9.5,     24.5,
+            14.5,       25,
+            29.5,        6
+    ]
+}

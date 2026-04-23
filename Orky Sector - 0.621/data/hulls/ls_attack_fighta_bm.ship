@@ -1,0 +1,89 @@
+{
+    "hullName": "Attack Fighta (BM)",
+    "hullId": "ls_attack_fighta_bm",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/attack_fighta_bm.png",
+    "height": 33,
+    "width": 32,
+    "center": [
+        16, 16.5
+    ],
+    "collisionRadius": 24,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_badmoons"
+    ],
+    "builtInWeapons": {
+        "WS 002": "ls_big_shoota",
+        "WS 000": "ls_mini_rokkit_fighta",
+        "WS 001": "ls_mini_rokkit_fighta"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                       1,      9.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                       1,     -9.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     9.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -14.5, 0
+            ],
+            "length": 24,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 32,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -15,       -8,
+            -4.5,       -5,
+              -1,    -15.5,
+             3.5,     -5.5,
+            13.5,       -3,
+        
+            13.5,        3,
+             3.5,      5.5,
+              -1,     15.5,
+            -4.5,        5,
+             -15,        8
+    ]
+}

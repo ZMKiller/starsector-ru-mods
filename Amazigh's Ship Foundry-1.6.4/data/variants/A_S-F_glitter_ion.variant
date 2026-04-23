@@ -1,0 +1,32 @@
+{
+  "variantId": "A_S-F_glitter_ion",
+  "hullId": "A_S-F_glitter",
+  "displayName": "Fighter Drone",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "high_scatter_amp"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "A_S-F_p_ion_f",
+        "WS0002": "A_S-F_p_ion_f"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pdburst_fighter"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

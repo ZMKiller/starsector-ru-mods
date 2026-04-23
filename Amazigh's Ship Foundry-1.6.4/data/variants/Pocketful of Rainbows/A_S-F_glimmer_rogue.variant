@@ -1,0 +1,40 @@
+{
+  "variantId": "A_S-F_glimmer_rogue",
+  "hullId": "glimmer",
+  "displayName": "Rogue",
+  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 1,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "A_S-F_sprocket",
+        "WS 005": "A_S-F_sprocket"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 002": "amblaster",
+        "WS 003": "amblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "A_S-F_ir_autopulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

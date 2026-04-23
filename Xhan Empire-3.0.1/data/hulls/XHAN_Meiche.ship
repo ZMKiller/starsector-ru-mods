@@ -1,0 +1,74 @@
+{
+  "hullName": "Meiche",
+  "hullId": "XHAN_Meiche",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/Meiche.png",
+  "style": "XHANTECH",
+  "coversColor": "159,161,151,255",
+  "height": 240,
+  "width": 120,
+  "center": [80, 86],
+  "collisionRadius": 167.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 152.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_Gen1_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-43, 52]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-72.5, 15],
+      "length": 36.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-67.5, -3],
+      "length": 23,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-61.5, -16],
+      "length": 23,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -51, 59.5,
+    -36.5, 59.5,
+    -22, 38.5,
+    2.5, 26,
+    26, 40,
+    51.5, 22.5,
+    75.5, 40,
+    93, 24.5,
+    116, 24,
+    116, 5,
+    -6.5, -22.5,
+    -6.5, -33.5,
+    -43.5, -33.5,
+    -43.5, -22.5,
+    -58.5, -19.5,
+    -72.5, 15.5,
+    -59.5, 26
+  ]
+}

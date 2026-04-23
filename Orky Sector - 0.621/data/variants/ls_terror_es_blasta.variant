@@ -1,0 +1,41 @@
+{
+    "displayName": "Blasta",
+    "fluxCapacitors": 8,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "ls_terror_es",
+    "hullMods": [
+        "ls_rokkit_runt",
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_terror_es_blasta",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_grot_launcha",
+                "WS 006": "ls_grot_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "ls_supashoota_turret",
+                "WS 002": "ls_supashoota_turret",
+                "WS 001": "ls_supashoota_turret",
+                "WS 000": "ls_supashoota_turret"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_twin_shoota",
+                "WS 005": "ls_twin_shoota"
+            }
+        }
+    ]
+}

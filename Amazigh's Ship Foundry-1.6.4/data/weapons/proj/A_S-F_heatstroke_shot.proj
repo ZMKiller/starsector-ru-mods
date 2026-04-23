@@ -1,0 +1,25 @@
+{
+	"id":"A_S-F_heatstroke_shot",
+	"specClass":"projectile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.supe.ASF_heatstrokeOnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.supe.ASF_heatstrokeOnHitEffect",
+
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":60.0,
+	"hitGlowRadius":180,
+	"width":14,
+	"fadeTime":0.6,
+	"fringeColor":[255,101,77,180],
+	"coreColor":[255,220,200,200],
+	"glowColor":[255,101,77,130],
+	"glowRadius":90,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":"graphics/missiles/A_S-F_heatstroke_shell.png" #shell_hellbore.png
+}

@@ -1,0 +1,48 @@
+{
+	"id":"ls_bomb_squig",
+	"specClass":"missile",	
+	"missileType":"PHASE_MINE",
+	"sprite":"graphics/weapons/Projectiles/ls_boom_squig.png",
+	"glowSprite":"graphics/weapons/Projectiles/ls_boom_squig_glow.png",
+	"glowColor":[255,20,20,200],
+	"size":[16,16],	
+	"center":[8,8],	
+	"collisionRadius":20,
+	
+	"collisionClass":"MISSILE_NO_FF",
+	"flameoutTime":0.1, # total time from flameout to full fadeout
+	"fadeTime":0.1, # fadeout duration
+	"noEngineGlowTime":0.05, # time spent without the engine glow being rendered
+	"explosionColor":[255,100,50,200],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual	
+	"engineSpec":{"turnAcc":200,
+				  "turnRate":50,
+				  "acc":100,
+				  "dec":100},
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"range":120,
+					"slowToMaxSpeed":true,
+					"delay":1,
+					"pingSound":"mine_ping",
+					"pingColor":[255,50,50,255],
+					"pingRadius":300,
+					"pingDuration":0.2,
+					"windupSound":"mine_windup_heavy",
+					"windupDelay":0.6,
+					"explosionSpec":{"duration":0.1f,
+									 "radius":150,
+									 "coreRadius":120, # full damage within core radius
+									 "collisionClass":PROJECTILE_FF,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":3.0,
+									 "particleSizeRange":3.0,
+									 "particleDuration":1,
+									 "particleCount":120,
+									 "particleColor":[255,50,50,205],
+									 "explosionColor":[255,100,50,225],
+									 "useDetailedExplosion":true,
+									 "sound":"mine_explosion"},
+					}	
+}
+
+

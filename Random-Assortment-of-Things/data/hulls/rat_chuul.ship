@@ -1,0 +1,175 @@
+{
+  "hullName": "Chuul",
+  "hullId": "rat_chuul",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/rat_chuul.png",
+  "style": "ABYSSAL",
+  "height": 190,
+  "width": 170,
+  "center": [85, 95],
+  "collisionRadius": 130,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 119,
+  "viewOffset": 0,
+  "builtInMods": [
+    "automated",
+    "rat_abyssal_core",
+    "rat_abyssal_grid",
+  ],
+  "builtInWeapons": {
+    "WS0007": "chuul_cover"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 50,
+      "locations": [15, 22]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -50,
+      "locations": [15, -22]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [-9, 29]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-9, -29]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 260,
+      "angle": 0,
+      "locations": [25, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [61, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": 0,
+      "locations": [63, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-46, 32],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ABYSSAL"
+    },
+    {
+      "location": [-46, -32],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ABYSSAL"
+    },
+    {
+      "location": [-71, -0],
+      "length": 50,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ABYSSAL"
+    },
+    {
+      "location": [-71.5, -0],
+      "length": 30,
+      "width": 30,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ABYSSAL"
+    },
+    {
+      "location": [-45.5, 32],
+      "length": 20,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ABYSSAL"
+    },
+    {
+      "location": [-45.5, -32],
+      "length": 20,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ABYSSAL"
+    },
+    {
+      "location": [-71, 6],
+      "length": 15,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ABYSSAL_NOGLOW"
+    },
+    {
+      "location": [-71, -6],
+      "length": 15,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ABYSSAL_NOGLOW"
+    }
+  ],
+  "bounds": [
+    -70, 21.5,
+    -27, 46,
+    0, 76,
+    16, 46.5,
+    68, 38.5,
+    78, 19,
+    78, -19,
+    68, -38.5,
+    16, -46.5,
+    0, -76,
+    -27, -46,
+    -70, -21.5
+  ]
+}

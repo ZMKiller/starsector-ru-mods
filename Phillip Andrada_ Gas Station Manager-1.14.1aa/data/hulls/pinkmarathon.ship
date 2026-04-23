@@ -1,0 +1,192 @@
+{
+  "hullName": "Marathon (SFC)",
+  "hullId": "pinkmarathon",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/PAGSM/ships/tanker_station_refueler_diktat.png",
+  "style": "MIDLINE",
+  "height": 758,
+  "width": 196,
+  "center": [99, 238],
+  "collisionRadius": 536,
+  "shieldCenter": [102, -0],
+  "shieldRadius": 412,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery",
+    "civgrade",
+    "high_maintenance",
+    "delicate"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 000",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 4,
+      "angle": 90,
+      "locations": [161, 67]
+    },
+    {
+      "id": "WS 001",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 4,
+      "angle": -90,
+      "locations": [161, -67]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 180,
+      "locations": [-166, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -90,
+      "locations": [-5, -70.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 90,
+      "locations": [-5, 71.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [159, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [277, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [410, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 132,
+      "locations": [-75, 46.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": -132,
+      "locations": [-75, -46.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-75, 52],
+      "length": 30,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-78, 26],
+      "length": 35,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81, -0],
+      "length": 40,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-78, -26],
+      "length": 35,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-75, -52],
+      "length": 30,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    484, -8,
+    479, -22,
+    468, -35,
+    448, -46,
+    69, -46,
+    59, -57,
+    58, -77,
+    18.5, -77,
+    8, -88,
+    -17.5, -88,
+    -30.5, -76,
+    -52, -76,
+    -70, -70,
+    -75, -60,
+    -77, -46,
+    -172, -46,
+    -190, -37.5,
+    -206.5, -13.5,
+    -206.5, 13.5,
+    -190, 37.5,
+    -172, 46,
+    -77, 46,
+    -75, 60,
+    -70, 70,
+    -52, 76,
+    -30.5, 76,
+    -17.5, 88,
+    8, 88,
+    18.5, 77,
+    58, 77,
+    59, 57,
+    69, 46,
+    448, 46,
+    468, 35,
+    479, 22,
+    484, 8
+  ]
+}

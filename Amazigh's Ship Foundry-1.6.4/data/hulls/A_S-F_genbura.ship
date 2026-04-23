@@ -1,0 +1,204 @@
+{
+  "hullName": "Galsteel",
+  "hullId": "A_S-F_genbura",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/A_S-F_genbura.png",
+  "style": "LOW_TECH",
+  "height": 122,
+  "width": 156,
+  "center": [78, 63],
+  "collisionRadius": 88,
+  "shieldCenter": [-3, -0],
+  "shieldRadius": 85,
+  "viewOffset": 0,
+  "builtInMods": [
+    "A_S-F_GaderogaHullmod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 70,
+      "locations": [-5, 63]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -70,
+      "locations": [-5, -63]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 30,
+      "locations": [9, 30]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -30,
+      "locations": [9, -30]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 0,
+      "locations": [40, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [43, 44]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [43, -44]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 90,
+      "locations": [-15, 50]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -90,
+      "locations": [-15, -50]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 150,
+      "locations": [-47, 23]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": -150,
+      "locations": [-47, -23]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 20,
+      "locations": [43, 21]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -20,
+      "locations": [43, -21]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-47, 9],
+      "length": 48,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-47, -9],
+      "length": 48,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-61, 40],
+      "length": 56,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-61, -40],
+      "length": 56,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-61, 50],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-61, -50],
+      "length": 32,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    54, -29,
+    42, -46,
+    2, -74,
+    -32, -69,
+    -40, -59,
+    -60, -51,
+    -59, -36,
+    -38, -0,
+    -59, 36,
+    -60, 51,
+    -40, 59,
+    -32, 69,
+    2, 74,
+    42, 46,
+    54, 29,
+    57, -0
+  ]
+}

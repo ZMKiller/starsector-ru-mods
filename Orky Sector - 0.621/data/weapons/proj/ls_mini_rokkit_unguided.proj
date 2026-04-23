@@ -1,0 +1,43 @@
+{
+	"id":"ls_mini_rokkit_unguided",
+	"specClass":"missile",
+	"missileType":"ROCKET",
+	"sprite":"graphics/weapons/ls_rokkit.png",
+	"size":[6,9],	
+	"center":[3,4.5],
+	#"size":[10,21],	
+	#"center":[5,10.5],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,165,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":60, # purely visual
+	"flameoutTime":0.2, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.2, # time spent without the engine glow being rendered
+	"fadeTime":0.2, # fadeout duration
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":600,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-5, 0],
+				    #"style":"ROCKET_LOW_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,125,25,255],
+						"contrailDuration":.6,
+						"contrailWidthMult":3,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[75,75,75,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":30.0,
+				    "angle":180.0}]
+}
+
+			

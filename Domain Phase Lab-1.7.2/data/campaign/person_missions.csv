@@ -1,0 +1,58 @@
+mission id,person id,tagsAll,tagsAny,tagsNotAny,tags,freq,min timeout,max timeout,min rep,max rep,importance,reqMissionAny,reqMissionAll,reqMissionNone,icon,plugin
+#The Mission that unlocks Ross,,,,,,,,,,,,,,,,
+dpl_Revenge,,,,,"priority, non_repeatable",0,30,60,,,,,,,graphics/icons/missions/data_retrieval.png,data.scripts.campaign.intel.missions.dpl_Revenge
+,,,,,,,,,,,,,,,,
+#Misc vanilla missions that Eliza would offer,,,,,,,,,,,,,,,,
+dpl_psb,eliza_lovelace,,,,,10,30,60,FAVORABLE,,,,,,graphics/icons/missions/pirate_system_bounty.png,com.fs.starfarer.api.impl.campaign.missions.PirateSystemBounty
+dpl_sShip,eliza_lovelace,,,,,10,30,60,FAVORABLE,,,,,,,com.fs.starfarer.api.impl.campaign.missions.SurplusShipHull
+dpl_extr,eliza_lovelace,,,,,10,30,60,INHOSPITABLE,,,,,,graphics/icons/missions/extraction.png,com.fs.starfarer.api.impl.campaign.missions.ExtractionMission
+dpl_mcb,eliza_lovelace,,,,priority,20,30,60,INHOSPITABLE,,,,,,graphics/icons/missions/military_bounty.png,data.scripts.campaign.intel.missions.cb.dpl_MilitaryCustomBounty
+,,,,,,,,,,,,,,,,
+#Misc vanilla missions that Ross would offer,,,,,,,,,,,,,,,,
+dpl_cheapCom,ross_higgs,,,,,10,30,60,INHOSPITABLE,,,,,,graphics/icons/missions/cheap_commodity.png,com.fs.starfarer.api.impl.campaign.missions.CheapCommodityMission
+dpl_proCom,ross_higgs,,,,,10,30,60,INHOSPITABLE,,,,,,graphics/icons/missions/procurement.png,com.fs.starfarer.api.impl.campaign.missions.ProcurementMission
+dpl_cpm,ross_higgs,,,,,10,120,180,FAVORABLE,,,,,,graphics/icons/missions/commodity_production.png,com.fs.starfarer.api.impl.campaign.missions.CommodityProductionMission
+dpl_cpc,ross_higgs,,,,priority,10,30,60,WELCOMING,,,,,,graphics/icons/missions/custom_production.png,data.scripts.campaign.intel.missions.dpl_CustomProductionContract
+,,,,,,,,,,,,,,,,
+#Special story missions that Ross would offer,,,,,,,,,,,,,,,,
+dpl_ctam,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,,,graphics/icons/missions/dpl_ctam.png,data.scripts.campaign.intel.missions.RossQuests.dpl_CallToArms
+dpl_trth,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_ctam,,graphics/icons/missions/dpl_trth.png,data.scripts.campaign.intel.missions.RossQuests.dpl_TransplutonicThirst
+dpl_rcam,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_trth,,graphics/icons/missions/dpl_rcam.png,data.scripts.campaign.intel.missions.RossQuests.dpl_SpecialArmor
+dpl_rcwo,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_rcam,,graphics/icons/missions/dpl_rcwo.png,data.scripts.campaign.intel.missions.RossQuests.dpl_WeaponOverride
+dpl_fxht,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_rcwo,,graphics/icons/missions/dpl_fxht.png,data.scripts.campaign.intel.missions.RossQuests.dpl_FoxHunt
+dpl_fssk,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_fxht,,graphics/icons/missions/dpl_fssk.png,data.scripts.campaign.intel.missions.RossQuests.dpl_FirstStrike
+dpl_invention,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_rcwo,,graphics/icons/missions/dpl_invention.png,data.scripts.campaign.intel.missions.RossQuests.dpl_Invention
+dpl_aefae,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_fssk,,graphics/icons/missions/dpl_aefae.png,data.scripts.campaign.intel.missions.RossQuests.dpl_AnEyeForAnEye
+dpl_tlwf,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_aefae,,graphics/icons/missions/dpl_tlwf.png,data.scripts.campaign.intel.missions.RossQuests.dpl_TheLastWolf
+dpl_btcl,ross_higgs,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_tlwf,,graphics/icons/missions/dpl_btcl.png,data.scripts.campaign.intel.missions.RossQuests.dpl_BeatTheClock
+,,,,,,,,,,,,,,,,
+#Special story missions that Eliza would offer,,,,,,,,,,,,,,,,
+dpl_bidw,eliza_lovelace,,,,"priority, non_repeatable",,,,FAVORABLE,,,,,,graphics/icons/missions/prisoner_luddic.png,data.scripts.campaign.intel.missions.dpl_BeInDeepWater
+dpl_jasp,eliza_lovelace,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_bidw,,graphics/icons/missions/dpl_jasp.png,data.scripts.campaign.intel.missions.dpl_JustAsPlanned
+dpl_swts,eliza_lovelace,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_bidw,,graphics/icons/missions/visit_object.png,data.scripts.campaign.intel.missions.dpl_SwimmingWithSharks
+dpl_lmtd,eliza_lovelace,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_bidw,,graphics/icons/missions/shuttle_vip.png,data.scripts.campaign.intel.missions.dpl_LightMeetsDark
+dpl_ptrs,eliza_lovelace,,,,"priority, non_repeatable",,,,FAVORABLE,,,,dpl_bidw,,graphics/icons/missions/shuttle_outpost.png,data.scripts.campaign.intel.missions.dpl_PeaceThroughStrength
+dpl_restitution,eliza_lovelace,,,,"priority, non_repeatable",,,,WELCOMING,,,,dpl_ptrs,,graphics/icons/missions/dpl_restitution.png,data.scripts.campaign.intel.missions.dpl_Restitution
+dpl_dtot,eliza_lovelace,,,,"priority, non_repeatable",,,,WELCOMING,,,,dpl_jasp,,graphics/icons/missions/dpl_deathtotraitors.png,data.scripts.campaign.intel.missions.dpl_DeathToTraitors
+dpl_mtship,eliza_lovelace,,,,"priority, non_repeatable",,,,WELCOMING,,,,dpl_lmtd,,graphics/icons/missions/dpl_mtship.png,data.scripts.campaign.intel.missions.dpl_MoteShip
+dpl_artworks,eliza_lovelace,,,,"priority, non_repeatable",,,,WELCOMING,,,,dpl_lmtd,,graphics/icons/missions/dpl_artworks.png,data.scripts.campaign.intel.missions.dpl_Artworks
+dpl_dmtnt,eliza_lovelace,,,,"priority, non_repeatable",,,,FRIENDLY,,,,dpl_artworks,,graphics/icons/missions/dpl_dmtnt.png,data.scripts.campaign.intel.missions.dpl_DeadMenTellNoTales
+dpl_celebration,eliza_lovelace,,,,"priority, non_repeatable",,,,WELCOMING,,,,dpl_artworks,,graphics/icons/missions/dpl_celebration.png,data.scripts.campaign.intel.missions.dpl_Celebration
+dpl_justice,eliza_lovelace,,,,"priority, non_repeatable",,,,FRIENDLY,,,,dpl_dmtnt,,graphics/icons/missions/dpl_justice.png,data.scripts.campaign.intel.missions.dpl_Justice
+dpl_pilgrimage,eliza_lovelace,,,,"priority, non_repeatable",,,,FRIENDLY,,,,dpl_justice,,graphics/icons/missions/dpl_pilgrimage.png,data.scripts.campaign.intel.missions.dpl_Pilgrimage
+dpl_home,eliza_lovelace,,,,"priority, non_repeatable",,,,FRIENDLY,,,,dpl_pilgrimage,,graphics/icons/missions/dpl_home.png,data.scripts.campaign.intel.missions.dpl_Home
+dpl_lostarts,eliza_lovelace,,,,"priority, non_repeatable",,,,FRIENDLY,,,,dpl_pilgrimage,,graphics/icons/missions/dpl_dmtnt.png,data.scripts.campaign.intel.missions.dpl_LostArts
+dpl_ascension,eliza_lovelace,,,,"priority, non_repeatable",,,,FRIENDLY,,,,dpl_lostarts,,graphics/icons/missions/dpl_ascension.png,data.scripts.campaign.intel.missions.dpl_Ascension
+dpl_weapon_sales,eliza_lovelace,,,,"priority, non_repeatable",,,,FRIENDLY,,,,dpl_dmtnt,,,data.scripts.campaign.intel.missions.dpl_WeaponSales
+,,,,,,,,,,,,,,,,
+dpl_mpm,,,,,,,,,,,,,,,graphics/icons/missions/commodity_production.png,data.scripts.campaign.intel.missions.dpl_MarineProductionMission
+,,,,,,,,,,,,,,,,
+#Eliza's final quest,,,,,,,,,,,,,,,,
+dpl_gaIntro,,,,,,,,,,,,,,,graphics/icons/missions/ga_intro.png,data.scripts.campaign.intel.missions.ProjectPrometheus.dpl_GAIntro
+dpl_GAIntroShort,,,,,,,,,,,,,,,graphics/icons/missions/ga_intro.png,data.scripts.campaign.intel.missions.ProjectPrometheus.dpl_GAIntroShort
+dpl_RepairCTap,,,,,,,,,,,,,,,graphics/icons/missions/dpl_RepairCTap.png,data.scripts.campaign.intel.missions.ProjectPrometheus.dpl_RepairCTap
+dpl_DeployDevice,,,,,,,,,,,,,,,graphics/icons/missions/dpl_DeployDevice.png,data.scripts.campaign.intel.missions.ProjectPrometheus.dpl_DeployDevice
+dpl_ActivateHELA,,,,,,,,,,,,,,,graphics/icons/missions/at_the_gates.png,data.scripts.campaign.intel.missions.ProjectPrometheus.dpl_ActivateHELA
+dpl_CurtainCall,,,,,,,,,,,,,,,graphics/icons/missions/dpl_curtain_call.png,data.scripts.campaign.intel.missions.ProjectPrometheus.dpl_CurtainCall
+,,,,,,,,,,,,,,,,
+"# note: if person id, tagsAll, tagsAny, and tagsNotAny are all blank, the mission will not be offered by any contact without specific scripting to make it so (via BeginMission, etc). Otherwise, the mission may be offered by any contact that meets the conditions specified by these columns.",,,,,,,,,,,,,,,,

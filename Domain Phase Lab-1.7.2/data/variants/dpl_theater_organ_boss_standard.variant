@@ -1,0 +1,42 @@
+{
+  "variantId": "dpl_theater_organ_boss_standard",
+  "hullId": "dpl_theater_organ_boss",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxcoil",
+    "fluxdistributor",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "dpl_oracle_boss"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0001": "dpl_shield_module_I_standard"
+    },
+    {
+      "WS0002": "dpl_gunnery_module_I_standard"
+    },
+    {
+      "WS0003": "dpl_gunnery_module_I_standard"
+    },
+    {
+      "WS0004": "dpl_gunnery_module_II_standard"
+    },
+    {
+      "WS0006": "dpl_gunnery_module_II_standard"
+    }
+  ],
+  "wings": []
+}

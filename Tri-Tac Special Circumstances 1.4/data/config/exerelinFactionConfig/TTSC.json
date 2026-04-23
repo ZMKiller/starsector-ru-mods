@@ -1,0 +1,97 @@
+{
+	"playableFaction":true,
+	"corvusCompatible":true,
+    "marketSpawnWeight":1,	
+    "rebelFleetSuffix":"Traitors",
+	"asteroidMiningFleetName":"Little Rascal",	
+	"startRelationships":{
+		"independent":0.3,
+		"pirates":-0.3,
+		"tritachyon":1.00,
+		"hegemony":-0.2,
+		"luddic_church":-0.5,	
+		"luddic_path":-0.7,
+		"persean": 0.1,
+		"lions_guard":-0.1,			
+	    "sindrian_diktat":-0.1,	
+		"remnant":-0.6,	
+		"cabal":0.1 		
+	},
+	"minRelationships":{
+		"tritachyon": 0.5,
+	},	
+	
+    "diplomacyPositiveChance":{"tritachyon":2.0},
+    "diplomacyNegativeChance":{"tritachyon":0},	
+
+	# Used to determine alliance alignment; also affects disposition towards other factions
+	"alignments":{
+		"corporate":1,
+		"technocratic":1,
+		"militarist":1,
+		"diplomatic":0.25,
+		"hierarchical":0.5,
+	},
+	
+	"dispositions":{
+		"tritachyon": 25,
+	},
+	
+	"diplomacyTraits":["anarchist", "lowprofile", "monopolist"],
+	
+	"colonyExpeditionChance":0.55,
+    "colonyTargetValuator":"exerelin.campaign.colony.ColonyTargetValuator",		
+	
+   "groundBattleSettings":{
+        "moraleDamageTakenMult":1.1,
+    },	
+
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.FactionListNamer",
+
+	# Randomly picked to add to a mining fleet
+	"miningVariantsOrWings":[
+		"TTSC_idiran_standard",
+		"TTSC_gillan_standard",
+		"TTSC_azad_standard",
+		"TTSC_homomdan_standard",
+		"TTSC_esperi_standard",	
+		"TTSC_cheradenine_standard",		
+
+	],	
+
+    "startShipsSolo":["TTSC_kakistocrat_standard"], 
+    "startShipsCombatSmall":["TTSC_kakistocrat_standard", "TTSC_empiricist_standard", "TTSC_hylozoist_standard"], 
+    #"startShipsTradeSmall":[""],    
+    "startShipsCarrierSmall":["TTSC_hylozoist_standard", "TTSC_escarpment_standard", "TTSC_bora_standard"], 
+	"startShipsCombatLarge":["TTSC_ablation_standard", "TTSC_qualifier_standard", "TTSC_cantankerous_standard"],
+	"startShipsTradeLarge":["TTSC_jernau_standard", "TTSC_revisionist_standard", "TTSC_ingenui_standard"],
+    #"startShipsCarrierLarge":[""],
+    "startShipsExplorerLarge":["TTSC_succour_standard", "TTSC_ucalegon_standard"],	
+    "startShipsSuper":["TTSC_caconyml_standard"],	
+	
+	"startSpecialItems":[
+        [["TTSC_package", ""]],
+    ],	
+	
+   "industrySeeds":[
+ 		{"id":"militarybase", "mult":1},
+        {"id":"orbitalworks", "mult":1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+    ],
+
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1},
+        {"id":"population_upsize", "count":1},	
+        {"id":"aiCore_station", "count":2, "mult":0.2},
+        {"id":"aiCore_military", "mult":0.4},
+        {"id":"aiCore_heavyindustry", "count":1},
+        {"id":"aiCore_any", "mult":1.5},		
+    ],
+
+
+	# Defense stations used in random sector
+    "defenceStations":[
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+    ],
+}

@@ -1,0 +1,30 @@
+{
+	"specClass":"beam",
+	"id":"A_S-F_kufikiri",  # this id must match what's in the spreadsheet
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+
+	"beamEffect":"org.amazigh.foundry.scripts.arktech.ASF_KufikiriBeamEffect",
+
+	"turretSprite":"graphics/weapons/A_S-F_Kufikiri_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_Kufikiri_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_Kufikiri_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_Kufikiri_hardpoint_glow.png",
+	"turretOffsets":[10, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[14, 0],
+	"hardpointAngleOffsets":[0],
+	"fringeColor":[200,60,60,200],
+	"coreColor":[255,200,200,220],
+	"glowColor":[255,95,95,200],
+	"width":4.0,
+	"hitGlowRadius":16,
+	"textureType":LASER,
+	"textureScrollSpeed":200.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER],
+	"fireSoundOne":"laser_intro",
+	"fireSoundTwo":"laser_loop",
+}

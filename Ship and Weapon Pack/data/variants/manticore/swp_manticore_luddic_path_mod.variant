@@ -1,0 +1,56 @@
+{
+    "displayName": "Heavily Modified",
+    "fluxCapacitors": 0,
+    "fluxVents": 4,
+    "hullId": "manticore_luddic_path",
+    "hullMods": [
+        "swp_extrememods2",
+        "heavyarmor",
+        "armoredweapons",
+        "auxiliarythrusters",
+        "missleracks",
+        "ballistic_rangefinder",
+        "autorepair"
+    ],
+    "permaMods": [
+        "swp_extrememods2",
+        "heavyarmor",
+        "armoredweapons",
+        "auxiliarythrusters"
+    ],
+    "sMods": [
+        "heavyarmor",
+        "armoredweapons",
+        "auxiliarythrusters"
+    ],
+    "tags": ["no_autofit"],
+    "variantId": "swp_manticore_luddic_path_mod",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "heavyac",
+                "WS 005": "heavyac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 000": "cyclone"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightac",
+                "WS 003": "lightac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "vulcan"}
+        }
+    ]
+}

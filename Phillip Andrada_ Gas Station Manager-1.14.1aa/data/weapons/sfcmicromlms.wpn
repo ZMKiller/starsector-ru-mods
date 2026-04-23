@@ -1,0 +1,62 @@
+{
+  "id": "sfcmicromlms",
+  "specClass": "projectile",
+  "projectileSpecId": "sfc_micromissile",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/PAGSM/weapons/AM Fuel Missiles/sfc_micromlms_turret.png",
+  "hardpointSprite": "graphics/PAGSM/weapons/AM Fuel Missiles/sfc_micromlms_hardpoint.png",
+  "turretOffsets": [
+    16,
+    -7.5,
+    16,
+    2.5,
+    16,
+    7.5,
+    16,
+    -2.5
+  ],
+  "turretAngleOffsets": [
+    -2,
+    1,
+    2,
+    -1
+  ],
+  "hardpointOffsets": [
+    16,
+    -7.5,
+    16,
+    2.5,
+    16,
+    7.5,
+    16,
+    -2.5
+  ],
+  "hardpointAngleOffsets": [
+    -2,
+    1,
+    2,
+    -1
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 10,
+    "particleSizeRange": 16,
+    "cloudParticleCount": 3,
+    "cloudDuration": 0.9,
+    "cloudRadius": 8,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 1.1,
+    "blowbackLength": 20,
+    "blowbackSpread": 10,
+    "particleColor": [
+      170,
+      160,
+      150,
+      100
+    ]
+  },
+  "fireSoundTwo": "sfcmicromissile_launch"
+}

@@ -1,0 +1,37 @@
+{
+    "displayName": "Kannon",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_looted_cerberus_ds",
+    "hullMods": [
+        "ls_ard_case",
+        "armoredweapons"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_looted_cerberus_ds_kannon",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "ls_lobba",
+                "WS 001": "ls_flakka_dakka"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_bolta"
+            }
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+  "hullName": "Lurr",
+  "hullId": "XHAN_Lurr",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Xhan_Lurr.png",
+  "style": "ALVARIUM_DOCTRINE",
+  "coversColor": "202,229,196,255",
+  "height": 70,
+  "width": 70,
+  "center": [35, 38],
+  "collisionRadius": 57.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 50.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_PlasteenArmor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 80,
+      "angle": -0,
+      "locations": [16, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-21.5, 4],
+      "length": 24.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-21.5, -4],
+      "length": 24.5,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    }
+  ],
+  "bounds": [
+    -19, -0,
+    -27.5, -14.5,
+    -3, -33,
+    22, -27,
+    29, -0,
+    22, 27,
+    -3, 33,
+    -27.5, 14.5
+  ]
+}

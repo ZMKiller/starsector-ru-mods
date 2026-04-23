@@ -1,0 +1,24 @@
+{
+    "id":"swp_arcade_forceburst",
+    "type":"PHASE_CLOAK",
+    "aiType":"PHASE_CLOAK",
+
+    "statsScript":"data.scripts.shipsystems.SWP_ForceBurstStats",
+
+    "jitterColor":[255,255,255,50],
+    "jitterCopies":5,
+    "jitterRange":50,
+    "jitterRangeRadiusFraction":0,
+
+    "fadeActivationSoundOnChargedown":false,
+
+    "aiHints":{
+        "threatRange":750,
+        "threatAmount":10,
+        "threatAngle":0,
+        "threatArc":360,
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

@@ -1,0 +1,33 @@
+{
+	"id":"ls_drilla_drive",
+	"type":"ENGINE_MOD",
+	"aiType":"CUSTOM",
+
+	"aiScript":"data.shipsystems.ai.ls_drilla_drive_ai",	
+	
+	"statsScript":"data.shipsystems.ls_drilla_drive",
+	
+	#"engineGlowColor":[255,175,125,255],
+	#"engineGlowContrailColor":[100,165,255,25],
+	"engineGlowLengthMult":3,
+	"engineGlowWidthMult":3,
+	"engineGlowGlowMult":3,
+	
+	"flameoutOnImpactChance":0.0,
+
+	"clampTurnRateAfter":false,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+
+	"useSound":"system_burn_drive_activate",
+	"loopSound":"system_burn_drive_loop",
+	"deactivateSound":"system_burn_drive_deactivate",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":50,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":100,
+	}
+}

@@ -1,0 +1,41 @@
+{
+  "variantId": "A_S-F_exegetes_sup",
+  "hullId": "A_S-F_exegetes",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "frontemitter",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "gazer",
+        "WS0003": "gazer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lrpdlaser",
+        "WS0005": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

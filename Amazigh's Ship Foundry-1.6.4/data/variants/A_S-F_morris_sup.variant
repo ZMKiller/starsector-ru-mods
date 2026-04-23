@@ -1,0 +1,51 @@
+{
+  "variantId": "A_S-F_morris_sup",
+  "hullId": "A_S-F_morris",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "converted_hangar",
+    "ballistic_rangefinder",
+    "targetingunit",
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "pilum",
+        "WS0002": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightac",
+        "WS0004": "lightac",
+        "WS0005": "lightac",
+        "WS0006": "lightac",
+        "WS0007": "lightac",
+        "WS0008": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "vulcan",
+        "WS0010": "vulcan",
+        "WS0011": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "talon_wing"
+  ]
+}

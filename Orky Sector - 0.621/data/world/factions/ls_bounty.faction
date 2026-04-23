@@ -1,0 +1,145 @@
+{
+    id:"ls_bounty",
+    "color":[255,100,30,255],
+    "displayName":"Freebootaz",
+    "displayNameWithArticle":"Da Freebootaz",
+    "displayNameLong":"Freebootaz",
+    "displayNameLongWithArticle":"Da Freebootaz",
+    "entityNamePrefix":"",
+    "logo":"graphics/factions/neutral.png",
+    "crest":"graphics/factions/crest_neutral.png",
+    "showInIntelTab":false,
+    "shipNamePrefix":"",
+	"music":{
+		"theme":"gr_encounte",
+		"market_neutral":"music_hegemony_market_neutral",
+		"market_hostile":"music_hegemony_market_hostile",
+		"market_friendly":"music_hegemony_market_friendly",
+		"encounter_neutral":"ls_music_orky_zeon",
+		"encounter_hostile":"ls_music_orky_zeon",
+		"encounter_friendly":"ls_music_orky_zeon",
+	},	
+  "shipNameSources": {
+    "ls_ork": 1,
+  },
+  "names": {
+    "ork": 1,
+  },
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+    "variantOverrides":{
+    },
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "tags":{
+        },
+        "hulls":{
+        },
+    },
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":["merc"],
+        "hulls":[
+        ],
+    },
+    "knownShips":{
+        "tags":["merc"],
+        "hulls":[
+        ],
+    },
+    # listing ships here will make the faction mostly use them even if other hulls become available
+    "priorityShips":{
+        "tags":[],
+        "hulls":[
+        ],
+    },
+    "knownFighters":{
+        "tags":["merc"],
+        "fighters":[
+        ],
+    },
+    "priorityFighters":{
+        "tags":[],
+        "fighters":[
+        ],
+    },
+    "knownWeapons":{
+        "tags":["merc"],
+        "weapons":[
+        ],
+    },
+    "priorityWeapons":{
+        "tags":[],
+        "weapons":[
+        ],
+    },
+    "knownHullMods":{
+        "tags":["merc"],
+        "hullMods":[
+        ],
+    },
+    "factionDoctrine":{
+        "warships":4,
+        "carriers":2,
+        "phaseShips":1,
+
+        "officerQuality":2,
+        "shipQuality":2,
+        "numShips":3,
+
+        "shipSize":3,
+
+        "aggression":4,
+
+        "combatFreighterProbability":0.5,     				# instead of some portion of the freighters in a fleet
+        "combatFreighterCombatUseFraction":0.5,				# as part of the normal combat lineup
+        "combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
+        "autofitRandomizeProbability":0.25,
+
+        "commanderSkillsShuffleProbability":1,
+        "commanderSkills":[
+            "crew_training",
+            "coordinated_maneuvers",
+            "electronic_warfare",
+            "fighter_uplink",
+            "carrier_group",
+            "flux_regulation",
+        ],
+    },
+    "illegalCommodities":[],
+    "portraits":{
+		"standard_male":[
+      "graphics/portraits/ls_ork_1.png",
+      "graphics/portraits/ls_ork_2.png",
+      "graphics/portraits/ls_ork_es2.png",
+      "graphics/portraits/ls_ork_es3.png",
+      "graphics/portraits/ls_ork_es4.png",
+      "graphics/portraits/ls_ork_bm1.png"
+		],
+		"standard_female":[
+      "graphics/portraits/ls_ork_1.png",
+      "graphics/portraits/ls_ork_2.png",
+      "graphics/portraits/ls_ork_es2.png",
+      "graphics/portraits/ls_ork_es3.png",
+      "graphics/portraits/ls_ork_es4.png",
+      "graphics/portraits/ls_ork_bm1.png"
+		],
+    },
+    "custom":{
+        "exemptFromFoodShortages":true,
+        "ignoreTradeWithEnemiesForReputation":true,
+        "postsNoBounties":true,
+        "engageWhenEvenStrength":true,
+        "offersCommissions":false,
+        "decentralized":true,
+        "engagesInHostilities":false,
+        "patrolsHaveNoPatrolMemoryKey":true,
+        "pirateBehavior":true, # for fleet behavior
+        "fightToTheLast":true, # order a full assault instead of retreating, in most cases
+        "punitiveExpeditionData":{
+            "vsCompetitors":false,
+            "vsFreePort":false,
+            "canBombard":false,
+            "territorial":false,
+        },
+    },
+},

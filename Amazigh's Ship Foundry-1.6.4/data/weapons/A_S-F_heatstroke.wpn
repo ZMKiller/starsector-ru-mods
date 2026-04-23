@@ -1,0 +1,27 @@
+{
+	"id":"A_S-F_heatstroke",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"turretSprite":"graphics/weapons/A_S-F_heatstroke_turret_base.png",
+	"turretGunSprite":"graphics/weapons/A_S-F_heatstroke_turret_recoil.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_heatstroke_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/A_S-F_heatstroke_hardpoint_recoil.png",	
+	"visualRecoil":10.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[43,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[52,0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED",
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":50.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":14.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":28.0,
+					   "particleDuration":0.8,
+					   "particleCount":34,
+					   "particleColor":[255,101,77,220]},
+	"projectileSpecId":"A_S-F_heatstroke_shot",  # projectile that will be fired
+	"fireSoundTwo":"hellbore_fire",
+}

@@ -1,0 +1,45 @@
+{
+    "displayName": "Taktikal",
+    "fluxCapacitors": 10,
+    "fluxVents": 16,
+    "goalVariant": false,
+    "hullId": "ls_orka_ba",
+    "hullMods": [
+        "ls_grot_rigger",
+        "ls_rokkit_runt"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_orka_ba_taktikal",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "ls_torpedo_bm_rail",
+                "WS 002": "ls_torpedo_bm_rail"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_grot_rail",
+                "WS 000": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_zzap_kannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_twin_shoota"
+            }
+        }
+    ]
+}

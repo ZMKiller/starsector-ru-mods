@@ -1,0 +1,65 @@
+{
+    "displayName": "Carrier",
+    "fluxCapacitors": 22,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "ls_hulk_ds",
+    "hullMods": [
+        "ls_bosspole",
+        "expanded_deck_crew",
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_hulk_ds_carrier",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 012": "ls_deth_kannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_mega_bolta",
+                "WS 004": "ls_mega_bolta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_flakka_dakka",
+                "WS 010": "ls_flakka_dakka",
+                "WS 014": "ls_flakka_dakka",
+                "WS 002": "ls_flakka_dakka",
+                "WS 009": "ls_twin_shoota",
+                "WS 003": "ls_bubble_chukka",
+                "WS 006": "ls_bubble_chukka"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "ls_grot_hanger",
+                "WS 007": "ls_grot_hanger",
+                "WS 011": "ls_doomdiva_launcher"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_rokkit_belcha"
+            }
+        }
+    ],
+    "wings": [
+        "ls_fighta_bomma_ds_wing",
+        "ls_bomma_ds_wing",
+        "ls_bomma_ds_wing"
+    ]
+}

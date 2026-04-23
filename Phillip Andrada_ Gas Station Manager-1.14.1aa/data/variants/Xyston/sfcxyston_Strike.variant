@@ -1,0 +1,36 @@
+{
+  "variantId": "sfcxyston_Strike",
+  "hullId": "sfcxyston",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull",
+    "missleracks",
+    "fluxbreakers",
+    "unstable_injector",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "harpoon",
+        "WS0003": "harpoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "railgun"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

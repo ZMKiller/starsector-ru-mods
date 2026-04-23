@@ -1,0 +1,92 @@
+{
+  "hullName": "Venom-X",
+  "hullId": "uw_venomx",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/uw/ships/uw_venomx_ff.png",
+  "style": "HIGH_TECH",
+  "height": 76,
+  "width": 76,
+  "center": [38, 34],
+  "collisionRadius": 58.137768,
+  "shieldCenter": [1.5, 0],
+  "shieldRadius": 55,
+  "viewOffset": 0,
+  "builtInMods": [
+    "high_maintenance",
+    "ill_advised"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [0, 28]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [0, -28]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [29.5, -8]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [15, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-34, 10],
+      "length": 80,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-34, -10],
+      "length": 80,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    34, -4,
+    34, -13,
+    0, -17.5,
+    2.5, -36.5,
+    -13.5, -37,
+    -25, -17.5,
+    -33, -13,
+    -28.5, 0,
+    -33, 13,
+    -25, 17.5,
+    -13.5, 37,
+    2.5, 36.5,
+    0, 17.5,
+    36, 17.5,
+    35, 5,
+    7, 3.5
+  ]
+}

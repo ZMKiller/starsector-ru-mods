@@ -1,0 +1,88 @@
+{
+  "hullName": "Harmonica",
+  "hullId": "dpl_harmonica",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/phase/dpl_harmonica.png",
+  "style": "HIGH_TECH",
+  "height": 94,
+  "width": 102,
+  "center": [51, 47],
+  "collisionRadius": 92,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 77.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "delicate",
+    "dpl_flux_escort",
+    "phasefield"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [24, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-46, 19],
+      "length": 37,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-46, -19],
+      "length": 37,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-48, 8.5],
+      "length": 47,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-48, -8.5],
+      "length": 47,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-47.5, 2],
+      "length": 29.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-47.5, -2],
+      "length": 29.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    47.5, -11.5,
+    8.5, -56.5,
+    -48.5, -28.5,
+    -48.5, 28.5,
+    8.5, 56.5,
+    47.5, 11.5
+  ]
+}

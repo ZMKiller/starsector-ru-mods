@@ -1,0 +1,41 @@
+{
+	"id":"A_S-F_lilin_missile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/A_S-F_lilin_missile.png",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.arktech.ASF_LilinOnHitEffect",
+
+	"size":[8,18],	
+	"center":[4,9],
+	"collisionRadius":9,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,255,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":80, # purely visual
+	"fadeTime":1, # fadeout duration
+	"engineSpec":{
+				  "turnAcc":450,
+				  "turnRate":150,
+				  "acc":400,
+				  "dec":80},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[220,255,155,255],
+						"contrailDuration":1,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0.25f, # how far away from engine it starts
+						"contrailColor":[140,120,100,120],
+						"glowSizeMult":2,
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":6.0,
+				    "length":35.0,
+				    "angle":180.0}],
+}

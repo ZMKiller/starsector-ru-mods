@@ -1,0 +1,69 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Secessionists",
+    
+    "marketSpawnWeight":1.6,
+    
+    "startRelationships":{ "hegemony": -0.6 },
+	"diplomacyPositiveChance":{ "hegemony":0.8 },
+    "diplomacyNegativeChance":{ "hegemony":1.2 },
+    
+    "morality":"neutral",	# used to be good because of Histidine's pro-League bias
+
+    "alignments":{
+        "corporate":0.5,
+        "diplomatic":1,
+        "ideological":0.5,
+        "hierarchical":-0.5,
+    },
+    "diplomacyTraits":["helps_allies", "irredentist", "envious"],
+    
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":1.25,	# slightly more expansionist to overcome Hegemony's numerical superiority
+    
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+        
+    "startShipsSolo":[
+	  ["swp_alastor_dem"],
+	  ["brawler_Support"]
+	],
+    "startShipsCombatSmall":[
+      ["swp_archer_dem", "brawler_Support", "swp_alastor_dem"],
+      ["hammerhead_DEM", "vigilance_Support1", "monitor_Escort"]
+    ],
+    "startShipsTradeSmall":[["tarsus_Standard", "vigilance_Support1", "mercury_PD"]],
+    "startShipsCombatLarge":[
+      ["swp_eagle_black_dem", "swp_archer_dem2", "swp_alastor_dem"],
+      ["champion_DEMEscort", "hammerhead_DEM", "vigilance_Support2"]
+    ],
+    "startShipsTradeLarge":[["colossus_Standard", "mule_Standard", "shepherd_Frontier"]],
+    "startShipsExplorerLarge":[["venture_Balanced", "gemini_Standard", "wayfarer_Standard"]],
+    "startShipsCarrierSmall":[["drover_Support", "vigilance_Support2", "brawler_Support"]],
+    "startShipsCarrierLarge":[["heron_Attack1", "hammerhead_DEM", "vigilance_Support1"]],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"], "weight":0.5},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"]},
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"], "weight":0.5},
+    ],
+    
+    "startSpecialItems":[
+        [["midline_package", ""]],
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1},
+        {"id":"aiCore_station", "count":1, "mult":0.1},
+        {"id":"aiCore_military", "mult":0.25},
+        {"id":"aiCore_fuelprod", "count":1},
+        {"id":"aiCore_other", "mult":0.5},
+    ],
+}

@@ -1,0 +1,44 @@
+{
+	"id":"A_S-F_chillblain_missile",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.supe.ASF_chillblainOnHitEffect",
+
+	"sprite":"graphics/missiles/A_S-F_chillblain_missile.png",
+	"size":[14,30],	
+	"center":[7,15],
+	"collisionRadius":20,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,150,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":160, # purely visual
+
+	"armingTime":0.5,
+
+	"engineSpec":{"turnAcc":560,
+				  "turnRate":80,
+				  "acc":300,
+				  "dec":120},
+
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[100,150,255,195],
+						"glowSizeMult":2.0,
+						"glowAlternateColor":[55,100,255,190],
+						"contrailDuration":2,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[75,125,200,75],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":50.0,
+				    "angle":180.0}]
+}

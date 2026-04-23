@@ -1,0 +1,179 @@
+{
+  "hullName": "Apostle",
+  "hullId": "dpl_apostle_engine",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/precursors/dpl_apostle_engine.png",
+  "style": "LOW_TECH",
+  "height": 300,
+  "width": 300,
+  "center": [150, 116],
+  "collisionRadius": 198.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 177,
+  "viewOffset": 0,
+  "builtInMods": [
+    "vastbulk",
+    "dpl_precursor_engine"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-40, 55.5]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-40, -56]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-110.5, 58],
+      "length": 49.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-110.5, -58],
+      "length": 49.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-113.5, 49.5],
+      "length": 49.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-113.5, -49.5],
+      "length": 49.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-113.5, 41],
+      "length": 61,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-113.5, -41],
+      "length": 61,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-113.5, 30],
+      "length": 62,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-113.5, -30],
+      "length": 62,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-115, 20.5],
+      "length": 53.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-115, -20.5],
+      "length": 53.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-117.5, 7],
+      "length": 61,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-117.5, -7],
+      "length": 61,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    64.5, -11.5,
+    55.5, -23.5,
+    54.5, -35,
+    38.5, -53,
+    24, -55,
+    13.5, -63.5,
+    -13.5, -63.5,
+    -25, -54.5,
+    -35, -55,
+    -49, -74.5,
+    -62, -74.5,
+    -73.5, -69.5,
+    -91.5, -69.5,
+    -95, -74,
+    -107, -75.5,
+    -118.5, -65.5,
+    -118.5, 65.5,
+    -107, 75.5,
+    -95, 74,
+    -91.5, 69.5,
+    -73.5, 69.5,
+    -62, 74.5,
+    -49, 74.5,
+    -35, 55,
+    -25, 54.5,
+    -13.5, 63.5,
+    13.5, 63.5,
+    24, 55,
+    38.5, 53,
+    54.5, 35,
+    55.5, 23.5,
+    64.5, 11.5
+  ]
+}

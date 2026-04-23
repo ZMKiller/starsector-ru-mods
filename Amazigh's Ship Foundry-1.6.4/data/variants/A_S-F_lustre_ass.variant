@@ -1,0 +1,49 @@
+{
+  "variantId": "A_S-F_lustre_ass",
+  "hullId": "A_S-F_lustre",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "magazines",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "amblaster",
+        "WS0004": "amblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ionpulser",
+        "WS0005": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "A_S-F_micropulser",
+        "WS0007": "A_S-F_micropulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

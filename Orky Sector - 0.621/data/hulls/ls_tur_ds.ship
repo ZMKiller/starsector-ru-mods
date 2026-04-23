@@ -1,0 +1,108 @@
+{
+    "hullName": "Tur",
+    "hullId": "ls_tur_ds",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_tur_ds.png",
+    "height": 109,
+    "width": 76,
+    "center": [
+        38, 54.5
+    ],
+    "collisionRadius": 86,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 84,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_deathskull",
+        "ls_orky",
+        "rugged",
+        "ls_mek"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "SYNERGY",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": -45,
+            "locations": [
+                      15,    -25.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "SYNERGY",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": -45,
+            "locations": [
+                      -6,    -25.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                     5.5,        1
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      44,       13
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -48.5, -8.5
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -48.5, 10
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+            45.5,     -4.5,
+            29.5,     14.5,
+              18,     27.5,
+           -14.5,       28,
+           -43.5,       24,
+        
+           -48.5,       16,
+             -49,    -15.5,
+           -43.5,    -23.5,
+            32.5,      -26,
+            45.5,    -12.5
+    ]
+}

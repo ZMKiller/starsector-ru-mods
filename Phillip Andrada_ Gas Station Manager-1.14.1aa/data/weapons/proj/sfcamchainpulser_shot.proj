@@ -1,0 +1,16 @@
+{
+	"id":"sfcamchainpulser_shot",
+	"specClass":"projectile",
+	#"onHitEffect":"data.scripts.weapons.sfcamchainpulser_onhit",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":30.0,
+	"width":12.5,
+	"fadeTime":0.05,
+	"fringeColor":[155,155,155,255],
+	"coreColor":[255,255,255,200],
+	"textureType":"ROUGH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0
+}

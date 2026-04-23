@@ -1,0 +1,21 @@
+{
+	"id":"pb_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"onHitEffect":"com.fs.starfarer.api.impl.combat.MiningBlasterOnHitEffect",	
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":50.0,
+	"width":19,
+	"fadeTime":0.5,
+	"fringeColor":[255,51,153,255],
+	"coreColor":[255,51,51,255],
+	"glowColor":[255,0,102,204],
+	#"glowRadius":45,
+	#"hitGlowRadius":90,	
+	"glowRadius":60,
+	"hitGlowRadius":120,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_hellbore.png"	
+}

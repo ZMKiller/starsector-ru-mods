@@ -1,0 +1,71 @@
+{
+    "displayName": "Fast Strike",
+    "fluxCapacitors": 10,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "swp_liberator",
+    "hullMods": [
+        "auxiliarythrusters",
+        "unstable_injector",
+        "dedicated_targeting_core"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_liberator_fastr",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "annihilator",
+                "WS0010": "annihilator"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "swarmer",
+                "WS0011": "swarmer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "multineedler",
+                "WS0012": "lightneedler",
+                "WS0014": "lightneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "heavymortar",
+                "WS0005": "heavymortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "devastator"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "flak",
+                "WS0006": "flak",
+                "WS0013": "vulcan",
+                "WS0015": "vulcan"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "dualflak"}
+        }
+    ],
+    "wings": ["hoplon_wing"]
+}

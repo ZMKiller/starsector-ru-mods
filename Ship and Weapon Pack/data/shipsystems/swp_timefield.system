@@ -1,0 +1,24 @@
+{
+    "id":"swp_timefield",
+    "type":"STAT_MOD",
+    "aiType":"TARGETING_FEED",
+
+    "statsScript":"data.scripts.shipsystems.SWP_TimeFieldStats",
+    "runScriptWhileIdle":true,  # this means unapply() never gets called
+
+    "soundFilterType":"LOWPASS",
+    "soundFilterGain":0.75,
+    "soundFilterGainHF":0.5,
+
+    "fadeActivationSoundOnChargedown":true,
+    "useSound":"system_temporalshell",
+    "loopSound":"system_temporalshell_loop",
+    "deactivateSound":"system_temporalshell_off",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":100,
+        "burstMovementPotential":0,
+        "averageSpeedMult":1.2,
+    }
+}

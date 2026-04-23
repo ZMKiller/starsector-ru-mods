@@ -1,0 +1,107 @@
+{
+  "hullName": "Karoba",
+  "hullId": "XHAN_Karoba",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/Karoba.png",
+  "style": "XHANTECH",
+  "coversColor": "159,161,151,255",
+  "height": 320,
+  "width": 104,
+  "center": [47, 130],
+  "collisionRadius": 216,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 203,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_Gen1_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [76, -5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-99, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-127.5, -30.5],
+      "length": 23,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-127.5, 33.5],
+      "length": 23,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-128.5, -21.5],
+      "length": 23,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-128.5, 23.5],
+      "length": 23,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-129.5, -7.5],
+      "length": 23,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-129.5, 9.5],
+      "length": 23,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    42, 45.5,
+    39.5, 41.5,
+    -90, 41,
+    -90, 45,
+    -123.5, 45,
+    -123.5, -45,
+    -90, -45,
+    -90, -41,
+    48, -41.5,
+    48, -55,
+    108, -55,
+    108, -41.5,
+    121.5, -41.5,
+    121.5, 16.5,
+    143.5, 17,
+    143.5, 39.5,
+    124, 46
+  ]
+}

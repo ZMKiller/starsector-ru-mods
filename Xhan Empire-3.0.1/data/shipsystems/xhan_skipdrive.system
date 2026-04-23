@@ -1,0 +1,47 @@
+{
+	"id":"xhan_skipdrive",
+	"type":"TELEPORTER",
+	"aiType":"PHASE_TELEPORTER",
+	
+	"jitterColor":[153,255,51,150],
+	#"jitterColor":[153,255,51,150],
+	"jitterCopies":5,
+	#"jitterRange":25,
+	"jitterRange":80,
+	"jitterRangeRadiusFraction":0,
+	
+	"jitterUnderColor":[153,255,51,150],
+	"jitterUnderCopies":25,
+	"jitterUnderMinRange":0,
+	"jitterUnderRange":7,
+	"jitterUnderRangeRadiusFraction":0,
+	
+	"weaponGlowColor":[153,255,51,0],
+	"weaponTypes":[ENERGY],
+	
+	#"engineGlowColor":[153,255,51,255],
+	#"engineGlowContrailColor":[153,255,51,25],
+	"engineGlowLengthMult":0,
+	"engineGlowWidthMult":0,
+	"engineGlowGlowMult":0,
+	
+	"range":1000,
+	"randomRange":0,
+	
+	"vulnerableChargeup":false,
+	"vulnerableChargedown":false,
+	"renderCopyDuringTeleport":true,
+	
+	"fadeActivationSoundOnChargedown":false,
+	
+	#"useSound":"system_teleport",
+	"useSound":"XHAN_SKIPDRIVE_SOUND",	
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,
+		"burstMovementPotential":1000,
+		"averageSpeedIncrease":750,
+	}
+}

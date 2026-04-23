@@ -1,0 +1,59 @@
+{
+  "id": "dpl_symphony",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "data.scripts.weapons.dpl_hymnEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/dpl_symphony_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/dpl_symphony_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/dpl_symphony_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/dpl_symphony_hardpoint_glow.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    100,
+    100,
+    175,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    63,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    67,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    20,
+    10,
+    255,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 100,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 300,
+  "pixelsPerTexel": 1,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "tachyon_lance_fire"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "TTSC_twmininglaser",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "mountTypeOverride":"HYBRID",  
+  "size": "SMALL",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/weapons/TTSC_twmining_laser_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/TTSC_twmining_laser_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/TTSC_twmining_laser_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/TTSC_twmining_laser_hardpoint_glow.png",
+  "glowColor": [
+    25,
+    155,
+    155,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    9,
+    4,
+    9,
+    -4
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    13.5,
+    4,
+    13.5,
+    -3.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "fringeColor": [
+    155,
+    50,
+    50,
+    255
+  ],
+  "coreColor": [
+    25,
+    155,
+    155,
+    255
+  ],
+  "width": 17,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 72,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "laser_loop"
+}

@@ -1,0 +1,71 @@
+{
+  "hullName": "Xylophone",
+  "hullId": "dpl_xylophone",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/dpl_xylophone.png",
+  "style": "HIGH_TECH",
+  "height": 38,
+  "width": 38,
+  "center": [19, 19],
+  "collisionRadius": 54,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 46.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_phase_pdair",
+    "WS0002": "dpl_phase_pdair"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [17, 6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [17, -6]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-18, 8],
+      "length": 22,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-18, -8],
+      "length": 22,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    20.5, -9,
+    11, -17.5,
+    1.5, -18.5,
+    -7, -13.5,
+    -18.5, -13,
+    -18.5, 13,
+    -7, 13.5,
+    1.5, 18.5,
+    11, 17.5,
+    20.5, 9
+  ]
+}

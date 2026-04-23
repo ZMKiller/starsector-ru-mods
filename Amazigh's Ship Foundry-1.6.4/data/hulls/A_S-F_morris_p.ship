@@ -1,0 +1,216 @@
+{
+  "hullName": "Morris (P)",
+  "hullId": "A_S-F_morris_p",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/A_S-F_morris_p.png",
+  "style": "LOW_TECH",
+  "height": 110,
+  "width": 184,
+  "center": [92, 55],
+  "collisionRadius": 110,
+  "shieldCenter": [5, -0],
+  "shieldRadius": 104,
+  "viewOffset": 0,
+  "builtInMods": [
+    "rugged",
+    "augmentedengines",
+    "unstable_injector"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 50,
+      "locations": [-3, 46],
+      "renderOrderMod": 600
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -50,
+      "locations": [-3, -46],
+      "renderOrderMod": 601
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [38, 46],
+      "renderOrderMod": 400
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -0,
+      "locations": [38, -46],
+      "renderOrderMod": 401
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": 100,
+      "locations": [13, 74],
+      "renderOrderMod": 500
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": -100,
+      "locations": [13, -74],
+      "renderOrderMod": 501
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": 0,
+      "locations": [31, 0]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 40,
+      "locations": [37, 81]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": -40,
+      "locations": [37, -81]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 80,
+      "locations": [-5, 88]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": -80,
+      "locations": [-5, -88]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-50, 36.5],
+      "length": 48,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 40,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-50, -36.5],
+      "length": 48,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 40,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-51, 68],
+      "length": 56,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 48,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-51, -68],
+      "length": 56,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 48,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-54, 0],
+      "length": 64,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 52,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    41, -8,
+    38, -13,
+    28, -14,
+    28, -18,
+    48, -21,
+    48, -73,
+    35, -84,
+    6, -90,
+    -27, -83,
+    -29, -77,
+    -48, -74,
+    -48, -63,
+    -42, -53,
+    -44, -49,
+    -40, -44,
+    -48, -40,
+    -48, -32,
+    -41, -27,
+    -32, -26,
+    -33, -20,
+    -42, -20,
+    -42, -10,
+    -52, -6,
+    -52, 6,
+    -42, 10,
+    -41, 19,
+    -33, 20,
+    -32, 26,
+    -41, 27,
+    -48, 32,
+    -48, 40,
+    -40, 44,
+    -44, 49,
+    -42, 52,
+    -48, 63,
+    -48, 74,
+    -29, 77,
+    -27, 83,
+    6, 90,
+    35, 84,
+    48, 73,
+    48, 21,
+    29, 18,
+    30, 14,
+    38, 13,
+    41, 8
+  ]
+}

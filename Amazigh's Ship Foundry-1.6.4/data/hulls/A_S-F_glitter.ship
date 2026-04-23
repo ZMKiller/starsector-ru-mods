@@ -1,0 +1,78 @@
+{
+  "hullName": "Glitter",
+  "hullId": "A_S-F_glitter",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_glitter.png",
+  "style": "HIGH_TECH",
+  "height": 29,
+  "width": 32,
+  "center": [16, 13],
+  "collisionRadius": 21,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 20,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 69,
+      "angle": -29,
+      "locations": [9, -6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 69,
+      "angle": 29,
+      "locations": [9, 6]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 270,
+      "angle": 0,
+      "locations": [9, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-8, 11],
+      "length": 14,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-8, -11],
+      "length": 14,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-12, -0],
+      "length": 22,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    11, -11,
+    11, 11,
+    -7, 12,
+    -7, -12
+  ]
+}

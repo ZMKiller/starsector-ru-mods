@@ -1,0 +1,249 @@
+{
+  "hullName": "Acuity",
+  "hullId": "dpl_innovator",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/dpl_innovator.png",
+  "style": "HIGH_TECH",
+  "height": 390,
+  "width": 228,
+  "center": [114, 195],
+  "collisionRadius": 259.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 242,
+  "viewOffset": 0,
+  "builtInMods": [
+    "dpl_entangled_systems",
+    "dpl_modified_hangar"
+  ],
+  "builtInWeapons": {
+    "WS0004": "dpl_trio"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [186, 22]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [186, -22]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [102, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 0,
+      "locations": [-57, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 45,
+      "locations": [-28, 34]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -45,
+      "locations": [-28, -34]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-66, 87]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-66, -87]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 90,
+      "locations": [-116, 30]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -90,
+      "locations": [-116, -30]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 72.5,
+      "locations": [162, 21]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -72.5,
+      "locations": [162, -21]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-161, 87],
+      "length": 66,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-161, -87],
+      "length": 66,
+      "width": 24,
+      "angle": -180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-190, 58],
+      "length": 76,
+      "width": 27,
+      "angle": 180,
+      "contrailSize": 27,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-190, -58],
+      "length": 76,
+      "width": 27,
+      "angle": -180,
+      "contrailSize": 27,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-193, 44],
+      "length": 87,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-193, -44],
+      "length": 87,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-195, 22],
+      "length": 111,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-195, -22],
+      "length": 111,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    112.5, -8.5,
+    155.5, -8.5,
+    157.5, -6,
+    192, -6,
+    197, -10,
+    195, -38.5,
+    98.5, -47,
+    94.5, -57,
+    82.5, -60,
+    49.5, -32,
+    -1.5, -33,
+    -23, -55.5,
+    -76, -54,
+    -81, -72.5,
+    -56, -76.5,
+    -56, -97,
+    -122.5, -116.5,
+    -150.5, -110,
+    -152.5, -98,
+    -161, -94,
+    -163.5, -82.5,
+    -151.5, -77,
+    -153.5, -64,
+    -188.5, -71.5,
+    -199, -36,
+    -199, 36,
+    -188.5, 71.5,
+    -153.5, 64,
+    -151.5, 77,
+    -163.5, 82.5,
+    -161, 94,
+    -152.5, 98,
+    -150.5, 110,
+    -122.5, 116.5,
+    -56, 97,
+    -56, 76.5,
+    -81, 72.5,
+    -76, 54,
+    -23, 55.5,
+    -1.5, 33,
+    49.5, 32,
+    82.5, 60,
+    94.5, 57,
+    98.5, 47,
+    195, 38.5,
+    197, 10,
+    192, 6,
+    157.5, 6,
+    155.5, 8.5,
+    112.5, 8.5
+  ]
+}

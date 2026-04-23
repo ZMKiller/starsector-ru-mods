@@ -1,0 +1,113 @@
+{
+  "hullName": "Mtetezi",
+  "hullId": "A_S-F_mtetezi",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_mtetezi.png",
+  "style": "LOW_TECH",
+  "height": 72,
+  "width": 80,
+  "center": [40, 34],
+  "collisionRadius": 50,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 49,
+  "viewOffset": 0,
+  "builtInMods": [
+    "automated",
+    "rugged",
+    "A_S-F_DerelictWarburn"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 105,
+      "locations": [-10, 30]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 40,
+      "locations": [20, 21]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -40,
+      "locations": [20, -21]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -105,
+      "locations": [-10, -30]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [15, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-29, 16],
+      "length": 40,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 55,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-29, -16],
+      "length": 40,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 55,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-33, 0],
+      "length": 56,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 60,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    24, -11,
+    36, -21,
+    35, -28,
+    18, -31,
+    2, -17,
+    -4, -20,
+    -4, -37,
+    -20, -35,
+    -32, -5,
+    -32, 5,
+    -20, 35,
+    -4, 37,
+    -4, 20,
+    2, 17,
+    18, 31,
+    34, 28,
+    35, 21,
+    24, 11,
+    28, -0
+  ]
+}

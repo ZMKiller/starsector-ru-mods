@@ -1,0 +1,41 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 18,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "ls_megabommer_ds",
+    "hullMods": [
+        "targetingunit",
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_megabommer_ds_dakka",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_deffstorm_bolta",
+                "WS 000": "ls_deffstorm_bolta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_grot_launcha",
+                "WS 002": "ls_grot_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_big_shoota",
+                "WS 007": "ls_big_shoota",
+                "WS 004": "ls_twin_shoota",
+                "WS 005": "ls_twin_shoota"
+            }
+        }
+    ]
+}

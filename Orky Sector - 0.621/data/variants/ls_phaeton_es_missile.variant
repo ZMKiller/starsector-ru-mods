@@ -1,0 +1,50 @@
+{
+    "displayName": "Missile",
+    "fluxCapacitors": 13,
+    "fluxVents": 4,
+    "goalVariant": true,
+    "hullId": "ls_phaeton_es",
+    "hullMods": [
+        "targetingunit",
+        "missleracks"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_phaeton_es_missile",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_torpedo_toob"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_mega_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_grot_rail",
+                "WS 003": "ls_grot_rail",
+                "WS 002": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_big_shoota",
+                "WS 006": "ls_big_shoota",
+                "WS 008": "ls_big_shoota"
+            }
+        }
+    ],
+    "wings": [
+        "ls_blitza_bomma_es_wing"
+    ]
+}

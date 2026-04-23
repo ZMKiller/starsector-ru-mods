@@ -1,0 +1,35 @@
+{
+	"id":"A_S-F_omer",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"SMALL",
+	"turretSprite":"graphics/weapons/A_S-F_omer_turret.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_omer_hardpoint.png",
+
+	"hardpointOffsets":[7, -3, 7, 3, 8, 0],
+	"turretOffsets":[5, -3, 5, 3, 6, 0],
+	"hardpointAngleOffsets":[-4, 4, 0],
+	"turretAngleOffsets":[-4, 4, 0],
+
+#	"hardpointOffsets":[8, -3, 8, 3, 5, -3, 5, 3],
+#	"turretOffsets":[6, -3, 6, 3, 3, -3, 3, 3],
+#	"hardpointAngleOffsets":[-4.5, 4.5, -1.5, 1.5],
+#	"turretAngleOffsets":[-4.5, 4.5, -1.5, 1.5],
+
+	"barrelMode":"LINKED",		# DUAL
+	"animationType":"SMOKE",
+	"interruptibleBurst":false,
+	"separateRecoilForLinkedBarrels":true,
+	"smokeSpec":{"particleSizeMin":9.0,
+							 "particleSizeRange":13.0,
+							 "cloudParticleCount":1,
+							 "cloudDuration":1.0,
+							 "cloudRadius":12.0;
+							 "blowbackParticleCount":1,
+							 "blowbackDuration":1.25,
+							 "blowbackLength":20.0,
+							 "blowbackSpread":8.0,
+							 "particleColor":[185,175,160,95]},
+	"projectileSpecId":"A_S-F_omer_srm",
+	"fireSoundTwo":"swarmer_fire",
+}

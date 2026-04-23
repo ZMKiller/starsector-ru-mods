@@ -1,0 +1,36 @@
+{
+	"id":"swp_arcade_prismaticray",
+	"type":"PHASE_CLOAK",
+	"aiType":"PHASE_CLOAK",
+
+	"statsScript":"data.scripts.shipsystems.SWP_PrismaticRayStats",
+
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
+
+	"jitterColor":[150,200,255,50],
+	"jitterCopies":5,
+	"jitterRange":25,
+	"jitterRangeRadiusFraction":0.5,
+
+	"effectColor1":[150,200,255,150],
+	"effectColor2":[150,200,255,200],
+
+	"fadeActivationSoundOnChargedown":false,
+
+	"shipAlpha":1.0,
+
+	"useSound":"system_phase_cloak_collision",
+	"loopSound":"system_high_energy_focus_loop",
+	"outOfUsesSound":"system_phase_cloak_collision",
+
+	"aiHints":{
+		"threatRange":2500,
+		"threatAmount":20,
+		"threatAngle":0,
+		"threatArc":360,
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

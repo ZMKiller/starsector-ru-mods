@@ -1,0 +1,144 @@
+{
+    "hullName": "Looted Cerberus (DS)",
+    "hullId": "ls_looted_cerberus_ds",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/Cerberus Looted 2.png",
+    "height": 106,
+    "width": 72,
+    "center": [
+        36, 53
+    ],
+    "collisionRadius": 78,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 70,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_deathskull",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": -40,
+            "locations": [
+                    29.5,      -16
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                    -4.5,        0
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 35,
+            "locations": [
+                      35,       11
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    38.5,       28
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -50.5, 0
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -50.5, 26
+            ],
+            "length": 32,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -50.5, -26
+            ],
+            "length": 32,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -50, 15
+            ],
+            "length": 28,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -50, -15
+            ],
+            "length": 28,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+            30.5,     33.5,
+            38.5,     19.5,
+              50,      9.5,
+              50,      -12,
+              36,    -31.5,
+        
+              22,      -34,
+               4,      -26,
+           -11.5,    -32.5,
+             -49,      -33,
+           -49.5,       33,
+        
+            -9.5,     31.5,
+            -6.5,     22.5,
+             0.5,     22.5,
+             2.5,       33
+    # 14 points total.
+    ]
+}

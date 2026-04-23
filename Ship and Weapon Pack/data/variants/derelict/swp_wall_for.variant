@@ -1,0 +1,50 @@
+{
+    "displayName": "Fortress",
+    "fluxCapacitors": 4,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "swp_wall",
+    "hullMods": [
+        "dedicated_targeting_core",
+        "auxiliarythrusters"
+    ],
+    "modules": [
+        {"LEFT_WALL": "swp_wall_left_ass"},
+        {"RIGHT_WALL": "swp_wall_right_cs"}
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_wall_for",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "annihilatorpod"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0010": "annihilator"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "lightmortar",
+                "WS0005": "lightmortar",
+                "WS0006": "lightmortar",
+                "WS0007": "lightmortar",
+                "WS0008": "lightmortar",
+                "WS0009": "lightmortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "heavyac",
+                "WS0003": "heavyac"
+            }
+        }
+    ]
+}

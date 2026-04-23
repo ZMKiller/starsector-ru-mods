@@ -1,0 +1,20 @@
+{
+	"id":"A_S-F_salmson_shot",
+	"specClass":"projectile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.arktech.ASF_SalmsonOnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.arktech.ASF_SalmsonOnHitEffect",
+
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":25.0,
+	"hitGlowRadius":33,
+	"width":8.5,
+	"fadeTime":0.3,
+	"fringeColor":[255,100,70,200], # 255,160,70,200
+	"coreColor":[255,255,255,160],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/mortar_round.png"
+}

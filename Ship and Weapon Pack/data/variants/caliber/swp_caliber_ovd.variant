@@ -1,0 +1,41 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 0,
+    "fluxVents": 3,
+    "goalVariant": true,
+    "hullId": "swp_caliber",
+    "hullMods": [
+        "safetyoverrides",
+        "armoredweapons",
+        "autorepair",
+        "auxiliarythrusters"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_caliber_ovd",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "devastator"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "lightdualac",
+                "WS0003": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "lightmg",
+                "WS0005": "lightmg",
+                "WS0006": "lightmg",
+                "WS0007": "lightmg"
+            }
+        }
+    ]
+}

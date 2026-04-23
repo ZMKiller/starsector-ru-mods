@@ -1,0 +1,58 @@
+{
+    "hullName": "Miemieko",
+    "hullId": "ls_miemieko",
+    "hullSize": "FIGHTER",
+    "style": "HIGH_TECH",
+    "spriteName": "graphics/ships/ls_laomie/ls_miemieko.png",
+    "height": 26,
+    "width": 26,
+    "center": [
+        13, 13
+    ],
+    "collisionRadius": 24,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 22,
+    "viewOffset": 0,
+    "builtInWeapons": {
+        "WS 000": "ls_laobaa_lobba"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                       2,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -10, 0
+            ],
+            "length": 20,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 24,
+            "style": "HIGH_TECH"
+        }
+    ],
+    "bounds": [
+            -9.5,     -3.5,
+               0,     -9.5,
+               8,     -5.5,
+               8,      5.5,
+               0,      9.5,
+        
+            -9.5,      3.5
+    ]
+}

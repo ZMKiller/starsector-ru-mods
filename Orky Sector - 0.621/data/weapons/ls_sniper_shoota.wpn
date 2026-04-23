@@ -1,0 +1,33 @@
+{
+	"id":"ls_sniper_shoota",  # this id must match what's in the spreadsheet
+	"everyFrameEffect":"data.weapons.ls_sniper_shoota_everyframeffect",
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":250,
+	"turretSprite":"graphics/weapons/ls_sniper_shoota_turret.png",
+	"turretGlowSprite":"graphics/weapons/ls_sniper_shoota_turret_glow.png",
+	"turretGunSprite":"graphics/weapons/ls_sniper_shoota_barrel.png",
+	"hardpointSprite":"graphics/weapons/ls_sniper_shoota_hardpoint.png",
+	"hardpointGlowSprite":"graphics/weapons/ls_sniper_shoota_hardpoint_glow.png",
+	"hardpointGunSprite":"graphics/weapons/ls_sniper_shoota_barrel.png",
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":2.0,  # the gun sprites are only used if this is non-0
+	"glowColor":[255,100,50,255],
+	"turretOffsets":[13, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[13, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":24.0,
+					   "particleSizeMin":4.0,
+					   "particleSizeRange":8.0,
+					   "particleDuration":0.2,
+					   "particleCount":9,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"ls_shoota_shot",  # projectile that will be fired
+	"fireSoundTwo":"twin_shootas_sound",
+}

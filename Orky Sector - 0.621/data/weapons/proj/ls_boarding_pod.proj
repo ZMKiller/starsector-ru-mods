@@ -1,0 +1,56 @@
+{
+	"id":"ls_boarding_pod",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"onFireEffect":"com.fs.starfarer.api.impl.combat.dem.DEMEffect",
+	"behaviorSpec":{"behavior":"CUSTOM",
+		"minDelayBeforeTriggering":0.01,
+		"triggerDistance":[0,50],
+		"preferredMinFireDistance":[-1,-1],
+		"turnRateBoost":100,
+		"targetingTime":0.0,
+		"firingTime":15,
+		"targetingLaserId":"targetinglaser1",
+		"targetingLaserFireOffset":[4, 0],
+		"payloadWeaponId":"ls_boarding_beam",
+		"targetingLaserRange":0,
+		"targetingLaserArc":15,
+		"bombPumped":false,
+		"snapFacingToTargetIfCloseEnough":true,
+		"fadeOutEngineWhenFiring":false;
+		"randomStrafe":false;
+		"destroyMissleWhenDoneFiring":false,
+		"destroyedExplosionColor":[225,255,205,200],
+	},
+	"sprite":"graphics/weapons/ls_boarding_pod.png",
+	"size":[24,32],	
+	"center":[12,16],
+	"collisionRadius":40,
+	"collisionClass":"FIGHTER",
+	"explosionColor":[100,200,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":90, # purely visual	
+	"engineSpec":{"turnAcc":300,
+				  "turnRate":200,
+				  "acc":300,
+				  "dec":300},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-14, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,145,75,255],
+						"contrailDuration":.5,
+						"contrailWidthMult":3,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[75,75,75,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":28.0,
+				    "angle":180.0}]
+				    
+}

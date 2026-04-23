@@ -1,0 +1,28 @@
+{
+	"id":"A_S-F_sakset",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":800,
+	"turretSprite":"graphics/weapons/A_S-F_sakset_turret_base.png",
+	"turretGunSprite":"graphics/weapons/A_S-F_sakset_turret_recoil.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_sakset_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/A_S-F_sakset_hardpoint_recoil.png",	
+	"visualRecoil":10.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[36,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[45,0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED",
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":55.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":14.0,
+					   "particleSizeMin":9.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.27,
+					   "particleCount":31,
+					  "particleColor":[175,225,175,150]},
+	"projectileSpecId":"A_S-F_sakset_shot",  # projectile that will be fired
+	"fireSoundTwo":"A_S-F_sakset_fire",
+}

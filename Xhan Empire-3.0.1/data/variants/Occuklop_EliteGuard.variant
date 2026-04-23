@@ -1,0 +1,63 @@
+{
+  "variantId": "Occuklop_EliteGuard",
+  "hullId": "XHAN_Occuklop",
+  "displayName": "Elite Guard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+	"heavyarmor",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Gorel_Plas_Proj",
+        "WS0002": "Gorel_Plas_Proj"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "Occuklop_Decimator"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "Xhan_Luzna"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "Ugol_Plas_Spit",
+        "WS0005": "Xhan_Palik",
+        "WS0007": "Ugol_Plas_Spit",
+        "WS0012": "Xhan_Palik",
+        "WS0016": "Xhan_Palik",
+        "WS0017": "Ugol_Plas_Spit",
+        "WS0018": "Xhan_Palik",
+        "WS0020": "Xhan_Palik"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "Xhan_Zarukel",
+        "WS0011": "Xhan_Zarukel"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

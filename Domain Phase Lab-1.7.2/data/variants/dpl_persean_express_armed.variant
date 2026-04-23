@@ -1,0 +1,28 @@
+{
+  "variantId": "dpl_persean_express_armed",
+  "hullId": "dpl_persean_express",
+  "displayName": "Armed Transport",
+  "goalVariant": true,
+  "fluxCapacitors": 16,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_cargo_holds",
+    "hardenedshieldemitter",
+    "stabilizedshieldemitter",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyneedler",
+        "WS0002": "heavyneedler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

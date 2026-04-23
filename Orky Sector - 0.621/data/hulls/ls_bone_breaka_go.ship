@@ -1,0 +1,242 @@
+{
+    "hullName": "Bone Breaka (Goff)",
+    "hullId": "ls_bone_breaka_go",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_bone_breaka_go.png",
+    "height": 198,
+    "width": 146,
+    "center": [
+        73, 99
+    ],
+    "collisionRadius": 120,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 96,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_ramma",
+        "ls_goffs",
+        "rugged",
+        "ls_ramshackle"
+    ],
+    "builtInWeapons": {
+        "Roller": "ls_deff_rolla",
+        "WS 002": "ls_deff_rolla_dummy",
+        "WS 001": "ls_deff_rolla_dummy"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "Roller",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                    70.5,      0.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    70.5,    -13.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    70.5,     13.5
+            ]
+        },
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": -60,
+            "locations": [
+                      18,      -20
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 60,
+            "locations": [
+                      18,       20
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 75,
+            "locations": [
+                   -23.5,       44
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -75,
+            "locations": [
+                   -23.5,      -44
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    23.5,     46.5
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    23.5,    -46.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -79.5, 24.5
+            ],
+            "length": 64,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -79.5, -24.5
+            ],
+            "length": 64,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -73.5, 37
+            ],
+            "length": 48,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -73.5, -37
+            ],
+            "length": 48,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -71.5, 28
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -71.5, -28
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -72, -19.5
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -72, 19.5
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -42.5,       -5,
+           -79.5,      -20,
+           -79.5,      -28,
+             -74,      -30,
+             -74,      -38,
+        
+           -27.5,      -66,
+               2,      -59,
+            25.5,    -42.5,
+              44,      -41,
+              67,      -31,
+        
+              67,       31,
+              44,       41,
+            25.5,     42.5,
+               2,       59,
+           -27.5,       66,
+        
+             -74,       38,
+             -74,       30,
+           -79.5,       28,
+           -79.5,       20,
+           -42.5,        5
+    # 20 points total.
+    ]
+}

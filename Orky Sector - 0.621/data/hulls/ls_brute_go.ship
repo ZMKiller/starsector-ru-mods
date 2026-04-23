@@ -1,0 +1,141 @@
+{
+    "hullName": "Brute (Goff)",
+    "hullId": "ls_brute_go",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_brute_go.png",
+    "height": 102,
+    "width": 82,
+    "center": [
+        41, 51
+    ],
+    "collisionRadius": 76,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 76,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_goffs",
+        "ls_ramma",
+        "rugged",
+        "ls_ramshackle"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    24.5,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 90,
+            "locations": [
+                   -15.5,       20
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 270,
+            "locations": [
+                   -15.5,      -20
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -42.5, 31
+            ],
+            "length": 48,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -42.5, -31
+            ],
+            "length": 48,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -41.5, 24.5
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -41.5, -24.5
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -42.5, 0
+            ],
+            "length": 60,
+            "width": 20,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -43,       -5,
+           -40.5,      -10,
+             -43,      -36,
+            -2.5,      -36,
+               1,    -22.5,
+        
+              32,    -30.5,
+              41,    -25.5,
+              35,    -19.5,
+            47.5,      -12,
+              30,     -5.5,
+        
+              30,      5.5,
+            47.5,       12,
+              35,     19.5,
+              41,     25.5,
+              32,     30.5,
+        
+               1,     22.5,
+            -2.5,       36,
+             -43,       36,
+           -40.5,       10,
+             -43,        5
+    # 20 points total.
+    ]
+}

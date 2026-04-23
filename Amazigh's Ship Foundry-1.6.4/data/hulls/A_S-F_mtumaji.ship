@@ -1,0 +1,100 @@
+{
+  "hullName": "Mtumaji",
+  "hullId": "A_S-F_mtumaji",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_mtumaji.png",
+  "style": "LOW_TECH",
+  "height": 52,
+  "width": 62,
+  "center": [32, 28],
+  "collisionRadius": 40,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 39,
+  "viewOffset": 0,
+  "builtInMods": [
+    "automated",
+    "rugged",
+    "A_S-F_DerelictWarburn"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [19, 18]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [18, 3]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [20, -23]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 40,
+      "locations": [-1, 13]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-26, 18],
+      "length": 28,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-27, 3],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 48,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-26, -20],
+      "length": 26,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-26, -9],
+      "length": 26,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    3, 29,
+    19, 22,
+    21, -26,
+    5, -27,
+    -25, -24,
+    -24, 21,
+    -15, 28
+  ]
+}

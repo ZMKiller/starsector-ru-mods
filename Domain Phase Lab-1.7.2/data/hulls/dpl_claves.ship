@@ -1,0 +1,69 @@
+{
+  "hullName": "Claves",
+  "hullId": "dpl_claves",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/dpl_claves.png",
+  "style": "HIGH_TECH",
+  "height": 28,
+  "width": 24,
+  "center": [12, 12],
+  "collisionRadius": 40,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 37,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_plasma_fighter",
+    "WS0002": "dpl_plasma_fighter"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12.5, 7]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [12.5, -7]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10.5, 6.5],
+      "length": 16.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-10.5, -6.5],
+      "length": 16.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    17, -11,
+    4.5, -12.5,
+    1, -12.5,
+    -11, -8.5,
+    -11, 8.5,
+    1, 12.5,
+    4.5, 12.5,
+    17, 11
+  ]
+}

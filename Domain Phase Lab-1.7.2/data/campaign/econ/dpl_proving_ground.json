@@ -1,0 +1,101 @@
+{
+	"starSystem":"dpl_proving_ground",
+	"markets":[
+		{
+			"entities":["dpl_security"],
+			"faction":"dpl_phase_lab",
+			"size":5,
+			"startingConditions":[
+				"population_5",
+				"very_hot",
+				"no_atmosphere",
+				"ore_sparse",
+				"rare_ore_moderate",
+				"dpl_unmotivated_cadets"
+			],
+			"industries":[
+				["population"],
+				["megaport"],
+				["waystation"],
+				["heavybatteries"],
+				["dpl_starfortress"],
+				["highcommand","cryoarithmetic_engine"],
+				["refining"],
+			],
+		},
+		{
+			"entities":["dpl_factory"],
+			"faction":"dpl_phase_lab",
+			"size":5,
+			"startingConditions":[
+				"population_5",
+				"high_gravity",
+				"hot",
+				"ore_moderate",
+				"rare_ore_abundant",
+				"volatiles_diffuse",
+				"dpl_unmotivated_cadets"
+			],
+			"industries":[
+				["population"],
+				["megaport"],
+				["waystation"],
+				["grounddefenses"],
+				["dpl_battlestation"],
+				["militarybase"],
+				["orbitalworks","pristine_nanoforge"],
+				["mining"],
+			],
+		},
+		{
+			"entities":["dpl_research_site_v", "dpl_station_cryosleeper"],
+			"faction":"dpl_phase_lab",
+			"size":7,
+			"startingConditions":[
+				"population_7",
+				"habitable",
+				"solar_array",
+				"farmland_poor",
+				"organics_trace",
+				"dpl_matcha_makers",
+				"dpl_unmotivated_cadets"
+			],
+			"industries":[
+				["population"],
+				["megaport"],
+				["waystation"],
+				["grounddefenses"],
+				["dpl_starfortress"],
+				["militarybase"],
+				["farming"],
+				["mining"],
+				["commerce"],
+			],
+		},
+		{
+			"entities":["dpl_research_site_v_moon"],
+			"faction":"dpl_phase_lab",
+			"size":4,
+			"startingConditions":[
+				"population_4",
+				"low_gravity",
+				"no_atmosphere"
+			],
+			"industries":[
+				["population"],
+				["megaport"],
+				["waystation"],
+				["grounddefenses"],
+				["dpl_orbitalstation"],
+				["fuelprod","synchrotron"],
+				["lightindustry"],
+			],
+		},
+
+	],
+
+
+}
+
+
+

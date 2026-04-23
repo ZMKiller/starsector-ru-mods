@@ -1,0 +1,50 @@
+{
+  "variantId": "sfcbia_Burner",
+  "hullId": "sfcbia",
+  "displayName": "Burner",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "stabilizedshieldemitter",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "sfcamthrower",
+        "WS0004": "sfcamthrower"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "salamanderpod",
+        "WS0006": "heatseeker",
+        "WS0007": "heatseeker"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "autopulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

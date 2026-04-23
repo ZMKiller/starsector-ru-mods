@@ -1,0 +1,194 @@
+{
+  "hullName": "Archer",
+  "hullId": "swp_archer",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/swp/ships/swp_archer_dd.png",
+  "style": "MIDLINE",
+  "height": 169,
+  "width": 146,
+  "center": [73, 79],
+  "collisionRadius": 115.162926,
+  "shieldCenter": [2, 0],
+  "shieldRadius": 111.635567,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [74, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 45,
+      "locations": [27.5, 43]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -45,
+      "locations": [27.5, -43]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 0,
+      "locations": [38, 0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": 45,
+      "locations": [0, 53]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": -45,
+      "locations": [0, -53]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 180,
+      "locations": [-58, 0]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": 135,
+      "locations": [-36, 20]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": -135,
+      "locations": [-36, -20]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-74, 20],
+      "length": 64,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-74, -20],
+      "length": 64,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71, 38.5],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71, -38.5],
+      "length": 48,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-69, 46.5],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-69, -46.5],
+      "length": 48,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-77, 9.5],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-77, -9.5],
+      "length": 64,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-78, -0],
+      "length": 80,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    84.5, -16,
+    30, -33,
+    39.5, -44,
+    -3, -62.5,
+    -17, -42.5,
+    -38, -57,
+    -53.5, -57,
+    -68.5, -46,
+    -65, -30,
+    -77, -10.5,
+    -77, 10.5,
+    -65, 30,
+    -68.5, 46,
+    -53.5, 57,
+    -38, 57,
+    -17, 42.5,
+    -3, 62.5,
+    39.5, 44,
+    30, 33,
+    84.5, 16,
+    75.5, 0
+  ]
+}

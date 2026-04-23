@@ -1,0 +1,45 @@
+{
+  "variantId": "TTE_gelian_standard",
+  "hullId": "TTE_gelian",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 49,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse",
+        "WS0002": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pulselaser",
+        "WS0004": "pulselaser",
+        "WS0005": "irpulse",
+        "WS0006": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "TTE_pdirpulse",
+        "WS0008": "TTE_pdirpulse",
+        "WS0009": "TTE_pdirpulse",
+        "WS0010": "TTE_pdirpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

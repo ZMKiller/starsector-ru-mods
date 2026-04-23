@@ -1,0 +1,66 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 16,
+    "fluxVents": 50,
+    "hullId": "swp_liberator",
+    "hullMods": [
+        "pointdefenseai",
+        "defensive_targeting_array",
+        "dedicated_targeting_core"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_liberator_esc",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "hveldriver",
+                "WS0006": "hveldriver"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "heatseeker",
+                "WS0009": "heatseeker",
+                "WS0010": "heatseeker",
+                "WS0011": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "hveldriver",
+                "WS0004": "hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "lightneedler",
+                "WS0013": "lightneedler",
+                "WS0014": "lightneedler",
+                "WS0015": "lightneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "swp_tripleflak",
+                "WS0002": "swp_tripleflak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "dualflak"}
+        }
+    ],
+    "wings": ["swp_drake_wing"]
+}

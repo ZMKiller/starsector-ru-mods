@@ -1,0 +1,20 @@
+{
+    # Whether to cache expensive methods whose results won't change this frame
+    # This should be left on unless a bug is discovered in the cache system
+    "enableCaching":true,
+
+    # You can ignore this setting, it's only used to control internal LazyLib
+    # debugging. logDeprecated (below) is not affected by this setting
+    # Valid levels: OFF, FATAL, ERROR, WARN, INFO, DEBUG, ALL
+    "logLevel":"WARN",
+    
+    # Whether to log usage of deprecated LazyLib methods (for modders)
+    # The logged output will include the class and line number of the caller
+    # Deprecated methods will be removed eventually, so this is very useful
+    # Note: this setting can have an impact on performance, don't leave it on!
+    "logDeprecated":false,
+    
+    # Whether to crash the game when a deprecated LazyLib method is used
+    # This is here so modders can follow the full trace of the code calling it
+    "crashOnDeprecated":false,
+}

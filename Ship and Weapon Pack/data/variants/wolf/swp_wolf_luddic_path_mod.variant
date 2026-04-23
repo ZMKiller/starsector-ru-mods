@@ -1,0 +1,50 @@
+{
+    "displayName": "Heavily Modified",
+    "fluxCapacitors": 10,
+    "fluxVents": 5,
+    "hullId": "swp_wolf_luddic_path",
+    "hullMods": [
+        "swp_extrememods2",
+        "swp_pdconversion",
+        "missleracks",
+        "autorepair",
+        "magazines"
+    ],
+    "permaMods": [
+        "swp_extrememods2",
+        "swp_pdconversion",
+        "missleracks",
+        "autorepair"
+    ],
+    "sMods": [
+        "swp_pdconversion",
+        "missleracks",
+        "autorepair"
+    ],
+    "tags": ["no_autofit"],
+    "variantId": "swp_wolf_luddic_path_mod",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "swp_plasmaflame"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 005": "sabot",
+                "WS 006": "sabot"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "pdburst",
+                "WS 002": "pdburst",
+                "WS 003": "pdburst"
+            }
+        }
+    ]
+}

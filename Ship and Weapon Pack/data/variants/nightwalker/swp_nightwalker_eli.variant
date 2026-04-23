@@ -1,0 +1,39 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 20,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "swp_nightwalker",
+    "hullMods": [
+        "fluxbreakers",
+        "adaptive_coils"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_nightwalker_eli",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "mjolnir"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "atropos",
+                "WS0003": "atropos",
+                "WS0004": "atropos",
+                "WS0005": "atropos"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "lrpdlaser",
+                "WS0007": "lrpdlaser"
+            }
+        }
+    ]
+}

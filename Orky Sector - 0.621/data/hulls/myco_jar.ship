@@ -1,0 +1,105 @@
+{
+    "hullName": "Myco Jar",
+    "hullId": "myco_jar",
+    "hullSize": "CAPITAL_SHIP",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/MycoJar.png",
+    "height": 478,
+    "width": 444,
+    "center": [
+        222, 239
+    ],
+    "collisionRadius": 270,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 260,
+    "viewOffset": 0,
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "renderOrderMod": 360,
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                     -95,     37.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                     -95,    -31.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 90,
+            "angle": 0,
+            "locations": [
+                   205.5,     36.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 90,
+            "angle": 0,
+            "locations": [
+                   205.5,    -36.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -234, 0
+            ],
+            "length": 240,
+            "width": 80,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             211,    136.5,
+           226.5,    116.5,
+           237.5,       46,
+             238,      -59,
+             192,     -134,
+        
+             112,     -135,
+            27.5,     -174,
+            -1.5,   -153.5,
+            50.5,   -129.5,
+          -164.5,   -124.5,
+        
+          -222.5,    -80.5,
+            -237,       31,
+            -208,      125,
+            -145,      151,
+            45.5,    151.5,
+        
+           109.5,    134.5,
+             133,    150.5,
+             134,      172,
+           200.5,    159.5
+    # 19 points total.
+    ]
+}

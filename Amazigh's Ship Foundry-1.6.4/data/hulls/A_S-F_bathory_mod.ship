@@ -1,0 +1,176 @@
+{
+  "hullName": "Gutkeled",
+  "hullId": "A_S-F_bathory_mod",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/A_S-F_bathory_mod.png",
+  "style": "MIDLINE",
+  "coversColor": "207,133,155,255",
+  "height": 170,
+  "width": 210,
+  "center": [105, 104],
+  "collisionRadius": 116,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 115,
+  "viewOffset": 0,
+  "builtInMods": [
+    "targetingunit",
+    "high_maintenance"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 30,
+      "locations": [16, 43]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -30,
+      "locations": [16, -43]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [40, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [31, 92]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [31, -92]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": 15,
+      "locations": [38, 26]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": -15,
+      "locations": [38, -26]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 140,
+      "locations": [2, 92]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -140,
+      "locations": [2, -92]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-33, 72],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-33, -72],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-32, 63],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-32, -63],
+      "length": 64,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-31, 43],
+      "length": 80,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-31, -43],
+      "length": 80,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    47, -19,
+    43, -49,
+    44, -65,
+    30, -96,
+    2, -101,
+    -7, -80,
+    -29, -74,
+    -27, -38,
+    -17, -24,
+    -36, -11,
+    -72, -9,
+    -87, 8,
+    -36, 9,
+    -17, 24,
+    -27, 38,
+    -29, 74,
+    -7, 80,
+    2, 101,
+    30, 96,
+    43, 62,
+    46, 20,
+    40, -0
+  ]
+}

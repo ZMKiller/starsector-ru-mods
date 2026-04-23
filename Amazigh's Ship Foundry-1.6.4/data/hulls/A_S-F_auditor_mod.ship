@@ -1,0 +1,159 @@
+{
+  "hullName": "Revizor",
+  "hullId": "A_S-F_auditor_mod",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_auditor_mod.png",
+  "style": "MIDLINE",
+  "height": 80,
+  "width": 130,
+  "center": [65, 40],
+  "collisionRadius": 82,
+  "shieldCenter": [-1, -0],
+  "shieldRadius": 80,
+  "viewOffset": 0,
+  "builtInMods": [
+    "fluxshunt",
+    "pointdefenseai"
+  ],
+  "builtInWeapons": {
+    "WS0001": "A_S-F_paladin_tri_mod",
+    "WS0002": "A_S-F_paladin_tri_mod"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [30, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 55,
+      "locations": [10, 33]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 180,
+      "locations": [-25, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -55,
+      "locations": [10, -33]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-27, 46],
+      "length": 24,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-29, 39],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-29, 33],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-28, 27],
+      "length": 24,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-28, -27],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-29, -32],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-29, -38],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-27, -44],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-17, 55],
+      "length": 28,
+      "width": 8,
+      "angle": 135,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-17, -55],
+      "length": 28,
+      "width": 8,
+      "angle": -135,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    23, 58,
+    33, 0,
+    23, -58,
+    7, -62,
+    -25, -45,
+    -26, -25,
+    -19, -23,
+    -22, -13,
+    -35, -9,
+    -35, 9,
+    -22, 13,
+    -19, 23,
+    -26, 25,
+    -25, 46,
+    7, 62
+  ]
+}

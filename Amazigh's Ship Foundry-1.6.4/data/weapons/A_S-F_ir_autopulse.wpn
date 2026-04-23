@@ -1,0 +1,28 @@
+{
+	"id":"A_S-F_ir_autopulse",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/A_S-F_IR_Autopulser_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_IR_Autopulser_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_IR_Autopulser_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_IR_Autopulser_hardpoint_glow.png",
+	"glowColor":[255,100,110,255],
+	"turretOffsets":[16, 5, 16, -5],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[22, 5, 22, -5],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":24.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":0.12,
+					   "particleCount":11,
+					   "particleColor":[255,100,110,255]},	
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	#"requiresFullCharge":false,  # for pulse weapons - whether the weapon will fire at a lower strength partial charge
+	"projectileSpecId":"irpulse_shot",  # projectile that will be fired
+	"fireSoundTwo":"ir_pulse_laser_fire",
+}

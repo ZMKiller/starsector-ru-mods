@@ -1,0 +1,48 @@
+{
+    "displayName": "Rokkit",
+    "fluxCapacitors": 20,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_venture_ds",
+    "hullMods": [
+        "ls_bosspole",
+        "ls_ard_case"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_venture_ds_rokkit",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_flakka_dakka",
+                "WS 001": "ls_flakka_dakka",
+                "WS 002": "ls_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "ls_rokkitpod",
+                "WS 004": "ls_rokkitpod"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 005": "ls_jet_shoota",
+                "WS 006": "ls_jet_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_big_shoota",
+                "WS 008": "ls_big_shoota"
+            }
+        }
+    ]
+}

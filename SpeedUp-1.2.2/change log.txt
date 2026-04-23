@@ -1,0 +1,72 @@
+Version 1.2.2 (April 7, 2025)
+- Updated for Starsector 0.98a-RC7
+- Improved the calculation for calculating dynamic speed multipliers
+
+Version 1.2.1 (March 31, 2025)
+- Updated for Starsector 0.98a
+- Fixed a logical bug preventing dynamic changes in speed multipliers
+
+Version 1.2.0 (December 23, 2024)
+- Added option to make a hotkey disable all other active hotkeys (set "disableOthers" to true in config)
+- Added default hotkey, F3 toggles 6x speed
+- Added default hotkey, F4 clears all active hotkeys and sets speed to 1x
+- Fixed hotkey state persisting after combat (probably affected 1.1.1 and 1.1.2, haven't verified)
+- Fixed invalid activate hotkey in config file
+- Minor optimizations
+
+Version 1.1.2 (December 11, 2024)
+- Cleanup and refactor
+
+Version 1.1.1 (December 11, 2024)
+- Cleanup and refactor
+
+Version 1.1.0 (November 17, 2024)
+- Added ability to set bullet-time intensity
+- Renamed settings file and moved it to the config folder. Legacy settings file is still supported and will be used instead if it exists
+- Minor refactor
+- Updated for Starsector 0.97a RC11
+- Rare crash fix
+
+Version 1.0.1 (February 3, 2024)
+- Updated for Starsector 0.97a
+- Removed default binding for 6x speed-up
+
+Version 1.0.0 (May 10, 2023)
+- Updated for Starsector 0.96a
+- Now works in the campaign!  Thanks Histidine!
+- Caps Lock for 2x speed-up in campaign
+- F1 for 6x speed-up in campaign
+
+Version 0.7.2 (December 12, 2021):
+- Updated for Starsector 0.95.1a
+- Fixed rare no-bullet-time bug
+
+Version 0.7.1 (March 29, 2021):
+- Updated for Starsector 0.95a
+
+Version 0.7.0 (December 25, 2020):
+- Added "onAtStart" option to flag a speed multiplier option as being enabled by default at the start of combat
+- Added "capToFPS" option to limit a speed multiplier to a certain engine frame rate (0.0 to speed up regardless of frame rate)
+  * Default toggle: Ctrl-Capslock
+- Migrated version file to custom host (sigh)
+
+Version 0.6.1 (July 11, 2020):
+- Migrated version file to BitBucket
+
+Version 0.6.0 (September 8, 2019):
+- Minor optimization
+- Added option to disable bullet-time effects (such as phase slow-down)
+  * Default toggle: B
+
+Version 0.5.2 (May 17, 2019):
+- Updated for Starsector 0.9.1a
+- Updated mod description with the default controls
+- Added option to suppress indicator messages
+
+Version 0.5.1 (November 16, 2018):
+- Fixed certain key-combo misbehavior
+- Now works when the player isn't piloting a ship
+- Works in Starsector 0.9a
+
+Version 0.5.0 (April 24, 2018):
+- Initial release

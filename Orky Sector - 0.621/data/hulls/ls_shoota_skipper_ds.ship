@@ -1,0 +1,152 @@
+{
+    "hullName": "Shootaskipper (DS)",
+    "hullId": "ls_shoota_skipper_ds",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_shootaskipper_ds.png",
+    "height": 102,
+    "width": 102,
+    "center": [
+        51, 51
+    ],
+    "collisionRadius": 80,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 76,
+    "viewOffset": 0,
+    "builtInMods": [
+        "rugged",
+        "ls_orky",
+        "ls_deathskull",
+        "magazines",
+        "missleracks"
+    ],
+    "builtInWeapons": {
+        "WS 004": "ls_supashoota"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                    10.5,       24
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                    10.5,      -25
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "renderOrderMod": 1,
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                     4.5,      -37
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "renderOrderMod": 1,
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                     4.5,       37
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "renderOrderMod": 1,
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                    27.5,       -7
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -42, 12
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 46,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -42, -12
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 46,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -37, 32
+            ],
+            "length": 64,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -37, -32
+            ],
+            "length": 64,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -45.5,      -18,
+           -37.5,      -21,
+           -37.5,      -36,
+           -24.5,      -47,
+               2,      -49,
+        
+              17,     -9.5,
+            44.5,     -5.5,
+            44.5,      5.5,
+              17,      9.5,
+               2,       49,
+        
+           -24.5,       47,
+           -37.5,       36,
+           -37.5,       21,
+           -45.5,       18
+    # 14 points total.
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "displayName": "Raider",
+    "fluxCapacitors": 5,
+    "fluxVents": 24,
+    "goalVariant": true,
+    "hullId": "swp_vulture_p",
+    "hullMods": [
+        "unstable_injector",
+        "heavyarmor"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_vulture_p_rai",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "swp_plasmaflame",
+                "WS0002": "chaingun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "typhoon",
+                "WS0005": "typhoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "ioncannon"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "heavymg"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "mininglaser",
+                "WS0008": "mininglaser"
+            }
+        }
+    ]
+}

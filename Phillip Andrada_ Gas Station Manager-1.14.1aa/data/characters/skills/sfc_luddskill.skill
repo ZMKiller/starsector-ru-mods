@@ -1,0 +1,27 @@
+{
+	"id":"sfc_luddskill",
+	"governingAptitude":"combat",
+	"compressHullmods":false,
+	"elite": true,
+	"scope":"PILOTED_SHIP",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"SHIP", "script":"data.scripts.sfc_luddskill$Level1"},
+				{"type":"SHIP", "script":"data.scripts.sfc_luddskill$Level2"},
+
+			]
+		},
+		{
+			"name":"Elite",
+			"requiredSkillLevel":2,
+			"effectBasedOnLevel":false,
+			"effects":[
+                {"type":"SHIP", "script":"data.scripts.sfc_luddskill$Level3"},
+				{"type":"SHIP", "script":"data.scripts.sfc_luddskill$Level4"},
+			]
+		},
+	],
+}

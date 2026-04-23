@@ -1,0 +1,200 @@
+{
+  "hullName": "Panrelka",
+  "hullId": "XHAN_Panrelka",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/xhan_Panrelka.png",
+  "style": "XHANTECH",
+  "coversColor": "159,161,151,255",
+  "height": 276,
+  "width": 224,
+  "center": [112, 129],
+  "collisionRadius": 191.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 166,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_Gen2_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [2, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [1, -71]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [1, 71]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [51, -50]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [51, 50]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 0,
+      "locations": [72, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -110.5,
+      "locations": [-56, -79]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 110.5,
+      "locations": [-56, 79]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 180,
+      "locations": [-99, -0]
+    },
+    {
+      "id": "WS0010",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-51, -0]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 1,
+      "angle": -90,
+      "locations": [0.5, -111]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 1,
+      "angle": 90,
+      "locations": [0.5, 111]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 1,
+      "angle": 42,
+      "locations": [78.5, 78.5]
+    },
+    {
+      "id": "WS0016",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 1,
+      "angle": -42,
+      "locations": [78.5, -78.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-116.5, 76.5],
+      "length": 108,
+      "width": 48,
+      "angle": 180,
+      "contrailSize": 48,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-116.5, -76.5],
+      "length": 108,
+      "width": 48,
+      "angle": -180,
+      "contrailSize": 48,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-129.5, 28.5],
+      "length": 113.5,
+      "width": 50,
+      "angle": 180,
+      "contrailSize": 50,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-129.5, -28.5],
+      "length": 113.5,
+      "width": 50,
+      "angle": -180,
+      "contrailSize": 50,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    98, 51.5,
+    70, 86.5,
+    0, 110.5,
+    -114.5, 94.5,
+    -114, 60,
+    -93.5, 55.5,
+    -126, 45,
+    -126, 13.5,
+    -108.5, -0,
+    -126, -13.5,
+    -126, -45,
+    -93.5, -55.5,
+    -114, -60,
+    -114.5, -94.5,
+    0, -110.5,
+    70, -86.5,
+    98, -51.5,
+    111.5, -0
+  ]
+}

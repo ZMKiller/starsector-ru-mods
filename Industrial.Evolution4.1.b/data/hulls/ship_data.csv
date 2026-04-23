@@ -1,0 +1,21 @@
+name,id,designation,tech/manufacturer,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,fighter bays,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,c/s,c/f,f/s,f/f,crew/s,crew/f,hints,tags,rarity,breakProb,minPieces,maxPieces,travel drive,number
+Артиллерийская станция,IndEvo_artilleryStation_base,Артиллерийская станция,,,250,40000,1600,1000,2500,100,0,,30,200,200,2,2,5000,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,50,50,,,,,,,"STATION, UNBOARDABLE","restricted, no_sell, no_dealer, codex_unlockable",,0,,,,2003
+Артиллерийский ангарный модуль,IndEvo_artilleryStation_hangarModule,Ангарный модуль,,recalldevice,1,10000,1000,7500,12500,500,1000,6,0,0,0,10,10,2500,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0.5,2,4,,5000
+Артиллерийская батарея станции,IndEvo_artilleryStation_gunModule,Станционная батарея,,,1,10000,1200,10000,25000,800,1000,,0,0,0,10,10,1000,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0.5,2,4,,5001
+Артиллерийский миномет,IndEvo_MortarDecoModule,Оружейная платформа,,,0,1,0,0,0,0,0,,0,0,0,0,0,0,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0,,,,5002
+Артиллерийская ракетная установка,IndEvo_MissileDecoModule,Оружейная платформа,,,0,1,0,0,0,0,0,,0,0,0,0,0,0,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0,,,,5003
+Артиллерийский рельсотрон,IndEvo_RailgunDecoModule,Оружейная платформа,,,0,1,0,0,0,0,0,,0,0,0,0,0,0,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0,,,,5004
+,IndEvo_artilleryStation_mortarModule,Миномет,,,1,15000,2000,15000,25000,1000,1000,,0,0,0,10,10,1000,NONE,,0,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0.5,2,4,,5002
+#ref,module_hightech_armour,Станционная броня,,,1,20000,4000,0,2500,100,0,,0,0,0,3,6,1000,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,"module_hull_bar_only, hide_in_codex",,1,2,3,,2074
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Бримир,IndEvo_brimir,Линкор,Low Tech,burndrive,28,1,1,17000,15000,600,360,,25,10,10,4,4,3500,FRONT,,180,0.4,1,,,750,1500,300,400,15,27,7,350000,3,12,720,0.25,40,40,,,,,,,SHIP_WITH_MODULES,"restricted, no_sell, no_dealer, hide_in_codex",,0.4,2,4,,500
+,IndEvo_brimir_front_left,Модуль,,,1,1,1,10000,25000,800,100,,0,0,0,10,10,1000,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0.5,2,4,,5001
+,IndEvo_brimir_front_right,Модуль,,,1,1,1,10000,25000,800,100,,0,0,0,10,10,1000,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0.5,2,4,,5001
+,IndEvo_brimir_lowmid_left,Модуль,,,1,1,1,10000,25000,800,0,,0,0,0,10,10,1000,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,"module_hull_bar_only, hide_in_codex",,0.5,2,4,,5001
+,IndEvo_brimir_lowmid_right,Модуль,,,1,1,1,10000,25000,800,0,,0,0,0,10,10,1000,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,"module_hull_bar_only, hide_in_codex",,0.5,2,4,,5001
+,IndEvo_brimir_rear_left,Модуль,,,1,1,1,10000,25000,800,100,,0,0,0,10,10,1000,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0.5,2,4,,5001
+,IndEvo_brimir_rear_right,Модуль,,,1,1,1,10000,25000,800,100,,0,0,0,10,10,1000,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,hide_in_codex,,0.5,2,4,,5001
+,IndEvo_brimir_upmid_left,Модуль,,,1,1,1,10000,25000,800,0,,0,0,0,10,10,1000,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,"module_hull_bar_only, hide_in_codex",,0.5,2,4,,5001
+,IndEvo_brimir_upmid_right,Модуль,,,1,1,1,10000,25000,800,0,,0,0,0,10,10,1000,FRONT,,120,0.4,0.7,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,UNBOARDABLE,"module_hull_bar_only, hide_in_codex",,0.5,2,4,,5001
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

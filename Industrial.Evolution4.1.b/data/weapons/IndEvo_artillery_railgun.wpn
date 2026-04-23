@@ -1,0 +1,49 @@
+{
+  "id": "IndEvo_artillery_railgun",
+  "specClass": "projectile",
+  "projectileSpecId": "IndEvo_railgun_projectile",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "everyFrameEffect": "data.scripts.weapons.IndEvo_targetingBeamEffect",
+  "turretSprite": "graphics/weapons/IndEvo_artillery_railgun_turret.png",
+  "turretGlowSprite": "graphics/weapons/IndEvo_artillery_railgun_turret_glow.png",
+  "hardpointSprite": "",
+  "glowColor": [
+    135,
+    250,
+    255,
+    180
+  ],
+  "turretOffsets": [
+    1.5,
+    -2
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    100.5,
+    -2
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 240,
+    "spread": 5,
+    "particleSizeMin": 12,
+    "particleSizeRange": 14,
+    "particleDuration": 1.2,
+    "particleCount": 120,
+    "particleColor": [
+      200,
+      210,
+      255,
+      255
+    ]
+  },
+  "fireSoundTwo": "IndEvo_railgun_fire"
+}

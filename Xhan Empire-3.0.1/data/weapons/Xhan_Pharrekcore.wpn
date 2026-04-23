@@ -1,0 +1,54 @@
+{
+  "id": "Xhan_Pharrekcore",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_Pharrek_pulse",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "turretSprite": "",
+  "turretGlowSprite": "graphics/weapons/xhan_pharrek__hardpoint_glow.png",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "graphics/weapons/xhan_pharrek__hardpoint_glow.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    153,
+    255,
+    51,
+    255
+  ],
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    5.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 0,
+    "spread": 25,
+    "particleSizeMin": 10,
+    "particleSizeRange": 22,
+    "particleDuration": 0.13,
+    "particleCount": 0,
+    "particleColor": [
+      153,
+      255,
+      51,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_PHARREK_PULSE_SOUND"
+}

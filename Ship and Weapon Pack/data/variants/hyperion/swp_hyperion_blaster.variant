@@ -1,0 +1,31 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "hullId": "hyperion",
+    "hullMods": [
+        "magazines",
+        "targetingunit",
+        "hardenedshieldemitter",
+        "fluxbreakers",
+        "autorepair"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_hyperion_blaster",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "amblaster",
+                "WS 002": "amblaster"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "ionpulser"}
+        }
+    ]
+}

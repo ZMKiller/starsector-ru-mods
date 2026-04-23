@@ -1,0 +1,29 @@
+{
+	"specClass":"beam",
+	"id":"A_S-F_quad_multi-lance",
+	"type":"ENERGY",
+	"size":"LARGE",
+
+	"beamEffect":"org.amazigh.foundry.scripts.ASF_QuadMultiLanceBeamEffect",
+
+
+	"turretSprite":"graphics/weapons/A_S-F_quad_multi-lance_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_quad_multi-lance_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_quad_multi-lance_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_quad_multi-lance_hardpoint_glow.png",
+	"turretOffsets":[23,-7, 24,-2, 24,2, 23,7],
+	"turretAngleOffsets":[0, 0, 0, 0],
+	"hardpointOffsets":[32,-7, 33,-2, 33,2, 32,7],
+	"hardpointAngleOffsets":[0, 0, 0, 0],
+	"fringeColor":[0,255,0,225],
+	"coreColor":[255,255,255,255],
+	"glowColor":[150,255,150,255],
+	"width":15.0,
+	"textureType":ROUGH,
+	"textureScrollSpeed":72.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
+	"fireSoundOne":"A_S-F_Quad_Multi-Lance_fire", # laser_intro
+	"fireSoundTwo":"A_S-F_Quad_Multi-Lance_loop", # high_intensity_laser_loop
+	# "fireSoundTwo":"laser_loop",
+}

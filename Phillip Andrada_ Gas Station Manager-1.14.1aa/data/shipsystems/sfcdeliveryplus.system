@@ -1,0 +1,20 @@
+{
+	"id":"sfcdeliveryplus",
+	"type":"STAT_MOD",
+	"aiType":"MINE_STRIKE",
+	
+	"statsScript":"data.shipsystems.scripts.SFCDeliveryPlusStats",
+
+	"canUseWhileRightClickSystemOn":true,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_interdictor",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":2500,
+		"threatAmount":10,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}

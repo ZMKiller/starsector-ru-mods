@@ -1,0 +1,49 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 15,
+    "fluxVents": 24,
+    "goalVariant": true,
+    "hullId": "swp_circe",
+    "hullMods": ["advancedoptics"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_circe_sta",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "phasebeam",
+                "WS0002": "phasebeam"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0006": "sabot",
+                "WS0007": "sabot",
+                "WS0008": "sabot",
+                "WS0009": "sabot"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "swp_lightphaselance",
+                "WS0004": "swp_lightphaselance",
+                "WS0005": "swp_lightphaselance"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "pdlaser",
+                "WS0011": "pdlaser",
+                "WS0012": "pdlaser"
+            }
+        }
+    ]
+}

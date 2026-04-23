@@ -1,0 +1,148 @@
+Version 5.4.1
+ Fixed bug with beam damage calculation relating to pauses & slowdowns
+ Don't calculate damage while paused (thanks bug reporter!)
+ Grid rows now highlight on mouseover
+ Weapons grid rows now have mouse over tooltips with extra info
+ Weapon data rows are highlighted based on weapon performance (% OP vs % Dmg) So you can see more easily which weapons are doing well
+ Performance
+  - New save file format for performance (New data save format, old combats won't load but this won't brick your save or anything)
+  - New in-memory damage tracking
+
+Version 5.4.0
+ Updated for .97a
+
+Version 5.3.3
+ Fix for rare null pointer when tracking emp arc damage
+
+Version 5.3.2
+ All settings now done through Luna (still a soft dependency)
+ Results UI now tracks damage repaired (requires mods to report damage repaired)
+ New uninstall LunaLib setting
+
+Version 5.3.1
+ Upgrade to Starsector .96a
+ Changes to support DEM missiles (Thanks DR)
+ Improvements to ignoring exploding ship damage logic
+
+Version 5.3.0
+ Configuration values can now be configured via Luna (Thanks Lukas04)
+ Additional support for mods specifying damage or clarifying unknown damages
+ Modification of vanilla on-hit effects to specify and clarify their damages
+ Mod Authors, please look at the file: https://bitbucket.org/NickWWest/starsectorcombatanalytics/src/master/CombatAnalyticsMod/src/data/scripts/DCRIntegration.java
+
+Version 5.2.3
+  Supports having damage values supplied by mods (specifically Realistic Combat)
+
+Version 5.2.2
+  Bugfix Release:
+  Ship count limit now configurable via JSON (for intel display)
+  Updated wording for enemy fleet damage dealt
+  Lightning gun from SWP now has its damage recorded correctly
+  Don't process missile damages 2x (was caused by processing explosion damage and then missile damge)
+  Don't count launched missiles as a part of a fleet
+
+Version 5.2.1
+ Bugfixes
+
+Version 5.2.0
+ Updated to .95.1a
+ Now tracks missiles intercepted
+ Now tracks explosion damage in a more robust manner (greatly improved accuracy)
+ General improvements to damage detection accuracy
+
+Version 5.1.2
+ Fixed issue with explosions and looking too deeply inside core objects. Thanks Photonsynthesis
+ Better explosion damage detection
+
+Version 5.1.1
+ Add caching layer to prevent perf issues if IntelCombatReport.isValid() is called repeatedly (by mods)
+ Data is now stored in a compressed format
+ Now includes Chinese (locale=zh) translation (thanks saya39!): https://www.fossic.org/forum.php?mod=viewthread&tid=1667
+
+Version 5.1
+ Campaign Simulation Battles now create "simulation" combat results that last for a day
+ Changed Flux Dmg -> EMP Dmg
+ Localization fixes (some strings were omitted)
+ Issue with Motes not always being properly identified
+
+Version 5.0
+ Can now be localized, current localization is English
+ Uses StarSector .95 damage listener system to give much more accurate values for damage.
+ Now properly tracks (didn't before):
+ * plasma cannons
+ * Flak weapons
+ * Doom Mines
+ * Mines generally
+ * storyline "things"
+ * collision damage
+ * on-hit effects
+ Beam weapons that use multiple beams (like Seeker's kaleidoscope) now have damage computed correctly
+ Renamed mod to show scope and goal (not general analytics, just detailed combat results)
+
+v4.6.1
+ Fix issue with failing to parse a saved combat for which there was no damage dealt
+
+v4.6
+ Fix all projectile weapons dealing double damage
+
+v4.5
+ Another attempt at getting submunition damage correct
+
+v4.4
+ Try again to get MIRVs to calculate damage correctly without breaking anything else
+
+v4.3
+ Fully compatible with prior version
+ MIRV warheads should now calculate their damage properly (Thanks MesoTroniK)
+ Defend against NULL in a place it shouldn't be possible but apparently is.
+
+v4.2
+ New save data format to enable new functionality
+ * this won't break anything
+ * but your old combat data will be automatically deleted.
+ * Your save game is fine.
+ No longer displaying kills based on killing blows, we now display Solo Kills (> 80% of hull damage) and Assists (> 20% hull dmg)
+ DP destroyed based on pro-rated armor/hull damage
+ More accurate damage calculations.  Not perfect, but better.
+ More accurate tracking of what ships were killed.
+ Fighters are now treated as a singular weapon system, since that is often the most useful way of thinking about them
+ Ships details "kill" grid removed, replaced with sprites:
+ * now render sprites for ships that were solo-killed
+ * render ship sprites that were kill-assisted (along with a damage overlay)
+ New enemy fleet status summary area
+ Player ships are shown as Disabled/Destroyed/Retreated in ship list
+ Added % hull remaining after combat, color coded
+
+v4.1
+ Proper fighter kill count for TOTAL rows
+ Denser data format for detailed combat data (to try and avoid 1MB limit)
+ No longer using "ship list" functionality, now using rendered sprite images in list
+ If SaveDetailedCombatData is set to true, when results from main menu missions are saved
+ Images scaled slightly by hull class
+ Use 7 zip command line to build archive to hopefully work around archive slash issues
+
+v4.0
+ Added new intel window for post combat detailed results (press 'e')
+ Weapons can now properly compute how many fighters they've killed (rewrote aggregation)
+ Various bug fixes around things done in mods that aren't done in Vanilla (big thanks stormbringer951)
+ If SaveDetailedCombatData is on, files will be written after each battle in the folder /saves/common/combatanalytics/
+
+v3.3
+ Defend against key not being specified in JSON
+
+v3.2
+ Handle possible exception (should only happen on some mods)
+ Sort results by damage dealt desc
+
+v3.1
+ Now supports SS .9a
+
+v.3
+ Mod now support SS version 8.1a
+
+v.2
+ ata is persisted as strings so disabling the mod wont break saves
+ Better exception trapping in case something unexpected happens
+
+v.1
+ Created

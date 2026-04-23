@@ -1,0 +1,181 @@
+{
+  "hullName": "Chronos",
+  "hullId": "swp_chronos",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/swp/ships/chronos/swp_chronos.png",
+  "style": "HIGH_TECH",
+  "height": 371,
+  "width": 208,
+  "center": [104, 175],
+  "collisionRadius": 212.5,
+  "shieldCenter": [2.5, -0],
+  "shieldRadius": 209,
+  "viewOffset": 0,
+  "builtInMods": [
+    "nav_relay",
+    "ecm"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 0,
+      "locations": [80, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [-30, -0],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 15,
+      "locations": [-3, 22]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -15,
+      "locations": [-3, -22]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [12, 43]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [12, -43]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 180,
+      "locations": [-127, -0]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": 90,
+      "locations": [114, 17]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": -90,
+      "locations": [114, -17]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 135,
+      "locations": [-135, 21]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -135,
+      "locations": [-135, -21]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 180,
+      "locations": [-146, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-81, 72],
+      "length": 128,
+      "width": 40,
+      "angle": -180,
+      "contrailSize": 40,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-81, -72],
+      "length": 128,
+      "width": 40,
+      "angle": 180,
+      "contrailSize": 40,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    167, -7.5,
+    177.5, -15,
+    153.5, -25.5,
+    95.5, -33,
+    87.5, -41.5,
+    23, -36,
+    23.5, -55.5,
+    35.5, -68.5,
+    -7.5, -99.5,
+    -35, -99,
+    -85, -86.5,
+    -86, -57.5,
+    -58.5, -49,
+    -79.5, -32.5,
+    -143, -33,
+    -170.5, -9.5,
+    -170.5, 9.5,
+    -143, 33,
+    -79.5, 32.5,
+    -58.5, 49,
+    -86, 57.5,
+    -85, 86.5,
+    -35, 99,
+    -7.5, 99.5,
+    35.5, 68.5,
+    23.5, 55.5,
+    23, 36,
+    87.5, 41.5,
+    95.5, 33,
+    153.5, 25.5,
+    177.5, 15,
+    167, 7.5
+  ]
+}

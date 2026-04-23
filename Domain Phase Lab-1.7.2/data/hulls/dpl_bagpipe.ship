@@ -1,0 +1,135 @@
+{
+  "hullName": "Bagpipe",
+  "hullId": "dpl_bagpipe",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/phase/dpl_bagpipe.png",
+  "style": "HIGH_TECH",
+  "height": 164,
+  "width": 134,
+  "center": [67, 82],
+  "collisionRadius": 144.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 129.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "delicate",
+    "phasefield"
+  ],
+  "builtInWeapons": {
+    "WS0002": "dpl_bagpipe_system"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [77, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-4, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-79, 37],
+      "length": 48,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-79, -37],
+      "length": 48,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-83, 28],
+      "length": 48,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-83, -28],
+      "length": 48,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-83, 8],
+      "length": 48,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-83, -8],
+      "length": 48,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-82, 21.5],
+      "length": 63,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-82, -21.5],
+      "length": 63,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-83.5, 14.5],
+      "length": 63,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-83.5, -14.5],
+      "length": 63,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    83, -12.5,
+    37.5, -55.5,
+    -27, -70.5,
+    -53.5, -45.5,
+    -80.5, -43,
+    -80.5, 43,
+    -53.5, 45.5,
+    -27, 70.5,
+    37.5, 55.5,
+    83, 12.5
+  ]
+}

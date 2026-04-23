@@ -1,0 +1,32 @@
+{
+	"id":"A_S-F_rainstorm_R",
+	"specClass":"projectile",
+
+	"everyFrameEffect": "org.amazigh.foundry.scripts.arktech.ASF_rainstormROnFireScript",
+
+	"type":"MISSILE",
+	"size":"LARGE",
+	
+	"turretSprite":"graphics/weapons/A_S-F_rainstorm.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_rainstorm.png",
+
+	"hardpointOffsets":[11, 3.5, 11, -0.5, 11, -4.5],
+	"turretOffsets":[6.5, 3.5, 6.5, -0.5, 6.5, -4.5],
+	"hardpointAngleOffsets":[5, 0, -5],
+	"turretAngleOffsets":[5, 0, -5],
+	"barrelMode":"ALTERNATING",
+	"animationType": "SMOKE",
+	"smokeSpec": {
+		"particleSizeMin": 8,
+		"particleSizeRange": 14,
+		"cloudParticleCount": 3,
+		"cloudDuration": 0.8,
+		"cloudRadius": 7,
+		"blowbackParticleCount": 3,
+		"blowbackDuration": 1,
+		"blowbackLength": 18,
+		"blowbackSpread": 9,
+		"particleColor": [170,160,150,130]},
+	"projectileSpecId":"A_S-F_rainstorm_mssl",
+	"fireSoundTwo":"squall_fire",
+}

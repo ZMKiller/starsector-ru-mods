@@ -1,0 +1,37 @@
+{
+    "id":"second_in_command", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
+	"name":"Second-in-Command", # Displayed to the player
+	"author":"Lukas04",
+    "utility":"false",
+	"version":"2.0.0",
+	"description":"A mod that entirely reworks the games skill system. Not compatible with other skill reworks.",
+    "gameVersion": "0.98a-RC5",
+  	"jars":["jars/SecondInCommand.jar"],
+  	"modPlugin":"second_in_command.SCModPlugin",
+	  	"dependencies": [
+        {
+            "id": "lw_lazylib",
+            "name": "LazyLib",
+        },
+        {
+            "id": "MagicLib",
+            "name": "MagicLib",
+        },
+        {
+            "id": "lunalib",
+            "name": "LunaLib",
+        },
+		{
+			"id": "shaderLib",
+			"name": "GraphicsLib",
+		},
+    ],
+	"replace":[
+		"data/characters/skills/automated_ships.skill",
+		"data/characters/skills/combat_endurance.skill",
+		"data/characters/skills/energy_weapon_mastery.skill",
+		"data/characters/skills/gunnery_implants.skill",
+		"data/characters/skills/ordnance_expert.skill",
+		"data/characters/skills/polarized_armor.skill",
+	],
+}

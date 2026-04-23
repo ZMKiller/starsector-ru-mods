@@ -1,0 +1,40 @@
+{
+  "variantId": "dpl_sarrusophone_assault",
+  "hullId": "dpl_sarrusophone",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "fluxcoil",
+    "fluxdistributor",
+    "dpl_energy_rangefinder",
+    "targetingunit",
+    "high_scatter_amp",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "phasebeam",
+        "WS0004": "phasebeam",
+        "WS0005": "phasebeam",
+        "WS0006": "phasebeam",
+        "WS0007": "autopulse",
+        "WS0008": "autopulse",
+        "WS0023": "dpl_srsphn_maingun"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

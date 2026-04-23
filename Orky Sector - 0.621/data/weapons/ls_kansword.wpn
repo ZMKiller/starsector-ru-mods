@@ -1,0 +1,28 @@
+{
+	"id":"ls_kansword",  # this id must match what's in the spreadsheet
+	"specClass":"beam",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":200,
+	"beamEffect":"data.weapons.ls_chainsword",
+	"turretSprite":"graphics/weapons/Kan/ls_kan_chainsword00.png",
+	"hardpointSprite":"graphics/weapons/Kan/ls_kan_chainsword00.png",	
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"numFrames":2,	
+	"frameRate":20,
+	"turretOffsets":[-15, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[-15, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.	
+        "fringeColor":[200,175,135,0],
+	"coreColor":[255,225,200,0],
+	"glowColor":[255,225,200,0],
+	"width":14.0,
+	"textureType":ROUGH,
+	"textureScrollSpeed":260.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
+	#"fireSoundOne":"graviton_beam_intro",
+	"fireSoundTwo":"ls_kan_drill",
+}

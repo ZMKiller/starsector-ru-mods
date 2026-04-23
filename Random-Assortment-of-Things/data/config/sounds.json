@@ -1,0 +1,328 @@
+{
+
+#collapseopen MUSIC
+	
+	"music":{
+		####################################
+		# "source" can also be a directory #
+		####################################
+
+		"rat_music_abyss":[
+			{"file":"EchoesOfTheDepths.ogg","source":"sounds/rat/music","volume":0.8},
+		],
+		
+		"rat_music_abyss2":[
+			{"file":"ImpendingPresence.ogg","source":"sounds/rat/music","volume":0.8},
+		],
+		
+		"rat_music_abyss_merged":[
+			{"file":"EchoesOfTheDepths.ogg","source":"sounds/rat/music","volume":0.8},
+			{"file":"ImpendingPresence.ogg","source":"sounds/rat/music","volume":0.8},
+		],
+		
+		"rat_abyss_encounter":[
+			{
+				"file":"EyesOfTheAbyss.ogg",
+				"source":"sounds/rat/music",
+				"volume":1,
+				"randomStart":true, 
+			},
+		],
+		
+		"rat_abyss_encounter2":[
+			{
+				"file":"EtherealVanguards.ogg",
+				"source":"sounds/rat/music",
+				"volume":1,
+				"randomStart":true, 
+			},
+		],
+		
+		"rat_abyss_interaction1":[
+			{"file":"ThatWhichOnceWas.ogg","source":"sounds/rat/music","volume":0.8},
+		],
+		
+		"rat_abyss_interaction2":[
+			{"file":"TheHeartOfThoseForgotten.ogg","source":"sounds/rat/music","volume":0.8},
+		],
+		
+		"rat_abyss_genesis1":[
+			{"file":"Genesis.ogg","source":"sounds/rat/music","volume":1.2},
+		],
+		
+		"rat_abyss_genesis2":[
+			{"file":"PrimordialWaters.ogg","source":"sounds/rat/music","volume":1.2},
+		],
+		
+		"rat_exo_market":[
+			{
+				"file":"PhantomOfTheFringe.ogg",
+				"source":"sounds/rat/music",
+				"volume":1,
+				"randomStart":true, 
+			},
+		],
+		
+		
+		"rat_exo_encounter":[
+			{
+				"file":"PioneeringNomads.ogg",
+				"source":"sounds/rat/music",
+				"volume":1,
+				"randomStart":true, 
+			},
+		],
+		
+		
+		
+	
+# collapseclose
+	},
+	
+	
+	#Fix Dewller sounds on other hullstyles
+	"engine_loop":{
+		"ABYSSAL":{"sounds":[10,11,12,13,14], "pitch":1, "volume":0.5},
+		"ABYSSAL_SERAPH":{"sounds":[10,11,12,13,14], "pitch":1, "volume":0.5},
+		"ABYSSAL_SIERRA":{"sounds":[10,11,12,13,14], "pitch":1, "volume":0.5},
+		"RAT_PRIMORDIAL":{"sounds":[10,11,12,13,14], "pitch":1, "volume":0.5},
+		"RAT_EXO":{"sounds":[10,11,12,13,14], "pitch":1, "volume":0.5},
+	},
+	
+	#Fix Dewller sounds on other hullstyles
+	"engine_accelerate":{ # played when ship receives an "engine boost" from having zero flux 
+		"ABYSSAL":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"ABYSSAL_SERAPH":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"ABYSSAL_SIERRA":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"RAT_PRIMORDIAL":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"RAT_EXO":{"sounds":[0,1,2], "pitch":1, "volume":1},
+	},
+	
+	
+	
+	#Fix Dewller sounds on other hullstyles
+	"shield_burnout":{ # played when a ship overloads
+		"ABYSSAL":{"sounds":[0], "pitch":1, "volume":1},
+		"ABYSSAL_SERAPH":{"sounds":[0], "pitch":1, "volume":1},
+		"ABYSSAL_SIERRA":{"sounds":[0], "pitch":1, "volume":1},
+		"RAT_PRIMORDIAL":{"sounds":[0], "pitch":1, "volume":1},
+		"RAT_EXO":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+	
+	"emp_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
+		"ABYSSAL":{"sounds":[0], "pitch":1, "volume":1},
+		"ABYSSAL_SERAPH":{"sounds":[0], "pitch":1, "volume":1},
+		"ABYSSAL_SIERRA":{"sounds":[0], "pitch":1, "volume":1},
+		"RAT_PRIMORDIAL":{"sounds":[0], "pitch":1, "volume":1},
+		"RAT_EXO":{"sounds":[0], "pitch":1, "volume":1},
+	},
+
+	"flux_loop":{ # played while a ship is venting flux
+		"ABYSSAL":{"sounds":[0], "pitch":1, "volume":1},
+		"ABYSSAL_SERAPH":{"sounds":[0], "pitch":1, "volume":1},
+		"ABYSSAL_SIERRA":{"sounds":[0], "pitch":1, "volume":1},
+		"RAT_PRIMORDIAL":{"sounds":[0], "pitch":1, "volume":1},
+		"RAT_EXO":{"sounds":[0], "pitch":1, "volume":1},
+	},	
+
+	"vent_flux":{ # played once when a ship starts venting flux
+		"ABYSSAL":{"sounds":[0], "pitch":1, "volume":1},
+		"ABYSSAL_SERAPH":{"sounds":[0], "pitch":1, "volume":1},
+		"ABYSSAL_SIERRA":{"sounds":[0], "pitch":1, "volume":1},
+		"RAT_PRIMORDIAL":{"sounds":[0], "pitch":1, "volume":1},
+		"RAT_EXO":{"sounds":[0], "pitch":1, "volume":1},
+	},	
+	
+	# Similar setup to engine loop - defines which of the two sounds to use, and
+	# what pitch/volume to use them at, depending on ship style and size
+	"shield_lower":{
+		"ABYSSAL":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"ABYSSAL_SERAPH":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"ABYSSAL_SIERRA":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"RAT_PRIMORDIAL":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"RAT_EXO":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+	},
+	"shield_raise":{
+		"ABYSSAL":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"ABYSSAL_SERAPH":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"ABYSSAL_SIERRA":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"RAT_PRIMORDIAL":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"RAT_EXO":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+	},
+	
+	
+
+	"rat_raguel_system_concordshift_fire":[
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":0.9,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":1.1,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":1.0,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":0.9,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":1.1,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":1.0,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":0.9,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":1.1,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":1.0,"volume":0.8},
+                
+		#{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":1,"volume":1.0},
+		#{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":1,"volume":1.0},
+		#{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":1,"volume":1.0},
+		#{"file":"sounds/sfx_wpn_energy/rift_explosion_04.ogg","pitch":1,"volume":1.0},
+		#{"file":"sounds/sfx_wpn_energy/rift_explosion_05.ogg","pitch":1,"volume":1.0},
+	],
+
+	"rat_abyss_ambient_sounds":[
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_1.ogg","pitch":1.0,"volume":1},
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_2.ogg","pitch":1.0,"volume":1},
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_3.ogg","pitch":1.0,"volume":1},
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_4.ogg","pitch":1.0,"volume":1},
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_5.ogg","pitch":1.0,"volume":1},
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_6.ogg","pitch":1.0,"volume":1},
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_7.ogg","pitch":1.0,"volume":1},
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_8.ogg","pitch":1.0,"volume":1},
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_9.ogg","pitch":1.0,"volume":1},
+		{"file":"sounds/sfx_abyss/rat_abyss_sound_10.ogg","pitch":1.0,"volume":1},
+	],
+
+	"rat_temporal_prison_activate":[
+            {"file":"sounds/rat/systems/time_lock.ogg","pitch":1,"volume":0.9},
+    ],
+	
+	"rat_temporal_prison_loop":[
+            {"file":"sounds/rat/systems/time_lock_loop.ogg","pitch":1,"volume":0.4},
+    ],
+
+	"rat_genesis_system_sound":[
+            {"file":"sounds/sfx_systems/mote_attractor_targeted_ship_01.ogg","pitch":0.8,"volume":0.6},
+    ],
+
+	"rat_abyss_storm_sounds":[
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_01.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_02.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_03.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_04.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_05.ogg","pitch":1,"volume":0.5},
+    ],
+	
+	"rat_abyss_solitude_storm_sounds":[
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_01.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_02.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_03.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_04.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/sfx_terrain/terrain_hyperspace_deep_storm_lightning_05.ogg","pitch":1,"volume":0.5},
+    ],
+	
+	"rat_prayer_missile_wep_fire":[
+		{"file":"sounds/sfx_wpn_missiles/fragment_kinetic_fire_01.ogg","pitch":1,"volume":0.15},
+	],
+	
+ 	"abyss_haddock":[
+		{"file":"sounds/sfx_wpn_energy/antimatter_blaster_fire_01.ogg","pitch":0.9,"volume":0.8},
+	],
+
+	"abyss_humpback":[
+		{"file":"sounds/sfx_wpn_energy/antimatter_blaster_fire_01.ogg","pitch":0.8,"volume":0.75},
+	],
+	
+	"rat_azazels_blade":[
+		{"file":"sounds/sfx_wpn_energy/antimatter_blaster_fire_01.ogg","pitch":0.7,"volume":0.50},
+	],
+	
+	"rat_apollyons_end":
+    [
+            {"file":"sounds/sfx_wpn_energy/kinetic_blaster_01.ogg","pitch":0.6,"volume":0.4},
+            {"file":"sounds/sfx_wpn_energy/kinetic_blaster_02.ogg","pitch":0.6,"volume":0.4},
+    ],
+	
+	"abyss_lusca":[
+		{"file":"sounds/sfx_wpn_energy/antimatter_blaster_fire_01.ogg","pitch":0.9,"volume":0.45},
+	],
+	
+	"rat_abyss_ceto_blaster":
+	[
+		{"file":"sounds/sfx_wpn_energy/antimatter_blaster_fire_01.ogg","pitch":0.7,"volume":0.4},
+	],
+	
+	"abyss_cecaelia":[
+ 		{"file":"sounds/sfx_wpn_energy/cryoblaster_fire_01.ogg","pitch":0.8,"volume":0.9},
+		{"file":"sounds/sfx_wpn_energy/cryoblaster_fire_02.ogg","pitch":0.8,"volume":0.9},
+		{"file":"sounds/sfx_wpn_energy/cryoblaster_fire_03.ogg","pitch":0.8,"volume":0.9},
+	],
+
+	"abyss_leviathan":[
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":0.9,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":1.1,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":1.0,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":0.9,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":1.1,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":1.0,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":0.9,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":1.1,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":1.0,"volume":0.8},
+	],
+	
+	"rat_abyss_genesis_large1":[
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":0.7,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":0.8,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_01.ogg","pitch":0.7,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":0.9,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":0.8,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_02.ogg","pitch":0.7,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":0.7,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":0.9,"volume":0.8},
+		{"file":"sounds/sfx_wpn_energy/rift_explosion_03.ogg","pitch":0.7,"volume":0.8},
+	],
+	
+	"rat_abyss_genesis_large1_explosion":[
+		
+		{"file":"sounds/sfx_impacts/explosion_secondary_02.ogg","pitch":0.9,"volume":1},
+	],
+	
+	
+	 "seadragon_payload_fire":
+    [
+            {"file":"sounds/sfx_wpn_missiles/dragonfire_dem_payload_01.ogg","pitch":1.0,"volume":0.3},
+    ],
+	
+	"rat_bloodstream_trigger":{
+		"sounds":[
+			{"file":"sounds/sfx_systems/combat_readiness_malfunctions_weapon_large_01.ogg","pitch":1,"volume":1},
+		],
+	},	
+
+	"rat_starburst_fire":
+    [
+            {"file":"sounds/sfx_wpn_missiles/harpoon_fire_01.ogg","pitch":1.1,"volume":0.5},
+    ],
+
+
+
+	"hypatia_warp_chargeup":
+    [
+            {"file":"sounds/rat/systems/hypatia_warp_chargeup.ogg","pitch":1,"volume":2},
+    ],
+
+	"exoship_warp_chargeup":
+    [
+            {"file":"sounds/rat/campaign/exoship_warp_chargeup.ogg","pitch":1,"volume":2},
+    ],
+
+	"exoship_warp":
+    [
+            {"file":"sounds/rat/campaign/exoship_warp.ogg","pitch":1,"volume":3},
+    ],
+	
+	"rat_gilgamesh_shield_burnout":[
+            {"file":"sounds/sfx_shields/shields_burnout_oneshot.ogg","pitch":1,"volume":1},
+    ],
+	
+	"rat_hyper_pulser_fire":
+	[
+		{"file":"sounds/sfx_wpn_guns/mjolnir_fire_01.ogg","pitch":1.00,"volume":0.45},
+		{"file":"sounds/sfx_wpn_guns/mjolnir_fire_01.ogg","pitch":0.99,"volume":0.45},
+		{"file":"sounds/sfx_wpn_guns/mjolnir_fire_01.ogg","pitch":0.98,"volume":0.45},
+		{"file":"sounds/sfx_wpn_guns/mjolnir_fire_01.ogg","pitch":0.96,"volume":0.45},
+		{"file":"sounds/sfx_wpn_guns/mjolnir_fire_01.ogg","pitch":0.94,"volume":0.45},
+		{"file":"sounds/sfx_wpn_guns/mjolnir_fire_01.ogg","pitch":0.92,"volume":0.45},
+	],
+}

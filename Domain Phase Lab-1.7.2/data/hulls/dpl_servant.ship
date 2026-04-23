@@ -1,0 +1,151 @@
+{
+  "hullName": "Servant",
+  "hullId": "dpl_servant",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/precursors/dpl_servant.png",
+  "style": "LOW_TECH",
+  "height": 160,
+  "width": 156,
+  "center": [78, 80],
+  "collisionRadius": 143.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 133,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_nullifier",
+    "WS0002": "dpl_nullifier",
+    "WS0003": "dpl_null_swarm",
+    "WS0004": "dpl_null_swarm",
+    "WS0005": "dpl_nullifier",
+    "WS0006": "dpl_nullifier_lg"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [69, 9]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [69, -9]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [9, 48]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [9, -48]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [43, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [-26, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-71.5, 48],
+      "length": 80.5,
+      "width": 27,
+      "angle": 180,
+      "contrailSize": 27,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-71.5, -48],
+      "length": 80.5,
+      "width": 27,
+      "angle": -180,
+      "contrailSize": 27,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-80, 13],
+      "length": 55.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-80, -13],
+      "length": 55.5,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-79, -0],
+      "length": 75,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    81, -17,
+    40, -28,
+    27, -36,
+    24.5, -66,
+    1, -71.5,
+    -5, -79,
+    -33.5, -79.5,
+    -49, -62,
+    -63.5, -62,
+    -72, -58,
+    -73.5, -43.5,
+    -64, -35.5,
+    -81, -21,
+    -81, 21,
+    -64, 35.5,
+    -73.5, 43.5,
+    -72, 58,
+    -63.5, 62,
+    -49, 62,
+    -33.5, 79.5,
+    -5, 79,
+    1, 71.5,
+    24.5, 66,
+    27, 36,
+    40, 28,
+    81, 17
+  ]
+}

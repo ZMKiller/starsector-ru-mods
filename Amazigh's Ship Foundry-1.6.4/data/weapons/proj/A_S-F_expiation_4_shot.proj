@@ -1,0 +1,30 @@
+{
+	"id":"A_S-F_expiation_4_shot",
+	"specClass":"projectile",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_Expiation_4_OnHitEffect",
+
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":145.0,
+	"width":16.0,
+	"fadeTime":0.1,
+
+	"fringeColor":[255,0,150,255],
+	"coreColor":[255,235,245,255],
+	"hitGlowRadius":210,
+
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":2.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	# "bulletSprite":"graphics/missiles/A_S-F_expiation_3_bolt.png",
+	"bulletSprite":"",
+
+	"textureType": [
+    	"graphics/fx/beamfringed.png", # FRINGE
+    	"graphics/fx/beam_dark_core.png" # CORE
+	],
+}

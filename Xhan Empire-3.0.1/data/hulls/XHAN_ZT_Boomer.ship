@@ -1,0 +1,118 @@
+{
+  "hullName": "ZT-Boomer",
+  "hullId": "XHAN_ZT_Boomer",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HVB/Xhan_ZT_Boomer.png",
+  "style": "LOW_TECH",
+  "height": 130,
+  "width": 130,
+  "center": [65, 55],
+  "collisionRadius": 93.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 83,
+  "viewOffset": 0,
+  "builtInMods": [
+    "missile_reload"
+  ],
+  "builtInWeapons": {
+    "WS0004": "Domain_neutronchain",
+    "WS0005": "Domain_neutronchain"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6, 42]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [6, -42]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 180,
+      "locations": [-12, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [49, 23]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [49, -23]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-43, 24],
+      "length": 29.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-43, -24],
+      "length": 29.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-55, -0.5],
+      "length": 63,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    70, 5.5,
+    49, 17,
+    41.5, 26,
+    13, 26.5,
+    2, 43,
+    -16.5, 56,
+    -45, 60.5,
+    -32.5, 32,
+    -41, 25,
+    -35.5, 17.5,
+    -53, 10,
+    -53, -10,
+    -35.5, -17.5,
+    -41, -25,
+    -32.5, -32,
+    -45, -60.5,
+    -16.5, -56,
+    2, -43,
+    13, -26.5,
+    41.5, -26,
+    49, -17,
+    70, -5.5
+  ]
+}

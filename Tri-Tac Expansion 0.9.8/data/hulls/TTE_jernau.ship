@@ -1,0 +1,106 @@
+{
+  "hullName": "Jernau",
+  "hullId": "TTE_jernau",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTE_jernau.png",
+  "style": "HIGH_TECH",
+  "height": 92,
+  "width": 67,
+  "center": [33.5, 42.5],
+  "collisionRadius": 54.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 52.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 35,
+      "angle": 0,
+      "locations": [6, 25.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 35,
+      "angle": -0,
+      "locations": [6, -25.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 35,
+      "angle": 0,
+      "locations": [35, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 35,
+      "angle": 0,
+      "locations": [45.5, 9]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 35,
+      "angle": -0,
+      "locations": [45.5, -9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-39, -0],
+      "length": 26.5,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35, 23],
+      "length": 18.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35, -23],
+      "length": 18.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    11.5, -22.5,
+    11, -32,
+    -9, -35,
+    -28, -30.5,
+    -38, -25,
+    -44.5, -11.5,
+    -44.5, 11.5,
+    -38, 25,
+    -28, 30.5,
+    -9, 35,
+    11, 32,
+    11.5, 22.5,
+    51, 15,
+    51, -15
+  ]
+}

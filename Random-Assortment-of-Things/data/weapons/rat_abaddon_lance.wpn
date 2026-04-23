@@ -1,0 +1,52 @@
+{
+  "id": "rat_abaddon_lance",
+  "specClass": "projectile",
+  "projectileSpecId": "rat_abaddon_lance_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "everyFrameEffect": "assortment_of_things.abyss.weapons.genesis.AbaddonLanceEffect",
+  "turretSprite": "graphics/weapons/abyss/genesis/rat_abaddons_lance_turret.png",
+  "turretGlowSprite": "graphics/weapons/abyss/genesis/rat_abaddons_lance_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/abyss/genesis/rat_abaddons_lance_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/abyss/genesis/rat_abaddons_lance_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "specialWeaponGlowHeight": 25,
+  "specialWeaponGlowWidth": 15,
+  "turretOffsets": [
+    27,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    32,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING_BURST",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 50,
+    "spread": 20,
+    "particleSizeMin": 15,
+    "particleSizeRange": 20,
+    "particleDuration": 0.5,
+    "particleCount": 20,
+    "particleColor": [
+      54,
+      40,
+      156,
+      100
+    ]
+  },
+  "fireSoundTwo": "rat_abyss_genesis_large1"
+}

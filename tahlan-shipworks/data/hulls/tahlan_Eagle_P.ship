@@ -1,0 +1,248 @@
+{
+  "hullName": "Eagle (P)",
+  "hullId": "tahlan_Eagle_P",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/tahlan/ships/tahlan_Eagle_P.png",
+  "style": "MIDLINE",
+  "height": 218,
+  "width": 168,
+  "center": [84, 109],
+  "collisionRadius": 152.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 134.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "augmentedengines",
+    "unstable_injector"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 80,
+      "angle": 10.5,
+      "locations": [28, 37]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 80,
+      "angle": -10.5,
+      "locations": [28, -37]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 101,
+      "angle": 33,
+      "locations": [-11, 40]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 101,
+      "angle": -33,
+      "locations": [-11, -40]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [98, 26]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [98, -26]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-38, 73]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-38, -73]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        32.5, 5,
+        32, -3.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-109, 19.5],
+      "length": 54.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-109, -19.5],
+      "length": 54.5,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-107.5, 30.5],
+      "length": 53,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-107.5, -30.5],
+      "length": 53,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-105.5, 41],
+      "length": 50,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-105.5, -41],
+      "length": 50,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-70.5, 54.5],
+      "length": 38.329994,
+      "width": 13.388283,
+      "angle": 164,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-70.5, -54.5],
+      "length": 38.329994,
+      "width": 13.388283,
+      "angle": -164,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-66.5, 62],
+      "length": 29.602606,
+      "width": 12.277732,
+      "angle": 151.5,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-66.5, -62],
+      "length": 29.602606,
+      "width": 12.277732,
+      "angle": -151.5,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-62, 70],
+      "length": 19.536514,
+      "width": 10.114277,
+      "angle": 146.5,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-62, -70],
+      "length": 19.536514,
+      "width": 10.114277,
+      "angle": -146.5,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [17, 57.5],
+      "length": 29.5,
+      "width": 13,
+      "angle": 145,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [17, -57.5],
+      "length": 29.5,
+      "width": 13,
+      "angle": -145,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -72.5, -12,
+    -109, -14,
+    -96, -54.5,
+    -71.5, -47,
+    -54.5, -82,
+    -41.5, -81.5,
+    -40, -66.5,
+    -22.5, -69.5,
+    17, -58,
+    36.5, -58.5,
+    46.5, -48,
+    99.5, -33.5,
+    104.5, -14.5,
+    78.5, -15.5,
+    78.5, 15.5,
+    104.5, 14.5,
+    99.5, 33.5,
+    46.5, 48,
+    36.5, 58.5,
+    17, 58,
+    -22.5, 69.5,
+    -40, 66.5,
+    -41.5, 81.5,
+    -54.5, 82,
+    -71.5, 47,
+    -96, 54.5,
+    -109, 14,
+    -72.5, 12
+  ]
+}

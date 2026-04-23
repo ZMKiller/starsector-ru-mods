@@ -1,0 +1,52 @@
+{
+  "id": "Xhan_Uogek",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_Uogek_Toroid",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "everyFrameEffect": "org.xhan.weapons.XHAN_UogekEveryFrame",
+  "turretSprite": "",
+  "turretGlowSprite": "graphics/weapons/Xhan_Uogek_GLOW.png",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "graphics/weapons/Xhan_Uogek_GLOW.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    209,
+    95,
+    235,
+    255
+  ],
+  "turretOffsets": [
+    -34,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    -1,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 65,
+    "spread": 220,
+    "particleSizeMin": 1,
+    "particleSizeRange": 15,
+    "particleDuration": 1.8,
+    "particleCount": 175,
+    "particleColor": [
+      195,
+      34,
+      235,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_UOGEK_FIRE_SOUND"
+}

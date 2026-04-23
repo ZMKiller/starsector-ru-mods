@@ -1,0 +1,30 @@
+{
+    "id":"niko_SOTFMoreCombatObjectives", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
+	"name":"SOTF - Extra Combat Objectives", # Displayed to the player
+	"author":"Niko, Inventor Raccoon (Author of SOTF), Khepht (Spriter)",
+    "utility":"false",
+	"version":"1.2.1",
+	"description":"Extra combat objectives for secrets of the frontier, along a few other goodies.",
+    "gameVersion": "0.98a-RC5",
+  	"jars":["jars/SOTFECO.jar"],
+	"modPlugin":"SOTFECO.SOFTECO_modPlugin",
+	"dependencies": [
+		{
+			"id": "lw_lazylib",
+			"name": "LazyLib",
+			"version": "3.0.0"
+		},
+		{
+			"id": "MagicLib",
+			"name": "MagicLib",
+			"version": "1.4.6"
+
+		},
+		{
+			"id": "secretsofthefrontier",
+			"name": "Secrets of the Frontier",
+			"version": "0.15.0"
+
+		},
+	]
+}

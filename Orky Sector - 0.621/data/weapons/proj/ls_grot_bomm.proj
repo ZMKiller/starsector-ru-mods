@@ -1,0 +1,48 @@
+{
+	"id":"ls_grot_bomm",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	#"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
+	"sprite":"graphics/weapons/ls_grot_bomm.png",
+	"size":[14,26],	
+	"center":[7,13],
+	"collisionRadius":18,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,165,0,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":200, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":150,
+					 "coreRadius":75, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":5.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":150,
+					 "particleColor":[255,165,0,255]},
+	"armingTime":0.5,
+	"engineSpec":{"turnAcc":400,
+				  "turnRate":50,
+				  "acc":800,
+				  "dec":200},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-12, 0],
+				    #"style":"ROCKET_LOW_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,125,25,255],
+						"contrailDuration":2,
+						"contrailWidthMult":4,
+						"contrailWidthAddedFractionAtEnd":-1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":6, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[75,75,75,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":6.0,
+				    "length":40.0,
+				    "angle":180.0}]
+}

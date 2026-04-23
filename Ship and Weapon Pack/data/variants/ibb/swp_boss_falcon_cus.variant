@@ -1,0 +1,54 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 16,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "swp_boss_falcon",
+    "hullMods": [
+        "targetingunit",
+        "heavyarmor",
+        "hardenedshieldemitter",
+        "missleracks"
+    ],
+    "permaMods": [
+        "targetingunit",
+        "heavyarmor",
+        "hardenedshieldemitter"
+    ],
+    "sMods": [
+        "targetingunit",
+        "heavyarmor",
+        "hardenedshieldemitter"
+    ],
+    "variantId": "swp_boss_falcon_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "railgun",
+                "WS 008": "railgun",
+                "WS0003": "railgun",
+                "WS0004": "railgun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "atropos",
+                "WS 002": "atropos",
+                "WS0001": "atropos",
+                "WS0002": "atropos"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "heavyblaster",
+                "WS 006": "heavyblaster"
+            }
+        }
+    ]
+}

@@ -1,0 +1,215 @@
+{
+    "hullName": "Mudfish (BM)",
+    "hullId": "ls_mudfish_bm",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_mudfish_bm.png",
+    "height": 180,
+    "width": 138,
+    "center": [
+        69, 79.5
+    ],
+    "collisionRadius": 112,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 110,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_badmoons",
+        "rugged"
+    ],
+    "builtInWeapons": {
+        "WS 001": "ls_blast_klaw_r",
+        "WS 000": "ls_blast_klaw_l"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 40,
+            "angle": 0,
+            "locations": [
+                    63.5,       45
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 40,
+            "angle": 0,
+            "locations": [
+                    63.5,      -45
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "LARGE",
+            "type": "HYBRID",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      52,        0
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 140,
+            "angle": 90,
+            "locations": [
+                    32.5,     37.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 140,
+            "angle": 270,
+            "locations": [
+                    32.5,    -37.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 90,
+            "locations": [
+                    -0.5,     42.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 270,
+            "locations": [
+                    -0.5,    -42.5
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 90,
+            "locations": [
+                   -22.5,     37.5
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 270,
+            "locations": [
+                   -22.5,    -37.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -64, 21
+            ],
+            "length": 60,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -64, -21
+            ],
+            "length": 60,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -61, 33.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -61, -33.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -61, 7.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -61, -7.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        }
+    ],
+    "bounds": [
+           -64.5,      -13,
+           -64.5,      -25,
+           -57.5,    -41.5,
+            -6.5,      -33,
+              16,    -46.5,
+        
+              54,      -50,
+              78,    -17.5,
+              78,     17.5,
+              54,       50,
+              16,     46.5,
+        
+            -6.5,       33,
+           -57.5,     41.5,
+           -64.5,       25,
+           -64.5,       13,
+             -57,      2.5,
+        
+             -57,     -2.5
+    # 16 points total.
+    ]
+}

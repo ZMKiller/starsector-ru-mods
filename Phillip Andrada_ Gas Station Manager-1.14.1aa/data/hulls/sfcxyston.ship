@@ -1,0 +1,97 @@
+{
+  "hullName": "Xyston",
+  "hullId": "sfcxyston",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/shuttle_frigate_special_v1.png",
+  "style": "LOW_TECH",
+  "height": 115,
+  "width": 102,
+  "center": [51, 41.5],
+  "collisionRadius": 112,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 104,
+  "viewOffset": 0,
+  "builtInMods": [
+    "shielded_holds",
+    "repair_gantry"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [-12.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [0, 39]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [0, -39]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-35, 39],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-35, -39],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-41.5, -0],
+      "length": 60,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    73.5, -2,
+    60, -3,
+    53, -25,
+    45.5, -8,
+    2.5, -16,
+    -7, -47.5,
+    -25, -49,
+    -34.5, -38,
+    -20.5, -29,
+    -21.5, -14,
+    -39.5, -14,
+    -39.5, 14,
+    -21.5, 14,
+    -20.5, 29,
+    -34.5, 38,
+    -25, 49,
+    -7, 47.5,
+    2.5, 16,
+    45.5, 8,
+    53, 25,
+    60, 3,
+    73.5, 2
+  ]
+}

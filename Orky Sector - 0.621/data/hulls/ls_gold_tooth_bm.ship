@@ -1,0 +1,183 @@
+{
+    "hullName": "Gold Tooth (BM)",
+    "hullId": "ls_gold_tooth_bm",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_gold_tooth_bm.png",
+    "height": 174,
+    "width": 120,
+    "center": [
+        61, 87
+    ],
+    "collisionRadius": 100,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 1
+    ],
+    "shieldRadius": 98,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_badmoons",
+        "rugged",
+        "ls_ramshackle"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                    55.5,      0.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                      12,      0.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 100,
+            "locations": [
+                   -33.5,       40
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 260,
+            "locations": [
+                   -33.5,    -39.5
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -52,        9,
+                   -41.5,        9
+            ]
+        },
+        {
+            "id": "LB 001",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -52,       -9,
+                   -41.5,       -9
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -71.5, 32.5
+            ],
+            "length": 48,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -71.5, -32.5
+            ],
+            "length": 48,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -71.5, 25.5
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -71.5, -25.5
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -71.5, 19.5
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -71.5, -19.5
+            ],
+            "length": 48,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -67,      -12,
+             -72,    -18.5,
+             -72,    -35.5,
+             -63,    -35.5,
+             -50,    -51.5,
+        
+           -26.5,    -51.5,
+             -23,      -42,
+              52,      -35,
+            73.5,      -16,
+            73.5,       16,
+        
+              52,       35,
+             -23,       42,
+           -26.5,     51.5,
+             -50,     51.5,
+             -63,     35.5,
+        
+             -72,     35.5,
+             -72,     18.5,
+             -67,       12
+    # 18 points total.
+    ]
+}

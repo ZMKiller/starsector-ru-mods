@@ -1,0 +1,222 @@
+{
+  "hullName": "Shimmer",
+  "hullId": "swp_shimmer",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/swp/ships/remnant/swp_shimmer.png",
+  "style": "HIGH_TECH",
+  "height": 164,
+  "width": 220,
+  "center": [110, 102],
+  "collisionRadius": 150.5,
+  "shieldCenter": [-14.5, -0],
+  "shieldRadius": 135,
+  "viewOffset": 0,
+  "builtInMods": [
+    "automated"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [47.5, 11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [47.5, -11]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 0,
+      "locations": [24, 21]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -0,
+      "locations": [24, -21]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 90,
+      "locations": [0, 91]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -90,
+      "locations": [0, -91]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        21.5, 72.5,
+        37, 73.5,
+        30.5, 82,
+        33.5, 55.5,
+        30, 48
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        21, -73,
+        35, -72.5,
+        29, -81,
+        30, -55.5,
+        33.5, -48.5
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -18, 13.5,
+        -29, 14.5,
+        -23, 6,
+        -33, 5.5,
+        -32, 22.5
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -17.5, -14.5,
+        -28.5, -14.5,
+        -22.5, -4.5,
+        -33.5, -5,
+        -34.5, -22
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-101, 28],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-102, -28],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-53, 78],
+      "length": 35,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-52, 70],
+      "length": 35,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-52, 62],
+      "length": 25,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-53, -62],
+      "length": 25,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-53, -70],
+      "length": 35,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-54, -78],
+      "length": 35,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    60, -20.5,
+    52.5, -68.5,
+    54.5, -87,
+    33, -105,
+    -9.5, -108,
+    -51, -82.5,
+    -50.5, -55,
+    -98, -37,
+    -99.5, -22.5,
+    -54.5, -18.5,
+    -54.5, 18.5,
+    -99.5, 22.5,
+    -98, 37,
+    -50.5, 55,
+    -51, 82.5,
+    -9.5, 108,
+    33, 105,
+    54.5, 87,
+    52.5, 68.5,
+    60, 20.5,
+    45.5, -0
+  ]
+}

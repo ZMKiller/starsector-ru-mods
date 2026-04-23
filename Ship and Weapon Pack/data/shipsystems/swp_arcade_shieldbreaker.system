@@ -1,0 +1,35 @@
+{
+    "id":"swp_arcade_shieldbreaker",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.shipsystems.ai.SWP_ShieldBreakerAI",
+
+    "statsScript":"data.scripts.shipsystems.SWP_ShieldBreakerStats",
+
+    "weaponGlowColor":[200,100,255,100],
+    "weaponTypes":[ENERGY],
+
+    "jitterUnderColor":[255,150,255,150],
+    "jitterUnderCopies":10,
+    "jitterUnderMinRange":0,
+    "jitterUnderRange":25,
+    "jitterUnderRangeRadiusFraction":0,
+
+    "jitterColor":[200,150,255,50],
+    "jitterCopies":5,
+    "jitterMinRange":0,
+    "jitterRange":50,
+    "jitterRangeRadiusFraction":0.15,
+
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "threatRange":1500,
+        "threatAmount":25,
+        "threatAngle":0,
+        "threatArc":360,
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "variantId": "A_S-F_colossus3_ambush",
+  "hullId": "colossus3",
+  "displayName": "Ambush",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 6,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "insulatedengine",
+    "targetingunit",
+    "A_S-F_anarchyBallistic",
+    "A_S-F_anarchyShields"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 011": "lightac",
+        "WS 012": "lightac",
+        "WS 013": "lightmortar",
+        "WS 014": "lightmortar",
+        "WS 015": "lightmortar",
+        "WS 016": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightmg",
+        "WS 002": "lightmg",
+        "WS 003": "lightmg",
+        "WS 004": "lightmg",
+        "WS 009": "lightmg",
+        "WS 010": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "talon_wing",
+    "talon_wing"
+  ]
+}

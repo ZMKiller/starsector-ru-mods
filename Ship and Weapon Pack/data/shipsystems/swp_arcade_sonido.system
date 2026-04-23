@@ -1,0 +1,29 @@
+{
+    "id":"swp_arcade_sonido",
+    "type":"TELEPORTER",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.shipsystems.ai.SWP_ZeroAI",
+
+    "statsScript":"data.scripts.shipsystems.SWP_SonidoStats",
+
+    "jitterColor":[100,100,100,255],
+    "jitterCopies":5,
+    "jitterRange":50,
+    "jitterRangeRadiusFraction":1,
+
+    "range":300,
+
+    "vulnerableChargeup":false,
+    "vulnerableChargedown":false,
+    "renderCopyDuringTeleport":true,
+
+    "fadeActivationSoundOnChargedown":false,
+
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":1000,
+        "averageSpeedIncrease":1000,
+    }
+}

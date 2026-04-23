@@ -1,0 +1,55 @@
+{
+  "variantId": "A_S-F_axicon_stk",
+  "hullId": "A_S-F_axicon",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 18,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "magazines",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "cyclone"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "A_S-F_ir_autopulse",
+        "WS0003": "A_S-F_ir_autopulse",
+        "WS0004": "irpulse",
+        "WS0005": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ionpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "A_S-F_micropulser",
+        "WS0008": "A_S-F_micropulser",
+        "WS0009": "A_S-F_micropulser",
+        "WS0010": "A_S-F_micropulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "A_S-F_coruscate_wing",
+    "A_S-F_coruscate_wing"
+  ]
+}

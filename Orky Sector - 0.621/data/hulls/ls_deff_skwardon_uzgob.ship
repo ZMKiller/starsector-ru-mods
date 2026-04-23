@@ -1,0 +1,135 @@
+{
+    "hullName": "Deff Skwardon (Uzgob)",
+    "hullId": "ls_deff_skwardon_uzgob",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_deff_skwardon/ls_deff_skwadron_1.png",
+    "height": 38,
+    "width": 40,
+    "center": [
+        20, 19
+    ],
+    "collisionRadius": 30,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_bloodaxes",
+        "ls_deff_skwardon_hullmod",
+        "ls_fighta_ace"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_twin_shoota",
+        "WS 001": "ls_supashoota_turret",
+        "WS 002": "ls_supashoota_turret",
+        "WS 004": "ls_blitza_bomm_bay",
+        "WS 003": "ls_tail_gunna"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                       9,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     1.5,      9.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     1.5,     -9.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 180,
+            "locations": [
+                       4,        0
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    -2.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -4.5, 16.5
+            ],
+            "length": 24,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 32,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -4.5, -16.5
+            ],
+            "length": 24,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 32,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -16.5, 0
+            ],
+            "length": 32,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 42,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -17.5,     -4.5,
+            -6.5,     -5.5,
+               0,    -17.5,
+               4,     -7.5,
+            13.5,       -3,
+        
+            13.5,        3,
+               4,      7.5,
+               0,     17.5,
+            -6.5,      5.5,
+           -17.5,      4.5
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 20,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "ls_falken_ba",
+    "hullMods": [
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_falken_ba_custom",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_krusha_battery",
+                "WS 007": "ls_gatler",
+                "WS 008": "ls_gatler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_kombi_shoota",
+                "WS 004": "ls_kombi_shoota",
+                "WS 009": "ls_big_shoota",
+                "WS 002": "ls_flakka_dakka",
+                "WS 001": "ls_flakka_dakka"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "ls_boarding_toob",
+                "WS 010": "ls_boarding_toob"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_torpedo_rail",
+                "WS 006": "ls_torpedo_rail"
+            }
+        }
+    ]
+}

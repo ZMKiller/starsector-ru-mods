@@ -1,0 +1,28 @@
+{
+	"id":"ls_kill_kannon",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/weapons/ls_kill_kannon_turret_base.png",
+	"turretGunSprite":"graphics/weapons/ls_kill_kannon_barrel.png",
+	"hardpointSprite":"graphics/weapons/ls_kill_kannon_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/ls_kill_kannon_barrel.png",	
+	"visualRecoil":10.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[24, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[24, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":55.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":15.0,
+					   "particleSizeMin":5.0,
+					   "particleSizeRange":25.0,
+					   "particleDuration":0.50,
+					   "particleCount":35,
+					   "particleColor":[255,120,50,245]},
+	"projectileSpecId":"ls_kill_kannon_shot",  # projectile that will be fired
+	"fireSoundTwo":"kill_kanon_sound",
+}

@@ -1,0 +1,374 @@
+{
+    id:"cabal",
+    "color":[255,0,255,255],
+    "baseUIColor":[255,0,255,255],
+    "darkUIColor":[45,65,90,150],
+    "gridUIColor":[200,120,255,80],
+    "displayName":"Cabal",
+    "displayNameWithArticle":"the Cabal",
+    "displayNameLong":"Starlight Cabal",
+    "displayNameLongWithArticle":"the Starlight Cabal",
+    "personNamePrefix":"Starlight",
+    "personNamePrefixAOrAn":"a",
+    "logo":"graphics/uw/factions/cabal.png",
+    "crest":"graphics/uw/factions/crest_cabal.png",
+    "shipNamePrefix":"STAR",
+    "showInIntelTab":true,
+    "shipNameSources":{
+        "MERCANTILE":2,
+        "EGYPTIAN":2,
+        "SPACE":2,
+        "ABRAHAMIC":2,
+        "PERSIAN":1,
+        "AZTEC":1,
+        "BEASTS":1,
+        "NORSE":1,
+        "CELTIC":1,
+        "GENERAL":1,
+    },
+    "names":{
+        "myth":3,
+        "modern":2,
+        "future":2,
+        "old english":2,
+        "world":1,
+        "fringe":1,
+    },
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+    "variantOverrides":{
+    },
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "tags":{
+        },
+        "hulls":{
+            "uw_starscream":0.5,
+        },
+    },
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":[],
+        "hulls":[
+        ],
+    },
+    "knownShips":{
+        "tags":["uw_cabal_bp", "cabal"],
+        "hulls":[
+            "crig",
+            "ox",
+            "dram",
+            "phaeton",
+            "prometheus",
+            "gemini",
+            "atlas",
+            "mercury",
+            "hermes",
+            "kite_original",
+            "mudskipper",
+            "wayfarer",
+            "nebula",
+            "valkyrie",
+            "buffalo_tritachyon",
+            "phantom",
+            "revenant",
+
+            "uw_afflictor_cabal",
+            "uw_tempest_cabal",
+            "uw_wolf_cabal",
+
+            "uw_harbinger_cabal",
+            "uw_medusa_cabal",
+            "uw_shrike_cabal",
+
+            "uw_aurora_cabal",
+            "uw_climax",
+            "uw_doom_cabal",
+            "uw_eos_cabal",
+            "uw_fury_cabal",
+            "uw_starscream",
+
+            "uw_odyssey_cabal",
+            "uw_succubus",
+        ],
+    },
+    # listing ships here will make the faction mostly use them even if other hulls become available
+    "priorityShips":{
+        "tags":[],
+        "hulls":[
+        ],
+    },
+    "knownFighters":{
+        "tags":["cabal", "tritachyon"], # Include TT-specific wings
+        "fighters":[
+            "dagger_wing",
+            "trident_wing",
+            "wasp_wing",
+            "xyphos_wing",
+            "claw_wing",
+            "trident_wing",
+            "cobra_wing",
+            "longbow_wing",
+            "broadsword_wing",
+        ],
+    },
+    "priorityFighters":{
+        "tags":[],
+        "fighters":[
+        ],
+    },
+    "knownWeapons":{
+        "tags":["cabal", "tritachyon", "ind", "merc"], # Include modded weapons that are added to independents/mercenaries/TT
+        "weapons":[
+            "pdlaser",
+            "lrpdlaser",
+            "taclaser",
+            "ioncannon",
+            "irpulse",
+            "pdburst",
+            "amblaster",
+
+            "phasebeam",
+            "gravitonbeam",
+            "pulselaser",
+            "heavyblaster",
+            "heavyburst",
+            "ionpulser",
+            "ionbeam",
+            "irautolance",
+            "kineticblaster",
+
+            "plasma",
+            "hil",
+            "autopulse",
+            "guardian",
+            "tachyonlance",
+            "gigacannon",
+
+            "reaper",
+            "atropos",
+            "heatseeker",
+            "harpoon",
+            "breach",
+            "sabot",
+            "gorgon",
+            "gazer",
+
+            "harpoonpod",
+            "breachpod",
+            "sabotpod",
+            "salamanderpod",
+            "phasecl",
+            "typhoon",
+            "dragon",
+            "gorgonpod",
+            "gazerpod",
+
+            "cyclone",
+            "hurricane",
+            "squall",
+            "dragonpod",
+            "hydra",
+
+            "railgun",
+            "lightneedler",
+
+            "hveldriver",
+            "heavymauler",
+            "heavyneedler",
+
+            "gauss",
+            "mjolnir",
+            "multineedler",
+        ],
+    },
+    "priorityWeapons":{
+        "tags":[],
+        "weapons":[
+        ],
+    },
+    "knownHullMods":{
+        "tags":["standard", "cabal"],
+        "hullMods":[
+        ],
+    },
+    "weaponSellFrequency":{
+    },
+    "fighterSellFrequency":{
+    },
+    "hullmodSellFrequency":{
+    },
+    "factionDoctrine":{
+        "warships":4,
+        "carriers":1,
+        "phaseShips":2,
+
+        "officerQuality":1,
+        "shipQuality":5,
+        "numShips":1,
+
+        "shipSize":4,
+
+        "aggression":4,
+
+        "combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
+        "combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+        "combatFreighterCombatUseFractionWhenPriority":0.33,# as part of normal combat lineup, when marked as priority ship
+        "autofitRandomizeProbability":0.25,
+
+        "officerSkillsShuffleProbability":1f,
+        "officerSkills":[
+            "energy_weapon_mastery",
+            "field_modulation",
+        ],
+        "commanderSkillsShuffleProbability":1,
+        "commanderSkills":[
+            "electronic_warfare",
+            "flux_regulation",
+            "cybernetic_augmentation",
+        ],
+    },
+    "illegalCommodities":[
+    ],
+    "music":{
+        "theme":"uw_music_cabal_hostile",
+        "market_neutral":"uw_music_cabal_neutral",
+        "market_hostile":"uw_music_cabal_hostile",
+        "market_friendly":"uw_music_cabal_friendly",
+        "encounter_neutral":"uw_music_cabal_neutral",
+        "encounter_hostile":"uw_music_cabal_hostile",
+        "encounter_friendly":"uw_music_cabal_friendly",
+    },
+    "portraits":{
+        "standard_male":[
+            "graphics/portraits/portrait_hegemony01.png",
+            "graphics/portraits/portrait_hegemony02.png",
+            "graphics/portraits/portrait_hegemony05.png",
+            "graphics/portraits/portrait_mercenary01.png",
+            "graphics/portraits/portrait_mercenary03.png",
+            "graphics/portraits/portrait_mercenary04.png",
+            "graphics/portraits/portrait_corporate01.png",
+            "graphics/portraits/portrait_corporate03.png",
+            "graphics/portraits/portrait_corporate05.png",
+            "graphics/portraits/portrait_corporate06.png",
+            "graphics/portraits/portrait_corporate08.png",
+            "graphics/portraits/portrait_corporate10.png",
+            "graphics/portraits/portrait12.png",
+            "graphics/portraits/portrait13.png",
+            "graphics/portraits/portrait15.png",
+            "graphics/portraits/portrait17.png",
+            "graphics/portraits/portrait18.png",
+            "graphics/portraits/portrait20.png",
+            "graphics/portraits/portrait23.png",
+            "graphics/portraits/portrait25.png",
+            "graphics/portraits/portrait26.png",
+            "graphics/portraits/portrait30.png",
+            "graphics/portraits/portrait31.png",
+            "graphics/portraits/portrait33.png",
+            "graphics/portraits/portrait35.png",
+            "graphics/portraits/portrait36.png",
+            "graphics/portraits/portrait40.png",
+            "graphics/portraits/portrait47.png",
+        ],
+        "standard_female":[
+            "graphics/portraits/portrait_hegemony03.png",
+            "graphics/portraits/portrait_hegemony04.png",
+            "graphics/portraits/portrait_mercenary02.png",
+            "graphics/portraits/portrait_mercenary05.png",
+            "graphics/portraits/portrait_corporate02.png",
+            "graphics/portraits/portrait_corporate04.png",
+            "graphics/portraits/portrait_corporate07.png",
+            "graphics/portraits/portrait_corporate09.png",
+            "graphics/portraits/portrait14.png",
+            "graphics/portraits/portrait16.png",
+            "graphics/portraits/portrait21.png",
+            "graphics/portraits/portrait22.png",
+            "graphics/portraits/portrait24.png",
+            "graphics/portraits/portrait27.png",
+            "graphics/portraits/portrait28.png",
+            "graphics/portraits/portrait29.png",
+            "graphics/portraits/portrait32.png",
+            "graphics/portraits/portrait34.png",
+            "graphics/portraits/portrait37.png",
+            "graphics/portraits/portrait39.png",
+            "graphics/portraits/portrait41.png",
+            "graphics/portraits/portrait42.png",
+        ],
+    },
+    "ranks":{
+        "ranks":{
+            "factionLeader":{"name":"Enlightened"},
+
+            "uw_bursar":{"name":"Bursar"},
+
+            "spaceCommander":{"name":"Star"},
+            "spaceCaptain":{"name":"Radiant"},
+            "spaceAdmiral":{"name":"Illustrious"},
+
+            "citizen":{"name":"Cabalero"},
+        },
+        "posts":{
+            # It's all Cabalero
+            "factionLeader":{"name":"Cabalero"},
+
+            "patrolCommander":{"name":"Cabalero"},
+            "fleetCommander":{"name":"Cabalero"},
+
+            "baseCommander":{"name":"Cabalero"},
+            "stationCommander":{"name":"Cabalero"},
+            "outpostCommander":{"name":"Cabalero"},
+            "portmaster":{"name":"Cabalero"},
+
+            "supplyOfficer":{"name":"Cabalero"},
+            "supplyManager":{"name":"Cabalero"},
+            "medicalSupplier":{"name":"Cabalero"},
+
+            "citizen":{"name":"Cabalero"},
+
+            "investigator":{"name":"Cabalero"},
+        },
+    },
+    "voices":{
+        "LOW":{
+            "spacer":10,
+            "business":5,
+        },
+        "MEDIUM":{
+            "business":10,
+            "scientist":3,
+            "villain":5,
+        },
+        "HIGH":{
+            "business":10,
+            "aristo":5,
+            "villain":10,
+        },
+    },
+    "custom":{
+        "decentralized":true,
+        "engageWhenEvenStrength":true,
+        "exemptFromFoodShortages":true,
+        "noPatrols":true,
+        "ignoreTradeWithEnemiesForReputation":true,
+        "postsNoBounties":true,
+        "offerMissionsWhenHostile":true,
+        "allowsTransponderOffTrade":true,
+        "commissionIgnoreBeingHostile":true,
+        "buysAICores":true,
+        "AICoreValueMult":1.5,
+        "AICoreRepMult":1,
+        "buysSurveyData":false,
+        "pirateBehavior":true, # for fleet behavior
+        "fightToTheLast":true, # order a full assault instead of retreating, in most cases
+        "hostilityImpactOnGrowth":false,
+        "caresAboutAtrocities":false,
+        "punitiveExpeditionData":{
+            "vsCompetitors":true,
+            "vsFreePort":false,
+            "canBombard":false,
+            "territorial":false,
+        },
+        "simulatorData":{
+            "showInSimulatorDevModeOnly":true,
+        },
+    },
+},

@@ -1,0 +1,47 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "harpoon_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    2.5,
+    0
+  ],
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_launcher_single_hp_base.png",
+  "id": "tahlan_hekaton_fighter",
+  "projectileSpecId": "tahlan_hekaton_torp",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "size": "SMALL",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 10,
+    "particleColor": [
+      205,
+      190,
+      165,
+      255
+    ],
+    "particleSizeMin": 20,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    2,
+    0
+  ],
+  "turretSprite": "graphics/tahlan/weapons/tahlan_launcher_single_turret_base.png",
+  "type": "MISSILE"
+}

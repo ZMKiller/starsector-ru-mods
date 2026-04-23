@@ -1,0 +1,229 @@
+{
+    "hullName": "Spine Rippa (SB)",
+    "hullId": "ls_spine_rippa_sb",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_spine_rippa_sb.png",
+    "height": 150,
+    "width": 96,
+    "center": [
+        50, 75
+    ],
+    "collisionRadius": 100,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 96,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_snakebites",
+        "rugged",
+        "ls_ramshackle"
+    ],
+    "builtInWeapons": {
+        "WS 001": "ls_spine_rippa_mouth"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                      38,       -5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      45,      1.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                      58,       28
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 90,
+            "locations": [
+                    12.5,     29.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -60,
+            "locations": [
+                      12,      -24
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": -90,
+            "locations": [
+                   -23.5,      -27
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "renderOrderMod": 200,
+            "arc": 160,
+            "angle": 0,
+            "locations": [
+                   -11.5,        0
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 75,
+            "locations": [
+                   -27.5,       26
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -66, 32
+            ],
+            "length": 40,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -65, -24.5
+            ],
+            "length": 40,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -65, -32.5
+            ],
+            "length": 40,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -67.5, 17.5
+            ],
+            "length": 40,
+            "width": 3,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -66.5, 12.5
+            ],
+            "length": 40,
+            "width": 5,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -66, 23
+            ],
+            "length": 40,
+            "width": 3,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -66, 26.5
+            ],
+            "length": 40,
+            "width": 3,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -66.5, -17.5
+            ],
+            "length": 40,
+            "width": 3,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+              64,       10,
+            63.5,       32,
+            52.5,     34.5,
+            21.5,       29,
+            -6.5,     28.5,
+        
+           -23.5,       42,
+           -45.5,       36,
+             -66,     34.5,
+             -68,       15,
+             -60,      2.5,
+        
+             -60,    -13.5,
+             -67,    -14.5,
+           -63.5,    -37.5,
+             -21,    -38.5,
+             -11,      -30,
+        
+            44.5,    -30.5,
+            61.5,    -15.5,
+              45,      -15,
+            44.5,        4,
+              63,     -0.5
+    # 20 points total.
+    ]
+}

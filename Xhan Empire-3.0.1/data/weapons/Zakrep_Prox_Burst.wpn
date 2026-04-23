@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 600,
+  "fireSoundTwo": "ZakrepShotSound",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/Zakrep_Barrel_HARDPOINT.png",
+  "hardpointOffsets": [
+    49,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/Zakrep_Proximity_Burst_HARDPOINT.png",
+  "id": "Zakrep_Prox_Burst",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "particleColor": [
+      255,
+      120,
+      50,
+      245
+    ],
+    "particleCount": 30,
+    "particleDuration": 0.75,
+    "particleSizeMin": 7,
+    "particleSizeRange": 10,
+    "spread": 15
+  },
+  "projectileSpecId": "Zakrep_Prox_Shot",
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/Zakrep_Barrel_TURRET.png",
+  "turretOffsets": [
+    44,
+    0
+  ],
+  "turretSprite": "graphics/weapons/Zakrep_Proximity_Burst_TURRET.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 10
+}

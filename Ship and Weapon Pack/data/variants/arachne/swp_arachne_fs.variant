@@ -1,0 +1,36 @@
+{
+    "displayName": "Fire Support",
+    "fluxCapacitors": 4,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "swp_arachne",
+    "hullMods": [
+        "converted_hangar",
+        "eccm",
+        "advancedoptics"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_arachne_fs",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "pilum"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "heatseeker",
+                "WS0004": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ionbeam"}
+        }
+    ],
+    "wings": ["claw_wing"]
+}

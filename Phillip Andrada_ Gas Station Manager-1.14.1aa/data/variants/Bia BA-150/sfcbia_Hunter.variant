@@ -1,0 +1,50 @@
+{
+  "variantId": "sfcbia_Hunter",
+  "hullId": "sfcbia",
+  "displayName": "Hunter",
+  "goalVariant": true,
+  "fluxCapacitors": 13,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "miningblaster",
+        "WS0004": "miningblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "salamanderpod",
+        "WS0006": "heatseeker",
+        "WS0007": "heatseeker"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "autopulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

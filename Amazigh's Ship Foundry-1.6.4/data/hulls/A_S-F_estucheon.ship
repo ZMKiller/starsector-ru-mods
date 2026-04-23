@@ -1,0 +1,129 @@
+{
+  "hullName": "Estucheon",
+  "hullId": "A_S-F_estucheon",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/A_S-F_estucheon.png",
+  "style": "LOW_TECH",
+  "height": 114,
+  "width": 98,
+  "center": [56, 60],
+  "collisionRadius": 76,
+  "shieldCenter": [0, 4],
+  "shieldRadius": 71,
+  "viewOffset": 0,
+  "builtInMods": [
+    "automated",
+    "rugged"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [34, 18]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": 15,
+      "locations": [-11, 5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [26, 45]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -30,
+      "locations": [3, -29]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 10,
+      "locations": [48, -9]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": -35,
+      "locations": [47, -34]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-59, -15],
+      "length": 42,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 48,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-55, 5],
+      "length": 30,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-41, 23],
+      "length": 30,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-34, 45],
+      "length": 34,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 42,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -56, -22,
+    -21, -26,
+    -20, -38,
+    45, -38,
+    49, -31,
+    47, -1,
+    36, 0,
+    36, 25,
+    25, 26,
+    22, 40,
+    25, 50,
+    -24, 54,
+    -32, 46,
+    -24, 33,
+    -39, 27,
+    -38, 13,
+    -54, 8,
+    -51, -5,
+    -57, -9
+  ]
+}

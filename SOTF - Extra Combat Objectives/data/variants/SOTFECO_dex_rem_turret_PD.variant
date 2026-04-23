@@ -1,0 +1,35 @@
+{
+  "displayName": "Point Defense",
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "SOTFECO_dex_rem_turret",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "SOTFECO_dex_rem_turret_PD",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "guardian"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+		"WS 002": "pulselaser"
+	  }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+		"WS 004": "locust"
+	  }
+    }
+  ],
+  "wings": []
+}

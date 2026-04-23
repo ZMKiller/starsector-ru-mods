@@ -1,0 +1,68 @@
+{
+    "displayName": "Albtraum",
+    "fluxCapacitors": 0,
+    "fluxVents": 25,
+    "hullId": "tahlan_schneefall_traum",
+    "hullMods": [
+        "missleracks",
+        "targetingunit",
+        "magazines"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_schneefall_traum_albtraum",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0021": "tahlan_kriegsmesser",
+                "WS0022": "tahlan_kriegsmesser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "tahlan_dolch",
+                "WS0016": "tahlan_dolch",
+                "WS0017": "tahlan_dolch",
+                "WS0018": "tahlan_dolch",
+                "WS0019": "tahlan_dolch",
+                "WS0020": "tahlan_dolch"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "tahlan_sturmkanone_m2",
+                "WS0006": "tahlan_sturmkanone_m2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_stahlhagel_zwilling",
+                "WS0002": "tahlan_stahlhagel_zwilling",
+                "WS0003": "tahlan_stahlhagel_zwilling",
+                "WS0004": "tahlan_stahlhagel_zwilling"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "tahlan_hueter",
+                "WS0008": "tahlan_hueter",
+                "WS0009": "tahlan_hueter",
+                "WS0010": "tahlan_hueter",
+                "WS0011": "pdlaser",
+                "WS0012": "pdlaser",
+                "WS0013": "pdlaser",
+                "WS0014": "pdlaser"
+            }
+        }
+    ]
+}

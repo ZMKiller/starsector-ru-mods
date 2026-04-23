@@ -1,0 +1,186 @@
+{
+  "hullName": "Mancatcher",
+  "hullId": "A_S-F_mancatcher",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/A_S-F_mancatcher.png",
+  "style": "MIDLINE",
+  "coversColor": "255,255,255,255",
+  "height": 220,
+  "width": 188,
+  "center": [96, 106],
+  "collisionRadius": 138,
+  "shieldCenter": [8, -0],
+  "shieldRadius": 130,
+  "viewOffset": 0,
+  "builtInWings": [
+    "A_S-F_gladius_hajod_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [13, -80]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 80,
+      "locations": [19, 84]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -60,
+      "locations": [57, -50]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -140,
+      "locations": [-61, -28]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        31, 24,
+        31, 11,
+        31, -7,
+        31, -22
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 180,
+      "locations": [
+        -38, 13,
+        -38, 0,
+        -38, -12
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 30,
+      "locations": [40, 62]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [34, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-42, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42, 65],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-43, 55],
+      "length": 56,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-42, 45],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-42, -45],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-43, -55],
+      "length": 56,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-42, -65],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -69, -27,
+    -32, -28,
+    -24, -41,
+    -40, -43,
+    -39, -71,
+    -4, -83,
+    19, -80,
+    24, -56,
+    46, -51,
+    52, -65,
+    68, -65,
+    80, -32,
+    59, -25,
+    59, 25,
+    80, 32,
+    55, 88,
+    18, 93,
+    -39, 71,
+    -40, 43,
+    -24, 41,
+    -32, 28,
+    -59, 28,
+    -61, -18,
+    -69, -18
+  ]
+}

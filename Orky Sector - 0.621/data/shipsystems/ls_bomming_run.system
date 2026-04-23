@@ -1,0 +1,33 @@
+{
+	"id":"ls_bomming_run",
+	"type":"ENGINE_MOD",
+	"aiType":"BURN_DRIVE",
+	
+	"statsScript":"data.shipsystems.ls_bomming_run",
+	
+	"engineGlowColor":[255,175,25,255],
+	"engineGlowContrailColor":[100,165,200,25],
+	"engineGlowLengthMult":2.5,
+	"engineGlowWidthMult":2.5,
+	"engineGlowGlowMult":2.5,
+
+	"weaponGlowColor":[255,200,0,155],
+	"weaponTypes":[BALLISTIC,ENERGY],
+	
+	"flameoutOnImpactChance":0.0,
+
+	"clampTurnRateAfter":false,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	"useSound":"system_burn_drive_activate",
+	"loopSound":"system_burn_drive_loop",
+	"deactivateSound":"system_burn_drive_deactivate",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":50,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":50,
+	}
+}

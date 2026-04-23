@@ -1,0 +1,16 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+dcr_AggregateResultLifetimeInDays,Aggregated results lifetime,Int,5,,Number of days to keep aggregated results before discarding,1,9999,
+dcr_CombatResultLifetimeInDays,Combat results lifetime ,Int,750,,Number of days to keep combat results before discarding,1,9999,
+dcr_SimulationResultLifetimeInDays,Simulation results lifetime,Int,1,,Number of days to keep simulator results before discarding,1,9999,
+dcr_MaxCombatResultCount,Max combat results to keep,Int,50,,The maximum number of combat results to store (oldest are removed first),10,200,
+dcr_ShipCountLimit,Ship display limit,Int,15,,The maximum number of ships to display combat results for. If this is large the UI combat result will be slow.,5,25,
+dcr_FighterWeaponBreakout,Fighter weapon breakout,Boolean,false,,If fighters should have their damage broken out by individual weapon,,,
+dcr_UninstallMode,Uninstall,Boolean,false,,"Enable if you want to remove DCR. [This deletes all DCR data!]
+Uninstall Steps:
+-Set this to true
+-Ensure that no DCR intel events are selected
+-Save
+-Close Starsector
+-Remove this mod and play normally",,,Misc
+dcr_LoggingLevel,Logging Level,Radio,INFO,"DEBUG, INFO, WARN, ERROR",Controls the quantity of data logged to Starsector.log. Don't mess with this unless you know what you're doing (requires restart),,,Misc
+dcr_AnalyzeKey,Combat Aggregation Key,Keycode,38,,Sets the key that opens the combat aggregation menu (requires restart),,,Misc

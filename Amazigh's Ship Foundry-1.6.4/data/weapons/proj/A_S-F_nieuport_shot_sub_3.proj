@@ -1,0 +1,19 @@
+{
+	"id":"A_S-F_nieuport_shot_sub_3",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.arktech.ASF_NieuportOnHitEffect",
+
+	"length":62.0,
+	"hitGlowRadius":47,
+	"width":6,
+	"fadeTime":0.3,
+	"fringeColor":[200,255,200,255],
+	"coreColor":[235,255,235,255],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

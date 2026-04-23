@@ -1,0 +1,458 @@
+Version 1.12.1 (May 23, 2025)
+- Enhanced AA Compatibility Mode when LunaLib is enabled
+
+Version 1.12.0 (May 22, 2025)
+- Added LunaLib support for in-game settings changes
+  * Game restarts are NOT required to change settings
+- Fixed support for sprite sheets for weapons/ships/etc
+- Fixed a number of edge cases with texture loading that may have wasted unnecessary VRAM
+- Now capable of finding/preloading MIRV'd missile textures
+- No longer creates a hyperspace light in the Abyss
+
+Version 1.11.0 (May 14, 2025)
+- GraphicsLib will now automatically generate basic normal maps for ships, weapons, etc. which lack them
+  * The resulting normal maps are cached on disk in the GraphicsLib/cache folder
+  * The cache is invalidated/regenerated whenever the mod list changes (including because of a version number change)
+- GraphicsLib now uses a dynamic texture loader
+  * Only the necessary material/normal/surface maps will be resident in memory
+  * At the start of combat, it preloads all of the maps relevant for the ships (including all of their installed equipment) in every fleet participating in the battle, and unloads everything else
+  * At the end of combat, it unloads everything that's not part of the player fleet
+  * Any maps that were missed by the preload step are loaded immediately as they appear within view of the player
+  * Very substantial reduction in VRAM usage in almost all cases (exceptions being stuff involving literally every ship/weapon, like the Arcade mission)
+  * Reduction in overall game load time (even with auto-gen normal maps!)
+- Added to GRAPHICS_OPTIONS.ini:
+  * "preloadAllMaps":
+    - Preloads all material, normal, and surface maps
+    - VRAM-intensive, but avoids pauses before combat and stuttering during combat as textures load in
+  * "autoGenNormals"
+  * "defaultMaterialBrightness":
+    - If no material map is defined for an object, the base sprite is used instead
+    - This setting controls the brightness of the base ship (and weapon covers) sprite when it is used in this capacity
+    - The default value here is selected to match the style of the material maps included with GraphicsLib
+- New tags for ships, fighters, and weapons to adjust behavior:
+  * "graphicslib_no_autogen":
+    - Prevents auto-generated normal maps
+    - Useful for saving VRAM for sprites that never actually appear in battle (e.g., images that only appear in the Codex)
+  * "graphicslib_autogen_override":
+    - Causes auto-generated normal maps for that ship/weapon/skin/whatever to count as "real" normal maps
+    - Useful for skins that significantly change the geometry of the object
+  * "graphicslib_preload":
+    - Forces all maps (auto-gen or otherwise) associated with the ship/weapon/whatever to remain loaded at all times
+    - Should be used sparingly
+- Adjusted default settings in the presets
+  * "High-End" is the only preset with "preloadAllMaps" set to "true"
+  * "Low VRAM Compatibility" now enables normal maps & auto-gen, thanks to the enormous VRAM savings afforded by the dynamic texture loader
+- Explicitly forced mipmaps for all loaded maps (doesn't appear to have any VRAM impact on my machine, so this probably doesn't have any practical effect, but...)
+- Fixed Buffalo Mk2 and Hammer (Single) not having any maps
+- Fixed the way GraphicsLib handles animated sprites; in short, only TURRET and HARDPOINT maps allow them now
+- Improved brightness/consistency of ships that lack a material map
+- Added new TextureData API functions:
+  * getTextureDataWithAutoGen()
+    - This function can be used to procedurally preload specific texture maps at the start of combat
+    - In an EveryFrameScript or similar type of plugin, wait for "graphicslib_preload" to be set and then call this function for every map that should be preloaded
+    - Useful for factions involving custom ship spawning
+  * mapSpriteToMNSWithAutoGen()
+  * autoGenNormalMap()
+  * Intended for internal use:
+    - autoGenMissingNormalMaps()
+    - unloadAndPreloadTextures()
+
+Version 1.10.2 (April 7, 2025)
+- Updated for Starsector 0.98a RC7
+- Fixed non-compliant OpenGL in the Light shader (affects you if enableBloom is true (it usually is))
+  * Possibly fixes graphical issues for some cards
+- Added "debugLevel" option to GRAPHICS_OPTIONS
+  * Prints GL debug output, with full stack traces, to the Starsector log
+- Cleaned up some things
+
+Version 1.10.1 (April 1, 2025)
+- Explosion visuals should falsely trigger less often
+
+Version 1.10.0 (March 31, 2025)
+- Updated for Starsector 0.98a
+- Added MapObjectAPI, ShaderLib.addMapObject(), .removeMapObject(), and .getMapObjects()
+  * Permits rendering material/normal/surface maps for arbitrary objects (i.e., objects that are not associated with a ShipAPI, MissileAPI, etc.)
+- Added ShaderLib.overrideWeaponTexture() and .getWeaponTexture()
+- Added TextureData.isLoadMaterial(), .isLoadNormal(), and .isLoadSurface()
+- Removed MissileSelfDestruct; correspondingly removed no_self_destruct.csv
+- Added no_arc_overload.csv to suppress arcs generated on ship overload
+- A bunch of under-the-hood enhancements to support new vanilla content
+
+Version 1.9.0 (February 3, 2024)
+- Updated for Starsector 0.97a
+
+Version 1.8.0 (January 7, 2024)
+- Updated for Starsector 0.96a RC10
+- No more '!!!'
+- Adjusted/fixed behavior of dead ships regarding surface maps
+- Added 'optimizeNormals' option to the settings for slightly better performance in some situations
+- API expansion for RippleDistortion and WaveDistortion
+- A default white directional sun-light is now visible in non-campaign battles (simulator, missions)
+- Various private variables in RippleDistortion, WaveDistortion, and StandardLight changed to protected
+- Improved performance of ship chunks (vanilla tessellation issue solved via caching)
+- Added "shaderlib_do_not_render" custom data key, which applies to anything that has custom data, to completely ignore that entity for lighting purposes (improves performance, especially for ships)
+
+Version 1.7.0 (May 9, 2023)
+- Updated for Starsector 0.96a
+- Added new option in settings: "enableFullExplosionEffects"
+  * Disabled by default because the vanilla game handles this part now
+- Added new spreadsheet: data/config/glib/no_shield_ripple.csv
+  * Prevents shield ripples from being generated by the listed projectiles
+- Added support for fighter skin texture maps
+  * List them in the texture data the same way they're listed in settings.json
+  * e.g., "xyphos_LOW_TECH"
+- Trigonometry fixes
+- Proximity fuse "hit" lights now work properly
+  * GraphicsLib will replace the original ProximityExplosionEffect (if any) with a custom ProximityExplosionEffect
+  * This custom ProximityExplosionEffect first instantiates and calls the original one, then adds the appropriate lights
+- Fixed serious issue where some proximity fuse weapons would prematurely disappear
+- Updated the options in the Preset Options folder to include a Low VRAM Compatibility mode
+  * When using this preset, nearly all features requiring extra video memory are disabled
+  * Use this if you have weirdly low FPS and heavy stuttering during combat
+
+Version 1.6.1 (January 5, 2022):
+- Fixed arc attenuation for distortion effects
+- Updated for Starsector 0.95.1a RC6
+
+Version 1.6.0 (December 12, 2021):
+- Updated for Starsector 0.95.1a
+
+Version 1.5.1 (March 30, 2021):
+- Made sun-generated lights less extreme when multiple stars are in system
+- Insignia icons are scaled to the new range of officer levels
+  * Tier 1: Level 1-2 (freshly hired officers)
+  * Tier 2: Level 3-4
+  * Tier 3: Level 5-6 (max for trainable/mercenary/NPC officers)
+  * Tier 4: Level 7+ (max for procgen officers, NPC commanders, and AI or unique officers)
+- Added "aaCompatMode" to GRAPHICS_OPTIONS.ini
+  * Prevents GraphicsLib from crashing out at the start if you have antialiasing enabled
+  * Disables the second pass of the post processing shader
+  * You'll have antialiased sharpness in the campaign and the combat interface, but the actual in-battle ships/weapons/effects will be as blurry as if you weren't using antialiasing
+
+Version 1.5.0 (March 29, 2021):
+- Updated for Starsector 0.95a
+- Now works with screen scaling
+  * Mod-added custom shaders will almost certainly need modification to work with screen scaling
+- DOES NOT WORK with antialiasing
+  * GraphicsLib will crash out with a message asking you to either disable shaders OR disable antialiasing
+  * This is not a temporary measure; going forward, GraphicsLib and antialiasing don't mix
+  * 4K monitor users should use 200% screen scaling (antialiasing off)
+    - 5K users should use 200% scaling and 4K resolution, fullscreen-upscaled to native monitor resolution (You won't lose that much quality)
+  * 1080p monitor users should use 100% screen scaling (antialiasing off)
+  * 1440p monitor users potentially have a tough choice
+    - 100% scaling will work if the monitor is large enough (or if you have glasses)
+    - Upscaling 1080p to fullscreen native resolution might look passable (depending on your monitor and video driver) but you'll definitely lose some quality
+    - Otherwise, consider disabling shaders if you can't read the text
+    - I personally use a 1440p monitor and can play fine at 100% scaling, but your mileage may vary
+- Added shader maps for new vanilla content
+- Added lights definitions for new vanilla content
+- Ship explosions no longer create cinematic anamorphic flares
+
+Version 1.4.5 (March 10, 2021):
+- Slot cover normal map fix
+- Fixed compile error with one of the normal map shaders on certain Radeon drivers
+
+Version 1.4.4 (December 25, 2020):
+- Possible surface map transparency fix?
+- Fixed version file HTTPS redirect
+- Overload EMP colors now match the default overlay (or any special overload colors that might be scripted in)
+  * Added "useVentColorsForOverloadArcs" option for old behavior
+
+Version 1.4.3 (September 28, 2020):
+- Fixed the Benchmark progress indicator
+- Fixed normal map scaling when flipped
+- Migrated version file to custom host (sigh)
+
+Version 1.4.2 (July 8, 2020):
+- Added global function suppressEffects() to ShipDestructionEffects to suppress spawning effects for a particular ship
+- Migrated version file to BitBucket
+
+Version 1.4.1 (September 8, 2019):
+- Render order fix for layered modules
+
+Version 1.4.0 (May 17, 2019):
+- Updated for Starsector 0.9.1a
+- Added shader maps for new Starsector 0.9.1a sprites
+- Support for alternative ship textures
+- Minor fix for light fade-in logic
+- Minor fix for automatic distortion fade-out logic
+- Render order update
+
+Version 1.3.1 (February 15, 2019):
+- Fixed lighting for plasma burn system
+- Rendering order fix for lighting
+
+Version 1.3.0 (November 17, 2018):
+- Added a bunch of shader maps for new/updated Starsector 0.9a sprites
+- Updated lighting settings where applicable for new/updated Starsector 0.9a content
+- Fixed rendering order for station modules
+- Added lighting support for mine explosions
+- Works in Starsector 0.9a
+
+Version 1.2.1 (June 10, 2017)
+- Improved various effects for certain edge cases with sprites that are significantly smaller than the collision radius
+
+Version 1.2.0 (June 4, 2017)
+- Now works on Starsector 0.8.1a
+- Additional LazyLib check
+- Fixed some misc. bugs that nobody noticed
+- Tweaked ship destruction effects for ship pieces to avoid fx spam
+- Updated even more sprites
+
+Version 1.1.0 (April 23, 2017)
+- Now works on Starsector 0.8a
+- Supports lighting on destroyed ship pieces
+- New maps for the new ships/weapons, and updated maps for a large number of existing ships/weapons
+
+Version 1.0.4 (March 26, 2017)
+- Adjusted ripple intensity for ship deaths
+- Disable bloom automatically on Intel IGPs
+
+Version 1.0.3 (January 8, 2017)
+- Nvidia post processing bug is fixed
+
+Version 1.0.2 (May 21, 2016)
+- General compatibility update
+
+Version 1.0.1 (April 22, 2016)
+- Added sun/hyperspace lighting from SS+
+
+Version 1.0.0 (April 15, 2016)
+- Renamed to GraphicsLib
+- shaderSettings.json renamed to GRAPHICS_OPTIONS.ini
+- Added graphical effects plugins previously in Starsector+
+- Added data/config/no_self_destruct.csv in case you want your mod-added missiles to not explode automatically
+
+Beta 1.2.1 (February 28, 2016)
+- Fixed cover-related glitches and crashes
+
+Beta 1.2.0 (February 26, 2016)
+- Updated for Starsector 0.7.2a
+- Weapon cover maps supported
+- Option defaults improved for users with incompatible hardware
+- Benchmark mission improved
+
+Beta 1.1.2 (December 8, 2015)
+- Significantly reduced ShaderLib CPU usage
+- Added "extraScreenClear" option to shaderSettings.json (set to false to reduce fill rate)
+
+Beta 1.1.1 (November 30, 2015)
+- Now ACTUALLY updated for Starsector 0.7a
+- Added new asteroid types to lighting maps
+
+Beta 1.1.0 (November 19, 2015)
+- Updated texture/lighting content for Starsector 0.7a
+- Updated Becnhmark metrics and scoring
+- Added optimized SectorMark mission for official benchmarks
+
+Beta 1.07 (June 6, 2015)
+- Added Post Processing Shader
+- Added color blindness presets
+- Added "enablePostProcess" and "colorBlindnessMode" options to shaderSettings.json
+- Remade Benchmark mission; added SectorMarks scoring system
+
+Beta 1.06 (March 13, 2015)
+- Improved default lighting settings
+- Made graphics more compliant; should have fewer glitches, especially on cards that used to have problems
+
+Beta 1.05 (February 16, 2015)
+- Improved distortions compatibility (hopefully)
+- Made ship skin textures fall back to base hull textures if an entry for the skin doesn't exist
+
+Beta 1.04 (February 16, 2015)
+- Improved bloom compatibility (hopefully)
+- Adjusted lighting data
+- Resolved possible memory leaks
+
+Beta 1.03 (January 8, 2015)
+- Additional optimizations
+- Fixed loaded missile lighting
+- Added Performance Test mission
+- Added method to DistortionShader: void removeDistortion(DistortionAPI distortion)
+- Added method to LightShader: void removeDistortion(DistortionAPI distortion)
+
+Beta 1.02 (December 8, 2014)
+- Code review and cleanup
+- Code optimizations: up to a 20% increase in frame rate
+
+Beta 1.01 (November 10, 2014)
+- Made framebuffers more compatible, should resolve some bugs
+- Added methods to ShaderLib: boolean useBufferEXT(), boolean useBufferARB(), boolean useBufferCore()
+
+Beta 1.0 (November 3, 2014)
+- Weapon barrels and loaded missiles are now affected by lighting
+- Fixed bug with WaveDistortion
+
+Beta 0.9 (October 23, 2014)
+- Updated for Starsector 0.65a
+- Shaders no longer draw on top of the UI
+- Major stability update
+- Shaders should behave more consistently
+- Asteroids and missiles are now affected by lighting
+- Weapon unders are now affected by lighting (barrels and loaded missiles are broken for now)
+- All maps updated to reflect new ship sprites; new maps added for new ships/skins
+- ShaderLib settings file renamed to "shaderSettings.json"
+- Removed static texture definitions; mods should no longer define textures in settings.json
+- Added smart texture loading to dramatically reduce memory usage when options are turned down
+- Removed "category" and "key" columns from the texture data CSV
+- Added "path" column to the texture data CSV
+- Added "loadMaterial" option to shaderSettings.json
+- Added "loadSurface" option to shaderSettings.json
+- Added "useLargeRipple" option to shaderSettings.json
+- Split "brightnessScale" to "intensityScale" and "sizeScale" options in shaderSettings.json
+- Added method to DistortionAPI: float getArcAttenuationWidth()
+- Several methods renamed or changed in some manner
+- Removed ShaderLib.setVanillaViewport()
+- Removed weapon "shadows" (the effect never worked quite right)
+
+
+Alpha 1.7 (August 30, 2014)
+- Surface maps added to all vanilla ships and weapons
+- Issue with ShaderLib Basic fixed
+- Version Checker support added
+- Rare crashes fixed
+- Benchmark mission added
+
+Alpha 1.66 (July 13, 2014)
+- Shaders being disabled no longer stops a ShaderAPI from being loaded (they can double as EveryFrameCombatPlugins now)
+- Beam lights and fast projectile lights are more accurate on impact with objects (but not perfect until the next Starsector update)
+
+Alpha 1.65 (July 9, 2014)
+- Changed default reload key to F10
+- Updated lighting shader to avoid minor graphics glitches on the edges of objects when using surface maps
+
+Alpha 1.64 (July 9, 2014)
+- Fixed major memory leak when reloading shaders
+- Changed default reload key to F11
+- Lighting shader now runs even if no lights are onscreen (smooths performance and makes things more consistent)
+
+Alpha 1.63 (July 8, 2014)
+- Fixed weapon blend function override bug
+
+Alpha 1.62 (July 3, 2014)
+- Added surface map support (only used if normal maps are enabled)
+- Added method to StandardLight: void makePermanent()
+- Added method to ShaderLib: void setWeaponShadowDirection(Vector2f direction)
+- Added fixed-direction shadows to weapons when the ship is lit up with lights
+- Rare "light leaks" eliminated
+
+Alpha 1.61 (June 30, 2014)
+- Added "magnitude" column to texture data CSV for normal map magnitude changes per texture
+- Modified vanilla ship material maps (darkened and increased contrast, across the board)
+- Slightly tweaked vanilla lights
+
+Alpha 1.6 (June 24, 2014)
+- Added "reloadKey" option to settings.json
+- Added method to ShaderAPI: void destroy()
+- Added methods to ShaderLib: int getAuxiliaryBufferTexture(), int getAuxiliaryBufferId()
+- Memory usage improved
+
+Alpha 1.52 (June 16, 2014)
+- Added "weaponFlashHeight" and "weaponLightHeight" options to settings.json
+- Fixed ShaderLib Basic again
+
+Alpha 1.51 (June 11, 2014)
+- Added missile material and normal map support, plus vanilla missile material and normal maps (these will not do anything until the next Starsector update)
+- Fixed crash for ShaderLib Basic
+
+Alpha 1.5 (June 9, 2014)
+- Added texture loader tables; you will need to define your material and normal maps in a csv
+- TextureEntry and TextureData added
+- Fixed quality-5 bloom causing bloom to disappear
+- Significant CPU performance increase with lighting and normal maps
+
+Alpha 1.45 (May 31, 2014)
+- Added material maps and normal maps for all vanilla ships and weapons
+- Fixed weapon material and normal maps (you can now specify whether it is the hardpoint or turret)
+- Minor viewport fixes that may improve compatability with other mods that use OpenGL
+- Fixed screen scaling issue in windowed mode when the window resolution is equal to the desktop resolution
+- Fixed specularity direction error on point, line, and cone lights
+- Lights no longer reflect on phased ships
+- Re-adjusted default settings
+- Split ShaderLib into two distributions: Basic and Full
+
+Alpha 1.4 (May 27, 2014)
+- Fixed normal rotation and direction issues
+- Added support for cone-type and directional-type lights
+- Added "normalFlatness" option to settings.json
+- Removed unnecessary setter methods from LightAPI
+- Maximum lights reduced to 372
+- Material-mapped hulks now have much less specularity and reflectivity
+- Added methods to LightAPI: float getArcStart(), float getArcEnd(), Vector3f getDirection(), float getSpecularIntensity(), float getHeight()
+- Added methods to StandardLight: void setArc(float start, float end), void setDirection(Vector3f direction), void setSpecularIntensity(float intensity), void setHeight(float height)
+
+Alpha 1.3 (May 26, 2014)
+- Blinn-Phong lighting added to Lighting Engine for cases where a sprite uses a normal map (this feature is off by default and is intended for TC mods and a possible future where more sprites have normal maps)
+- Added "enableNormal", "specularIntensity", "specularHardness", and "lightDepth" options to settings.json
+- Rare NVIDIA fullscreen "ghosting" issue resolved
+- Light data documentation added (in the data/lights folder)
+- Custom material maps supported (to use, link a texture to the ship/weapon by adding a key to "graphics" in data/config/settings.json; see example in ShaderLib)
+- Custom normal maps supported (to use, link a texture to the ship/weapon by adding a key to "graphics" in data/config/settings.json; see example in ShaderLib)
+- Example normal and material maps added for Conquest, Onslaught, and Paragon (the normal maps were machine-generated)
+
+Alpha 1.24 (May 24, 2014)
+- Added an alternative low-memory animated ripple
+- Decreased graphics memory usage, especially when shaders are disabled
+- Fixed file naming standards
+
+Alpha 1.23 (May 23, 2014)
+- Restructured internal rendering code
+
+Alpha 1.22 (May 23, 2014)
+- Fixed a major issue on some computers involving sprite alignment
+- Added method to ShaderLib: void setVanillaViewport()
+
+Alpha 1.21 (May 23, 2014)
+- Update to the light and bloom shaders for clarity and slightly better performance
+- Changed displayable mod name to "ZZ ShaderLib" so it loads and runs last
+- Added "use64BitBuffer" option to settings.json
+- Improved color depth
+
+Alpha 1.2 (May 19, 2014)
+- Bloom effect added to Lighting Engine (for situations where the lights are particularly bright)
+- Added "enableBloom", "bloomQuality", "bloomMips", "bloomScale", and "bloomIntensity" options to settings.json
+- Added methods to StandardLight: void setVelocity(Vector2f velocity), void setVelocity2(Vector2f velocity), Vector2f getVelocity(), Vector2f getVelocity2(), Vector2f setOffset(), Vector2f getOffset()
+- Added methods to WaveDistortion and RippleDistortion: void setVelocity(Vector2f velocity), Vector2f getVelocity()
+- Added methods to ShaderLib: void drawScreenQuad(float scale), void copyScreen(int texture, int textureUnit)
+- Added "offset" column to lights CSV (how many pixels behind the projectile to spawn the standard light, which may be useful for missiles; ignored for beams)
+- Added "fighterBrightnessScale" option to settings.json (default 0.5)
+- Added two arguments (int texture, int textureUnit) to ShaderLib.screenDraw()
+- Updated WaveDistortion texture (should act properly now; to get a sphere, set the intensity to 1/4 the size)
+- Updated RippleDistortion texture
+- Fixed enableLights and enableDistortion settings options
+- Updated LightAPI's advance method to return a boolean representing whether it should be destroyed that frame or not
+
+Alpha 1.11 (May 17, 2014)
+- Added methods to DistortionAPI: float getArcStart(), float getArcEnd() (allows only a certain subset of the direction vectors to apply)
+
+Alpha 1.1 (May 17, 2014)
+- Universal Distortion Engine (DistortionShader) added
+- Added "enableDistortion" and "maximumDistortion" options to settings.json
+- DistortionAPI added
+- Added WaveDistortion type
+- Added RippleDistortion type
+- Added "flash offset" column to lights CSV (how many pixels behind the projectile to spawn the muzzle flash, which should not be needed for most weapons; ignored for beams)
+- Added method to LightAPI: void advance(float amount)
+- Internal shaders externalized to the shaders folder (modify at your own risk)
+- Some additional documentation added
+
+Alpha 1.05 (May 11, 2014)
+- Fixed most of the issues related to animated weapons causing flickering lights
+
+Alpha 1.04 (May 8, 2014)
+- Added "brightnessScale" option to settings.json (default 1.0)
+
+Alpha 1.03 (May 6, 2014)
+- Added method to LightData: void readLightDataCSVNoOverwrite(String localPath)
+- Added method to ShaderLib: int getScreenTexture()
+- Added "maximumLineLights" option to settings.json (default 50)
+- Serious AMD performance issue resolved; will be slightly faster for nVidia users as well
+
+Alpha 1.02 (May 5, 2014):
+- Added method to ShaderLib: ShaderAPI getShaderAPI(Class<? extends ShaderAPI> shaderAPI)
+- Fixed problems and possible memory leaks if mods used LightShader.addLight when the user has lights disabled/unsupported
+- Documented and expanded StandardLight and LightAPI
+- Toned down the vanilla lights
+
+Alpha 1.01 (May 4, 2014):
+- AMD Hotfix

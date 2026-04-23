@@ -1,0 +1,97 @@
+{
+  "hullName": "Polus PS-50",
+  "hullId": "sfcpolus",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/torpedo_tanker_frigate_v1.png",
+  "style": "MIDLINE",
+  "height": 99,
+  "width": 82,
+  "center": [41, 49.5],
+  "collisionRadius": 78.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 67,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 45,
+      "locations": [-16.5, 28],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 45,
+      "locations": [-3.5, 28],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 45,
+      "locations": [9.5, 28],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [19.5, -5],
+      "renderOrderMod": 500
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [39.5, -24]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [44.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-49, 6],
+      "length": 50,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -47, -16,
+    -47, 16,
+    -30.5, 19.5,
+    -22, 36,
+    20, 39.5,
+    48.5, 3.5,
+    32.5, -33,
+    -30.5, -31
+  ]
+}

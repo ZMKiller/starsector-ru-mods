@@ -1,0 +1,52 @@
+{
+  "id": "sfcamcannon",
+  "specClass": "projectile",
+  "projectileSpecId": "sfcamcannon_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/PAGSM/weapons/Antimatter_Cannon_Diktat.png",
+  "turretGlowSprite": "graphics/PAGSM/weapons/Antimatter_Cannon_Diktat_Glow.png",
+  "turretGunSprite": "graphics/PAGSM/weapons/Antimatter_Cannon_Diktat.png",
+  "turretUnderSprite": "graphics/PAGSM/weapons/Antimatter_Cannon_Diktat.png",
+  "hardpointSprite": "graphics/PAGSM/weapons/Antimatter_Cannon_Diktat.png",
+  "hardpointGlowSprite": "graphics/PAGSM/weapons/Antimatter_Cannon_Diktat_Glow.png",
+  "hardpointGunSprite": "graphics/PAGSM/weapons/Antimatter_Cannon_Diktat.png",
+  "glowColor": [
+    155,
+    100,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    16.5,
+    0.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    50.5,
+    0.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 200,
+    "spread": 20,
+    "particleSizeMin": 60,
+    "particleSizeRange": 60,
+    "particleDuration": 0.12,
+    "particleCount": 60,
+    "particleColor": [
+      155,
+      100,
+      255,
+      255
+    ]
+  },
+  "fireSoundTwo": "amcannon_fire"
+}

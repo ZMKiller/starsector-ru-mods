@@ -1,0 +1,19 @@
+{
+  # Setting to true will add Inactive Gates to the intel screen when the gate scan occurs, revealing their location
+  "RevealInactiveGates": false, # Default false
+
+  # Setting to true will scan all gates, regardless of whether there is a non-hidden market or not
+  "ActivateInactiveGates": false, # Default false
+
+  # How long between checks for new gates in seconds, default 1
+  "GateScanUsableCheckInterval": 1,
+
+  # How long between long file reports of elapsed time in seconds to check for new gates, default 60
+  "GateScanDiagnosticsInterval": 60,
+  
+  "graphics":{
+	  "misc":{
+		  "lunaSettingsIcon":"graphics/ScanThoseGates/icons/lunaSettings/gate_active.png"
+	  }
+  }
+}

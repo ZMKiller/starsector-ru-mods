@@ -1,0 +1,330 @@
+{
+	#########################################################
+	# vanilla overrides
+	"colonyOverMaxPenalty":1,			# default 2
+	"industryRefundFraction":0.4,		# default 0.75
+	#"raidCooldownDays":3,				# default 1
+	
+	"pirateBaseBounty1":80000,			# default 40000,
+	"pirateBaseBounty2":100000,			# default 50000,
+	"pirateBaseBounty3":120000,			# default 60000,
+	"pirateBaseBounty4":140000,			# default 70000,
+	"pirateBaseBounty5":180000,			# default 80000,
+	
+	#"bombardFuelFraction":1.5,
+	
+	"tier2StationOfficerLevel":2,
+	"tier3StationOfficerLevel":4,
+	
+	# no longer used, vanilla settings keeps only for reverse compat
+	#"adminHireTier2":20000,		#50000,
+	#"adminSalaryTier2":10000,	#25000,
+	
+	"basePirateRaidTimeoutMonths":[3, 7],	#[6, 18],
+	
+	"economyExceptionOnMissingMarketEntity":false,
+	
+	#########################################################
+	# end vanilla overrides
+	
+	"nex_enableVersionChecker":true,
+	# if true, locations in Academy quest aren't marked as story-critical, so they can be decivilized and such
+	# (and the "go to Academy" bar quest doesn't appear)
+	"nex_noStoryCriticalMarkets":false,
+	
+	"nex_skipStoryDefault":false,	# also has LunaLib config
+	
+	"nex_keepSModsForRecoveredShips":true,	# note: only affects enemy ships, friendly ships already keep their mods
+	
+	"nex_enableMiningFleets":true,
+	"nex_enableMiningHarass":true,	# raiders bother a mining player
+	"nex_miningHarassThreshold": 11,
+	
+	"nex_conquestMissionIntervalRateMult":0.05,
+	"nex_disruptMissionIntervalRateMult":0.125,
+	"nex_pirateRageIncrement":0.02,
+	"nex_expeditionDelayPerExistingColony":15,
+	"nex_colonyExpeditionOnlyAfterGalatia":false,
+	"nex_faction_respawn_cooldown":150,
+	"nex_revengeInvasionPointsToSpawn":125,
+	# if false, other factions will not attack Templars; recommend combining with "canInvade" tag in Templars' faction config to make them not invade others
+	"nex_invade_and_raid_templars":true,
+	"nex_raidToBlockadeConversionFreq":0.2f,
+	"nex_invasionStabilizeTimeoutMult":1,
+	"nex_invasionBaseDefenseMult":1.4,	# legacy invasions only
+	"nex_useGroundBattleIndustryMap":true,	# new invasions only
+	"nex_gbUseFleetSupportEstimate":false,	# if true, will include estimated fleet support bonuses in units' displayed attack power
+	"nex_gbTurnDaysPlayer":1,	# when player is participating
+	"nex_gbTurnDaysNPC":1,	# when player is not participating
+	
+	"nex_pirateBasesRequireLivePirateFaction":true,	# pirate/Pather bases stop spawning if their faction has been eliminated (i.e. due to no non-hidden markets)
+	
+	"nex_disruptMissionRewardMult":25000,	# no longer used
+	
+	"nex_transferMarket_valueDivisor":100000,
+	"nex_transferMarket_incomeDivisor":50000,
+	"nex_transferMarket_originalOwnerMult":1.33,
+	"nex_transferMarket_recentlyCapturedMult":0.2,
+	
+	"nex_tributeIncomePenalty":0.15,
+	"nex_tributePopulationMult":0.5,
+	
+	"nex_governorship_maxSize":4,	# tooltip will not be updated to reflect changes to this
+	"nex_governorship_industryValueMult":0.8,
+	"nex_autonomousIncomeMult":0.25,
+	"nex_rulerIncomeMult":0.25,	# making it same as autonomous income mult saves me the trouble of rewriting the tooltip for it
+	"nex_xpPerProfitMargin":4000,	# passive XP income from profitable colonies administered by player
+	
+	"nex_fleetRequestOrganizeTimeMult":0.75,	# default 0.75
+	"nex_fleetRequestMaxFP":2000,
+	
+	"nex_vultureSpawnRateMult":1,	# setting it to zero should prevent vultures from spawning, but I have not personally confirmed this
+	
+	"nex_spacerDebtMult":1,
+	
+	"nex_npcColonyGrowthMult":0.5,
+	"nex_stationGrowthMult":1,
+	"nex_stationMaxSize":6,
+	"nex_showNPCGrowthMessages":true,
+	
+	"nex_brawlMode":false,	# much stronger invasion fleets, with defense fleets spawned to counter them
+	"nex_brawlMode_minMult":1.5,
+	"nex_brawlMode_maxMult":3,
+	"nex_brawlMode_randomFactionGearChance":0,	# 0.6
+	
+	"nex_remnantRaidSizeMult":1,
+	
+	"nex_sectorDefenderMode":false,	# invasions can only be launched by or against hostile-to-all factions
+	
+	"nex_officerBaseEscapeChance":0.5,	# modified by crew loss mult
+	"nex_officerSurviveChance":0.75,	# modified by crew loss mult; survive chance is the base value only if officer does not escape and ship is disabled rather than destroyed
+										# if the ship is lost, survival chance starts at zero and reaches this number when crew loss mult is zero
+	
+	"nex_insuranceFraudCheck":true,		# legacy insurance only
+	
+	"nex_merc_company_contract_period":365,
+	
+	"nex_killCellsForCommissioner":false,
+	
+	"nex_playerOutpost_metals":400,
+	"nex_playerOutpost_supplies":75,
+	"nex_playerOutpost_machinery":50,
+	"nex_playerOutpost_crew":80,
+	"nex_playerOutpost_gammacores":1,
+	#"nex_playerOutpost_credits":50000,
+	"nex_playerOutpost_upkeep":2500,
+	
+	"nex_hardModeDispositionModifier":-15,
+	"nex_hardModeDominanceMult":1.5,	# when calculating disposition
+		
+	"nex_aiCoreAndPrisonerCooldownAfterInvasion":61,	# cannot turn in prisoners or AI cores for this long after a successful invasion of that faction's markets
+	
+	"nex_bonusAdminLevels":[0, 10, 25, 40, 60, 80, 100, 125, 160, 200, 250, 300],
+	
+	"nex_insurance_newDHullMult":0.2,
+	
+	"nex_factionBounty_issuedByEnemies":true,
+	
+	"nex_milestones":true,	# enable milestones system?
+	
+	"nex_spawnHypershuntComplication":true,
+	
+	"nex_vicVirusBombChance":0.5,	# at 0.5, half of sat bomb expeditions by VIC will be converted to virus bomb expeditions
+	"nex_ignoreSatBomb":false,	# no rep loss with third parties for sat bombing (also no perma-hatred with anyone)
+	
+	"nex_blueprintSwap_minAvailable":7,
+	"nex_blueprintSwap_maxAvailable":10,
+	
+	"nex_specialForces_overOfficerLimitWarningOnly":true,
+	
+	"nex_sizeFractionForVictory":0.501,	# note: winner must also be twice as big as the next largest party
+	"nex_heavyIndustryFractionForVictory":0.667,
+	
+	"nex_ha_policeMaxFleets":1,
+	
+	"nex_colonyConditionValues":{
+		#"ore_sparse":1,	# worthless
+		"ore_moderate":2,	# 2.5,
+		"ore_abundant":5,
+		"ore_rich":10,
+		"ore_ultrarich":18,
+		
+		"rare_ore_sparse":1,	# 1.5,
+		"rare_ore_moderate":4,
+		"rare_ore_abundant":8,
+		"rare_ore_rich":15,
+		"rare_ore_ultrarich":24,
+		
+		"volatiles_trace":2,
+		"volatiles_diffuse":5,
+		"volatiles_abundant":10,
+		"volatiles_plentiful":22,
+		
+		"organics_trace":1,
+		"organics_common":2.5,
+		"organics_abundant":6,
+		"organics_plentiful":15,
+		
+		"farmland_poor":2,
+		"farmland_adequate":6,
+		"farmland_rich":12,
+		"farmland_bountiful":20,
+		"water_surface":6,
+		
+		"habitable":20,
+		"mild_climate":20,
+		
+		"US_artificial":10,
+		"US_religious":10,
+		"US_elevator":10,
+		
+		"US_shrooms":-10,
+	},
+	
+	# these control the allowed slider length
+	"nex_randomSector_maxSystems":48,
+	"nex_randomSector_maxPlanets":120,
+	"nex_randomSector_maxStations":80,
+	# pushes everything this far away from a specified sector center (_not_ [0, 0]).
+	# not really recommended, likely to mess with the generation in undesirable ways if significant values are used
+	"nex_expandCoreLength":0,
+	"nex_expandCoreMult":1,
+	
+	"nex_customStartFleetThresholds":[0, 80000, 160000, 240000, 500000, 1000000],
+	
+	"nex_factionSetupMaxPoints":100,	# care package value
+	"nex_factionSetupNumFont":"graphics/fonts/insignia21LTaa.fnt",
+	
+	"plugins":{
+		"coreLifecyclePlugin":"exerelin.plugins.NexCoreLifecyclePlugin",
+		"newGameCreationEntryPoint":"exerelin.world.ExerelinNewGameSetup",
+		#"newGameSectorProcGen":"exerelin.world.ExerelinSectorProcGen",
+	},
+	
+	# Bonus XP values for most story-point-using actions
+	"bonusXP":{
+		"agentOrderSuccess":0.75,
+		"agentOrderDetection":1,
+		"agentOrderBoth":0.5,
+		
+		"nex_hireMerc":0.75,
+		"nex_gb_inspire":0.5,
+		
+		"nex_remFragments_threaten":1,
+		"nex_remBrawl_smoothtalk":0.75,
+		"nex_remBrawl_betray":0,	# since cost is zero SP
+		
+		"nex_RACA_persuade":0.25,
+	},
+	
+	"graphics":{
+		"abilities":{
+			"exerelin_follow_me":"graphics/icons/abilities/something.png",
+		},
+		"illustrations":{
+			"facility_explosion":"graphics/illustrations/facility_explosion.jpg",
+			"fly_away":"graphics/illustrations/fly_away.jpg",
+			"corporate_lobby":"graphics/illustrations/corporate_lobby.jpg",
+			"victory_apostate":"graphics/exerelin/illustrations/victory_apostate.jpg",
+			"omega_blueprint":"graphics/exerelin/illustrations/omega_blueprint.png",
+		},
+		
+		"characters":{
+			"nex_dissonant":"graphics/exerelin/portraits/dissonant.png",
+			"nex_towering":"graphics/exerelin/portraits/towering.png",
+			"nex_argent":"graphics/exerelin/portraits/argent_v3.png",
+			"volta":"graphics/portraits/characters/volta.png",
+		},
+		
+		"nex_groundbattle":{
+			"icon_grounddefenses":"graphics/exerelin/icons/groundbattle/groundefenses.png",
+			"icon_heavybatteries":"graphics/exerelin/icons/groundbattle/heavybatteries.png",
+			"icon_inspire":"graphics/icons/skills/leadership.png",
+			"icon_ignisPluvia":"graphics/exerelin/icons/groundbattle/ignispluvia.png",
+			
+			"help_unitCard":"graphics/exerelin/help/gb_unitcard.png",
+		},
+		
+		"intel":{
+			"alliance":"graphics/icons/intel/star.png",
+			"allianceVote":"graphics/icons/intel/stars.png",
+			"credits":"graphics/icons/intel/gain_credits.png",
+			
+			"diplomacy":"graphics/icons/intel/faction_peace.png",
+			"war":"graphics/icons/intel/war.png",
+			"peace":"graphics/icons/intel/peace.png",
+			
+			"nex_invasion":"graphics/exerelin/icons/intel/invasion.png",
+			"nex_satbomb":"graphics/icons/markets/meteor_strike.png",
+			"respawn_base":"graphics/icons/markets/orbital_station.png",
+			"nex_vengeance":"graphics/exerelin/icons/intel/intel_skull.png",
+			"nex_rebellion":"graphics/exerelin/icons/intel/rebellion.png",
+			
+			"reputation":"graphics/icons/intel/reputation.png",
+			
+			"spyEvent0":"graphics/exerelin/icons/intel/spy4.png",
+			"spyEvent1":"graphics/exerelin/icons/intel/spy4_amber.png",
+			"spyEvent2":"graphics/exerelin/icons/intel/spy4_red.png",
+						
+			# not used directly, just to get the images to load
+			"trait_paranoid":"graphics/exerelin/icons/intel/war.png",
+			"trait_pacifist":"graphics/exerelin/icons/intel/peace.png",
+			"trait_irredentist":"graphics/factions/crest_domain.png",
+			"trait_stalwart":"graphics/icons/skills/leadership2.png",
+			"trait_weak-willed":"graphics/exerelin/icons/intel/white_flag.png",
+			"trait_foreverwar":"graphics/exerelin/icons/intel/corinthian_helmet.png",
+			"trait_temperamental":"graphics/exerelin/icons/intel/double_exclamation.png",
+			"trait_dislikesAI":"graphics/exerelin/icons/intel/bannedcore1.png",
+			"trait_hatesAI":"graphics/exerelin/icons/intel/bannedcore2.png",
+			"trait_likesAI":"graphics/exerelin/icons/intel/heartcore.png",
+			"trait_envious":"graphics/exerelin/icons/intel/greeneye.png",
+			"trait_submissive":"graphics/exerelin/icons/intel/chain_and_ball.png",
+			"trait_neutralist":"graphics/exerelin/icons/intel/swiss_flag.png",
+			"trait_monopolist":"graphics/icons/industry/exports40.png",
+			"trait_lawAndOrder":"graphics/exerelin/icons/intel/police_star.png",
+			"trait_lowProfile":"graphics/portraits/bgs/bg03.png",
+			"trait_devious":"graphics/exerelin/icons/intel/spy.png",
+			"trait_monstrous":"graphics/exerelin/icons/intel/claw.png",
+			
+			"nex_milestone_tuxedo":"graphics/exerelin/icons/intel/tuxedo.png",
+			"nex_milestone_gunbarrel":"graphics/exerelin/icons/intel/gunbarrel.png",
+			
+			"nex_spaceport":"graphics/icons/markets/spaceport.png",
+		},
+		
+		"marketConditions":{
+			"military_base":"graphics/icons/markets/military_base.png",
+			"fuel_production":"graphics/icons/markets/am_fuel_facility.png",
+			"heavy_industry":"graphics/icons/markets/autofactory.png",
+			"academy":"graphics/exerelin/icons/markets/indevo_academy.png",
+			"repairdocks":"graphics/exerelin/icons/markets/indevo_repairdocks.png",
+		},
+		
+		"misc":{
+			"nex_ironbank_logo":"graphics/exerelin/icons/ironbank.png",
+			"nex_icon_remnant":"graphics/exerelin/icons/logo_remnant.png",
+			"nex_icon_omega":"graphics/exerelin/icons/logo_omega.png",
+			"nex_groundunit_attackpower":"graphics/exerelin/ui/red_diamond.png",
+			"nex_groundunit_defensepower":"graphics/exerelin/icons/groundbattle/shield.png",
+			"command_experience":"graphics/icons/skills/command_experience.png",
+			
+			"nex_station_render":"graphics/exerelin/station_render_wireframe2.png",
+			
+			"nex_luna_icon":"graphics/exerelin/icons/nex_icon_nobg.png",
+		},
+		
+		"raidObjectives":{  # icons displayed at 26x26
+			"beta_core":"graphics/icons/cargo/ai_core_beta.png",
+		},
+		
+		"ui":{
+			"nex_mining":"graphics/exerelin/icons/hammer_and_pick.png",
+			"nex_plant":"graphics/exerelin/icons/plant.png",
+			"nex_population_upsize":"graphics/exerelin/icons/population.png",
+			"nex_factionsetup_industry_frame":"graphics/exerelin/ui/factionsetup_industry_frame.png",
+			
+			"nex_arrow_right":"graphics/exerelin/ui/arrow_right.png",
+			"nex_arrow_left":"graphics/exerelin/ui/arrow_left.png",
+		},
+	}
+}

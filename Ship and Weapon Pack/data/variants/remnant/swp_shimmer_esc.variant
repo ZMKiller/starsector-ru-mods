@@ -1,0 +1,41 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 10,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "swp_shimmer",
+    "hullMods": [
+        "advancedoptics",
+        "targetingunit",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_shimmer_esc",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "lrpdlaser",
+                "WS0004": "lrpdlaser",
+                "WS0005": "lrpdlaser",
+                "WS0006": "lrpdlaser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "heatseeker",
+                "WS0002": "heatseeker"
+            }
+        }
+    ],
+    "wings": [
+        "spark_wing",
+        "spark_wing",
+        "spark_wing",
+        "spark_wing"
+    ]
+}

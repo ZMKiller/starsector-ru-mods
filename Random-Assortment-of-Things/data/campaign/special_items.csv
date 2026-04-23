@@ -1,0 +1,22 @@
+name,id,tags,tech/manufacturer,rarity,base price,stack size,cargo space,baseRaidDanger,icon,sound id,sound id drop,plugin,plugin params,desc,order
+#Abyss,,,,,,,,,,,,,,,
+Установщик корпусных модификаций,rat_alteration_install,hide_in_codex,Hull Alteration,,10000,1000,1,,graphics/icons/cargo/rat_alteration_installer.png,ui_chip_pickup,ui_industry_bp_drop,assortment_of_things.abyss.items.AlterationInstallerItem,,,400
+Данные исследования Бездны,rat_abyss_survey,codex_unlockable,,,20000,1000,1,,graphics/icons/cargo/rat_abyss_survey.png,ui_chip_pickup,ui_industry_bp_drop,assortment_of_things.abyss.items.AbyssalSurveyData,,,402
+,,,,,,,,,,,,,,,
+#Relics,,,,,,,,,,,,,,,
+Чертёж промышленности с поддержкой кузни,rat_consumeable_industry,hide_in_codex,Forge-Assisted,,20000,1000,1,,graphics/icons/cargo/rat_consumeable_industry.png,ui_chip_pickup,ui_industry_bp_drop,assortment_of_things.campaign.items.ConsumeableIndustryBP,,"Содержит технические спецификации и промышленный нанокузнечный модуль, позволяющие построить и обслуживать эту отрасль или структуру.",400
+,,,,,,,,,,,,,,,
+#Exo,,,,,,,,,,,,,,,
+Пакет чертежей экзо-технологий,rat_exo_package,"package_bp, no_drop, hide_in_codex",,,650000,1000,1,,graphics/icons/cargo/rat_blueprint_exo.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,rat_exotech_bp,"Позволяет тяжелой промышленности производить наиболее распространенные корпуса кораблей, вооружение и ЛПК истребителей школы «экзо-технологий». Доктрина сосредоточена на фазовых кораблях и их линии поддержки.",270
+,,,,,,,,,,,,,,,
+Варп-катализатор,rat_warp_catalyst,"mission_item, codex_unlockable",,,1000000,1000,1,,graphics/icons/cargo/rat_warp_catalyst.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.BaseSpecialItemPlugin,,"Кристаллическая структура из неизвестного материала. По сути это узкоспециализированный аккумулятор, рассчитанный на экстремальные потоки флюкса и передачу их в конечную точку.
+
+Секрет изготовления этого чуда был известен лишь немногим внутри фракции; неизвестно, остался ли кто-то из них в Секторе.",10
+Договор о партнёрстве,rat_exo_deed,hide_in_codex,,,100000,1000,1,,graphics/icons/cargo/rat_exo_deed.png,ui_chip_pickup,ui_modspec_drop,assortment_of_things.exotech.items.PartnershipDeed,,,-1000
+#Drone Replicator,rat_drone_replicator,,,,500000,1000,1,,graphics/icons/cargo/rat_hangar_forge.png,ui_chip_pickup,ui_modspec_drop,assortment_of_things.exotech.items.PartnershipDeed,,,-1000
+,,,,,,,,,,,,,,,
+#Other,,,,,,,,,,,,,,,
+Артефакт,rat_artifact,hide_in_codex,Artifact,,50000,1000,1,,graphics/icons/rat_empty.png,ui_chip_pickup,ui_industry_bp_drop,assortment_of_things.campaign.items.ArtifactItem,,"Необычный артефакт, который можно интегрировать во флот для получения дополнительных преимуществ. Из-за сложности таких устройств одновременно может быть активен только один. Интеграция выполняется через меню «Флот».",5000
+,,,,,,,,,,,,,,,
+#Unused Now,,,,,,,,,,,,,,,
+Особое AI-ядро,rat_ai_core_special,hide_in_codex,,0,25000,1000,1,,,ui_chip_pickup,ui_modspec_drop,assortment_of_things.campaign.items.AICoreSpecialItemPlugin,,,41

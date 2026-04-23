@@ -1,0 +1,28 @@
+{
+	"id":"ls_kanister_frag",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/weapons/ls_krusha_kannon_turret.png",
+	"turretGunSprite":"graphics/weapons/ls_krusha_kannon_turret_barrel.png",
+	"hardpointSprite":"graphics/weapons/ls_krusha_kannon_hardpoint.png",
+	"hardpointGunSprite":"graphics/weapons/ls_krusha_kannon_hardpoint_barrel.png",	
+	"visualRecoil":10.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[26, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[28, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":55.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":20.0,
+					   "particleSizeMin":4.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":0.75,
+					   "particleCount":40,
+					   "particleColor":[255,150,50,245]},
+	"projectileSpecId":"ls_kanister_frag",  # projectile that will be fired
+	"fireSoundTwo":"kill_kanon_sound",
+}

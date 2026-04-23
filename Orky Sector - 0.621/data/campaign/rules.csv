@@ -1,0 +1,553 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME LS,,,,,,
+,,,,,,
+# greetings,,,,,,
+greetingFriendly_ls_ds,OpenCommLink,"$faction.id == ls_ds
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Эй, где тут драка?""
+OR
+""Тебе повезло, что босс тебя любит, а то я бы сам тебя растоптал!""
+
+",,
+greetingHostileWeaker_ls_ds,OpenCommLink,"$faction.id == ls_ds
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""Парни, валим!""
+OR
+""Нам полный зог!""
+",cutCommLink:Разорвать канал связи,
+greetingHostileWeakerDefiant_ls_ds,OpenCommLink,"$faction.id ==  ls_ds
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""Мы еще не закончили, ты, гит! Иди сюда, еще разок!""
+OR
+""Вааааааагх!""",cutCommLink:Разорвать канал связи,
+greetingHostileStronger_ls_ds,OpenCommLink,"$faction.id == ls_ds
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""Пацаны, топчите этих гитов!""
+OR
+""ВАААААААААААГХ!""
+",cutCommLink:Разорвать канал связи,
+greetingNeutral_ls_ds,OpenCommLink,"$faction.id == ls_ds
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Эй, ты че уставился?""
+OR
+""Босс сказал сегодня тебя не мочить, так что вали отсюда!""
+OR
+"".. че тебе надо""
+",,
+#END greetings,,,,,,
+,,,,,,
+# factions,,,,,,
+relLevelNeutral_ls_ds,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == ls_ds",FireAll RelLevelMoreDescription,"Орки решили, что ты пока не стоишь хорошей взбучки. Это редкая ситуация: продолжай в том же духе, и вы даже можете временно стать союзниками. Но зеленокожие непостоянны, и как только им станет некого крошить, они могут взяться за тебя.",,
+relLevelFavorable_ls_ds,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == ls_ds",FireAll RelLevelMoreDescription,"Дескуллы считают тебя потенциально полезным контактом, которого пока выгоднее оставить в живых. Но следи за карманами: то, что они не убивают тебя, не значит, что не попытаются прибрать твои габбинзы другим способом.",,
+relLevelWelcoming_ls_ds,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == ls_ds",FireAll RelLevelMoreDescription,"Теперь тебя считают одним из «пацанов», и можно рассчитывать на место в рейдовой ватаге и долю добычи. Но у орков прав тот, кто сильнее: если не ты ломаешь головы, ломать будут уже твою.",,
+relLevelFriendly_ls_ds,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == ls_ds",FireAll RelLevelMoreDescription,"Тебя считают одним из нобов, и теперь у тебя заметное влияние в клане Дескуллов, достаточно, чтобы собрать собственную банду и покупать корабли и пушки покрупнее.",,
+relLevelCooperative_ls_ds,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == ls_ds",FireAll RelLevelMoreDescription,"Теперь ты полноценный варбосс и по праву командуешь значительной частью бойзов и меков клана, имея доступ к большим запасам ресурсов, кораблей и оружия. С такой силой, возможно, стоит задуматься о собственном пути к величию.",,
+relLevelSuspicious_ls_ds,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == ls_ds",FireAll RelLevelMoreDescription,"Дескуллы считают тебя хитрым гитом, которого, вероятно, стоит растоптать. Но пока есть более важные цели, так что в ближайшее время тебя ждут налеты и притеснения, но клан еще не объявил на тебя полноценную охоту.",,
+relLevelInhospitable_ls_ds,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == ls_ds",FireAll RelLevelMoreDescription,"Некоторые нобы признали, что ты умеешь драться, и будут пытаться тебя укокошить ради славы. Но в целом ты просто еще один гит для драки в секторе, полном гитов.",,
+relLevelHostile_ls_ds,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == ls_ds",FireAll RelLevelMoreDescription,"Среди Дескуллов тебя уже знают как того, кто может дать хороший бой, и орки только рады тебя найти и «попробовать в деле». Но если у тебя достаточно тиифов и габбинзов, с ними все еще можно торговать, пусть и на грани ножа.",,
+relLevelVengeful_ls_ds,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == ls_ds",FireAll RelLevelMoreDescription,"На этом этапе тебя считают гродом сразу для нескольких важных варбоссов и больших меков. На оркском это слово значит и «лучший друг», и «злейший враг». Для орков это большая честь, и тебе, вероятно, будет очень трудно найти орка, который не захочет проверить себя в бою с тобой.",,
+#END factions,,,,,,
+#EVIL SUNZ,,,,,,
+# greetings,,,,,,
+greetingFriendly_ls_es,OpenCommLink,"$faction.id == ls_es
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Эй, где тут драка?""
+OR
+""Тебе повезло, что босс тебя любит, а то я бы сам тебя растоптал!""
+
+",,
+greetingHostileWeaker_ls_es,OpenCommLink,"$faction.id == ls_es
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""Парни, валим!""
+OR
+""Нам полный зог!""
+",cutCommLink:Разорвать канал связи,
+greetingHostileWeakerDefiant_ls_es,OpenCommLink,"$faction.id ==  ls_es
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""Мы еще не закончили, ты, гит! Иди сюда, еще разок!""
+OR
+""Вааааааагх!""",cutCommLink:Разорвать канал связи,
+greetingHostileStronger_ls_s,OpenCommLink,"$faction.id == ls_es
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""Пацаны, топчите этих гитов!""
+OR
+""ВАААААААААААГХ!""
+",cutCommLink:Разорвать канал связи,
+greetingNeutral_ls_es,OpenCommLink,"$faction.id == ls_es
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Эй, ты че уставился?""
+OR
+""Босс сказал сегодня тебя не мочить, так что вали отсюда!""
+OR
+"".. че тебе надо""
+",,
+#END greetings,,,,,,
+,,,,,,
+# factions,,,,,,
+relLevelNeutral_ls_es,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == ls_es",FireAll RelLevelMoreDescription,"Орки решили, что ты пока не стоишь хорошей взбучки. Это редкая ситуация: продолжай в том же духе, и вы даже можете временно стать союзниками. Но зеленокожие непостоянны, и как только им станет некого крошить, они могут взяться за тебя.",,
+relLevelFavorable_ls_es,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == ls_es",FireAll RelLevelMoreDescription,"Ивил Санз считают тебя потенциально полезным контактом, которого пока выгоднее оставить в живых. Но эти одержимые скоростью психи так же нестабильны, как их тачки, и могут сорваться в любой момент.",,
+relLevelWelcoming_ls_es,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == ls_es",FireAll RelLevelMoreDescription,"Теперь тебя считают одним из «пацанов», и можно рассчитывать на место в рейдовой ватаге и долю добычи. Но у орков прав тот, кто сильнее: если не ты ломаешь головы, ломать будут уже твою.",,
+relLevelFriendly_ls_es,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == ls_es",FireAll RelLevelMoreDescription,"Тебя считают одним из нобов, и теперь у тебя заметное влияние в клане Ивил Санз, достаточно, чтобы собрать собственную банду и покупать корабли и пушки покрупнее.",,
+relLevelCooperative_ls_es,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == ls_es",FireAll RelLevelMoreDescription,"Теперь ты полноценный варбосс и по праву командуешь значительной частью бойзов и меков клана, имея доступ к большим запасам ресурсов, кораблей и оружия. С такой силой, возможно, стоит задуматься о собственном пути к величию.",,
+relLevelSuspicious_ls_es,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == ls_es",FireAll RelLevelMoreDescription,"Ивил Санз считают тебя хитрым гитом, которого, вероятно, стоит растоптать. Но пока есть более важные цели, так что в ближайшее время тебя ждут налеты и притеснения, но клан еще не объявил на тебя полноценную охоту.",,
+relLevelInhospitable_ls_es,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == ls_es",FireAll RelLevelMoreDescription,"Некоторые нобы признали, что ты умеешь драться, и будут пытаться тебя укокошить ради славы. Но в целом ты просто еще один гит для драки в секторе, полном гитов.",,
+relLevelHostile_ls_es,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == ls_es",FireAll RelLevelMoreDescription,"Среди Ивил Санз тебя уже знают как того, кто может дать хороший бой, и орки только рады тебя найти и «попробовать в деле». Но если у тебя достаточно тиифов и габбинзов, с ними все еще можно торговать, пусть и на грани ножа.",,
+relLevelVengeful_ls_es,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == ls_es",FireAll RelLevelMoreDescription,"На этом этапе тебя считают гродом сразу для нескольких важных варбоссов и больших меков. На оркском это слово значит и «лучший друг», и «злейший враг». Для орков это большая честь, и тебе, вероятно, будет очень трудно найти орка, который не захочет проверить себя в бою с тобой.",,
+,,,,,,
+#BAD MOONZ,,,,,,
+# greetings,,,,,,
+greetingFriendly_ls_bm,OpenCommLink,"$faction.id == ls_bm
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Эй, где тут драка?""
+OR
+""Тебе повезло, что босс тебя любит, а то я бы сам тебя растоптал!""
+
+",,
+greetingHostileWeaker_ls_bm,OpenCommLink,"$faction.id == ls_bm
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""Парни, валим!""
+OR
+""Нам полный зог!""
+",cutCommLink:Разорвать канал связи,
+greetingHostileWeakerDefiant_ls_bm,OpenCommLink,"$faction.id ==  ls_bm
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""Мы еще не закончили, ты, гит! Иди сюда, еще разок!""
+OR
+""Вааааааагх!""",cutCommLink:Разорвать канал связи,
+greetingHostileStronger_ls_bm,OpenCommLink,"$faction.id == ls_bm
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""Пацаны, топчите этих гитов!""
+OR
+""ВАААААААААААГХ!""
+",cutCommLink:Разорвать канал связи,
+greetingNeutral_ls_bm,OpenCommLink,"$faction.id == ls_bm
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Эй, ты че уставился?""
+OR
+""Босс сказал сегодня тебя не мочить, так что вали отсюда!""
+OR
+"".. че тебе надо""
+",,
+#END greetings,,,,,,
+,,,,,,
+# factions,,,,,,
+relLevelNeutral_ls_bm,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == ls_bm",FireAll RelLevelMoreDescription,"Орки решили, что ты пока не стоишь хорошей взбучки. Это редкая ситуация: продолжай в том же духе, и вы даже можете временно стать союзниками. Но зеленокожие непостоянны, и как только им станет некого крошить, они могут взяться за тебя.",,
+relLevelFavorable_ls_bm,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == ls_bm",FireAll RelLevelMoreDescription,"Бэд Мунз считают тебя потенциально полезным контактом, которого пока выгоднее оставить в живых. Но эти жадные гиты не замешкаются предать тебя, как только им приглянутся твои габбинзы.",,
+relLevelWelcoming_ls_bm,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == ls_bm",FireAll RelLevelMoreDescription,"Теперь тебя считают одним из «пацанов», и можно рассчитывать на место в рейдовой ватаге и долю добычи. Но у орков прав тот, кто сильнее: если не ты ломаешь головы, ломать будут уже твою.",,
+relLevelFriendly_ls_bm,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == ls_bm",FireAll RelLevelMoreDescription,"Тебя считают одним из нобов, и теперь у тебя заметное влияние в клане Бэд Мунз, достаточно, чтобы собрать собственную банду и покупать корабли и пушки покрупнее.",,
+relLevelCooperative_ls_bm,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == ls_bm",FireAll RelLevelMoreDescription,"Теперь ты полноценный варбосс и по праву командуешь значительной частью бойзов и меков клана, имея доступ к большим запасам ресурсов, кораблей и оружия. С такой силой, возможно, стоит задуматься о собственном пути к величию.",,
+relLevelSuspicious_ls_bm,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == ls_bm",FireAll RelLevelMoreDescription,"Бэд Мунз считают тебя хитрым гитом, которого, вероятно, стоит растоптать. Но пока есть более важные цели, так что в ближайшее время тебя ждут налеты и притеснения, но клан еще не объявил на тебя полноценную охоту.",,
+relLevelInhospitable_ls_bm,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == ls_bm",FireAll RelLevelMoreDescription,"Некоторые нобы признали, что ты умеешь драться, и будут пытаться тебя укокошить ради славы. Но в целом ты просто еще один гит для драки в секторе, полном гитов.",,
+relLevelHostile_ls_bm,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == ls_bm",FireAll RelLevelMoreDescription,"Среди Бэд Мунз тебя уже знают как того, кто может дать хороший бой, и орки только рады тебя найти и «попробовать в деле». Но если у тебя достаточно тиифов и габбинзов, с ними все еще можно торговать, пусть и на грани ножа.",,
+relLevelVengeful_ls_bm,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == ls_bm",FireAll RelLevelMoreDescription,"На этом этапе тебя считают гродом сразу для нескольких важных варбоссов и больших меков. На оркском это слово значит и «лучший друг», и «злейший враг». Для орков это большая честь, и тебе, вероятно, будет очень трудно найти орка, который не захочет проверить себя в бою с тобой.",,
+,,,,,,
+#BLOOD AXES,,,,,,
+# greetings,,,,,,
+greetingFriendly_ls_ba,OpenCommLink,"$faction.id == ls_ba
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Эй, где тут драка?""
+OR
+""Салют командиру!""
+
+",,
+greetingHostileWeaker_ls_ba,OpenCommLink,"$faction.id == ls_ba
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""Парни, тактическое перегруппирование!""
+OR
+""Нам полный зог!""
+",cutCommLink:Разорвать канал связи,
+greetingHostileWeakerDefiant_ls_ba,OpenCommLink,"$faction.id ==  ls_ba
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""Мы еще не закончили, ты, гит! Иди сюда, еще разок!""
+OR
+""Вааааааагх!""",cutCommLink:Разорвать канал связи,
+greetingHostileStronger_ls_ba,OpenCommLink,"$faction.id == ls_ba
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""Пацаны, топчите этих гитов!""
+OR
+""ВАААААААААААГХ!""
+",cutCommLink:Разорвать канал связи,
+greetingNeutral_ls_ba,OpenCommLink,"$faction.id == ls_ba
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Эй, ты че уставился?""
+OR
+""Босс сказал сегодня тебя не мочить, так что вали отсюда!""
+OR
+"".. че тебе надо""
+",,
+#END greetings,,,,,,
+,,,,,,
+# factions,,,,,,
+relLevelNeutral_ls_ba,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == ls_ba",FireAll RelLevelMoreDescription,"Орки решили, что ты пока не стоишь хорошей взбучки. Это редкая ситуация: продолжай в том же духе, и вы даже можете временно стать союзниками. Но зеленокожие непостоянны, и как только им станет некого крошить, они могут взяться за тебя.",,
+relLevelFavorable_ls_ba,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == ls_ba",FireAll RelLevelMoreDescription,"Блад Эксес считают тебя потенциально полезным контактом, которого пока выгоднее оставить в живых. Но даже самые дисциплинированные орки остаются орками, и их симпатия может быстро смениться дракой.",,
+relLevelWelcoming_ls_ba,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == ls_ba",FireAll RelLevelMoreDescription,"Теперь тебя считают одним из «пацанов», и можно рассчитывать на место в рейдовой ватаге и долю добычи. Но у орков прав тот, кто сильнее: если не ты ломаешь головы, ломать будут уже твою.",,
+relLevelFriendly_ls_ba,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == ls_ba",FireAll RelLevelMoreDescription,"Тебя считают одним из нобов, и теперь у тебя заметное влияние в клане Блад Эксес, достаточно, чтобы собрать собственную банду и покупать корабли и пушки покрупнее.",,
+relLevelCooperative_ls_ba,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == ls_ba",FireAll RelLevelMoreDescription,"Теперь ты полноценный варбосс и по праву командуешь значительной частью бойзов и меков клана, имея доступ к большим запасам ресурсов, кораблей и оружия. С такой силой, возможно, стоит задуматься о собственном пути к величию.",,
+relLevelSuspicious_ls_ba,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == ls_ba",FireAll RelLevelMoreDescription,"Блад Эксес считают тебя хитрым гитом, которого, вероятно, стоит растоптать. Но пока есть более важные цели, так что в ближайшее время тебя ждут налеты и притеснения, но клан еще не объявил на тебя полноценную охоту.",,
+relLevelInhospitable_ls_ba,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == ls_ba",FireAll RelLevelMoreDescription,"Некоторые нобы признали, что ты умеешь драться, и будут пытаться тебя укокошить ради славы. Но в целом ты просто еще один гит для драки в секторе, полном гитов.",,
+relLevelHostile_ls_ba,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == ls_ba",FireAll RelLevelMoreDescription,"Среди Блад Эксес тебя уже знают как того, кто может дать хороший бой, и орки только рады тебя найти и «попробовать в деле». Но если у тебя достаточно тиифов и габбинзов, с ними все еще можно торговать, пусть и на грани ножа.",,
+relLevelVengeful_ls_ba,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == ls_ba",FireAll RelLevelMoreDescription,"На этом этапе тебя считают гродом сразу для нескольких важных варбоссов и больших меков. На оркском это слово значит и «лучший друг», и «злейший враг». Для орков это большая честь, и тебе, вероятно, будет очень трудно найти орка, который не захочет проверить себя в бою с тобой.",,
+,,,,,,
+,,,,,,
+# Orky Rep Shop,,,,,,
+#Death Skull,,,,,,
+ls_repshop_option_ds,PopulateOptions,"$faction.id == ls_ds
+$postId == administrator",,,ls_repshop_ask_ds:Как насчет поработать вместе?,
+ls_repshop_no_ds,DialogOptionSelected,"$option == ls_repshop_ask_ds
+","FireAll PopulateOptions
+RemoveOption ls_repshop_ask_ds","""Ты чё за гит такой думаешь, а? Я тут самый большой и злой босс, так что давай-ка вали в зог пойми куда, пока мои пацаны тебя не расколотили!""
+
+Орк-босс резко обрывает связь. Похоже, единственный способ заслужить настоящее уважение этих громил - показать им, что прав сильнейший, и вбить это им в головы силой. Чем хуже отношения с орками, тем лучше. Статус «grod» у некоторых боссов может серьезно помочь получить их поддержку; его можно добиться либо очень высокими, либо очень низкими отношениями с этим кланом. Также, чтобы тебя воспринимали всерьез, скорее всего, нужны хотя бы одна-две планеты под контролем.",,
+ls_repshop_yes_ds,DialogOptionSelected,"$option == ls_repshop_ask_ds
+$faction.rel != NEUTRAL
+$faction.rel != FAVORABLE
+$faction.rel != WELCOMING
+$faction.rel != SUSPICIOUS
+$faction.rel != INHOSPITABLE
+$faction.rel != HOSTILE
+$player.numColonies > 0 score:100",FireAll ls_ds_shop_check,"""Вот это правильное предложение! Ты дерешься как надо для ооми, а парни любят хорошую драку. Если знаешь, где намечается замес, я могу надавать по башкам и подкинуть тебе помощи для настоящего орочьего вааагха! Чего хочешь?""",,
+ls_repshop_ds_peace_check,ls_ds_shop_check,"PlayerHasCargo ls_teef 150
+$faction.relValue <= -0.5 ",,,ls_repshop_peace_ds:Давай вместо драки вместе накостыляем другим гитам! (150 тиифов),
+ls_repshop_peace_yes_ds,DialogOptionSelected,"$option == ls_repshop_peace_ds
+!$faction.repPeace
+
+","$faction.repPeace = true 730
+$faction.repPeaceOn = $global.daysSinceStart
+AddRemoveCommodity ls_teef -150 true
+FireAll PopulateOptions
+AdjustRep ls_ds COOPERATIVE 200
+FireAll ls_ds_shop_check","""Ладно, дерну за пару ниток у других боссов, пацаны скоро получат весть. Вместе мы как следует наваляем другим гитам! Вааааагх!""",,
+ls_repshop_peace_no_ds,DialogOptionSelected,"$option == ls_repshop_peace_ds
+$faction.repPeace",FireAll PopulateOptions,"""Да никак пацанов не унять так быстро после приказа крушить других гитов! Обычно им нужно года два, чтобы снова встать в строй."" ",,
+ls_repshop_bp_ds_check,ls_ds_shop_check,PlayerHasCargo ls_teef 300,,,ls_repshop_bp_ds:Дай мне немного твоих бойзов и крейсеров - чтобы крушить других гитов! (300 тиифов),
+ls_repshop_bp_yes_ds,DialogOptionSelected,"$option == ls_repshop_bp_ds
+!$faction.gotbp","$faction.gotbp = true
+AddRemoveAnyItem SPECIAL ls_ds_bp_package 1
+AddRemoveAnyItem SPECIAL ls_orky_bp_package 1
+AddRemoveCommodity ls_teef -300 true
+FireAll ls_ds_shop_check","""Если тебе нужны орк-понималки, могу пнуть пару меков и отправить их к тебе. С твоей репой недостатка ни в бойзах, ни в экипажах для кораблей и пушек не будет!""",,
+ls_repshop_bp_no_ds,DialogOptionSelected,"$option == ls_repshop_bp_ds
+$faction.gotbp",FireAll ls_ds_shop_check,"""Ты разве уже не получил набор? Хватит дурить и иди крушить гитов!""",,
+ls_repshop_gear_ds,ls_ds_shop_check,,,,ls_repshop_gear_ds:Покажи - какие у тебя навороты и прочие штуки.,
+ls_repshop_gear_ds1,DialogOptionSelected,"$option == ls_repshop_gear_ds
+",FireAll ls_ds_shop_gear_check,,,
+ls_repshop_gear_ds_blue_blasta,ls_ds_shop_gear_check,PlayerHasCargo ls_teef 120,,,ls_repshop_gear_ds_blue_blasta:Хочу нормальную бласту - которая не взорвется у меня в руках! (120 тиифов),
+ls_repshop_gear_ds_blue_blasta1,DialogOptionSelected,"$option == ls_repshop_gear_ds_blue_blasta
+$faction.got_blue_blasta !=true","AddRemoveAnyItem WEAPONS ls_blue_mega_cannon 3
+AddRemoveCommodity ls_teef -120 true
+$faction.got_blue_blasta = true
+FireAll ls_ds_shop_check","""Взорвется? Не понимаю, босс. Наше снаряжение по-правильному орочье! Наверно, ты брал бэушный хлам у каких-то хитрых лутаз. Не парься, у меня тут лимитка, с правильной счастливой краской! Похоже на обычное, только краска? Чепуха, просто попробуй - сам увидишь!""",,
+ls_repshop_gear_ds_blue_blasta2,DialogOptionSelected,"$option == ls_repshop_gear_ds_blue_blasta
+$faction.got_blue_blasta ==true",FireAll ls_ds_shop_check,"""Извини, босс, товар кончился""",,
+ls_repshop_gear_ds_abort,ls_ds_shop_gear_check,,,,ls_repshop_abort_ds:Дай подумать.,
+ls_repshop_abort_ds,ls_ds_shop_check,,,,ls_repshop_abort_ds:Дай подумать.,
+ls_repshop_abort_ds1,DialogOptionSelected,$option == ls_repshop_abort_ds,FireAll PopulateOptions,"""Думать? Для башки вредно, вот что.""",,
+,,,,,,
+#Evil Sunz,,,,,,
+ls_repshop_option_es,PopulateOptions,"$faction.id == ls_es
+$postId == administrator",,,ls_repshop_ask_es:Как насчет поработать вместе?,
+ls_repshop_no_es,DialogOptionSelected,"$option == ls_repshop_ask_es
+","FireAll PopulateOptions
+RemoveOption ls_repshop_ask_ds","""Ты чё за гит такой думаешь, а? Я тут самый большой и злой босс, так что давай-ка вали в зог пойми куда, пока мои пацаны тебя не расколотили!""
+
+Орк-босс резко обрывает связь. Похоже, единственный способ заслужить настоящее уважение этих громил - показать им, что прав сильнейший, и вбить это им в головы силой. Чем хуже отношения с орками, тем лучше. Статус «grod» у некоторых боссов может серьезно помочь получить их поддержку; его можно добиться либо очень высокими, либо очень низкими отношениями с этим кланом. Также, чтобы тебя воспринимали всерьез, скорее всего, нужны хотя бы одна-две планеты под контролем.",,
+ls_repshop_yes_es,DialogOptionSelected,"$option == ls_repshop_ask_es
+$faction.rel != NEUTRAL
+$faction.rel != FAVORABLE
+$faction.rel != WELCOMING
+$faction.rel != SUSPICIOUS
+$faction.rel != INHOSPITABLE
+$faction.rel != HOSTILE
+$player.numColonies > 0 score:100",FireAll ls_es_shop_check,"""Вот это правильное предложение! Ты дерешься как надо для ооми, а парни любят хорошую драку. Если знаешь, где намечается замес, я могу надавать по башкам и подкинуть тебе помощи для настоящего орочьего вааагха! Чего хочешь?""",,
+ls_repshop_es_peace_check,ls_es_shop_check,"PlayerHasCargo ls_teef 150
+$faction.relValue <= -0.5 ",,,ls_repshop_peace_es:Давай вместо драки вместе накостыляем другим гитам! (150 тиифов),
+ls_repshop_peace_yes_es,DialogOptionSelected,"$option == ls_repshop_peace_es
+!$faction.repPeace
+","$faction.repPeace = true 730
+$faction.repPeaceOn = $global.daysSinceStart
+AddRemoveCommodity ls_teef -150 true
+FireAll PopulateOptions
+AdjustRep ls_es COOPERATIVE 200
+FireAll ls_es_shop_check","""Ладно, дерну за пару ниток у других боссов, пацаны скоро получат весть. Вместе мы как следует наваляем другим гитам! Вааааагх!""",,
+ls_repshop_peace_no_es,DialogOptionSelected,"$option == ls_repshop_peace_es
+$faction.repPeace",FireAll ls_es_shop_check,"""Да никак пацанов не унять так быстро после приказа крушить других гитов! Обычно им нужно года два, чтобы снова встать в строй."" ",,
+ls_repshop_bp_es_check,ls_es_shop_check,PlayerHasCargo ls_teef 300,,,ls_repshop_bp_es:Дай мне немного твоих бойзов и крейсеров - чтобы крушить других гитов! (300 тиифов),
+ls_repshop_bp_yes_es,DialogOptionSelected,"$option == ls_repshop_bp_es
+!$faction.gotbp","$faction.gotbp = true
+AddRemoveAnyItem SPECIAL ls_es_bp_package 1
+AddRemoveAnyItem SPECIAL ls_orky_bp_package 1
+AddRemoveCommodity ls_teef -300 true
+FireAll ls_es_shop_check","""Если тебе нужны орк-понималки, могу пнуть пару меков и отправить их к тебе. С твоей репой недостатка ни в бойзах, ни в экипажах для кораблей и пушек не будет!""",,
+ls_repshop_bp_no_es,DialogOptionSelected,"$option == ls_repshop_bp_es
+$faction.gotbp",FireAll ls_es_shop_check,"""Ты разве уже не получил набор? Хватит дурить и иди крушить гитов!""",,
+ls_repshop_gear_es,ls_es_shop_check,,,,ls_repshop_gear_es:Покажи - какие у тебя навороты и прочие штуки.,
+ls_repshop_gear_es1,DialogOptionSelected,"$option == ls_repshop_gear_es
+",FireAll ls_es_shop_gear_check,,,
+ls_repshop_gear_es_splasha,ls_es_shop_gear_check,PlayerHasCargo ls_teef 150,,,ls_repshop_gear_es_splasha:Хочу один из ваших больших жгучек! (150 тиифов),
+ls_repshop_gear_es_splasha1,DialogOptionSelected,"$option == ls_repshop_gear_es_splasha
+$faction.got_splasha !=true","AddRemoveAnyItem WEAPONS ls_splasha_attackgun 2
+AddRemoveCommodity ls_teef -150 true
+$faction.got_splasha = true
+FireAll ls_es_shop_check","""Отличный выбор! Тут у нас самый большой бак и самый мощный насос! Этим ты отлично прожаришь гитов!""",,
+ls_repshop_gear_es_splasha2,DialogOptionSelected,"$option == ls_repshop_gear_es_splasha
+$faction.got_splasha ==true",FireAll ls_es_shop_check,"""Извини, босс, товар кончился""",,
+ls_repshop_gear_es_abort,ls_es_shop_gear_check,,,,ls_repshop_abort_es:Дай подумать.,
+ls_repshop_abort_es,ls_es_shop_check,,,,ls_repshop_abort_es:Дай подумать.,
+ls_repshop_abort_es1,DialogOptionSelected,$option == ls_repshop_abort_es,FireAll PopulateOptions,"""Думать? Для башки вредно, вот что.""",,
+,,,,,,
+#Bad Moons,,,,,,
+ls_repshop_option_bm,PopulateOptions,"$faction.id == ls_bm
+$postId == administrator",,,ls_repshop_ask_bm:Как насчет поработать вместе?,
+ls_repshop_no_bm,DialogOptionSelected,"$option == ls_repshop_ask_bm
+","FireAll PopulateOptions
+RemoveOption ls_repshop_ask_bm","""Ты чё за гит такой думаешь, а? Я тут самый большой и злой босс, так что давай-ка вали в зог пойми куда, пока мои пацаны тебя не расколотили!""
+
+Орк-босс резко обрывает связь. Похоже, единственный способ заслужить настоящее уважение этих громил - показать им, что прав сильнейший, и вбить это им в головы силой. Чем хуже отношения с орками, тем лучше. Статус «grod» у некоторых боссов может серьезно помочь получить их поддержку; его можно добиться либо очень высокими, либо очень низкими отношениями с этим кланом. Также, чтобы тебя воспринимали всерьез, скорее всего, нужны хотя бы одна-две планеты под контролем.",,
+ls_repshop_yes_bm,DialogOptionSelected,"$option == ls_repshop_ask_bm
+$faction.rel != NEUTRAL
+$faction.rel != FAVORABLE
+$faction.rel != WELCOMING
+$faction.rel != SUSPICIOUS
+$faction.rel != INHOSPITABLE
+$faction.rel != HOSTILE
+$player.numColonies > 0 score:100",FireAll ls_bm_shop_check,"""Вот это правильное предложение! Ты дерешься как надо для ооми, а парни любят хорошую драку. Если знаешь, где намечается замес, я могу надавать по башкам и подкинуть тебе помощи для настоящего орочьего вааагха! Чего хочешь?""",,
+ls_repshop_bm_peace_check,ls_bm_shop_check,"PlayerHasCargo ls_teef 150
+$faction.relValue <= -0.5 ",,,ls_repshop_peace_bm:Давай вместо драки вместе накостыляем другим гитам! (150 тиифов),
+ls_repshop_peace_yes_bm,DialogOptionSelected,"$option == ls_repshop_peace_bm
+!$faction.repPeace
+","$faction.repPeace = true 730
+$faction.repPeaceOn = $global.daysSinceStart
+FireAll PopulateOptions
+AdjustRep ls_bm COOPERATIVE 200
+AddRemoveCommodity ls_teef -150 true
+FireAll ls_bm_shop_check","""Ладно, дерну за пару ниток у других боссов, пацаны скоро получат весть. Вместе мы как следует наваляем другим гитам! Вааааагх!""",,
+ls_repshop_peace_no_bm,DialogOptionSelected,"$option == ls_repshop_peace_bm
+$faction.repPeace",FireAll PopulateOptions,"""Да никак пацанов не унять так быстро после приказа крушить других гитов! Обычно им нужно года два, чтобы снова встать в строй."" ",,
+ls_repshop_bp_bm_check,ls_bm_shop_check,PlayerHasCargo ls_teef 300,,,ls_repshop_bp_bm:Дай мне немного твоих бойзов и крейсеров - чтобы крушить других гитов! (300 тиифов),
+ls_repshop_bp_yes_bm,DialogOptionSelected,"$option == ls_repshop_bp_bm
+!$faction.gotbp","$faction.gotbp = true
+AddRemoveAnyItem SPECIAL ls_bm_bp_package 1
+AddRemoveAnyItem SPECIAL ls_orky_bp_package 1
+AddRemoveCommodity ls_teef -300 true
+FireAll ls_bm_shop_check","""Если тебе нужны орк-понималки, могу пнуть пару меков и отправить их к тебе. С твоей репой недостатка ни в бойзах, ни в экипажах для кораблей и пушек не будет!""",,
+ls_repshop_bp_no_bm,DialogOptionSelected,"$option == ls_repshop_bp_bm
+$faction.gotbp",FireAll PopulateOptions,"""Ты разве уже не получил набор? Хватит дурить и иди крушить гитов!""",,
+ls_repshop_gear_bm,ls_bm_shop_check,,,,ls_repshop_gear_bm:Покажи - какие у тебя навороты и прочие штуки.,
+ls_repshop_gear_bm1,DialogOptionSelected,"$option == ls_repshop_gear_bm
+",FireAll ls_bm_shop_gear_check,,,
+ls_repshop_gear_bm_magnum,ls_bm_shop_gear_check,PlayerHasCargo ls_teef 250,,,ls_repshop_gear_bm_magnum:Дай мне свою самую понтовую бласту! (250 тиифов),
+ls_repshop_gear_bm_magnum1,DialogOptionSelected,"$option == ls_repshop_gear_bm_magnum
+$faction.got_magnum !=true","AddRemoveAnyItem WEAPONS ls_magnum 1
+AddRemoveCommodity ls_teef -250 true
+$faction.got_magnum = true
+FireAll ls_bm_shop_check","""Эта штука не просто стреляет! Она еще и бьет током, пока стреляет! Лучшей дакки во всем секторе не найдешь!""",,
+ls_repshop_gear_bm_magnum2,DialogOptionSelected,"$option == ls_repshop_gear_bm_magnum
+$faction.got_magnum ==true",FireAll ls_bm_shop_check,"""Извини, босс, товар кончился""",,
+ls_repshop_gear_bm_abort,ls_bm_shop_gear_check,,,,ls_repshop_abort_bm:Дай подумать.,
+ls_repshop_abort_bm,ls_bm_shop_check,,,,ls_repshop_abort_bm:Дай подумать.,
+ls_repshop_abort_bm1,DialogOptionSelected,$option == ls_repshop_abort_bm,FireAll PopulateOptions,"""Думать? Для башки вредно, вот что.""",,
+,,,,,,
+#Blood Axes,,,,,,
+ls_repshop_option_ba,PopulateOptions,"$faction.id == ls_ba
+$postId == administrator",,,ls_repshop_ask_ba:Как насчет поработать вместе?,
+ls_repshop_no_ba,DialogOptionSelected,"$option == ls_repshop_ask_ba
+","FireAll PopulateOptions
+RemoveOption ls_repshop_ask_ba","""Ты чё за гит такой думаешь, а? Я тут самый большой и злой босс, так что давай-ка вали в зог пойми куда, пока мои пацаны тебя не расколотили!""
+
+Орк-босс резко обрывает связь. Похоже, единственный способ заслужить настоящее уважение этих громил - показать им, что прав сильнейший, и вбить это им в головы силой. Чем хуже отношения с орками, тем лучше. Статус «grod» у некоторых боссов может серьезно помочь получить их поддержку; его можно добиться либо очень высокими, либо очень низкими отношениями с этим кланом. Также, чтобы тебя воспринимали всерьез, скорее всего, нужны хотя бы одна-две планеты под контролем.",,
+ls_repshop_yes_ba,DialogOptionSelected,"$option == ls_repshop_ask_ba
+$faction.rel != NEUTRAL
+$faction.rel != FAVORABLE
+$faction.rel != WELCOMING
+$faction.rel != SUSPICIOUS
+$faction.rel != INHOSPITABLE
+$faction.rel != HOSTILE
+$player.numColonies > 0 score:100",FireAll ls_ba_shop_check,"""Вот это правильное предложение! Ты дерешься как надо для ооми, а парни любят хорошую драку. Если знаешь, где намечается замес, я могу надавать по башкам и подкинуть тебе помощи для настоящего орочьего вааагха! Чего хочешь?""",,
+ls_repshop_ba_peace_check,ls_ba_shop_check,"PlayerHasCargo ls_teef 150
+$faction.relValue <= -0.5 ",,,ls_repshop_peace_ba:Давай вместо драки вместе накостыляем другим гитам! (150 тиифов),
+ls_repshop_peace_yes_ba,DialogOptionSelected,"$option == ls_repshop_peace_ba
+!$faction.repPeace
+","$faction.repPeace = true 730
+$faction.repPeaceOn = $global.daysSinceStart
+FireAll PopulateOptions
+AdjustRep ls_ba COOPERATIVE 200
+AddRemoveCommodity ls_teef -150 true
+FireAll ls_ba_shop_check","""Ладно, дерну за пару ниток у других боссов, пацаны скоро получат весть. Вместе мы как следует наваляем другим гитам! Вааааагх!""",,
+ls_repshop_peace_no_ba,DialogOptionSelected,"$option == ls_repshop_peace_ba
+$faction.repPeace",FireAll PopulateOptions,"""Да никак пацанов не унять так быстро после приказа крушить других гитов! Обычно им нужно года два, чтобы снова встать в строй."" ",,
+ls_repshop_bp_ba_check,ls_ba_shop_check,PlayerHasCargo ls_teef 300,,,ls_repshop_bp_ba:Дай мне немного твоих бойзов и крейсеров - чтобы крушить других гитов! (300 тиифов),
+ls_repshop_bp_yes_ba,DialogOptionSelected,"$option == ls_repshop_bp_ba
+!$faction.gotbp","$faction.gotbp = true
+AddRemoveAnyItem SPECIAL ls_ba_bp_package 1
+AddRemoveAnyItem SPECIAL ls_orky_bp_package 1
+AddRemoveCommodity ls_teef -300 true
+FireAll ls_ba_shop_check","""Если тебе нужны орк-понималки, могу пнуть пару меков и отправить их к тебе. С твоей репой недостатка ни в бойзах, ни в экипажах для кораблей и пушек не будет!""",,
+ls_repshop_bp_no_ba,DialogOptionSelected,"$option == ls_repshop_bp_ba
+$faction.gotbp",FireAll PopulateOptions,"""Ты разве уже не получил набор? Хватит дурить и иди крушить гитов!""",,
+ls_repshop_gear_ba,ls_ba_shop_check,,,,ls_repshop_gear_ba:Покажи - какие у тебя навороты и прочие штуки.,
+ls_repshop_gear_ba1,DialogOptionSelected,"$option == ls_repshop_gear_ba
+",FireAll ls_ba_shop_gear_check,,,
+ls_repshop_gear_ba_skawdron,ls_ba_shop_gear_check,PlayerHasCargo ls_teef 250,,,ls_repshop_gear_ba_skawdron:Дай мне своих лучших летунов! (250 тиифов),
+ls_repshop_gear_ba_skawdron1,DialogOptionSelected,"$option == ls_repshop_gear_ba_skawdron
+$faction.ba_skawdron !=true","AddRemoveAnyItem FIGHTER_CHIP ls_deff_skwardon_uzgob_wing 1
+AddRemoveCommodity ls_teef -250 true
+$faction.got_ba_skawdron = true
+FireAll ls_ba_shop_check","""Тогда тебе к Узгобу и его парням. Их хоть каждый день в решето превращай, а дело они всегда делают.""",,
+ls_repshop_gear_ba_skawdron2,DialogOptionSelected,"$option == ls_repshop_gear_ba_skawdron
+$faction.got_ba_skawdron ==true",FireAll ls_ba_shop_check,"""Извини, босс, товар кончился""",,
+ls_repshop_gear_ba_abort,ls_ba_shop_gear_check,,,,ls_repshop_abort_ba:Дай подумать.,
+ls_repshop_abort_ba,ls_ba_shop_check,,,,ls_repshop_abort_ba:Дай подумать.,
+ls_repshop_abort_ba1,DialogOptionSelected,$option == ls_repshop_abort_ba,FireAll PopulateOptions,"""Думать? Для башки вредно, вот что.""",,
+,,,,,,
+### QUEST ###,,,,,,
+,,,,,,
+# Green Menace,,,,,,
+ls_da_green_menace_int,PopulateOptions,"$market.isSurveyed
+!$global.ls_da_green_menace_begin","BeginMission ls_da_green_menace
+$global.ls_da_green_menace_begin = true",,,
+,,,,,,
+ls_da_green_menace_0,PopulateOptions,"$id == station_galatia_academy
+$global.ls_da_green_menace_begin
+!$global.met_fawkes","ls_AddPerson yarrow_fawkes
+$global.met_fawkes = true",,,
+ls_da_green_menace_1,PopulateOptions,"$isPerson
+$id == yarrow_fawkes
+!$global.fawkes_intro
+","SetEnabled cutCommLink false
+BeginConversation yarrow_fawkes","Следуя полученным на три-паде координатам, вы находите в неприметной части Академии небольшой переговорный зал, где вас ждет одноглазый старик с видом бывалого космоскитальца.
+
+""$playerName, полагаю? Я Ярроу Фоукс, специальный полевой подрядчик Академии. Я координирую полевые операции Академии по изучению и сдерживанию зеленокожей инопланетной расы, известной как орки. Раз вы откликнулись на мой вызов, полагаю, вы понимаете масштаб угрозы, нависшей над сектором?""","ls_da_green_menace_1_r1:Да - это я. Чем могу помочь?
+ls_da_green_menace_1_r2:Боюсь - у меня почти не было дел с этими пришельцами.
+ls_da_green_menace_1_r3:Угрозы? Эти бугаи всего лишь немытые варвары-пираты!",
+ls_da_green_menace_2,DialogOptionSelected,$option == ls_da_green_menace_1_r3,,"""Именно такое мышление и делает угрозу, с которой мы столкнулись, столь коварной."" Похоже, старик не злится на вашу пренебрежительную реакцию, будто ожидал такого ответа.",ls_da_green_menace_2:Продолжить,
+ls_da_green_menace_3,DialogOptionSelected,$option == ls_da_green_menace_1_r2,,"""В таком случае считайте это вводным брифингом по задаче, которую мы хотим вам поручить."" ",ls_da_green_menace_2:Продолжить,
+ls_da_green_menace_4,DialogOptionSelected,$option == ls_da_green_menace_2,,"""Для большинства людей орки - просто еще одна шайка пиратов в секторе: опасная, но пока не сбрасывавшая орбитальные станции на планеты.""
+
+Старик коснулся три-пада, выводя голографическую карту сектора.
+
+""Но за последнее десятилетие их активность неуклонно росла: от скоординированных атак на охраняемые конвои до рейдов на хорошо защищенные орбитальные станции, и теперь - вторжение на планету Мегиддо.""",ls_da_green_menace_4:Продолжить,
+ls_da_green_menace_5,DialogOptionSelected,$option == ls_da_green_menace_4,,"""Поэтому нам нужно узнать больше. Зачем они пришли в наш сектор? Откуда они пришли? Идут ли за ними другие? Этого не выяснить, если просто превращать их в космическую пыль при каждой встрече.""
+
+""Хотя я действую от имени Академии, не все в крупных фракциях сектора слепы к угрозе зеленокожих, но никто не может позволить себе открыто сотрудничать с враждебной инопланетной расой. Именно тут вступаете вы, капитан."" Старик сделал жест и вывел на экран ничем не примечательную планету.",ls_da_green_menace_5:Продолжить,
+ls_da_green_menace_5_1,DialogOptionSelected,$option == ls_da_green_menace_1_r1,,"""Хорошо, приятно видеть капитана, который понимает истинный масштаб проблемы. Поэтому нам нужно узнать больше. Зачем они пришли в наш сектор? Откуда они пришли? Идут ли за ними другие? Этого не выяснить, если просто превращать их в космическую пыль при каждой встрече."" Он указал на вас.
+
+""Хотя я действую от имени Академии, не все в крупных фракциях сектора слепы к угрозе зеленокожих, но никто не может позволить себе открыто сотрудничать с враждебной инопланетной расой. Именно тут вступаете вы, капитан."" Старик сделал жест и вывел на экран ничем не примечательную планету.",ls_da_green_menace_5:Продолжить,
+ls_da_green_menace_6,DialogOptionSelected,$option == ls_da_green_menace_5,"$global.fawkes_intro = true
+$global.ls_da_green_menace_flag1 = true
+Call $ls_green_menace_ref updateStage
+","""Не все группы орков одинаково враждебны. Этот клан, известный как 'Blood Axes', предлагает свои услуги как наемники и якшается с человеческими контрабандистами. Они даже держат пиратское поселение в своих владениях под названием 'Skragrunt'. Я хочу нанять вас: отправляйтесь туда и установите контакт с одной орочьей пиратской группой под командованием некоего 'Gitgrod Dregsnik'."" Старик перебросил на ваш три-пад серию контактных данных.
+
+""Я уже нанимал этого орка, и, похоже, у него нет возражений против того, чтобы биться со своими же сородичами за правильную оплату. Работайте с ними под видом очередного заказа, войдите в доверие и принесите любую информацию о природе этих тварей. Академия и наши покровители щедро вознаградят вас, а это станет первым шагом к пониманию этой угрозы.""",100:defaultLeave:Принять предложение и попрощаться с мужчиной,
+,,,,,,
+ls_da_green_menace_2_0,PopulateOptions,"$id == ls_planet_skragrunt
+$global.ls_da_green_menace_flag1
+!$global.met_gitgrod","ls_AddPerson gitgrod
+$global.met_gitgrod = true",,,
+ls_da_green_menace_2_1,PopulateOptions,"$isPerson
+$id == gitgrod
+!$global.gitgrod_intro","SetEnabled cutCommLink false
+","Следуя полученным координатам, вы организуете встречу с орочьим лидером по имени Гитгрод через местного пирата, который назначил переговоры в местном баре.
+
+На месте бар встречает вас странной какофонией шума и красок. Человеческие пиратские команды смешались с крепкими зеленокожими пришельцами, знакомый запах пиратского самогона перемешивается с вонью орочьего грибного пойла. Группа зеленокожих у входа замечает ваше прибытие, и один из них встает - даже сутулясь, он на целую голову выше вас - и тычет в вас мясистым зеленым кулаком.
+
+""Эй, похоже, у нас новый розовокожий! Неплохие у тебя цацки, будет жаль, если какой-нибудь пьяный гит их слямзит!"" Громила практически упирается вам в лицо, косясь на ваш три-пад.
+
+Охрана сразу тянется к оружию, но, заметив, что все больше зеленокожих поворачиваются на шум, вопросительно смотрит на вас, ожидая приказа.","ls_da_green_menace_2_2_r1:Сказать орку - что вы пришли на встречу с Гитгродом
+ls_da_green_menace_2_2_r2:Проучить бугая",
+ls_da_green_menace_2_2_1,DialogOptionSelected,$option == ls_da_green_menace_2_2_r1,,"Орк на миг опешил, затем расхохотался: ""Если у тебя дела к тому гиту Гитгроду, тогда я...""
+
+Не успел орк договорить, как огромная гидравлическая клешня схватила его за горло. Из теней вышел другой орк - настолько громадный, что вы не понимаете, как могли не заметить его раньше, - и поднял зачинщика за шею. ""Это кто тут гит?""
+
+С влажным хрустом здоровяк начисто оторвал смутьяну голову и повернулся к вам.",ls_da_green_menace_2_2_1:Ты - должно быть - Гитгрод.,
+ls_da_green_menace_2_2_2,DialogOptionSelected,$option == ls_da_green_menace_2_2_r2,"AddRemoveCommodity ls_teef 1 true
+$global.shot_ork = true","Не дав громиле и шанса схватить ваш три-пад, вы мгновенно выхватываете пистолет и простреливаете ему череп. Он с глухим стуком валится на пол, но рука все еще тянется к огромному клинку на поясе. Не колеблясь, вы всаживаете ему в голову еще три выстрела, пока он наконец не замирает.
+
+На мгновение весь бар смотрит только на вас, а часть человеческих пиратов начинает коситься на ближайший выход.
+
+Как только товарищи громилы тянутся к оружию, из глубины бара раздается рев: ""Стоять!""
+
+""А ну зогнули и отвалили, пока боссы говорят, гиты!"" Видя, что некоторые орки не поняли «умных слов», голос ревет снова.",ls_da_green_menace_2_2_2:Ты - должно быть - Гитгрод.,
+ls_da_green_menace_2_3_1,DialogOptionSelected,$option == ls_da_green_menace_2_2_1,BeginConversation gitgrod,"Орк перед вами огромен: даже сутулясь, он почти на три головы выше вас и более чем вдвое шире. Несмотря на гору мышц, на нем грубый военный плащ и нечто вроде пародии на капитанскую фуражку Гегемонии на большой зеленой башке.
+
+""Надо учить бойзов... как вы, хумизы, говорите... 'уважать протокол'."" Орк жестикулирует окровавленной силовой клешней и говорит на удивление слабо выраженным акцентом.",ls_da_green_menace_2_3:Объяснить - что вас прислал Фоукс для нового дела.,
+ls_da_green_menace_2_3_2,DialogOptionSelected,$option == ls_da_green_menace_2_2_2,BeginConversation gitgrod,"Орк перед вами огромен: даже сутулясь, он почти на три головы выше вас и более чем вдвое шире. Несмотря на гору мышц, на нем грубый военный плащ и нечто вроде пародии на капитанскую фуражку Гегемонии на большой зеленой башке.
+
+""Вот это показуха, ооми, приятно видеть, что ваш народ не боится дать бойзам правильной дисциплины, когда ситуация того требует."" Орк перед вами говорит с удивительно слабым акцентом и, похоже, искренне впечатлен тем, что вы только что застрелили одного из его подчиненных.",ls_da_green_menace_2_3:Объяснить - что вас прислал Фоукс для нового дела.,
+ls_da_green_menace_2_4,DialogOptionSelected,$option == ls_da_green_menace_2_3,,"""А-а, тот старый пройдоха! Знатную драку он тогда устроил, славные были времена."" Орк криво ухмыляется. ""Но мне и бойзам нужно пополнить припасы, так что в этот раз пусть платит вперед, а хумизские кредиты с властями не особо работают."" Несмотря на то, что существо перед вами совершенно чуждо человеку, годы общения с головорезами и корп-менеджерами сектора подсказывают: у Гитгрода явно есть конкретный интерес.",ls_da_green_menace_2_4:Спросить Гитгрода - чего он хочет.,
+ls_da_green_menace_2_5,DialogOptionSelected,$option == ls_da_green_menace_2_4,,"""Короче, у меня для тебя сделка - всем выгодно. Я знаю, ты хочешь нанять меня крушить орков. Значит, тебе нужны орки, которых крушат. Так почему бы тебе не покрушить орков для меня, а я взамен покрушу орков для тебя? Так ты покрушишь вдвое больше гитов!""
+
+Гитгрод разворачивает грубую карту на каком-то куске шкуры; вы не разбираете в ней ни слова, но позволяете орку объяснить: ""Тут есть дескулльские гиты, что сперли мои габбинзы и теперь прячутся в этой системе, строят стомпы на своем роке. Если пойдешь и как следует их разнесешь, мы с бойзами соберем битзы и пойдем крушить кого скажешь. Ну как?""
+
+Вы не можете отделаться от мысли, что вас откровенно пытаются развести, однако сведения о скрытой орочьей фабрике стомп достаточно ценны.","ls_da_green_menace_2_5_r1:Согласиться на сделку.
+ls_da_green_menace_2_5_r2:Указать - что вам ничего не предлагают.",
+ls_da_green_menace_2_6_1,DialogOptionSelected,$option == ls_da_green_menace_2_5_r1,,"Орк ухмыльнулся и уже было собрался хлопнуть вас по плечу силовой клешней, но вовремя понял, что это плохая идея, и вместо этого приподнял перед вами фуражку другой рукой. ""Отлично крушишь, ооми!""",ls_da_green_menace_2_6:Собрать вещи и вернуться в космопорт.,
+ls_da_green_menace_2_6_2,DialogOptionSelected,"$option == ls_da_green_menace_2_5_r2
+!$global.shot_ork",,"Орк на миг озадачился, затем опасно оскалился. ""А, зог меня дери, забыл, что вы, ооми, всегда хотите, чтобы вам 'платили' за драку. Ну, ты принес крутые цацки, это верно."" Орк постукивает по своей фуражке. ""Но не драться, потому что не заплатили? Вот это уже странно!""
+
+Почуяв смену тона у Гитгрода, остальные орки в баре снова начинают заводиться, и вы почти уверены: если вспыхнет новая драка, на этот раз он их не остановит. Вы решаете не указывать на очевидное, что он сам только что требовал «оплату» вперед, а сначала принять сделку и уже потом думать, что делать дальше.",ls_da_green_menace_2_6:Собрать вещи и вернуться в космопорт.,
+ls_da_green_menace_2_6_2b,DialogOptionSelected,"$option == ls_da_green_menace_2_5_r2
+$global.shot_ork",AddRemoveCommodity ls_teef 10 true,"Орк на миг озадачился, затем опасно оскалился. ""А, зог меня дери, забыл, что вы, ооми, всегда хотите, чтобы вам 'платили' за драку. Ну, ты принес крутые цацки, это верно."" Орк постукивает по своей фуражке. ""Но не драться, потому что не заплатили? Вот это уже странно!""
+
+""Но ты мне нравишься, и нет ничего плохого в том, чтобы обсудить добычу, которую ты получишь после того, как расколотишь этих гитов. Так что давай подслащу сделку!"" С этими словами он влепил мощный апперкот орку слева, отправив того в потолок, откуда тот рухнул обратно, как мешок зеленого мяса. Гитгрод пнул бессознательного орка в пасть и махнул ближайшему гроту собрать окровавленные тиифы, рассыпанные по полу.
+
+""Считай это, э-э... авансом."" Орк уходит со своей шайкой, оставляя вам мешок окровавленных орочьих тиифов.",ls_da_green_menace_2_6:Собрать вещи и вернуться в космопорт.,
+ls_da_green_menace_2_7,DialogOptionSelected,$option == ls_da_green_menace_2_6,"$global.ls_da_green_menace_flag2 = true
+Call $ls_green_menace_ref updateStage
+ls_AddInteractionScript ls_road_to_waaagh_Missionplugin
+ls_DatamapPut ""ls_road_to_waaag1"" true
+AddCredits 10000","Вернувшись в космопорт, вы получаете от человека-пирата мешок с кодом счета для выплаты и инструкцией от Фоукса продолжать работу с орочьей группой.",100:defaultLeave:Уйти,
+,,,,,,
+ls_da_green_menace_2_post_1,ls_rtw_after_1,,,"Вы уничтожили флот мека, однако техник фиксирует слабый сигнал с одного из кораблей.",ls_rtw_after_1:Выйти на связь,
+ls_da_green_menace_2_post_2,DialogOptionSelected,$option == ls_rtw_after_1,ShowImageVisual ls_skargrim_comm,"На экране возникает расплывчатое изображение чудовищного орка: его огромная пасть беззвучно ревет от ярости, а маленькие красные глаза сквозь помехи прожигают вас злобным взглядом. Мгновение спустя пробивается аудиоканал.
+
+""Зогов гит! Вы, розовокожие гиты! Думаете, можете просто разнести МОИ стомпы и свалить, как сопливые гроты?! Доберусь до вашего жалкого сектора - буду полировать подошвы своих ботинок вашей башкой!""
+
+Рев орка обрывается внезапным взрывом на той развалюхе, что передавала сообщение.",ls_rtw_after_2:Оборвать связь и связаться с Гитгродом,
+ls_da_green_menace_2_post_3,DialogOptionSelected,$option == ls_rtw_after_2,"AddRemoveCommodity ls_teef 100 true
+AddCredits 100000","Прежде чем вы успеваете среагировать, на вашем мостике появляется орк в камуфляже - будто он был здесь все это время. Экипаж мгновенно вскидывает оружие, но орк бросает вам мешок тиифов.
+
+""Работа сделана. Наши бойзы уже... рекоммишенят стомпы. Я передам боссу, что ты крепкий для ооми.""
+
+Офицер связи также докладывает, что Фоукс авансом перевел первую часть вашей комиссии.
+
+(Продолжение следует)",100:defaultLeave:Продолжить,

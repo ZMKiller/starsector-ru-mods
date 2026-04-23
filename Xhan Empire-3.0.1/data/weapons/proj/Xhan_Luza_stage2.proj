@@ -1,0 +1,53 @@
+{
+	"id":"Xhan_Luza_stage2",
+	"specClass":"missile",	
+	"onHitEffect":"com.fs.starfarer.api.impl.combat.IonCannonOnHitEffect",
+	"missileType":"HEATSEEKER",
+	"sprite":"graphics/missiles/missile_locust.png",
+	"size":[4,8],	
+	"center":[2,3.5],
+	"collisionRadius":6,
+	"collisionClass":"MISSILE_NO_FF",
+	"fringeColor":[70,255,224,200],
+	"coreColor":[70,255,224,100],
+	"explosionColor":[70,255,224,10],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":80,
+					 "coreRadius":50, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":1,
+					 "particleSizeRange":6.0,
+					 "particleDuration":1.2,
+					 "particleCount":30,
+					 "particleColor":[70,255,224,200]},
+	"maxFlightTime":7,	
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":510,
+				  "maxSpeed":500,
+				  "acc":5500,
+				  "dec":3500},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-12, 0],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+				    "styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[70,255,224,255],
+						"contrailDuration":0.5,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[70,255,224,150],
+						"glowSizeMult":4,
+						"glowAlternateColor":[70,255,224,155],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":20.0,
+				    "angle":180.0}]
+}

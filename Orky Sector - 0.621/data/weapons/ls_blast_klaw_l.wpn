@@ -1,0 +1,29 @@
+{
+	"id":"ls_blast_klaw_l",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"mountTypeOverride":"HYBRID",
+	"size":"MEDIUM",
+	"displayArcRadius":500,
+	"turretSprite":"graphics/weapons/ls_blast_klaw/ls_blast_claw_l.png",
+	"turretGunSprite":"",
+	"hardpointSprite":"graphics/weapons/ls_blast_klaw/ls_blast_claw_l.png",
+	"hardpointGunSprite":"",
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":6.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[11, 1],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[11, 1],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":30.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":0.2,
+					   "particleCount":12,
+					   "particleColor":[150,150,240,200]},
+	"projectileSpecId":"ls_snazz_cannon_shot",  # projectile that will be fired
+	"fireSoundTwo":"snazz_cannon_sound",
+}

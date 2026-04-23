@@ -1,0 +1,83 @@
+{
+  "variantId": "A_S-F_glentoran_ass",
+  "hullId": "A_S-F_glentoran",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 25,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "heavyarmor",
+    "reinforcedhull",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "jackhammer",
+        "WS0007": "jackhammer",
+        "WS0008": "jackhammer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "annihilator",
+        "WS0010": "annihilator",
+        "WS0011": "annihilator",
+        "WS0012": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "A_S-F_kaksos",
+        "WS0003": "A_S-F_kaksos",
+        "WS0004": "A_S-F_kaksos",
+        "WS0005": "A_S-F_kaksos"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "A_S-F_copperhead",
+        "WS0016": "A_S-F_copperhead",
+        "WS0019": "A_S-F_copperhead",
+        "WS0020": "A_S-F_copperhead"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "A_S-F_jury",
+        "WS0014": "A_S-F_jury"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0017": "flak",
+        "WS0018": "flak",
+        "WS0021": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

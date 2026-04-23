@@ -1,0 +1,43 @@
+{
+  "variantId": "A_S-F_edifice_ass",
+  "hullId": "A_S-F_edifice",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "magazines",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "A_S-F_micropulser",
+        "WS0003": "A_S-F_micropulser",
+        "WS0004": "A_S-F_micropulser",
+        "WS0005": "A_S-F_micropulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "A_S-F_micropulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

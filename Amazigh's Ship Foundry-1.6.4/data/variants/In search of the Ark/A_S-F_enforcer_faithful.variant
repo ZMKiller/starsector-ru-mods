@@ -1,0 +1,58 @@
+{
+  "variantId": "A_S-F_enforcer_faithful",
+  "hullId": "enforcer",
+  "displayName": "Faithful",
+  "goalVariant": false,
+  "fluxCapacitors": 13,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "heavyarmor",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 007": "annihilator",
+        "WS 008": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "A_S-F_bramble",
+        "WS 009": "A_S-F_bramble"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "A_S-F_kaksos",
+        "WS 004": "A_S-F_kaksos"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "flak",
+        "WS 005": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

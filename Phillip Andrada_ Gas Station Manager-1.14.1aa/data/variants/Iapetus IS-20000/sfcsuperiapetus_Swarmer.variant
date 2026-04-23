@@ -1,0 +1,99 @@
+{
+  "variantId": "sfcsuperiapetus_Swarmer",
+  "hullId": "sfcsuperiapetus",
+  "displayName": "Swarmer",
+  "goalVariant": true,
+  "fluxCapacitors": 12,
+  "fluxVents": 50,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0035": "sfcamtorpedorack"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0033": "sfcmicromlms",
+        "WS0034": "sfcmicromlms"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0016": "salamanderpod",
+        "WS0017": "salamanderpod",
+        "WS0018": "salamanderpod",
+        "WS0019": "salamanderpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0020": "phasebeam",
+        "WS0021": "phasebeam",
+        "WS0022": "phasebeam",
+        "WS0023": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0027": "sfcasteroid",
+        "WS0028": "sfcasteroid"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0026": "sfcamdestabilizer",
+        "WS0029": "sfcamdestabilizer",
+        "WS0030": "sfcamdestabilizer",
+        "WS0031": "sfcasteroid",
+        "WS0032": "sfcasteroid"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdburst",
+        "WS0002": "pdburst",
+        "WS0003": "pdburst",
+        "WS0004": "pdburst",
+        "WS0005": "pdburst",
+        "WS0006": "pdburst",
+        "WS0007": "pdburst",
+        "WS0008": "pdburst",
+        "WS0009": "pdburst",
+        "WS0010": "pdburst",
+        "WS0011": "pdburst",
+        "WS0012": "pdburst",
+        "WS0013": "pdburst",
+        "WS0014": "pdburst",
+        "WS0015": "pdburst",
+        "WS0024": "heavyburst",
+        "WS0025": "heavyburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "sfcmillilitro_wing",
+    "sfcmillilitro_wing",
+    "sfcmillilitro_wing",
+    "sfcmillilitro_wing"
+  ]
+}

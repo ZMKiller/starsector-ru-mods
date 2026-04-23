@@ -1,0 +1,88 @@
+fieldID,fieldName,fieldType,defaultValue,fieldDescription,minValue,maxValue,tab
+,,,,,,,
+sun_sl_REP_GROWTH_HEADER,,Header,Negative Traits,,,,Reputation
+sun_sl_maxInitialNegativeTraits,Maximum Initial Negative Traits,Int,4,Controls the maximum number of negative traits your ships may have once all traits are once unlocked.,0,16,Reputation
+sun_sl_minInitialNegativeTraits,Minimum Initial Negative Traits,Int,1,Controls the minimum number of negative traits your ships may have once all traits are once unlocked.,0,16,Reputation
+sun_sl_minNegativeTraits,Absolute Minimum Negative Traits,Int,1,"Controls the absolute minimum number of negative traits a ship may have, even after adjustments from events.",0,16,Reputation
+,,,,,,,
+sun_sl_SEMI_RELEVANT_TRAITS,,Header,Semi-relevant Trait Frequency,,,,Reputation
+sun_sl_chanceToIgnoreLogisticsTraitsOnCombatShips,Skip Logistics Traits for Combat Ships,Double,0.75,Controls the chance for combat ships to ignore logistics traits when traits are chosen.,0,1,Reputation
+sun_sl_chanceToIgnoreCombatTraitsOnCivilianShips,Skip Combat Traits for Civilian Ships,Double,0.75,Controls the chance for logistics ships to ignore combat traits when traits are chosen.,0,1,Reputation
+,,,,,,,
+sun_sl_FAME_DESC,,Header,Reputation Growth Rate,,,,Reputation
+sun_sl_fameBonusPerPlayerLevel,Fame Bonus Per Player Level,Double,0.6,"Controls how much each player level improves the rate at which your ships earn reputation. With a setting of 0.6, reputation growth will be increased by 900%% at max level. 0.6 x 15 = 9 (+900%%)",0,10,Reputation
+sun_sl_fameBonusFromChroniclersForCombatShips,Chronicler Fame Bonus for Combat Ships,Double,1,"Controls how much chroniclers improve the rate at which your combat ships earn reputation. For example, setting this to 3 would increase rep growth by 300%%.",0,10,Reputation
+sun_sl_fameBonusFromChroniclersForCivilianShips,Chronicler Fame Bonus for Civilian Ships,Double,5,"Controls how much chroniclers improve the rate at which your civilian ships earn reputation. For example, setting this to 3 would increase rep growth by 300%%.",0,10,Reputation
+,,,,,,,
+sun_sl_XP_GAIN_HEADER,,Header,Experience Gain,,,,Reputation
+sun_sl_XP_GAIN_DESC,,Text,The XP earned by the player character is used to determine how quickly your ships earn reputation and how quickly their crews become more loyal. The amount of XP earned by each ship depends on several factors:,,,,Reputation
+sun_sl_xpMultFlat,Flat XP,Double,0.1,Controls the fraction of XP each ship earns by default.,0,1,Reputation
+sun_sl_xpMultPerPlayerCaptainLevel,XP for Captain Levels (Player),Double,0.005,Controls the fraction of XP earned per player level by ships captained by the player character.,0,1,Reputation
+sun_sl_xpMultPerNonPlayerCaptainLevel,XP for Captain Levels (NPC),Double,0.01,Controls the fraction of XP earned per officer level by ships captained by an officer.,0,1,Reputation
+sun_sl_xpMultPerFleetPoint,XP for Fleet Points,Double,0.0075,"Controls the fraction of XP earned for how many fleet points the ship is worth, which typically ranges between 5 (most frigates) and 30 (Paragon)",0,1,Reputation
+sun_sl_xpMultPerDamageDealtPercent,XP for Damage Dealt,Double,0.005,"Controls the fraction of XP earned based on the amount of hull damage ships deal, scaled based on how powerful the ship is compared to the ships it damages.",0,1,Reputation
+,,,,,,,
+sun_sl_RESERVED_XP_DESC,,Header,Combat XP for Ships that Were Not Deployed,,,,Reputation
+sun_sl_xpMultForReservedCombatShips,For Combat Ships,Double,0.02,Scales XP gained from battles by combat ships that were not deployed.,0,1,Reputation
+sun_sl_xpMultForReservedCivilianShips,For Civilian Ships,Double,0.02,"Scales XP gained from battles by civilian ships that were not deployed,",0,1,Reputation
+,,,,,,,
+sun_sl_PEACEFUL_XP_DESC,,Header,XP from Any Source Other than Combat,,,,Reputation
+sun_sl_peacefulXpMultForCombatShips,For Combat Ships,Double,0.2,Scales XP gained outside of battle by combat ships.,0,10,Reputation
+sun_sl_peacefulXpMultForCivilianShips,For Civilian Ships,Double,1,Scales XP gained outside of battle by civilian ships.,0,10,Reputation
+,,,,,,,
+sun_sl_FLEET_TRAITS_HEADER,,Header,Enemy Fleet Reputations,,,,Reputation
+sun_sl_averageFractionOfGoodTraits,Average Fraction of Good Traits,Double,0.75,"Controls how likely it is for enemy fleets to have positive traits, rather than negative ones.",0,1,Reputation
+sun_sl_allowCustomCommanderPresets,Allow Custom Commander Presets,Boolean,TRUE,Controls whether or not other mods may give certain fleets customized traits.,,,Reputation
+sun_sl_fleetTraitEffectMult,Trait Effect Multiplier,Double,2,Scales the effects of the traits that enemy fleets have.,0.5,4,Reputation
+sun_sl_traitsForFleetsWithNoCommander,Traits for Fleets with No Commander,Int,0,Controls how many traits fleets with no commander will have.,0,8,Reputation
+sun_sl_traitsForFleetsWithMinLevelCommander,Minimum Fleet Traits,Double,2,Controls how many traits fleets with a minimum level commander will have.,0,8,Reputation
+sun_sl_traitsForFleetsWithMaxLevelCommander,Maximum Fleet Traits,Double,4,Controls how many traits fleets with a maximum level commander will have.,0,8,Reputation
+,,,,,,,
+sun_sl_OFFICER_LOYALTY_HEADER,,Header,Crew Loyalty,,,,Loyalty
+sun_sl_enableOfficerLoyaltySystem,Enable Loyalty System,Boolean,TRUE,Controls whether or not ship crews can have loyalty (or disloyalty) toward captains.,,,Loyalty
+sun_sl_loyaltyImprovementRateMult,Loyalty Improvement Rate Multiplier,Double,1,Scales how quickly captains earn the loyalty of their crew.,0,10,Loyalty
+,,,,,,,
+sun_sl_LOYALTY_LOSS,,Header,Loyalty Lost for Disabled Ships,,,,Loyalty
+sun_sl_baseLoyaltyLevelsLostWhenDisabled,Base Loyalty Lost,Double,2,Controls the default amount of loyalty an officer loses when their ship is disabled.,0,8,Loyalty
+sun_sl_maxLoyaltyLevelsLostWhenDisabled,Maximum Loyalty Lost,Double,2,Controls the maximum amount of loyalty an officer may lose when their ship is disabled.,0,8,Loyalty
+sun_sl_minLoyaltyLevelsLostWhenDisabled,Minimum Loyalty Lost,Double,0,Controls the minimum amount of loyalty an officer may lose when their ship is disabled.,0,8,Loyalty
+,,,,,,,
+sun_sl_LOYALTY_PROTECTION,,Header,Loyalty Loss Reduction,,,,Loyalty
+sun_sl_loyaltyLossMultFromCrewSafety,Loyalty Protection from Crew Safety,Double,0.5,"Adjusts how much loyalty loss is reduced by things that make the crew safer. Higher values affect loyalty loss more based on anything that reduces crew casualties, such as Blast Doors, Damage Control, and Containment Procedures.",0,1,Loyalty
+sun_sl_loyaltyLossMultFromRelativeStrength,Loyalty Protection from Being Outmatched,Double,0.5,Adjusts how much loyalty loss is reduced when a ship is outgunned in a battle. Higher values affect loyalty loss more based on the strength of the ship compared to the strongest enemy ship.,0,1,Loyalty
+,,,,,,,
+sun_sl_EVENTS_HEADER,,Header,Events,,,,Other
+sun_sl_averageAdditionalBarEvents,Average Additional Bar Events,Double,1,Adjusts the number of events available at port-side bars.,0,5,Other
+sun_sl_averageDaysBetweenTraitSidegradeSuggestions,Days Between Sidegrade Suggestions,Int,30,Controls how many days typically pass before a new trait alternative is suggested for one of your ships. The interval may be longer due to small fleet size. Set to 0 to disable sidegrade suggestions.,0,1000,Other
+sun_sl_onlySuggestSidegradesForShipsWithOfficer,Require Officer to Suggest Sidegrades,Boolean,FALSE,Controls whether or not sidegrade suggestion notifications will appear for ships with no officer assigned as captain.,,,Other
+sun_sl_famousDerelictMayBeGuardedByRemnantFleet,Remnant Ambushes at Famous Derelicts,Boolean,TRUE,Controls whether or not remnant fleets may ambush you near famous derelicts.,,,Other
+,,,,,,,
+sun_sl_BAR_EVENTS,,Header,Bar Event Frequency,,,,Other
+sun_sl_traitSidegrade,Trait Sidegrade Opportunity,Double,1,,0,10,Other
+sun_sl_traitUpgrade,Trait Upgrade Opportunity,Double,2,,0,10,Other
+sun_sl_repairDmod,Repair D-Mod Opportunity,Double,0.5,,0,10,Other
+sun_sl_chroniclerJoins,Chronicler Offers to Join,Double,1,,0,10,Other
+sun_sl_loyalCrewJoins,Loyal Crew Offers to Join,Double,1,,0,10,Other
+sun_sl_captainOffersToBuyFamousShip,Captain Offers to Buy Your Ship,Double,1,,0,10,Other
+sun_sl_captainOffersToJoinWithShip,Captain Offers to Join with Ship,Double,0.5,,0,10,Other
+sun_sl_famousFlagshipIntel,Rumors About a Famous Flagship,Double,1,,0,10,Other
+sun_sl_famousDerelictIntel,Rumors About a Famous Derelict,Double,0.5,,0,10,Other
+sun_sl_hearLegendOfOwnShip,Story of Your Own Legendary Ship,Double,1,,0,10,Other
+,,,,,,,
+sun_sl_MISC_HEADER,,Header,Miscellaneous,,,,Other
+sun_sl_globalEffectMult,Global Effect Multiplier,Double,1,Scales the effects of all traits.,0,10,Other
+sun_sl_rumoredTraitsShown,Rumored Traits Shown,Int,2,Controls how many locked traits are shown when dev mode is not active.,0,16,Other
+sun_sl_rumoredTraitsShownInDevMode,Rumored Traits Shown in Dev Mode,Int,16,Controls how many locked traits are shown when dev mode is active.,0,16,Other
+sun_sl_showShipXp,Show Reputation Progress,Boolean,FALSE,Controls whether or not the XP a ship has earned is visible when dev mode is not active.,,,Other
+sun_sl_showShipXpInDevMode,Show Reputation Progress in Dev Mode,Boolean,TRUE,Controls whether or not the XP a ship has earned is visible when dev mode is active.,,,Other
+sun_sl_compensateForExperienceMult,Compensate for xpGainMult,Boolean,TRUE,Controls whether or not XP adjustments from xpGainMult (a vanilla setting) are ignored when calculating reputation progress.,,,Other
+sun_sl_showNewTraitNotifications,Show New Trait Notifications,Boolean,TRUE,Controls whether or not notifications are shown when ships earn new traits from XP earned outside of battle.,,,Other
+sun_sl_removeAllDataAndFeatures,REMOVE ALL DATA AND FEATURES,Boolean,FALSE,"Setting this to true will make the mod [permanently delete] all of the information it creates and prevent it from doing anything else.
+
+[Only do this if you want to uninstall Starship Legends.]",,,Other
+sun_sl_HEADER_FOOTNOTE,,Header,Configuration Files,,,,Other
+sun_sl_NOTE,,Text,"Other things can be changed by editing the following files:
+
+Individual traits  -  ""/data/config/starship_legends/traits.csv""
+Loyalty levels   -  ""/sun_sl/data/loyalty_levels.csv""
+Reputation tiers  -  ""/sun_sl/data/rep_tiers.csv""",,,,Other

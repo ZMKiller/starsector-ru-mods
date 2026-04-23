@@ -1,0 +1,36 @@
+{
+  "variantId": "sfcporpax_Defense",
+  "hullId": "sfcporpax",
+  "displayName": "Defense",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 3,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "advancedoptics",
+    "hardenedshieldemitter",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "swarmer",
+        "WS0006": "swarmer_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0003": "pdlaser",
+        "WS0004": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

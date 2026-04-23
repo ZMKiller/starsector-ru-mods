@@ -1,0 +1,19 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME SOTFECO,,,,,,
+,,,,,,
+# Derelict fleet hailing,,,,,,
+SOTFECO_derelictHailInit,SOTFECO_derelictsGivingLootHail,,"SOTFECO_derelictFleetCMD addLoot
+AddTextSmall ""Получены избыточные припасы"" good","Потрепанное состояние приближающегося флота затрудняет установление канала связи, но благодаря вашей отличной команде инженеров это вскоре удается. Канал с треском оживает, весь в помехах и ряби, но все же достаточно четкий, чтобы показать улыбающееся лицо $post на фоне разоренного, искрящегося мостика.
+
+""Вы появились в самый нужный момент. Ну, почти, ведь вы, эм, притащили за собой немало проблем."" $HeOrShe усмехается. ""Но! Обещание есть обещание. Вот, держите. Мы успели заглянуть в пару мест за это время, и вы более чем заслужили свою долю.""
+
+Ваш квартирмейстер быстро уточняет у вас по поводу приближающейся флотилии грузовых дронов; вы одобрительно киваете. Вскоре добыча уже в ваших трюмах, и бурный обмен трафиком между флотами постепенно стихает.",SOTFECO_derelictFleetTwo:Продолжить,
+SOTFECO_derelictFleetTwo,DialogOptionSelected,$option == SOTFECO_derelictFleetTwo,"SOTFECO_derelictFleetCMD doRep
+SOTFECO_derelictFleetCMD makeUnimportant","""Это меньшее, что мы могли сделать."" $HeOrShe продолжает. ""Без вас мы бы умерли от голода, жажды... да и список этим не ограничивается."" $HeOrShe вздыхает.
+
+""Но теперь это в прошлом. Отсюда мы найдем себе тихий порт и немного осядем - передадим дальше добрую весть и все такое. Желаю вам безопасного пути! Горите ярко!""",SOTFECO_derelictFleetEnd:Горите ярко.,
+SOTFECO_derelictFleetEnd,DialogOptionSelected,$option == SOTFECO_derelictFleetEnd,"AddTextSmall ""У флота может быть больше добычи в трюмах, если вы его уничтожите"" bad
+unset $entity.genericHail
+$option = cutCommLink
+FireBest DialogOptionSelected","И с этим канал связи обрывается. Флот начинает разворот обратно к мирам Ядра, а вы остаетесь наедине с собой, трюмом полным добычи... и мимолетной, зловещей мыслью. А что, если?",,
+#END Derelict fleet hailing,,,,,,

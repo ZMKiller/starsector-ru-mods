@@ -1,0 +1,23 @@
+{
+	"id":"ls_magnum_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"onHitEffect":"data.weapons.ls_magnum_effect",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":480.0,
+	"width":36.0,
+	"fadeTime":0.3,
+	"fringeColor":[255,255,255,200],
+	"coreColor":[100,250,100,125],
+	"glowColor":[100,250,100,100],
+	"glowRadius":54,
+	"hitGlowRadius":60,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	#"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":1.0,
+}

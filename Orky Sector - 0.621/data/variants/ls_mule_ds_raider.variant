@@ -1,0 +1,39 @@
+{
+    "displayName": "Raider",
+    "fluxCapacitors": 12,
+    "fluxVents": 3,
+    "goalVariant": true,
+    "hullId": "ls_mule_ds",
+    "hullMods": [
+        "ls_orky_override"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_mule_ds_raider",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_bolta",
+                "WS 003": "ls_supashoota_turret",
+                "WS 004": "ls_supashoota_turret"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 005": "ls_rokkit_launcha",
+                "WS 006": "ls_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_big_shoota",
+                "WS 002": "ls_big_shoota"
+            }
+        }
+    ]
+}

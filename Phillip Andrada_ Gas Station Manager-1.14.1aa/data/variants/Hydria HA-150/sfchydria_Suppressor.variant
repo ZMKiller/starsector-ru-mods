@@ -1,0 +1,48 @@
+{
+  "variantId": "sfchydria_Suppressor",
+  "hullId": "sfchydria",
+  "displayName": "Suppressor",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 20,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "hardened_subsystems",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "typhoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightneedler",
+        "WS0003": "lightneedler",
+        "WS0004": "lightneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "sfcamchainpulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

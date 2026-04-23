@@ -1,0 +1,100 @@
+{
+  "variantId": "sfcsuperiapetus_Inferno",
+  "hullId": "sfcsuperiapetus",
+  "displayName": "Inferno",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 50,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0035": "sfcmicromlms"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0033": "sfcamtorpedorack",
+        "WS0034": "sfcamtorpedorack"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0016": "sfcammissilepod",
+        "WS0017": "sfcammissilepod",
+        "WS0018": "sfcammissilepod",
+        "WS0019": "sfcammissilepod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0029": "sfcamthrowerbig",
+        "WS0030": "sfcamthrowerbig",
+        "WS0031": "sfcamthrowerbig",
+        "WS0032": "sfcamthrowerbig"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0020": "sfcamthrower",
+        "WS0021": "sfcamthrower",
+        "WS0022": "sfcamthrower",
+        "WS0023": "sfcamthrower",
+        "WS0024": "sfcamthrower",
+        "WS0025": "sfcamthrower",
+        "WS0027": "mark9",
+        "WS0028": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0026": "sfcamdestabilizer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vulcan",
+        "WS0002": "vulcan",
+        "WS0003": "vulcan",
+        "WS0004": "vulcan",
+        "WS0005": "vulcan",
+        "WS0006": "vulcan",
+        "WS0007": "vulcan",
+        "WS0008": "vulcan",
+        "WS0009": "vulcan",
+        "WS0010": "vulcan",
+        "WS0011": "vulcan",
+        "WS0012": "vulcan",
+        "WS0013": "vulcan",
+        "WS0014": "vulcan",
+        "WS0015": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "sfcdroplet_wing",
+    "sfcdroplet_wing",
+    "sfcdroplet_wing",
+    "sfcdroplet_wing"
+  ]
+}

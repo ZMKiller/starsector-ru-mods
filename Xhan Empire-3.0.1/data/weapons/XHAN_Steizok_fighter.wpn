@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 700,
+  "fireSoundTwo": "STEIZOK_FIRE_SOUND",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/xhan_palka_gun_barrel.png",
+  "hardpointOffsets": [
+    18.5,
+    -0.5
+  ],
+  "hardpointSprite": "graphics/weapons/xhan_palka_gun.png",
+  "id": "XHAN_Steizok_fighter",
+  "muzzleFlashSpec": {
+    "length": 25,
+    "particleColor": [
+      255,
+      120,
+      50,
+      235
+    ],
+    "particleCount": 20,
+    "particleDuration": 0.5,
+    "particleSizeMin": 8,
+    "particleSizeRange": 18,
+    "spread": 12
+  },
+  "projectileSpecId": "Steizok_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/xhan_palka_gun_barrel.png",
+  "turretOffsets": [
+    12,
+    -0.5
+  ],
+  "turretSprite": "graphics/weapons/xhan_palka_gun.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 6
+}

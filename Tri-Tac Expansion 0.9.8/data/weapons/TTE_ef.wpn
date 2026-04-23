@@ -1,0 +1,48 @@
+{
+  "id": "TTE_ef",
+  "specClass": "projectile",
+  "projectileSpecId": "ef_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/ef_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/ionbeam_t_glow.png",
+  "hardpointSprite": "graphics/weapons/ef_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/ionbeam_h_glow.png",
+  "glowColor": [
+    0,
+    102,
+    204,
+    255
+  ],
+  "turretOffsets": [
+    4,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    11,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 10,
+    "particleSizeMin": 5,
+    "particleSizeRange": 20,
+    "particleDuration": 0.4,
+    "particleCount": 20,
+    "particleColor": [
+      0,
+      76,
+      153,
+      255
+    ]
+  },
+  "fireSoundTwo": "ion_pulser_fire"
+}

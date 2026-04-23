@@ -1,0 +1,48 @@
+{
+  "variantId": "A_S-F_peluda_sup",
+  "hullId": "A_S-F_peluda",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 13,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "advancedoptics",
+    "converted_hangar",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ionbeam",
+        "WS0002": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "taclaser",
+        "WS0004": "taclaser",
+        "WS0005": "taclaser",
+        "WS0006": "taclaser",
+        "WS0007": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "lrpdlaser",
+        "WS0009": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "wasp_wing"
+  ]
+}

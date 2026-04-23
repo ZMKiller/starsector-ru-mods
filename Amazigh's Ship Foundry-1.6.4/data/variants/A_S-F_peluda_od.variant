@@ -1,0 +1,50 @@
+{
+  "variantId": "A_S-F_peluda_od",
+  "hullId": "A_S-F_peluda",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "sabot",
+        "WS0007": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyblaster",
+        "WS0002": "heavyblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "irpulse",
+        "WS0004": "railgun",
+        "WS0005": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "A_S-F_micropulser",
+        "WS0009": "A_S-F_micropulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

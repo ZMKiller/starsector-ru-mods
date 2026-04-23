@@ -1,0 +1,27 @@
+{
+	"id":"dpl_nullifier_gun",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"displayArcRadius":1000,
+	"turretSprite":"graphics/weapons/dpl_nullifier_gun_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/dpl_nullifier_gun_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/dpl_nullifier_gun_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/dpl_nullifier_gun_hardpoint_glow.png",
+	"visualRecoil":10.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[15, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[20, 0],
+	"hardpointAngleOffsets":[0],	
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":120.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":2.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":16.0,
+					   "particleDuration":0.15,
+					   "particleCount":33,
+					   "particleColor":[225,175,125,200]},	
+	"projectileSpecId":"dpl_nullifier_gun_shot",  # projectile that will be fired
+	"fireSoundTwo":"vpdriver_fire",
+}

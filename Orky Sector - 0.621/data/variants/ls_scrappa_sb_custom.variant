@@ -1,0 +1,45 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 0,
+    "fluxVents": 7,
+    "goalVariant": false,
+    "hullId": "ls_scrappa_sb",
+    "hullMods": [
+        "ls_rokkit_runt",
+        "ls_ard_case"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_scrappa_sb_custom",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_grot_rail",
+                "WS 001": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_big_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_stikka",
+                "WS 004": "ls_stikka"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_heavy_squig_launcher"
+            }
+        }
+    ]
+}

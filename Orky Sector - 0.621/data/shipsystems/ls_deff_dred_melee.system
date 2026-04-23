@@ -1,0 +1,29 @@
+{
+	"id":"ls_deff_dred_melee",
+	"type":"ENGINE_MOD",
+	"aiType":"CUSTOM",
+    "aiScript":"data.shipsystems.ai.ls_deff_dred_meleeAttackAI",
+	
+	"statsScript":"data.shipsystems.ls_deff_dred_meleeAttackStats",
+	
+	"engineGlowLengthMult":1.5,
+	"engineGlowWidthMult":2,
+	"engineGlowGlowMult":2,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+	
+	"useSound":"system_burn_drive_activate",
+	"loopSound":"system_burn_drive_loop",
+	"deactivateSound":"system_burn_drive_deactivate",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":200,
+		"burstMovementPotential":600,
+		"averageSpeedIncrease":200,
+	}
+}

@@ -1,0 +1,246 @@
+{
+  "hullName": "Cimbasso",
+  "hullId": "dpl_cimbasso_banach",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/dpl_cimbasso.png",
+  "style": "HIGH_TECH",
+  "height": 414,
+  "width": 326,
+  "center": [163, 207],
+  "collisionRadius": 292.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 270.5,
+  "viewOffset": 0,
+  "builtInMods": [
+  ],
+  "builtInWings": [
+    "dpl_xylophone_wing",
+    "dpl_xylophone_wing",
+    "dpl_xylophone_wing",
+    "dpl_xylophone_wing",
+    "dpl_xylophone_wing",
+    "dpl_xylophone_wing"
+  ],
+  "builtInWeapons": {
+    "WS0007": "dpl_phase_pd",
+    "WS0008": "dpl_phase_pd"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": 0,
+      "locations": [131, 48]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": -0,
+      "locations": [131, -48]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [1, -34]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [1, 34]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [-37, 56]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-37, -56]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [33.5, 25.5]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [33, -26]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [116, 15]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [116, -15]
+    },
+    {
+      "id": "LB 5",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-116.5, 78.5]
+    },
+    {
+      "id": "LB 6",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-117, -78]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-153, 155],
+      "length": 68.5,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-153, -155],
+      "length": 68.5,
+      "width": 21,
+      "angle": -180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-153, -137],
+      "length": 68.5,
+      "width": 21,
+      "angle": -180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-153, 137],
+      "length": 68.5,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-157, -109],
+      "length": 99,
+      "width": 33,
+      "angle": -180,
+      "contrailSize": 33,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-157, 109],
+      "length": 99,
+      "width": 33,
+      "angle": 180,
+      "contrailSize": 33,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-205, -49],
+      "length": 116,
+      "width": 36,
+      "angle": -180,
+      "contrailSize": 36,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-205, 49],
+      "length": 116,
+      "width": 36,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-209.5, -19],
+      "length": 133.5,
+      "width": 41,
+      "angle": -180,
+      "contrailSize": 41,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-209.5, 19],
+      "length": 133.5,
+      "width": 41,
+      "angle": 180,
+      "contrailSize": 41,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    163, -25.5,
+    184.5, -27.5,
+    209, -33.5,
+    211.5, -46.5,
+    47, -95.5,
+    -28.5, -104,
+    -133.5, -164.5,
+    -153, -164.5,
+    -158.5, -104,
+    -179, -95.5,
+    -176.5, -68,
+    -207, -60,
+    -207, 60,
+    -176.5, 68,
+    -179, 95.5,
+    -158.5, 104,
+    -153, 164.5,
+    -133.5, 164.5,
+    -28.5, 104,
+    47, 95.5,
+    211.5, 46.5,
+    209, 33.5,
+    184.5, 27.5,
+    163, 25.5
+  ]
+}

@@ -1,0 +1,41 @@
+Version 1.15.1
+
+* Chatter characters can be assigned from LunaLib's refit additional options
+* Add enemy-related line substitutions (commander, flagship and faction)
+* Refactor ignored ship handling; allow ignoring by variant tag
+* Floating text lifetime based on text length; font size configurable in LunaLib mod settings
+* Disable enemy chatter for Threat and Dweller (for now?)
+* Fix a few typos
+* Clean up some error logging
+
+Version 1.15.0
+* Update for Starsector 0.98
+* Add a system for intro splashes when fighting a faction for the first time
+* Fix overload and out-of-missile messages being filtered out
+
+Version 1.14.2
+
+* New characters by Bjarl: soase_tec_transport, military_1, military_2, military_3, military_4, robotic_2, robotic_3, robotic_4, robotic_5, church_1, church_2, corpo_2
+* Add config options to resize chatter box portrait and font
+* Replace most cases of "sir" in dialog lines with the commander's honorific (including non-player commanders)
+* Fix chatter box portrait offset with UI scaling again
+
+Version 1.14.1
+
+* Add some Sins of a Solar Empire and Jagged Alliance 3 characters: soase_tec_bb, soase_tec_carrier, soase_tec_colony, soase_tec_javelin, soase_tec_kodiak, soase_tec_siege, soase_tec_support, soase_tec_titan, soase_tec_transport, ja3_flay, ja3_kalyna, ja3_livewire
+* Expand some JA2 characters with their JA3 lines
+* Add support for boss victory messages
+* Characters can use $playerHonorific token in their lines
+
+Thanks to Bjarl for the SoaSE characters and the new functionality.
+
+Version 1.14.0
+
+* Add dragonsdogma_pawn character compiled by atreg
+* Implement a system where characters can reply to each other
+* Make hull damage and out-of-missile messages be almost always played
+    * Previously they could be blocked if too much talking was going on
+* Automated ships with no AI core installed will not talk (warning messages and such will still appear)
+* Add SotF Taken, LOST_SECTOR Enigma, and RAT abyssal factions to `noEnemyChatterFactions` 
+    * Deep abyssal faction also gets intro splash
+* Fix a couple of under-the-hood bugs

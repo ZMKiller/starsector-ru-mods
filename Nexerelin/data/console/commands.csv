@@ -1,0 +1,19 @@
+command,class,tags,syntax,help
+SpawnInvasionFleet,exerelin.console.commands.SpawnInvasionFleet,"campaign,nexerelin",spawninvasionfleet <source market> <target market>,Spawns an invasion fleet from the specified source market to the specified target market.
+SpawnRaidFleet,exerelin.console.commands.SpawnRaidFleet,"campaign,nexerelin",spawnraidfleet <source market> <target market>,Spawns a raid fleet from the specified source market to the specified target market.
+SpawnRespawnFleet,exerelin.console.commands.SpawnRespawnFleet,"campaign,nexerelin",spawnrespawnfleet [faction],"Spawns a respawn fleet to go to a random suitable target. Will try to spawn a faction currently not in the Sector, if not specified."
+SetMarketOwner,exerelin.console.commands.SetMarketOwner,"campaign,nexerelin",setmarketowner <entity> [owner],"Causes the market associated with <entity> to be captured by [owner], or a random live faction if not specified."
+SyncRelationships,exerelin.console.commands.SyncRelationships,"campaign,nexerelin",syncrelationships,Syncs faction relationships to match player's. Use after using Save Transfer.
+CreateDiplomacyEvent,exerelin.console.commands.CreateDiplomacyEvent,"campaign,nexerelin",creatediplomacyevent <faction1> <faction2> [stage],Creates a new diplomacy event between the two factions. Specify 'stage' as an identifier for a specific event type.
+CreateAlliance,exerelin.console.commands.CreateAlliance,"campaign,nexerelin",createalliance <faction1> <faction2> [alignment],"Creates an alliance between the two factions, with the specified alignment (random if not specified). If one faction is already in an alliance, add the other faction to its alliance instead. Does nothing if both factions are already in an alliance."
+LeaveAlliance,exerelin.console.commands.LeaveAlliance,"campaign,nexerelin",leavealliance <faction>,"Makes the specified faction leave its alliance, if it has one."
+ResetRelationships,exerelin.console.commands.ResetRelationships,"campaign,nexerelin",resetrelationships,Resets faction relationships as if launching a new game. Doesn't work for mod factions in Corvus mode.
+PrintDeadOfficers,exerelin.console.commands.PrintDeadOfficers,"campaign,nexerelin",printdeadofficers,Prints information on all player officers who have died in combat.
+RetireCharacter,exerelin.console.commands.RetireCharacter,"campaign,nexerelin",retirecharacter,Retires your character and ends the game.
+StartVengeanceEvent,exerelin.console.commands.VengeanceEvent,"campaign,nexerelin",startvengeanceevent <faction> [level],Spawns a vengeance fleet for the specified faction.
+ReloadNexConfig,exerelin.console.commands.ReloadNexConfig,"campaign,nexerelin",reloadnexconfig,"Reloads the exerelin_settings.json file, and opens a dialog screen to change some Nexerelin sector settings (as if Nexerelin was added to an existing save)."
+AddAgent,exerelin.console.commands.AddAgent,"campaign,nexerelin",addagent <market> [level [specialization]],Adds an agent for the player.
+PrintDisposition,exerelin.console.commands.PrintDisposition,"campaign,nexerelin",printdisposition <faction1> <faction2>,Prints the 'disposition' (hidden diplomacy-related value) of faction 1 towards faction 2.
+#,,,,
+# Override default command,,,,
+SetRelation,exerelin.console.commands.SetRelationship,"core,campaign",setrelation all|<faction> [optionalTowardsFaction] <amount>,"Sets the relationship between two factions to the given number. If no second faction is entered, relationship with the player is affected. Arguments range from -100 to 100."

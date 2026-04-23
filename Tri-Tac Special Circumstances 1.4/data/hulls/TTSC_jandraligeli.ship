@@ -1,0 +1,171 @@
+{
+  "hullName": "Jandraligeli",
+  "hullId": "TTSC_jandraligeli",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/TTSC_jandraligeli.png",
+  "style": "HIGH_TECH",
+  "height": 225,
+  "width": 150,
+  "center": [75, 112.5],
+  "collisionRadius": 142.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 138,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "hiressensors"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [77.5, 61.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [77.5, -61.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [24.5, -63]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [24.5, 63]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-25.5, -60]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-25.5, 60]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-75.5, -63]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-75.5, 63]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 180,
+      "locations": [-92.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-108.5, 44],
+      "length": 42,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-108.5, -44],
+      "length": 42,
+      "width": 19,
+      "angle": -180,
+      "contrailSize": 19,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-108, -12],
+      "length": 32.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-108, 12],
+      "length": 32.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-108.5, -27],
+      "length": 26,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-108.5, 27],
+      "length": 26,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    118.5, -34.5,
+    89.5, -85.5,
+    45, -63,
+    26.5, -82.5,
+    -5.5, -63.5,
+    -26, -83.5,
+    -50, -68.5,
+    -86, -85.5,
+    -121, -56.5,
+    -121, 56.5,
+    -86, 85.5,
+    -50, 68.5,
+    -26, 83.5,
+    -5.5, 63.5,
+    26.5, 82.5,
+    45, 63,
+    89.5, 85.5,
+    118.5, 34.5
+  ]
+}

@@ -1,0 +1,97 @@
+id,trigger,conditions,script,text,options,notes
+# SC start blurb,,,,,,
+TTSC_nex_NGCPickStartingShips,ExerelinNGCStep3,"$playerFaction == TTSC
+!$TTSC_ChangeMind","AddText ""Special Circumstances membership is by invitation only. This exclusivity combined with the often morally ambiguous or outright unsavory tactics they sometimes employ leads to a certain amount of negative feeling among the average Corvus citizen.""
+
+AddText ""Interventions by SC usually take the form of covert operations (military or otherwise) designed to strengthen or weaken factions within less advanced civilizations. Special Circumstances does not always play nice like the rest of the corporation. Their activities have been known to include assassinations, smuggling of illicit goods and weapons, manipulation and blackmail.""
+
+AddText ""All SC ships are modified to extend the range, turn rate and damage of beam weapons. The hullmod from Commissioned Crews grants access to subroutines that improve ship flux venting and dissipation.""
+$TTSC_ChangeMind = true
+",,,
+,,,,,,
+# SC fleet greeting lines,,,,,,
+greetingSCFriendly,OpenCommLink,"$faction.id == TTSC
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Идентификация подтверждена. Примите приветствие от имени Компании.""
+OR
+""Прости, друг, это судно Special Circumstances выполняет засекреченную миссию. Яркого горения.""
+OR
+""Приветствие от имени корпорации Special Circumstances. Пожалуйста, изложите суть вашего запроса, чтобы мы могли помочь в удовлетворении ваших потребностей -- за разумную плату, разумеется.""
+OR
+""Связь открыта. О, у вас есть свежий каталог корпоративных аксессуаров для космополетов от Special Circumstances? Я немедленно попрошу представителя клиентской службы загрузить вам копию.""
+
+Консоль вашего офицера связи подает сигнал.
+OR
+""Привет, я хотел бы добавить вас в свою профессиональную сеть на TriLink.""",,
+greetingSCHostileWeaker,OpenCommLink,"$faction.id == TTSC
+$entity.isHostile
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"""Внимание. Ваше судно просканировано и идентифицировано как враждебное корпорации Special Circumstances. Дальнейшие попытки агрессии будут зафиксированы, а флот Special Circumstances уведомлен.""
+OR
+""Любая попытка помешать или повредить это судно, принадлежащее и эксплуатируемое Special Circumstances, повлечет юридические последствия."" Представитель Special Circumstances в ранге $personRank выглядит нервно. ""Поверьте, эти люди не шутят, вам правда стоит оставить меня в покое.""",cutCommLink:Разорвать связь,
+greetingSCHostileWeakerDefiant,OpenCommLink,"$faction.id == TTSC
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"Представитель Special Circumstances в ранге $personRank выглядит мрачно, но держится вызывающе. ""Корпоративный регламент 313.33, раздел A, гласит, что боеспособные суда обязаны защищаться максимально решительно в любой момент, и похоже, вы в этом провалились,"" - говорит $heOrShe.",cutCommLink:Разорвать связь,
+greetingSCHostileStronger,OpenCommLink,"$faction.id == TTSC
+$entity.isHostile
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"""Внимание. Ваше судно просканировано и идентифицировано как враждебное корпорации Special Circumstances. О вашем нарушении уже сообщено, готовьтесь.""
+OR
+""От имени корпорации Special Circumstances благодарю вас за возможность доказать превосходство нашей фирменной линейки космических оборонных продуктов.""
+OR
+""От имени корпорации Special Circumstances я обязан сообщить, что это столкновение будет записано. Как предполагаемый агрессор, уничтожающий полностью принадлежащую Компании собственность, вы автоматически отказываетесь от всех прав на распределение и долю прибыли."" Представитель Special Circumstances в ранге $personRank ухмыляется и обрывает связь.",cutCommLink:Разорвать связь,
+greetingSCNeutral,OpenCommLink,"$faction.id ==  TTSC
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""От имени корпорации Special Circumstances с удовольствием сообщаю, что ваш $shipOrFleet просканирован, а его данные добавлены в базу Special Circumstances для дальнейшей оценки и сравнения. Пожалуйста, держите дистанцию и хорошего дня.""
+OR
+""Приветствие от имени корпорации Special Circumstances. Можете полюбоваться нашими кораблями, модифицированными Special Circumstances и оснащенными новейшими фирменными космическими оборонными продуктами, но, пожалуйста, соблюдайте безопасную дистанцию. Компания крайне серьезно относится к порче имущества.""
+OR
+Связь открывается вращающимся логотипом Special Circumstances.""Корпорация Special Circumstances ставит потребности каждого клиента и партнера по ценности в приоритет, однако все наши сервисные представители в данный момент-""
+
+Вы обрываете связь. Похоже, разговаривать они сейчас не настроены.",,
+,,,,,,
+,,,,,,
+,,,,,,
+# ttscmtwo,,,,,,
+ttscmtwoBlurb,ttscmtwo_blurb,,,"""Здравствуйте, пилот, мне нужно перебросить $ttscmtwo_commodityName в $ttscmtwo_marketName в рамках черной операции.""
+OR
+""Мне нужно перевезти $ttscmtwo_commodityName в $ttscmtwo_marketName - без участия властей. Они могут сорвать нашу операцию.""",,
+ttscmtwoOfferOption,ttscmtwo_option,,,,ttscmtwo_start:Спросить о черной операции,
+ttscmtwoBlurbBar,ttscmtwo_blurbBar,,,В баре оперативник SC ($ttscmtwo_manOrWoman) предлагает капитанам звездолетов работу в рамках черной операции.,,
+ttscmtwoOfferOptionBar,ttscmtwo_optionBar,,,,ttscmtwo_startBar:Узнать - что предлагает оперативник SC с датападом,
+ttscmtwoOfferTextBar,DialogOptionSelected,$option == ttscmtwo_startBar,"$missionId = ttscmtwo
+SetTextHighlights $ttscmtwo_quantity $ttscmtwo_dist $ttscmtwo_reward
+ShowRemainingCapacity $ttscmtwo_commodityId
+Call $ttscmtwo_ref showMap ""Destination: $ttscmtwo_marketName""","Когда вы подходите, $ttscmtwo_manOrWoman бросает текущую «жертву» прямо посреди презентации и переключает $hisOrHer внимание на вас.
+
+""Эй, капитан, да-да, именно вы, вы же видите честное лицо, когда встречаете его!"" $HeOrShe криво улыбается. ""Вот, взгляните,"" - $heOrShe сует вам в руки мерцающий экран датапада: грузовой манифест, в основном с недорогими стройматериалами на складе в совсем другой системе.
+
+$HeOrShe наклоняется ближе и говорит тише, будто поясняя содержимое датапада: ""Вы помогаете мне перебросить $ttscmtwo_quantity единиц $ttscmtwo_commodityName в $ttscmtwo_marketName, это всего $ttscmtwo_dist световых лет. После этого я плачу вам $ttscmtwo_reward кредитов. Без властей, без досмотров, без тарифов. Легкие деньги, правда?""","contact_acceptBar:Принять
+contact_declineBarNoContinue:Отказаться",
+ttscmtwoOfferTextContact,DialogOptionSelected,$option == ttscmtwo_start,"$missionId = ttscmtwo
+SetTextHighlights $ttscmtwo_quantity $ttscmtwo_dist $ttscmtwo_reward
+ShowRemainingCapacity $ttscmtwo_commodityId
+Call $ttscmtwo_ref showMap ""Destination: $ttscmtwo_marketName""","Мне нужно перевезти $ttscmtwo_quantity единиц $ttscmtwo_commodityName в $ttscmtwo_marketName, это в $ttscmtwo_dist световых годах отсюда. Ваша скрытность критична: местные власти не должны узнать о поставке. По факту доставки вы получите $ttscmtwo_reward кредитов.","contact_accept:Принять
+contact_decline:Отказаться",
+ttscmtwoPostAccept,ContactPostAccept,$missionId == ttscmtwo,AddCommodity $ttscmtwo_commodityId $ttscmtwo_quantity,,,
+# arrived at destination,,,,,,
+ttscmtwo_checkCompletion,MarketPostDock,"$market.ttscmtwo_target score:1000
+$tradeMode == SNEAK
+Call $market.ttscmtwo_ref updateData
+$ttscmtwo_playerHasEnough",,,ttscmtwo_deliverContinue:Продолжить,
+ttscmtwo_checkCompletionCont,DialogOptionSelected,$option == ttscmtwo_deliverContinue,"RemoveCommodity $ttscmtwo_commodityId $ttscmtwo_quantity
+$market.ttscmtwo_completed = true 0
+Call $market.ttscmtwo_ref updateStage","Вы приказываете сбросить груз $ttscmtwo_commodityName на заброшенном орбитальном доке, подальше от любопытных глаз. Вскоре флагман получает подтверждение доставки с одноразового ретранслятора связи.
+OR
+Переоборудованный орбитальный пассажирский транспорт подходит к орбите вашего $fleetOrShip после условного сигнала. Груз $ttscmtwo_commodityName быстро перегружают рободроны без навигационных транспондеров, после чего транспорт уходит.",marketCmd_checkDebtContinue:Продолжить,
+ttscmtwo_checkCompletionNotSneaking,MarketPostDock,"$market.ttscmtwo_target score:1000
+$tradeMode != SNEAK
+Call $market.ttscmtwo_ref updateData
+$ttscmtwo_playerHasEnough","$ttscmtwo_noCompleteShown = true 0
+SetTextHighlightColors bad bad
+Highlight ""coming in with your transponder turned off"" ""without attracting the attention of patrols""
+FireBest MarketPostDock",Доставка $ttscmtwo_commodityName требует входа с выключенным транспондером и без привлечения внимания патрулей.,,
+ttscmtwo_notEnough,MarketPostDock,"$market.ttscmtwo_target score:1000
+!$ttscmtwo_noCompleteShown
+Call $market.ttscmtwo_ref updateData
+!$ttscmtwo_playerHasEnough score:1000","$ttscmtwo_noCompleteShown = true 0
+FireBest MarketPostDock",У вас недостаточно $ttscmtwo_commodityName для завершения поставки.,,

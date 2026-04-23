@@ -1,0 +1,24 @@
+{
+    "id":"swp_arcade_superjet",
+    "type":"ENGINE_MOD",
+    "aiType":"MANEUVERING_JETS",
+
+    "statsScript":"data.scripts.shipsystems.SWP_SuperJetStats",
+
+    "engineGlowLengthMult":2,
+    "engineGlowWidthMult":2,
+    "engineGlowGlowMult":2,
+
+    "clampMaxSpeedAfter":true,
+
+    "clampTurnRateAfter":false,
+    "alwaysAccelerate":false,
+
+    "useSound":"engine_disabled",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":500,
+        "averageSpeedIncrease":150,
+    }
+}

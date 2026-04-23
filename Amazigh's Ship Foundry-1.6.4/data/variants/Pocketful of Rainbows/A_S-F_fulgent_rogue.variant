@@ -1,0 +1,59 @@
+{
+  "variantId": "A_S-F_fulgent_rogue",
+  "hullId": "fulgent",
+  "displayName": "Rogue",
+  "goalVariant": false,
+  "fluxCapacitors": 12,
+  "fluxVents": 4,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "harpoonpod",
+        "WS 004": "harpoonpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 009": "A_S-F_sprocket",
+        "WS 010": "A_S-F_sprocket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "irpulse",
+        "WS 001": "A_S-F_ir_autopulse",
+        "WS 002": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "A_S-F_p_ion",
+        "WS 006": "A_S-F_p_ion"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "pdlaser",
+        "WS 008": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

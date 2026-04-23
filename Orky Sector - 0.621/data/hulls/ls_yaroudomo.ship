@@ -1,0 +1,164 @@
+{
+    "hullName": "Yaroudomo",
+    "hullId": "ls_yaroudomo",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_yarodomo_ds.png",
+    "height": 112,
+    "width": 78,
+    "center": [
+        41.5, 55.5
+    ],
+    "collisionRadius": 66,
+    "coversColor": "",
+    "shieldCenter": [
+        -5, 0
+    ],
+    "shieldRadius": 60,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_deathskull",
+        "ls_mek",
+        "rugged"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_yaroudomo_deco"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 1,
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    31.5,       12
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      29,     10.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 5,
+            "angle": -45,
+            "locations": [
+                       2,      -22
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": -120,
+            "locations": [
+                   -20.5,    -24.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "renderOrderMod": 1,
+            "arc": 180,
+            "angle": 100,
+            "locations": [
+                    -3.5,      3.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 45,
+            "locations": [
+                      -1,       22
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -43.5, 8.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -43.5, -8.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -43.5, 29
+            ],
+            "length": 32,
+            "width": 5,
+            "angle": 180,
+            "contrailSize": 42,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -43.5, -28
+            ],
+            "length": 32,
+            "width": 5,
+            "angle": 180,
+            "contrailSize": 42,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -44,      -13,
+             -54,    -17.5,
+           -35.5,      -33,
+             -17,    -34.5,
+               9,      -20,
+        
+              32,    -18.5,
+              43,      -10,
+              37,     -9.5,
+              37,     14.5,
+              43,       15,
+        
+              32,     23.5,
+              10,     23.5,
+              -6,       34,
+           -35.5,       38,
+           -53.5,       17,
+        
+             -45,     13.5
+    # 16 points total.
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "variantId": "A_S-F_misside_std2",
+  "hullId": "A_S-F_misside",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 4,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "gorgon",
+        "WS0002": "gorgon",
+        "WS0003": "gorgon",
+        "WS0004": "gorgon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightac",
+        "WS0007": "lightac"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

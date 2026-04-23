@@ -1,0 +1,102 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME Terraforming Made Easy,,,,,,
+,,,,,,
+# tme intro mission,,,,,,
+tmeIntro_BlurbBar,tmeIntro_blurbBar,,,"Проходя мимо нескольких столиков, вы замечаете чемодан прямо на пути и хорошо одетую женщину с Tri-Pad рядом с ним.",,
+tmeIntro_OptionBar,tmeIntro_optionBar,,,,tmeIntro_barText1:Представиться хорошо одетой женщине,
+tmeIntro_BarText1,DialogOptionSelected,$option == tmeIntro_barText1,,"Женщина некоторое время смотрит на вас и говорит: ""Приятно познакомиться, капитан. Я Ассирав Инадире, ученый."" Затем продолжает: ""Если говорить прямо, капитан, вам что-то от меня нужно?"".","tmeIntro_barText2_1:Спросить - нужна ли ей помощь - чтобы покинуть планету
+tmeIntro_barText2_2:Только вы - мисс Инадире",
+tmeIntro_BarText2_1,DialogOptionSelected,$option == tmeIntro_barText2_1,,"Она смотрит на вас и говорит: ""У вас зоркий глаз; я как раз искала капитана для сопровождения, и, к моему удивлению, появились вы."" Затем продолжает: ""Я могу заплатить только небольшую сумму кредитов; вас это устроит?"".","tmeIntro_barAccept:Я не просто так спросил
+tmeIntro_barReject:Дайте мне подумать
+",
+tmeIntro_BarText2_2,DialogOptionSelected,$option == tmeIntro_barText2_2,,"Она улыбается. ""Я польщена, капитан, но времени на светские беседы у меня нет. Как видите, мне нужна помощь, чтобы покинуть планету,"" - говорит она, откладывая Tri-Pad, ""Если не возражаете, вы готовы помочь этой молодой леди?"".","tmeIntro_barAccept:Куда вы хотите попасть?
+tmeIntro_barReject:Возможно - в другой раз",increase contact favorability
+tmeIntro_BarAccept,DialogOptionSelected,$option == tmeIntro_barAccept,"$missionId = tmeIntro
+SetTextHighlights $tmeIntro_planetName $tmeIntro_systemName $tmeIntro_reward
+Call $tmeIntro_ref showMap ""Target: $tmeIntro_systemName""","Она наклоняется к вам и показывает Tri-Pad. ""Я хочу, чтобы вы сопроводили меня на $tmeIntro_planetName в системе $tmeIntro_systemName. Я заплачу $tmeIntro_reward сразу после посадки.""","contact_acceptBarNoText:Звучит несложно
+tmeIntro_barReject:Если подумать - давайте в другой раз",
+tmeIntro_BarDeciline,DialogOptionSelected,$option == tmeIntro_barDecline,Call $global.tmeIntro_ref rejectContact,"""Понимаю, капитан; если передумаете, просто свяжитесь со мной здесь,"" - говорит она и снова смотрит в свой Tri-Pad.",contact_declineBarNoContinue:Уйти,
+tmeIntro_HegeFleetMet,BeginFleetEncounter,"$tmeIntro_hegeFleet score:1000
+!$global.tmeIntro_hegeFleetMet",OpenComms,Вас вызывает по связи $faction $otherShipOrFleet,,force player to open comms
+tmeIntro_HegeFleetText1,OpenCommLink,"$entity.tmeIntro_hegeFleet score:1000
+!$global.tmeIntro_hegeFleetMet",$global.tmeIntro_hegeFleetMet = true,"Экран связи мерцает, и вы видите силуэт мужчины.
+
+""Приветствую, капитан. Мы проводим стандартную проверку грузового и кадрового манифеста. Понимаем, что это может быть неожиданно, но мы просто выполняем свою работу, так что, пожалуйста, сотрудничайте должным образом.""","tmeIntro_hegeFleetText2_2:Ладно - только быстрее
+tmeIntro_hegeFleetText2_1:Обычная проверка в гиперпространстве? Это шутка",
+tmeIntro_HegeFleetText2_1,DialogOptionSelected,$option == tmeIntro_hegeFleetText2_1,,"С другой стороны экрана слышится вздох. ""Капитан, поймите, мы хотим защитить Сектор и сохранить статус-кво."" Он продолжает: ""Сотрудничайте с нами в этом вопросе, иначе после этого разговора все может стать сложнее,"" - говорит он твердым голосом.","tmeIntro_hegeFleetText2_2:Ладно - только быстрее
+tmeIntro_hegeFleetReject:У вас нет юрисдикции в гиперпространстве - уходите",reduce hegemony rep
+tmeIntro_HegeFleetText2_2,DialogOptionSelected,$option == tmeIntro_hegeFleetText2_2,,"""Спасибо за сотрудничество, капитан,"" - говорит голос с той стороны экрана.
+
+Через несколько минут: ""Капитан, у нас есть основания полагать, что у вас на борту находится беглец, и мы хотели бы отправить абордажную группу для дополнительной проверки.""","tmeIntro_hegeFleetAccept:Мне нечего бояться - действуйте
+tmeIntro_hegeFleetReject:Я уже дал вам достаточно свободы. Хватит",
+tmeIntro_HegeFleetAccept,DialogOptionSelected,$option == tmeIntro_hegeFleetAccept,"$global.tmeIntro_hegeFleetAccepted = true
+EndConversation NO_CONTINUE","Вы принимаете абордажную группу, и спустя некоторое время связь снова устанавливается с патрульным флотом.
+
+""Приветствую, капитан. Мы ошиблись в оценке; ничего подозрительного не обнаружено. Приносим извинения за неудобства, можете продолжать путь,"" - говорит он раздраженным тоном.",cutCommLink:Разорвать связь,set boolean for future convos
+tmeIntro_HegeFleetReject,DialogOptionSelected,$option == tmeIntro_hegeFleetReject,"$global.tmeIntro_hegeFleetAccepted = false
+EndConversation NO_CONTINUE","Силуэт мужчины качает головой и говорит: ""Понял вас, можете следовать дальше.""",cutCommLink:Разорвать связь,"set boolean for future convos
+lower relations with hegemony
+increase chance of random cargo scans (if possible)"
+tmeIntro_ReturnTextPositive1,OpenInteractionDialog,"$market.tmeIntro_escortContact score:1000
+$global.tmeIntro_hegeFleetMet
+!$global.tmeIntro_hegeFleetAccepted","ShowPersonVisual true INADIRE
+Call $global.tmeIntro_ref moveContact
+$global.tmeIntro_completed = true
+Call $global.tmeIntro_ref updateStage
+AdjustRepActivePerson COOPERATIVE 10","Вы садитесь на планету и сопровождаете ваш контакт обратно к кораблю.
+
+""Спасибо, капитан"" - доброжелательно.",defaultLeave:Продолжить,should only show if player rejected hegemony scan
+tmeIntro_ReturnTextNeutral1,OpenInteractionDialog,$market.tmeIntro_escortContact score:1000,"ShowPersonVisual true INADIRE
+Call $global.tmeIntro_ref moveContact
+$global.tmeIntro_completed = true
+Call $global.tmeIntro_ref updateStage
+AdjustRepActivePerson COOPERATIVE 10","Вы садитесь на планету и сопровождаете ваш контакт обратно к кораблю.
+
+""Спасибо, капитан"" - нейтрально.",defaultLeave:Продолжить,
+#END tme intro mission,,,,,,
+,,,,,,
+#START tme upgrade campaign objective options,,,,,,
+tme_cob_UpgradeCommRelayOpt,COB_AddOptions,"$faction.id == player
+$tag:comm_relay
+$tag:makeshift
+!$objectiveNonFunctional",,,10:TME_COB_Upgrade:Улучшить до стандартов эпохи Доминиона,
+tme_cob_UpgradeSensorArrayOpt,COB_AddOptions,"$faction.id == player
+$tag:sensor_array
+$tag:makeshift
+!$objectiveNonFunctional",,,10:TME_COB_Upgrade:Улучшить до стандартов эпохи Доминиона,
+tme_cob_UpgradeNavBuoyOpt,COB_AddOptions,"$faction.id == player
+$tag:nav_buoy
+$tag:makeshift
+!$objectiveNonFunctional",,,10:TME_COB_Upgrade:Улучшить до стандартов эпохи Доминиона,
+tme_cob_UpgradeSel,DialogOptionSelected,$option == TME_COB_Upgrade,"$crewReq = 50 0
+$metalsReq = 1000 0
+$tpReq = 200 0
+$betaReq = 1 0
+ShowResCost crew $crewReq metals $metalsReq true rare_metals $tpReq true beta_core $betaReq true 120
+FireBest TME_COB_CanUpgrade
+FireBest TME_COB_DisableUpgradeOptionIfNeeded","Ваши исследовательские группы разработали способ восстановить самодельные ретрансляторы до стандартов эпохи Доминиона, используя структурные и научные данные, собранные с целых ретрансляторов Доминиона. После улучшения ретранслятор покажет повышенную эффективность - вплоть до двухкратной от исходной.","10:TME_COB_DoUpgrade:Продолжить
+100:COB_cancelAction:Отмена",
+tme_cob_canUpgrade,TME_COB_CanUpgrade,"$player.crew >= $crewReq
+$player.metals >= $metalsReq
+$player.rare_metals >= $tpReq
+$player.beta_core >= $betaReq",$canUpgrade = true 0,,,
+tme_cob_disableUpgrade,TME_COB_DisableUpgradeOptionIfNeeded,!$canUpgrade,SetEnabled TME_COB_DoUpgrade false,,,
+tme_cob_BeginUpgradeCommRelay,DialogOptionSelected,"$option == TME_COB_DoUpgrade
+$tag:comm_relay","RemoveCommodity metals $metalsReq
+RemoveCommodity rare_metals $tpReq
+RemoveCommodity beta_core $betaReq
+Objectives build comm_relay
+DismissDialog",,,
+tme_cob_BeginUpgradeSensorArray,DialogOptionSelected,"$option == TME_COB_DoUpgrade
+$tag:sensor_array","RemoveCommodity metals $metalsReq
+RemoveCommodity rare_metals $tpReq
+RemoveCommodity beta_core $betaReq
+Objectives build sensor_array
+DismissDialog",,,
+tme_cob_BeginUpgradeNavBuoy,DialogOptionSelected,"$option == TME_COB_DoUpgrade
+$tag:nav_buoy","RemoveCommodity metals $metalsReq
+RemoveCommodity rare_metals $tpReq
+RemoveCommodity beta_core $betaReq
+Objectives build nav_buoy
+DismissDialog",,,
+#END tme upgrade campaign objective options,,,,,,

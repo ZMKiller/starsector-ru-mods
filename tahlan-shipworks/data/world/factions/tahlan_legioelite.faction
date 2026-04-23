@@ -1,0 +1,288 @@
+{
+	"id":"tahlan_legioelite",
+	"color":[180,0,0,255],
+	
+	"baseUIColor":[200,0,0,255],
+	"darkUIColor":[85,0,0,175],
+	"gridUIColor":[255,0,0,75],
+	"brightUIColor":[231,98,103,255],
+	
+	"entityNamePrefix":"Blackwatch",
+	"personNamePrefix":"Blackwatch",
+	"displayName":"Blackwatch",
+	"displayNameWithArticle":"the Blackwatch",
+	"displayNameIsOrAre":"is",
+	"logo":"graphics/tahlan/factions/tahlan_blackwatch.png",
+	"crest":"graphics/tahlan/factions/tahlan_blackwatch_crest.png",
+	"showInIntelTab":false,
+	"shipNamePrefix":"BW", 
+	"shipNameSources":{
+		"PIRATES":1,
+		"AZTEC":1,
+		"BEASTS":1,
+		"NORSE":1,
+		"CELTIC":1,
+		"SPACE":1,
+		"GENERAL":1,
+	},
+	"names":{
+		"fringe":1,
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+		"old english":1,
+		"pirate":1,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			"tahlan_legio":6,
+			"tahlan_daemon":12,
+			"rare_bp":3,
+			"pirates":0.5,
+			"tahlan_knights":0.5,
+			"tahlan_blackwatch":12,
+			"tahlan_nightwatch": 0.5
+		},
+		"hulls":{		
+			"atlas2": 0 #NO
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp", "pirate_bp", "pirates", "tahlan_legio"],
+		"hulls":[
+			"falcon_p",
+			"atlas2",
+		],
+	},
+	"knownShips":{
+		"tags":["base_bp", "pirate_bp", "pirates", "lowtech_bp", "tahlan_legio", "tahlan_knights", "tahlan_blackwatch", "tahlan_nightwatch"],
+		"hulls":[
+			"falcon_p",
+			"atlas2",
+			"tahlan_Eagle_P",
+			"tahlan_Tempest_P",
+			"atlas",
+			"prometheus",
+			"vanguard",
+			"tahlan_tower",
+			"dominator",
+			"manticore",
+			"tahlan_throne",
+			"tahlan_providence",
+			"tahlan_eagle_nw",
+			"tahlan_falcon_nw"
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[],
+	},
+	"knownFighters":{
+		"tags":["pirates", "tahlan_legio", "lowtech_bp"],
+		"fighters":[
+			"broadsword_wing",
+			"talon_wing",
+			"piranha_wing",
+			"perdition_wing",
+			"dagger_wing",
+			"trident_wing",
+			"claw_wing",
+			"xyphos_wing",
+			"sarissa_wing"
+		],
+	},
+	"priorityFighters":{
+		"tags":["tahlan_daemon"],
+		"fighters":[
+		],
+	},
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "pirates", "tahlan_legio"],
+		"weapons":[
+			"railgun",
+			"dualflak",
+			"heavymauler",
+			"hveldriver",
+			"gauss",
+			"mjolnir",
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"tahlan_eradicator",
+			"tahlan_ryza",
+			"tahlan_mezoa",
+			"tahlan_vesuvio",
+			"tahlan_breaker",
+			"tahlan_ppa",
+			"tahlan_armiger",
+			"tahlan_efreet",
+			"tahlan_pastel",
+			"gorgon",
+			"gorgonpod",
+			"dragonpod",
+			"dragon",
+			"irautolance",
+			"hil",
+			"tachyonlance",
+			"multineedler",
+			"heavyneedler",
+			"lightneedler"
+		],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "pirates"],
+		"hullMods":[
+			"advancedshieldemitter", # accelerated
+			"turretgyros",
+			"armoredweapons",
+			"augmentedengines",
+			"autorepair",
+			"converted_hangar",
+			"eccm",
+			"ecm",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",  # makeshift
+			"hardenedshieldemitter",
+			"heavyarmor",
+			"insulatedengine",
+			"targetingunit",
+			"nav_relay",
+			"adaptiveshields", # omni
+			"operations_center",
+			"recovery_shuttles",
+			"fluxbreakers",
+			"stabilizedshieldemitter",
+			"surveying_equipment",
+			"hiressensors",
+			"efficiency_overhaul",
+		],
+	},
+	"factionDoctrine":{
+		"warships":5,
+		"carriers":1,
+		"phaseShips":1,
+		
+		"officerQuality":7,
+		"shipQuality":5,
+		"numShips":3,
+		
+		"shipSize":2,
+		
+		"aggression":5,
+		
+		"combatFreighterProbability":0.75,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":1,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.75,
+
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"crew_training",
+			"officer_management",
+			"coordinated_maneuvers",			
+			"flux_regulation",
+			"electronic_warfare",
+		],
+	},
+	"illegalCommodities":[
+	],
+	"music":{
+		"theme":"music_pirates_market_neutral",
+		"market_neutral":"music_pirates_market_neutral",
+		"market_hostile":"music_pirates_market_hostile",
+		"market_friendly":"music_pirates_market_friendly",
+		"encounter_neutral":"music_pirates_encounter_neutral",
+		"encounter_hostile":"music_pirates_encounter_hostile",
+		"encounter_friendly":"music_pirates_encounter_friendly",
+	},
+	"internalComms":"legio_internal",
+	"portraits":{
+		"standard_male":[
+			"graphics/tahlan/portraits/legio/legio_m01.png",
+			"graphics/tahlan/portraits/legio/legio_m02.png",
+			"graphics/tahlan/portraits/legio/legio_m03.png",
+			"graphics/tahlan/portraits/legio/legio_m04.png",
+			"graphics/tahlan/portraits/legio/legio_m05.png",
+			"graphics/tahlan/portraits/legio/legio_m06.png",
+			"graphics/tahlan/portraits/legio/legio_m07.png",
+			"graphics/tahlan/portraits/legio/legio_m08.png",
+			"graphics/tahlan/portraits/legio/legio_m09.png",
+			"graphics/tahlan/portraits/legio/legio_m10.png",
+			"graphics/tahlan/portraits/legio/legio_m11.png",
+			"graphics/tahlan/portraits/legio/legio_m12.png",
+			"graphics/tahlan/portraits/legio/legio_m13.png",
+			"graphics/tahlan/portraits/legio/legio_m14.png",
+			"graphics/tahlan/portraits/legio/legio_m15.png"
+		],
+		"standard_female":[
+			"graphics/tahlan/portraits/legio/legio_f01.png",
+			"graphics/tahlan/portraits/legio/legio_f02.png",
+			"graphics/tahlan/portraits/legio/legio_f03.png",
+			"graphics/tahlan/portraits/legio/legio_f04.png",
+			"graphics/tahlan/portraits/legio/legio_f05.png",
+			"graphics/tahlan/portraits/legio/legio_f06.png",
+			"graphics/tahlan/portraits/legio/legio_f07.png",
+			"graphics/tahlan/portraits/legio/legio_f08.png",
+			"graphics/tahlan/portraits/legio/legio_f09.png",
+			"graphics/tahlan/portraits/legio/legio_f10.png",
+			"graphics/tahlan/portraits/legio/legio_f11.png",
+			"graphics/tahlan/portraits/legio/legio_f12.png",
+			"graphics/tahlan/portraits/legio/legio_f13.png",
+			"graphics/tahlan/portraits/legio/legio_f14.png",
+			"graphics/tahlan/portraits/legio/legio_f15.png",
+			"graphics/tahlan/portraits/legio/legio_f16.png",
+			"graphics/tahlan/portraits/legio/legio_f17.png",
+			"graphics/tahlan/portraits/legio/legio_f18.png",
+			"graphics/tahlan/portraits/legio/legio_f19.png"
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Captain"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Captain"},
+			"fleetCommander":{"name":"Lord"},
+			"baseCommander":{"name":"High Lord"},
+			"administrator":{"name":"Imperator"},
+		},
+	},
+	"fleetTypeNames":{
+		"smallTrader":"Trade Convoy",
+		"trade":"Trade Convoy",
+		"tradeLiner":"Passenger Convoy",
+		"patrolSmall":"Blackwatch Hunters",
+		"patrolMedium":"Blackwatch Fleet",
+		"patrolLarge":"Blackwatch Armada",
+		"mercScout":"Scout",
+		"mercBountyHunter":"Raiders",
+		"mercPrivateer":"Raiders",
+		"mercPatrol":"Attack Fleet",
+		"mercArmada":"Armada",
+		"taskForce":"Blackwatch Executioners",
+	},
+}
+
+
+
+

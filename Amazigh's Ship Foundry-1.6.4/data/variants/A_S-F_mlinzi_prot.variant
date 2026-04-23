@@ -1,0 +1,52 @@
+{
+  "variantId": "A_S-F_mlinzi_prot",
+  "hullId": "A_S-F_mlinzi",
+  "displayName": "Ark Protector",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ballistic_rangefinder"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_nieuport",
+        "WS0002": "A_S-F_nieuport"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "A_S-F_nieuport",
+        "WS0006": "A_S-F_nieuport"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "A_S-F_kombeo",
+        "WS0004": "A_S-F_kombeo",
+        "WS0007": "A_S-F_kombeo",
+        "WS0008": "A_S-F_kombeo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "A_S-F_kombeo",
+        "WS0010": "A_S-F_kombeo"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

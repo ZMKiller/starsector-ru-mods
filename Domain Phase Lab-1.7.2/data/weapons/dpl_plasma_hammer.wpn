@@ -1,0 +1,29 @@
+{
+	"id":"dpl_plasma_hammer",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretUnderSprite":"graphics/weapons/dpl_plasma_hammer_turret_under.png",
+	"turretSprite":"graphics/weapons/dpl_plasma_hammer_turret_base.png",
+	"turretGunSprite":"graphics/weapons/dpl_plasma_hammer_turret_recoil.png",
+	"hardpointUnderSprite":"graphics/weapons/dpl_plasma_hammer_hardpoint_under.png",	
+	"hardpointSprite":"graphics/weapons/dpl_plasma_hammer_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/dpl_plasma_hammer_hardpoint_recoil.png",	
+	"visualRecoil":18.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[32, -8, 32, 8],
+	"turretAngleOffsets":[0,0],
+	"hardpointOffsets":[38, -8, 38, 8],
+	"hardpointAngleOffsets":[0,0],
+	"barrelMode":"LINKED", # LINKED or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":60.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":20.0,
+					   "particleSizeMin":18.0,
+					   "particleSizeRange":24.0,
+					   "particleDuration":0.12,
+					   "particleCount":32,
+					   "particleColor":[100,150,255,215]},
+	"projectileSpecId":"dpl_plasma_hammer_shot",  # projectile that will be fired
+	"fireSoundTwo":"gigacannon_fire",
+}

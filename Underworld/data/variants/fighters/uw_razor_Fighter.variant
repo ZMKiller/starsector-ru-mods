@@ -1,0 +1,19 @@
+{
+    "quality":0.5,
+    "displayName":"Fighter",
+    "hullId":"uw_razor",
+    "variantId":"uw_razor_Fighter",
+    "fluxVents":0,
+    "fluxCapacitors":0,
+    "hullMods":[],
+
+    # mode is either LINKED or ALTERNATING
+    # slot ids (WS ***) must match what's in the .ship file
+    "weaponGroups":[
+        {"mode":"LINKED",
+         "weapons":{
+                    "WS0001":"uw_needler_f",
+                   },
+        },
+    ],
+}

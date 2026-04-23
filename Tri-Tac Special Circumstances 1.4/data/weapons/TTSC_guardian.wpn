@@ -1,0 +1,81 @@
+{
+  "id": "TTSC_guardian",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "com.fs.starfarer.api.impl.combat.PaladinEffect",
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/TTSC_guardian_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/TTSC_guardian_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/TTSC_guardian_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/TTSC_guardian_hardpoint_glow.png",
+  "glowColor": [
+    20,
+    100,
+    100,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    13,
+    0,
+    15,
+    -19,
+    8,
+    -13,
+    8,
+    13,
+    15,
+    19
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    23,
+    0,
+    25,
+    -19,
+    18,
+    -13,
+    18,
+    13,
+    25,
+    19
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "fringeColor": [
+    155,
+    50,
+    50,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    100
+  ],
+  "convergeOnPoint": true,
+  "width": 8,
+  "textureType": SMOOTH,
+  "textureScrollSpeed": 292,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "guardian_pd_fire"
+}

@@ -1,0 +1,52 @@
+{
+	"id":"A_S-F_phantasmagoria_micro_missile",
+	"specClass":"missile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.phantasmagoria.ASF_shroud_OnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.phantasmagoria.ASF_shroud_OnHitEffect",
+
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/A_S-F_phantasmagoria_micro_missile.png",
+	"size":[6,12],	
+	"center":[3,6],
+	"collisionRadius":6,
+	"collisionClass":"MISSILE_NO_FF",
+	"fringeColor":[130,100,230,160],
+	"coreColor":[180,160,255,200],
+	"explosionColor":[215,210,255,75], #125  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":40, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":45,
+					 "coreRadius":30, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":1,
+					 "particleSizeRange":4.0,
+					 "particleDuration":0.5,
+					 "particleCount":18,
+					 "particleColor":[150,110,230,200]},
+	"engineSpec":{"turnAcc":1200, #800
+				  "turnRate":600,
+				  "acc":3200, #2800
+				  "dec":500}, #400
+	"engineSlots":[{"id":"ES1",
+					"loc":[-5, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[180,140,255,200],
+						"contrailDuration":0.8,
+						"contrailWidthMult":0.6,
+						"contrailWidthAddedFractionAtEnd":1,
+						"contrailMinSeg":6, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.25f,
+						"contrailSpawnDistMult":0.25, # how far away from engine it starts
+						"contrailColor":[160,115,255,150],
+					    	"glowSizeMult":1.1,
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":16.0,
+				    "angle":180.0}],
+}

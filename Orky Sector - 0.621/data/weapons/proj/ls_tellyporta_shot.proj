@@ -1,0 +1,20 @@
+{
+	"id":"ls_tellyporta_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"onHitEffect":"data.weapons.ls_tellyporta_blasta_effect",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":48.0,
+	"width":12,
+	"fadeTime":0.4,
+	"fringeColor":[150,150,255,255],
+	"coreColor":[255,255,255,25],
+	"glowColor":[150,150,255,75],
+	"glowRadius":40,
+	"hitGlowRadius":50,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

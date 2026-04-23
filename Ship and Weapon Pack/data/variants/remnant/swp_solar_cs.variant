@@ -1,0 +1,84 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 5,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "swp_solar",
+    "hullMods": [
+        "pointdefenseai",
+        "targetingunit",
+        "advancedoptics",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_solar_cs",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tachyonlance",
+                "WS0004": "tachyonlance"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "sabotpod",
+                "WS0009": "sabotpod",
+                "WS0012": "sabotpod",
+                "WS0013": "sabotpod",
+                "WS0018": "sabot",
+                "WS0019": "sabot"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tachyonlance",
+                "WS0002": "tachyonlance"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "phasebeam",
+                "WS0007": "phasebeam",
+                "WS0010": "phasebeam",
+                "WS0011": "phasebeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "ionbeam",
+                "WS0014": "taclaser",
+                "WS0015": "taclaser",
+                "WS0016": "taclaser",
+                "WS0017": "taclaser",
+                "WS0020": "taclaser",
+                "WS0021": "taclaser",
+                "WS0024": "taclaser",
+                "WS0025": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0022": "railgun",
+                "WS0023": "railgun"
+            }
+        }
+    ],
+    "wings": [
+        "spark_wing",
+        "spark_wing",
+        "spark_wing"
+    ]
+}

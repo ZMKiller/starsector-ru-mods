@@ -1,0 +1,48 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "swp_boss_sporeship_ll",
+    "hullMods": [
+        "eccm",
+        "solar_shielding",
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair",
+        "fluxbreakers",
+        "turretgyros"
+    ],
+    "permaMods": [
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "sMods": [
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "variantId": "swp_boss_sporeship_ll_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "swp_tornado"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "swp_hornet",
+                "WS0004": "swp_hornet"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "hveldriver"}
+        }
+    ],
+    "wings": []
+}

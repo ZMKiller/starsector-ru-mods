@@ -1,0 +1,95 @@
+{
+	"id":"A_S-F_wasteland_mirv",
+	"specClass":"missile",
+	"missileType":"MIRV",
+	"sprite":"graphics/missiles/A_S-F_missile_wasteland.png",
+	"size":[12,27],	
+	"center":[6,13],
+	"collisionRadius":20,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,150,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+
+	"armingTime":0.5,
+
+	"engineSpec":{"turnAcc":900, #450
+				  "turnRate":180, #120
+				  "acc":750, #500
+				  "dec":375}, #250
+
+	"engineSlots":[{"id":"ES1",
+					"loc":[-12, -2],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[120,90,30,255],
+						"contrailDuration":1.5,
+						"contrailWidthMult":1.25,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":4, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[120,90,50,50],
+						"glowSizeMult":1.5,
+						"glowAlternateColor":[120,80,0,175],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":60.0,
+				    "angle":190.0},
+
+			{"id":"ES2",
+					"loc":[-12, 2],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[120,90,30,255],
+						"contrailDuration":1.5,
+						"contrailWidthMult":1.25,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":4, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[120,90,50,50],
+						"glowSizeMult":1.5,
+						"glowAlternateColor":[120,80,0,175],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":60.0,
+				    "angle":170.0}],
+
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":600,
+					"minTimeToSplit":1,
+					"canSplitEarly":false,
+					"splitSound":"bomb_bay_fire",
+					"numShots":4, #8
+					"damage":375, #240
+					"impact":10,
+					"emp":0,
+					"damageType":FRAGMENTATION,
+					"hitpoints":150,
+					"arc":520, #180
+					"spreadInaccuracy":20,
+					"arcOffset":0,
+					"evenSpread":true, #false
+					"spreadSpeed":180, #120
+					"spreadSpeedRange":180, #320
+					"projectileSpec":"A_S-F_wasteland_mine",
+					#"emptySpec":"type_1_mirv_empty",
+					"smokeSpec":{"particleSizeMin":20.0, #30
+								 "particleSizeRange":10.0,	#20
+								 "cloudParticleCount":5,	#10
+								 "cloudDuration":1.0,
+								 "cloudRadius":10.0,		#20
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[150,100,50,100]}
+					}
+}
+			

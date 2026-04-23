@@ -1,0 +1,23 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
+dpl_orbitalstation,Орбитальная станция — Phase Lab,50,90,,3,,dpl_battlestation,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:dpl_station1_Standard,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,data.scripts.campaign.econ.dpl_OrbitalStation,"Космическая станция Phase Lab с тяжелыми вращающимися щитами, авиакрылом и средней огневой мощью.
+
+Должна быть подавлена, прежде чем можно будет начать бомбардировку.",2070,
+dpl_battlestation,Боевая станция — Phase Lab,100,120,,4,dpl_orbitalstation,dpl_starfortress,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:dpl_station2_Standard,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,data.scripts.campaign.econ.dpl_OrbitalStation,"Космическая станция, усиленная четырьмя поддерживающими цитаделями с системами ПВО.
+
+Должна быть подавлена, прежде чем можно будет начать бомбардировку.",2080,
+dpl_starfortress,Звёздная крепость — Phase Lab,200,180,,5,dpl_battlestation,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:dpl_station3_Standard,
+fleetName:Star Fortress
+}",graphics/icons/industry/battlestation.png,data.scripts.campaign.econ.dpl_OrbitalStation,"Усиленная бронёй боевая станция с оборонительными дронами класса Oracle и дальнобойными телепортерами целевых мин.
+
+Должна быть подавлена, прежде чем можно будет начать бомбардировку.",2090,
+,,,,,,,,,,,,,,

@@ -1,0 +1,41 @@
+{
+  "variantId": "TTSC_hylozoist_standard",
+  "hullId": "TTSC_hylozoist",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TTSC_pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "TTSC_interdictorbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lrpdlaser",
+        "WS0004": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "TTSC_scree_standard_wing"
+  ]
+}

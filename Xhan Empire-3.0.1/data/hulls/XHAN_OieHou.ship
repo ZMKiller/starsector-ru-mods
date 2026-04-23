@@ -1,0 +1,84 @@
+{
+  "hullName": "Oiehou-M1",
+  "hullId": "XHAN_OieHou",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/OieHou.png",
+  "style": "XHANTECH",
+  "coversColor": "159,161,151,255",
+  "height": 102,
+  "width": 110,
+  "center": [53, 42],
+  "collisionRadius": 85.5,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 72,
+  "viewOffset": 0,
+  "builtInMods": [
+    "surveying_equipment",
+    "XHAN_Gen2_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [14, 6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 302,
+      "angle": -145,
+      "locations": [-8, -6]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [46, -5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-30, 19],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-30, -19],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-35, -0.5],
+      "length": 50,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    22, 30,
+    39.5, 2,
+    33.5, -30,
+    -11.5, -55,
+    -28, -25.5,
+    -34.5, -0,
+    -28, 24.5,
+    -12, 49
+  ]
+}

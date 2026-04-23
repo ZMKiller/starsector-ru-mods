@@ -1,0 +1,200 @@
+{
+  "hullName": "Jernau",
+  "hullId": "TTSC_jernau",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/TTSC_jernau.png",
+  "style": "HIGH_TECH",
+  "height": 384,
+  "width": 190,
+  "center": [95, 192],
+  "collisionRadius": 221,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 215.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "shielded_holds"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 0,
+      "locations": [148, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 0,
+      "locations": [-45, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 0,
+      "locations": [74.5, 43]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": -0,
+      "locations": [74.5, -43]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [4, -45]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [4, 45]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-115, -78]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-115, 78]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": 90,
+      "locations": [-69, 82.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": -90,
+      "locations": [-69, -82.5]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": -90,
+      "locations": [74, -84]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": 90,
+      "locations": [74, 84]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-183.5, 45],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-183.5, -45],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-186.5, -34.5],
+      "length": 37,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-186.5, 34.5],
+      "length": 37,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-187.5, -19.5],
+      "length": 37,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-187.5, 19.5],
+      "length": 37,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-188, -0],
+      "length": 57,
+      "width": 30,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    205, -61.5,
+    92, -112.5,
+    1, -76.5,
+    -108, -124.5,
+    -154, -85.5,
+    -201, -59.5,
+    -201, 59.5,
+    -154, 85.5,
+    -108, 124.5,
+    1, 76.5,
+    92, 112.5,
+    205, 61.5
+  ]
+}

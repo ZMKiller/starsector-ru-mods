@@ -1,0 +1,43 @@
+ {
+	 
+	 "plugins":{		
+		#"SCSkillPanelReplacerTitle":"second_in_command.scripts.SkillPanelReplacerScriptTitlescreen",
+		"SCCombatHandler":"second_in_command.scripts.CombatHandler",
+		"combatReadinessPlugin":"second_in_command.scripts.SCCRPluginImpl", # Replacement to fix issues that make it not work right with "Solid Construction"
+		"simulatorPlugin":"second_in_command.ui.sim.SiCSimPlugin",
+	},	
+	
+	"ruleCommandPackages":[
+		"second_in_command.interactions.rules",
+	],
+
+
+	#Boosted Elites
+	"officerMaxEliteSkills":2,
+	 
+	#Essentially Disable vanilla admiral skills if not added manualy. 
+	#An additional script removes any vanilla skills if they still appear somehow
+	"commanderLevelForTwoSkills":99,
+	"commanderLevelForOneSkill":98,
+	 
+	"graphics":{
+		"simulator":{
+			"sim_executive_match":"graphics/ui/sim_executive_match.png",		
+		},
+		"sc_ui":{
+			"skillBorderInactive":"graphics/secondInCommand/skillBorderInactive.png",
+			"skillBorderActive":"graphics/secondInCommand/skillBorderActive.png",
+			"skillBorderVanillaAptitude":"graphics/secondInCommand/skillBorderVanillaAptitude.png",
+			"skillEliteStars":"graphics/secondInCommand/elite_background.png",
+			"skillEliteBorder":"graphics/secondInCommand/elite_stars.png",
+			"no_officer":"graphics/secondInCommand/no_officer.png",
+			"seperator":"graphics/secondInCommand/seperator.png",
+			"arrow":"graphics/secondInCommand/arrow.png",
+		},
+		"sc_other": {
+			"dmod_overlay_very_light":"graphics/damage/dmod_overlay_sic_very_light.png",
+			"seb":"graphics/secondInCommand/special/christmas/seb.png",
+			"kanta":"graphics/secondInCommand/special/christmas/kanta.png",
+		}
+ 	}
+ }

@@ -1,0 +1,39 @@
+{
+    "displayName": "Derelict",
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
+    "hullId": "swp_cathedral_gun_left",
+    "hullMods": [
+        "blast_doors",
+        "reinforcedhull",
+        "armoredweapons"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_cathedral_gun_left_starter",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavymortar"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "pilum",
+                "WS0004": "pilum"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "heavyac"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "lightdualmg"}
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+  "variantId": "sfcaetos_Suppression",
+  "hullId": "sfcaetos",
+  "displayName": "Suppression",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "sfcammissilepod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "sfcmicrolauncher",
+        "WS0006": "sfcmicrolauncher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sfcamdestabilizer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "taclaser",
+        "WS0003": "taclaser",
+        "WS0004": "taclaser",
+        "WS0009": "gravitonbeam",
+        "WS0010": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "pdlaser",
+        "WS0008": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

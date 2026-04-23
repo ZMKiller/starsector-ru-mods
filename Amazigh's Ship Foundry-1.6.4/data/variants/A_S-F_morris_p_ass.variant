@@ -1,0 +1,43 @@
+{
+  "variantId": "A_S-F_morris_p_ass",
+  "hullId": "A_S-F_morris_p",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "heavymortar",
+        "WS0004": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_laaja",
+        "WS0002": "A_S-F_laaja"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "A_S-F_bramble",
+        "WS0006": "A_S-F_bramble",
+        "WS0007": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

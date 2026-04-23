@@ -1,0 +1,24 @@
+{
+	"id":"ls_bomb_squig",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"turretOffsets":[9, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[7, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":12.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":10.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":0.12,
+					   "particleCount":12,
+					   "particleColor":[25,155,155,255]},	
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"ls_bomb_squig",  # projectile that will be fired
+	"fireSoundTwo":"bomb_bay_fire",
+}

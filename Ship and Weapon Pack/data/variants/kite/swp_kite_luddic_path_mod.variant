@@ -1,0 +1,41 @@
+{
+    "displayName": "Heavily Modified",
+    "fluxCapacitors": 3,
+    "fluxVents": 3,
+    "hullId": "kite_luddic_path",
+    "hullMods": [
+        "swp_extrememods2",
+        "hardenedshieldemitter",
+        "missleracks",
+        "eccm",
+        "missile_autoloader"
+    ],
+    "permaMods": [
+        "swp_extrememods2",
+        "hardenedshieldemitter",
+        "missleracks",
+        "eccm"
+    ],
+    "sMods": [
+        "hardenedshieldemitter",
+        "missleracks",
+        "eccm"
+    ],
+    "tags": ["no_autofit"],
+    "variantId": "swp_kite_luddic_path_mod",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "railgun"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "hammer",
+                "WS 002": "hammer"
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+	"id":"SOTFCEO_ASBuplink_kinetic",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+
+	"aiScript":"SOTFECO.ai.SOTFCEOASBAIScript",
+	"statsScript":"SOTFECO.SOTFCEOASBScriptKinetic",
+
+	#"runScriptWhilePaused":true, # only for the player's ship
+	#"runScriptWhileIdle":true, # unapply() never gets called
+		
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}
+
+
+
+

@@ -1,0 +1,56 @@
+{
+  "hullName": "Dajeil",
+  "hullId": "TTE_dajeil",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/TTE_dajeil .png",
+  "style": "HIGH_TECH",
+  "height": 27,
+  "width": 32,
+  "center": [16, 13.5],
+  "collisionRadius": 21,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 20,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-1.5, -1]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10.5, 8],
+      "length": 14.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-10.5, -8],
+      "length": 14.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    13.5, -8,
+    9, -16,
+    -4, -15.5,
+    -13, -15.5,
+    -13, 15.5,
+    -4, 15.5,
+    9, 16,
+    13.5, 8
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "rat_merrow",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "targetingunit",
+        "unstable_injector",
+    ],
+    "permaMods": [
+        "automated",
+    ],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "rat_merrow_Attack",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "rat_lusca",
+                "WS0002": "rat_lusca",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "rat_seadragon_rack",
+                "WS0004": "rat_seadragon_rack",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

@@ -1,0 +1,108 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+# Built-in,,,,,,,,,,,,,,,,,,,
+Bulk Missile Storage,A_S-F_bulkracks,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_BulkMissileRacks,"Increases the ammo capacity of missile weapons by %s, missile weapons also deal %s reduced damage and have %s increased fire rate and ammo regeneration.",Increases missile weapon ammo.,,graphics/hullmods/A_S-F_bulk_missile_storage.png
+Adaptive Systems,A_S-F_AdaptiveSystems,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_AdaptiveSystems,"<Advanced systems that allow the ship to adapt to the battlefield situation, providing enhanced performance when under greater combat stress.>",Systems adapt to combat situation.,,graphics/hullmods/A_S-F_adaptive_systems.png
+Glister Engines,A_S-F_GlisterEngines,,,,,,,,TRUE,TRUE,0,0,0,0,org.amazigh.foundry.hullmods.ASF_GlisterEngines,"HIDDEN HULLMOD, tougher engines and better repair rate on them to make the glister less emp vulnerable.","Makes engines harder to disable, improves repair rate.",,graphics/hullmods/insulated_engine_assembly.png
+Probability Space Hypervessel,A_S-F_PhantasmagoriaHullmod,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PhantasmagoriaHullmod,<The Phantasmagoria of Dimensional Dream>,<The Phantasmagoria of Dimensional Dream>,,graphics/hullmods/A_S-F_phantasmagoria.png
+Barrage: CUTTER,A_S-F_PhantasmagoriaCutter,,,,"no_build_in, invisible_in_codex",,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PhantasmagoriaCutter,"Barrage Multi-Cannon set to %s mode, a rapid fire general purpose configuration.
+
+Remove hullmod to cycle configuration.","Barrage Multi-Cannon set to Cutter mode, a rapid fire general purpose configuration.",,graphics/hullmods/A_S-F_phantasmagoriaCutter.png
+Barrage: SLICER,A_S-F_PhantasmagoriaSlicer,,,,"no_build_in, invisible_in_codex",,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PhantasmagoriaSlicer,"Barrage Multi-Cannon set to %s mode, a scatter fire anti-shield configuration.
+
+Remove hullmod to cycle configuration.","Barrage Multi-Cannon set to Slicer mode, a scatter fire anti-shield configuration.",,graphics/hullmods/A_S-F_phantasmagoriaSlicer.png
+Barrage: PIERCER,A_S-F_PhantasmagoriaPiercer,,,,"no_build_in, invisible_in_codex",,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PhantasmagoriaPiercer,"Barrage Multi-Cannon set to %s mode, a focused anti-armour configuration.
+
+Remove hullmod to cycle configuration.","Barrage Multi-Cannon set to Piercer mode, a focused anti-armour configuration.",,graphics/hullmods/A_S-F_phantasmagoriaPiercer.png
+Illusion: CURTAIN,A_S-F_PhantasmagoriaCurtain,,,,"no_build_in, invisible_in_codex",,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PhantasmagoriaCurtain,"Illusion-pattern missile fabricator set to produce %s missiles.
+
+Remove hullmod to cycle configuration.",Illusion-pattern missile fabricator set to produce Curtain missiles.,,graphics/hullmods/A_S-F_phantasmagoriaCurtain.png
+Illusion: SHROUD,A_S-F_PhantasmagoriaShroud,,,,"no_build_in, invisible_in_codex",,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PhantasmagoriaShroud,"Illusion-pattern missile fabricator set to produce %s suppression micromissiles.
+
+Remove hullmod to cycle configuration.",Illusion-pattern missile fabricator set to produce Shroud suppression micromissiles.,,graphics/hullmods/A_S-F_phantasmagoriaShroud.png
+Illusion: PARTITION,A_S-F_PhantasmagoriaPartition,,,,"no_build_in, invisible_in_codex",,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PhantasmagoriaPartition,"Illusion-pattern missile fabricator set to produce %s strike missiles.
+
+Remove hullmod to cycle configuration.",Illusion-pattern missile fabricator set to produce Partition strike missiles.,,graphics/hullmods/A_S-F_phantasmagoriaPartition.png
+Temporal Core: REGULATED,A_S-F_PhantasmagoriaRegulator_on,,,,"no_build_in, codex_require_related",,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PhantasmagoriaRegulator_on,"<Come to terms with death, thereafter anything is possible>","<Come to terms with death, thereafter anything is possible>",,graphics/hullmods/A_S-F_phantasmagoriaRegulatorOn.png
+Temporal Core: UNREGULATED,A_S-F_PhantasmagoriaRegulator_off,,,,"no_build_in, codex_require_related",,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PhantasmagoriaRegulator_off,"<Deep insight gives way to Spectacle, and Spectacle to Violence and Gore, until in the end little is left but the Gore>","<Deep insight gives way to Spectacle, and Spectacle to Violence and Gore, until in the end little is left but the Gore>",,graphics/hullmods/A_S-F_phantasmagoriaRegulatorOff.png
+Temporal Core On Decoy,A_S-F_PhantasmagoriaCore_on,,,,"no_build_in, invisible_in_codex",,,,TRUE,TRUE,0,0,0,0,org.amazigh.foundry.hullmods.ASF_clavataDummy,Pure Dummy swapping hullmod [ON],Pure Dummy swapping hullmod [ON],,graphics/hullmods/A_S-F_phantasmagoria.png
+Temporal Core Off Decoy,A_S-F_PhantasmagoriaCore_off,,,,"no_build_in, invisible_in_codex",,,,TRUE,TRUE,0,0,0,0,org.amazigh.foundry.hullmods.ASF_clavataDummy,Pure Dummy swapping hullmod [OFF],Pure Dummy swapping hullmod [OFF],,graphics/hullmods/A_S-F_phantasmagoria.png
+Warburn Systems,A_S-F_GaderogaHullmod,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_GaderogaHullmod,<The Fortress of Annihilation>,<The Fortress of Annihilation>,,graphics/hullmods/A_S-F_warburn.png
+Warburn Systems,A_S-F_BerzeliusHullmod,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_BerzeliusHullmod,<The Fortress of Annihilation - Berzelius>,<The Fortress of Annihilation - Berzelius>,,graphics/hullmods/A_S-F_warburn.png
+Warburn Systems (Automated),A_S-F_DerelictWarburn,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_DerelictWarburn,<The Fortress of Annihilation - Derelict>,<The Fortress of Annihilation - Derelict>,,graphics/hullmods/A_S-F_warburn.png
+Lebruck Missile Foundry,A_S-F_lebruckFoundry,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_lebruckFoundry,<Missile Power Fantasy>,<Missile Power Fantasy>,,graphics/hullmods/A_S-F_lebruckFoundry.png
+Hybrid Weapons Integration,A_S-F_lebruckArsenal,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_lebruckArsenal,"Specialised weapon mounts that ease the installation of weapons.
+Reduces the ordnance point cost of ballistic and energy weapons by %s/%s/%s.",Reduces ordnance point cost of ballistic and energy weapons.,,graphics/hullmods/A_S-F_lebruckArsenal.png
+Expansive Missile Racks,A_S-F_expansiveracks,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ExpansiveMissileRacks,"This ship features a massively expanded storage of ammunition for its primary missile mount.
+To such an extent that power conduits and munition feeds for the ships other weapons had to be downgraded to be able to fit all the missile storage.
+Increases the ammo capacity of missile weapons by %s and missile weapons have %s increased fire rate and ammo regeneration.
+Ballistic Weapon Rate of Fire is reduced by %s and Energy Weapon Damage and Flux Cost are also reduced by %s.",Increases missile weapon ammo.,,graphics/hullmods/A_S-F_bulk_missile_storage2.png
+Enhanced Ballistic Support Package,A_S-F_rinkaHullmod,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_rinkaHullmod,<Just give me a clear view.>,"Increased Ballistic performance, variable based on system state.",,graphics/hullmods/A_S-F_rinkaHullmod.png
+Photon Acclerator Core,A_S-F_transparenceHullmod,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_transparenceHullmod,<Get It By Your Hands>,<Get It By Your Hands>,,graphics/hullmods/A_S-F_transparenceHullmod.png
+Plasma-tap Shields,A_S-F_plasmaTapShields,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_PlasmaTapShields,"<Things are gonna get pretty busy, crew!>","<Things are gonna get pretty busy, crew!>",,graphics/hullmods/A_S-F_plasmaTapShields.png
+Warburn Systems (Fighter),A_S-F_GyastarHullmod,,,,invisible_in_codex,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_GyastarHullmod,<The Fortress of Annihilation>,<The Fortress of Annihilation>,,graphics/hullmods/A_S-F_warburn.png
+Assault Coils,A_S-F_rinkaHullmod_p,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_rinkaHullmod_p,<Enemy in my sights!>,Increased Ballistic performance.,,graphics/hullmods/A_S-F_rinkaHullmod_p.png
+Inertial Bracing,A_S-F_inertialBracing,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_inertialBracing,"To compensate for the sheer levels of force that the ships thrusters can apply, additional specialised bracing has been installed to ensure the ship can survive even the most extreme maneuvres.
+This bracing has a secondary benefit of acting as a spall liner, giving the ship greater resistance to damage.
+
+Fragmentation damage taken by hull and armour reduced by %s.
+Weapon and Engine health increased by %s.","Fluff, and Frag Resist.",,graphics/hullmods/A_S-F_inertialBracing.png
+Exotic Structure,A_S-F_exoticStructure,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_exoticStructure,"This vessel features a combination of atypical design traits and exotic materials, in combination this results in superior performance in various areas in exchange for an increased logistic overhead.
+
+The monthly maintenance supply cost is increased by %s.
+Engine repair rate increased by %s.
+Kinetic damage taken by hull and armour reduced by %s.","Supply cost and engine repair rate up, armour/hull kinetic resist.",,graphics/hullmods/A_S-F_exoticStructure.png
+Pritzl Flux Coherer,A_S-F_pritzlFlux,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_pritzlFlux,<Flux Power Fantasy>,<Flux Power Fantasy>,,graphics/hullmods/A_S-F_pritzlFlux.png
+Flogger Mount Redundancy,A_S-F_floggerMounts,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_floggerMounts,<The floggers medium mount buffs the weapon type not installed in it>,<The floggers medium mount buffs the weapon type not installed in it>,,graphics/hullmods/A_S-F_floggerMounts.png
+Flogger Afterburner Visuals,A_S-F_afterburnerVisuals,,,,,,,,TRUE,TRUE,0,0,0,0,org.amazigh.foundry.hullmods.ASF_afterburnerVisuals,"Hidden hullmod, handles the vfx for the floggers shipsystem","Hidden hullmod, handles the vfx for the floggers shipsystem",,graphics/hullmods/insulated_engine_assembly.png
+Adaptive Variable Mounts,A_S-F_phobiaFlex,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_phobiaFlex,"<Phobia hullmod, universal mount memes>","<Phobia hullmod, universal mount memes>",,graphics/hullmods/A_S-F_phobiaFlex.png
+Jorogumo Module Phase,A_S-F_joroModulePhase,,,,,,,,TRUE,TRUE,0,0,0,0,org.amazigh.foundry.hullmods.ASF_joroModulePhase,"Hidden hullmod, makes the Jorogumos module have no collision","Hidden hullmod, makes the Jorogumos module have no collision",,graphics/hullmods/phase_field.png
+Clavata Drone Bay,A_S-F_clavataDummy,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_clavataDummy,"This ship features a bay that automatically deploys eight Clavata Phase Drones.
+
+The drones are slowly replenished if destroyed, will orbit the ship and are armed with a defensive PD Laser.",Jorogumo Drone info hullmod,,graphics/hullmods/A_S-F_clavataBay.png
+Secondary Flux Bank,A_S-F_initoneBank,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_initoneBank,"<Initone hullmod, gives a secondary soft-flux store>","<Initone hullmod, gives a secondary soft-flux store>",,graphics/hullmods/A_S-F_initoneBank.png
+Energy Bolt Converger,A_S-F_energyBoltConverger,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_energyBoltConverger,"<""Energy BRF"">","<""Energy BRF"">",,graphics/hullmods/A_S-F_converger.png
+Ammon Hullmod,A_S-F_ammonHullmod,,,,,,,,TRUE,TRUE,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ammonHullmod,<Ammon Timescale meme>,<Ammon Timescale meme>,,graphics/hullmods/insulated_engine_assembly.png
+Servant Targeting Core,A_S-F_ServantHullmod,,,,invisible_in_codex,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ServantHullmod,Advanced targeting unit that provides a significant increase to weapons range.,Advanced targeting unit that provides a significant increase to weapons range.,,graphics/hullmods/advanced_targeting_core.png
+Malice Resonator,A_S-F_UndyingMalice,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_UndyingMalice,<The lone flower blooming in the Abyss.>,<The lone flower blooming in the Abyss.>,,graphics/hullmods/A_S-F_undyingMalice.png
+Novel Coil Geometry,A_S-F_MaliceCoils,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_MaliceCoils,"<A heretic, clad in the husks of the dead.>","<A heretic, clad in the husks of the dead.>",,graphics/hullmods/A_S-F_MaliceCoils.png
+Overworked Loaders,A_S-F_tiredGuns,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_tiredGuns,your weapons are eepy :(,your weapons are eepy :(,,graphics/hullmods/A_S-F_tiredGuns.png
+Integrated Rangefinders,A_S-F_integratedRangefinders,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_integratedRangefinders,"Super BRF (works up to 1k range, and at 50% for pd, but not for hybrids!)","Super BRF (works up to 1k range, and at 50% for pd, but not for hybrids!)",,graphics/hullmods/A_S-F_integratedRangefinders.png
+Ruggedized Mounts,A_S-F_ruggedMounts,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ruggedMounts,"Tougher weps, faster wep repairs, and cheaper med balls.","Tougher weps, faster wep repairs, and cheaper med balls.",,graphics/hullmods/A_S-F_ruggedMounts.png
+Tactical Artillery Mount,A_S-F_ArtyMount,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ArtyMount,Core hullmod for Tactical Artillery ships.,Core hullmod for Tactical Artillery ships.,,graphics/hullmods/A_S-F_artillery.png
+Diadol Plasma Artillery,A_S-F_ArtyWepHighTech,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ArtyWepHighTech,High Tech Tactical Artillery.,High Tech Tactical Artillery.,,graphics/hullmods/A_S-F_artilleryHT.png
+Colap Ion Artillery,A_S-F_ArtyWepRemnant,,,,codex_unlockable,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ArtyWepRem,Remnant Tactical Artillery.,Remnant Tactical Artillery.,,graphics/hullmods/A_S-F_artilleryRem.png
+Celpek Burst Artillery,A_S-F_ArtyWepMidline,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ArtyWepMid,Midline Tactical Artillery.,Midline Tactical Artillery.,,graphics/hullmods/A_S-F_artilleryMid.png
+Expiation,A_S-F_expiationInfo,,,,invisible_in_codex,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_expiationInfo,"""Fear, Terror, Anger... the sniper sees them all turn to the cold stare of death from her hidden perch.""",Expiation Info Hullmod,,graphics/hullmods/phase_field.png
+,,,,,,,,,,,,,,,,,,,
+# ANOMALY,,,,,,,,,,,,,,,,,,,
+Anomalous Systems,A_S-F_anomalousSystems,,,,invisible_in_codex,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_AnomalousSystems,HWPREDICT ROUND FAIL; VDEF PERCENTNAN; CDEF PREDICT & PREDICTSIGMA OOB;,HWPREDICT ROUND FAIL; VDEF PERCENTNAN; CDEF PREDICT & PREDICTSIGMA OOB;,,graphics/hullmods/A_S-F_anomalousSystems.png
+Anomalous Systems,A_S-F_anomalousSystems_a,,,,invisible_in_codex,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_AnomalousSystems_a,EPS OUTPUT FAIL; RRD COMPUTE OOB; RPN & MRTG FORECAST NAN;,EPS OUTPUT FAIL; RRD COMPUTE OOB; RPN & MRTG FORECAST NAN;,,graphics/hullmods/A_S-F_anomalousSystems.png
+Anomalous Systems,A_S-F_anomalousSystems_c,,,,invisible_in_codex,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_AnomalousSystems_c,RRA SCAN NAN; ES-RESTART FAIL; MANITRACK COMPUTE OOB;,RRA SCAN NAN; ES-RESTART FAIL; MANITRACK COMPUTE OOB;,,graphics/hullmods/A_S-F_anomalousSystems.png
+,,,,,,,,,,,,,,,,,,,
+# Anarchy Systems,,,,,,,,,,,,,,,,,,,
+Ungoverned Ballistic Loader,A_S-F_anarchyBallistic,1,,Anarchy Systems,"offensive, merc",Weapons,10000,,,,1,1,1,1,org.amazigh.foundry.hullmods.ASF_AnarchyBallistic,MinMaxer Ballistic Hullmod,MinMaxer Ballistic Hullmod,"Ballistic weapon Rate of Fire bonus is increased to %s.
+Ballistic weapon Ammo Regeneration Bonus is increased to %s.
+
+Weapon Recoil Malus is reduced to %s.
+Weapon turn rate Malus is reduced to %s.",graphics/hullmods/A_S-F_anarchyBallistic.png
+Energy Conduit Overcharger,A_S-F_anarchyEnergy,1,,Anarchy Systems,"offensive, merc",Weapons,10000,,,,1,1,1,1,org.amazigh.foundry.hullmods.ASF_AnarchyEnergy,MinMaxer Energy Hullmod,MinMaxer Energy Hullmod,"Energy weapon damage bonus is increased to %s.
+
+Overload duration Malus is reduced to %s.
+Flux capacity Malus is reduced to %s.",graphics/hullmods/A_S-F_anarchyEnergy.png
+Exposed Flux Radiators,A_S-F_anarchyFlux,1,,Anarchy Systems,"special, merc",Special,10000,,,,1,1,1,1,org.amazigh.foundry.hullmods.ASF_AnarchyFlux,MinMaxer Flux Hullmod,MinMaxer Flux Hullmod,"Flux dissipation bonus is increased to %s.
+
+Armor rating Malus is reduced to %s.
+EMP damage taken Malus is reduced to %s.",graphics/hullmods/A_S-F_anarchyFlux.png
+Ungoverned Shield Emitter,A_S-F_anarchyShields,1,,Anarchy Systems,"defensive, merc",Shields,10000,,,,1,1,1,1,org.amazigh.foundry.hullmods.ASF_AnarchyShields,MinMaxer Shield Hullmod,MinMaxer Shield Hullmod,"Shield damage taken reduction is increased to %s.
+
+Top speed and maneuverability Malus is reduced to %s.
+Shield turn and unfold rate Malus is reduced to %s.",graphics/hullmods/A_S-F_anarchyShields.png
+Overclocked Targeting Unit,A_S-F_anarchyTargeting,1,,Anarchy Systems,"offensive, merc",Weapons,10000,,,,1,1,1,1,org.amazigh.foundry.hullmods.ASF_AnarchyTargeting,MinMaxer Range Hullmod,MinMaxer Range Hullmod,"Weapon range bonus is increased to %s.
+
+Flux dissipation Malus is reduced to %s.
+Peak performance time Malus is reduced to %s.",graphics/hullmods/A_S-F_anarchyTargeting.png
+,,,,,,,,,,,,,,,,,,,
+# Standard Modular,,,,,,,,,,,,,,,,,,,
+Electromagnetic Flux Stabiliser,A_S-F_ElectroVent,1,,,"special, merc",Special,8000,,,,3,6,9,16,org.amazigh.foundry.hullmods.ASF_ElectroVent,Zappy Rapid Overload,Zappy Rapid Overload,Increases flux capacity by %s/%s/%s/%s.,graphics/hullmods/A_S-F_electroVent.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,51 @@
+{
+  "hullName": "Razor",
+  "hullId": "uw_razor",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/uw/ships/razor/uw_razor.png",
+  "style": "LOW_TECH",
+  "height": 27,
+  "width": 28,
+  "center": [14, 14],
+  "collisionRadius": 19.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 19,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [3.75, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-13, 4],
+      "length": 16,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-13, -4],
+      "length": 16,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    7.5, -11.5,
+    -4, -12,
+    -11, -4,
+    -11, 4,
+    -4, 12,
+    7.5, 11.5
+  ]
+}

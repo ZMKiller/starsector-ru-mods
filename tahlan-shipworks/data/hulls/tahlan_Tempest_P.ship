@@ -1,0 +1,86 @@
+{
+  "hullName": "Tempest (P)",
+  "hullId": "tahlan_Tempest_P",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/tahlan/ships/tahlan_Tempest_P.png",
+  "style": "HIGH_TECH",
+  "height": 93,
+  "width": 63,
+  "center": [31, 46],
+  "collisionRadius": 77,
+  "shieldCenter": [0.5, -0.5],
+  "shieldRadius": 67.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "unstable_injector"
+  ],
+  "builtInWings": [
+    "tahlan_turrmy_drone_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 235,
+      "angle": 60,
+      "locations": [-1, 20]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [4, -15]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -55,
+      "locations": [-20, -16]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-46, 0],
+      "length": 53.5,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-46, 6],
+      "length": 36,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-46, -7],
+      "length": 36,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -20, -30.5,
+    37, -5,
+    45.5, 9.5,
+    9.5, 19,
+    3.5, 30.5,
+    -36, 22.5,
+    -35.5, 12,
+    -45.5, 9.5,
+    -45, -9.5
+  ]
+}

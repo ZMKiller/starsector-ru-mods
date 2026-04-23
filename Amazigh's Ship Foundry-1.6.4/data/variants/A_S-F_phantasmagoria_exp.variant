@@ -1,0 +1,48 @@
+{
+  "variantId": "A_S-F_phantasmagoria_exp",
+  "hullId": "A_S-F_phantasmagoria",
+  "displayName": "Experimental",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 6,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardened_subsystems",
+    "solar_shielding",
+    "targetingunit",
+    "A_S-F_PhantasmagoriaRegulator_off",
+    "A_S-F_PhantasmagoriaCore_off",
+    "A_S-F_PhantasmagoriaCutter",
+    "A_S-F_PhantasmagoriaCurtain",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "amblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

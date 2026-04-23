@@ -1,0 +1,28 @@
+{
+	"id":"A_S-F_breaker",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"everyFrameEffect": "org.amazigh.foundry.scripts.arktech.ASF_breakerOnFireScript",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"turretSprite":"graphics/weapons/A_S-F_breaker_hardpoint_base.png",
+	"turretGunSprite":"graphics/weapons/A_S-F_breaker_hardpoint_recoil.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_breaker_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/A_S-F_breaker_hardpoint_recoil.png",
+	"visualRecoil":9.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[28, -9.5, 28, 9.5],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[37, -9.5, 37, 9.5],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":40.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":25,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":18.0,
+					   "particleDuration":0.16,
+					   "particleCount":16,
+					   "particleColor":[225,255,165,165]},
+	"projectileSpecId":"A_S-F_breaker_shot",  # projectile that will be fired
+	"fireSoundTwo":"devastator_fire",
+}

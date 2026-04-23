@@ -1,0 +1,46 @@
+{
+	"id":"sfcamplusmine_mine",
+	"specClass":"missile",	
+	"missileType":"PHASE_MINE",
+	"sprite":"graphics/PAGSM/weapons/AM Fuel Missiles/sfcamplusmine.png",
+	"glowSprite":"graphics/PAGSM/weapons/AM Fuel Missiles/sfcamplusmine_glow.png",
+	"glowColor":[255,255,255,105],
+	"size":[96,96],	
+	"center":[48,48],	
+	"collisionRadius":20,
+	#"armingTime":1,
+	"collisionClass":"MISSILE_NO_FF",
+	"flameoutTime":0.1, # total time from flameout to full fadeout
+	"fadeTime":0.1, # fadeout duration
+	"noEngineGlowTime":0.05, # time spent without the engine glow being rendered
+	"explosionColor":[142,255,255,155],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":350, # purely visual	
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":150,
+				  "acc":500,
+				  "dec":500},
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"range":100,
+					"slowToMaxSpeed":true,
+					"delay":1.5,
+					"pingSound":"system_empmine_ping",
+					"pingColor":[142,255,255,155],
+					"pingRadius":250,
+					"pingDuration":0.25,
+					"windupSound":"system_empmine_primed",
+					"windupDelay":0.75,
+					"explosionSpec":{"duration":0.1f,
+									 "radius":250,
+									 "coreRadius":150, # full damage within core radius
+									 "collisionClass":MISSILE_FF,
+									 "collisionClassByFighter":MISSILE_FF,
+									 "particleSizeMin":3.0,
+									 "particleSizeRange":3.0,
+									 "particleDuration":1,
+									 "particleCount":200,
+									 "particleColor":[148,255,255,155],
+									 "explosionColor":[142,255,255,155],
+									 "useDetailedExplosion":true,
+									 "sound":"system_empmine_explode"},
+					}	
+}

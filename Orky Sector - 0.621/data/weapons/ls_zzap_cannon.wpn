@@ -1,0 +1,20 @@
+{
+	"id":"ls_zzap_kannon",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/ls_zzap_cannon_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/ls_zzap_cannon_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/ls_zzap_cannon_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/ls_zzap_cannon_hardpoint_glow.png",
+	"glowColor":[255,255,100,200],
+	"turretOffsets":[18, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[12, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW",
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"ls_zzap_cannon_shot",  # projectile that will be fired
+	"fireSoundTwo":"shock_repeater_fire",
+}

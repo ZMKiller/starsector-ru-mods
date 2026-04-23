@@ -1,0 +1,56 @@
+{
+  "variantId": "A_S-F_axicon_sup",
+  "hullId": "A_S-F_axicon",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 1,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "missleracks",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "squall"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "gravitonbeam",
+        "WS0003": "gravitonbeam",
+        "WS0004": "taclaser",
+        "WS0005": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lrpdlaser",
+        "WS0008": "lrpdlaser",
+        "WS0009": "lrpdlaser",
+        "WS0010": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "A_S-F_cusp_wing",
+    "A_S-F_cusp_wing"
+  ]
+}

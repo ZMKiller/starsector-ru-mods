@@ -1,0 +1,53 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 5,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "swp_zenith",
+    "hullMods": [
+        "magazines",
+        "hardenedshieldemitter",
+        "unstable_injector"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_zenith_ass",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "autopulse",
+                "WS0002": "autopulse"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "breachpod",
+                "WS0004": "breachpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "ioncannon",
+                "WS0007": "ioncannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "pdburst",
+                "WS0008": "pdburst",
+                "WS0009": "pdburst",
+                "WS0010": "pdburst",
+                "WS0011": "pdburst"
+            }
+        }
+    ],
+    "wings": ["wasp_wing"]
+}

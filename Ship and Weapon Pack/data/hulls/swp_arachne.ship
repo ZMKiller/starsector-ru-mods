@@ -1,0 +1,110 @@
+{
+  "hullName": "Arachne",
+  "hullId": "swp_arachne",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/swp/ships/swp_arachne.png",
+  "style": "HIGH_TECH",
+  "height": 129,
+  "width": 107,
+  "center": [54, 67],
+  "collisionRadius": 98.733223,
+  "shieldCenter": [0, 0.5],
+  "shieldRadius": 95.813621,
+  "viewOffset": 0,
+  "builtInMods": [
+    "hiressensors",
+    "advancedcore"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [-15, 0.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [52, -17]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 70,
+      "locations": [16, 44]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -70,
+      "locations": [16, -43]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 115,
+      "locations": [-6, 35.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -115,
+      "locations": [-6, -34.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-66, 18],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-66, -17],
+      "length": 64,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    23, -50,
+    10, -50,
+    -4, -32,
+    -46, -45.5,
+    -65.5, -15.5,
+    -51.5, -4,
+    -51.5, 5,
+    -65.5, 16.5,
+    -46, 46.5,
+    -4, 33,
+    10, 51,
+    23, 51,
+    40, 15,
+    60, -10.5,
+    49.5, -28.5,
+    28.5, -30
+  ]
+}

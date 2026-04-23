@@ -1,0 +1,47 @@
+{
+  "variantId": "A_S-F_phobia_torp",
+  "hullId": "A_S-F_phobia",
+  "displayName": "Torpedo",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 9,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "magazines",
+    "fluxbreakers",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "atropos",
+        "WS0004": "atropos",
+        "WS0005": "atropos",
+        "WS0006": "atropos"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ionpulser",
+        "WS0002": "ionpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "pdburst",
+        "WS0008": "pdburst",
+        "WS0009": "pdburst",
+        "WS0010": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,39 @@
+{
+    "displayName": "Escort Mekka",
+    "fluxCapacitors": 7,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "ls_centurion_ds",
+    "hullMods": [
+        "ls_ard_case",
+        "hardenedshieldemitter"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_centurion_ds_escort_mekka",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_zzap_kannon"
+
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_bubble_chukka",
+                "WS 001": "ls_bubble_chukka",
+                "WS 002": "ls_bubble_chukka"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_jet_shoota"
+            }
+        }
+    ]
+}

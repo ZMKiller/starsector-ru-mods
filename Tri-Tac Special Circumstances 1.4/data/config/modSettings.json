@@ -1,0 +1,52 @@
+{
+    "nexerelin":{
+		"mining_ship_strengths":{
+
+			"TTSC_idiran":12,	
+			"TTSC_gillan":18,			
+			"TTSC_azad":28,	
+			"TTSC_rascal": 1,
+			"TTSC_homomdan":20,	
+			"TTSC_esperi": 9,		
+			"TTSC_cheradenine": 59,				
+		
+		},
+		"mining_weapon_strengths":{
+
+			"TTSC_twmininglaser": 3,	
+			"TTSC_lrmininglaser": 3,				
+				
+		},
+
+    },
+	
+   "SCY":{
+        "amity_factionWhitelist":[
+            # Lists factions that should have their known ships and weapons sold in Amity's Freeport discount trader.
+            "TTSC",
+        ],
+        #"amity_blacklist":[
+        #    # Lists ships, weapons and wings ids that should be culled from Amity's Freeport discount trader.
+        #    # Consider that tier 3 weapons/wings and ships above 5/10/14/23 FP are already culled from that store automatically.
+        #],
+    },	
+
+	"PerseanChronicles": {
+		  # Controls what systems/markets may be used as quest starting/mid/ending locations.
+		  # Valid for v1.0.1 and later
+		#"entity_tags_to_blacklist": [
+		#	# SectorEntityTokens containing a tag listed here will be blacklisted.
+		#],
+		#"system_ids_to_blacklist": [
+		#	# Star systems with an id listed here will be blacklisted.
+		#],
+		#"market_ids_to_blacklist": [
+		#	# Markets with an id listed here will be blacklisted.
+		#],
+		"faction_ids_to_whitelist": [
+			# Markets whose controlling faction's id is listed here will be *whitelisted*.
+			# Vanilla factions are whitelisted by default.
+			"TTSC",
+		]
+	},	
+}

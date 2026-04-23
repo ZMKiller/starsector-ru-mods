@@ -1,0 +1,55 @@
+{
+  "variantId": "XHAN_Ennik_Obliterator",
+  "hullId": "XHAN_Ennik",
+  "displayName": "Obliterator",
+  "goalVariant": true,
+  "fluxCapacitors": 17,
+  "fluxVents": 28,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+	"targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Stolb_Demo_charge"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "Sharik_Demo_Torp",
+        "WS0003": "Sharik_Demo_Torp"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "Xhan_Drob",
+        "WS0008": "Xhan_Drob",
+        "WS0009": "Xhan_Drob"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "Chok_point_def",
+        "WS0006": "Chok_point_def"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,44 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 20,
+    "fluxVents": 18,
+    "goalVariant": true,
+    "hullId": "swp_chronos",
+    "hullMods": [
+        "converted_hangar",
+        "defensive_targeting_array",
+        "eccm",
+        "missleracks",
+        "targetingunit",
+        "high_scatter_amp"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_chronos_cs",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "harpoonpod",
+                "WS0006": "harpoonpod",
+                "WS0007": "harpoonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "tachyonlance"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "gravitonbeam",
+                "WS0003": "gravitonbeam",
+                "WS0004": "gravitonbeam"
+            }
+        }
+    ],
+    "wings": ["wasp_wing"]
+}

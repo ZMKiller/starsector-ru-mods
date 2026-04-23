@@ -1,0 +1,54 @@
+{
+	"id":"Xhan_Blast_flare",
+	"specClass":"missile",	
+	"missileType":"FLARE",
+	"sprite":"graphics/missiles/bomblet0.png",
+	"size":[4,4],	
+	"center":[2,2],
+	"collisionRadius":7,
+	"collisionClass":"MISSILE_NO_FF",
+	#"collisionClass":"FIGHTER",
+	"explosionColor":[255,120,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":75, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":75,
+					 "coreRadius":50, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":1,
+					 "particleSizeRange":6.0,
+					 "particleDuration":1.2,
+					 "particleCount":30,
+					 "particleColor":[255,120,50,255]},
+	#"maxFlightTime":3,
+	"flameoutTime":1, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration
+	#"collisionClassAfterFlameout":"MISSILE_NO_FF",
+	"behaviorSpec":{"behavior":"CUSTOM",
+					"effectRange":300,
+					"effectChance":0.1,
+				   },	
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":400,
+				  #"maxSpeed":150,
+				  "acc":150,
+				  "dec":0},
+	"engineSlots":[
+					{"id":"ES1",
+					"loc":[0, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"engineColor":[255,120,50,255],
+						"contrailParticleSizeMult":15,
+						"contrailParticleDuration":2,
+						"contrailMaxSpeedMult":-0.1,
+						"contrailAngularVelocityMult":0f,
+						"contrailColor":[255,120,50,35],
+						"type":"GLOW" # GLOW or SMOKE
+					},
+				    "width":7.0,
+				    "length":25.0,
+				    "angle":180.0},
+				   ]
+}

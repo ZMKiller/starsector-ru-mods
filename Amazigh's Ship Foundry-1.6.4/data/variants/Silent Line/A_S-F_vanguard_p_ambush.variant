@@ -1,0 +1,54 @@
+{
+  "variantId": "A_S-F_vanguard_p_ambush",
+  "hullId": "vanguard_pirates",
+  "displayName": "Ambush",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "heavyarmor",
+    "missleracks",
+    "fluxbreakers",
+    "insulatedengine",
+    "A_S-F_anarchyBallistic"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "lightdualac",
+        "WS 006": "lightdualac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 000": "harpoon",
+        "WS 001": "harpoon",
+        "WS 002": "harpoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "lightdualmg",
+        "WS 004": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

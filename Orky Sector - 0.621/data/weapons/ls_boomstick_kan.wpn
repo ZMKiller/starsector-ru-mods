@@ -1,0 +1,24 @@
+{
+	"id":"ls_boomstick_kan",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":400,
+	"turretSprite":"graphics/weapons/Kan/ls_kan_shotgun.png",
+	"hardpointSprite":"",	
+	"turretOffsets":[10, -1, 10, -1, 10, -1, 10, -1, 10, 1, 10, 1, 10, 1, 10, 1],
+	"turretAngleOffsets":[0,0,-3,3,-5,5-7,7],
+	"hardpointOffsets":[15, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":20.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":45.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":0.4,
+					   "particleCount":6,
+					  "particleColor":[255,125,105,255]},
+	"projectileSpecId":"ls_boomstick_shot",  # projectile that will be fired
+	"fireSoundTwo":"light_mortar_fire",	
+}

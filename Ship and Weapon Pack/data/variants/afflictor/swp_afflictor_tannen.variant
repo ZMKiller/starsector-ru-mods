@@ -1,0 +1,47 @@
+{
+    "displayName": "Plunderer",
+    "fluxCapacitors": 9,
+    "fluxVents": 9,
+    "hullId": "afflictor",
+    "hullMods": [
+        "heavyarmor",
+        "missleracks",
+        "hardened_subsystems",
+        "reinforcedhull",
+        "unstable_injector"
+    ],
+    "permaMods": [
+        "heavyarmor",
+        "missleracks",
+        "hardened_subsystems",
+    ],
+    "sMods": [
+        "heavyarmor",
+        "missleracks",
+        "hardened_subsystems",
+    ],
+    "variantId": "swp_afflictor_tannen",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "lightneedler",
+                "WS 003": "lightneedler"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "reaper",
+                "WS 004": "reaper"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 006": "swp_lightphaselance"}
+        }
+    ]
+}

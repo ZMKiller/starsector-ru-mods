@@ -1,0 +1,28 @@
+{
+	"id":"ls_deff_skwadron",
+	"type":"DRONE_LAUNCHER",
+	"aiType":"DRONE_LAUNCHER_STANDARD",
+	
+	"droneVariant":"ls_deff_skwardon_goose_custom",
+	
+	"allowFreeRoam":false,
+	
+	"launchSpeed":250,
+	"launchDelay":1,
+	"maxDrones":1,
+	"droneBehavior":[
+		{"droneIndex":[0],
+		 "defaultFacing":"MATCH_SHIP_HEADING",	# MATCH_DRONE_HEADING, MATCH_SHIP_HEADING, MATCH_SHIP_FACING, AWAY_FROM_SHIP
+		 "faceEnemy":true,
+		 "holdRoamRange":800,#hold模式的出击范围 0就是只是待在原地不动辽
+		 "freeRoamRange":2500,
+		 "targetPriority":[MISSILE,SHIP, FIGHTER],#无人机会朝向的目标
+		 "initialOrbitAngle":45,#环绕母舰的角度
+		 "orbitRadius":250, 				# 环绕母舰的半径
+		 "orbitDir":1, 					# -1 or 1 好像是方向 顺逆时针
+		 "orbitSpeed":0, 				# 每秒环绕多少 0就是不动
+		},
+	],
+	"useSound":"",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

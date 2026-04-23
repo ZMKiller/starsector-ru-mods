@@ -1,0 +1,44 @@
+{
+	#
+	# terrain with gameplay effects
+	#
+
+	"IndEvo_radioactive_field":{
+		"plugin":"indevo.exploration.meteor.terrain.RadioactiveTerrain",
+	},
+
+	"IndEvo_mine_belt":{
+		"plugin":"indevo.exploration.minefields.MineBeltTerrainPlugin",
+		"loopOne":"terrain_asteroid_field",
+	},
+
+	"IndEvo_mine_field":{
+		"plugin":"indevo.exploration.minefields.MineFieldTerrainPlugin",
+		"musicSuppression":0.25,
+		"loopOne":"terrain_asteroid_field",
+	},
+
+	"IndEvo_artillery_range_terrain":{
+		"plugin":"indevo.industries.artillery.terrain.ArtilleryTerrain",
+	},
+
+	"IndEvo_slowfield":{
+		"plugin":"indevo.industries.artillery.terrain.SlowFieldTerrain",
+		"musicSuppression":0.50,
+	},
+
+	"IndEvo_SmokeCloud":{
+	"plugin":"indevo.items.consumables.terrain.SmokeCloudTerrain",
+	"musicSuppression":0.60,
+	},
+
+	"crucible_field":{
+	"plugin":"indevo.exploration.crucible.terrain.CrucibleFieldTerrainPlugin",
+	"musicSuppression":0.5,
+	# inside field
+	"loopOne":"terrain_magfield",
+	# inside active aurora/magnetic storm
+	"loopTwo":"terrain_magstorm",
+	}
+}
+

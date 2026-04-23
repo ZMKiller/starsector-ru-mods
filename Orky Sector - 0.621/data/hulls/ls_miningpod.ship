@@ -1,0 +1,65 @@
+{
+    "hullName": "Looted Mining Pod",
+    "hullId": "ls_miningpod",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_miningpod.png",
+    "height": 33,
+    "width": 34,
+    "center": [
+        17, 16.5
+    ],
+    "collisionRadius": 28,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInWeapons": {
+        "WS 000": "ls_skorcha"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      -3,      8.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -12.5, 8.5
+            ],
+            "length": 14,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -12.5, -9.5
+            ],
+            "length": 14,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -12.5,      -15,
+             6.5,      -13,
+             6.5,       13,
+           -12.5,       15
+    ]
+}

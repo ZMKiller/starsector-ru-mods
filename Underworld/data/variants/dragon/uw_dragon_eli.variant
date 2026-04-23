@@ -1,0 +1,76 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 0,
+    "fluxVents": 49,
+    "goalVariant": true,
+    "hullId": "uw_dragon",
+    "hullMods": [
+        "targetingunit",
+        "ballistic_rangefinder",
+        "heavyarmor"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_dragon_eli",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "uw_tpc"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "harpoonpod",
+                "WS0006": "harpoonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "mark9",
+                "WS0004": "hephag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "lightac",
+                "WS0008": "lightac",
+                "WS0009": "lightac",
+                "WS0010": "lightac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "lightac",
+                "WS0016": "lightac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "devastator"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "mininglaser",
+                "WS0013": "mininglaser",
+                "WS0014": "mininglaser",
+                "WS0015": "mininglaser",
+                "WS0017": "mininglaser"
+            }
+        }
+    ],
+    "wings": [
+        "talon_wing",
+        "talon_wing"
+    ]
+}

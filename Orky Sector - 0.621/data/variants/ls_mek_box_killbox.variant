@@ -1,0 +1,46 @@
+{
+    "displayName": "Killbox",
+    "fluxCapacitors": 14,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "ls_mek_box_ds",
+    "hullMods": [
+        "ls_orky_override"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_mek_box_killbox",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_burna",
+                "WS 000": "ls_skorcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_kill_kannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_shoota_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_big_shoota"
+            }
+        }
+    ],
+    "wings": [
+        "ls_drilla_kan_ds_wing"
+    ]
+}

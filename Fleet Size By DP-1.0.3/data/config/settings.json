@@ -1,0 +1,22 @@
+{
+    # settings.json variable overrides
+    "showMaxShipsWidgetAtShips":9999,
+    "maxShipsInFleet":9999, 
+
+    # enable or disable mod for existing games. 
+    #if false, comment out settings above to restore default values
+    "useFleetSizeByDPMod":true,
+
+    # mod settings start here 
+    "maxShipsInPlayerFleetByDP": 800, #max fleet size in DP, ignoring mothballed ships
+    "suppliesPerShipOverMaxInFleet":0.2, #from settings.json, determines supply penalty multiplier
+                                         #value must be >= 0, higher value = higher penalty
+    "burnPenaltyOverDP": 2, #controls magnitude of burn penalty when over max DP 
+                           #value must be >= 1, higher value = higher penalty
+    "overDPNotificationInterval": 10, #controls interval for over-DP warning in seconds
+
+    "fsdpEnableNotification": true, #enables or disables notifications on campaign layer
+
+
+
+}                                        

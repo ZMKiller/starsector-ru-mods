@@ -1,0 +1,41 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_basilisk_bm",
+    "hullMods": [
+        "ls_ard_case"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_basilisk_bm_custom",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 007": "ls_grot_rail",
+                "WS 008": "ls_grot_rail",
+                "WS 000": "ls_grot_rail",
+                "WS 001": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_kustom_shoota",
+                "WS 002": "ls_bubble_chukka",
+                "WS 006": "ls_kustom_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_snazzgun",
+                "WS 004": "ls_snazzgun"
+            }
+        }
+    ]
+}

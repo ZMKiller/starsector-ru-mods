@@ -1,0 +1,22 @@
+{
+	"id":"A_S-F_phantasmagoria_piercer_overcharge_shot",
+	"specClass":"projectile",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.phantasmagoria.ASF_piercerOverchargeOnHitEffect",
+
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":95.0,
+	"width":10,
+	"fadeTime":0.35,
+	"fringeColor":[190,60,255,165],
+	"coreColor":[255,255,255,255],
+	"glowColor":[255,90,200,90],
+	"glowRadius":21,
+	"hitGlowRadius":35,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png",
+	"passThroughMissiles":true,	
+}

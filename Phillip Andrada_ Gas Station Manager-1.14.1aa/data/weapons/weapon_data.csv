@@ -1,0 +1,80 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+# small weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Antimatter Torpedo Launcher (Regular),sfcamregular,1,1,200,1500,,500,,75,20,5,4,,,FRAGMENTATION,0,,0,15,1,,0,0,0,0,,600,200,3,200,,,"STRIKE, USE_VS_FRIGATES","strike8, rocket3, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Торпедное,Быстрые,None,,,"Снаряды взрываются при попадании в цель, нанося урон по площади. Прямые попадания по кораблям дополнительно наносят %s урона.",2500 HE,,,TRUE,4
+Antimatter Missile Launcher (Plus),sfcamplusmissile,1,0.75,1200,4000,,100,2000,25,10,10,20,,,ENERGY,0,,0,15,1,,0,0,0,0,,350,200,40,450,,,"DO_NOT_AIM, HEATSEEKER","utility13, missile7, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Вывод из строя,Быстрые,Отличное,,,"Попадания второй ступени по щитам могут пробить разрядом к оружию и двигателям, нанося %s ЭМИ-урона. Шанс пробоя щита зависит от уровня жёсткого флюкса цели.",2000,,,,5
+Antimatter Pulse Laser,sfcampulser,1,1,500,500,,30,,0,50,8,,,,ENERGY,40,,0.5,0.5,2,0.25,,0,0,0,,1000,,,100,,,,"energy8, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Универсальное,,,,,Попадания по корпусу или броне дополнительно наносят %s фугасного урона.,45,,,,6
+Light Antimatter Destablizer,sfclightdestabilizer,1,0.75,2000,600,,80,40,20,20,6,,,,ENERGY,100,,0.05,1,1,0.1,5,25,5,5,,900,,,100,,,"PD,PD_ALSO","energy6, pd4, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Против истребителей (по площади),,,,,"Снаряды взрываются рядом с целью. Каждый взрыв также имеет %s шанс нанести дополнительный урон, зависящий от исходного попадания, и вызвать ЭМИ-эффект.
+
+Если других целей в радиусе нет, оружие будет наводиться на ракеты.",50%,,,,15
+Antimatter Micro Missile Launcher,sfcmicrolauncher,1,1,500,1500,,50,,5,40,6,60,,,FRAGMENTATION,0,,0,3,1,,0,0,0,0,,500,200,8,20,,,"PD, PD_ALSO, ANTI_FTR, DO_NOT_AIM, DO_NOT_CONSERVE","utility7, missile7, pd7, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,ПВО (по площади),Очень быстрые,Отличное,,,"Ракеты ПВО, оснащённые антиматериальным зарядом. При попадании не по щиту дополнительно наносят %s урона.",200% HE,,,,21
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# medium weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Assault Chaingun (AM),sfcamchaingun,1,1,1500,500,,60,,3,30,10,,,,HIGH_EXPLOSIVE,50,,0,0.2,1,,0,10,0.5,5,,1000,,,30,,,,"he15, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Против брони,,,,,Попадания дополнительно наносят %s энергетического урона.,40,,,,9
+Antimatter Scatterblaster,sfcamscatterblaster,3,0.5,3000,500,,1000,,0,30,13,60,,,ENERGY,1000,,0.25,10,1,,40,40,0.5,5,,600,,,100,,,"STRIKE, USE_VS_FRIGATES, GROUP_ALTERNATING","strike15, sfc_wep_bp, sfc_bp",SR_strike_only,Топливная компания Синдрии,,Ударное,,,,,,,,,,11
+Kinetic Chain Pulser,sfcamchainpulser,2,0.5,3000,500,,40,,0,20,12,40,4,2,KINETIC,50,,0,0.1,1,,5,10,1,5,,1200,,,,,,,"kinetc13, pd10, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Подавление,,,,,,,,,,12
+Antimatter Pulse Gun,sfcampulsegun,2,0.75,3000,750,,150,300,0,15,12,,,,ENERGY,400,,1,2,2,0.5,,,,,,1000,,,,,,"STRIKE, USE_VS_FRIGATES","energy14, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Вывод из строя,,,,,"Попадания по корпусу или броне имеют %s шанс вызвать разряд по оружию и двигателям, нанося дополнительный ЭМИ- и энергетический урон.",25%,,,,13
+Antimatter Thrower,sfcamthrower,1,1,4000,500,,25,,3,40,8,50,2.5,10,ENERGY,35,,1,0.05,5,0.05,0,0,0,0,,750,,,,,,"STRIKE, USE_VS_FRIGATES","energy10, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Прожиг корпуса,,,,,Попадания имеют %s шанс дополнительно нанести %s урона.,25% | 500 Fragmentation,,,,7
+Antimatter Missile Launcher (Premium),sfcammissilepod,2,0.5,6000,2000,,400,,15,20,15,50,,,HIGH_EXPLOSIVE,0,,0,8,4,0.50,0,0,0,0,,600,100,5,450,,,DO_NOT_AIM,"missile19, strike15, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Против брони,Очень быстрые,Особое,,,"После короткой фазы наведения снаряд летит без самонаведения. Попадания по корпусу и броне дополнительно наносят %s урона, равного исходному попаданию.",Energy,,,,14
+Medium Antimatter Destabilizer,sfcmediumdestabilizer,1,0.75,4000,700,,80,40,20,20,12,,,,ENERGY,100,,0.05,1,4,0.075,5,25,5,5,,900,,,100,,,"PD,PD_ALSO","energy10, pd8, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Против истребителей (по площади),,,,,"Снаряды взрываются рядом с целью. Каждый взрыв также имеет %s шанс нанести дополнительный урон, зависящий от исходного попадания, и вызвать ЭМИ-эффект.
+
+Если других целей в радиусе нет, оружие будет наводиться на ракеты.",50%,,,,16
+Antimatter Micro Missile Pod,sfcmicropod,2,0.75,2500,1500,,50,,5,40,12,200,,,FRAGMENTATION,0,,0,6,8,0.125,0,0,0,0,,500,200,8,20,,,"PD, PD_ALSO, ANTI_FTR, DO_NOT_AIM, DO_NOT_CONSERVE","utility13, missile8, pd13, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,ПВО (по площади),Очень быстрые,Отличное,,,"Ракеты ПВО, оснащённые антиматериальным зарядом. При попадании не по щиту дополнительно наносят %s урона.",200% HE,,,,22
+Heavy PD Laser,sfcheavypdlaser,1,0.5,1500,700,100,,,0,20,10,,,,ENERGY,,100,0,0.25,,,,,,,4500,,,,,,,PD,"pd10, beam8, SR, hightech_bp, midline_bp, merc, ind",,,,ПВО,,,,,,,,,,25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# large weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Heavy Antimatter Destabilizer,sfcamdestabilizer,2,0.75,8000,800,,80,40,20,20,20,,,,ENERGY,100,,0.05,1,9,0.05,5,25,5,5,,900,,,100,,,"PD,PD_ALSO","energy16, pd14, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Против истребителей (по площади),,,,,"Снаряды взрываются рядом с целью. Каждый взрыв также имеет %s шанс нанести дополнительный урон, зависящий от исходного попадания, и вызвать ЭМИ-эффект.
+
+Если других целей в радиусе нет, оружие будет наводиться на ракеты.",50%,,,,17
+Antimatter Burst Beam Array,sfcambba,3,0.5,12000,1000,1750,,,0,7,20,,,,HIGH_EXPLOSIVE,,2000,0.25,0.75,1,3,,,,,10000,,,,,,,"STRIKE, USE_VS_FRIGATES","energy20, beam15, LR, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Подавление,,,,,,,,,,18
+Asteroid Destroyer,sfcasteroid,0,0.5,7500,900,,600,,250,5,20,,,,HIGH_EXPLOSIVE,600,,0,2,1,,0,8,3,8,,700,,,400,,,,"he18, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Против брони,,,,,Снаряды наносят урон по площади при попадании.,,,,,19
+Antimatter Torpedo Launcher Rack (Regular),sfcamtorpedorack,2,1,9000,1500,,500,,75,20,25,30,,,FRAGMENTATION,0,,0,6,2,0.75,0,0,0,0,,600,200,3,200,,,"STRIKE, USE_VS_FRIGATES","strike18, rocket14, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Торпедное,Быстрые,None,,,"Снаряды взрываются при попадании в цель, нанося урон по площади. Прямые попадания по кораблям дополнительно наносят %s урона.",2500 HE,,,TRUE,20
+Antimatter Micro MLMS,sfcmicromlms,2,0.6,7500,1500,,50,,5,40,18,400,,,FRAGMENTATION,0,,0,9,20,0.1,0,0,0,0,,500,200,8,20,,,"PD, PD_ALSO, ANTI_FTR, DO_NOT_AIM, DO_NOT_CONSERVE","utility18, pd18, missile15, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,ПВО (по площади),Очень быстрые,Отличное,,,"Ракеты ПВО, оснащённые антиматериальным зарядом. При попадании не по щиту дополнительно наносят %s урона.",200% HE,,,,23
+Antimatter Thrower (Expanded),sfcamthrowerbig,1,0.75,8000,650,,25,,3,40,20,200,5,50,ENERGY,35,,,0.025,1,0.05,0,0,0,0,,750,,,,,,"STRIKE, USE_VS_FRIGATES","energy16, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Прожиг корпуса,,,,,Попадания имеют %s шанс дополнительно нанести %s урона.,25% | 500 Fragmentation,,,,8
+Heavy Assault Chaingun (AM),sfcheavyamchaingun,2,0.75,5000,700,,60,,3,30,18,,,,HIGH_EXPLOSIVE,50,,0,0.1,1,,0,10,0.5,5,,1000,,,30,,,,"he18, sfc_wep_bp, sfc_bp",,Топливная компания Синдрии,,Против брони,,,,,Попадания дополнительно наносят %s энергетического урона.,40,,,,10
+Guided Antimatter Fuel Torpedo (Premium),sfcgaft,4,0,15000,2000,,2000,,75,100,30,4,,,ENERGY,0,,1,29,1,,0,0,0,0,,125,25,45,1000,,,"STRIKE, DO_NOT_AIM","strike20, missile20",,Топливная компания Синдрии,,Самонаводящаяся торпеда (по площади),Очень медленная,Отличное,,,"Slow, guided torpedo with long flight time and lengthy arming time. Goes into faster, less armored second stage on approach to a target. Projectile explodes upon hitting a target, dealing area of effect damage. Direct hits on ships will deal an extra %s damage.",400% HE,,,TRUE,24
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# built ins,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Antimatter Blaster (Recharge),sfcamblaster_recharge,5,0,,500,,1000,,0,30,9,,,,ENERGY,2000,,0.25,15,,,0,0,0,0,,1000,,,100,,,"STRIKE, USE_VS_FRIGATES, GROUP_ALTERNATING, SYSTEM",strike10,SR_strike_only,Топливная компания Синдрии,,Ударное,,,,,,,,,,1
+Antimatter Cannon,sfcamcannon,5,0,,1200,,2000,,0,30,60,,,,ENERGY,1500,,2,15,3,0.50,0,0,0,0,,1000,,,100,,,"STRIKE, USE_VS_FRIGATES, GROUP_ALTERNATING, SYSTEM",strike10,SR_strike_only,Топливная компания Синдрии,,Ударное,,,,,"Hits on hull or armor have a %s chance to arc to weapons and engines, dealing extra damage equal to the original hit.",10%,,,,2
+Twin-Pulse Lasers,sfcnotospd,5,0,,550,,40,,0,80,15,40,2,2,ENERGY,40,,0,0.15,2,0.10,0,3,1,10,,1200,,,30,,,"PD, ANTI_FTR, SYSTEM","pd19, energy15",,Топливная компания Синдрии,,ПВО,,,,,Projectiles will explode near targets. Will prioritize missiles first.,,,,,3
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# system weapon,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Antimatter Plus Mine,sfcamplusmine,0,,,2000,,1250,2000,25,30,12,30,,,ENERGY,0,,0,3,1,,0,0,0,0,,50,50,20,500,,,SYSTEM,,,,,,,,,,,,,,,40
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# fighter weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Antimatter Blaster (Limited),sfcamblaster_fighter,5,0,,400,,1400,,0,30,0,1,,,ENERGY,1500,,0.25,3,,,0,0,0,0,,1000,,,100,,,"STRIKE, USE_VS_FRIGATES, GROUP_ALTERNATING, SYSTEM",strike10,SR_strike_only,,,Ударное,,,,,,,,,,60
+Light Autocannon (Fighter),sfclightac_fighter,5,0,,500,,50,,3,20,0,,,,KINETIC,40,,0,0.50,2,0.10,0,8,2,15,,1000,,,20,,,SYSTEM,kinetc6,,,,Против щитов,,,,,,,,,,61
+Mining Laser (Mech),sfc_ajax_mining_laser,5,0,,750,40,,,0,80,0,,,,ENERGY,,10,0,0.25,,,,,,,2400,,,,,,,"SYSTEM, PD","beam0, energy0, pd0",,,,ПВО,,,,,,,,,,16.5
+Antimatter Thrower (Mech),sfcmechamthrower,5,0,,500,,25,,3,60,0,,,,ENERGY,35,,1.5,5,4,0.05,0,0,0,0,,500,,,,,,SYSTEM,energy10,,,,Прожиг корпуса,,,,,Попадания имеют %s шанс дополнительно нанести %s урона.,25% | 500 Fragmentation,,,,62
+Light Graviton Beam (Mech),sfc_ajax_graviton_beam,5,0,,750,50,,,5,15,0,,,,KINETIC,,50,0.1,0.1,,,,,,,2400,,,,,,,SYSTEM,"beam12, kinetic11",,,,Подавление,,,,,"Нарушает работу щитов цели, увеличивая весь входящий урон по щиту на %s от одного гравитонного луча полной мощности, на %s от двух и на %s от трёх и более, одновременно бьющих по щиту.",5% | 8% | 10%,Гравитические эффекты замедляют цель и сбивают её с курса. Эффект невелик и заметнее всего против истребителей и ракет.,,,63
+Antimatter Micro Missile Launcher (Reloading),sfcmicrolauncherfighter,5,0,,1000,,75,,5,40,0,12,0.25,3,FRAGMENTATION,0,,0,5,1,,0,0,0,0,,750,300,8,35,,,"PD, PD_ALSO, ANTI_FTR, DO_NOT_AIM, DO_NOT_CONSERVE, SYSTEM","utility7, missile7, pd7",,Топливная компания Синдрии,,ПВО (по площади),Очень быстрые,Отличное,,,"Ракеты ПВО, оснащённые антиматериальным зарядом. При попадании не по щиту наносят %s урона.",150 HE,,,,64
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# deco weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Epimetheus Spine,sfcepimetheusspine,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,80
+Crius Front,sfccriusfront,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,81
+Iapetus Front,sfciapetusfront,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,82
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# ajax parts,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ajax Shoulder Left,sfcajaxshoulders,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,83
+Ajax Shoulder Left Mount,sfcajaxshoulder_left_mount,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,83
+Ajax Shoulder Right,sfcajaxshoulder_right,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,84
+Ajax Shoulder Right Mount,sfcajaxshoulder_right_mount,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,84
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# murmidon parts,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Super Gigacannon,sfcmurmidoncannonlg,5,,,800,,2500,,0,5,0,,,,ENERGY,2000,,2,11,,,0,0,0,0,,1800,,,,,,"STRIKE, USE_VS_FRIGATES, GROUP_ALTERNATING, SYSTEM","strike18, no_sell, no_dealer, no_drop_salvage",,Львиная Гвардия,,Ударное,,,,,,,,,,90
+Kinetic Burst Blaster,sfcmurmidonblasterlg,5,,,700,,150,,0,15,0,20,1,5,KINETIC,150,,0.5,0.5,5,0.125,0,5,0.5,5,,1400,,,,,,SYSTEM,"kinetic11, no_sell, no_dealer, no_drop_salvage",,Львиная Гвардия,,Против щитов,,,,,,,,,,90.1
+Andrada's Glare,sfcmurmidonheadlg,5,,,600,500,,,0,40,0,,,,ENERGY,,300,0.15,0.15,0.45,0.15,,,,,10000,,,,,,,"PD,ANTI_FTR, SYSTEM","pd15, beam10, no_sell, no_dealer, no_drop_salvage",,Львиная Гвардия,,ПВО,,,,,,,,,,91
+Murmidon Left Shoulder (LG),sfcmurmidonleftshoulderlg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, no_dealer, no_drop_salvage",,,,,,,,,,,,,,92
+Murmidon Right Shoulder (LG),sfcmurmidonrightshoulderlg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, no_dealer, no_drop_salvage",,,,,,,,,,,,,,93
+Murmidon Left Wing (LG),sfcmurmidonleftwinglg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, no_dealer, no_drop_salvage",,,,,,,,,,,,,,94
+Murmidon Right Wing (LG),sfcmurmidonrightwinglg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, no_dealer, no_drop_salvage",,,,,,,,,,,,,,95
+Murmidon Left Arm (LG),sfcmurmidonleftarmlg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, no_dealer, no_drop_salvage",,,,,,,,,,,,,,96
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# murmex parts,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Antimatter Gun,sfcmurmexgunlg,5,,,450,,1800,,0,30,0,1,,,ENERGY,2000,,0.5,1.5,,,0,0,0,0,,1500,,,100,,,"STRIKE, USE_VS_FRIGATES, GROUP_ALTERNATING, SYSTEM","strike10, no_sell, no_dealer, no_drop_salvage",SR_strike_only,Львиная Гвардия,,Ударное,,,,,,,,,,100
+Antimatter Gun (Recharging),sfcmurmexgunlg_strikecraft,5,,,500,,1500,,0,30,0,,,,ENERGY,2000,,0.5,15,,,0,0,0,0,,1500,,,100,,,"STRIKE, USE_VS_FRIGATES, GROUP_ALTERNATING, SYSTEM","strike10, no_sell, no_dealer, no_drop_salvage",SR_strike_only,Львиная Гвардия,,Ударное,,,,,,,,,,100
+IR Pulse Carbine,sfcmurmexgunleftlg,5,,,500,,30,,2,30,0,,,,ENERGY,25,,0.3,0.25,3,0.05,,,,,,1000,,,,,,SYSTEM,"energy8, no_sell, no_dealer, no_drop_salvage",,Львиная Гвардия,,Универсальное,,,,,,,,,,100.1
+Andrada's Gaze,sfcmurmexheadlg,5,,,500,300,,,0,100,0,,,,ENERGY,,200,0.05,0.05,0.25,0.075,,,,,10000,,,,,,,"PD,ANTI_FTR, SYSTEM","pd9, beam6, no_sell, no_dealer, no_drop_salvage",,Львиная Гвардия,,ПВО,,,,,,,,,,101
+Murmex Left Shoulder (LG),sfcmurmexleftshoulderlg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, no_dealer, no_drop_salvage",,,,,,,,,,,,,,102
+Murmex Right Shoulder (LG),sfcmurmexrightshoulderlg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, no_dealer, no_drop_salvage",,,,,,,,,,,,,,103
+Murmex Left Arm (LG),sfcmurmexleftarmlg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, no_dealer, no_drop_salvage",,,,,,,,,,,,,,104

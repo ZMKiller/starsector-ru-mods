@@ -1,0 +1,19 @@
+{
+	"id":"sfcpulsegun_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":60.0,
+	"width":5,
+	"fadeTime":0.3,
+	"fringeColor":[255,255,255,155],
+	"coreColor":[145,242,255,255],
+	"glowColor":[255,255,255,75],
+	"glowRadius":35,
+	"hitGlowRadius":75,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png",
+	"onHitEffect":"data.scripts.weapons.sfcampulsegun_onhit"
+}

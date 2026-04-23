@@ -1,0 +1,134 @@
+{
+    "ngcTooltip":"When you're looking for the best fuel in town, Sindrian Fuel's got the best around!",  # insert tropical music here
+    "rebelFleetSuffix":"Ex-Employees",                                    # who would ever dare leave the company
+
+    "asteroidMiningFleetName":"Honest Labor Fleet",                       # totally not slave labor promise
+    "gasMiningFleetName":"Volatiles Assessment Fleet",                    # gotta make sure the best volatiles are used to make the best fuel!
+    "invasionFleetName":"Franchise Establishment Fleet",                  # nice place to add a new franchise
+    "invasionSupportFleetName":"Franchise Security Force",                # gotta keep the builders safe
+    "responseFleetName":"Complaint Response Force",                       # we hear your complaints and now we send a response
+    "defenceFleetName":"Security Defense Responders",                     # we got this covered do not be concerned about the defenses
+    "suppressionFleetName":"Complaint Response Force",                    # potential customers need a little bit of help on why they should buy Sindrian Fuel
+    "stationName":"Franchise Station",                                    # they are not battlestations but gas stations!
+
+    "startRelationships":{
+		# Vanilla factions that should be manually set (IE not "hidden" ones),
+        # guideline has am fuel production -0.25 also has core -0.45 has water world -0.2 has all -0.95
+		"independent":0,					# potential customers who wish to purchase our fuel
+		"pirates":-0.5,						# potential employees perfect for 'free internships' at cruor
+		"persean":-0.45,					# the persean fuel company makes inferior fuel to sindrian fuel! And your water world sucks!
+		"tritachyon":0,						# they care about anything else but at least dont have any antimatter fuel
+		"hegemony":-0.49,					# the nachiketa fuel traders will never be better than sindrian fuel!
+		"luddic_church":0,				    # everyone needs fuel no matter your beliefs
+		"luddic_path":-0.95,				# too radical for any use as 'repayment' labor
+		#"remnant":-0.5,					# machines dont want to buy fuel but might try to outdo us in fuel!
+
+        # modded factions who rival the fuel company,
+
+        "ironshell": -0.2,                  # we are the ones who will have the monopoly on water world tourism in the sector! and stop protecting the NFT!
+        "mvs": -0.5,                        # WHY ARE YOU USING FUEL CANISTERS AS MINES? THAT'S OUR THING!
+        "shadow_industry": -0.75,           # natural extension of original hostilities plus fuel
+        "star_federation":-0.25,            # those who intrude on the fuel market must be dealt with!
+        "vic": -0.45,                       # hey you selling am feul? AND YOU HAVE A CORE TOO!? REEEEEE!
+        "lakhesismonarchy": -0.45,          # fuel interlopers! prepared to be judged!
+        "ocua":-0.45,                       # you trying to lace your cookies with fuel!? I think not!
+        "diableavionics":-0.45,             # the only fuel that matters is Sindrian Fuel!
+        "xlu":-0.45,                        # your fuel production is inferior! And your uranium can't compare to our fuel tankers!
+        "apex_design":-0.25,                # your fuel production disappoints us
+        "CFT":-0.25,                        # why must you produce your only inferior fuel?
+        "al_ars":-0.25,                     # your fuel production is unneeded let us produce fuel for you!
+        "legionarry":-0.45,                 # your fuel production and water world cannot be allowed to stand!\
+        "dssault_mikoyan":-0.25,            # do you think your fuel production will help you!?
+        "uaf": -0.95,                       # you have what and WHAT AND WHAAAT!? AHHHHHHHHHHHHHHHHHHHHHHHH! SAY NO TO PEPSI FUEL!
+
+        # friendship pacts because its totally friendship pacts!
+
+        "mayasura": 0.2,                    # hope you enjoy that fuel tanker we made you!
+        "interstellarimperium":0.2          # hey you're pretty cool! Let's hang out!
+},
+
+    "diplomacyPositiveChance":{
+            "hegemony":0.5,
+            "persean":0.75,
+            "tritachyon":1.1,
+            "luddic_church":1.05,
+            "luddic_path":0.0,
+            "pirates":0.25,
+            "mayasura":1.25,
+            "ironshell":0.6,
+            "mvs":0.5,
+            "shadow_industry":0.25,
+            "star_federation":0.75,
+            "vic":0.5,
+            "lakhesismonarchy":0.5,
+            "ocua":0.5,                       
+            "diableavionics":0.5,             
+            "xlu":0.5,                        
+            "apex_design":0.75,                
+            "CFT":0.75,                        
+            "al_ars":0.75,                     
+            "legionarry":0.5,                 
+            "dssault_mikoyan":0.75,        
+            "uaf":0.2,
+            "interstellarimperium":1.05,
+    },
+    "diplomacyNegativeChance":{
+            "hegemony":1.25,
+            "persean":1.1,
+            "tritachyon":0.9,
+            "luddic_church":0.95,
+            "luddic_path":2,
+            "pirates":1.75,
+            "mayasura":0.5,
+            "ironshell":1.25,
+            "mvs":1.75,
+            "shadow_industry":1.75,
+            "star_federation":1.25,
+            "vic":1.5,
+            "lakhesismonarchy":1.5,
+            "ocua":1.5,                       
+            "diableavionics":1.5,             
+            "xlu":1.5,                        
+            "apex_design":1.25,                
+            "CFT":1.25,                        
+            "al_ars":1.25,                     
+            "legionarry":1.5,                 
+            "dssault_mikoyan":1.25,      
+            "uaf":2,
+            "interstellarimperium":0.95,
+},
+
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":1.25,	# time to build more fuel franchises
+
+    "startShipsSolo":[
+        ["sfccoeus_Patrol"],
+        ["sfcpolus_Strike"],
+        ["sfcslent_Offense"]
+    ],
+
+    "startShipsCombatSmall":[
+        ["sfcdram_assault", "sfcslent_Defense", "sfcslent_Offense"],
+        ["sfcdrachm_Pressure", "sfcslent_Defense", "sfcslent_Offense"],
+        ["sfcbia_Hunter", "sfcdram_assault", "sfcslent_Offense"]
+    ],
+
+    "startShipsCombatLarge":[
+        ["sfcphaeton_bombard", "sfcdrachm_Pressure", "sfcpolus_Torpedo"],
+        ["sfccrius_Blaster", "sfcbia_Defender", "sfcslent_Defense"]
+    ],
+
+    "startShipsExplorerLarge":[["sfcclepsydra_Standard", "sfcdelos_Support", "sfccoeus_Patrol"]],
+
+    "startShipsCarrierLarge":[["sfcarke_Supporter", "sfcslent_Defense", "sfcslent_Offense"]],
+
+    "startShipsGrandFleet":[
+        ["sfcprometheus_barrage", "sfcphaeton_ballistics", "sfcphaeton_bombard", "sfcdram_assault", "sfcdram_missile", "sfcdram_missile", "sfcdram_assault"],
+        ["sfcskyrend_Barrage", "sfccrius_Blaster", "sfccrius_Blaster", "sfcbia_Hunter", "sfcbia_Hunter"]
+    ],
+    "startShipsSuper":[["sfctalaria_Strike"]],
+
+    "startSpecialItems":[
+        [["sfc_rare_bp", ""]],
+    ],
+}

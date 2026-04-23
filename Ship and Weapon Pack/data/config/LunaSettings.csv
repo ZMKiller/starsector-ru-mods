@@ -1,0 +1,8 @@
+modID,fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+swp,ibbHeader,Заголовок IBB,Header,International Bounty Board,,,,,
+swp,famousBounties,Включить IBB,Boolean,TRUE,,Особые награды за головы со сложными флотами и уникальными флагманами.,,,
+swp,IBBAlwaysRecover,Всегда восстанавливать IBB,Boolean,TRUE,,Уникальные корабли всегда доступны к восстановлению после боев с флотами IBB.,,,
+swp,arcadeHeader,Заголовок Аркады,Header,Arcade,,,,,
+swp,arcadeStartingDifficulty,Стартовая сложность Аркады,Int,0,,"Эта опция по сути дает быстрый старт (включая уже полученные бонусы), но вы не получаете очки за пропущенный контент. Например, значение 7 пропускает все, кроме финального босса и рядовых врагов прямо перед ним.",0,7,
+swp,arcadeDifficultyScalar,Коэффициент сложности Аркады,Double,1,,Влияет на характеристики врагов с пропорциональным множителем к получаемым очкам. Более высокие значения резко повышают сложность, но увеличивают количество очков.,0,,
+swp,arcadePlayerShip,Корабль игрока в Аркаде,String,swp_arcade_superhyperion_str,,Определяет корабль, за который вы играете.,,,

@@ -1,0 +1,112 @@
+{
+  "hullName": "Slenzak",
+  "hullId": "XHAN_Slenzak",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/XHAN_Slenzak.png",
+  "style": "XHANTECH",
+  "height": 177,
+  "width": 115,
+  "center": [55, 76],
+  "collisionRadius": 134,
+  "shieldCenter": [10, -0],
+  "shieldRadius": 104,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_Gen3_armor"
+  ],
+  "builtInWeapons": {
+    "WS0003": "Xhan_Uogek"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 107,
+      "angle": 45,
+      "locations": [-3, 22]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": 180,
+      "locations": [-44, 8]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [98, -9.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-77, 5],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-77, -8.5],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-75, 15],
+      "length": 27,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-74, -17.5],
+      "length": 28,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-72, 24],
+      "length": 21.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-71, -24.5],
+      "length": 21.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -74.5, -2,
+    -70.5, -30,
+    -29.5, -53.5,
+    15.5, -55,
+    89.5, -21.5,
+    97.5, -10,
+    79.5, 7,
+    23.5, 10,
+    12, 44,
+    -17.5, 53.5,
+    -69.5, 29.5
+  ]
+}

@@ -1,0 +1,72 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 20,
+    "fluxVents": 36,
+    "goalVariant": true,
+    "hullId": "uw_dragon",
+    "hullMods": [
+        "magazines",
+        "dedicated_targeting_core",
+        "unstable_injector"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_dragon_sta",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "uw_tpc"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "hurricane"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "pilum",
+                "WS0006": "pilum"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "hellbore"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "mark9"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "lightdualac",
+                "WS0011": "lightdualac",
+                "WS0012": "lightdualac",
+                "WS0013": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "lightdualmg",
+                "WS0008": "lightmg",
+                "WS0009": "lightmg",
+                "WS0014": "lightmg",
+                "WS0015": "lightmg",
+                "WS0016": "lightmg",
+                "WS0017": "lightdualmg"
+            }
+        }
+    ],
+    "wings": [
+        "uw_revolver_wing",
+        "uw_razor_wing"
+    ]
+}

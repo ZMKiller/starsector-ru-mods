@@ -1,0 +1,25 @@
+{
+	"id":"A_S-F_rangdaSys",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"org.amazigh.foundry.shipsystems.scripts.ai.ASF_rangdaSysAI",
+	
+	"statsScript":"org.amazigh.foundry.shipsystems.scripts.ASF_rangdaSys",
+	
+	#"engineGlowColor":[255,165,90,255],
+	"engineGlowLengthMult":2.0,
+	"engineGlowWidthMult":1.5,
+	"engineGlowGlowMult":1.5,
+
+	"weaponGlowColor":[220,150,85,125],
+	"weaponTypes":[BALLISTIC],
+	
+	"useSound":"system_ammo_feeder",
+	"outOfUsesSound":"gun_out_of_ammo",
+
+	"aiHints":{
+		"activeSpeedIncrease":50,
+		"burstMovementPotential":0,
+		"averageSpeedMult":1.25,
+	}
+}

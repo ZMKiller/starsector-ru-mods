@@ -1,0 +1,28 @@
+{
+	"id":"ls_big_shoota_deff_dread",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":250,
+	"turretSprite":"",
+	"turretGunSprite":"",
+	"hardpointSprite":"",
+	"hardpointGunSprite":"",
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":3.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[1, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[1, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":8.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":28.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.2,
+					   "particleCount":9,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"ls_shoota_shot",  # projectile that will be fired
+	"fireSoundTwo":"twin_shootas_sound",
+}

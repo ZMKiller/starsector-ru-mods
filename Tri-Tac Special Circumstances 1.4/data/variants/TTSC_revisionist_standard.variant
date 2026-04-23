@@ -1,0 +1,40 @@
+{
+  "variantId": "TTSC_revisionist_standard",
+  "hullId": "TTSC_revisionist",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TTSC_riftbeam",
+        "WS0002": "TTSC_riftbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "TTSC_lrpdlaser",
+        "WS0004": "TTSC_lrpdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

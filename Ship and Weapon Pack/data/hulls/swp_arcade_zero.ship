@@ -1,0 +1,288 @@
+{
+  "bounds": [
+    98.5,
+    -8,
+    56,
+    -26,
+    32.5,
+    -26,
+    8.5,
+    -13.5,
+    11,
+    -42,
+    41,
+    -46.5,
+    14.5,
+    -54,
+    8,
+    -62,
+    0.5,
+    -62,
+    -9.5,
+    -52,
+    -18.5,
+    -52,
+    -18.5,
+    -71,
+    -28.5,
+    -75,
+    -54.5,
+    -49,
+    -71.5,
+    -59,
+    -76.5,
+    -58.5,
+    -61.5,
+    -32,
+    -89,
+    -41,
+    -92,
+    -35.5,
+    -63.5,
+    -17.5,
+    -83.5,
+    -16,
+    -89,
+    -7,
+    -45,
+    -7,
+    -45,
+    7,
+    -89,
+    7,
+    -83.5,
+    16,
+    -63.5,
+    17.5,
+    -92,
+    35.5,
+    -89,
+    41,
+    -61.5,
+    32,
+    -76.5,
+    58.5,
+    -71.5,
+    59,
+    -54.5,
+    49,
+    -28.5,
+    75,
+    -18.5,
+    71,
+    -18.5,
+    52,
+    -9.5,
+    52,
+    0.5,
+    62,
+    8,
+    62,
+    14.5,
+    54,
+    41,
+    46.5,
+    11,
+    42,
+    8.5,
+    13.5,
+    32.5,
+    26,
+    56,
+    26,
+    98.5,
+    8
+  ],
+  "builtInWeapons": {
+    "WS0001": "swp_arcade_zeroglow",
+    "WS0002": "swp_arcade_zerobeam",
+    "WS0003": "swp_arcade_zeroannihilator",
+    "WS0004": "swp_arcade_zeroannihilator",
+    "WS0005": "swp_arcade_zerocannon",
+    "WS0006": "swp_arcade_zerocannon"
+  },
+  "center": [
+    100,
+    100
+  ],
+  "collisionRadius": 126.942902,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 24,
+      "length": 96,
+      "location": [
+        -47,
+        -0
+      ],
+      "style": "CUSTOM",
+      "styleSpec": {
+        "contrailAngularVelocityMult": 0.33,
+        "contrailColor": [
+          255,
+          5,
+          255,
+          5
+        ],
+        "contrailMaxSpeedMult": 0.33,
+        "contrailParticleDuration": 0.2,
+        "contrailParticleSizeMult": 5,
+        "engineColor": [
+          255,
+          1,
+          255,
+          255
+        ],
+        "type": "GLOW"
+      },
+      "width": 24
+    },
+    {
+      "angle": 160,
+      "contrailSize": 12,
+      "length": 80,
+      "location": [
+        -49,
+        32.5
+      ],
+      "style": "CUSTOM",
+      "styleSpec": {
+        "contrailAngularVelocityMult": 0.33,
+        "contrailColor": [
+          255,
+          5,
+          255,
+          5
+        ],
+        "contrailMaxSpeedMult": 0.33,
+        "contrailParticleDuration": 0.2,
+        "contrailParticleSizeMult": 5,
+        "engineColor": [
+          255,
+          1,
+          255,
+          255
+        ],
+        "type": "GLOW"
+      },
+      "width": 12
+    },
+    {
+      "angle": -160,
+      "contrailSize": 12,
+      "length": 80,
+      "location": [
+        -49,
+        -32.5
+      ],
+      "style": "CUSTOM",
+      "styleSpec": {
+        "contrailAngularVelocityMult": 0.33,
+        "contrailColor": [
+          255,
+          5,
+          255,
+          5
+        ],
+        "contrailMaxSpeedMult": 0.33,
+        "contrailParticleDuration": 0.2,
+        "contrailParticleSizeMult": 5,
+        "engineColor": [
+          255,
+          1,
+          255,
+          255
+        ],
+        "type": "GLOW"
+      },
+      "width": 12
+    }
+  ],
+  "height": 200,
+  "hullId": "swp_arcade_zero",
+  "hullName": "Zero",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 125,
+  "spriteName": "graphics/swp/ships/super/swp_zero.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        89,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        9,
+        35
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        9,
+        -35
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        -18,
+        62
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -18,
+        -62
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 200
+}

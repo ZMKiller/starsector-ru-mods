@@ -1,0 +1,24 @@
+{
+	"id":"A_S-F_nieuport_sub_4",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"turretSprite":"graphics/weapons/A_S-F_nieuport_turret_base.png",
+	"turretGunSprite":"graphics/weapons/A_S-F_nieuport_turret_recoil.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_nieuport_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_nieuport_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/A_S-F_nieuport_hardpoint_recoil.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_nieuport_hardpoint_glow.png",
+	"visualRecoil":6.0,
+	"glowColor":[200,255,200,255],
+	"turretOffsets":[10, -3, 10, 3],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[15, -3, 15, 3],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW",
+	"interruptibleBurst":false,
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"A_S-F_nieuport_shot_sub_4",  # projectile that will be fired
+	"fireSoundTwo":"railgun_fire",
+}

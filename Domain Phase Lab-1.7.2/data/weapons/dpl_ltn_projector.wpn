@@ -1,0 +1,28 @@
+{
+  "id": "dpl_ltn_projector",
+  "specClass": "projectile",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite":"graphics/weapons/dpl_blc_turret_base.png",
+  "turretGlowSprite":"graphics/weapons/dpl_blc_turret_glow.png",
+  "hardpointSprite":"graphics/weapons/dpl_blc_hardpoint_base.png",
+  "hardpointGlowSprite":"graphics/weapons/dpl_blc_hardpoint_glow.png",
+  "glowColor":[100,150,255,255],
+  "turretOffsets":[21, 0],
+  "turretAngleOffsets":[0],
+  "hardpointOffsets":[21, 0],
+  "hardpointAngleOffsets":[0],
+  "barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+  "animationType":"GLOW_AND_FLASH",
+  "muzzleFlashSpec":{"length":-34.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":15.0,
+					   "particleSizeMin":15.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.15,
+					   "particleCount":30,
+					   "particleColor":[100,150,255,255]},
+  "interruptibleBurst":false,
+  "autocharge":false,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+  "projectileSpecId":"dpl_ltn_projector_shot",  # projectile that will be fired
+  "fireSoundTwo":"shock_repeater_fire",
+}

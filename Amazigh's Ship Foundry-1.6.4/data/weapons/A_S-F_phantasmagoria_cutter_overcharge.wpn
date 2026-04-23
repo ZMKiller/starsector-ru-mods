@@ -1,0 +1,26 @@
+{
+	"id":"A_S-F_phantasmagoria_cutter_overcharge",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"turretSprite":"graphics/weapons/A_S-F_phantasmagoria_cutter_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_phantasmagoria_cutter_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_phantasmagoria_cutter_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_phantasmagoria_cutter_glow.png",
+	"glowColor":[100,160,255,255],
+	"turretOffsets":[8.5, -3, 8.5, 3],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[15, -3, 15, 3],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"ALTERNATING",
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":17.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":5.0,
+					   "particleSizeRange":6.0,
+					   "particleDuration":0.1,
+					   "particleCount":9,
+					   "particleColor":[100,150,255,255]},
+	"projectileSpecId":"A_S-F_phantasmagoria_cutter_overcharge_shot",
+	"fireSoundTwo":"A_S-F_phantasmagoria_cutter_fire",
+}

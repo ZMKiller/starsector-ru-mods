@@ -1,0 +1,32 @@
+{
+  "variantId": "A_S-F_auditor_esc",
+  "hullId": "A_S-F_auditor",
+  "displayName": "Escort",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "extendedshieldemitter",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "A_S-F_paladin_tri"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

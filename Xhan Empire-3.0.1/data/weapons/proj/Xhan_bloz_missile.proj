@@ -1,0 +1,50 @@
+{
+	"id":"Xhan_bloz_missile",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	#"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
+	"sprite":"graphics/missiles/Xhan_bloz_missile.png",
+	"size":[10,13],	
+	"center":[5,8],
+	"collisionRadius":12,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,90,50,160],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":80, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":80,
+					 "coreRadius":60, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":1,
+					 "particleSizeRange":10.0,
+					 "particleDuration":0.2,
+					 "particleCount":50,
+					 "particleColor":[255,90,50,200]},
+	"armingTime":0.9,
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":110,
+				  "acc":900,
+				  "dec":500},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-8, 0],
+				    #"style":"TORPEDO_ATROPOS",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,90,50,200],
+						"glowSizeMult":0.8,
+						"glowAlternateColor":[255,90,50,190],
+						"contrailDuration":1.5,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.1, # how far away from engine it starts
+						"contrailColor":[155,100,70,75],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":15.0,
+				    "angle":180.0}]
+}

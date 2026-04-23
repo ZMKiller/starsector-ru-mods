@@ -1,0 +1,41 @@
+{
+  "variantId": "A_S-F_invigilator_od",
+  "hullId": "A_S-F_invigilator",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "sabot",
+        "WS0003": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_micropulser",
+        "WS0005": "A_S-F_micropulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

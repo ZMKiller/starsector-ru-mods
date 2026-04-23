@@ -1,0 +1,141 @@
+{
+    "hullName": "Kite (ES)",
+    "hullId": "ls_kite_es",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_kite_es.png",
+    "height": 84,
+    "width": 84,
+    "center": [
+        42, 42
+    ],
+    "collisionRadius": 60,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 60,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_evilsuns",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                    23.5,       15
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                    23.5,      -15
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                     9.5,       27
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                     9.5,      -27
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -35.5, 0
+            ],
+            "length": 36,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -27.5, 13
+            ],
+            "length": 28,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 36,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -27.5, -13
+            ],
+            "length": 28,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 36,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -21.5, 28.5
+            ],
+            "length": 28,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 36,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -21.5, -28.5
+            ],
+            "length": 28,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 36,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -36,       -5,
+           -27.5,     -9.5,
+           -10.5,      -40,
+             4.5,    -22.5,
+            16.5,    -19.5,
+        
+              36,        0,
+            16.5,     19.5,
+             4.5,     22.5,
+           -10.5,       40,
+           -27.5,      9.5,
+        
+             -36,        5
+    # 11 points total.
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "displayName": "Ultimate",
+    "fluxCapacitors": 30,
+    "fluxVents": 30,
+    "hullId": "swp_arcade_hyperzero",
+    "hullMods": [
+        "targetingunit",
+        "insulatedengine",
+        "augmentedengines",
+        "autorepair",
+        "auxiliarythrusters",
+        "fluxbreakers",
+        "fluxdistributor",
+        "armoredweapons"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_arcade_hyperzero_ult",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "swp_arcade_zerobeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "swp_arcade_zeroannihilator3",
+                "WS0004": "swp_arcade_zeroannihilator3"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "swp_arcade_zerocannon",
+                "WS0006": "swp_arcade_zerocannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "swp_arcade_megapulse",
+                "WS0008": "swp_arcade_megapulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "swp_arcade_omegaorb2",
+                "WS0010": "swp_arcade_omegaorb2",
+                "WS0011": "swp_arcade_omegaorb2",
+                "WS0012": "swp_arcade_omegaorb2",
+                "WS0013": "swp_arcade_omegaorb2",
+                "WS0014": "swp_arcade_omegaorb2",
+                "WS0015": "swp_arcade_omegaorb2"
+            }
+        }
+    ]
+}

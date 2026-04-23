@@ -1,0 +1,31 @@
+{
+  "id": "A_S-F_bramble",
+  "specClass": "projectile",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "displayArcRadius": 600,
+  "turretSprite": "graphics/weapons/A_S-F_bramble_turret_base.png",
+  "hardpointSprite": "graphics/weapons/A_S-F_bramble_hardpoint_base.png",
+  "renderHints": [RENDER_LOADED_MISSILES],
+  "turretOffsets": [8,0, 5,-4, 5,4, 3,0],
+  "turretAngleOffsets": [0, -15, 15, 0],
+  "hardpointOffsets": [11,0, 8,-4, 8,4, 6,0],
+  "hardpointAngleOffsets": [0, -20, 20, 0],
+  "textureType": ROUGH,
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 22,
+    "blowbackParticleCount": 4,
+    "blowbackSpread": 15,
+    "cloudDuration": 1.5,
+    "cloudParticleCount": 2, #8
+    "cloudRadius": 10,
+    "particleColor": [110,95,80,105],
+    "particleSizeMin": 16,
+    "particleSizeRange": 18
+  },
+  "projectileSpecId": "A_S-F_bramble_bomb",
+  "fireSoundTwo": "bomb_bay_fire",
+}

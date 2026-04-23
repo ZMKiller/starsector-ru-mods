@@ -1,0 +1,117 @@
+id,trigger,conditions,script,text,options,notes
+greetingxhanempireFriendly,OpenCommLink,"$faction.id == xhanempire
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Да падет на вас свет Божественного Императора.""
+OR
+""Слава вечной Империи!""",,
+greetingxhanempireHostileWeaker,OpenCommLink,"$faction.id == xhanempire
+$entity.isHostile
+$entity.relativeStrength < 0","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Прегрешения против Империи Ксан не забываются быстро. Враждебные действия не пойдут вам на пользу.""
+OR
+""Империя Ксан еще может явить вам свою бесконечную милость. Не совершайте эту ошибку.""",,
+greetingxhanempireHostileWeakerDefiant,OpenCommLink,"$faction.id == xhanempire
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""Империя Ксан будет стоять вечно. Слава Божественному Императору!""
+OR
+""Я ничего не боюсь, ведь за мной стоит мощь Империи Ксан.""",cutCommLink:Разорвать канал связи,
+greetingxhanempireHostileStronger,OpenCommLink,"$faction.id == xhanempire
+$entity.isHostile
+$entity.relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""Да снизойдет на вас милость Божественного Императора.""
+OR
+""Ваши преступления против Империи Ксан и ее народа должны прекратиться. Приготовьтесь к концу.""
+OR
+""За преступления против Империи Ксан вы и ваши люди приговариваетесь к ликвидации.""",cutCommLink:Разорвать канал связи,
+greetingxhanempireNeutral,OpenCommLink,"$faction.id == xhanempire
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Чего вы хотите от исполнителя воли Божественного Императора?""
+OR
+""Империя Ксан оказывает вам свое бесконечное гостеприимство. Убедитесь, что вы и ваш экипаж оказываете Божественному Императору должное почтение.""",,
+flavorTextMarketxhanempire,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == xhanempirescore:4","AddText ""Xhan market description"" marketFlavorTextColor",,,
+flavorTextMarketxhanempirecluster,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == xhanempire
+$market.id == xhanempire_cluster_market score:5
+$id == xhanempire_cluster","AddText ""Xhan Cluster Description"" marketFlavorTextColor",,,
+,,,,,,
+bar_descxhanempire,BarPrintDesc,"$faction.id == xhanempire
+$market.id != xhanempire_cluster_market",ShowImageVisual space_bar,"Бар, как и большая часть архитектуры Ксан, аскетичен и пуст. Почти полностью утилитарное пространство: граждане в форме и военные сидят ровными, аккуратно распределенными группами. На электронных экранах медленно ползут производственные сводки и наличие товаров с соседних объектов. Ближе всего к развлечениям здесь - видеопанель, на которой вычурно одетый представитель свиты Божественного Императора зачитывает список отличившихся сегодня граждан. ",,
+,,,,,,
+CMSNTextRejectHostile_xhanempire,CMSNTextRejectHostile,$faction.id == xhanempire,,"""Вы отмечены как преступник против Империи Ксан, да падет на вас милость Божественного Императора.""",,
+CMSNTextHasOther_xhanempire,CMSNTextHasOther,$faction.id == xhanempire,,"""В Империи Ксан нет места иностранным агентам; разорвите все свои ошибочные союзы по обстоятельствам и возвращайтесь, когда докажете, что верны только Божественному Императору.""",,
+CMSNTextUnsuited_xhanempire,CMSNTextUnsuited,$faction.id == xhanempire,,"""Сначала вы должны доказать верность Империи Ксан. Тогда в будущем мы можем рассмотреть ваше посвящение.""",,
+CMSNTextSuitedPart1_xhanempire,CMSNTextSuitedPart1,$faction.id == xhanempire,,"""Вы доказали, что разделяете волю Божественного Императора и готовы исполнять ее. Нет большей чести, чем служить Империи Ксан.""",,
+CMSNTextSuitedPart2_xhanempire,CMSNTextSuitedPart2,$faction.id == xhanempire,,"""Ваше посвящение может начаться немедленно, если ваши личные приготовления завершены.""",,
+CMSNTextWelcomePart1_xhanempire,CMSNTextWelcomePart1,$faction.id == xhanempire,,"""Теперь вы - продолжение руки Божественного Императора; его воля станет вашей.""",,
+CMSNTextWelcomePart2_xhanempire,CMSNTextWelcomePart2,$faction.id == xhanempire,,"""Теперь вы несете власть нашей вечной империи; каждое ваше действие будет подкреплено всей мощью Империи Ксан.""",,
+CMSNTextChangeMind_xhanempire,CMSNTextChangeMind,$faction.id == xhanempire,,"""Ваше нежелание полностью служить Божественному Императору отмечено. Это неважно: по мере освобождения звезд от тирании Империей Ксан вы все равно будете посвящены.""",,
+CMSNResignAskToConfirm_xhanempire,CMSNResignAskToConfirm,$faction.id == xhanempire,,"""Вы действительно ставите под сомнение волю Божественного Императора? Вы осознаете тяжесть такого проступка, не так ли?""",,
+CMSNResignConfirmed_xhanempire,CMSNResignConfirmed,$faction.id == xhanempire,,"""Вы предали бесконечную милость Империи Ксан и самого Божественного Императора. Это не будет забыто.""",,
+CMSNResignCancelled_xhanempire,CMSNResignCancelled,$faction.id == xhanempire,,"""Не позволяйте своей воле снова дрогнуть; да падет на вас свет Божественного Императора.""",,
+,,,,,,
+greetingunitedpamedFriendly,OpenCommLink,"$faction.id == unitedpamed
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Так держать. Мы летаем за Памед.""
+OR
+""Все на нас смотрят, для этих тараканов мы просто ресурс. Я это знаю. Береги себя там.""",,
+greetingunitedpamedHostileWeaker,OpenCommLink,"$faction.id == unitedpamed
+$entity.isHostile
+$entity.relativeStrength < 0","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Подумайте, что вы делаете!""
+OR
+""Почему должен страдать народ Памеда?""",,
+greetingunitedpamedHostileWeakerDefiant,OpenCommLink,"$faction.id == unitedpamed
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""Мы будем сражаться до конца, лишь бы Памед был в безопасности.""
+OR
+""Если нам придется умереть, чтобы народ Памеда наконец узнал мир, так тому и быть.""",cutCommLink:Разорвать канал связи,
+greetingunitedpamedHostileStronger,OpenCommLink,"$faction.id == unitedpamed
+$entity.isHostile
+$entity.relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""Мы делаем это ради всех памедцев дома; ваша смерть обеспечит их безопасность.""
+OR
+""Ваши преступления против Памеда не могут быть прощены.""
+OR
+""Воинствующие паразиты вроде вас должны быть раздавлены.""",cutCommLink:Разорвать канал связи,
+greetingunitedpamedNeutral,OpenCommLink,"$faction.id == unitedpamed
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Что вам нужно? Торговые соглашения и вопросы комиссии следует обсуждать с планетарным командованием Памеда.""
+OR
+""Знаете, спейсер, большинство памедских пляжных курортов в этом цикле еще не полностью заняты. Вам стоит заглянуть!""",,
+,,,,,,
+bar_descunitedpamed,BarPrintDesc,"$faction.id == unitedpamed
+$market.id != unitedpamed_Pamed_Market",ShowImageVisual space_bar,"Бар просторный и роскошно украшен произведениями искусства работы настоящих человеческих мастеров. Туристы и торговцы на стоянке неспешно прогуливаются в бесплатной курортной одежде. Другие общаются на ходу, лавируя между огромными колоннами цвета слоновой кости, будто без конкретной цели. На мгновение можно остановиться и представить: какой была жизнь на пике общества Доминиона?",,
+,,,,,,
+CMSNTextRejectHostile_unitedpamed,CMSNTextRejectHostile,$faction.id == unitedpamed,,"""Что? Вы разыскиваемый преступник! Вы издеваетесь?! Народ Памеда этого не забудет! Мы не дадим вам уйти!""",,
+CMSNTextHasOther_unitedpamed,CMSNTextHasOther,$faction.id == unitedpamed,,"""Сейчас у вас комиссия от другой фракции! Откуда нам знать, что вы друг Памеда, если служите чужим интересам?""",,
+CMSNTextUnsuited_unitedpamed,CMSNTextUnsuited,$faction.id == unitedpamed,,"""Прошу прощения, но почему мы должны вам доверять? Что вы сделали для народа Памеда? Если действительно хотите помочь - идите и докажите это!""",,
+CMSNTextSuitedPart1_unitedpamed,CMSNTextSuitedPart1,$faction.id == unitedpamed,,"""Вы многое для нас сделали, и это не осталось незамеченным. Мы рады принять вас в ряды лучших сил Памеда и гарантируем, что к вам будут относиться как к любому урожденному гражданину Памеда.""",,
+CMSNTextSuitedPart2_unitedpamed,CMSNTextSuitedPart2,$faction.id == unitedpamed,,"""Мы можем прямо сейчас привести вас к присяге как официального члена флота Памеда!""",,
+CMSNTextWelcomePart1_unitedpamed,CMSNTextWelcomePart1,$faction.id == unitedpamed,,"""Будьте готовы служить народу Памеда! Теперь вы его защитник.""",,
+CMSNTextWelcomePart2_unitedpamed,CMSNTextWelcomePart2,$faction.id == unitedpamed,,"""В ответ Памед отблагодарит вас. Летая с нами, вы никогда не будете одиноки!""",,
+CMSNTextChangeMind_unitedpamed,CMSNTextChangeMind,$faction.id == unitedpamed,,"""Жаль, что вы не присоединитесь к нам, но мы понимаем, что это серьезное решение. Особенно для неурожденного, как вы. Тем не менее народ Памеда примет вас с распростертыми объятиями, если вы передумаете.""",,
+CMSNResignAskToConfirm_unitedpamed,CMSNResignAskToConfirm,$faction.id == unitedpamed,,"""Вы уверены, что хотите предать доверие, которое народ Памеда вам оказал?""",,
+CMSNResignConfirmed_unitedpamed,CMSNResignConfirmed,$faction.id == unitedpamed,,"""Печально. Если вы еще пожалеете об этом решении, не ждите, что мы так легко снова вам доверимся.""",,
+CMSNResignCancelled_unitedpamed,CMSNResignCancelled,$faction.id == unitedpamed,,"""Служба изматывает каждого из нас, но мы должны закалить волю. Ради Памеда и его народа.""",,
+,,,,,,
+# Myrianous Encounter,,,,,,
+,,,,,,
+Myrianous_encounterDescScanned,BeginFleetEncounter,"$Myrianous score:1000
+!$printedDesc
+$showAfterScanIntro",," При маневре сближения с неопознанным судном постепенно нарастает тревога и необъяснимое напряжение. Офицеры докладывают о растущем беспокойстве среди экипажа. 
+
+ Внезапно, в одно мгновение, вы чувствуете, как ваши мысли захватывают. Каждое воспоминание - подробное до мелочей - просматривают за миг. Целая жизнь переживается и препарируется так глубоко, что в бурлящем миазме вам почти мерещится отблеск мимолетной божественности. 
+
+ И так же быстро это прекращается. Придя в себя, вы получаете доклады офицеров о срывах у экипажа и требованиях немедленно отступить. Что бы ни произошло дальше, это будет не похоже ни на что, что сектор видел прежде. ",,
+Myrianous_encounterDesc1,BeginFleetEncounter,"$Myrianous score:1000
+!$printedDesc
+!$showAfterScanIntro","$printedDesc = true 0
+$fidpi_addContinue = true 0"," При маневре сближения с неопознанным судном постепенно нарастает тревога и необъяснимое напряжение. Офицеры докладывают о растущем беспокойстве среди экипажа. 
+
+ Внезапно, в одно мгновение, вы чувствуете, как ваши мысли захватывают. Каждое воспоминание - подробное до мелочей - просматривают за миг. Целая жизнь переживается и препарируется так глубоко, что в бурлящем миазме вам почти мерещится отблеск мимолетной божественности. 
+
+ И так же быстро это прекращается. Придя в себя, вы получаете доклады офицеров о срывах у экипажа и требованиях немедленно отступить. Что бы ни произошло дальше, это будет не похоже ни на что, что сектор видел прежде. ",,
+Myrianous_commsOpen,OpenCommLink,$Myrianous score:1000,EndConversation,"Запрос на связь долго висит без ответа, затем по главному дисплею проходит волна голографических помех и выводит серию кодов ошибок. Офицер связи в замешательстве работает за консолью. 
+
+Мягкие звуки уведомлений об ошибках складываются в странный ритм, почти в мелодию, которую вы будто слышали когда-то. А может, и нет. Вы возвращаете внимание к командованию. Сейчас не время для мечтаний.",,

@@ -1,0 +1,102 @@
+{
+    "hullName": "Deff Skwardon (Killboy)",
+    "hullId": "ls_deff_skwardon_killboy",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_deff_skwardon/ls_deff_skwardon_2.png",
+    "height": 37,
+    "width": 38,
+    "center": [
+        19, 18.5
+    ],
+    "collisionRadius": 26,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_bloodaxes",
+        "ls_deff_skwardon_hullmod"
+    ],
+    "builtInWeapons": {
+        "WS 003": "ls_mini_rokkit_pod",
+        "WS 002": "ls_mini_rokkit_pod",
+        "WS 000": "ls_gatler",
+        "WS 001": "ls_gatler"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                       1,      7.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                       1,     -7.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     0.5,    -12.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     0.5,     12.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -15, 0
+            ],
+            "length": 32,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -16,       -4,
+              -6,       -5,
+             0.5,      -18,
+               4,       -9,
+            15.5,       -4,
+        
+            15.5,        4,
+               4,        9,
+             0.5,       18,
+              -6,        5,
+             -16,        4
+    ]
+}

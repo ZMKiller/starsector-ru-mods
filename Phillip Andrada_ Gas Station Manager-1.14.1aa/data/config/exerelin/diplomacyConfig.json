@@ -1,0 +1,42 @@
+{
+	"events":[
+		{
+			"name":"Hostile Advertising",
+			"stage":"sfc_hostile_advertising",
+			"random":true,
+			"minRepLevelToOccur":"inhospitable",
+			"minRepChange":-0.2,
+			"maxRepChange":-0.15,
+			"repLimit":"inhospitable",
+			"allowedFactions1":["sindrian_diktat"],
+			"allowedFactions2":["hegemony","mvs","xlu","legionarry","shadow_industry","uaf"],
+			"chance":1,
+			"desc":"$theFaction has begun an aggressive and scathing advertisement campaign against $theOtherFaction, proclaiming all products and services provided by $theOtherFaction to be suspect and highly inferior. This has led to worsening relations with $theOtherFaction."
+		},
+		{
+			"name":"Advertisement Campaign",
+			"stage":"sfc_advertisement_campaign",
+			"random":true,
+			"minRepLevelToOccur":"suspicious",
+			"minRepChange":0.05,
+			"maxRepChange":0.1,
+			"allowedFactions2":["sindrian_diktat"],
+			"allowNonPiratesToPirates":true,
+			"chance":1.5,
+			"desc":"$theOtherFaction marketing board has begun an advertisement campaign promoting $OtherFaction products on $market. This increased attention has led to a slight increase in relations with $theFaction."
+		},
+		{
+			"name":"Advertisement Backfire",
+			"stage":"sfc_advertisement_backfire",
+			"random":true,
+			"minRepLevelToOccur":"suspicious",
+			"minRepChange":-0.1,
+			"maxRepChange":-0.05,
+			"repLimit":"inhospitable",
+			"allowedFactions2":["sindrian_diktat"],
+			"allowNonPiratesToPirates":true,
+			"chance":0.5,
+			"desc":"$OtherFaction marketing board has begun an advertisement campaign promoting $OtherFaction products on $market. However, due to the rather questionable content, which many in $theFaction see as highly offensive, this has led to worsening relations with $theFaction."
+		}
+	]
+}

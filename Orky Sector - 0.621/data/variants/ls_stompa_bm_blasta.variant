@@ -1,0 +1,46 @@
+{
+    "displayName": "Blasta",
+    "fluxCapacitors": 16,
+    "fluxVents": 18,
+    "goalVariant": true,
+    "hullId": "ls_stompa_bm",
+    "hullMods": [
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_stompa_bm_blasta",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "GUN_ARM": "ls_stompa_snazzkannon",
+                "WS 004": "ls_zzap_kannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "TECH_ARM": "ls_stompa_lifta_droppa"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD": "ls_stompa_head_missile"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BELLY": "ls_stompa_belly_lobba",
+                "WS 002": "ls_grot_shoota_single",
+                "WS 003": "ls_grot_shoota_single",
+                "WS 005": "ls_bubble_chukka"
+            }
+        }
+    ]
+}

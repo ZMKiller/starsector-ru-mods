@@ -1,0 +1,166 @@
+{
+	"dpl_station_cryosleeper":{
+		"defaultName":"Side Station", # used if name=null in addCustomEntity()
+		"defaultRadius":90, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"orbital_station_default",
+		"icon":"graphics/icons/station0.png",
+		"iconWidth":24,
+		"iconHeight":24,
+		"sprite":"graphics/stations/dpl_station_cryosleeper.png",
+		"spriteWidth":110,
+		"spriteHeight":150,
+		"renderShadow":false, #true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["station"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+	
+	"dpl_resonance_array":{
+		"defaultName":"Resonance Array", # used if name=null in addCustomEntity()
+		"defaultRadius":100, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"orbital_station_default",
+		"interactionImage":"graphics/illustrations/orbital_shade.jpg",
+		"icon":"graphics/icons/station0.png",
+		"iconWidth":24,
+		"iconHeight":24,
+		"sprite":"graphics/stations/dpl_resonance_array.png",
+		"spriteWidth":120,
+		"spriteHeight":160,
+		"renderShadow":false, #true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["has_interaction_dialog", "dpl_resonance_array"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+	
+	"dpl_Olympias":{
+		"defaultName":"Olympias", # used if name=null in addCustomEntity()
+		"defaultRadius":75, # used if radius<0 in addCustomEntity()
+		"icon":"graphics/icons/station_broken.png",
+		"iconWidth":24,
+		"iconHeight":24,
+		"sprite":"graphics/stations/dpl_Olympias.png",
+		"spriteWidth":64,
+		"spriteHeight":64,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"customDescriptionId":"dpl_Olympias",
+		"interactionImage":"graphics/illustrations/abandoned_station2.jpg",
+		"tags":["has_interaction_dialog", "dpl_Olympias"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+	
+	"dpl_AcheronStation":{
+		"defaultName":"Side Station", # used if name=null in addCustomEntity()
+		"defaultRadius":75, # used if radius<0 in addCustomEntity()
+		"icon":"graphics/icons/station0.png",
+		"iconWidth":24,
+		"iconHeight":24,
+		"sprite":"graphics/stations/station_side01.png",
+		"spriteWidth":80,
+		"spriteHeight":80,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"customDescriptionId":"dpl_AcheronStation",
+		"interactionImage":"graphics/illustrations/cargo_loading.jpg",
+		"tags":["has_interaction_dialog", "dpl_AcheronStation"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+	
+	"dpl_damaged_tap":{
+		"defaultName":"Damaged Hypershunt", # used if name=null in addCustomEntity()
+		"nameInText":"damaged hypershunt",
+		"shortName":"damaged hypershunt",
+		"aOrAn":"a",
+		"isOrAre":"is",
+		"defaultRadius":150, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"dpl_damaged_tap",
+		"interactionImage":"graphics/illustrations/coronal_tap.jpg",
+		"icon":"graphics/icons/coronal_shunt.png",
+		"iconWidth":32,
+		"iconHeight":32,
+		"sprite":"graphics/stations/dpl_damaged_tap.png",
+		"spriteWidth":240,
+		"spriteHeight":240,
+		"renderShadow":true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["has_interaction_dialog", "salvageable", "neutrino_high", "dpl_damaged_tap", "protects_from_corona_in_battle", "not_random_mission_target"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+		"renderCircleIndicator":true,
+		"renderCircleIndicatorSelectionFlash":true,
+		#"pluginClass":"com.fs.starfarer.api.impl.campaign.BaseCustomEntityPlugin",
+	},
+	"dpl_inactive_HELA":{
+		"defaultName":"Inactive HELA Device", # used if name=null in addCustomEntity()
+		"nameInText":"inactive HELA Device",
+		"aOrAn":"an",
+		"defaultRadius":120, # used if radius<0 in addCustomEntity()
+		"interactionImage":"graphics/illustrations/dead_gate.jpg",
+		"icon":"graphics/icons/gate0.png",
+		"iconWidth":20,
+		"iconHeight":20,
+		"sprite":"graphics/stations/gate.png",
+		"spriteWidth":192,
+		"spriteHeight":192,
+		"renderShadow":true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":true,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"nameColor":[70,200,255,255],
+		"nameShadowColor":[0,0,0,255],
+		"renderCircleIndicator":true,
+		"renderCircleIndicatorSelectionFlash":true,
+		"customDescriptionId":"dpl_inactive_HELA",
+		"tags":["has_interaction_dialog", "dpl_HELA_device", "neutrino"],
+		"layers":[STATIONS, BELOW_STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+		"pluginClass":"data.scripts.campaign.dpl_HELAEntityPlugin",
+	},
+	"dpl_station_research":{
+		"defaultName":"Research Station", # used if name=null in addCustomEntity()
+		"defaultRadius":45, # used if radius<0 in addCustomEntity()
+		"nameInText":"research station",
+		"shortName":"station",
+		"customDescriptionId":"station_research_remnant",
+		"interactionImage":"graphics/illustrations/orbital_construction.jpg",
+		"icon":"graphics/icons/station0.png",
+		"iconWidth":20,
+		"iconHeight":20,
+		"sprite":"graphics/stations/station_side00.png",
+		"spriteWidth":40,
+		"spriteHeight":40,
+		"renderShadow":true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["has_interaction_dialog", "salvageable", "neutrino"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+}
+
+

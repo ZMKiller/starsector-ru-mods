@@ -1,0 +1,131 @@
+{
+    "hullName": "Krima (BM)",
+    "hullId": "ls_krima_bm",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_krima_bm.png",
+    "height": 136,
+    "width": 94,
+    "center": [
+        47, 68
+    ],
+    "collisionRadius": 90,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 88,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_badmoons",
+        "ls_mek",
+        "ls_loadsa_generata",
+        "ls_snazzdakka"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "HYBRID",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                      22,      0.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 80,
+            "locations": [
+                     1.5,     26.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 280,
+            "locations": [
+                     1.5,    -25.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -43, 12.5
+            ],
+            "length": 52,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 56,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -43, -12.5
+            ],
+            "length": 52,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 56,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -34.5, 23
+            ],
+            "length": 52,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 56,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -34.5, -23
+            ],
+            "length": 52,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 56,
+            "style": "MIDLINE"
+        }
+    ],
+    "bounds": [
+             -66,     -3.5,
+             -45,     -6.5,
+             -45,    -15.5,
+             -38,      -20,
+           -35.5,    -41.5,
+        
+             -12,      -35,
+               3,    -43.5,
+            34.5,      -24,
+              66,    -13.5,
+              37,     -7.5,
+        
+              37,      7.5,
+              66,     13.5,
+            34.5,       24,
+               3,     43.5,
+             -12,       35,
+        
+           -35.5,     41.5,
+             -38,       20,
+             -45,     15.5,
+             -45,      6.5,
+             -66,      3.5
+    # 20 points total.
+    ]
+}

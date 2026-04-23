@@ -1,0 +1,54 @@
+{
+  "variantId": "A_S-F_axicon_ass",
+  "hullId": "A_S-F_axicon",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 19,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_formia_storm",
+        "WS0002": "A_S-F_formia_sling",
+        "WS0003": "A_S-F_formia_sling"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_macron",
+        "WS0005": "A_S-F_macron"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "A_S-F_p_ion",
+        "WS0008": "A_S-F_p_ion"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "heavyburst",
+        "WS0009": "pdburst",
+        "WS0010": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "A_S-F_glitter_wing",
+    "A_S-F_glitter_wing"
+  ]
+}

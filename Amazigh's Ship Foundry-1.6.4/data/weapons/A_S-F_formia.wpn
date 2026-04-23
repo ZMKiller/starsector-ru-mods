@@ -1,0 +1,29 @@
+{
+	"id":"A_S-F_formia",
+	"specClass":"projectile",
+
+	"type":"ENERGY",
+	"mountTypeOverride":"SYNERGY",
+
+	"size":"MEDIUM",
+	
+	"turretSprite":"graphics/weapons/A_S-F_formia_cdx.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_formia_glow.png",
+	"hardpointSprite":"",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_formia_glow.png",
+
+	"hardpointOffsets":[-4.5, 6, -4.5, -6],
+	"turretOffsets":[-4.5, 6, -4.5, -6],
+	"hardpointAngleOffsets":[135, -135],
+	"turretAngleOffsets":[135, -135],
+	# "renderHints":[RENDER_LOADED_MISSILES],
+	
+	"barrelMode":"ALTERNATING",
+	"animationType":"GLOW",
+	"glowColor":[75,150,255,255],
+
+	"interruptibleBurst":false,
+
+	"projectileSpecId":"A_S-F_formia_orb",
+	"fireSoundTwo":"amsrm_fire",
+}

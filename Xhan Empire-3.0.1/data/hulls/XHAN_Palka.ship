@@ -1,0 +1,46 @@
+{
+  "hullName": "Palka",
+  "hullId": "XHAN_Palka",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/XHAN_Palka.png",
+  "style": "XHANTECH",
+  "height": 56,
+  "width": 19,
+  "center": [8, 24.5],
+  "collisionRadius": 38.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 36,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_Gen1_armor"
+  ],
+  "builtInWeapons": {
+    "WS0001": "XHAN_Steizok_fighter"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [19, 0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-24.5, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -22, 5,
+    -22, -5,
+    28.5, -0
+  ]
+}

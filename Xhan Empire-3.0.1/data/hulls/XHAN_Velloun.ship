@@ -1,0 +1,131 @@
+{
+  "hullName": "Velloun",
+  "hullId": "XHAN_Velloun",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/Xhan_Velloun.png",
+  "style": "ALVARIUM_DOCTRINE",
+  "coversColor": "202,229,196,255",
+  "height": 149,
+  "width": 112,
+  "center": [56, 77],
+  "collisionRadius": 106,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 97,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_PlasteenArmor",
+    "XHAN_Elite_PlasteenProduction"
+  ],
+  "builtInWings": [
+    "Vil_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 305,
+      "angle": 0,
+      "locations": [0, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 235,
+      "angle": -90,
+      "locations": [16, -27]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 235,
+      "angle": 90,
+      "locations": [16, 27]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 265,
+      "angle": 180,
+      "locations": [-21, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        55, -0,
+        56, -0
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-39, 16],
+      "length": 31.795191,
+      "width": 5.02625,
+      "angle": 175.5,
+      "contrailSize": 5.02625,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-39, -16],
+      "length": 31.795191,
+      "width": 5.02625,
+      "angle": -175.5,
+      "contrailSize": 5.02625,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-39, 11.5],
+      "length": 40,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-39, -11.5],
+      "length": 40,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-45.5, -0],
+      "length": 45.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 128,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    }
+  ],
+  "bounds": [
+    66, -0,
+    61.5, 31,
+    13.5, 53,
+    -73.5, 32,
+    -38, 18,
+    -43, -0,
+    -38, -18,
+    -73.5, -32,
+    13.5, -53,
+    61.5, -31
+  ]
+}

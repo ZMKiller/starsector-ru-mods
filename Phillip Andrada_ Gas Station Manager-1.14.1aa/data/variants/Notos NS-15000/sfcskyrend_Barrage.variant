@@ -1,0 +1,76 @@
+{
+  "variantId": "sfcskyrend_Barrage",
+  "hullId": "sfcskyrend",
+  "displayName": "Barrage",
+  "goalVariant": true,
+  "fluxCapacitors": 36,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "advancedshieldemitter",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0016": "sfcamtorpedorack",
+        "WS0017": "sfcamtorpedorack"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "lightneedler",
+        "WS0015": "lightneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "sfcampulser",
+        "WS0011": "sfcampulser",
+        "WS0012": "sfcampulser",
+        "WS0013": "sfcampulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "sfcamchainpulser",
+        "WS0009": "sfcamchainpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "sfcnotospd",
+        "WS0007": "sfcnotospd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "sfcamchainpulser",
+        "WS0005": "sfcamchainpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lrpdlaser",
+        "WS0003": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

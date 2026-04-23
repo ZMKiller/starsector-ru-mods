@@ -1,0 +1,126 @@
+{
+  "hullName": "Ajax Heavy Fuel Tender",
+  "hullId": "sfcfuelmech_strikecraft",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_torso.png",
+  "style": "MIDLINE",
+  "height": 48,
+  "width": 40,
+  "center": [20, 29],
+  "collisionRadius": 51.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 66,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfc_variable_ajax_mode"
+  ],
+  "builtInWeapons": {
+    "WS0002": "sfcmechamthrower",
+    "WS0003": "sfcajaxshoulder_left_mount",
+    "WS0004": "blinker_red",
+    "WS0005": "blinker_green",
+    "WS0006": "sfcajaxshoulder_right_mount"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": -20,
+      "locations": [7, -9]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 20,
+      "locations": [7, 9]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-7.5, 3.5],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12.5, 14.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [12.5, -14.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-7.5, -3.5],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 30,
+      "locations": [1, 19.5],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": -30,
+      "locations": [1, -20.5],
+      "renderOrderMod": 300
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-18.5, 5],
+      "length": 8,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-18.5, -5],
+      "length": 8,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    16.5, -15,
+    -17, -15,
+    -17, 15,
+    16.5, 15
+  ]
+}

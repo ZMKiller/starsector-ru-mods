@@ -1,0 +1,53 @@
+{
+  "variantId": "rat_tylos_Standard",
+  "hullId": "rat_tylos",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 18,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxcoil",
+    "fluxdistributor",
+    "targetingunit",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "rat_starburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "taclaser",
+        "WS0004": "taclaser"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "MODULE": "rat_tylos_double_Standard"
+    }
+  ],
+  "wings": []
+}

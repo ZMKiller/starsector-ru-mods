@@ -1,0 +1,43 @@
+{
+	"id":"A_S-F_akvavit_srm",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_OmerOnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_akvavitOnHitEffect",
+
+	"sprite":"graphics/missiles/A_S-F_akvavit_missile.png",
+	"size":[8,10],
+	"center":[4,5],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[48,120,240,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":45, # purely visual
+	"flameoutTime":1,
+	"noEngineGlowTime":0.2,
+	"fadeTime":0.5,
+	"engineSpec":{"turnAcc":2000,
+				  "turnRate":400,
+				  "acc":1500,
+				  "dec":600},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-4, 0],
+
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[65,160,250,255],
+						"contrailDuration":0.7, #0.9
+						"contrailWidthMult":0.6, #0.65
+						"contrailWidthAddedFractionAtEnd":1.4,# can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.25f,
+						"contrailAngularVelocityMult":0.75f,
+						"contrailSpawnDistMult":0, # how far away from engine it starts
+						"contrailColor":[60,150,240,200],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4, #3
+				    "length":34, #26
+				    "angle":180.0}]
+}

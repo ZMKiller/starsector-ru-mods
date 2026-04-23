@@ -1,0 +1,31 @@
+{
+	"baseHullId":"swp_vulture",
+	"skinHullId":"swp_vulture_p",
+	"hullName":"Vulture (P)",
+	"descriptionId":"swp_vulture",
+	"descriptionPrefix":"This Vulture's drone bay appears to have been replaced with a thruster block pulled from an Onslaught by some enterprising scavengers or pirates - likely the latter, judging by the streaks of red paint.",
+	"tags":["rare_bp", "hist2t"],
+	"tech":"Pirate",
+	"baseValueMult":1.25,
+    "systemId":"swp_victoryjets",
+	"spriteName":"graphics/swp/ships/vulture/swp_vulture_p.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+    	"WS0001":{
+            "type": "UNIVERSAL"
+		},
+	},
+	"builtInMods":[],
+	"builtInWeapons":{
+    },
+	"engineSlotChanges":{
+		"6":{
+			"width": 24,
+          	"length": 96,
+          	"angle": 180
+		},
+	},
+}

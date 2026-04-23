@@ -1,0 +1,87 @@
+{
+	"name":"Ruka Yenni",
+	"personalities":["aggressive","reckless"],
+	"gender":["f"],
+	"chance":0,
+	"talkativeness":2,
+	"categoryTags":["original"],
+
+	"lines":{
+		"start":[
+			{"id":"yennistart1", "text":"Oh Little moths... it's time to burn."},
+			{"id":"yennistart1", "text":"Oh how you all flutter by, little moths..."},
+			{"id":"yennistart1", "text":"Don't worry, little moths... this'll be all over soon."},
+			{"id":"yennistart1", "text":"Little moths ought to be scared now."},
+			{"id":"yennistart1", "text":"The fire is coming, little moths."}
+		],
+		"start_boss":[
+			{"id":"yenniboss1", "text":"No matter the size, they're all just moths to me."},
+			{"id":"yenniboss1", "text":"Like a moth to the flame, the fires shall burn brighter!"},
+		],
+		"retreat":[
+			{"id":"yenniretreat1", "text":"Ah... ah ha! A stay of execution!"},
+			{"id":"yenniretreat1", "text":"To leave already? These moths have yet to burn."}
+		],
+		"out_of_missiles":[
+			{"id":"yennioom1", "text":"No more missiles to burn these moths..."},
+			{"id":"yennioom1", "text":"Ah, these moths have spent all my missiles."},
+		],
+		"engaged":[
+			{"id":"yenniengaged1", "text":"The moths come to me... as expected."},
+			{"id":"yenniengaged1", "text":"Time to burn these moths."},
+			{"id":"yenniengaged1", "text":"These moths shall be no challenge."}
+		],
+		"need_help":[
+			{"id":"yennineedhelp1", "text":"The moths surround me... it's time for them to BURN!"},
+			{"id":"yennineedhelp1", "text":"The moths come to the flame... now to ignite the inferno!"},
+		],
+		"pursuing":[
+			{"id":"yennipursuit1", "text":"It's time to burn, little moth."},
+			{"id":"yennipursuit1", "text":"There will be no running from the fires, little moth..."},
+			{"id":"yennipursuit1", "text":"The fires are coming, little moth!"},
+		],
+		"running":[
+			{"id":"yennirun1", "text":"Ah... such a shame."}
+		],
+		"hull_90":[
+			{"id":"yennihull901", "text":"These moths think they can harm me!?"},
+			{"id":"yennihull901", "text":"The fire still burns, little moths!"},
+		],
+		"hull_50":[
+			{"id":"yennihull501", "text":"The fire shall still burn, little moths!"},
+			{"id":"yennihull501", "text":"These moths think they can smother my flame!"}
+		],
+		"hull_30":[
+			{"id":"yennihull301", "text":"The flame won't die that easily, little moths!"},
+			{"id":"yennihull301", "text":"Even these embers can still burn, little moths!"},
+			{"id":"yennihull301", "text":"I won't let you outshine me, little moths!"}
+		],
+		"overload":[
+			{"id":"yennioverload1", "text":"Ah ha! The ship trembles and glows!"},
+			{"id":"yennioverload1", "text":"Ah ha! So radiant we have become!"}
+		],
+		"death":[
+			{"id":"yennideath1", "text":"I WILL BURN FOREV-!"},
+			{"id":"yennideath1", "text":"BURN BRIGHT, ETER-!"},
+			{"id":"yennideath1", "text":"MY FLAMES WILL NEVER ST-!"},
+		],
+		"victory":[
+			{"id":"yennivictory1", "text":"Such it is, as the ashes after a flame."},
+			{"id":"yennivictory1", "text":"Let their ashes be a reminder our glory."},
+			{"id":"yennivictory1", "text":"None can stand before the brightness!"},
+			{"id":"yennivictory1", "text":"They burn! How marvelous."},
+		],
+		"reply":[
+			{"id":"ruka1_runi1_reply1", "text":"Don't get so tongue-tied now, Yunifer!", "replyToId":"runi1start1"},
+			{"id":"ruka1_runi1_reply1", "text":"Not going to run away this time, Yunifer?", "replyToId":"runi1start1"},
+			{"id":"ruka1_runi1_reply1", "text":"Show me that you still got that fight in you, Yunifer!", "replyToId":"runi1start1"},
+
+			{"id":"ruka1_arthur1_reply1", "text":"Always the zealot, pather.", "replyToId":"arthurstart1"},
+			{"id":"ruka1_arthur1_reply1", "text":"Zeal is no substitute for skill, pather.", "replyToId":"arthurstart1"},
+			{"id":"ruka1_arthur1_reply1", "text":"Try to keep the preaching down a bit, pather.", "replyToId":"arthurstart1"},
+
+			{"id":"ruka1_arthur1_reply1_2", "text":"No one asked for your opinion, pather.", "replyToId":"arthur1_ruka1_reply1"},
+			{"id":"ruka1_arthur1_reply1_2", "text":"How about I burn you instead, pather?", "replyToId":"arthur1_ruka1_reply1"}
+		],
+	}
+}

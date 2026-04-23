@@ -1,0 +1,95 @@
+{
+  "hullName": "Darnus",
+  "hullId": "tahlan_darnus",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/tahlan/ships/tahlan_darnus.png",
+  "style": "HIGH_TECH",
+  "height": 103,
+  "width": 84,
+  "center": [42, 51],
+  "collisionRadius": 72,
+  "shieldCenter": [0.5, 0],
+  "shieldRadius": 66,
+  "viewOffset": 0,
+  "builtInMods": [
+    "tahlan_heavyenergy",
+    "pointdefenseai",
+    "high_maintenance"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [14, 18]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [14, -18]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-7, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-34, -0],
+      "length": 44.5,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-28.5, 27.5],
+      "length": 12,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-28.5, -27.5],
+      "length": 12,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -32.5, -4,
+    -23, -9.5,
+    -48.5, -15.5,
+    -49.5, -21.5,
+    -26.5, -24.5,
+    -29.5, -29.5,
+    -5.5, -40,
+    14, -39,
+    20, -9.5,
+    51, -0,
+    20, 9.5,
+    14, 39,
+    -5.5, 40,
+    -29.5, 29.5,
+    -26.5, 24.5,
+    -49.5, 21.5,
+    -48.5, 15.5,
+    -23, 9.5,
+    -32.5, 4
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "variantId": "sfcstymphalia_Suppression",
+  "hullId": "sfcstymphalia",
+  "displayName": "Suppression",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 8,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "sfcamtorpedorack"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "sfcamplusmissile",
+        "WS0005": "sfcamplusmissile",
+        "WS0006": "sfcamplusmissile",
+        "WS0007": "sfcamplusmissile"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "sfcmicropod",
+        "WS0003": "sfcmicropod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "sfclightdestabilizer",
+        "WS0009": "sfclightdestabilizer",
+        "WS0010": "sfclightdestabilizer"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

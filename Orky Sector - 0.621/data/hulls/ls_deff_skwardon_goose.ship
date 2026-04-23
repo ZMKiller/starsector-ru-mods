@@ -1,0 +1,115 @@
+{
+    "hullName": "Deff Skwardon (Da Goose)",
+    "hullId": "ls_deff_skwardon_goose",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_deff_skwardon/ls_deff_skwardon_3.png",
+    "height": 37,
+    "width": 38,
+    "center": [
+        19, 18.5
+    ],
+    "collisionRadius": 26,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 24,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_bloodaxes",
+        "ls_deff_skwardon_hullmod"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_big_shoota",
+        "WS 001": "ls_big_shoota",
+        "WS 002": "ls_grot_shoota",
+        "WS 003": "ls_grot_shoota",
+        "WS 004": "ls_mini_rokkit_launcha",
+        "WS 005": "ls_mini_rokkit_launcha"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                       1,      7.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                       1,     -7.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    10.5,      4.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    10.5,     -4.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     0.5,     12.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     0.5,    -12.5
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+             -16,     -3.5,
+            -6.5,     -5.5,
+               0,    -17.5,
+               5,       -9,
+            15.5,       -4,
+        
+            15.5,        4,
+               5,        9,
+               0,     17.5,
+            -6.5,      5.5,
+             -16,      3.5
+    ]
+}

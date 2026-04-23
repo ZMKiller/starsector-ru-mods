@@ -1,0 +1,214 @@
+{
+  "hullName": "Tumor",
+  "hullId": "uw_boss_tumor",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/uw/ships/boss/uw_boss_tumor.png",
+  "style": "UW_CANCER",
+  "height": 176,
+  "width": 160,
+  "center": [68, 78],
+  "collisionRadius": 118,
+  "shieldCenter": [8.5, -7.5],
+  "shieldRadius": 106.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "uw_temporalcurse"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [10, -59]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [1, -83]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-26, -15]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": -30,
+      "locations": [1, 0]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 70,
+      "locations": [-2, 49]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 35,
+      "locations": [42, 38]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 0,
+      "locations": [46, -11]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": 0,
+      "locations": [30, 16]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -45,
+      "locations": [61, -48]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-32, -65],
+      "length": 48,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-29, -48],
+      "length": 24,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-24.5, -80.5],
+      "length": 20,
+      "width": 6,
+      "angle": -160,
+      "contrailSize": 6,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-19.5, -87.5],
+      "length": 16,
+      "width": 6,
+      "angle": -135,
+      "contrailSize": 6,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-78, -8],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-77, 9],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-77.5, 1],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-60, 27],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-60, 46],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-60, 36.5],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "UW_CANCER"
+    }
+  ],
+  "bounds": [
+    -75.5, -11,
+    -74, 12,
+    -57, 12.5,
+    -57, 49.5,
+    -16, 56,
+    1.5, 66.5,
+    28, 43.5,
+    46.5, 48,
+    52.5, 33.5,
+    44.5, 25,
+    54, -3.5,
+    74, 14.5,
+    87, 0,
+    94, -19.5,
+    83.5, -27.5,
+    70, -28.5,
+    74.5, -49,
+    58.5, -53,
+    9.5, -16.5,
+    8.5, -29.5,
+    19.5, -37.5,
+    9.5, -44.5,
+    19.5, -53.5,
+    18, -67.5,
+    4.5, -79,
+    3.5, -88.5,
+    -18.5, -90.5,
+    -30, -68,
+    -25.5, -42,
+    -52.5, -17.5
+  ]
+}

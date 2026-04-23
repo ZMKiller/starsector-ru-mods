@@ -1,0 +1,55 @@
+{
+  "hullName": "Incisor",
+  "hullId": "A_S-F_incisor",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_incisor.png",
+  "style": "HIGH_TECH",
+  "height": 30,
+  "width": 28,
+  "center": [14, 13],
+  "collisionRadius": 20,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 17,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux",
+    "advancedoptics",
+    "pointdefenseai"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 0,
+      "locations": [7, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12, 4],
+      "length": 16,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-12, -4],
+      "length": 16,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    14, -0,
+    2, 12,
+    -11, 5.5,
+    -11, -5,
+    2, -12
+  ]
+}

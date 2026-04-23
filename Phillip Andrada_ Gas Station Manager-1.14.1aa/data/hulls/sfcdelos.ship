@@ -1,0 +1,177 @@
+{
+  "hullName": "Delos DS-150",
+  "hullId": "sfcdelos",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/PAGSM/ships/tanker_support_destroyer_diktatv1.png",
+  "style": "MIDLINE",
+  "height": 192,
+  "width": 90,
+  "center": [45, 99.5],
+  "collisionRadius": 115.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 108.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery",
+    "surveying_equipment"
+  ],
+  "builtInWings": [
+    "sfctankerdrone_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [61.5, 12.5],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [61.5, -12.5],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [84.5, -0],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-11.5, 12.5],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-11.5, -12.5],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-67, 23],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -180,
+      "locations": [-67, -23],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -90,
+      "locations": [-34.5, -17],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 90,
+      "locations": [-34.5, 17],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -66, 0.5,
+        -62.5, 10,
+        -72.5, 10,
+        -73, -9,
+        -62.5, -9,
+        -57, -0,
+        -72.5, 1,
+        -64, 0.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-83.5, -32],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-83.5, 32],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-91.5, -13],
+      "length": 45,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-91.5, 13],
+      "length": 45,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -92.5, 21.5,
+    -84, 35,
+    -56, 39.5,
+    60, 39.5,
+    84, 21.5,
+    84, -21.5,
+    60, -39.5,
+    -56, -39.5,
+    -84, -35,
+    -92.5, -21.5
+  ]
+}

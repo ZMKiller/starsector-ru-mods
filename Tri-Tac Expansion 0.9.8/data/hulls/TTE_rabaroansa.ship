@@ -1,0 +1,125 @@
+{
+  "hullName": "Rabaroansa",
+  "hullId": "TTE_rabaroansa",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/TTE_rabaroansa.png",
+  "style": "HIGH_TECH",
+  "height": 224,
+  "width": 179,
+  "center": [89.5, 112],
+  "collisionRadius": 129,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 127,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [53, 46.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [53, -46.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-55, -59.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-55, 59.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-108.5, 12.5],
+      "length": 42,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-108.5, -12.5],
+      "length": 42,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-105, -44],
+      "length": 42,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-105, 44],
+      "length": 42,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-103.5, -28],
+      "length": 42,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-103.5, 28],
+      "length": 42,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    114, -22.5,
+    92.5, -55,
+    38, -87.5,
+    -5.5, -84,
+    -14.5, -91.5,
+    -45, -72,
+    -72.5, -87.5,
+    -87.5, -62.5,
+    -115.5, -64,
+    -115.5, 64,
+    -87.5, 62.5,
+    -72.5, 87.5,
+    -45, 72,
+    -14.5, 91.5,
+    -5.5, 84,
+    38, 87.5,
+    92.5, 55,
+    114, 22.5
+  ]
+}

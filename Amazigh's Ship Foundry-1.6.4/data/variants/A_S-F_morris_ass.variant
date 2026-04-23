@@ -1,0 +1,48 @@
+{
+  "variantId": "A_S-F_morris_ass",
+  "hullId": "A_S-F_morris",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "ballistic_rangefinder",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "annihilatorpod",
+        "WS0002": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightdualac",
+        "WS0004": "lightdualac",
+        "WS0005": "lightdualac",
+        "WS0006": "lightdualac",
+        "WS0007": "lightdualac",
+        "WS0008": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "lightmg",
+        "WS0010": "lightmg",
+        "WS0011": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

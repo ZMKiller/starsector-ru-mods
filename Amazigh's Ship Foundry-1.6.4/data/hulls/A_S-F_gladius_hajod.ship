@@ -1,0 +1,77 @@
+{
+  "hullName": "Gladius (Hajod)",
+  "hullId": "A_S-F_gladius_hajod",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_gladius_hajod.png",
+  "style": "MIDLINE",
+  "height": 34,
+  "width": 38,
+  "center": [19, 16],
+  "collisionRadius": 25,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 25,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [8, 12]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [8, -12]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 0,
+      "locations": [0, 0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-6, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15, 9],
+      "length": 34,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-15, -9],
+      "length": 34,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    16, -0,
+    6, 16,
+    -12, 9,
+    -12, -9,
+    6, -16
+  ]
+}

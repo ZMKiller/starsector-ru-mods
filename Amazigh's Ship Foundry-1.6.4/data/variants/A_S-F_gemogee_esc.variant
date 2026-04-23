@@ -1,0 +1,64 @@
+{
+  "variantId": "A_S-F_gemogee_esc",
+  "hullId": "A_S-F_gemogee",
+  "displayName": "Escort",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 25,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "stabilizedshieldemitter",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "harpoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "A_S-F_gimbal"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "A_S-F_plas_burster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "lrpdlaser",
+        "WS 006": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xyphos_wing",
+    "A_S-F_incisor_wing"
+  ]
+}

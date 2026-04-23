@@ -1,0 +1,22 @@
+{
+	"id":"tahlan_pastel_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"onHitEffect":"org.niatahl.tahlan.weapons.PastelOnHitEffect",
+	"length":50.0,
+	"hitGlowRadius":30,
+	"width":20.0,
+	"fadeTime":0.4,
+	"fringeColor":[227,50,169,255],
+	"coreColor":[255,230,245,245],
+	"glowColor":[227,50,169,50],
+	"glowRadius":90,
+	"pixelsPerTexel":5.0,
+	"textureType": [
+      "graphics/tahlan/fx/tahlan_eradicator_beam_fringe.png",
+      "graphics/tahlan/fx/tahlan_atrapos_beam_core.png"
+    ],
+	"textureScrollSpeed":-64,
+}

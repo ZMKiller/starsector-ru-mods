@@ -1,0 +1,24 @@
+{
+	"id":"A_S-F_empEmission",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"org.amazigh.foundry.shipsystems.scripts.ai.ASF_empEmissionAI",
+
+	# "aiType":"ENTROPY_AMPLIFIER", #ACAUSAL_DISRUPTOR
+	
+	"statsScript":"org.amazigh.foundry.shipsystems.scripts.ASF_empEmissionStats",
+	
+	"useSound":"system_emp_emitter_activate",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":680,
+		"threatAmount":12,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

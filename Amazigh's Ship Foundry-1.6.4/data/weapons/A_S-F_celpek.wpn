@@ -1,0 +1,21 @@
+{
+	"id":"A_S-F_celpek",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"SYSTEM",
+	"size":"LARGE",
+
+	"turretSprite":"",
+	"hardpointSprite":"",
+
+	"turretOffsets":[0,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0,0],
+	"hardpointAngleOffsets":[0],
+
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType": "NONE",
+
+	"autocharge":true,
+	"projectileSpecId":"A_S-F_celpek_shot", # A_S-F_diadol_shot # projectile that will be fired
+	"fireSoundTwo":"autopulse_laser_fire",
+}

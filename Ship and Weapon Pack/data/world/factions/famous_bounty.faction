@@ -1,0 +1,168 @@
+{
+    id:"famous_bounty",
+    "color":[255,204,0,255],
+    "displayName":"разыскиваемые",
+    "displayNameWithArticle":"разыскиваемые",
+    "displayNameLong":"разыскиваемые",
+    "displayNameLongWithArticle":"разыскиваемые",
+    "entityNamePrefix":"разыскиваемые",
+    "logo":"graphics/factions/neutral.png",
+    "crest":"graphics/factions/crest_neutral.png",
+    "showInIntelTab":false,
+    "shipNamePrefix":"ISS",
+    "shipNameSources":{
+        "BRITISH_NAVY":1,
+        "ROMAN":1,
+        "GREEK":1,
+        "EGYPTIAN":1,
+        "PERSIAN":1,
+        "PIRATES":1,
+        "AZTEC":1,
+        "BEASTS":1,
+        "NORSE":1,
+        "CELTIC":1,
+        "LUDDIC_PATH":1,
+        "ABRAHAMIC":1,
+        "JAPANESE":1,
+        "SPACE":1,
+        "MERCANTILE":1,
+        "GENERAL":1,
+        "REVOLUTIONARY":1,
+        "LUDDIC_CHURCH":1,
+    },
+    "names":{
+        "modern":1,
+        "old english":1,
+        "fringe":1,
+        "myth":1,
+        "future":1,
+        "world":1,
+        "luddic":1,
+    },
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+    "variantOverrides":{
+    },
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "tags":{
+        },
+        "hulls":{
+        },
+    },
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":["merc"],
+        "hulls":[
+        ],
+    },
+    "knownShips":{
+        "tags":["merc"],
+        "hulls":[
+        ],
+    },
+    # listing ships here will make the faction mostly use them even if other hulls become available
+    "priorityShips":{
+        "tags":[],
+        "hulls":[
+        ],
+    },
+    "knownFighters":{
+        "tags":["merc"],
+        "fighters":[
+        ],
+    },
+    "priorityFighters":{
+        "tags":[],
+        "fighters":[
+        ],
+    },
+    "knownWeapons":{
+        "tags":["merc"],
+        "weapons":[
+        ],
+    },
+    "priorityWeapons":{
+        "tags":[],
+        "weapons":[
+        ],
+    },
+    "knownHullMods":{
+        "tags":["merc"],
+        "hullMods":[
+        ],
+    },
+    "factionDoctrine":{
+        "warships":4,
+        "carriers":2,
+        "phaseShips":1,
+
+        "officerQuality":2,
+        "shipQuality":2,
+        "numShips":3,
+
+        "shipSize":3,
+
+        "aggression":2,
+
+        "combatFreighterProbability":0.5,     				# instead of some portion of the freighters in a fleet
+        "combatFreighterCombatUseFraction":0.5,				# as part of the normal combat lineup
+        "combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
+        "autofitRandomizeProbability":0.25,
+
+        "commanderSkillsShuffleProbability":1,
+        "commanderSkills":[
+            "crew_training",
+            "coordinated_maneuvers",
+            "electronic_warfare",
+            "fighter_uplink",
+            "carrier_group",
+            "flux_regulation",
+        ],
+    },
+    "illegalCommodities":[
+        "drugs",
+        "organs",
+    ],
+    "portraits":{
+        "standard_male":[
+            "graphics/swp/portraits/ibb_butler.png",
+            "graphics/swp/portraits/ibb_corbin.png",
+            "graphics/swp/portraits/ibb_major.png",
+            "graphics/swp/portraits/ibb_midnight.png",
+            "graphics/swp/portraits/ibb_tipper.png",
+            "graphics/swp/portraits/ibb_aura.png",
+            "graphics/swp/portraits/ibb_psi.png",
+            "graphics/swp/portraits/loa_portrait_ibb_rylek.png",
+        ],
+        "standard_female":[
+            "graphics/swp/portraits/ibb_gazer.png",
+            "graphics/swp/portraits/ibb_lacroix.png",
+            "graphics/swp/portraits/ibb_laplace.png",
+            "graphics/swp/portraits/ibb_megas.png",
+            "graphics/swp/portraits/ibb_meredith.png",
+            "graphics/swp/portraits/ibb_nanao.png",
+            "graphics/swp/portraits/ibb_rex.png",
+            "graphics/swp/portraits/ibb_ryx.png",
+            "graphics/swp/portraits/ibb_terror.png",
+            "graphics/swp/portraits/ibb_ice.png",
+            "graphics/swp/portraits/ibb_cieril.png",
+        ]
+    },
+    "custom":{
+        "exemptFromFoodShortages":true,
+        "ignoreTradeWithEnemiesForReputation":true,
+        "postsNoBounties":true,
+        "engageWhenEvenStrength":true,
+        "offersCommissions":false,
+        "engagesInHostilities":false,
+        "patrolsHaveNoPatrolMemoryKey":true,
+        "pirateBehavior":true, # for fleet behavior
+        "fightToTheLast":true, # order a full assault instead of retreating, in most cases
+        "punitiveExpeditionData":{
+            "vsCompetitors":false,
+            "vsFreePort":false,
+            "canBombard":false,
+            "territorial":false,
+        },
+    },
+},

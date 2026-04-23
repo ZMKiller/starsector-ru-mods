@@ -1,0 +1,21 @@
+{
+	"id":"ls_kustom_mega_blasta_pod_shot",
+	"specClass":"projectile",
+	"onFireEffect":"data.weapons.ls_kustom_blasta_pod_onfire",
+	"onHitEffect":"data.weapons.ls_kustom_blasta_onhit",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":32.0,
+	"width":16,
+	"fadeTime":0.5,
+	"fringeColor":[150,255,150,255],
+	"coreColor":[255,255,255,25],
+	"glowColor":[150,255,155,75],
+	"glowRadius":45,
+	"hitGlowRadius":50,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

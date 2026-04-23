@@ -1,0 +1,61 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+
+		"A_S-F_rinka_ass2":2,
+		"A_S-F_rinka_std":2,
+		"A_S-F_rinka_stk":1,
+		"A_S-F_rinka_sup":3,
+
+		"A_S-F_peryton_ass":1.5,
+		"A_S-F_peryton_fs":3,
+		"A_S-F_peryton_sup":3,
+	},
+
+    "knownShips":{
+        "hulls":[
+            "A_S-F_rinka",
+            "A_S-F_peryton",
+            "A_S-F_superlasher",
+        ],
+    },
+
+	"knownFighters":{
+		"fighters":[
+			"A_S-F_downfall_wing",
+			"A_S-F_estes_wing",
+		],
+	},
+	"knownWeapons":{
+		"weapons":[
+			"A_S-F_bramble",
+			"A_S-F_thicket",
+			"A_S-F_wasteland",
+			"A_S-F_destructor",
+			"A_S-F_omer",
+			"A_S-F_twister",
+			"A_S-F_crockett",
+			"A_S-F_quicksand",
+		],
+	},
+	"knownHullMods":{
+		"hullMods":[
+			"A_S-F_anarchyBallistic",
+			"A_S-F_anarchyTargeting",
+		],
+	},
+	"weaponSellFrequency":{
+		"A_S-F_bramble":3,
+		"A_S-F_thicket":3,
+		"A_S-F_wasteland":3,
+		"A_S-F_destructor":4,
+		"A_S-F_omer":4,
+		"A_S-F_twister":3,
+		"A_S-F_crockett":7,
+		"A_S-F_quicksand":7,
+	},
+	"hullmodSellFrequency":{
+		"A_S-F_anarchyBallistic":3,
+		"A_S-F_anarchyTargeting":3,
+	},
+},

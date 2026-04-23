@@ -1,0 +1,206 @@
+{
+  "hullName": "Wall",
+  "hullId": "swp_wall",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/swp/ships/derelict/swp_wall.png",
+  "style": "LOW_TECH",
+  "height": 214,
+  "width": 279,
+  "center": [144, 99],
+  "collisionRadius": 175,
+  "shieldCenter": [12, -0],
+  "shieldRadius": 160.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "swp_linkedhull",
+    "automated",
+    "rugged"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [97.5, -29]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 30,
+      "locations": [26, 64]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -30,
+      "locations": [26, -64]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [80, 9]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [80, -9]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [107, 42]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [107, 27]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0.01,
+      "locations": [95, -46]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0.01,
+      "locations": [95, -60]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0.02,
+      "locations": [100, 60]
+    },
+    {
+      "id": "LEFT_WALL",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, 161]
+    },
+    {
+      "id": "RIGHT_WALL",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -155]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-85, -0],
+      "length": 50,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-91, 20],
+      "length": 64,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-91, -20],
+      "length": 64,
+      "width": 22,
+      "angle": -180,
+      "contrailSize": 22,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-99, 55],
+      "length": 96,
+      "width": 36,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-99, -55],
+      "length": 96,
+      "width": 36,
+      "angle": -180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-91, -90],
+      "length": 64,
+      "width": 22,
+      "angle": -180,
+      "contrailSize": 22,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    80.5, -16.5,
+    100.5, -21,
+    91.5, -67.5,
+    71.5, -68.5,
+    59, -110.5,
+    16, -110.5,
+    1.5, -120.5,
+    -53.5, -117,
+    -66, -104.5,
+    -89, -100,
+    -89.5, -82.5,
+    -96.5, -74.5,
+    -96.5, -41.5,
+    -84.5, -5,
+    -84.5, 5,
+    -96.5, 41.5,
+    -97.5, 74,
+    -86, 91.5,
+    -37, 127.5,
+    34.5, 115.5,
+    68.5, 89,
+    76, 67,
+    100, 66.5,
+    106, 22,
+    80.5, 16.5
+  ]
+}

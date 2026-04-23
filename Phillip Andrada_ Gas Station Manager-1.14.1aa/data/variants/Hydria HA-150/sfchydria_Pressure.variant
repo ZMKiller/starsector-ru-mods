@@ -1,0 +1,48 @@
+{
+  "variantId": "sfchydria_Pressure",
+  "hullId": "sfchydria",
+  "displayName": "Pressure",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 19,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "adaptive_coils",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "sfcammissilepod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "sfcampulser",
+        "WS0003": "sfcampulser",
+        "WS0004": "sfcampulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "sfcamthrower"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

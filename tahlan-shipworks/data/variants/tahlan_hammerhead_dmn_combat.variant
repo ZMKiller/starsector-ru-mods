@@ -1,0 +1,51 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
+    "goalVariant": true,
+    "hullId": "tahlan_hammerhead_dmn",
+    "hullMods": [
+        "safetyoverrides",
+        "tahlan_daemonboost"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_hammerhead_dmn_combat",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "tahlan_hellspitter"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "hammer",
+                "WS0005": "hammer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "tahlan_hellspitter"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "lightdualmg",
+                "WS0007": "lightdualmg"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "vulcan",
+                "WS0008": "vulcan"
+            }
+        }
+    ],
+    "wings": ["tahlan_spark_dmn_wing"]
+}

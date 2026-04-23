@@ -1,0 +1,26 @@
+{
+	"id":"sfcplusjets",
+	"type":"ENGINE_MOD",
+	"aiType":"MANEUVERING_JETS",
+	
+	"statsScript":"com.fs.starfarer.api.impl.combat.SFCPlusJets",
+	
+	"engineGlowLengthMult":1.5,
+	"engineGlowWidthMult":1.25,
+	"engineGlowGlowMult":2,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":false,
+
+	"useSound":"system_plasma_jets",
+	"loopSound":"system_plasma_jets_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":125,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":80,
+	}
+}

@@ -1,0 +1,42 @@
+{
+    "displayName": "Carrier",
+    "fluxCapacitors": 10,
+    "fluxVents": 7,
+    "goalVariant": false,
+    "hullId": "ls_mule_bm",
+    "hullMods": [
+        "converted_hangar",
+        "targetingunit",
+        "ls_grot_rigger"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_mule_bm_carrier",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_big_shoota",
+                "WS 002": "ls_big_shoota",
+                "WS 003": "ls_mini_rokkit_launcha",
+                "WS 004": "ls_mini_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_big_lobba",
+                "WS 001": "ls_big_lobba"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": { }
+        }
+    ],
+    "wings": [
+        "ls_blasta_pod_bm_wing"
+    ]
+}

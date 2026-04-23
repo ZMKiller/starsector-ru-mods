@@ -1,0 +1,28 @@
+{
+    "displayName": "Lightning",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "hullId": "hyperion",
+    "hullMods": [
+        "magazines",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_hyperion_shocker",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "swp_lightninggun",
+                "WS 002": "swp_lightninggun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "phasecl"}
+        }
+    ]
+}

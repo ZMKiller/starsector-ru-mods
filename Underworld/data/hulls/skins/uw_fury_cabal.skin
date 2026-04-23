@@ -1,0 +1,25 @@
+{
+    "baseHullId":"fury",
+    "skinHullId":"uw_fury_cabal",
+    "hullName":"Starlight Fury",
+    "descriptionId":"fury",
+    "descriptionPrefix":"Upgraded by the Starlight Cabal, this ship represents the materialistic glitz and glamour of the high life.",
+    "tags":["uw_cabal_bp", "no_dealer", "codex_unlockable"],
+    "tech":"Starlight Cabal",
+    "fleetPoints":15,
+    "coversColor":[175,50,230,255],
+    "baseValueMult":1.5,
+    "spriteName":"graphics/uw/ships/fury/fury_cabal.png",
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "weaponSlotChanges":{
+        "WS 000":{
+            "type": "HYBRID"
+        }
+    },
+    "builtInMods":["uw_cabal_upgrades"],
+    "builtInWeapons":{
+    },
+}

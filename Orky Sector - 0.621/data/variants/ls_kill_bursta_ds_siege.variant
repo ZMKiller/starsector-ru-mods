@@ -1,0 +1,42 @@
+{
+    "displayName": "Siege",
+    "fluxCapacitors": 16,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_kill_bursta_ds",
+    "hullMods": [
+        "targetingunit",
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_kill_bursta_ds_siege",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_bursta_cannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_supashoota_turret",
+                "WS 003": "ls_supashoota_turret"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_flakka_dakka",
+                "WS 006": "ls_twin_shoota",
+                "WS 005": "ls_twin_shoota"
+            }
+        }
+    ],
+    "modules": {
+        "WS 002": "ls_bursta_prow_custom"
+    }
+}

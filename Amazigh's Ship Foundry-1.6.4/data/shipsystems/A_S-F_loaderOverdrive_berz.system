@@ -1,0 +1,20 @@
+{
+	"id":"A_S-F_loaderOverdrive_berz",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"org.amazigh.foundry.shipsystems.scripts.ASF_loaderOverdriveBerzStats",
+	
+	"weaponGlowColor":[150,225,0,155],
+	"weaponTypes":[BALLISTIC, MISSILE, ENERGY],
+
+		# 255,125,25 - LT
+		# 100,255,100 - plas-jets green
+	"engineGlowColor":[125,255,100,155],
+	"engineGlowLengthMult":1.6,
+	"engineGlowWidthMult":1.3,
+	"engineGlowGlowMult":1.4,
+	
+	"useSound":"system_ammo_feeder",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

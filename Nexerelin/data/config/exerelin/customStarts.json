@@ -1,0 +1,54 @@
+{
+	"config":{
+		"colors":{
+			"easy":[0, 255, 255],
+			"normal":[119, 136, 153],
+			"hard":[255, 210, 0],
+			"very hard":[255, 0, 0]
+		}
+	},
+
+	"starts":[
+		{
+			"id":"tutorialStart",
+			"name":"Tutorial start",
+			"difficulty":"Normal",
+			"desc":"The tutorial start from the base game. Solve a minor crisis in the Galatia star system.",
+			"className":"exerelin.campaign.customstart.Tutorial",
+			"randomSector":-1,
+		},
+		{
+			"id":"spacerStart",
+			"name":"Spacer start",
+			"difficulty":"Very hard",
+			"desc":"A non-combat shuttle, a general lack of resources, and a debt that must be paid. Very difficult start, only intended as a challenge for the starfarer that's seen it all.",
+			"className":"exerelin.campaign.customstart.SpacerStart",
+			#"factionId":"player",	# for display purposes only, actual starting faction is set in script
+			#"requiredModId":"nexerelin",
+			#"randomSector":0,	# 0 = works in both; 1 = random only, -1 = non-random only 
+		},
+		#{
+		#	"id":"derelictFleet",
+		#	"name":"Derelict fleet",
+		#	"difficulty":"Hard",
+		#	"desc":"Your ma used to be an expert at stitching together the Domain Explorarium's old drones. Big drones, little drones, square drones, round drones — where others saw only cobbled-together barely-functional scrap, she saw a useful ship.\n\nUnfortunately Ma didn't teach you her skills before she passed on. She did leave you the fleet, though.",
+		#	"className":"exerelin.campaign.customstart.DerelictFleet",
+		#},
+		#{
+		#	"id":"derelictFleet2",
+		#	"name":"Derelict fleet (large)",
+		#	"difficulty":"Normal",
+		#	"desc":"Your ma used to be an expert at stitching together the Domain Explorarium's old drones. Big drones, little drones, square drones, round drones — where others saw only cobbled-together barely-functional scrap, she saw a useful ship.\n\nUnfortunately Ma didn't teach you her skills before she passed on. She did leave you the fleet, though.",
+		#	"className":"exerelin.campaign.customstart.DerelictFleet2",
+		#},
+		{
+			"id":"templar_apostate",
+			"name":"The Apostate",
+			"difficulty":"Hard",
+			"desc":"Once you were honored. Once you were loyal to the way of the Templars, pledged to bring the word to this godless sector. But sin infected you, and you doubted, and you succumbed to temptation.\n\nSomehow, you persuaded your crew to join you in your heresy, and fled into brigandage.\n\nYet your reckoning has only been postponed. Hunted by all parties, will you survive long enough to face judgment?",
+			"className":"exerelin.campaign.customstart.TemplarApostate",
+			"factionId":"player",
+			"requiredModId":"Templars",
+		},
+	],
+}

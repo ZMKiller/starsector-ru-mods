@@ -1,0 +1,28 @@
+{
+	"id":"ls_lamblaster",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"everyFrameEffect":"data.weapons.ls_ramblaster_everyframe",
+	"turretSprite":"graphics/weapons/ls_lamblaster.png",
+	"turretGlowSprite":"graphics/weapons/ls_lamblaster_glow.png",
+	"hardpointSprite":"graphics/weapons/ls_lamblaster.png",
+	"hardpointGlowSprite":"graphics/weapons/ls_lamblaster_glow.png",
+	"glowColor":[150,100,255,255],
+	"turretOffsets":[10, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[10, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":35.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":12.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":8.0,
+					   "particleDuration":0.2,
+					   "particleCount":14,
+					   "particleColor":[150,255,150,255]},	
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"ls_lamblaster_shot",  # projectile that will be fired
+	"fireSoundTwo":"kustom_blasta_fire",
+}

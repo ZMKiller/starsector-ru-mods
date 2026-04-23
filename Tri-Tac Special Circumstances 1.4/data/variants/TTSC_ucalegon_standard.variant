@@ -1,0 +1,50 @@
+{
+  "variantId": "TTSC_ucalegon_standard",
+  "hullId": "TTSC_ucalegon",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TTSC_ionbeam",
+        "WS0002": "TTSC_ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "TTSC_pdburst",
+        "WS0004": "TTSC_pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "TTSC_pdburst",
+        "WS0008": "TTSC_pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdburst",
+        "WS0006": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

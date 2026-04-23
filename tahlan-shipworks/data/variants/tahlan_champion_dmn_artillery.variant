@@ -1,0 +1,57 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 13,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "tahlan_champion_dmn",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter",
+        "fluxdistributor",
+        "tahlan_daemonboost"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_champion_dmn_artillery",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0011": "gauss"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0012": "squall"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "gravitonbeam",
+                "WS0002": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "tahlan_tethra",
+                "WS0005": "tahlan_tethra"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "vulcan",
+                "WS0006": "vulcan",
+                "WS0007": "vulcan",
+                "WS0008": "vulcan",
+                "WS0009": "vulcan",
+                "WS0010": "vulcan"
+            }
+        }
+    ],
+    "wings": []
+}

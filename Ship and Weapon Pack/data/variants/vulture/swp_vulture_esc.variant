@@ -1,0 +1,53 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 10,
+    "fluxVents": 4,
+    "goalVariant": true,
+    "hullId": "swp_vulture",
+    "hullMods": [
+        "converted_hangar",
+        "targetingunit",
+        "defensive_targeting_array",
+        "pointdefenseai"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_vulture_esc",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "irautolance"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "gazerpod",
+                "WS0005": "gazerpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "taclaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "flak",
+                "WS0003": "flak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "pdburst",
+                "WS0008": "pdburst"
+            }
+        }
+    ],
+    "wings": ["swp_partisan_wing"]
+}

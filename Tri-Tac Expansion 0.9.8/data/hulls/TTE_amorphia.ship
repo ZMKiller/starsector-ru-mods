@@ -1,0 +1,228 @@
+{
+  "hullName": "Amorphia",
+  "hullId": "TTE_amorphia",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/TTE_amorphia.png",
+  "style": "HIGH_TECH",
+  "height": 311,
+  "width": 166,
+  "center": [83, 155.5],
+  "collisionRadius": 180,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 176.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "builtInWings": [
+    "TTE_dajeil_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        101, 9,
+        101, 6.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        100.5, 3.5,
+        100.5, -0
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        100.5, -7,
+        100.5, -2.5
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [146.5, 37]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [146.5, -37]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [54, 48]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [54, -48]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [45, -71]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [45, 71]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-108.5, 42.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-108.5, -42.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [-59, -60]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [-59, 60]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-151.5, 23],
+      "length": 46,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-151.5, -23],
+      "length": 46,
+      "width": 21,
+      "angle": -180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-135, 48.5],
+      "length": 46,
+      "width": 21,
+      "angle": 161.5,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-135, -48.5],
+      "length": 46,
+      "width": 21,
+      "angle": -161.5,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-125.5, 64],
+      "length": 46,
+      "width": 21,
+      "angle": 161.5,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-125.5, -64],
+      "length": 46,
+      "width": 21,
+      "angle": -161.5,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-146.5, -0],
+      "length": 82.5,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    156, -51,
+    120, -54,
+    65.5, -75.5,
+    46.5, -91,
+    24.5, -69.5,
+    -34.5, -57.5,
+    -45.5, -75.5,
+    -75.5, -72,
+    -127, -88,
+    -160, -37,
+    -160, 37,
+    -127, 88,
+    -75.5, 72,
+    -45.5, 75.5,
+    -34.5, 57.5,
+    24.5, 69.5,
+    46.5, 91,
+    65.5, 75.5,
+    120, 54,
+    156, 51
+  ]
+}

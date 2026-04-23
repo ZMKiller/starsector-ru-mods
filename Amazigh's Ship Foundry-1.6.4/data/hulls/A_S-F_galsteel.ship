@@ -1,0 +1,132 @@
+{
+  "hullName": "Galsteel",
+  "hullId": "A_S-F_galsteel",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_galsteel.png",
+  "style": "LOW_TECH",
+  "height": 104,
+  "width": 110,
+  "center": [55, 52],
+  "collisionRadius": 77,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 75,
+  "viewOffset": 0,
+  "builtInMods": [
+    "A_S-F_GaderogaHullmod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [44, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [11, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 100,
+      "locations": [-19, 40]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -100,
+      "locations": [-19, -40]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 70,
+      "locations": [20, 37]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -70,
+      "locations": [20, -37]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-52, 32],
+      "length": 48,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-52, -32],
+      "length": 48,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-50, 39],
+      "length": 24,
+      "width": 8,
+      "angle": 165,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-50, -39],
+      "length": 24,
+      "width": 8,
+      "angle": -165,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-46, 20],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-46, -20],
+      "length": 40,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    50, -16,
+    29, -48,
+    -38, -52,
+    -48, -0,
+    -38, 52,
+    29, 48,
+    50, 16
+  ]
+}

@@ -1,0 +1,26 @@
+{
+	"id":"kol_lunge",
+	"type":"ENGINE_MOD",
+	"aiType":"MANEUVERING_JETS",
+	
+	"statsScript":"org.selkie.kol.shipsystems.LungeStats",
+	
+	"engineGlowLengthMult":1.2,
+	"engineGlowWidthMult":1.2,
+	"engineGlowGlowMult":1.5,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+
+	"useSound":"zea_dawn_plasma_start",
+	"loopSound":"zea_dawn_plasma_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,
+		"burstMovementPotential":1500,
+		"averageSpeedIncrease":50,
+	}
+}

@@ -1,0 +1,71 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 25,
+    "fluxVents": 31,
+    "goalVariant": true,
+    "hullId": "uw_renegade",
+    "hullMods": [
+        "heavyarmor",
+        "magazines",
+        "unstable_injector",
+        "dedicated_targeting_core"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_renegade_ass",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "locust"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0008": "breach"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "annihilatorpod",
+                "WS0009": "annihilator",
+                "WS0010": "annihilator",
+                "WS0011": "annihilator",
+                "WS0012": "annihilator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "hellbore"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "shredder"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "miningblaster",
+                "WS0005": "miningblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "flak",
+                "WS0013": "mininglaser",
+                "WS0014": "mininglaser",
+                "WS0015": "mininglaser",
+                "WS0016": "mininglaser",
+                "WS0017": "mininglaser",
+                "WS0018": "mininglaser"
+            }
+        }
+    ],
+    "wings": ["mining_drone_wing"]
+}

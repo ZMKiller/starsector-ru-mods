@@ -1,0 +1,51 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "swp_boss_sporeship_ml",
+    "hullMods": [
+        "eccm",
+        "solar_shielding",
+        "armoredweapons",
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "permaMods": [
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "sMods": [
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "variantId": "swp_boss_sporeship_ml_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "salamanderpod",
+                "WS0003": "harpoonpod",
+                "WS0006": "harpoonpod",
+                "WS0007": "salamanderpod"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "sabotpod",
+                "WS0005": "sabotpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ionbeam"}
+        }
+    ]
+}

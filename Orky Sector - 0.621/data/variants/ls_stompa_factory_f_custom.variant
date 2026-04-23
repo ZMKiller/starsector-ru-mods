@@ -1,0 +1,31 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 10,
+    "fluxVents": 6,
+    "goalVariant": false,
+    "hullId": "ls_stompa_factory_f",
+    "hullMods": [
+        "hardenedshieldemitter"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_stompa_factory_f_custom",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_big_shoota",
+                "WS 002": "ls_big_shoota",
+                "WS 003": "ls_flakka_dakka",
+                "WS 004": "ls_flakka_dakka"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_grot_rail"
+            }
+        }
+    ]
+}

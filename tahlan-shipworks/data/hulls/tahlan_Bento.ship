@@ -1,0 +1,149 @@
+{
+  "hullName": "Bento",
+  "hullId": "tahlan_Bento",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/tahlan/ships/tahlan_Bento.png",
+  "style": "LOW_TECH",
+  "height": 150,
+  "width": 138,
+  "center": [69, 83],
+  "collisionRadius": 114,
+  "shieldCenter": [-0.5, -0],
+  "shieldRadius": 104.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "armoredweapons",
+    "civgrade"
+  ],
+  "builtInWings": [
+    "mining_drone_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 99,
+      "angle": 25,
+      "locations": [42, 32]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 99,
+      "angle": -25,
+      "locations": [42, -32]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 96,
+      "angle": 144.5,
+      "locations": [-20, 38]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 96,
+      "angle": -144.5,
+      "locations": [-20, -38]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 143,
+      "angle": 180,
+      "locations": [-56, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": 90,
+      "locations": [11, 41]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": -90,
+      "locations": [11, -41]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [59, 10]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [59, -10]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -46, 4.5,
+        -46, -3.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-49, 33],
+      "length": 50.5,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-49, -33],
+      "length": 50.5,
+      "width": 32,
+      "angle": -180,
+      "contrailSize": 32,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -68, -23,
+    -48, -23,
+    -48, -41.5,
+    -21.5, -63,
+    38.5, -64.5,
+    64, -39,
+    64, 39,
+    38.5, 64.5,
+    -21.5, 63,
+    -48, 41.5,
+    -48, 23,
+    -68, 23,
+    -82.5, -0
+  ]
+}

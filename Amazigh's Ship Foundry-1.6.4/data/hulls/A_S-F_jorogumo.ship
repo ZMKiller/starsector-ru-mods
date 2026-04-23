@@ -1,0 +1,313 @@
+{
+  "hullName": "Jorogumo",
+  "hullId": "A_S-F_jorogumo",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/phase/A_S-F_jorogumo.png",
+  "style": "HIGH_TECH",
+  "height": 152,
+  "width": 252,
+  "center": [126, 84],
+  "collisionRadius": 130,
+  "shieldCenter": [5, -0],
+  "shieldRadius": 124,
+  "viewOffset": 0,
+  "builtInMods": [
+    "phasefield",
+    "delicate",
+    "A_S-F_phobiaFlex",
+    "A_S-F_clavataDummy"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 10,
+      "locations": [30, 31]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -10,
+      "locations": [30, -31]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [53, 48]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [51, 29]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [51, -29]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [53, -48]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 35,
+      "locations": [50, 95]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -35,
+      "locations": [50, -95]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": 125,
+      "locations": [-33, 84]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": -125,
+      "locations": [-33, -84]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [45, 0]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 80,
+      "locations": [36.5, 101.5]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": -80,
+      "locations": [36.5, -101.5]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 170,
+      "locations": [-47.5, 66.5]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": -170,
+      "locations": [-47.5, -66.5]
+    },
+    {
+      "id": "WS0016",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-9, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-76, 32],
+      "length": 45,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-76, -32],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-76, 48],
+      "length": 45,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-76, -48],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-73, 56],
+      "length": 22,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-73, -56],
+      "length": 22,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-1, 103],
+      "length": 48,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-1, -103],
+      "length": 48,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-69, 22],
+      "length": 44,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-69, -22],
+      "length": 44,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67, 15],
+      "length": 35,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67, -15],
+      "length": 35,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-76, -40],
+      "length": 22,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    40, -8,
+    54, -20,
+    51, -36,
+    56, -51,
+    53, -64,
+    57, -70,
+    57, -102,
+    36, -114,
+    0, -107,
+    3, -79,
+    -7, -87,
+    -31, -94,
+    -61, -78,
+    -60, -63,
+    -75, -52,
+    -75, -28,
+    -68, -27,
+    -62, -3,
+    -39, -2,
+    -39, 2,
+    -62, 3,
+    -68, 27,
+    -75, 28,
+    -75, 52,
+    -60, 63,
+    -61, 78,
+    -31, 94,
+    -7, 87,
+    3, 79,
+    0, 107,
+    36, 114,
+    57, 102,
+    57, 70,
+    53, 64,
+    56, 51,
+    51, 36,
+    54, 20,
+    40, 8,
+    47, 0
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "A_S-F_thicket",
+  "specClass": "projectile",
+ #  "textureType": ROUGH,
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/A_S-F_thicket_turret_base.png",
+  "hardpointSprite": "graphics/weapons/A_S-F_thicket_hardpoint_base.png",
+  "hardpointOffsets":[10, 0],
+  "turretOffsets":[6, 0],
+  "hardpointAngleOffsets":[0],
+  "turretAngleOffsets": [0],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "renderHints": [RENDER_LOADED_MISSILES],
+	"interruptibleBurst":false,
+  "displayArcRadius": 600,
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 4,
+    "blowbackSpread": 13,
+    "cloudDuration": 1.2,
+    "cloudParticleCount": 4,
+    "cloudRadius": 11,
+    "particleColor": [105, 95, 90, 180],  # 125, 75, 45, 105
+    "particleSizeMin": 18,
+    "particleSizeRange": 18
+  },
+  "projectileSpecId": "A_S-F_thicket_mirv",
+  "fireSoundTwo": "harpoon_fire"
+}

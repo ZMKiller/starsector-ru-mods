@@ -1,0 +1,49 @@
+{
+  "variantId": "A_S-F_morris_p_raider",
+  "hullId": "A_S-F_morris_p",
+  "displayName": "Raider",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "A_S-F_twister",
+        "WS0006": "A_S-F_twister"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mark9",
+        "WS0002": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "flak",
+        "WS0004": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

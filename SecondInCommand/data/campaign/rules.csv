@@ -1,0 +1,49 @@
+id,trigger,conditions,script,text,options,notes
+,,,,,,
+sc_hire_officerStart,PickGreeting,$sc_hireable score:1000,"ShowPersonVisual
+SCOfficerHireDialog","После короткого ожидания ваш запрос на связь принимают.
+
+$personName оценивающе осматривает вас.
+
+""Слышал, вам может понадобиться дополнительная помощь.""",,
+,,,,,,
+"#Set Skillpoints to 0, skipping the skill screen. Make sure to restore them somewhere else",,,,,,
+sc_nex_NGCDone,NewGameOptionSelected,"$option == nex_NGCDone score:100000
+!$sc_do_not_trigger_again","SCStoreSkillpoints true
+",,,
+"Override Vanilla Start for now, hopefully no conflicts, but cant skip the screen otherwise",,,,,,
+ngcTutorialPicked,NewGameOptionSelected,$option == ngcTutorial,"NGCSetStartingLocation Galatia 1000 -15000
+NGCAddStandardStartingScript
+#NGCSetWithTimePass false
+SCStoreSkillpoints false
+NGCDone",,,
+ngcSkipTutorialPicked,NewGameOptionSelected,$option == ngcSkip,"$ngcSkipTutorial = true
+NGCAddCharacterPoints 1
+NGCSetStartingLocation Corvus -2500 3000
+NGCAddStandardStartingScript
+#NGCSetWithTimePass false
+SCStoreSkillpoints false
+NGCDone",,,
+,,,,,,
+#Encounter,,,,,,
+sc_FleetEncounter,BeginFleetEncounter,"!SCCheckForEncounterTag
+!$player.sc_fleet_encountered score:1000000","$player.sc_fleet_encountered = true 0
+FireBest BeginFleetEncounter
+FireAll SCFleetEncounterScript
+",,,
+sc_FleetEncounter2,BeginFleetEncounter2,"SCCheckForEncounterTag
+!$player.sc_fleet_encountered score:1000000","$player.sc_fleet_encountered = true 0
+FireBest BeginFleetEncounter
+FireAll SCFleetEncounterScript
+",,,
+sc_FleetEncounterScript,SCFleetEncounterScript,,SCAddOfficersToFleetInteraction,,,
+,,,,,,
+#sc_fleet_info,DialogOptionSelected,"SCIsFleetInteraction 
+$option == INIT score:10000000",,Тестовый текст SC 2,,
+,,,,,,
+,,,,,,
+sc_startingBarEvent,AddBarEvents,"!$market.isHidden
+!$global.sc_selectedStart
+ShouldShowSiCBarEvent
+","AddBarEvent scBarStart ""Поговорить с человеком, продающим офицерские контракты"" ""Кто-то пытается продать несколько контрактов на офицеров"" highlight",,,
+sc_startingBarEventStart,DialogOptionSelected,$option == scBarStart,SCStartBarEventDialog,,,

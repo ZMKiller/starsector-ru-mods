@@ -1,0 +1,116 @@
+{
+  "hullName": "Dirge",
+  "hullId": "dpl_dirge",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dpl_dirge.png",
+  "style": "HIGH_TECH",
+  "height": 88,
+  "width": 88,
+  "center": [44, 44],
+  "collisionRadius": 136,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 126,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12, 34]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [12, -34]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [33, 14]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [33, -14]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [15, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-39, 34],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-39, -34],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-46, 15],
+      "length": 48,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-46, -15],
+      "length": 48,
+      "width": 22,
+      "angle": -180,
+      "contrailSize": 22,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    22, -5.5,
+    44, -8,
+    48, -24.5,
+    -11, -48,
+    -44.5, -37,
+    -44.5, 37,
+    -11, 48,
+    48, 24.5,
+    44, 8,
+    22, 5.5
+  ]
+}

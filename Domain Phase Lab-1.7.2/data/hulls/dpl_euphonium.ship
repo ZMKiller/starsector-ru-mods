@@ -1,0 +1,169 @@
+{
+  "hullName": "Euphonium",
+  "hullId": "dpl_euphonium",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/dpl_euphonium.png",
+  "style": "HIGH_TECH",
+  "height": 200,
+  "width": 124,
+  "center": [62, 100],
+  "collisionRadius": 144.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 132,
+  "viewOffset": 0,
+  "builtInMods": [
+    "dpl_pd_targeting_core",
+    "dpl_hei"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 90,
+      "locations": [-43, 21]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -90,
+      "locations": [-43, -21]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 90,
+      "locations": [5, 35]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -90,
+      "locations": [5, -35]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [66, 50]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": -0,
+      "locations": [66, -50]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [67, 16]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": -0,
+      "locations": [67, -16]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-85, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-90.5, 28],
+      "length": 57,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-90.5, -28],
+      "length": 57,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-92, 18],
+      "length": 61.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-92, -18],
+      "length": 61.5,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-94, 7],
+      "length": 67,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-94, -7],
+      "length": 67,
+      "width": 19,
+      "angle": -180,
+      "contrailSize": 19,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    90.5, -38.5,
+    70, -60,
+    33.5, -62.5,
+    22, -51.5,
+    -53, -43.5,
+    -76.5, -43.5,
+    -89.5, -36,
+    -92.5, -16,
+    -92.5, 16,
+    -89.5, 36,
+    -76.5, 43.5,
+    -53, 43.5,
+    22, 51.5,
+    33.5, 62.5,
+    70, 60,
+    90.5, 38.5
+  ]
+}

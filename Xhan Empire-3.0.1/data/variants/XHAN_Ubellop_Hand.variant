@@ -1,0 +1,40 @@
+{
+  "variantId": "XHAN_Ubellop_Hand",
+  "hullId": "XHAN_Ubellop",
+  "displayName": "Hand Of The Emperor",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 9,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "magazines",
+    "fluxcoil",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Xhan_Yazer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "Xhan_Zhuk"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "Chok_point_def"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

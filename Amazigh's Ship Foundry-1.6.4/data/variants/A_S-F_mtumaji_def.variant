@@ -1,0 +1,40 @@
+{
+  "variantId": "A_S-F_mtumaji_def",
+  "hullId": "A_S-F_mtumaji",
+  "displayName": "Ark Defender",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 4,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "A_S-F_lilin",
+        "WS0002": "A_S-F_lilin"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "A_S-F_nieuport"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_kombeo"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,51 @@
+{
+  "variantId": "sfcstymphalia_Support",
+  "hullId": "sfcstymphalia",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 24,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "sfcmicromlms",
+        "WS0004": "sfcamregular",
+        "WS0005": "sfcamregular",
+        "WS0006": "sfcamregular"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "sfcammissilepod",
+        "WS0003": "sfcammissilepod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "sfcamplusmissile"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "sfclightdestabilizer",
+        "WS0009": "sfclightdestabilizer",
+        "WS0010": "sfclightdestabilizer"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

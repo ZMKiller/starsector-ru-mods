@@ -1,0 +1,24 @@
+{
+    "baseHullId":"tahlan_stahlherz",
+    "skinHullId":"tahlan_stahlherz_c",
+    "hullName":"Silberblut Regalia",
+    "descriptionId":"tahlan_stahlherz",
+    #"spriteName":"graphics/tahlan/ships/ma/tahlan_stahlherz.png",
+    "baseValueMult":1,
+    "restoreToBaseHull":false,
+    "addHints":[],
+	"systemId":"tahlan_weaponstabilization",
+    "tech":"Rosenritter",
+    "removeWeaponSlots":[], 		# ids
+    "removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[], 		# hullmod ids
+    "removeBuiltInWeapons":[
+		"WEAPON_L",
+		"WEAPON_R",
+	],
+    #"builtInMods":[	],
+    "builtInWeapons":{
+        "WEAPON_L": "tahlan_strahlfaust_l",
+		"WEAPON_R": "tahlan_nadel_r",
+    }
+}

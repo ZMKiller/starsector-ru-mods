@@ -1,0 +1,178 @@
+{
+    "hullName": "Nebula (BA)",
+    "hullId": "ls_nebula_ba",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_nebula_ba.png",
+    "height": 190,
+    "width": 108,
+    "center": [
+        54, 95
+    ],
+    "collisionRadius": 121,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 120,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_bloodaxes",
+        "rugged",
+        "ls_ramshackle",
+        "ls_landa"
+    ],
+    "builtInWeapons": {
+        "WS 008": "ls_boarding_toob"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 50,
+            "locations": [
+                    74.5,     28.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 310,
+            "locations": [
+                    74.5,    -28.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "renderOrderMod": 10,
+            "arc": 200,
+            "angle": 60,
+            "locations": [
+                    51.5,       35
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "renderOrderMod": 10,
+            "arc": 200,
+            "angle": 300,
+            "locations": [
+                    51.5,      -35
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 90,
+            "locations": [
+                     -28,     37.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 270,
+            "locations": [
+                     -28,    -37.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 220,
+            "locations": [
+                   -76.5,      -27
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 140,
+            "locations": [
+                   -76.5,       27
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                    78.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -92.5, 12
+            ],
+            "length": 96,
+            "width": 24,
+            "angle": 180,
+            "contrailSize": 108,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -92.5, -12
+            ],
+            "length": 96,
+            "width": 24,
+            "angle": 180,
+            "contrailSize": 108,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -92.5,      -18,
+           -79.5,    -38.5,
+             -66,      -33,
+           -17.5,      -52,
+            -9.5,      -29,
+        
+               0,    -38.5,
+              57,    -47.5,
+              91,    -17.5,
+              91,     17.5,
+              57,     47.5,
+        
+               0,     38.5,
+            -9.5,       29,
+           -17.5,       52,
+             -66,       33,
+           -79.5,     38.5,
+        
+           -92.5,       18
+    # 16 points total.
+    ]
+}

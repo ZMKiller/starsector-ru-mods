@@ -1,0 +1,139 @@
+{
+  "hullName": "Ketsil",
+  "hullId": "XHAN_Ketsil",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/Xhan_Ketsil.png",
+  "style": "XHANTECH",
+  "coversColor": "159,161,151,255",
+  "height": 140,
+  "width": 154,
+  "center": [77, 63],
+  "collisionRadius": 106.5,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 89,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ground_support",
+    "XHAN_Gen1_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 181,
+      "angle": 45,
+      "locations": [34, 39]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 181,
+      "angle": -45,
+      "locations": [34, -39]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -134,
+      "locations": [-29, -39]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 134,
+      "locations": [-29, 39]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 0,
+      "locations": [44, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -48, -0,
+        -47, -0
+      ]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [52, -39]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [52, 39]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-63, -39],
+      "length": 58.5,
+      "width": 37,
+      "angle": 180,
+      "contrailSize": 37,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-63, 39],
+      "length": 58.5,
+      "width": 37,
+      "angle": -180,
+      "contrailSize": 37,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    65.5, -18.5,
+    44.5, -21.5,
+    51, -39.5,
+    41, -55,
+    7, -57,
+    -10, -75.5,
+    -32.5, -75.5,
+    -32.5, -58,
+    -61.5, -50.5,
+    -61.5, -28.5,
+    -55, -13,
+    -55, 13,
+    -61.5, 28.5,
+    -61.5, 50.5,
+    -32.5, 58,
+    -32.5, 75.5,
+    -10, 75.5,
+    7, 57,
+    41, 55,
+    51, 39.5,
+    44.5, 21.5,
+    65.5, 18.5,
+    75.5, -0
+  ]
+}

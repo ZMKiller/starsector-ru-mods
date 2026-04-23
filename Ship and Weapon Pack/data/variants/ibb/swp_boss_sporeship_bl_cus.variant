@@ -1,0 +1,63 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 0,
+    "fluxVents": 13,
+    "goalVariant": true,
+    "hullId": "swp_boss_sporeship_bl",
+    "hullMods": [
+        "solar_shielding",
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair",
+        "fluxbreakers",
+        "armoredweapons",
+        "turretgyros"
+    ],
+    "permaMods": [
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "sMods": [
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "variantId": "swp_boss_sporeship_bl_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "swp_inferno"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "swarmer",
+                "WS0006": "swarmer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "lightdualac",
+                "WS0004": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyburst"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "mininglaser",
+                "WS0008": "mininglaser"
+            }
+        }
+    ]
+}

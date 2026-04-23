@@ -1,0 +1,60 @@
+{
+  "id": "Xhan_Kobraz",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_Kobraz_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "everyFrameEffect": "org.xhan.weapons.XHAN_KobrazWeaponScript",
+  "displayArcRadius": 700,
+  "turretSprite": "graphics/weapons/Xhan_Plasteen_Kobraz_TURRET.png",
+  "hardpointSprite": "graphics/weapons/Xhan_Plasteen_Kobraz_HARDPOINT.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "visualRecoil": 6,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    8.5,
+    -6.5,
+    8.5,
+    6.5
+  ],
+  "turretAngleOffsets": [
+    -35,
+    35
+  ],
+  "hardpointOffsets": [
+    11.5,
+    -6.5,
+    11.5,
+    6.5
+  ],
+  "hardpointAngleOffsets": [
+    -35,
+    35
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 10,
+    "spread": 10,
+    "particleSizeMin": 8,
+    "particleSizeRange": 18,
+    "particleDuration": 0.1,
+    "particleCount": 20,
+    "particleColor": [
+      81,
+      222,
+      69,
+      180
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_KOBRAZ_FIRE_SOUND"
+}

@@ -1,0 +1,50 @@
+{
+  "variantId": "TTE_quietus_standard",
+  "hullId": "TTE_quietus",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 29,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_cargo_holds"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pulselaser",
+        "WS0002": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "irpulse",
+        "WS0005": "irpulse",
+        "WS0006": "irpulse",
+        "WS0007": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "TTE_pdirpulse",
+        "WS0009": "TTE_pdirpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "TTE_pdpulselaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

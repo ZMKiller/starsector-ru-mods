@@ -1,0 +1,87 @@
+{
+  "hullName": "Coeus CS-50",
+  "hullId": "sfccoeus",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/patrol_tanker_frigatev2.png",
+  "style": "MIDLINE",
+  "height": 78,
+  "width": 90,
+  "center": [36.5, 42],
+  "collisionRadius": 67.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 62,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-19, 21.5],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [19, 23.5],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [13.5, -41.5],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [-7, -0.5],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [14, -26],
+      "renderOrderMod": 300
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-38, -0],
+      "length": 50,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -27.5, 28.5,
+    29, 28,
+    27.5, -25.5,
+    2, -45.5,
+    -22, -24,
+    -29, -0.5
+  ]
+}

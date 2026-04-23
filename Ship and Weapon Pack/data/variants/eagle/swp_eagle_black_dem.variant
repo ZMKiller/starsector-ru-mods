@@ -1,0 +1,49 @@
+{
+    "displayName": "DEM",
+    "fluxCapacitors": 4,
+    "fluxVents": 30,
+    "hullId": "swp_eagle_black",
+    "hullMods": ["missile_autoloader"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_eagle_black_dem",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "heavymauler",
+                "WS 008": "heavymauler",
+                "WS 013": "heavymauler"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "gazer",
+                "WS 002": "gazer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "swp_lightninggun",
+                "WS 006": "swp_lightninggun",
+                "WS 009": "swp_lightninggun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "pdlaser",
+                "WS 004": "pdlaser",
+                "WS 010": "pdlaser",
+                "WS 011": "pdlaser",
+                "WS 012": "pdlaser"
+            }
+        }
+    ]
+}

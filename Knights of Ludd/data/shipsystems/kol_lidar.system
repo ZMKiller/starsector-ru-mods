@@ -1,0 +1,24 @@
+{
+	"id":"kol_lidar",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+    "aiScript":"org.selkie.kol.shipsystems.AI.LidarAI",
+	
+	"statsScript":"org.selkie.kol.shipsystems.LidarStats",
+
+	#"runScriptWhilePaused":true, # only for the player's ship
+	"runScriptWhileIdle":true, # unapply() never gets called
+		
+	"fadeActivationSoundOnChargedown":true,
+	#"useSound":"system_entropy",
+	#"loopSound":"system_entropy_loop",
+	#"deactivateSound":"system_entropy_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}
+
+
+
+

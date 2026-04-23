@@ -1,0 +1,130 @@
+{
+  "hullName": "Dram",
+  "hullId": "swp_dram_luddic_path",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/swp/ships/dram/tanker_small_luddic_path.png",
+  "style": "LOW_TECH",
+  "height": 132,
+  "width": 90,
+  "center": [46, 48],
+  "collisionRadius": 120,
+  "shieldCenter": [17, 0],
+  "shieldRadius": 100,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ill_advised",
+    "safetyoverrides"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [28, -6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [66, -27]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 45,
+      "locations": [60, 21]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 225,
+      "locations": [-27, -21]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 155,
+      "locations": [-29, 31.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44, 23],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, 6],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, -7],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, -19],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, -28],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -4, 37,
+    0, 26,
+    24.5, 27,
+    42, 35,
+    76, 39,
+    78, -5,
+    74, -16.5,
+    75, -36,
+    51, -34,
+    40, -26,
+    2, -25,
+    1, -38,
+    -28, -37,
+    -27, -31,
+    -42, -31,
+    -42, 11,
+    -32, 15,
+    -43, 18,
+    -42, 27,
+    -30, 27,
+    -28, 36
+  ]
+}

@@ -1,0 +1,59 @@
+{
+    "displayName": "Civilian Transport",
+    "fluxCapacitors": 0,
+    "fluxVents": 48,
+    "goalVariant": false,
+    "hullId": "invictus",
+    "hullMods": [
+        "auxiliary_fuel_tanks",
+        "expanded_cargo_holds",
+        "pointdefenseai",
+        "fluxbreakers",
+        "additional_berthing",
+        "efficiency_overhaul",
+        "augmentedengines",
+    ],
+    "permaMods": [
+        "additional_berthing",
+        "efficiency_overhaul",
+        "augmentedengines",
+    ],
+    "sMods": [
+        "additional_berthing",
+        "efficiency_overhaul",
+        "augmentedengines",
+    ],
+    "variantId": "swp_invictus_cursed",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "hellbore",
+                "WS 002": "hellbore",
+                "WS 009": "hellbore",
+                "WS 010": "hellbore"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "squall",
+                "WS 007": "squall"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "swp_tripleflak",
+                "WS 003": "swp_tripleflak",
+                "WS 005": "swp_tripleflak",
+                "WS 006": "swp_tripleflak",
+                "WS 008": "swp_tripleflak",
+                "WS 026": "swp_tripleflak"
+            }
+        }
+    ]
+}

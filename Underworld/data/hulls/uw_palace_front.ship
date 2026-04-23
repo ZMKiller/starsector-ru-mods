@@ -1,0 +1,156 @@
+{
+  "hullName": "Palace Front Section",
+  "hullId": "uw_palace_front",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/uw/ships/palace/uw_palace_front.png",
+  "style": "HIGH_TECH",
+  "height": 263,
+  "width": 292,
+  "center": [146, 128],
+  "collisionRadius": 209,
+  "shieldCenter": [-20, -0],
+  "shieldRadius": 189,
+  "viewOffset": 0,
+  "builtInMods": [
+    "uw_cabal_upgrades",
+    "uw_linkedhull",
+    "chassis_storage",
+    "missile_reload",
+    "reduced_explosion",
+    "always_detaches",
+    "advancedcore"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -40.5, 104.5,
+        -31, 105,
+        -55.5, 107.5,
+        -64.5, 111,
+        -48, 113
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -40.5, -104.5,
+        -31, -105,
+        -55.5, -107.5,
+        -64.5, -111,
+        -48, -113
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 0,
+      "locations": [105, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 45,
+      "locations": [75, 30]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -45,
+      "locations": [75, -30]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": 50,
+      "locations": [-5, 87]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": -50,
+      "locations": [-5, -87]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 90,
+      "locations": [-106, 83]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -90,
+      "locations": [-106, -83]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    133.5, -14,
+    73.5, -71.5,
+    30, -94.5,
+    1, -120.5,
+    -8, -114.5,
+    -29, -138,
+    -61.5, -145,
+    -80, -133.5,
+    -92, -138,
+    -117.5, -121.5,
+    -111, -112,
+    -111, -97.5,
+    -126.5, -81.5,
+    -102.5, -57,
+    -101.5, -41,
+    -54.5, -60,
+    -16.5, -42.5,
+    -4, -0,
+    -16.5, 42.5,
+    -54.5, 60,
+    -101.5, 41,
+    -102.5, 57,
+    -126.5, 81.5,
+    -111, 97.5,
+    -111, 112,
+    -117.5, 121.5,
+    -92, 138,
+    -80, 133.5,
+    -61.5, 145,
+    -29, 138,
+    -8, 114.5,
+    1, 120.5,
+    30, 94.5,
+    73.5, 71.5,
+    133.5, 14
+  ]
+}

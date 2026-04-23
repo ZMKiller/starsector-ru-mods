@@ -1,0 +1,49 @@
+{
+  "id": "TTE_lplasma",
+  "specClass": "projectile",
+  "projectileSpecId": "lplasma_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/lplasma_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/lplasma_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/lplasma_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/lplasma_hardpoint_glow.png",
+  "glowColor": [
+    0,
+    150,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    28.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    38,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": -34,
+    "spread": 15,
+    "particleSizeMin": 15,
+    "particleSizeRange": 15,
+    "particleDuration": 0.15,
+    "particleCount": 30,
+    "particleColor": [
+      0,
+      150,
+      150,
+      255
+    ]
+  },
+  "fireSoundTwo": "plasma_cannon_fire"
+}

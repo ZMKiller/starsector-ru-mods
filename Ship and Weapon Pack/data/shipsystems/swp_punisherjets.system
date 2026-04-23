@@ -1,0 +1,27 @@
+{
+    "id":"swp_punisherjets",
+    "type":"ENGINE_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.shipsystems.ai.SWP_PunisherJetsAI",
+
+    "statsScript":"data.scripts.shipsystems.SWP_PunisherJetsStats",
+
+    "engineGlowContrailColor":[70,50,30,255],
+    "engineGlowLengthMult":1.5,
+    "engineGlowWidthMult":1.5,
+    "engineGlowGlowMult":1.5,
+
+    "flameoutOnImpactChance":0.2,
+
+    "clampTurnRateAfter":false,
+    "clampMaxSpeedAfter":false,
+    "alwaysAccelerate":true,
+
+    "outOfUsesSound":"engine_disabled",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":350,
+        "averageSpeedIncrease":35,
+    }
+}

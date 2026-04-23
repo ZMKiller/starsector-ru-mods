@@ -1,0 +1,267 @@
+{
+    "hullName": "Mora (DS)",
+    "hullId": "ls_mora_ds",
+    "hullSize": "CRUISER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/mora looted.png",
+    "height": 190,
+    "width": 220,
+    "center": [
+        110, 95
+    ],
+    "collisionRadius": 140,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 132,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_deathskull",
+        "ls_orky",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      63,       61
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      76,       88
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 45,
+            "locations": [
+                    43.5,       81
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 190,
+            "angle": 90,
+            "locations": [
+                   -13.5,       69
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "renderOrderMod": 1,
+            "arc": 180,
+            "angle": -60,
+            "locations": [
+                     9.5,      -74
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -10,
+            "locations": [
+                    57.5,      -36
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -45,
+            "locations": [
+                    40.5,      -62
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": -90,
+            "locations": [
+                     -10,      -95
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": -120,
+            "locations": [
+                   -53.5,      -63
+            ]
+        },
+        {
+            "id": "WS 009",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 180,
+            "locations": [
+                     -68,        4
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "LARGE",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 300,
+            "locations": [
+                    71.5,       -4,
+                      60,        7,
+                     -58,    -12.5,
+                     -53,       25
+            ]
+        },
+        {
+            "id": "LB 001",
+            "size": "LARGE",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 300,
+            "locations": [
+                      40,       -4,
+                    32.5,      7.5,
+                   -47.5,     18.5,
+                     -48,    -12.5
+            ]
+        },
+        {
+            "id": "LB 002",
+            "size": "LARGE",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 300,
+            "locations": [
+                      53,       20,
+                      25,       19,
+                    16.5,       -4,
+                     -49,       33
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -73, 78
+            ],
+            "length": 28,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -72.5, 64
+            ],
+            "length": 28,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -71.5, 55.5
+            ],
+            "length": 28,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -77, -53
+            ],
+            "length": 28,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -76, -64
+            ],
+            "length": 28,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -75.5, -74.5
+            ],
+            "length": 28,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+              88,      -32,
+              90,      -13,
+              65,     34.5,
+              57,       49,
+            57.5,       95,
+        
+             -74,      100,
+             -74,     49.5,
+             -93,       41,
+             -73,     32.5,
+           -73.5,      -15,
+        
+             -94,      -27,
+             -62,      -35,
+           -61.5,      -45,
+           -75.5,    -47.5,
+           -74.5,      -79,
+        
+           -58.5,    -95.5,
+              12,     -100,
+              49,    -58.5
+    # 18 points total.
+    ]
+}

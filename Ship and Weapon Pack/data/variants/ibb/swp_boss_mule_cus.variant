@@ -1,0 +1,53 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 20,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "swp_boss_mule",
+    "hullMods": [
+        "targetingunit",
+        "eccm",
+        "heavyarmor",
+        "missleracks"
+    ],
+    "permaMods": [
+        "targetingunit",
+        "eccm",
+        "heavyarmor"
+    ],
+    "sMods": [
+        "targetingunit",
+        "eccm",
+        "heavyarmor"
+    ],
+    "variantId": "swp_boss_mule_cus",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "tachyonlance"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "swp_tornado",
+                "WS 002": "swp_tornado"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "railgun",
+                "WS 006": "railgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 005": "vulcan"}
+        }
+    ],
+    "wings": []
+}

@@ -1,0 +1,10 @@
+{
+    "startingDifficulty":0, # Default: 0 ; Minimum: 0 ; Maximum: 7
+        # This option essentially gives you a fast start (complete with powerups gained), but you will not earn points from skipped content
+        # For example, selecting 7 skips all of the content except the final boss and the mooks immediately preceeding the final boss
+    "difficultyScalar":1.0, # Default: 1.0 ; Minimum: 0.0
+        # Influences enemy stats, with a proportional scalar applied to points gained
+        # Higher values make the game dramatically more difficult, but increase points earned
+    "playerShip":"swp_arcade_superhyperion_str", # Default: "swp_arcade_superhyperion_str"
+        # Determines the ship you get to play as
+}

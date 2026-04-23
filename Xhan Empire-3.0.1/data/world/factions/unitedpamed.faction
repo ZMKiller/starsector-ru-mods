@@ -1,0 +1,231 @@
+{
+	id:"unitedpamed",
+	"color":[96,81,146,255],
+	"secondaryUIColor":[233,232,234,255],
+        "secondarySegments":6,
+	"baseUIColor": [96, 81, 146, 255],
+    "darkUIColor": [80, 69, 116, 175],
+    "gridUIColor": [226, 184, 91, 75],	
+	"displayName":"United Pamed",
+	"displayNameWithArticle":"United Pamed",
+	"displayNameLong":"United Pamed",
+	"displayNameLongWithArticle":"United Pamed",
+	"logo":"graphics/factions/Pamed_P.png",
+	"crest":"graphics/factions/Pamed_Crest.png",
+	"shipNamePrefix":"UPD",
+	"shipNameSources":{
+		"JAPANESE":2,
+		"NORDIC":1,
+		"MERCANTILE":2,
+		"SPACE":2,
+		"GENERAL":2,
+	},
+	"description":"No description yet.",
+	"names":{
+		"modern":1,
+		"old english":1,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp", "hightech_bp"],
+		"hulls":[
+			"PAMED_odonata",
+			"PAMED_anuran",
+			"PAMED_ultra233",
+			"PAMED_urodelan",
+			"PAMED_buffalo",
+			"PAMED_drover",
+			"PAMED_carillon",
+		],
+	},
+	"knownShips":{
+		"tags":["base_bp", "hightech_bp", "tritachyon"],
+		"hulls":[
+			"PAMED_odonata",
+			"PAMED_anuran",
+			"PAMED_ultra233",
+			"PAMED_urodelan",
+			"PAMED_buffalo",
+			"PAMED_drover",
+			"PAMED_carillon",
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+			"PAMED_odonata",
+			"PAMED_anuran",
+			"PAMED_ultra233",
+			"PAMED_urodelan",
+			"PAMED_buffalo",
+			"PAMED_drover",
+			"PAMED_carillon",
+		],
+	},
+	"knownFighters":{
+		"tags":["base_bp", "hightech_bp", "tritachyon"],
+		"fighters":[
+			"xyphos_wing",
+			"thunder_wing",
+			"claw_wing",
+			"trident_wing",
+			"cobra_wing",
+			"longbow_wing",
+		],
+	},
+	"priorityFighters":{
+		"tags":[],
+		"fighters":[
+		],
+	},
+	"knownWeapons":{
+		"tags":["base_bp", "midline_bp", "missile_bp", "hightech_bp", "tritachyon"],
+		"weapons":[
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"pdburst",
+			"amblaster",
+			"phasebeam",
+			"heavyblaster",
+			"heavyburst",
+			"ionpulser",
+			"ionbeam",
+			"plasma",
+			"guardian",
+			"tachyonlance",
+		],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "tritachyon"],
+		"hullMods":[
+			"advancedshieldemitter", # accelerated
+			"advancedoptics",
+			"turretgyros",
+			"augmentedengines",
+			"eccm",
+			"ecm",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",  # makeshift
+			"hardenedshieldemitter",
+			"insulatedengine",
+			"pointdefenseai",
+			"targetingunit",
+			"nav_relay",
+			"adaptiveshields", # omni
+			"operations_center",
+			"fluxbreakers",
+			"stabilizedshieldemitter",
+			"hiressensors",
+			"efficiency_overhaul",
+		],
+	},
+	"factionDoctrine":{
+		"warships":3,
+		"carriers":1,
+		"phaseShips":2,
+		
+		"officerQuality":3,
+		"shipQuality":5,
+		"numShips":2,
+		
+		"shipSize":4,
+		
+		"aggression":3,
+		
+		"combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0.33,# as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+		],
+	},
+	"illegalCommodities":[
+		"drugs",
+		"organs",
+		"ai_cores", 
+	],
+	"music":{
+		"theme":"music_pirates_encounter_neutral",
+		"market_neutral":"music_pirates_encounter_neutral",
+		"market_hostile":"music_pirates_encounter_hostile",
+		"market_friendly":"music_pirates_encounter_friendly",
+	},
+	"internalComms":"tritachyon_internal",
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/PamedTroop2.png",
+			"graphics/portraits/PamedTroop3.png",
+			"graphics/portraits/PamedTroop4.png",
+
+		],
+		"standard_female":[
+			"graphics/portraits/PamedTroop1.png",
+			"graphics/portraits/PamedTroop5.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"General"},
+			"factionLeader":{"name":"Generalissimo"},
+		},
+		"posts":{
+			"factionLeader":{"name":"Generalissimo"},
+			"baseCommander":{"name":"Commandant"},
+		},
+	},
+	"custom":{
+		"offersCommissions":true,
+		"engagesInHostilities":faslse,
+		"buysAICores":true,
+		"AICoreValueMult":2.5,
+		"AICoreRepMult":0.5,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,
+		"punitiveExpeditionData":{
+			"vsCompetitors":false,
+			"vsFreePort":false,
+			"canBombard":false,
+			"territorial":false,
+		},
+	},	
+	"fleetTypeNames":{
+		"trade":"Trader",
+		"tradeLiner":"Spaceline Services",
+		"tradeSmuggler":"Discreet Trader",
+		"smallTrader":"Distributors",
+		
+		"patrolSmall":"Light Patrol",
+		"patrolMedium":"Security Fleet",
+		"patrolLarge":"Defense Fleet",
+				
+		"foodReliefFleet":"Relief Convoy",
+
+	}
+},
+

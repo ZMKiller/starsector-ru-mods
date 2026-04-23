@@ -1,0 +1,38 @@
+{
+  "variantId": "XHAN_Ubellop_Raider",
+  "hullId": "XHAN_Ubellop",
+  "displayName": "Raider",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 9,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "fluxdistributor",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Steizok_Autogun"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "Xhan_Bloz_small"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

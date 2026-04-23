@@ -1,0 +1,63 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "hulls":{
+            "A_S-F_rinka_p":0.9, # rarer than normal pirate ships, because it can be kinda nasty
+            "A_S-F_scrag":0.9, # rarer than normal pirate ships, because the burn is too funny
+        },
+    },
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "hulls":[
+            "A_S-F_rinka_p",
+            "A_S-F_morris_p",
+            "A_S-F_scrag",
+        ],
+    },
+
+    "knownShips":{
+        "hulls":[
+            "A_S-F_rinka_p",
+            "A_S-F_morris_p",
+            "A_S-F_scrag",
+        ],
+    },
+
+	"knownWeapons":{
+		"weapons":[
+			"A_S-F_kaksos",
+			"A_S-F_laaja",
+			"A_S-F_copperhead",
+			"A_S-F_nexter",
+
+			"A_S-F_bramble",
+			"A_S-F_thicket",
+			"A_S-F_wasteland",
+			"A_S-F_destructor",
+			"A_S-F_contradict",
+			"A_S-F_twister",
+		],
+	},
+	"knownHullMods":{
+		"hullMods":[
+			"A_S-F_anarchyBallistic",
+			"A_S-F_anarchyEnergy",
+			"A_S-F_anarchyFlux",
+			"A_S-F_anarchyShields",
+			"A_S-F_anarchyTargeting",
+		],
+	},
+
+	"hullmodSellFrequency":{
+		"A_S-F_anarchyBallistic":2,
+		"A_S-F_anarchyEnergy":2,
+		"A_S-F_anarchyFlux":2,
+		"A_S-F_anarchyShields":2,
+		"A_S-F_anarchyTargeting":2,
+	},
+
+},

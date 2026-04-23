@@ -1,0 +1,68 @@
+{
+    "displayName": "Warlord",
+    "fluxCapacitors": 25,
+    "fluxVents": 32,
+    "goalVariant": false,
+    "hullId": "ls_star_krumpa_ds",
+    "hullMods": [
+        "ls_explody_propella",
+        "ls_bosspole",
+        "targetingunit",
+        "ls_grot_rigger"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_star_krumpa_ds_warlord",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_deth_kannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_mega_bolta",
+                "WS 006": "ls_mega_bolta",
+                "WS 005": "ls_mega_bolta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "ls_flakka_dakka",
+                "WS 013": "ls_flakka_dakka",
+                "WS 016": "ls_flakka_dakka",
+                "WS 003": "ls_twin_shoota",
+                "WS 002": "ls_twin_shoota"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 018": "ls_shoota_launcha",
+                "WS 019": "ls_shoota_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 009": "ls_rokkit_lobba",
+                "WS 008": "ls_rokkit_lobba"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "ls_zzap_kannon",
+                "WS 011": "ls_zzap_kannon"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "displayName": "Very Mobile",
+    "fluxCapacitors": 5,
+    "fluxVents": 0,
+    "hullId": "swp_cathedral",
+    "hullMods": [
+        "auxiliarythrusters",
+        "unstable_injector",
+        "heavyarmor",
+        "safetyoverrides",
+        "augmentedengines",
+        "nav_relay"
+    ],
+    "modules": [
+        {"SECTION_BASE": "swp_cathedral_base_std"},
+        {"SECTION_REAR": "swp_cathedral_rear_arm"}
+    ],
+    "permaMods": [
+        "safetyoverrides",
+        "augmentedengines",
+        "nav_relay"
+    ],
+    "sMods": [
+        "safetyoverrides",
+        "augmentedengines",
+        "nav_relay"
+    ],
+    "variantId": "swp_cathedral_cursed",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "swp_redeemer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "swp_flareburst",
+                "WS0003": "swp_flareburst"
+            }
+        }
+    ],
+    "wings": [
+        "longbow_wing",
+        "longbow_wing"
+    ]
+}

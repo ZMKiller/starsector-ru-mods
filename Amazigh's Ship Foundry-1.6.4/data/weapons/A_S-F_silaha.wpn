@@ -1,0 +1,28 @@
+{
+	"id":"A_S-F_silaha",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"everyFrameEffect": "org.amazigh.foundry.scripts.arktech.ASF_SilahaWeaponScript",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"turretSprite":"graphics/weapons/A_S-F_silaha_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_silaha_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_silaha_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_silaha_hardpoint_glow.png",
+	"glowColor":[200,255,200,255],
+	"turretOffsets":[7,0],  #31
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[15,0],  #39
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING",
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":110.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":18.0,
+					   "particleSizeRange":22.0,
+					   "particleDuration":0.3,
+					   "particleCount":26,
+					  "particleColor":[100,175,100,200]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"A_S-F_silaha_shot",  # projectile that will be fired
+	"fireSoundTwo":"A_S-F_silaha_fire",
+}

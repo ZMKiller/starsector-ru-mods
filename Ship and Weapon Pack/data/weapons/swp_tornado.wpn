@@ -1,0 +1,46 @@
+{
+    "id":"swp_tornado",
+    "specClass":"projectile",
+    "type":"MISSILE",
+    "size":"MEDIUM",
+    "turretSprite":"graphics/swp/weapons/swp_hornet_launcher_turret_base.png",
+    "hardpointSprite":"graphics/swp/weapons/swp_hornet_launcher_hardpoint_base.png",
+    "hardpointOffsets": [
+        10,
+        -8,
+        10,
+        -3,
+        10,
+        3,
+        10,
+        8
+    ],
+    "turretOffsets": [
+        7,
+        -8,
+        7,
+        -3,
+        7,
+        3,
+        7,
+        8
+    ],
+    "hardpointAngleOffsets":[0, 0, 0, 0],
+    "turretAngleOffsets":[0, 0, 0, 0],
+    "barrelMode":"ALTERNATING",
+    "animationType":"SMOKE",
+    "renderHints":[RENDER_LOADED_MISSILES],
+    "interruptibleBurst":false,
+    "smokeSpec":{"particleSizeMin":10.0,
+                 "particleSizeRange":14.0,
+                 "cloudParticleCount":3,
+                 "cloudDuration":1.5,
+                 "cloudRadius":12.0;
+                 "blowbackParticleCount":3,
+                 "blowbackDuration":0.45,
+                 "blowbackLength":20.0,
+                 "blowbackSpread":6.0,
+                 "particleColor":[190,180,160,150]},
+    "projectileSpecId":"swp_hornet_mrm",
+    "fireSoundTwo":"swp_hornet_launch"
+}

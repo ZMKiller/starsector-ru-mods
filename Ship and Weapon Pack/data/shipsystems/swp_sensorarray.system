@@ -1,0 +1,28 @@
+{
+    "id":"swp_sensorarray",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.shipsystems.ai.SWP_SensorArrayAI",
+
+    "statsScript":"data.scripts.shipsystems.SWP_SensorArrayStats",
+
+    "jitterUnderColor":[255,255,0,50],
+    "jitterUnderCopies":10,
+    "jitterUnderMinRange":0,
+    "jitterUnderRange":5,
+    "jitterUnderRangeRadiusFraction":0,
+
+    "weaponGlowColor":[255,255,0,150],
+    "weaponTypes":[ENERGY, BALLISTIC],
+
+    "useSound":"swp_sensor_array_activate",
+    "deactivateSound":"swp_sensor_array_deactivate",
+    "outOfUsesSound":"gun_out_of_ammo",
+    "loopSound":"swp_sensor_array_loop",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

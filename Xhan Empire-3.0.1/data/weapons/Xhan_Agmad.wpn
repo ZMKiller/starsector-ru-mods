@@ -1,0 +1,51 @@
+{
+  "id": "Xhan_Agmad",
+  "specClass": "projectile",
+  "projectileSpecId": "xhan_agmad_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "",
+  "turretGlowSprite": "graphics/weapons/xhan_pharrek_gun_glow.png",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "graphics/weapons/xhan_pharrek_gun_glow.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    153,
+    255,
+    51,
+    255
+  ],
+  "turretOffsets": [
+    11,
+    3
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    7,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 120,
+    "particleSizeMin": 5,
+    "particleSizeRange": 5,
+    "particleDuration": 0.30,
+    "particleCount": 10,
+    "particleColor": [
+      153,
+      255,
+      51,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_AGMAD_FIRE_SOUND"
+}

@@ -1,0 +1,99 @@
+{
+  "hullName": "Coruscate",
+  "hullId": "A_S-F_coruscate",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_coruscate.png",
+  "style": "HIGH_TECH",
+  "height": 28,
+  "width": 40,
+  "center": [20, 15],
+  "collisionRadius": 23,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 22,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux",
+    "advancedoptics"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 0,
+      "locations": [10, -9.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 0,
+      "locations": [10, 9.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 0,
+      "locations": [3, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": 65,
+      "locations": [0, 17]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": -65,
+      "locations": [0, -17]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-9, -0],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-9, 6],
+      "length": 15,
+      "width": 5,
+      "angle": 174,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-9, -6],
+      "length": 15,
+      "width": 5,
+      "angle": -174,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    10, -13,
+    -3, -18,
+    -8, -16,
+    -8, 16,
+    -3, 18,
+    10, 13
+  ]
+}

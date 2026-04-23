@@ -1,0 +1,28 @@
+{
+	"id":"dpl_black_hole",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"mountTypeOverride":"SYNERGY",
+	"size":"SMALL",
+	"turretSprite":"graphics/weapons/dpl_black_hole_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/dpl_black_hole_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/dpl_black_hole_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/dpl_black_hole_hardpoint_glow.png",
+	"hardpointOffsets":[10, 0],
+	"turretOffsets":[7, 0],
+	"hardpointAngleOffsets":[0],
+	"turretAngleOffsets":[0],
+	"glowColor":[155,125,255,255],
+	# 3 barrels in the same spot, with different angles to ensure a spread of shots
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":40.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":15.0,
+					   "particleSizeMin":20.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.24,
+					   "particleCount":17,
+					   "particleColor":[155,155,255,255]},
+	"projectileSpecId":"dpl_black_hole_shot",  # projectile that will be fired
+	"fireSoundTwo":"amsrm_fire",
+}

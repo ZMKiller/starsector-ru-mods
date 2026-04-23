@@ -1,0 +1,64 @@
+{
+	"id":"A_S-F_twister_mirv",
+	"specClass":"missile",	
+	"missileType":"MIRV",
+	"sprite":"graphics/missiles/A_S-F_twister_mirv.png",
+	"size":[12,22],	
+	"center":[6,11],
+	"collisionRadius":14,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,165,0,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":75, # purely visual
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":150,
+				  "acc":240,
+				  "dec":200},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-10, 0],
+				    "style":"CUSTOM",
+				    "styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,145,75,255],
+						"contrailDuration":1,
+						"contrailWidthMult":0.5,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":1, # how far away from engine it starts
+						"contrailColor":[100,100,100,150],
+						"glowSizeMult":2,
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":9.0,
+				    "length":40.0,
+				    "angle":180.0}],
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":700,
+					"minTimeToSplit":2,
+					"canSplitEarly":true,
+					"splitSound":"hurricane_mirv_split",
+					"numShots":6,
+					"damage":160,
+					"impact":8,
+					"emp":0,
+					"damageType":HIGH_EXPLOSIVE,
+					"hitpoints":60,
+					"arc":150,
+					"arcOffset":180,
+					"evenSpread":true,
+					"spreadSpeed":160, #180
+					"spreadSpeedRange":60,
+					"projectileSpec":"A_S-F_twister_submunition",
+					"smokeSpec":{"particleSizeMin":20.0,
+								 "particleSizeRange":20.0,
+								 "cloudParticleCount":12,
+								 "cloudDuration":1.0,
+								 "cloudRadius":18.0,
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[165,100,60,200]}
+					}				    
+}

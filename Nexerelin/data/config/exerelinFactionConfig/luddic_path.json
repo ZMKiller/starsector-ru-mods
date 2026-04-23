@@ -1,0 +1,65 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    #"hostileToAll":2,	# no need, just use pirate logic? idk
+    "pirateFaction":true,
+    "showIntelEvenIfDead":true,
+    
+    "rebelFleetSuffix":"Heretics",
+
+    "difficultyString":"hard",
+	
+	#"factionConditionSubplugin":"exerelin.campaign.econ.faction.OutlawFCSubplugin",
+    
+    "marketSpawnWeight":0.5,
+
+    "startRelationships":{ "luddic_church":0, "tritachyon":-0.8, "pirates":-0.12, "cabal":-0.8 },
+    "minRelationships":{ "luddic_church":-0.49 },
+    "maxRelationships":{ "tritachyon":-0.51, "remnant":-0.51 },
+    
+    "vengeanceLevelNames":["Excommunication", "Interdiction", "Jihad"],
+    "vengeanceFleetNames":["Evangelists", "Inquisition", "Crusade"],
+    "vengeanceFleetNamesSingle":["Evangelists", "an Inquisition", "a Crusade Fleet"],
+    
+    "specialForcesMaxFleets":0,
+    
+    "alignments":{
+        "corporate":-1,
+        "technocratic":-1,
+        "diplomatic":-1,
+        "hierarchical":-0.5,
+        "militarist":1,
+        "ideological":1,
+    },
+    "diplomacyTraits":["paranoid", "foreverwar", "hates_ai", "anarchist"],
+    "morality":"evil",
+    
+    "freeMarket":true,
+    
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":0.9,
+    },
+    
+    "startShipsSolo":[["lasher_luddic_path_Raider"]],
+    "startShipsCombatSmall":[["enforcer_Overdriven", "cerberus_luddic_path_Attack", "kite_luddic_path_Strike"]],
+    "startShipsTradeSmall":[["swp_buffalo_luddic_path_att", "swp_dram_luddic_path_rai", "cerberus_luddic_path_Attack"]],
+    "startShipsCombatLarge":[["venture_pather_Attack", "enforcer_Overdriven", "lasher_luddic_path_Raider"]],
+    "startShipsCarrierSmall":[["swp_condor_luddic_path_rai", "swp_nebula_luddic_path_rai", "hound_luddic_path_Attack"]],
+    
+    "startSpecialItems":[
+        [["LP_package", ""]],
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+    ],
+    
+    "industrySeeds":[
+        {"id":"lightindustry", "mult":0.1},
+    ],
+    
+    "industrySpawnMults":{
+        "heavyindustry":0,
+        "fuelproduction":0,
+    },
+}

@@ -1,0 +1,140 @@
+{
+  "hullName": "Caconym",
+  "hullId": "TTE_caconym",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTE_caconym.png",
+  "style": "HIGH_TECH",
+  "height": 104,
+  "width": 50,
+  "center": [25, 52],
+  "collisionRadius": 57,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 56,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        25.5, 2,
+        25, -1
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [2, 19]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [2, -19]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [-26.5, -11]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [-26.5, 11]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-3, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44.5, 14],
+      "length": 30,
+      "width": 10,
+      "angle": 159.5,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-44.5, -14],
+      "length": 30,
+      "width": 10,
+      "angle": -159.5,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-46, 6],
+      "length": 30,
+      "width": 10,
+      "angle": 159.5,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-46, -6],
+      "length": 30,
+      "width": 10,
+      "angle": -159.5,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-47.5, 0.5],
+      "length": 27,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    50.5, -5,
+    39, -15.5,
+    10, -16.5,
+    11, -24,
+    -5, -29.5,
+    -18, -15,
+    -24, -20.5,
+    -32, -13,
+    -48.5, -19.5,
+    -54, -8.5,
+    -54, 8.5,
+    -48.5, 19.5,
+    -32, 13,
+    -24, 20.5,
+    -18, 15,
+    -5, 29.5,
+    11, 24,
+    10, 16.5,
+    39, 15.5,
+    50.5, 5
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "variantId": "TTSC_eschatologist_standard",
+  "hullId": "TTSC_eschatologist",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TTSC_riftbeam",
+        "WS0002": "TTSC_riftbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "TTSC_ionbeam",
+        "WS0004": "TTSC_ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "TTSC_heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "TTSC_hil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "TTSC_taclaser",
+        "WS0010": "TTSC_taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "pdlaser",
+        "WS0008": "pdlaser",
+        "WS0011": "pdlaser",
+        "WS0012": "pdlaser",
+        "WS0013": "pdlaser",
+        "WS0014": "pdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "harpoon",
+        "WS0016": "harpoon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "TTSC_scree_standard_wing",
+    "TTSC_riptalon_standard_wing",
+    "TTSC_equator_standard_wing"
+  ]
+}

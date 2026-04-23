@@ -1,0 +1,71 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+
+		"A_S-F_peryton_ass2":1.5,
+		"A_S-F_peryton_fs2":3,
+		"A_S-F_peryton_spr2":3,
+	},
+
+    "knownShips":{
+        "hulls":[
+            "A_S-F_peryton",
+            "A_S-F_ocklynge",
+            "A_S-F_dunnock",
+            "A_S-F_morris",
+            "A_S-F_marlow",
+            "A_S-F_glentoran",
+        ],
+    },
+
+	"knownFighters":{
+		"fighters":[
+			"A_S-F_downfall_wing",
+		],
+	},
+	"knownWeapons":{
+		"weapons":[
+			"A_S-F_kaksos",
+			"A_S-F_laaja",
+			"A_S-F_copperhead",
+			"A_S-F_nexter",
+
+			"A_S-F_bramble",
+			"A_S-F_thicket",
+			"A_S-F_wasteland",
+			"A_S-F_destructor",
+			"A_S-F_contradict",
+			"A_S-F_twister",
+		],
+	},
+	"knownHullMods":{
+		"hullMods":[
+			"A_S-F_ElectroVent",
+			"A_S-F_anarchyBallistic",
+			"A_S-F_anarchyFlux",
+			"A_S-F_anarchyTargeting",
+		],
+	},
+
+	"weaponSellFrequency":{
+		"A_S-F_kaksos":5,
+		"A_S-F_laaja":6,
+		"A_S-F_copperhead":5,
+		"A_S-F_nexter":5,
+
+		"A_S-F_bramble":3,
+		"A_S-F_thicket":3,
+		"A_S-F_wasteland":2,
+		"A_S-F_destructor":6,
+		"A_S-F_contradict":6,
+		"A_S-F_twister":3,
+	},
+	"fighterSellFrequency":{
+		"A_S-F_downfall_wing":3,
+	},
+	"hullmodSellFrequency":{
+		"A_S-F_anarchyBallistic":2,
+		"A_S-F_anarchyFlux":2,
+	},	
+
+},

@@ -1,0 +1,49 @@
+{
+  "variantId": "A_S-F_scintilla_rogue_1",
+  "hullId": "scintilla",
+  "displayName": "Rogue",
+  "goalVariant": false,
+  "fluxCapacitors": 16,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "pilum"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 007": "A_S-F_sprocket",
+        "WS 008": "A_S-F_sprocket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "A_S-F_p_ion",
+        "WS 001": "A_S-F_p_ion"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "pdlaser",
+        "WS 003": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "A_S-F_glitter_wing",
+    "A_S-F_glitter_wing"
+  ]
+}

@@ -1,0 +1,240 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME Tahlan,,,,,,
+,,,,,,
+# LEGIO,,,,,,
+greetingLegioInfernalisFriendly,OpenCommLink,"$faction.id == tahlan_legioinfernalis
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Тоже на ту же добычу охотишься, приятель? Смотри не попади под перекрестный огонь.""
+OR
+""Ну надо же, хоть раз не красная отметка. Даже немного жаль.""",,
+greetingLegioInfernalisHostileWeaker,OpenCommLink,"$faction.id == tahlan_legioinfernalis
+$entity.isHostile
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"""Может, найдешь себе достойного противника, а, приятель?""
+OR
+""Может, устроим заезд? Думаешь, сможешь обойти легионную настройку?""",cutCommLink:Разорвать связь,
+greetingLegioInfernalisHostileWeakerDefiant,OpenCommLink,"$faction.id == tahlan_legioinfernalis
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"""Думаешь, ты такой крутой? Посмотрим, как запоешь, когда твой замерзший труп поплывет в пустоте.""
+OR
+""Думал, я сбегу? Чтобы прибрать мусор вроде тебя, мне большой флот не нужен.""",cutCommLink:Разорвать связь,
+greetingLegioInfernalisHostileStronger,OpenCommLink,"$faction.id == tahlan_legioinfernalis
+$entity.isHostile
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"""О, смотрите, еда заговорила.""
+OR
+""Надеешься вымолить жизнь? Не смеши меня, ублюдок.""",cutCommLink:Разорвать связь,
+greetingLegioInfernalisNeutral,OpenCommLink,"$faction.id == tahlan_legioinfernalis
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""И как только кто-то вроде тебя попал в список не стрелять при встрече? Ну и черт с ним.""
+OR
+""Терпеть не могу, когда боссы запрещают в кого-то стрелять. Пошел в жопу.""",,
+#END LEGIO,,,,,,
+,,,,,,
+# KASSADARI,,,,,,
+greetingKassadariFriendly,OpenCommLink,"$faction.id == tahlan_greathouses
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Дружелюбно""
+OR
+""ДружелюбноАльт""",,
+greetingKassadariHostileWeaker,OpenCommLink,"$faction.id == tahlan_greathouses
+$entity.isHostile
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"""ВраждебноСлабее""
+OR
+""ВраждебноСлабееАльт""",cutCommLink:Разорвать связь,
+greetingKassadariHostileWeakerDefiant,OpenCommLink,"$faction.id == tahlan_greathouses
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"""ВраждебноСлабееДерзко""
+OR
+""ВраждебноСлабееДерзкоАльт""",cutCommLink:Разорвать связь,
+greetingKassadariHostileStronger,OpenCommLink,"$faction.id == tahlan_greathouses
+$entity.isHostile
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"""ВраждебноСильнее""
+OR
+""ВраждебноСильнееАльт""",cutCommLink:Разорвать связь,
+greetingKassadariNeutral,OpenCommLink,"$faction.id == tahlan_greathouses
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Нейтрально""
+OR
+""НейтральноАльт""",,
+#END KASSADARI,,,,,,
+,,,,,,
+# LEGIO_BLACKWATCH_BAR,,,,,,
+legioBlackwatchBarEventAdd,AddBarEvents,"$faction.id == pirates
+!$market.isHidden
+$global.tahlan_haslegio == true
+$global.tahlan_metLegioAtBar == false
+RollProbability 0.5","AddBarEvent legioBlackwatchBarEvent ""Approach the Legio officer"" ""A young woman in a uniform bearing the Legio sigil is sitting in a secluded corner of the bar, seemingly annoyed and waiting for someone, staring daggers at anyone who dares approach.""",,,
+,,,,,,
+legiobareventencounter_intro1,DialogOptionSelected,$option == legioBlackwatchBarEvent,"$global.tahlan_metLegioAtBar = true
+BeginConversation ""tahlan_devil"" true true","Женщина окидывает вас пренебрежительным взглядом, затем приподнимает бровь, поняв, что вы не просто проходите мимо.
+
+""Вы явно не мой контакт, но и не обычная пиратская шваль. Что вам нужно?""","legiobareventencounter_intro1res1:Просто хотел немного поболтать.
+legiobareventencounter_intro1res2:Прошу прощения - похоже - я принял вас за кого-то другого.",
+legiobareventencounter_intro2,DialogOptionSelected,$option == legiobareventencounter_intro1res1,,"""Просто поболтать?""
+
+Она смотрит на вас с недоумением.
+
+""Ну, почему бы и нет, пожалуй. Мой контакт все равно опаздывает, а вся вырожденная человеческая отброса, что обычно здесь ошивается, не стоит разговора.""",legiobareventencounter_intro2res1:Присесть,
+legiobareventencounter_intro3,DialogOptionSelected,$option == legiobareventencounter_intro1res2,,"Женщина усмехается.
+
+""Как будто я в это поверю. Не думай, будто я не понимаю, насколько выделяюсь среди... местного пейзажа. Прошу, присаживайся, развлеки меня, пока я жду.""","legiobareventencounter_intro2res1:Присесть
+legiobareventencounter_exit:Нет - спасибо.",
+legiobareventencounter_intro4,DialogOptionSelected,$option == legiobareventencounter_intro2res1,,"""Итак, капитан, полагаю, именно так вас и зовут, верно? Командир независимого флота, который только что прибыл? Мы следим за такими вещами.""
+
+Она ухмыляется, даже не дожидаясь подтверждения того, что и так считает фактом, и у вас возникает чувство, что ей очень нравится звук собственного голоса.
+
+""Теперь я могу лишь гадать, что привело вас ко мне, но, думаю, это моя модная форма.""",legiobareventencounter_intro4res1:Да - она и правда выделяется.,
+legiobareventencounter_intro5,DialogOptionSelected,$option == legiobareventencounter_intro4res1,,"""Тогда могу лишь предположить, что раз я вас не знаю, у вас есть дела с нашим великим Легионом. Понимаю, почему вам хотелось бы примкнуть к нашему делу, но говорить об этом нужно не со мной.""
+
+Она ненадолго замолкает.
+
+""Или вы хотели чего-то еще? Если да, рассказывайте.""","legiobareventencounter_hub1:Вы всегда в одиночку зависаете по таким притонам?
+legiobareventencounter_hub2:С чего бы мне вообще к вам присоединяться?
+legiobareventencounter_hub3:Кстати - эти глаза - геномоды или импланты?
+legiobareventencounter_exit:Думаю - на этом все.",
+legiobareventencounter_introexit,DialogOptionSelected,$option == legiobareventencounter_exit,AddPotentialContact,"""Как хочешь.""
+
+Когда вы уже собираетесь уходить, она бросает вам дата-чип.
+
+""Что бы ты обо мне ни думал, ты кажешься способным человеком. Возможно, позже у меня найдется для тебя работа.""",backToBar:Вернуться в бар,
+,,,,,,
+legiobareventencounter_black1,DialogOptionSelected,$option == legiobareventencounter_hub1,,"""Явно нет.""
+
+Она презрительно фыркает на ваш намек.
+
+""Я здесь по делам Блэквотч, но мой контакт, похоже, не умеет пользоваться даже обычным хронометром. Надо бы уже избавиться от этих пиратских клоунов.""",legiobareventencounter_black1res1:Блэквотч - да? Печально известный элитный корпус Легио?,
+legiobareventencounter_black2,DialogOptionSelected,$option == legiobareventencounter_black1res1,,"""Полагаю, для таких как ты это достаточно точное описание. Мы продолжаем наследие славного Найтвотч. Не думаю, что ты вообще слышал о наших великих предтечах, но для тебя это несущественно.""
+
+По ее глазам ясно: обсуждать эту тему дальше она не хочет.
+
+""Ну, что еще?""","legiobareventencounter_hub2:С чего бы мне вообще к вам присоединяться?
+legiobareventencounter_hub3:Кстати - эти глаза - геномоды или импланты?
+legiobareventencounter_exit:Думаю - на этом все.",
+,,,,,,
+legiobareventencounter_uber1,DialogOptionSelected,$option == legiobareventencounter_hub3,,"Она приподнимает бровь в ответ на вопрос.
+
+""Импланты, конечно. Какой странный вопрос, должна сказать. У тебя самой разве мало кибермодов? Не говоря уже о тех абоминациях у тебя за спиной, по виду больше машины, чем человека.""",legiobareventencounter_uber1res1:Значит - стандартное оснащение Блэквотч?,
+legiobareventencounter_uber2,DialogOptionSelected,$option == legiobareventencounter_uber1res1,,"""Наблюдательно, это я тебе отдам. Ты не поймешь, но багровые глаза, видящие истину, - великая честь, которой удостаиваются только лучшие из нас. Не в порядке самовосхваления, просто это факт.""",legiobareventencounter_uber1res2:Понятно.,
+legiobareventencounter_uber3,DialogOptionSelected,$option == legiobareventencounter_uber1res2,,"""Ну, что-нибудь еще?""","legiobareventencounter_hub1:Вы всегда в одиночку зависаете по таким притонам?
+legiobareventencounter_hub2:С чего бы мне вообще к вам присоединяться?
+legiobareventencounter_exit:Думаю - на этом все.",
+,,,,,,
+legiobareventencounter_rant1,DialogOptionSelected,$option == legiobareventencounter_hub2,,"""Потому что мы единственная настоящая надежда сектора стать чем-то великим.""",legiobareventencounter_rant1res1:Если не ошибаюсь - ваши люди просто убивают всех подряд.,
+legiobareventencounter_rant2,DialogOptionSelected,$option == legiobareventencounter_rant1res1,,"Она насмешливо фыркает, прочищает горло и продолжает.
+
+""Неужели ты не понимаешь масштаб нашего замысла? Возможно, твой кругозор слишком узок, чтобы осознать глубину наших действий. Мы, факелоносцы будущего, прокладываем путь к высшему человечеству, которому суждено унаследовать славный Домен. Прими привилегию участвовать в нашем восхождении и радуйся чуду: человечество наконец достигнет своего истинного потенциала.
+
+Пока она произносит речь, у тебя возникает четкое ощущение, что это заранее заученный текст, совсем как в трансляциях Синдикрийского Диктата.
+
+Да, этот процесс неизбежно требует жертв, но посмотри, какая награда нас ждет. Разве не стоит инвестировать в безграничное процветание жителей этого сектора и миров за его пределами? Цена, которую мы платим, ничтожна на фоне благ, которые мы принесем. Когда мы завершим наше дело здесь, наступит новая эра, великолепный новый порядок, превосходящий даже достижения дряхлого Домена.""","legiobareventencounter_rant2res1:Ты вообще слышишь - что несешь?
+legiobareventencounter_rant2res2:Я не могу отрицать упадок сектора - но разве это действительно путь?",
+legiobareventencounter_rant3,DialogOptionSelected,$option == legiobareventencounter_rant2res1,,"""Разумеется, и это очевидно. Думай как хочешь, но не считай нас просто бандой кровожадных пиратов вроде ходячих отходов кислорода, что ошиваются в этом заведении. У нас есть видение и сила воплотить его. Время рассудит.""","legiobareventencounter_rant3res1:По-моему - это бред сумасшедших.
+legiobareventencounter_uber1res2:Полагаю - увидим.",
+legiobareventencounter_rant3b,DialogOptionSelected,$option == legiobareventencounter_rant2res2,,"Она усмехается в ответ на вопрос.
+
+""Только время покажет, не так ли?""",legiobareventencounter_uber1res2:Так и будет.,
+legiobareventencounter_rant4,DialogOptionSelected,$option == legiobareventencounter_rant3res1,,"Женщина тяжело вздыхает и снова откидывается назад, с разочарованием в глазах.
+
+""Забудь. Может, однажды ты прозреешь, а может и нет.""","legiobareventencounter_hub1:Вы всегда в одиночку зависаете по таким притонам?
+legiobareventencounter_hub3:Кстати - эти глаза - геномоды или импланты?
+legiobareventencounter_exit:Думаю - на этом все.",
+#END LEGIO_BLACKWATCH_BAR,,,,,,
+,,,,,,
+# DEVIL_GENERIC_MISSIONS,,,,,,
+,,,,,,
+tahlan_devilDaemonSurplusBlurb,tahlan_devilDaemonSurplus_blurb,$id == tahlan_devil score:10,,"""Здесь есть ангар, где бесхозный $sShip_hullSize ищет нового владельца. С огоньком.""",,
+tahlan_devilDaemonSurplusOfferOption,tahlan_devilDaemonSurplus_option,,,,sShip_start:Спросить про $sShip_hullSize,
+tahlan_devilDaemonSurplusOfferTextContact,DialogOptionSelected,"$option == sShip_start
+$id == tahlan_devil score:10","$missionId = tahlan_devilDaemonSurplus
+SetTextHighlights $sShip_price","""Представляешь, кто-то проиграл в азартные игры совершенно новый $sShip_hullClass после трехдневного запоя с наркотой и алкоголем?""
+
+$HeOrShe снова дарит ту знакомую хищную улыбку и достает дата-чип.
+
+""Есть на продажу коды доступа к местному ангару, говорят, там стоит брошенный $sShip_hullSize. Берешь?""","sShip_look:Попросить подробности о корабле
+contact_decline:Отказаться",
+tahlan_devilDaemonSurplusLookAtFreighter,DialogOptionSelected,"$option == sShip_look
+$id == tahlan_devil score:10","Call $sShip_ref showShip
+DoCanAffordCheck $sShip_price contact_accept","$personLastName протягивает дата-чип. ""Просто взгляни. Думаю, тебе понравится.""","contact_accept:Купить $sShip_hullSize за $sShip_price кредитов
+contact_decline:Отказаться",
+tahlan_devilDaemonSurplusPostAccept,ContactPostAccept,"$missionId == tahlan_devilDaemonSurplus score:5
+$id == tahlan_devil score:10","RemoveCommodity credits $sShip_price
+AddShip $sShip_member
+Call $sShip_ref2 repSuccess
+Call $sShip_ref2 addContacts
+ShowPersonVisual",,,
+,,,,,,
+tahlan_devilCBBlurb,tahlan_devilCB_blurb,,,"""У тебя военные корабли, и ты лучше всех знаешь, для чего они нужны"", говорит она, постукивая дата-чипом по столу, ""для разборок с нежелательными элементами.""",,
+tahlan_devilCBOfferOption,tahlan_devilCB_option,,,,tahlan_devilCB_start:Спросить - не нужно ли ей кого-то устранить,
+tahlan_devilCBOfferTextContact,DialogOptionSelected,"$option == tahlan_devilCB_start
+$id == tahlan_devil score:10","$missionId = tahlan_devilCB
+$option = tahlan_devilCB_showOptions 0
+FireBest DialogOptionSelected","С дьявольской улыбкой она пододвигает дата-чип. ""Всегда"", говорит она, ""просто выбирай цель, капитан.""
+
+Вы вставляете дата-чип в свой ТриПад и видите список досье на цели.",,
+tahlan_devilCBGoBackSel,DialogOptionSelected,$option == tahlan_devilCB_showOptions,"# removes map
+ShowPersonVisual",,"tahlan_devilCB_low:Посмотреть досье с низким приоритетом
+tahlan_devilCB_normal:Посмотреть досье с высоким приоритетом
+tahlan_devilCB_high:Посмотреть досье с высоким риском
+contact_decline:В другой раз. (отказаться)",
+tahlan_devilCBLowSel,DialogOptionSelected,$option == tahlan_devilCB_low,"$tahlan_devilCB_difficulty = LOW 0
+FireBest devilCBShowBounty",,,
+tahlan_devilCBNormalSel,DialogOptionSelected,$option == tahlan_devilCB_normal,"$tahlan_devilCB_difficulty = NORMAL 0
+FireBest devilCBShowBounty",,,
+tahlan_devilCBHighSel,DialogOptionSelected,$option == tahlan_devilCB_high,"$tahlan_devilCB_difficulty = HIGH 0
+FireBest devilCBShowBounty",,,
+tahlan_devilCBShowBounty,devilCBShowBounty,,Call $tahlan_devilCB_ref showBountyDetail,,tahlan_devilCB_showIntel:Продолжить,
+tahlan_devilCBShowBountyShowShips,DialogOptionSelected,$option == tahlan_devilCB_showIntel,Call $tahlan_devilCB_ref showBountyAssessment,,"contact_accept:Принять
+contact_decline:Отказаться
+tahlan_devilCB_showOptions:Спросить об одной из других целей",
+,,,,,,
+tahlan_CBPatherDevil,CBPatherOfferDesc,$id == tahlan_devil score:10,Highlight $bcb_dist $bcb_reward $bcb_days,"""А, да, этот патер"", $heOrShe закатывает глаза, ""они ненавидят нас не меньше всех остальных в секторе. NIS Блэквотч отследила его в системе $bcb_systemName, примерно в $bcb_dist световых годах отсюда.""
+
+""$bcb_reward кредитов, если с $bcb_targetHeOrShe разберутся в течение следующих $bcb_days дней. Подходит?""",,
+tahlan_CBMercDevil,CBMercOfferDesc,$id == tahlan_devil score:10,Highlight $bcb_dist $bcb_reward $bcb_days,"""Остренько"", $heOrShe ухмыляется, ""еще один свободный капитан, прямо как ты. Уверена, справишься, да?""
+
+$HeOrShe пролистывает копию досье и продолжает уже по-деловому.
+
+""Награда $bcb_reward кредитов при выполнении за $bcb_days дней. Решай сама.""",,
+tahlan_CBPirateDevil,CBPirateOfferDesc,$id == tahlan_devil score:10,Highlight $bcb_dist $bcb_reward $bcb_days,"""Кто-то забыл, что заключил с нами сделку, и теперь мне придется взыскивать силой. $bcb_targetHeOrShe уже знает, что к $bcb_targetHimOrHer скоро придут, но пока не знает чьей рукой. Может, твоей.""
+
+""Зовут $bcb_targetName, сейчас прячется в системе $bcb_systemName, в $bcb_dist световых годах отсюда. Сама знаешь, как это работает.""
+
+""Могу предложить $bcb_reward кредитов, если закончишь за следующие $bcb_days дней, пока мне не пришлось отправлять вместо тебя одного из моих подручных.""",,
+tahlan_CBRemnantDevil,CBRemnantOfferDesc,$id == tahlan_devil score:10,Highlight $bcb_dist $bcb_reward $bcb_days,"""Вот это веселая цель. Флот ремнантских дронокораблей, который нужно убрать. Проще некуда, да? Даже искать их никто не станет, если они пропадут. По-моему, идеальная работа.""
+
+$HeOrShe выглядит полностью равнодушно к вашей безопасности, несмотря на известную опасность столкновений с флотами ремнантов, и продолжает листать данные.
+
+""Награда щедрая: $bcb_reward кредитов. Сделай за $bcb_days дней, и все довольны.""",,
+,,,,,,
+tahlan_devilDaemonCoreBlurb,tahlan_devilDaemonCore_blurb,,,"""У меня есть несколько запасных узлов критически важного железа, которые могут тебе пригодиться. Красные, круглые и, возможно, умнее нас двоих вместе, если понимаешь, о чем я.""",,
+tahlan_devilDaemonCoreOption,tahlan_devilDaemonCore_option,,,,tahlan_devilDaemonCore_start:Спросить про ядро,
+tahlan_devilDaemonCoreOfferText,DialogOptionSelected,$option == tahlan_devilDaemonCore_start,"$missionId = tahlan_devilDaemonCore
+FireBest tahlan_devilDaemonCoreOfferText
+DoCanAffordCheck $tahlan_devilDaemonCore_price contact_accept true",,"contact_accept:Принять
+contact_decline:Отказаться",
+tahlan_devilDaemonCoreTextAlpha,tahlan_devilDaemonCoreOfferText,$tahlan_devilDaemonCore_variation == ALPHA,SetTextHighlights $tahlan_devilDaemonCore_commodityName,"""Раз ты достаточно умна, чтобы не задавать неправильных вопросов, у меня как раз есть $tahlan_devilDaemonCore_commodityName, которому ты наверняка найдешь достойное применение. Знак благодарности за твои услуги. За цену, разумеется.""",,
+tahlan_devilDaemonCoreTextBeta,tahlan_devilDaemonCoreOfferText,$tahlan_devilDaemonCore_variation == BETA,SetTextHighlights $tahlan_devilDaemonCore_commodityName,"""Похоже, кто-то потерял $tahlan_devilDaemonCore_commodityName, который предназначался для их свежепоставленной ударной группы. Им за это точно влетит.""
+
+$HeOrShe пододвигает датапад.
+
+""Ладно, к другому вопросу: у меня на продажу ящик запасных деталей. Интересует?""",,
+tahlan_devilDaemonCoreTextBetaWithGamma,tahlan_devilDaemonCoreOfferText,$tahlan_devilDaemonCore_variation == BETA_WITH_GAMMA,SetTextHighlights $tahlan_devilDaemonCore_commodityName $tahlan_devilDaemonCore_commodityName2,"""Интересует $tahlan_devilDaemonCore_commodityName2? Вообще-то у меня в продаже их две штуки. Только пакетом, но одна из них особенно красная, если понимаешь, о чем я.""",,
+tahlan_devilDaemonCorePostAccept,ContactPostAccept,$missionId == tahlan_devilDaemonCore,"Call $tahlan_devilDaemonCore_ref2 transact
+Call $tahlan_devilDaemonCore_ref2 repSuccess
+Call $tahlan_devilDaemonCore_ref2 addContacts",,,
+tahlan_devilDaemonCorePrintAcceptText,ContactPrintAcceptText,"$id == tahlan_devil score:10
+$missionId == tahlan_devilDaemonCore",,"""Приятно иметь с тобой дело.""
+OR
+""Будет интересно услышать, что ты с этим сделаешь.""",,
+,,,,,,
+tahlan_aiCores_turnInOptionDevil,PopulateOptions,$id == tahlan_devil score:10,FireBest DisableTurnInCoresOptionIfNeeded,,10:aiCores_startTurnIn:Предложить продать несколько ИИ-ядер,
+tahlan_aiCores_turnInOptionSelDevil,DialogOptionSelected,"$option == aiCores_startTurnIn
+$id == tahlan_devil score:10",FireAll PopulateCoresTurnInOptions,"""ИИ-ядра? Для меня? О, право, не стоило.""",,
+tahlan_aiCores_turnInResponseDevil,AICoresTurnedIn,$id == tahlan_devil score:10,FireAll PopulateOptions,"""Этому найдется хорошее применение, уверяю тебя.""
+OR
+""Намного лучше, чем гноить их в хранилище Гегемонии, не так ли?""",,
+,,,,,,
+,,,,,,
+,,,,,,
+#END DEVIL_GENERIC_MISSIONS,,,,,,

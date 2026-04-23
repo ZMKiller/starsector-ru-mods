@@ -1,0 +1,344 @@
+{
+	"industries":{
+		"spaceport":{
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.SpaceportPlugin",
+			"icon":"graphics/icons/markets/spaceport.png",
+		},
+		"megaport":{
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.SpaceportPlugin",
+			"icon":"graphics/icons/markets/spaceport.png",
+		},
+		
+		"grounddefenses":{
+			"strengthMult":1.2,
+			"troopCounts":{
+				"militia":0.5,
+				"marine":0.5,
+				"heavy":0.5,
+			},
+			"enemyDropCostMult":1.25,
+			"enemyBombardmentCostMult":2,
+			"dropAttritionFactor":10,
+			"tags":["noBombard"],
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.GroundDefensesPlugin",
+			"icon":"graphics/exerelin/icons/groundbattle/groundefenses.png",
+		},
+		"heavybatteries":{
+			"strengthMult":1.4,
+			"troopCounts":{
+				"militia":1,
+				"marine":1,
+				"heavy":1,
+			},
+			"enemyDropCostMult":1.5,
+			"dropAttritionFactor":20,
+			"tags":["noBombard", "preventBombardment"],
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.GroundDefensesPlugin",
+			"icon":"graphics/exerelin/icons/groundbattle/heavybatteries.png",
+		},
+		"planetaryshield":{
+			"tags":["noBombard", "preventBombardment", "preventBombardmentSuper", "preventEW", "preventInspire", "preventCAS"],
+			"enemyDropCostMult":1.5,
+			"dropAttritionMult":2,
+			"icon":"graphics/icons/intel/red_planet.png",
+		},
+		"patrolhq":{
+			"tags":["resistBombard"],
+			"strengthMult":1.2,
+			"troopCounts":{
+				"marine":0.1,
+			},
+		},
+		"militarybase":{
+			"tags":["resistBombard"],
+			"strengthMult":1.3,
+			"troopCounts":{
+				"militia":0.2,
+				"marine":0.2,
+				"heavy":0.2,
+			},
+		},
+		"highcommand":{
+			"tags":["resistBombard"],
+			"strengthMult":1.4,
+			"troopCounts":{
+				"militia":0.3,
+				"marine":0.3,
+				"heavy":0.3,
+			},
+		},
+		"lionsguard":{
+			"tags":["resistBombard"],
+			"strengthMult":1.4,
+			"troopCounts":{
+				"marine":0.25,
+				"heavy":0.25,
+			},
+		},
+		"6emebureau":{
+			"tags":["resistBombard"],
+			"strengthMult":1.2,
+			"troopCounts":{
+				"marine":0.2,
+				"heavy":0.1,
+			},	
+		},
+		"ms_redwingsCommand":{
+			"tags":["resistBombard"],
+			"strengthMult":1.2,
+			"troopCounts":{
+				"marine":0.2,
+				"heavy":0.1,
+			},	
+		},
+		"brdy_defhq":{
+			"tags":["resistBombard"],
+			"strengthMult":1.2,
+			"troopCounts":{
+				"marine":0.2,
+				"heavy":0.1,
+			},	
+		},
+		
+		"militarygarrison":{	# AotD Planetary Defense Bureau
+			"tags":["resistBombard"],
+			"strengthMult":1.2,
+			"troopCounts":{
+				"mililtia":2,
+				"marine":1,
+				"heavy":0.5,
+			},	
+		},
+	},
+	
+	"conditions":{
+		"water_surface":{
+			"desc":"The water surface does not permit normal combat. Most fighting will take place in the interior of sea habitats, where the usefulness of heavy armaments will be limited.",
+			"highlights":["heavy armaments"],
+			"color":[64, 96, 255, 255],
+			"tags":["cramped"],
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.MarketConditionPlugin",	# unlike industries, this must be specified to do anything
+		},
+		
+		"US_tunnels":{
+			"desc":"The cramped spaces of underground fighting inhibits the usefulness of heavy armaments.",
+			"highlights":["heavy armaments"],
+			"color":[64, 180, 55, 255],
+			"tags":["cramped"],
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.MarketConditionPlugin",
+		},
+		
+		"US_magnetic":{
+			"desc":"Communications disrupted. All attacker units will reorganize for 1 turn after moving, and attack power reduced by 15%. Many special abilities are disabled.",
+			"highlights":["1", "15%", "disabled"],
+			"color":[92, 110, 187, 255],
+			"tags":["preventEW", "preventInspire"],
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.MagneticCrustPlugin",
+		},
+		
+		"FPE_defense":{
+			"desc":"Massively hardened ground defenses give the defender +25% attack strength and -25% damage received on industries they control.",
+			"highlights":["25%", "25%"],
+			"color":[190,63,0,255],
+			"tags":[],
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.FPEDefensePlugin",
+		},
+		
+		"IndEvo_mineFieldCondition":{
+			"desc":"Some mines are still present close to $market and will interfere with deployments and orbital fires.",
+			"highlights":["25%", "25%"],
+			"color":[224,96,48,255],
+			"tags":["preventBombardment", "preventCAS"],
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.IndEvoMinefieldPlugin",
+		},
+		
+		"hmi_fang_spawn":{
+			"troopCounts":{
+				"militia":1,
+				"marine":0.5,
+			},
+		},
+		"hmi_draco_spawn":{
+			"troopCounts":{
+				"militia":1,
+				"marine":0.5,
+			},
+		},
+	},
+	
+	"abilities":{
+		"fireSupport":{
+			"name":"Fire Support",
+			"icon":"graphics/icons/cargo/fuel.png",
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.FireSupportAbilityPlugin",
+			"sound":"nex_sfx_deciv_bomb",
+			"cooldown":2,
+			"cooldownGlobal":1,
+			"color":[255, 64, 64, 255],
+			"order":1,
+		},
+		"inspire":{
+			"name":"Inspire",
+			"icon":"graphics/icons/skills/leadership.png",
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.InspireAbilityPlugin",
+			"sound":"nex_sfx_gb_inspire",
+			"cooldownGlobal":2,
+			"color":[128, 192, 64, 255],
+			"order":2,
+			#"illustration":"",
+		},
+		"electronicwarfare":{
+			"name":"Electronic Warfare",
+			"icon":"graphics/icons/skills/EW.png",
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.EWAbilityPlugin",
+			"sound":"nex_sfx_gb_ewar",
+			"cooldown":4,
+			"cooldownGlobal":2,
+			"color":[10, 140, 240, 255],
+			"order":3,
+		},
+		"ignisPluvia":{
+			"name":"Ignis Pluvia",
+			"icon":"graphics/exerelin/icons/groundbattle/ignispluvia.png",
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.IgnisPluviaAbilityPlugin",
+			"sound":"nex_sfx_gb_ignispluvia",
+			"cooldown":2,
+			"cooldownGlobal":1,
+			"color":[255, 128, 32, 255],
+			"order":4,
+		},
+	},
+
+	#"items":{
+	#	# currently hardcoded in GroundDefensePlugin
+	#	"drone_replicator":{
+	#		"troopCounts":{
+	#			"militia":0.5,
+	#			"marines":0.5,
+	#			"heavy":0.25,
+	#		},
+	#	},
+	#},
+
+	"unitTypes":{
+		# note on unit mults: it may be best if the personnel mult for infantry units, and equipment mult for mechanized units, is 1 if possible
+		# otherwise unusual behavior may occur
+		# if you need an extra-large unit, use the unitSizeMult
+		
+		"marine":{
+			"name":"marine",
+			"type":"MARINE",	# legacy setting, may remove later; for now it's mandatory though
+			"playerCanCreate":true,
+			#"sprite":"optional/path_to/sprite.png",	# used in background of unit card; not automatically loaded so specify it in settings.json if needed
+			#"plugin":"package.plugin.ClassName",
+			#"playerMemKeyToShow":"$myMemKey",	# if non-null, button to create this unit will not appear in ground battle UI unless key is set to true in player MemoryAPI
+			"strength":1,
+			"personnel":{
+				"commodityId":"marines",
+				"crewReplacerJobId":"nex_groundBattle_marines",
+				"mult":1,	# integer, at least for now
+			},
+			"tags":["marine"],
+			"sortOrder":1,
+		},
+		"heavy":{
+			"name":"heavy",
+			"type":"HEAVY",
+			"playerCanCreate":true,
+			"strength":5.5,
+			"unitSizeMult":0.166667,
+			"dropCostMult":7.5,			# base drop/move cost is proportional to unit size, measured by number of equipment items if present or number of personnel items otherwise
+			"offensiveStrMult":1.25,	# on industries not held by the unit's side
+			"crampedStrMult":0.75,		# on things like station-only markets and water-surface planets
+			"equipment":{
+				"commodityId":"hand_weapons",
+				"crewReplacerJobId":"nex_groundBattle_heavyarms",
+				"mult":1,
+			},
+			"personnel":{
+				"commodityId":"marines",
+				"crewReplacerJobId":"nex_groundBattle_tankCrew",
+				"mult":2,
+			},
+			"tags":["heavy"],
+			"sortOrder":2,
+		},
+		"militia":{
+			"name":"militia",
+			"type":"MILITIA",
+			"playerCanCreate":false,
+			"strength":0.4,
+			"moraleMult":0.6,
+			"dropCostMult":0.7,
+			"personnel":{
+				"commodityId":"crew",
+				"crewReplacerJobId":"nex_groundBattle_militia",
+				"mult":1,
+			},
+			"tags":["militia"],
+			"sortOrder":3,
+		},
+		"rebel":{
+			"name":"rebel",
+			"type":"REBEL",
+			"playerCanCreate":false,
+			"strength":0.3,
+			"moraleMult":0.7,
+			"dropCostMult":0.7,
+			"damageTakenMult":0.6,
+			"personnel":{
+				"commodityId":"crew",
+				"crewReplacerJobId":"nex_groundBattle_rebel",
+				"mult":1,
+			},
+			"tags":["rebel"],
+			"sortOrder":4,
+		},
+		
+		#"lobster":{
+		#	"name":"lobster",
+		#	"type":"MARINE",
+		#	"playerCanCreate":false,
+		#	"playerMemKeyToShow":"$nex_canCreateLobsterTroops",
+		#	"strength":1,
+		#	"personnel":{
+		#		"commodityId":"lobster",
+		#		"crewReplacerJobId":"nex_groundBattle_lobsters",
+		#		"mult":1,
+		#	},
+		#	"tags":["marine", "lobster"],
+		#	"sortOrder":1,
+		#},
+		
+		#"helldiver":{
+		#	"name":"helldiver",
+		#	"type":"MARINE",
+		#	"playerCanCreate":true,
+		#	"strength":1,
+		#	"unitSizeMult":2,
+		#	"personnel":{
+		#		"commodityId":"crew",
+		#		"crewReplacerJobId":"nex_groundBattle_helldivers",
+		#		"mult":1,
+		#	},
+		#	"tags":["marine"],
+		#	"sortOrder":1.5,
+		#},
+	},
+	
+	# specify plugins not associated with an industry, condition, faction or such here
+	"plugins":{
+		"generalPlugin":"exerelin.campaign.intel.groundbattle.plugins.GeneralPlugin",
+		"factionBonusPlugin":"exerelin.campaign.intel.groundbattle.plugins.FactionBonusPlugin",
+		"planetHazardPlugin":"exerelin.campaign.intel.groundbattle.plugins.PlanetHazardPlugin",
+		"fleetSupportPlugin":"exerelin.campaign.intel.groundbattle.plugins.FleetSupportPlugin",
+		#"lobsterTroops":"exerelin.campaign.intel.groundbattle.plugins.LobsterTroopPlugin",
+	},
+	
+	
+	"natoAlphabet":[
+		"Alfa", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", 
+		"Juliett", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", 
+		"Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu"
+	],
+}

@@ -1,0 +1,46 @@
+{
+    "plugins":{
+        "UW_SystemLightInjector":"data.scripts.everyframe.UW_SystemLightInjector",
+        "UW_PalacePlugin":"data.scripts.everyframe.UW_PalacePlugin",
+    },
+    "designTypeColors":{
+        "Post-Collapse":[200,125,75,255],
+        "Hack-Job":[180,60,10,255],
+        "Junker":[200,120,120,255],
+        "Starlight Cabal":[255,0,255,255],
+        "Unique Starlight Cabal":[255,204,0,255],
+		"Cursed":[245,67,67,255],
+    },
+    "bonusXP":{
+        "uw_avoidCabalExtortion":0.5,
+        "uw_avoidCabalContribution":0.25,
+        "uw_galaStoryPay":0.5,
+        "uw_galaStorySplash":1,
+	},
+    "graphics":{
+        "blueprint_packages":{
+            "uw_post_collapse_package":"graphics/uw/icons/cargo/uw_bp_post_collapse.png",
+            "uw_hack_job_package":"graphics/uw/icons/cargo/uw_bp_hack_job.png",
+            "uw_junker_package":"graphics/uw/icons/cargo/uw_bp_junker.png",
+            "uw_cabal_package":"graphics/uw/factions/cabal.png",
+            "uw_cabal_minipackage":"graphics/uw/factions/cabal.png",
+        },
+        "uw_trails":{
+            "uw_cleantrail":"graphics/uw/fx/uw_cleantrail.png",
+            "uw_dirtytrail":"graphics/uw/fx/uw_dirtytrail.png",
+            "uw_fuzzytrail":"graphics/uw/fx/uw_fuzzytrail.png",
+            "uw_smoothtrail":"graphics/uw/fx/uw_smoothtrail.png",
+            "uw_zappytrail":"graphics/uw/fx/uw_zappytrail.png",
+        },
+        "uw_missions":{
+            "uw_starlight_gala":"graphics/uw/icons/missions/uw_starlight_gala.png",
+        },
+        "characters":{
+            "uw_zeb":"graphics/uw/portraits/uw_zeb_sparks.png",
+            "uw_peggy":"graphics/portraits/portrait24.png",
+            "uw_shark1":"graphics/portraits/portrait36.png",
+            "uw_shark2":"graphics/portraits/portrait28.png",
+            "uw_dickerson":"graphics/uw/portraits/uw_dickerson_extended_family.png",
+        },
+    },
+}

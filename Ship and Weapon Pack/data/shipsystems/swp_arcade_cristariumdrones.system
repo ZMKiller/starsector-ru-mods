@@ -1,0 +1,48 @@
+{
+	"id":"swp_arcade_cristariumdrones",
+	"type":"DRONE_LAUNCHER",
+	"aiType":"DRONE_LAUNCHER_STANDARD",
+
+	"statsScript":"data.scripts.shipsystems.SWP_CristariumDronesStats",
+
+	"droneVariant":"swp_arcade_crystaldrone",
+
+	"allowFreeRoam":false,
+
+	"launchSpeed":300,
+	"launchDelay":0.25,
+	"maxDrones":10,
+	"droneBehavior":[
+		{"droneIndex":[0,2,4,6,8],
+		 "defaultFacing":"AWAY_FROM_SHIP",
+		 "faceEnemy":false,
+		 "holdRoamRange":100,
+		 "freeRoamRange":100,
+		 "targetPriority":[SHIP, FIGHTER, MISSILE],
+		 "initialOrbitAngle":0,
+		 "orbitRadius":100,
+		 "orbitDir":1,
+		 "orbitSpeed":50,
+		},
+		{"droneIndex":[1,3,5,7,9],
+		 "defaultFacing":"AWAY_FROM_SHIP",
+		 "faceEnemy":false,
+		 "holdRoamRange":150,
+		 "freeRoamRange":150,
+		 "targetPriority":[SHIP, FIGHTER, MISSILE],
+		 "initialOrbitAngle":0,
+		 "orbitRadius":150,
+		 "orbitDir":-1,
+		 "orbitSpeed":50,
+		},
+	],
+
+	"useSound":"drone_launch",
+	"outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

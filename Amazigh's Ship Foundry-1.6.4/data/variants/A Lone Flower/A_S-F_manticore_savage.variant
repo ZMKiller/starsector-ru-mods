@@ -1,0 +1,41 @@
+{
+  "variantId": "A_S-F_manticore_savage",
+  "hullId": "manticore",
+  "displayName": "Savage",
+  "goalVariant": false,
+  "fluxCapacitors": 3,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "mjolnir"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "gorgonpod",
+        "WS 005": "gorgonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightdualac",
+        "WS 002": "lightdualac",
+        "WS 003": "lightdualac"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

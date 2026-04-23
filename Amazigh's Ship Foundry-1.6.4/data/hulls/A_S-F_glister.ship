@@ -1,0 +1,87 @@
+{
+  "hullName": "Glister",
+  "hullId": "A_S-F_glister",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_glister.png",
+  "style": "HIGH_TECH",
+  "height": 26,
+  "width": 44,
+  "center": [22, 13],
+  "collisionRadius": 26,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 25,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux",
+    "A_S-F_GlisterEngines"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 45,
+      "angle": -5,
+      "locations": [7, -6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 45,
+      "angle": 5,
+      "locations": [7, 6]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-6, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-6, 15],
+      "length": 14,
+      "width": 5,
+      "angle": 165,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-4, 10],
+      "length": 38,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-4, -10],
+      "length": 38,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-6, -16],
+      "length": 14,
+      "width": 5,
+      "angle": -165,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    9, 7,
+    -5, 20,
+    -5, -20,
+    9, -7
+  ]
+}

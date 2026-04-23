@@ -1,0 +1,32 @@
+{
+    "id":"looted_sector",
+	"name":"Orky Sector",
+	"author":"Myco & Miko",
+    "utility":"false",
+	"version":"0.621",
+	"description":"Formally Looted Sector. Adds Ork themed looted ship and faction to the sector.",
+    "gameVersion": "0.98",
+	"jars": [
+		"jars/looted.jar"
+	],
+"modPlugin":"data.orky_loader",
+	  	"dependencies": [
+        {
+            "id": "lw_lazylib",
+            "name": "LazyLib",
+        },
+        {
+            "id": "MagicLib",
+            "name": "MagicLib",
+        },
+        {
+            "id": "lunalib",
+            "name": "LunaLib",
+        },
+        {
+            "id": "shaderLib",
+            "name": "GraphicsLib"
+        }
+    ]
+}
+

@@ -1,0 +1,226 @@
+{
+  "hullName": "Rangda",
+  "hullId": "A_S-F_rangda",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_rangda.png",
+  "style": "MIDLINE",
+  "coversColor": "120,142,200,255",
+  "height": 123,
+  "width": 80,
+  "center": [40, 55],
+  "collisionRadius": 77,
+  "shieldCenter": [4, -0],
+  "shieldRadius": 72,
+  "viewOffset": 0,
+  "builtInMods": [
+    "high_maintenance",
+    "ballistic_rangefinder",
+    "A_S-F_inertialBracing"
+  ],
+  "builtInWeapons": {
+    "WS0004": "A_S-F_aspina",
+    "WS0006": "A_S-F_rangda_deco",
+    "WS0007": "A_S-F_rangda_thruster",
+    "WS0008": "A_S-F_rangda_thruster",
+    "WS0009": "A_S-F_rangda_thruster",
+    "WS0010": "A_S-F_rangda_thruster"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [44, 8]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [44, -8]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [30, 0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-1, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 180,
+      "locations": [-13, 0]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [37, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 85,
+      "locations": [34, 25]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -85,
+      "locations": [34, -25]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 110,
+      "locations": [-13, 25]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -110,
+      "locations": [-13, -25]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 140,
+      "locations": [22.5, 16.5]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -140,
+      "locations": [22.5, -16.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-54, 11.5],
+      "length": 56,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-54, -11.5],
+      "length": 56,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-13, 25],
+      "length": 0,
+      "width": 10,
+      "angle": 110,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-13, -25],
+      "length": 0,
+      "width": 10,
+      "angle": -110,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [34, 26],
+      "length": 0,
+      "width": 10,
+      "angle": 85,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [34, -26],
+      "length": 0,
+      "width": 10,
+      "angle": -85,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    48, -13,
+    59, -15,
+    58, -19,
+    49, -26,
+    36, -30,
+    26, -29,
+    11, -21,
+    -1, -26,
+    -7, -31,
+    -21, -33,
+    -26, -29,
+    -40, -28,
+    -31, -24,
+    -37, -17,
+    -52, -15,
+    -52, -7,
+    -42, -5,
+    -50, 0,
+    -42, 5,
+    -52, 7,
+    -52, 15,
+    -37, 17,
+    -31, 24,
+    -40, 28,
+    -26, 29,
+    -21, 33,
+    -7, 31,
+    -1, 26,
+    11, 21,
+    26, 29,
+    36, 30,
+    49, 26,
+    58, 19,
+    59, 15,
+    48, 13,
+    42, 0
+  ]
+}

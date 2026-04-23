@@ -1,0 +1,71 @@
+{
+    "hullName": "ead' Butta",
+    "hullId": "ls_fighta_sb",
+    "hullSize": "FIGHTER",
+    "style": "LOW_TECH",
+    "spriteName": "graphics/ships/ls_fighta_sb.png",
+    "height": 30,
+    "width": 32,
+    "center": [
+        16, 15
+    ],
+    "collisionRadius": 24,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_snakebites"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_speshul_shoota_fighter"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                     9.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -12, 9.5
+            ],
+            "length": 20,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 24,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -12, -9.5
+            ],
+            "length": 20,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 24,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -13,    -10.5,
+               1,      -13,
+              10,       -6,
+              10,        6,
+               1,       13,
+        
+             -13,     10.5
+    ]
+}

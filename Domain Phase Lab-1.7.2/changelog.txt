@@ -1,0 +1,417 @@
+1.7.2
+Minor Update
+Bug Fix: Fixed a bug where Camilla wrongly says the special hullmod costs 10/15 OP for cruisers/capitals while this hullmod actually needs 25/35 OP.
+Bug Fix: Fixed a bug where the scan options for the quest "Invention" from Ross wouldn't trigger correctly when players visit the stars. Now the quest would ask the players to visit any planet that orbits a star of the specific type, and the scan option will always trigger.
+Bug Fix: Fixed a bug where Jingle and Nova Blaster are available on markets. But this fix wouldn't work unless we start a new save.
+Crisis Adjustment: Now the crisis wouldn't trigger if Muspelheim system doesn't spawn. The crisis also wouldn't trigger unless you have heavy industry on a planet of size 4 or above, AND you also have a colony item installed on that heavy industry. This should make the crisis in general a bit less intense.
+Adjusted the sprite for the ship "Nightmare" and changed the weapon slots accordingly.
+
+1.7.1
+Minor Update
+Bug Fix: Fixed a bug where some of the test missions are still present in the menu mission list.
+Bug Fix: Fixed a bug where some ship systems have wrong descriptions.
+Adjusted the ship 'Sousaphone'. Now even if it uses its skill at 0 flux level, it still receives some benefits instead of none.
+Adjusted the DPL station. Now it shouldn't be too strong, and it's also more fragile.
+
+1.7.0
+Major Update
+Balance
+Rebalanced the vast majority of weapons, to be more or less on-par with vanilla.
+Reworked weapons that previously had 'shield-piercing' effects to new designs that don't break the game's balance.
+The Energy missiles (previously literal blue reapers) have been changed into a Salamander-like volley burst, instead of a single-hit weapon with massive strength that was too good at both breaking shields and armor.
+Adjusted the stats of the vast majority of ships to more closely resemble vanilla High-Tech. In general, DPL ships should now be more well-rounded and sturdier to endure some degree of punishment.
+Reworked the systems of many ships.
+Removed the built-in hullmods of the vast majority of ships that had them.
+Fighter spam in DPL is no longer as broken, with reduced fighter bays and balanced fighter LPCs.
+Removed Phase Carrier ships, instead replacing their design as a whole into specialized 'Anomaly' carrier ships.
+DPL ships that were underperforming now have more weapon mount variety, instead of being mono-energy.
+
+Graphics
+DPL ships now have their own color scheme instead of looking like blue high-tech.
+Reworked the design of many ships in general.
+Reworked some of the weapons' visuals.
+Added a new icon for Matcha.
+
+Campaign
+Revised the notoriously bad writing (Proofreader: Akii), alongside some new dialogue additions and changes in certain missions. The writing as a whole is still a work in progress.
+Reworked Colony Crisis to be more concise and reasonable.
+Temporarily removed 2 ships: Cornet, Whisper.
+Changes to story quests, such as the removal of time limits, to prevent the player from getting softlocked in their progress.
+Adjusted faction's music volume to not be as loud.
+Eliza and Ross are now slightly less heartfeltly touched by the player asking them about how was their day.
+Overall bug fixes and improvements.
+
+1.6.8
+Minor Update
+Music Adjustment: Major rewrites/refinements and adjustments to all back ground musics.
+Bug Fix: Fixed a bug that jams the Light Meets Dark quest.
+Bug Fix: Fixed a bug that the Justice and Celebration quests could fail before the boss fleet reaches the planet.
+Adjusted the ship 'Phase Lab Onslaught'. Now it doesn't have Heavy Ballistic Integration, and its armor is reduced to 1500 instead of 1600. But it has 20000 flux instead of 18000, and 900 dissipation instead of 800.
+
+1.6.75
+Minor Update
+Music Adjustment: Made some adjustments to neutral & friendly market background musics.
+
+1.6.7
+Minor Update
+Added new market and fleet encounter musics to the Phase Lab faction.
+Bug Fix: Fixed a bug in the settings.json file.
+
+1.6.6
+Minor Update
+Bug Fix: Fixed a bug that a .ship file doesn't exist.
+
+1.6.5
+Major Update
+Game Mechanics Change: Added 6 new main quests (series) for Ross.
+Game Mechanics Change: Now Revenge is a story mission and will never fail. You can finish it and meet Ross under most situations.
+Game Mechanics Change: Added a feature that some of the special officers (from this mod) may leave upon Sat Bomb. But you can dismiss them and then recruit them back later.
+Game Mechanics Change: Added 1 new recruitable officer: Greater Kapteyn.
+Game Mechanics Change: Major rewrites to some main quests, and the opening scene when you meet Eliza.
+Added 1 new ship that can be salvaged during a new quest.
+Mission Adjustment: Added more enemy in the mission 'It Takes One', and added another friendly ship in the mission 'For Science'.
+Icon Change: Refined the icon for Matcha.
+Bug Fix: Fixed a bug that prevents Eliza from being randomly located during her final quest.
+Bug Fix: Fixed a bug that a quest-related special ship would randomly show up.
+Bug Fix: Fixed a bug that some test weapons will randomly spawn. My apologies here https://fractalsoftworks.com/forum/Smileys/default/embarrassed.gif.
+Buffed the weapon 'Song of Light'. Now it has a base range of 700 instead of 600, its secondary arcs have 30% of its range instead of 20%.
+Buffed the weapon 'Song of Chaos'. Now it has special damage effect per arc of 4.5% of armor and 0.45% of hull instead of 3.5% of armor and 0.35% of hull.
+Adjusted the weapon 'Song of Dimension'. Now it deals 100% of real damage instead of 30%, but its damage is 120 instead of 200.
+Adjusted the ship 'Trombone'. Now its ship system is manuvering jets instead of reserved wings, but its DP is 24 instead of 25.
+
+1.6.3
+Minor Update
+Bug Fix: Fixed a bug that causes a crush when starting new games.
+Game Mechanics Change: Made some more refinements to the writings of the colony crisis.
+Game Mechanics Change: Now if you really sell your planet in the colony crisis, you can trade with it.
+
+1.6.2
+Minor Update
+Inter Mod Supports: Now Domain Phase Lab supports the version checker feature in Nexerelin and LunaLib. Though the version history has a small amount of display flaws.
+Mission Adjustment: Rewrote all the mission Texts for the main menu missions. They are now more readable and also closer to vanilla stories.
+Game Mechanics Adjustment: Refined the stories for the colony crisis. They are now more readable and also closer to vanilla writing style.
+Game Mechanics Adjustment: Now Ross has some new chatty stuffs. You can ask her different questions at different relation level just like Eliza.
+Campaign Mission Adjustment: Refined the writings for some of the campaign missions, now they are closer to the lore.
+Ship Adjustment: Changed the ship sprites of the ship 'Flumpet'.
+Ship Adjustment: Nerfed the ship 'Trombone'. Now it takes 25 DP instead of 24.
+Wing Adjustment: Nerfed the wing 'Agolo'. Now it costs 18 OP instead of 15, has 250 flux capacity instead of 300, and takes 6 seconds to reborn instead of 5.
+Weapon Adjustment: Adjusted the weapon 'Lightning Projector'. Now it takes 6 seconds to refire instead of 2. But its range is 750 instead of 650.
+Weapon Adjustment: Adjusted the weapon 'Heavy Lightning Projector'. Now it takes 3 seconds to refire instead of 2. But its range is 750 instead of 700.
+Weapon Adjustment: Adjusted the weapon 'Song of Time'. Now it causes 3000 damage instead of 1000, its special effect causes 100% real damage instead of 300%, and this special effect can only be triggered if the projectile hits on hull, hitting on shields now only generates lightning arcs dealing 25% of its damage.
+Hullmod Adjustment: Nerfed the hullmod 'Logistic Center'. Now it takes 25 OP for cruisers and 35 OP for capitals.
+Bug Fix: Fixed a bug that randomly spawns in-dev weapons for new quest-related challenges everywhere.
+
+1.6.1
+Minor Update
+Ship Adjustment: Minor changes to the built-in weapon sprites and ship sprites to the ship 'Phase Lab Onslaught'.
+
+1.6.0
+Major Update
+Game Mechanics Change: Added a new main quest (series), new special scene, and two new outlooks for Eliza that can be unlocked by completing this new quest.
+Game Mechanics Change: Adjusted the fleet points for the quest-critical enemy ships so that the quest fleets will not be killed by other random campaign fleets.
+Game Mechanics Change: Added new story-critical planets protections. These can be turned off by editing the settings.json file for this mod.
+Game Mechanics Change: Now the DPL colony crisis mysterious raiders will behave a bit more differently from TT raiders.
+Game Mechanics Change: Some minor changes to the writings and sounds in some main quests.
+Bug Fix: Fixed a bug that prevents Eliza from giving late main quest missions.
+Bug Fix: Fixed a bug that the weapon 'song of spirit' sometimes would appear in random contact blueprint missions.
+Adjusted the weapon 'Song of Light'. Now it has a base range of 600 instead of 800, its secondary arcs have 20% of its range instead of 30%, but its damage is raised to 300.
+Adjusted the special ability 'Phase Resonance', now it prevents the omega ships inside a fleet from splitting. (A ship with all its electronics toasted inside is not supposed to split successfully.)
+Nerfed the weapon 'Notes'. Now it has 300 damage instead of 425.
+Buffed the ship 'Hydraulis'. Now it has 6 built-in Note weapon system instead of 4.
+Adjusted the ship 'Hydraulophone'. Now it has 6 Quaver weapon systems instead of 6 'Notes'.
+Adjusted the special hull mod 'Logistic Center'. Now it can be built in, doing so would remove the 4 DP upper limit, but also reducing the fraction from 20% to 15%.
+Added a new built-in weapon 'Quaver'
+
+1.5.8
+Hot Fix
+Bug Fix: Fixed a bug that Causes game crash when you form production union with the Phase Lab.
+
+1.5.7
+Hot Fix
+Bug Fix: Fixed a bug that prevents Eliza from giving some main quest missions.
+Bug Fix: Fixed a bug that the mission Revenge would fail after you board the prototype ship.
+Game Mechanics Change: Added explicit time limits for main quest missions. So that the fleets wouldn't despawn and get the mission stuck if you wait for too long.
+Adjusted the weapon 'Song of Light'. Now it has a base range of 800 instead of 600, flux cost of 500 instead of 550, fire delay of 0.4s instead of 0.5s, but it's identified as a PD weapon, its primary arcs have 50% of its range instead of 85%, and its secondary arcs have 30% of its range instead of 40%.
+Adjusted the special ability 'Phase Resonance', now it doesn't add the d-mod 'Burnt Electrons', and its special effects are implemented more implicitly.
+Nerfed the weapon 'Song of Time'. Now it takes 20s to recharge instead of 12s.
+Nerfed the weapon 'Song of Dimension'. Now it takes 20s to recharge instead of 12s.
+Nerfed the special hull mod 'Logistic Center'. Now its DP reduction is the minimum between 4 and the 20% of the ship's base DP, instead of 4 plainly.
+
+1.5.6
+Hot Fix
+Bug Fix: Fixed a bug that causes game crash if you only enable DPL mod.
+
+1.5.5
+Major Update
+Slightly buffed the weapon 'Song of Chaos'. Now it has a bit higher chance of generating shield-piercing arcs than its chance in the last update.
+Game Mechanics Change: Added a new colony crisis for the Phase Lab. It requires more than winning a fight!
+Portraits Adjustment: Fixed the scale problem in the new portraits added in the last version. Now they should look better. (If you prefer the old portraits, those are stored in the 'portraits_old' folder. You can just rename the folder into 'portraits', and everything should work out.)
+Bug fixes: Fixed a bug that if you fail the 'Revenge' mission and then retake it, the derelict ships that are already spawned would spawn again.
+
+1.5.0
+Major Update
+Nerfed the weapon 'Song of Chaos'. Now it has significantly lower chance of generating shield-piercing arcs.
+Adjusted the weapon 'Song of Light'. Changed its shield-piercing explosion damage into ordinary energy damage.
+Added 12 new ships.
+Added 2 new non-built-in weapons and 2 more built-in weapons.
+Portraits Adjustment: Redrew all the portraits in the mod, now they should look less anime-like. (If you prefer the old portraits, those are stored in the 'portraits_old' folder. You can just rename the folder into 'portraits', and everything should work out.)
+Bug fixes: Fixed various bugs and typos.
+
+1.4.6
+Hot Fix
+Bug Fix: Fixed a bug that shows up when you try to offer Camilla some lobsters.
+
+1.4.5
+Major Update
+Weapon Design Change: Remade the weapon 'chants'. Now it's a medium weapon and is in the new 'DPL Elite' series.
+Game Mechanics Change: Added a new special item called 'Data Archives' that you can get from the fleets in the new special challenge. You can use it to exchange for some exotic weapons with Ross.
+Added 9 new weapons: The DPL Elite series, explore them in the game!
+
+1.4.2
+Hot Fix
+Star System Change: Renamed the star system 'Mirfak' into 'Capella'.
+Main reason for this update is to fix a bug that LordKhorne's mod 'The Domain Reformed' has a star system named 'Mirfak' since April 2024. It could cause some potential bugs if you have both mods active. If you don't have other mods with a starsystem called 'Mirfak', then this update is NOT necessary for you.
+
+1.4.1
+Hot Fix
+Bug Fix: Fixed a bug that prevents the challenge fleets from despawning.
+Game Mechanics Change: Made the fleet compositions for each challenge fleet more reasonable, but there would be a bit more fleets in a challenge.
+
+1.4.0
+Major Update
+Star System Change: Added stronger event horizon for the blackhole in Voidbreak.
+Weapon Design Change: Remade the weapon 'song of spirit'. Now it appears as wings instead of an actual weapon.
+Added 2 new storyline quests: Lost Arts, and Ascension.
+Game Mechanics Change: Added a special abandoned station where you could use it to call the new end game challenge. Unlocked by the new storyline quest.
+Ship Data Adjustment: Buffed the ship 'lyre'. Now it has more built-in special missiles, and better flux stats.
+
+1.3.6
+Minor Update
+Star System Change: Added the star system Mirfak, it's near the galactic academy.
+Game Mechanics Change: Buffed the ability 'Phase Resonance'. Now it gives your enemy greater debuffs and is more strategically useful.
+Mission Adjustment: Now the Revenge mission would always lead to Mirfak system rather than some random outer systems.
+Character Change: Added character Camilla Wiener, and some unique interactions with her.
+Bug Fix: The ship 'Saxophone' and 'Orchestra' would not enjoy another integrated targeting unit.
+Bug Fix: The carriers now have reasonable variants that works with the special hanger hullmod.
+Ship Data Adjustment: Buffed the ship 'acuity'. Now it has some built-in 'notes' weapons, and adds more stories to it.
+Weapon Data Adjustment: Buffed the weapon 'notes'. Now they do 425 damage instead of 400, and enjoy 25% shield piercing damage instead of 20%
+Added 1 new ship: Warhorn.
+Added 2 new weapons: Lightning Projector, Heavy Lightning Projector.
+Added 1 new hidden hullmod: Logistic Center.
+Added 1 new D-mod: Burnt Electronics.
+
+1.3.5
+Major Update
+Game Mechanics Change: Added a new special ability that you can unlock from Eliza AFTER complishing the questline.
+Ship Data Adjustment: Buffed the ship 'Saxophone'. Now it has +155% range instead of +100%.
+Ship Data Adjustment: Buffed the ship 'Orchestra' (All 3 variants). Now it has +155% range instead of +100%. And it costs 80 DP instead of 100 DP.
+Ship Data Adjustment: Buffed the ship 'Theater Organ'. Now it costs 85 DP instead of 100 DP.
+
+1.3.2
+Minor Update
+Star System Change: Nerfed the space defense power of the Muspelheim systemm, to alleviate the lagging problem.
+Bug Fix: Fixed a bug that causes run time exception when you try to begin the stable marines supplies mission.
+Bug Fix: Fixed a bug that crushes the game when you let AI pilot the ship Orchestra.
+Bug Fix: Fixed a bug that causes run time exception when DPL loses all their planets.
+Mission Change: The mission 'revenge' now has a time limit.
+Ship Data Adjustment: Buffed the ship 'Orchestra'. Now it has a unique built-in weapon, and it now has a more powerful burn drive ship system.
+
+1.3.1
+Hot Fix
+Bug Fix: Fixed a bug that causes run time exception when you try to ask Eliza about some experimental weapons.
+Bug Fix: Fixed all similar bugs that may some times cause run time exceptions during interactions.
+
+1.3.0
+Major Update
+Star System Change: Nerfed the productions of the Muspelheim system.
+Star System Change: Changed the appearance of the Research Site V Station.
+Market Change: Now the Phase Lab markets would sell some ordinary weapons.
+Game Mechanics Change: Added random exploratory fleets that the Phase Lab will send.
+Character Change: Added character Ross Higgs, and some unique interactions with her.
+Mission Order Change: Now the production and commodity-related missions are offered by Ross instead of Eliza.
+Mission Adjustment: Made some more ship hulls ONLY available by interacting with Ross. They'll now disappear from markets.
+Ship Data Adjustment: Renamed the ship 'Pioneer' to 'Acumen', adjusted its outlook and weapon mounts.
+Ship Data Adjustment: Nerfed the ship 'Tuba'. Changed its universal mounts to hybrid mounts.
+Ship Data Adjustment: Greatly buffed the ship 'Orchestra' (All 3 variants). Now it has 5 energy mounts instead of 4, and it has a built-in weapon system that could greatly slow enemies down. Changed its active system from 'energy injector' to 'burn drive'. Buffed the GR targeting system (Now it gives 80% extra range instead of 30%, but it reduces 80% of your speed instead of 40%). Made clearer explanations about why it is incompatible with the makeshif shield generator (in the intro of its hullmods). Added built-in pd weapons.
+Ship Data Adjustment: Buffed the ship 'Calliope'. Now it has 6 mideum missile slots instead of 4, and lowered its price to 100,000 credits.
+Added 1 new ship: Acuity. It's a unique ship that can be unlocked in a special bar quest.
+Added 1 new weapon: Trio.
+
+1.2.5
+Minor Update
+Star System Change: The DPL Proving Ground System is now named 'Muspelheim'.
+Game Mechanics Change: Added random exploratory fleets that the Phase Lab will send.
+Mission Order Change: Now the quest missions have less requirement to appear.
+Mission Adjustment: Made some ship hulls (including Hydraulis) ONLY available in Eliza's custom ship production mission. They'll now disappear from markets.
+Mod Support Change: Domain Phase Lab now supports features from the mod 'Commissioned Crews'.
+Mod Support Change: Domain Phase Lab now provides limited support for randomly generated sectors. Eliza will appear, but offer less quest missions compared to vanilla sector.
+Ship Data Adjustment: Nerfed the ships 'Cimbasso' and 'Trombone'. Now they have a built-in hullmod that limits the wings they can carry.
+Ship Data Adjustment: Nerfed the ship 'Lab Transport'. Now it doesn't have the built-in hullmod Augmented Drive Field.
+Ship Data Adjustment: Nerfed the ship 'Flugelhorn'. Now its shield efficiency is 1.2.
+Ship Data Adjustment: Nerfed the ship 'Sousaphone'. Now its shield efficiency is 1.4.
+Ship Data Adjustment: Nerfed the ship 'Tuba'. Now it has less frontal-focused weapon mounts, and its shield efficiency is 0.8.
+Ship Data Adjustment: Lowered the price for the ship 'Persean Express'.
+Ship Data Adjustment: Buffed the ship 'Calliope'. Now it has Missile Autoforge ship system.
+Added 1 new ship: lyre. If you complete the impossible missions, you may unlock the new ship for free at Lab Security Department once you have a Phase Lab commission.
+Added 1 new ship: dirge. If you complete the impossible missions, you may unlock the new ship for free at [Super Redacted].
+Added 1 new wing: defensive drone. If you complete the impossible missions, you may unlock the new wing for free at Lab Factory once you have a Phase Lab commission.
+
+1.2.2
+Hot Fix
+Bug Fix: Fixed the bug that the descriptions for the ships in the mission 'Artworks' could sometimes go missing.
+Mission Difficulty Adjustment: Lowered the difficulty of the mission 'Artworks'. The allied fleet is buffed.
+Mission Hints Adjustment: The mission 'Light Meets Dark' now has a more clear description about where you should go to.
+Ship Data Adjustment: Buffed the ship 'Orchestra' and its modifications that you could choose. Now it has a new active system instead of no system at all.
+Weapon data adjustment: Increased the armor damage for the [REDACTED].
+
+1.2.1
+Hot Fix
+Bug Fix: Fixed a bug of some improper behaviors of sim opponants.
+Bug Fix: Fixed a bug that may raise null pointer exception when the ship 'Silent' is fighting against Doom.
+Descriptions adjustment: Made descriptions of the shipsystem for the ship 'Silent' more accurate.
+System Adjustment: Buffed Sindria fuel production (made it improved), so that it could support larger sized high commands that are about to be added in the next updates with enough fuel.
+
+1.2.0
+Minor Update
+Added 1 new ship: silence. If you complete the new mission, you may unlock the new ship for free at Research Site V once you have a Phase Lab commission.
+Added 1 mission: One Man With Courage
+Weapon data adjustment: Slightly increased the flight time for the projectile of [REDACTED].
+Wing data adjustment: Choir now has 3 wings in a squadron, and costs 25 OP instead of 22.
+System Adjustment: Greatly nerfed the DPL Proving Ground system. Now it has 4 markets instead of 6.
+Descriptions adjustment: Made descriptions of all planets more readable.
+
+1.1.6
+Hot Fix
+Sim opponant change: deleted jazzophone from sim opponants. It's a special ship that is only good if it's in the player's hand. Its bad performance in the simulator may leave some misleading memories.
+
+1.1.5
+Minor Update
+Added 1 new ship: jazzophone.
+Mission Adjustment: The clarinet and bassoon are REMOVED from the custom production list of the Phase Lab contacts (including Eliza). But they are still available as mission rewards
+Campaign adjustment: Slightly increased the chance of seeing hydraulis in markets.
+Ship data adjustment: Slightly increased the dissipation of Saxophone, and reduced its shield upkeep.
+Weapon data adjustment: The notes now counts as missiles for slot modifiers instead of energy.
+Wing data adjustment: Choir now has 3 wings in a squadron, and costs 25 OP instead of 22.
+Shipsystem adjustment: Slightly reduced recharge time of the shipsystem: Phase Light Strike.
+Descriptions adjustment: Made descriptions of all ships more readable. For weapons, I know they are long, and I'm still trying.
+
+1.1.3
+Hot Fix
+Bug Fix: Fixed another serious glitch in the mission Peace Through Strength that may cause a null pointer exception.
+
+1.1.2
+Hot Fix
+Bug Fix: Fixed another serious glitch in the mission spawning process that stops the players from seeing some missions.
+Mission Difficulty Adjustment: Greatly lowered the difficulty of the mission Be In Deep Water, the first story mission that Eliza would offer.
+***Now you don't have to fight the pather to pass the mission, you can directly retreat as long as you get the agent.***
+
+1.1.1
+Hot Fix
+Bug Fix: Fixed a serious glitch in the mission spawning process caused by a typo.
+
+1.1.0
+Contents Update
+Added 1 new commodity: Matcha. Enjoy the exotic treat!
+Mission Adjustment: Now you may get custom production from Eliza more frequently once you have WELCOMING relation with her.
+System Adjustment: Greatly nerfed the DPL Proving Ground system.
+Changed weapon data: [REDACTED]. Now it has ammo limit of 4, and takes 6 seconds to generate new ammo. But its cooldown time is shortened from 2 to 1.
+Bug fix: Now the Nexerelin events would not end the hostility between Phase Lab and Tri-Tachyon before you complete the mission Peace Through Strength. (If you use vanilla sector.)
+Bug fix: Corrected various typos in the mission Peace Through Strength.
+
+1.0.0
+Official Release
+Added 4 new weapons: Chants, [REDACTED], [REDACTED], [REDACTED].
+Added 2 new storyline quests.
+Added 1 new interaction with Eliza to gain [REDACTED].
+Changed weapon data: [REDACTED], decreased damage from 350 to 200, increased emp from 400 to 500. Added 60 real damage (Making it less OP but powerful in its own way)
+Changed weapon data: slightly increased damage of Phase Charge Lance.
+Changed ship data: Buffed the boss ship in the mission Justice.
+Changed ship data: Nerfed the ship Hydraulis. Now it suffers a 90% damage penalty if it has D-Mods.
+Bug fix: Corrected glitches related to asking for Elly to join your fleet.
+Bug fix: Corrected some typos.
+
+0.9.9
+Final Test Release
+Added 1 new hull mod: Phase Coil Extension. It can be obtained as the reward of a quest.
+Added 1 new storyline quest. This quest makes the main part of the story for Eliza complete.
+***That quest only shows up if you have FRIENDLY relation with Eliza and have finished the previous quests.***
+Added 1 new character: Vladimir Vassiliev
+Added 1 new character: Elly Lovelace
+New Interactions: After you complete the quest line of Eliza, you could ask her for a renewable powerful officer with limited service time.
+
+0.9.3
+Hot Fix
+Weapon data change: [SUPER REDACTED] now deals much more damage to the ship hulks and asteroids. (It would be rediculous if the 'Doom Ray' could be blocked by ship hulks.)
+Quest change: Buffed the enemy flagship in the quest Justice.
+
+0.9.2
+Hot Fix
+Bug fix: Fixed a bug that may cause Null Pointer Exception in the quest Justice.
+Graphics change: Updated mission icon for the quest Justice.
+Graphics change: Updated the portrait for character Banach Salazar.
+Added more interactions with Banach Salazar.
+Added more interactions in the quest Justice.
+Changed the locations of the jump points in the DPL Proving Ground System. Now they are more convenient.
+
+0.9.1
+Hot Fix
+Changed weapon data: [REDACTED], increased damage from 300 to 350, emp from 100 to 400. (It was too weak compared to some other large energy weapons)
+Changed weapon data: High Density Plasma Lance, increased damage per beam from 2149 to 2549. Increased flux per beam accordingly. (It was too weak compared to tachyon lance)
+Changed weapon name: Phase Electron Lance is now called Phase Charge Lance.
+Changed weapon graphics: Phase Charge Lance now has new graphics.
+Changed weapon description: Phase Charge Lance now has descriptions.
+
+0.9.0
+Fourth Beta Release
+Made 1 ship available through quest: [SUPER REDACTED]
+Added 1 new storyline quest. Now you may get the [SUPER REDACTED] as rewards of the quest.
+***That quest only shows up if you have FRIENDLY relation with Eliza and have finished the previous quests.***
+Changed the relations required to get various quests. Now all quests only require relations up to FRIENDLY.
+Bug fix: Corrected some typos.
+
+0.8.1
+Hot Fix
+Questline edit: edited the variants in one of the newly added quests to improve gaming experience.
+
+0.8.0
+Third Beta Release
+Added 1 new ship: [SUPER REDACTED].
+Added 2 new weapons: [REDACTED], [REDACTED].
+Added 2 new storyline quests. Now you may get the [SUPER REDACTED], [REDACTED], and [REDACTED] as rewards of a quest.
+***That quest only shows up if you have COOPERATIVE relation with Eliza and have finished the previous research quests.***
+Added 2 new characters: Nelson Bonaparte and Banach Salazar.
+Updated the story of mission: Top Gun.
+Weapon data adjustments: Increased damage for Notes from 375 to 400. Increased range for Notes from 3000 to 4000.
+Weapon data adjustments: Increased projectile hitpoints of phonograph and gramophone torpedoes.
+Bug fix: All phase lab weapons now have a higher chance of showing in markets.
+Bug fix: The energy range finder now have a higher chance of showing in markets.
+Bug fix: Added missing descriptions for various ship systems.
+Bug fix: Fixed a deadly bug in the surplus shiphull mission. It functions properly and wouldn't break the mission system now.
+
+0.7.0
+Second Beta Release
+Added 3 new storyline quests. Now you may get clarinet, bassoon, and a new phase cruiser in campaign.
+Added 1 new interaction storyline that allows you to unlock a super-capital ship.
+Added 2 new ships: Panpipes, Orchestra.
+Added 5 new missions.
+Ship data adjustments: Clarinet and Bassoon are now visible in the CODEX.
+Ship data adjustments: Phase Lab Onslaught now has 4 medium MISSILE slots instead of 4 medium ENERGY slots.
+Ship data adjustments: Phase Lab Onslaught now has shield efficiency of 0.8 instead of 1.
+Wing data adjustments: Agolo now has a very weak shield and costs 15 OP.
+Wing data adjustments: Agolo and Double Alolo now have shorter weapon range.
+Bug fix: Fixed issues of spawning quest fleets even if the quest is denied.
+Added new interactions with Eliza when you have [SUPER REDACTED].
+
+0.6.0
+Beta Release
+Added 5 new storyline quests.
+Added 1 new related faction extra relation description.
+Added 2 new ships: Sarrusophone, Lion Anthem.
+Added 1 new fighter: Choir.
+Added 1 new weapon: Siren.
+Adjusted the ship and weapon prices.
+Bug fix: Fixed an issue in the interaction with Eliza Lovelace when reaching cooperative relation.
+Added new interactions with Eliza when you have colonies.
+
+0.5.0
+Alpha Release

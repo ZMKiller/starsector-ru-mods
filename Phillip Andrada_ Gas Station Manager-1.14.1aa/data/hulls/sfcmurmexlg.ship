@@ -1,0 +1,89 @@
+{
+  "hullName": "Murmex (LG)",
+  "hullId": "sfcmurmexlg",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/PAGSM/ships/mechs/sfc_murmex/sfc_murmex_torso.png",
+  "style": "HIGH_TECH",
+  "height": 48,
+  "width": 40,
+  "center": [20, 24],
+  "collisionRadius": 37.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 40.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0002": "sfcmurmexleftshoulderlg",
+    "WS0003": "sfcmurmexrightshoulderlg"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 0,
+      "locations": [7, -0],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [4, 2],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [4, -2],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": 25,
+      "locations": [13.5, 5.5],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": -25,
+      "locations": [13.5, -5.5],
+      "renderOrderMod": 100
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, 0.5],
+      "length": 22,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "COBRA_BOMBER"
+    }
+  ],
+  "bounds": [
+    21, -11,
+    -15.5, -11,
+    -15.5, 11,
+    21, 11
+  ]
+}

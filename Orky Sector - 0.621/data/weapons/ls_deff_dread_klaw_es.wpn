@@ -1,0 +1,29 @@
+{
+	"id":"ls_deff_dread_klaw_es",  # this id must match what's in the spreadsheet
+	"everyFrameEffect":"data.weapons.ls_deff_dread_klaw_everyframe",
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/weapons/ls_deff_dread/ls_dread_klaw00.png",
+	"hardpointSprite":"graphics/weapons/ls_deff_dread/ls_dread_klaw00.png",
+	#"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"numFrames":5,	
+	"frameRate":1,
+	#"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[15, 4.5],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[15, 4.5],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":4.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":270.0,
+					   "particleSizeMin":1.0,
+					   "particleSizeRange":2.0,
+					   "particleDuration":0.2,
+					   "particleCount":24,
+					   "particleColor":[255,185,115,215]},
+	"projectileSpecId":"ls_deff_dread_klaw_hit",  # projectile that will be fired
+	"fireSoundTwo":"graviton_beam_loop",
+}

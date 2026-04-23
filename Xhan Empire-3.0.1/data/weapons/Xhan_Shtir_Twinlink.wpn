@@ -1,0 +1,56 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 600,
+  "fireSoundTwo": "SHTIR_FIRE_SOUND",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/xhan_twinlink_shtir_barrel_HARDPOINT.png",
+  "hardpointOffsets": [
+    25,
+    4,
+    25,
+    -4
+  ],
+  "hardpointSprite": "graphics/weapons/xhan_twinlink_shtir_HARDPOINT.png",
+  "id": "Xhan_Shtir_Twinlink",
+  "muzzleFlashSpec": {
+    "length": 10,
+    "particleColor": [
+      165,
+      225,
+      185,
+      175
+    ],
+    "particleCount": 18,
+    "particleDuration": 0.2,
+    "particleSizeMin": 12,
+    "particleSizeRange": 14,
+    "spread": 28
+  },
+  "projectileSpecId": "Shtir_Shot",
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "specialWeaponGlowHeight": 30,
+  "specialWeaponGlowWidth": 12,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/xhan_twinlink_shtir_barrel_TURRET.png",
+  "turretOffsets": [
+    24,
+    4,
+    24,
+    -4
+  ],
+  "turretSprite": "graphics/weapons/xhan_twinlink_shtir_TURRET.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 7
+}

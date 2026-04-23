@@ -1,0 +1,250 @@
+{
+    "hullName": "Stompa (ES)",
+    "hullId": "ls_stompa_es",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_stompa/ls_stompa_es_body.png",
+    "height": 102,
+    "width": 124,
+    "center": [
+        61.5, 51
+    ],
+    "collisionRadius": 94,
+    "coversColor": "",
+    "shieldCenter": [
+        0, -0.5
+    ],
+    "shieldRadius": 88,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_evilsuns",
+        "ls_effigy",
+        "ls_stompa_swap_es"
+    ],
+    "builtInWeapons": {
+        "WS 003": "ls_grot_shoota_single",
+        "WS 002": "ls_grot_shoota_single",
+        "WS 008": "ls_gigashoota_coaxial",
+        "WS 006": "ls_stompa_pad_es_l",
+        "WS 007": "ls_stompa_pad_es_r"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "GUN_ARM",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": -20,
+            "locations": [
+                     3.5,      -52
+            ]
+        },
+        {
+            "id": "TECH_ARM",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 20,
+            "locations": [
+                       6,     41.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 90,
+            "angle": -30,
+            "locations": [
+                    18.5,       -7
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 90,
+            "angle": 30,
+            "locations": [
+                    18.5,        7
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "renderOrderMod": 500,
+            "arc": 210,
+            "angle": 90,
+            "locations": [
+                     1.5,     36.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "renderOrderMod": 500,
+            "arc": 210,
+            "angle": 270,
+            "locations": [
+                     1.5,    -37.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 100,
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       3,       37
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 100,
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       3,      -38
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": -20,
+            "locations": [
+                     3.5,      -52
+            ]
+        },
+        {
+            "id": "HEAD",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 0,
+            "locations": [
+                    -0.5,        0
+            ]
+        },
+        {
+            "id": "BELLY",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "renderOrderMod": -300,
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    34.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -26, 14.5
+            ],
+            "length": 56,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -26, -15.5
+            ],
+            "length": 56,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -23.5, 26.5
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": 160,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -23.5, -27.5
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": 200,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -20.5, -31
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": 210,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -20.5, 30
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": -210,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -13,       -7,
+             -26,     -9.5,
+           -25.5,      -25,
+           -11.5,    -29.5,
+           -11.5,    -48.5,
+        
+            15.5,    -47.5,
+              15,      -27,
+              27,      -26,
+              37,      -18,
+            41.5,       -7,
+        
+            41.5,        6,
+              37,       17,
+              27,       25,
+              15,       26,
+            15.5,     46.5,
+        
+           -11.5,     47.5,
+           -11.5,     29.5,
+           -25.5,       25,
+             -26,      9.5,
+             -13,        6
+    # 20 points total.
+    ]
+}

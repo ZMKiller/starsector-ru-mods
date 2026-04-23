@@ -1,0 +1,72 @@
+{
+  "variantId": "TTE_azadian_standard",
+  "hullId": "TTE_azadian",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "fluxdistributor",
+    "fluxcoil",
+    "fluxbreakers",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse",
+        "WS0002": "autopulse",
+        "WS0003": "autopulse",
+        "WS0020": "pulselaser",
+        "WS0021": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "pulselaser",
+        "WS0005": "pulselaser",
+        "WS0010": "pulselaser",
+        "WS0011": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "irpulse",
+        "WS0015": "irpulse",
+        "WS0018": "irpulse",
+        "WS0019": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "TTE_pdirpulse",
+        "WS0009": "TTE_pdirpulse",
+        "WS0012": "TTE_pdirpulse",
+        "WS0013": "TTE_pdirpulse",
+        "WS0016": "pdburst",
+        "WS0017": "pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "TTE_pdpulselaser",
+        "WS0007": "TTE_pdpulselaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

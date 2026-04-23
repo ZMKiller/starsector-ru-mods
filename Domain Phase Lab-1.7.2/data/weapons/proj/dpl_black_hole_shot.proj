@@ -1,0 +1,19 @@
+{
+	"id":"dpl_black_hole_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.scripts.weapons.dpl_black_holeEffect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":45.0,
+	"width":15,
+	"fadeTime":0.5,
+	"fringeColor":[155,125,255,255],
+	"coreColor":[0,0,0,0],
+	"glowColor":[155,155,255,75],
+	"glowRadius":50,
+	"hitGlowRadius":75,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/am_srm.png"	
+}

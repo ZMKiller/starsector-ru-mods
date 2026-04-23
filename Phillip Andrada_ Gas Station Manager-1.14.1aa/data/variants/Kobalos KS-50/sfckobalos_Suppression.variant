@@ -1,0 +1,34 @@
+{
+  "variantId": "sfckobalos_Suppression",
+  "hullId": "sfckobalos",
+  "displayName": "Suppression",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 0,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "sfcmicrolauncher",
+        "WS0002": "sfcmicrolauncher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "taclaser",
+        "WS0004": "taclaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,61 @@
+{
+  "id": "sfcamscatterblaster",
+  "specClass": "projectile",
+  "projectileSpecId": "amblaster_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/PAGSM/weapons/sfc_amscatterblaster_turret_base.png",
+  "turretGlowSprite": "graphics/PAGSM/weapons/sfc_amscatterblaster_turret_glow.png",
+  "hardpointSprite": "graphics/PAGSM/weapons/sfc_amscatterblaster_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/PAGSM/weapons/sfc_amscatterblaster_hardpoint_glow.png",
+  "glowColor": [
+    100,
+    100,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    15.5,
+    0,
+    15.5,
+    0.5,
+    15.5,
+    -0.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    -0
+  ],
+  "hardpointOffsets": [
+    23.5,
+    0,
+    23.5,
+    0.5,
+    23.5,
+    -0.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    -0
+  ],
+  "barrelMode": "LINKED",
+  "separateRecoilForLinkedBarrels": true,
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 15,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      100,
+      100,
+      255,
+      255
+    ]
+  },
+  "fireSoundTwo": "sfcamscatterblaster_fire"
+}

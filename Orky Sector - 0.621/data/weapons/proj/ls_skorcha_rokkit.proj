@@ -1,0 +1,39 @@
+{
+	"id":"ls_Skorcha_Rokkit",
+	"specClass":"missile",	
+	"missileType":"ROCKET",
+	#"missileType":"CIRCLE_TARGET",
+	"onHitEffect":"data.weapons.ls_skorcha_rokkit_onhit",
+	"sprite":"graphics/weapons/Projectiles/ls_skorcha_rocket.png",
+	"size":[8,18],	
+	"center":[5,10],
+	"collisionRadius":14,
+	"collisionClass":"MISSILE_NO_FF",
+	#"destroyedExplosionColor":[150,255,150,255],  # when the missile is destroyed by damage
+	"explosionColor":[200,100,50,200],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":60, # purely visual	
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":10,
+				  "acc":200,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-10, 0],
+				    #"style":"MISSILE_HIGH_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[200,100,50,200],
+						"contrailDuration":0.6,
+						"contrailWidthMult":3,
+						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[75,75,75,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":30.0,
+				    "angle":180.0},
+				    ]
+}

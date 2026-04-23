@@ -1,0 +1,31 @@
+{
+	"id":"dpl_siphon",
+	"specClass":"projectile",
+	"projectileSpecId":"dpl_siphon_shot",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/dpl_siphon_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/dpl_siphon_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/dpl_siphon_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/dpl_siphon_hardpoint_glow.png",		
+	"hardpointOffsets":[20, 0],
+	"turretOffsets":[3, 0],
+	"hardpointAngleOffsets":[0],
+	"turretAngleOffsets":[0],
+	"unaffectedByProjectileSpeedBonuses":true,
+	"glowColor":[100,15,175,255], # used for emp arcs as well
+	"barrelMode":"ALTERNATING",
+	"interruptibleBurst":false,
+	"autocharge":true,
+	"animationType":"GLOW_AND_FLASH",
+		"muzzleFlashSpec":{"length":100.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":20.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.25,
+					   "particleCount":25,
+					   "particleColor":[125,15,200,255]},	
+  	"fireSoundTwo": "shock_repeater_fire",
+}
+
+

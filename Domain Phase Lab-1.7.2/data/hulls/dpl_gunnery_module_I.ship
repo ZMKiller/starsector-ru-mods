@@ -1,0 +1,137 @@
+{
+  "hullName": "Gunnery Module I",
+  "hullId": "dpl_gunnery_module_I",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dpl_gunnery_module_I.png",
+  "style": "HIGH_TECH",
+  "height": 115,
+  "width": 230,
+  "center": [115, 57.5],
+  "collisionRadius": 181.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 172.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "advancedoptics",
+    "advancedcore",
+    "dpl_plasmacoupling",
+    "fluxcoil",
+    "fluxdistributor"
+  ],
+  "builtInWeapons": {
+    "WS0009": "dpl_phase_pd",
+    "WS0010": "dpl_phase_pd"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 60,
+      "locations": [-10, 98]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": -60,
+      "locations": [-10, -98]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 15,
+      "locations": [7, 77]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": -15,
+      "locations": [7, -77]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 22.5,
+      "locations": [24, 53]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -22.5,
+      "locations": [24, -53]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [16, -97]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [16, 97]
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -15,
+      "locations": [49, -33]
+    },
+    {
+      "id": "WS0010",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 15,
+      "locations": [49, 33]
+    },
+    {
+      "id": "WS0011",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -0,
+      "locations": [33, -0]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    57.5, -38.5,
+    28.5, -105.5,
+    -25, -123.5,
+    -58.5, -102,
+    -58.5, 102,
+    -25, 123.5,
+    28.5, 105.5,
+    57.5, 38.5
+  ]
+}

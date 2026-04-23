@@ -1,0 +1,247 @@
+{
+  "hullName": "Disease",
+  "hullId": "uw_boss_disease",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/uw/ships/boss/uw_boss_disease.png",
+  "style": "UW_CANCER",
+  "height": 224,
+  "width": 167,
+  "center": [90, 113],
+  "collisionRadius": 133.5,
+  "shieldCenter": [-2, -0.5],
+  "shieldRadius": 131.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "uw_temporalcurse"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 80,
+      "locations": [-47, 33]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -15,
+      "locations": [63, 2]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-90, -11]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": -120,
+      "locations": [-53, -27]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -100,
+      "locations": [-15, -59]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -100,
+      "locations": [-23, -35]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 6,
+      "angle": -90,
+      "locations": [24, -35]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 6,
+      "angle": -90,
+      "locations": [46, -32]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [74, -31]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 205,
+      "angle": 0,
+      "locations": [86, -16]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-105, 20.5],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-105, 30],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-105, 11],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-63.5, 61.5],
+      "length": 64,
+      "width": 14,
+      "angle": 150,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-45.5, 78],
+      "length": 64,
+      "width": 14,
+      "angle": 135,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-111, -26.5],
+      "length": 64,
+      "width": 14,
+      "angle": -165,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-86.5, -50.5],
+      "length": 64,
+      "width": 14,
+      "angle": -135,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-59, -67.5],
+      "length": 64,
+      "width": 14,
+      "angle": -120,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-56.5, 72.5],
+      "length": 64,
+      "width": 14,
+      "angle": 150,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-36, 87],
+      "length": 64,
+      "width": 14,
+      "angle": 135,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-107, -40],
+      "length": 64,
+      "width": 14,
+      "angle": -165,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-77, -59],
+      "length": 64,
+      "width": 14,
+      "angle": -135,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-47.5, -73.5],
+      "length": 64,
+      "width": 14,
+      "angle": -120,
+      "contrailSize": 128,
+      "style": "UW_CANCER"
+    }
+  ],
+  "bounds": [
+    -103.5, 9,
+    -103, 29.5,
+    -61.5, 41,
+    -53.5, 63,
+    -31, 83.5,
+    1, 66,
+    10.5, 29,
+    25.5, 62,
+    72, 44,
+    67, 19,
+    78.5, 10.5,
+    78, -0.5,
+    95.5, -2.5,
+    108.5, -15,
+    96.5, -29,
+    -1, -47.5,
+    -11.5, -68.5,
+    -24.5, -64.5,
+    -29.5, -48.5,
+    -40, -65.5,
+    -56, -59,
+    -47, -39,
+    -70, -56,
+    -84.5, -43.5,
+    -78.5, -32.5,
+    -98, -41.5,
+    -102, -19,
+    -91, -16,
+    -90.5, -5,
+    -46, -1
+  ]
+}

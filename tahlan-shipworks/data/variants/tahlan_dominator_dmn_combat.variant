@@ -1,0 +1,65 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 3,
+    "fluxVents": 30,
+    "hullId": "tahlan_dominator_dmn",
+    "hullMods": [
+        "targetingunit",
+        "missleracks",
+        "tahlan_daemonboost"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_dominator_dmn_combat",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_aetnos",
+                "WS0006": "tahlan_aetnos"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "dragonpod",
+                "WS0002": "dragonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "tahlan_conand",
+                "WS0005": "tahlan_conand"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "shredder",
+                "WS0011": "shredder"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "flak",
+                "WS0010": "vulcan",
+                "WS0012": "vulcan",
+                "WS0013": "vulcan",
+                "WS0014": "vulcan",
+                "WS0015": "vulcan",
+                "WS0016": "vulcan"
+            }
+        }
+    ],
+    "wings": [
+        "tahlan_lux_dmn_wing",
+        "tahlan_lux_dmn_wing"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+	"id":"A_S-F_rinkaJets",
+	"type":"ENGINE_MOD",
+	"aiType":"MANEUVERING_JETS",
+	
+	"statsScript":"org.amazigh.foundry.shipsystems.scripts.ASF_rinkaJetsStats",
+	
+
+	"engineGlowColor":[255,135,35,255],
+	"engineGlowLengthMult":1.8,
+	"engineGlowWidthMult":1.3,
+	"engineGlowGlowMult":1.5,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":false,
+
+	"useSound":"system_maneuvering_jets",
+	"loopSound":"system_maneuvering_jets_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":120,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":50,
+	}
+}

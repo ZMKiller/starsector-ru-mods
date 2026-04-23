@@ -1,0 +1,375 @@
+v1.14.1aa fix
+- Fixed Horacio Caden softlocking the game with his sheer presence
+
+v1.14.1a changelog
+- Updated to 0.98a release, PersonalFleet crash fixed
+- Updated sprites for PM-15000 and missile weapons, thanks to Quacken
+- Updated Museum gift items, thanks to Quacken
+- Portrait art updates from Sumoga
+- Now utilizes vanilla Lion's Guard flag and crest as needed
+
+v1.14.1 changelog
+- Fixed errors with Usurpers options not working
+
+v1.14 changelog
+- More text updates to change Sindrian Diktat mentions and similar information to Sindrian Fuel Company
+- Added Porpax PX-50 frigate to fleet lineup
+- Updated ship sprites of Dram DM-150 and Phaeton PN-1500
+- Removed Monofilament Tow Cable from Lelantus LT-150
+- The Lion's Guard will field the Murmidon Heavy Assault Mech and Murmex Assault Mech if ArmaA is active
+- Modified the Ajax Fuel Tender sprite and weapons
+- Adds the Ajax Heavy Fuel Tender strikecraft if ArmaA is active
+- Removed the ammo mechanic for the Antimatter Thrower (Mech) weapon
+- Updated ship loadouts to account for OP shifts in weapons
+- Added alternative way to recruit Ruka Yenni if Take No Prisoner is not installed
+- Reduced Hyder's level to 12, down from 15
+- Reduced Caden's level to 6, down from 15
+- Hello there
+
+v1.14.preview build
+- Hotfix compatible with 0.97a update.
+- Changes are odd, strange and probably not fully in place.
+- Short playtesting shows it at least works.
+- Probably won't be too great.
+- Oh, adds mechs too.
+
+v1.13.1b hotfix
+
+- Should fix issue with Diktat Enhancement Lite Mode settings fully now if also using LunaLib
+- Added new content based on CombatChatter banter update
+- Added officer led variants of certain ships for ship test mission
+
+v1.13.1a hotfix
+
+- Attempt to fix PersonalFleet crash for Horacio Caden, and similar fleets
+
+v1.13.1 changelog
+
+- Fixed bugs not sure if it really is fully fixed please scream at me if there is any more issues
+- Fixed issue of certain built in hullmods not being s-moddable
+- Added Aetos AS-1500 Tanker Cruiser
+
+v1.13 hotfix
+
+- Fixed random sector crashing
+
+v1.13 changelog
+
+Additions
+- Crossmod content with Random Assortment of Things and Tahlan Shipworks AI cores
+- Added update checker with Lunalib
+- Velmarie will now accept Hyperspace Data and Random Assortment of Things Abyss Data
+- Added Pather version of the Lelantus LS-150
+- Created custom versions of Caden and Hyder's fleets
+
+Fixes
+- Fixed Macario giving the player an extra Executor/ Cash if they already picked the option at the end of Usurpers
+- Fixed Velmarie accepting non-survey data items if they were tagged as survey data
+- Fixed Turret Accelerators S-Mod not reducing recoil
+
+Changes
+- Yunris Kween and Gregory Mannfred no longer appear on the Sindria commlink. They need to be met first elsewhere before you can contact them
+- Code changes under the hood
+- Renamed Antimatter Engine to Infernium Antimatter Engine. Decreased zero flux bonus to 7.5% flux. Changed engine health decrease from 10% to 15%. Decreased s-mod speed bonus to 5, down from 10.
+- Ruka and Yunifer can no longer receive Random Assortment of Things skills
+- Kinetic Chain Pulser Ammo increased to 40, ammo regen now regens 2 ammo every half second, decreases refire delay to 0.1 second, and reduces flux cost per shot to 50.
+- Increased Weapon damage of the Antimatter Burst Beam Array, but also increased the refire delay to 3 seconds.
+- Antimatter Scatterblaster weapon spread is now randomized
+
+v1.12.1 changelog
+
+Additions
+- Added the Phoronis PH-150 Tanker Destroyer, courtesy of Jal28.
+
+Changes
+
+Ships
+- Changed the Phaeton PN-1500's built-in wing to the Akon elite drone wing.
+
+Hullmods
+- Added recoil reduction bonus to S-Modded Turret Accelerators.
+
+v1.12 changelog
+
+Additions
+- Added new built-in hullmod for the Talaria TA-50
+- Added S-Mod bonuses to certain hullmods
+- Added post-Usurpers interactions with Dolos Macario
+- Added unique recruitment chain for Brother Arthur if you have Take No Prisoners installed
+
+Changes
+
+Ships
+- Increased Prometheus PM-15k's OP to 290 (up from 260)
+- Increased Menoetius MS-15k's OP to 290 (up from 280)
+- Increased Kobalos KS-50's stats. (Increased hull to 2750, up from 2500. Increased armor to 400, up from 300
+- Increased Phaeton PN-1500's OP to 120 (up from 110)
+- Increased Arke AE-1500's OP to 110 (up from 100)
+- Updated ship variants in response to vanilla weapon OP changes
+- Increased the size of the Talaria TA-50's shield
+- Changed Phaeton PN-1500's ship system to Augmented Turret systems
+
+Ship Systems
+- Advertisement Blitz no longer prevents weapons from firing. Will instead cut ballistics and energy weapon range and RoF down by 50%
+- Decreased Premium Overcharge and Weapons Overclock flux/second to match base dissipation of its ships
+- Added RoF boost, ballistics weapon flux cost reduction, and max recoil decrease to Augmented Turret systems
+
+Fighters
+- Increased Akon Elite Support Drone wing size to 2, up from 1
+- Increased Akon Maneuverability
+- Decreased Akon Hullpoints to 300, down from 750 and armor to 100, down from 200
+- Decreased Akon refit time to 15 seconds, down from 20 seconds
+- Increased Tanker Drone fighter number to 3, up from 2. Increased refit time to 12, up from 10
+- Decreased Tanker Drone Hull to 300, down from 500. Decreased armor to 100, down from 150
+
+Weapons
+- Antimatter Cannon shots will now pass through fighters they destroy
+- Changed Assault Chaingun (AM) to no longer be burst fire, now firing 1 round every 0.2 seconds
+- Increased range of Heavy Assault Chaingun (AM) to 700, up from 600
+- Decreased Assault Chaingun (AM) fire delay to 0.2 seconds, down from 0.25 seconds
+- Decreased Heavy Assault Chaingun (AM) fire delay to 0.1 seconds, down from 0.2 seconds
+- Increased both Heavy Assautl Cahingun (AM) and Assault Chaingun (AM) base damage to 60, up from 50
+- Decreased both Heavy Assautl Cahingun (AM) and Assault Chaingun (AM) recoil and recoil build up by half
+- Decreased Heavy PD Laser flux to 100 flux per second, down from 120 flux per second.
+- Decreased Heavy PD Laser OP cost to 10, down from 11.
+- Changed Heavy PD Laser manufacturer to Common, was previously Sindrian Fuel Company. Heavy PD Laser is now found in High tech and midline blueprints
+- Renamed the Antimatter Chain Pulser into the Kinetic Chain Pulser. Swapped the damage type from energy to kinetic. Removed the weapon's on-hit effect
+- Removed ammo for Antimatter Pulse Gun. Increased EMP damage to 300 up from 200, decreased damage to 150 down from 200. Decreased flux cost per shot to 400, down from 600
+
+Rules.csv
+- Modified Usurpers Questline slightly to fit PAGSM mod
+- Modified ANH sidequest to fit PAGSM mod
+
+v1.11 v.96 hotfix changelog
+
+Addition
+- Added the Stymphalia SA-1500 Tanker Missile Cruiser, courtesy of Yunru.
+- Added a new built-in hullmod, Antimatter Missile Boosters, hullmod which boosts missile range and movement capabilities. Will reduce the effect of Expanded Missile Racks if installed. Currently built-in for both the Stymphalia SA-1500 and Atlas AS-15000.
+
+Changes
+- Spelling and proofreading passages of some section, courtesy of Tranquility.
+- Updated portraits, courtesy of Haonfest.
+- Changed Talaria TA-50 rear mount to being a turret instead of a hardpoint.
+- Changed the weapon arcs of the IS-15k.
+- Changed the weapon arcs of the IS-20k.
+- Added range boost and turret turn speed to Weapons Overclock ship system.
+- Begun externalization of strings to a strings.json to aid with translators.
+
+Hotfix for v0.96
+- All Diktat portraits have received their complimentary sunglasses.
+- Ranks and posts adjusted accordingly.
+- Boosted Hyder's and Caden's levels and skills.
+
+v1.11.3 changelog
+
+Changes
+- Changed hullmod descriptions
+- Modified Heavy Weapons Integration into Iepetean Adjustments, which also adds 50 range to all PD weapons.
+- Added new random npc portrait, courtesy of C_Yukimaru
+- Changed gift demand class to (hopefully) prevent contact/ bar event commodity requests
+- Consolidated where Iapetus officer skills will be active
+- Fixed more rules.csv errors. Hopefully
+
+v1.11.2 changelog
+
+New
+- Added new random npc portrait, courtesy of C_Yukimaru
+- Added custom Nexerelin diplomacy events for the Sindrian Fuel Company
+- Added random bar event for buying bulk fuel at 50% rate on Sindrian Fuel Company worlds
+- Added custom Sindrian Fuel relationship text for players with a Persean League commission
+
+Changes and fixes
+- Changed Antimatter Pulse Gun sprite
+- More Rules.csv fixes
+
+v1.11.1 changelog
+
+New
+- Added the new market music, courtesy of Electric Trojan
+- Added new portrait art for Velmarie Jenkins, courtesy of Sumoga
+- Added new weapons, a small and medium variant of the Antimatter Destabilizer, and a Large version of the Assault Chaingun (AM)
+
+Fixes
+- Rules.csv fixes
+- Fixed DE Unpropaganda Center causing crashes when not present
+- Fixed missing composite slot on Polybolos PB-50
+
+Other Changes
+- Reduced size of music files to reduce overall mod size
+
+v1.11 changelog
+
+New Additions
+- Added the Solar Livery hullmod, replaces Solar Shielding on all SFC ships.
+- Added two new structures, the Volturnian Lobster Garden and the Lion's Guard Outpost.
+- Added two new colony items, the Aquatic Stimulator and the Mote Megacondenser. The Mote Megaconedenser should be recoverable from salvaging, while the Aquatic Stimulator is an NPC reward. Thanks to Mayu for the help!
+- Added crossmod with Special Hullmod Upgrades. Hullmods can be received from Yunris Kween and Gregory Mannfred. Thanks, Mayu!
+- Added the Sindrian Fuel Company Museum interaction to Sindria.
+- Added 6 new gift items purchasable from the Museum to give to NPCs.
+- Added new Ship system, Augmented Jets. Is the new ship system for the Bia BA-150, Crius CR-1500, and Notos NS-15000.
+- Added skill icon art by Suvi.
+- Added new admin skill to Dunn.
+- Added new rep reward for Velmarie.
+- Added unique faction relationship text for the Sindrian Fuel Company towards certain factions: You will see this if you're commissioned with another faction and check Sindrian Fuel on the faction tab.
+- Added new Main Menu mission, Flight of the Iapetus.
+- Added the following ships:
+- The Polybolos PB-50, a ballistics focused frigate. Thanks TheDino27_FR for the ship!
+- Pather variants of the Drachm, the Epimetheus, and the Iapetus IS-15000. Thanks to Pogre and Bullir Arthr for these ships!
+- MagicBounty Bounty! Hopefully it works!
+
+
+Changes
+- NPCs will now provide hints to what gifts they like.
+- Readded maneuverability of Antimatter Micro Missiles.
+- Buffed Antimatter Thrower damage on-hit effect, now has a 25% chance to do 500 Fragmentation on hit. Effect will also trigger on shields.
+- Buffed the Kobalos to have extra hull (2500 now) and more flux (2000 flux capacity and 250 flux dissipation) and speed (95 max speed).
+- Buffed the Hydria HA-1500 to 4500 hull, up from 4000 hull.
+- Buffed Antimatter Engine, lowering the negatives, and increasing the positives.
+- Nerfed the Bia BA-150 to 150 armor, down from 300 hull. Nerfed shield arc to 120, down from 200.
+- Changed Bento BO-150's stats, increasing hull but decreasing speed.
+- Renamed "Hard Work and Honest Labor" admin skill to "Company Work Ethic".
+- Changed up the unique skills for Yunifer and Ruka, giving each a unique skill still based on the Iapetus-class of ships. Also changed their other skills to not be copies of each other.
+- Made the commission checker modular. Thanks to Matt Damon for this!
+- Fixed Velmarie's data turn in accepting more than just survey data. Thanks Mayu and President Matt Damon!
+- Changed Dunn accepting ore, now he does it through a menu turn in.
+- Changed rep loss from turning UAF keycards in to a scaling amount instead of a flat -5.
+- The Grand Fuel Fleet and NFT Merchant Militia will now respawn if defeated. Thanks to SirHartley for the code!
+- Updated Ruka Yenni's portrait, thanks Sumoga!
+
+Fixes
+- Fixed crossmod interaction with Diktat Enhancement when DELiteMode is active.
+
+v1.10.02 changelog
+
+Hotfixes:
+- Fixes dialog loop bug when talking to Yunifer.
+
+Changes:
+- Implemented Yunifer's custom music, Thanks, Haplogynae!
+- Reduced wait period to being contacted by Yunifer after acquiring the IS-20000 to 7 days, down from 14 days.
+- Reduced wait period to compliment/ insult Yunifer to 7 days, down from 14 days.
+- Reduced wait period to being contacted by Kween after Yunifer's event to 7 days, down from 14 days.
+- Added option to request Kween for help in recruiting Yunifer to your fleet after attempting to hire Yunifer for the first time.
+
+v1.10.01 changelog
+
+- Rules.csv proofread. Thanks Haplogynae!
+- Updated Kween's portrait. Thanks, Sumoga!
+- Fix(?) for Take No Prisoner crossmod bug. Thanks, MattDamon!
+
+
+v1.10 release changelog
+
+Added Ships:
+- Kobalos KS-50 sprite by GMan
+- Kendar KR-150 sprite by Skylord Zero
+- Atlas AS-15000 sprite by Fellout
+
+Added Weapons: 
+- Asteroid Destroyer 
+- Antimatter Thrower (Expanded) 
+- Antimatter Scatterblaster
+- Heavy PD Laser
+- Sprites by Silkar
+
+Crossmod Compatibilities:
+- Added compatibility with Take No Prisoners
+- Added compatibility with Combat Chatter
+- Added custom alliance names for Vanilla and a few modded factions
+- Adjusted Nexerelin relationships and dispositions for the Sindrian Fuel Company and other factions
+- Updated crossmod interactions with Secrets of the Frontier 13 update
+
+Main Menu Mission Update: 
+- Commented out Defense of Nachiketa mission
+- Added Titanomachy mission
+
+Weapon Changes:
+- Reduced range of Antimatter Destablizer to 800, down from 900
+- Increased energy per shot of Antimatter Destablier to 100, from 80
+
+Micro Missile line
+- Decreased top speed to 550, down from 750
+- Decreased start launch speed to 200, down from 300
+- Decreased project acceleration speed
+- Decreased projectile hp to 20, down from 35
+- Decreased weapon damage to 50, down from 75
+- General decrease in total ammo for all types
+
+Antimatter Burst Beam Array
+- Replaced Ammo system with regular cooldown
+- Cooldown of 2 seconds per shot
+- Charge up of 0.5 seconds
+- Charge down of 0.5 seconds
+- Main fire lasts 1 second
+- Reduced ranged to 1000, down from 1100
+- Increased damage to 1200, up from 1000
+- Changed sound effect
+
+Ship Changes:
+- Hydria HA-150
+- Hull reduced to 4000, down from 6000
+- Armor rating reduced to 400, down from 600
+- Flux Dissipation reduced to 500, down from 600
+
+- Marathon (SFC)
+- Added Plasma Burn System
+- Shield Modules now will appear on Non-Player controlled ships
+
+System Changes:
+- Fuel Delivery
+- Reduced Charges to 2, down from 4
+- Increased Cooldown to 2, up from 1
+- Decreased regen to 0.2, down from 0.25
+
+NPC changes:
+- Added another accolade to Phillip Andrada's title
+- Yunifer Runi is now recruitable
+- Ruka Yenni has unique Take No Prisoner interactions
+- Added new interactions with Yunris Kween
+- Added new interactions with Gregory Mannfred after getting the superfighter
+- Added unique admin skill for Sindrian Fuel's planet administrators
+
+Other Changes:
+- Fixed bug with Company patrol stop searches
+- Added more ship variants
+- Changed Lion Guard's HQ description from being a .csv edit to being edited in the modplugin
+
+
+v1.9 Changelog
+Additions
+- Added another accolade to Phillip Andrada's title.
+- Added the Lelantus LT-150, courtesy of R3D.
+- Added a new Missile weapon, the Micro Missile Launcher. Has a version for each weapon mount size.
+- Added new portraits, courtesy of Quacken.
+- Added Ruka Yenni, Fuel Fleet Admiral of the Grand Fuel Fleet.
+- Added unique market on Cruor for those who build reputation with Rudric Ruy.
+- Added a 50 rep reward for Yunris Kween. (Requires Nexerelin)
+- Added two extra interactions for Spender Balashi at 50 and 75 rep.
+
+Changes
+Overall changes
+- Reduced minimum crew but reduced max crew.
+- Spellcheck pass on ships, weapons, and ship systems descriptions.
+Polus PS-50 Changes
+- Removed built-in weapon. 
+- Changed system from maneuvering jets to fast missile racks.
+Clepsydra CA-1500 Changes
+- Reduced hull from 10000 to 8500.
+- Reduced armor from 1300 to 800
+- Max flux reduced to 5000
+- Flux dissipation reduced to 350
+- Deceleration reduced to 30
+Crius CR-1500 Changes
+- Removed the two hidden weapon slots.
+Prometheus PM-15000 Changes
+- Changed universal large slot to hybrid large slot.
+Epimetheus EM-15000 Changes
+- Fuel Dump AI changed, courtesy of gunbuilderguy.
+Hydria HA-150 Changes
+- Updated ship graphic.
+Nephropoidea Changes
+- Changed missile weapon to SFC Micro Missiles.
+Slent ST-25 Changes
+- Changed missile weapon to Hammer-torpedo double.
+Weapon Changes
+- Antimatter Torpedo stats modified.

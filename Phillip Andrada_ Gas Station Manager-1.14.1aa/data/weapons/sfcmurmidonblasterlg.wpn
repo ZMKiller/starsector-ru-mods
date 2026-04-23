@@ -1,0 +1,52 @@
+{
+  "id": "sfcmurmidonblasterlg",
+  "specClass": "projectile",
+  "projectileSpecId": "kineticblaster_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_leftarm_base.png",
+  "turretGlowSprite": "graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_leftarm_gun_glow.png",
+  "turretGunSprite": "graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_leftarm_gun.png",
+  "hardpointSprite": "graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_leftarm_base.png",
+  "hardpointGlowSprite": "graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_leftarm_gun_glow.png",
+  "hardpointGunSprite": "graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_leftarm_gun.png",
+  "glowColor": [
+    165,
+    155,
+    150,
+    255
+  ],
+  "visualRecoil": 2,
+  "turretOffsets": [
+    47.5,
+    25
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    100.5,
+    25
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 15,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      255,
+      250,
+      245,
+      255
+    ]
+  },
+  "fireSoundTwo": "kinetic_blaster_fire"
+}

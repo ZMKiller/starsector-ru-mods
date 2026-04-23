@@ -1,0 +1,69 @@
+{
+    "hullName": "Blasta Pod (BM)",
+    "hullId": "ls_blasta_pod_bm",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_blasta_pod.png",
+    "height": 34,
+    "width": 30,
+    "center": [
+        15, 17
+    ],
+    "collisionRadius": 24,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "no_weapon_flux",
+        "ls_badmoons"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_kustom_mega_blasta_pod"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                       0,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -10.5, 6
+            ],
+            "length": 18,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 24,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -10.5, -6
+            ],
+            "length": 18,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 24,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -11,     -8.5,
+            11.5,       -7,
+            11.5,        7,
+             -11,      8.5
+    ]
+}

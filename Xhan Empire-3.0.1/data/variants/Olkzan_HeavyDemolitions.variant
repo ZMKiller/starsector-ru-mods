@@ -1,0 +1,43 @@
+{
+  "displayName": "Heavy Demolitions",
+  "fluxCapacitors": 18,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "XHAN_Olkzan",
+  "hullMods": [ "targetingunit" ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "Olkzan_HeavyDemolitions",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "Stolb_Demo_charge"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "Xhan_Drob",
+        "WS0004": "Xhan_Drob",
+        "WS0007": "Xhan_Shtir_Twinlink"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Chok_point_def",
+        "WS0002": "Chok_point_def"
+      }
+    }
+  ],
+  "wings": []
+}

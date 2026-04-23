@@ -1,0 +1,38 @@
+{
+	"specClass":"beam",
+	"id":"A_S-F_cockatrice_payload",
+
+	"beamEffect":"org.amazigh.foundry.scripts.ASF_CockatriceBeamEffect",
+
+	"type":"ENERGY",
+	"size":"LARGE",
+	"collisionClass":"RAY_FIGHTER",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"turretSprite":"graphics/fx/empty.png",
+	"turretGlowSprite":"graphics/fx/empty.png",
+	"hardpointSprite":"graphics/fx/empty.png",
+	"hardpointGlowSprite":"graphics/fx/empty.png",
+	"turretOffsets":[9, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[9, 0],
+	"hardpointAngleOffsets":[0],
+
+#	"glowColor":[255,110,85,255],	
+#	"fringeColor":[255,85,110,225],
+#	"coreColor":[255,235,205,255],
+
+	"glowColor":[125,215,255,255],
+	"fringeColor":[90,170,190,225],
+	"coreColor":[205,235,255,255],
+
+	"hitGlowBrightenDuration":0,
+	"hitGlowRadius":150, #350
+	"width":30.0, #50
+	"textureType":LASER,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF,FIGHTER,ASTEROID],
+	"playFullFireSoundOne":true,
+	"fireSoundOne":"A_S-F_cockatrice_payload_fire",
+	"fireSoundTwo":"A_S-F_cockatrice_beam_loop",
+}

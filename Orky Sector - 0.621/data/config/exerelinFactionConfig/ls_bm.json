@@ -1,0 +1,78 @@
+{
+  "playableFaction": true,
+  "corvusCompatible": true,
+  "rebelFleetSuffix": "Treasonous Gitz",
+   "invasionSupportFleetName":"Waaagh! Splinter Fleet",
+   "responseFleetName":"'ard Boyz",
+   "defenceFleetName":"Garrishun Gitz",
+
+  "difficultyString":"hard",
+  "startRelationships": {
+		"independent":-0.3,
+		"pirates":0.1,						
+		"persean":-0.6,						
+		"tritachyon":0.1,
+		"hegemony":-0.3,
+		"lions_guard":-0.3,
+		"sindrian_diktat":-0.3,
+		"luddic_church":-0.3,
+		"luddic_path":-0.5,
+		"remnant":-0.6,
+		"ls_ds":0.8,
+		"ls_es":0.5,
+		"ls_ba":0.2,
+},
+
+    "invasionPointMult":1.25,
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":0.9,
+    },
+
+  "diplomacyPositiveChance": {"default": 0.5},
+  "diplomacyNegativeChance": {"default": 1.0},
+  "morality": "evil",
+    "alignments":{
+        "hierarchical":-0.25,
+        "ideological":0.5,
+        "militarist":1,
+        "corporate":-0.75,
+        "diplomatic":-1,
+
+    },
+    "diplomacyTraits":["foreverwar", "anarchist"],
+  "vengeanceLevelNames": ["Git", "Grod", "Waaaaagh!"],
+  "vengeanceFleetNames": ["Gitstompa Mob", "Boss' 'ard Nobz", "Great Waaaaagh! Fleet"],
+  "startShipsSolo": [["ls_wolf_bm_custom"]],
+  "startShipsCombatSmall": [
+    ["ls_mule_bm_basha", "ls_wolf_bm_custom", "ls_glimmer_bm_blasta"]
+  ],
+  "startShipsCombatLarge": [
+    ["ls_venture_bm_dakka", "ls_mudfish_bm_kannon", "ls_squighawk_bm_custom"]
+  ],
+  "startShipsCarrierSmall": [["ls_gold_tooth_bm_strike", "ls_centurion_bm_custom"]],
+  "startShipsSuper": [
+    ["ls_onihime_bm_custom", "ls_aperion_bm_custom", "ls_bromen_bm_custom"]
+  ],
+
+  "startSpecialItems": [
+    [["ls_bm_bp_package", ""]],
+    [["ls_orky_bp_package", ""]],
+    [["low_tech_package", ""]],
+    [["modspec", "ls_bosspole"]],
+    [["modspec", "ls_explody_propella"]],
+    [["modspec", "ls_git_finda"]],
+    [["modspec", "ls_ard_case"]],
+
+
+  ],
+    "colonyExpeditionChance":0.5,
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+
+  "defenceStations": [
+    {"ids": ["orbitalstation", "battlestation", "starfortress"]},
+  ],
+
+  "bonusSeeds": [
+    {"id": "nanoforge_corrupted", "count": 1},
+  ]
+}

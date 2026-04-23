@@ -1,0 +1,38 @@
+{
+    "displayName": "Torpedo",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "ls_smol_rok_ds",
+    "hullMods": [
+        "ls_explody_propella",
+        "missleracks"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_smol_rok_ds_torpedo",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_torpedo_rail",
+                "WS 001": "ls_torpedo_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_supashoota_turret",
+                "WS 005": "ls_supashoota_turret"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_twin_shoota"
+            }
+        }
+    ]
+}

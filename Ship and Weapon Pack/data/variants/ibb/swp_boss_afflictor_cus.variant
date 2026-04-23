@@ -1,0 +1,53 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 9,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "swp_boss_afflictor",
+    "hullMods": [
+        "advancedoptics",
+        "fluxdistributor",
+        "unstable_injector",
+        "heavyarmor",
+        "hardened_subsystems",
+        "phase_anchor"
+    ],
+    "permaMods": [
+        "advancedoptics",
+        "fluxdistributor",
+        "unstable_injector",
+        "heavyarmor",
+        "hardened_subsystems"
+    ],
+    "sMods": [
+        "advancedoptics",
+        "fluxdistributor",
+        "unstable_injector",
+        "heavyarmor",
+        "hardened_subsystems"
+    ],
+    "variantId": "swp_boss_afflictor_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "amblaster",
+                "WS 003": "amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 006": "phasebeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lrpdlaser",
+                "WS 004": "lrpdlaser"
+            }
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+	"id":"swp_arcade_faerievortex",
+	"type":"PHASE_CLOAK",
+	"aiType":"PHASE_CLOAK",
+
+	"statsScript":"data.scripts.shipsystems.SWP_FaerieVortexStats",
+
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
+
+	"jitterColor":[255,50,50,25],
+	"jitterCopies":20,
+	"jitterRange":25,
+	"jitterRangeRadiusFraction":0.05,
+
+	"effectColor1":[255,200,50,150],
+	"effectColor2":[255,200,50,200],
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+
+	"soundFilterType":"HIGHPASS",
+	"soundFilterGain":1.00,
+	"soundFilterGainLF":0.25,
+
+	"fadeActivationSoundOnChargedown":false,
+
+	"shipAlpha":0.5,
+
+	"useSound":"system_phase_cloak_collision",
+	"loopSound":"system_fortress_shield_loop",
+	"outOfUsesSound":"system_phase_cloak_collision",
+
+	"aiHints":{
+		"threatRange":2000,
+		"threatAmount":15,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}

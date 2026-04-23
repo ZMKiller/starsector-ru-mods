@@ -1,0 +1,44 @@
+{
+  "variantId": "A_S-F_misside_sup2",
+  "hullId": "A_S-F_misside",
+  "displayName": "Support",
+  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ecm",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "A_S-F_lamia",
+        "WS0002": "A_S-F_lamia",
+        "WS0003": "A_S-F_lamia",
+        "WS0004": "A_S-F_lamia"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lrpdlaser",
+        "WS0007": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

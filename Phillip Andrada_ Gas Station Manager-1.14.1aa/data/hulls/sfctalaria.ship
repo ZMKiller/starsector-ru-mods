@@ -1,0 +1,127 @@
+{
+  "hullName": "Talaria TA-50",
+  "hullId": "sfctalaria",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/combat_tanker_superfrigatev1.png",
+  "style": "MIDLINE",
+  "height": 130,
+  "width": 105,
+  "center": [52.5, 65],
+  "collisionRadius": 116,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 102.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery",
+    "sfcantiengine",
+    "sfc_talariahullmod"
+  ],
+  "builtInWings": [
+    "sfcakon_wing"
+  ],
+  "builtInWeapons": {
+    "WS0003": "sfcamblaster_recharge"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [48, 18.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [48, -18.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [20.5, 0.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-12, 34]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-32, 0.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        22.5, -39,
+        15.5, -38,
+        29, -37.5,
+        21.5, -36.5,
+        21.5, -40.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-58.5, 0.5],
+      "length": 60,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-22.5, 25],
+      "length": 35,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-22.5, -23.5],
+      "length": 35,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    52, -9.5,
+    30, -37,
+    -11, -35.5,
+    -22, -17.5,
+    -39.5, -16.5,
+    -52, -7.5,
+    -52, 7.5,
+    -39.5, 16.5,
+    -22, 17.5,
+    -15.5, 40.5,
+    33, 38,
+    52, 9.5
+  ]
+}

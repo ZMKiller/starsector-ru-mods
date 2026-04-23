@@ -1,0 +1,42 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+
+		"A_S-F_peryton_ass":1.5,
+		"A_S-F_peryton_fs":3,
+		"A_S-F_peryton_spr":3,
+
+		"A_S-F_gaoler_esc": 2,
+		"A_S-F_gaoler_stk": 3,
+		"A_S-F_gaoler_sup": 1,
+		"A_S-F_gaoler_sup3": 2,
+	},
+
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+		"tags":{
+			"A_S-F_arkTech":0.1,
+		},
+    },
+
+    "knownShips":{
+		"tags":["A_S-F_arkTech"],
+    },
+
+
+	"knownWeapons":{
+		"tags":["A_S-F_arkTech_wep"],
+	},
+
+	"knownHullMods":{
+		"hullMods":[
+			"A_S-F_ElectroVent",
+			"A_S-F_anarchyBallistic",
+			"A_S-F_anarchyEnergy",
+			"A_S-F_anarchyFlux",
+			"A_S-F_anarchyShields",
+			"A_S-F_anarchyTargeting",
+		],
+	},
+
+},

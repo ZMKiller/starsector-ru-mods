@@ -1,0 +1,63 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+	"difficultyString":"hard",
+
+	"maxRelationships":{
+		"luddic_path": -1.00,
+		"pirates": -1.00,
+	},
+
+    "alignments":{
+        "technocratic":0.5,
+        "militarist":0.5,
+        "diplomatic":0.5,
+        "ideological":1
+    },
+	"diplomacyTraits":["pacifist","helps_allies","stalwart","neutralist"],
+	
+	"morality":"good",
+	
+	"canInvade":false,
+	"invasionPointMult":0,
+	
+    "startShipsSolo":[
+	["dpl_flute_standard"],
+	["dpl_elf_standard"],
+	["dpl_ophicleide_standard"],
+	],
+    "startShipsCombatSmall":[
+	["dpl_oboe_standard", "dpl_bugle_escort", "dpl_ophicleide_escort"],
+	["dpl_trumpet_standard", "dpl_bugle_escort", "dpl_bugle_escort"],
+	["dpl_flugelhorn_elite", "dpl_ophicleide_escort", "dpl_ophicleide_escort"],
+    ],
+    "startShipsTradeSmall":["dpl_persean_express_transport", "dpl_bugle_escort", "dpl_bugle_escort"],
+    "startShipsCombatLarge":[
+	["dpl_hydraulis_standard", "dpl_trumpet_standard", "dpl_trumpet_standard"],
+	["dpl_flugelhorn_elite", "dpl_flugelhorn_elite", "dpl_bugle_escort"],
+	["dpl_baritone_standard", "dpl_trumpet_standard", "dpl_ophicleide_escort"],
+	],
+    "startShipsTradeLarge":["dpl_lab_transport_ft"],
+    "startShipsCarrierSmall":[
+	["dpl_flumpet_assult", "dpl_ophicleide_escort", "dpl_ophicleide_escort"],
+	],
+    "startShipsCarrierLarge":[
+	["dpl_trombone_standard", "dpl_flugelhorn_escort", "dpl_ophicleide_escort"],
+	["dpl_trombone_standard", "dpl_trumpet_standard", "dpl_ophicleide_escort"],
+	],
+	
+	"startShipsGrandFleet":[
+	["dpl_sousaphone_standard", "dpl_flugelhorn_escort", "dpl_flugelhorn_escort", "dpl_ophicleide_escort", "dpl_ophicleide_escort"],
+	["dpl_euphonium_AA", "dpl_persean_express_armed", "dpl_persean_express_armed", "dpl_trumpet_standard", "dpl_trumpet_standard"],
+	["dpl_saxophone_standard"],
+	],
+	
+	"startSpecialItems":[
+        [["dpl_commercial_pkg", ""]],
+    ],
+	
+	#rarely colonize and only nearby systems
+	"colonyExpeditionChance":0.5,
+	"colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+    "maxColonyDistance": 5,
+}

@@ -1,0 +1,309 @@
+{
+  "hullName": "Ezekiel",
+  "hullId": "swp_arcade_ezekiel",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/swp/ships/super/swp_ezekiel.png",
+  "style": "HIGH_TECH",
+  "height": 173,
+  "width": 183,
+  "center": [91, 81],
+  "collisionRadius": 132.953003,
+  "shieldCenter": [6, -0.5],
+  "shieldRadius": 125,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [36, -0.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [37, 0.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [37, -1.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 180,
+      "angle": 0,
+      "locations": [92, 10.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 180,
+      "angle": -0,
+      "locations": [92, -11.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 165,
+      "angle": 0,
+      "locations": [86, 32.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 165,
+      "angle": -0,
+      "locations": [86, -33.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 125,
+      "angle": 25,
+      "locations": [49, 80]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 125,
+      "angle": -25,
+      "locations": [49, -81]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 170,
+      "angle": 20,
+      "locations": [71.5, 61.5]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 170,
+      "angle": -20,
+      "locations": [71.5, -62.5]
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 120,
+      "angle": 45,
+      "locations": [13.5, 89.5]
+    },
+    {
+      "id": "WS0013",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 120,
+      "angle": -45,
+      "locations": [13.5, -90.5]
+    },
+    {
+      "id": "WS0014",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 180,
+      "angle": 75,
+      "locations": [-34.5, 16]
+    },
+    {
+      "id": "WS0015",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 180,
+      "angle": -75,
+      "locations": [-34.5, -17]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-60.5, 16.5],
+      "length": 64,
+      "width": 12,
+      "angle": 167.417038,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleSpec": {
+        "type": "GLOW",
+        "engineColor": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "engineCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": "",
+        "contrailColor": [
+          255,
+          255,
+          255,
+          5
+        ],
+        "contrailCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "contrailParticleSizeMult": 4,
+        "contrailParticleFinalSizeMult": 0,
+        "contrailMaxSpeedMult": 0.25,
+        "contrailAngularVelocityMult": 0.25,
+        "contrailParticleDuration": 0.5
+      }
+    },
+    {
+      "location": [-60.5, -17.5],
+      "length": 64,
+      "width": 12,
+      "angle": -167.417038,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleSpec": {
+        "type": "GLOW",
+        "engineColor": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "engineCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": "",
+        "contrailColor": [
+          255,
+          255,
+          255,
+          5
+        ],
+        "contrailCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "contrailParticleSizeMult": 4,
+        "contrailParticleFinalSizeMult": 0,
+        "contrailMaxSpeedMult": 0.25,
+        "contrailAngularVelocityMult": 0.25,
+        "contrailParticleDuration": 0.5
+      }
+    },
+    {
+      "location": [-70, 0],
+      "length": 96,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "CUSTOM",
+      "styleSpec": {
+        "type": "GLOW",
+        "engineColor": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "engineCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": "",
+        "contrailColor": [
+          255,
+          255,
+          255,
+          5
+        ],
+        "contrailCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "contrailParticleSizeMult": 4,
+        "contrailParticleFinalSizeMult": 0,
+        "contrailMaxSpeedMult": 0.25,
+        "contrailAngularVelocityMult": 0.25,
+        "contrailParticleDuration": 0.5
+      }
+    }
+  ],
+  "bounds": [
+    64.5, -9,
+    92.5, -12,
+    39.5, -26.5,
+    87, -33.5,
+    31, -37.5,
+    72, -63,
+    50.5, -59.5,
+    -14, -36,
+    48, -82,
+    -12, -55,
+    15.5, -92,
+    -71, -29,
+    -59, -17.5,
+    -79.5, -11.5,
+    -69.5, -8.5,
+    -69.5, 7.5,
+    -79.5, 10.5,
+    -59, 16.5,
+    -71, 28,
+    15.5, 91,
+    -12, 54,
+    48, 81,
+    -14, 35,
+    50.5, 58.5,
+    72, 62,
+    31, 36.5,
+    87, 32.5,
+    39.5, 25.5,
+    92.5, 11,
+    64.5, 8,
+    74, -0.5
+  ]
+}

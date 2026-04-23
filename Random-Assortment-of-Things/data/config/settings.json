@@ -1,0 +1,134 @@
+ {
+ 	"plugins":{		
+		#"newGameSectorProcGen":"assortment_of_things.campaign.procgen.RATSectorProcGen", No Longer part of RAT but is in a seperate mod
+		"RatCombatHandler":"assortment_of_things.combat.CombatHandler",
+		"RatAfterImageRenderer":"assortment_of_things.combat.AfterImageRenderer",
+		#"RatParallaxParticleRenderer":"assortment_of_things.combat.ParallaxParticleRenderer",
+	},	
+
+	"ruleCommandPackages":[
+		"assortment_of_things.campaign.rulecmd",
+	],
+
+
+	"designTypeColors":{
+		"Chiral":[122,139,221,255],
+		"Hull Alteration":[250, 187, 77,255],
+		"Unique Alteration":[222, 146, 16,255],
+		"Special Alteration":[16, 202, 227, 255],
+		"Abyss":[255, 0, 50, 255],
+		"Abyssal":[255, 0, 50, 255],
+		"Seraph":[242, 48, 65, 255],
+		"Abyssal Threat":[167,119,118, 255],
+		"Primordial":[140, 0, 250, 255],
+		"Modular Weapon":[158, 50, 230,255],
+		
+		"Artifact":[102, 22, 222, 255],
+		"Abyssal Artifact":[212, 21, 50, 255],
+		
+		"Forge-Assisted":[235, 164, 49, 255],
+		"Exo-Tech":[252, 190, 18, 255],
+		"Experimental Exo-Tech":[252, 190, 18, 255],
+	},		
+	
+	"rat_abyssColor":[255, 0, 50,255],
+	
+	"drop_prob_officer_rat_chronos_core":0.075,
+	"drop_prob_officer_rat_cosmos_core":0.075,
+	"drop_prob_officer_rat_seraph_core":0.15,
+	"drop_prob_officer_rat_primordial_core":0,
+	
+	"drop_prob_officer_rat_neuro_core":0,
+	"drop_prob_officer_rat_exo_processor":0,
+
+	"graphics":{
+		
+		"blueprint_packages":{
+			
+			"rat_exo_package":"graphics/factions/rat_exo.png",
+		},
+		
+		"rat_fx":{
+			
+			"rat_exo_shield_inner":"graphics/fx/rat_exo_shields256.png",
+			"rat_exo_shield_outer":"graphics/fx/rat_exo_shields256ring.png",
+			"rat_primordial_shield_inner":"graphics/fx/rat_primordial_shields256.png",
+			"rat_primordial_shield_outer":"graphics/fx/rat_primordial_shields256ring.png",
+		},
+		
+		"rat_terrain": {
+		  "wormhole_bands":"graphics/fx/abyss_portal_textures_small.png",	
+		  "halo":"graphics/fx/rat_halo.png",	
+		  
+		  #"depths_siphon":"graphics/terrain/rat_depths_siphon.png",
+		  #"depths_siphon_glow":"graphics/terrain/rat_depths_siphon_glow.png",
+		  #"depths_siphon_map":"graphics/terrain/rat_depths_siphon_map.png",
+		  
+		  "depths1":"graphics/terrain/rat_depths1.png",
+		  "depths1_glow":"graphics/terrain/rat_depths1_glow.png",
+		  "depths1_map":"graphics/terrain/rat_depths1_map.png",
+		  
+		  #"depths1_combat":"graphics/terrain/rat_combat_depths1.png",
+		  #"depths1_map_combat":"graphics/terrain/rat_combat_depths1_map.png",
+		  
+		  #"depths2":"graphics/terrain/rat_depths2.png",
+		  #"depths2_glow":"graphics/terrain/rat_depths2_glow.png",
+		  #"depths2_map":"graphics/terrain/rat_depths2_map.png",
+		  
+		},
+		
+		"rat_cores": {
+		  "chronos":"graphics/portraits/cores/rat_chronos_core.png",
+		  "cosmos":"graphics/portraits/cores/rat_cosmos_core.png",
+		  "seraph":"graphics/portraits/cores/rat_seraph_core.png",
+		  "primordial":"graphics/portraits/cores/rat_primordial_core.png",
+		  
+		  "neuro":"graphics/portraits/cores/rat_neural_core.png",
+		  "military":"graphics/portraits/cores/rat_military_core.png",
+		  
+		  "exo_processor":"graphics/portraits/cores/rat_exo_processor.png",
+		  
+		  "rat_neural_shard":"graphics/portraits/cores/rat_neural_shard.png",
+		},
+		
+		"rat_intel": {
+		  "abyss_warning_beacon":"graphics/icons/intel/rat_abyss_warning_beacon.png",
+		},
+		
+		"rat_exo_ability": {
+		  "frame1":"graphics/icons/abilities/rat_exoship_management_transit_frame1.png",
+		  "frame2":"graphics/icons/abilities/rat_exoship_management_transit_frame2.png",
+		  "frame3":"graphics/icons/abilities/rat_exoship_management_transit_frame3.png",
+		  "frame4":"graphics/icons/abilities/rat_exoship_management_transit_frame4.png",
+		  "frame5":"graphics/icons/abilities/rat_exoship_management_transit_frame5.png",
+		  "frame6":"graphics/icons/abilities/rat_exoship_management_transit_frame6.png",
+		  "frame7":"graphics/icons/abilities/rat_exoship_management_transit_frame7.png",
+		  "frame8":"graphics/icons/abilities/rat_exoship_management_transit_frame8.png",
+		  "frame9":"graphics/icons/abilities/rat_exoship_management_transit_frame9.png",
+		  "frame10":"graphics/icons/abilities/rat_exoship_management_transit_frame10.png",
+		},
+		
+		"rat_exo_portraits": {
+		  "amelie":"graphics/portraits/rat_exo1.png",
+		  "amelie_holo":"graphics/portraits/rat_exo1_holo.png",
+		  "xander":"graphics/portraits/rat_exo2.png",
+		  "defector":"graphics/portraits/rat_exo3.png",
+		  "executive":"graphics/portraits/rat_exo_exec.png",
+		},
+		
+		"rat_illustrations": {
+			"genesis":"graphics/illustrations/rat_genesis.jpg",
+		},
+		
+		"rat_preload": {
+		  "1":"graphics/icons/abilities/rat_singularity_jump_returnal.png",
+		  "2":"graphics/icons/intel/rat_archivist_intel.png",
+		  "3":"graphics/fx/rat_darkness_vignette.png",
+		  "4":"graphics/fx/rat_darkness_vignette_reversed.png",
+		  "5":"graphics/fx/rat_black.png",
+		  "6":"graphics/icons/intel/rat_exoship_intel.png",
+		  "7":"graphics/icons/intel/rat_settlement.png",
+		},
+		
+ 	}
+ }

@@ -1,0 +1,84 @@
+{
+  "hullName": "Ingenui",
+  "hullId": "TTSC_ingenui",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTSC_ingenui.png",
+  "style": "HIGH_TECH",
+  "height": 80,
+  "width": 56,
+  "center": [28, 40],
+  "collisionRadius": 49.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 47,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "shielded_holds",
+    "insulatedengine"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [9.5, 18]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [9.5, -18]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-19, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-37.5, 10.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-37.5, -10.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-37.5, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    43, -13.5,
+    23, -25,
+    -31, -37.5,
+    -40.5, -24,
+    -40.5, 24,
+    -31, 37.5,
+    23, 25,
+    43, 13.5
+  ]
+}

@@ -1,0 +1,28 @@
+{
+    "id":"swp_boss_energyoverdrive",
+    "type":"STAT_MOD",
+    "aiType":"WEAPON_BOOST",
+
+    "jitterUnderColor":[127,255,255,100],
+    "jitterUnderCopies":15,
+    "jitterUnderMinRange":0,
+    "jitterUnderRange":12,
+    "jitterUnderRangeRadiusFraction":0,
+
+    "statsScript":"data.scripts.shipsystems.SWP_EnergyOverdriveStats",
+
+    "weaponGlowColor":[127,255,255,255],
+    "weaponTypes":[ENERGY],
+
+    "useSound":"system_high_energy_focus_activate",
+    "deactivateSound":"system_high_energy_focus_deactivate",
+
+    "outOfUsesSound":"gun_out_of_ammo",
+    "loopSound":"system_high_energy_focus_loop",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "hullName": "Fighta Bomma (ES)",
+    "hullId": "ls_fighta_bomma_es",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/fighta_bomma_es.png",
+    "height": 36,
+    "width": 32,
+    "center": [
+        16, 18
+    ],
+    "collisionRadius": 24,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_evilsuns"
+    ],
+    "builtInWeapons": {
+        "WS 001": "ls_mini_rokkit_pod",
+        "WS 002": "ls_mini_rokkit_pod",
+        "WS 000": "ls_twin_shoota"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     9.5,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    -0.5,        7
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    -0.5,       -7
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -6, 13.5
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -6, -13.5
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -16.5, 0
+            ],
+            "length": 16,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 18,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -15.5,     -5.5,
+              -8,       -4,
+            -2.5,    -14.5,
+             1.5,       -5,
+            13.5,       -3,
+        
+            13.5,        3,
+             1.5,        5,
+            -2.5,     14.5,
+              -8,        4,
+           -15.5,      5.5
+    ]
+}

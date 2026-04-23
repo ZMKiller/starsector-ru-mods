@@ -1,0 +1,35 @@
+	{
+	"xhan_cluster":{
+		"name":"XhanTech Arcology",
+		"descriptionId":"xhan_cluster",
+		"tilt":-27, # left-right (>0 tilts to the left)
+		"pitch":2, # towards-away from the viewer (>0 pitches towards)
+		"rotation":-3, # degrees/second
+		"planetColor":[255,255,255,255],
+		"atmosphereThickness":0, # as fraction of radius.  Set to 0 for no atmosphere
+		"atmosphereThicknessMin":12, #  minimum thickness in pixels
+		"atmosphereColor":[100,140,160,155],
+		"texture":"graphics/planets/TheCluster.jpg",
+		"icon":"graphics/warroom/icon_planet.png",
+		"iconColor":[102,103,106,255],
+		"isStar":false,
+		"lightPosition":[-2,-8,10], # in planet radii.  Not used for stars.  z > 0 is above the playing field.
+	},
+	
+	"Pamed_Oka":{
+		"name":"Dense Mineral",
+		"descriptionId":"pamed_oka",
+		"tilt":-27, # left-right (>0 tilts to the left)
+		"pitch":2, # towards-away from the viewer (>0 pitches towards)
+		"rotation":-3, # degrees/second
+		"planetColor":[255,255,255,255],
+		"atmosphereThickness":0, # as fraction of radius.  Set to 0 for no atmosphere
+		"atmosphereThicknessMin":12, #  minimum thickness in pixels
+		"atmosphereColor":[100,140,160,155],
+		"texture":"graphics/planets/PamedOka2.jpg",
+		"icon":"graphics/warroom/icon_planet.png",
+		"iconColor":[102,103,106,255],
+		"isStar":false,
+		"lightPosition":[-2,-8,10], # in planet radii.  Not used for stars.  z > 0 is above the playing field.
+	},
+	}

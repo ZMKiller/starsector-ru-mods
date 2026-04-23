@@ -1,0 +1,42 @@
+id,obj_id,tag,hyperspace,escape,central_spawn,flag,not_flag,minFP,maxFP,weight
+sotfCEO_systems_empl_shield,sotfCEO_objective_empl_shieldGen,,,false,true,,,120,,0.2
+sotfCEO_systems_empl_shield_ruins,sotfCEO_objective_empl_shieldGen,theme_ruins,,false,true,,,120,,0.6
+sotf_systems_empl,sotf_objective_empl,,false,,true,,,150,,0.1
+sotf_ruins_empl,sotf_objective_empl,theme_ruins,,,true,,,150,,0.6
+softCEO_hyperspace_dweller_beacon,softCEO_objective_dweller_beacon,,true,,true,SOTF_ECOencounteredDweller,,200,,0.1
+softCEO_abyss_dweller_beacon,softCEO_objective_dweller_beacon,,true,,true,"SOTF_ECOencounteredDweller, SOTFECO_playerInAbyss",,60,,1
+sotfCEO_systems_objective_ASB,sotfCEO_objective_ASB,,,false,false,,,150,,0.15
+sotfCEO_ruins_objective_ASB,sotfCEO_objective_ASB,theme_ruins,,false,false,,,120,,1.1
+,,,,,,,,,,
+sotfCEO_skirmisher_swarm_normal,sotfCEO_objective_skirmisher_swarm,system_can_spawn_threat,false,,true,,,120,,0.5
+sotfCEO_assault_swarm_normal,sotfCEO_objective_assault_swarm,system_can_spawn_threat,false,,true,,,120,,0.2
+sotfCEO_line_swarm_normal,sotfCEO_objective_line_swarm,system_can_spawn_threat,false,,true,,,120,,0.2
+sotfCEO_hive_swarm_normal,sotfCEO_objective_hive_swarm,system_can_spawn_threat,false,,true,,,120,,0.2
+sotfCEO_fab_swarm_normal,sotfCEO_objective_fab_swarm,system_can_spawn_threat,false,,true,SOTFECO_enableFabObjective,,120,,0.2
+sotfCEO_skirmisher_swarm_abyss,sotfCEO_objective_skirmisher_swarm,,true,,true,"SOTFECO_encounteredThreat, SOTFECO_playerInAbyss",,120,,0.2
+sotfCEO_assault_swarm_abyss,sotfCEO_objective_assault_swarm,,true,,true,"SOTFECO_encounteredThreat, SOTFECO_playerInAbyss",,120,,0.05
+sotfCEO_line_swarm_abyss,sotfCEO_objective_line_swarm,,true,,true,"SOTFECO_encounteredThreat, SOTFECO_playerInAbyss",,120,,0.05
+sotfCEO_hive_swarm_abyss,sotfCEO_objective_hive_swarm,,true,,true,"SOTFECO_encounteredThreat, SOTFECO_playerInAbyss",,120,,0.05
+sotfCEO_fab_swarm_abyss,sotfCEO_objective_fab_swarm,,true,,true,"SOTFECO_encounteredThreat, SOTFECO_playerInAbyss, SOTFECO_enableFabObjective",,120,,0.05
+sotfCEO_skirmisher_swarm_system,sotfCEO_objective_skirmisher_swarm,,false,,true,SOTFECO_encounteredThreat,,120,,0.016
+sotfCEO_assault_swarm_system,sotfCEO_objective_assault_swarm,,false,,true,SOTFECO_encounteredThreat,,120,,0.013
+sotfCEO_line_swarm_system,sotfCEO_objective_line_swarm,,false,,true,SOTFECO_encounteredThreat,,120,,0.013
+sotfCEO_hive_swarm_system,sotfCEO_objective_hive_swarm,,false,,true,SOTFECO_encounteredThreat,,120,,0.013
+sotfCEO_fab_swarm_system,sotfCEO_objective_fab_swarm,,false,,true,"SOTFECO_encounteredThreat, SOTFECO_enableFabObjective",,120,,0.013
+,,,,,,,,,,
+sotfCEO_attack_swarm_normal,sotfCEO_objective_attack_swarm,system_can_spawn_threat,false,,true,,,120,,0
+,,,,,,,,,,
+softCEO_threat_empl_normal,softCEO_objective_threat_empl,system_can_spawn_threat,false,,true,,,140,,0.5
+,,,,,,,,,,
+sotfCEO_intrusion_node_dustkeeper,softCEO_objective_cyberwarfare,sotf_theme_dustkeepers,false,,true,,,,,1
+sotfCEO_intrusion_node_system,softCEO_objective_cyberwarfare,,false,,true,SOTFECO_canSpawnIntrusionNode,,120,,0.2
+,,,,,,,,,,
+softCEO_objective_credit_system,softCEO_objective_credit,,false,false,false,SOTFECO_canSpawnCreditCache,,0,,0.04
+sotfeco_crackable_asteroid_system,softCEO_objective_asteroid,,false,false,false,SOTFECO_canSpawnAsteroid,,0,,0.3
+,,,,,,,,,,
+sotfCEO_objective_warp_system,softCEO_objective_warp,,,,false,,,,,0.05
+sotfCEO_objective_warp_ruins,softCEO_objective_warp,theme_ruins,false,,false,,,,,0.1
+,,,,,,,,,,
+sotfCEO_objective_derelict_fleet_system,softCEO_objective_derelict_fleet,,,false,true,,,,,0.02
+,,,,,,,,,,
+sotfCEO_diktat_objective_general,sotfCEO_diktat_objective,,false,false,false,SOTFECO_canSpawnFactionObj_sindrian_diktat,,80,,0.7

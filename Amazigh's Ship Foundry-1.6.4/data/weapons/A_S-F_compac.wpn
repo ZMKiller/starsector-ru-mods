@@ -1,0 +1,32 @@
+{
+	"id":"A_S-F_compac",
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	
+	"turretSprite":"graphics/weapons/A_S-F_compac_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_compac_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_compac_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_compac_glow.png",
+
+	"hardpointOffsets":[11.5, 0.5, 11.5, -0.5, 11.5, 1.5, 11.5, -1.5],
+	"turretOffsets":[5, 0.5, 5, -0.5, 5, 1.5, 5, -1.5],
+	"hardpointAngleOffsets":[ 5, -5, 15, -15],
+	"turretAngleOffsets":[5, -5, 15, -15],
+	
+	"barrelMode":"DUAL",
+	"separateRecoilForLinkedBarrels":true,
+	"animationType":"GLOW_AND_FLASH",
+	"glowColor":[255,100,225,255],
+
+	"interruptibleBurst":false,
+	"muzzleFlashSpec":{"length":35.0,
+					   "spread":25.0,
+					   "particleSizeMin":3.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.2,
+					   "particleCount":5,
+					   "particleColor":[255,100,225,255]},
+	"projectileSpecId":"A_S-F_compac_bolt_fake",
+	"fireSoundTwo":"A_S-F_compac_fire",
+}

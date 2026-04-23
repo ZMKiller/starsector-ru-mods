@@ -1,0 +1,289 @@
+{
+    "hullName": "Falken (BA)",
+    "hullId": "ls_falken_ba",
+    "hullSize": "CRUISER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_falken_ba.png",
+    "height": 227,
+    "width": 166,
+    "center": [
+        83, 113.5
+    ],
+    "collisionRadius": 154,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 150,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_bloodaxes",
+        "rugged"
+    ],
+    "builtInWeapons": {
+        "WS 010": "ls_boarding_toob",
+        "WS 011": "ls_boarding_toob"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    11.5,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 75,
+            "locations": [
+                   -37.5,       38
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -75,
+            "locations": [
+                   -37.5,      -38
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "renderOrderMod": 10,
+            "arc": 210,
+            "angle": 60,
+            "locations": [
+                    61.5,       32
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "renderOrderMod": 10,
+            "arc": 210,
+            "angle": -60,
+            "locations": [
+                    61.5,      -32
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     101,       16
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     101,      -16
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      89,       40
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      89,      -40
+            ]
+        },
+        {
+            "id": "WS 009",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 180,
+            "locations": [
+                   -87.5,        0
+            ]
+        },
+        {
+            "id": "WS 010",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                     3.5,       54
+            ]
+        },
+        {
+            "id": "WS 011",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                     3.5,      -54
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -107, 22
+            ],
+            "length": 72,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 80,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -107, -22
+            ],
+            "length": 72,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 80,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -106.5, 32.5
+            ],
+            "length": 72,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 80,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -106.5, -32.5
+            ],
+            "length": 72,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 80,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -105, 43
+            ],
+            "length": 64,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -105, -43
+            ],
+            "length": 64,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -94, 54.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -94, -54.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -98.5,      -11,
+            -107,    -16.5,
+          -106.5,      -45,
+             -95,    -51.5,
+             -87,      -76,
+        
+             -63,      -77,
+           -45.5,    -61.5,
+             -42,    -72.5,
+              -3,      -73,
+              16,    -47.5,
+        
+            50.5,      -45,
+              81,    -52.5,
+            88.5,      -39,
+             109,      -22,
+            91.5,     -7.5,
+        
+            23.5,     -7.5,
+            23.5,      7.5,
+            91.5,      7.5,
+             109,       22,
+            88.5,       39,
+        
+              81,     52.5,
+            50.5,       45,
+              16,     47.5,
+              -3,       73,
+             -42,     72.5,
+        
+           -45.5,     61.5,
+             -63,       77,
+             -87,       76,
+             -95,     51.5,
+          -106.5,       45,
+        
+            -107,     16.5,
+           -98.5,       11
+    # 32 points total.
+    ]
+}

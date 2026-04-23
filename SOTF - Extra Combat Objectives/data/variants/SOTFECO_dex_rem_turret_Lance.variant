@@ -1,0 +1,35 @@
+{
+  "displayName": "Anti-Frigate",
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "SOTFECO_dex_rem_turret",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "SOTFECO_dex_rem_turret_Lance",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "tachyonlance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+		"WS 002": "heavyburst"
+	  }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	    "WS 004": "hurricane"
+	  }
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,36 @@
+{
+  "variantId": "sfcporpax_Patrol",
+  "hullId": "sfcporpax",
+  "displayName": "Patrol",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 3,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull",
+    "stabilizedshieldemitter",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "annihilator",
+        "WS0006": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sfclightdestabilizer",
+        "WS0003": "sfclightdestabilizer",
+        "WS0004": "sfclightdestabilizer"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

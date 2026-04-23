@@ -1,0 +1,46 @@
+{
+    "displayName": "Rave",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "uw_palace_front",
+    "hullMods": ["magazines"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_palace_front_rav",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "autopulse"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "ionbeam",
+                "WS0005": "ionbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "gravitonbeam",
+                "WS0003": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "heavyburst",
+                "WS0007": "heavyburst"
+            }
+        }
+    ],
+    "wings": [
+        "xyphos_wing",
+        "wasp_wing"
+    ]
+}

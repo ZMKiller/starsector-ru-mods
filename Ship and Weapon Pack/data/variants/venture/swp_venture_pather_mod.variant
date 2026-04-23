@@ -1,0 +1,58 @@
+{
+    "displayName": "Heavily Modified",
+    "fluxCapacitors": 10,
+    "fluxVents": 14,
+    "hullId": "venture_pather",
+    "hullMods": [
+        "swp_extrememods2",
+        "heavyarmor",
+        "missleracks",
+        "auxiliarythrusters",
+        "missile_autoloader",
+        "eccm"
+    ],
+    "permaMods": [
+        "swp_extrememods2",
+        "heavyarmor",
+        "missleracks",
+        "auxiliarythrusters"
+    ],
+    "sMods": [
+        "heavyarmor",
+        "missleracks",
+        "auxiliarythrusters"
+    ],
+    "tags": ["no_autofit"],
+    "variantId": "swp_venture_pather_mod",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 005": "sabotpod",
+                "WS 006": "sabotpod"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "harpoon",
+                "WS 007": "harpoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "ionbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "flak",
+                "WS 003": "flak"
+            }
+        }
+    ]
+}

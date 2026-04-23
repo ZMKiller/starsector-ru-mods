@@ -1,0 +1,79 @@
+{
+	
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			"tahlan_legio":0.3,
+			"tahlan_silberherz_bp":10,
+			"tahlan_halbmond_bp":10,
+			"tahlan_schneefall_bp":10,
+			"tahlan_jagd_bp":10
+		},
+		"hulls":{
+			"tahlan_Eagle_P":0.6,
+			"tahlan_Tempest_P":0.5,
+			"tahlan_Dominator_PH":0.1,
+			"tahlan_tower":0.5
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		#"tags":["base_bp", "pirate_bp"],
+		#"hulls":[],
+	},
+	"knownShips":{
+		"tags":["tahlan_legio_bp"],
+		"hulls":[
+			"tahlan_Castella_pirates",
+			"tahlan_Eagle_P",
+			"tahlan_Tempest_P",
+			"tahlan_Castigator_P",
+			"tahlan_Hresvelgr_p",
+			"tahlan_blockhead",
+			"tahlan_tower",
+			"tahlan_raba"
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		#"tags":[],
+		#"hulls":[],
+	},
+	
+	"knownFighters":{
+		#"tags":[],
+		#"fighters":[],
+	},
+	
+	"priorityFighters":{
+		#"tags":[],
+		#"fighters":[],
+	},
+	
+	"knownWeapons":{
+		#"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "pirates", "tahlan_legio_bp"],
+		"weapons":[
+			"tahlan_eradicator",
+			"tahlan_amboss",
+			"tahlan_breaker",
+		],
+	},
+	"priorityWeapons":{
+		#"tags":[],
+		#"weapons":[],
+	},
+	
+	"knownHullMods":{
+		#"tags":["base_bp", "pirates"],
+		#"hullMods":[],
+	},
+	
+}
+
+
+
+

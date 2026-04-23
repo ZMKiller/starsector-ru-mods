@@ -1,0 +1,28 @@
+{
+	"id":"ls_bursta_cannon_dud",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":1000,
+	"turretSprite":"",
+	"turretGunSprite":"",
+	"hardpointSprite":"",
+	"hardpointGunSprite":"",	
+	"visualRecoil":25.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[40, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[40, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":100.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":45.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":35.0,
+					   "particleDuration":0.9,
+					   "particleCount":120,
+					   "particleColor":[255,150,50,245]},
+	"projectileSpecId":"ls_bursta_dud_shot",  # projectile that will be fired
+	"fireSoundTwo":"bursta_sound",
+}

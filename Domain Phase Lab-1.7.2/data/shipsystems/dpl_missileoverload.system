@@ -1,0 +1,16 @@
+{
+	"id":"dpl_missileoverload",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.shipsystems.scripts.dpl_MissileOverloadStats",
+	
+	"weaponGlowColor":[155,0,255,255],
+	"weaponTypes":[MISSILE],
+	
+	"useSound":"system_high_energy_focus_activate",
+	"deactivateSound":"system_high_energy_focus_deactivate",
+
+	"outOfUsesSound":"gun_out_of_ammo",
+	"loopSound":"system_high_energy_focus_loop",	
+}

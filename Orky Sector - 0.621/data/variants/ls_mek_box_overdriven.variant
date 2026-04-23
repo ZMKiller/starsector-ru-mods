@@ -1,0 +1,39 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 12,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "ls_mek_box_ds",
+    "hullMods": [
+        "ls_orky_override"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_mek_box_overdriven",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_bubble_chukka",
+                "WS 001": "ls_zzappa"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_bolta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_doomdiva_launcher"
+            }
+        }
+    ],
+    "wings": [
+        "ls_drilla_kan_ds_wing"
+    ]
+}

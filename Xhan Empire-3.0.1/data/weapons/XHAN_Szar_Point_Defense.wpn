@@ -1,0 +1,60 @@
+{
+  "id": "XHAN_Szar_Point_Defense",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "",
+  "turretGlowSprite": "graphics/weapons/Xhan_VilCutter_GLOW.png",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "graphics/weapons/Xhan_VilCutter_GLOW.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    153,
+    255,
+    51,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    0.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    153,
+    255,
+    51,
+    255
+  ],
+  "coreColor": [
+    133,
+    255,
+    204,
+    245
+  ],
+  "width": 6,
+  "textureType": [
+    "graphics/fx/Xhan_maser_beam.png",
+    "graphics/fx/beamcorec.png"
+  ],
+  "textureScrollSpeed": 300,
+  "pixelsPerTexel": 1,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "pd_laser_loop"
+}

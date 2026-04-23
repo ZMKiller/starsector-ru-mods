@@ -1,0 +1,75 @@
+{
+  "hullName": "Uchoyo",
+  "hullId": "A_S-F_servant",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_uchoyo.png",
+  "style": "LOW_TECH",
+  "height": 34,
+  "width": 34,
+  "center": [17, 17],
+  "collisionRadius": 22,
+  "shieldCenter": [-1, -0],
+  "shieldRadius": 21,
+  "viewOffset": 0,
+  "builtInMods": [
+    "A_S-F_ServantHullmod"
+  ],
+  "builtInWeapons": {
+    "WS0001": "A_S-F_kufikiri"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": 0,
+      "locations": [3, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15, 10],
+      "length": 12,
+      "width": 4,
+      "angle": 175,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-15, -10],
+      "length": 12,
+      "width": 4,
+      "angle": -175,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-16, 6],
+      "length": 16,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-16, -6],
+      "length": 16,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    7, -13,
+    -14, -12,
+    -10, -0,
+    -14, 12,
+    7, 13,
+    14, 3,
+    8, -0,
+    15, -3
+  ]
+}

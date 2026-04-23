@@ -1,0 +1,57 @@
+{
+  "id": "Xhan_Shpizak",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_Shpizak_shot",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "displayArcRadius": 400,
+  "turretSprite": "graphics/weapons/Xhan_Shpizak_TURRET_BASE.png",
+  "turretGlowSprite": "graphics/weapons/Xhan_Shpizak_TURRET_GLOW.png",
+  "turretGunSprite": "graphics/weapons/Xhan_Shpizak_TURRET_BARREL.png",
+  "hardpointSprite": "graphics/weapons/Xhan_Shpizak_HARDPOINT_BASE.png",
+  "hardpointGlowSprite": "graphics/weapons/Xhan_Shpizak_HARDPOINT_GLOW.png",
+  "hardpointGunSprite": "graphics/weapons/Xhan_Shpizak_HARDPOINT_BARREL.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    74,
+    201,
+    255,
+    255
+  ],
+  "visualRecoil": 2,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    9,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    13,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 18,
+    "spread": 16,
+    "particleSizeMin": 2,
+    "particleSizeRange": 10,
+    "particleDuration": 0.2,
+    "particleCount": 30,
+    "particleColor": [
+      74,
+      152,
+      255,
+      235
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_SHPIZAK_FIRE_SOUND"
+}

@@ -1,0 +1,86 @@
+{
+  "variantId": "sfciapetus_Swarmer",
+  "hullId": "sfciapetus",
+  "displayName": "Swarmer",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 50,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0021": "hurricane",
+        "WS0022": "squall"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "pilum",
+        "WS0014": "pilum",
+        "WS0015": "pilum",
+        "WS0016": "pilum",
+        "WS0017": "pilum",
+        "WS0018": "pilum"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0023": "mjolnir",
+        "WS0027": "mjolnir"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "taclaser",
+        "WS0008": "taclaser",
+        "WS0009": "taclaser",
+        "WS0010": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdburst",
+        "WS0002": "pdburst",
+        "WS0003": "lrpdlaser",
+        "WS0004": "lrpdlaser",
+        "WS0005": "lrpdlaser",
+        "WS0006": "lrpdlaser",
+        "WS0011": "lrpdlaser",
+        "WS0012": "lrpdlaser",
+        "WS0024": "devastator",
+        "WS0025": "guardian",
+        "WS0026": "guardian",
+        "WS0028": "devastator",
+        "WS0029": "devastator",
+        "WS0030": "lrpdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

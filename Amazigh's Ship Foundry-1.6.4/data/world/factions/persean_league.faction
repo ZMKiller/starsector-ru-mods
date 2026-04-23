@@ -1,0 +1,117 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+		"A_S-F_auditor_esc":5,
+
+		"A_S-F_bathory_ass":3,
+		"A_S-F_bathory_std2":2,
+		"A_S-F_bathory_sup2":2,
+
+		"A_S-F_buraq_std2":2.5,
+		"A_S-F_buraq_stk":2.5,
+		"A_S-F_buraq_sup2":2,
+
+		"A_S-F_exegetes_sup": 5,
+
+		"A_S-F_gaoler_sup2": 7,
+
+		"A_S-F_initone_ass2": 3,
+		"A_S-F_initone_sup2": 4,
+
+		"A_S-F_lanner_elt": 3,
+		"A_S-F_lanner_sup2": 4,
+
+		"A_S-F_misside_ass2": 3,
+		"A_S-F_misside_std2": 3,
+		"A_S-F_misside_sup2": 2,
+
+		"A_S-F_triarii_std": 3.5,
+		"A_S-F_triarii_sup2": 2.5,
+
+		"A_S-F_margrave_elt": 2.5,
+		"A_S-F_margrave_stk": 2.5,
+		"A_S-F_margrave_sup": 2.5,
+
+		"A_S-F_porroko_std": 1.5,
+		"A_S-F_porroko_sup": 2.5,
+		"A_S-F_porroko_supp": 3.5,
+
+	},
+
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "hulls":{
+            "A_S-F_auditor":0.4,
+            "A_S-F_exegetes":0.6,
+
+            "A_S-F_triarii":0.6,
+            "A_S-F_margrave":0.9,
+        },
+    },
+
+    "knownShips":{
+        "hulls":[
+            "A_S-F_auditor",
+            "A_S-F_exegetes",
+            "A_S-F_misside",
+
+            "A_S-F_gaoler",
+            "A_S-F_bathory",
+            "A_S-F_buraq",
+
+            "A_S-F_lanner",
+            "A_S-F_triarii",
+            "A_S-F_initone",
+            "A_S-F_margrave",
+            "A_S-F_porroko",
+        ],
+    },
+
+	"knownWeapons":{
+		"weapons":[
+			"A_S-F_sakset",
+			"A_S-F_narc",
+
+			"A_S-F_strobe",
+			"A_S-F_quad_multi-lance",
+			"A_S-F_painter",
+
+			"A_S-F_lamia",
+			"A_S-F_lerna",
+			"A_S-F_cockatrice",
+
+		],
+	},
+
+	"knownHullMods":{
+		"hullMods":[
+			"A_S-F_ElectroVent",
+			"A_S-F_anarchyBallistic",
+			"A_S-F_anarchyEnergy",
+			"A_S-F_anarchyFlux",
+			"A_S-F_anarchyShields",
+			"A_S-F_anarchyTargeting",
+		],
+	},
+
+	"weaponSellFrequency":{
+		"A_S-F_sakset":7,
+		"A_S-F_narc":4,
+
+		"A_S-F_strobe":3,
+		"A_S-F_quad_multi-lance":3,
+		"A_S-F_painter":4,
+
+		"A_S-F_lamia":7,
+		"A_S-F_lerna":7,
+		"A_S-F_cockatrice":7,
+	},
+
+	"hullmodSellFrequency":{
+		"A_S-F_ElectroVent":3,
+		"A_S-F_anarchyBallistic":2,
+		"A_S-F_anarchyEnergy":2,
+		"A_S-F_anarchyTargeting":2,
+	},
+
+},

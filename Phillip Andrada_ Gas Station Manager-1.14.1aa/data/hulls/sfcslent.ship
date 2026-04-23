@@ -1,0 +1,84 @@
+{
+  "hullName": "Slent ST-50",
+  "hullId": "sfcslent",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/tanker_frigate_diktatv1.png",
+  "style": "MIDLINE",
+  "height": 100,
+  "width": 60,
+  "center": [30, 50],
+  "collisionRadius": 68.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 61,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 180,
+      "locations": [-15, -11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -90,
+      "locations": [0, -11],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 0,
+      "locations": [15, -11],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [33, -11]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42, 23],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-42, -23],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    13, -26.5,
+    -41.5, -28,
+    -41.5, 28,
+    13, 26.5,
+    40, 20,
+    45, 11.5,
+    44, -25
+  ]
+}

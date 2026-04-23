@@ -1,0 +1,196 @@
+{
+  "hullName": "West Wall",
+  "hullId": "swp_wall_left",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/swp/ships/derelict/swp_wall_left.png",
+  "style": "LOW_TECH",
+  "height": 181,
+  "width": 222,
+  "center": [127, 92],
+  "collisionRadius": 128,
+  "shieldCenter": [8, -0],
+  "shieldRadius": 134,
+  "viewOffset": 0,
+  "builtInMods": [
+    "swp_linkedhull",
+    "reduced_explosion",
+    "always_detaches",
+    "automated",
+    "rugged"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [73, -31]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [73, -73]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 25,
+      "locations": [-2, 4]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [55, 17]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [59, 33]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [40, 61]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [40, 75]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 45,
+      "locations": [30, 98]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 90,
+      "locations": [11, 116]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-84, 24],
+      "length": 50,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-85, 44],
+      "length": 64,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-91, -71],
+      "length": 64,
+      "width": 22,
+      "angle": -180,
+      "contrailSize": 22,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, 3],
+      "length": 50,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84, -18],
+      "length": 50,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-79, 64],
+      "length": 65,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-85, -51],
+      "length": 65,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -90, -81,
+    -90.5, -63,
+    -84.5, -58.5,
+    -84, -45,
+    -73, -41.5,
+    -70.5, -29.5,
+    -83, -25,
+    -83.5, 52,
+    -77.5, 57,
+    -77.5, 71.5,
+    -65.5, 75.5,
+    -64.5, 96.5,
+    -4, 103.5,
+    5.5, 125,
+    18.5, 121,
+    21.5, 110.5,
+    39, 102,
+    39, 53.5,
+    48, 51.5,
+    57, 39.5,
+    61.5, -14.5,
+    83, -16.5,
+    82.5, -46.5,
+    61.5, -49.5,
+    82.5, -61.5,
+    83, -89.5,
+    55, -94,
+    45, -81,
+    5.5, -81.5,
+    -1, -68,
+    -36, -65.5,
+    -43.5, -81
+  ]
+}

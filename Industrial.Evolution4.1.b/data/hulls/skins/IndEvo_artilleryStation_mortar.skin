@@ -1,0 +1,19 @@
+{
+    "baseHullId":"IndEvo_artilleryStation_base",
+    "skinHullId":"IndEvo_artilleryStation_mortar",
+    "hullName":"Mortar Artillery",
+    "descriptionId":"IndEvo_artilleryStation_base",
+    "descriptionPrefix":"This artillery station is equipped with a cannon the size of a destroyer, raining destabilized antimatter onto the battlefield. Primitive or regressed societies in star systems with mortar artilleries often use iconography depicting the shining red projectiles as harbingers of death, as they have a habit of hitting planets due to the sheer amount of shells fired in a volley. The long-range munitions are more potent than the tactical armaments used in close combat, which are nonetheless lethal.",
+    "tags":["IndEvo_Artillery"],
+    "tech":"DSD",
+    "spriteName":"graphics/ships/artillery_base_module.png",
+    "baseValueMult":1.0,
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":["WS0005"],      # weapon slot ids
+    "builtInMods":["solar_shielding"],
+    "builtInWeapons":{
+        "WS0005": "IndEvo_artillery_mortar"
+    },
+}

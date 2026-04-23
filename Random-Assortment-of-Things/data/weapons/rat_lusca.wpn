@@ -1,0 +1,50 @@
+{
+  "id": "rat_lusca",
+  "specClass": "projectile",
+  "projectileSpecId": "rat_lusca_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "turretSprite": "graphics/weapons/abyss/rat_lusca_turret.png",
+  "turretGlowSprite": "graphics/weapons/abyss/rat_lusca_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/abyss/rat_lusca_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/abyss/rat_lusca_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "specialWeaponGlowHeight": 25,
+  "specialWeaponGlowWidth": 15,
+  "turretOffsets": [
+    15,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    15.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING_BURST",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 5,
+    "spread": 4,
+    "particleSizeMin": 8,
+    "particleSizeRange": 12,
+    "particleDuration": 0.1,
+    "particleCount": 12,
+    "particleColor": [
+      46,
+      230,
+      163,
+      100
+    ]
+  },
+  "fireSoundTwo": "abyss_lusca"
+}

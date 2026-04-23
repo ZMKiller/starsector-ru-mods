@@ -1,0 +1,37 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Traitors",
+    
+    "startRelationships":{},
+    
+    "alignments":{
+        "corporate":0.5,
+    },
+        
+    "colonyExpeditionChance":1,
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+    
+    "startShipsSolo":[["mi_farin_standard"]],
+    "startShipsCombatSmall":[["mi_rastrum_standard", "mi_mite_standard", "mi_wolf_metelson"]],
+    "startShipsTradeSmall":[["mi_varingur_standard", "mi_mite_standard", "mi_pala_standard"]],
+    "startShipsCombatLarge":[["mi_mantarn_standard", "mi_securi_brawler", "mi_glima_attack"]],
+    "startShipsTradeLarge":[["mi_grancursor_support", "buffalo_hegemony_Standard", "mi_vigilance_escort"]],
+    "startShipsCarrierLarge":[["mi_grancursor_assualt", "mi_varingur_standard", "mi_cavos_assualt"]],
+    
+    "miningVariantsOrWings":["mi_pala_mining"],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.5},
+    ],
+    
+    "industrySeeds":[
+        {"id":"heavyindustry", "mult":0.1},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"nanoforge_corrupted", "count":1},
+    ],
+}

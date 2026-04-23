@@ -1,0 +1,77 @@
+{
+    "displayName": "Knightmaster",
+    "fluxCapacitors": 24,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "kol_lunaria",
+    "hullMods": [
+        "armoredweapons",
+        "ballistic_rangefinder",
+        "heavyarmor",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "kol_lunaria_Knightmaster",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "kol_lunete",
+                "WS0002": "kol_lunete",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "hammerrack",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "kol_llyr",
+                "WS0010": "kol_llyr",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "kol_drian",
+                "WS0007": "kol_drian",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "kol_tor",
+                "WS0005": "kol_tor",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "flak",
+                "WS0011": "flak",
+                "WS0012": "flak",
+                "WS0003": "flak",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"ARMOR_MODULE_TL": "kol_lunaria_tl_Knightmaster"},
+        {"ARMOR_MODULE_TR": "kol_lunaria_tr_Knightmaster"},
+        {"ARMOR_MODULE_ML": "kol_lunaria_ml_Knightmaster"},
+        {"ARMOR_MODULE_MR": "kol_lunaria_mr_Knightmaster"},
+        {"ARMOR_MODULE_LL": "kol_lunaria_ll_Knightmaster"},
+        {"ARMOR_MODULE_LR": "kol_lunaria_lr_Knightmaster"},
+    ],
+}

@@ -1,0 +1,55 @@
+{
+  "variantId": "A_S-F_peryton_purs",
+  "hullId": "A_S-F_peryton",
+  "displayName": "Pursuer",
+  "goalVariant": false,
+  "fluxCapacitors": 13,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "locust"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "A_S-F_lerna",
+        "WS0002": "A_S-F_lerna"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightag",
+        "WS0007": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "dualflak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

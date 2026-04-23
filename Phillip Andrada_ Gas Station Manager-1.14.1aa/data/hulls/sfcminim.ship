@@ -1,0 +1,71 @@
+{
+  "hullName": "Minim",
+  "hullId": "sfcminim",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/PAGSM/ships/fighters/Minimv5.png",
+  "style": "MIDLINE",
+  "height": 31,
+  "width": 47,
+  "center": [23.5, 15.5],
+  "collisionRadius": 30.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 27,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [9, 16.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -0,
+      "locations": [9, -16.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12.5, 14.5],
+      "length": 25,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-12.5, -14.5],
+      "length": 25,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-13.5, -0.5],
+      "length": 35,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    14, -9.5,
+    7.5, -19.5,
+    -11.5, -18,
+    -11.5, 18,
+    7.5, 19.5,
+    14, 9.5
+  ]
+}

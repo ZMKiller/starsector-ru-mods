@@ -1,0 +1,49 @@
+{
+    "displayName": "Mekka",
+    "fluxCapacitors": 10,
+    "fluxVents": 13,
+    "goalVariant": true,
+    "hullId": "ls_smash_hamma_es",
+    "hullMods": [
+        "targetingunit",
+        "ls_thunda_charga"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_smash_hamma_es_mekka",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_zzap_kannon",
+                "WS 002": "ls_zzappa",
+                "WS 003": "ls_zzappa"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_bubble_chukka",
+                "WS 007": "ls_bubble_chukka"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "ls_eye_of_mork"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "ls_shoota_launcha",
+                "WS 012": "ls_shoota_launcha",
+                "WS 004": "ls_shoota_launcha",
+                "WS 005": "ls_shoota_launcha"
+            }
+        }
+    ]
+}

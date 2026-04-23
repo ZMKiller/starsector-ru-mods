@@ -1,0 +1,27 @@
+{
+	"id":"ls_phas_engine",
+	"type":"STAT_MOD",
+	"aiType":"TEMPORAL_SHELL",
+	
+	"statsScript":"data.shipsystems.ls_phas_engine",
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.75,
+	"soundFilterGainHF":0.5,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_temporalshell",
+	"loopSound":"system_temporalshell_loop",
+	"deactivateSound":"system_temporalshell_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"activeSpeedIncrease":100,  # not right since it's ship-dependent, but hopefully close enough
+		"burstMovementPotential":0,
+		"averageSpeedMult":1.46,
+	}
+}
+
+
+
+

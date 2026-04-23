@@ -1,0 +1,106 @@
+{
+    "hullName": "Rok Right (DS)",
+    "hullId": "ls_rok_ds_right",
+    "hullSize": "FRIGATE",
+    "style": "LOW_TECH",
+    "spriteName": "graphics/ships/ls_rok/ls_rok_right.png",
+    "height": 97,
+    "width": 60,
+    "center": [
+        30, 48.5
+    ],
+    "collisionRadius": 54,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 52,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_deathskull",
+        "ls_supa_gitfinda",
+        "ls_RokModule",
+        "always_detaches"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "renderOrderMod": 1,
+            "arc": 210,
+            "angle": -90,
+            "locations": [
+                       0,     16.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 178,
+            "angle": -45,
+            "locations": [
+                    26.5,      4.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "renderOrderMod": 2,
+            "arc": 140,
+            "angle": -60,
+            "locations": [
+                     0.5,    -11.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "renderOrderMod": 1,
+            "arc": 180,
+            "angle": -120,
+            "locations": [
+                     -25,    -15.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    21.5,    -14.5
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+              43,     18.5,
+              43,        4,
+            30.5,       -8,
+               4,    -22.5,
+             -30,      -26,
+        
+           -46.5,      -11,
+             -45,       -2,
+            -7.5,        0,
+             -14,       17,
+              -3,       30,
+        
+              14,       27,
+              19,     19.5
+    # 12 points total.
+    ]
+}

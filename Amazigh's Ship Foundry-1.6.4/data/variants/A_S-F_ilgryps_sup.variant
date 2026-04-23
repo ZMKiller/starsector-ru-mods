@@ -1,0 +1,66 @@
+{
+  "variantId": "A_S-F_ilgryps_sup",
+  "hullId": "A_S-F_ilgryps",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "targetingunit",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "A_S-F_sprocket",
+        "WS0007": "A_S-F_sprocket"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "A_S-F_bipartisan",
+        "WS0005": "A_S-F_bipartisan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hveldriver",
+        "WS0003": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "A_S-F_p_ion"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "lrpdlaser",
+        "WS0010": "lrpdlaser",
+        "WS0011": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

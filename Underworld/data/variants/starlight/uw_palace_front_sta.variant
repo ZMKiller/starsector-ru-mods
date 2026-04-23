@@ -1,0 +1,46 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "uw_palace_front",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_palace_front_sta",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "hil"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "sabotpod",
+                "WS0005": "sabotpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "pulselaser",
+                "WS0003": "pulselaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "heavyburst",
+                "WS0007": "heavyburst"
+            }
+        }
+    ],
+    "wings": [
+        "trident_wing",
+        "sarissa_wing"
+    ]
+}

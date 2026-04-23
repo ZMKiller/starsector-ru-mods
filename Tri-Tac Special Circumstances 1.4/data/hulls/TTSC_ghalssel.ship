@@ -1,0 +1,110 @@
+{
+  "hullName": "Ghalssel",
+  "hullId": "TTSC_ghalssel",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTSC_ghalssel.png",
+  "style": "HIGH_TECH",
+  "height": 126,
+  "width": 120,
+  "center": [60, 63],
+  "collisionRadius": 83.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 77,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [27, 46.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [27, -46.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-26, 48.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-26, -48.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 0,
+      "locations": [26, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-57, 28.5],
+      "length": 31.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-57, -28.5],
+      "length": 31.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-60, -10.5],
+      "length": 31.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-60, 10.5],
+      "length": 31.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    73.5, -18,
+    31, -70.5,
+    0.5, -46,
+    -21.5, -73.5,
+    -75, -42,
+    -75, 42,
+    -21.5, 73.5,
+    0.5, 46,
+    31, 70.5,
+    73.5, 18
+  ]
+}

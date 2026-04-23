@@ -1,0 +1,108 @@
+{
+    "hullName": "Dram (ES)",
+    "hullId": "ls_dram_es",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_dram_es.png",
+    "height": 140,
+    "width": 88,
+    "center": [
+        44, 70
+    ],
+    "collisionRadius": 120,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 100,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_evilsuns",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": 60,
+            "locations": [
+                      45,       28
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": -60,
+            "locations": [
+                    44.5,    -25.5
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     9.5,      5.5,
+                       5,     -8.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -64.5, 10.5
+            ],
+            "length": 58,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -64.5, -10.5
+            ],
+            "length": 58,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -65,       -3,
+           -65.5,    -16.5,
+             -48,    -32.5,
+             -20,    -32.5,
+              29,    -26.5,
+        
+              53,    -32.5,
+            53.5,    -15.5,
+              64,     -0.5,
+            63.5,       15,
+              54,     22.5,
+        
+              51,       38,
+             -20,     32.5,
+             -48,     32.5,
+           -65.5,     16.5,
+           -65.5,      3.5,
+        
+           -58.5,        3,
+           -58.5,       -3
+    # 17 points total.
+    ]
+}

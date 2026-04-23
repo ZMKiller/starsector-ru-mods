@@ -1,0 +1,32 @@
+{
+	"id":"A_S-F_nieuport",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"turretSprite":"graphics/weapons/A_S-F_nieuport_turret_base.png",
+	"turretGunSprite":"graphics/weapons/A_S-F_nieuport_turret_recoil.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_nieuport_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_nieuport_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/A_S-F_nieuport_hardpoint_recoil.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_nieuport_hardpoint_glow.png",
+	"visualRecoil":6.0,
+	"renderHints":[RENDER_BARREL_BELOW],
+	"glowColor":[200,255,200,255],
+	"turretOffsets":[12, -4, 12, 4],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[18, -4, 18, 4],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType": "GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":24.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":3.0,
+					   "particleSizeRange":6.0,
+					   "particleDuration":0.3,
+					   "particleCount":10,
+					  "particleColor":[100,150,100,200]},
+	"interruptibleBurst":false,
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"A_S-F_nieuport_shot",  # projectile that will be fired
+	"fireSoundTwo":"A_S-F_nieuport_fire", #railgun_fire
+}

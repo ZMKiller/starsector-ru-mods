@@ -1,0 +1,123 @@
+{
+  "hullName": "Bugle",
+  "hullId": "dpl_bugle",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dpl_bugle.png",
+  "style": "HIGH_TECH",
+  "height": 70,
+  "width": 50,
+  "center": [25, 35],
+  "collisionRadius": 65.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 58,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": 0,
+      "locations": [-17, 11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": -0,
+      "locations": [-17, -11]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [9, 19]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [9, -19]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [6, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10.5, 19.5],
+      "length": 21,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-10.5, -19.5],
+      "length": 21,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-34, 6],
+      "length": 21,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-34, -6],
+      "length": 21,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35, -0],
+      "length": 27.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    35, -3,
+    25, -9,
+    14.5, -20,
+    10.5, -26,
+    -10, -24,
+    -12.5, -18,
+    -23, -18.5,
+    -27, -12.5,
+    -34.5, -9.5,
+    -34.5, 9.5,
+    -27, 12.5,
+    -23, 18.5,
+    -12.5, 18,
+    -10, 24,
+    10.5, 26,
+    14.5, 20,
+    25, 9,
+    35, 3
+  ]
+}

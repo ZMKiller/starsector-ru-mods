@@ -1,0 +1,17 @@
+{
+	"baseHullId":"swp_cathedral",
+	"skinHullId":"swp_notredame",
+	"hullName":"Explorer",
+	"descriptionId":"swp_cathedral",  # optional
+    "descriptionPrefix":"This Cathedral is a salvaged Explorer-class vessel that boasts the original hull's atypically-spacious cargo holds and fuel reserves.",
+    "tags":["no_dealer"],
+    "addHints":[HIDE_IN_CODEX],
+    "spriteName": "graphics/swp/ships/cathedral/swp_cathedral_core.png",
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "builtInMods":["efficiency_overhaul"],
+	"builtInWeapons":{
+    },
+}

@@ -1,0 +1,38 @@
+{
+  "id": "dpl_song_of_light",
+  "specClass": "projectile",
+  "projectileSpecId": "dpl_song_of_light_shot",
+  "type": "ENERGY",
+  "mountTypeOverride":"HYBRID",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/dpl_song_of_light_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/dpl_song_of_light_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/dpl_song_of_light_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/dpl_song_of_light_hardpoint_glow.png",
+  "glowColor":[100,50,175,255],
+  "turretOffsets": [
+    21,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    32,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "autocharge": true,
+  "animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":100.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":20.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.25,
+					   "particleCount":25,
+					   "particleColor":[125,50,255,255]},	
+  "fireSoundTwo": "shock_repeater_fire"
+}

@@ -1,0 +1,228 @@
+Version 0.12.1d
+
+* Fix AotD-related crashes in sector generation
+    * As a side effect, NPC factions will not build the advanced fuel industry
+* Fix duplicated system count slider in random sector
+* Fleet request maximum size specified in settings.json (default 2000, was 1500)
+
+
+Version 0.12.1c
+
+### Gameplay ###
+* Add 'procure equipment' operative action
+* Illegal goods can be targeted for Destroy Commodity Stocks action
+* When a player market is taken by someone else, storage fees are waived for 90 days
+* Freshly captured markets won't be targeted for offensive action by unrelated third parties for 75 days
+* Add a global size offset setting for random sector colony generation
+* Independents (except mercs) don't send fleets to bother player over build station missions
+* Kanta's Protection should stop aggressive actions by pirate strategic AI if enabled
+* Adjust some faction colonization chances and diplomatic attitudes for lore accuracy
+* Adjust some vanilla planets' conditions for lore accuracy
+    * Culann gets a Cryoarithmetic Engine and Hesperus gets a battlestation
+* Two alliances can't merge if they both have permanent members
+* Don't allow building outposts in deep space locations
+* NPC mining fleets are smaller in general
+* Fresh NPC colonies build defenses as intended
+
+### UI ###
+* New game settings are saved between application runs
+* Reduce volume of victory sound effect
+* Add a 'fully randomized start'
+
+### Fixes ###
+* Strategic AI fixes
+	* Greatly reduce memory usage for saving
+	* Commissioning faction won't cede player-governed colonies to third parties
+	* Fix errors in computing/predicting output of industries
+	* Fix AI using covert actions when prohibited by the faction config
+	* Build industry action auto-fails if not started in 120 days
+* Fix crash if something tries to create an alliance in code with deprecated alignment
+* Fix crash from Fragments mission picking system with no jump points
+* Fix alliances being confused about the direction of merger
+* Faction directory: safety for out-of-bounds market size
+* Disabling care package restores old free starting blueprint
+
+### Modding ###
+* Refactor industry generation for AotD support
+* Fix colony expedition requests being able to circumvent AotD pre-collapse defenders or commission colony limits
+* Add config settings for Remnant raid size and whether factions create new colonies outside core worlds
+* Fix crashes if another mod removes Alpha Site or the Nameless Rock
+* Mission "Salvation" no longer gives TASC planetkiller if that mod is enabled (since item no longer exists)
+
+
+Version 0.12.1b
+
+* Rework the own faction setup dialog into a 'care package' that also appears in free start
+* Fix rebellion's suppression fleet request only allowing allied markets as origin
+    * Also now works from commissioning faction (and not from outposts)
+* Fix new game crash when not running LunaLib
+* Fix Remnant quest skip crashing in random sector
+* Fix Abyssal Space Oddity quest skip not giving Threat detection
+* Fix strategic AI build heavy industry action not checking for market's industry capacity
+* Ideological alignment actually deprecated now
+
+
+Version 0.12.1
+
+Thanks to b277a, roflsian, JamesTripleQ and Lukas04 for their pull requests in this update.
+
+### Changes from beta 0.12.0x ###
+* Derelict Empire V2 planets are larger and better-defended, developed and supplied
+* DE V2 works correctly in random sector (identical to V1)
+* Random sector: fix bonus AI cores applying to random structures instead of the ones they were supposed to
+* Fix battle background wormholes appearing in codex
+
+### Gameplay ###
+* Alliances will stop League, Diktat and Church colony crises
+* Expanded options for random colonies at game start
+    * Can have up to 250 colonies
+    * Can set maximum size of these colonies (uniform distribution)
+* Add a Derelict Empire V2 scenario
+    * Random colonies outside the core worlds belong to Derelicts
+    * Compatible with non-random sector
+* Faction strategic AI can request that player return a claimed market
+* Factions that would not normally sat bomb can do so if two sat bombings have occurred in the Sector 
+    * This only detects sat bombing by player or through Nex NPC faction events 
+    * Previously: factions would be allowed to sat bomb player specifically if player had ever sat bombed
+* Add config option to disable rebellion smugglers on player markets
+* NPC buy ship offer will no longer give 1 SP per S-mod by default; instead it gives the same bonus XP as scuttling the ship, with 100% BXP converted to 1 SP 
+    * Can be changed in ingame settings
+* On faction elimination, the faction ceasefires with relevant enemies 
+    * Does not apply to player faction
+* Galatia and Magec gates pre-scanned when skipping At The Gates
+* Random diplomacy events will try not to break ceasefires (but can still end wars)
+* Add a slider for starting operatives on new game
+* Player can request suppression fleets in rebellion intel
+    * Only for player, commissioning faction or allied markets
+* Outposts can't be built in random abyss systems (Limbo will still work)
+* Unrest added from ground battles capped at 15
+
+### UI ###
+* Incoming invasion/sat bomb intel has a button to quick-request a defense fleet
+* Special task groups can be ordered to revive their dead ships or disband entirely at a specific location
+* Can transfer command pre-battle to the flagship player had at start if encounter, even if it's automated
+* Conquest missions can take player-governed planets
+* Setting for colony expeditions only after Galatia are now in LunaLib menu
+* Faction directory can accommodate more entries per page
+* Introduction to Nexerelin will be skipped for recurring players
+* Remove occasional redundant pages in paginated dialogs
+* Relief and colony fleet requests can have their strengths customized if so desired
+
+### Bugfixes ###
+* Fix NPC factions being able to force-pull player into their alliance when alliance offers are disabled
+* Fix Remnant raids not occurring
+* Fix Silverlight (R) not having its tags
+* Fix crash on loading a new game save with Scythe of Orion skip
+* Fix Remnant and Hyperspace Topography quest skips not working in non-random sector
+* Fix False Idols skip not removing story protection properly
+* Fix blockades potentially sticking in strategic AI forever
+* Fix fleets affected by the Follow Me ability not joining ongoing battle
+* Fix respawn fleets being capped by faction production
+* File Drawer Problem: Fix pirate base not spawning if game was reloaded after accepting mission
+* Fix ReloadNexConfig command not reloading Luna settings
+* Fix a temporary memory leak on new game
+* Fix devmode fast start crash
+* Fix LeaveAlliance command needing exact ID match
+* Fixes for strategic AI's war weariness concern
+* Rebellions can occur on independent markets and not on Derelict Empire markets
+* Try to fix infinite loop in Usurpers dialog when faction max relations with Diktat are too low
+
+### Misc ###
+* Default settings: strategic AI on, NPC sat bombing off
+* Add quest skip option for Abyssal Space Oddity
+* Add Remnant mission achievements
+* Add sector defender mode to settings.json
+    * When enabled, invasions can only be launched by or against hostile-to-all factions
+
+### Modding ###
+* Strategic AI can be enabled or disabled for specific factions with `useStrategicAI` in config (will do nothing if player has strategic AI disabled)
+* `reportPlayerOpenedMarket` and `reportPlayerAbandonedColony` are called following outpost build/dismantle respectively
+* Deprecate Ideological faction alignment
+* Punitive expedition setting moved to fleets tab; false by default
+
+
+Version 0.12.0c
+
+* Improve checks for whether NPC fleets are close enough to deploy/support ground battle units
+* Joining Persean League leaves player's existing alliance, if any
+* Buy ship bar/contact offer shouldn't ask for IBB boss ships
+* File Drawer Problem: notify mission failure on attacking Mauve; fix convo with wrong person if retrying mission
+* Abyss map label will adjust its position based on sector size
+* NAT Investigators in Sectorpol colony crisis will explain reason for their presence when asked
+* Refactor market builder to better handle AotD, fix market upsize bonus in random sector no longer working
+* Story skip polish/fixes
+* Fix GUI bug in random sector faction toggle
+* Ground battle intel no longer shows loot that's actually just existing storage contents
+* Tariff mults configurable in Luna mod settings menu
+* Retroactive fix for rebellion support fleet AI crash covers more cases
+* Fixes in the 0.12.0b reuploads
+    * Fix crash with certain custom starts (e.g. The Infernal Machine and Notre Dame)
+    * Fix diplomacy rep limit crash
+
+
+Version 0.12.0b
+
+* Rebellion smugglers marked as smugglers and have low rep impact
+* Add 250 point option to Hyperspace Topography skip
+    * This is just enough for Reverse Polarity in 0.98
+    * Default-skip-story setting will enable this option
+* Academy quests: Handle case where Kallichore or Coureuse but not both are skipped
+* New game dialog remembers last selected background within the current session
+* Contain aggression concern raises the priority of actions based on the target's infamy
+* Diplomacy AI module shows infamy
+* Fix special task group revive cost calculation being too low
+* Fix Shrouded Dweller and Threat not being hostile at start
+* Fix commodities disappearing from storage after market capture
+* Fix Catalytic Core and Synchrotron planet filters not working
+* Re-fix player special task group ships losing their variants
+* Fix displayed 'excuse' for satbombing a satbomber
+* Max points in new game own faction setup now configurable in settings.json
+
+
+Version 0.12.0
+
+* Add False Idols to story skip system
+    * Includes fix for the quest not being accessible if using Knight Errant skip
+* Remnant final mission fixes
+    * Fix Silverlight's shards randomly flying over stuff when they shouldn't (it was kinda cool looking but not intended behavior)
+    * Loosen some distance checks to reduce potential cases of mission failing to generate
+    * Fix a couple of dialog bugs
+    * Silverlight now codex-unlockable
+* Fix an exploit with selling to, raiding and then conquering a market
+* Fix fleet events during rebellion getting stuck
+* Fix multiple operatives on internal security mode doing the same action
+* Fix ceasefire offer's intel tag
+* Fix non-fatal NPE when talking to Hannan about potential League membership
+* Fix how conquest mission creator filters out zero-reward missions
+* Number of blueprints available at Prism blueprint trader now configurable in settings.json
+
+Version 0.11.3y
+
+* Fix Threat not spawning
+* Fix rare crash and incorrect text in rebellion intel
+* Temporary fix for right-click on shroud special item crash
+* Lost scientist mission still works if pirate base failed to spawn
+* Tweaks to starting background descs and handling of codex entries
+
+Version 0.11.3x
+
+* Compatibility with Starsector 0.98
+* Add operative counterinsurgency action
+* Player can request blockade fleets
+* Add hyperspace topography "quest skip"
+* Rebellion events will have smugglers running arms to the rebels (reverse suppression fleet, basically)
+* Add a "contain aggression" strategic AI concern
+* Factions avoid negative diplomatic events if war weariness is too high and strategic AI is off
+* Update deep hyperspace clearing on sector generation to match vanilla (halved radius)
+* Open market will buy automated ships if AI cores are legal in faction; military market will always buy
+* Location of respawn event bases no longer hidden
+* Add two achievements
+* Add a standardised system for printing faction descriptions in new game dialog
+* Add a toggle for NPC colony growth 
+* Fix ground battle crash when market has no industries and no Population & Infrastructure 
+    * Will still crash if there is not at least one industry-like present
+* Fix Arroyo comms check for final Remnant mission
+* Try to fix neutral fleets sometimes joining battles when they shouldn't
+* Fix an unidentified mod conflict that would make invasions unavailable
+* Fix raid fallback for invasionOnlyRetake factions for real
+* Hegemony inspector custom bounty can't spawn around hidden markets

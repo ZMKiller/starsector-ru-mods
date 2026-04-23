@@ -1,0 +1,112 @@
+{
+  "hullName": "Chamlis",
+  "hullId": "TTE_chamlis",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTE_chamlis.png",
+  "style": "HIGH_TECH",
+  "height": 132,
+  "width": 100,
+  "center": [50, 66],
+  "collisionRadius": 77.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 75,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [37, 23]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [37, -23]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 90,
+      "locations": [-48, 26.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 225,
+      "angle": -90,
+      "locations": [-48, -26.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 0,
+      "locations": [14, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-61, 13],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-61, -13],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-62, -0],
+      "length": 42,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    63.5, -6,
+    43, -19,
+    43, -29.5,
+    33, -29,
+    17.5, -43,
+    -16.5, -39.5,
+    -11.5, -50,
+    -47, -47,
+    -66.5, -29,
+    -65.5, -21,
+    -65.5, 21,
+    -66.5, 29,
+    -47, 47,
+    -11.5, 50,
+    -16.5, 39.5,
+    17.5, 43,
+    33, 29,
+    43, 29.5,
+    43, 19,
+    63.5, 6
+  ]
+}

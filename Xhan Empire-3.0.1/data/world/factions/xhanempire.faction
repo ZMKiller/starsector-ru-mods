@@ -1,0 +1,221 @@
+{
+  "id": "xhanempire",
+  "color": [75, 93, 74, 255],
+  "secondaryUIColor":[237,237,237,255],
+        "secondarySegments":4,
+  #"baseUIColor": [75, 93, 74, 255],
+  #"darkUIColor": [32, 105, 15, 175],
+  #"gridUIColor": [95, 225, 15, 75],
+  "displayName": "Xhan Empire",
+  "displayNameWithArticle": "the Xhan Empire",
+  "displayNameLong": "Xhan Empire",
+  "displayNameLongWithArticle": "the Xhan Empire",
+  "logo": "graphics/factions/Xhan_P.png",
+  "crest": "graphics/factions/Xhan_Crest.png",
+  "shipNamePrefix": "XHN",
+  "shipNameSources": {
+    "BEASTS": 1,
+    "SPACE": 1,
+
+  },
+  "names": {
+    "fringe": 1,
+    "world": 1,
+    "future": 1,
+  },
+  # variantOverrides restricts hulls to listed variants and adjusts their probability
+  "variantOverrides": {
+  },
+  # multiplier for how often hulls show up in the faction's fleets
+  "hullFrequency": {
+    "tags": {
+    },
+    "hulls": {
+    },
+  },
+  # ships the faction gets access to when importing S&W out-of-faction
+  "shipsWhenImporting": {
+    "tags": ["base_bp", "XhanLowtech_bp", "XhanMidtech_bp"],
+    "hulls": [
+	  "XHAN_Occuklop",
+	  "XHAN_Ubellop",
+	  "XHAN_Panrelka",
+	  "XHAN_Pharrek",
+	  "XHAN_Ouggom",
+	  "XHAN_Kassarek",
+	  "XHAN_Gramada",
+    ],
+  },
+  "knownShips": {
+    "tags": ["base_bp", "XhanLowtech_bp", "XhanMidtech_bp"],
+    "hulls": [
+      "XHAN_Occuklop",
+	  "XHAN_Ubellop",
+	  "XHAN_Panrelka",
+	  "XHAN_Pharrek",
+	  "XHAN_Ouggom",
+	  "XHAN_Kassarek",
+	  "XHAN_Gramada",
+    ],
+  },
+  # listing ships here will make the faction mostly use them even if other hulls become available
+  "priorityShips": {
+    "tags": ["XhanLowtech_bp", "XhanMidtech_bp"],
+    "hulls": [
+	  "XHAN_Occuklop",
+	  "XHAN_Ubellop",
+	  "XHAN_Panrelka",
+	  "XHAN_Pharrek",
+	  "XHAN_Ouggom",
+	  "XHAN_Kassarek",
+	  "XHAN_Gramada",
+    ],
+  },
+  "knownFighters": {
+    "tags": ["Xhanfighters_bp"],
+    "fighters": [
+	  "Shnerk_wing"
+    ],
+  },
+  "priorityFighters": {
+    "tags": ["Xhanfighters_bp"],
+    "fighters": [
+	  "Shnerk_wing"
+    ],
+  },
+  "knownWeapons": {
+    "tags": ["base_bp", "XhanWartech_bp", "XhanDemolitions_bp"],
+    "weapons": [
+	  "Gorel_Plas_Proj",
+	  "Stolb_Demo_charge",
+	  "heatseeker",
+	  "Sharik_Demo_Torp",
+	  "Xhan_Yazer",
+	  "Xhan_Syr",
+	  "Xhan_Zarukel",
+	  "Xhan_Shtral",
+    ],
+  },
+  "priorityWeapons": {
+    "tags": ["XhanWartech_bp", "XhanDemolitions_bp"],
+    "weapons": [
+	  "Gorel_Plas_Proj",
+	  "Stolb_Demo_charge",
+	  "Sharik_Demo_Torp",
+	  "Xhan_Yazer",
+	  "Xhan_Syr",
+	  "Xhan_Zarukel",
+	  "Xhan_Shtral",
+    ],
+  },
+  "knownHullMods": {
+    "tags": ["base_bp"],
+    "hullMods": [
+      "advancedshieldemitter", # accelerated
+      "turretgyros",
+      "armoredweapons",
+      "augmentedengines",
+      "converted_hangar",
+      "expanded_deck_crew",
+      "magazines",
+      "missleracks",
+      "extendedshieldemitter",
+      "frontemitter",
+      "frontshield", # makeshift
+      "heavyarmor",
+      "insulatedengine",
+      "nav_relay",
+      "operations_center",
+      "recovery_shuttles",
+      "fluxbreakers",
+      "surveying_equipment",
+      "efficiency_overhaul",
+	  "hardenedshieldemitter",
+	  "unstable_injector",
+    ],
+  },
+  "factionDoctrine": {
+    "warships": 4,
+    "carriers": 2,
+    "phaseShips": 2,
+    "officerQuality": 2,
+    "shipQuality": 3,
+    "numShips": 2,
+    "shipSize": 4,
+    "aggression": 4,
+    "combatFreighterProbability": 0, # instead of some portion of the freighters in a fleet
+    "combatFreighterCombatUseFraction": 0, # as part of the normal combat lineup
+    "combatFreighterCombatUseFractionWhenPriority": 0, # as part of normal combat lineup, when marked as priority ship
+    "autofitRandomizeProbability": 0,
+    "commanderSkillsShuffleProbability": 0,
+    "commanderSkills": [
+    ],
+  },
+  "illegalCommodities": [
+    "drugs",
+    "luxury_goods",
+  ],
+  "music": {
+    "theme": "XHAN_MARKET_MUSIC",
+    "market_neutral": "XHAN_MARKET_MUSIC",
+    "market_hostile": "XHAN_MARKET_MUSIC",
+    "market_friendly": "XHAN_MARKET_MUSIC",
+    "encounter_neutral": "XHAN_ENCOUNTER_MUSIC",
+    "encounter_hostile": "XHAN_ENCOUNTER_MUSIC",
+    "encounter_friendly": "XHAN_ENCOUNTER_MUSIC",
+  },
+  "portraits": {
+    "standard_male": [
+      "graphics/portraits/XhanTroop2.png",
+      "graphics/portraits/XhanTroop3.png",
+      "graphics/portraits/XhanTroop4.png",
+      "graphics/portraits/XhanTroop5.png",
+      "graphics/portraits/XhanTroop1.png",
+    ],
+    "standard_female": [
+      "graphics/portraits/XhanTroop1.png",
+      "graphics/portraits/XhanTroop6.png",
+      "graphics/portraits/XhanTroop4.png",
+    ],
+  },
+  "ranks": {
+    "ranks": {
+      "factionLeader":{"name":"Divine Emperor"},
+      "spaceCommander": {"name": "Procurator"},
+    },
+    "posts": {
+	  "factionLeader":{"name":"Divine Emperor"},
+      "patrolCommander": {"name": "Proctor"},
+      "fleetCommander": {"name": "Procurator"},
+      "baseCommander": {"name": "General"},
+      "administrator": {"name": "High Councilor"},
+    },
+  },
+  "custom": {
+    "offersCommissions": true,
+    "engagesInHostilities": true,
+    "buysAICores": true,
+    "AICoreValueMult": 1,
+    "AICoreRepMult": 0.5,
+    "buysSurveyData": true,
+    "hostilityImpactOnGrowth": false,
+    "caresAboutAtrocities": false,
+    "punitiveExpeditionData": {
+      "vsCompetitors": false,
+      "vsFreePort": false,
+      "canBombard": true,
+      "territorial": true,
+    },
+  },
+  "fleetTypeNames": {
+    "trade": "Shipping Fleet",
+    "smallTrader": "Exchange Fleet",
+    "tradeLiner": "Enterprise Fleet",
+    "patrolSmall": "Class 1 Sentinel Fleet",
+    "patrolMedium": "Class 2 Sentinel Fleet",
+    "patrolLarge": "Class 3 Sentinel Fleet",
+    "inspectionFleet": "Compliance Fleet",
+    "taskForce": "Enforcer Fleet",
+  },
+},
+

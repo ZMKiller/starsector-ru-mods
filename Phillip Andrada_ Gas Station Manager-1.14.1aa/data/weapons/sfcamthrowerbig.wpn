@@ -1,0 +1,31 @@
+{
+	"id":"sfcamthrowerbig",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"mountTypeOverride":"ENERGY",
+	"size":"LARGE",
+	"everyFrameEffect":"com.fs.starfarer.api.impl.combat.CryofluxTransducerEffect",
+	"turretSprite":"graphics/PAGSM/weapons/sfc_antimatter_thrower_large_turret_base.png",
+	"hardpointSprite":"graphics/PAGSM/weapons/sfc_antimatter_thrower_large_hardpoint_base.png",
+	#"glowColor":[150,100,255,75],
+	"turretOffsets":[15, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[15, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"unaffectedByProjectileSpeedBonuses":true,
+	#"animationType":"GLOW",
+	#"animationType":"GLOW_AND_FLASH",
+	"animationType":"GLOW",
+	"muzzleFlashSpec":{"length":30.0,   # only used if animationType = MUZZLE_FLASH or GLOW_AND_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":15.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.12,
+					   "particleCount":10,
+					   "particleColor":[100,255,100,255]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"sfcamthrower_shot",  # projectile that will be fired
+	"noImpactSounds":true,
+	#"fireSoundTwo":"cryoflamer_fire",
+}

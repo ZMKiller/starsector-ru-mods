@@ -1,0 +1,61 @@
+{
+  "hullName": "Riptalon",
+  "hullId": "TTSC_riptalon",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/TTSC_riptalon.png",
+  "style": "HIGH_TECH",
+  "height": 37,
+  "width": 32,
+  "center": [16, 18.5],
+  "collisionRadius": 28,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 25.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [13, 4]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, 6.5],
+      "length": 16.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-10.5, -3],
+      "length": 12.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -8.5, -18,
+    20.5, -16.5,
+    21.5, -10.5,
+    12, -8,
+    12, -3.5,
+    22, -0.5,
+    17, 10.5,
+    7, 10,
+    12.5, 17.5,
+    -3.5, 17,
+    -19.5, 10.5,
+    -21.5, 4,
+    -16.5, -2
+  ]
+}

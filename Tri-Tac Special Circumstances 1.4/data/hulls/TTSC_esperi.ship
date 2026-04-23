@@ -1,0 +1,148 @@
+{
+  "hullName": "Esperi",
+  "hullId": "TTSC_esperi",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/TTSC_esperi.png",
+  "style": "HIGH_TECH",
+  "height": 167,
+  "width": 196,
+  "center": [98, 83.5],
+  "collisionRadius": 108,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 105.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "phasefield",
+    "shielded_holds",
+    "surveying_equipment"
+  ],
+  "builtInWings": [
+    "TTSC_rascal_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -58, 5,
+        -58.5, -5
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-44.5, 46]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [-44.5, -46]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [-24.5, 29]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [-24.5, -29]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [72, 20]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [72, -20]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 0,
+      "locations": [36.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-81, 24.5],
+      "length": 36.5,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-81, -24.5],
+      "length": 36.5,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-76.5, 36],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-76.5, -36],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    84, -43,
+    -32.5, -106,
+    -57, -59,
+    -65.5, -56,
+    -68.5, -43.5,
+    -85.5, -41,
+    -85.5, 41,
+    -68.5, 43.5,
+    -65.5, 56,
+    -57, 59,
+    -32.5, 106,
+    84, 43
+  ]
+}

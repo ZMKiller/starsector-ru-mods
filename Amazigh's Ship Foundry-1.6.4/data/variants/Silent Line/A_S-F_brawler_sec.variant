@@ -1,0 +1,35 @@
+{
+  "variantId": "A_S-F_brawler_sec",
+  "hullId": "brawler",
+  "displayName": "Security",
+  "goalVariant": false,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "fluxdistributor",
+    "A_S-F_anarchyBallistic"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "heavyac",
+        "WS 002": "heavyac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "A_S-F_omer",
+        "WS 004": "A_S-F_omer"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,75 @@
+{
+  "hullName": "Sidecar",
+  "hullId": "uw_sidecar",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/uw/ships/uw_sidecar_ff.png",
+  "style": "LOW_TECH",
+  "height": 76,
+  "width": 66,
+  "center": [35, 34],
+  "collisionRadius": 70,
+  "shieldCenter": [4.5, 1],
+  "shieldRadius": 65,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [21, -13]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-3, 8]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 315,
+      "angle": -90,
+      "locations": [-13, -9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-24, 22.5],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-34, -11],
+      "length": 80,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    17, 23.5,
+    0.5, 31.5,
+    -23, 25,
+    -15, 0,
+    -32.5, -5.5,
+    -32.5, -17.5,
+    -23.5, -26.5,
+    26, -21,
+    24.5, -5,
+    1.5, -2,
+    1.5, 15.5,
+    17.5, 18
+  ]
+}

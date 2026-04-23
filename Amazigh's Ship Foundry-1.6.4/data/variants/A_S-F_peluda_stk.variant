@@ -1,0 +1,51 @@
+{
+  "variantId": "A_S-F_peluda_stk",
+  "hullId": "A_S-F_peluda",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 1,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "magazines",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "A_S-F_sprocket",
+        "WS0006": "A_S-F_sprocket",
+        "WS0007": "A_S-F_sprocket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "A_S-F_ir_autopulse",
+        "WS0002": "A_S-F_ir_autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_electroThermal_blaster",
+        "WS0005": "A_S-F_electroThermal_blaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "pdburst",
+        "WS0009": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

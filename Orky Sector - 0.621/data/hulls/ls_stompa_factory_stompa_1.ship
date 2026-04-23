@@ -1,0 +1,62 @@
+{
+    "hullName": "ls_stompa_factory_stompa_1",
+    "hullId": "ls_stompa_factory_stompa_1",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_stompa_factory/ls_stompa_factory_stompa_module1.png",
+    "height": 70,
+    "width": 110,
+    "center": [
+        55, 35
+    ],
+    "collisionRadius": 60,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 78,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_deathskull",
+        "magazines",
+        "always_detaches",
+        "reduced_explosion"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_stompa_grabba_smasha"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 60,
+            "angle": -20,
+            "locations": [
+                      -1,      -49
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+             -20,    -10.5,
+           -11.5,    -20.5,
+              -6,    -49.5,
+             4.5,      -50,
+             6.5,      -25,
+        
+              21,    -22.5,
+            32.5,       -6,
+            32.5,        6,
+              21,     22.5,
+             6.5,       25,
+        
+           -11.5,     20.5,
+             -20,     10.5
+    # 12 points total.
+    ]
+}

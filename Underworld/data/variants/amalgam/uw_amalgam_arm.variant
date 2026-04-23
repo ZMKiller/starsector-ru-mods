@@ -1,0 +1,78 @@
+{
+    "displayName": "Armored",
+    "fluxCapacitors": 0,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "uw_amalgam",
+    "hullMods": [
+        "heavyarmor",
+        "missleracks",
+        "missile_autoloader",
+        "armoredweapons"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_amalgam_arm",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "harpoonpod",
+                "WS0008": "harpoonpod",
+                "WS0011": "harpoon",
+                "WS0016": "harpoon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0009": "typhoon"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0012": "sabot",
+                "WS0013": "sabot",
+                "WS0014": "sabot",
+                "WS0015": "sabot"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "autopulse"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "gravitonbeam",
+                "WS0010": "gravitonbeam",
+                "WS0024": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "devastator"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "flak",
+                "WS0004": "flak",
+                "WS0006": "flak",
+                "WS0017": "mininglaser",
+                "WS0018": "mininglaser",
+                "WS0019": "mininglaser",
+                "WS0020": "mininglaser",
+                "WS0021": "mininglaser",
+                "WS0022": "mininglaser",
+                "WS0023": "mininglaser"
+            }
+        }
+    ]
+}

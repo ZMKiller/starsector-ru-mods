@@ -1,0 +1,78 @@
+{
+	"name":"Elly Lovelace",
+	"personalities":["aggressive", "steady"],
+	"gender":["f"],
+	"chance":1,
+	"talkativeness":1.5,
+	"categoryTags":["original"],
+	
+	"lines":{
+		"start":[
+			{"text":"Enemy sighted!"},
+			{"text":"To protect, we fight!"},
+			{"text":"Together, we stand."},
+			{"text":"More closely, engage the enemy!"},
+		],
+		"start_boss":[
+			{"text":"Nowhere to retreat, there is."},
+			{"text":"Take her down!"},
+			{"text":"For the people, full speed ahead!"},
+		],
+		"retreat":[
+			{"text":"Yet begun to fight, I have not."},
+			{"text":"To the last shell, we shall fight."},
+			{"text":"Don't give up!"},
+		],
+		"out_of_missiles":[
+			{"text":"Error! Ammunition: Null."},
+			{"text":"No ammunitions, we have."},
+			{"text":"With our courage, reload those missiles!"},
+		],
+		"need_help":[
+			{"text":"Warning! Assistance, we need."},
+			{"text":"Enemy resistance stronger than expected. Querying for support."},
+			{"text":"Warning! Victory probability is low. Querying for immediate help."},		
+		],
+		"engaged":[
+			{"text":"Ready! Aim! Fire!"},
+			{"text":"Computing target cooedinates. Success."},
+			{"text":"Pass the ammunition! Open fire!"},
+		],
+		"pursuing":[
+			{"text":"Running away, thou shall not."},
+			{"text":"Warning! Enemy is retreating. Try: Pursuing."},
+		],
+		"running":[
+			{"text":"Warning! Defeat probability higher than threshold."},
+			{"text":"Tactically relocating!"},
+		],
+		"hull_90":[
+			{"text":"Warning! Minor hull damage received."},
+			{"text":"Hull damage ignored, keep firing!"},
+		],
+		"hull_50":[
+			{"text":"Error! Significant hull damage received."},
+			{"text":"Alive, we are. Just keep shooting!"},
+			{"text":"Warning! Critical Malfunction Probability higher than threshold."},
+		],
+		"hull_30":[
+			{"text":"System Failure! Hull damage not computable."},
+			{"text":"To the last minute, we shall do our duty."},
+			{"text":"Forget about that hull! On our courage, we fight!"},
+		],
+		"overload":[
+			{"text":"Error! Flux overflow!"},
+			{"text":"Warning! Defense system offline!"},
+			{"text":"Fear not! Armors, we still get."},
+		],
+		"death":[
+			{"text":"System offline. Sending last message: Good Bye."},
+			{"text":"System offline. Sending last message: Sorry."},
+		],
+		"victory":[
+			{"text":"Victory probability: 100%."},
+			{"text":"Rest in space, I pray."},
+			{"text":"Enemy sighted, sank same."},
+		],
+	}
+}

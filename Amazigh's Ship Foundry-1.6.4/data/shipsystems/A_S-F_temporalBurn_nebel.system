@@ -1,0 +1,45 @@
+{
+	"id":"A_S-F_temporalBurn_nebel",
+	"type":"ENGINE_MOD",
+	"aiType":"BURN_DRIVE_TOGGLE",
+	
+	"statsScript":"org.amazigh.foundry.shipsystems.scripts.ASF_temporalBurn_nebelStats",
+	
+	"engineGlowColor":[90,255,165,255], #[100,255,175,255],
+	"engineGlowLengthMult":4, #3
+	"engineGlowWidthMult":1.6, #1.5
+	"engineGlowGlowMult":3,
+
+	"jitterUnderColor":[90,245,185,155],
+	"jitterUnderCopies":20,
+	"jitterUnderMinRange":1,
+	"jitterUnderRange":8,
+	"jitterUnderRangeRadiusFraction":0,
+	
+	"jitterColor":[90,245,185,55],
+	"jitterCopies":3,
+	"jitterMinRange":0,
+	"jitterRange":5,
+	"jitterRangeRadiusFraction":0,
+
+	"flameoutOnImpactChance":0.0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.8,
+	"soundFilterGainHF":0.2,
+
+	"useSound":"system_plasma_burn",
+	"loopSound":"system_plasma_burn_loop",
+	"deactivateSound":"system_burn_drive_deactivate",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":320,
+		"burstMovementPotential":200,
+		"averageSpeedIncrease":200,
+	}
+}

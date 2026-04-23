@@ -1,0 +1,51 @@
+{
+    "baseHullId":"swp_striker",
+    "skinHullId":"swp_striker_luddic_church",
+    "hullName":"Striker (LC)",
+    "incompatibleWithBaseHull":true,
+    "descriptionId":"swp_striker",  # optional
+    "descriptionPrefix":"The Luddic Church prefer a heavily modified variant of the Striker, which greatly emphasizes its namesake: striking fast and hard with waves of missiles.",
+    "tags":["LC_bp"],
+    "tech":"Luddic Church",
+    "spriteName":"graphics/swp/ships/striker/swp_striker_luddic_church.png",
+    "removeWeaponSlots":[], 		# ids
+    "removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[
+        "ballistic_rangefinder",
+        "missile_autoloader"
+    ],
+    "removeBuiltInWeapons":[], 		# weapon slot ids
+    "builtInMods":[
+        "missleracks",
+    ],
+    "builtInWeapons":{
+    },
+    "weaponSlotChanges":{
+		"WS0001":{
+			"type": "MISSILE",
+		},
+		"WS0002":{
+			"type": "MISSILE",
+		},
+		"WS0003":{
+			"type": "MISSILE",
+		},
+		"WS0004":{
+			"type": "MISSILE",
+		},
+		"WS0005":{
+			"type": "BALLISTIC",
+		},
+	},
+    "engineSlotChanges":{
+        "2":{
+            "width": 0,
+        },
+        "3":{
+            "width": 0,
+        },
+    },
+    "systemId":"swp_punisherjets",
+    "maxSpeed":80,
+    "shieldEfficiency":0.9,
+}

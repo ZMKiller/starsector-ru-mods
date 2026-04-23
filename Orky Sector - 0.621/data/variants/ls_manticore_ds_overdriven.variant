@@ -1,0 +1,36 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 5,
+    "fluxVents": 2,
+    "goalVariant": false,
+    "hullId": "ls_manticore_ds",
+    "hullMods": [
+        "ls_orky_override"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_manticore_ds_overdriven",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_flame_belcha"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_rokkitpod",
+                "WS 002": "ls_rokkitpod"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_deffstorm_bolta"
+            }
+        }
+    ]
+}

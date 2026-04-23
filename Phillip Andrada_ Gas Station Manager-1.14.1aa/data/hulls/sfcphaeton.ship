@@ -1,0 +1,199 @@
+{
+  "hullName": "Phaeton PN-1500",
+  "hullId": "sfcphaeton",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/PAGSM/ships/carrier_tanker_medium_diktat_v6.png",
+  "style": "MIDLINE",
+  "height": 234,
+  "width": 120,
+  "center": [60, 117],
+  "collisionRadius": 167.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 136.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery"
+  ],
+  "builtInWings": [
+    "sfcakon_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [64, -0],
+      "renderOrderMod": 500
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [86, -37],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 0,
+      "locations": [101, 12],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [37, -17],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [12, -34]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [14, 38]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 120,
+      "locations": [-75, 26]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -120.5,
+      "locations": [-75, -26]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 180,
+      "locations": [-99, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        45, 31,
+        36.5, 34,
+        56.5, 34.5,
+        56, 30,
+        34, 29.5,
+        45.5, 35
+      ]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [90.5, 38],
+      "renderOrderMod": 300
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-117, 36],
+      "length": 40,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-117, -36],
+      "length": 40,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-117, 25],
+      "length": 50,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-117, -25],
+      "length": 50,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-117, 9.5],
+      "length": 58,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-117, -9.5],
+      "length": 58,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    107.5, -17.5,
+    96.5, -39.5,
+    76, -51.5,
+    68, -41.5,
+    -51.5, -42.5,
+    -64, -59.5,
+    -112.5, -49,
+    -112.5, 49,
+    -64, 59.5,
+    -51.5, 42.5,
+    68, 41.5,
+    76, 51.5,
+    96.5, 39.5,
+    107.5, 17.5
+  ]
+}

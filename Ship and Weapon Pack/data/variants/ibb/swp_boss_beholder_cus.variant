@@ -1,0 +1,47 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 19,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "swp_boss_beholder",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter",
+        "heavyarmor",
+        "unstable_injector"
+    ],
+    "permaMods": [
+        "hardenedshieldemitter",
+        "heavyarmor",
+        "unstable_injector"
+    ],
+    "sMods": [
+        "hardenedshieldemitter",
+        "heavyarmor",
+        "unstable_injector"
+    ],
+    "variantId": "swp_boss_beholder_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "hveldriver",
+                "WS0002": "hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "taclaser",
+                "WS0004": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "heavyburst"}
+        }
+    ]
+}

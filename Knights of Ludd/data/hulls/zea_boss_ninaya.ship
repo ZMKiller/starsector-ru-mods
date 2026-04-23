@@ -1,0 +1,214 @@
+{
+  "hullName": "Ninaya",
+  "hullId": "zea_boss_ninaya",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/zea/ships/zea_boss_ninaya.png",
+  "style": "ZEA_DUSK_TECH",
+  "height": 108,
+  "width": 118,
+  "center": [60, 51],
+  "collisionRadius": 62.5,
+  "shieldCenter": [-11, -0],
+  "shieldRadius": 76.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "high_maintenance",
+    "delicate",
+    "advancedshieldemitter",
+    "zea_dusk_builtin",
+    "zea_ninaya_boss"
+  ],
+  "builtInWeapons": {
+    "WS0003": "zea_deco_eng_dummy",
+    "WS0004": "zea_deco_eng_dummy",
+    "WS0008": "zea_deco_boss_ninaya_front",
+    "WS0009": "zea_deco_boss_ninaya_bridge"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [4, 32]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [10, -30]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-2, -0],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 150,
+      "locations": [-19.5, 52.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -150,
+      "locations": [-7, -53]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -135,
+      "locations": [-21, -25]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -127,
+      "locations": [2, -41]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -170.5,
+      "locations": [-13.5, -12.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -124.5,
+      "locations": [-2, -15]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 135,
+      "locations": [8, 14]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-20.5, 1]
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-21, 18],
+      "renderOrderMod": 200
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-47, 18],
+      "length": 33.226211,
+      "width": 9.437953,
+      "angle": 168.5,
+      "contrailSize": 9.437953,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-47, -18],
+      "length": 33.226211,
+      "width": 9.437953,
+      "angle": -168.5,
+      "contrailSize": 9.437953,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-47, 11],
+      "length": 50.764324,
+      "width": 9.996663,
+      "angle": 175.5,
+      "contrailSize": 9.996663,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-47, -11],
+      "length": 50.764324,
+      "width": 9.996663,
+      "angle": -175.5,
+      "contrailSize": 9.996663,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-19.5, 52.5],
+      "length": 50,
+      "width": 13,
+      "angle": 155,
+      "contrailSize": 0,
+      "style": "OMEGA"
+    },
+    {
+      "location": [-7, -53],
+      "length": 50,
+      "width": 13,
+      "angle": -155,
+      "contrailSize": 0,
+      "style": "OMEGA"
+    }
+  ],
+  "bounds": [
+    -48, -22,
+    -48, 22,
+    -19.5, 57.5,
+    -13, 59,
+    -3, 59,
+    13, 39.5,
+    13, 26,
+    54, 12,
+    36.5, 7,
+    7, 7.5,
+    7, -9,
+    37, -10,
+    45, -13.5,
+    18.5, -19,
+    18, -45.5,
+    0, -53,
+    -6, -57.5,
+    -17, -47,
+    -14, -44,
+    -22, -36,
+    -27, -40.5,
+    -37.5, -39.5,
+    -39.5, -26.5
+  ]
+}

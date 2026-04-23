@@ -1,0 +1,29 @@
+{
+	"id":"ls_dread_twin_shoota",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"mountTypeOverride":"HYBRID",
+	"size":"SMALL",
+	"displayArcRadius":250,
+	"turretSprite":"graphics/weapons/ls_deff_dread/ls_dread_twinshoota.png",
+	"turretGunSprite":"graphics/weapons/ls_deff_dread/ls_dread_twinshoota_barrel.png",
+	"hardpointSprite":"graphics/weapons/ls_deff_dread/ls_dread_twinshoota.png",
+	"hardpointGunSprite":"graphics/weapons/ls_deff_dread/ls_dread_twinshoota_barrel.png",
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":2.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[15, -0.5,15,1.5],
+	"turretAngleOffsets":[0,0],
+	"hardpointOffsets":[15, 0,15,0],
+	"hardpointAngleOffsets":[0,0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":24.0,
+					   "particleSizeMin":4.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.2,
+					   "particleCount":9,
+					   "particleColor":[165,165,210,175]},
+	"projectileSpecId":"ls_kustom_shoota_shot",  # projectile that will be fired
+	"fireSoundTwo":"kustom_shoota_sound",
+}

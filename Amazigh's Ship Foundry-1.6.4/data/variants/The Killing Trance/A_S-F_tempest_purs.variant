@@ -1,0 +1,40 @@
+{
+  "variantId": "A_S-F_tempest_purs",
+  "hullId": "tempest",
+  "displayName": "Pursuer",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 6,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "solar_shielding",
+    "advancedoptics",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "harpoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "ionbeam"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

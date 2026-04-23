@@ -1,0 +1,51 @@
+id,trigger,conditions,script,text,options,notes
+greetingRATAbyssalsHostile,OpenCommLink,"$faction.id == rat_abyssals score:1000
+",$entity.ignorePlayerCommRequests = true 1,Вражеский флот не отвечает на запрос связи,cutCommLink:Разорвать канал связи,
+greetingRATSolitude,OpenCommLink,"$faction.id == rat_abyssals_solitude score:1000
+",$entity.ignorePlayerCommRequests = true 1,Вражеский флот не отвечает на запрос связи,cutCommLink:Разорвать канал связи,
+greetingRATSerenity,OpenCommLink,"$faction.id == rat_abyssals_serenity score:1000
+",$entity.ignorePlayerCommRequests = true 1,Вражеский флот не отвечает на запрос связи,cutCommLink:Разорвать канал связи,
+greetingRATHarmony,OpenCommLink,"$faction.id == rat_abyssals_harmony score:1000
+",$entity.ignorePlayerCommRequests = true 1,Вражеский флот не отвечает на запрос связи,cutCommLink:Разорвать канал связи,
+greetingRATWastes,OpenCommLink,"$faction.id == rat_abyssals_wastes score:1000
+","$ignorePlayerCommRequests = true 1
+ShowThreatPersonVisual","???? ДЕЛЮЗ ???? МИСГОТ
+
+*** АЛИСИТ РЕИФИКАТ ***
+
+ИНТЕРДИКТОРАТ ПРОАКТ: АНФАБРИКЕЙТ",cutCommLink:Разорвать канал связи,
+,,,,,,
+ratAbyssGateOpt,PopulateGateOptions,"$global.gatesActive
+$global.playerCanUseGates
+$gateScanned
+AbyssGateCMD CanBeAdded",,,15:ABYSSAL_GATE:Направиться к Вратам Бездны,
+ratAbyssGateOptDescription,PopulateGateOptions,"$global.gatesActive
+$global.playerCanUseGates
+$gateScanned
+AbyssGateCMD CanBeAdded",AbyssGateCMD Highlight,,,
+ratAbyssGateUseOpt,DialogOptionSelected,$option == ABYSSAL_GATE,AbyssGateCMD Traverse,,,
+,,,,,,
+ratAbyssSetStart,NewGameOptionSelected,$option == rat_NGCDone_Abyss,"SetAbyssStart
+$option = nex_NGCDone
+FireBest NewGameOptionSelected",,,
+,,,,,,
+,,,,,,
+rat_commander_flavorTextMarket,TradePanelFlavorText,$market.id == rat_station_commander_market score:10000,"AddText ""Скромный портовый конкорс заполнен небольшими грузовиками и фрилансерами, которым везет или не везет, и это легко понять по блеску или грязи на броне кораблей и по объему загружаемого груза. Горстка спекулянтов, похоже, давно знающих друг друга, теснится вокруг прибывающих капитанов, пока торговцы перекрикивают друг друга, предлагая товары и проецируя персональные ад-голограммы."" marketFlavorTextColor",,,
+rat_exoship_flavourTextMarket,TradePanelFlavorText,$faction.id == rat_exotech score:10000,,,,
+,,,,,,
+rat_createSettlement1,PopulateOptions,"ShouldShowSettlementCreationOption
+$menuState == main
+$market.isPlanetConditionMarketOnly == false",,,15:ratCreateSettlement:Основать новое поселение,
+rat_createSettlement2,PopulateOptions,"ShouldShowSettlementCreationOption
+$market.isPlanetConditionMarketOnly == true",,,8:ratCreateSettlement:Основать новое поселение,
+rat_createSettlementDisabled,PopulateOptions,"$market.isSurveyed != true
+","SetEnabled ratCreateSettlement false
+SetTooltip ratCreateSettlement ""Планета должна быть обследована.""",,,
+rat_createSettlementScript,DialogOptionSelected,$option == ratCreateSettlement,DelegateToSettlementCreationDialog,,,
+,,,,,,
+rat_visitSettlement1,PopulateOptions,"ShouldShowSettlementOption
+$menuState == main
+$market.isPlanetConditionMarketOnly == false",AutoDescendToSettlement,,2:ratVisitSettlement:Спуститься к поселению,
+rat_visitSettlement2,PopulateOptions,"ShouldShowSettlementOption
+$market.isPlanetConditionMarketOnly == true",AutoDescendToSettlement,,2:ratVisitSettlement:Спуститься к поселению,
+rat_visitSettlementScript,DialogOptionSelected,$option == ratVisitSettlement,DelegateToSettlementDialog,,,

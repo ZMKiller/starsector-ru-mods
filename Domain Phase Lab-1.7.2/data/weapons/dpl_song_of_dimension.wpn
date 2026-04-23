@@ -1,0 +1,26 @@
+{
+	"id":"dpl_song_of_dimension",
+	"specClass":"projectile",
+	"everyFrameEffect":"data.scripts.weapons.dpl_song_of_dimensionEffect",
+	"type":"ENERGY",
+	"mountTypeOverride":"SYNERGY",
+	"size":"LARGE",
+	"turretSprite":"graphics/weapons/dpl_song_of_dimension_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/dpl_song_of_dimension_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/dpl_song_of_dimension_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/dpl_song_of_dimension_hardpoint_glow.png",		
+	"hardpointOffsets":[40, 0],
+	"turretOffsets":[30, 0],
+	"hardpointAngleOffsets":[0],
+	"turretAngleOffsets":[0],
+	"unaffectedByProjectileSpeedBonuses":true,
+	"glowColor":[135,30,200,255], # used for emp arcs as well
+	"barrelMode":"ALTERNATING",
+	"interruptibleBurst":false,
+	"animationType":"GLOW",
+	"autocharge":true,
+	"projectileSpecId":"dpl_song_of_dimension_shot",
+	"fireSoundTwo":"realitydisruptor_fire",
+}
+
+

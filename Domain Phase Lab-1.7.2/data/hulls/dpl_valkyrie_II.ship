@@ -1,0 +1,132 @@
+{
+  "hullName": "Valkyrie Mk.II",
+  "hullId": "dpl_valkyrie_II",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/dpl_valkyrie_II.png",
+  "style": "HIGH_TECH",
+  "height": 170,
+  "width": 156,
+  "center": [78, 85],
+  "collisionRadius": 127.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 120,
+  "viewOffset": 0,
+  "builtInMods": [
+    "delicate",
+    "advanced_ground_support"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [68, 21]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [68, -21]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [24, 51]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [24, -51]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-6, -75]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-6, 75]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-58, -75]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-58, 75]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-80, 21],
+      "length": 51.5,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-80, -21],
+      "length": 51.5,
+      "width": 19,
+      "angle": -180,
+      "contrailSize": 19,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-86, -0],
+      "length": 69.5,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    86, -6,
+    78.5, -31,
+    47.5, -38.5,
+    1, -78,
+    -65, -78,
+    -86.5, -68,
+    -86.5, 68,
+    -65, 78,
+    1, 78,
+    47.5, 38.5,
+    78.5, 31,
+    86, 6
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 250,
+  "fireSoundTwo": "CHOK_FIRE_SOUND",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    11.5,
+    -3,
+    11.5,
+    3
+  ],
+  "hardpointSprite": "graphics/weapons/Chok_PD_HARDPOINT.png",
+  "id": "Chok_point_def",
+  "muzzleFlashSpec": {
+    "length": 15,
+    "particleColor": [
+      200,
+      120,
+      50,
+      200
+    ],
+    "particleCount": 7,
+    "particleDuration": 0.15,
+    "particleSizeMin": 6,
+    "particleSizeRange": 8,
+    "spread": 6
+  },
+  "projectileSpecId": "Chok_Shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    10,
+    -3,
+    10,
+    3
+  ],
+  "turretSprite": "graphics/weapons/Chok_PD_TURRET.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 3
+}

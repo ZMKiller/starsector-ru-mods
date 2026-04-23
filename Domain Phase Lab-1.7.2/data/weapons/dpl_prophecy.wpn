@@ -1,0 +1,39 @@
+{
+  "id": "dpl_prophecy",
+  "specClass": "beam",
+  "type": "DECORATIVE",
+  "size": "LARGE",
+  #"collisionClass": "RAY",
+  #"collisionClassByFighter": "RAY_FIGHTER",
+  "beamEffect":"data.scripts.weapons.dpl_ProphecyEffect",
+  "turretSprite": "graphics/weapons/dpl_prophecy_turret_base.png",
+  "turretGlowSprite": "",
+  "hardpointSprite": "graphics/weapons/dpl_prophecy_hardpoint_base.png",
+  "hardpointGlowSprite": "",
+  "renderAboveAllWeapons": 0,
+  "fringeColor":[135,105,235,255],
+  "coreColor":[255,255,255,255],
+  "glowColor":[155,100,255,255],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    24,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    37,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "beamFireOnlyOnFullCharge": false,
+  "width": 64,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 300.0,
+  "pixelsPerTexel": 1,
+  "pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF,FIGHTER,ASTEROID],
+  "fireSoundTwo":"tachyon_lance_fire",
+}

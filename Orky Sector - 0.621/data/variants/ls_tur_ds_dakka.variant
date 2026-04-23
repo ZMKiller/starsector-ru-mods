@@ -1,0 +1,32 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 2,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "ls_tur_ds",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "unstable_injector",
+        "missleracks"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_tur_ds_dakka",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_jet_shoota",
+                "WS 001": "ls_jet_shoota",
+                "WS 003": "ls_shoota_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_flakka_dakka"
+            }
+        }
+    ]
+}

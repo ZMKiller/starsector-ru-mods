@@ -1,0 +1,53 @@
+{
+  "hullName": "Naja",
+  "hullId": "A_S-F_naja",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_naja.png",
+  "style": "HIGH_TECH",
+  "height": 40,
+  "width": 36,
+  "center": [18, 20],
+  "collisionRadius": 32,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 30,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [11, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, 9],
+      "length": 30,
+      "width": 9,
+      "angle": 178,
+      "contrailSize": 9,
+      "style": "CUSTOM",
+      "styleId": "NAJA_BOMBER"
+    },
+    {
+      "location": [-14, -9],
+      "length": 30,
+      "width": 9,
+      "angle": 182,
+      "contrailSize": 9,
+      "style": "CUSTOM",
+      "styleId": "NAJA_BOMBER"
+    }
+  ],
+  "bounds": [
+    14, -5,
+    -2, -16,
+    -13, -12,
+    -13, 12,
+    -2, 16,
+    15, 5
+  ]
+}

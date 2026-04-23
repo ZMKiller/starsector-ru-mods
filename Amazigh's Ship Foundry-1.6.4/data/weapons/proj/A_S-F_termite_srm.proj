@@ -1,0 +1,42 @@
+{
+	"id":"A_S-F_termite_srm",
+	"specClass":"missile",
+	"missileType":"MISSILE", #CIRCLE_TARGET
+
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_termiteOnHitEffect",
+
+	"sprite":"graphics/missiles/A_S-F_termite.png",
+	"size":[8,16],
+	"center":[4,8],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[180,200,245,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":70, # purely visual
+	"flameoutTime":1,
+	"noEngineGlowTime":0.25,
+	"fadeTime":0.5,
+	"engineSpec":{"turnAcc":2500,
+				  "turnRate":500,
+				  "acc":1800,
+				  "dec":150},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-7, 0],
+
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[40,250,165,255],
+						"contrailDuration":0.9,
+						"contrailWidthMult":1.2,
+						"contrailWidthAddedFractionAtEnd":1.4,# can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.25f,
+						"contrailAngularVelocityMult":0.55f,
+						"contrailSpawnDistMult":0, # how far away from engine it starts
+						"contrailColor":[25,155,130,200],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":5,
+				    "length":32,
+				    "angle":180.0}]
+}

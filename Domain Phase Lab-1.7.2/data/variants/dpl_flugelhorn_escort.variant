@@ -1,0 +1,27 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 4,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dpl_flugelhorn",
+    "hullMods": [
+        "targetingunit",
+        "escort_package",
+        "hardenedshieldemitter",
+        "stabilizedshieldemitter",
+        "fluxdistributor",
+        "advancedoptics"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dpl_flugelhorn_escort",
+    "weaponGroups": [{
+        "autofire": false,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "dpl_graviton_lance",
+            "WS0002": "dpl_graviton_lance",
+            "WS0006": "tachyonlance"
+        }
+    }]
+}

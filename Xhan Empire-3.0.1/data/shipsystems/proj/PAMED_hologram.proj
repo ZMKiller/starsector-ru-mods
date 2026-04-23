@@ -1,0 +1,41 @@
+{
+	"id":"PAMED_hologram",
+	"specClass":"missile",	
+	"missileType":"FLARE_SEEKER",
+	"sprite":"graphics/missiles/PAMED_holographic_anomaly.png",
+	"size":[32,32],	
+	"center":[16,16],
+	"collisionRadius":10,
+	"collisionClass":"RAY_FIGHTER",
+	"explosionColor":[133,30,235,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":75, # purely visual
+	"flameoutTime":1, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration
+	"collisionClassAfterFlameout":"RAY_FIGHTER",
+	"behaviorSpec":{"behavior":"CUSTOM",
+					"effectRange":400,
+					"effectChance":0.3,
+				   },
+	"engineSpec":{"turnAcc":120,
+				  "turnRate":80,
+				  "acc":120,
+				  "dec":120},
+	"engineSlots":[
+					{"id":"ES1",
+					"loc":[0, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"engineColor":[133,30,235,255],
+						"contrailParticleSizeMult":15,
+						"contrailParticleDuration":2,
+						"contrailMaxSpeedMult":-0.1,
+						"contrailAngularVelocityMult":0f,
+						"contrailColor":[133,30,235,35],
+						"type":"GLOW" # GLOW or SMOKE
+					},
+				    "width":18.0,
+				    "length":18.0,
+				    "angle":180.0},
+				   ]
+}

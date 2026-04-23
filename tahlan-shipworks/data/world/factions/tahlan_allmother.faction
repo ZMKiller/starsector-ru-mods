@@ -1,0 +1,168 @@
+{
+	"id":"tahlan_allmother",
+	"color":[100,150,150,255],
+	"secondaryUIColor":[100,140,50,255],
+	"secondarySegments":2,
+	"displayName":"ALLMOTHER",
+	"displayNameLong":"ALLMOTHER",
+	"logo":"graphics/tahlan/factions/tahlan_greathouses.png",
+	"crest":"graphics/tahlan/factions/tahlan_greathouses_crest.png",
+	"displayNameWithArticle":"the ALLMOTHER",
+	"displayNameLongWithArticle":"the ALLMOTHER",
+	"shipNamePrefix":"CHILD",
+	"showInIntelTab":false,
+	"shipNameSources":{
+		"DERELICT_DRONE":1,
+	},
+	"names":{
+		"old english":1,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["tahlan_lostech"],
+		"hulls":[
+		],
+	},
+	"knownShips":{
+		"tags":["tahlan_lostech"],
+		"hulls":[
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":["tahlan_lostech"],
+		"hulls":[],
+	},
+	"knownFighters":{
+		"tags":["tahlan_lostech"],
+		"fighters":[
+		],
+	},
+	"priorityFighters":{
+		"tags":["tahlan_knights"],
+		"fighters":[
+		],
+	},
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "tahlan_lostech"],
+		"weapons":[
+			"lightneedler",
+			"railgun",
+			"dualflak",
+			"heavymauler",
+			"hveldriver",
+			"heavyneedler",
+			"gauss",
+			"mjolnir",
+			"multineedler",
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"pdburst",
+			"amblaster",
+			"phasebeam",
+			"heavyblaster",
+			"heavyburst",
+			"ionpulser",
+			"ionbeam",
+			"plasma",
+			"guardian",
+			"tachyonlance",
+		],
+	},
+	"priorityWeapons":{
+		"tags":["tahlan_lostech"],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "sindrian_diktat", "lions_guard", "tahlan_lostech"],
+		"hullMods":[
+			"advancedshieldemitter", # accelerated
+			"advancedoptics",
+			"turretgyros",
+			"armoredweapons",
+			"augmentedengines",
+			"autorepair",
+			"converted_hangar",
+			"eccm",
+			"ecm",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",  # makeshift
+			"hardenedshieldemitter",
+			"heavyarmor",
+			"insulatedengine",
+			"pointdefenseai",
+			"targetingunit",
+			"nav_relay",
+			"adaptiveshields", # omni
+			"operations_center",
+			"recovery_shuttles",
+			"fluxbreakers",
+			"solar_shielding",
+			"stabilizedshieldemitter",
+			"surveying_equipment",
+		],
+	},
+	"factionDoctrine":{
+		"warships":5,
+		"carriers":1,
+		"phaseShips":1,
+		
+		"officerQuality":3,
+		"shipQuality":3,
+		"numShips":1,
+		
+		"shipSize":4,
+		
+		"aggression":3,
+		
+		"combatFreighterProbability":0.1,      				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+		
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"officer_management",
+			"coordinated_maneuvers",
+			"fighter_doctrine",
+			"electronic_warfare",
+		],
+	},
+	"illegalCommodities":[
+		"drugs"
+	],
+	"portraits":{
+		"standard_male":[
+			"graphics/tahlan/portraits/offspring.png"
+		],
+		"standard_female":[
+			"graphics/tahlan/portraits/offspring.png"
+		],
+	},
+	"fleetTypeNames":{
+		"patrolSmall":"ALLMOTHER's children",
+		"patrolMedium":"ALLMOTHER's children",
+		"patrolLarge":"ALLMOTHER's children",
+	},
+
+},

@@ -1,0 +1,198 @@
+{
+    "music":{
+        "uw_music_cabal_friendly":[
+            {"file":"cabal_neutral_friendly.ogg","source":"sounds/uw/music","volume":0.3,"randomStart":true} #lol actually use a normal volume
+        ],
+        "uw_music_cabal_neutral":[
+            {"file":"cabal_neutral_friendly.ogg","source":"sounds/uw/music","volume":0.45,"randomStart":true}
+        ],
+        "uw_music_cabal_hostile":[
+            {"file":"cabal_hostile.ogg","source":"sounds/uw/music","volume":0.45,"randomStart":true}
+        ],
+    },
+
+    # PALACE FLEET
+    "uw_palace_wubwub":[
+        {"file":"sounds/uw/world/palace_wubwub.ogg","pitch":1,"volume":1},
+    ],
+    "uw_palace_bitcruncher":[
+        {"file":"sounds/uw/world/palace_bitcruncher.ogg","pitch":1,"volume":1},
+    ],
+
+    # PROTOTYPE GAUSS CANNON
+    "uw_prototype_gauss_fire":[
+        {"file":"sounds/uw/sfx_wpn_guns/uw_prototype_gauss_fire.ogg","pitch":1,"volume":1},
+    ],
+
+    # SHREDDER
+    "uw_shredder_fire":
+    [
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":0.96,"volume":0.78},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":0.98,"volume":0.79},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":1,"volume":0.80},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":1.02,"volume":0.81},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":1.04,"volume":0.82},
+    ],
+
+    # SHADOW SKIMMER
+    "uw_shadow_skimmer":[
+        {"file":"sounds/uw/sfx_systems/shadowskim.ogg","pitch":1,"volume":1},
+    ],
+
+    # PIRATE CLOAK
+    "uw_pirate_cloak_activate":[
+        {"file":"sounds/sfx_systems/phase_cloak_activate.ogg","pitch":0.8,"volume":1.0},
+    ],
+    "uw_pirate_cloak_deactivate":[
+        {"file":"sounds/sfx_systems/phase_cloak_deactivate.ogg","pitch":0.8,"volume":1.0},
+    ],
+
+    # TORCH DRIVE
+    "torchdrive_start":[
+        {"file":"sounds/uw/sfx_systems/torchdrivestart.ogg","pitch":1,"volume":0.9},
+    ],
+    "torchdrive_end":[
+        {"file":"sounds/uw/sfx_systems/torchdriveend.ogg","pitch":1,"volume":1},
+    ],
+    "torchdrive_loop":[
+        {"file":"sounds/uw/sfx_systems/torchdriveloop.ogg","pitch":1,"volume":1},
+    ],
+
+    # TEMPORAL CURSE
+    "uw_temporalcurse_emp":
+    [
+        {"file":"sounds/uw/sfx_systems/activearmor_spark_1.ogg","pitch":1.0,"volume":1.0},
+        {"file":"sounds/uw/sfx_systems/activearmor_spark_2.ogg","pitch":1.0,"volume":1.0},
+        {"file":"sounds/uw/sfx_systems/activearmor_spark_3.ogg","pitch":1.0,"volume":1.0},
+        {"file":"sounds/uw/sfx_systems/activearmor_spark_4.ogg","pitch":1.0,"volume":1.0},
+        {"file":"sounds/uw/sfx_systems/activearmor_spark_5.ogg","pitch":1.0,"volume":1.0},
+    ],
+
+    # BURST JETS
+    "uw_incubusdrive_activate":[
+		{"file":"sounds/uw/sfx_systems/punisherjet.ogg","pitch":0.99,"volume":0.99},
+		{"file":"sounds/uw/sfx_systems/punisherjet.ogg","pitch":1.00,"volume":1.00},
+		{"file":"sounds/uw/sfx_systems/punisherjet.ogg","pitch":1.01,"volume":1.01},
+    ],
+    "uw_incubusdrive_super_activate":[
+		{"file":"sounds/uw/sfx_systems/excelsior_vent_start.ogg","pitch":0.99,"volume":0.99},
+		{"file":"sounds/uw/sfx_systems/excelsior_vent_start.ogg","pitch":1.00,"volume":1.00},
+		{"file":"sounds/uw/sfx_systems/excelsior_vent_start.ogg","pitch":1.01,"volume":1.01},
+    ],
+    "uw_incubusdrive_super_loop":[
+		{"file":"sounds/uw/sfx_systems/excelsior_vent_loop.ogg","pitch":1.00,"volume":1.00},
+    ],
+
+	"uw_cancer_engine_loop":{
+		"sounds":[
+			{"file":"sounds/sfx_engines/engine_04_omega_00_fighter.ogg","pitch":1,"volume":0.3},
+			{"file":"sounds/sfx_engines/engine_04_omega_01_frigate.ogg","pitch":1,"volume":0.3},
+			{"file":"sounds/sfx_engines/engine_04_omega_02_destroyer.ogg","pitch":1,"volume":1},
+			{"file":"sounds/sfx_engines/engine_04_omega_03_cruiser.ogg","pitch":1,"volume":1},
+			{"file":"sounds/sfx_engines/engine_04_omega_04_capital.ogg","pitch":1,"volume":1},
+		],
+		"UW_CANCER":{"sounds":[0,1,2,3,4], "pitch":1, "volume":0.75},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[1], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[2], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[3], "pitch":1, "volume":0.7},
+		"CAPITAL_SHIP":{"sounds":[4], "pitch":1, "volume":1},
+	},
+	"uw_cancer_engine_accelerate":{
+		"sounds":[
+			{"file":"sounds/sfx_engines/engine_boost_01.ogg","pitch":1.0,"volume":0.4},
+			{"file":"sounds/sfx_engines/engine_boost_02.ogg","pitch":1.0,"volume":0.4},
+			{"file":"sounds/sfx_engines/engine_boost_03.ogg","pitch":1.0,"volume":0.4},
+		],
+		"UW_CANCER":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0,1,2], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0,1,2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[0,1,2], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[0,1,2], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0,1,2], "pitch":1, "volume":1},
+	},
+	"uw_cancer_shield_burnout":{
+		"sounds":[
+			{"file":"sounds/sfx_shields/shields_burnout_oneshot.ogg","pitch":1,"volume":1},
+		],
+		"UW_CANCER":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	"uw_cancer_emp_loop":{
+		"sounds":[
+			{"file":"sounds/sfx_shields/flux_lightning_loop.ogg","pitch":1,"volume":0.7},
+		],
+		"UW_CANCER":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	"uw_cancer_flux_loop":{
+		"sounds":[
+			{"file":"sounds/sfx_shields/flux_lightning_loop.ogg","pitch":1,"volume":0.7},
+		],
+		"UW_CANCER":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	"uw_cancer_vent_flux":{
+		"sounds":[
+			{"file":"sounds/sfx_flux/flux_vent.ogg","pitch":1,"volume":0.5},
+		],
+		"UW_CANCER":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	"uw_cancer_shield_lower":{
+		"sounds":[
+			{"file":"sounds/sfx_shields/shields_down_large.ogg","pitch":1,"volume":0.4},
+			{"file":"sounds/sfx_shields/shields_down_medium.ogg","pitch":1,"volume":0.4},
+			{"file":"sounds/sfx_shields/shields_down_small.ogg","pitch":1,"volume":0.4},
+		],
+		"UW_CANCER":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.6},
+		"FRIGATE":{"sounds":[1], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	"uw_cancer_shield_raise":{
+		"sounds":[
+			{"file":"sounds/sfx_shields/shields_up_large.ogg","pitch":1,"volume":1},
+			{"file":"sounds/sfx_shields/shields_up_medium.ogg","pitch":1,"volume":1},
+			{"file":"sounds/sfx_shields/shields_up_small.ogg","pitch":1,"volume":1},
+		],
+		"UW_CANCER":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	"uw_cancer_explosion_ship":{
+		"sounds":[
+			{"file":"sounds/sfx_impacts/explosion_01.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/sfx_impacts/explosion_02.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/sfx_impacts/explosion_03_fighter.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/sfx_impacts/explosion_04.ogg","pitch":1,"volume":1.0},
+		],
+		"UW_CANCER":{"sounds":[0,1,2,3], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":1.0},
+		"FRIGATE":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"DESTROYER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CRUISER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CAPITAL_SHIP":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+	},
+}

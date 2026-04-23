@@ -1,0 +1,338 @@
+Version 2.0.5
+
+-> Fixed version checker downloading remote mod & starsector version data even when supposed to be disabled.
+
+
+
+Version 2.0.4
+
+-> Changed the mods icon in the mod settings.
+-> Improved performance for the button being added to refit & removed some jankiness.
+-> Now caches Reflection calls to improve on performance.
+
+Changed the mods license from "Attribution-NonCommercial-ShareAlike 4.0 International" to the
+"Attribution 4.0 International" License, to be less restrictive.
+
+For Modders
+- Lunalib is no longer split in to a LunaLib.jar and a Lunalib-Kotlin.jar
+- This should not require mod updates, as package paths have been unchanged.
+- You will want to remove "Lunalib-Kotlin.jar" from your library references if you have it there.
+
+
+
+Version 2.0.3
+
+-> Added LunaCodex
+ -> A simple utility that adds a "Mods" section towards the Codex. The intended use is for Overview pages of mods.
+ -> Use LunaCodex.getModsCategory() to get the categories CodexEntryPlugin. Works like any other codex category.
+-> Fixed issues regarding the rendering of buttons on the main menu.
+
+Version 2.0.2
+
+-> Fixed a crash that occured after saving Lunalib configurations
+
+
+
+Version 2.0.1
+
+-> Fixed a crash in the refit screen
+
+
+
+Version 2.0.0
+
+-> Updated to 0.98a
+-> The Settings & Debug Keybinds have been reset to accomendate F2 being reserved for the codex, they are both one further to the right now.
+-> Compiled Java 17 and Kotlin 2.0, should improve performance somewhat.
+
+
+
+Version 1.8.7
+
+-> Added a utility to manage custom title screens. Mostly exists to avoid conflicts.
+
+
+
+Version 1.8.6
+
+-> Fix to a slight render order issue with refit panels.
+-> The mod is no longer marked as "utility" in the mod_config.json file.
+-> Fixed some Grammar mistakes (credits to Nissa)
+
+
+Version 1.8.5
+
+-> Added the "LunaCampaignRenderingPlugin" class.
+-> https://github.com/Lukas22041/LunaLib/wiki/LunaCampaignRenderingPlugin
+
+
+
+Version 1.8.4
+
+-> Updated to 0.97a.
+
+
+
+Version 1.8.3
+
+- Added a small utility class called "LunaCommons", with methods for quickly saving cross-save data.
+- Fixed a memory leak.
+- Some grammar & typo fixes, thanks to johnaaron
+- Debug menu teleport is now instant and no longer has a delay.
+
+
+
+Version 1.8.2
+
+- Changed the text of the refit menu button to be something that is easier to refer to.
+- Improved the sprite and text used for the button.
+- added "getToolipWidth" to "BaseRefitButton" so that the width of a buttons tooltip can be modified.
+
+
+
+Version 1.8.1
+
+-> Added a "onPanelClose" method to the BaseRefitButton class, which allows for cleaning up unused variables more easily.
+
+
+
+Version 1.8.0
+
+-> Added a feature that allows modders to add buttons to the refit menu. A guide for this has been added to the wiki.
+
+-> Fixed an issue that made some snippets not update the string value correctly
+-> Fixes certain sprite ui elements not fading out correctly
+
+
+
+Version 1.7.8
+
+-> Made Radio buttons slightly less bright.
+
+For Devs
+-> Fixed Radio Buttons not being able to be added at Runtime.
+
+
+
+Version 1.7.7
+
+-> Fixed large performance issues for Lunalib UI that occured due to some bad compatibility fixes.
+ --> Should also improve performance for RAT and other mods making use of LunaUI elements.
+-> Fixed the first radio button in a selection to have the wrong color.
+
+
+
+Version 1.7.6
+
+-> Added a Close Button to the top right of the Settings, Version and Debug Menus.
+-> Version Checker can now be disabled in the Lunalib config.
+-> The Mod Config Panel now remembers which tab was last selected and switches to it when re-opening the menu.
+-> Multiple UI Panels now remember the location of the scrollbar from when they were last opened, those are:
+   * Mod Config: Mod Selection List, Settings List
+   * Version Checker: Mods Selection List
+   * Snippets Tab: Snippets List
+
+
+
+Version 1.7.5
+-> Reduced changelog loading times and prevented them from hanging the game when starting the game up.
+-> The Cargo-Debug menu now shows a message displaying how many items have been given.
+-> Fixed an issue that caused some config changes to not apply immediately when saving.
+
+For Developers:
+-> Added ``reportSettingsChanged`` to ``LunaSettings`` 
+
+
+
+Version 1.7.4
+
+-> Fixed a bug that caused the menu to close in the main menu when pressing ESC while selecting a textfield or keybind button.
+-> Fixed a bug that made you unable to close the main menu config screen.
+-> Improved the tooltip of the Direct Download button.
+
+For Developers:
+-> The Listener methods inside of LunaSettings have been marked as deprecated and received replacements. This is due to them not being marked as JvmStatic, which caused them to be unwieldly to use from Java-Code. The Methods will remain useable however if you are already using them.
+-> The LunaSettings.csv data can now be reloaded by pressing Devmode F8 in combat or from a Snippet in the debug menu. 
+
+
+
+Version 1.7.3
+
+-> Version checker now shows if your starsector install is up to date.
+-> Version checker now highlights when the installed version is ahead of the remote one, and displays the differences between both numbers.
+-> Version checker changelogs are temporarily trimmed after 10.000 characters. This is due to performance concerns that i will look in to improving in a future version.
+-> Fixed an issue that caused the Main Menu UI to not render correctly on some systems. Thanks to both Cieve and JamesTripleQ for helping me fix it.
+-> Fixed an issue that let you sometimes click on the Vanilla starsector buttons in the main menu while the version checker or mod config was open.
+
+
+
+Version 1.7.2
+
+-> Fixed version checker crashing if a changelog had a % symbol in it
+
+
+
+Version 1.7.1
+
+-> Fixed crash in combat when pressing ESC
+-> "hasListenerOfClass" should work now
+
+
+
+Version 1.7.0 (Starsector v0.96a)
+
+For Users:
+-> Updated to 0.96a
+-> The main menu version checker and mod configs are now available on all platforms
+-> Removed the dialog option within new game creation that opened the mod settings as it is now redundant with the buttons working on all platforms.
+-> Keybind configs now use better names for certain keys, for example LMENU has been changed to L-Alt
+
+For Devs:
+-> The LunaSettingsListener has been changed.
+ -> It is now added through the "LunaSettings" class instead through the "addListener" method.
+ -> This lets the listener be added on game start, previously it could only run in the campaign.
+-> Removed deprecated methods with the "SaveSpecific" parameter in the "LunaSettings" class.
+
+
+
+Version 1.6.0
+
+Will Crash "Random Assortment of Things" v1.2.0 or lower in certain sections.
+
+For Devs:
+All features in this patch are kotlin related, sorry java people.
+
+-> Added 5 new UI Elements, can be accessed from TooltipMakerAPI through the TooltipMakerExtensions class.
+ - LunaChargeButton, a button that needs to be hold for a short time to be activated.
+ - LunaProgressBar, a simple bar that fills from left to right depending on its value.
+ - LunaColorPicker, allows to select a color from a hue-based picker.
+ - LunaTextField, a recreation of the vanilla textfield that allows multiline text.
+ - LunaSpriteElement, a simple element displaying a sprite that can be modified unlike the vanilla equievalance.
+
+-> Added a new config option under "Debug" that lets you bind a hotkey that opens a custom panel that displays all Lunalib UI elements.
+-> LunaElements now hold a "CustomData" variable to store data.
+
+-> Added the "LunaCustomPanelPlugin" class.
+ - A Simple Class that can be used to easily open a custom panel.
+ - Used through SectorAPI.openLunaCustomPanel() or InteractionDialogAPI.openLunaCustomPanel()
+
+Extension Functions
+ - Removed "addScript" and "addTransientScript" as they dont fit the context of the lib.
+ - Added SectorAPI.openLunaCustomPanel() & InteractionDialogAPI.openLunaCustomPanel()
+ - Added Extenstion Functions to TooltipMakerAPI for each new UI element.
+ - Fixed TooltipMakerExtensions being inside an object.
+
+
+
+Version 1.5.9
+
+-> Fixes a single crash on startup that happens on some hardware, yup thats it, dont bother to update if you dont get crashes on startup.
+
+
+Version 1.5.8
+
+-> The Version Checker screen now properly shows mods that failed to load & mods that do not have support.
+-> Fixed a Memory Leak that occured when pressing the "Teleport" button in the debug menu.
+-> Reduced the amount of log-spam from lunalibs implementation of Version Checker.
+
+
+
+Version 1.5.7
+
+-> Keybind configs now accept L-Shift, L-CTRL and L-ALT
+-> The version checker screen now has a link refering to the USC Discord for the #mod_updates channel.
+-> Expanded the "About" section in the Mod Settings a bit.
+-> Potentialy fixed a version checker crash (again)
+
+
+
+Version 1.5.6 ("Combat Activators" requires this version or above)
+
+-> The version checker changelogs now highlight any lines beginning with "Version" 
+-> Slightly Reduced Memory Useage from Loaded Settings
+
+For Modders:
+-> The LunaSettings CSV does not need the mod id column anymore.
+-> The LunaSettings CSV now loads each csv per mod instead of merging all together, so ids from different mods wont overwrite eachother anymore.
+-> The Settings will now be be loaded if a mod requests data from it before Lunalib got the chance to load it (i.e in case a mod loads before lunalib in OnApplicationLoad)
+
+
+
+Version 1.5.5
+
+-> The buttons in the version checker menu can now be rightclicked to copy their link to the clipboard.
+-> Added Tooltips for some of the version checker buttons.
+-> Improved how changelogs are displayed
+-> Fixed an issue that caused the main menu buttons to appear when they shouldnt, causing crashes if clicked.
+
+
+
+Version 1.5.4
+
+-> Potentially fixed a Version Checker related crash.
+
+
+
+Version 1.5.3
+
+-> Improved the look of the Version Checker menu
+-> The VC screen now allows for a direct download button that opens the download link in the browser (Mods that have direct downloads for mod managers already support this)
+-> The VC screen now allows for a textfile to be displayed as a changelog.
+
+
+
+Version 1.5.2
+
+-> Fixed a crash caused by some leftover code
+
+
+
+Version 1.5.1 
+
+-> Clicking the "About" button in the mod settings now shows an FaQ screen instead of just being a tooltip.
+-> Experimental Additions:
+Added buttons that open the Mod Settings and a Version Checker Screen to the main menu, those additions are Windows only and will not work on MacOS or Linux. Other methods of accessing the menu are still available as before. The next Starsector update may make it possible for me to include those buttons on Mac and Linux aswell. The Version Checker included works independent of the one included in Nexelerin & the Standalone version, you can have both active.
+-> Added "LunaElement" for the Kotlin Part of the Library, which is an easily extendable UI Component.
+
+
+
+Version 1.5.0
+
+-> The Mods list now includes icons for each mod, which modders can customize.
+-> The settings menu now remembers which mod was last selected and will automaticly reselect it when the menu is re-opened.
+-> The settings menu now automaticly selects the first mod in the list when opened for the first time in a session.
+-> Fixed the "Save All" button not being highlighted when changes were made.
+-> Moved the mod list scrollbar a little again.
+-> Added Radio-Buttons as a Field Type for the Settings menu.
+-> New "secondaryValue" column for the LunaSettings.csv, currently only used for Radio Buttons.
+-> The Strings for the Settings Menu have been externalised, making translation of the mod a bit easier.
+
+
+
+Version 1.4.1
+
+-> Added an "About" section the mod settings menu that can be hovered over to get more details about the menu.
+-> The debug menu now displays sprites (Credit to Ruddygreat for the code that renders planets within the menu)
+-> Improved some tooltips in the settings menu to make them more clear.
+-> Added a new Snippet that displays all active Snippets.
+-> Moved the mod lists scroller a bit more to the left, to make it not intersect with other elements.
+
+
+
+Version 1.4.0
+
+-> Configs can now be categorized in to different Tabs.
+-> Reworked the settings saving system.
+-> Switching between mods does not reset any changes made anymore.
+-> Pressing the Save button now saves all changes made across all mods.
+-> Leaving the Menu without pressing the save button will still erase all changes made.
+-> The Debug Screen now Displays Icons in the Cargo tab.
+-> Fixed certain UI elements flickering when interacting with other parts of the UI.
+-> Fixed the mod search in the settings menu not working if an underscore was used.
+-> Fixed some snippet ui elements not being updated for some of the recent UI changes.
+-> LunaSnippets are now abstract classes instead of interfaces, snippets from before this change will crash the game.
+-> Added the JavaWuzzy library to Lunalib, which allows for the useage of text matching algorithms. Can be found under /jars/libs/
+
+
+
+Among us

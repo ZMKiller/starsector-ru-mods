@@ -1,0 +1,185 @@
+{
+    "hullName": "Gore Slag (BA)",
+    "hullId": "ls_gore_slag_ba",
+    "hullSize": "CRUISER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_gore_slag_ba.png",
+    "height": 217,
+    "width": 168,
+    "center": [
+        84, 108.5
+    ],
+    "collisionRadius": 144,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 136,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_bloodaxes",
+        "rugged",
+        "ballistic_rangefinder",
+        "ls_rokkit_runt"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      24,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      81,       40
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      81,      -40
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     -36,       67
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     -36,      -67
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 90,
+            "locations": [
+                   -35.5,       29
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 270,
+            "locations": [
+                   -35.5,      -29
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -94.5, 38
+            ],
+            "length": 78,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 84,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -94.5, -38
+            ],
+            "length": 78,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 84,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -86, 22
+            ],
+            "length": 78,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 84,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -86, -22
+            ],
+            "length": 78,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 84,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -59,      -10,
+             -86,    -16.5,
+             -86,    -27.5,
+             -95,    -33.5,
+             -95,      -43,
+        
+           -65.5,      -79,
+           -30.5,    -71.5,
+             -30,      -62,
+           -44.5,    -61.5,
+           -44.5,      -55,
+        
+             -24,      -59,
+              84,      -52,
+            84.5,      -30,
+            31.5,       -9,
+            31.5,        9,
+        
+            84.5,       30,
+              84,       52,
+             -24,       59,
+           -44.5,       55,
+           -44.5,     61.5,
+        
+             -30,       62,
+           -30.5,     71.5,
+           -65.5,       79,
+             -95,       43,
+             -95,     33.5,
+        
+             -86,     27.5,
+             -86,     16.5,
+             -59,       10
+    # 28 points total.
+    ]
+}

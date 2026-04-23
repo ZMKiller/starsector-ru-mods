@@ -1,0 +1,49 @@
+{
+  "variantId": "TTE_genar_standard",
+  "hullId": "TTE_genar",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "pulselaser",
+        "WS0003": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "irpulse",
+        "WS0005": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "TTE_pdirpulse",
+        "WS0007": "TTE_pdirpulse",
+        "WS0008": "TTE_pdirpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

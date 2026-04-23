@@ -1,0 +1,57 @@
+name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u (base cap),cr/u,max uses,regen,charge up,active,down,cooldown,toggle,noDissipation,noHardDissipation,hardFlux,noFiring,noTurning,noStrafing,noAccel,noShield,isPhaseCloak,noVent,tags,icon
+Штурмовой форсаж,tahlan_stormdrive,1,,,,,,,,,0.5,1,0.5,7,,,,,,,TRUE,TRUE,TRUE,,TRUE,,graphics/icons/hullsys/burn_drive.png
+Инфернальный натиск,tahlan_infernalcharge,1,,,,,,,,,0.5,3,0.5,15,TRUE,,,,,TRUE,TRUE,TRUE,TRUE,,TRUE,,graphics/icons/hullsys/burn_drive.png
+Священная ярость,tahlan_holyfuror,1,,,,,,,,,0.5,5,0.5,15,,,,,,,,,,,,,graphics/icons/hullsys/high_energy_focus.png
+Божественная мощь,tahlan_divinemight,,,,,,,,3,0.05,0.5,2,0.5,,,,,,,,,,,,,,graphics/icons/hullsys/high_energy_focus.png
+Абсолютная добродетель,tahlan_absolutevirtue,,,,,,,,,,0.5,3,0.5,12,,,,,TRUE,,,,,,,,graphics/icons/hullsys/high_energy_focus.png
+Привод странника,tahlan_errantdrive,,,,0.1,,,,,,0.5,0.5,0.1,7,,,,TRUE,,TRUE,,,TRUE,,TRUE,,graphics/icons/hullsys/maneuvering_jets.png
+Штурмовая блокировка,tahlan_assaultlockdown,,,,,,,,,,2,,2,5,TRUE,,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Режим часового,tahlan_sentrymode,,,,,,,,,,1,,1,,TRUE,,,,,,TRUE,TRUE,,,,,graphics/icons/hullsys/fortress_shield.png
+Навигационная подача,tahlan_navigationfeed,,,,,,0.3,,,,0.5,20,0.5,10,,,,,,,,,,,,,graphics/icons/hullsys/targeting_feed.png
+Кривая навигационная подача,tahlan_dodgynavigationfeed,,,,,,0.2,,,,0.5,20,0.5,10,,,,,,,,,,,,,graphics/icons/hullsys/targeting_feed.png
+Оборонительные построения,tahlan_defformation,,,,,,0.2,,,,0.5,10,0.5,5,,,,,,,,,,,,,graphics/icons/hullsys/targeting_feed.png
+Темпоральный координатор,tahlan_temporalcoordinator,,,,,,0.1,,,,0.5,6,0.5,12,,,,,,,,,,,,,graphics/icons/hullsys/targeting_feed.png
+Периодический разрушитель,tahlan_periodicbreaker,,,,,,0.40,,,,3,6,1,18,,,TRUE,TRUE,,,,,TRUE,,TRUE,,graphics/icons/hullsys/temporal_shell.png
+Хроноразрыв,tahlan_temporaldrift,,,,,,0.15,,,,0.2,0.5,4,8,,,,TRUE,,,,,,,TRUE,,graphics/icons/hullsys/temporal_shell.png
+Хронопролом,tahlan_supertemporaldrift,,,,,,0.1,,,,0.5,3,0.5,5,,,,TRUE,,,,,,,TRUE,,graphics/icons/hullsys/temporal_shell.png
+Щит оплота,tahlan_strongholdshield,,,0.025,,,,,,,1.5,,1.5,0,TRUE,,,TRUE,TRUE,,,,,,,,graphics/icons/hullsys/fortress_shield.png
+Кавалерийский натиск,tahlan_cavalrycharge,1,,,,,,,,,1,2,1,12,,,,,,,TRUE,TRUE,TRUE,,TRUE,,graphics/icons/hullsys/burn_drive.png
+Налётные двигатели,tahlan_raiderjets,,,,,,,,,,0.5,1.5,3,5,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+Форсажный ускоритель,tahlan_boostthruster,,,,,,,,,,0.5,5,0.5,8,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+Штурмовые двигатели,tahlan_raidestjets,,,,,,,,3,0.1,0.2,1,1,0.1,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+Перегрузка вооружения,tahlan_weaponsoverdrive,1,,,,,,,3,0.05,0.25,3,0.25,,,,,,,,,,,,,,graphics/icons/hullsys/high_energy_focus.png
+Усиленный РЭБ-комплекс,tahlan_activeeccm,,,,,,0.2,,,,0.5,10,0.5,2,TRUE,,,,,,,,,,,,graphics/icons/hullsys/targeting_feed.png
+Тяжёлый фазовый плащ,tahlan_heavyphase,,,,,,,,,,0.5,,0.5,2,TRUE,,TRUE,TRUE,TRUE,,,,TRUE,TRUE,,,graphics/icons/hullsys/phase_cloak.png
+Вспомогательные двигатели,tahlan_auxthrusters,,,,,,,,3,0.1,0.5,5,0.5,,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+Паросветовой ускоритель,tahlan_steamlight,,,,,,,,,,1,2,5,10,,,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Штурмовой режим,tahlan_assaultmode,,,,,,,,,,5,5,1,12,,,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Флюкс-перегрузка,tahlan_fluxoverdrive,,,,,,,,,,2,10,2,20,,,TRUE,,,,,,TRUE,,,,graphics/icons/hullsys/high_energy_focus.png
+Сменные боеприпасы,tahlan_variable_ammo,,,0,,,,,3,0,0.15,,0,0.05,,,,,,,,,,,,,graphics/tahlan/icons/hullsys/tahlan_shell_swapping.png
+Стабилизаторы вооружения,tahlan_weaponstabilization,,,,,,,,,,0.5,7,0.5,14,,,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Микротермоядерные снаряды,tahlan_explosiverounds,,,,,,,,3,0.05,0,5,0,0.5,,,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Плазменные снаряды,tahlan_plasmarounds,,,,,,,,3,0.05,0,2,0,0.5,,,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Тяжёлое демпфирующее поле,tahlan_heavydamper,1,,,,,,,5,0.1,0.1,1,0.1,1,,,,,TRUE,,,,TRUE,,TRUE,,graphics/icons/hullsys/damper_field.png
+Сокрушающий привод,tahlan_crusherdrive,1,,,,,,,,,0.5,4,0.5,20,,,,,,TRUE,TRUE,TRUE,TRUE,,TRUE,,graphics/icons/hullsys/burn_drive.png
+Спустить пса,tahlan_helcrusherdrive,1,,,,,,,,,0.2,3,0.2,18,,,,,,TRUE,TRUE,TRUE,TRUE,,TRUE,,graphics/icons/hullsys/burn_drive.png
+Фазовый скиммер типа R,tahlan_rrskimmer,,,,,,0.05,,5,0.15,0.1,,0.1,0.1,,TRUE,,TRUE,,,,,,,,,graphics/icons/hullsys/displacer.png
+Пространственный скиммер,tahlan_ltskimmer,,,,,,,,2,0.15,0.4,,0.4,0.2,,TRUE,,TRUE,,,,,,,,,graphics/icons/hullsys/displacer.png
+Пространственный сдвиг,tahlan_shiftdrive,,,,,,,,5,0.15,0.1,0.4,0.1,,,,TRUE,,TRUE,,,,TRUE,,TRUE,,graphics/icons/hullsys/maneuvering_jets.png
+Пространственный скачок,tahlan_jauntdrive,,,,,,,,3,0.25,0.1,0.6,0.1,,,,TRUE,,TRUE,TRUE,,,,,TRUE,,graphics/icons/hullsys/maneuvering_jets.png
+Флюкс-взрыв,tahlan_fluxblast,,,,,,,,,,0.5,0.1,0.1,10,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+Оболочка реальности,tahlan_realityshell,,,,,,,,,,5,5,1,25,,,,,,,,,TRUE,,TRUE,,graphics/icons/hullsys/temporal_shell.png
+Режим безынерционного хода,tahlan_inertialessdrive,,,,,,,,3,0.15,0.25,1.5,0.25,1,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+Векторный сдвиг,tahlan_vectorshift,,,,,,,,3,0.1,0.25,1.5,0.25,1,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+Индукционная подача боеприпасов,tahlan_fluxfeeder,1,,,,,,,,,1,3,1,10,,,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Гнев машины,tahlan_machinespirit,1,,,,,,,,,1,3,1,10,,,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Темпоральная оболочка типа Hel,tahlan_heltempshell,1,,,,,0.2,,,,3,15,2,15,,,,,,,,,,,,,graphics/icons/hullsys/temporal_shell.png
+Скользящий привод,tahlan_slipdrive,,,,,,0.05,,3,0.15,0.1,0.35,0,0.4,,TRUE,,TRUE,TRUE,,,,TRUE,,,,graphics/icons/hullsys/displacer.png
+Разрушитель фазы,tahlan_phasebreaker,,,,,,0.2,,2,0.05,0.25,2,3.75,1,,,,TRUE,TRUE,,,,TRUE,TRUE,,,graphics/icons/hullsys/phase_cloak.png
+Скоординированный удар,tahlan_coordinatedstrike,1,,,,,,,2,0.03,0.25,6,0.25,,,,,,,,,,,,,,graphics/icons/hullsys/high_energy_focus.png
+Привод прорыва,tahlan_penetrationDrive,,,,,,,,,0.25,0.1,1.6,0.1,10,,,,,TRUE,TRUE,TRUE,,TRUE,,TRUE,,graphics/icons/hullsys/maneuvering_jets.png
+Перегрузка дронов,tahlan_droneoverdrive,,,,,,0.2,,,,0.5,10,0.5,10,,,,,,,,,,,,,graphics/icons/hullsys/targeting_feed.png
+Устройство Орион Mk2,tahlan_orion_device_mk2,,,,,,,,3,0.2,0,0.001,0,1,,,,,,,,,,,,,graphics/icons/hullsys/infernium_injector.png
+Удар РЭБ,tahlan_ewarstrike,,,,,,0.1,,,,0.5,15,1,15,,,,,,,,,,,,,graphics/icons/hullsys/entropy_amplifier.png
+Векторный форсаж,tahlan_lostechentry,1,,,,,,,,,2,,2,0,TRUE,,,,TRUE,TRUE,TRUE,TRUE,TRUE,,,,graphics/icons/hullsys/burn_drive.png
+Фазовый плащ,tahlan_helphase,,,,,,,,,,0.5,,0.5,2,TRUE,,TRUE,TRUE,TRUE,,,,TRUE,TRUE,,,graphics/icons/hullsys/phase_cloak.png
+Призыв рока,tahlan_weaponsoverdrive_phase,1,,,,,,,3,0.05,0.25,3,0.25,,,,,,,,,,TRUE,,,,graphics/icons/hullsys/high_energy_focus.png
+,,,,,,,,,,,,,,,,,,,,,,,,,,,

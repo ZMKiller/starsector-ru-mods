@@ -1,0 +1,17 @@
+{
+	"id":"swp_plasmaflame_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.scripts.weapons.SWP_PlasmaFlameEffect",
+	#"onFireEffect":"data.scripts.weapons.SWP_PlasmaFlameEffect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":80.0,
+	"width":40.0,
+	"fadeTime":0.25,
+	"fringeColor":[255,0,0,150],
+	"coreColor":[255,100,50,255],
+	"textureType":"SMOOTH",
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0	
+}

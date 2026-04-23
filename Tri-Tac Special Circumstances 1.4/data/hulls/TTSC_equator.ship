@@ -1,0 +1,60 @@
+{
+  "hullName": "Equator",
+  "hullId": "TTSC_equator",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/TTSC_equator.png",
+  "style": "HIGH_TECH",
+  "height": 26,
+  "width": 28,
+  "center": [14, 13],
+  "collisionRadius": 20.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 18.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2.5, 11.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [2.5, -11.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11.5, 9],
+      "length": 14,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-11.5, -9],
+      "length": 14,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    13.5, -12,
+    2.5, -16.5,
+    -15, -15,
+    -15, 15,
+    2.5, 16.5,
+    13.5, 12
+  ]
+}

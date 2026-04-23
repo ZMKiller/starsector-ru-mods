@@ -1,0 +1,33 @@
+{
+  "variantId": "dpl_hydraulis_elite",
+  "hullId": "dpl_hydraulis",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "stabilizedshieldemitter",
+    "targetingunit",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ionpulser",
+        "WS0004": "ionpulser",
+        "WS0005": "ionpulser",
+        "WS0006": "ionpulser",
+        "WS0008": "sabotpod",
+        "WS0009": "sabotpod"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "dpl_anomaly_fighter"
+  ]
+}

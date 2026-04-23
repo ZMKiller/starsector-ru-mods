@@ -1,0 +1,23 @@
+{
+	"id":"A_S-F_amitaDrive",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"org.amazigh.foundry.shipsystems.scripts.ASF_amitaDriveStats",
+	
+	"weaponGlowColor":[235,50,235,155],
+	"weaponTypes":[ENERGY, DECORATIVE],
+
+	"engineGlowColor":[255,135,255,155],
+	"engineGlowLengthMult":1.4,
+	"engineGlowWidthMult":1.2,
+	"engineGlowGlowMult":1.3,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":false,
+
+	"useSound":"system_high_energy_focus_activate",
+	"deactivateSound":"system_high_energy_focus_deactivate",
+	"outOfUsesSound":"gun_out_of_ammo",
+	"loopSound":"system_high_energy_focus_loop",
+}

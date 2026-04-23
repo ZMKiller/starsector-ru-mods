@@ -1,0 +1,33 @@
+{
+  "variantId": "A_S-F_shade_p_ambush",
+  "hullId": "shade_d_pirates",
+  "displayName": "Ambush",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 4,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxcoil",
+    "insulatedengine",
+    "A_S-F_anarchyEnergy"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "irpulse",
+        "WS 002": "irpulse",
+        "WS 004": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

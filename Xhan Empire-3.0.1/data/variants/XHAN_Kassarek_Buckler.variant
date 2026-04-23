@@ -1,0 +1,43 @@
+{
+  "variantId": "XHAN_Kassarek_Buckler",
+  "hullId": "XHAN_Kassarek",
+  "displayName": "Buckler",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Xhan_Zarukel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "Chok_point_def"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "XHAN_Szar_Point_Defense",
+        "WS0004": "XHAN_Szar_Point_Defense",
+        "WS0005": "XHAN_Szar_Point_Defense",
+        "WS0006": "XHAN_Szar_Point_Defense",
+        "WS0007": "XHAN_Szar_Point_Defense",
+        "WS0008": "XHAN_Szar_Point_Defense"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,139 @@
+{
+	id:"A_S-F_arkTechD",
+	"displayName":"ArkTech",
+	"displayNameWithArticle":"the ArkTech",
+	"displayNameLong":"ArkTech",
+	"displayNameLongWithArticle":"the ArkTech",
+	"entityNamePrefix":"",
+	"personNamePrefix":"",
+	"personNamePrefixAOrAn":"an",
+	"displayNameIsOrAre":"are",
+	
+	"logo":"graphics/factions/domain_explorarium.png",
+	"crest":"graphics/factions/crest_domain_explorarium.png",
+	"shipNamePrefix":"ARK",
+	
+	"color":[150,120,100,255],
+	"baseUIColor":[195,170,155,255],
+	#"darkUIColor":[31,94,112,175],
+	#"gridUIColor":[70,200,255,75],
+	
+	"showInIntelTab":false,
+	
+	"shipNameSources":{
+		"DERELICT_DRONE":1,
+	},
+	"names":{
+		"ai":1,
+	},
+
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":[],
+		"hulls":[
+			"A_S-F_mtumaji",
+			"A_S-F_mtetezi",
+			"A_S-F_mbishi",
+			"A_S-F_mlinzi"
+		],
+	},
+	"knownShips":{
+		"tags":[],
+		"hulls":[
+			"A_S-F_mtumaji",
+			"A_S-F_mtetezi",
+			"A_S-F_mbishi",
+			"A_S-F_mlinzi"
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+		],
+	},
+	"knownFighters":{
+		"tags":[],
+		"fighters":[
+			"mining_drone_wing",
+		],
+	},
+	"priorityFighters":{
+		"tags":[],
+		"fighters":[
+		],
+	},
+	"knownWeapons":{
+		"tags":["A_S-F_arktech_wep"],
+		"weapons":[],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "merc"],
+		"hullMods":[
+		],
+	},
+	"factionDoctrine":{
+		"warships":5,
+		"carriers":1,
+		"phaseShips":1,
+		
+		"officerQuality":2,
+		"shipQuality":2,
+		"numShips":3,
+		
+		"shipSize":2,
+		
+		"aggression":3,
+		
+		"combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":1,				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.5,
+
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+		],
+	},
+
+	"illegalCommodities":[
+	],
+	"music":{
+		"theme":"music_none",
+		"market_neutral":"music_none",
+		"market_hostile":"music_none",
+		"market_friendly":"music_none",
+		"encounter_neutral":"music_none",
+		"encounter_hostile":"music_none",
+		"encounter_friendly":"music_none",
+	},
+
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_berzel.png",
+			#"graphics/portraits/portrait_ai1b.png",
+			#"graphics/portraits/portrait_ai3b.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_berzel.png",
+			#"graphics/portraits/portrait_ai1b.png",
+			#"graphics/portraits/portrait_ai3b.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+		},
+		"posts":{
+		},
+	},
+	"custom":{
+		"engageWhenEvenStrength":true,
+		"allowsTransponderOffTrade":true, # to prevent cargoscan dialog from "patrols"
+		"postsNoBounties":true,
+		"fightToTheLast":true, # order a full assault instead of retreating, in most cases
+	},
+},

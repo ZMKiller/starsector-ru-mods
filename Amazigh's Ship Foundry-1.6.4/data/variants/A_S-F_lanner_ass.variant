@@ -1,0 +1,59 @@
+{
+  "variantId": "A_S-F_lanner_ass",
+  "hullId": "A_S-F_lanner",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hellbore"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "sabot",
+        "WS0006": "sabot",
+        "WS0007": "sabot",
+        "WS0008": "sabot",
+        "WS0009": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "heavyblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightdualac",
+        "WS0004": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "heavymg",
+        "WS0011": "heavymg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

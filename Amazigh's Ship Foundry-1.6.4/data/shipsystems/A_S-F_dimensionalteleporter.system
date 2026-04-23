@@ -1,0 +1,36 @@
+{
+	"id":"A_S-F_dimensionalteleporter",
+	"type":"TELEPORTER",
+	"aiType":"PHASE_TELEPORTER",
+	
+	"jitterColor":[165,100,255,150],
+	"jitterCopies":5,
+	"jitterRange":25,
+	"jitterRangeRadiusFraction":0,
+	
+	"weaponGlowColor":[100,165,255,0],
+	"weaponTypes":[ENERGY],
+	
+	"engineGlowLengthMult":0.2,
+	"engineGlowWidthMult":0.2,
+	"engineGlowGlowMult":0.2,
+	
+	"range":600,
+	"randomRange":0,
+	"requiresZeroFluxBoost":false,
+	
+	"vulnerableChargeup":false,
+	"vulnerableChargedown":false,
+	"renderCopyDuringTeleport":true,
+	
+	"fadeActivationSoundOnChargedown":false,
+	
+	"useSound":"system_phase_teleporter",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,
+		"burstMovementPotential":900,
+		"averageSpeedIncrease":300,
+	}
+}

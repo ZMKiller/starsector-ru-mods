@@ -1,0 +1,50 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 0,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "uw_shark",
+    "hullMods": ["safetyoverrides"],
+    "permaMods": [],
+    "variantId": "uw_shark_ovd",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "irpulse",
+                "WS0005": "irpulse"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "annihilatorpod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "lightdualac",
+                "WS0007": "lightdualac",
+                "WS0008": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "heavymg",
+                "WS0003": "heavymg"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "lightmg",
+                "WS0012": "lightmg"
+            }
+        }
+    ]
+}

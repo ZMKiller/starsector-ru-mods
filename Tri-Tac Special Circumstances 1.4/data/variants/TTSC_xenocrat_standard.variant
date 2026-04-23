@@ -1,0 +1,87 @@
+{
+  "variantId": "TTSC_xenocrat_standard",
+  "hullId": "TTSC_xenocrat",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "fluxdistributor",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "TTSC_riftcascade",
+        "WS0006": "TTSC_riftcascade"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TTSC_phasebeam",
+        "WS0002": "TTSC_phasebeam",
+        "WS0003": "TTSC_phasebeam",
+        "WS0004": "TTSC_phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "TTSC_pdburst_fighter",
+        "WS0008": "TTSC_pdburst_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "breach",
+        "WS0012": "breach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "harpoonpod",
+        "WS0022": "harpoon",
+        "WS0023": "harpoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "TTSC_lrpdlaser",
+        "WS0013": "TTSC_lrpdlaser",
+        "WS0014": "TTSC_lrpdlaser",
+        "WS0015": "TTSC_lrpdlaser",
+        "WS0016": "TTSC_lrpdlaser",
+        "WS0017": "TTSC_lrpdlaser",
+        "WS0018": "TTSC_lrpdlaser",
+        "WS0019": "TTSC_lrpdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0020": "TTSC_heavyburst",
+        "WS0021": "TTSC_heavyburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "TTSC_scree_standard_wing",
+    "TTSC_scree_standard_wing"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+    "displayName": "Fortress",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "uw_palace_front",
+    "hullMods": ["magazines"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_palace_front_for",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ionpulser",
+                "WS0003": "ionpulser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "guardian"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "heavyburst",
+                "WS0007": "heavyburst"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "heavymg",
+                "WS0005": "heavymg"
+            }
+        }
+    ],
+    "wings": [
+        "dagger_wing",
+        "wasp_wing"
+    ]
+}

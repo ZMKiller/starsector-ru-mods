@@ -1,0 +1,55 @@
+{
+  "variantId": "A_S-F_morris_std",
+  "hullId": "A_S-F_morris",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "magazines",
+    "targetingunit",
+    "fluxdistributor",
+    "autorepair"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "A_S-F_copperhead",
+        "WS0004": "A_S-F_copperhead",
+        "WS0007": "A_S-F_copperhead",
+        "WS0008": "A_S-F_copperhead"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "lightac",
+        "WS0006": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "arbalest",
+        "WS0002": "arbalest"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "lightmg",
+        "WS0010": "lightmg",
+        "WS0011": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

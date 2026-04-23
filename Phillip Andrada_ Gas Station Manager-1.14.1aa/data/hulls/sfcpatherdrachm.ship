@@ -1,0 +1,191 @@
+{
+  "hullName": "Drachm Mk. II",
+  "hullId": "sfcpatherdrachm",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/PAGSM/ships/missile_tanker_destroyer_pathv1.png",
+  "style": "MIDLINE",
+  "height": 192,
+  "width": 150,
+  "center": [75, 96],
+  "collisionRadius": 174.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 158,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ill_advised",
+    "missleracks"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [91.5, 19]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [75.5, -4]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [59, -31]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [33.5, 29]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -90,
+      "locations": [22, -35.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 0,
+      "locations": [-41, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 180,
+      "locations": [-69.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-81.5, -46.5],
+      "length": 28,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81.5, 46.5],
+      "length": 28,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81.5, 33.5],
+      "length": 28,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81.5, -33.5],
+      "length": 28,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81.5, 40],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81.5, -40],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-87.5, 24.5],
+      "length": 40,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-87.5, -24.5],
+      "length": 40,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-87.5, 9],
+      "length": 38,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-87.5, -9],
+      "length": 38,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-87.5, -0],
+      "length": 44,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -87.5, 27.5,
+    -72.5, 68,
+    -53.5, 68.5,
+    -44, 53,
+    -17, 53,
+    -15.5, 44,
+    67.5, 44,
+    90, 24,
+    88, -11,
+    52, -47.5,
+    -14.5, -41,
+    -16.5, -54,
+    -44.5, -53,
+    -55, -70.5,
+    -73.5, -69,
+    -86.5, -26.5
+  ]
+}

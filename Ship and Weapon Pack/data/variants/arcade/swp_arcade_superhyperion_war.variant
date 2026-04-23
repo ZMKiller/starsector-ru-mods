@@ -1,0 +1,52 @@
+{
+    "displayName": "Warrior",
+    "fluxCapacitors": 20,
+    "fluxVents": 20,
+    "hullId": "swp_arcade_superhyperion",
+    "hullMods": [
+        "targetingunit",
+        "insulatedengine",
+        "armoredweapons",
+        "fluxbreakers",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "swp_arcade_superhyperion_war",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "hephag",
+                "WS 004": "hephag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "hveldriver",
+                "WS 006": "hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ioncannon",
+                "WS 002": "ioncannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"SUPER1": "swp_arcade_godmode"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"SUPER0": "swp_arcade_empbomb"}
+        }
+    ]
+}

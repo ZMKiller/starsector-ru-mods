@@ -1,0 +1,19 @@
+{
+	"id":"A_S-F_micropulser_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":21,
+	"width":7.2,
+	"fadeTime":0.15,
+	"fringeColor":[0,50,200,160],
+	"coreColor":[200,220,255,255],
+	"glowColor":[100,120,255,90],
+	"glowRadius":15,
+	"hitGlowRadius":17.5,
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0,
+	"passThroughMissiles":true,
+}

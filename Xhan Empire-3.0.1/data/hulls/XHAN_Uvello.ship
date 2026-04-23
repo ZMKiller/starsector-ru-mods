@@ -1,0 +1,166 @@
+{
+  "hullName": "Uvello",
+  "hullId": "XHAN_Uvello",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/Xhan_Uvello.png",
+  "style": "ALVARIUM_DOCTRINE",
+  "coversColor": "202,229,196,255",
+  "height": 209,
+  "width": 196,
+  "center": [98, 104],
+  "collisionRadius": 159,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 141.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_PlasteenArmor",
+    "XHAN_PlasteenProduction"
+  ],
+  "builtInWings": [
+    "Vil_wing",
+    "Vil_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 224,
+      "angle": -90,
+      "locations": [7, -68]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 224,
+      "angle": 90,
+      "locations": [7, 68]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 180,
+      "locations": [-49, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 260,
+      "angle": 0,
+      "locations": [83, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 0,
+      "locations": [37, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        43, 61.5,
+        44, 62
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        43, -61,
+        44, -61
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-47, 47.5],
+      "length": 32.276081,
+      "width": 7.072376,
+      "angle": -176.5,
+      "contrailSize": 7.072376,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-47, -47.5],
+      "length": 32.276081,
+      "width": 7.072376,
+      "angle": 176.5,
+      "contrailSize": 7.072376,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-87.5, -0],
+      "length": 36.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-87.5, 5],
+      "length": 25,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-87.5, -5],
+      "length": 25,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    }
+  ],
+  "bounds": [
+    103, -0,
+    95, 14.5,
+    71, 23,
+    49, 42.5,
+    53, 61.5,
+    52, 89.5,
+    4, 95,
+    -75.5, 58.5,
+    -48, 50.5,
+    -43.5, 39.5,
+    -102.5, 23,
+    -88.5, 13,
+    -88.5, -13,
+    -102.5, -23,
+    -43.5, -39.5,
+    -48, -50.5,
+    -75.5, -58.5,
+    4, -95,
+    52, -89.5,
+    53, -61.5,
+    49, -42.5,
+    71, -23,
+    95, -14.5
+  ]
+}

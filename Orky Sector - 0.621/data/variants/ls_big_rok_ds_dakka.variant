@@ -1,0 +1,44 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "ls_big_rok_ds",
+    "hullMods": [
+        "ls_rokkit_runt",
+        "ls_bosspole"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_big_rok_ds_dakka",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_grot_hanger",
+                "WS 003": "ls_grot_shoota"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_kill_kannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_big_shoota"
+            }
+        }
+    ],
+    "modules": {
+        "WS 004": "ls_big_rok_ds_left_dakka",
+        "WS 005": "ls_big_rok_ds_right_dakka"
+    },
+    "wings": [
+        "ls_landa_wing"
+    ]
+}

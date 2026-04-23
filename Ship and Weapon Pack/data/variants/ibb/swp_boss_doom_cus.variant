@@ -1,0 +1,75 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 10,
+    "fluxVents": 23,
+    "goalVariant": true,
+    "hullId": "swp_boss_doom",
+    "hullMods": [
+        "missleracks",
+        "fluxdistributor",
+        "targetingunit",
+        "heavyarmor",
+        "hardened_subsystems",
+        "phase_anchor"
+    ],
+    "permaMods": [
+        "missleracks",
+        "fluxdistributor",
+        "targetingunit",
+        "heavyarmor",
+        "hardened_subsystems"
+    ],
+    "sMods": [
+        "missleracks",
+        "fluxdistributor",
+        "targetingunit",
+        "heavyarmor",
+        "hardened_subsystems"
+    ],
+    "variantId": "swp_boss_doom_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "amblaster",
+                "WS 002": "amblaster",
+                "WS 004": "amblaster",
+                "WS 005": "amblaster"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "typhoon",
+                "WS 006": "typhoon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "reaper"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ioncannon",
+                "WS 008": "ioncannon",
+                "WS 011": "irpulse",
+                "WS 012": "irpulse",
+                "WS0001": "irpulse",
+                "WS0002": "irpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 009": "pdburst",
+                "WS 010": "pdburst"
+            }
+        }
+    ]
+}

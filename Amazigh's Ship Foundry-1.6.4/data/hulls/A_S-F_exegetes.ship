@@ -1,0 +1,136 @@
+{
+  "hullName": "Exegetes",
+  "hullId": "A_S-F_exegetes",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_exegetes.png",
+  "style": "MIDLINE",
+  "height": 104,
+  "width": 80,
+  "center": [40, 49],
+  "collisionRadius": 78,
+  "shieldCenter": [4, -0],
+  "shieldRadius": 74,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [40, -10],
+      "renderOrderMod": 301
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [36, 11],
+      "renderOrderMod": 201
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": 75,
+      "locations": [0, 20]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": -75,
+      "locations": [0, -20]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [47, 11],
+      "renderOrderMod": 101
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-48, -0],
+      "length": 64,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-40, 17],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-40, -17],
+      "length": 40,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24, 31],
+      "length": 30,
+      "width": 6,
+      "angle": 130,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24, -31],
+      "length": 30,
+      "width": 6,
+      "angle": -130,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-33, -28],
+      "length": 35,
+      "width": 8,
+      "angle": -155,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-33, 28],
+      "length": 35,
+      "width": 8,
+      "angle": 155,
+      "contrailSize": 128,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    44, -29,
+    13, -25,
+    -6, -36,
+    -34, -27,
+    -47, -0,
+    -34, 27,
+    -6, 36,
+    12, 29,
+    44, 29,
+    47, 4,
+    35, 2,
+    48, -3
+  ]
+}

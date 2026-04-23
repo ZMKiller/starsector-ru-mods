@@ -1,0 +1,20 @@
+{
+	"id":"dpl_lightning_pulser",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/dpl_lightning_pulser_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/dpl_lightning_pulser_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/dpl_lightning_pulser_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/dpl_lightning_pulser_hardpoint_glow.png",
+	"glowColor":[100,100,175,255],
+	"turretOffsets":[19, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[21, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"NONE",
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"dpl_lightning_pulser_shot",  # projectile that will be fired
+	"fireSoundTwo":"shock_repeater_fire",
+}

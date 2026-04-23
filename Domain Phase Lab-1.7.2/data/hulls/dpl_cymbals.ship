@@ -1,0 +1,51 @@
+{
+  "hullName": "Cymbals",
+  "hullId": "dpl_cymbals",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/dpl_cymbals.png",
+  "style": "HIGH_TECH",
+  "height": 26,
+  "width": 18,
+  "center": [9, 11],
+  "collisionRadius": 52,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 45,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_hflaser_fighter"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [13.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-9.5, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    16.5, -4.5,
+    2.5, -9,
+    -7.5, -9,
+    -11, -4,
+    -11, 4,
+    -7.5, 9,
+    2.5, 9,
+    16.5, 4.5
+  ]
+}

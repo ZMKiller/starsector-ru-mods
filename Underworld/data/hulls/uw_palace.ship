@@ -1,0 +1,204 @@
+{
+  "hullName": "Palace",
+  "hullId": "uw_palace",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/uw/ships/palace/uw_palace_core.png",
+  "style": "HIGH_TECH",
+  "height": 216,
+  "width": 262,
+  "center": [131, 105],
+  "collisionRadius": 367.5,
+  "shieldCenter": [61, -0],
+  "shieldRadius": 306.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "uw_cabal_upgrades",
+    "uw_hyperwave_amp",
+    "uw_linkedhull",
+    "advancedcore",
+    "advancedshieldemitter",
+    "chassis_storage",
+    "missile_reload"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -64.5, 121,
+        -65, 113,
+        -77.5, 106.5,
+        -89.5, 106.5,
+        -78.5, 115.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -64.5, -121,
+        -65, -113,
+        -77.5, -106.5,
+        -89.5, -106.5,
+        -78.5, -115.5
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 45,
+      "locations": [69, 52]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -45,
+      "locations": [69, -52]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [97, 25]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [97, -25]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [100, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 60,
+      "locations": [-4, 93]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -60,
+      "locations": [-4, -93]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 105,
+      "locations": [-31, 97]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -105,
+      "locations": [-31, -97]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [198, -0]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [18, 120]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [18, -120]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-131, -0]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    109, -10.5,
+    107, -38,
+    95, -38.5,
+    95, -57.5,
+    72, -79.5,
+    32, -79,
+    12, -98,
+    -22, -114,
+    -32.5, -129.5,
+    -80, -125.5,
+    -103, -116,
+    -103.5, -107.5,
+    -57.5, -60.5,
+    -81, -32,
+    -87, -0,
+    -81, 32,
+    -57.5, 60.5,
+    -103.5, 107.5,
+    -103, 116,
+    -80, 125.5,
+    -32.5, 129.5,
+    -22, 114,
+    12, 98,
+    32, 79,
+    72, 79.5,
+    95, 57.5,
+    95, 38.5,
+    107, 38,
+    109, 10.5
+  ]
+}

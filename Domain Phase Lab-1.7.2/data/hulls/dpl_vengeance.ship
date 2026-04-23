@@ -1,0 +1,262 @@
+{
+  "hullName": "Vengeance",
+  "hullId": "dpl_vengeance",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/phase/dpl_vengeance.png",
+  "style": "HIGH_TECH",
+  "height": 238,
+  "width": 116,
+  "center": [58, 119],
+  "collisionRadius": 170,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 160,
+  "viewOffset": 0,
+  "builtInMods": [
+    "delicate",
+    "phasefield",
+    "dpl_phase_projection",
+    "dpl_phase_integration",
+    "advancedcore",
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_wrath",
+    "WS0002": "dpl_wrath",
+    "WS0003": "dpl_hymn",
+    "WS0004": "dpl_wrath",
+    "WS0005": "dpl_wrath",
+    "WS0006": "dpl_wrath",
+    "WS0007": "dpl_wrath",
+    "WS0008": "dpl_wrath",
+    "WS0009": "dpl_wrath",
+    "WS0010": "dpl_wrath",
+    "WS0011": "dpl_wrath",
+    "WS0012": "dpl_acausal_shock"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [101, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-8, 34]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-8, -34]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [60, 27]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [60, -27]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-42, 14]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-42, -14]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-70, 14]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-70, -14]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-17, 14]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-17, -14]
+    },
+    {
+      "id": "WS0012",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [28, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-113.5, 50.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-113.5, -50.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-116, 40],
+      "length": 77.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-116, -40],
+      "length": 77.5,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-116, 22.5],
+      "length": 72,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-116, -22.5],
+      "length": 72,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-117.5, 12],
+      "length": 81,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-117.5, -12],
+      "length": 81,
+      "width": 24,
+      "angle": -180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-116, 4.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-116, -4.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-114.5, 30.5],
+      "length": 35.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-114.5, -30.5],
+      "length": 35.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    113.5, -19.5,
+    75.5, -26,
+    51, -46,
+    9, -48,
+    -23, -57,
+    -76.5, -58,
+    -111, -57.5,
+    -119.5, -21.5,
+    -119.5, 21.5,
+    -111, 57.5,
+    -76.5, 58,
+    -23, 57,
+    9, 48,
+    51, 46,
+    75.5, 26,
+    113.5, 19.5
+  ]
+}

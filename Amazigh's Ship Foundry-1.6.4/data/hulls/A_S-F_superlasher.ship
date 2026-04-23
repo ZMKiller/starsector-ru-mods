@@ -1,0 +1,228 @@
+{
+  "hullName": "Flogger",
+  "hullId": "A_S-F_superlasher",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_flogger.png",
+  "style": "LOW_TECH",
+  "coversColor": "255,188,175,255",
+  "height": 110,
+  "width": 82,
+  "center": [41, 49],
+  "collisionRadius": 79,
+  "shieldCenter": [9, -0],
+  "shieldRadius": 69,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ballistic_rangefinder",
+    "A_S-F_floggerMounts",
+    "A_S-F_afterburnerVisuals"
+  ],
+  "builtInWeapons": {
+    "WS0009": "A_S-F_flogger_deco"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [12, 31]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [52, 11],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [52, -11],
+      "renderOrderMod": 101
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [12, -31]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [8, -0],
+      "renderOrderMod": 400
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [36, -0],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 60,
+      "angle": 172,
+      "locations": [-28, 14]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 60,
+      "angle": -172,
+      "locations": [-28, -14]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [45, -0],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 135,
+      "locations": [-19, 38]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": -135,
+      "locations": [-19, -38]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 45,
+      "locations": [38, 23]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": -45,
+      "locations": [38, -23]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-48, 0],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-37, 24],
+      "length": 40,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-37, -24],
+      "length": 40,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-48, 6],
+      "length": 32,
+      "width": 8,
+      "angle": 176,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-48, -6],
+      "length": 32,
+      "width": 8,
+      "angle": -176,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-34, 31],
+      "length": 24,
+      "width": 6,
+      "angle": 174,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-34, -31],
+      "length": 24,
+      "width": 6,
+      "angle": -174,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    55, -15,
+    41, -15,
+    38, -21,
+    13, -22,
+    13, -36,
+    -27, -34,
+    -36, -22,
+    -28, -18,
+    -28, -11,
+    -47, -9,
+    -47, 9,
+    -28, 11,
+    -28, 18,
+    -36, 22,
+    -27, 34,
+    13, 36,
+    13, 23,
+    37, 22,
+    41, 15,
+    52, 15,
+    59, -0
+  ]
+}

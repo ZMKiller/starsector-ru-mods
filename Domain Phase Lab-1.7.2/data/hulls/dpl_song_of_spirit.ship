@@ -1,0 +1,61 @@
+{
+  "hullName": "Song of Spirit",
+  "hullId": "dpl_song_of_spirit",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/dpl_song_of_spirit.png",
+  "style": "HIGH_TECH",
+  "height": 35,
+  "width": 28,
+  "center": [14, 15],
+  "collisionRadius": 39,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 35,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [7, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12.5, -0],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-11.5, 8],
+      "length": 23.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-11.5, -8],
+      "length": 23.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    21, -6,
+    6, -15,
+    -8.5, -15,
+    -15, -5,
+    -15, 5,
+    -8.5, 15,
+    6, 15,
+    21, 6
+  ]
+}

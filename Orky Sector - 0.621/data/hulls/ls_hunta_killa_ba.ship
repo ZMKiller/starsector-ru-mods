@@ -1,0 +1,88 @@
+{
+    "hullName": "Hunta Killa (BA)",
+    "hullId": "ls_hunta_killa_ba",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_hunta_killa.png",
+    "height": 36,
+    "width": 34,
+    "center": [
+        16.5, 18
+    ],
+    "collisionRadius": 24,
+    "coversColor": "",
+    "shieldCenter": [
+        1, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_bloodaxes"
+    ],
+    "builtInWeapons": {
+        "WS 002": "ls_stikk_bomm_fighta",
+        "WS 000": "ls_big_shoota",
+        "WS 001": "ls_big_shoota"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    -2.5,      6.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    -2.5,     -6.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                       3,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -15, 0
+            ],
+            "length": 28,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 40,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -13.5,       -7,
+            -4.5,     -3.5,
+            -0.5,    -14.5,
+               4,     -3.5,
+              13,        0,
+        
+               4,      3.5,
+            -0.5,     14.5,
+            -4.5,      3.5,
+           -13.5,        7
+    ]
+}

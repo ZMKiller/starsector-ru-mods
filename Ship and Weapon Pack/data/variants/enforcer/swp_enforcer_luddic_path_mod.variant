@@ -1,0 +1,60 @@
+{
+    "displayName": "Heavily Modified",
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
+    "hullId": "swp_enforcer_luddic_path",
+    "hullMods": [
+        "swp_extrememods2",
+        "shield_shunt",
+        "missleracks",
+        "heavyarmor",
+        "magazines",
+        "armoredweapons",
+        "solar_shielding",
+        "targetingunit",
+        "ballistic_rangefinder",
+        "autorepair"
+    ],
+    "permaMods": [
+        "swp_extrememods2",
+        "shield_shunt",
+        "missleracks",
+        "heavyarmor"
+    ],
+    "sMods": [
+        "shield_shunt",
+        "missleracks",
+        "heavyarmor"
+    ],
+    "tags": ["no_autofit"],
+    "variantId": "swp_enforcer_luddic_path_mod",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 007": "sabot",
+                "WS 008": "sabot"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "breach",
+                "WS 009": "breach"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "shredder",
+                "WS 002": "shredder",
+                "WS 003": "shredder",
+                "WS 004": "shredder",
+                "WS 005": "shredder"
+            }
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "displayName": "Ard",
+    "fluxCapacitors": 2,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_drilla_es",
+    "hullMods": [
+        "ls_ard_case",
+        "armoredweapons",
+        "autorepair"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_drilla_es_ard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_bigger_drill"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_mega_bolta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_rokkit_launcha",
+                "WS 002": "ls_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_twin_shoota",
+                "WS 003": "ls_twin_shoota",
+                "WS 006": "ls_big_shoota"
+            }
+        }
+    ]
+}

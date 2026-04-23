@@ -1,0 +1,53 @@
+{
+  "variantId": "A_S-F_ecumenist_stk",
+  "hullId": "A_S-F_ecumenist",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 26,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "magazines",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ionpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "A_S-F_electroThermal_blaster",
+        "WS0003": "A_S-F_electroThermal_blaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_ir_autopulse",
+        "WS0005": "A_S-F_ir_autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "A_S-F_micropulser",
+        "WS0007": "A_S-F_micropulser",
+        "WS0008": "A_S-F_micropulser",
+        "WS0009": "A_S-F_micropulser",
+        "WS0010": "A_S-F_micropulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

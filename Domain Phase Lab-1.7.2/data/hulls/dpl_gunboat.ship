@@ -1,0 +1,90 @@
+{
+  "hullName": "Defensive Gunboat",
+  "hullId": "dpl_gunboat",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/dpl_gunboat.png",
+  "style": "HIGH_TECH",
+  "height": 84,
+  "width": 64,
+  "center": [32, 39],
+  "collisionRadius": 61,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 60,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS 002": "dpl_heavy_phase_pd",
+    "WS 003": "vulcan"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 180,
+      "locations": [-12, -0]
+    },
+    {
+      "id": "WS 002",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [16, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-36, 0],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-36, 25],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-36, -23],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [19, 29],
+      "length": 16,
+      "width": 8,
+      "angle": 150,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [19, -28],
+      "length": 16,
+      "width": 8,
+      "angle": 210,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -33, 28,
+    34, 23,
+    41, 0,
+    35, -22,
+    -33, -28
+  ]
+}

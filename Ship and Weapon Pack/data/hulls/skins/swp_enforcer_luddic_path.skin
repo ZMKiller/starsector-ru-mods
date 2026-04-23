@@ -1,0 +1,22 @@
+{
+    "baseHullId":"enforcer",
+    "skinHullId":"swp_enforcer_luddic_path",
+    "hullName":"Enforcer (LP)",
+    "descriptionId":"enforcer",  # optional
+    "descriptionPrefix":"Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary trimmings and transforming it into a haphazard vehicle of holy war.",
+    "tags":["rare_bp"],
+    "tech":"Luddic Path",
+    "spriteName":"graphics/swp/ships/enforcer/enforcer_luddic_path.png",
+    "baseValueMult":0.8,
+    "systemId":"ammofeed",
+    "suppliesToRecover":11,
+    "suppliesPerMonth":11,
+    "addHints":[],
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "builtInMods":["safetyoverrides","ill_advised"],
+    "builtInWeapons":{
+    },
+}

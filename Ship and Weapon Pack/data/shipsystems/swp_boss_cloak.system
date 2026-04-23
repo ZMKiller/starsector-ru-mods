@@ -1,0 +1,34 @@
+{
+    "id":"swp_boss_cloak",
+    "type":"PHASE_CLOAK",
+    "aiType":"PHASE_CLOAK",
+
+	"statsScript":"com.fs.starfarer.api.impl.combat.PhaseCloakStats",
+    "runScriptWhilePaused":true,
+    "runScriptWhileIdle":true,
+    "blockActionsWhileChargingDown":false,
+    
+    "canNotCauseOverload":true,
+
+    "phaseHighlight":"_glow1",
+    "phaseDiffuse":"_glow2",
+
+    "effectColor1":[255,0,100,255],
+    "effectColor2":[255,0,100,255],
+
+    "clampTurnRateAfter":true,
+    "clampMaxSpeedAfter":true,
+
+    "engineGlowColor":[255,0,100,127],
+    "engineGlowContrailColor":[255,0,100,50],
+
+    "soundFilterType":"LOWPASS",
+    "soundFilterGain":0.5,
+    "soundFilterGainHF":0.2,
+
+    "shipAlpha":1,
+
+    "useSound":"swp_boss_cloak_activate",
+    "deactivateSound":"swp_boss_cloak_deactivate",
+    "outOfUsesSound":"system_phase_cloak_collision",
+}

@@ -1,0 +1,162 @@
+{
+    "hullName": "Deff Dread (ES)",
+    "hullId": "ls_deff_dread_es",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_deff_dread/ls_deff_dread_es.png",
+    "height": 54,
+    "width": 30,
+    "center": [
+        14.5, 27
+    ],
+    "collisionRadius": 36,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 34,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_evilsuns",
+        "ls_kan"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_dread_buzzsaw",
+        "WS 004": "ls_skorcha_dread",
+        "WS 005": "ls_skorcha_dread",
+        "WS 001": "ls_deff_dread_klaw_es",
+        "WS 003": "ls_deff_dread_pad_es_l",
+        "WS 002": "ls_deff_dread_pad_es_r"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 80,
+            "angle": 20,
+            "locations": [
+                       4,       15
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 80,
+            "angle": -20,
+            "locations": [
+                       4,      -15
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 110,
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       2,      -14
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 110,
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       2,       14
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 20,
+            "angle": 0,
+            "locations": [
+                    11.5,      9.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 20,
+            "angle": 0,
+            "locations": [
+                    11.5,     -9.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -14.5, 5
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 40,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -14.5, -5
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 40,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -9, 11
+            ],
+            "length": 12,
+            "width": 3,
+            "angle": 135,
+            "contrailSize": 40,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -9, -11
+            ],
+            "length": 12,
+            "width": 3,
+            "angle": 225,
+            "contrailSize": 40,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -15,       -7,
+            -6.5,    -11.5,
+              -2,      -17,
+               7,      -17,
+               7,      -11,
+        
+            16.5,       -4,
+            16.5,        3,
+               7,       10,
+               7,       17,
+              -2,       17,
+        
+            -6.5,     11.5,
+             -15,        7
+    # 12 points total.
+    ]
+}

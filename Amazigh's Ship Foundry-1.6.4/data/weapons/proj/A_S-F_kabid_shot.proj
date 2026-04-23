@@ -1,0 +1,22 @@
+{
+	"id":"A_S-F_kabid_shot",
+	"specClass":"projectile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.arktech.ASF_KabidOnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.arktech.ASF_KabidOnHitEffect1",
+
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":120.0,
+	"hitGlowRadius":50,
+	"width":6,
+	"fadeTime":0.2,
+	"fringeColor":[200,255,240,150],
+	"coreColor":[235,255,235,200],
+	# "fringeColor":[200,100,240,100],
+	# "coreColor":[220,180,255,155],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

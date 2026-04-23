@@ -1,0 +1,67 @@
+{
+  "variantId": "TTSC_arbitrary_standard",
+  "hullId": "TTSC_arbitrary",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxcoil",
+    "fluxbreakers",
+    "solar_shielding",
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "TTSC_ionbeam",
+        "WS0004": "TTSC_ionbeam",
+        "WS0007": "TTSC_taclaser",
+        "WS0008": "TTSC_taclaser",
+        "WS0011": "TTSC_ionbeam",
+        "WS0012": "TTSC_ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "taclaser",
+        "WS0006": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "breachpod",
+        "WS0002": "breachpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "TTSC_taclaser",
+        "WS0010": "TTSC_taclaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "TTSC_riptalon_standard_wing",
+    "TTSC_equator_standard_wing",
+    "TTSC_equator_standard_wing",
+    "trident_wing"
+  ]
+}

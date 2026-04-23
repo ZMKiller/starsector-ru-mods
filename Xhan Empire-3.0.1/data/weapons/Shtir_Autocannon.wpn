@@ -1,0 +1,50 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 600,
+  "fireSoundTwo": "SHTIR_FIRE_SOUND",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/Shtir_Barrel_HARDPOINT.png",
+  "hardpointOffsets": [
+    23,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/Shtir_Autocannon_HARDPOINT.png",
+  "id": "Shtir_Autocannon",
+  "muzzleFlashSpec": {
+    "length": 10,
+    "particleColor": [
+      165,
+      225,
+      185,
+      175
+    ],
+    "particleCount": 18,
+    "particleDuration": 0.2,
+    "particleSizeMin": 12,
+    "particleSizeRange": 14,
+    "spread": 28
+  },
+  "projectileSpecId": "Shtir_Shot",
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "size": "SMALL",
+  "specClass": "projectile",
+  "specialWeaponGlowHeight": 30,
+  "specialWeaponGlowWidth": 12,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/Shtir_Barrel_TURRET.png",
+  "turretOffsets": [
+    19,
+    0
+  ],
+  "turretSprite": "graphics/weapons/Shtir_Autocannon_TURRET.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 7
+}

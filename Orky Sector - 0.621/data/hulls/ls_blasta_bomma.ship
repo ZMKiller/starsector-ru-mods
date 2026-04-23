@@ -1,0 +1,129 @@
+{
+    "hullName": "Blasta Bommer",
+    "hullId": "ls_blasta_bomma",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_blasta_bommer.png",
+    "height": 42,
+    "width": 42,
+    "center": [
+        21, 21
+    ],
+    "collisionRadius": 30,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_bloodaxes"
+    ],
+    "builtInWeapons": {
+        "WS 003": "ls_grot_shoota_single",
+        "WS 000": "ls_kombi_shoota",
+        "WS 001": "ls_kombi_shoota",
+        "WS 002": "ls_lobba"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     6.5,      3.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     6.5,     -3.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                     8.5,        0
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 180,
+            "locations": [
+                       0,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -17.5, 4
+            ],
+            "length": 30,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 40,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -17.5, -4
+            ],
+            "length": 30,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 40,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -3.5, 9
+            ],
+            "length": 6,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 40,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -3.5, -9
+            ],
+            "length": 6,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 40,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -15.5,     -9.5,
+            -6.5,       -5,
+               2,      -18,
+              12,     -3.5,
+              12,      3.5,
+        
+               2,       18,
+            -6.5,        5,
+           -15.5,      9.5
+    ]
+}

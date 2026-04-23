@@ -1,0 +1,33 @@
+{
+	"id":"tahlan_absolutevirtue",
+	"type":"SHIELD_MOD",
+	"aiType":"FORTRESS_SHIELD",
+	
+	"statsScript":"org.niatahl.tahlan.shipsystems.AbsoluteVirtueStats",
+	
+	"shieldRingColor":[255,255,255,255],
+	"shieldInnerColor":[220,220,255,75],
+	"shieldThicknessMult":1,
+	"shieldFluctuationMult":0,
+	
+	"engineGlowColor":[255,200,155,255],
+	"engineGlowWidthMult":1.1,
+	
+	#"soundFilterType":"LOWPASS",
+	#"soundFilterGain":0.8,
+	#"soundFilterGainHF":0.0,
+	
+	#"useSound":"beam_heavy_intro",
+	#"outOfUsesSound":"gun_out_of_ammo",
+
+	#"activatingShieldsCancels":true,
+	
+	
+	#"useSound":"tahlan_virtue_system_charge",
+	#"deactivateSound":"system_high_energy_focus_deactivate",
+	# Stian deactivated these two because of audio playback timing issues. See fortressshield.system for more.
+	# Re-enable for testing.
+	
+	"outOfUsesSound":"gun_out_of_ammo",
+	"loopSound":"tahlan_virtue_system_loop",	
+}

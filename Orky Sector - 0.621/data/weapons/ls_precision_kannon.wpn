@@ -1,0 +1,33 @@
+{
+	"id":"ls_precision_kannon",  # this id must match what's in the spreadsheet
+	"everyFrameEffect":"data.weapons.ls_precision_shoota_everyframeffect",
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/weapons/ls_precision_shoota_ba.png",
+	"turretGlowSprite":"graphics/weapons/ls_precision_shoota_ba_glow.png",
+	"turretGunSprite":"graphics/weapons/ls_precision_shoota_ba_barrel.png",
+	"hardpointSprite":"graphics/weapons/ls_precision_shoota_ba_hardpoint.png",
+	"hardpointGlowSprite":"graphics/weapons/ls_precision_shoota_ba_hardpoint_glow.png",
+	"hardpointGunSprite":"graphics/weapons/ls_precision_shoota_ba_hardpoint_barrel.png",
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":2.0,  # the gun sprites are only used if this is non-0
+	"glowColor":[255,100,50,255],
+	"turretOffsets":[17, 5.5,17, -5.5],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[19, 5.5,19, -5.5],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"muzzleFlashSpec":{"length":20.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":28.0,
+					   "particleSizeMin":3.0,
+					   "particleSizeRange":6.0,
+					   "particleDuration":0.2,
+					   "particleCount":12,
+					   "particleColor":[255,185,115,215]},
+	"projectileSpecId":"ls_precision_shot",  # projectile that will be fired
+	"fireSoundTwo":"RapidShootas_sound",
+}

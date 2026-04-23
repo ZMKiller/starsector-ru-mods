@@ -1,0 +1,26 @@
+{
+    "id":"uw_incubusdrive",
+    "type":"ENGINE_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.shipsystems.ai.UW_IncubusDriveAI",
+
+    "statsScript":"data.scripts.shipsystems.UW_IncubusDriveStats",
+
+    "engineGlowLengthMult":1.1,
+    "engineGlowWidthMult":1.1,
+    "engineGlowGlowMult":1.1,
+
+    "flameoutOnImpactChance":0.2,
+
+    "clampTurnRateAfter":false,
+    "clampMaxSpeedAfter":false,
+    "alwaysAccelerate":true,
+
+    "outOfUsesSound":"engine_disabled",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":350,
+        "averageSpeedIncrease":35,
+    }
+}

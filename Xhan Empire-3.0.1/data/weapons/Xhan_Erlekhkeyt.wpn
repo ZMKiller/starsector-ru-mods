@@ -1,0 +1,50 @@
+{
+  "id": "Xhan_Erlekhkeyt",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_Erlekhkeyt_Shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/Xhan_Erlekhkeyt_TURRET_BASE.png",
+  "turretGlowSprite": "graphics/weapons/Xhan_Erlekhkeyt_TURRET_GLOW.png",
+  "hardpointSprite": "graphics/weapons/Xhan_Erlekhkeyt_HARDPOINT_BASE.png",
+  "hardpointGlowSprite": "graphics/weapons/Xhan_Erlekhkeyt_HARDPOINT_GLOW.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    50,
+    36,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    19,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    21,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 50,
+    "spread": 100,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "particleDuration": 0.92,
+    "particleCount": 12,
+    "particleColor": [
+      70,
+      36,
+      255,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_ERLEKHEYT_FIRE_SOUND"
+}

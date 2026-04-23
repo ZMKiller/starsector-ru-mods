@@ -1,0 +1,29 @@
+{
+	"id":"ls_fist",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"onHitEffect":"data.weapons.ls_fist_effect",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":72.0,
+	#"length":0,
+	"hitGlowRadius":20,
+	"width":32,
+	"fadeTime":0.5,
+	"fringeColor":[100,255,100,150],
+	"coreColor":[100,255,100,205],
+	#"fringeColor":[255,50,50,0],
+	#"coreColor":[255,255,200,0],	
+	"glowColor":[100,255,100,100],
+	"glowRadius":20,
+	"textureType":"ROUGH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":"graphics/weapons/Projectiles/ls_fist.png",
+	#"bulletSprite":"",
+
+					}
+}

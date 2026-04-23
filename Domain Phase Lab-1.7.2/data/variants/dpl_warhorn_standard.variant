@@ -1,0 +1,39 @@
+{
+  "variantId": "dpl_warhorn_standard",
+  "hullId": "dpl_warhorn",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 45,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "shield_shunt"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "plasma",
+        "WS0007": "plasma"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "heavyneedler",
+        "WS0005": "heavyneedler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "dpl_anomaly_fighter",
+    "dpl_anomaly_fighter",
+    "dpl_anomaly_fighter",
+    "dpl_anomaly_fighter"
+  ]
+}

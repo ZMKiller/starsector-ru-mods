@@ -1,0 +1,182 @@
+{
+    "hullName": "Mule (DS)",
+    "hullId": "ls_mule_ds",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/mule_looted 2.png",
+    "height": 192,
+    "width": 128,
+    "center": [
+        64, 96
+    ],
+    "collisionRadius": 120,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 108,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_deathskull",
+        "ls_orky",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                      53,        0
+            ]
+        },
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 220,
+            "angle": 90,
+            "locations": [
+                    -8.5,       40
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 220,
+            "angle": 270,
+            "locations": [
+                    -8.5,      -40
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 20,
+            "angle": 0,
+            "locations": [
+                    76.5,       25
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 20,
+            "angle": 0,
+            "locations": [
+                    76.5,      -25
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 15,
+            "angle": 0,
+            "locations": [
+                      18,       39
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 15,
+            "angle": 0,
+            "locations": [
+                      18,      -39
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 180,
+            "locations": [
+                   -61.5,        0
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 180,
+            "locations": [
+                   -61.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -88.5, 0
+            ],
+            "length": 72,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 88,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -95.5, -28
+            ],
+            "length": 56,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -95.5, 28
+            ],
+            "length": 56,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -88,    -14.5,
+             -93,    -32.5,
+             -66,    -46.5,
+             -28,    -58.5,
+            12.5,      -49,
+        
+              22,      -33,
+            68.5,    -31.5,
+            87.5,     -9.5,
+            87.5,      9.5,
+            68.5,     31.5,
+        
+              22,       33,
+            12.5,       49,
+             -28,     58.5,
+             -66,     46.5,
+             -93,     32.5,
+        
+             -88,     14.5
+    # 16 points total.
+    ]
+}

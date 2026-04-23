@@ -1,0 +1,80 @@
+{
+  "hullName": "Empiricist",
+  "hullId": "TTSC_empiricist",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTSC_empiricist.png",
+  "style": "HIGH_TECH",
+  "height": 99,
+  "width": 86,
+  "center": [43, 49.5],
+  "collisionRadius": 67.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 65.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 0,
+      "locations": [-0.5, 23]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": -0,
+      "locations": [-0.5, -23]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [44.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42, 26],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-42, -26],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-38, -0],
+      "length": 39.5,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    52.5, -21.5,
+    -46, -53,
+    -60.5, -11.5,
+    -60.5, 11.5,
+    -46, 53,
+    52.5, 21.5
+  ]
+}

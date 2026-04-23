@@ -1,0 +1,47 @@
+{
+  "variantId": "sfcmurmexlg_strikecraft_Prowler",
+  "hullId": "sfcmurmexlg_strikecraft",
+  "displayName": "Prowler",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 2,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "hardenedshieldemitter",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "sfcmurmexheadlg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "sfcmurmexgunleftlg"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "sfcmurmexgunlg"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "amblaster"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

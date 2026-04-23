@@ -1,0 +1,41 @@
+{
+  "variantId": "A_S-F_exegetes_purs",
+  "hullId": "A_S-F_exegetes",
+  "displayName": "Pursuer",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 3,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "A_S-F_omer",
+        "WS0003": "A_S-F_omer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_electroThermal_blaster",
+        "WS0005": "A_S-F_electroThermal_blaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dualflak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,45 @@
+{
+  "variantId": "A_S-F_scintilla_rogue_2",
+  "hullId": "scintilla",
+  "displayName": "Rogue",
+  "goalVariant": false,
+  "fluxCapacitors": 17,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "salamanderpod",
+        "WS 007": "heatseeker",
+        "WS 008": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "A_S-F_p_ion",
+        "WS 001": "A_S-F_p_ion"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "pdlaser",
+        "WS 003": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "A_S-F_glister_wing",
+    "A_S-F_glister_wing"
+  ]
+}

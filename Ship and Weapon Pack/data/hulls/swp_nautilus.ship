@@ -1,0 +1,89 @@
+{
+  "hullName": "Nautilus",
+  "hullId": "swp_nautilus",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/swp/ships/swp_nautilus_ff.png",
+  "style": "HIGH_TECH",
+  "height": 85,
+  "width": 65,
+  "center": [32, 40],
+  "collisionRadius": 62.709648,
+  "shieldCenter": [1, -0.5],
+  "shieldRadius": 60,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": 55,
+      "locations": [1, 14]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": -55,
+      "locations": [2, -13]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [23, -21]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-40, 11.5],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-28, -14.5],
+      "length": 64,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-28, -23.5],
+      "length": 64,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35, 4.5],
+      "length": 48,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -25, -6.5,
+    -39.5, 14,
+    -18.5, 29,
+    6.5, 29,
+    39.5, 3.5,
+    16.5, -12,
+    27.5, -15.5,
+    27.5, -26.5,
+    3.5, -32,
+    -27.5, -26
+  ]
+}

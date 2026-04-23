@@ -1,0 +1,31 @@
+{
+	"id":"sfcmurmidoncannonlg",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretSprite":"graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_rightarm_base.png",
+	"turretGunSprite":"graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_rightarm.png",
+	"turretGlowSprite":"graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_rightarm_glow.png",
+	"hardpointSprite":"graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_rightarm_base.png",
+	"hardpointGunSprite":"graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_rightarm.png",
+	"hardpointGlowSprite":"graphics/PAGSM/ships/mechs/sfc_bigmech/sfc_bigmech_rightarm_glow.png",
+    "visualRecoil": 5,
+	"glowColor":[150,100,255,255],
+	"turretOffsets":[33, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[43, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":100.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":20.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.25,
+					   "particleCount":25,
+					   "particleColor":[100,100,255,255]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"gigacannon_shot",  # projectile that will be fired
+	"fireSoundOne":"gigacannon_charge",
+	"fireSoundTwo":"gigacannon_fire",
+}

@@ -1,0 +1,28 @@
+{
+	"id":"knights_of_ludd", # internal id
+	"name":"Knights of Ludd", # displayed to the player
+	"author":"Selkie, Dal, Starficz",
+	"version":"1.4.0",
+	"description":"Adds the Knights of Ludd faction and content!",
+    "gameVersion": "0.98a",
+	"jars": ["jars/KnightsOfSelkie.jar"],
+	"modPlugin":"org.selkie.kol.plugins.KOL_ModPlugin",
+	"dependencies": [
+        {
+            "id": "lw_lazylib",
+            "name": "LazyLib"
+        },
+        {
+            "id": "MagicLib",
+            "name": "MagicLib"
+        },
+        {
+            "id": "lunalib",
+            "name": "LunaLib"
+        },
+        {
+            "id": "shaderLib",
+            "name": "GraphicsLib"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 7,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "uw_infernus",
+    "hullMods": [
+        "targetingunit",
+        "ballistic_rangefinder",
+        "turretgyros",
+        "defensive_targeting_array"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_infernus_art",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "uw_hellfire"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "pilum",
+                "WS0011": "heatseeker",
+                "WS0012": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "mark9"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "heavymortar",
+                "WS0008": "heavymortar",
+                "WS0009": "heavymortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "heavyac",
+                "WS0006": "heavyac",
+                "WS0013": "lightdualac",
+                "WS0014": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "devastator"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "flak",
+                "WS0015": "vulcan",
+                "WS0016": "vulcan",
+                "WS0017": "vulcan",
+                "WS0018": "vulcan",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan"
+            }
+        }
+    ],
+    "wings": []
+}

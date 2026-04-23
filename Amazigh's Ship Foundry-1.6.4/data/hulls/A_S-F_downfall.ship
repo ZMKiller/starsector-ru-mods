@@ -1,0 +1,76 @@
+{
+  "hullName": "Downfall",
+  "hullId": "A_S-F_downfall",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_downfall.png",
+  "style": "LOW_TECH",
+  "height": 42,
+  "width": 32,
+  "center": [16, 21],
+  "collisionRadius": 23,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 22,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-3, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 70,
+      "locations": [0, 11]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -70,
+      "locations": [0, -11]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-20, -0],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-16, -10],
+      "length": 24,
+      "width": 7,
+      "angle": -175,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-16, 10],
+      "length": 24,
+      "width": 7,
+      "angle": 175,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    18, -8,
+    -15, -12,
+    -19, -0,
+    -15, 12,
+    18, 8
+  ]
+}

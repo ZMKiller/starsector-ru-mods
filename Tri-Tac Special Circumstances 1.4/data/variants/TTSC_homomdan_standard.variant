@@ -1,0 +1,37 @@
+{
+  "variantId": "TTSC_homomdan_standard",
+  "hullId": "TTSC_homomdan",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxcoil",
+    "turretgyros",
+    "expanded_cargo_holds"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "TTSC_pdburst",
+        "WS0004": "TTSC_pdburst",
+        "WS0005": "TTSC_pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TTSC_twmininglaser",
+        "WS0002": "TTSC_twmininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

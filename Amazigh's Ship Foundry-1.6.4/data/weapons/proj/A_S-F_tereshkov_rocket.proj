@@ -1,0 +1,83 @@
+{
+	"id":"A_S-F_tereshkov_rocket",
+	"specClass":"missile",
+
+	"missileType":"MISSILE",
+	# "missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_TereshkovOnHitEffect",
+
+	"sprite":"graphics/missiles/A_S-F_tereshkov_rocket.png",
+	"size":[8,22],
+	"center":[4,11],
+	"collisionRadius":12,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[175,90,50,255],	#[255,175,80,255],
+	"explosionRadius":160,
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":65,
+					 "coreRadius":40, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":4.0,
+					 "particleSizeRange":4.0,
+					 "particleDuration":1.1,
+					 "particleCount":80,
+					 "particleColor":[255,190,100,255],
+					 "explosionColor":[175,90,50,255],
+					 "useDetailedExplosion":true,
+					 "useDetailedExplosionColorAlpha":true,
+					 "detailedExplosionRadius":80,
+					 "detailedExplosionFlashRadius":200,
+					 "detailedExplosionFlashDuration":0.6,
+					 "detailedExplosionFlashColorFringe":[200,140,80,255],
+					 "detailedExplosionFlashColorCore":[155,155,155,255]},
+	"flameoutTime":1,
+	"armingTime":.5,
+	"noEngineGlowTime":0.5,
+	"fadeTime":0.5,
+	"engineSpec":{"turnAcc":400,
+				  "turnRate":200,
+				  "acc":500, #666
+				  "dec":400}, #250  / 0
+	"engineSlots":[{"id":"ES1",
+					"loc":[-10, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[220,95,70,225], # 255a
+						"glowSizeMult":2.3,
+						"contrailDuration":2,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.0f, # how far away from engine it starts
+						"contrailColor":[225,165,150,75],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":8.5,
+				    "length":35.0,
+				    "angle":180.0},
+			{"id":"ES2",
+					"loc":[-10, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[220,95,70,125],
+						"glowSizeMult":0.1,
+						"contrailDuration":0.34,
+						"contrailWidthMult":0.9,
+						"contrailWidthAddedFractionAtEnd":-0.2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.0f, # how far away from engine it starts
+						"contrailColor":[225,90,65,235],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":7.5,
+				    "length":3.0,
+				    "angle":180.0}]
+}

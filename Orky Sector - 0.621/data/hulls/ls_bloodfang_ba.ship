@@ -1,0 +1,200 @@
+{
+    "hullName": "Blood Fang (Ba)",
+    "hullId": "ls_bloodfang_ba",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_bloodfang_ba.png",
+    "height": 140,
+    "width": 146,
+    "center": [
+        73, 70
+    ],
+    "collisionRadius": 120,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 124,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_bloodaxes",
+        "ls_kommando",
+        "distributed_fire_control"
+    ],
+    "builtInWeapons": {
+        "WS 007": "ls_kommando_pod"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                     5.5,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 140,
+            "angle": 0,
+            "locations": [
+                    34.5,       33
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 140,
+            "angle": 0,
+            "locations": [
+                    34.5,      -33
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 90,
+            "locations": [
+                      17,     50.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -90,
+            "locations": [
+                      17,    -50.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      46,       59
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      46,      -59
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                      52,      0.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -58.5, 14.5
+            ],
+            "length": 54,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -58.5, -14.5
+            ],
+            "length": 54,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -28, 47
+            ],
+            "length": 36,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -28, -47
+            ],
+            "length": 36,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -48,        3,
+             -48,       -3,
+             -59,      -10,
+             -59,    -19.5,
+           -43.5,    -24.5,
+        
+           -27.5,    -38.5,
+             -28,    -50.5,
+           -37.5,    -52.5,
+             -34,    -56.5,
+              18,    -60.5,
+        
+              30,    -65.5,
+              46,      -63,
+            45.5,      -52,
+            55.5,    -34.5,
+              49,      -23,
+        
+              53,      -16,
+              53,       16,
+              49,       23,
+            55.5,     34.5,
+            45.5,       52,
+        
+              46,       63,
+              30,     65.5,
+              18,     60.5,
+             -34,     56.5,
+           -37.5,     52.5,
+        
+             -28,     50.5,
+           -27.5,     38.5,
+           -43.5,     24.5,
+             -59,     19.5,
+             -59,       10
+    # 30 points total.
+    ]
+}

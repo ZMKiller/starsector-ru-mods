@@ -1,0 +1,178 @@
+{
+  "hullName": "Clarinet",
+  "hullId": "dpl_clarinet",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/phase/dpl_clarinet.png",
+  "style": "HIGH_TECH",
+  "height": 136,
+  "width": 82,
+  "center": [41, 80],
+  "collisionRadius": 140,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 130,
+  "viewOffset": 0,
+  "builtInMods": [
+    "delicate",
+    "phasefield",
+    "dpl_integratedcoils",
+    "dpl_clarinet_mote"
+  ],
+  "builtInWeapons": {
+    "WS0003": "dpl_gungnir",
+    "WS0004": "dpl_clarinet_notes",
+    "WS0005": "dpl_clarinet_notes",
+    "WS0006": "dpl_clarinet_notes",
+    "WS0007": "dpl_clarinet_notes",
+    "WS0008": "dpl_clarinet_notes",
+    "WS0009": "dpl_clarinet_notes"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [-47, 26]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [-47, -26]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [31, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10.5, 32]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-10.5, -32]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-6.5, 28]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-6.5, -28]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-2.5, 24]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-2.5, -24]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-79, 19],
+      "length": 33.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-79, -19],
+      "length": 33.5,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-81.5, 10],
+      "length": 39.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-81.5, -10],
+      "length": 39.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-82, 4],
+      "length": 31,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-82, -4],
+      "length": 31,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    56.5, -14,
+    7.5, -31.5,
+    -4.5, -43,
+    -17.5, -43,
+    -31, -25.5,
+    -43.5, -31.5,
+    -80, -23.5,
+    -80, 23.5,
+    -43.5, 31.5,
+    -31, 25.5,
+    -17.5, 43,
+    -4.5, 43,
+    7.5, 31.5,
+    56.5, 14
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "hullName": "Flugelhorn",
+  "hullId": "dpl_flugelhorn",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/dpl_flugelhorn.png",
+  "style": "HIGH_TECH",
+  "height": 192,
+  "width": 90,
+  "center": [45, 96],
+  "collisionRadius": 151.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 139.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "delicate"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [-19, 28]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [-19, -28]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 90,
+      "locations": [-41, 25]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -90,
+      "locations": [-41, -25]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-62, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [26, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-80.5, 28],
+      "length": 50.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-80.5, -28],
+      "length": 50.5,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-87.5, 19],
+      "length": 35,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-87.5, -19],
+      "length": 35,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-85, 10],
+      "length": 50.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-85, -10],
+      "length": 50.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    43, -7,
+    94, -6,
+    95, -18,
+    -29, -47,
+    -45, -39,
+    -73, -43,
+    -88, -36,
+    -88, 36,
+    -73, 43,
+    -45, 39,
+    -29, 47,
+    95, 18,
+    94, 6,
+    43, 7
+  ]
+}

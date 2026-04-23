@@ -1,0 +1,43 @@
+{
+    "displayName": "Buzza",
+    "fluxCapacitors": 5,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "ls_yaroudomo",
+    "hullMods": [
+        "missleracks"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_yaroudomo_buzza",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_zzappa",
+                "WS 004": "ls_zzappa"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_doomdiva_launcher"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "vulcan"
+            }
+        }
+    ]
+}

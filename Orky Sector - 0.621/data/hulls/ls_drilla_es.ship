@@ -1,0 +1,188 @@
+{
+    "hullName": "Drilla (ES)",
+    "hullId": "ls_drilla_es",
+    "hullSize": "DESTROYER",
+    "style": "LOW_TECH",
+    "spriteName": "graphics/ships/ls_drilla_es.png",
+    "height": 180,
+    "width": 146,
+    "center": [
+        73, 90
+    ],
+    "collisionRadius": 110,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 100,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_evilsuns",
+        "ls_ramshackle",
+        "rugged",
+        "ls_ramma"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_bigger_drill"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                    75.5,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    25.5,       42
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    25.5,      -42
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 60,
+            "locations": [
+                    26.5,       12
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 300,
+            "locations": [
+                    26.5,      -12
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "LARGE",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                       2,        0
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": 180,
+            "locations": [
+                   -47.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -77.5, 30.5
+            ],
+            "length": 68,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -77.5, -30.5
+            ],
+            "length": 68,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -82, 16.5
+            ],
+            "length": 68,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -82, -16.5
+            ],
+            "length": 68,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -82.5, 0
+            ],
+            "length": 82,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 96,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -82,      -21,
+             -76,    -35.5,
+           -32.5,    -46.5,
+             -35,    -64.5,
+              -7,    -42.5,
+        
+              22,    -48.5,
+              22,    -36.5,
+            60.5,      -27,
+              69,      -13,
+            88.5,       -6,
+        
+            88.5,        6,
+              69,       13,
+            60.5,       27,
+              22,     36.5,
+              22,     48.5,
+        
+              -7,     42.5,
+             -35,     64.5,
+           -32.5,     46.5,
+             -76,     35.5,
+             -82,       21
+    # 20 points total.
+    ]
+}

@@ -1,0 +1,59 @@
+{
+  "variantId": "A_S-F_lanner_sup",
+  "hullId": "A_S-F_lanner",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "A_S-F_sprocket",
+        "WS0007": "A_S-F_sprocket",
+        "WS0008": "A_S-F_sprocket"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "heatseeker",
+        "WS0009": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_sakset"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ionbeam",
+        "WS0003": "taclaser",
+        "WS0004": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "A_S-F_plas_burster",
+        "WS0011": "A_S-F_plas_burster"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

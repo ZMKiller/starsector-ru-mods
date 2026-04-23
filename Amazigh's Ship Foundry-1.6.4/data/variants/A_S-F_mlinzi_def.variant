@@ -1,0 +1,52 @@
+{
+  "variantId": "A_S-F_mlinzi_def",
+  "hullId": "A_S-F_mlinzi",
+  "displayName": "Ark Defender",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_salmson",
+        "WS0002": "A_S-F_salmson"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "A_S-F_persis",
+        "WS0008": "A_S-F_persis"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "A_S-F_nieuport",
+        "WS0004": "A_S-F_nieuport",
+        "WS0005": "A_S-F_sumake",
+        "WS0006": "A_S-F_sumake"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "A_S-F_kombeo",
+        "WS0010": "A_S-F_kombeo"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

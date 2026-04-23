@@ -1,0 +1,21 @@
+{
+	"id":"A_S-F_istinaSys",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+# 	"aiType":"LIDAR_ARRAY",
+	
+	"statsScript":"org.amazigh.foundry.shipsystems.scripts.ASF_istinaSysStats",
+
+	"weaponGlowColor":[255,0,255,255],
+	"weaponTypes":[ENERGY],
+
+	"engineGlowColor":[255,0,255,155],
+	"engineGlowLengthMult":0.7,
+	"engineGlowWidthMult":0.8,
+	"engineGlowGlowMult":0.7,
+
+	"useSound":"system_high_energy_focus_activate",
+	"deactivateSound":"system_high_energy_focus_deactivate",
+	"outOfUsesSound":"gun_out_of_ammo",
+	"loopSound":"system_high_energy_focus_loop",	
+}

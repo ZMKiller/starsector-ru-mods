@@ -1,0 +1,32 @@
+{
+	"id":"A_S-F_kundi",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"SMALL",
+	
+	"turretSprite":"graphics/missiles/A_S-F_missile_gaderoga.png",
+	"turretGlowSprite":"",
+	"hardpointSprite":"",
+	"hardpointGlowSprite":"",
+
+	"hardpointOffsets":[0, 0],
+	"turretOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],
+	"turretAngleOffsets":[0],
+	"barrelMode":"ALTERNATING",
+	# "renderHints":[RENDER_LOADED_MISSILES],
+	"animationType": "SMOKE",
+	"smokeSpec": {
+		"particleSizeMin": 8,
+		"particleSizeRange": 14,
+		"cloudParticleCount": 2,
+		"cloudDuration": 0.7,
+		"cloudRadius": 7,
+		"blowbackParticleCount": 3,
+		"blowbackDuration": 0.9,
+		"blowbackLength": 18,
+		"blowbackSpread": 9,
+		"particleColor": [170,160,150,130]},
+	"projectileSpecId":"A_S-F_gaderoga_mssl",
+	"fireSoundTwo": "swarmer_fire"
+}

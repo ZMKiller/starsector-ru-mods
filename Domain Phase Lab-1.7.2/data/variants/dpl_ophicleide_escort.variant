@@ -1,0 +1,35 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 9,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dpl_ophicleide",
+    "hullMods": [
+        "magazines",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dpl_ophicleide_escort",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dpl_siren",
+                "WS0002": "dpl_siren",
+                "WS0005": "dpl_gamma_blaster"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "mininglaser"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "mininglaser"}
+        }
+    ]
+}

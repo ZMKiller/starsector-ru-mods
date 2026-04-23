@@ -1,0 +1,163 @@
+{
+    "hullName": "Wolf (BM)",
+    "hullId": "ls_wolf_bm",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_wolf_bm.png",
+    "height": 100,
+    "width": 62,
+    "center": [
+        31, 50
+    ],
+    "collisionRadius": 80,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 70,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_badmoons",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                    38.5,      0.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                     4.5,     19.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                     4.5,    -18.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 45,
+            "locations": [
+                   -20.5,     14.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 315,
+            "locations": [
+                   -20.5,    -13.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                     2.5,      0.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -46.5, 0
+            ],
+            "length": 64,
+            "width": 14,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -46.5, 13.5
+            ],
+            "length": 48,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -46.5, -14.5
+            ],
+            "length": 48,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -44, 18.5
+            ],
+            "length": 48,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -44, -19.5
+            ],
+            "length": 48,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -44,    -19.5,
+             -14,      -14,
+               7,      -24,
+             9.5,      -15,
+            43.5,       -9,
+        
+            43.5,      9.5,
+             9.5,       16,
+               7,       25,
+             -14,       15,
+             -44,       20,
+        
+             -47,        1
+    # 11 points total.
+    ]
+}

@@ -1,0 +1,28 @@
+{
+	"id":"ls_heavy_squig_launcher",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"mountTypeOverride":"COMPOSITE",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/ls_heavy_squig_launcher.png",
+	"hardpointSprite":"graphics/weapons/ls_heavy_squig_launcher_hardpoint.png",
+	"glowColor":[255,255,100,200],
+	"turretOffsets":[18, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[18, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"SMOKE",
+	"smokeSpec":{"particleSizeMin":16.0,
+				 "particleSizeRange":20.0,
+				 "cloudParticleCount":5,
+				 "cloudDuration":1.5,
+				 "cloudRadius":10.0,
+				 "blowbackParticleCount":3,
+				 "blowbackDuration":1.0,
+				 "blowbackLength":10.0,
+				 "blowbackSpread":8.0,
+				 "particleColor":[100,155,55,120]},
+	"projectileSpecId":"ls_squig_dummy",  # projectile that will be fired
+	"fireSoundTwo":"bomb_bay_fire",
+}

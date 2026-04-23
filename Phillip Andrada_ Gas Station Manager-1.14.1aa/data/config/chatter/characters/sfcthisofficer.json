@@ -1,0 +1,56 @@
+{
+	"name":"This Officer",
+	"personalities":["timid", "cautious", "steady", "aggressive", "reckless"],
+	"gender":["m","f","n"],
+	"chance":0,
+	"talkativeness":1,
+	"categoryTags":["original"],
+	
+	"lines":{
+		"start":[
+			{"text":"This officer is preparing weapon systems."},
+			{"text":"This officer reports nominal operations."},
+		],
+		"start_boss":[
+			{"text":"This officer is preparing for major engagement."},
+			{"text":"This officer is readying for hostile contact."},
+		],
+		"retreat":[
+			{"text":"This officer must retreat."},
+			{"text":"This officer must return to the rearlines."},
+		],
+		"out_of_missiles":[
+			{"text":"This officer reports missiles are empty."},
+		],
+		"engaged":[
+			{"text":"This officer is reporting enemy contact."},
+		],
+		"need_help":[
+			{"text":"This officer is requesting support."},
+		],
+		"pursuing":[
+			{"text":"This officer is pursuing hostiles."},
+		],
+		"running":[
+			{"text":"This officer is falling back."},
+		],
+		"hull_90":[
+			{"text":"This officer reports minor ship damage."},
+		],
+		"hull_50":[
+			{"text":"This officer reports major ship damage."},
+		],
+		"hull_30":[
+			{"text":"This officer reports critical ship damage."},
+		],
+		"overload":[
+			{"text":"This officer reports the ship has overloaded."},
+		],
+		"death":[
+			{"text":"This officer rep-"},
+		],
+		"victory":[
+			{"text":"This officer reports an end of engagement."},
+		],
+	}
+}

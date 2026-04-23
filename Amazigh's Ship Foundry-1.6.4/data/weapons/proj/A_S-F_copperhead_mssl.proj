@@ -1,0 +1,46 @@
+{
+	"id":"A_S-F_copperhead_mssl",
+	"specClass":"missile",
+	"missileType":"MISSILE", #ROCKET
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_CopperheadOnFireEffect",
+
+	"sprite":"graphics/missiles/mortar_round.png",
+	"size":[8,8],
+	"center":[4,4],
+	"collisionRadius":4,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,125,105,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":33, # purely visual
+
+	#"fizzleOnReachingWeaponRange":true,
+	"dudProbabilityOnFlameout":0,
+	"armingTime":0,
+	"flameoutTime":0.6,
+	"noEngineGlowTime":0.1,
+	"fadeTime":0.3,
+	"engineSpec":{"turnAcc":75, #60
+				  "turnRate":25, #20
+				  "acc":600,
+				  "dec":40},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-5, 0],
+
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,125,105,175],
+						"contrailDuration":0.35,
+						"contrailWidthMult":1.5,
+						"contrailWidthAddedFractionAtEnd":2.5,# can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.2f,
+						"contrailAngularVelocityMult":0.4f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[80,60,50,200],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":6,
+				    "length":34.0,
+				    "angle":180.0}]
+}

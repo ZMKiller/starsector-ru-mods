@@ -1,0 +1,139 @@
+{
+  "hullName": "Chairk",
+  "hullId": "TTE_chiark",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/TTE_chiark.png",
+  "style": "HIGH_TECH",
+  "height": 129,
+  "width": 150,
+  "center": [75, 64.5],
+  "collisionRadius": 86.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 84,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt",
+    "hiressensors",
+    "repair_gantry",
+    "drive_field_stabilizer",
+    "civgrade",
+    "surveying_equipment",
+    "faulty_auto"
+  ],
+  "builtInWings": [
+    "TTE_dajeil_standard_wing",
+    "TTE_dajeil_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -33.5, 4,
+        -33.5, 1.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -33.5, -4.5,
+        -33.5, -1.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-58.5, 41],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-58.5, -41],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-58.5, 30],
+      "length": 33,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-58.5, -30],
+      "length": 33,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-60.5, -13],
+      "length": 33,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-60.5, 13],
+      "length": 33,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-61, -6],
+      "length": 33,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-61, 6],
+      "length": 33,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-61, -0],
+      "length": 33,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    67, -41,
+    -8, -68.5,
+    -43, -76.5,
+    -44, -55.5,
+    -66.5, -49.5,
+    -66.5, 49.5,
+    -44, 55.5,
+    -43, 76.5,
+    -8, 68.5,
+    67, 41
+  ]
+}

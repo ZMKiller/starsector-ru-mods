@@ -1,0 +1,19 @@
+{
+	"baseHullId":"sfclelantus",
+	"skinHullId":"sfcpatherlelantus",
+	"hullName":"Lelantus Mk. II",
+	"descriptionPrefix":"Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war.",
+	"tags":["LP_bp"],
+	"tech":"Luddic Path",
+	"baseValueMult":.8,
+	"spriteName":"graphics/PAGSM/ships/rammer_tanker_pather_v2.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["tow_cable","sfcsolarlivery"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"ordnancePoints":95,
+	"shieldEfficiency":1.5,
+	"builtInMods":["safetyoverrides","ill_advised"],
+	"builtInWeapons":{
+    },
+}

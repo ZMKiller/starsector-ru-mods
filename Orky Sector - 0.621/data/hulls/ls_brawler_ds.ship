@@ -1,0 +1,118 @@
+{
+    "hullName": "Brawler (DS)",
+    "hullId": "ls_brawler_ds",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_brawler_ds.png",
+    "height": 80,
+    "width": 114,
+    "center": [
+        57, 40
+    ],
+    "collisionRadius": 72,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 70,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_deathskull",
+        "ls_orky",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                      17,       22
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                      17,      -22
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                      17,       49
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                      17,      -49
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -25.5, 28
+            ],
+            "length": 32,
+            "width": 18,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -25.5, -28
+            ],
+            "length": 32,
+            "width": 18,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -38.5, 0
+            ],
+            "length": 36,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -36.5,       -8,
+           -11.5,    -54.5,
+            12.5,    -54.5,
+              36,      -35,
+              25,      -28,
+        
+              25,       28,
+              36,       35,
+            12.5,     54.5,
+           -11.5,     54.5,
+           -36.5,        8
+    ]
+}

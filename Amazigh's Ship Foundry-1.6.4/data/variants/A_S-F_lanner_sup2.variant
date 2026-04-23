@@ -1,0 +1,59 @@
+{
+  "variantId": "A_S-F_lanner_sup2",
+  "hullId": "A_S-F_lanner",
+  "displayName": "Support",
+  "goalVariant": false,
+  "fluxCapacitors": 12,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "gorgon",
+        "WS0006": "gorgon",
+        "WS0007": "gorgon",
+        "WS0008": "gorgon",
+        "WS0009": "gorgon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_sakset"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "taclaser",
+        "WS0004": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "flak",
+        "WS0011": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

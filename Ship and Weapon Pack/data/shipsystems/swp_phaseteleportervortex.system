@@ -1,0 +1,35 @@
+{
+    "id":"swp_phaseteleportervortex",
+    "type":"TELEPORTER",
+    "aiType":"PHASE_TELEPORTER",
+
+    "jitterColor":[100,165,255,150],
+    "jitterCopies":5,
+    "jitterRange":25,
+    "jitterRangeRadiusFraction":0,
+
+    "weaponGlowColor":[100,165,255,0],
+    "weaponTypes":[ENERGY],
+
+    "engineGlowLengthMult":0,
+    "engineGlowWidthMult":0,
+    "engineGlowGlowMult":0,
+
+    "range":1500,
+    "randomRange":0,
+
+    "vulnerableChargeup":false,
+    "vulnerableChargedown":false,
+    "renderCopyDuringTeleport":true,
+
+    "fadeActivationSoundOnChargedown":false,
+
+    "useSound":"system_phase_teleporter",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":1500,
+        "averageSpeedIncrease":35,
+    }
+}

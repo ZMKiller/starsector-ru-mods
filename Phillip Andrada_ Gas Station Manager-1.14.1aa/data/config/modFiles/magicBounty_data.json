@@ -1,0 +1,81 @@
+{
+  "sfc_titansTerror":{
+
+    "required_mods_id": [],
+
+    #TRIGGERS (ALL OPTIONAL)
+
+    "trigger_marketFaction_any": ["sindrian_diktat"],
+    "trigger_marketFaction_alliedWith": false,
+    "trigger_marketFaction_enemyWith": false,
+    "trigger_player_minLevel": 10,
+    "trigger_min_fleet_size": 50,
+    "trigger_playerRelationship_atLeast": {"sindrian_diktat":0.50,},
+
+    #BOUNTY DESCRIPTION
+
+    "job_name": "The Titan's Terror",
+    "job_description": "A bounty has been placed on an infamous Luddic Path terrorist, Brother Beligar Arthur. Responsible for countless acts of terror bombings and merchant fleet disruptions, he has recently been seen with a modified Iapetus IS-15000 class battleship. The Sindrian Fuel Company is requesting that this terrorist be brought to justice.",
+    "job_comm_reply": "\"Vile servant of Moloch, how dare you approach one of Ludd's chosen! You may serve the inhuman beasts, but such servitude will be your death!\"",
+    "job_intel_success": "With the destruction of the Iapetus MK. II, Brother Arthur's reign of terror can finally come to an end. Perhaps you might even find yourself being personally praised by Andrada himself for such a job well done!",
+    "job_intel_expired": "With the increasing threat of Brother Arthur's fleet, the Sindrian Fuel Company has officially sent a task force to eliminate his fleet. Unfortunately, the bounty has been retracted as a result.",
+    "job_forFaction": "sindrian_diktat",
+    "job_deadline": 360,
+    "job_credit_reward": 500000,
+    "job_reward_scaling": 0,
+    "job_reputation_reward":10,
+    "job_type":"assassination",
+    "job_show_type": true,
+    "job_show_captain": true,
+    "job_show_fleet": "presetText",
+    "job_show_distance": "vanilla",
+    "job_show_arrow": false,
+    "job_difficultyDescription": "auto",
+    "job_pick_script":"sfcBrotherArthurBounty",
+    "job_conclusion_script":"sfcBrotherArthurBountyComplete",
+    "$job_memKey_expired": "$sfc_bounty_titan_expired",
+
+    #TARGET COMMANDER (OPTIONAL),
+
+    "target_first_name":"Beligar", # Default: randomly selected based on faction.
+    "target_last_name":"Arthur", # Default: randomly selected based on faction.
+    "target_portrait":"sfcarthur", # Default: randomly selected based on faction. Id of the sprite in settings.json/graphics/characters or full file path.
+    "target_gender":"MALE",
+    "target_rank": "brother",
+    "target_post": "terrorist",
+    "target_personality": "reckless",
+    "target_aiCoreId": null,
+    "target_level": 8,
+    "target_elite_skills":6,
+    "target_skill_preference": "NO_ENERGY_YES_BALLISTIC_YES_MISSILE_NO_DEFENSE",
+
+    #TARGET FLEET
+
+    "fleet_name":"The Righteous Path",
+    "fleet_faction": "luddic_path",
+    "fleet_flagship_variant":"sfcpathapetus_Zealous",
+    "fleet_flagship_name":"Ludd's Mercy",
+    "fleet_flagship_recoverable": true,
+    "fleet_flagship_autofit": false,
+    "fleet_preset_ships": {
+      "sfcpatherepimetheus_Assault": 1,
+      "sfcpatherepimetheus_Barrage": 1,
+      "sfcpatherdrachm_Hammerer": 4,
+      "sfcpatherdrachm_Strike": 4
+    },
+    "fleet_preset_autofit": false,
+    "fleet_scaling_multiplier": 1.1,
+    "fleet_min_FP": 200,
+    "fleet_composition_faction": "luddic_path",
+    "fleet_composition_quality": 1,
+    "fleet_transponder": true,
+    "fleet_no_retreat": true,
+    "fleet_behavior": "AGGRESSIVE",
+
+    #LOCATION
+
+    "location_distance": "CLOSE",
+    "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+    "location_prioritizeUnexplored": true,
+  },
+}

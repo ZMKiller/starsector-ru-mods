@@ -1,0 +1,66 @@
+{
+  "hullName": "Mid Engine",
+  "hullId": "dpl_olympias_eng_mid",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dpl_olympias_eng_mid.png",
+  "style": "HIGH_TECH",
+  "height": 103,
+  "width": 70,
+  "center": [35, 51.5],
+  "collisionRadius": 77.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 73.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "missile_reload",
+    "missleracks"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dragon",
+    "WS0002": "dragon"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 180,
+      "locations": [29, 17]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -180,
+      "locations": [29, -17]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-52, -0],
+      "length": 170,
+      "width": 45,
+      "angle": 180,
+      "contrailSize": 45,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    54, -9,
+    44, -29,
+    17.5, -34.5,
+    2, -26,
+    -38.5, -19.5,
+    -52, -9.5,
+    -52, 9.5,
+    -38.5, 19.5,
+    2, 26,
+    17.5, 34.5,
+    44, 29,
+    54, 9
+  ]
+}

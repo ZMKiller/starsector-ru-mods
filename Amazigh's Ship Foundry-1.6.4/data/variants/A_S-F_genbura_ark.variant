@@ -1,0 +1,58 @@
+{
+  "variantId": "A_S-F_genbura_ark",
+  "hullId": "A_S-F_genbura",
+  "displayName": "Ark Defender",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 16,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "targetingunit",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_kabid",
+        "WS0002": "A_S-F_kabid"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "A_S-F_naxdin",
+        "WS0005": "A_S-F_naxdin"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "A_S-F_lilin",
+        "WS0007": "A_S-F_lilin"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "A_S-F_salmson"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "A_S-F_kombeo",
+        "WS0009": "A_S-F_kombeo"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

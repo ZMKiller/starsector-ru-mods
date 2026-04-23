@@ -1,0 +1,60 @@
+{
+  "id": "Xhan_Bloz_medium",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_bloz_missile",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/Xhan_medium_bloz_TURRET.png",
+  "hardpointSprite": "graphics/weapons/Xhan_medium_bloz_HARDPOINT.png",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    8,
+    8,
+    6,
+    0,
+    8,
+    -8
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    10,
+    8,
+    8,
+    0,
+    10,
+    -8
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 12,
+    "particleSizeRange": 12,
+    "cloudParticleCount": 6,
+    "cloudDuration": 1.5,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 4,
+    "blowbackDuration": 2,
+    "blowbackLength": 22,
+    "blowbackSpread": 15,
+    "particleColor": [
+      110,
+      90,
+      90,
+      105
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_BLOZ_SMALL_FIRE_SOUND"
+}

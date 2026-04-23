@@ -1,0 +1,57 @@
+{
+    "variantOverrides":{
+        # 15 instead of 30 weight so that they're not too common
+        "uw_predator_ovd":15,
+        "uw_sidecar_ovd":15,
+        "uw_tiger_ovd":15,
+        "uw_torch_ovd":15,
+
+        "uw_shark_ovd":15,
+
+        "uw_barbarian_ovd":15,
+    },
+    "hullFrequency":{
+        "hulls":{
+            "uw_sidecar":0.5,
+            "uw_tiger":0.25,
+
+            "uw_shark":0.5,
+
+            "uw_barbarian":0.5,
+        },
+    },
+    "shipsWhenImporting":{
+        "hulls":[
+            "uw_predator",
+            "uw_sidecar",
+            "uw_tiger",
+            "uw_torch",
+
+            "uw_shark",
+
+            "uw_barbarian",
+        ],
+    },
+    "knownShips":{
+        "hulls":[
+            "uw_predator",
+            "uw_sidecar",
+            "uw_tiger",
+            "uw_torch",
+
+            "uw_shark",
+
+            "uw_barbarian",
+        ],
+    },
+    "knownFighters":{
+        "fighters":[
+            "uw_razor_wing",
+        ],
+    },
+    "priorityFighters":{
+        "fighters":[
+            "uw_razor_wing",
+        ],
+    },
+},

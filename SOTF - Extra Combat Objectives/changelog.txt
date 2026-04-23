@@ -1,0 +1,129 @@
+1.2.1
+
+Fixed warp beacons crashing when no targets were around
+Fixed derelict fleet spawning player ships when no player fac exists
+Strange lights now add the aotd substrate
+
+1.2.0a
+
+Fixed warp beacons crashing on piloted ships
+
+1.2.0
+
+Fixed threat/dweller objectives not spawning in places they should, ugh
+Shield generators are no longer penetrated by plasma cannons and such
+Shield generators now use opacity instead of jitter to communicate shield HP
+Intrusion nodes no longer randomly explode
+
+Added a few new objectives
+    Propaganda Transmitter
+        Diktat-only
+            Spwans in systems where the largest established colony is diktat
+
+        Has a large DP contribution, but...
+        Reduces the combat effectiveness of nearby friendly LG ships
+            It is VERY ANNOYING to the gunners
+
+    Credit cache
+        Very rare
+
+        Long cap time, gives you credits
+        Doesnt spawn if youre not poor
+
+    Mineral-Rich Asteroid
+        Rare, only spawns in asteroid fields/belts
+
+        Long cap time
+        When captured, spawns a bomb on the asteroid
+        When it detonates, the aSteroid explodes into a billion pieces, each of which can be collected to gain ore/volatiles
+
+    Warp Beacon
+        Very rare
+        Long cap time
+        Warps newly deployed ships to it
+
+    Derelict Fleet
+        Very Rare
+        Long cap time
+
+        A group of heavily damaged ships, primarily freighters
+        Hail you when you arrive, asking for help, or begging for mercy
+
+        Can spawn in 3 modes
+            Friendly
+            Hostile
+            Oh Fuck Oh Shit
+
+            Friendly objectives are friendly to you, hostile to the enemy
+            Vice versa for hostile
+            Oh fuck oh shit is hostile to both sides, and is rare
+
+        When captured, repairs the ships and increases CR to 30%. They tehn join the battle with 0 DP contribution
+
+        If captured by a friendly side, begins an immediate retreat
+            If retreat is successful, and the side has the player in it, the player will get a bunch of resources and rep
+        If captured by a hostile side, the ships are repaired and added to a random fleet of the hostile side
+            Yes. ADDED
+            These ships do not retreat and can be used in combat
+
+1.1.1
+
+Dustkeeper emplacements, if spawned by proxy warfleet condition, now start deployed by your side
+
+ASB platforms now correclty identify who they're shooting at
+
+Shield generators have halved overloda times
+
+1.1.0
+
+New [ULTRA REDACTED] objectives
+    Spawns in systems where [ULTRA REDACTED] spawns
+        Can also spawn in abyssal hyperspace if youve encountered [ULTRA REDACTED]
+        Extremely low chance to spawn in normal systems
+    1. Constructs a few [ULTRA REDACTED] ships
+        At least one overseer is guaranteed
+        Fabricators can be constructed, but it requires you to enable it in lunasettings
+        As with other one-time objectives that spawn ships, allowing the enemy to capture it has a chance to add
+        special items to the battle loot
+
+    2. Just a [ULTRA REDACTED] emplacement
+        Has a modified energy lash that can buff non-[ULTRA REDACTED] ships
+        Four variants
+        Very strong for an emplacement, but has capture time and respawn time to match
+
+Dustkeeper emplacements now spawn
+    High chance in dustkeeper systems
+    Low chance in systems with duskkeeper proxy patrols
+
+    Will betray you if you meet duskkeeper betrayal conditions
+
+    Basically just a souped up remnant module with cyberwarfare
+
+Strange light now only spawns if you've encountered dweller
+    Higher chance in abyssal hyperspace
+
+Shield generator no longer renders the FF indicator of the shield drone, nor its engines
+
+Added station augment integration
+    ASB Coordinator
+        Spawns a number of ASB uplinks behind the station, depending on the ground defenses of the market
+
+ASB uplinks no longer target undamageable ships
+
+1.0.1
+Fixes a crash with ASB targetting modules
+
+ASB platforms now only take a minute to reload
+ASB range increased substantially
+ASB has a new AI
+    Prioritizes big, slow ships
+    Ships engaged in combat more likely to be shot
+        If the ship is in trouble, FAR more likely to be shot
+    Phase ships mostly ignored
+    Ships without shields and no phase are targeted far more
+    If a ship has an eliminate order, it will almost always be picked
+
+Shield generator given more shield HP
+
+1.0.0
+Initial

@@ -1,0 +1,100 @@
+{
+  "hullName": "Polybolos PB-50",
+  "hullId": "sfcpolybolos",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/tanker_frigate_orb_diktat_v1.png",
+  "style": "MIDLINE",
+  "height": 90,
+  "width": 90,
+  "center": [47, 45.5],
+  "collisionRadius": 98.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 90,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery",
+    "ballistic_rangefinder"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [29.5, 37]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [2.5, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": 135,
+      "locations": [-20.5, 18]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": -150,
+      "locations": [-25.5, -17]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 80,
+      "angle": 0,
+      "locations": [8, 24]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-45, 7.5],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-45, -9.5],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -44.5, 14,
+    -30.5, 27,
+    -11.5, 27.5,
+    -11, 39.5,
+    14.5, 40.5,
+    26.5, 44,
+    26, 18,
+    32, 13,
+    33, -10.5,
+    21.5, -19.5,
+    19, -33.5,
+    13, -37.5,
+    -29, -30.5,
+    -37, -19.5,
+    -44.5, -16.5
+  ]
+}

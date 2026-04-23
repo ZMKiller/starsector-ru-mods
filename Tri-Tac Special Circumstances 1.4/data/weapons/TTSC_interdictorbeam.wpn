@@ -1,0 +1,58 @@
+{
+  "id": "TTSC_interdictorbeam",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/TTSC_interdictorbeam_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/TTSC_interdictorbeam_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/TTSC_interdictor_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/TTSC_interdictorbeam_hardpoint_glow.png",
+  "glowColor": [
+    155,
+    225,
+    255,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    9.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    12.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    155,
+    100,
+    255,
+    255
+  ],
+  "coreColor": [
+    155,
+    100,
+    225,
+    155
+  ],
+  "width": 15,
+  "textureType": [
+    "graphics/fx/beam_weave_core.png",
+    "graphics/fx/beamcorec.png"
+  ],
+  "textureScrollSpeed": -100,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundTwo": "laser_loop"
+}

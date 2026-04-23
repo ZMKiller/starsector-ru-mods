@@ -1,0 +1,48 @@
+{
+	"id":"A_S-F_zweig_srm_missile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/A_S-F_zweig_missile.png",
+
+	"size":[7,16],	
+	"center":[3.5,7],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[225,195,65,200],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":45, # purely visual
+
+	"engineSpec":{"turnAcc":1960,
+				  "turnRate":280,
+				  "acc":3200,
+				  "dec":3200},
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":25,
+					 "coreRadius":20,
+					 "collisionClass":PROJECTILE_FF,
+					 "collisionClassByFighter":PROJECTILE_FF,
+					 "particleSizeMin":2.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":0.35,
+					 "particleCount":20,
+					 "particleColor":[255,175,75,255]},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-8, 0],
+
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[235,185,45,255],
+						"contrailDuration":.5,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":10, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[110,100,80,130],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":3.5,
+				    "length":20.0,
+				    "angle":180.0}]
+}

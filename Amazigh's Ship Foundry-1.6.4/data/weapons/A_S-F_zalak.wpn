@@ -1,0 +1,28 @@
+{
+	"specClass":"beam",
+	"id":"A_S-F_zalak",  # this id must match what's in the spreadsheet
+	"type":"ENERGY",
+	"size":"MEDIUM",
+
+	"beamEffect":"org.amazigh.foundry.scripts.arktech.ASF_ZalakBeamEffect",
+
+	"turretSprite":"graphics/weapons/A_S-F_zalak_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_zalak_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_zalak_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_zalak_glow.png",
+	"turretOffsets":[10, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[19, 0],
+	"hardpointAngleOffsets":[0],
+	"fringeColor":[70,200,120,200],
+	"coreColor":[130,255,200,220],
+	"glowColor":[90,255,165,200],
+	"width":7.0,
+	"hitGlowRadius":40,
+	"textureType":LASER,
+	"textureScrollSpeed":260.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
+	"fireSoundOne":"laser_intro",
+	"fireSoundTwo":"ion_beam_loop",
+}

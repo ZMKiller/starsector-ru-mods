@@ -1,0 +1,23 @@
+{
+	"id":"ls_blue_mega_cannon_shot",
+	"specClass":"projectile",
+	"onFireEffect":"data.weapons.ls_blue_kustom_cannon_onfire",
+		"onHitEffect":"data.weapons.ls_kustom_kanon_onhit",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":48.0,
+	"width":20,
+	"fadeTime":0.5,
+	"fringeColor":[150,255,150,255],
+	"coreColor":[255,255,255,25],
+	"glowColor":[150,255,155,75],
+	"glowRadius":54,
+	"hitGlowRadius":75,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+
+}

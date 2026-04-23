@@ -1,0 +1,41 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 20,
+    "fluxVents": 7,
+    "goalVariant": true,
+    "hullId": "swp_striker",
+    "hullMods": [
+        "eccm",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_striker_str",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "lightneedler",
+                "WS0002": "lightneedler",
+                "WS0003": "lightneedler",
+                "WS0004": "lightneedler"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "atropos"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "swp_reliant",
+                "WS0007": "swp_reliant",
+                "WS0008": "swp_reliant",
+                "WS0009": "swp_reliant"
+            }
+        }
+    ]
+}

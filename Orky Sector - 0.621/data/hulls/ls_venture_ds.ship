@@ -1,0 +1,206 @@
+{
+    "hullName": "Venture (DS)",
+    "hullId": "ls_venture_ds",
+    "hullSize": "CRUISER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/venture_orky.png",
+    "height": 208,
+    "width": 194,
+    "center": [
+        97, 104
+    ],
+    "collisionRadius": 124,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 118,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_deathskull",
+        "ls_ramshackle",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 190,
+            "angle": 90,
+            "locations": [
+                      -3,       55
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 190,
+            "angle": -90,
+            "locations": [
+                      -3,      -55
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                      29,        0
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    74.5,       47
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    74.5,      -47
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    44.5,       67
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    44.5,      -67
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 145,
+            "locations": [
+                     -61,       36
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 215,
+            "locations": [
+                     -61,      -36
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -98.5, 18.5
+            ],
+            "length": 28,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -98.5, -18.5
+            ],
+            "length": 28,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -96.5, 0
+            ],
+            "length": 24,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -61.5, 64
+            ],
+            "length": 32,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -61.5, -64
+            ],
+            "length": 32,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -99,    -31.5,
+           -78.5,    -39.5,
+             -62,      -56,
+             -60,      -74,
+             -20,      -83,
+        
+              18,      -83,
+            36.5,    -56.5,
+              61,      -55,
+            70.5,      -35,
+            97.5,      -13,
+        
+            97.5,       13,
+            70.5,       35,
+              61,       55,
+            36.5,     56.5,
+              18,       83,
+        
+             -20,       83,
+             -60,       74,
+             -62,       56,
+           -78.5,     39.5,
+             -99,     31.5
+    # 20 points total.
+    ]
+}

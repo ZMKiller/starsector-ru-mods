@@ -1,0 +1,216 @@
+{
+  "hullName": "Module, Combat Support",
+  "hullId": "dpl_station_attack",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/dpl_station_attack.png",
+  "style": "HIGH_TECH",
+  "height": 160,
+  "width": 330,
+  "center": [166, 76],
+  "collisionRadius": 200,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 184,
+  "viewOffset": 0,
+  "moduleAnchor": [
+    -47,
+    0
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "missile_reload"
+  ],
+  "builtInWeapons": {
+    "WS 000": "dpl_phase_pd",
+    "WS 001": "gravitonbeam",
+    "WS 003": "gravitonbeam",
+    "WS 004": "dpl_phase_pd",
+    "WS 005": "dpl_plasma_lance",
+    "WS 007": "irautolance",
+    "WS 010": "irautolance",
+    "WS 012": "dpl_plasma_lance"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 000",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 30,
+      "locations": [-33, 111]
+    },
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 15,
+      "locations": [25, 36]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -15,
+      "locations": [25, -36]
+    },
+    {
+      "id": "WS 004",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -30,
+      "locations": [-33, -111]
+    },
+    {
+      "id": "WS 005",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 30,
+      "locations": [-28, 140]
+    },
+    {
+      "id": "WS 007",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 50,
+      "locations": [-3, 109]
+    },
+    {
+      "id": "WS 008",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 20,
+      "locations": [-7, 35]
+    },
+    {
+      "id": "WS 009",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -20,
+      "locations": [-7, -35]
+    },
+    {
+      "id": "WS 010",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -50,
+      "locations": [-3, -109]
+    },
+    {
+      "id": "WS 012",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -30,
+      "locations": [-28, -140]
+    },
+    {
+      "id": "WS 013",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": 0,
+      "locations": [
+        -11, 92,
+        0, 93,
+        1, 77,
+        -11, 78
+      ]
+    },
+    {
+      "id": "WS 014",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": 0,
+      "locations": [
+        -11, -66,
+        0, -65,
+        0, -81,
+        -11, -80
+      ]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        23.5, 7,
+        23, -6,
+        32.5, -6,
+        32, 7
+      ]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    61.5, -12.5,
+    77.5, -14.5,
+    77.5, -22,
+    51.5, -24,
+    36.5, -57,
+    57, -61,
+    56, -65.5,
+    25.5, -67,
+    27, -91.5,
+    41.5, -94.5,
+    43.5, -99,
+    25, -102,
+    9.5, -121.5,
+    -9, -130.5,
+    -11.5, -141,
+    -24, -153,
+    -47, -144.5,
+    -57, -124,
+    -58, -99,
+    -78, -71,
+    -42, -44.5,
+    -40.5, -19.5,
+    -64, -14.5,
+    -64, 14.5,
+    -40.5, 19.5,
+    -42, 44.5,
+    -78, 71,
+    -58, 99,
+    -57, 124,
+    -47, 144.5,
+    -24, 153,
+    -11.5, 141,
+    -9, 130.5,
+    9.5, 121.5,
+    25, 102,
+    43.5, 99,
+    41.5, 94.5,
+    27, 91.5,
+    25.5, 67,
+    56, 65.5,
+    57, 61,
+    36.5, 57,
+    51.5, 24,
+    77.5, 22,
+    77.5, 14.5,
+    61.5, 12.5
+  ]
+}

@@ -1,0 +1,42 @@
+{
+	"id":"A_S-F_nasibu_missile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/A_S-F_nasibu_missile.png",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.arktech.ASF_nasibuOnHitEffect",
+	"onFireEffect":"org.amazigh.foundry.scripts.arktech.ASF_NasibuOnFireEffect",
+
+	"size":[8,12],
+	"center":[4,6],
+	"collisionRadius":7,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[70,185,150,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+	"fadeTime":1, # fadeout duration
+	"engineSpec":{
+				  "turnAcc":600,
+				  "turnRate":150,
+				  "acc":450,
+				  "dec":80},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-6, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP",
+						"engineColor":[70,175,150,255],
+						"contrailDuration":0.75,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0.25f, # how far away from engine it starts
+						"contrailColor":[100,140,120,120],
+						"glowSizeMult":2,
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":5.0,
+				    "length":25.0,
+				    "angle":180.0}],
+}

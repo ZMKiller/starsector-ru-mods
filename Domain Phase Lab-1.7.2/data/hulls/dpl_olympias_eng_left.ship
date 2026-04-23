@@ -1,0 +1,50 @@
+{
+  "hullName": "Left Engine",
+  "hullId": "dpl_olympias_eng_left",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dpl_olympias_eng_left.png",
+  "style": "HIGH_TECH",
+  "height": 103,
+  "width": 63,
+  "center": [31.5, 51.5],
+  "collisionRadius": 105,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 96,
+  "viewOffset": 0,
+  "builtInMods": [
+    "missile_reload",
+    "missleracks"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dragon"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 180,
+      "locations": [29, 14]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-54, -2],
+      "length": 101,
+      "width": 36,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    55, -23.5,
+    7, -33.5,
+    -54, -18.5,
+    -54, 18.5,
+    7, 33.5,
+    55, 23.5
+  ]
+}

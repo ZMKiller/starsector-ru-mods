@@ -1,0 +1,44 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 9,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "ls_hammerhead_ds",
+    "hullMods": [
+        "ls_orky_override"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_hammerhead_ds_overdrive",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "ls_bolta",
+                "WS 004": "ls_bolta",
+                "WS 001": "ls_skorcha",
+                "WS 002": "ls_skorcha"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_tellyporta_blasta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_bubble_chukka",
+                "WS 005": "ls_bubble_chukka"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": { }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "displayName": "Busta",
+    "fluxCapacitors": 10,
+    "fluxVents": 8,
+    "goalVariant": false,
+    "hullId": "ls_manticore_ds",
+    "hullMods": [
+        "armoredweapons",
+        "ls_explody_propella",
+        "ls_git_finda",
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_manticore_ds_busta",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_mega_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_kill_kannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_rokkit_lobba",
+                "WS 003": "ls_rokkit_lobba"
+            }
+        }
+    ]
+}

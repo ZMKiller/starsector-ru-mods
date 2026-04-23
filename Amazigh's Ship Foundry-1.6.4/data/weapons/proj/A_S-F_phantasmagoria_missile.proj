@@ -1,0 +1,51 @@
+{
+	"id":"A_S-F_phantasmagoria_missile",
+	"specClass":"missile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.phantasmagoria.ASF_curtain_OnFireEffect",
+
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/A_S-F_phantasmagoria_missile.png",
+	"size":[9,18],	
+	"center":[4.5,9],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"fringeColor":[160,80,220,160],
+	"coreColor":[200,140,255,200],
+	"explosionColor":[225,200,255,125],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":80, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":80,
+					 "coreRadius":40, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":1,
+					 "particleSizeRange":5.0,
+					 "particleDuration":0.75,
+					 "particleCount":25,
+					 "particleColor":[170,100,220,200]},
+	"engineSpec":{"turnAcc":800, # 600
+				  "turnRate":600,
+				  "acc":2800, # 2400
+				  "dec":400},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[200,120,255,200],
+						"contrailDuration":1,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":1,
+						"contrailMinSeg":6, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0.5, # how far away from engine it starts
+						"contrailColor":[175,100,255,150],
+					    	"glowSizeMult":1.2,
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":8.0,
+				    "length":24.0,
+				    "angle":180.0}],		    
+}

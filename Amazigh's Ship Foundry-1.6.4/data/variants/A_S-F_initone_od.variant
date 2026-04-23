@@ -1,0 +1,57 @@
+{
+  "variantId": "A_S-F_initone_od",
+  "hullId": "A_S-F_initone",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 18,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "swarmer",
+        "WS0005": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "heavyblaster",
+        "WS0003": "heavyblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "A_S-F_electroThermal_blaster",
+        "WS0007": "A_S-F_electroThermal_blaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "lightdualmg",
+        "WS0009": "lightdualmg",
+        "WS0010": "heavymg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

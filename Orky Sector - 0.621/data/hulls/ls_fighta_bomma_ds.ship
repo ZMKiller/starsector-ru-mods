@@ -1,0 +1,103 @@
+{
+    "hullName": "Fighta Bomma (DS)",
+    "hullId": "ls_fighta_bomma_ds",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/Fighta_Bomma_ds.png",
+    "height": 36,
+    "width": 34,
+    "center": [
+        17, 18
+    ],
+    "collisionRadius": 22,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 20,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_deathskull"
+    ],
+    "builtInWeapons": {
+        "WS 001": "ls_rokkit_fighter",
+        "WS 002": "ls_rokkit_fighter",
+        "WS 000": "ls_twin_shoota"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    14.5,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                       1,        9
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                       1,       -9
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -17, 5.5
+            ],
+            "length": 12,
+            "width": 3,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -17, -5.5
+            ],
+            "length": 12,
+            "width": 3,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -15.5,    -10.5,
+            -8.5,     -6.5,
+            -3.5,    -15.5,
+             2.5,      -16,
+               4,       -6,
+        
+            15.5,     -3.5,
+            15.5,      3.5,
+               4,        6,
+             2.5,       16,
+            -3.5,     15.5,
+        
+            -8.5,      6.5,
+           -15.5,     10.5
+    # 12 points total.
+    ]
+}

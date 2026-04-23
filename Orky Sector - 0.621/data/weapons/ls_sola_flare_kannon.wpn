@@ -1,0 +1,28 @@
+{
+	"id":"ls_sola_flare_kannon",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/weapons/ls_sola_flare_kannon_es.png",
+	"turretGunSprite":"graphics/weapons/ls_sola_flare_kannon_barrel_es.png",
+	"hardpointSprite":"graphics/weapons/ls_sola_flare_kannon_es.png",
+	"hardpointGunSprite":"graphics/weapons/ls_sola_flare_kannon_barrel_es.png",	
+	"visualRecoil":12.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[26, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[26, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":65.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":30.0,
+					   "particleSizeMin":5.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.75,
+					   "particleCount":75,
+					   "particleColor":[255,150,0,250]},
+	"projectileSpecId":"ls_sola_flare_shot",  # projectile that will be fired
+	"fireSoundTwo":"death_kanon_sound",
+}

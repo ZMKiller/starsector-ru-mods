@@ -1,0 +1,54 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 450,
+  "fireSoundTwo": "XHAN_HEZEK_FIRE_SOUND",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/xhan_Hezek_Barrel_HARDPOINT.png",
+  "hardpointOffsets": [
+    41.5,
+    -13,
+    41.5,
+    13
+  ],
+  "hardpointSprite": "graphics/weapons/xhan_Hezek_HARDPOINT.png",
+  "id": "Xhan_Hezek",
+  "muzzleFlashSpec": {
+    "length": 35,
+    "particleColor": [
+      255,
+      90,
+      50,
+      215
+    ],
+    "particleCount": 20,
+    "particleDuration": 0.12,
+    "particleSizeMin": 1,
+    "particleSizeRange": 24,
+    "spread": 20
+  },
+  "projectileSpecId": "Xhan_Hezek_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/xhan_Hezek_Barrel_TURRET.png",
+  "turretOffsets": [
+    34,
+    -13,
+    34,
+    13
+  ],
+  "turretSprite": "graphics/weapons/xhan_Hezek_TURRET.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 10
+}

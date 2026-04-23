@@ -1,0 +1,56 @@
+{
+    "displayName": "Fortress",
+    "fluxCapacitors": 26,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "swp_cathedral",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "advancedshieldemitter",
+        "stabilizedshieldemitter",
+        "pointdefenseai",
+        "defensive_targeting_array",
+        "turretgyros"
+    ],
+    "modules": [
+        {"SECTION_BASE": "swp_cathedral_base_std"},
+        {"SECTION_REAR": "swp_cathedral_rear_shi"},
+        {"SECTION_GUN_LEFT": "swp_cathedral_gun_left_shi"},
+        {"SECTION_GUN_RIGHT": "swp_cathedral_gun_right_shi"},
+        {"SECTION_FIGHTER_LEFT": "swp_cathedral_fighter_left_shi"},
+        {"SECTION_FIGHTER_RIGHT": "swp_cathedral_fighter_right_shi"},
+        {"SECTION_FRONT": "swp_cathedral_front_shi"}
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_cathedral_for",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "mininglaser",
+                "WS0005": "mininglaser",
+                "WS0006": "mininglaser",
+                "WS0007": "mininglaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "swp_redeemer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "flak",
+                "WS0003": "flak"
+            }
+        }
+    ],
+    "wings": [
+        "talon_wing",
+        "talon_wing"
+    ]
+}

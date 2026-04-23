@@ -1,0 +1,20 @@
+{
+	"id":"sfcovercharge",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.shipsystems.scripts.SFCOvercharge",
+	
+	"weaponGlowColor":[238,167,189,255],
+	"weaponTypes":[ENERGY],
+
+	"engineGlowColor":[238,167,189,255],
+    #"engineGlowContrailColor":[100,165,255,25],
+    "engineGlowLengthMult":2,
+    "engineGlowWidthMult":1.5,
+    "engineGlowGlowMult":2,
+	
+	"useSound":"system_sfcovercharge",
+	"loopSound":"system_sfcovercharge_loop",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

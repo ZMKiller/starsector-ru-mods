@@ -1,0 +1,102 @@
+{
+  "hullName": "Murmex Prime (LG)",
+  "hullId": "sfcmurmexlg_strikecraft",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/mechs/sfc_murmex/sfc_murmex_torso.png",
+  "style": "HIGH_TECH",
+  "height": 48,
+  "width": 40,
+  "center": [20, 24],
+  "collisionRadius": 41,
+  "shieldCenter": [6, -0],
+  "shieldRadius": 47.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "solar_shielding",
+    "andrada_mods"
+  ],
+  "builtInWeapons": {
+    "WS0001": "sfcmurmexleftshoulderlg",
+    "WS0002": "sfcmurmexrightshoulderlg",
+    "WS0003": "sfcmurmexgunleftlg",
+    "WS0004": "sfcmurmexgunlg_strikecraft",
+    "WS0005": "sfcmurmexheadlg"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [4.5, 1.5],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [4.5, -1.5],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": 25,
+      "locations": [11, 5.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": -25,
+      "locations": [11, -5.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [7, -0],
+      "renderOrderMod": 300
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 45,
+      "locations": [4.5, 18.5],
+      "renderOrderMod": 400
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, -0],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "CUSTOM",
+      "styleId": "COBRA_BOMBER"
+    }
+  ],
+  "bounds": [
+    19, -13.5,
+    -15, -13.5,
+    -15, 13.5,
+    19, 13.5
+  ]
+}

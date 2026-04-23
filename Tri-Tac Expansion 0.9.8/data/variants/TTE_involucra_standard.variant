@@ -1,0 +1,54 @@
+{
+  "variantId": "TTE_involucra_standard",
+  "hullId": "TTE_involucra",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 29,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pulselaser",
+        "WS0002": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "irpulse",
+        "WS0004": "irpulse",
+        "WS0007": "irpulse",
+        "WS0008": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "TTE_pdpulse",
+        "WS0006": "TTE_pdpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "TTE_pdpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "TTE_dajeil_standard_wing",
+    "TTE_frightspear_standard_wing",
+    "TTE_wingclipper_standard_wing"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+	"id":"A_S-F_sakset_shot",
+	"specClass":"projectile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_SaksetOnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_SaksetOnHitEffect",
+
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":90.0,
+	"hitGlowRadius":65,
+	"width":8.5,
+	"fadeTime":0.3,
+	"fringeColor":[245,255,155,195],
+	"coreColor":[215,255,155,200],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/A_S-F_sakset_shell.png"
+}

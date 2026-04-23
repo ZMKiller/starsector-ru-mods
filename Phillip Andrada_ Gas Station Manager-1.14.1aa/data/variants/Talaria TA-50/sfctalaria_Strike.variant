@@ -1,0 +1,42 @@
+{
+  "variantId": "sfctalaria_Strike",
+  "hullId": "sfctalaria",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "stabilizedshieldemitter",
+    "magazines",
+    "ecm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sfcamscatterblaster",
+        "WS0002": "sfcamscatterblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "sfcamblaster_recharge"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "pdburst",
+        "WS0005": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

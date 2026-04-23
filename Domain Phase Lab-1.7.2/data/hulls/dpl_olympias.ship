@@ -1,0 +1,191 @@
+{
+  "hullName": "Olympias",
+  "hullId": "dpl_olympias",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/dpl_olympias.png",
+  "style": "HIGH_TECH",
+  "height": 510,
+  "width": 510,
+  "center": [255, 255],
+  "collisionRadius": 599,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 577.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "expanded_deck_crew",
+    "recovery_shuttles",
+    "supercomputer"
+  ],
+  "builtInWings": [
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing",
+    "dpl_marimba_X_wing"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_hymn",
+    "WS0009": "dpl_hymn",
+    "WS0010": "dpl_hymn"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [242.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 65,
+      "locations": [81.5, 124]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -65,
+      "locations": [81.5, -124]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-162, 227.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-162, -227.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-170, 117]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-170, -117]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-132, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [84, 106]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [82, -105]
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [207, 26.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [207, -26.5]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    258, -30,
+    195.5, -47.5,
+    222, -92.5,
+    204.5, -126,
+    152.5, -104.5,
+    127.5, -138,
+    34, -155.5,
+    38, -220.5,
+    8.5, -236.5,
+    -38, -199.5,
+    -87.5, -258,
+    -139.5, -260.5,
+    -167.5, -187.5,
+    -143.5, -148.5,
+    -215.5, -147.5,
+    -220.5, -98,
+    -158, -86,
+    -150, -52.5,
+    -107.5, -27.5,
+    -162, -12.5,
+    -162, 12.5,
+    -107.5, 27.5,
+    -150, 52.5,
+    -158, 86,
+    -220.5, 98,
+    -215.5, 147.5,
+    -143.5, 148.5,
+    -167.5, 187.5,
+    -139.5, 260.5,
+    -87.5, 258,
+    -38, 199.5,
+    8.5, 236.5,
+    38, 220.5,
+    34, 155.5,
+    127.5, 138,
+    152.5, 104.5,
+    204.5, 126,
+    222, 92.5,
+    195.5, 47.5,
+    258, 30
+  ]
+}

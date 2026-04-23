@@ -1,0 +1,19 @@
+{
+	"id":"xhan_agmad_shot",
+	"specClass":"projectile",
+	#"spawnType":"BEAM",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":350.0,
+	"hitGlowRadius":30,
+	"width":15.0,
+	"fadeTime":0.05,
+	"fringeColor":[153,255,51,200],
+	"coreColor":[153,255,51,255],
+	#"coreColor":[153,255,51,255],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0,
+					}	
+}

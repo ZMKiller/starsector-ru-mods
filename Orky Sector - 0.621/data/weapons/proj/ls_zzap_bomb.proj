@@ -1,0 +1,22 @@
+{
+	"id":"ls_zzap_bomb",
+	"specClass":"missile",
+	"onHitEffect":"data.weapons.ls_zapp_bomb_onhit",
+	"missileType":"BOMB",
+	"sprite":"graphics/weapons/Projectiles/ls_zzap_bomb.png",
+	"size":[14,18],
+	"center":[7,9],
+	"collisionRadius":15,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[70,250,150,200],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":75, # purely visual	
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":50,
+					 "coreRadius":25, # full damage within core radius
+					 "collisionClass":MISSILE_NO_FF,
+					 "collisionClassByFighter":MISSILE_NO_FF},				  
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":0,
+				  "dec":0}
+}

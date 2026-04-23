@@ -1,0 +1,695 @@
+package assortment_of_things.exotech.hullmods
+
+import assortment_of_things.exotech.ExoUtils
+import assortment_of_things.misc.GraphicLibEffects
+import assortment_of_things.misc.getAndLoadSprite
+import assortment_of_things.misc.levelBetween
+import com.fs.starfarer.api.Global
+import com.fs.starfarer.api.combat.*
+import com.fs.starfarer.api.combat.listeners.ApplyDamageResultAPI
+import com.fs.starfarer.api.combat.listeners.DamageListener
+import com.fs.starfarer.api.combat.listeners.DamageTakenModifier
+import com.fs.starfarer.api.graphics.SpriteAPI
+import com.fs.starfarer.api.input.InputEventAPI
+import com.fs.starfarer.api.ui.TooltipMakerAPI
+import com.fs.starfarer.api.util.Misc
+import lunalib.lunaExtensions.addLunaElement
+import org.dark.shaders.util.ShaderLib
+import org.lazywizard.lazylib.MathUtils
+import org.lazywizard.lazylib.ui.LazyFont
+import org.lwjgl.opengl.GL11
+import org.lwjgl.opengl.GL13
+import org.lwjgl.opengl.GL20
+import org.lwjgl.util.vector.Vector2f
+import org.magiclib.util.MagicUI
+import java.awt.Color
+import java.util.*
+
+class PhaseshiftShield : BaseHullMod() {
+
+    override fun shouldAddDescriptionToTooltip(hullSize: ShipAPI.HullSize?, ship: ShipAPI?,   isForModSpec: Boolean): Boolean {
+        return false
+    }
+
+    override fun addPostDescriptionSection(tooltip: TooltipMakerAPI?, hullSize: ShipAPI.HullSize?, ship: ShipAPI?, width: Float, isForModSpec: Boolean) {
+
+        var sprite = Global.getSettings().getAndLoadSprite("graphics/ui/rat_exo_hmod.png")
+
+        var initialHeight = tooltip!!.heightSoFar
+        var element = tooltip!!.addLunaElement(0f, 0f)
+
+        tooltip!!.addSpacer(10f)
+
+        tooltip!!.addPara("The Gilgamesh is capable of generating a thin layer of energy around its hull through activation of its phase-cloak and shipsystem. " +
+                "This layer of energy performs similar to shields on a normal ship. "
+            , 0f,
+            Misc.getTextColor(), Misc.getHighlightColor(),  " ")
+
+        tooltip.addSpacer(10f)
+
+        tooltip.addPara("This shield can only take up to ${PhaseshiftShieldListener.maxShieldHP.toInt()} units of damage. It can be recharged for ${PhaseshiftShieldListener.regenerationRate.toInt()} units per second while phased, and ${(PhaseshiftShieldListener.regenPerSystemUse * 100).toInt()}%% of it can be restored on shipsystem activation. ", 0f, Misc.getTextColor(), Misc.getHighlightColor(), "${PhaseshiftShieldListener.maxShieldHP.toInt()}", "${PhaseshiftShieldListener.regenerationRate.toInt()}", "${(PhaseshiftShieldListener.regenPerSystemUse * 100).toInt()}%")
+
+
+        tooltip.addSpacer(10f)
+
+        tooltip.addPara("It has a shield efficiency of ${PhaseshiftShieldListener.shieldEfficiency}. Damage past your flux capacity can overload the ship and venting will rapidly drain the shield of charge.", 0f, Misc.getTextColor(), Misc.getHighlightColor(), "${PhaseshiftShieldListener.shieldEfficiency}", "overload")
+
+
+        element.render {
+            sprite.setSize(tooltip.widthSoFar + 20, tooltip.heightSoFar + 10)
+            sprite.setAdditiveBlend()
+            sprite.alphaMult = 0.5f
+            sprite.render(tooltip.position.x, tooltip.position.y)
+        }
+    }
+
+    override fun applyEffectsBeforeShipCreation(hullSize: ShipAPI.HullSize?, stats: MutableShipStatsAPI, id: String?) {
+
+
+    }
+
+    override fun applyEffectsAfterShipCreation(ship: ShipAPI, id: String?) {
+
+        if (Global.getCombatEngine() == null) return
+
+        //ship.addListener(PhaseshiftShieldListener(ship))
+        Global.getCombatEngine().addPlugin(PhaseshiftShieldListener(ship))
+
+    }
+
+    override fun getDisplaySortOrder(): Int {
+        return 2
+    }
+
+    override fun getNameColor(): Color {
+        return Color(217, 164, 57)
+    }
+
+    override fun getBorderColor(): Color {
+        return Color(217, 164, 57)
+    }
+
+
+    class PhaseshiftShieldListener(var ship: ShipAPI) : BaseEveryFrameCombatPlugin() {
+
+        var text: LazyFont.DrawableString
+        var uiColor = Misc.getPositiveHighlightColor()
+
+        var appliedShield = false
+
+        init {
+
+            ship.addListener(PhaseshiftShieldDamageModifier(this))
+            ship.addListener(PhaseshiftShieldDamageConverter(this))
+            Global.getCombatEngine().addLayeredRenderingPlugin(PhaseshiftShieldRenderer(ship, this))
+
+            val font = LazyFont.loadFont("graphics/fonts/victor14.fnt")
+            text = font.createText()
+            text.baseColor = uiColor
+
+            ship.setCustomData("rat_phaseshift_listener", this)
+        }
+
+        companion object {
+            var maxShieldHP = 4000f
+            var regenerationRate = 400f
+            var shieldEfficiency = 0.8f
+            var regenPerSystemUse = 0.25f
+        }
+
+        var shieldHP = maxShieldHP
+
+        var effectLevel = 1f
+        var mostRecentDamage: Float? = null
+        var mostRecentDamageHardflux: Boolean? = null
+        var mostRecentDamagePoint: Vector2f? = null
+
+
+        override fun advance(amount: Float, events: MutableList<InputEventAPI>?) {
+
+            if (!appliedShield) {
+                appliedShield = true
+                ship.setShield(ShieldAPI.ShieldType.FRONT, 0f, 1f, 1f) //may otherwise crash some onhits
+            }
+
+            if (!ship.isAlive) return
+
+            ship.aiFlags.setFlag(ShipwideAIFlags.AIFlags.DO_NOT_USE_SHIELDS, 999f)
+
+            if (ship.shield?.isOn == true) {
+                ship.shield?.toggleOff()
+            }
+
+            var cloakLevel = ship.phaseCloak.effectLevel
+
+            if (ship.fluxTracker.isVenting && !Global.getCombatEngine().isPaused) {
+                shieldHP -= regenerationRate * amount * 2 //Punish Venting
+            }
+
+            if (ship.isPhased && !Global.getCombatEngine().isPaused) {
+                var regen = regenerationRate * amount * (cloakLevel * cloakLevel * cloakLevel) * ship.mutableStats.timeMult.modifiedValue
+                shieldHP += regen
+            }
+            shieldHP = MathUtils.clamp(shieldHP, 0f, maxShieldHP)
+
+            var shieldLevel = shieldHP / maxShieldHP
+            shieldLevel = MathUtils.clamp(shieldLevel, 0f, 1f)
+
+
+
+            if (ship.isPhased) {
+               effectLevel -= 3f * amount
+            } else {
+                effectLevel += 1 * amount
+            }
+            effectLevel = MathUtils.clamp(effectLevel, 0f, 1f)
+
+            var renderLevel = shieldHP.levelBetween(-100f, maxShieldHP*0.2f)
+            renderLevel = MathUtils.clamp(renderLevel, 0.7f, 1f)
+            if (shieldHP <= 0) renderLevel = 0f
+
+            //var colorShiftLevel = shieldLevel * shieldLevel * shieldLevel
+            var color = Misc.interpolateColor(ExoUtils.color1, Color(130,4,189, 255), 0f + ((1f-shieldLevel) * 0.4f))
+
+            ship.setJitter(this, color, 0.1f * effectLevel * renderLevel, 3, 0f, 0 + 2f)
+            ship.setJitterUnder(this,  color, 0.5f * effectLevel * renderLevel, 25, 0f, 7f + 2)
+
+            if (shieldHP > 0.1) {
+                ship.mutableStats.armorDamageTakenMult.modifyMult("phaserift_shield", 0.00001f)
+                ship.mutableStats.hullDamageTakenMult.modifyMult("phaserift_shield", 0.00001f)
+                ship.mutableStats.empDamageTakenMult.modifyMult("phaserift_shield", 0.00001f)
+                ship.mutableStats.weaponDamageTakenMult.modifyMult("phaserift_shield", 0.00001f)
+                ship.mutableStats.engineDamageTakenMult.modifyMult("phaserift_shield", 0.00001f)
+            } else {
+                ship.mutableStats.armorDamageTakenMult.unmodify("phaserift_shield")
+                ship.mutableStats.hullDamageTakenMult.unmodify("phaserift_shield")
+                ship.mutableStats.empDamageTakenMult.unmodify("phaserift_shield")
+                ship.mutableStats.weaponDamageTakenMult.unmodify("phaserift_shield")
+                ship.mutableStats.engineDamageTakenMult.unmodify("phaserift_shield")
+            }
+
+            //MagicUI.drawInterfaceStatusBar(ship, shieldLevel, Misc.getPositiveHighlightColor(), Misc.getPositiveHighlightColor(), 1f, "Shield", shieldHP.toInt())
+
+
+        }
+
+        fun getShieldLevel() = MathUtils.clamp(shieldHP / maxShieldHP, 0f, 1f)
+
+
+        override fun renderInUICoords(viewport: ViewportAPI?) {
+            super.renderInUICoords(viewport)
+
+            if (ship != Global.getCombatEngine().playerShip) return
+            if (!Global.getCombatEngine().isUIShowingHUD || Global.getCombatEngine().combatUI?.isShowingCommandUI == true) return
+
+
+            var scale = Global.getSettings().screenScaleMult
+
+            var loc = MagicUI.getInterfaceOffsetFromStatusBars(ship, ship.variant)
+            var x = (loc.x + 176f)
+            var y = (loc.y + 130f)
+
+            //var x = 232f
+            //var y = 200f
+
+            var shadowC = Color(0,0,0)
+
+            uiColor = Misc.getPositiveHighlightColor()
+            if (ship.owner == 1) uiColor = Misc.getNegativeHighlightColor()
+            if (ship.owner == 100) uiColor = Misc.getDarkPlayerColor()
+
+
+            //Text Shadow
+            text.baseColor = Color(0, 0, 0)
+            text.text = "Shield"
+            text.draw(x+1, y- 1)
+
+            //Text Draw
+            text.baseColor = uiColor
+            text.text = "Shield"
+            text.draw(x, y)
+
+
+            var barX = x + 48f
+            var barY = y - 3f
+
+            var barW = 80f
+            var barH = 7f
+
+            text.baseColor = Color(0, 0, 0)
+            text.text = "${shieldHP.toInt()}"
+            text.draw(x + 180 - text.width + 1, y - 1)
+
+            text.baseColor = uiColor
+            text.text = "${shieldHP.toInt()}"
+            text.draw(x + 180 - text.width, y)
+
+            var barLevel = getShieldLevel()
+
+            var indicatorWidthMin = barX + (barW * barLevel) - 1
+            var indicatorWidthMax = barX + (barW * barLevel) + 1
+            indicatorWidthMin = MathUtils.clamp(indicatorWidthMin, barX, barX + barW)
+            indicatorWidthMax = MathUtils.clamp(indicatorWidthMax, barX, barX + barW)
+
+            if (barW * barLevel <= 2) {
+                //Start Top Shadow
+                GL11.glPushMatrix()
+                GL11.glDisable(GL11.GL_TEXTURE_2D)
+                GL11.glDisable(GL11.GL_CULL_FACE)
+
+                GL11.glDisable(GL11.GL_BLEND)
+
+                GL11.glColor4f(shadowC.red / 255f,
+                    shadowC.green / 255f,
+                    shadowC.blue / 255f,
+                    shadowC.alpha / 255f)
+
+                GL11.glRectf(barX + 1, barY - 1 , barX + 3 + 1, barY)
+
+                GL11.glPopMatrix()
+
+                //Start Top
+                GL11.glPushMatrix()
+                GL11.glDisable(GL11.GL_TEXTURE_2D)
+                GL11.glDisable(GL11.GL_CULL_FACE)
+
+                GL11.glDisable(GL11.GL_BLEND)
+
+                GL11.glColor4f(uiColor.red / 255f,
+                    uiColor.green / 255f,
+                    uiColor.blue / 255f,
+                    uiColor.alpha / 255f)
+
+                GL11.glRectf(barX, barY - 1 + 1, barX + 3, barY + 1)
+
+                GL11.glPopMatrix()
+
+
+
+
+
+                //Start Bottom Shadow
+                GL11.glPushMatrix()
+                GL11.glDisable(GL11.GL_TEXTURE_2D)
+                GL11.glDisable(GL11.GL_CULL_FACE)
+
+                GL11.glDisable(GL11.GL_BLEND)
+
+                GL11.glColor4f(shadowC.red / 255f,
+                    shadowC.green / 255f,
+                    shadowC.blue / 255f,
+                    shadowC.alpha / 255f)
+
+                GL11.glRectf(barX + 1, barY - 1 - barH -1, barX + 3 + 1, barY - barH - 1)
+
+                GL11.glPopMatrix()
+
+
+                //Start Bottom
+                GL11.glPushMatrix()
+                GL11.glDisable(GL11.GL_TEXTURE_2D)
+                GL11.glDisable(GL11.GL_CULL_FACE)
+
+                GL11.glDisable(GL11.GL_BLEND)
+
+                GL11.glColor4f(uiColor.red / 255f,
+                    uiColor.green / 255f,
+                    uiColor.blue / 255f,
+                    uiColor.alpha / 255f)
+
+                GL11.glRectf(barX, barY - 1 - barH, barX + 3, barY - barH )
+
+                GL11.glPopMatrix()
+            }
+
+
+
+
+
+
+            //End Shadow
+            GL11.glPushMatrix()
+            GL11.glDisable(GL11.GL_TEXTURE_2D)
+            GL11.glDisable(GL11.GL_CULL_FACE)
+
+            GL11.glDisable(GL11.GL_BLEND)
+
+            GL11.glColor4f(shadowC.red / 255f,
+                shadowC.green / 255f,
+                shadowC.blue / 255f,
+                shadowC.alpha / 255f)
+
+            GL11.glRectf(barX + barW - 1 + 1, barY - barH - 1, barX + barW + 1, barY - 1)
+
+            GL11.glPopMatrix()
+
+            //End
+            GL11.glPushMatrix()
+            GL11.glDisable(GL11.GL_TEXTURE_2D)
+            GL11.glDisable(GL11.GL_CULL_FACE)
+
+            GL11.glDisable(GL11.GL_BLEND)
+
+            GL11.glColor4f(uiColor.red / 255f,
+                uiColor.green / 255f,
+                uiColor.blue / 255f,
+                uiColor.alpha / 255f)
+
+            GL11.glRectf(barX + barW - 1, barY - barH, barX + barW, barY)
+
+            GL11.glPopMatrix()
+
+
+            if (barLevel > 0f) {
+                //Bar Shadow
+                GL11.glPushMatrix()
+                GL11.glDisable(GL11.GL_TEXTURE_2D)
+                GL11.glDisable(GL11.GL_CULL_FACE)
+
+                GL11.glDisable(GL11.GL_BLEND)
+
+                GL11.glColor4f(shadowC.red / 255f,
+                    shadowC.green / 255f,
+                    shadowC.blue / 255f,
+                    shadowC.alpha / 255f)
+
+                GL11.glRectf(barX + 1, barY - barH - 1 , barX + ((barW + 1) * barLevel), barY - 1 )
+
+                GL11.glPopMatrix()
+
+                //Bar
+
+                GL11.glPushMatrix()
+                GL11.glDisable(GL11.GL_TEXTURE_2D)
+                GL11.glDisable(GL11.GL_CULL_FACE)
+
+                GL11.glDisable(GL11.GL_BLEND)
+
+                GL11.glColor4f(uiColor.red / 255f,
+                    uiColor.green / 255f,
+                    uiColor.blue / 255f,
+                    uiColor.alpha / 255f)
+
+                GL11.glRectf(barX, barY - barH , barX + (barW * barLevel), barY )
+
+
+                //Indicator Shadow
+                GL11.glPopMatrix()
+
+                GL11.glPushMatrix()
+                GL11.glDisable(GL11.GL_TEXTURE_2D)
+                GL11.glDisable(GL11.GL_CULL_FACE)
+
+                GL11.glDisable(GL11.GL_BLEND)
+
+                GL11.glColor4f(shadowC.red / 255f,
+                    shadowC.green / 255f,
+                    shadowC.blue / 255f,
+                    shadowC.alpha / 255f)
+
+
+                GL11.glRectf(indicatorWidthMin + 1, barY - barH - 1 -1 , indicatorWidthMax + 1, barY + 1 -1)
+
+
+                GL11.glPopMatrix()
+
+                //Indicator
+                GL11.glPushMatrix()
+                GL11.glDisable(GL11.GL_TEXTURE_2D)
+                GL11.glDisable(GL11.GL_CULL_FACE)
+
+                GL11.glDisable(GL11.GL_BLEND)
+
+                GL11.glColor4f(uiColor.red / 255f,
+                    uiColor.green / 255f,
+                    uiColor.blue / 255f,
+                    uiColor.alpha / 255f)
+
+                GL11.glRectf(indicatorWidthMin, barY - barH - 1 , indicatorWidthMax, barY + 1 )
+
+                GL11.glPopMatrix()
+
+            }
+
+
+
+
+        }
+
+    }
+
+    class PhaseshiftShieldRenderer(var ship: ShipAPI, var listener: PhaseshiftShieldListener) : BaseCombatLayeredRenderingPlugin() {
+
+        //var sprite = ship.spriteAPI
+        var noise1 = Global.getSettings().getAndLoadSprite("graphics/fx/rat_phaseshift_shield_noise1.png")
+        var noise2 = Global.getSettings().getAndLoadSprite("graphics/fx/rat_phaseshift_shield_noise2.png")
+
+        var shader: Int = 0
+
+        init {
+            if (shader == 0) {
+                shader = ShaderLib.loadShader(
+                    Global.getSettings().loadText("data/shaders/baseVertex.shader"),
+                    Global.getSettings().loadText("data/shaders/rat_phaseshift_shield.shader"))
+                if (shader != 0) {
+                    GL20.glUseProgram(shader)
+
+                    GL20.glUniform1i(GL20.glGetUniformLocation(shader, "tex"), 0)
+                    GL20.glUniform1i(GL20.glGetUniformLocation(shader, "noiseTex1"), 1)
+                    GL20.glUniform1i(GL20.glGetUniformLocation(shader, "noiseTex2"), 2)
+
+                    GL20.glUseProgram(0)
+                } else {
+                    var test = ""
+                }
+            }
+        }
+
+        override fun getActiveLayers(): EnumSet<CombatEngineLayers> {
+            return EnumSet.of(CombatEngineLayers.ABOVE_SHIPS_LAYER)
+        }
+
+        override fun getRenderRadius(): Float {
+            return 1000000f
+        }
+
+        override fun advance(amount: Float) {
+
+        }
+
+        override fun render(layer: CombatEngineLayers?, viewport: ViewportAPI?) {
+
+            if (!ship.isAlive) return
+
+            var phaseLevel = 1-(ship.phaseCloak.effectLevel * ship.phaseCloak.effectLevel * ship.phaseCloak.effectLevel * ship.phaseCloak.effectLevel)
+            if (ship.phaseCloak.state != ShipSystemAPI.SystemState.IN) {
+                phaseLevel = listener.effectLevel
+            }
+
+            var renderLevel = listener.shieldHP.levelBetween(-100f, PhaseshiftShieldListener.maxShieldHP *0.2f)
+            renderLevel = MathUtils.clamp(renderLevel, 0.7f, 1f)
+            if (listener.shieldHP <= 0) renderLevel = 0f
+
+            var lCover = ship!!.allWeapons.find { it.spec.weaponId == "rat_gilgamesh_cover_left" } ?: return
+            var rCover = ship!!.allWeapons.find { it.spec.weaponId == "rat_gilgamesh_cover_right" } ?: return
+
+            var lWing = ship!!.allWeapons.find { it.spec.weaponId == "rat_gilgamesh_wing_left" } ?: return
+            var rWing = ship!!.allWeapons.find { it.spec.weaponId == "rat_gilgamesh_wing_right" } ?: return
+
+            var sprite = ship.spriteAPI
+            renderGlow(sprite, ship.location, ship.facing, 1f * renderLevel * phaseLevel, 1.25f)
+
+            //Wings
+            reRenderDeco(lWing.sprite, lWing.location, lWing.currAngle, 1f * phaseLevel)
+            reRenderDeco(rWing.sprite, rWing.location, rWing.currAngle, 1f * phaseLevel)
+
+            renderGlow(lWing.sprite, lWing.location, lWing.currAngle, 1f * renderLevel * phaseLevel, 1.5f)
+            renderGlow(rWing.sprite, rWing.location, rWing.currAngle, 1f * renderLevel * phaseLevel, 1.5f)
+
+            //Covers
+            reRenderDeco(lCover.sprite, lCover.location, lCover.currAngle, 1f * phaseLevel)
+            reRenderDeco(rCover.sprite, rCover.location, rCover.currAngle, 1f * phaseLevel)
+
+            renderGlow(lCover.sprite, lCover.location, lCover.currAngle, 1f * renderLevel * phaseLevel, 3f)
+            renderGlow(rCover.sprite, rCover.location, rCover.currAngle, 1f * renderLevel * phaseLevel, 3f)
+
+            //Apply glow, as the medium hardpoint can be past the boundary, which makes it not fully encompassed
+            var frontWeapon = ship.allWeapons.find { it.slot.id == "WS0010" }
+            if (frontWeapon != null) {
+                renderGlow(frontWeapon.sprite, frontWeapon.location, frontWeapon.currAngle, 0.75f * renderLevel * phaseLevel, 1.5f)
+            }
+
+
+        }
+
+        fun reRenderDeco(sprite: SpriteAPI, loc: Vector2f, angle: Float, alpha: Float) {
+            sprite.setNormalBlend()
+            sprite.alphaMult = alpha
+            sprite.angle = angle - 90f
+            //sprite.setSize(width, h -20f)
+            sprite.renderAtCenter(loc.x, loc.y)
+        }
+
+        fun renderGlow(sprite: SpriteAPI, loc: Vector2f, angle: Float, alpha: Float, intensity: Float) {
+
+            var level = listener.getShieldLevel()
+
+            level = 1f - ((1f-level) * 0.4f)
+
+            GL20.glUseProgram(shader)
+
+            GL20.glUniform1f(GL20.glGetUniformLocation(shader, "iTime"), Global.getCombatEngine().getTotalElapsedTime(false) / 12f)
+            GL20.glUniform1f(GL20.glGetUniformLocation(shader, "alphaMult"),  alpha)
+            GL20.glUniform1f(GL20.glGetUniformLocation(shader, "level"),  level)
+            GL20.glUniform1f(GL20.glGetUniformLocation(shader, "intensity"),  intensity)
+
+
+            //Bind Texture
+            GL13.glActiveTexture(GL13.GL_TEXTURE0 + 0)
+            GL11.glBindTexture(GL11.GL_TEXTURE_2D, sprite.textureId)
+
+            //Setup Noise1
+            //Noise texture needs to be power of two or it wont repeat correctly! (32x32, 64x64, 128x128)
+            GL13.glActiveTexture(GL13.GL_TEXTURE0 + 1)
+            GL11.glBindTexture(GL11.GL_TEXTURE_2D, noise1!!.textureId)
+
+            GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_NEAREST)
+            GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_NEAREST)
+
+            GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_WRAP_S, GL11.GL_REPEAT)
+            GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_WRAP_T, GL11.GL_REPEAT)
+
+            //Setup Noise2
+            //Noise texture needs to be power of two or it wont repeat correctly! (32x32, 64x64, 128x128)
+            GL13.glActiveTexture(GL13.GL_TEXTURE0 + 2)
+            GL11.glBindTexture(GL11.GL_TEXTURE_2D, noise1!!.textureId)
+
+            GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_NEAREST)
+            GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_NEAREST)
+
+            GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_WRAP_S, GL11.GL_REPEAT)
+            GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_WRAP_T, GL11.GL_REPEAT)
+
+
+            //Reset Texture
+            GL13.glActiveTexture(GL13.GL_TEXTURE0 + 0)
+
+            var width = sprite.width
+            var height = sprite.width
+
+            sprite.setNormalBlend()
+            sprite.alphaMult = 1f
+            sprite.angle = angle - 90f
+            //sprite.setSize(width, h -20f)
+            sprite.renderAtCenter(loc.x, loc.y)
+
+            GL20.glUseProgram(0)
+        }
+
+    }
+
+    class PhaseshiftShieldDamageConverter(var listener: PhaseshiftShieldListener) : DamageListener {
+        override fun reportDamageApplied(source: Any?, target: CombatEntityAPI?, result: ApplyDamageResultAPI?) {
+
+            if (!listener.ship.isAlive) return
+
+            var recent = listener.mostRecentDamage ?: return
+            var hardflux = listener.mostRecentDamageHardflux ?: return
+            var point = listener.mostRecentDamagePoint ?: return
+
+            var damage = recent * PhaseshiftShieldListener.shieldEfficiency
+
+            var active = false
+            //Check if Shield is active
+            if (listener.shieldHP > 0.1) {
+                active = true
+            }
+
+            if (active) {
+
+                //Apply Damage
+                var ship = listener.ship
+                var tracker = ship.fluxTracker
+
+                tracker.increaseFlux(damage, hardflux)
+
+                listener.shieldHP -= damage
+                listener.shieldHP = MathUtils.clamp(listener.shieldHP, 0f, PhaseshiftShieldListener.maxShieldHP)
+
+                //Spawn Distortions if the damage was significant
+
+
+                //Ensure onhits are triggered as shield hits
+                result?.damageToShields = damage
+
+                if (listener.shieldHP <= 0) {
+                    Global.getSoundPlayer().playSound("rat_gilgamesh_shield_burnout", 0.65f + MathUtils.getRandomNumberInRange(-0.2f, 0.2f), 1.3f, ship.location, ship.velocity)
+
+                    GraphicLibEffects.CustomRippleDistortion(ship.location,
+                        Vector2f(),
+                        ship.collisionRadius + 200f,
+                        3f,
+                        false,
+                        0f,
+                        360f,
+                        1f,
+                        0f,0f,3f,
+                        0.3f,0f
+                    )
+                }
+
+
+                var rippleLevel = damage.levelBetween(100f, 400f)
+
+                if (rippleLevel >= 0.05) {
+                    GraphicLibEffects.CustomRippleDistortion(point,
+                        Vector2f(),
+                        300f * rippleLevel,
+                        2f,
+                        false,
+                        0f,
+                        360f,
+                        1f,
+                        0f,0f,0.6f,
+                        0.3f,0f
+                    )
+                }
+
+
+            }
+
+            listener.mostRecentDamage = null
+            listener.mostRecentDamageHardflux = null
+            listener.mostRecentDamagePoint = null
+
+        }
+    }
+
+    class PhaseshiftShieldDamageModifier(var listener: PhaseshiftShieldListener) : DamageTakenModifier {
+
+        override fun modifyDamageTaken(param: Any?, target: CombatEntityAPI?, damage: DamageAPI?,  point: Vector2f?,
+                                       shieldHit: Boolean): String? {
+
+            if (!listener.ship.isAlive) return null
+
+            //Transfer Damage to next listener
+            var dam = damage!!.damage
+            if (param is BeamAPI) {
+                dam = damage.damage * damage.dpsDuration
+            }
+
+            dam *= damage.type.shieldMult //Since this value is only used if the shield is active, apply the shield mult in this place already.
+
+            listener.mostRecentDamage = dam
+            listener.mostRecentDamageHardflux = !damage.isSoftFlux || damage.isForceHardFlux
+            listener.mostRecentDamagePoint = point
+
+            return null
+        }
+
+    }
+
+
+
+}
+

@@ -1,0 +1,32 @@
+{
+	"id":"A_S-F_phantasmagoria_missile_stk",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"MEDIUM",
+	
+	"turretSprite":"",
+	"turretGlowSprite":"",
+	"hardpointSprite":"",
+	"hardpointGlowSprite":"",
+
+	"hardpointOffsets":[1,29, 1,-29, -6.5,29, -6.5,-29],
+	"turretOffsets":[1,29, 1,-29, -6.5,29, -6.5,-29],
+	"hardpointAngleOffsets":[105, -105, 115, -115],
+	"turretAngleOffsets":[105, -105, 115, -115],
+
+	"barrelMode":"ALTERNATING",
+	"animationType":"GLOW_AND_FLASH",
+	"glowColor":[255,75,150,255],
+
+	"interruptibleBurst":false,
+	"muzzleFlashSpec":{"length":24.0,
+					   "spread":120.0,
+					   "particleSizeMin":4.0,
+					   "particleSizeRange":9.0,
+					   "particleDuration":0.4,
+					   "particleCount":50,
+					   "particleColor":[240,75,165,255]},
+
+	"projectileSpecId":"A_S-F_phantasmagoria_missile_stk",
+	"fireSoundTwo":"A_S-F_phantasmagoria_missile_stk_fire",
+}

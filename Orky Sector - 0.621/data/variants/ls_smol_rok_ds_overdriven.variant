@@ -1,0 +1,35 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "ls_smol_rok_ds",
+    "hullMods": [
+        "ls_thunda_charga",
+        "ls_orky_override"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_smol_rok_ds_overdriven",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_kustom_mega_blasta",
+                "WS 001": "ls_kustom_mega_blasta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_zzappa"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": { }
+        }
+    ]
+}

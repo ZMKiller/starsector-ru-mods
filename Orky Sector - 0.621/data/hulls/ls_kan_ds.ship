@@ -1,0 +1,112 @@
+{
+    "hullName": "Killa Kan (DS)",
+    "hullId": "ls_kan_ds",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_kan_ds/ls_kan_ds.png",
+    "height": 42,
+    "width": 42,
+    "center": [
+        21, 21
+    ],
+    "collisionRadius": 20,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_deathskull",
+	"ls_kan"
+    ],
+    "builtInWeapons": {
+        "WS 002": "ls_kan_shoota",
+        "WS 003": "ls_grotzooka",
+        "WS 000": "ls_kan_ds_pad_l",
+        "WS 001": "ls_kan_ds_pad_r"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 1,
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       0,       11
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 2,
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      -1,      -11
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 60,
+            "angle": 0,
+            "locations": [
+                       2,     12.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 60,
+            "angle": 0,
+            "locations": [
+                       2,    -12.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -13.5, 4.5
+            ],
+            "length": 14,
+            "width": 3,
+            "angle": 180,
+            "contrailSize": 18,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -13.5, -4.5
+            ],
+            "length": 14,
+            "width": 3,
+            "angle": 180,
+            "contrailSize": 18,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -13,       -6,
+            -2.5,    -10.5,
+             1.5,    -10.5,
+               8,       -3,
+               8,        3,
+        
+               2,       11,
+            -2.5,       11,
+             -13,        6
+    ]
+}

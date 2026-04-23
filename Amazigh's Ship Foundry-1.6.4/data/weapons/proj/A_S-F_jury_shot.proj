@@ -1,0 +1,37 @@
+{
+	"id":"A_S-F_jury_shot",
+	"specClass":"projectile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_JuryOnFireEffect",
+
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":32.0,
+	"hitGlowRadius":45,
+	"width":5,
+	"fadeTime":0.2,
+	"fringeColor":[255,50,50,255],
+	"coreColor":[255,200,200,150],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_large_blue.png",
+	#"bulletSprite":"",
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"shotRangeVariance":0.1,
+					"onExplosionEffect":"org.amazigh.foundry.scripts.ASF_JuryOnExplEffect",
+					"range":25,
+					"explosionSpec":{"duration":0.1f,
+									 "radius":50,
+									 "coreRadius":30, # full damage within core radius - also equal to proximity fuse range
+									 "collisionClass":PROJECTILE_FF,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":3.0,
+									 "particleSizeRange":3.0,
+									 "particleDuration":1,
+									 "particleCount":80,
+									 "particleColor":[255,155,155,255],
+									 "sound":"explosion_flak"},
+					}
+					
+}

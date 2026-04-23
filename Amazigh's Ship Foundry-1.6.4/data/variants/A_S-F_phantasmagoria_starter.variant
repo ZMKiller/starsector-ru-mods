@@ -1,0 +1,51 @@
+{
+  "variantId": "A_S-F_phantasmagoria_starter",
+  "hullId": "A_S-F_phantasmagoria",
+  "displayName": "Experimental",
+  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardened_subsystems",
+    "fluxdistributor",
+    "unstable_injector",
+    "A_S-F_PhantasmagoriaRegulator_on",
+    "A_S-F_PhantasmagoriaCore_on",
+    "A_S-F_PhantasmagoriaCutter",
+    "A_S-F_PhantasmagoriaCurtain"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "A_S-F_twister"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "A_S-F_phantasmagoria_missile"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_ir_autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "A_S-F_phantasmagoria_cutter"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

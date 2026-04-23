@@ -1,0 +1,43 @@
+{
+  "variantId": "TTSC_bora_standard",
+  "hullId": "TTSC_bora",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TTSC_taclaser",
+        "WS0002": "TTSC_taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "taclaser",
+        "WS0004": "taclaser",
+        "WS0005": "taclaser",
+        "WS0006": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "TTSC_lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "TTSC_equator_standard_wing",
+    "TTSC_riptalon_standard_wing"
+  ]
+}

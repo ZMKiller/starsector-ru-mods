@@ -1,0 +1,47 @@
+{
+    "displayName": "Broadside",
+    "fluxCapacitors": 25,
+    "fluxVents": 50,
+    "hullId": "swp_chronos",
+    "hullMods": [
+        "targetingunit",
+        "auxiliarythrusters",
+        "hardenedshieldemitter",
+        "fluxdistributor",
+        "extendedshieldemitter",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [
+        "fluxdistributor",
+        "extendedshieldemitter",
+        "stabilizedshieldemitter"
+    ],
+    "sMods": [
+        "fluxdistributor",
+        "extendedshieldemitter",
+        "stabilizedshieldemitter"
+    ],
+    "variantId": "swp_chronos_cursed",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "plasma",
+                "WS0002": "heavyblaster",
+                "WS0007": "heavyblaster",
+                "WS0008": "swp_lightphaselance",
+                "WS0010": "swp_lightphaselance",
+                "WS0012": "swp_lightphaselance"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "swp_inferno",
+                "WS0006": "swp_inferno"
+            }
+        }
+    ]
+}

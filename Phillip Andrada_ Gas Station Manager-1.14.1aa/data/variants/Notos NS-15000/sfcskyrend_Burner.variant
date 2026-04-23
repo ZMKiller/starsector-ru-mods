@@ -1,0 +1,66 @@
+{
+  "variantId": "sfcskyrend_Burner",
+  "hullId": "sfcskyrend",
+  "displayName": "Burner",
+  "goalVariant": true,
+  "fluxCapacitors": 44,
+  "fluxVents": 50,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "magazines",
+    "targetingunit",
+    "stabilizedshieldemitter",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "heavyburst",
+        "WS0005": "heavyburst",
+        "WS0008": "sfcamthrower",
+        "WS0009": "sfcamthrower",
+        "WS0016": "sfcamthrowerbig",
+        "WS0017": "sfcamthrowerbig"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "lightdualac",
+        "WS0015": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "irpulse",
+        "WS0011": "irpulse",
+        "WS0012": "irpulse",
+        "WS0013": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "sfcnotospd",
+        "WS0007": "sfcnotospd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "pdburst",
+        "WS0003": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,45 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 7,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "swp_boss_sporeship_ul",
+    "hullMods": [
+        "solar_shielding",
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "permaMods": [
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "sMods": [
+        "heavyarmor",
+        "reinforcedhull",
+        "autorepair"
+    ],
+    "variantId": "swp_boss_sporeship_ul_cus",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "hveldriver"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "heatseeker",
+                "WS0004": "heatseeker",
+                "WS0005": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "devastator"}
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+  "hullName": "Oracle",
+  "hullId": "dpl_station_drone",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/dpl_station_drone.png",
+  "style": "HIGH_TECH",
+  "height": 120,
+  "width": 92,
+  "center": [46, 59],
+  "collisionRadius": 90,
+  "shieldCenter": [1, 0],
+  "shieldRadius": 80,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "fluxshunt",
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 000",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 0,
+      "locations": [-5, 0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 0,
+      "locations": [37, 16]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -0,
+      "locations": [37, -16]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-36, 16],
+      "length": 14,
+      "width": 7,
+      "angle": 140,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-34, -17],
+      "length": 14,
+      "width": 7,
+      "angle": 220,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-49, 0],
+      "length": 12,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [2, 30],
+      "length": 12,
+      "width": 6,
+      "angle": 90,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [2, -29],
+      "length": 12,
+      "width": 6,
+      "angle": -90,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [17, 29],
+      "length": 12,
+      "width": 6,
+      "angle": 0,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [17, -29],
+      "length": 12,
+      "width": 6,
+      "angle": 0,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    45, -21.5,
+    -20, -34,
+    -47, 0,
+    -20, 31,
+    45, 21.5
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "hullName": "Calliope",
+  "hullId": "dpl_calliope",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/dpl_calliope.png",
+  "style": "HIGH_TECH",
+  "height": 252,
+  "width": 112,
+  "center": [56, 117],
+  "collisionRadius": 155,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 145,
+  "viewOffset": 0,
+  "builtInMods": [
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 90,
+      "locations": [-33, 29]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -90,
+      "locations": [-33, -29]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 37.5,
+      "locations": [92, 37]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -37.5,
+      "locations": [92, -37]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [112, 15]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [112, -15]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 45,
+      "locations": [15, 47]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -45,
+      "locations": [15, -47]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [42.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-110.5, 8.5],
+      "length": 62.5,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-110.5, -8.5],
+      "length": 62.5,
+      "width": 21,
+      "angle": -180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-112.5, 28.5],
+      "length": 62.5,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-112.5, -28.5],
+      "length": 62.5,
+      "width": 21,
+      "angle": -180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-102, 42],
+      "length": 57,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-102, -42],
+      "length": 57,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    124.5, -25.5,
+    113, -29.5,
+    111, -45.5,
+    84, -51.5,
+    31, -44.5,
+    12.5, -59.5,
+    -48.5, -51,
+    -95.5, -58,
+    -112, -41.5,
+    -112, 41.5,
+    -95.5, 58,
+    -48.5, 51,
+    12.5, 59.5,
+    31, 44.5,
+    84, 51.5,
+    111, 45.5,
+    113, 29.5,
+    124.5, 25.5
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "displayName": "Torpedo",
+    "fluxCapacitors": 3,
+    "fluxVents": 3,
+    "goalVariant": true,
+    "hullId": "ls_kite_es",
+    "hullMods": [
+        "missleracks"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_kite_es_torpedo",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "ls_torpedo_rail",
+                "WS 003": "ls_torpedo_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_twin_shoota",
+                "WS 000": "ls_twin_shoota"
+            }
+        }
+    ]
+}

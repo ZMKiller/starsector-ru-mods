@@ -1,0 +1,208 @@
+trail,projectile,sprite,minLength,fadeIn,duration,fadeOut,sizeIn,sizeOut,colorIn,colorOut,opacity,textLength,textScroll,randomTextureOffset,distance,dispersion,drift,frameOffsetMult,fadeOnFadeOut,angleAdjustment,additive,velocityIn,velocityOut,randomVelocity,angle,rotationIn,rotationOut,randomRotation,renderBelowExplosions
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#String trail: projectile ID plus a suffix if there are multiple trails for that proj,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#String projectile: projectile ID,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#String sprite: sprite ID in data\config\settings.json: in the graphics\fx category,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float minLength: minimal segment length. Saves performances especially when time warp in involved,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#   !!!! Can be set to a negative value to triggers a more optimized SLOW MODE for projectiles with speeds below 500. !!!!,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float fadeIn: fade in time in seconds,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float duration: full opacity duration in seconds,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float fadeOut: fadeout time in seconds,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float sizeIn: initial width,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float sizeOut: final width,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Color colorIn: initial color,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Color colorOut: final color,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float opacity: maximum opacity clamp,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float textLength: texture length in pixels,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float textScroll: texture scroll speed in pixels per seconds,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#boolean randomTextureOffset: does the trail always start from the base of the texture,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float distance: distance behind the proj the trail spawns,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float dispersion: amount of randomization per second in su,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float drift: amount of sideway motion inherited from the ship is applied to the trail,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float frameOffsetMult: fixes some small offset between the proj and the trail that can occur with some combination of inherited lateral motion, distance and drift,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#boolean fadeOnFadeOut: forced fadeout if the proj fades,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#boolean angleAdjustment reorient the projectile in the direction of the velocity rather than the proj facing. To be used with drift<1 so that both te trail and proj have the same orientation,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#   !!!! Must be FALSE for BALLISTIC_AS_BEAM projs !!!!,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#boolean additive: normal or additive blending,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float velocityIn: speed at which the trail segments are emited at in su,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float velocityOut: final speed of the trail segments,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float randomVelocity: randomize both velocityIn and out in that proportion.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float angle: offset angle of the trail relative to the projectile orientation after corrections if any (default 0 for directly backward),,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float rotationIn: initial angular momentum of the trail segments relative to the projectile,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float rotationOut: final angular momentum of the trail segments,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#boolean randomRotation: randomize the angular momentums. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#   Can be used to create non-linear dispersion effects when used with various velocities and angular momentums,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#boolean renderBelowExplosions: render the trail under explosions and other particle effects. Mostly used with non additive trails,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#float frameOffsetMult: scales the per-frame velocity offset (only necessary for overkill levels of control with default x1 multiplier).,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_plas_b_shot_1,A_S-F_plas_b_shot,base_trail_zap,10,0,0.08,0.1,12,7.5,"[205,100,255]","[255,50,100]",0.4,200,200,TRUE,20,0,1,0,TRUE,FALSE,TRUE,100,20,0.3,0,1000,200,true,false
+A_S-F_plas_b_shot_2,A_S-F_plas_b_shot,base_trail_zap,10,0,0.04,0.1,12,7.5,"[205,205,255]","[145,0,205]",0.8,200,200,TRUE,20,0,1,0,TRUE,FALSE,TRUE,100,100,0.3,0,0,300,true,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_breaker_shot,A_S-F_breaker_shot,base_trail_fuzzy,10,0.1,0.05,0.3,6,2,"[235,255,155]","[65,30,20]",0.5,256,-128,TRUE,5,7,1,0,TRUE,TRUE,TRUE,11,110,1.1,0,0,330,TRUE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_nieuport_shot_sub_1,A_S-F_nieuport_shot_sub_1,base_trail_mild,10,0.1,0,0.25,6,4,"[200,240,200]","[80,40,80]",0.5,256,-128,TRUE,5,1,1,0,TRUE,FALSE,TRUE,5,40,0.2,0,0,0,TRUE,TRUE
+A_S-F_nieuport_shot_sub_2,A_S-F_nieuport_shot_sub_2,base_trail_mild,10,0.1,0,0.25,6,4,"[200,240,200]","[80,40,80]",0.5,256,-128,TRUE,5,1,1,0,TRUE,FALSE,TRUE,5,40,0.2,0,0,0,TRUE,TRUE
+A_S-F_nieuport_shot_sub_2_z,A_S-F_nieuport_shot_sub_2,base_trail_zap,10,0.05,0,0.2,15,9,"[255,175,255]","[60,20,60]",0.3,256,-128,TRUE,0,4,1,0,TRUE,FALSE,TRUE,20,70,0.2,0,0,90,false,false
+A_S-F_nieuport_shot_sub_3,A_S-F_nieuport_shot_sub_3,base_trail_mild,10,0.1,0,0.25,6,4,"[200,240,200]","[80,40,80]",0.5,256,-128,TRUE,5,1,1,0,TRUE,FALSE,TRUE,5,40,0.2,0,0,0,TRUE,TRUE
+A_S-F_nieuport_shot_sub_3_z,A_S-F_nieuport_shot_sub_3,base_trail_zap,10,0.05,0,0.2,18,9,"[255,175,255]","[60,20,60]",0.3,256,-128,TRUE,0,5,1,0,TRUE,FALSE,TRUE,20,100,0.2,0,0,180,false,false
+A_S-F_nieuport_shot_sub_4,A_S-F_nieuport_shot_sub_4,base_trail_mild,10,0.1,0,0.25,6,4,"[200,240,200]","[80,40,80]",0.5,256,-128,TRUE,5,1,1,0,TRUE,FALSE,TRUE,5,40,0.2,0,0,0,TRUE,TRUE
+A_S-F_nieuport_shot_sub_4_z,A_S-F_nieuport_shot_sub_4,base_trail_zap,10,0.05,0,0.2,19,10,"[255,175,255]","[60,20,60]",0.3,256,-128,TRUE,0,6,1,0,TRUE,FALSE,TRUE,20,130,0.2,0,0,270,false,false
+A_S-F_nieuport_shot_sub_5,A_S-F_nieuport_shot_sub_5,base_trail_mild,10,0.1,0,0.25,6,4,"[200,240,200]","[80,40,80]",0.5,256,-128,TRUE,5,1,1,0,TRUE,FALSE,TRUE,5,40,0.2,0,0,0,TRUE,TRUE
+A_S-F_nieuport_shot_sub_5_z,A_S-F_nieuport_shot_sub_5,base_trail_zap,10,0.05,0,0.2,20,10,"[255,175,255]","[60,20,60]",0.35,256,-128,TRUE,0,7,1,0,TRUE,FALSE,TRUE,20,160,0.2,0,0,360,false,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_salmson_shot_1,A_S-F_salmson_shot,base_trail_heavySmoke,10,0.05,0.05,0.15,14,18,"[160,85,60]","[100,75,55]",0.3,256,16,TRUE,10,1,1,0,TRUE,TRUE,TRUE,10,100,0,0,0,0,false,false
+A_S-F_salmson_shot_2,A_S-F_salmson_shot,base_trail_zap,10,0,0.05,0.15,5,6,"[200,60,50]","[160,75,30]",0.5,256,16,TRUE,0,1,1,0,TRUE,TRUE,TRUE,10,100,0,0,0,0,false,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_klabu_shot_core,A_S-F_klabu_shot,base_trail_zapWithCore,10,0.05,0.05,0.15,9,3,"[255,190,30]","[180,110,20]",0.8,256,8,TRUE,10,1,1,0,TRUE,FALSE,TRUE,20,0,0.3,0,24,0,TRUE,false
+A_S-F_klabu_shot_smoke,A_S-F_klabu_shot,base_trail_heavySmoke,10,0.1,0.1,0.6,15,39,"[60,60,60]","[40,25,30]",0.5,256,4,TRUE,-5,2,1,0,TRUE,FALSE,FALSE,25,0,0.2,0,0,0,TRUE,TRUE
+A_S-F_klabu_shot_cinder,A_S-F_klabu_shot,base_trail_heavyBurn,10,0.05,0.05,0.35,17,23,"[255,60,60]","[25,60,20]",0.75,256,6,TRUE,0,3,1,0,TRUE,FALSE,TRUE,15,0,0.1,0,0,0,false,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_kabid_shot_1,A_S-F_kabid_shot,base_trail_zapWithCore,10,0,0.1,0.22,9,7,"[175,255,220]","[0,240,160]",0.6,256,-128,TRUE,0,0,1,0,TRUE,FALSE,TRUE,20,160,0,0,0,0,false,false
+A_S-F_kabid_shot_2,A_S-F_kabid_shot,base_trail_zap,10,0.05,0.1,0.15,19,23,"[130,255,220]","[180,0,180]",0.4,400,256,TRUE,0,30,1,0,TRUE,FALSE,TRUE,100,600,0.2,0,0,360,TRUE,false
+A_S-F_kabid_sub1_shot_1,A_S-F_kabid_sub1_shot,base_trail_zapWithCore,10,0,0.1,0.2,9,6,"[175,255,220]","[0,228,152]",0.6,256,-128,TRUE,0,0,1,0,TRUE,FALSE,TRUE,20,160,0,0,0,0,false,false
+A_S-F_kabid_sub1_shot_2,A_S-F_kabid_sub1_shot,base_trail_zap,10,0.05,0.09,0.14,18,22,"[130,255,220]","[180,0,180]",0.4,400,256,TRUE,0,28,1,0,TRUE,FALSE,TRUE,100,600,0.2,0,0,360,TRUE,false
+A_S-F_kabid_sub2_shot_1,A_S-F_kabid_sub2_shot,base_trail_zapWithCore,10,0,0.1,0.18,8,6,"[175,255,220]","[0,216,144]",0.6,256,-128,TRUE,0,0,1,0,TRUE,FALSE,TRUE,20,160,0,0,0,0,false,false
+A_S-F_kabid_sub2_shot_2,A_S-F_kabid_sub2_shot,base_trail_zap,10,0.05,0.09,0.13,17,21,"[130,255,220]","[180,0,180]",0.4,400,256,TRUE,0,26,1,0,TRUE,FALSE,TRUE,100,600,0.2,0,0,360,TRUE,false
+A_S-F_kabid_sub3_shot_1,A_S-F_kabid_sub3_shot,base_trail_zapWithCore,10,0,0.1,0.17,8,5,"[175,255,220]","[0,204,136]",0.6,256,-128,TRUE,0,0,1,0,TRUE,FALSE,TRUE,20,160,0,0,0,0,false,false
+A_S-F_kabid_sub3_shot_2,A_S-F_kabid_sub3_shot,base_trail_zap,10,0.05,0.09,0.12,16,20,"[130,255,220]","[180,0,180]",0.4,400,256,TRUE,0,24,1,0,TRUE,FALSE,TRUE,100,600,0.2,0,0,360,TRUE,false
+A_S-F_kabid_sub4_shot_1,A_S-F_kabid_sub4_shot,base_trail_zapWithCore,10,0,0.1,0.16,7,5,"[175,255,220]","[0,192,128]",0.6,256,-128,TRUE,0,0,1,0,TRUE,FALSE,TRUE,20,160,0,0,0,0,false,false
+A_S-F_kabid_sub4_shot_2,A_S-F_kabid_sub4_shot,base_trail_zap,10,0.05,0.08,0.11,15,19,"[130,255,220]","[180,0,180]",0.4,400,256,TRUE,0,22,1,0,TRUE,FALSE,TRUE,100,600,0.2,0,0,360,TRUE,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_kombeo_shot,A_S-F_kombeo_shot,base_trail_smoke,10,0.05,0.05,0.1,8,4,"[200,80,60]","[60,25,20]",0.3,256,8,TRUE,5,2,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,TRUE
+A_S-F_kombeo_fighter_shot,A_S-F_kombeo_fighter_shot,base_trail_smoke,10,0.05,0.05,0.1,8,4,"[200,80,60]","[60,25,20]",0.3,256,8,TRUE,5,2,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_kufikiri_HE_sub_shot_1,A_S-F_kufikiri_HE_sub_shot,base_trail_weave,10,0.05,0,0.35,7,2,"[255,100,100]","[250,150,20]",0.55,256,-256,TRUE,5,1,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+A_S-F_kufikiri_HE_sub_shot_2,A_S-F_kufikiri_HE_sub_shot,base_trail_heavySmoke,10,0.1,0.1,0.4,12,20,"[80,65,65]","[30,15,20]",0.35,256,8,TRUE,10,2,1,0,TRUE,FALSE,FALSE,0,0,0,0,0,0,TRUE,TRUE
+A_S-F_kufikiri_KE_sub_shot,A_S-F_kufikiri_KE_sub_shot,base_trail_weave,10,0.05,0,0.35,5,2,"[250,240,240]","[150,100,230]",0.45,256,-256,TRUE,2,0,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_phantasmagoria_cutter_overcharge_shot,A_S-F_phantasmagoria_cutter_overcharge_shot,base_trail_smooth,8,0.05,0,0.1,9,2,"[190,100,255]","[10,70,120]",0.7,256,-128,TRUE,5,12,1,0,TRUE,FALSE,TRUE,18,180,0.8,0,0,270,FALSE,TRUE
+A_S-F_phantasmagoria_slicer_overcharge_shot,A_S-F_phantasmagoria_slicer_overcharge_shot,base_trail_smooth,8,0.05,0,0.1,7,1,"[90,200,255]","[10,120,70]",0.4,256,-128,TRUE,5,13,1,0,TRUE,FALSE,TRUE,18,180,0.8,0,0,270,TRUE,TRUE
+A_S-F_phantasmagoria_piercer_shot_core,A_S-F_phantasmagoria_piercer_shot,base_trail_smooth,8,0.05,0,0.2,9,2,"[190,100,255]","[20,60,120]",0.5,256,-128,TRUE,5,9,1,0,TRUE,FALSE,TRUE,18,180,0.8,0,0,270,FALSE,TRUE
+A_S-F_phantasmagoria_piercer_shot_contrail,A_S-F_phantasmagoria_piercer_shot,base_trail_contrail,8,0,0.04,0.12,9,60,"[185,120,240]","[20,60,120]",0.4,256,-128,TRUE,5,0,1,0,TRUE,FALSE,TRUE,36,240,0.9,0,0,0,FALSE,TRUE
+A_S-F_phantasmagoria_piercer_overcharge_shot_core,A_S-F_phantasmagoria_piercer_overcharge_shot,base_trail_smooth,8,0.05,0,0.3,12,4,"[255,90,200]","[10,60,130]",0.8,256,-128,TRUE,5,7,1,0,TRUE,FALSE,TRUE,18,180,0.8,0,0,270,FALSE,TRUE
+A_S-F_phantasmagoria_piercer_overcharge_shot_contrail,A_S-F_phantasmagoria_piercer_overcharge_shot,base_trail_contrail,8,0,0.04,0.12,12,80,"[200,90,255]","[10,60,130]",0.55,256,-128,TRUE,5,0,1,0,TRUE,FALSE,TRUE,36,240,0.9,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_sumake_shot_1,A_S-F_sumake_shot,base_trail_smooth,10,0,0.05,0.15,8,7,"[55,155,55]","[70,55,70]",0.55,256,-128,TRUE,0,0,1,0,TRUE,FALSE,TRUE,10,80,0,0,0,0,FALSE,TRUE
+A_S-F_sumake_shot_2,A_S-F_sumake_shot,base_trail_contrail,10,0,0,0.25,8,16,"[185,55,185]","[65,55,65]",0.5,256,-128,TRUE,0,13,1,0,TRUE,FALSE,TRUE,30,200,0.3,0,0,180,false,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_coralian_bolt_1,A_S-F_coralian_bolt,base_trail_smooth,10,0.05,0,0.35,12,2,"[210,90,200]","[30,10,20]",0.7,256,-128,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_coralian_bolt_2,A_S-F_coralian_bolt,A_S-F_trail_sparkle_dense,10,0.05,0.05,0.3,25,25,"[80,150,220]","[5,15,20]",0.8,100,512,TRUE,5,25,1,0,TRUE,FALSE,TRUE,100,400,0.2,0,0,90,TRUE,TRUE
+A_S-F_coralian_bolt_3,A_S-F_coralian_bolt,A_S-F_trail_sparkle_light,10,0.05,0.1,0.25,24,24,"[80,150,220]","[5,15,20]",0.6,96,640,TRUE,5,32,1,0,TRUE,FALSE,TRUE,100,400,0.2,10,0,90,TRUE,TRUE
+A_S-F_coralian_bolt_4,A_S-F_coralian_bolt,A_S-F_trail_sparkle_light,10,0.05,0.1,0.25,24,24,"[80,150,220]","[5,15,20]",0.6,96,640,TRUE,5,32,1,0,TRUE,FALSE,TRUE,100,400,0.2,0,0,90,TRUE,TRUE
+A_S-F_coralian_bolt_5,A_S-F_coralian_bolt,A_S-F_trail_sparkle_light,10,0.05,0.1,0.25,24,24,"[80,150,220]","[5,15,20]",0.6,96,640,TRUE,5,32,1,0,TRUE,FALSE,TRUE,100,400,0.2,-10,0,90,TRUE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_compac_bolt_1,A_S-F_compac_bolt,base_trail_smooth,10,0.05,0,0.2,9,1,"[210,90,190]","[30,10,20]",0.7,256,-128,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_compac_bolt_2,A_S-F_compac_bolt,A_S-F_trail_sparkle_dense,10,0.05,0.05,0.2,16,16,"[80,150,210]","[5,15,20]",0.8,64,32,TRUE,5,20,1,0,TRUE,FALSE,TRUE,100,400,0.2,0,0,90,TRUE,TRUE
+A_S-F_compac_bolt_3,A_S-F_compac_bolt,A_S-F_trail_sparkle_light,10,0.05,0.05,0.2,16,16,"[80,150,210]","[5,15,20]",1.0,64,80,TRUE,5,25,1,0,TRUE,FALSE,TRUE,100,400,0.2,0,0,90,TRUE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_x-pulse_shot,A_S-F_x-pulse_shot,base_trail_smooth,10,0.05,0,0.15,20,14,"[150,100,255]","[15,10,51]",0.4,256,-128,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_kaksos_shot,A_S-F_kaksos_shot,base_trail_fuzzy,10,0.05,0.05,0.1,8,2,"[235,255,215]","[60,35,25]",0.4,256,-128,TRUE,5,10,1,0,TRUE,FALSE,TRUE,30,130,1.1,0,0,180,TRUE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_bolter_shot,A_S-F_bolter_shot,base_trail_fuzzy,10,0.05,0.05,0.25,6,2,"[255,235,155]","[65,30,20]",0.5,256,-128,TRUE,5,6,1,0,TRUE,TRUE,TRUE,11,110,1.1,0,0,330,TRUE,TRUE
+A_S-F_bolter_charged_shot_1,A_S-F_bolter_charged_shot,base_trail_fuzzy,10,0.05,0.05,0.25,6,2,"[255,210,75]","[100,70,25]",0.5,256,-128,TRUE,5,7,1,0,TRUE,TRUE,TRUE,11,110,1.1,0,0,330,TRUE,TRUE
+A_S-F_bolter_charged_shot_2,A_S-F_bolter_charged_shot,base_trail_smooth,10,0.05,0,0.2,22,15,"[205,175,80]","[150,125,55]",0.6,256,-128,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_spellbind_shot_1,A_S-F_spellbind_shot,base_trail_smooth,10,0.15,0.2,0.35,49,28,"[190,255,125]","[125,200,25]",0.45,256,-128,TRUE,0,1,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_spellbind_shot_2,A_S-F_spellbind_shot,base_trail_weave,10,0.1,0.15,0.2,35,14,"[190,225,125]","[125,200,25]",0.2,256,-256,TRUE,0,1,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_dem_ion_shot_1,A_S-F_dem_ion_shot,base_trail_smooth,10,0.05,0,0.15,20,14,"[50,200,205]","[5,35,36]",0.4,256,-128,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_dem_ion_shot_2,A_S-F_dem_ion_shot,base_trail_zap,10,0,0,0.25,9,6,"[25,135,130]","[15,60,95]",0.45,256,-128,TRUE,0,25,1,0,TRUE,FALSE,TRUE,90,360,0.5,0,0,240,TRUE,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_laaja_shot,A_S-F_laaja_shot,base_trail_smoke,10,0.1,0,0.2,5,8,"[235,255,215]","[75,40,25]",0.35,256,-128,TRUE,5,8,1,0,TRUE,TRUE,TRUE,10,150,1.1,0,0,360,TRUE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_macron_shot,A_S-F_macron_shot,base_trail_zapWithCore,10,0,0,0.25,5,2,"[250,160,140]","[80,100,240]",0.35,256,-128,TRUE,5,2,1,0,TRUE,FALSE,TRUE,40,400,0.2,0,0,120,TRUE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_electroThermal_shot_core,A_S-F_electroThermal_shot,base_trail_zap,10,0,0.1,0.1,9,6,"[100,175,255]","[175,10,0]",0.5,256,-128,TRUE,0,2,1,0,TRUE,FALSE,TRUE,50,200,0.5,0,0,0,FALSE,false
+A_S-F_electroThermal_shot_glow,A_S-F_electroThermal_shot,base_trail_smooth,10,0.05,0.05,0.15,23,16,"[100,175,255]","[0,30,150]",0.2,256,-128,TRUE,0,0,1,0,TRUE,FALSE,TRUE,20,400,0.1,0,0,0,FALSE,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_sakset_shot_core,A_S-F_sakset_shot,base_trail_fuzzy,10,0.1,0.15,0.5,11,6,"[205,225,255]","[160,220,140]",0.4,256,-256,true,0,6,1,0,TRUE,TRUE,TRUE,40,40,0.3,0,20,60,TRUE,false
+A_S-F_sakset_shot_smoke,A_S-F_sakset_shot,base_trail_weave,10,0.05,0,0.5,14,16,"[160,110,80]","[120,75,60]",0.3,256,256,true,0,0,1,0,TRUE,TRUE,TRUE,120,20,0,0,0,0,false,false
+A_S-F_sakset_shot_contrail,A_S-F_sakset_shot,base_trail_contrail,10,0,0.15,0.5,11,69,"[250,200,150]","[110,200,80]",0.25,256,-128,TRUE,0,0,1,0,TRUE,FALSE,TRUE,30,200,0.1,0,0,0,false,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_sakset_frag_shot,A_S-F_sakset_frag_shot,base_trail_fuzzy,10,0.05,0,0.2,6,3,"[195,255,195]","[120,45,45]",0.45,256,-128,TRUE,5,8,1,0,TRUE,TRUE,TRUE,11,220,1.1,0,0,360,TRUE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_bramble_bomb,A_S-F_bramble_bomb,base_trail_fuzzy,10,0,0.1,0.4,10,14,"[140,115,100]","[45,42,40]",0.35,256,2,TRUE,0,3,1,0,TRUE,FALSE,FALSE,0,0,0,0,0,0,TRUE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_crockett_shell_smokeA,A_S-F_crockett_shell,base_trail_heavySmoke,10,0.1,0.15,0.45,11,30,"[55,55,50]","[110,110,135]",0.4,320,5,TRUE,-20,2,1,0,TRUE,FALSE,FALSE,0,25,0,0,0,20,true,false
+A_S-F_crockett_shell_smokeB,A_S-F_crockett_shell,base_trail_smoke,10,0.05,0.1,0.15,15,7,"[200,110,150]","[10,15,45]",0.5,192,5,TRUE,10,0,1,0,TRUE,FALSE,TRUE,10,40,0.3,0,0,80,true,false
+A_S-F_crockett_shell_coreA,A_S-F_crockett_shell,base_trail_zap,10,0,0,0.25,18,27,"[225,130,30]","[185,70,50]",0.4,360,5,TRUE,0,0,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+A_S-F_crockett_shell_coreB,A_S-F_crockett_shell,base_trail_zap,10,0,0,0.3,18,27,"[225,130,30]","[75,70,160]",0.4,360,5,TRUE,0,0,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+A_S-F_crockett_shell_contrail,A_S-F_crockett_shell,base_trail_contrail,10,0,0,0.25,15,22,"[100,85,45]","[10,15,45]",0.4,192,5,TRUE,0,0,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_quicksand_shot,A_S-F_quicksand_shot,base_trail_smoke,10,0.05,0.05,0.05,3,6,"[235,200,105]","[30,25,20]",0.3,256,32,TRUE,0,3,1,0,TRUE,FALSE,TRUE,0,90,0.4,0,0,90,true,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_silaha_shot_core_1,A_S-F_silaha_shot,base_trail_zapWithCore,10,0.1,0.05,0.65,8,4,"[100,255,130]","[225,80,235]",0.5,256,-128,TRUE,5,2,1,0,TRUE,FALSE,TRUE,25,120,0.3,0,0,180,TRUE,false
+A_S-F_silaha_shot_core_2,A_S-F_silaha_shot,base_trail_zapWithCore,10,0.1,0.05,0.65,8,4,"[100,255,130]","[225,80,235]",0.5,256,-128,TRUE,5,2,1,0,TRUE,FALSE,TRUE,25,120,0.5,0,0,180,TRUE,false
+A_S-F_silaha_shot_glow,A_S-F_silaha_shot,base_trail_smooth,10,0,0.1,0.3,68,34,"[120,255,110]","[100,20,110]",0.45,32,0,TRUE,30,0,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+A_S-F_silaha_shot_contrail_1,A_S-F_silaha_shot,base_trail_contrail,10,0,0,0.65,12,100,"[110,80,190]","[80,60,80]",0.45,256,-128,TRUE,0,2,1,0,TRUE,FALSE,TRUE,60,400,0.1,0,0,0,false,TRUE
+A_S-F_silaha_shot_contrail_2,A_S-F_silaha_shot,base_trail_contrail,10,0,0,0.25,12,130,"[80,120,190]","[60,80,60]",0.36,256,-128,TRUE,12,4,1,0,TRUE,FALSE,TRUE,60,400,0.1,0,0,0,false,TRUE
+A_S-F_silaha_shot_zap,A_S-F_silaha_shot,base_trail_zap,10,0.2,0,0.6,20,30,"[255,205,255]","[44,40,85]",0.3,256,128,TRUE,8,2,1,0,TRUE,FALSE,TRUE,40,240,0.4,0,0,90,TRUE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_stamp_shot,A_S-F_stamp_shot,base_trail_smoke,10,0.05,0,0.12,5,8,"[231,146,140]","[37,22,20]",0.3,256,32,TRUE,0,4,1,0,TRUE,FALSE,TRUE,0,80,0.35,0,0,120,true,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_ionDriver_shot_1,A_S-F_ionDriver_shot,base_trail_smooth,10,0.05,0,0.2,22,15,"[90,180,255]","[9,18,51]",0.5,256,-100,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_ionDriver_shot_2,A_S-F_ionDriver_shot,base_trail_fuzzy,10,0.05,0,0.15,29,20,"[29,170,255]","[12,111,60]",0.25,256,-200,TRUE,-5,1,1,0,TRUE,FALSE,TRUE,20,300,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_heatstroke_shot_smoke,A_S-F_heatstroke_shot,base_trail_heavySmoke,10,0.1,0.15,0.65,15,36,"[55,55,50]","[110,110,135]",0.4,320,5,TRUE,-20,2,0,0,TRUE,FALSE,FALSE,0,25,0,0,0,20,true,false
+A_S-F_heatstroke_shot_core,A_S-F_heatstroke_shot,base_trail_zapWithCore,10,0,0,0.7,12,8,"[255,76,58]","[192,57,44]",0.4,240,120,TRUE,-10,0,0,0,TRUE,FALSE,FALSE,0,25,0,0,0,0,FALSE,false
+A_S-F_heatstroke_shot_sparkles_1,A_S-F_heatstroke_shot,A_S-F_trail_sparkle_light,10,0.05,0.1,0.6,18,20,"[255,121,92]","[255,101,77]",0.25,48,80,TRUE,5,1,0,0,TRUE,FALSE,FALSE,0,10,0.1,0,0,0,FALSE,false
+A_S-F_heatstroke_shot_sparkles_2,A_S-F_heatstroke_shot,A_S-F_trail_sparkle_light,10,0.05,0.1,0.6,18,20,"[255,121,92]","[255,101,77]",0.25,48,-80,TRUE,5,1,0,0,TRUE,FALSE,FALSE,0,-10,0.1,0,0,0,FALSE,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_heatstroke_sub_shot_smoke,A_S-F_heatstroke_sub_shot,base_trail_heavySmoke,10,0.1,0.1,0.35,7,17,"[55,55,50]","[110,110,135]",0.35,320,5,TRUE,-20,2,0,0,TRUE,FALSE,FALSE,0,25,0,0,0,20,true,false
+A_S-F_heatstroke_sub_shot_core,A_S-F_heatstroke_sub_shot,base_trail_zapWithCore,10,0,0,0.4,6,4,"[255,76,58]","[192,57,44]",0.4,200,100,TRUE,-10,0,0,0,TRUE,FALSE,FALSE,0,25,0,0,0,0,FALSE,false
+A_S-F_heatstroke_sub_shot_sparkles_1,A_S-F_heatstroke_sub_shot,A_S-F_trail_sparkle_light,10,0.05,0.05,0.35,9,10,"[255,121,92]","[255,101,77]",0.2,24,52,TRUE,5,1,0,0,TRUE,FALSE,FALSE,-5,10,0.1,0,0,0,FALSE,false
+A_S-F_heatstroke_sub_shot_sparkles_2,A_S-F_heatstroke_sub_shot,A_S-F_trail_sparkle_light,10,0.05,0.05,0.35,9,10,"[255,121,92]","[255,101,77]",0.2,24,-52,TRUE,5,1,0,0,TRUE,FALSE,FALSE,5,-10,0.1,0,0,0,FALSE,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_bludgeon_shot_core,A_S-F_bludgeon_shot,base_trail_zap,10,0,0,0.21,11,11,"[255,111,55]","[204,57,34]",0.69,240,5,TRUE,0,0,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+A_S-F_bludgeon_shot_smoke,A_S-F_bludgeon_shot,base_trail_heavySmoke,10,0.05,0.1,0.3,15,42,"[85,77,72]","[32,40,29]",0.5,240,5,TRUE,0,3,1,0,TRUE,FALSE,FALSE,0,0,0,0,0,0,true,false
+A_S-F_bludgeon_shot_cinder,A_S-F_bludgeon_shot,base_trail_rough,10,0,0.05,0.1,6,10,"[255,210,95]","[60,42,20]",0.95,240,5,TRUE,10,4,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_jury_shot,A_S-F_jury_shot,base_trail_smoke,10,0.06,0.06,0.16,7,4,"[200,90,90]","[60,25,20]",0.35,256,10,TRUE,5,2,1,0,TRUE,FALSE,TRUE,0,30,0.15,0,0,90,true,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_diadol_shot_core,A_S-F_diadol_shot,base_trail_zapWithCore,10,0,0.06,0.36,30,12,"[69,10,255]","[40,8,130]",0.5,256,-150,TRUE,0,2,1,0,TRUE,FALSE,TRUE,50,200,0.5,0,0,0,FALSE,false
+A_S-F_diadol_shot_contrail,A_S-F_diadol_shot,base_trail_contrail,10,0.06,0,0.25,40,18,"[240,81,180]","[50,10,200]",0.4,256,-150,TRUE,10,0,1,0,TRUE,FALSE,TRUE,20,400,0.1,0,0,0,FALSE,false
+A_S-F_diadol_shot_glow,A_S-F_diadol_shot,base_trail_smooth,10,0.06,0.06,0.5,60,15,"[151,69,255]","[215,69,169]",0.25,256,-150,TRUE,20,0,1,0,TRUE,FALSE,TRUE,20,100,0.1,0,0,0,FALSE,false
+A_S-F_diadol_shot_wiggle_1,A_S-F_diadol_shot,base_trail_zap,10,0,0.12,0.2,36,21,"[255,100,205]","[255,50,100]",0.35,200,180,TRUE,20,1,1,0,TRUE,FALSE,TRUE,90,20,0.3,0,900,150,true,false
+A_S-F_diadol_shot_wiggle_2,A_S-F_diadol_shot,base_trail_zap,10,0,0.06,0.16,36,21,"[205,205,255]","[145,0,205]",0.5,200,180,TRUE,20,1,1,0,TRUE,FALSE,TRUE,90,20,0.3,0,800,150,true,false
+A_S-F_diadol_shot_wiggle_3,A_S-F_diadol_shot,base_trail_zap,10,0,0.12,0.2,36,21,"[147,94,255]","[69,13,205]",0.4,200,180,TRUE,20,1,1,0,TRUE,FALSE,TRUE,90,110,0.3,0,0,250,true,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_colap_shot_main,A_S-F_colap_shot,base_trail_smooth,10,0.03,0,0.36,19,12,"[90,180,255]","[9,18,51]",0.35,256,-100,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_colap_shot_core_1,A_S-F_colap_shot,base_trail_smooth,10,0.01,0.06,0.1,9,7,"[220,230,255]","[25,110,170]",0.8,256,100,TRUE,20,0,1,0,TRUE,FALSE,TRUE,10,100,0.1,0,0,0,FALSE,TRUE
+A_S-F_colap_shot_core_2,A_S-F_colap_shot,base_trail_zapWithCore,10,0.02,0,0.05,6,5,"[235,245,255]","[220,230,255]",1.0,256,100,TRUE,20,0,1,0,TRUE,FALSE,TRUE,10,100,0.1,0,0,0,FALSE,TRUE
+A_S-F_colap_shot_glow,A_S-F_colap_shot,base_trail_fuzzy,10,0.03,0.07,0.22,43,17,"[29,170,255]","[12,111,60]",0.2,256,-200,TRUE,30,1,1,0,TRUE,FALSE,TRUE,20,300,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_celpek_shot_main,A_S-F_celpek_shot,base_trail_smooth,10,0.04,0,0.4,18,11,"[50,50,255]","[10,10,51]",0.35,256,-100,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_celpek_shot_core_1,A_S-F_celpek_shot,base_trail_mild,10,0.01,0.05,0.09,9,6,"[230,230,255]","[40,40,195]",0.85,256,100,TRUE,20,0,1,0,TRUE,FALSE,TRUE,10,100,0.1,0,0,0,FALSE,TRUE
+A_S-F_celpek_shot_core_2,A_S-F_celpek_shot,base_trail_smooth,10,0.01,0.03,0.04,8,7,"[235,235,255]","[169,169,195]",0.95,256,100,TRUE,20,0,1,0,TRUE,FALSE,TRUE,10,50,0.1,0,0,0,FALSE,TRUE
+A_S-F_celpek_shot_glow,A_S-F_celpek_shot,base_trail_mild,10,0.02,0.08,0.25,45,18,"[50,50,255]","[30,30,120]",0.35,256,-200,TRUE,23,1,1,0,TRUE,FALSE,TRUE,20,300,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_narc_shot_core,A_S-F_narc_shot,base_trail_fuzzy,10,0.06,0.03,0.14,8,3,"[255,243,248]","[30,20,65]",0.5,256,-128,TRUE,5,5,1,0,TRUE,TRUE,TRUE,10,100,0.8,0,0,250,TRUE,TRUE
+A_S-F_narc_shot_smoke,A_S-F_narc_shot,base_trail_heavySmoke,10,0.07,0.07,0.26,13,33,"[80,75,86]","[50,25,44]",0.5,256,4,TRUE,-5,2,1,0,TRUE,FALSE,FALSE,25,0,0.2,0,0,0,TRUE,TRUE
+A_S-F_narc_shot_glow,A_S-F_narc_shot,base_trail_smooth,10,0.03,0.04,0.13,41,27,"[152,125,228]","[64,70,216]",0.28,32,0,TRUE,22,0,1,0,TRUE,FALSE,TRUE,0,0,0,0,0,0,false,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_zalak_bolt_shot,A_S-F_zalak_bolt_shot,base_trail_smooth,10,0.05,0,0.13,15,9,"[100,250,175]","[0,55,30]",0.4,256,-128,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_expiation_1_shot_main,A_S-F_expiation_1_shot,A_S-F_trail_hard,10,0.05,0,0.3,6,3,"[0,255,100]","[0,55,110]",0.4,256,-120,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_1_shot_core,A_S-F_expiation_1_shot,base_trail_mild,10,0.01,0.03,0.08,13,5,"[215,255,210]","[0,195,120]",0.8,256,150,TRUE,10,0,1,0,TRUE,FALSE,TRUE,10,100,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_expiation_2_shot_main_1,A_S-F_expiation_2_shot,A_S-F_trail_hard,10,0.05,0.05,0.35,10,5,"[0,175,255]","[55,0,110]",0.4,256,-120,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_2_shot_main_2,A_S-F_expiation_2_shot,base_trail_smooth,10,0.05,0,0.55,10,5,"[0,160,255]","[0,100,60]",0.3,256,-120,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_2_shot_core,A_S-F_expiation_2_shot,base_trail_mild,10,0.01,0.03,0.12,21,8,"[210,215,255]","[0,120,195]",0.8,256,150,TRUE,20,0,1,0,TRUE,FALSE,TRUE,10,100,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_2_shot_glow,A_S-F_expiation_2_shot,base_trail_smooth,10,0.02,0.06,0.14,80,35,"[0,160,255]","[0,90,130]",0.5,256,-250,TRUE,35,1,1,0,TRUE,FALSE,TRUE,20,300,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_expiation_3_shot_main_1,A_S-F_expiation_3_shot,A_S-F_trail_hard,10,0.05,0.05,0.36,10,5,"[125,50,255]","[0,55,110]",0.4,256,-120,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_3_shot_main_2,A_S-F_expiation_3_shot,base_trail_mild,10,0.05,0,0.58,12,6,"[110,60,255]","[0,75,100]",0.3,256,-120,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_3_shot_core,A_S-F_expiation_3_shot,base_trail_mild,10,0.01,0.05,0.16,23,10,"[210,225,255]","[120,0,195]",0.8,256,150,TRUE,25,0,1,0,TRUE,FALSE,TRUE,10,100,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_3_shot_glow,A_S-F_expiation_3_shot,base_trail_smooth,10,0.02,0.06,0.15,80,35,"[150,40,255]","[80,25,130]",0.5,256,-250,TRUE,35,1,1,0,TRUE,FALSE,TRUE,20,300,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_3_shot_sparkle,A_S-F_expiation_3_shot,A_S-F_trail_lines,10,0.03,0.1,0.25,30,29,"[160,0,210]","[200,0,150]",0.7,256,-250,TRUE,32,0,1,0,TRUE,FALSE,TRUE,350,700,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+A_S-F_expiation_4_shot_main_1,A_S-F_expiation_4_shot,A_S-F_trail_hard,10,0.05,0.05,0.38,10,5,"[230,0,130]","[110,55,0]",0.4,256,-120,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_4_shot_main_2,A_S-F_expiation_4_shot,base_trail_mild,10,0.05,0,0.6,12,6,"[255,60,110]","[100,75,0]",0.3,256,-120,TRUE,5,0,1,0,TRUE,FALSE,TRUE,20,200,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_4_shot_core,A_S-F_expiation_4_shot,base_trail_mild,10,0.01,0.05,0.17,25,12,"[225,220,255]","[120,0,195]",0.8,256,150,TRUE,25,0,1,0,TRUE,FALSE,TRUE,10,100,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_4_shot_glow,A_S-F_expiation_4_shot,base_trail_smooth,10,0.02,0.06,0.16,80,35,"[255,40,150]","[130,25,80]",0.5,256,-250,TRUE,35,1,1,0,TRUE,FALSE,TRUE,20,300,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_4_shot_sparkle_1,A_S-F_expiation_4_shot,A_S-F_trail_lines,10,0.03,0.1,0.27,32,30,"[210,0,160]","[150,0,200]",0.65,256,-240,TRUE,32,0,1,0,TRUE,FALSE,TRUE,300,600,0.1,0,0,0,FALSE,TRUE
+A_S-F_expiation_4_shot_sparkle_2,A_S-F_expiation_4_shot,A_S-F_trail_lines,10,0.03,0.1,0.27,32,30,"[210,0,160]","[150,0,200]",0.65,280,-280,TRUE,32,0,1,0,TRUE,FALSE,TRUE,400,800,0.1,0,0,0,FALSE,TRUE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

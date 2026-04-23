@@ -1,0 +1,181 @@
+{
+    "hullName": "Laberus (DS)",
+    "hullId": "ls_laberus_ds",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/Cerberus Looted.png",
+    "height": 106,
+    "width": 72,
+    "center": [
+        36, 53
+    ],
+    "collisionRadius": 74,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 70,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_deathskull",
+        "ls_orky",
+        "ls_ramshackle",
+        "rugged",
+        "unstable_injector"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 30,
+            "locations": [
+                    31.5,       11
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": -30,
+            "locations": [
+                    31.5,      -11
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 220,
+            "angle": -220,
+            "locations": [
+                   -11.5,       10
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 220,
+            "angle": 220,
+            "locations": [
+                   -11.5,      -10
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 20,
+            "angle": 0,
+            "locations": [
+                      36,       28
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 20,
+            "angle": 0,
+            "locations": [
+                      36,      -28
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -48.5, 27.5
+            ],
+            "length": 32,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -48.5, -27.5
+            ],
+            "length": 32,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -49, 21.5
+            ],
+            "length": 32,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -49, -21.5
+            ],
+            "length": 32,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -49, 16
+            ],
+            "length": 32,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -49, -16
+            ],
+            "length": 32,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -49.5, -0.5
+            ],
+            "length": 52,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+               2,      -23,
+            12.5,      -31,
+            32.5,      -34,
+            41.5,      -13,
+            41.5,       13,
+        
+            32.5,     33.5,
+               1,       31,
+           -49.5,       33,
+             -49,    -32.5,
+              -7,    -31.5
+    ]
+}

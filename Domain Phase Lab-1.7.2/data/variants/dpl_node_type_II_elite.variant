@@ -1,0 +1,65 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 6,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "dpl_node_type_II",
+    "hullMods": [],
+    "modules": [
+        {"WS0012": "dpl_energy_transition_module_std"},
+        {"WS0013": "dpl_energy_transition_module_std"}
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dpl_node_type_II_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "dpl_doom_cannon",
+                "WS0008": "dpl_doom_cannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dpl_doom_pd",
+                "WS0004": "dpl_doom_pd"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dpl_doom_pd",
+                "WS0006": "dpl_doom_pd"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dpl_doom_gun",
+                "WS0002": "dpl_doom_gun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "dpl_doom_storm",
+                "WS0010": "dpl_doom_storm",
+                "WS0011": "dpl_doom_storm"
+            }
+        }
+    ],
+    "wings": [
+        "dpl_end_main_wing",
+        "dpl_end_swarm_II_wing",
+        "dpl_end_swarm_II_wing",
+        "dpl_end_swarm_I_wing",
+        "dpl_end_swarm_I_wing"
+    ]
+}

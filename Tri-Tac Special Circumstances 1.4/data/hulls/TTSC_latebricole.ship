@@ -1,0 +1,97 @@
+{
+  "hullName": "Latericole",
+  "hullId": "TTSC_latebricole",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTSC_latebricole.png",
+  "style": "HIGH_TECH",
+  "height": 122,
+  "width": 82,
+  "center": [41, 61],
+  "collisionRadius": 73.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 70,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-18, 23]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-18, -23]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [50, 13]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [50, -13]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [17, 17]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [17, -17]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-58.5, 7],
+      "length": 39.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-58.5, -7],
+      "length": 39.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    64, -45,
+    -67, -54.5,
+    -67, 54.5,
+    64, 45
+  ]
+}

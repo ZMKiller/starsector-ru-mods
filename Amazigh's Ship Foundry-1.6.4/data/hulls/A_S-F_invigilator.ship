@@ -1,0 +1,139 @@
+{
+  "hullName": "Invigilator",
+  "hullId": "A_S-F_invigilator",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_invigilator.png",
+  "style": "HIGH_TECH",
+  "height": 84,
+  "width": 88,
+  "center": [44, 38],
+  "collisionRadius": 67,
+  "shieldCenter": [4, -0],
+  "shieldRadius": 62,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [22, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": 60,
+      "locations": [16, 28]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": -60,
+      "locations": [16, -28]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 120,
+      "locations": [-9, 34]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -120,
+      "locations": [-9, -34]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-35, -0],
+      "length": 44,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-37, 11],
+      "length": 28,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-37, -11],
+      "length": 28,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-28, 22],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-28, -22],
+      "length": 24,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-31, 29],
+      "length": 28,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-31, -29],
+      "length": 28,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    19, -13,
+    37, -17,
+    43, -26,
+    29, -39,
+    -11, -42,
+    -19, -34,
+    -29, -31,
+    -25, -20,
+    -35, -15,
+    -35, 15,
+    -25, 20,
+    -29, 31,
+    -19, 34,
+    -11, 42,
+    29, 39,
+    43, 26,
+    37, 17,
+    19, 13
+  ]
+}

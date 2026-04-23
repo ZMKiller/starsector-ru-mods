@@ -1,0 +1,23 @@
+{
+    "baseHullId":"uw_infernus",
+    "skinHullId":"uw_tim_u1234_f2_s1_w1",
+    "hullName":"",
+	"hullDesignation":"Advanced Battlewagon",
+    "descriptionId":"uw_infernus",
+    "descriptionPrefix":"The Infernal Machine is the legendary origin of what is now known as the Infernus pattern. Rising from the grave, the Infernal Machine has returned in all her glory to terrorize the Persean Sector. Harcourt's legacy has become even stronger in rebirth, now that the Infernal Machine boasts a suite of custom upgrades.\n\nThe Infernal Machine has been upgraded with a pair of fighter bays, an Operations Center, an Advanced Targeting Core, the Diablo Cannon, and an up-sized ordnance package.",
+    "tags":[],
+    "baseValueMult":1.6,
+    "addHints":[HIDE_IN_CODEX],
+    "ordnancePoints":285,
+    "spriteName": "graphics/uw/ships/uw_infernalmachine_fs.png",
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "removeBuiltInWings":["borer_wing", "borer_wing"],
+    "builtInMods":["augmentedengines", "advancedcore"],
+    "builtInWeapons":{
+        "WS0001": "uw_diablo"
+    },
+    "builtInWings":[],
+}

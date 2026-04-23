@@ -1,0 +1,80 @@
+{
+  "hullName": "Gunnery Module",
+  "hullId": "swp_cathedral_gun_right",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/swp/ships/cathedral/swp_cathedral_gun_right.png",
+  "style": "LOW_TECH",
+  "height": 122,
+  "width": 174,
+  "center": [96, 61],
+  "collisionRadius": 114,
+  "shieldCenter": [0, -0.5],
+  "shieldRadius": 113.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "swp_linkedhull",
+    "reduced_explosion",
+    "targetingunit",
+    "always_detaches"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 15,
+      "locations": [23, 24]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 5,
+      "locations": [-17, 73]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [44, -44]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [44, -16]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 115,
+      "angle": 0,
+      "locations": [14, 68]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -52, 42,
+    -43, -67.5,
+    5, -75.5,
+    52.5, -56.5,
+    52.5, 3,
+    37.5, 12,
+    36, 34.5,
+    22, 56.5,
+    21.5, 72.5,
+    -19, 93
+  ]
+}

@@ -1,0 +1,76 @@
+{
+	"name":"Yunifer Runi",
+	"personalities":["timid", "cautious"],
+	"gender":["f"],
+	"chance":0,
+	"talkativeness":1,
+	"categoryTags":["original"],
+	
+	"lines":{
+		"start":[
+			{"id":"runi1start1", "text":"A-ah... I mustn't let t-the others down."},
+			{"id":"runi1start1", "text":"I-I can do this... I h-have to!"},
+			{"id":"runi1start1", "text":"I-I... I w-won't l-let you stop me!"}
+		],
+		"start_boss":[
+			{"id":"runi1boss1", "text":"I-I can do this... I-I hope..."},
+			{"id":"runi1boss1", "text":"I-I won't f-fail this time!"},
+		],
+		"retreat":[
+			{"id":"runi1retreat1", "text":"I-I'm sorry... I j-just can't anymore..."},
+			{"id":"runi1retreat1", "text":"P-please forgive me, I c-can't stay h-here..."}
+		],
+		"out_of_missiles":[
+			{"id":"runi1oom1", "text":"M-missiles are empty!"},
+			{"id":"runi1oom1", "text":"S-ship is o-out of missiles!"},
+		],
+		"engaged":[
+			{"id":"runi1engaged1", "text":"E-engaing the e-enemy!"},
+			{"id":"runi1engaged1", "text":"B-battlestations! T-the enemy is h-here!"}
+		],
+		"need_help":[
+			{"id":"runi1needhelp1", "text":"T-too many... I n-need assistance!"},
+			{"id":"runi1needhelp1", "text":"I-I need s-some help here, p-please!"}
+		],
+		"pursuing":[
+			{"id":"runi1pursuit1", "text":"C-chasing the e-enemy!"},
+			{"id":"runi1pursuit1", "text":"I-I won't l-let you g-get away!"},
+			{"id":"runi1pursuit1", "text":"I-I m-make sure you w-won't c-come back!"}
+		],
+		"running":[
+			{"id":"runi1run1", "text":"P-please forgive me..."}
+		],
+		"hull_90":[
+			{"id":"runi1hull901", "text":"T-the hull...!"},
+			{"id":"runi1hull901", "text":"T-the ship is h-holding...?"}
+		],
+		"hull_50":[
+			{"id":"runi1hull501", "text":"H-hull depleted halfway!"},
+			{"id":"runi1hull501", "text":"M-major damage! I-I need help!"}
+		],
+		"hull_30":[
+			{"id":"runi1hull301", "text":"S-ship is c-critical! I-it c-can't keep going!"},
+			{"id":"runi1hull301", "text":"I-I need help! The s-ship is f-falling apart!"}
+		],
+		"overload":[
+			{"id":"runi1overload1", "text":"S-ship unresponsive! "},
+			{"id":"runi1overload1", "text":"C-capacitors are o-overloaded!"}
+		],
+		"death":[
+			{"id":"runi1death1", "text":"C-CAPTAI-!"},
+			{"id":"runi1death1", "text":"I-I C-CAN'T HOL-!"},
+			{"id":"runi1death1", "text":"B-BRIDGE I-IS C-COLLAP-!"},
+		],
+		"victory":[
+			{"id":"runi1victory1", "text":"D-did I do good?"},
+			{"id":"runi1victory1", "text":"W-was my p-performance s-satisfactory?"}
+		],
+		"reply":[
+			{"id":"runi1_ruka1_reply1", "text":"D-don't be so hasty, Ruka...", "replyToId":"yennistart1"},
+			{"id":"runi1_ruka1_reply1", "text":"P-please be c-careful, Ruka...!", "replyToId":"yennistart1"},
+
+			{"id":"runi1_arthur1_reply1", "text":"P-please, you don't have to shout...", "replyToId":"arthurstart1"},
+			{"id":"runi1_arthur1_reply1", "text":"A-ah! You spooked m-me there...", "replyToId":"arthurstart1"},
+		],
+	}
+}

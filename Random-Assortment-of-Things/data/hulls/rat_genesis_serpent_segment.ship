@@ -1,0 +1,102 @@
+{
+  "hullName": "Primordial Serpent",
+  "hullId": "rat_genesis_serpent_segment",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/special/rat_genesis_serpent_Segment.png",
+  "style": "RAT_PRIMORDIAL",
+  "height": 160,
+  "width": 180,
+  "center": [90, 80],
+  "collisionRadius": 154,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 84,
+  "viewOffset": 0,
+  "builtInMods": [
+    "automated",
+    "reduced_explosion",
+    "always_detaches",
+    "rat_genesis_construct_hullmod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "SEGMENT",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-70, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [2, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-0.5, -33],
+      "length": 25,
+      "width": 20,
+      "angle": -135,
+      "contrailSize": 30,
+      "style": "PRIMORDIAL_CONSTRUCT"
+    },
+    {
+      "location": [-0.5, 33],
+      "length": 25,
+      "width": 20,
+      "angle": 135,
+      "contrailSize": 30,
+      "style": "PRIMORDIAL_CONSTRUCT"
+    }
+  ],
+  "bounds": [
+    43, -1,
+    46.5, -11,
+    51, -18.5,
+    51, -36,
+    49.5, -36,
+    38, -23,
+    32.5, -20.5,
+    39, -44.5,
+    32, -40,
+    39, -65,
+    34.5, -65,
+    19.5, -47,
+    17, -43,
+    16, -50,
+    5.5, -42,
+    0, -42,
+    -11, -31.5,
+    -11, -29,
+    -24.5, -17.5,
+    -30.5, -12,
+    -50, -2,
+    -50, 2,
+    -30.5, 12,
+    -24.5, 17.5,
+    -11, 29,
+    -11, 31.5,
+    0, 42,
+    5.5, 42,
+    16, 50,
+    17, 43,
+    19.5, 47,
+    34.5, 65,
+    39, 65,
+    32, 40,
+    39, 44.5,
+    32.5, 20.5,
+    38, 23,
+    49.5, 36,
+    51, 36,
+    51, 18.5,
+    46.5, 11,
+    43, 1
+  ]
+}

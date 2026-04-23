@@ -1,0 +1,59 @@
+{
+  "id": "sfc_ajax_graviton_beam",
+  "specClass": "beam",
+  "beamEffect":"com.fs.starfarer.api.impl.combat.GravitonBeamEffect",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "displayArcRadius": 550,
+  "turretSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_rightarm_beam.png",
+  "turretGlowSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_rightarm_beam_glow.png",
+  "hardpointSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_rightarm_beam.png",
+  "hardpointGlowSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_rightarm_beam_glow.png",
+  "glowColor": [
+    25,
+    215,
+    255,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    37.5,
+    -13.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    62,
+    -13.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    5,
+    135,
+    175,
+    255
+  ],
+  "coreColor": [
+    200,
+    225,
+    255,
+    255
+  ],
+  "width": 10,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 260,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "graviton_beam_loop"
+}

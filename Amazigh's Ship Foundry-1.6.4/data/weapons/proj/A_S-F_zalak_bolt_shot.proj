@@ -1,0 +1,32 @@
+{
+	"id":"A_S-F_zalak_bolt_shot",
+	"specClass":"projectile",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.arktech.ASF_ZalakOnHitEffect",
+
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+
+#	"spawnType":"BALLISTIC_AS_BEAM",
+#	"collisionClass":"RAY",
+#	"collisionClassByFighter":"RAY_FIGHTER",
+
+	"length":30.0,
+	"width":5,
+	"fadeTime":0.3,
+
+	"fringeColor":[100,250,175,255],
+	"coreColor":[220,240,255,255],
+	"glowColor":[0,255,150,55],
+
+	#"fringeColor":[175,100,250,255],
+	#"coreColor":[255,220,240,255],
+	#"glowColor":[150,0,255,125],
+
+	"glowRadius":35,
+	"hitGlowRadius":45,
+#	"textureScrollSpeed":64.0,
+#	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"
+}

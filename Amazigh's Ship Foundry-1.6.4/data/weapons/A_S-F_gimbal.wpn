@@ -1,0 +1,36 @@
+{
+  "id": "A_S-F_gimbal",
+  "specClass": "projectile",
+  "projectileSpecId": "A_S-F_gimbal_mssl",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "displayArcRadius": 1000,
+	"turretSprite":"graphics/weapons/A_S-F_gimbal_turret_base.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_gimbal_hardpoint_base.png",
+
+	"hardpointOffsets":[13,6, 13,-6],
+	"turretOffsets":[9,7, 9,-7],
+	"hardpointAngleOffsets":[4, -4],
+	"turretAngleOffsets":[4, -4],
+
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 8,
+    "particleSizeRange": 14,
+    "cloudParticleCount": 3,
+    "cloudDuration": 0.8,
+    "cloudRadius": 7,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 1,
+    "blowbackLength": 18,
+    "blowbackSpread": 9,
+    "particleColor": [
+      150,
+      170,
+      160,
+      130
+    ]
+  },
+  "fireSoundTwo": "annihilator_fire"
+}

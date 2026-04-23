@@ -1,0 +1,75 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 26,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "swp_boss_eagle",
+    "hullMods": [
+        "targetingunit",
+        "heavyarmor",
+        "hardenedshieldemitter",
+        "fluxdistributor",
+        "unstable_injector",
+        "armoredweapons"
+    ],
+    "permaMods": [
+        "targetingunit",
+        "heavyarmor",
+        "hardenedshieldemitter",
+        "fluxdistributor",
+        "unstable_injector"
+    ],
+    "sMods": [
+        "targetingunit",
+        "heavyarmor",
+        "hardenedshieldemitter",
+        "fluxdistributor",
+        "unstable_injector"
+    ],
+    "variantId": "swp_boss_eagle_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "plasma"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "harpoonpod",
+                "WS0005": "harpoonpod"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "hveldriver"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "railgun",
+                "WS0007": "railgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "pdburst",
+                "WS0009": "pdburst",
+                "WS0010": "pdlaser",
+                "WS0011": "pdlaser",
+                "WS0012": "pdlaser",
+                "WS0013": "pdlaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "heavyburst"}
+        }
+    ]
+}

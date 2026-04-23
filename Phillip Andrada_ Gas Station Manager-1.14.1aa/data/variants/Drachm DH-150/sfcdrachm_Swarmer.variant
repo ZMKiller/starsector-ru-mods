@@ -1,0 +1,53 @@
+{
+  "variantId": "sfcdrachm_Swarmer",
+  "hullId": "sfcdrachm",
+  "displayName": "Swarmer",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 0,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "missleracks",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "sfcmicropod",
+        "WS0007": "sfcmicropod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "sfcmicrolauncher",
+        "WS0010": "sfcmicrolauncher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "sfcampulsegun",
+        "WS0008": "sfcampulsegun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser",
+        "WS0003": "pdlaser",
+        "WS0004": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

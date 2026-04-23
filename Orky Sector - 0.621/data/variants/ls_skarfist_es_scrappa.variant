@@ -1,0 +1,67 @@
+{
+    "displayName": "Scrappa",
+    "fluxCapacitors": 22,
+    "fluxVents": 12,
+    "goalVariant": true,
+    "hullId": "ls_skarfist_es",
+    "hullMods": [
+        "ls_bosspole",
+        "armoredweapons",
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_skarfist_es_scrappa",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_sola_flare_kannon",
+                "WS 001": "ls_sola_flare_kannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "ls_supashoota_turret",
+                "WS 007": "ls_supashoota_turret",
+                "WS 004": "ls_big_lobba",
+                "WS 003": "ls_big_lobba",
+                "WS 002": "ls_nail_blasta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 014": "ls_grot_rail",
+                "WS 012": "ls_grot_rail",
+                "WS 013": "ls_grot_rail",
+                "WS 011": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 016": "ls_jet_shoota",
+                "WS 015": "ls_jet_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_twin_shoota",
+                "WS 005": "ls_twin_shoota",
+                "WS 010": "ls_flakka_dakka",
+                "WS 009": "ls_big_shoota"
+            }
+        }
+    ],
+    "wings": [
+        "ls_fighta_bomma_es_wing",
+        "ls_deff_dread_es_wing"
+    ]
+}

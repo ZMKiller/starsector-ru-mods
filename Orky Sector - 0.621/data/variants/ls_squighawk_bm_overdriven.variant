@@ -1,0 +1,36 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 5,
+    "fluxVents": 5,
+    "goalVariant": false,
+    "hullId": "ls_squighawk_bm",
+    "hullMods": [
+        "ls_orky_override",
+        "ls_golden_paint"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_squighawk_bm_overdriven",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ls_torpedo_bm_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_rattler_cannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_flame_belcha"
+            }
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+	"id":"dpl_phase_cm",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	"onFireEffect":"data.scripts.weapons.dpl_phaselightEffect",
+	"sprite":"graphics/missiles/dpl_flechette_sml.png",
+	"size":[6,10],	
+	"center":[3,5],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[50,50,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":175,
+					 "coreRadius":75, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":5.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":200,
+					 "particleColor":[50,50,255,255],
+					 "explosionColor":[50,50,255,255],
+					 "detailedExplosionFlashColorFringe":[100,100,255,255],
+					 "detailedExplosionFlashRadius":500,
+					 "useDetailedExplosion":true
+					 },
+	"dudProbabilityOnFlameout":0,
+	"fizzleOnReachingWeaponRange":true,					 
+	"armingTime":0,
+	"flameoutTime":0.2, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.2, # time spent without the engine glow being rendered
+	"fadeTime":0.2, # fadeout duration			
+	"glowColor":[50,50,255,75],
+	"glowRadius":50,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"applyOnHitEffectWhenPassThrough":false,
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":100,
+				  "acc":500,
+				  "dec":500},
+	"engineSlots":[{"id":"ES1",
+					#"loc":[-7, 0],
+					"loc":[0, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[50,50,255,0],
+						"glowSizeMult":2.5,
+						"glowAlternateColor":[100,100,255,255],
+						"contrailDuration":2,
+						"contrailWidthMult":1.5,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[50,50,255,75],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":25.0,
+				    "angle":180.0}],
+}
+			

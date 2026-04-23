@@ -1,0 +1,50 @@
+{
+  "variantId": "A_S-F_initone_lg_ass",
+  "hullId": "A_S-F_initone_lg",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 22,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "amblaster",
+        "WS0005": "amblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "A_S-F_ionDriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "A_S-F_ir_autopulse",
+        "WS0003": "A_S-F_ir_autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "A_S-F_micropulser",
+        "WS0007": "A_S-F_micropulser",
+        "WS0008": "A_S-F_plas_burster"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,33 @@
+{
+  "variantId": "PAMED_odonata_oppressor",
+  "hullId": "PAMED_odonata",
+  "displayName": "Oppressor",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxcoil",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "heavyblaster",
+        "WS0003": "heavyblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ioncannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

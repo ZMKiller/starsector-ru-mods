@@ -1,0 +1,119 @@
+{
+  "hullName": "Hylozoist",
+  "hullId": "TTSC_hylozoist",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTSC_hylozoist.png",
+  "style": "HIGH_TECH",
+  "height": 98,
+  "width": 92,
+  "center": [46, 49],
+  "collisionRadius": 63.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 61,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -21, 3,
+        -21, -2
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [14, 32]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -90,
+      "locations": [14, -32]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 180,
+      "locations": [-34, -32]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -180,
+      "locations": [-34, 32]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-45, 21.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-45, -21.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-44.5, -8.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-44.5, 8.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-45, -0],
+      "length": 39.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    54.5, -20.5,
+    18, -53.5,
+    -13.5, -42,
+    -50, -44.5,
+    -50, 44.5,
+    -13.5, 42,
+    18, 53.5,
+    54.5, 20.5
+  ]
+}

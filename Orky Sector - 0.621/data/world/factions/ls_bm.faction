@@ -1,0 +1,219 @@
+{
+  "id": "ls_bm",
+  "color": [245, 245, 20, 255],
+  #"baseUIColor": [75, 200, 0, 255],
+  #"darkUIColor": [32, 85, 0, 175],
+  #"gridUIColor": [95, 255, 0, 75],
+  "displayName": "Bad Moons",
+  "displayNameWithArticle": "the Bad Moons",
+  "displayNameLong": "Bad Moons",
+  "displayNameLongWithArticle": "the Bad Moons",
+  "logo": "graphics/factions/ls_bm_banner.png",
+  "crest": "graphics/factions/ls_bm_crest.png",
+  "shipNamePrefix": "BM",
+  "shipNameSources": {
+    "ls_ork": 1,
+  },
+  "names": {
+    "ork": 1,
+  },
+  # variantOverrides restricts hulls to listed variants and adjusts their probability
+  "variantOverrides": {
+  },
+  # multiplier for how often hulls show up in the faction's fleets
+  "hullFrequency": {
+    "tags": {
+      "ls_bm": 1,
+      "ls_bm_bp": 1,
+      "ls_orky_bp": 1,
+    },
+    "hulls": {
+    },
+  },
+  # ships the faction gets access to when importing S&W out-of-faction
+  "shipsWhenImporting": {
+    "tags": ["base_bp","ls_bm_bp","ls_orky_bp"],
+    "hulls": [
+    ],
+  },
+  "knownShips": {
+    "tags": ["base_bp", "ls_bm_bp", "ls_orky_bp"],
+    "hulls": [
+      "atlas",
+      "prometheus",
+      "ls_aperion_bm",
+      "ls_basilisk_bm",
+      "ls_krima_bm",
+      "ls_onihime_bm",
+      "ls_Snazdreg_bm",
+      "ls_paragork_bm",
+
+    ],
+  },
+  # listing ships here will make the faction mostly use them even if other hulls become available
+  "priorityShips": {
+    "tags": ["ls_bm_bp"],
+    "hulls": [
+      "ls_haula",
+      "ls_mega_haula",
+      "ls_aperion_bm",
+      "ls_basilisk_bm",
+      "ls_krima_bm",
+      "ls_onihime_bm",
+      "ls_Snazdreg_bm",
+      "ls_paragork_bm",
+     "ls_loot_horda",
+
+    ],
+  },
+  "knownFighters": {
+    "tags": ["base_bp", "ls_bm_bp", "ls_orky_bp"],
+    "fighters": [
+    ],
+  },
+  "priorityFighters": {
+    "tags": [ls_es_bp],
+    "fighters": [
+    ],
+  },
+  "knownWeapons": {
+    "tags": ["base_bp", "ls_bm_bp", "ls_orky_bp"],
+    "weapons": [
+
+    ],
+  },
+  "priorityWeapons": {
+    "tags": ["ls_bm_bp", "ls_orky_bp"],
+    "weapons": [
+    ],
+  },
+  "knownHullMods": {
+    "tags": ["base_bp","standard"],
+    "hullMods": [
+      "advancedshieldemitter",
+      "turretgyros",
+      "armoredweapons",
+      "augmentedengines",
+      "converted_hangar",
+      "expanded_deck_crew",
+      "magazines",
+      "missleracks",
+      "extendedshieldemitter",
+      "frontemitter",
+      "frontshield",
+      "heavyarmor",
+      "insulatedengine",
+      "nav_relay",
+      "operations_center",
+      "recovery_shuttles",
+      "fluxbreakers",
+      "surveying_equipment",
+      "efficiency_overhaul",
+      "ls_bosspole",
+      "ls_orky_override",
+      "ls_ard_case",
+      "ls_blitza",
+      "ls_thunda_charga",
+      "ls_explody_propella",
+      "ls_git_finda",
+      "ls_pump",
+      "ls_rokkit_runt",
+      "ls_grot_rigger",
+      "ls_grot_oiler",
+      "ls_golden_paint",
+    ],
+  },
+  "factionDoctrine": {
+    "warships": 4,
+    "carriers": 2,
+    "phaseShips": 1,
+    "officerQuality": 2,
+    "shipQuality": 2,
+    "numShips": 3,
+    "shipSize": 2,
+    "aggression": 5,
+    "combatFreighterProbability": 0.3, # instead of some portion of the freighters in a fleet
+    "combatFreighterCombatUseFraction": 0.5, # as part of the normal combat lineup
+    "combatFreighterCombatUseFractionWhenPriority": 1, # as part of normal combat lineup, when marked as priority ship
+    "autofitRandomizeProbability": 0.25,
+    "commanderSkillsShuffleProbability": 0,
+    "commanderSkills": [
+      "crew_training",
+      "coordinated_maneuvers",
+    ],
+  },
+  "illegalCommodities": [
+    "ai_cores",
+  ],
+  "music": {
+		"theme":"music_pirates_market_neutral",
+		"market_neutral":"music_pirates_market_neutral",
+		"market_hostile":"music_pirates_market_hostile",
+		"market_friendly":"music_pirates_market_friendly",
+		"encounter_neutral":"music_pirates_encounter_neutral",
+		"encounter_hostile":"music_pirates_encounter_hostile",
+		"encounter_friendly":"music_pirates_encounter_friendly",
+  },
+  "portraits": {
+    "standard_male": [
+      "graphics/portraits/ls_ork_1.png",
+      "graphics/portraits/ls_ork_2.png",
+      "graphics/portraits/ls_ork_bm1.png",
+      "graphics/portraits/ls_ork_ds2.png",
+
+    ],
+    "standard_female": [
+      "graphics/portraits/ls_ork_1.png",
+      "graphics/portraits/ls_ork_2.png",
+      "graphics/portraits/ls_ork_bm1.png",
+      "graphics/portraits/ls_ork_ds2.png",
+    ],
+  },
+  "ranks": {
+    "ranks": {
+      "spaceCommander": {"name": "Boss"},
+    },
+    "posts": {
+      "patrolCommander": {"name": "Flyboss"},
+      "fleetCommander": {"name": "Warlord"},
+      "baseCommander": {"name": "Base Boss"},
+      "administrator": {"name": "Big Mek"},
+    },
+  },
+  "custom": {
+    "offersCommissions": true,
+    "engageWhenEvenStrength":true,
+    "ignoreTradeWithEnemiesForReputation":true,
+    "willTradeWhenHostile":true,
+    "engagesInHostilities": true,
+    "buysAICores": true,
+    "allowsTransponderOffTrade":true,
+    "AICoreValueMult": 1,
+    "AICoreRepMult": 1,
+    "buysSurveyData": true,
+    "hostilityImpactOnGrowth": true,
+    "caresAboutAtrocities": false,
+    "punitiveExpeditionData": {
+      "vsCompetitors": true,
+      "vsFreePort": false,
+      "canBombard": true,
+      "territorial": true,
+    },
+  },
+  "fleetTypeNames": {
+    "trade": "Konvoy",
+    "smallTrader": "Haula",
+    "tradeLiner": "Boyz Konvoy",
+    "patrolSmall": "Toof Mob",
+    "patrolMedium": "Warband",
+    "patrolLarge": "Waaagh! Fleet",
+    "inspectionFleet": "Da Boss' Boyz",
+    #"mercScout": "Seeker",
+    #"mercBountyHunter": "Judgment-bringer",
+    #"mercPrivateer": "Abjudicator",
+    #"mercPatrol": "Crusading Fleet",
+    #"mercArmada": "Crusading Armada",
+    "taskForce": "Waaagh! Fleet",
+  },
+},
+

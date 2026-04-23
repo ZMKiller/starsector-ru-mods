@@ -1,0 +1,33 @@
+{
+  "variantId": "A_S-F_condor_barrage",
+  "hullId": "condor",
+  "displayName": "Barrage",
+  "goalVariant": false,
+  "fluxCapacitors": 4,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightmg",
+        "WS 002": "lightmg"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "pilum"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "perdition_wing",
+    "piranha_wing"
+  ]
+}

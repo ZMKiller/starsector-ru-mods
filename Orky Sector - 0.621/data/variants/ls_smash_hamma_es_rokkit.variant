@@ -1,0 +1,53 @@
+{
+    "displayName": "Rokkit",
+    "fluxCapacitors": 11,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "ls_smash_hamma_es",
+    "hullMods": [
+        "targetingunit",
+        "ls_bosspole",
+        "ls_rokkit_runt"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_smash_hamma_es_rokkit",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "ls_rokkitpod",
+                "WS 005": "ls_rokkitpod",
+                "WS 002": "ls_rokkit_launcha",
+                "WS 003": "ls_rokkit_launcha",
+                "WS 001": "ls_nail_blasta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "ls_rokkit_lobba",
+                "WS 012": "ls_rokkit_lobba",
+                "WS 013": "ls_mini_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "ls_mega_bolta"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_big_shoota",
+                "WS 006": "ls_big_shoota",
+                "WS 009": "ls_big_shoota",
+                "WS 008": "ls_big_shoota"
+            }
+        }
+    ]
+}

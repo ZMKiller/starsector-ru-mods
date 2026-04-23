@@ -1,0 +1,100 @@
+{
+    "hullName": "ls_stompa_factory_f",
+    "hullId": "ls_stompa_factory_f",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_stompa_factory/ls_stompa_factory_f_module.png",
+    "height": 77,
+    "width": 64,
+    "center": [
+        32, 38.5
+    ],
+    "collisionRadius": 70,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 72,
+    "viewOffset": 0,
+    "builtInMods": [
+        "always_detaches",
+        "ls_RokModule",
+        "ls_supa_gitfinda",
+        "missile_reload",
+        "ls_orky",
+        "ls_deathskull"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      22,     12.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 220,
+            "angle": 0,
+            "locations": [
+                    31.5,      -16
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 140,
+            "angle": -90,
+            "locations": [
+                   -30.5,    -17.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": 0,
+            "locations": [
+                       2,       -5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 60,
+            "locations": [
+                     -25,       10
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+              22,      5.5,
+              22,    -10.5,
+              37,    -13.5,
+              37,    -18.5,
+              12,      -23,
+        
+               8,      -30,
+           -38.5,    -30.5,
+           -38.5,     14.5,
+             -31,     26.5,
+            25.5,       24
+    ]
+}

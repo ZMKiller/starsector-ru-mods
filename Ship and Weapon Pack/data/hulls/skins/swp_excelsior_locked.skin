@@ -1,0 +1,16 @@
+{
+	"baseHullId":"swp_excelsior",
+	"skinHullId":"swp_excelsior_locked",
+    "incompatibleWithBaseHull":false,
+	"descriptionPrefix":"This ship has been locked down by onboard failsafe protocols, prohibiting all but the most basic functions necessary to remain spaceworthy. All control systems have been scrambled and encrypted with incredible thoroughness. Even an Alpha Core would have extreme difficulty restoring this ship to its combat potential.",
+    "hullName":"",
+	"hullDesignation":"Superfrigate",
+    "tags":["no_autofit", "no_dealer", "hide_in_codex"],
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "builtInMods":["reinforcedhull", "swp_locked"],
+	"builtInWeapons":{
+    },
+}

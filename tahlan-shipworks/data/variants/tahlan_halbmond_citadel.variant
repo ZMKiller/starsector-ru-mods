@@ -1,0 +1,44 @@
+{
+    "displayName": "Citadel",
+    "fluxCapacitors": 0,
+    "fluxVents": 30,
+    "hullId": "tahlan_halbmond",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_halbmond_citadel",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_sturmkanone_m2",
+                "WS0004": "tahlan_sturmkanone_m2"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "tahlan_kriegsmesser",
+                "WS0002": "tahlan_kriegsmesser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "tahlan_hueter",
+                "WS0006": "tahlan_hueter",
+                "WS0007": "tahlan_hueter",
+                "WS0008": "tahlan_hueter"
+            }
+        }
+    ],
+    "wings": [
+        "tahlan_eisenflug_regalia_wing",
+        "tahlan_eisenflug_regalia_wing",
+        "tahlan_eisenflug_regalia_wing",
+        "tahlan_eisenflug_regalia_wing"
+    ]
+}

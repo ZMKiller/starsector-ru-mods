@@ -1,0 +1,64 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 42,
+    "fluxVents": 40,
+    "goalVariant": true,
+    "hullId": "ls_hulk_ds",
+    "hullMods": [
+        "targetingunit",
+        "autorepair"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_hulk_ds_custom",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "hellbore",
+                "WS 004": "ls_eye_of_mork"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "devastator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "ls_grot_hanger",
+                "WS 007": "ls_grot_hanger",
+                "WS 011": "ls_doomdiva_launcher",
+                "WS 000": "locust"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 014": "flak",
+                "WS 010": "flak",
+                "WS 009": "flak",
+                "WS 006": "ls_bubble_chukka",
+                "WS 003": "ls_bubble_chukka"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "heavyac",
+                "WS 002": "ls_tellyporta_blasta"
+            }
+        }
+    ],
+    "wings": [
+        "ls_attack_fighta_ds_wing",
+        "ls_fighta_bomma_ds_wing",
+        "ls_fighta_bomma_ds_wing"
+    ]
+}

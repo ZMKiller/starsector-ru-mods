@@ -1,0 +1,51 @@
+{
+  "id": "Xhan_Zarukel",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_Zarukel_Shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/Xhan_zarukel_TURRET.png",
+  "turretGlowSprite": "graphics/weapons/Xhan_zarukel_TURRET_GLOW.png",
+  "hardpointSprite": "graphics/weapons/Xhan_zarukel_HARDPOINT.png",
+  "hardpointGlowSprite": "graphics/weapons/Xhan_zarukel_HARDPOINT_GLOW.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    128,
+    255,
+    198,
+    255
+  ],
+  "turretOffsets": [
+    24,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    28,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 25,
+    "spread": 80,
+    "particleSizeMin": 4,
+    "particleSizeRange": 5,
+    "particleDuration": 0.12,
+    "particleCount": 10,
+    "particleColor": [
+      128,
+      255,
+      198,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_ZARUKEL_FIRE_SOUND"
+}

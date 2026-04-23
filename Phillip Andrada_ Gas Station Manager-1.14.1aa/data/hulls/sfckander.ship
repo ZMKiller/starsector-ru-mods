@@ -1,0 +1,171 @@
+{
+  "hullName": "Kander KR-150",
+  "hullId": "sfckander",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/PAGSM/ships/tanker_destroyer_diktat_long_v1.png",
+  "style": "MIDLINE",
+  "height": 200,
+  "width": 80,
+  "center": [40, 100],
+  "collisionRadius": 147,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 133,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 90,
+      "locations": [16, 23.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -90,
+      "locations": [16, -23.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 90,
+      "locations": [-53, 26.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -90,
+      "locations": [-53, -26.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 180,
+      "locations": [-80, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [38, -0],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [70, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [36, 30],
+      "length": 11.49,
+      "width": 7.6,
+      "angle": 162,
+      "contrailSize": 7.6,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [36, -30],
+      "length": 11.49,
+      "width": 7.6,
+      "angle": -162,
+      "contrailSize": 7.6,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-97.5, 25],
+      "length": 24,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-97.5, -25],
+      "length": 24,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-97.5, 9],
+      "length": 22,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-97.5, -9],
+      "length": 22,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-97.5, -0],
+      "length": 30,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    95, -12.5,
+    72, -28,
+    65, -39,
+    48.5, -40,
+    38, -33.5,
+    31, -25,
+    24.5, -32,
+    -35, -35,
+    -46.5, -37.5,
+    -63.5, -38,
+    -67, -31.5,
+    -97.5, -31.5,
+    -97.5, 31.5,
+    -67, 31.5,
+    -63.5, 38,
+    -46.5, 37.5,
+    -35, 35,
+    24.5, 32,
+    31, 25,
+    38, 33.5,
+    48.5, 40,
+    65, 39,
+    72, 28,
+    82.5, 23,
+    97, 22.5,
+    97, 17.5,
+    85.5, 17.5,
+    95.5, 8.5
+  ]
+}

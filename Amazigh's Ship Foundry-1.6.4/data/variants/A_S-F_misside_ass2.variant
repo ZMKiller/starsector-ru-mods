@@ -1,0 +1,43 @@
+{
+  "variantId": "A_S-F_misside_ass2",
+  "hullId": "A_S-F_misside",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "gazer",
+        "WS0002": "gazer",
+        "WS0003": "gazer",
+        "WS0004": "gazer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightag",
+        "WS0007": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "ioncannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

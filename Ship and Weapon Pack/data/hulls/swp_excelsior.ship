@@ -1,0 +1,113 @@
+{
+  "hullName": "Excelsior",
+  "hullId": "swp_excelsior",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/swp/ships/phase/swp_excelsior.png",
+  "style": "EXCELSIOR",
+  "height": 116,
+  "width": 92,
+  "center": [46, 49],
+  "collisionRadius": 65,
+  "shieldCenter": [6, -0],
+  "shieldRadius": 57.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "swp_excelsiorreactor",
+    "swp_phasedrive",
+    "high_maintenance",
+    "phasefield",
+    "delicate"
+  ],
+  "builtInWeapons": {
+    "WS0001": "swp_excelsiorcannon",
+    "WS0004": "swp_excelsior_auxglow"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [10.25, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [9.5, 23]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [9.5, -23]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [21, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-31, -0],
+      "length": 80,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "SWP_EXCELSIOR"
+    },
+    {
+      "location": [-24, 16.5],
+      "length": 48,
+      "width": 14,
+      "angle": 172,
+      "contrailSize": 14,
+      "style": "SWP_EXCELSIOR"
+    },
+    {
+      "location": [-24, -16.5],
+      "length": 48,
+      "width": 14,
+      "angle": -172,
+      "contrailSize": 14,
+      "style": "SWP_EXCELSIOR"
+    }
+  ],
+  "bounds": [
+    32.5, -5.5,
+    56.5, -6.5,
+    58, -11.5,
+    25, -18.5,
+    -13, -37,
+    -15.5, -23,
+    -23, -19.5,
+    -25, -12.5,
+    -39, -12,
+    -30.5, -7.5,
+    -30, 0,
+    -30.5, 7.5,
+    -39, 12,
+    -25, 12.5,
+    -23, 19.5,
+    -15.5, 23,
+    -13, 37,
+    25, 18.5,
+    58, 11.5,
+    56.5, 6.5,
+    32.5, 5.5,
+    36.5, -0
+  ]
+}

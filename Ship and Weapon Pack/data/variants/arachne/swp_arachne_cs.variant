@@ -1,0 +1,34 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 5,
+    "fluxVents": 11,
+    "goalVariant": true,
+    "hullId": "swp_arachne",
+    "hullMods": [
+        "magazines",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_arachne_cs",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "swp_lightninggun"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "breachpod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "railgun",
+                "WS0004": "railgun"
+            }
+        }
+    ]
+}

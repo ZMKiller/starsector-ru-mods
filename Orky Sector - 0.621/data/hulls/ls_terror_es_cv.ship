@@ -1,0 +1,205 @@
+{
+    "hullName": "Terror (ES -CV)",
+    "hullId": "ls_terror_es_cv",
+    "hullSize": "DESTROYER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_terror_es_cv.png",
+    "height": 162,
+    "width": 148,
+    "center": [
+        73.5, 81
+    ],
+    "collisionRadius": 120,
+    "coversColor": "",
+    "shieldCenter": [
+        0, -0.5
+    ],
+    "shieldRadius": 110,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_evilsuns",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                      59,       45
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 2,
+            "angle": 0,
+            "locations": [
+                      59,      -45
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 110,
+            "locations": [
+                   -20.5,       43
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 250,
+            "locations": [
+                   -20.5,      -43
+            ]
+        },
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                    54.5,        0
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      44,       23,
+                       7,     54.5,
+                     -34,        0
+            ]
+        },
+        {
+            "id": "LB 001",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      44,      -23,
+                   -55.5,        0,
+                       7,    -54.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -77.5, 27.5
+            ],
+            "length": 64,
+            "width": 18,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -77.5, -28.5
+            ],
+            "length": 64,
+            "width": 18,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -74.5, 14
+            ],
+            "length": 56,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -74.5, -15
+            ],
+            "length": 56,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -74.5, 39.5
+            ],
+            "length": 56,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -74.5, -40.5
+            ],
+            "length": 56,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+             -66,     -8.5,
+           -77.5,    -19.5,
+           -77.5,      -36,
+           -72.5,    -46.5,
+           -43.5,    -44.5,
+        
+           -29.5,      -59,
+             -14,      -64,
+              29,    -63.5,
+              29,    -50.5,
+            56.5,    -50.5,
+        
+            56.5,      -39,
+              49,      -39,
+              70,      -10,
+              70,       10,
+              49,       39,
+        
+            56.5,       39,
+            56.5,     50.5,
+              29,     50.5,
+              29,     63.5,
+             -14,     63.5,
+        
+           -29.5,       58,
+           -43.5,     43.5,
+           -72.5,     45.5,
+           -77.5,       35,
+           -77.5,     18.5,
+        
+             -66,      7.5
+    # 26 points total.
+    ]
+}

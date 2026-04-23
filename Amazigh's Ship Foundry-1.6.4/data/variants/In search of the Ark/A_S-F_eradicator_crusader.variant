@@ -1,0 +1,64 @@
+{
+  "variantId": "A_S-F_eradicator_crusader",
+  "hullId": "eradicator",
+  "displayName": "Crusader",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "armoredweapons",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "chaingun",
+        "WS 009": "lightag"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 000": "hammer",
+        "WS 001": "hammer",
+        "WS 002": "hammer",
+        "WS 003": "hammer",
+        "WS 004": "hammer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "heavyac",
+        "WS 010": "lightdualac",
+        "WS 011": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "vulcan",
+        "WS 012": "vulcan",
+        "WS 013": "vulcan",
+        "WS 014": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

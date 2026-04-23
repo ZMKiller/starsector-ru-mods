@@ -1,0 +1,78 @@
+{
+  "variantId": "A_S-F_margrave_elt2",
+  "hullId": "A_S-F_margrave",
+  "displayName": "Elite",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "magazines",
+    "missile_autoloader"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "A_S-F_albatreos",
+        "WS0004": "A_S-F_albatreos"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "A_S-F_sprocket",
+        "WS0006": "A_S-F_sprocket",
+        "WS0007": "A_S-F_sprocket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mjolnir"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ionbeam",
+        "WS0012": "taclaser",
+        "WS0014": "taclaser",
+        "WS0016": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "guardian",
+        "WS0009": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "heavyburst",
+        "WS0013": "pdburst",
+        "WS0015": "pdburst",
+        "WS0017": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

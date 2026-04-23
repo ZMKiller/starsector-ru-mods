@@ -1,0 +1,58 @@
+{
+  "id": "TTSC_tachyonlance",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "com.fs.starfarer.api.impl.combat.TachyonLanceEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/TTSC_tachyon_lance_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/TTSC_tachyon_lance_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/TTSC_tachyon_lance_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/TTSC_tachyon_lance_hardpoint_glow.png",
+  "glowColor": [
+    15,
+    100,
+    255,
+    235
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    -3,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    85,
+    25,
+    215,
+    255
+  ],
+  "coreColor": [
+    25,
+    255,
+    255,
+    255
+  ],
+  "width": 25,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 292,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "tachyon_lance_fire"
+}

@@ -1,0 +1,43 @@
+{
+	"id":"dpl_null_swarm_rocket",
+	"specClass":"missile",
+	#"missileType":"ROCKET",
+	"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
+	"onFireEffect":"data.scripts.weapons.dpl_null_swarmEffect",
+	"onHitEffect":"data.scripts.weapons.dpl_null_swarmEffect",
+	"sprite":"graphics/missiles/dpl_missile_null_swarm.png",
+	"size":[6,20],	
+	"center":[3,10],
+	"collisionRadius":15,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[225,175,125,235],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":85, # purely visual
+	"flameoutTime":1, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+	"engineSpec":{"turnAcc":1750,
+				  "turnRate":270,
+				  "acc":2500,
+				  "dec":2500},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[225,175,125,255],
+						"contrailDuration":.5,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[225,175,125,155],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":8.0,
+				    "length":50.0,
+				    "angle":180.0}]
+}
+
+			

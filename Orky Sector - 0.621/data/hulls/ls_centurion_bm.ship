@@ -1,0 +1,146 @@
+{
+    "hullName": "Centurion (BM)",
+    "hullId": "ls_centurion_bm",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_centurion_bm.png",
+    "height": 98,
+    "width": 104,
+    "center": [
+        52, 49
+    ],
+    "collisionRadius": 82,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 76,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_badmoons",
+        "rugged"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 45,
+            "locations": [
+                      20,       31
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "renderOrderMod": 101,
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                       3,        0
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 140,
+            "angle": 135,
+            "locations": [
+                   -17.5,       23
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": -135,
+            "locations": [
+                   -17.5,      -23
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    30.5,    -27.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -41.5, 13
+            ],
+            "length": 48,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -41.5, -13
+            ],
+            "length": 48,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -44, 21
+            ],
+            "length": 36,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -44, -21
+            ],
+            "length": 36,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 48,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+            37.5,      2.5,
+              23,       12,
+              38,       31,
+            26.5,     48.5,
+             -13,     32.5,
+        
+             -26,       42,
+           -44.5,     24.5,
+           -38.5,      2.5,
+           -38.5,     -3.5,
+           -44.5,    -25.5,
+        
+             -29,    -41.5,
+            11.5,      -36,
+            29.5,      -36,
+            23.5,      -13,
+            37.5,       -7
+    # 15 points total.
+    ]
+}

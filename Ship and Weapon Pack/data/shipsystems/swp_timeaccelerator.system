@@ -1,0 +1,23 @@
+{
+    "id":"swp_timeaccelerator",
+    "type":"STAT_MOD",
+    "aiType":"TEMPORAL_SHELL",
+
+    "statsScript":"com.fs.starfarer.api.impl.combat.TemporalShellStats",
+
+    "soundFilterType":"LOWPASS",
+    "soundFilterGain":0.75,
+    "soundFilterGainHF":0.5,
+
+    "fadeActivationSoundOnChargedown":true,
+    "useSound":"system_temporalshell",
+    "loopSound":"system_temporalshell_loop",
+    "deactivateSound":"system_temporalshell_off",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":100,
+        "burstMovementPotential":0,
+        "averageSpeedMult":1.2,
+    }
+}

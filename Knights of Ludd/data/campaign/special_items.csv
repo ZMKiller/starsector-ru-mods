@@ -1,0 +1,8 @@
+name,id,tags,tech/manufacturer,rarity,base price,stack size,cargo space,baseRaidDanger,icon,sound id,sound id drop,plugin,plugin params,desc,order
+# blueprints,,,,,,,,,,,,,,,
+Пакет чертежей Рыцарей Лудда,knights_of_selkie_pack,package_bp,,0.25,60000,1000,1,,graphics/icons/cargo/blueprint_missile.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,knights_of_selkie_bp,"Редкий том с проектами эпохи Объединения, адаптированными для постколлапсного применения. Несмотря на их по-настоящему древнее происхождение, эти модульные конструкции удивительно живучи по меркам Сектора.",311
+Пакет чертежей Рыцарей Бездны,zea_common_bp,"package_bp, codex_unlockable",,0,1000000,1000,1,,graphics/icons/cargo/blueprint_missile.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,zea_common_bp,"Редкий том с постдоминионскими проектами, адаптированными для обычного применения. Несмотря на их трудночитаемое происхождение, эти технологические чудеса обладают мощью, с которой мало что может сравниться.",312
+,,,,,,,,,,,,,,,
+Элизийский регистратор данных,zea_recorder,codex_unlockable,,0,25000,1000,0,,graphics/zea/icons/cargo/zea_lore_datacore.png,ui_chip_pickup,ui_modspec_drop,org.selkie.zea.intel.ZeaLoreManager,,"Восстановленный фрагмент данных. Доступ к устройству откроет журналы из темных глубин Сектора или, если эти тайны уже известны, принесет 25 000 кредитов.",666
+,,,,,,,,,,,,,,,
+Особое ядро босса,zea_boss_core_special,hide_in_codex,,0,25000,1000,0,,,ui_chip_pickup,ui_modspec_drop,org.selkie.zea.campaign.cores.BossCoreSpecialItemPlugin,,,700

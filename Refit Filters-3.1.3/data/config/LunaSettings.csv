@@ -1,0 +1,28 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+refitfilters_header,Filter Configurations,Header,Filter Configurations,,,,,
+refitfilters_searchbarBehaviour,Searchbar behaviour,Radio,"Sort & Filter","Sort, Filter, Sort & Filter","Select the behaviour of the searchbar.
+
+
+[Sort] - Sort the list based on the best match.
+[Filter] - Remove entries that do not match the prompt enough.
+[Sort & Filter] - Combined behaviour of the above.",,,
+refitfilters_searchByDesignType,Filter Search by Design Type,Boolean,true,,Enables the search bar to also filter by design type/mod name in addition to weapon name.,,,
+refitfilters_resetButtonSearchBarPanelOrder,Reset Button/Search Bar Filter Location,Int,1,,"Location of the Reset Button/Search Bar Filter Panel, 1 being the top, 4 at the bottom.",1,4,
+refitfilters_vanillaWeaponAvailabilityWeaponSlotPanelOrder,Availability/Weapon Slot Filter Location,Int,2,,"Location of the vanilla Weapon Availability/Weapon Slot filter Panel, 1 being the top, 4 at the bottom.",1,4,
+refitfilters_weaponTypePanelOrder,Weapon Type Filter Location,Int,3,,"Location of the Weapon Type filter Panel, 1 being the top, 4 at the bottom. 0 to disable.",0,4,
+refitfilters_damageTypeRangeSliderOrder,Damage Type/Range Slider Filter Location,Int,4,,"Location of the Damage Type/Range Slider filter Panel, 1 being the top, 4 at the bottom. 0 to disable.",0,4,
+,,,,,,,,
+refitfilters_weaponRangeslider_header,Weapon Range Slider,Header,Weapon Range Slider,,,,,
+refitfilters_weaponMinRange,Range Slider Min Range,Int,0,,"The lower end of the range slider. Setting the range slider to this value includes all lower ranges.",0,99000,
+refitfilters_weaponMaxRange,Range Slider Max Range,Int,1500,,"The upper end of the range slider. Setting the range slider to this value includes all higher ranges.",0,99000,
+refitfilters_weaponRangeTickSnapping,Range Slider Snapping,Boolean,true,,"Enables snapping to the nearest tick mark on the Range Slider.",,,
+refitfilters_weaponRangeIncrement,Range Slider Snapping Increment,Int,100,,"The distance between each tick mark on the Range Slider.",0,10000,
+,,,,,,,,
+refitfilters_fighterRangeslider_header,Fighter Range Slider,Header,Fighter Range Slider,,,,,
+refitfilters_fighterMinRange,Range Slider Min Range,Int,0,,"The lower end of the range slider. Setting the range slider to this value includes all lower ranges.",0,99000,
+refitfilters_fighterMaxRange,Range Slider Max Range,Int,6000,,"The upper end of the range slider. Setting the range slider to this value includes all higher ranges.",0,99000,
+refitfilters_fighterRangeTickSnapping,Range Slider Snapping,Boolean,true,,"Enables snapping to the nearest tick mark on the Range Slider.",,,
+refitfilters_fighterRangeIncrement,Range Slider Snapping Increment,Int,500,,"The distance between each tick mark on the Range Slider.",0,10000,
+#refitfilters_simulation_header,Simulation,Header,Simulation,,,,,
+#refitfilters_enableSimulation,Enable Weapon Simulation,Boolean,false,,"An experimental feature that enables a quick and preset weapon simulation. Can be entered by pressing [F1] while hovering over a weapon in the weapons selection list in refit. The simulation equips a hyperion with the weapon you selected, facing you off against a medusa and an enforcer with no AI.",,,
+,,,,,,,,

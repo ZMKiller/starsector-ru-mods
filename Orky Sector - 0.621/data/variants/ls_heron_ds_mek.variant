@@ -1,0 +1,48 @@
+{
+    "displayName": "Mek",
+    "fluxCapacitors": 24,
+    "fluxVents": 4,
+    "goalVariant": true,
+    "hullId": "ls_heron_ds",
+    "hullMods": [
+        "targetingunit",
+        "auxiliarythrusters",
+        "stabilizedshieldemitter"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_heron_ds_mek",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "ls_eye_of_mork",
+                "WS 006": "ls_big_shoota",
+                "WS 007": "ls_big_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_bubble_chukka",
+                "WS 004": "ls_bubble_chukka",
+                "WS 003": "ls_bubble_chukka"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_rokkit_launcha"
+            }
+        }
+    ]
+}

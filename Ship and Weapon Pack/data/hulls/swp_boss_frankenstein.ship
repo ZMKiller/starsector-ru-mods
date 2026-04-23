@@ -1,0 +1,256 @@
+{
+  "hullName": "Frankenstein",
+  "hullId": "swp_boss_frankenstein",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/swp/ships/boss/swp_boss_frankenstein.png",
+  "style": "LOW_TECH",
+  "height": 266,
+  "width": 206,
+  "center": [103, 131],
+  "collisionRadius": 214,
+  "shieldCenter": [21.5, -0],
+  "shieldRadius": 191,
+  "viewOffset": 0,
+  "builtInMods": [
+    "missleracks"
+  ],
+  "builtInWeapons": {
+    "WS0001": "swp_gungnir",
+    "WS0002": "swp_gungnir_r"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 45,
+      "locations": [113.5, 79]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -45,
+      "locations": [113.5, -79]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 70,
+      "locations": [79, 33]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -70,
+      "locations": [79, -33]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [35, 29]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [35, -29]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5.01,
+      "angle": 90,
+      "locations": [-1, 36]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5.01,
+      "angle": -90,
+      "locations": [-1, -36]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5.02,
+      "angle": 90,
+      "locations": [-37, 29]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5.02,
+      "angle": -90,
+      "locations": [-37, -29]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [67.5, -0]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -150,
+      "locations": [-83, -49]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 150,
+      "locations": [-83, 49]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-128, 14],
+      "length": 80,
+      "width": 36,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-128, -14],
+      "length": 80,
+      "width": 36,
+      "angle": -180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-122, 43],
+      "length": 80,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-122, -43],
+      "length": 80,
+      "width": 32,
+      "angle": -180,
+      "contrailSize": 32,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-112, 75.5],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-112, -75.5],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-113, 84],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-113, -84],
+      "length": 64,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-118, 93],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-118, -93],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    98.5, -10.5,
+    124, -15,
+    94, -27.5,
+    122.5, -57.5,
+    116, -81.5,
+    96, -92,
+    44, -44.5,
+    -29, -53,
+    -90.5, -100,
+    -115, -96.5,
+    -98, -62.5,
+    -119, -52,
+    -117.5, -27.5,
+    -126, -23,
+    -126, -5.5,
+    -100.5, -0,
+    -126, 5.5,
+    -126, 23,
+    -117.5, 27.5,
+    -119, 52,
+    -98, 62.5,
+    -115, 96.5,
+    -90.5, 100,
+    -29, 53,
+    44, 44.5,
+    96, 92,
+    116, 81.5,
+    122.5, 57.5,
+    94, 27.5,
+    124, 15,
+    98.5, 10.5,
+    105, -0
+  ]
+}

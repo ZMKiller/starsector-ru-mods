@@ -1,0 +1,56 @@
+{
+  "id": "TTE_etp",
+  "specClass": "projectile",
+  "projectileSpecId": "et_shot",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/weapons/etp_turret_base.png",
+  "hardpointSprite": "graphics/weapons/etp_hardpoint_base.png",
+  "glowColor": [
+    0,
+    0,
+    255,
+    255
+  ],
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    5,
+    -8,
+    5,
+    8
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    8,
+    -8,
+    8,
+    8
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [
+    0,
+    0,
+    255,
+    255
+    ]
+  },
+  "fireSoundTwo": "amsrm_fire"
+}

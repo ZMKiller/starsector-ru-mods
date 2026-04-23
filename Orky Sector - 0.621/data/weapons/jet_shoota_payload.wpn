@@ -1,0 +1,28 @@
+{
+	"specClass":"projectile",
+	"id":"ls_jetshoota_payload",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":250,
+	"turretSprite":"graphics/weapons/twin_big_shootas_turret.png",
+	"turretGunSprite":"graphics/weapons/twin_big_shootas_barrel.png",
+	"hardpointSprite":"graphics/weapons/twin_big_shootas_turret.png",
+	"hardpointGunSprite":"graphics/weapons/twin_big_shootas_barrel.png",
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":4.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[15, -3, 15, 3],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[15, -3, 15, 3],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":28.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.2,
+					   "particleCount":9,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"ls_shoota_shot",  # projectile that will be fired
+	"fireSoundTwo":"twin_shootas_sound",
+}

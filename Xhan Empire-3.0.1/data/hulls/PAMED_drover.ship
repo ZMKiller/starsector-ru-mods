@@ -1,0 +1,205 @@
+{
+  "hullName": "Drover(UP)",
+  "hullId": "PAMED_drover",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/PAMED_drover.png",
+  "style": "MIDLINE",
+  "height": 108,
+  "width": 140,
+  "center": [70, 49],
+  "collisionRadius": 115,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 110,
+  "viewOffset": 0,
+  "builtInMods": [
+    "recovery_shuttles"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 000",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 10,
+      "locations": [20, 58]
+    },
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -10,
+      "locations": [20, -58]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 4,
+      "angle": 0,
+      "locations": [43, 60]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 4,
+      "angle": 0,
+      "locations": [45, 13]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 4,
+      "angle": 0,
+      "locations": [45, -12]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 4,
+      "angle": 0,
+      "locations": [43, -59]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": 135,
+      "locations": [-34, 62]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": 225,
+      "locations": [-34, -61]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": -45,
+      "locations": [28, -67]
+    },
+    {
+      "id": "WS 009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": 45,
+      "locations": [28, 68]
+    },
+    {
+      "id": "WS 010",
+      "size": "MEDIUM",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [
+        28, 42,
+        33, 26,
+        21, 30,
+        18, 8
+      ]
+    },
+    {
+      "id": "WS 012",
+      "size": "MEDIUM",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [
+        33, -26,
+        28, -42,
+        18, -8,
+        20, -37
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-49, 52],
+      "length": 30,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 44,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-48, 40],
+      "length": 40,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 50,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-47, 17],
+      "length": 50,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 54,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, -51],
+      "length": 30,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 44,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-48, -40],
+      "length": 40,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 50,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-47, -17],
+      "length": 50,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 54,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    41, 66,
+    51, 50,
+    41, 45,
+    46, 35,
+    49, 0,
+    47, -32,
+    42, -45,
+    52, -50,
+    41, -65,
+    -32, -63,
+    -44, -56,
+    -41, -11,
+    -29, 0,
+    -41, 12,
+    -43, 56,
+    -33, 63
+  ]
+}

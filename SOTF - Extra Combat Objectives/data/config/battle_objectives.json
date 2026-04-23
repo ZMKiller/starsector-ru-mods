@@ -1,0 +1,162 @@
+{
+	"sotfCEO_objective_empl_shieldGen":{
+		"name":"Shield Generator",
+		"icon":"graphics/warroom/sotf_objective_empl.png",
+		"sprite":"graphics/ships/deployables/mini_navbeacon.png",
+		"spriteScale":1,
+		"captureTime":5,
+		"battleSizeFractionBonus":0.04,
+		"effectClass":"data.scripts.combat.obj.SotfEmplacementEffect",
+	},
+  
+  	# not a "real" reinforcer but close enough
+	"softCEO_objective_dweller_beacon":{
+		"name":"Strange Light",
+		"icon":"graphics/warroom/sotf_objective_unknown.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":75,
+		"battleSizeFractionBonus":0,
+		"effectClass":"SOTFECO.combatObj.SOTFCEO_dwellerBeacon",
+	},
+	
+	"sotfCEO_objective_ASB":{
+		"name":"ASB Uplink",
+		"icon":"graphics/warroom/sotf_objective_empl.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":5,
+		"battleSizeFractionBonus":0.04,
+		"effectClass":"data.scripts.combat.obj.SotfEmplacementEffect",
+	},
+	
+	"sotfCEO_objective_skirmisher_swarm":{
+		"name":"Skirmisher Swarm",
+		"icon":"graphics/warroom/sotf_ECO_threat_obj.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":60,
+		"battleSizeFractionBonus":0,
+		"effectClass":"SOTFECO.combatObj.threat.constructor.SOTFCEO_threatSkirmisherSwarm",
+	},
+	
+	"sotfCEO_objective_assault_swarm":{
+		"name":"Assault Swarm",
+		"icon":"graphics/warroom/sotf_ECO_threat_obj.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":60,
+		"battleSizeFractionBonus":0,
+		"effectClass":"SOTFECO.combatObj.threat.constructor.SOTFCEO_threatAssaultSwarm",
+	},
+	
+	"sotfCEO_objective_line_swarm":{
+		"name":"Line Swarm",
+		"icon":"graphics/warroom/sotf_ECO_threat_obj.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":60,
+		"battleSizeFractionBonus":0,
+		"effectClass":"SOTFECO.combatObj.threat.constructor.SOTFCEO_threatLineSwarm",
+	},
+	
+	"sotfCEO_objective_hive_swarm":{
+		"name":"Hive Swarm",
+		"icon":"graphics/warroom/sotf_ECO_threat_obj.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":60,
+		"battleSizeFractionBonus":0,
+		"effectClass":"SOTFECO.combatObj.threat.constructor.SOTFCEO_threatHiveSwarm",
+	},
+	
+	"sotfCEO_objective_fab_swarm":{
+		"name":"Fabricator Swarm",
+		"icon":"graphics/warroom/sotf_ECO_threat_obj.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":60,
+		"battleSizeFractionBonus":0,
+		"effectClass":"SOTFECO.combatObj.threat.constructor.SOTFCEO_threatFabSwarm",
+	},
+	
+	"sotfCEO_objective_attack_swarm":{
+		"name":"Attack Swarm",
+		"icon":"graphics/warroom/sotf_ECO_threat_obj.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":60,
+		"battleSizeFractionBonus":0,
+		"effectClass":"SOTFECO.combatObj.threat.attack.SOTFCEO_threatAttackSwarmImpl",
+	},
+	
+	"softCEO_objective_cyberwarfare":{
+		"name":"Intrusion Node",
+		"icon":"graphics/warroom/sotf_objective_empl.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":5,
+		"battleSizeFractionBonus":0.04,
+		"effectClass":"SOTFECO.combatObj.SOTFCEO_dustkeeperEmplacement",
+	},
+	
+	"softCEO_objective_threat_empl":{
+		"name":"Bulwark Swarm",
+		"icon":"graphics/warroom/sotf_objective_empl.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":15, # its a THREATening objective (get it?)
+		"battleSizeFractionBonus":0.04,
+		"effectClass":"SOTFECO.combatObj.threat.SOTFECO_threatEmplacementEffect",
+	},
+
+    "softCEO_objective_credit":{
+      "name":"Credit Cache",
+      "icon":"graphics/warroom/sotf_ECO_credit_obj.png",
+      "sprite":"graphics/stations/cargo_pod_special.png",
+      "spriteScale":1,
+      "captureTime":20,
+      "battleSizeFractionBonus":0.00,
+      "effectClass":"SOTFECO.combatObj.campaign.SOTFECO_creditCache",
+    },
+
+    "softCEO_objective_asteroid":{
+      "name":"Mineral-Rich Asteroid",
+      "icon":"graphics/warroom/sotf_ECO_asteroid_obj.png",
+      "sprite":"graphics/asteroids/asteroid4.png",
+      "spriteScale":1,
+      "captureTime":20,
+      "battleSizeFractionBonus":0.00,
+      "effectClass":"SOTFECO.combatObj.campaign.SOTFECO_crackableAsteroid",
+    },
+
+    "softCEO_objective_warp":{
+      "name":"Warp Beacon",
+      "icon":"graphics/warroom/sotf_ECO_warp_obj.png",
+      "sprite":"graphics/missiles/stealth_mine3.png",
+      "spriteScale":1.5,
+      "captureTime":20,
+      "battleSizeFractionBonus":0.02,
+      "effectClass":"SOTFECO.combatObj.SOTFECO_deployWarpObj",
+    },
+
+	"softCEO_objective_derelict_fleet":{
+		"name":"Derelict Fleet",
+		"icon":"graphics/warroom/sotf_ECO_derelict_fleet.png",
+		"sprite":"graphics/fx/empty.png",
+		"spriteScale":1,
+		"captureTime":30,
+		"battleSizeFractionBonus":0.00,
+		"effectClass":"SOTFECO.combatObj.SOTFECO_derelictFleetObj",
+	},
+
+    "sotfCEO_diktat_objective":{
+      "name":"Propaganda Transmitter",
+      "icon":"graphics/warroom/sotf_objective_empl.png",
+      "sprite":"graphics/fx/empty.png",
+      "spriteScale":1,
+      "captureTime":5,
+      "battleSizeFractionBonus":0.12, # very good
+      "effectClass":"SOTFECO.combatObj.faction.SOTFECO_diktatEmplacement"
+    }
+}

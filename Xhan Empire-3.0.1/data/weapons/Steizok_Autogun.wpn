@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 700,
+  "fireSoundTwo": "STEIZOK_FIRE_SOUND",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/weapons/Steizok_Barrel_HARDPOINT.png",
+  "hardpointOffsets": [
+    34,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/Steizok_Autogun_HARDPOINT.png",
+  "id": "Steizok_Autogun",
+  "muzzleFlashSpec": {
+    "length": 25,
+    "particleColor": [
+      255,
+      120,
+      50,
+      235
+    ],
+    "particleCount": 20,
+    "particleDuration": 0.5,
+    "particleSizeMin": 8,
+    "particleSizeRange": 18,
+    "spread": 12
+  },
+  "projectileSpecId": "Steizok_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/weapons/Steizok_Barrel_TURRET.png",
+  "turretOffsets": [
+    30,
+    0
+  ],
+  "turretSprite": "graphics/weapons/Steizok_Autogun_TURRET.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 6
+}

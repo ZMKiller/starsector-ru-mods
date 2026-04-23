@@ -1,0 +1,343 @@
+Version 1.8.8 (June 7, 2025):
+- Increased Succubus max burn to 8, matching the Liberator
+- Changed repository location (version checker discontinuity)
+
+Version 1.8.7 (May 14, 2025):
+- Added LunaLib icon
+- Possibly fixed fleet extortion text display issue
+- Added proper hull style sound effects for the IKYA (Cancer) IBB fleet; reworked some variants
+- Removed hook for Stalight Gala that the Cabaleros can give you (unfinished quest)
+- Updated sprite for Sidecar, courtesy of BigBeans and Toopok
+
+Version 1.8.6 (April 24, 2025):
+- Significantly cut down on the variety of fighter wings used by the Cabal; now similar to Tri-Tachyon
+- Cabal stuff no longer appears in the Codex if the faction is disabled
+- Fixed NGC incompatibility introduced by Nexerelin 0.12.0b
+
+Version 1.8.5 (April 5, 2025):
+- Fixed a couple portraits
+
+Version 1.8.4 (April 5, 2025):
+- Updated for Starsector 0.98a
+- New sprite for the Shark, courtesy of BigBeans
+- Player portraits no longer include IBB
+- Fixed rare Cabal-related weapon/fighter crash on interaction
+- Light TPC flux cost reduced to 150 to match real TPC (Hellfire unchanged)
+
+Version 1.8.3 (February 3, 2024):
+- Updated for Starsector 0.97a
+
+Version 1.8.2 (October 30, 2023):
+- Gala Parade fleet has better loot but takes longer to respawn, especially if you kill it
+- Palace always deploys and cannot retreat, like a station
+- Cabal bar event can now occasionally generate Cabal contacts
+  * Dice wagers depend on the importance of the contact
+- New text for Cabal reputation level descriptions
+- Cabal fleets spawn less often near player colonies at higher reputation levels
+  * This is in addition to the behavior described in the 1.8.0 patch notes
+- Cabal submarket no longer allows the player to sell items back to them
+- Nexerelin Random Sector compatibility fix
+- Slight performance optimization when Underworld weapons/ships are not present in a battle
+- Slight performance improvement in campaign when using Cabal
+- Palace music doesn't play in the menus erroneously
+- IndEvo crash fix
+
+Version 1.8.1 (May 29, 2023):
+- The bonus items sold by the Cabal submarkets are now globally unique (you can't buy two Pristine Nanoforges anymore, just one)
+- Cabal submarkets now sell one each of IndEvo Luxury Goods VPC, Drugs VPC, Relay Hypertransmitter, and Simulation Engine
+  * No effect if Industrial Evolution is not enabled
+- Another Cabal-related crash hotfix
+
+Version 1.8.0c (May 27, 2023):
+- Attempted Cabal-related crash hotfix
+
+Version 1.8.0b (May 27, 2023):
+- Cabal-related crash hotfix
+
+Version 1.8.0 (May 26, 2023):
+- Updated for Starsector 0.96a
+- New Renegade sprite (thanks Alfonzo and MesoTroniK!)
+- Cabal only appear around larger/richer/high-tech player colonies, otherwise they don't appear outside of core
+  * This depends on Hostile Activity progress
+  * They do *not* add their own Hostile Activity factor; the Cabal does not impose a stability penalty etc.
+- Cabal skins reworked; slot changes are the same but they no longer offer bonus OP
+  * Cabal Upgrades mostly offers stat penalties and doesn't count as a d-mod (it isn't removed with hull restoration)
+  * Instead, Cabal Upgrades increases the s-mod limit of the ship by 1
+- Cabal Submarket access is easier / more consistent
+  * No longer scales in price based on assets, only by reputation
+  * Better variety of items
+  * Now has additional one-off prize items that can be purchased with enough reputation, including an Alpha Core, Pristine Nanoforge, Mini-Blueprint Package, and the full Blueprint Package
+- The Cabal's Palace will spawn periodically and roam the sector, spawning extra Cabal fleets and offering a unique challenge, should you choose to fight it
+  * Has loot equivalent to a Research Station in a Remnant system
+  * Easily detectable from afar...
+- Easier to raise reputation with the Cabal
+- Scythe CR %/deploy increased to 30
+- Revolvers now stay in front of the ship, armor increased to 125 from 60, refit time reduced to 10 from 15 seconds
+- Razors are faster (300 from 250) and have significantly improved maneuverability
+- Mongrel DP (supplies/deploy) reduced to 12 from 15
+- Amalgam DP (supplies/deploy) reduced to 24 from 30
+- Succubus armor increased to 1000 from 900, hull increased to 12000 from 11000, speed increased to 50 from 45, maneuverability improved
+- Renegade DP (supplies/deploy) reduced to 30 from 35, hull decreased to 15000 from 18000
+- Starscream DP (supplies/deploy) reduced to 15 from 18
+- Reworked or recreated numerous ship variants, tailoring them to their expected vanilla factions
+- Numerous doctrinal changes across the board:
+  * Luddic Church has access to Shark (uncommon) and Venom
+  * Luddic Path has access to:
+    - Barbarian (uncommon), Predator, Sidecar (uncommon), Shark (uncommon), Tiger (rare), and Torch
+    - Razor Fighter Wing
+  * Revamped Cabal doctrine to include exclusively Cabal-themed combat ships
+    - Few carriers, moderate number of phase ships, mostly standard combat ships
+    - Access to just about every type of non-[REDACTED] weapon, including Kinetic Blaster and Gigacannon
+  * Independents/Scavengers have access to:
+    - Barbarian, Boar, Predator, Scythe, Shark, Stalker, Tiger, and Venom
+    - Razor Fighter Wing and Revolver Support Wing
+  * Mercenaries have access to:
+    - Barbarian, Boar, Dragon, Predator, Renegade, Scythe, Shark, Stalker, Tiger, and Venom-X   
+    - Razor Fighter Wing and Revolver Support Wing
+  * Pirates have access to:
+    - Amalgam (uncommon), Barbarian, Boar, Dragon (uncommon), Infernus (rare), Mongrel, Predator, Predator-X, Renegade (uncommon), Scythe, Shark, Sidecar, Stalker (uncommon), Tiger, Torch, Venom, Venom-X (rare)
+    - Razor Fighter Wing and Revolver Support Wing
+- LunaLib support
+
+Version 1.7.1 (January 5, 2022):
+- Updated for Starsector 0.95.1a RC6
+- Slightly buffed TIM's minefield upgrade, also made it less likely to mine yourself
+- Cabal cannot take ships that can't be scuttled (such as Ziggurat) or those that have unremovable captains (such as integrated AI cores)
+- Cabal cannot take mission items (such as Janus Device)
+
+Version 1.7.0 (December 13, 2021):
+- Updated for Starsector 0.95.1a
+- Added Cabal skin for the Fury
+  * Thanks to King Alfonzo for the sprite!
+- Added Climax-class Cruiser
+  * Cabal equivalent of the Apogee
+  * Thanks to King Alfonzo for the sprite!
+- Infernus shield arc reduced to 90 from 180 degrees
+- Infernus shield upkeep reduced to 300 from 480
+- Infernus armor increased to 1600 from 1400
+- Starscream now uses Advanced Ground Support instead of Ground Support
+- Cabal ships no longer have S-mods when recovered in Nexerelin
+- Added Rugged Construction to shieldless ships
+- Barbarian hull increased to 11000 from 9000
+- Mongrel hull increased to 10000 from 6500
+- Amalgam hull increased to 16000 from 12000
+- Renegade supplies decreased to 35 from 40
+
+Version 1.6.1 (April 21, 2021):
+- Palace sprite updated
+- Fixed a major bug that made a SP-cost Cabal interaction item not actually cost a SP
+
+Version 1.6.0 (April 19, 2021):
+- Updated for Starsector 0.95a
+- Cabal forced combat and transponder hostility fix
+- Fixed bug that caused Cabal fleets to bother the player more often than intended near high-Cabal-activity areas
+- Improved Cabal TOff behavior and other interaction aspects
+- Added fighter weapon descriptions
+- Venom cargo increased to 90 from 65
+- Starscream fuel increased to 120 from 100
+- Starscream fuel per light year increased to 4 from 3
+- Fleet extortion options are disabled if the other fleet is not intimidated by player
+- Removed Cabal Hyperion
+- Temporarily removed Cabal Scarab
+- Added Story Point options to get out of giving the Cabal your stuff
+- Integrated various new campaign features into existing content
+- Revolver OP reduced to 9 from 10
+- Razor OP reduced to 7 from 10
+- Razor AI behavior tweaked
+
+Version 1.5.0 (March 10, 2021):
+- Added Succubus-class Pocket Battleship (Cabal)
+  * Appears in Cabal fleets as a capital ship; should make them spam Odysseys less
+- Added Palace-class Enlightenment Center (Cabal)
+  * Will appear in a future update with special campaign integration...
+  * For now, is just part of a special HVB (Vayra's Sector required)
+- Added special new late-game IBB fleet of... abominations
+- Diablo Cannon is now a STRIKE, USE_VS_FRIGATES weapon, like the Hellfire Cannon
+
+Version 1.4.7 (January 10, 2021):
+- Made the Infernus less likely to be available to purchase in markets
+- Added custom Nexerelin start "The Infernal Machine"
+  * Start with a salvaged unique Infernus (Augmented Drive Field built-in) and a mid-size scavenged fleet (all with starting d-mods)
+  * Start inhospitable with most factions (and vengeful with pirates)
+  * Restore the ship, one upgrade at a time, to its former glory and beyond
+  * Branching and mutually-exclusive upgrade paths
+
+Version 1.4.6 (December 25, 2020):
+- Cabal extortion/contribution: Force open comm link on fleet interaction (fixes the "skip contribution by closing dialog" exploit)
+- Dragon now has a large composite mount on the left side
+- Fixed version file HTTPS redirect
+
+Version 1.4.5 (September 28, 2020):
+- Fixed bug where most battles with Dickerson counts as a Dickerson kill
+- Fixed a Cabal dice game having the wrong score requirement
+- Made the Infernus rarer
+- Some configuration for compatibility with various other mods
+- Prevent Cabal from spawning with unnatural sizes if there's somehow a Cabal-owned market somewhere in the sector
+- Migrated version file to custom host (sigh)
+
+Version 1.4.4 (July 11, 2020):
+- Actual fix for Cabal extortion causing transponder-on hostilities with disguise faction(s)
+- Some configuration for Vayra's Sector and Starship Legends
+
+Version 1.4.3 (July 8, 2020):
+- Shielded Cargo Holds now loosely affects the demands of Cabal extortion attempts
+- Fix a rare crash in Cabal fleet AI
+- Possible fix for Cabal extortion causing transponder-on hostilities with disguise faction(s)
+- Migrated version file to BitBucket
+
+Version 1.4.2 (December 23, 2019):
+- Added Starlight Doom
+- Added Cabal bar event
+- Fixed issue where turning transponder off and on after paying a Cabal shakedown "reveals hostile actions"
+
+Version 1.4.1 (September 8, 2019):
+- Dickerson fleets prefer larger ships at higher levels; have more and better officers
+- Fixed "loose" enemy fighter wings in Purple Haze mission
+- Revolver's main weapon will target missiles if no other targets are in range
+- Made Cabal somewhat less aggressive in the early game
+- Cabal spawns decrease to near-0 when far from Cabal-influenced or Tri-Tachyon markets
+- Tweaked CR/deploy for multiple ships to adjust the cost of full recovery
+- New sprites for Euphoria, Starlight Afflictor, and Starlight Wolf
+
+Version 1.4.0 (July 12, 2019):
+- Added Starlight Odyssey
+- Added Starlight Eos
+- Added Starscream-class Combat Transport
+- Cabal Upgrades is now a 50% supply penalty, from 33%
+- Adjusted Cabal spawning to have fewer logistics ships (especially for the small fleets)
+- Adjusted Cabal spawning to trend much larger over time and with higher player levels
+- Cabal fleets will now change factions on-the-fly to avoid difficult situations and hopefully survive longer
+- Cabal extortion refusal reputation penalties work now
+- Mongrel and Amalgam are now tagged with ALWAYS_PANIC
+
+Version 1.3.3 (June 28, 2019):
+- Fixed extorting own faction fleets
+- Added Starlight Shrike
+- Enhanced each Starlight skin...
+
+Version 1.3.2 (May 17, 2019):
+- Updated for Starsector 0.9.1a
+- Various minor updates to bring in line with the new Starsector version
+- Updated ship prices
+- Increased Renegade flux capacity to 20,000 from 18,000
+- Increased Renegade top speed to 40 from 35, improved accel/decel/turning
+- Cabal commanders can now be found with Loadout Design skill
+- Fixed Cabal-related non-CTD NPE
+- Fixed Cabal taking marine slaves...
+
+Version 1.3.1 (February 2, 2019):
+- Biased Cabal fleet sizes to be smaller on average
+- Made Cabal fleet aggression triggering range shorter
+- Adjusted negative reputation impact from refusing Cabal extortion
+- Revised Cabal spawning behavior, should be in-system more often and avoid crazy build-up
+- Fixed Cabal submarket access behavior when the player is Friendly or Cooperative
+- Vesperon Combine whitelist
+
+Version 1.3.0b (January 13, 2019):
+- Emergency Cabal-related crash hotfix
+
+Version 1.3.0 (January 12, 2019):
+- Removed Pillage event
+- Predator and Predator-X flux capacity reduced to 2200 from 2500
+- Stalker top speed reduced to 45 from 50, reduced deceleration
+- Renegade shield efficiency nerfed to 1.4 from 1, but increased flux capacity to 18,000 from 16,000
+- Boar shield efficiency buffed to 1 from 1.2
+- Removed all (D) skins
+- Scythe now has a normal phase cloak
+- Infernus' built-in wings are now both borers
+- Added a fancy trail for the Prototype Gauss Cannon
+- Infernus now uses the Burn Drive system
+- Dramatically reduced the number of preset variants
+- Reworked nearly every remaining preset variant
+- Fixed/standardized file and ID prefixes
+- You can now buy the Cabal Blueprint Package at the Cabal Exchange... if Cooperative with them
+- Cabal Exchange fee and tariff now depends on wealth, income, and relationship level
+- Cabal Exchange will refuse to sell certain ships if you don't have enough money
+- Reworked a whole bunch of descriptions
+- Works in Starsector 0.9a
+
+Version 1.2.2 (April 23, 2018)
+- Revamped Dickerson's level scaling and added a utility console command
+- Minor Dickerson, extortion, crash fixes
+- Improved pirate fleet composition
+- Cabal submarket no longer free to enter at zero stability
+
+Version 1.2.1 (January 26, 2018)
+- Improved/fixed player extortion
+
+Version 1.2.0 (December 1, 2017)
+- Added Revolver-class support fighter
+- Added Razor-class fighter
+
+Version 1.1.3 (October 1, 2017)
+- Fixed crash on game start in Nexerelin's random mode
+- Fixed rare possibility of getting stuck in interaction dialog with Cabal
+- Fixed some player extortion issues
+
+Version 1.1.2 (June 19, 2017)
+- Predator and Predator-X now have a 150-degree 0.4-upkeep front shield (was 120-degree 0.5-upkeep omni)
+- Fixed Cabal still being aggressive to poor players
+- Disco Ball now has 6 Tachyon Lances
+- Major adjustment to fleet composition ratios for various factions
+
+Version 1.1.1 (June 10, 2017)
+- Improved Cabal extortion calculations, especially for fighter LPCs
+- Cabal leaves you with more supplies
+- Cabal won't attack you if you're so poor that you have nothing to extort, unless reputation is Vengeful
+- Additional DynaSector support
+- Added a relay to Styx
+- Improved various odds and ends
+
+Version 1.1.0 (June 4, 2017)
+- Updated to support Starsector 0.8.1a
+- Added pirate pillager fleet event
+- Added player extortion of NPC trade fleets
+- Added super secret ship and weapon
+- Added Styx system featuring a special pirate station with a new submarket
+- Adjusted various ship stats to meet new standards
+- Killer Bee (IBB wing) now has Heavy Burst PD instead of Phase Lance (oh god)
+- Infernus now has two built-in wings: one borer wing and one mining pod wing
+- Infernus system is replaced with Reserve Deployment
+- Infernus now has built-in Operations Center and Salvage Gantry
+- Dragon now has two flight decks
+- Renegade now has a flight deck
+- Stalker now has a built-in wing: borer wing
+- Stalker system is replaced with Accelerated Ammo Feeder
+- Stalker now has built-in Survey Equipment
+- Updated sprites for Tiger, Shark, and Renegade
+- Rebalanced Torch
+- Adjusted debris/derelict spawning for Cabal fleet battles
+
+Version 1.0.5 (March 26, 2017)
+- Added Predator, Predator D, and Predator-X ships
+- Fixed Cabal market tariff bug
+- Added Purple Haze mission
+
+Version 1.0.4 (January 8, 2017)
+- Added Cabal Tempest
+- Updated all Cabal ship sprites
+- Prevented exploit where you can buy Cabal Exchange weapons even if you have not paid to unlock the market (they now have an absurd tariff until unlocked)
+- Increased OP of Barbarian to 135 from 130
+- Updated ship prices
+- Slightly increased Barbarian maneuverability
+
+Version 1.0.3 (September 17, 2016)
+- Cabal fleet count improved (smarter)
+- Updated for Exigency
+- Shark and Venom now have shielded cargo holds
+
+Version 1.0.2 (May 21, 2016)
+- Cabal faction entry is now hidden if Cabal is disabled
+- Cabal faction no longer uses a nonexistent name source
+- General compatibility update
+
+Version 1.0.1 (April 22, 2016)
+- Fixed an ID change
+
+Version 1.0.0 (April 20, 2016)
+- Initial release (split from Starsector+)
+- startOptions.json now called UNDERWORLD_OPTIONS.ini
+- Removed Bull
+- Renegade and Infernus reworked
+- Fixed Cabal bug that made it impossible to become non-Hostile with them
+- Removed High Maintenance from Cabal ships, added nominal logistics penalty to Cabal Upgrades

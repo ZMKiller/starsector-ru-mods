@@ -1,0 +1,25 @@
+command,class,tags,syntax,help
+AddTrait,starship_legends.commands.AddTrait,"starship_legends,campaign",addtrait [traitDescription] to all|[shipDescription],"Adds one of the specified traits to all matching ships in your fleet. For example:
+addtrait deadly - Adds the ""deadly"" trait to your flagship
+addtrait flux good to all - Adds a random good, flux-related trait to all ships in your fleet
+addtrait to destroyer - Adds a random trait to all destroyers in your fleet
+addtrait predetermined - Adds the trait to your flagship that it would naturally get next"
+RemoveTraits,starship_legends.commands.RemoveTraits,"starship_legends,campaign",removetraits [traitDescription] from all|[shipDescription],"Removes all matching traits from each of the matching ships in your fleet. For example:
+removetraits harmless - Removes the ""harmless"" trait from your flagship
+removetraits flux bad from all - Removes all  bad, flux-related traits from all ships in your fleet
+removetraits from destroyer - Removes all traits from all destroyers in your fleet"
+SetLoyalty,starship_legends.commands.SetLoyalty,"starship_legends,campaign",setloyalty <loyaltyLevel> all|[shipDescription],"Sets the loyalty for all of the specified ships. For example:
+setloyalty 0 all - Makes the crews of all ships in your fleet indifferent to their currently assigned captains
+setloyalty 3 - Makes the crew of your flagship fiercely loyal to you
+setloyalty -3 Yamato - Makes the crew of any ship named ""Yamato"" openly insubordinate to their captain"
+SetRepTheme,starship_legends.commands.SetRepTheme,"starship_legends,campaign",setreptheme <themeKey> all|[shipDescription],"Sets the reputation theme of all of the specified ships. For example:
+setreptheme default all - Gives all ships in your fleet the default, random theme
+setreptheme glasscannon - Gives your flagship the ""glasscannon"" theme
+setreptheme hegemony Yamato - Gives any ship named ""Yamato"" the same theme as the hegemony faction"
+ClearRep,starship_legends.commands.ClearRep,"starship_legends,campaign",clearrep all|[shipDescription],"Clears the reputation of all ships matching the description.
+Ship descriptions may be ship names, classes, designations, or hull sizes. If left blank, it will default to your flagship."
+ListTraitEffects,starship_legends.commands.ListTraitEffects,"starship_legends,campaign",listtraiteffects [traitDescription],"List the names and effects of all traits matching the description.
+Trait descriptions may be trait names or be composed of the following keywords: good, bad, positive, negative, pos, neg, logistical, combat, disabled, disabled_only, carrier, crew, attack, shield, cloak, no_ai, flat_effect, defense, flux"
+SetTraitEffectMult,starship_legends.commands.SetTraitEffectMult,"starship_legends,campaign,combat",settraiteffectmult <newValue>,Sets the effectiveness of all traits to the specified value.
+PrintStarshipLegendsData,starship_legends.commands.PrintData,"starship_legends,campaign,combat",printstarshiplegendsdata,Shows most of the data saved and used by starship legends
+List,org.lazywizard.console.commands.List_,"core,starship_legends,campaign",list ships|variants|wings|weapons|items|specials|factions|systems|planets|stations|markets|conditions|industries|traits|aliases|commands|mods [optionalStartsWithFilter],"Lists all internal IDs of a specific category for use with this mod's commands. Results can be further refined by adding a second argument to restrict results to IDs that start with the entered filter.\nValid categories: ships, variants, wings, weapons, items, specials, factions, systems, planets, stations, markets, conditions, industries, traits, aliases, commands, mods"

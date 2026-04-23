@@ -1,0 +1,25 @@
+{
+	"id":"SOTFECO_energyInfusion",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"SOTFECO.ai.SOTFCEOEnergyInfusionSystemAI",
+	"statsScript":"SOTFECO.SOTFCEOEnergyInfusionSystemScript",
+
+	"runScriptWhileIdle":true,
+	#"canUseWhileRightClickSystemOn":true,
+		
+	"useSound":"energy_lash_activate",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":1500,
+		"threatAmount":4,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

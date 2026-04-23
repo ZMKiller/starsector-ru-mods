@@ -1,0 +1,110 @@
+{
+  "hullName": "Silence",
+  "hullId": "dpl_silence",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dpl_silence.png",
+  "style": "HIGH_TECH",
+  "height": 98,
+  "width": 98,
+  "center": [49, 49],
+  "collisionRadius": 99.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 94,
+  "viewOffset": 0,
+  "builtInMods": [
+    "dpl_emergency_forge"
+  ],
+  "builtInWings": [
+    "dpl_silence_drone_wing",
+    "dpl_silence_drone_wing"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_song_of_void",
+    "WS0002": "dpl_anchor"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [42, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [17, -29]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12, 37]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12, 23]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-13.5, -0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-49, -0],
+      "length": 49,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-45, 16],
+      "length": 42,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-45, -16],
+      "length": 42,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    47.5, -11,
+    21.5, -18.5,
+    19.5, -42.5,
+    -19.5, -49,
+    -47.5, -28.5,
+    -47.5, 28.5,
+    -19.5, 49,
+    19.5, 42.5,
+    21.5, 18.5,
+    47.5, 11
+  ]
+}

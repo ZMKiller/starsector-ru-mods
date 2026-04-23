@@ -1,0 +1,54 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 7,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "swp_boss_sporeship_top",
+    "hullMods": ["solar_shielding","heavyarmor","reinforcedhull","autorepair"],
+    "permaMods": ["heavyarmor","reinforcedhull","autorepair"],
+    "sMods": ["heavyarmor","reinforcedhull","autorepair"],
+    "variantId": "swp_boss_sporeship_top_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "pulselaser",
+                "WS0003": "pulselaser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "irpulse",
+                "WS0008": "irpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "miningblaster",
+                "WS0010": "miningblaster",
+                "WS0011": "miningblaster",
+                "WS0012": "miningblaster",
+                "WS0013": "miningblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "taclaser",
+                "WS0005": "taclaser",
+                "WS0006": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dualflak"}
+        }
+    ]
+}

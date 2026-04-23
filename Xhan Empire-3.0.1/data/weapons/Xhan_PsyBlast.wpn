@@ -1,0 +1,55 @@
+{
+  "id": "Xhan_PsyBlast",
+  "specClass": "projectile",
+  "everyFrameEffect": "org.xhan.weapons.XHAN_PsyBlastEveryFrame",
+  "projectileSpecId": "Xhan_Psy_pulse",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "turretSprite": "",
+  "turretGlowSprite": "graphics/weapons/Xhan_psy_blast_GLOW.png",
+  "hardpointSprite": "",
+  "hardpointGlowSprite": "graphics/weapons/Xhan_psy_blast_GLOW.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    175,
+    36,
+    255,
+    255
+  ],
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    1,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    26,
+    -2
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 400,
+    "spread": 360,
+    "particleSizeMin": 1,
+    "particleSizeRange": 21,
+    "particleDuration": 18,
+    "particleCount": 450,
+    "particleColor": [
+      225,
+      90,
+      255,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "XHAN_PHARREK_PULSE_SOUND"
+}

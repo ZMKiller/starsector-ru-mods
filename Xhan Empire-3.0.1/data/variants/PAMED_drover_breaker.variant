@@ -1,0 +1,42 @@
+{
+  "variantId": "PAMED_drover_breaker",
+  "hullId": "PAMED_drover",
+  "displayName": "Breaker",
+  "goalVariant": true,
+  "fluxCapacitors": 12,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "harpoon_single",
+        "WS 004": "harpoon_single"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "sabot_single",
+        "WS 005": "sabot_single"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "railgun",
+        "WS 001": "railgun"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "cobra_wing",
+    "cobra_wing"
+  ]
+}

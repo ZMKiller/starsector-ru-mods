@@ -1,0 +1,37 @@
+{
+    "id":"swp_excelsiorphase",
+    "type":"PHASE_CLOAK",
+    "aiType":"PHASE_CLOAK",
+
+    "statsScript":"data.scripts.shipsystems.SWP_ExcelsiorPhaseStats",
+    "runScriptWhilePaused":true,
+    "runScriptWhileIdle":true,
+    "blockActionsWhileChargingDown":false,
+    
+    "canNotCauseOverload":true,
+
+    "phaseHighlight":"_glow1",
+    "phaseDiffuse":"_glow2",
+
+    "effectColor1":[255,150,200,255],
+    "effectColor2":[255,0,200,255],
+
+    "clampTurnRateAfter":true,
+    "clampMaxSpeedAfter":true,
+
+    "engineGlowColor":[255,150,200,255],
+    "engineGlowContrailColor":[255,150,200,0],
+    "engineGlowLengthMult":1.0,
+    "engineGlowWidthMult":1.0,
+    "engineGlowGlowMult":1.0,
+
+    "soundFilterType":"LOWPASS",
+    "soundFilterGain":0.75,
+    "soundFilterGainHF":0,
+
+    "shipAlpha":1,
+
+    "useSound":"swp_excelsiorphase_activate",
+    "deactivateSound":"swp_excelsiorphase_deactivate",
+    "outOfUsesSound":"swp_excelsiorphase_collision",
+}

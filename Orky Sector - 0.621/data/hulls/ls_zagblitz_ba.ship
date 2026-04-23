@@ -1,0 +1,141 @@
+{
+    "hullName": "Zagblitz (BA)",
+    "hullId": "ls_zagblitz_ba",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_zagblitz_ba.png",
+    "height": 129,
+    "width": 73,
+    "center": [
+        36.5, 64.5
+    ],
+    "collisionRadius": 76,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 72,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_bloodaxes",
+        "ls_mek"
+    ],
+    "builtInWings": [
+        "ls_looted_terminator"
+    ],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": 150,
+            "locations": [
+                      -3,      4.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": -75,
+            "locations": [
+                    15.5,    -19.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    43.5,      1.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    35.5,    -22.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    40.5,     21.5
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -23,      9.5,
+                     -30,      9.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -38, -15
+            ],
+            "length": 54,
+            "width": 18,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -22.5, 26
+            ],
+            "length": 24,
+            "width": 12,
+            "angle": 140,
+            "contrailSize": 32,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+            46.5,       -7,
+            46.5,       11,
+            33.5,       14,
+              39,       18,
+              39,       26,
+        
+             -20,     28.5,
+             -27,       20,
+             -44,     19.5,
+             -44,        0,
+           -60.5,       -5,
+        
+             -38,      -10,
+             -38,      -20,
+            22.5,    -31.5,
+            37.5,      -27,
+            37.5,    -17.5,
+        
+              30,      -16
+    # 16 points total.
+    ]
+}

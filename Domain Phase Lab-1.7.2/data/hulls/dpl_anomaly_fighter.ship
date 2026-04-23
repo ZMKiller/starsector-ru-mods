@@ -1,0 +1,63 @@
+{
+  "hullName": "Anomaly Fighter",
+  "hullId": "dpl_anomaly_fighter",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/dpl_anomaly_fighter.png",
+  "style": "HIGH_TECH",
+  "height": 30,
+  "width": 34,
+  "center": [17, 12.5],
+  "collisionRadius": 46,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 41,
+  "viewOffset": 0,
+  "builtInMods": [
+    "dpl_anomaly_animation"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_anomaly"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11, 6],
+      "length": 8,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-11, -6],
+      "length": 8,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    18, -2,
+    6, -13.5,
+    -1, -14.5,
+    -8, -18,
+    -12, -14,
+    -13, -4.5,
+    -13, 4.5,
+    -12, 14,
+    -8, 18,
+    -1, 14.5,
+    6, 13.5,
+    18, 2
+  ]
+}

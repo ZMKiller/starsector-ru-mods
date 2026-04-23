@@ -1,0 +1,92 @@
+{
+  "hullName": "Renki",
+  "hullId": "tahlan_Renki",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/tahlan/ships/tahlan_Renki.png",
+  "style": "HIGH_TECH",
+  "height": 115,
+  "width": 80,
+  "center": [40, 57],
+  "collisionRadius": 85.5,
+  "shieldCenter": [0.5, 0],
+  "shieldRadius": 77.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "eccm",
+    "ecm",
+    "delicate"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [36, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": 45,
+      "locations": [23, 17]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": -45,
+      "locations": [23, -17]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15, 21],
+      "length": 25,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-15, -21],
+      "length": 25,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-5, 28.5],
+      "length": 13.756396,
+      "width": 6.086559,
+      "angle": 171.5,
+      "contrailSize": 6.086559,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-5, -28.5],
+      "length": 13.756396,
+      "width": 6.086559,
+      "angle": -171.5,
+      "contrailSize": 6.086559,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -53, -8,
+    -15, -18,
+    19.5, -40,
+    45.5, -16.5,
+    45.5, 16.5,
+    19.5, 40,
+    -15, 18,
+    -53, 8
+  ]
+}

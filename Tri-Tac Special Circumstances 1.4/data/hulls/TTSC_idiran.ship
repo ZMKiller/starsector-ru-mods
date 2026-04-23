@@ -1,0 +1,80 @@
+{
+  "hullName": "Idiran",
+  "hullId": "TTSC_idiran",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/TTSC_idiran.png",
+  "style": "HIGH_TECH",
+  "height": 78,
+  "width": 64,
+  "center": [32, 39],
+  "collisionRadius": 49.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 47.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "repair_gantry",
+    "civgrade"
+  ],
+  "builtInWings": [
+    "TTSC_rascal_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 0,
+      "locations": [11, 17]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": -0,
+      "locations": [11, -17]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -20.5, -0,
+        -15, -0
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-36, 15],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-36, -15],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    42, -22.5,
+    -11.5, -39,
+    -42, -26,
+    -42, 26,
+    -11.5, 39,
+    42, 22.5
+  ]
+}

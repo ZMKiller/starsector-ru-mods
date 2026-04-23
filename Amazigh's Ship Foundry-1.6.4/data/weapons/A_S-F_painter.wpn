@@ -1,0 +1,29 @@
+{
+	"id":"A_S-F_painter",  # this id must match what's in the spreadsheet
+	"specClass":"beam",
+	"beamEffect":"org.amazigh.foundry.scripts.ASF_PainterBeamEffect",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"collisionClass":"RAY_FIGHTER",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"turretSprite":"graphics/weapons/A_S-F_painter_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_painter_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_painter_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_painter_hardpoint_glow.png",	
+	"turretOffsets":[13,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[15,0],
+	"hardpointAngleOffsets":[0],
+	"fringeColor":[64,70,216,255],
+	"coreColor":[249,243,253,255],
+	"glowColor":[152,125,228,255],
+	"darkCore":false,
+	"hitGlowBrightenDuration":0.1,
+	"width":17.0,
+	"textureType":SMOOTH,
+	"textureScrollSpeed":128.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
+	"fireSoundOne":"laser_intro", # lidar_ping
+	"fireSoundTwo":"A_S-F_painter_loop", # targeting_laser_loop
+}

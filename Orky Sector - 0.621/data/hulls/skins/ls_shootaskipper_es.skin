@@ -1,0 +1,23 @@
+{
+	"baseHullId":"ls_shoota_skipper_ds",
+	"skinHullId":"ls_shoota_skipper_es",
+	"hullName":"Shootaskipper (ES)",
+	"descriptionPrefix":"This evil sunz version focus more on speed in exchange of protection",
+	"tags":["ls_es_bp"],
+	"tech":"Evil Sunz",
+	"spriteName":"graphics/ships/ls_shootaskipper_es.png",
+	"baseValueMult":1,
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["ls_deathskull"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	#"systemId":"ammofeed",
+	"ordnancePoints":45,
+	"builtInMods":["ls_evilsuns"],
+	#"builtInMods":["andrada_mods"],
+	"builtInWeapons":{
+    },
+    "weaponSlotChanges":{
+
+	},
+}

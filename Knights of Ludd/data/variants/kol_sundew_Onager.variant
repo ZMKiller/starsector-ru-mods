@@ -1,0 +1,38 @@
+{
+    "displayName": "Onager",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "kol_sundew",
+    "hullMods": [
+        "hardened_subsystems",
+        "heavyarmor",
+        "reinforcedhull",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "kol_sundew_Onager",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "hellbore",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "kol_drian",
+                "WS0002": "kol_drian",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"ARMOR_MODULE_TL": "kol_sundew_tl_Onager"},
+        {"ARMOR_MODULE_TR": "kol_sundew_tr_Onager"},
+    ],
+}

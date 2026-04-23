@@ -1,0 +1,16 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
+kol_garden,Святилище покоя,10,90,0,3,,,"unraidable, structure",,graphics/kol/illustrations/kol_gardens_smol.png,org.selkie.kol.campaign.kol_garden,Это убежище дает столь необходимую передышку от напряжения межзвездного рыцарства.,205,
+kol_battlestation_libra,Боевая станция «Либра»,200,180,0,6,,kol_battlestar_libra,"station, battlestation, unraidable, structure","{
+radius:60,
+variant:kol_libra_Battlestation,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,org.selkie.kol.campaign.kol_battlestar,"Переоборудованный военный корабль, превращенный в боевую станцию и усиленный тяжелой абляционной броней с перекрывающимися оборонительными модулями.
+
+Должна быть подавлена, прежде чем можно будет начать бомбардировку.",2110,
+kol_battlestar_libra,Линкор-звезда «Либра»,1000,180,0,10,kol_battlestar_libra,,"station, starfortress, unraidable, structure","{
+radius:75,
+variant:kol_libra_Battlestar,
+fleetName:Libra Prime
+}",graphics/icons/industry/battlestation.png,org.selkie.kol.campaign.kol_battlestar,"Величественный восстановленный линкор-звезда с по-настоящему устрашающей огневой мощью и обширным минным полем.
+
+Должен быть подавлен, прежде чем можно будет начать бомбардировку.",2111,

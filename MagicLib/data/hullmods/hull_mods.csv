@@ -1,0 +1,10 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+INTERFERENCES,ML_interferenceWarning,,,,"special,hide_in_codex",,,,TRUE,,0,0,0,0,org.magiclib.hullmods.MagicInterferenceWarning,"%s, multiple weapons that interfere with each other are installed, disrupting the flux grid.
+
+Special weapons of great power can have unwanted interactions with each other and cause disruptions of the ship's flux grid.
+
+Those weapons interferences are rated %s, %s or %s. They reduce the ship's passive flux dissipation by a flat %s/%s/%s, for every other interfering weapon installed.
+
+That effect can be reduced by %s when installing the %s hullmod.",,graphics/magic/hullmods/interference.png
+HULLMOD CONFLICT,ML_incompatibleHullmodWarning,,,,hide_in_codex,,,,TRUE,,0,0,0,0,org.magiclib.hullmods.MagicIncompatibleWarning,"%s, this hullmod cannot be installed on this ship or conflict with another previously installed hullmod.",,graphics/icons/intel/investigation.png
+Paintjob,ML_skinSwap,,,,"special,no_build_in,no_drop,hide_in_codex",,,TRUE,TRUE,TRUE,0,0,0,0,org.magiclib.paintjobs.MagicPaintjobHullMod,"This ship has a custom paintjob applied. Manage paintjobs in your Personal intel.",,graphics/magic/hullmods/paintjob.png

@@ -1,0 +1,28 @@
+{
+    "id":"swp_arcade_forceimpeder",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.shipsystems.ai.SWP_ForceImpederAI",
+
+    "jitterUnderColor":[200,200,200,50],
+    "jitterUnderCopies":2,
+    "jitterUnderMinRange":0,
+    "jitterUnderRange":25,
+    "jitterUnderRangeRadiusFraction":0.25,
+
+    "statsScript":"data.scripts.shipsystems.SWP_ForceImpederStats",
+
+    "outOfUsesSound":"gun_out_of_ammo",
+    "useSound":"swp_arcade_forceimpeder_activate",
+    "loopSound":"swp_arcade_forceimpeder_loop",
+
+    "aiHints":{
+        "threatRange":1500,
+        "threatAmount":5,
+        "threatAngle":0,
+        "threatArc":360,
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

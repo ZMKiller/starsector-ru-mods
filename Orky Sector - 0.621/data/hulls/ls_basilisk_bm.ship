@@ -1,0 +1,179 @@
+{
+    "hullName": "Basilisk (BM)",
+    "hullId": "ls_basilisk_bm",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_basilisk_bm.png",
+    "height": 120,
+    "width": 110,
+    "center": [
+        55, 60
+    ],
+    "collisionRadius": 72,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 70,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_badmoons",
+        "ls_mek",
+        "ls_mork_gaze",
+        "ls_temporal_forcefield"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      33,     14.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      33,    -13.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "renderOrderMod": 101,
+            "arc": 160,
+            "angle": 0,
+            "locations": [
+                    24.5,      0.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 75,
+            "locations": [
+                      22,     32.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 285,
+            "locations": [
+                    22.5,    -32.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 120,
+            "locations": [
+                   -22.5,     14.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 240,
+            "locations": [
+                   -22.5,    -13.5
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 90,
+            "locations": [
+                    -8.5,       29
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 270,
+            "locations": [
+                    -8.5,      -29
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -45.5, 0
+            ],
+            "length": 54,
+            "width": 18,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -45, 21
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -45, -21
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "MIDLINE"
+        }
+    ],
+    "bounds": [
+           -45.5,    -32.5,
+           -34.5,      -39,
+           -16.5,    -30.5,
+            26.5,      -46,
+              28,      -18,
+        
+            41.5,     -5.5,
+            41.5,      5.5,
+              28,       18,
+            26.5,       46,
+           -16.5,     30.5,
+        
+           -34.5,       39,
+           -45.5,     32.5
+    # 12 points total.
+    ]
+}

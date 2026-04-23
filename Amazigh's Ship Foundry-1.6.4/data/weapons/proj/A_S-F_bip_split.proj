@@ -1,0 +1,36 @@
+{
+	"id":"A_S-F_bip_split",
+	"specClass":"missile",
+	"missileType":"HEATSEEKER", #MISSILE
+	"sprite":"graphics/missiles/A_S-F_missile_bip.png",
+	"size":[6,18],
+	"center":[3,9],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,165,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":125, # purely visual
+	"maxFlightTime":15,
+	"engineSpec":{"turnAcc":180,
+				  "turnRate":150,
+				  "acc":600,
+				  "dec":400},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[75,145,255,255],
+						"contrailDuration":1.5,
+						"contrailWidthMult":1.5,
+						"contrailWidthAddedFractionAtEnd":1.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":10, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[90,90,120,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":6.0,
+				    "length":30.0,
+				    "angle":180.0}],
+}

@@ -1,0 +1,127 @@
+{
+  "hullName": "Nephropoidea",
+  "hullId": "sfcnephropoidea",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/PAGSM/ships/fighters/lober_fighter_diktat.png",
+  "style": "HIGH_TECH",
+  "height": 48,
+  "width": 36,
+  "center": [18, 30],
+  "collisionRadius": 37,
+  "shieldCenter": [-4, -0],
+  "shieldRadius": 34.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcantiengine",
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -0,
+      "locations": [12, 6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [12, -6]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [3.5, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 90,
+      "locations": [-8.5, 10.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-8.5, -10.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 90,
+      "locations": [-24.5, 4.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-24.5, -4.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [14, 10.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -0,
+      "locations": [14, -10.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15.5, 7.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-15.5, -7.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "COBRA_BOMBER"
+    }
+  ],
+  "bounds": [
+    15.5, -14.5,
+    -6, -16.5,
+    -27, -6.5,
+    -27, 6.5,
+    -6, 16.5,
+    15.5, 14.5
+  ]
+}

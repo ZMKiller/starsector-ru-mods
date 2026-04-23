@@ -1,0 +1,61 @@
+{
+  "hullName": "Wingclipper",
+  "hullId": "TTE_wingclipper",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/TTE_wingclipper.png",
+  "style": "HIGH_TECH",
+  "height": 28,
+  "width": 19,
+  "center": [9.5, 14],
+  "collisionRadius": 17.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 17,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTE_bolt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": 0,
+      "locations": [-2.5, 5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": -0,
+      "locations": [-2.5, -5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12.5, 5],
+      "length": 12,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-12.5, -5],
+      "length": 12,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    14, -7.5,
+    -15, -11.5,
+    -15, 11.5,
+    14, 7.5
+  ]
+}

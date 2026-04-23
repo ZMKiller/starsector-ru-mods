@@ -1,0 +1,175 @@
+{
+	id:"dpl_helheim_singularity",
+	"displayName":"Helheim Singularity",
+	"displayNameWithArticle":"the Helheim Singularity",
+	"displayNameLong":"Helheim Singularity",
+	"displayNameLongWithArticle":"the Helheim Singularity",
+	"entityNamePrefix":"",
+	"personNamePrefix":"",
+	"personNamePrefixAOrAn":"a",
+	"displayNameIsOrAre":"is",
+	
+	"logo":"graphics/factions/custom/player_logo17_flag.png",
+	"crest":"graphics/factions/custom/player_logo17_crest.png",
+	
+	"color":[125,135,145,255],
+	"baseUIColor":[125,135,145,255],
+	
+	"showInIntelTab":false,
+	
+	"shipNamePrefix":"HSNS",
+	"shipNameSources":{
+		"BRITISH_NAVY":1,
+		"SPACE":1,
+	},
+	"names":{
+		"ai":1,
+	},
+	"variantOverrides":{
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":[],
+		"hulls":[
+		],
+	},
+	"knownShips":{
+		"tags":[],
+		"hulls":[
+			"dpl_node_large",
+			"dpl_node_type_I",
+			"dpl_node_type_II"
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+			"dpl_node_large",
+			"dpl_node_type_I",
+			"dpl_node_type_II"
+		],
+	},
+	"knownFighters":{
+		"tags":[],
+		"fighters":[
+			"dpl_end_swarm_I_wing",
+			"dpl_end_swarm_II_wing",
+			"dpl_end_main_wing"
+		],
+	},
+	"priorityFighters":{
+		"tags":[],
+		"fighters":[
+			"dpl_end_swarm_I_wing",
+			"dpl_end_swarm_II_wing",
+			"dpl_end_main_wing"
+		],
+	},
+	"knownWeapons":{
+		"tags":[],
+		"weapons":[
+			"dpl_doom_gun",
+			"dpl_doom_flamer",
+			"dpl_doom_ray",
+			"dpl_doom_cannon",
+			"dpl_doom_storm",
+			"dpl_doom_pd"
+		],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":[],
+		"hullMods":[
+			"advancedoptics",
+			"armoredweapons",
+			"augmentedengines",
+			"autorepair",
+			"converted_hangar",
+			"eccm",
+			"ecm",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"heavyarmor",
+			"insulatedengine",
+			"pointdefenseai",
+			"targetingunit",
+			"nav_relay",
+			"operations_center",
+			"recovery_shuttles",
+			"fluxbreakers",
+			"surveying_equipment",
+		],
+	},
+	"factionDoctrine":{
+		"warships":2,
+		"carriers":3,
+		"phaseShips":0,
+		
+		"officerQuality":3,
+		"shipQuality":3,
+		"numShips":5,
+		
+		"shipSize":5,
+		
+		"aggression":5, 
+		
+		"combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":1,				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.25,
+
+		"commanderSkillsShuffleProbability":1,
+		"commanderSkills":[
+		],
+	},
+	#"shipRoles":{
+	#},
+	"illegalCommodities":[
+	],
+	"music":{
+		"encounter_hostile":"music_persean_league_encounter_hostile",
+	},	
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/dpl_singularity_I.png",
+			"graphics/portraits/dpl_singularity_II.png",
+			"graphics/portraits/dpl_singularity_III.png",
+		],
+		"standard_female":[
+			"graphics/portraits/dpl_singularity_I.png",
+			"graphics/portraits/dpl_singularity_II.png",
+			"graphics/portraits/dpl_singularity_III.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+		},
+		"posts":{
+		},
+	},
+	"custom":{
+		"engageWhenEvenStrength":true,
+		"allowsTransponderOffTrade":true, # to prevent cargoscan dialog from "patrols"
+		"postsNoBounties":true,
+		"fightToTheLast":true, # order a full assault instead of retreating, in most cases
+	},	
+	"fleetTypeNames":{
+		"patrolSmall":"Small Cluster", 
+		"patrolMedium":"Minor Node", 
+		"patrolLarge":"Major Node", 
+		"battlestation":"Interstellar Node",
+	},
+},

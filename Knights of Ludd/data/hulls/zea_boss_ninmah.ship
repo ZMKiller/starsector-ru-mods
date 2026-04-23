@@ -1,0 +1,224 @@
+{
+  "hullName": "Ninmah",
+  "hullId": "zea_boss_ninmah",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/zea/ships/zea_boss_ninmah.png",
+  "style": "ZEA_DUSK_TECH",
+  "height": 249,
+  "width": 200,
+  "center": [100, 124],
+  "collisionRadius": 124,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 146,
+  "viewOffset": 0,
+  "builtInMods": [
+    "zea_dusk_builtin",
+    "zea_dusk_mist",
+    "zea_ninmah_boss",
+    "zea_re_phase_coils",
+    "phasefield",
+  ],
+  "builtInWeapons": {
+    "WS0016": "zea_boss_resonator2",
+    "WS0017": "zea_boss_resonator2"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 7,
+      "angle": 0,
+      "locations": [40, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [50, 35]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [50, -35]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 45,
+      "locations": [-19, 76]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -45,
+      "locations": [-19, -76]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 25,
+      "locations": [2, 62]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -25,
+      "locations": [2, -62]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 7,
+      "angle": 172,
+      "locations": [-93, 37]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 7,
+      "angle": -172,
+      "locations": [-93, -37]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 7,
+      "angle": 153.5,
+      "locations": [-78, 44]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 7,
+      "angle": -153.5,
+      "locations": [-78, -44]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 7,
+      "angle": 122.5,
+      "locations": [-66, 41]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 7,
+      "angle": -122.5,
+      "locations": [-66, -41]
+    },
+    {
+      "id": "WS0016",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-46, 37]
+    },
+    {
+      "id": "WS0017",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-46, -37]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-88, 20.5],
+      "length": 65.411491,
+      "width": 11.284895,
+      "angle": 179,
+      "contrailSize": 11.284895,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-88, -20.5],
+      "length": 65.411491,
+      "width": 11.284895,
+      "angle": -179,
+      "contrailSize": 11.284895,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-88.5, 27.5],
+      "length": 107,
+      "width": 11,
+      "angle": 177,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-88.5, -27.5],
+      "length": 107,
+      "width": 11,
+      "angle": -177,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -81, -12,
+    -88.5, -18.5,
+    -89, -32,
+    -117, -33,
+    -79, -83.5,
+    -68.5, -78.5,
+    -30.5, -93.5,
+    -0.5, -92,
+    37.5, -50.5,
+    73.5, -36,
+    118, -22.5,
+    107, -17,
+    55, -13,
+    55, 13,
+    107, 17,
+    118, 22.5,
+    73.5, 36,
+    37.5, 50.5,
+    -0.5, 92,
+    -30.5, 93.5,
+    -68.5, 78.5,
+    -79, 83.5,
+    -117, 33,
+    -89, 32,
+    -88.5, 18.5,
+    -81, 12
+  ]
+}

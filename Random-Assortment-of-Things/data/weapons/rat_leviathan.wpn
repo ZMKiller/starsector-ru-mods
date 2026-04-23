@@ -1,0 +1,51 @@
+{
+  "id": "rat_leviathan",
+  "specClass": "projectile",
+  "projectileSpecId": "rat_leviathan_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/abyss/rat_leviathan_turret.png",
+  "turretGlowSprite": "graphics/weapons/abyss/rat_leviathan_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/abyss/rat_leviathan_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/abyss/rat_leviathan_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "specialWeaponGlowHeight": 25,
+  "specialWeaponGlowWidth": 15,
+  "turretOffsets": [
+    33,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    41,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING_BURST",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 50,
+    "spread": 20,
+    "particleSizeMin": 15,
+    "particleSizeRange": 20,
+    "particleDuration": 0.5,
+    "particleCount": 20,
+    "particleColor": [
+      230,
+      16,
+      87,
+      100
+    ]
+  },
+  "fireSoundTwo": "abyss_leviathan"
+}

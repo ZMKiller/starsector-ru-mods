@@ -1,0 +1,20 @@
+{
+	"id":"ls_snazzgun_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"onHitEffect":"data.weapons.ls_snazzgun_onhit",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":50.0,
+	"width":12.0,
+	"fadeTime":0.2,
+	"fringeColor":[130,130,240,225],
+	"coreColor":[255,255,255,200],
+	"glowColor":[130,130,240,75],
+	"glowRadius":20,
+	"hitGlowRadius":30,
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	#"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":1.0,
+}

@@ -1,0 +1,23 @@
+{
+	"id":"DetailedCombatResults",
+	"name":"Detailed Combat Results",
+	"author":"Nick XR",
+	"version":"5.4.2",
+	"description":"Detailed Combat Results, open intel screen after combat ('E'), or press 'L' in the campaign map to bring up the analytics dialogue.",
+
+	# Breaking changes to this mod are only done between major game versions.
+	# If you change this to force compatability it's very likely you wont be able to upgrade this mod without breaking your save.
+	# Consider waiting a day or two for mod authors to update their stuff and Alex to release a new build fixing what ever bugs there are
+	"gameVersion":"0.98a-RC5",
+
+	"utility": "true",
+	"source": "https://bitbucket.org/NickWWest/starsectorcombatanalytics/",
+	"modPlugin":"data.scripts.combatanalytics.DetailedCombatResultsModPlugin",
+	"jars":["jars/StarSectorDetailedCombatResults.jar"],
+	"replace":[
+		"data/weapons/proj/breach_srm.proj",
+		"data/weapons/proj/disintegrator_shot.proj",
+		"data/weapons/proj/ioncannon_shot.proj",
+		"data/weapons/proj/sabot_warhead2.proj"
+	]
+}

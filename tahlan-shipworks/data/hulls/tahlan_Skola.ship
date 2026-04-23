@@ -1,0 +1,102 @@
+{
+  "hullName": "Skola",
+  "hullId": "tahlan_Skola",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/tahlan/ships/tahlan_Skola.png",
+  "style": "HIGH_TECH",
+  "height": 94,
+  "width": 90,
+  "center": [45, 44],
+  "collisionRadius": 74,
+  "shieldCenter": [-2.5, -0],
+  "shieldRadius": 68.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0003": "tahlan_prismcoil",
+    "WS0004": "tahlan_prismcoil"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 137,
+      "angle": 39,
+      "locations": [-18, 18]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 137,
+      "angle": -39,
+      "locations": [-18, -18]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [34.5, 21.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [34.5, -21.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-41, 19],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-41, -19],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-39, 11],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-39, -11],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -25.5, -8,
+    -38.5, -8.5,
+    -39, -34,
+    -24, -44,
+    37.5, -17,
+    37.5, 17,
+    -24, 44,
+    -39, 34,
+    -38.5, 8.5,
+    -25.5, 8
+  ]
+}

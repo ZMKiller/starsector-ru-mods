@@ -1,0 +1,54 @@
+{
+    "displayName": "Cursed",
+    "fluxCapacitors": 7,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "uw_boss_cyst",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_boss_cyst_cur",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "tpc"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "pilum"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0010": "neoferric_quadcoil"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "heavy_mass_driver",
+                "WS0012": "heavy_mass_driver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "disintegrator"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "vulcan",
+                "WS0003": "dualflak",
+                "WS0005": "vulcan",
+                "WS0008": "vulcan",
+                "WS0009": "vulcan",
+                "WS0011": "inimical_emanation"
+            }
+        }
+    ],
+    "wings": ["uw_revolver_wing"]
+}

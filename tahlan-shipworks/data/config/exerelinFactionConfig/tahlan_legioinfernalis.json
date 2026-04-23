@@ -1,0 +1,122 @@
+{
+    "playableFaction":true,
+    "pirateFaction":false,
+    "corvusCompatible":true,
+    "showIntelEvenIfDead":false,
+    "hostileToAll":true,    
+	
+    "rebelFleetSuffix":"Traitors",
+	
+	"marketSpawnWeight":1,
+	
+	"invasionPointMult": 1.2,
+    
+    "difficultyString":"hard",
+	"spawnAsFactionId":"player",	# transfer to this faction at start (after new game time pass)
+    "ngcTooltip":"You fucked up and fell out of grace with the high overlords. Now you're on your own. Earn back your status or seek a new fortune among the stars.",
+
+	"factionIdForHqResponse":"tahlan_legioelite",	
+    
+    "alignments":{
+        "ideological":0.5,
+		"militarist":1,
+		"corporate":-1
+    },
+	
+	"startRelationships":{
+		"default": -0.4,
+		"player": -0.6,
+		"hegemony": -0.6, 
+		"tritachyon": 0.0,
+		"pirates": 0.80, 
+		"independent": -0.10,
+		"luddic_church": -0.40,
+		"luddic_path": -0.40,
+		"sindrian_diktat": -0.10,
+		"remnant": -0.50,
+		"new_galactic_order": -0.60,
+		"interstellarimperium": -0.40,
+        "SCY": -0.10, 
+        "shadow_industry": -0.40,
+        "tiandong": 0.00,
+        "exigency": -0.40,
+        "ORA": -0.40,
+        "Coalition": -0.40,
+        "fringe_defence_syndicate": -0.40,
+        "fob": 0.00,
+        "diableavionics": 0.10,
+        "junk_pirates": 0.40,
+        "syndicate_asp": 0.40,
+        "sad": 0.00,
+        "dassault_mikoyan": -0.40,
+        "blade_breakers": -0.60,
+        "blackrock_driveyards": -0.20,
+        "crystanite": -0.50,
+        "vass_shipyards": 0.50,
+		"exlane": -0.40,
+		"sylphon": -0.30,
+		"mayasura": -0.40,
+		"persean": -0.40,
+		"aria": 0.00,
+		"vic": 0.10
+	},
+	
+	"maxRelationships":{ 
+		"default":0, 
+		"hegemony":-0.4, 
+		"diableavionics":1,
+		"pirates":1,
+		"player":1,
+		"junk_pirates":1,
+		"syndicate_asp":1,
+		"vic":0.5
+	},
+	
+	"diplomacyPositiveChance":{
+		"default": 0.5,
+		"diableavionics": 1.0,
+		"vic": 1.0,
+		"pirates":1.5
+	},
+	
+	"diplomacyNegativeChance":{
+		"default": 1,
+		"pirates": 0.1
+	},
+	
+	"industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1}
+    ],
+	
+    "diplomacyTraits":["selfrighteous", "irredentist", "foreverwar", "envious", "lowprofile"],
+	"morality":"evil",
+    
+    "freeMarket":true,
+	
+	"colonyExpeditionChance":0.5,		# 0 to disable colonization
+	"colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+    
+    "vengeanceFleetNames":["Enforcers", "Executors", "Crusaders"],
+    "vengeanceFleetNamesSingle":["an Enforcer fleet", "an Executor fleet", "a Crusade"],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+    ],
+	
+	"startShipsCombatSmall":[
+		["tahlan_Eagle_P_raider"]
+	],
+    "startShipsCombatLarge":[
+		["tahlan_Castigator_P_raider", "tahlan_Bronco_p_sniper", "tahlan_lasher_pi_support"],
+    ],
+	"startShipsSuper":[
+	  ["tahlan_Dominator_PH_striker"]
+	],
+	"startShipsGrandFleet":[
+	  ["tahlan_DunScaith_barrage","tahlan_Castigator_P_raider","tahlan_Flagellator_pi_missile","tahlan_Flagellator_pi_missile","tahlan_Bronco_p_brawler","tahlan_Bronco_p_brawler","buffalo_pirates_Standard"]
+	],
+	"startSpecialItems":[
+        [["tahlan_legio_full_package",""]]
+    ],
+    
+}

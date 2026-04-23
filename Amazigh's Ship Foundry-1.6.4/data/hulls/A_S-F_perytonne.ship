@@ -1,0 +1,158 @@
+{
+  "hullName": "Perytonne",
+  "hullId": "A_S-F_perytonne",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/A_S-F_perytonne.png",
+  "style": "HIGH_TECH",
+  "height": 154,
+  "width": 134,
+  "center": [67, 86],
+  "collisionRadius": 110,
+  "shieldCenter": [-2, -0],
+  "shieldRadius": 107,
+  "viewOffset": 0,
+  "builtInMods": [
+    "advancedcore",
+    "eccm",
+    "A_S-F_anomalousSystems",
+    "missile_reload"
+  ],
+  "builtInWeapons": {
+    "WS0001": "A_S-F_chillblain"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [45, -16.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [45, -44]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": 20,
+      "locations": [36, 18]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 70,
+      "locations": [27, 49]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-18, 0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 100,
+      "locations": [-12, 30]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -100,
+      "locations": [-12, -30]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-84, 13],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-84, -13],
+      "length": 64,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-83, 24],
+      "length": 48,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-83, -24],
+      "length": 48,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -84, -8,
+    -84, -22,
+    -77, -34,
+    -55, -36,
+    -49, -43,
+    -11, -45,
+    -7, -56,
+    0, -63,
+    51, -64,
+    57, -55,
+    53, -50,
+    53, -37,
+    59, -30,
+    53, -23,
+    53, -7,
+    62, 0,
+    64, 7,
+    64, 26,
+    62, 27,
+    62, 39,
+    59, 49,
+    51, 61,
+    43, 64,
+    0, 63,
+    -7, 56,
+    -11, 45,
+    -49, 43,
+    -55, 36,
+    -77, 34,
+    -84, 22,
+    -84, 8,
+    -71, 5,
+    -68, 0,
+    -71, -5
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "hullName": "Shackle Drone",
+  "hullId": "A_S-F_drone_shackle",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_drone_shackle.png",
+  "style": "MIDLINE",
+  "height": 15,
+  "width": 18,
+  "center": [9, 7],
+  "collisionRadius": 15,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 15,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [0, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-7, 0],
+      "length": 12,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    5, 0,
+    -5, 6,
+    -5, -6
+  ]
+}

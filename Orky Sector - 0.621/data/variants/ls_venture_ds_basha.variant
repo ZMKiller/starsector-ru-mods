@@ -1,0 +1,48 @@
+{
+    "displayName": "Basha",
+    "fluxCapacitors": 16,
+    "fluxVents": 12,
+    "goalVariant": true,
+    "hullId": "ls_venture_ds",
+    "hullMods": [
+        "targetingunit",
+        "ls_grot_rigger"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_venture_ds_basha",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_big_lobba",
+                "WS 001": "ls_big_lobba",
+                "WS 002": "ls_big_lobba"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "ls_bolta",
+                "WS 004": "ls_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 005": "ls_rokkit_launcha",
+                "WS 006": "ls_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_big_shoota",
+                "WS 008": "ls_big_shoota"
+            }
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+	"id":"A_S-F_nasibu",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/A_S-F_nasibu_turret.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_nasibu_hardpoint.png",
+
+	"turretGlowSprite":"graphics/weapons/A_S-F_nasibu_turret_glow.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_nasibu_hardpoint_glow.png",
+	"glowColor":[70,175,150,255],
+
+	"hardpointOffsets":[12, 2, 12, 2, 12, 1, 12, 1, 12, 0, 12, 0, 12, -1, 12, -1, 12, -2, 12, -2],
+	"turretOffsets":[9, 2, 9, 2, 9, 1, 9, 1, 9, 0, 9, 0, 9, -1, 9, -1, 9, -2, 9, -2],
+	"hardpointAngleOffsets":[4, 3, 2, 1, 0, 0, -1, -2, -3, -4],
+	"turretAngleOffsets":[4, 3, 2, 1, 0, 0, -1, -2, -3, -4],
+	"barrelMode":"LINKED",
+        "separateRecoilForLinkedBarrels":"TRUE",
+	# "renderHints":[RENDER_LOADED_MISSILES],
+	"interruptibleBurst":false,
+	"autocharge":true,
+	"animationType": "GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":35.0,
+					   "spread":45.0,
+					   "particleSizeMin":3.0,
+					   "particleSizeRange":6.0,
+					   "particleDuration":0.5,
+					   "particleCount":8,
+					  "particleColor":[70,170,160,200]},
+
+	"projectileSpecId":"A_S-F_nasibu_missile",
+	"fireSoundTwo": "A_S-F_nasibu_fire",
+}

@@ -1,0 +1,93 @@
+{
+  "hullName": "Imperium Factory",
+  "hullId": "dpl_factory_station",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/dpl_factory_station.png",
+  "style": "HIGH_TECH",
+  "height": 512,
+  "width": 512,
+  "builtInMods": [
+        "vastbulk",
+        "axialrotation",
+        "supercomputer",
+        "shared_flux_sink"
+    ],
+  "center": [256, 256],
+  "collisionRadius": 406.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 384.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [211, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-212, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 60,
+      "locations": [113, 186]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -60,
+      "locations": [113, -186]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 120,
+      "locations": [-105, 186]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -120,
+      "locations": [-105, -186]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    241.5, -63.5,
+    197.5, -164.5,
+    133.5, -215.5,
+    44.5, -244.5,
+    -67.5, -234,
+    -177, -178,
+    -237, -80.5,
+    -237, 80.5,
+    -177, 178,
+    -67.5, 234,
+    44.5, 244.5,
+    133.5, 215.5,
+    197.5, 164.5,
+    241.5, 63.5
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "variantId": "sfcmenoetius_Harasser",
+  "hullId": "sfcmenoetius",
+  "displayName": "Harasser",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 30,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "pointdefenseai",
+    "expanded_deck_crew",
+    "fluxbreakers",
+    "stabilizedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "sfcmicromlms"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "sfcampulsegun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "sfcamchainpulser",
+        "WS0004": "sfcamchainpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "sfcamdestabilizer",
+        "WS0006": "sfcamdestabilizer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lrpdlaser",
+        "WS0002": "lrpdlaser",
+        "WS0007": "lrpdlaser",
+        "WS0008": "lrpdlaser",
+        "WS0009": "lrpdlaser",
+        "WS0010": "lrpdlaser",
+        "WS0011": "lrpdlaser",
+        "WS0012": "lrpdlaser",
+        "WS0015": "lrpdlaser",
+        "WS0016": "lrpdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "sfcdroplet_wing",
+    "sfcdroplet_wing",
+    "sfcmillilitro_wing",
+    "sfcmillilitro_wing"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "hullName": "Hyperion",
+  "hullId": "dpl_super_hyperion_boss",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/hyperion/hyperion2.png",
+  "style": "HIGH_TECH",
+  "height": 98,
+  "width": 112,
+  "center": [54, 34],
+  "collisionRadius": 80,
+  "shieldCenter": [10, 0],
+  "shieldRadius": 65,
+  "viewOffset": 0,
+  "builtInMods": [
+    "high_maintenance",
+    "fluxshunt",
+    "hardened_subsystems",
+    "hardenedshieldemitter",
+    "safetyoverrides"
+  ],
+  "builtInWeapons": {
+    "WS 001": "cryoflux",
+    "WS 002": "cryoflux",
+    "WS 003": "cryoblaster"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [21, 31]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [26, -29]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [15, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-25, 16],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-28, 0],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-25, -15],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    23, 42,
+    31, 23,
+    45, 11,
+    25, 10,
+    23, -9,
+    43, -11,
+    35, -19,
+    34, -38,
+    10, -45,
+    3, -29,
+    -11, -36,
+    -19, -16,
+    -24, -1,
+    -22, 19,
+    -13, 23,
+    -11, 43,
+    1, 36,
+    6, 49
+  ]
+}

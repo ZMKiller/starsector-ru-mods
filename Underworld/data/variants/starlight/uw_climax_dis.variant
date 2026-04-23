@@ -1,0 +1,55 @@
+{
+    "displayName": "Disco",
+    "fluxCapacitors": 0,
+    "fluxVents": 23,
+    "goalVariant": true,
+    "hullId": "uw_climax",
+    "hullMods": [
+        "targetingunit",
+        "stabilizedshieldemitter",
+        "converted_hangar"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_climax_dis",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 009": "hil"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 005": "gazer",
+                "WS 006": "gazer",
+                "WS 007": "gazer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 008": "ionbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "gravitonbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "taclaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "heavyburst",
+                "WS 002": "heavyburst"
+            }
+        }
+    ],
+    "wings": ["xyphos_wing"]
+}

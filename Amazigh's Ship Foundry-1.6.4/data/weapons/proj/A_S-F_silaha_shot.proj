@@ -1,0 +1,24 @@
+{
+	"id":"A_S-F_silaha_shot",
+	"specClass":"projectile",
+
+	"onHitEffect":"org.amazigh.foundry.scripts.arktech.ASF_SilahaOnHitEffect",
+
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY_FIGHTER",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":240.0,
+	"hitGlowRadius":60,
+	"width":10,
+	"fadeTime":0.2,
+	"fringeColor":[200,255,220,220],
+	"coreColor":[235,255,235,240],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png",
+	"glowColor":[75,255,95,55],
+	"glowRadius":30,
+}

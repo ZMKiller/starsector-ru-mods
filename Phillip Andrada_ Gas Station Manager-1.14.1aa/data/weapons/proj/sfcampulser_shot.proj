@@ -1,0 +1,19 @@
+{
+	"id":"sfcampulser_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":70.0,
+	"width":11.0,
+	"fadeTime":0.25,
+	"fringeColor":[150,100,255,255],
+	"coreColor":[255,200,200,200],
+	"glowColor":[150,100,255,75],
+    "glowRadius":75,
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	#"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0,
+	"onHitEffect":"data.scripts.weapons.sfcampulser_onhit",
+}

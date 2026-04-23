@@ -1,0 +1,29 @@
+{
+	"id":"ls_stompa_belly_lobba",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":300,
+	"turretSprite":"graphics/weapons/ls_stompa/ls_stompa_belly_lobba_base.png",
+	"turretGunSprite":"graphics/weapons/ls_stompa/ls_stompa_belly_lobba_barrel.png",
+	"turretUnderSprite":"graphics/weapons/ls_stompa/ls_stompa_belly_lobba_top.png",
+	"hardpointSprite":"graphics/weapons/ls_stompa/ls_stompa_belly_lobba_base.png",
+	"hardpointGunSprite":"graphics/weapons/ls_stompa/ls_stompa_belly_lobba_barrel.png",
+	"hardpointUnderSprite":"graphics/weapons/ls_stompa/ls_stompa_belly_lobba_top.png",	
+	"visualRecoil":4.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[10, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[10, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":12.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":32.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":8.0,
+					   "particleDuration":0.3,
+					   "particleCount":32,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"ls_lobba_flak_shot",  # projectile that will be fired
+	"fireSoundTwo":"twin_shootas_sound",
+}

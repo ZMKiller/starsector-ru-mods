@@ -1,0 +1,40 @@
+id,name,tier,timeToResearch,reqToResearchFirst,itemReqToResearch,iconId,rewards,columnNumber,rowNumber,isResearchedFromStart,otherReq,tags,modId
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+tasc_domain_excavation,Раскопки артефактов Доминиона,3,25,aotd_tech_streamlined_production,research_databank:1,none,BOGGLED_DOMAIN_ARCHAEOLOGY:industry,0,3,false,,,Terraforming & Station Construction
+,,,,,,,,,,,,,,
+tasc_light_manipulation,Управление звездным светом,3,40,tasc_domain_excavation,research_databank:3,none,BOGGLED_STELLAR_REFLECTOR_ARRAY:industry,1,0,false,,,Terraforming & Station Construction
+tasc_atmosphere_manipulation,Управление атмосферой,3,60,tasc_light_manipulation,research_databank:5,none,"Открывает проекты терраформирования по изменению атмосферы:modifier
+BOGGLED_ATMOSPHERE_PROCESSOR:industry",2,0,false,,,Terraforming & Station Construction
+tasc_geological_stabilization,Геологическая стабилизация,3,70,tasc_atmosphere_manipulation,research_databank:6,none,BOGGLED_HARMONIC_DAMPER:industry,3,0,false,,,Terraforming & Station Construction
+tasc_resource_manipulation,Управление ресурсами,3,90,tasc_geological_stabilization,research_databank:7,none,"Открывает проекты терраформирования по улучшению ресурсов:modifier
+BOGGLED_DOMED_CITIES:industry
+BOGGLED_ISMARA_SLING:industry",4,0,false,,,Terraforming & Station Construction
+tasc_planetary_agrav,Контроль искусственной гравитации,3,100,tasc_resource_manipulation,research_databank:8,none,BOGGLED_PLANETARY_AGRAV_FIELD:industry,5,0,false,,,Terraforming & Station Construction
+tasc_coronal_tap,Строительство коронального коллектора,3,140,tasc_planetary_agrav,research_databank:12,none,BOGGLED_PERIHELION_PROJECT:industry,6,0,false,,,Terraforming & Station Construction
+tasc_planet_type_manipulation,Изменение типа планеты,3,120,tasc_resource_manipulation,research_databank:10,none,"Открывает проекты терраформирования по изменению типа планеты:modifier",6,1,false,,,Terraforming & Station Construction
+,,,,,,,,,,,,,,
+tasc_genetic_manipulation,Генетика,3,40,tasc_domain_excavation,research_databank:3,none,"BOGGLED_GENELAB:industry
+BOGGLED_MESOZOIC_PARK:industry",1,6,false,,,Terraforming & Station Construction
+tasc_cloning_technology,Продвинутое клонирование,3,60,tasc_genetic_manipulation,research_databank:5,none,BOGGLED_CLONING:industry,2,6,false,,,Terraforming & Station Construction
+tasc_cryopreservation,Криогенное сохранение,3,80,tasc_cloning_technology,research_databank:7,none,BOGGLED_CRYOSANCTUM:industry,3,6,false,,,Terraforming & Station Construction
+,,,,,,,,,,,,,,
+tasc_limelight_network,Виртуальная реальность,3,40,tasc_domain_excavation,"research_databank:3,gamma_core:3",none,BOGGLED_LIMELIGHT_NETWORK:industry,1,4,false,,,Terraforming & Station Construction
+tasc_chameleon,Продвинутая криптография,3,60,tasc_limelight_network,"research_databank:5,beta_core:2,gamma_core:4",none,BOGGLED_CHAMELEON:industry,2,4,false,,,Terraforming & Station Construction
+tasc_remnant_algorithms,Искусственное моделирование,3,90,tasc_chameleon,"research_databank:7,alpha_core:1,beta_core:2,gamma_core:5",none,BOGGLED_KLETKA_SIMULATOR:industry,3,4,false,,,Terraforming & Station Construction
+,,,,,,,,,,,,,,
+tasc_station_restoration,Оборудование для восстановления станций,3,40,tasc_domain_excavation,"research_databank:3,heavy_machinery:1000",none,"Позволяет восстанавливать уничтоженные станции и колонизировать их. Эту способность можно добавить на панель после изучения технологии.:modifier
+boggled_colonize_abandoned_station:ability",1,2,false,,,Terraforming & Station Construction
+tasc_astropolis_construction,Орбитальные колонии,3,60,tasc_station_restoration,research_databank:5,none,"Позволяет строить станции типа «Астрополис». Эту способность можно добавить на панель после изучения технологии.:modifier
+boggled_construct_astropolis_station:ability",2,2,false,,,Terraforming & Station Construction
+tasc_hydroponics,Орбитальное сельское хозяйство,3,70,tasc_astropolis_construction,research_databank:5,none,BOGGLED_HYDROPONICS:industry,3,1,false,,,Terraforming & Station Construction
+tasc_industrial_stations,Орбитальный промышленный комплекс,3,80,tasc_astropolis_construction,research_databank:7,none,"Позволяет строить станции типов «Добывающая» и «Сифонная». Эту способность можно добавить на панель после изучения технологии.:modifier
+boggled_construct_mining_station:ability
+boggled_construct_siphon_station:ability",4,2,false,,,Terraforming & Station Construction
+,,,,,,,,,,,,,,
+tasc_automation_systems,Промышленная автоматизация,3,100,tasc_industrial_stations,research_databank:8,none,BOGGLED_AI_MINING_DRONES:industry,5,2,false,,,Terraforming & Station Construction
+tasc_gas_giant_harvesting,Оптимизация газовых гигантов,3,110,tasc_industrial_stations,research_databank:9,none,BOGGLED_OUYANG_OPTIMIZER:industry,5,3,false,,,Terraforming & Station Construction
+tasc_planetary_cracking,Технология раскалывания планет,3,150,tasc_automation_systems,research_databank:15,none,BOGGLED_PLANET_CRACKER:industry,6,3,false,,,Terraforming & Station Construction
+,,,,,,,,,,,,,,
+tasc_remnant_station,Реверс-инжиниринг AI-узла,3,120,"tasc_remnant_algorithms,tasc_industrial_stations","research_databank:10,alpha_core:2,beta_core:5,gamma_core:10",none,BOGGLED_REMNANT_STATION:industry,6,4,false,,,Terraforming & Station Construction
+,,,,,,,,,,,,,,

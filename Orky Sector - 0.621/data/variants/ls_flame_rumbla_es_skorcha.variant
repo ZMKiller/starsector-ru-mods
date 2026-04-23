@@ -1,0 +1,51 @@
+{
+    "displayName": "Skorcha",
+    "fluxCapacitors": 11,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_flame_rumbla_es",
+    "hullMods": [
+        "armoredweapons",
+        "ls_bosspole"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_flame_rumbla_es_skorcha",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_splasha_attackgun_builtin",
+                "WS 000": "ls_splasha_attackgun_builtin",
+                "WS 004": "ls_skorcha"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_torpedo_toob"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "ls_grot_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_flame_belcha",
+                "WS 007": "ls_big_shoota",
+                "WS 005": "ls_twin_shoota",
+                "WS 006": "ls_twin_shoota"
+            }
+        }
+    ],
+    "wings": [
+        "ls_kan_es_wing"
+    ]
+}

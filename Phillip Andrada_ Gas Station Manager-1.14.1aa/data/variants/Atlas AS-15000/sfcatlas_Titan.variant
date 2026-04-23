@@ -1,0 +1,66 @@
+{
+  "variantId": "sfcatlas_Titan",
+  "hullId": "sfcatlas",
+  "displayName": "Titan",
+  "goalVariant": false,
+  "fluxCapacitors": 8,
+  "fluxVents": 0,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "eccm",
+    "ecm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "sfcgaft",
+        "WS0002": "sfcgaft"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "pilum",
+        "WS0014": "pilum",
+        "WS0015": "pilum",
+        "WS0016": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "sfcamthrower",
+        "WS0012": "sfcamthrower"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ioncannon",
+        "WS0004": "ioncannon",
+        "WS0017": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdburst",
+        "WS0006": "pdburst",
+        "WS0007": "pdburst",
+        "WS0008": "pdburst",
+        "WS0009": "pdburst",
+        "WS0010": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

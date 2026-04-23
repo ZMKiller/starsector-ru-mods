@@ -1,0 +1,130 @@
+{
+    "hullName": "Sand Condor (SB)",
+    "hullId": "ls_sand_condor_sb",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_sand_condor_sb.png",
+    "height": 125,
+    "width": 96,
+    "center": [
+        48, 62.5
+    ],
+    "collisionRadius": 80,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 78,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_snakebites",
+        "ls_weird"
+    ],
+    "builtInWeapons": {
+        "WS 001": "ls_gork_fist",
+        "WS 003": "ls_rapid_zzap_dummy"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                      24,       17
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 4,
+            "angle": 0,
+            "locations": [
+                      38,      -13
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                   -21.5,        0
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "LARGE",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       0,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -53, -21
+            ],
+            "length": 46,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 56,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -54, 20
+            ],
+            "length": 44,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 56,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -40, 31.5
+            ],
+            "length": 32,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 128,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+              50,     -2.5,
+              39,      -21,
+            -9.5,    -42.5,
+           -31.5,    -41.5,
+             -53,    -26.5,
+        
+             -53,    -16.5,
+             -49,    -15.5,
+             -49,     12.5,
+             -54,     14.5,
+             -54,     24.5,
+        
+           -40.5,     27.5,
+           -40.5,     34.5,
+           -10.5,     42.5,
+             6.5,       36,
+              32,        9,
+        
+              50,      2.5
+    # 16 points total.
+    ]
+}

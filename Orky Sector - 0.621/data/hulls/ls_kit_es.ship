@@ -1,0 +1,147 @@
+{
+    "hullName": "Kite",
+    "hullId": "kite",
+    "hullSize": "FRIGATE",
+    "style": "MIDLINE",
+    "spriteName": "graphics/ships/aeroshuttle/aeroshuttle_base.png",
+    "height": 66,
+    "width": 82,
+    "center": [
+        41, 28
+    ],
+    "collisionRadius": 64,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 58,
+    "viewOffset": 0,
+    "builtInMods": [
+        "civgrade"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 6,
+            "angle": 0,
+            "locations": [
+                       6,       22
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 6,
+            "angle": 0,
+            "locations": [
+                       6,      -22
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 0,
+            "locations": [
+                      -7,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -21, 28
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 50,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -27, 13
+            ],
+            "length": 40,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 68,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -27, -13
+            ],
+            "length": 40,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 68,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -21, -28
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 50,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -16, -36
+            ],
+            "length": 24,
+            "width": 6,
+            "angle": 210,
+            "contrailSize": 128,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -16, 36
+            ],
+            "length": 24,
+            "width": 6,
+            "angle": 150,
+            "contrailSize": 128,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -22, -20
+            ],
+            "length": 20,
+            "width": 6,
+            "angle": 185,
+            "contrailSize": 128,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -22, 21
+            ],
+            "length": 20,
+            "width": 6,
+            "angle": 175,
+            "contrailSize": 128,
+            "style": "MIDLINE"
+        }
+    ],
+    "bounds": [
+              37,        0,
+             -12,       40,
+             -26,        0,
+             -11,      -39
+    ]
+}

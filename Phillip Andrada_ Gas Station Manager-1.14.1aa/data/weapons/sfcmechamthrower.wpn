@@ -1,0 +1,38 @@
+{
+  "id": "sfcmechamthrower",
+  "specClass": "projectile",
+  "projectileSpecId": "sfcamthrower_shot",
+  "type": "ENERGY",
+  "mountTypeOverride": "ENERGY",
+  "size": "SMALL",
+  "everyFrameEffect": "com.fs.starfarer.api.impl.combat.CryofluxTransducerEffect",
+  "turretSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_leftarm_fuelthrower.png",
+  "turretGlowSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_leftarm_fuelthrower_glow.png",
+  "hardpointSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_leftarm_fuelthrower.png",
+  "hardpointGlowSprite": "graphics/PAGSM/ships/mechs/SFC Ajax/sfc_ajax_leftarm_fuelthrower_glow.png",
+  "glowColor": [
+    150,
+    100,
+    255,
+    75
+  ],
+  "turretOffsets": [
+    40.5,
+    14
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    65,
+    14
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW",
+  "autocharge": true,
+  "noImpactSounds": true,
+  "unaffectedByProjectileSpeedBonuses": true
+}

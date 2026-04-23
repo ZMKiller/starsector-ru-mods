@@ -1,0 +1,61 @@
+{
+    "displayName": "Dakka",
+    "fluxCapacitors": 18,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "ls_gutblasta_ba",
+    "hullMods": [
+        "targetingunit",
+        "ballistic_rangefinder",
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_gutblasta_ba_dakka",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_deth_kannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 012": "ls_grot_rail",
+                "WS 010": "ls_grot_rail",
+                "WS 008": "ls_grot_rail",
+                "WS 011": "ls_grot_rail",
+                "WS 009": "ls_grot_rail",
+                "WS 007": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 020": "ls_boarding_toob",
+                "WS 019": "ls_boarding_toob"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 018": "ls_flakka_dakka",
+                "WS 017": "ls_flakka_dakka",
+                "WS 016": "ls_twin_shoota",
+                "WS 014": "ls_twin_shoota",
+                "WS 013": "ls_twin_shoota",
+                "WS 015": "ls_twin_shoota",
+                "WS 006": "ls_kombi_shoota",
+                "WS 004": "ls_kombi_shoota",
+                "WS 002": "ls_kombi_shoota",
+                "WS 005": "ls_kombi_shoota",
+                "WS 003": "ls_kombi_shoota",
+                "WS 001": "ls_kombi_shoota"
+            }
+        }
+    ]
+}

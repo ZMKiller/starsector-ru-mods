@@ -1,0 +1,18 @@
+{
+	"id":"sfc_gilded",
+	"governingAptitude":"industry",
+	"compressHullmods":false,
+	"scope":"GOVERNED_OUTPOST",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"CHARACTER_STATS", "script":"data.scripts.sfc_gilded$Level1"},
+				{"type":"CHARACTER_STATS", "script":"data.scripts.sfc_gilded$Level2"},
+				{"type":"GOVERNED_OUTPOST", "script":"data.scripts.sfc_gilded$Level3"},
+			]
+		},
+	],
+}
+

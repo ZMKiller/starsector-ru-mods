@@ -1,0 +1,96 @@
+{
+    "hullName": "Paramork Engine L",
+    "hullId": "ls_paramork_engine_l",
+    "hullSize": "FRIGATE",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_paramork_bm_l.png",
+    "height": 96,
+    "width": 68,
+    "center": [
+        34, 48
+    ],
+    "collisionRadius": 70,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 70,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_orky",
+        "ls_badmoons",
+        "always_detaches",
+        "ls_paramork_engine"
+    ],
+    "builtInWeapons": {
+        "WS 000": "ls_kustom_shoota"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 75,
+            "locations": [
+                    -2.5,        6
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -3, 22.5
+            ],
+            "length": 64,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -47.5, -7.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -47.5, -14.5
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -47.5, -22
+            ],
+            "length": 54,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 72,
+            "style": "MIDLINE"
+        }
+    ],
+    "bounds": [
+            41.5,    -22.5,
+            42.5,     28.5,
+             5.5,     31.5,
+            -3.5,     27.5,
+            -3.5,     17.5,
+        
+           -43.5,      9.5,
+           -47.5,     -0.5,
+           -45.5,    -28.5
+    ]
+}

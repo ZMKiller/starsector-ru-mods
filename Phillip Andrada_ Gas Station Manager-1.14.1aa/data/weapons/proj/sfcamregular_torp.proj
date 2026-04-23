@@ -1,0 +1,58 @@
+{
+	"id":"sfcamregular_torp",
+	"specClass":"missile",
+	"missileType":"ROCKET",
+	"sprite":"graphics/PAGSM/weapons/AM Fuel Missiles/sfc_torpedo_regular.png",
+	"size":[14,23],	
+	"center":[7,11],
+	"collisionRadius":20,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[255,100,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":300, # purely visual
+	"explosionSpec":{"duration":2f, # not visual
+					 "radius":300,
+					 "coreRadius":150, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":7.5,
+					 "particleSizeRange":5.0,
+					 "particleDuration":1.5,
+					 "particleCount":200,
+					 "particleColor":[255,155,155,155],
+					 "explosionColor":[255,155,155,55],
+					 "useDetailedExplosion":true,
+                     "sound":"system_empmine_explode"},
+	"flameoutTime":2.5, # total time from flameout to full fadeout
+	"armingTime":0.25,
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  #"acc":35,
+				  "acc":500,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-11, 0],
+					#"loc":[-14, 0],
+				    #"style":"TORPEDO",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,106,0,195],
+						"contrailDuration":0.5,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":3, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"glowSizeMult":1,
+						"glowAlternateColor":[255,105,0,255],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":80.0,
+				    "angle":180.0}],
+    "onHitEffect":"data.scripts.weapons.sfcameffect_onhit",
+}
+			

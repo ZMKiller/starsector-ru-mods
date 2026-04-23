@@ -1,0 +1,63 @@
+{
+  "variantId": "TTE_hofoen_standard",
+  "hullId": "TTE_hofoen",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "fluxdistributor",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse",
+        "WS0004": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "pulselaser",
+        "WS0003": "pulselaser",
+        "WS0005": "pulselaser",
+        "WS0013": "pulselaser",
+        "WS0014": "pulselaser",
+        "WS0015": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "TTE_pdirpulse",
+        "WS0009": "TTE_pdirpulse",
+        "WS0010": "TTE_pdirpulse",
+        "WS0011": "irpulse",
+        "WS0012": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "TTE_pdirpulse",
+        "WS0007": "TTE_pdirpulse"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

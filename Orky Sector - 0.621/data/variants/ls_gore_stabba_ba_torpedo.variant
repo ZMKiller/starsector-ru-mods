@@ -1,0 +1,47 @@
+{
+    "displayName": "Torpedo",
+    "fluxCapacitors": 12,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_gore_stabba_ba",
+    "hullMods": [
+        "auxiliarythrusters",
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_gore_stabba_ba_torpedo",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ls_torpedo_toob"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_bolta",
+                "WS 000": "ls_bolta",
+                "WS 005": "ls_kombi_shoota",
+                "WS 004": "ls_kombi_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ls_big_shoota"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_mini_rokkit_launcha",
+                "WS 002": "ls_mini_rokkit_launcha"
+            }
+        }
+    ]
+}

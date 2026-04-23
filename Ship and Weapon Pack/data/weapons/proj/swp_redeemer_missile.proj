@@ -1,0 +1,54 @@
+{
+	"id":"swp_redeemer_missile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+    "onHitEffect":"data.scripts.weapons.SWP_RedeemerOnHitEffect",
+	"sprite":"graphics/swp/missiles/swp_redeemer_missile.png",
+	"size":[16,49],	
+	"center":[8,24.5],
+	"collisionRadius":26,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,100,70,255],
+	"explosionRadius":275,
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":125,
+					 "coreRadius":70, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":5.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":150,
+					 "particleColor":[255,140,100,255]},
+	"flameoutTime":2, # total time from flameout to full fadeout
+	"armingTime":1.0,
+	"noEngineGlowTime":1.0, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration
+    "passThroughMissiles":true,
+    "passThroughFighters":true,
+    "applyOnHitEffectWhenPassThrough":false,
+	"engineSpec":{"turnAcc":80,
+				  "turnRate":40,
+				  "acc":200,
+				  "dec":150},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-22.5, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,100,100,255],
+						"contrailDuration":3,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":10, # min segment length, in pixels
+						"contrailMaxSpeedMult":1f,
+						"contrailAngularVelocityMult":1f,
+						"contrailSpawnDistMult":0.1f, # how far away from engine it starts
+						"contrailColor":[255,100,100,75],
+						"glowSizeMult":2,
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":16.0,
+				    "length":100.0,
+				    "angle":180.0}]
+}

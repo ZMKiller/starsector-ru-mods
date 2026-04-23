@@ -1,0 +1,25 @@
+{
+    "baseHullId":"afflictor",
+    "skinHullId":"uw_afflictor_cabal",
+    "hullName":"Starlight Afflictor",
+    "descriptionId":"afflictor",
+    "descriptionPrefix":"Upgraded by the Starlight Cabal, this ship represents the materialistic glitz and glamour of the high life.",
+    "tags":["uw_cabal_bp", "uw_cabal_minibp", "no_dealer", "codex_unlockable"],
+    "tech":"Starlight Cabal",
+    "fleetPoints":12,
+    "coversColor":[175,50,230,255],
+    "baseValueMult":1.5,
+    "spriteName":"graphics/uw/ships/phase/afflictor_cabal.png",
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "weaponSlotChanges":{
+        "WS 006":{
+            "type": "SYNERGY"
+        }
+    },
+    "builtInMods":["uw_cabal_upgrades"],
+    "builtInWeapons":{
+    },
+}

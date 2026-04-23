@@ -1,0 +1,116 @@
+{
+  "hullName": "Velox",
+  "hullId": "A_S-F_velox",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_velox.png",
+  "style": "HIGH_TECH",
+  "height": 76,
+  "width": 62,
+  "center": [31, 33],
+  "collisionRadius": 55,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 52,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [11, 19]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [11, -19]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 0,
+      "locations": [23, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 120,
+      "locations": [-12, 13]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -120,
+      "locations": [-12, -13]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-31, -0],
+      "length": 48,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-30, 8],
+      "length": 24,
+      "width": 6,
+      "angle": 175,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-30, -8],
+      "length": 24,
+      "width": 6,
+      "angle": -175,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26, 19],
+      "length": 36,
+      "width": 10,
+      "angle": 169.5,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26, -19],
+      "length": 36,
+      "width": 10,
+      "angle": -169.5,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    34, -10,
+    16, -11,
+    12, -23,
+    -9, -29,
+    -23, -24,
+    -31, -0,
+    -23, 24,
+    -9, 29,
+    12, 23,
+    16, 11,
+    34, 10
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "hullName": "Hydria HA-150",
+  "hullId": "sfchydria",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/PAGSM/ships/Phase_Tankerv1.png",
+  "style": "HIGH_TECH",
+  "height": 170,
+  "width": 170,
+  "center": [86, 83],
+  "collisionRadius": 157,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 140,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery",
+    "phasefield",
+    "delicate"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [-58, -61],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 80,
+      "angle": 0,
+      "locations": [39, -55],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 80,
+      "angle": 0,
+      "locations": [39, -10],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 0,
+      "locations": [38, 6],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [37, 54],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [20, 66],
+      "renderOrderMod": 200
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-78.5, 13],
+      "length": 60,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-78.5, -10.5],
+      "length": 70,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-60.5, 54],
+      "length": 60,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -56, 72,
+    6, 75,
+    22.5, 82,
+    38, 62,
+    38.5, 36.5,
+    49, 11,
+    71, -3.5,
+    82, -27,
+    78.5, -54,
+    46, -79.5,
+    -1.5, -76.5,
+    -25.5, -66.5,
+    -32, -81,
+    -77, -71,
+    -78, 18.5,
+    -64, 24,
+    -64, 37.5,
+    -59, 48,
+    -59, 60
+  ]
+}

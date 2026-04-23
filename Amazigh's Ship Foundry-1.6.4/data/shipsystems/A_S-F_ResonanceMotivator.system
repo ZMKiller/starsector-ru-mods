@@ -1,0 +1,19 @@
+{
+	"id":"A_S-F_ResonanceMotivator",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"org.amazigh.foundry.shipsystems.scripts.ASF_ResonanceMotivatorStats",
+
+	"weaponGlowColor":[128,26,42,220],
+	"weaponTypes":[ENERGY, BALLISTIC],
+
+	"useSound":"system_high_energy_focus_activate",
+	"deactivateSound":"system_high_energy_focus_deactivate",
+	"loopSound":"system_high_energy_focus_loop",
+
+	#"useSound":"system_emp_emitter_activate",
+	#"loopSound":"system_emp_emitter_loop",
+
+	"outOfUsesSound":"gun_out_of_ammo",
+}

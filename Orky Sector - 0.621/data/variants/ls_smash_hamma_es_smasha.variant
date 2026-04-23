@@ -1,0 +1,45 @@
+{
+    "displayName": "Smasha",
+    "fluxCapacitors": 11,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_smash_hamma_es",
+    "hullMods": [
+        "targetingunit",
+        "ls_grot_rigger"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_smash_hamma_es_smasha",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "ls_torpedo_toob",
+                "WS 005": "ls_torpedo_toob",
+                "WS 011": "ls_doomdiva_launcher",
+                "WS 012": "ls_doomdiva_launcher"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_supashoota_turret",
+                "WS 002": "ls_supashoota_turret",
+                "WS 001": "ls_big_lobba",
+                "WS 010": "ls_mega_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "ls_big_shoota",
+                "WS 007": "ls_twin_shoota",
+                "WS 006": "ls_twin_shoota",
+                "WS 009": "ls_big_shoota"
+            }
+        }
+    ]
+}

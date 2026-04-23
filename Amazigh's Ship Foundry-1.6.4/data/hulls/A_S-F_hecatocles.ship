@@ -1,0 +1,95 @@
+{
+  "hullName": "Hecatocles",
+  "hullId": "A_S-F_hecatocles",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/A_S-F_hecatocles.png",
+  "style": "MIDLINE",
+  "height": 38,
+  "width": 38,
+  "center": [19, 20],
+  "collisionRadius": 22,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 21,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [13, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-15, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [4, 16]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -0,
+      "locations": [4, -16]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10, 10.5],
+      "length": 25,
+      "width": 7,
+      "angle": 175,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-10, -10.5],
+      "length": 25,
+      "width": 7,
+      "angle": -175,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-8, 15],
+      "length": 15,
+      "width": 4,
+      "angle": 160,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-8, -15],
+      "length": 15,
+      "width": 4,
+      "angle": -160,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    14, -11,
+    8, -17,
+    -7, -16,
+    -14, -0,
+    -7, 16,
+    8, 17,
+    14, 11
+  ]
+}

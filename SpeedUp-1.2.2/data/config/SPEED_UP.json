@@ -1,0 +1,155 @@
+{
+    # WARNING: THE GAME WILL GLITCH OUT IF THE SPEED-UP MULTIPLIER IS TOO HIGH
+    # Key IDs are integers, and can be found here:
+    # https://gist.github.com/Mumfrey/5cfc3b7e14fef91b6fa56470dc05218a
+    "speedOptions": [
+        {
+            # Click and hold down the mouse scroll wheel to engage 2x speed
+            "activateKey":-1,      # Default: None
+            "activateMouse":2,     # Default: Middle Click
+            "activateCtrl":false,  # Default: Control key not required
+            "activateAlt":false,   # Default: Alt key not required
+            "activateShift":false, # Default: Shift key not required
+
+            "toggleKey":-1,        # Default: None
+            "toggleMouse":-1,      # Default: None
+            "toggleCtrl":false,    # Default: Control key not required
+            "toggleAlt":false,     # Default: Alt key not required
+            "toggleShift":false,   # Default: Shift key not required
+
+            "speedUpMult":2.0,     # Default: 2.0
+            "bulletTimeMult":-1.0, # Default: -1.0 - Do not change bullet-time effect
+            "printMessage":true,   # Default: Show message
+            "onAtStart":false,     # Default: Disabled at the start of combat
+            "disableOthers":false, # Default: Does not disable other hotkeys
+            "capToFPS":0.0         # Default: Speed multiplier is not limited by frame rate
+        },
+        {
+            "activateKey":-1,      # Default: None
+            "activateMouse":-1,     # Default: Middle Click
+            "activateCtrl":false,  # Default: Control key not required
+            "activateAlt":false,   # Default: Alt key not required
+            "activateShift":false, # Default: Shift key not required
+
+            # Press Caps Lock to toggle 2x speed (don't need to hold down)
+            "toggleKey":58,        # Default: Caps Lock
+            "toggleMouse":-1,      # Default: None
+            "toggleCtrl":false,    # Default: Control key not required
+            "toggleAlt":false,     # Default: Alt key not required
+            "toggleShift":false,   # Default: Shift key not required
+
+            "speedUpMult":2.0,     # Default: 2.0
+            "bulletTimeMult":-1.0, # Default: -1.0 - Do not change bullet-time effect
+            "printMessage":true,   # Default: Show message
+            "onAtStart":false,      # Default: Disabled at the start of combat
+            "disableOthers":false, # Default: Does not disable other hotkeys
+            "capToFPS":0.0         # Default: Speed multiplier is not limited by frame rate
+        },
+        {
+            "activateKey":-1,      # Default: None
+            "activateMouse":-1,    # Default: None
+            "activateCtrl":false,  # Default: Control key not required
+            "activateAlt":false,   # Default: Alt key not required
+            "activateShift":false, # Default: Shift key not required
+
+            # Press B to toggle bullet-time effects
+            "toggleKey":48,        # Default: B
+            "toggleMouse":-1,      # Default: None
+            "toggleCtrl":false,    # Default: Control key not required
+            "toggleAlt":false,     # Default: Alt key not required
+            "toggleShift":false,   # Default: Shift key not required
+
+            "speedUpMult":1.0,     # Default: 1.0
+            "bulletTimeMult":1.0,  # Default: 1.0 - Change bullet-time effect, at 0.3 player ship moves at roughly normal speed, at 1.0 bullet-time is disabled, only values above 0.0 change bullet-time effect
+            "printMessage":true,   # Default: Show message
+            "onAtStart":false,     # Default: Disabled at the start of combat
+            "disableOthers":false, # Default: Does not disable other hotkeys
+            "capToFPS":0.0         # Default: Speed multiplier is not limited by frame rate
+        },
+        {
+            "activateKey":-1,      # Default: None
+            "activateMouse":-1,    # Default: None
+            "activateCtrl":false,  # Default: Control key not required
+            "activateAlt":false,   # Default: Alt key not required
+            "activateShift":false, # Default: Shift key not required
+
+            # Press Ctrl + Caps Lock to toggle run-as-fast-as-possible mode
+            "toggleKey":58,        # Default: Caps Lock
+            "toggleMouse":-1,      # Default: None
+            "toggleCtrl":true,     # Default: Control key required
+            "toggleAlt":false,     # Default: Alt key not required
+            "toggleShift":false,   # Default: Shift key not required
+
+            "speedUpMult":100.0,   # Default: 100.0
+            "bulletTimeMult":-1.0, # Default: -1.0 - Do not change bullet-time effect
+            "printMessage":true,   # Default: Show message
+            "onAtStart":false,     # Default: Disabled at the start of combat
+            "disableOthers":false, # Default: Does not disable other hotkeys
+            "capToFPS":30.0        # Default: Speed multiplier is limited by frame rate to a 30 FPS engine step (the smallest safe value)
+        },
+        {
+            "activateKey":-1,      # Default: None
+            "activateMouse":-1,    # Default: None
+            "activateCtrl":false,  # Default: Control key not required
+            "activateAlt":false,   # Default: Alt key not required
+            "activateShift":false, # Default: Shift key not required
+
+            # Press F3 to toggle 6x speed
+            "toggleKey":61,        # Default: F3
+            "toggleMouse":-1,      # Default: None
+            "toggleCtrl":false,    # Default: Control key required
+            "toggleAlt":false,     # Default: Alt key not required
+            "toggleShift":false,   # Default: Shift key not required
+
+            "speedUpMult":6.0,     # Default: 6.0
+            "bulletTimeMult":-1.0, # Default: -1.0 - Do not change bullet-time effect
+            "printMessage":true,   # Default: Show message
+            "onAtStart":false,     # Default: Disabled at the start of combat
+            "disableOthers":false, # Default: Does not disable other hotkeys
+            "capToFPS":0.0         # Default: Speed multiplier is not limited by frame rate
+        },
+        {
+            # Press F4 to disable all active hotkeys and set speed back to 1x
+            "activateKey":62,      # Default: F4
+            "activateMouse":-1,    # Default: None
+            "activateCtrl":false,  # Default: Control key not required
+            "activateAlt":false,   # Default: Alt key not required
+            "activateShift":false, # Default: Shift key not required
+
+            "toggleKey":-1,        # Default: Caps Lock
+            "toggleMouse":-1,      # Default: None
+            "toggleCtrl":false,    # Default: Control key required
+            "toggleAlt":false,     # Default: Alt key not required
+            "toggleShift":false,   # Default: Shift key not required
+
+            "speedUpMult":1.0,     # Default: 1.0
+            "bulletTimeMult":-1.0, # Default: -1.0 - Do not change bullet-time effect
+            "printMessage":true,   # Default: Show message
+            "onAtStart":false,     # Default: Disabled at the start of combat
+            "disableOthers":true,  # Default: Disable other hotkeys
+            "capToFPS":0.0         # Default: Speed multiplier is not limited by frame rate
+        },
+        # Options can be added or removed as desired
+    ],
+    "speedOptionsCampaign": [
+        {
+            "activateKey":-1,      # Default: None
+            "activateMouse":-1,    # Default: None
+            "activateCtrl":false,  # Default: Control key not required
+            "activateAlt":false,   # Default: Alt key not required
+            "activateShift":false, # Default: Shift key not required
+
+            # Toggle button for 2x speed
+            "toggleKey":58,        # Default: Caps Lock
+            "toggleMouse":-1,      # Default: None
+            "toggleCtrl":false,    # Default: Control key not required
+            "toggleAlt":false,     # Default: Alt key not required
+            "toggleShift":false,   # Default: Shift key not required
+
+            "speedUpMult":2.0,     # Default: 2.0
+            "printMessage":true,   # Default: Show message
+            "onAtStart":false      # Default: Disabled when first entering campaign
+        },
+        # Options can be added or removed as desired
+    ]
+}

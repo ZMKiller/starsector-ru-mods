@@ -1,0 +1,225 @@
+{
+    "hullName": "Heron (DS)",
+    "hullId": "ls_heron_ds",
+    "hullSize": "CRUISER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_heron_ds.png",
+    "height": 183,
+    "width": 141,
+    "center": [
+        70.5, 91.5
+    ],
+    "collisionRadius": 114,
+    "coversColor": "",
+    "shieldCenter": [
+        7, 3.5
+    ],
+    "shieldRadius": 110,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ls_deathskull",
+        "ls_orky",
+        "ls_mek",
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "ENERGY",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    46.5,    -31.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "SYNERGY",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    52.5,     30.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                      33,     47.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 270,
+            "angle": 0,
+            "locations": [
+                      68,      3.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 55,
+            "locations": [
+                    -7.5,     46.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": -55,
+            "locations": [
+                    -7.5,    -39.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 150,
+            "locations": [
+                     -59,     31.5
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 210,
+            "locations": [
+                     -59,    -24.5
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -120,
+            "locations": [
+                   -33.5,    -43.5
+            ]
+        },
+        {
+            "id": "WS 009",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 120,
+            "locations": [
+                   -33.5,     50.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -82.5, 26.5
+            ],
+            "length": 36,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -82.5, -19.5
+            ],
+            "length": 36,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -84.5, -40
+            ],
+            "length": 32,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -85, 47
+            ],
+            "length": 36,
+            "width": 4,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -83.5, 38
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -83.5, -31
+            ],
+            "length": 32,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+              87,    -15.5,
+              87,     22.5,
+            46.5,       29,
+              40,       37,
+              39,     59.5,
+        
+             4.5,       61,
+           -35.5,     70.5,
+           -50.5,       56,
+             -78,       57,
+           -85.5,       49,
+        
+           -81.5,     11.5,
+             -48,       10,
+           -48.5,     -4.5,
+           -82.5,       -5,
+             -85,    -44.5,
+        
+           -53.5,      -66,
+              17,      -49,
+              57,      -47,
+              58,      -23
+    # 19 points total.
+    ]
+}

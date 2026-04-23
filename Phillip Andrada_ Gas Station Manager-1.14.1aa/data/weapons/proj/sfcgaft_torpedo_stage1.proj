@@ -1,0 +1,83 @@
+{
+	"id":"sfcgaft_torpedo_stage1",
+	"specClass":"missile",
+	"missileType":"MIRV",
+	"onFireEffect":"com.fs.starfarer.api.impl.combat.RiftTorpedoEffect",
+	"sprite":"graphics/PAGSM/weapons/AM Fuel Missiles/sfc_guided_am_torpedo_stage_1.png",
+	"size":[14,16],
+	"center":[7,8],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,90,110,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":200, # purely visual
+	"noCollisionWhileFading":true,
+	"useHitGlowWhenDealingDamage":false, # using the scripted rift explosion instead
+	"useHitGlowWhenDestroyed":true, # instead of the default explosion
+	"dudProbabilityOnFlameout":0,
+	"fizzleOnReachingWeaponRange":false,
+	"armingTime":5,
+	"flameoutTime":5, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":1, # fadeout duration
+	"glowColor":[255,100,100,75],
+	"glowRadius":125,
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":100,
+				  "acc":50,
+				  "dec":50},
+	"engineSlots":[{"id":"ES1",
+					#"loc":[-7, 0],
+					"loc":[0, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,100,100,0],
+						"glowSizeMult":2.5,
+						"glowAlternateColor":[255,0,10,255],
+						"contrailDuration":2,
+						"contrailWidthMult":1.5,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[255,90,110,50],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":50.0,
+				    "angle":180.0}],
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":500,
+					"splitRangeRange":250,
+					"minTimeToSplit":2,
+					"canSplitEarly":false,
+					"splitSound":"pilum_lrm_split",
+					"numShots":1,
+					"damage":2000,
+					"damageType":ENERGY,
+					"hitpoints":250,
+					#"evenSpread":true,
+					"arc":0,
+					"spreadInaccuracy":0,
+					#"spreadSpeed":300,
+					"spreadSpeed":0,
+					"spreadSpeedRange":0,
+					#"projectileRange":600, # only needed if not a missile
+					"projectileSpec":"sfcgaft_torpedo_stage2",
+					"debrisSmall":7,
+					"debrisMedium":0,
+					"debrisLarge":0,
+					"smokeSpec":{"particleSizeMin":5.0,
+								 "particleSizeRange":5.0,
+								 "cloudParticleCount":11,
+								 "cloudDuration":1.0,
+								 "cloudRadius":10.0,
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[100,100,100,200]}
+					}
+}
+}

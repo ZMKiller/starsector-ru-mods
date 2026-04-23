@@ -1,0 +1,19 @@
+{
+    "quality":1,
+    "displayName":"Mod-Interceptor Drone",
+    "hullId":"uw_boss_wasp",
+    "variantId":"uw_boss_wasp_Fighter",
+    "fluxVents":0,
+    "fluxCapacitors":0,
+    "hullMods":["uw_cabal_upgrades"], # array of strings
+
+    # mode is either LINKED or ALTERNATING
+    # slot ids (WS ***) must match what's in the .ship file
+    "weaponGroups":[
+        {"mode":"LINKED",
+         "weapons":{
+                    "WS 001":"heavyburst",
+                   },
+        },
+    ],
+}

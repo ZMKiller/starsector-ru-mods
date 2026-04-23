@@ -1,0 +1,110 @@
+{
+  "hullName": "Lyre",
+  "hullId": "dpl_lyre",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dpl_lyre.png",
+  "style": "HIGH_TECH",
+  "height": 58,
+  "width": 72,
+  "center": [36, 29],
+  "collisionRadius": 102.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 95.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "dpl_mote_stablizer",
+    "WS0002": "dpl_mote_stablizer",
+    "WS0005": "dpl_mote_stablizer",
+    "WS0006": "dpl_mote_stablizer"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [22, 19]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [22, -19]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 0,
+      "locations": [6, 21]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": -0,
+      "locations": [6, -21]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-6, 34]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-6, -34]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-25, -0],
+      "length": 42,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-25, 21],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-25, -21],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    29.5, -32,
+    1, -38,
+    -27.5, -30.5,
+    -27.5, 30.5,
+    1, 38,
+    29.5, 32
+  ]
+}

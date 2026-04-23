@@ -1,0 +1,28 @@
+{
+    "id":"swp_victoryjets",
+    "type":"ENGINE_MOD",
+    "aiType":"BURN_DRIVE_TOGGLE",
+
+    "statsScript":"data.scripts.shipsystems.SWP_VictoryJetsStats",
+
+    "engineGlowLengthMult":2,
+    "engineGlowWidthMult":2,
+    "engineGlowGlowMult":2,
+
+    "flameoutOnImpactChance":0.5,
+
+    "clampTurnRateAfter":false,
+    "clampMaxSpeedAfter":true,
+    "alwaysAccelerate":true,
+
+    "useSound":"swp_maximum_drive_activate",
+    "loopSound":"swp_maximum_drive_loop",
+    "deactivateSound":"swp_maximum_drive_deactivate",
+    "outOfUsesSound":"engine_disabled",
+
+    "aiHints":{
+        "activeSpeedIncrease":100,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":25,
+    }
+}

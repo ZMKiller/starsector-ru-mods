@@ -1,0 +1,136 @@
+{
+  "hullName": "Troubadour",
+  "hullId": "TTSC_troubadour",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/TTSC_troubadour.png",
+  "style": "HIGH_TECH",
+  "height": 169,
+  "width": 193,
+  "center": [96.5, 84.5],
+  "collisionRadius": 115.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 0,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams",
+    "operations_center"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 0,
+      "locations": [-36.5, 50.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": -0,
+      "locations": [-36.5, -50.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [61.5, -28.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [61.5, 28.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 180,
+      "locations": [-47.5, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 0,
+      "locations": [44.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-80.5, 31],
+      "length": 53,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-80.5, -31],
+      "length": 53,
+      "width": 21,
+      "angle": -180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-74.5, 42.5],
+      "length": 32,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-74.5, -42.5],
+      "length": 32,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-72, 50],
+      "length": 32,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-72, -50],
+      "length": 32,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    88.5, -23,
+    27.5, -58.5,
+    -57.5, -108,
+    -92, -25,
+    -71.5, -15.5,
+    -71.5, 15.5,
+    -92, 25,
+    -57.5, 108,
+    27.5, 58.5,
+    88.5, 23
+  ]
+}

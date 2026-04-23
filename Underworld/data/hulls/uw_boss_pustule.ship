@@ -1,0 +1,192 @@
+{
+  "hullName": "Pustule",
+  "hullId": "uw_boss_pustule",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/uw/ships/boss/uw_boss_pustule.png",
+  "style": "UW_CANCER",
+  "height": 145,
+  "width": 142,
+  "center": [62, 75],
+  "collisionRadius": 104.5,
+  "shieldCenter": [-3.5, -4],
+  "shieldRadius": 99,
+  "viewOffset": 0,
+  "builtInMods": [
+    "uw_temporalcurse"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 160,
+      "locations": [-33, 10]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -160,
+      "locations": [-45, -20]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 60,
+      "locations": [38, 40]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 290,
+      "angle": 0,
+      "locations": [47, 14]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -45,
+      "locations": [29, -10]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -90,
+      "locations": [7, -32]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -45,
+      "locations": [47.5, -34.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -45,
+      "locations": [31.5, -50.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": -45,
+      "locations": [60, -19]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": -45,
+      "locations": [16, -63]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": -90,
+      "locations": [-32, -65]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-75, -4],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-74, 10],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-72, 20.5],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-70, 35],
+      "length": 80,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "UW_CANCER"
+    },
+    {
+      "location": [-67, -21],
+      "length": 72,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "UW_CANCER"
+    }
+  ],
+  "bounds": [
+    -72, -9.5,
+    -68.5, 42,
+    -41.5, 41.5,
+    -36, 50.5,
+    7, 45,
+    28, 60.5,
+    42, 46.5,
+    54, 42.5,
+    60.5, 31.5,
+    63, -17.5,
+    57, -25.5,
+    49, -23,
+    50, -37.5,
+    34.5, -37.5,
+    35, -53,
+    20, -51.5,
+    22, -60,
+    12, -69.5,
+    3, -64,
+    -16, -68.5,
+    -27, -54,
+    -27.5, -69.5,
+    -40.5, -66,
+    -36.5, -45.5,
+    -42, -45.5,
+    -44, -56,
+    -58.5, -53,
+    -57, -39.5,
+    -64.5, -25,
+    -64.5, -11.5
+  ]
+}

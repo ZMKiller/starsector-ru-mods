@@ -1,0 +1,30 @@
+{
+    "displayName": "Ultimate",
+    "fluxCapacitors": 50,
+    "fluxVents": 50,
+    "hullId": "swp_arcade_cristarium",
+    "hullMods": [
+        "targetingunit",
+        "insulatedengine",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "swp_arcade_cristarium_ult",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "mjolnir",
+                "WS0003": "mjolnir",
+                "WS0004": "mjolnir"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "swp_arcade_megapulse"}
+        }
+    ]
+}

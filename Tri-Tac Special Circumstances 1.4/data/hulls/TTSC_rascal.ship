@@ -1,0 +1,53 @@
+{
+  "hullName": "Rascal",
+  "hullId": "TTSC_rascal",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/TTSC_rascal.png",
+  "style": "HIGH_TECH",
+  "height": 14,
+  "width": 16,
+  "center": [8, 7],
+  "collisionRadius": 17,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 16.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "TTSC_ocbeams"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [2.5, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-5.5, -0],
+      "length": 12.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    8, -10.5,
+    -9.5, -10,
+    -9.5, 10,
+    8, 10.5
+  ]
+}

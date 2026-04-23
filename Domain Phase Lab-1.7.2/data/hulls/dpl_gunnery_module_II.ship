@@ -1,0 +1,82 @@
+{
+  "hullName": "Gunney Module II",
+  "hullId": "dpl_gunnery_module_II",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/dpl_gunnery_module_II.png",
+  "style": "HIGH_TECH",
+  "height": 102,
+  "width": 140,
+  "center": [70, 51],
+  "collisionRadius": 135,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 122.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "advancedcore",
+    "advancedoptics",
+    "fluxcoil",
+    "fluxdistributor",
+    "dpl_plasmacoupling"
+  ],
+  "builtInWeapons": {
+    "WS0005": "dpl_phase_pd"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 30,
+      "locations": [12, 53]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -30,
+      "locations": [12, -53]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [22, 22]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -0,
+      "locations": [22, -22]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 0,
+      "locations": [57, -0]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    52.5, -39.5,
+    38, -71.5,
+    1.5, -73,
+    -51.5, -48.5,
+    -51.5, 48.5,
+    1.5, 73,
+    38, 71.5,
+    52.5, 39.5
+  ]
+}

@@ -1,0 +1,29 @@
+{
+	"id":"ls_stikka",  # this id must match what's in the spreadsheet
+	"everyFrameEffect":"data.weapons.ls_stikka_everyframe",
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"mountTypeOverride":"COMPOSITE",
+	"size":"SMALL",
+	"turretSprite":"graphics/weapons/stikka/ls_stikka_00.png",
+	"hardpointSprite":"graphics/weapons/stikka/ls_stikka_00.png",
+	"glowColor":[255,255,100,200],
+	"turretOffsets":[5.5, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[5.5, 0],
+	"hardpointAngleOffsets":[0],
+	"numFrames":6,	
+	"frameRate":0,
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"renderHints":[RENDER_LOADED_MISSILES],
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":0,
+					   "particleSizeMin":0.0,
+					   "particleSizeRange":0.0,
+					   "particleDuration":0.0,
+					   "particleCount":2,
+					   "particleColor":[255,185,115,0]},
+	"projectileSpecId":"ls_stikka_bolt",  # projectile that will be fired
+	"fireSoundTwo":"bomb_bay_fire",
+}

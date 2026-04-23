@@ -1,0 +1,41 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 10,
+    "fluxVents": 7,
+    "goalVariant": true,
+    "hullId": "ls_wayfarer_ba",
+    "hullMods": [
+        "targetingunit",
+        "ls_explody_propella",
+        "ls_git_finda"
+    ],
+    "quality": 1.0,
+    "variantId": "ls_wayfarer_ba_custom",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "ls_grot_rail",
+                "WS 005": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_sniper_shoota",
+                "WS 002": "ls_sniper_shoota",
+                "WS 000": "ls_lobba"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_twin_shoota",
+                "WS 004": "ls_twin_shoota"
+            }
+        }
+    ]
+}

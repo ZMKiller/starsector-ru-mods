@@ -1,0 +1,38 @@
+{
+    "baseHullId":"tahlan_providence",
+    "skinHullId":"tahlan_providence_admech",
+    "hullName":"Ark Metalican",
+    "descriptionId":"tahlan_providence",
+    "descriptionPrefix":"Painted in the colors of the Children of Mars, sanctified in the name of the Machine God and enhanced with His holy technology.",
+	"fleetPoints":28,
+	"addHints":["HIDE_IN_CODEX"],
+	"tags":["no_bp_drop","no_dealer","no_sell"],
+	"ordnancePoints":280,
+    "spriteName":"graphics/tahlan/ships/oddities/tahlan_providence_admech.png",
+    "baseValueMult":1.25,
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "builtInMods":["tahlan_admechrefit","adaptiveshields"],
+	"systemId":"tahlan_machinespirit",
+	"hullStyle":HIGH_TECH,
+	"weaponSlotChanges":{
+    	"WS0001":{
+      		"type": "HYBRID",
+    	},
+    	"WS0003":{
+      		"type": "UNIVERSAL",
+    	},
+		"WS0004":{
+      		"type": "HYBRID",
+    	},
+		"WS0005":{
+      		"type": "HYBRID",
+    	},
+		"WS0006":{
+      		"type": "HYBRID",
+    	},
+    },
+    
+}

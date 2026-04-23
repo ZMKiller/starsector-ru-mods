@@ -1,0 +1,41 @@
+{
+  "id": "tahlan_stahlhagel_r",
+  "specClass": "projectile",
+  "everyFrameEffect":"org.niatahl.tahlan.weapons.StahlhagelMuzzleFlashScript",
+  "projectileSpecId": "tahlan_stahl_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/tahlan/weapons/ma/tahlan_stahlhagel_r_00.png",
+  "hardpointSprite": "graphics/tahlan/weapons/ma/tahlan_stahlhagel_r_00.png",
+  "renderAboveAllWeapons": 0,
+  "autocharge":true,
+  "turretOffsets": [
+    51,
+    -4
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "particleColor": [110,207,255,150],
+    "particleCount": 20,
+    "particleDuration": 0.2,
+    "particleSizeMin": 10,
+    "particleSizeRange": 15,
+    "spread": 0
+  },   
+  "numFrames":4,
+  "frameRate":40,
+  "textureType": ROUGH,
+  "fireSoundTwo": "tahlan_stahlhagel_fire"
+}

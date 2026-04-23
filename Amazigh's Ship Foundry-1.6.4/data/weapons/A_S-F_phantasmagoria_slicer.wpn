@@ -1,0 +1,28 @@
+{
+	"id":"A_S-F_phantasmagoria_slicer",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"everyFrameEffect": "org.amazigh.foundry.scripts.phantasmagoria.ASF_slicerOnFireScript",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"turretSprite":"graphics/weapons/A_S-F_phantasmagoria_slicer_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_phantasmagoria_slicer_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_phantasmagoria_slicer_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_phantasmagoria_slicer_glow.png",
+	"glowColor":[70,190,255,255],
+	"turretOffsets":[8.5,-1, 8.5,-0.5, 8.5,0, 8.5,0, 8.5,0.5, 8.5,1],
+	"turretAngleOffsets":[-4, -2, -0.5, 0.5, 2, 4],
+	"hardpointOffsets":[15,-1, 15,-0.5, 15,0, 15,0, 15,0.5, 15,1,],
+	"hardpointAngleOffsets":[-4, -2, -0.5, 0.5, 2, 4],
+	"barrelMode":"LINKED",
+        "separateRecoilForLinkedBarrels":"TRUE",
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":17.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":6.0,
+					   "particleSizeMin":5.0,
+					   "particleSizeRange":6.0,
+					   "particleDuration":0.3,
+					   "particleCount":3,
+					   "particleColor":[80,170,255,255]},
+	"projectileSpecId":"A_S-F_phantasmagoria_slicer_shot",
+	"fireSoundTwo":"A_S-F_phantasmagoria_slicer_fire",
+}

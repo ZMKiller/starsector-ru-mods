@@ -1,0 +1,93 @@
+{
+  "hullName": "Boxer",
+  "hullId": "swp_boss_brawler",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/swp/ships/boss/swp_boss_brawler.png",
+  "style": "MIDLINE",
+  "height": 65,
+  "width": 112,
+  "center": [56, 27],
+  "collisionRadius": 71.212707,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 70,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ballistic_rangefinder"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": 45,
+      "locations": [8, 21]
+    },
+    {
+      "id": "WS 002",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [21, -19]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-26, 28],
+      "length": 48,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-26, -28],
+      "length": 48,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-25, -0],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-23, 11],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-23, -11],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    14.5, -38,
+    -8.5, -55,
+    -24.5, -30.5,
+    -21, -14.5,
+    -21, 14.5,
+    -24.5, 30.5,
+    -8.5, 55,
+    14.5, 38,
+    25, 21.5,
+    24.5, -2.5,
+    30.5, -8,
+    31, -31
+  ]
+}

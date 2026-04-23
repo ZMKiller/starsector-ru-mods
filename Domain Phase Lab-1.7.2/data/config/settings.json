@@ -1,0 +1,86 @@
+{
+	"dpl_Do_Not_Protect_Important_Planets":false,
+	
+	"designTypeColors": {
+		"Domain Phase Lab": [150,120,200,255],
+		"DPL Elite": [125,100,225,255],
+		"DPL Classified": [110,30,230,255],
+		"Vengeance":[200,10,30,255]
+	},
+	"graphics": {
+		"blueprint_packages": {
+			"dpl_experimental_pkg": "graphics/icons/cargo/package_phase_lab.png",
+			"dpl_navy_pkg": "graphics/icons/cargo/package_phase_lab.png",
+			"dpl_commercial_pkg": "graphics/icons/cargo/package_phase_lab.png",
+			"dpl_domain_pkg": "graphics/icons/cargo/package_phase_lab.png",
+		},
+		"characters": {
+			"eliza_lovelace": "graphics/portraits/characters/eliza_lovelace.png",
+			"eliza_lovelace_dress": "graphics/portraits/characters/eliza_lovelace_dress.png",
+			"eliza_lovelace_lab_coat": "graphics/portraits/characters/eliza_lovelace_lab_coat.png",
+			"elly_lovelace": "graphics/portraits/characters/elly_lovelace.png",
+			"ross_higgs": "graphics/portraits/characters/ross_higgs.png",
+			"banach_salazar": "graphics/portraits/characters/banach_salazar.png",
+			"camilla_wiener": "graphics/portraits/characters/camilla_wiener.png",
+			"nelson_bonaparte": "graphics/portraits/characters/nelson_bonaparte.png",
+			"faraday_holmes": "graphics/portraits/characters/faraday_holmes.png",
+			"omega_holmes": "graphics/portraits/characters/omega_holmes.png",
+			"weierstrass_goldberg": "graphics/portraits/characters/weierstrass_goldberg.png",
+			"cantor_aleph_null": "graphics/portraits/characters/cantor_aleph_null.png",
+			"dpl_singularity_cantor": "graphics/portraits/characters/dpl_singularity_cantor.png",
+			"portrait_pirate03": "graphics/portraits/portrait_pirate03.png",
+			"portrait41": "graphics/portraits/portrait41.png",
+			"portrait_corporate08": "graphics/portraits/portrait_corporate08.png",
+			"vladimir_vassiliev": "graphics/portraits/characters/vladimir_vassiliev.png"
+		},
+		"illustrations":{
+			"dpl_eliza_happy_end":"graphics/illustrations/dpl_eliza_happy_end.png",
+			"dpl_trade_hanger":"graphics/illustrations/hound_hangar_large.jpg",
+			"dpl_fly_away":"graphics/illustrations/fly_away.jpg",
+			"dpl_cache_large":"graphics/illustrations/dpl_cache_large.png",
+			"dpl_hymn_figure":"graphics/illustrations/dpl_hymn_figure.png",
+			"dpl_mote_figure":"graphics/illustrations/dpl_mote_figure.png",
+			"dpl_bunker_figure":"graphics/illustrations/dpl_bunker_figure.png",
+			"dpl_orchestra_figure": "graphics/illustrations/dpl_orchestra_figure.png",
+			"dpl_classified_pod": "graphics/illustrations/dpl_classified_pod.png",
+			"dpl_manifolds_merge_figure": "graphics/illustrations/dpl_manifolds_merge_figure.png",
+			"dpl_NarrowHullDuel_Rules": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_Rules.png",
+			"dpl_NarrowHullDuel_01": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_01.png",
+			"dpl_NarrowHullDuel_02": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_02.png",
+			"dpl_NarrowHullDuel_03": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_03.png",
+			"dpl_NarrowHullDuel_04": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_04.png",
+			"dpl_NarrowHullDuel_12": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_12.png",
+			"dpl_NarrowHullDuel_13": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_13.png",
+			"dpl_NarrowHullDuel_14": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_14.png",
+			"dpl_NarrowHullDuel_23": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_23.png",
+			"dpl_NarrowHullDuel_24": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_24.png",
+			"dpl_NarrowHullDuel_34": "graphics/illustrations/dpl_NarrowHullDuel/dpl_NarrowHullDuel_34.png",
+			"dpl_BigRobot_Defeat": "graphics/illustrations/dpl_BigRobot_Defeat.png"
+		},
+		"effects": {
+			"dpl_nebula_1": "graphics/fx/dpl_nebula_1.png",
+			"dpl_nebula_2": "graphics/fx/dpl_nebula_2.png",
+			"dpl_nebula_3": "graphics/fx/dpl_nebula_3.png",
+			"dpl_nebula_4": "graphics/fx/dpl_nebula_4.png",
+			"dpl_nebula_5": "graphics/fx/dpl_nebula_5.png",
+			"dpl_song_of_creation_effect": "graphics/fx/dpl_song_of_creation_effect.png",
+			"dpl_nova_blaster_effect": "graphics/fx/dpl_nova_blaster_effect.png",
+			"dpl_railgun_aiming": "graphics/fx/dpl_railgun_aiming.png",
+			"dpl_railgun_ball": "graphics/fx/dpl_railgun_ball.png",
+			"dpl_railgun_ring1": "graphics/fx/dpl_railgun_ring1.png",
+			"dpl_railgun_ring2": "graphics/fx/dpl_railgun_ring2.png",
+			"dpl_railgun_ring3": "graphics/fx/dpl_railgun_ring3.png",
+			"dpl_railgun_lensflare": "graphics/fx/dpl_railgun_lensflare.png",
+			"dpl_railgun_shrink": "graphics/fx/dpl_railgun_shrink.png",
+		},
+		"misc":{
+			"dpl_nebula_bright":"graphics/fx/dpl_nebula_bright.png",
+		},
+	},
+	"ruleCommandPackages":[
+ 		"data.campaign.rulecmd",
+ 	],
+ 	
+ 	# Hostile Activity, max fleet counts (if not present: will cause a CTD bug)
+	"dpl_MaxFleets":8,
+}

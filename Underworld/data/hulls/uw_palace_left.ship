@@ -1,0 +1,84 @@
+{
+  "hullName": "Palace Left Section",
+  "hullId": "uw_palace_left",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/uw/ships/palace/uw_palace_left.png",
+  "style": "HIGH_TECH",
+  "height": 153,
+  "width": 84,
+  "center": [42, 83],
+  "collisionRadius": 104,
+  "shieldCenter": [-4, 2.5],
+  "shieldRadius": 98.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "uw_cabal_upgrades",
+    "uw_linkedhull",
+    "missile_reload",
+    "reduced_explosion",
+    "always_detaches",
+    "advancedcore"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 100,
+      "locations": [-14, 7]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 70,
+      "locations": [0, 26]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 120,
+      "locations": [-37, 16]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-83, 26],
+      "length": 90,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-81, 18],
+      "length": 80,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -81.5, 26,
+    -67, 39.5,
+    -39, 32.5,
+    -12, 41,
+    50.5, 21,
+    68, -8.5,
+    68.5, -21.5,
+    49.5, -41,
+    15, -40.5,
+    -9, -19,
+    -40.5, -4,
+    -49.5, 10.5,
+    -72, 10.5
+  ]
+}

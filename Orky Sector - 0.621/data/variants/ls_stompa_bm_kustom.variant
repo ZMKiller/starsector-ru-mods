@@ -1,0 +1,46 @@
+{
+    "displayName": "kustom",
+    "fluxCapacitors": 19,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "ls_stompa_bm",
+    "hullMods": [
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_stompa_bm_kustom",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "GUN_ARM": "ls_stompa_snazzkannon",
+                "WS 004": "ls_snazz_cannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "TECH_ARM": "ls_stompa_choppa_bm"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "HEAD": "ls_stompa_head_eye_bm"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "BELLY": "ls_stompa_bellyarmor",
+                "WS 002": "ls_grot_shoota_single",
+                "WS 003": "ls_grot_shoota_single",
+                "WS 005": "ls_kustom_shoota"
+            }
+        }
+    ]
+}

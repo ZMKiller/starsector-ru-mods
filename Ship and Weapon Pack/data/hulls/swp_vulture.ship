@@ -1,0 +1,175 @@
+{
+  "hullName": "Vulture",
+  "hullId": "swp_vulture",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/swp/ships/vulture/swp_vulture.png",
+  "style": "MIDLINE",
+  "height": 242,
+  "width": 148,
+  "center": [74, 119],
+  "collisionRadius": 145,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 142.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [48, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 65,
+      "locations": [9, 22]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -65,
+      "locations": [9, -22]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-44, 53]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-44, -53]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 0,
+      "locations": [90, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 105,
+      "locations": [-67, 38]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -105,
+      "locations": [-67, -38]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-71, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-81.5, 47.5],
+      "length": 80,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81.5, -47.5],
+      "length": 80,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-95, 36],
+      "length": 88,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-95, -36],
+      "length": 88,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-109, 23.5],
+      "length": 96,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-109, -23.5],
+      "length": 96,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-109, -0],
+      "length": 0,
+      "width": 0,
+      "angle": 180,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    118.5, -5,
+    107, -23.5,
+    99, -15,
+    35, -35,
+    -35, -41.5,
+    -37, -60.5,
+    -62, -68,
+    -114.5, -13,
+    -95.5, -7,
+    -95.5, 7,
+    -114.5, 13,
+    -62, 68,
+    -37, 60.5,
+    -35, 41.5,
+    35, 35,
+    99, 15,
+    107, 23.5,
+    118.5, 5
+  ]
+}

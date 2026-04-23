@@ -1,0 +1,122 @@
+{
+  "hullName": "Dram",
+  "hullId": "pinkdram",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/PAGSM/ships/tanker_small_diktat.png",
+  "style": "LOW_TECH",
+  "coversColor": "255,180,170,255",
+  "height": 132,
+  "width": 90,
+  "center": [47, 48],
+  "collisionRadius": 120,
+  "shieldCenter": [18, 1],
+  "shieldRadius": 100,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery",
+    "civgrade"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 45,
+      "locations": [61, 22]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 225,
+      "locations": [-26, -20]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [61, -26]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 155,
+      "locations": [-30, 34]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44, 24],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, 8],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, -6],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, -18],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-44, -27],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -3, 38,
+    1, 27,
+    42, 27,
+    43, 37,
+    77, 38,
+    80, -4,
+    69, -15,
+    68, -32,
+    53, -33,
+    41, -25,
+    3, -24,
+    2, -37,
+    -27, -36,
+    -26, -30,
+    -41, -30,
+    -41, 12,
+    -31, 17,
+    -42, 19,
+    -41, 28,
+    -29, 28,
+    -27, 38
+  ]
+}

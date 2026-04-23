@@ -1,0 +1,96 @@
+{
+  "hullName": "Ubellop",
+  "hullId": "XHAN_Ubellop",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/XHAN_Ulbellop.png",
+  "style": "XHANTECH",
+  "coversColor": "159,161,151,255",
+  "height": 90,
+  "width": 74,
+  "center": [32, 41],
+  "collisionRadius": 95.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 85.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "phasefield",
+    "delicate",
+    "XHAN_Gen3_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [37.5, 16]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 252,
+      "angle": 90,
+      "locations": [9, 14]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 245,
+      "angle": 180,
+      "locations": [-20, -17]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-41, 17],
+      "length": 39.5,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-41, -20],
+      "length": 42,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-15.5, 28.5],
+      "length": 26.024118,
+      "width": 10.391395,
+      "angle": 144,
+      "contrailSize": 10.391395,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-26, -39],
+      "length": 29.64377,
+      "width": 12.246939,
+      "angle": -146,
+      "contrailSize": 12.246939,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -10.5, 29,
+    -40, 18,
+    -29.5, 3.5,
+    -40, -20.5,
+    -25, -38.5,
+    -5.5, -34.5,
+    20, -37,
+    32.5, -20,
+    29.5, 4,
+    40, 13.5,
+    33.5, 29.5
+  ]
+}

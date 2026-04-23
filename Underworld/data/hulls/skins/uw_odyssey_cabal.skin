@@ -1,0 +1,31 @@
+{
+    "baseHullId":"odyssey",
+    "skinHullId":"uw_odyssey_cabal",
+    "hullName":"Starlight Odyssey",
+    "descriptionId":"odyssey",
+    "descriptionPrefix":"Upgraded by the Starlight Cabal, this ship represents the materialistic glitz and glamour of the high life.",
+    "tags":["uw_cabal_bp", "no_dealer", "codex_unlockable"],
+    "tech":"Starlight Cabal",
+    "fleetPoints":27,
+    "coversColor":[175,50,230,255],
+    "baseValueMult":1.5,
+    "spriteName":"graphics/uw/ships/odyssey/odyssey_cabal.png",
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "weaponSlotChanges":{
+        "WS 004":{
+            "type": "UNIVERSAL"
+        },
+        "WS 005":{
+            "type": "UNIVERSAL"
+        },
+        "WS 006":{
+            "type": "UNIVERSAL"
+        },
+    },
+    "builtInMods":["uw_cabal_upgrades"],
+    "builtInWeapons":{
+    },
+}

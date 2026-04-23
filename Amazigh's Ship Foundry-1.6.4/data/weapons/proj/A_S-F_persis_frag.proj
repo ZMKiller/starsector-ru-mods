@@ -1,0 +1,39 @@
+{
+	"id":"A_S-F_persis_frag",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/A_S-F_persis_fragment.png",
+	"size":[5,10],
+	"center":[2.5,5],
+	"collisionRadius":6,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[190,255,215,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":30, # purely visual
+	"flameoutTime":1,
+	"noEngineGlowTime":0.2,
+	"fadeTime":0.5,
+	"engineSpec":{"turnAcc":2400,
+				  "turnRate":480,
+				  "acc":1800,
+				  "dec":600},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-4, 0],
+
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[190,255,215,255],
+						"contrailDuration":0.9,
+						"contrailWidthMult":0.6,
+						"contrailWidthAddedFractionAtEnd":1.2,# can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.1f,
+						"contrailAngularVelocityMult":0.7f,
+						"contrailSpawnDistMult":0, # how far away from engine it starts
+						"contrailColor":[110,185,145,200], # 65,110,85,140
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":2.5,
+				    "length":15.0,
+				    "angle":180.0}]
+}

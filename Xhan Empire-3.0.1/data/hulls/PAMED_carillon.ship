@@ -1,0 +1,406 @@
+{
+  "hullName": "Carillon",
+  "hullId": "PAMED_carillon",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/PAMED_carillon.png",
+  "style": "UTONA_SHIPYARDS",
+  "height": 263,
+  "width": 186,
+  "center": [93, 131],
+  "collisionRadius": 174.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 150.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "PAMED_targeting",
+    "PAMED_armor",
+    "PAMED_engines"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 25,
+      "locations": [64, 18]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -25,
+      "locations": [64, -18]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": 45,
+      "locations": [20, 31]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": -45,
+      "locations": [20, -31]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 0,
+      "locations": [91, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 90,
+      "locations": [-67, 79]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -90,
+      "locations": [-67, -79]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 180,
+      "locations": [-84, -0]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 0,
+      "locations": [33, -0]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 45,
+      "locations": [-38, 59]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -45,
+      "locations": [-38, -59]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-82, 67.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-82, -67.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-82.5, 65],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-82.5, -65],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-83, 62.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-83, -62.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-83.5, 60],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-83.5, -60],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-84, 57.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-84, -57.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-84.5, 55],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-84.5, -55],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-85, 52.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-85, -52.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-85.5, 50],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-85.5, -50],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-86.5, 47.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-86.5, -47.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-87.5, 45],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-87.5, -45],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-88.5, 42.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-88.5, -42.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-89.5, 40],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-89.5, -40],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-90.5, 37.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-90.5, -37.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-91.5, 35],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-91.5, -35],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-92.5, 32.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    },
+    {
+      "location": [-92.5, -32.5],
+      "length": 45.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "PAMED_ENGINES"
+    }
+  ],
+  "bounds": [
+    -129, -0,
+    -89, 41.5,
+    -83, 85.5,
+    -39, 87,
+    -2.5, 55,
+    73, 36,
+    128.5, -0,
+    73, -36,
+    -2.5, -55,
+    -39, -87,
+    -83, -85.5,
+    -89, -41.5
+  ]
+}

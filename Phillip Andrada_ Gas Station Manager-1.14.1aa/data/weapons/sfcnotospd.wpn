@@ -1,0 +1,30 @@
+{
+  "id": "sfcnotospd",
+  "specClass":"projectile",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/PAGSM/weapons/sfcnotos_pd_turret.png",
+  "turretGlowSprite": "graphics/PAGSM/weapons/sfcnotos_pd_turret_glow.png",
+  "hardpointSprite": "graphics/PAGSM/weapons/sfcnotos_pd_hardpoint.png",
+  "hardpointGlowSprite": "graphics/PAGSM/weapons/sfcnotos_pd_hardpoint_glow.png",
+  "glowColor": [100,100,100,255],
+  "turretOffsets": [34,-8,34,8],
+  "turretAngleOffsets": [0,0],
+  "hardpointOffsets": [36.5,-8,36.5,8],
+  "hardpointAngleOffsets": [0,0],
+  "barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+  "animationType":"GLOW_AND_FLASH",
+  "muzzleFlashSpec":{"length":23.0,   # only used if animationType = MUZZLE_FLASH
+					 "spread":5.0,
+					 "particleSizeMin":10.0,
+					 "particleSizeRange":12.0,
+					 "particleDuration":0.12,
+					 "particleCount":12,
+					 "particleColor":[100,100,100,255]},
+  "autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+  "requiresFullCharge":false,  # for pulse weapons - whether the weapon will fire at a lower strength partial charge
+  "projectileSpecId": "sfcnotospd_shot",  # projectile that will be fired
+  "fireSoundTwo":"ir_pulse_laser_fire",
+}

@@ -1,0 +1,26 @@
+{
+    "sunLightBrightnessScale":0.25,
+    "sunLightBrightnessMax":1.0,
+    "sunLightSpecularFactor":1.5,
+    "sunLightZComponentMin":0.3,
+    "sunLightZComponentMax":0.4,
+
+    "plugins":{
+        "ShaderHook":"org.dark.shaders.util.ShaderHook",
+        "GLib_ArcEffectOnOverload":"org.dark.graphics.plugins.ArcEffectOnOverload",
+        "GLib_ShipDestructionEffects":"org.dark.graphics.plugins.ShipDestructionEffects",
+        "GLib_WeaponDamageSmoke":"org.dark.graphics.plugins.WeaponDamageSmoke",
+        "GLib_DistortionsPlugin":"org.dark.graphics.plugins.DistortionsPlugin",
+        "GLib_LightInjector":"org.dark.graphics.plugins.LightInjector",
+        "GLib_ThreatInjector":"org.dark.graphics.plugins.ThreatInjector",
+        "GLib_InsigniaPlugin":"org.dark.graphics.plugins.InsigniaPlugin"
+    },
+
+    "graphics":{
+        "icons":{
+            "glib_insignia":"graphics/glib/icons/insignia/glib_insignaSheet.png",
+            "glib_icon":"graphics/glib/icons/graphicsLibIcon.png",
+            "glib_aa_warning":"graphics/glib/icons/aa_warning.png"
+        }
+    }
+}

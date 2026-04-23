@@ -1,0 +1,64 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "everyFrameEffect": "org.niatahl.tahlan.weapons.ArmigerMuzzleFlashScript",
+  "fireSoundTwo": "tahlan_armiger_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/tahlan/weapons/tahlan_armiger_hp_recoil.png",
+  "hardpointOffsets": [
+    45,
+    9,
+    46,
+    0,
+    45,
+    -9
+  ],
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_armiger_hp_base.png",
+  "id": "tahlan_armiger",
+  "muzzleFlashSpec": {
+    "length": 25,
+    "particleColor": [
+      255,
+      155,
+      25,
+      150
+    ],
+    "particleCount": 20,
+    "particleDuration": 0.2,
+    "particleSizeMin": 15,
+    "particleSizeRange": 25,
+    "spread": 10
+  },
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "tahlan_armiger_shot",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/tahlan/weapons/tahlan_armiger_turret_recoil.png",
+  "turretOffsets": [
+    33,
+    9,
+    34,
+    0,
+    33,
+    -9
+  ],
+  "turretSprite": "graphics/tahlan/weapons/tahlan_armiger_turret_base.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 10
+}

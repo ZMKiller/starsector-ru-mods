@@ -1,0 +1,31 @@
+{
+	"id":"dpl_anchor",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/dpl_anchor_turret.png",
+	"hardpointSprite":"graphics/weapons/dpl_anchor_hardpoint.png",	
+
+	"hardpointOffsets":[17,0],
+
+	"turretOffsets":[14,0],
+
+	"hardpointAngleOffsets":[0],
+	"turretAngleOffsets":[0],	
+	"barrelMode":"ALTERNATING",
+	"animationType":"SMOKE",
+	"renderHints":[RENDER_LOADED_MISSILES],
+	"interruptibleBurst":false,
+	"smokeSpec":{"particleSizeMin":10.0,
+				 "particleSizeRange":10.0,
+				 "cloudParticleCount":5,
+				 "cloudDuration":1.0,
+				 "cloudRadius":5.0,
+				 "blowbackParticleCount":9,
+				 "blowbackDuration":1.0,
+				 "blowbackLength":15.0,
+				 "blowbackSpread":10.0,
+				 "particleColor":[100,100,100,125]},
+	"projectileSpecId":"dpl_anchor",
+	"fireSoundTwo":"gazer_fire",
+}

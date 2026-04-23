@@ -1,0 +1,46 @@
+{
+    "displayName": "Devastator",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "hullId": "tahlan_centurion_dmn",
+    "hullMods": [
+        "safetyoverrides",
+        "missleracks",
+        "tahlan_daemonboost"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_centurion_dmn_deva",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "devastator"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "tahlan_dreadsabot",
+                "WS0004": "tahlan_dreadsabot"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "mininglaser",
+                "WS0007": "mininglaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "lightdualmg",
+                "WS0006": "lightdualmg"
+            }
+        }
+    ],
+    "wings": []
+}

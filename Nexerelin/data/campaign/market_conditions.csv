@@ -1,0 +1,18 @@
+name,id,planetary,decivRemove,script,desc,icon,order
+#Templar Control,exerelin_templar_control,,,exerelin.campaign.econ.TemplarControl,Храмовники осуществляют всеобъемлющий контроль над каждым аспектом подконтрольных им рынков. Повышает стабильность и убирает штраф к стабильности от контрабанды. Создает некоторый спрос на морпехов для поддержания порядка.,graphics/templars/icons/intel/tem_crusade_event.png,31
+Восстание,nex_rebellion_condition,,TRUE,exerelin.campaign.econ.RebellionCondition,"На $market идет восстание.
+
+- Стабильность снижена на $stabilityPenalty
+- Повышена цена морпехов, тяжелого вооружения и припасов; продажи на черном рынке усилят мятежников, прямые продажи чиновникам базы усилят правительство",graphics/icons/markets/pirate_moot.png,1002
+Рейды,nex_raid_condition,,TRUE,exerelin.campaign.econ.RaidCondition,"В системе действуют враждебные рейдерские флоты, нарушающие торговлю и другую деятельность.",graphics/icons/markets/pirate_activity.png,1301
+Усиленная оборона,nex_reinforced_defenses,,TRUE,exerelin.campaign.econ.ReinforcedDefenses,"Наземная оборона $market усилена личным составом и тяжелым вооружением, вероятно в ожидании враждебного вторжения.",graphics/icons/markets/mercenaries.png,1004
+Дань,nex_tribute,,TRUE,exerelin.campaign.econ.TributeCondition,"$market выплачивает регулярно дань локально доминирующей фракции за право продолжать существование. Иностранные власти жестко ограничивают рост местного населения, чтобы удерживать колонию в «управляемых» размерах.
+
+Выплату дани можно прекратить, если игрок решит разорвать соглашение, либо если изменившиеся обстоятельства сделают его неприменимым.",graphics/exerelin/icons/intel/lose_credits.png,1003
+Состояние фракции,nex_faction_condition,,TRUE,exerelin.campaign.econ.FactionConditionPlugin,,,1005
+,,,,,,,
+# vanilla override,,,,,,,
+Пиратская активность,pirate_activity,,TRUE,exerelin.campaign.intel.NexPirateActivity,"Есть признаки того, что пираты нацелились на перевозки и колонии в этой системе: от давления на портовых инспекторов, чтобы те закрывали глаза, до несоответствий в грузовых манифестах и общего роста криминальной активности.
+
+Скорее всего у пиратов есть база где-то относительно неподалеку.",graphics/icons/markets/pirate_activity.png,1300
+Ретранслятор связи (скрыто),comm_relay,,TRUE,exerelin.campaign.econ.NexCommRelayCondition,"Скрытое состояние, значок не требуется.",,

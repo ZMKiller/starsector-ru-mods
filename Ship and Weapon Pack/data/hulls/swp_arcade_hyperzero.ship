@@ -1,0 +1,413 @@
+{
+  "bounds": [
+    100,
+    -4.5,
+    97,
+    -11.5,
+    56,
+    -26,
+    32.5,
+    -26,
+    19,
+    -22,
+    11.5,
+    -14,
+    4,
+    -14,
+    -2,
+    -26,
+    11,
+    -26,
+    11,
+    -42,
+    41,
+    -46.5,
+    14.5,
+    -54,
+    8,
+    -62,
+    0.5,
+    -62,
+    -9.5,
+    -52,
+    -18.5,
+    -52,
+    -27,
+    -76,
+    -55.5,
+    -48,
+    -75.5,
+    -59,
+    -64,
+    -37.5,
+    -91,
+    -40,
+    -63.5,
+    -17.5,
+    -83.5,
+    -16,
+    -89,
+    -7,
+    -45,
+    -7,
+    -45,
+    7,
+    -89,
+    7,
+    -83.5,
+    16,
+    -63.5,
+    17.5,
+    -91,
+    40,
+    -64,
+    37.5,
+    -75.5,
+    59,
+    -55.5,
+    48,
+    -27,
+    76,
+    -18.5,
+    52,
+    -9.5,
+    52,
+    0.5,
+    62,
+    8,
+    62,
+    14.5,
+    54,
+    41,
+    46.5,
+    11,
+    42,
+    11,
+    26,
+    -2,
+    26,
+    4,
+    14,
+    11.5,
+    14,
+    19,
+    22,
+    32.5,
+    26,
+    56,
+    26,
+    97,
+    11.5,
+    100,
+    4.5
+  ],
+  "builtInWeapons": {
+    "WS0001": "swp_arcade_hyperzeroglow",
+    "WS0002": "swp_arcade_zerobeam",
+    "WS0003": "swp_arcade_zeroannihilator3",
+    "WS0004": "swp_arcade_zeroannihilator3",
+    "WS0005": "swp_arcade_zerocannon",
+    "WS0006": "swp_arcade_zerocannon",
+    "WS0007": "swp_arcade_megapulse",
+    "WS0008": "swp_arcade_megapulse",
+    "WS0009": "swp_arcade_omegaorb2",
+    "WS0010": "swp_arcade_omegaorb2",
+    "WS0011": "swp_arcade_omegaorb2",
+    "WS0012": "swp_arcade_omegaorb2",
+    "WS0013": "swp_arcade_omegaorb2",
+    "WS0014": "swp_arcade_omegaorb2",
+    "WS0015": "swp_arcade_omegaorb2"
+  },
+  "center": [
+    100,
+    100
+  ],
+  "collisionRadius": 126.800041,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 24,
+      "length": 96,
+      "location": [
+        -47,
+        -0
+      ],
+      "style": "CUSTOM",
+      "styleSpec": {
+        "contrailAngularVelocityMult": 0.33,
+        "contrailColor": [
+          255,
+          255,
+          255,
+          5
+        ],
+        "contrailMaxSpeedMult": 0.33,
+        "contrailParticleDuration": 0.2,
+        "contrailParticleSizeMult": 5,
+        "engineColor": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "type": "GLOW"
+      },
+      "width": 24
+    },
+    {
+      "angle": 159.676865,
+      "contrailSize": 12,
+      "length": 80,
+      "location": [
+        -49,
+        32.5
+      ],
+      "style": "CUSTOM",
+      "styleSpec": {
+        "contrailAngularVelocityMult": 0.33,
+        "contrailColor": [
+          255,
+          255,
+          255,
+          5
+        ],
+        "contrailMaxSpeedMult": 0.33,
+        "contrailParticleDuration": 0.2,
+        "contrailParticleSizeMult": 5,
+        "engineColor": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "type": "GLOW"
+      },
+      "width": 12
+    },
+    {
+      "angle": -159.676865,
+      "contrailSize": 12,
+      "length": 80,
+      "location": [
+        -49,
+        -32.5
+      ],
+      "style": "CUSTOM",
+      "styleSpec": {
+        "contrailAngularVelocityMult": 0.33,
+        "contrailColor": [
+          255,
+          255,
+          255,
+          5
+        ],
+        "contrailMaxSpeedMult": 0.33,
+        "contrailParticleDuration": 0.2,
+        "contrailParticleSizeMult": 5,
+        "engineColor": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "type": "GLOW"
+      },
+      "width": 12
+    }
+  ],
+  "height": 200,
+  "hullId": "swp_arcade_hyperzero",
+  "hullName": "Hyper Zero",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 125,
+  "spriteName": "graphics/swp/ships/super/swp_hyperzero.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        89,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        9,
+        35
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        9,
+        -35
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        -18,
+        62
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -18,
+        -62
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 45,
+      "arc": 90,
+      "id": "WS0007",
+      "locations": [
+        -8.5,
+        18.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -45,
+      "arc": 90,
+      "id": "WS0008",
+      "locations": [
+        -8.5,
+        -18.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0009",
+      "locations": [
+        59.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 135,
+      "arc": 180,
+      "id": "WS0010",
+      "locations": [
+        20,
+        18
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -135,
+      "arc": 180,
+      "id": "WS0011",
+      "locations": [
+        20,
+        -18
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0012",
+      "locations": [
+        -2.5,
+        35
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 90,
+      "id": "WS0013",
+      "locations": [
+        -2.5,
+        -35
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 45,
+      "arc": 180,
+      "id": "WS0014",
+      "locations": [
+        -34,
+        11
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -45,
+      "arc": 180,
+      "id": "WS0015",
+      "locations": [
+        -34,
+        -11
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 200
+}

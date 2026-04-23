@@ -1,0 +1,41 @@
+{
+  "variantId": "sfccoeus_Beamer",
+  "hullId": "sfccoeus",
+  "displayName": "Beamer",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 10,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "fluxbreakers",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdburst",
+        "WS0003": "heatseeker",
+        "WS0005": "pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "taclaser",
+        "WS0004": "taclaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

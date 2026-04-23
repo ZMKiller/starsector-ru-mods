@@ -1,0 +1,17 @@
+{
+	"id":"sotf_wyrmfire",
+	"governingAptitude":"sotf_apt_secret",
+	"compressHullmods":false,
+	"scope":"CUSTOM",
+	"scopeStr":"those condemned",
+	"effectGroups":[
+		{
+			"name":"The Axe Drops",
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"SHIP", "script":"data.scripts.campaign.skills.SotfWyrmfireExecutioner$TheAxeDrops"},
+			]
+		},
+	],
+}

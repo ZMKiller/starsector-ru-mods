@@ -1,0 +1,55 @@
+{
+    "hullName": "Looted Terminator Drone",
+    "hullId": "ls_looted_terminator",
+    "hullSize": "FIGHTER",
+    "style": "LS_Ork",
+    "spriteName": "graphics/ships/ls_looted_terminator_drone.png",
+    "height": 21,
+    "width": 18,
+    "center": [
+        9, 10.5
+    ],
+    "collisionRadius": 40,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 20,
+    "viewOffset": 0,
+    "builtInWeapons": {
+        "WS 000": "ls_kombi_shoota"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 20,
+            "angle": 0,
+            "locations": [
+                      -4,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -7, 0
+            ],
+            "length": 24,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 32,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+            -4.5,       -9,
+              11,        0,
+            -4.5,        9,
+            -8.5,        0
+    ]
+}

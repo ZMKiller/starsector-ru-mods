@@ -1,0 +1,28 @@
+{
+	"id":"ls_stompa_choppa_red",  # this id must match what's in the spreadsheet
+	"specClass":"beam",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":200,
+	"beamEffect":"data.weapons.ls_stompa_choppa",
+	"turretSprite":"graphics/weapons/ls_stompa/ls_mega_choppa_red00.png",
+	"hardpointSprite":"graphics/weapons/ls_stompa/ls_mega_choppa_red00.png",	
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"numFrames":4,	
+	"frameRate":16,
+	"turretOffsets":[32, -10],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[32, -10],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.	
+        "fringeColor":[200,175,135,0],
+	"coreColor":[255,225,200,0],
+	"glowColor":[255,225,200,0],
+	"width":30.0,
+	"textureType":ROUGH,
+	"textureScrollSpeed":260.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
+	#"fireSoundOne":"graviton_beam_intro",
+	"fireSoundTwo":"ls_kan_drill",
+}

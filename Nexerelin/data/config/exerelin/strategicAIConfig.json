@@ -1,0 +1,298 @@
+{
+	"concerns":{
+		"revanchism":{
+			"name":"Revanchism",
+			"desc":"We must take back our rightful territory of $market (size $size) from the vile $faction!",
+			#"icon":"",	# if blank or unspecified, will default to faction icon (more generally, it uses whatever icon the code says to use)
+			"classPath":"exerelin.campaign.ai.concern.RevanchismConcern",
+			"tags":["military", "market", "canInvade", "canDeclareWar", "canTransferMarket", "trait_irredentist"],
+			"module":MILITARY	# which AI module handles this concern, mostly for organizational purposes
+		},
+		"vulnerableEnemyTarget":{
+			"name":"Vulnerable Enemy Target",
+			"desc":"$market (size $size) is a highly valuable target, yet poorly defended for its value. This presents us with an opportunity.",
+			"classPath":"exerelin.campaign.ai.concern.VulnerableEnemyTargetConcern",
+			"tags":["military", "economy", "market", "canInvade", "canRaid", "canSatBomb", "canDestabilize", "canRebel", "trait_predatory"],
+			"enabled":true,
+			"module":MILITARY
+		},
+		"enemyInSharedSystem":{
+			"name":"Enemy in Shared System",
+			"desc":"$market (size $size) is an enemy colony in a system we also have a presence. We ought to neutralize this threat.",
+			"classPath":"exerelin.campaign.ai.concern.HostileInSharedSystemConcern",
+			"tags":["military", "market", "canInvade", "canRaid", "canSatBomb", "canDestabilize", "canRebel", "canDeclareWar", "trait_paranoid"],
+			"module":MILITARY
+		},
+		"inadequateDefense":{
+			"name":"Inadequate Defenses",
+			"desc":"$market (size $size) is a highly valuable target, yet poorly defended for its value. We should strengthen its defenses.",
+			"classPath":"exerelin.campaign.ai.concern.InadequateDefenseConcern",
+			"tags":["military", "economy", "market", "trait_paranoid", "canBuildDefense"],
+			"enabled":true,
+			"module":MILITARY
+		},
+		"pirateActivity":{
+			"name":"Pirate Activity",
+			"desc":"We have %s case(s) of pirate, Pather or other malicious activity on our markets. Soon we will need to destroy the nest from which these rats originate.",
+			"classPath":"exerelin.campaign.ai.concern.PirateActivityConcern",
+			"icon":"graphics/icons/markets/pirate_activity.png",
+			"tags":["military", "canBaseStrike", "trait_law_and_order"],
+			"module":MILITARY
+		},
+		"retaliation":{
+			"name":"Retaliation",
+			"desc":"We were recently attacked by our enemies, the most notable of which was the $event by the dastardly $faction.",
+			"classPath":"exerelin.campaign.ai.concern.RetaliationConcernV2",
+			"tags":["military", "wantCauseHarm", "canSatBomb"],	# 'cause harm' tags are checked by several fleet and operative actions
+			"module":MILITARY
+		},
+		"generalWarfare":{
+			"name":"General Warfare",
+			"desc":"We are at war with %s faction(s) and should take action against our enemies.",
+			"classPath":"exerelin.campaign.ai.concern.GeneralWarfareConcern",
+			"cooldownMult":0.5,	# actions have halved cooldown for this concern
+			"antiRepetitionMult":0.5,	# actions generate half the anti-repetition points for this concern
+			"tags":["military", "wantCauseHarm", "canSatBomb", "canSabotageIndustry", "canDestabilize", "canRebel"],
+			"module":MILITARY
+		},
+		"containAggression":{
+			"name":"Contain Aggression",
+			"desc":"$TheFaction's rampant aggression has gotten out of hand. It falls to us to cut them down to size.",
+			"classPath":"exerelin.campaign.ai.concern.ContainAggressionConcern",
+			"cooldownMult":0.5,
+			"antiRepetitionMult":0.5,
+			"tags":["military", "canInvade", "canSatBomb", "canDeclareWar"],
+			"module":MILITARY
+		},
+		
+		"developRelations":{
+			"name":"Develop Relations",
+			"desc":"We should further build our promising relations with $theFaction.",
+			"classPath":"exerelin.campaign.ai.concern.DevelopRelationsConcern",
+			"tags":["diplomacy", "canDiplomacy", "diplomacy_positive"],
+			"module":DIPLOMATIC
+		},
+		"powerfulUnfriendly":{
+			"name":"Powerful Unfriendly",
+			"desc":"$TheFaction $factionIsOrAre strong, and our relations with them are not always friendly. We should either appease them or take other precautions.",
+			"classPath":"exerelin.campaign.ai.concern.PowerfulUnfriendlyConcern",
+			"tags":["diplomacy", "canDiplomacy", "canCoalition", "trait_paranoid", "trait_submissive", "coalition_enemy"],
+			"module":DIPLOMATIC
+		},
+		"closeAdversaries":{
+			"name":"Close Adversaries",
+			"desc":"Two factions unfriendly to us, $theFaction and $theOtherFaction, are getting closer than we would like.",
+			"classPath":"exerelin.campaign.ai.concern.CloseAdversariesConcern",
+			"tags":["diplomacy", "canLowerRelations", "diplomacy_negative", "canDeclareWar", "canMakePeace", "canCoalition", "trait_paranoid", "coalition_enemy"],
+			"module":DIPLOMATIC
+		},
+		"warWeariness":{
+			"name":"War Weariness",
+			"desc":"Our people tire of the constant fighting. We should seek to make peace with one or more of our enemies.",
+			"classPath":"exerelin.campaign.ai.concern.WarWearinessConcern",
+			"icon":"graphics/exerelin/icons/intel/peace.png",
+			"tags":["diplomacy", "canMakePeace", "trait_pacifist", "trait_weak-willed", "!trait_stalwart"],
+			"module":DIPLOMATIC
+		},
+		"vulnerableFaction":{
+			"name":"Vulnerable Faction",
+			"desc":"$TheFaction is weak and vulnerable. It would be a shame if something were to happen to them.",
+			"classPath":"exerelin.campaign.ai.concern.VulnerableFactionConcern",
+			"tags":["diplomacy", "military", "canDiplomacy", "diplomacy_positive", "diplomacy_negative", "canDeclareWar", "trait_predatory"],
+			"module":DIPLOMATIC
+		},
+		"interventionConcern":{
+			"name":"Intervene in Conflict",
+			"desc":"Our ally $theOtherFaction is at war with $theFaction. We should intercede on their behalf.",
+			"classPath":"exerelin.campaign.ai.concern.InterventionConcern",
+			"tags":["diplomacy", "military", "trait_helps_allies"],
+			"module":DIPLOMATIC
+		},
+		"commodityCompetition":{
+			"name":"Competition",
+			"desc":"$TheFaction competes with us in the production of $commodity (market share $theirShare%%). We should secure our commercial interests.",
+			"classPath":"exerelin.campaign.ai.concern.CommodityCompetitionConcern",
+			"tags":["economy", "commodity", "canDestroyCommodity", "canSabotageIndustry", "canInvade", "canRaid", "canBlockade", "canBuildEcon", "trait_monopolist"],
+			"module":ECONOMIC
+		},
+		"importDependency":{
+			"name":"Import Dependency",
+			"desc":"We rely upon foreign suppliers of $commodity ($amount units). We should seek to establish domestic production.",
+			"classPath":"exerelin.campaign.ai.concern.ImportDependencyConcern",
+			"tags":["economy", "commodity", "canInvade", "canBuildEcon", "trait_monopolist", "trait_paranoid"],
+			"module":ECONOMIC
+		},
+		"undersuppliedMarket":{
+			"name":"Undersupplied Market",
+			"desc":"The market for a number of related commodities currently offers a high revenue per producer: $commodities",
+			"classPath":"exerelin.campaign.ai.concern.UndersuppliedMarketConcern",
+			"tags":["economy", "commodity", "canBuildEcon", "trait_monopolist"],
+			"module":ECONOMIC
+		},
+		"lowShipQuality":{
+			"name":"Low Ship Quality",
+			"desc":"Our lack of heavy industry is resulting in heavily defective ships. This is a dangerous and unacceptable state of affairs we should remedy promptly.",
+			"classPath":"exerelin.campaign.ai.concern.LowShipQualityConcern",
+			"tags":["economy", "military", "canBuildHeavyIndustry", "canInvade", "trait_paranoid", "trait_predatory", "!trait_pacifist"],
+			"module":ECONOMIC
+		},
+		
+		# internal concerns, not normally generated for strategic AI
+		"testRaiseRelations":{
+			"name":"Test Raise Relations",
+			"desc":"This should not appear",
+			"classPath":"exerelin.campaign.ai.concern.special.TestRaiseRelations",
+			"tags":["diplomacy", "canDiplomacy", "diplomacy_positive", "hidden"],
+			"module":EXECUTIVE
+		},		
+	},
+	
+	# for an action to be usable for a concern, they need to have at least one matching tag
+	# the economy/military/diplomacy tags are also used for prioritization of concerns and actions based on the faction's alignment
+	"actions":{
+		"invasion":{
+			"name":"Invasion",
+			"classPath":"exerelin.campaign.ai.action.fleet.InvasionAction",
+			"cooldown":45,			# how long after action completion before a new action can be taken for the concern; default 30
+			"antiRepetition":30,	# reduction in action priority if recently used elsewhere, decays over time; default 25
+			"chance":0.85,			# if the roll fails, skip the action before even checking its priority
+			# wartime actions can only be used when at war
+			"tags":["military", "market", "canInvade", "unfriendly", "aggressive", "wartime", "useIfSurplusShips"],
+		},
+		"raid":{
+			"name":"Raid",
+			"classPath":"exerelin.campaign.ai.action.fleet.RaidAction",
+			"tags":["military", "market", "canRaid", "unfriendly", "aggressive", "wartime", "useIfSurplusShips"],
+		},
+		"pirateRaid":{
+			"name":"Pirate Raid",
+			"classPath":"exerelin.campaign.ai.action.fleet.PirateRaidAction",
+			"idForAntiRepetition":"raid",
+			"chance":0.4,
+			"tags":["military", "market", "canRaid", "unfriendly", "aggressive", "trait_devious"],	# notably, can be done in peacetime
+		},
+		"baseStrike":{
+			"name":"Base Strike",
+			"classPath":"exerelin.campaign.ai.action.fleet.BaseStrikeAction",
+			"tags":["military", "market", "canBaseStrike", "unfriendly", "aggressive", "wartime"],
+		},
+		"blockade":{
+			"name":"Blockade",
+			"chance":0.5,
+			"classPath":"exerelin.campaign.ai.action.fleet.BlockadeAction",
+			"tags":["military", "market", "canBlockade", "unfriendly", "aggressive", "wartime", "useIfSurplusShips", "trait_monopolist"],
+		},
+		
+		"diplomacyPositive":{
+			"name":"Diplomatic Action (Positive)",
+			"classPath":"exerelin.campaign.ai.action.DiplomacyAction",
+			"antiRepetition":40,
+			"cooldown":75,	# longer since it's instant action and we don't want factions influencing relations too readily
+			"tags":["diplomacy", "canDiplomacy", "friendly"],
+		},
+		"diplomacyNegative":{
+			"name":"Diplomatic Action (Negative)",
+			"classPath":"exerelin.campaign.ai.action.DiplomacyAction",
+			"cooldown":60,	# longer since it's instant action
+			"tags":["diplomacy", "canDiplomacy", "unfriendly"],
+		},
+		"declareWar":{
+			"name":"Declare War",
+			"classPath":"exerelin.campaign.ai.action.DeclareWarAction",
+			"cooldown":0,
+			"tags":["military", "diplomacy", "canDeclareWar", "aggressive", "unfriendly"],
+		},
+		"makePeace":{
+			"name":"Make Peace",
+			"classPath":"exerelin.campaign.ai.action.MakePeaceAction",
+			"tags":["diplomacy", "canMakePeace", "friendly"],
+		},
+		"interventionAction":{
+			"name":"Intervene in Conflict",
+			"classPath":"exerelin.campaign.ai.action.InterventionAction",
+			"tags":["diplomacy"],
+		},
+		
+		# currently should only be called by the Form Coalition shim action
+		"enterAlliance":{
+			"name":"Enter Alliance",
+			"classPath":"exerelin.campaign.ai.action.EnterAllianceAction",
+			"tags":["diplomacy", "friendly"],
+		},
+		
+		"transferMarket":{
+			"name":"Transfer Market",
+			"classPath":"exerelin.campaign.ai.action.TransferMarketAction",
+			"tags":["diplomacy", "friendly", "canTransferMarket"],
+		},
+		
+		"agentRaiseRelations":{
+			"name":"Raise Relations",
+			"classPath":"exerelin.campaign.ai.action.covert.RaiseRelationsAction",
+			"antiRepetition":35,
+			"cooldown":45, # don't want factions influencing relations too readily
+			"tags":["diplomacy", "covert", "canDiplomacy", "diplomacy_positive", "friendly"],
+			"idForAntiRepetition":"agentDiplo",
+		},
+		"agentLowerRelations":{
+			"name":"Lower Relations",
+			"classPath":"exerelin.campaign.ai.action.covert.LowerRelationsAction",
+			"antiRepetition":35,
+			"cooldown":45,
+			"tags":["diplomacy", "covert", "canLowerRelations", "diplomacy_negative", "unfriendly"],
+			"idForAntiRepetition":"agentDiplo",
+		},
+		"agentDestroyCommodityStocks":{
+			"name":"Destroy Commodity Stocks",
+			"classPath":"exerelin.campaign.ai.action.covert.DestroyCommodityStocksAction",
+			"tags":["covert", "canDestroyCommodity", "aggressive", "unfriendly"],
+			"idForAntiRepetition":"agentGeneric",
+		},
+		"agentSabotageIndustry":{
+			"name":"Sabotage Industry",
+			"classPath":"exerelin.campaign.ai.action.covert.SabotageIndustryAction",
+			"antiRepetition":30,
+			"tags":["covert", "canSabotageIndustry", "aggressive", "unfriendly"],
+			"idForAntiRepetition":"agentGeneric",
+		},
+		"agentInstigateRebellion":{
+			"name":"Instigate Rebellion",
+			"classPath":"exerelin.campaign.ai.action.covert.InstigateRebellionAction",
+			"antiRepetition":35,
+			"chance":0.6,
+			"tags":["military", "covert", "canInvade", "aggressive", "unfriendly"],
+			"idForAntiRepetition":"agentGeneric",
+		},
+		
+		"buildEcon":{
+			"name":"Build (Economy)",
+			"classPath":"exerelin.campaign.ai.action.industry.BuildEconAction",
+			"cooldown":60,
+			"antiRepetition":50,
+			"tags":["economy", "canBuildEcon"],
+		},
+		# special handling for the low ship quality concern
+		"buildHeavyIndustry":{
+			"name":"Build (Heavy Industry)",
+			"classPath":"exerelin.campaign.ai.action.industry.BuildHeavyIndustryAction",
+			"cooldown":90,
+			"antiRepetition":50,
+			"idForAntiRepetition":"buildEcon",
+			"tags":["economy", "canBuildHeavyIndustry"],
+		},
+		"buildDefense":{
+			"name":"Build (Defense)",
+			"classPath":"exerelin.campaign.ai.action.industry.BuildDefenseAction",
+			"cooldown":60,
+			"antiRepetition":50,
+			"tags":["economy", "military", "canBuildDefense"],
+		},
+		
+		"coalition":{
+			"name":"Form Coalition",
+			"classPath":"exerelin.campaign.ai.action.special.CoalitionAction",
+			"shim":true,	# this action exists to replace itself with other actions
+			"tags":["diplomacy", "canDiplomacy", "friendly"],
+		},
+	}	
+}

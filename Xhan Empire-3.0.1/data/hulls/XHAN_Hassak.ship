@@ -1,0 +1,143 @@
+{
+  "hullName": "Hassak",
+  "hullId": "XHAN_Hassak",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Xhan_Hassak.png",
+  "style": "ALVARIUM_DOCTRINE",
+  "coversColor": "202,229,196,255",
+  "height": 87,
+  "width": 72,
+  "center": [36, 42],
+  "collisionRadius": 63,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 59,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_PlasteenArmor",
+    "delicate",
+    "phasefield"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 50,
+      "locations": [8, 10],
+      "renderOrderMod": 1
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": -50,
+      "locations": [8, -10],
+      "renderOrderMod": 1
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [21, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 245,
+      "angle": 180,
+      "locations": [-5, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-6, 29]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-6, -29]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 104,
+      "locations": [-14, 28]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -104,
+      "locations": [-14, -28]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 125,
+      "locations": [-21, 25]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -125,
+      "locations": [-21, -25]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-32.5, 7],
+      "length": 23,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-32.5, -7],
+      "length": 23,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    }
+  ],
+  "bounds": [
+    29.5, 20,
+    -8, 33.5,
+    -36, 15.5,
+    -28, -0,
+    -36, -15.5,
+    -8, -33.5,
+    29.5, -20
+  ]
+}

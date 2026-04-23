@@ -1,0 +1,50 @@
+{
+	"id":"A_S-F_thicket_sb",
+	"specClass":"missile",
+	"missileType":"MIRV",
+	"sprite":"graphics/missiles/A_S-F_smartbomb.png",
+	"size":[12,14],	
+	"center":[6,7],
+	"collisionRadius":16,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,150,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+
+	"armingTime":0.5,
+
+	"engineSpec":{"turnAcc":270,
+				  "turnRate":180,
+				  "acc":150,	#50
+				  "dec":75,	#20
+				  "maxSpeed":90},
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":300,
+					"minTimeToSplit":0.5,
+					"canSplitEarly":false,
+					"splitSound":"bomb_bay_fire",
+					"numShots":4, #3
+					"damage":200, #400
+					"impact":10,
+					"emp":0,
+					"damageType":FRAGMENTATION,
+					"hitpoints":150,
+					"arc":60,
+					"arcOffset":0,
+					"evenSpread":true, #false
+					"spreadSpeed":130, #120
+					"spreadSpeedRange":130, #120
+					"projectileSpec":"A_S-F_thicket_clu",
+					#"emptySpec":"type_1_mirv_empty",
+					"smokeSpec":{"particleSizeMin":20.0, #30
+								 "particleSizeRange":10.0,	#20
+								 "cloudParticleCount":5,	#10
+								 "cloudDuration":1.0,
+								 "cloudRadius":10.0,		#20
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[150,100,50,100]}
+					}
+}
+			

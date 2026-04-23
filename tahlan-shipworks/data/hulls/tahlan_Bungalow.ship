@@ -1,0 +1,195 @@
+{
+  "hullName": "Bungalow",
+  "hullId": "tahlan_Bungalow",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/tahlan/ships/tahlan_Bungalow.png",
+  "style": "LOW_TECH",
+  "height": 196,
+  "width": 208,
+  "center": [104, 98],
+  "collisionRadius": 157,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 145,
+  "viewOffset": 0,
+  "builtInMods": [
+    "tahlan_crampedhangars"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 104,
+      "angle": 39.5,
+      "locations": [-31, 29]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 104,
+      "angle": -39.5,
+      "locations": [-31, -29]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 104,
+      "angle": 21,
+      "locations": [80, 59]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 104,
+      "angle": -21,
+      "locations": [80, -59]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 129,
+      "angle": -79.5,
+      "locations": [-7, -76]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 123,
+      "angle": 67,
+      "locations": [-7.5, 76]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 180,
+      "locations": [-64, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        4, 40,
+        -5, 34
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        4.5, -39.5,
+        -3.5, -33.5
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -6.5, 26.5,
+        -2.5, 18.5
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -7, -26,
+        -2, -17.5
+      ]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [39, -84]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-91, 57],
+      "length": 55,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-91, -57],
+      "length": 55,
+      "width": 21,
+      "angle": -180,
+      "contrailSize": 21,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-92.5, 46.5],
+      "length": 65,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-92.5, -46.5],
+      "length": 65,
+      "width": 25,
+      "angle": -180,
+      "contrailSize": 25,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -88, -69,
+    -67.5, -70,
+    -65.5, -84.5,
+    -3.5, -85,
+    9.5, -78,
+    65, -79,
+    87, -69.5,
+    88.5, -48,
+    74.5, -45,
+    63, -20.5,
+    63, 20.5,
+    74.5, 45,
+    88.5, 48,
+    87, 69.5,
+    65, 79,
+    9.5, 78,
+    -3.5, 85,
+    -65.5, 84.5,
+    -67.5, 70,
+    -88, 69
+  ]
+}

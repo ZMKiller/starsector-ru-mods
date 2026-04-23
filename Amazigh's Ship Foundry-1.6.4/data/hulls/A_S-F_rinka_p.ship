@@ -1,0 +1,100 @@
+{
+  "hullName": "Rinka (P)",
+  "hullId": "A_S-F_rinka_p",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/A_S-F_Rinka_P.png",
+  "style": "MIDLINE",
+  "height": 82,
+  "width": 66,
+  "center": [34, 42],
+  "collisionRadius": 61,
+  "shieldCenter": [1, 0],
+  "shieldRadius": 59,
+  "viewOffset": 0,
+  "builtInMods": [
+    "A_S-F_rinkaHullmod_p",
+    "missleracks",
+    "unstable_injector"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [25, -13]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -20,
+      "locations": [3, -21]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [34, 10]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 70,
+      "locations": [8, 22]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-41, 12.5],
+      "length": 50,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-41, -9.5],
+      "length": 50,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-36, 1.5],
+      "length": 25,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    33, -22,
+    14, -30,
+    -30, -26,
+    -32, -17,
+    -40, -15,
+    -40, 18,
+    -21, 24,
+    -20, 29,
+    18, 28,
+    22, 17,
+    36, 15,
+    37, 5,
+    28, 4,
+    28, -3,
+    33, -4
+  ]
+}

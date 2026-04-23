@@ -1,0 +1,25 @@
+{
+    "baseHullId":"buffalo",
+    "skinHullId":"swp_buffalo_luddic_path",
+    "hullName":"Buffalo (LP)",
+    "hullDesignation":"Combat Freighter",
+    "descriptionId":"buffalo",  # optional
+    "descriptionPrefix":"Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war.",
+    "tags":["LP_bp"],
+    "tech":"Luddic Path",
+    "spriteName":"graphics/ships/buffalo/buffalo_luddic_path.png",
+    "systemId":"ammofeed",
+    "removeHints":[CIVILIAN],
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "weaponSlotChanges":{
+        "WS 001":{
+            "type": "BALLISTIC"
+        }
+    },
+    "builtInMods":["safetyoverrides", "ill_advised"],
+    "builtInWeapons":{
+    },
+}

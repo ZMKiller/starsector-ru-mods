@@ -1,0 +1,192 @@
+{
+  "hullName": "Arke AE-1500",
+  "hullId": "sfcarke",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/PAGSM/ships/tanker_escort_carrier_diktatv2.png",
+  "style": "MIDLINE",
+  "height": 200,
+  "width": 180,
+  "center": [90, 105],
+  "collisionRadius": 152.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 132,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 90,
+      "locations": [-43, 75]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -90,
+      "locations": [-43, -75]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 0,
+      "locations": [-6.5, 54]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -0,
+      "locations": [-6.5, -54]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [48.5, 22]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [48.5, -22]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [84, 16]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [84, -16]
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 80,
+      "angle": 0,
+      "locations": [47.5, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        15, 6,
+        26, 8,
+        15, 8.5,
+        4.5, 8.5,
+        5.5, 4,
+        15.5, 4,
+        26.5, 5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        15, -6,
+        15.5, -2.5,
+        5, -2.5,
+        4.5, -7.5,
+        15, -8,
+        26, -7.5,
+        26.5, -3
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-103, 41],
+      "length": 80,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-103, -41],
+      "length": 80,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 26,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-93, 61],
+      "length": 62,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-93, -61],
+      "length": 62,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    91, -13,
+    82, -25,
+    58.5, -45.5,
+    8.5, -48.5,
+    6, -73,
+    -52, -86,
+    -86.5, -77.5,
+    -101, -48,
+    -100.5, -35.5,
+    -84, -14.5,
+    -72.5, -11,
+    -72.5, 11,
+    -84, 14.5,
+    -100.5, 35.5,
+    -101, 48,
+    -86.5, 77.5,
+    -52, 86,
+    6, 73,
+    8.5, 48.5,
+    58.5, 45.5,
+    82, 25,
+    91, 13
+  ]
+}

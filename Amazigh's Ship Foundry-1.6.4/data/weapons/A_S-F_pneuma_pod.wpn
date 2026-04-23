@@ -1,0 +1,30 @@
+{
+	"id":"A_S-F_pneuma_pod",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"MEDIUM",
+	
+	"turretSprite":"graphics/weapons/A_S-F_pneuma_pod.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_pneuma_pod.png",
+
+	"hardpointOffsets":[13, 5, 13, -5, 10, 4, 10, -4, 11, 7, 11, -7, 8, 8, 8, -8, 7, 5, 7, -5, 5, 8, 5, -8, 4, 5, 4, -5, 2, 8, 2, -8],
+	"turretOffsets":[7, 5, 7, -5, 4, 4, 4, -4, 5, 7, 5, -7, 2, 8, 2, -8, 1, 5, 1, -5, -1, 8, -1, -8, -2, 5, -2, -5, -4, 8, -4, -8],
+	"hardpointAngleOffsets":[41, -41, 48, -48, 55, -55, 62, -62, 69, -69, 76, -76, 83, -83, 90, -90],
+	"turretAngleOffsets":[41, -41, 48, -48, 55, -55, 62, -62, 69, -69, 76, -76, 83, -83, 90, -90],
+	"barrelMode":"DUAL",
+	"animationType": "SMOKE",
+	"interruptibleBurst":false,
+	"smokeSpec": {
+		"particleSizeMin": 8,
+		"particleSizeRange": 14,
+		"cloudParticleCount": 3,
+		"cloudDuration": 0.8,
+		"cloudRadius": 7,
+		"blowbackParticleCount": 3,
+		"blowbackDuration": 1,
+		"blowbackLength": 18,
+		"blowbackSpread": 9,
+		"particleColor": [170,170,150,130]},
+	"projectileSpecId":"A_S-F_henki_mssl",
+	"fireSoundTwo":"swarmer_fire",
+}

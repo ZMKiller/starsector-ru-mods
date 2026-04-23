@@ -1,0 +1,29 @@
+{
+	"id":"ls_grot_shoota",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":250,
+	"turretSprite":"graphics/weapons/ls_grot_shoota.png",
+	"turretGunSprite":"graphics/weapons/ls_grot_shoota_barrel.png",
+	"hardpointSprite":"graphics/weapons/ls_grot_shoota.png",
+	"hardpointGunSprite":"graphics/weapons/ls_grot_shoota_barrel.png",
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":3.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[8, -2, 8, 2],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[8, -2, 8, 2],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":20.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":6.0,
+					   "particleSizeMin":3.0,
+					   "particleSizeRange":5.0,
+					   "particleDuration":0.15,
+					   "particleCount":5,
+					   "particleColor":[255,240,165,200]},
+	"projectileSpecId":"vulcan_shot",  # projectile that will be fired
+	#"fireSoundOne":"vulcan_cannon_intro",
+	"fireSoundTwo":"vulcan_cannon_fire",
+}

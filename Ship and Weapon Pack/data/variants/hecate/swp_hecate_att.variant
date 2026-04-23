@@ -1,0 +1,29 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 2,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "swp_hecate",
+    "hullMods": ["fluxdistributor"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_hecate_att",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "irpulse",
+                "WS0002": "irpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ioncannon",
+                "WS0004": "ioncannon"
+            }
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "displayName": "Rokkit",
+    "fluxCapacitors": 10,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "ls_shoota_skipper_ds",
+    "hullMods": [
+        "heavyarmor",
+        "stabilizedshieldemitter"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_shoota_skipper_ds_rokkit",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_rokkit_launcha",
+                "WS 003": "ls_rokkit_launcha",
+                "WS 001": "ls_rokkit_launcha",
+                "WS 002": "ls_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_supashoota"
+            }
+        }
+    ]
+}

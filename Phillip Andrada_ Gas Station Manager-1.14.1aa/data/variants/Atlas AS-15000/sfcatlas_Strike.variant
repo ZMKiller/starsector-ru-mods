@@ -1,0 +1,65 @@
+{
+  "variantId": "sfcatlas_Strike",
+  "hullId": "sfcatlas",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "sfcamtorpedorack",
+        "WS0002": "sfcamtorpedorack"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "sfcammissilepod",
+        "WS0014": "sfcammissilepod",
+        "WS0015": "sfcammissilepod",
+        "WS0016": "sfcammissilepod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightneedler",
+        "WS0004": "lightneedler",
+        "WS0017": "lightneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "sfcamchainpulser",
+        "WS0012": "sfcamchainpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lrpdlaser",
+        "WS0006": "lrpdlaser",
+        "WS0007": "lrpdlaser",
+        "WS0008": "lrpdlaser",
+        "WS0009": "lrpdlaser",
+        "WS0010": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,52 @@
+{
+  "variantId": "dpl_station_attack_minelayer_standard",
+  "hullId": "dpl_station_attack_minelayer",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "gravitonbeam",
+        "WS 003": "gravitonbeam",
+        "WS 007": "irautolance",
+        "WS 010": "irautolance"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "dpl_plasma_lance",
+        "WS 008": "dpl_lightning_lance",
+        "WS 009": "dpl_lightning_lance",
+        "WS 012": "dpl_plasma_lance"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "dpl_phase_pd",
+        "WS 004": "dpl_phase_pd"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "dpl_xylophone_wing",
+    "dpl_xylophone_wing",
+    "dpl_xylophone_wing"
+  ]
+}

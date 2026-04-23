@@ -1,0 +1,58 @@
+{
+  "variantId": "A_S-F_lanner_od",
+  "hullId": "A_S-F_lanner",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "multineedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "annihilator",
+        "WS0007": "annihilator",
+        "WS0008": "annihilator"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "breach",
+        "WS0009": "breach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ionpulser",
+        "WS0003": "ioncannon",
+        "WS0004": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "flak",
+        "WS0011": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

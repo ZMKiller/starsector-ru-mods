@@ -1,0 +1,48 @@
+{
+	"id":"ls_uh_oh_killboy_mine",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	#"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
+	"sprite":"graphics/ships/ls_deff_skwardon/ls_deff_skwardon_2_missile.png",
+	"size":[36,36],	
+	"center":[18,18],
+	"collisionRadius":36,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,50,25,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":200, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":150,
+					 "coreRadius":75, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":5.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":150,
+					 "particleColor":[255,50,25,255]},
+	"armingTime":0,
+	"engineSpec":{"turnAcc":300,
+				  "turnRate":200,
+				  "acc":800,
+				  "dec":200},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-16, 0],
+				    #"style":"ROCKET_LOW_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,50,25,255],
+						"contrailDuration":2,
+						"contrailWidthMult":4,
+						"contrailWidthAddedFractionAtEnd":-1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":6, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[75,75,75,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":18.0,
+				    "length":48.0,
+				    "angle":180.0}]
+}

@@ -1,0 +1,202 @@
+{
+  "hullName": "Baritone",
+  "hullId": "dpl_baritone",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/dpl_baritone.png",
+  "style": "HIGH_TECH",
+  "height": 230,
+  "width": 122,
+  "center": [61, 115],
+  "collisionRadius": 142.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 126,
+  "viewOffset": 0,
+  "builtInMods": [
+    "distributed_fire_control",
+    "dpl_focus_lens"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-56, 29]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -180,
+      "locations": [-56, -29]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-17, 43]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-17, -43]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [32, 37]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [32, -37]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [68, 12]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -0,
+      "locations": [68, -12]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [65, 36]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [65, -36]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-79.5, 46.5],
+      "length": 40.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-79.5, -46.5],
+      "length": 40.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-97.5, 29],
+      "length": 45.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-97.5, -29],
+      "length": 45.5,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-100, 19],
+      "length": 49.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-100, -19],
+      "length": 49.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-101, 7],
+      "length": 54.5,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-101, -7],
+      "length": 54.5,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    110, -9.5,
+    101, -21.5,
+    83.5, -31,
+    81, -42.5,
+    72, -41.5,
+    66, -38.5,
+    51.5, -46.5,
+    7.5, -62.5,
+    -64, -59,
+    -80.5, -53.5,
+    -81, -43.5,
+    -100, -35,
+    -100, 35,
+    -81, 43.5,
+    -80.5, 53.5,
+    -64, 59,
+    7.5, 62.5,
+    51.5, 46.5,
+    66, 38.5,
+    72, 41.5,
+    81, 42.5,
+    83.5, 31,
+    101, 21.5,
+    110, 9.5
+  ]
+}

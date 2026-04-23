@@ -1,0 +1,178 @@
+{
+  "hullName": "Clepsydra CA-1500",
+  "hullId": "sfcclepsydra",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/PAGSM/ships/Clepsydra_diktat_v3.png",
+  "style": "LOW_TECH",
+  "height": 229,
+  "width": 150,
+  "center": [73, 117],
+  "collisionRadius": 161.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 147,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sfcsolarlivery",
+    "repair_gantry"
+  ],
+  "builtInWings": [
+    "sfcslentfighter_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [-81, 13]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-81, -13]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 45,
+      "locations": [-25, 24]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -45,
+      "locations": [-25, -24]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-15.5, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -90,
+      "locations": [23, -54]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [88, -28]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [88, 28]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        76, 1,
+        91, 6.5,
+        91, -6.5,
+        65.5, -7,
+        64.5, 6.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        42.5, -1,
+        52.5, 13.5,
+        32.5, 8.5,
+        35, -13.5,
+        51, -13
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-116.5, 15],
+      "length": 40,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-116.5, -15],
+      "length": 40,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-114.5, 26],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-114.5, -26],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -28, -55,
+    -46.5, -37.5,
+    -111, -34.5,
+    -111, 34.5,
+    -46.5, 37.5,
+    -28, 55,
+    -16.5, 52.5,
+    85.5, 51.5,
+    110.5, 27,
+    110, -26,
+    85, -51,
+    62.5, -51,
+    53.5, -58,
+    20.5, -58.5,
+    4.5, -43.5,
+    -10.5, -44,
+    -21, -54.5
+  ]
+}

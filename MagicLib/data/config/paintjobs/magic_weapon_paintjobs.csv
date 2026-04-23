@@ -1,0 +1,13 @@
+id,paintjobFamilies,weaponIds,spriteMap
+# id: Required. The id of the weapon paintjob.,,,
+# paintjobFamilies: Required. The paintjobFamily(s) that this paintjob applies to. Must match at least one in `magic_paintjobs.csv`.,,,
+# weaponIds: Required. The id(s) of the weapons(s) that this paintjob applies to. Must contain at least one valid weapon id.,,,
+# spriteMap: Required. Format: "path/to/old/sprite.png -> path/to/new/sprite.png". Weapons that are not decos typically have many sprites. This field should have one sprite path map per sprite that needs to be replaced. Must contain at least one valid replacement.,,,
+
+# More info: https://starsector.wiki.gg/wiki/MagicLib#Weapons_and_Decos
+
+# Deco Example (for more, see https://github.com/Starficz/scy-nation/blob/main/data/config/paintjobs/magic_weapon_paintjobs.csv)
+# SCY_bluesky_lion_armor_deco_FL,Bluesky,SCY_WWlionAFL,graphics/SCY/ships/SCY_nemeanLion_armorFrontLeft.png -> graphics/bluesky/ships/SCY_nemeanLion_armorFrontLeft.png
+# SCY_bluesky_lion_armor_deco_FR,Bluesky,SCY_WWlionAFR,graphics/SCY/ships/SCY_nemeanLion_armorFrontRight.png -> graphics/bluesky/ships/SCY_nemeanLion_armorFrontRight.png
+# SCY_bluesky_lion_armor_deco_RL,Bluesky,SCY_WWlionARL,graphics/SCY/ships/SCY_nemeanLion_armorRearLeft.png -> graphics/bluesky/ships/SCY_nemeanLion_armorRearLeft.png
+# SCY_bluesky_lion_armor_deco_RR,Bluesky,SCY_WWlionARR,graphics/SCY/ships/SCY_nemeanLion_armorRearRight.png -> graphics/bluesky/ships/SCY_nemeanLion_armorRearRight.png

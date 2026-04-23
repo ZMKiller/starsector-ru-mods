@@ -1,0 +1,43 @@
+{
+    "displayName": "overdriven",
+    "fluxCapacitors": 4,
+    "fluxVents": 8,
+    "goalVariant": false,
+    "hullId": "ls_bromen_bm",
+    "hullMods": [
+        "ls_orky_override"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_bromen_bm_overdriven",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_big_shoota",
+                "WS 001": "ls_big_shoota"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "ls_bolta"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_rokkit_launcha"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ls_mini_rokkit_launcha"
+            }
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "variantId": "A_S-F_vigilance_purs",
+  "hullId": "vigilance",
+  "displayName": "Pursuer",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "solar_shielding",
+    "hardenedshieldemitter",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "ionbeam"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "salamanderpod"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

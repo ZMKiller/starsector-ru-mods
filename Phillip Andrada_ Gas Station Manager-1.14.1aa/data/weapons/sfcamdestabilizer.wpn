@@ -1,0 +1,30 @@
+{
+	"id":"sfcamdestabilizer",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretSprite":"graphics/PAGSM/weapons/sfc_destabilizer_turret_basev3.png",
+	"turretGlowSprite":"graphics/PAGSM/weapons/sfc_destabilizer_turret_glowv1.png",
+	"hardpointSprite":"graphics/PAGSM/weapons/sfc_destabilizer_hardpoint_basev3.png",
+	"hardpointGlowSprite":"graphics/PAGSM/weapons/sfc_destabilizer_hardpoint_glowv1.png",
+	"glowColor":[255,100,100,255],
+	"turretOffsets":[21, -9,
+					21, 0,
+					21, 9],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[31, -9,
+					31, 0,
+					31, 9],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"ALTERNATING", # LINKED or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":23.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":0.12,
+					   "particleCount":12,
+					   "particleColor":[150,100,255,255]},
+	"projectileSpecId":"sfcamdestabilizer_shot",  # projectile that will be fired
+	"fireSoundTwo":"pulse_laser_fire",
+}

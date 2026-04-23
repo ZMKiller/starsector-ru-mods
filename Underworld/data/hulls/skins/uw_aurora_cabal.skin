@@ -1,0 +1,34 @@
+{
+    "baseHullId":"aurora",
+    "skinHullId":"uw_aurora_cabal",
+    "hullName":"Starlight Aurora",
+    "descriptionId":"aurora",
+    "descriptionPrefix":"Upgraded by the Starlight Cabal, this ship represents the materialistic glitz and glamour of the high life.",
+    "tags":["uw_cabal_bp", "no_dealer", "codex_unlockable"],
+    "tech":"Starlight Cabal",
+    "fleetPoints":18,
+    "coversColor":[175,50,230,255],
+    "baseValueMult":1.5,
+    "spriteName":"graphics/uw/ships/aurora/aurora_cabal.png",
+    "removeWeaponSlots":[],         # ids
+    "removeEngineSlots":[],         # indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[],         # hullmod ids
+    "removeBuiltInWeapons":[],      # weapon slot ids
+    "weaponSlotChanges":{
+        "WS 010":{
+            "type": "UNIVERSAL"
+        },
+        "WS 011":{
+            "type": "UNIVERSAL"
+        },
+        "WS 012":{
+            "type": "UNIVERSAL"
+        },
+        "WS 013":{
+            "type": "UNIVERSAL"
+        }
+    },
+    "builtInMods":["uw_cabal_upgrades"],
+    "builtInWeapons":{
+    },
+}

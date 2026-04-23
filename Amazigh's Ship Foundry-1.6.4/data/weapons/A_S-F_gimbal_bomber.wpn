@@ -1,0 +1,36 @@
+{
+  "id": "A_S-F_gimbal_bomber",
+  "specClass": "projectile",
+  "projectileSpecId": "A_S-F_gimbal_mssl_bomber",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "displayArcRadius": 1000,
+	"turretSprite":"graphics/weapons/A_S-F_gimbal_turret_base.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_gimbal_hardpoint_base.png",
+
+	"hardpointOffsets":[4, 0, 4, -0],
+	"turretOffsets":[4, 0, 4, -0],
+	"hardpointAngleOffsets":[135, -135],
+	"turretAngleOffsets":[135, -135],
+
+  "barrelMode": "DUAL",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 8,
+    "particleSizeRange": 14,
+    "cloudParticleCount": 3,
+    "cloudDuration": 0.8,
+    "cloudRadius": 7,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 1,
+    "blowbackLength": 18,
+    "blowbackSpread": 9,
+    "particleColor": [
+      150,
+      170,
+      160,
+      130
+    ]
+  },
+  "fireSoundTwo": "annihilator_fire"
+}

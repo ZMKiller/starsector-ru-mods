@@ -1,0 +1,52 @@
+{
+  "variantId": "TTSC_hronish_standard",
+  "hullId": "TTSC_hronish",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TTSC_gravitonbeam",
+        "WS0002": "TTSC_gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "TTSC_taclaser",
+        "WS0004": "TTSC_taclaser",
+        "WS0005": "TTSC_taclaser",
+        "WS0006": "TTSC_taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lrpdlaser",
+        "WS0008": "lrpdlaser",
+        "WS0009": "lrpdlaser",
+        "WS0010": "lrpdlaser",
+        "WS0011": "lrpdlaser",
+        "WS0012": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "TTSC_equator_standard_wing",
+    "TTSC_riptalon_standard_wing",
+    "TTSC_scree_standard_wing",
+    "TTSC_scree_standard_wing",
+    "TTSC_scree_standard_wing",
+    "TTSC_scree_standard_wing"
+  ]
+}

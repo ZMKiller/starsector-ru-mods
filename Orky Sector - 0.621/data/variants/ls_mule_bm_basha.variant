@@ -1,0 +1,40 @@
+{
+    "displayName": "Basha",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ls_mule_bm",
+    "hullMods": [
+        "targetingunit",
+        "ls_explody_propella"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_mule_bm_basha",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "ls_supashoota_turret",
+                "WS 004": "ls_supashoota_turret"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ls_kill_kannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "ls_flakka_dakka",
+                "WS 002": "ls_big_shoota",
+                "WS 000": "ls_big_shoota",
+                "WS 007": "ls_big_shoota"
+            }
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+  "variantId": "A_S-F_margrave_ass",
+  "hullId": "A_S-F_margrave",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 19,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "A_S-F_omer",
+        "WS0006": "A_S-F_omer",
+        "WS0007": "A_S-F_omer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "A_S-F_gimbal",
+        "WS0004": "A_S-F_gimbal"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "plasma"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "heavyneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "devastator",
+        "WS0009": "A_S-F_plas_burster",
+        "WS0010": "A_S-F_plas_burster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "A_S-F_micropulser",
+        "WS0013": "A_S-F_micropulser",
+        "WS0014": "A_S-F_micropulser",
+        "WS0015": "A_S-F_micropulser",
+        "WS0016": "A_S-F_micropulser",
+        "WS0017": "A_S-F_micropulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

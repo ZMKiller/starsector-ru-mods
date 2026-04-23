@@ -1,0 +1,55 @@
+{
+	"id":"A_S-F_formia_orb",
+	"specClass":"missile",
+
+	"onFireEffect":"org.amazigh.foundry.scripts.ASF_FormiaOnFireEffect",
+	"onHitEffect":"org.amazigh.foundry.scripts.ASF_formiaOnHit",
+
+	# "missileType":"MISSILE",
+	"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
+	"sprite":"graphics/missiles/am_srm.png",
+	"size":[13,17],	
+	"center":[7,9],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[75,150,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":80, # purely visual
+
+	"reduceDamageWhileFading":true,
+	"useHitGlowWhenDestroyed":true,
+	"fizzleOnReachingWeaponRange":true,
+	"dudProbabilityOnFlameout":0,
+	"armingTime":0,
+	"flameoutTime":0.5,
+	"noEngineGlowTime":0.5,
+	"fadeTime":0.5,
+	"glowColor":[25,100,175,255],
+	"glowRadius":25,
+
+	"engineSpec":{"turnAcc":900, #360
+				  "turnRate":300, #180
+				  "acc":1500, #1000
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					#"loc":[-7, 0],
+					"loc":[0, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[75,150,255,0],
+						"glowSizeMult":1.5,
+						"glowAlternateColor":[75,150,255,255],
+						"contrailDuration":1, #2
+						"contrailWidthMult":2, #1
+						"contrailWidthAddedFractionAtEnd":-1, #2  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[70,100,155,75],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":12.0, #10
+				    "length":40.0,
+				    "angle":180.0}]
+}

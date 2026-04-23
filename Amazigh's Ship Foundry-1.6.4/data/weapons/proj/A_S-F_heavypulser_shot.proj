@@ -1,0 +1,19 @@
+{
+	"id":"A_S-F_heavypulser_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":31,
+	"width":10.5,
+	"fadeTime":0.2,
+	"fringeColor":[0,50,200,160],
+	"coreColor":[200,220,255,255],
+	"glowColor":[100,120,255,90],
+	"glowRadius":22,
+	"hitGlowRadius":26,
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0,
+	"passThroughMissiles":true,
+}

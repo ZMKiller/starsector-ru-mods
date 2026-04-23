@@ -1,0 +1,30 @@
+{
+	"id":"A_S-F_formia_storm",
+	"specClass":"projectile",
+
+	"everyFrameEffect": "org.amazigh.foundry.scripts.ASF_formiaWeaponScript",
+
+	"type":"ENERGY",
+	"mountTypeOverride":"SYNERGY",
+
+	"size":"LARGE",
+	
+	"turretSprite":"graphics/weapons/A_S-F_formia_storm_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/A_S-F_formia_storm_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/A_S-F_formia_storm_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/A_S-F_formia_storm_hardpoint_glow.png",
+
+	"hardpointOffsets":[18,-3, 18,3],
+	"turretOffsets":[14,-3, 14,3],
+	"hardpointAngleOffsets":[-3, 3],
+	"turretAngleOffsets":[-3, 3],
+	
+	"barrelMode":"ALTERNATING",
+	"animationType":"GLOW",
+	"glowColor":[75,150,255,255],
+
+	"interruptibleBurst":false,
+	
+	"projectileSpecId":"A_S-F_formia_orb",
+	"fireSoundTwo":"amsrm_fire",
+}

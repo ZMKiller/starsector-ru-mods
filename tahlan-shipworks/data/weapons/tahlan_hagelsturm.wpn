@@ -1,0 +1,56 @@
+{
+  "id": "tahlan_hagelsturm",
+  "specClass": "projectile",
+  "projectileSpecId": "tahlan_hagel_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "everyFrameEffect": "org.niatahl.tahlan.weapons.HagelsturmScript",
+  "turretSprite": "graphics/tahlan/weapons/ma/tahlan_hagelsturm_turret_00.png",
+  "turretGlowSprite": "graphics/tahlan/weapons/ma/tahlan_hagelsturm_turret_glow.png",
+  "hardpointSprite": "graphics/tahlan/weapons/ma/tahlan_hagelsturm_hp_00.png",
+  "hardpointGlowSprite": "graphics/tahlan/weapons/ma/tahlan_hagelsturm_hp_glow.png",
+  "renderAboveAllWeapons": 0,
+  "separateRecoilForLinkedBarrels":"TRUE",
+  "glowColor": [255,56,103,255],
+  "autocharge":true,
+  "turretOffsets": [
+    28,
+    -8,
+    28,
+    8
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    29,
+    -8,
+    29,
+    8
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "numFrames": 4,
+  "frameRate": 40,
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 0,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.2,
+    "particleCount": 15,
+    "particleColor": [
+      160,
+      247,
+      255,
+      120
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "tahlan_stahlhagel_fire"
+}

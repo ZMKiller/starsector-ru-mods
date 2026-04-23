@@ -1,0 +1,16 @@
+{
+	"id":"dpl_doom_cannon_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.scripts.weapons.dpl_doom_cannonEffect",
+
+	"spawnType":"PLASMA",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"width":100.0,
+	"fadeTime":0.5,
+	"hitGlowRadius":100,
+	"fringeColor":[255,0,0,255],
+	"coreColor":[255,100,50,255],
+	"passThroughMissiles":true,	
+	"passThroughFighters":true,	
+}

@@ -1,0 +1,54 @@
+{
+    "displayName": "Ultimate",
+    "fluxCapacitors": 19,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "swp_arcade_superhyperion",
+    "hullMods": [
+        "stabilizedshieldemitter",
+        "fluxbreakers",
+        "magazines",
+        "eccm",
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "swp_arcade_superhyperion_str",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "autopulse",
+                "WS 004": "autopulse"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 005": "typhoon",
+                "WS 006": "typhoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "vulcan",
+                "WS 002": "vulcan"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"SUPER1": "swp_arcade_godmode"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"SUPER0": "swp_arcade_empbomb"}
+        }
+    ]
+}

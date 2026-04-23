@@ -1,0 +1,51 @@
+{
+  "id": "Xhan_Gromm",
+  "specClass": "projectile",
+  "projectileSpecId": "Xhan_Gromm_Shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "everyFrameEffect": "org.xhan.weapons.XHAN_GrommMuzzleFlashScript",
+  "displayArcRadius": 600,
+  "turretSprite": "graphics/weapons/Xhan_Gramada_TURRET.png",
+  "turretGunSprite": "graphics/weapons/Xhan_Gramada_TURRET_BARREL.png",
+  "hardpointSprite": "graphics/weapons/hellbore_cannon_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/weapons/hellbore_cannon_hardpoint_recoil.png",
+  "visualRecoil": 10,
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "turretOffsets": [
+    51.5,
+    9.5,
+    51.5,
+    -9.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    50,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 60,
+    "spread": 18,
+    "particleSizeMin": 1,
+    "particleSizeRange": 35,
+    "particleDuration": 0.85,
+    "particleCount": 58,
+    "particleColor": [
+      255,
+      40,
+      30,
+      255
+    ]
+  },
+  "fireSoundTwo": "XHAN_GROMM_FIRE_SOUND"
+}

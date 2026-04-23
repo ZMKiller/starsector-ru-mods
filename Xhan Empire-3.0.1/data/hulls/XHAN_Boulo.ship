@@ -1,0 +1,96 @@
+{
+  "hullName": "Boulo",
+  "hullId": "XHAN_Boulo",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Boulo.png",
+  "style": "XHANTECH",
+  "coversColor": "159,161,151,255",
+  "height": 94,
+  "width": 76,
+  "center": [38, 43],
+  "collisionRadius": 74.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 66.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_Gen2_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -90,
+      "locations": [-9, -24]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 90,
+      "locations": [-9, 24]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 0,
+      "locations": [11, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [39, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42.5, -0],
+      "length": 64.5,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-39.5, -14.5],
+      "length": 39,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-39.5, 14.5],
+      "length": 39,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    14, 29,
+    -13.5, 35,
+    -39, 13.5,
+    -31.5, 8.5,
+    -41.5, 4.5,
+    -41.5, -4.5,
+    -31.5, -8.5,
+    -39, -13.5,
+    -13.5, -35,
+    14, -29,
+    35.5, -12,
+    35.5, 12
+  ]
+}

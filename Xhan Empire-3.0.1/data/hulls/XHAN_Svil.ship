@@ -1,0 +1,77 @@
+{
+  "hullName": "Svil",
+  "hullId": "XHAN_Svil",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/Xhan_Svil.png",
+  "style": "ALVARIUM_DOCTRINE",
+  "coversColor": "202,229,196,255",
+  "height": 91,
+  "width": 50,
+  "center": [25, 51],
+  "collisionRadius": 69,
+  "shieldCenter": [-1, -0],
+  "shieldRadius": 61,
+  "viewOffset": 0,
+  "builtInMods": [
+    "XHAN_PlasteenArmor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 0,
+      "locations": [14, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 105,
+      "locations": [2, 8],
+      "renderOrderMod": 1
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": -105,
+      "locations": [2, -8],
+      "renderOrderMod": 1
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-33.5, 2],
+      "length": 25,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    },
+    {
+      "location": [-33.5, -2],
+      "length": 25,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "ALVARIUM_ENGINES"
+    }
+  ],
+  "bounds": [
+    37, -6.5,
+    2.5, -21.5,
+    -46, -6.5,
+    -46, 6.5,
+    2.5, 21.5,
+    37, 6.5
+  ]
+}

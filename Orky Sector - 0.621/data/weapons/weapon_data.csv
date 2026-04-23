@@ -1,0 +1,384 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+#Phase Lance,phasebeam,1,,1500,600,1000,,,0,20,10,,,,ENERGY,,800,0.25,0.5,1,4,,,,,3200,,,,,,,,"energy14, beam10, rare_bp, merc, ind",,,,Универсальное,,,,,,,,,,20
+#Graviton Beam,gravitonbeam,2,,1500,1000,100,,,10,15,9,,,,KINETIC,,75,0.1,0.1,,,,,,,2400,,,,,,,,"beam12, kinetic11, LR, hightech_bp, midline_bp, merc, ind",,,,Подавление,,,,,"Disrupts the target's shields, increasing all shield damage taken by %s for one full-power graviton beam, %s for two, and %s for three or more hitting the shields at the same time.",5% | 8% | 10%,Gravitic effects slow and push target off-course. The effect is minor and is most noticeable vs fighters and missiles.,,,21
+#IR Autolance,irautolance,1,,1200,1000,500,,,0,50,8,40,2,10,FRAGMENTATION,,150,0,0,0.1,0,,,,,1000000,,,,,,,USE_LESS_VS_SHIELDS,"beam12, energy10, rare_bp, merc",,,,Универсальное,,,,,,,,,,21.5
+#Pulse Laser,pulselaser,1,,1200,600,,100,,0,20,10,,,,ENERGY,80,,0.333333,0,,,,,,,,1000,,,,,,,"energy13, base_bp, merc, ind",,,,Универсальное,,,,,,,,,,22
+#Mining Blaster,miningblaster,0,,1000,500,,200,,0,7,10,4,0.5,,HIGH_EXPLOSIVE,300,,0,0.2,,,,,,,,1000,,,,,,USE_LESS_VS_SHIELDS,"energy12, base_bp, ind",,,,Универсальное,,,,,Each bolt deals an additional %s damage to armor. This damage is not reduced by armor.,100,,,,22.125
+#Heavy Blaster,heavyblaster,2,,2500,600,,500,,0,15,12,,,,ENERGY,720,,0,1,,,,,,,,1000,,,,,,,"energy14, rare_bp, hist1t, merc, ind",,,,Универсальное,,,,,,,,,,22.25
+#Shock Repeater,shockrepeater,3,,20000,300,,50,200,0,100,7,,,,ENERGY,25,,0,0.5,1,,,,,,,10000,,,,,25,PD,"pd14, omega, restricted",,Unknown,,ПВО,,,,Perfect,Fires an EMP arc at the nearest target close to the weapon's current facing. The arc always hits.,,,,,19.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1
+Lobba,ls_lobba,0,,200,700,,150,,20,30,4,,,,HIGH_EXPLOSIVE,90,,0,1.25,1,,0,20,5,4,,400,,,10,,,,"he6, ls_orky_bp",,Orky,,Против брони,,,,,,,,,,0.75
+Big Lobba,ls_big_lobba,0,,800,800,,150,,20,15,8,,,,HIGH_EXPLOSIVE,80,,,1.5,2,0.25,,20,5,4,,400,,,10,,,,"he8, ls_orky_bp",,Orky,,Против брони,,,,,,,,,,2
+Supa Shoota,ls_supashoota_turret,0,,450,600,,70,,2,45,8,,,,KINETIC,60,,,0.4,1,,0,12,2,6,,700,,,,,,ANTI_FTR,"kinetic3,pd3, ls_orky_bp",,Orky,,Универсальное,,,,,Explosive tipping deals %s extra HE damage when impacting hull.,30,,,,2
+Bolta,ls_bolta,0,,1000,700,,150,,10,15,10,,,,KINETIC,135,,,0.66,,,0,12,2.5,4,,800,,,30,,,,"kinetic9, ls_orky_bp",,Orky,,Универсальное,,,,,Explosive tipping deals %s extra HE damage when impacting hull.,40,,,,15
+Mega Bolta,ls_mega_bolta,1,,3500,800,,150,,10,10,20,,,,KINETIC,120,,,0.33,,,0,12,2.5,8,,800,,,30,,,,"kinetic14, ls_orky_bp",,Orky,,Универсальное,,,,,Explosive tipping deals %s extra HE damage when impacting hull.,40,,,,16
+Deffstorm Bolta,ls_deffstorm_bolta,1,,4500,700,,120,,10,10,26,90,6,90,KINETIC,60,,,0.1,1,,0,18,1,3,,800,,,30,,,,"kinetic15, ls_orky_bp",,Orky,,Против щитов,,,,,"%s . Increasing chance to jam as shots are fired, but at least a third of the clip will be fired.  Each shot deals %s extra frag damage on hitting hull. ","Cannot stop once it starts firing, unless it jams or ran out of ammo! | 50 - 100",,,,17
+Deth Kannon,ls_deth_kannon,2,,5500,800,,750,,200,5,24,,,,HIGH_EXPLOSIVE,1000,,,5,1,,,20,20,2,,600,,,100,,,,"he18, ls_orky_bp",,Orky,,Против брони,,,,,Cause a large explosion on hit dealing an additional %s HE damage in a large area.,750,,,,18
+Kill Kannon,ls_kill_kannon,0,,1200,700,,300,,100,10,12,6,0.25,6,HIGH_EXPLOSIVE,375,,,1.75,,,,20,10,5,,600,,,100,,,,"he12, ls_orky_bp",,Orky,,Против брони,,,,,Cause a small explosion on hit dealing an additional %s HE damage in a small area.,200,,,,19
+Grot Shoota,ls_grot_shoota,0,,100,250,,15,,1,75,1,40,8,40,FRAGMENTATION,1,,0,0.1,1,,0,15,1,15,,800,,,10,,,PD,"pd4, ls_orky_bp",,Orky,,ПВО,,,,,,,,,,1
+Big Shoota,ls_big_shoota,0,,300,400,,30,,2,45,3,20,5,20,KINETIC,8,,,0.2,,,0,10,1,5,,600,,,10,,,PD,"kinetic3,pd3, ls_orky_bp",,Orky,,ПВО,,,,,,,,,,21
+Twin Shoota,ls_twin_shoota,0,,400,400,,30,,2,45,5,30,5,30,KINETIC,8,,,0.1,,,0,10,1,5,,600,,,10,,,PD,"kinetic4,pd4, ls_orky_bp",,Orky,,ПВО,,,,,,,,,,20
+Flakka Dakka Gun,ls_flakka_dakka,0,,900,500,,90,,5,30,10,,,,FRAGMENTATION,30,,,0.125,,,0,15,3,6,,700,,,30,,,PD,"pd13,ls_orky_bp",,Orky,,ПВО,,,,,,,,,,22
+Gatler Blasta,ls_gatler,0,,800,500,,50,,5,20,6,48,5,24,HIGH_EXPLOSIVE,25,,,0.5,12,0.125,,12,1,6,,600,,,30,,,ANTI_FTR,"pd4, he6, ls_orky_bp",,Orky,,Против брони,,,,,,,,,,22
+Rattler Kannon,ls_rattler_cannon,1,,1500,600,,75,,10,15,14,48,3,24,KINETIC,50,,,2.5,24,0.1,,10,2.5,5,,800,,,30,,,ANTI_FTR,"kinetic10, ls_orky_bp",,Orky,,Против щитов,,,,,"Will %s when firing, hardpoint mount reduce the swivel amount. This weapon's rate of fire %s .", violently swivel left or right | is some what random,,,,23
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Burna,ls_burna,1,,600,300,,20,,3,60,5,40,3,40,HIGH_EXPLOSIVE,15,,,0.05,2,0.05,0,0,0,0,,500,,,,,,USE_LESS_VS_SHIELDS,"energy6, ls_orky_bp",,Orky,,Против брони,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. Each hit remove %s flat points of armor. ",25% Weapon Damage | 5,,,,12
+Skorcha,ls_skorcha,0,,500,350,,20,,3,60,5,60,3,30,ENERGY,12,,,0.05,2,0.05,0,0,0,0,,500,,,,,,PD,"energy6, ls_orky_bp",,Orky,,Штурмовое,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. On hitting hull, the heat from the flame increase target ship flux by %s per hit.",25% Weapon Damage | 20% Weapon Damage,,,,13
+Flame Belcha,ls_flame_belcha,1,,1500,400,,50,,3,45,12,60,6,60,ENERGY,35,,,0.05,2,0.05,0,0,0,0,,500,,,,,,"PD,PD_ALSO","energy12, ls_orky_bp",,Orky,,Штурмовое,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. On hitting hull, the heat from the flame increase target ship flux by %s per hit.",25% Weapon Damage | 20% Weapon Damage,,,,14
+Splasha Attack Gun (Builtin),ls_splasha_attackgun_builtin,1,,1500,500,,80,,3,15,20,90,9,100,ENERGY,40,,,0.05,2,0.05,0,0,0,0,,500,,,,,,"SYSTEM,ANTI_FTR",energy12,,Orky,,Штурмовое,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. On hitting hull, the heat from the flame increase target ship flux by %s per hit.",25% Weapon Damage | 20% Weapon Damage,,,,15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Zzappa,ls_zzappa,1,,500,500,,200,100,0,45,6,,,,ENERGY,220,,0.5,1,1,,,,,,,10000,,,,,,ANTI_FTR,"energy6, ls_orky_bp",,Orky,,Универсальное,,,,Perfect,"Zzap the closest target to the weapon's facing, always hits.",,,,,19.6
+Zzap Kannon,ls_zzap_kannon,1,,2000,700,,400,200,0,15,12,,,,ENERGY,440,,1.5,1.5,2,0.2,,,,,,10000,,,,,,,"energy12, ls_orky_bp",,Orky,,Универсальное,,,,Perfect,"Zzap the closest target to the weapon's facing, always hits.",,,,,53
+Eye of Mork,ls_eye_of_mork,2,,8000,800,,400,200,0,10,28,,,,ENERGY,440,,2,2,5,0.2,,,,,,10000,,,,,,,"energy13, ls_orky_bp, rare_bp",,Orky,,Универсальное,,,,Perfect,"Zzap the closest target to the weapon's facing, always hits.",,,,,54
+Tellyporta Blasta,ls_tellyporta_blasta,2,,2400,500,,800,,0,15,14,,,,FRAGMENTATION,400,,0.75,0.25,1,,,,,,,800,,,,,,USE_LESS_VS_SHIELDS,"energy14, ls_orky_bp",,Orky,,Против брони,,,,,Each bolt deals an additional %s damage to armor. This damage is not reduced by armor.,200,,,,55
+Kustom Mega Blasta,ls_kustom_mega_blasta,1,,800,500,,325,,50,30,8,8,0.4,1,ENERGY,375,,0.25,0.25,1,,,,,,,800,,,,,,"STRIKE, USE_VS_FRIGATES","Strike10,energy14, ls_orky_bp",,Orky,,Ударное,,,,,Chance to explode on fire and deal %s Energy damage to itself.,200,,,,56.1
+Kustom Mega Cannon,ls_kustom_mega_cannon,2,,3000,600,,550,,50,20,12,8,0.4,1,ENERGY,625,,0.25,0.25,1,,,,,,,800,,,,,,STRIKE,"Strike14, energy14,ls_orky_bp, rare_bp",,Orky,,Ударное,,,,,Chance to explode on fire and deal %s Energy damage to itself.,500,,,,56.2
+Kustom Supa Cannons,ls_kustom_supa_cannon,2,,3000,700,,600,,50,10,28,20,1,2,ENERGY,650,,0.25,0.25,2,0.25,,,,,,800,,,,,,STRIKE,"Strike14, energy14,ls_orky_bp, rare_bp",,Orky,,Ударное,,,,,"It is safe now, right?",,,,,56.2
+Bubble Chukka,ls_bubble_chukka,1,,400,450,,75,,50,50,6,,,,FRAGMENTATION,30,,0,1,4,0.2,0,15,2,1,,350,,,,,,PD,"pd5,energy5, ls_orky_bp",,Orky,,ПВО,,,,,"On fire, shot have chance to either be a small bubble, which deals %s damage but has a much smaller blast radius, or a large bubble, which deals %s damage but have a much larger blast radius.",Kinetic | 50,,,,57
+Small Bubble,ls_bubble_chukka_small,1,,400,450,,75,,50,50,6,,,,KINETIC,30,,0,1,4,0.2,0,15,2,1,,350,,,,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,ПВО,,,,,,,,,,57
+Med Bubble,ls_bubble_chukka_med,1,,400,450,,75,,50,50,6,,,,FRAGMENTATION,30,,0,1,4,0.2,0,15,2,1,,350,,,,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,ПВО,,,,,,,,,,57
+Big Bubble,ls_bubble_chukka_big,1,,400,450,,50,,50,50,6,,,,FRAGMENTATION,30,,0,1,4,0.2,0,15,2,1,,350,,,,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,ПВО,,,,,,,,,,57
+#Shunta,ls_shunta,1,,1800,600,,200,,300,15,10,,,,KINETIC,300,,0,1,1,,,,,,,1000,,,,,,,"energy11, ls_orky_bp",,Orky,,Против щитов,,,,,,,,,,
+Rokkit Launcha,ls_rokkit_launcha,0,,150,1200,,400,,0,30,4,30,,,HIGH_EXPLOSIVE,0,,0,2,2,0.2,0,25,10,2.5,,400,50,3,175,,,CONSERVE_1,"rocket7, strike0, ls_orky_bp",,Orky,,Против брони,Fast,None,,,,,,,,11
+Rokkits (Fighter),ls_rokkit_fighter,0,,150,1200,,400,,10,30,4,2,,,HIGH_EXPLOSIVE,0,,0,2,2,0.5,0,25,10,2.5,,400,50,3,175,,,SYSTEM,"rocket7, strike0, no_drop, no_drop_salvage",,Orky,,Против брони,Fast,None,,,,,,,,12
+Mini Rokkit Pod,ls_mini_rokkit_pod,0,,150,800,,100,,10,30,4,24,,,HIGH_EXPLOSIVE,0,,0,5,6,0.1,10,10,0,0,,600,300,1.5,75,,,SYSTEM,"rocket7, strike0, no_drop, no_drop_salvage",,Orky,,Против брони,Very Fast,None,,,,,,,,12
+Rokkit Pod,ls_rokkitpod,0,,1200,1200,,400,,10,30,10,120,,,HIGH_EXPLOSIVE,0,,0,2,4,0.2,0,25,10,5,,400,50,3,175,,,,"rocket13, strike8, ls_orky_bp",,Orky,,Давление,Fast,None,,,,,,,,12.33
+Grot Bomm Rail,ls_grot_rail,0,,200,1500,,1200,,40,10,3,2,,,HIGH_EXPLOSIVE,0,,0,8,1,0,,,,,,350,50,5.5,400,,,GUIDED_POOR,"strike9, missile1, ls_orky_bp",,Orky,,Добивание,Fast,Grot,,,,,,,TRUE,14
+Grot Bomm Launcha,ls_grot_launcha,1,,1500,1500,,1200,,40,10,12,8,,,HIGH_EXPLOSIVE,0,,0,5,2,0.2,,,,,,350,50,5.5,400,,,GUIDED_POOR,"strike10, missile10, ls_orky_bp",,Orky,,Добивание,Fast,Grot,,,,,,,TRUE,15
+Grot Bomm Hanger,ls_grot_hanger,1,,6000,1500,,1200,,40,5,25,15,0.04,3,HIGH_EXPLOSIVE,0,,0,5,3,1.5,,,,,,350,50,5.5,400,,,GUIDED_POOR,"strike15, missile15, ls_orky_bp",,Orky,,Добивание,Fast,Grot,,,,,,,TRUE,16
+Doom Diva Launcha,ls_doomdiva_launcher,1,,2000,2500,,1200,,200,10,12,14,,,KINETIC,0,,0,5,1,,,,,,,800,50,4,600,,,GUIDED_POOR,"strike10, missile10, ls_orky_bp",,Orky,,Против щитов,Very Fast,Grot,,,Has considerable Impact Force,,,,,
+Smart Rokkit Launcha,ls_mini_rokkit_launcha,0,,600,1800,,125,,5,45,3,60,,,HIGH_EXPLOSIVE,0,,0,3,2,0.2,0,0,0,0,,400,100,5.5,75,,,"ANTI_FTR, DO_NOT_AIM, CONSERVE_1, GUIDED_POOR","utility3, missile3, ls_orky_bp",,Orky,,Давление,Fast,Stupid,,,,,,,,16.3
+Smart Rokkit Lobba,ls_rokkit_lobba,0,,1200,2400,,125,,5,30,8,90,0.3,9,HIGH_EXPLOSIVE,0,,0,9,9,0.1,0,0,0,0,,300,100,8.5,75,,,"ANTI_FTR, DO_NOT_AIM, CONSERVE_1, GUIDED_POOR","utility7, missile7, ls_orky_bp",,Orky,,Давление,Fast,Stupid,,,,,,,,16.3
+Smart Rokkit Belcha,ls_rokkit_belcha,1,,4000,2400,,125,,5,20,18,240,1,24,HIGH_EXPLOSIVE,0,,0,9,24,0.1,0,0,0,0,,300,100,8.5,75,,,"ANTI_FTR, DO_NOT_AIM, CONSERVE_1, GUIDED_POOR","utility18, missile15, ls_orky_bp",,Orky,,Давление,Fast,Stupid,,,,,,,,16.3
+Jet Shoota Rail,ls_jet_shoota,0,,300,2400,,600,,,20,4,1,0.025,1,KINETIC,0,,,5,1,,,,,,,300,100,10,1000,,,DO_NOT_AIM,"missile6,  ls_orky_bp",,Orky,,Давление,Fast,Grot,,,Launch a twin big shoota turret that will chase after and fire upon the locked target,,,,,
+Jet Shoota Payload,ls_jet_shoota_payload,0,,0,450,,30,,2,45,0,,,,KINETIC,0,,,0.1,,,0,15,1,5,,600,,,1000,,,SYSTEM,,,,,,,,,,,,,,,
+Jet Shoota Launcha,ls_shoota_launcha,0,,1200,2400,,600,,,15,7,2,0.075,1,KINETIC,0,,,5,1,,,,,,,300,100,10,1000,,,DO_NOT_AIM,"missile9,  ls_orky_bp",,Orky,,Давление,Fast,Grot,,,Launch a twin big shoota turret that will chase after and fire upon the locked target,,,,,
+Jet Shoota Workshop,ls_shoota_factory,1,,4000,2400,,600,,,5,16,4,0.20,2,KINETIC,0,,,5,2,0.2,,,,,,300,100,10,1000,,,DO_NOT_AIM,"missile15,  ls_orky_bp",,Orky,,Давление,Fast,Grot,,,Launch a twin big shoota turret that will chase after and fire upon the locked target,,,,,
+Wrecka Torpedo Rail,ls_torpedo_rail,0,,200,1500,,2500,,75,10,3,2,,,HIGH_EXPLOSIVE,0,,,20,,,5,0,0,0,,300,100,6,800,,,STRIKE,"strike8, rocket2, ls_orky_bp",,Orky,,Ударное,Moderate,None,,,"Very Durable Projectile, randomly takes between %s to arm, may travel between %s of its normal range.",0.5-2  seconds | 75% - 125% ,,,TRUE,
+Wrecka Torpedo Toob,ls_torpedo_toob,0,,1200,1500,,2500,,75,20,8,8,,,HIGH_EXPLOSIVE,0,,,10,,,5,0,0,0,,300,100,6,800,,,STRIKE,"strike10, rocket3, ls_orky_bp",,Orky,,Ударное,Moderate,None,,,"Very Durable Projectile, randomly takes between %s to arm, may travel between %s of its normal range.",0.5-2  seconds | 75% - 125% ,,,TRUE,
+Wrecka Torpedo Rack,ls_torpedo_rack,1,,3000,1500,,2500,,75,20,20,16,,,HIGH_EXPLOSIVE,0,,,10,2,0.25,5,0,0,0,,300,100,6,800,,,STRIKE,"strike14, rocket3, ls_orky_bp",,Orky,,Ударное,Moderate,None,,,"Very Durable Projectile, randomly takes between %s to arm, may travel between %s of its normal range.",0.5-2  seconds | 75% - 125% ,,,TRUE,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Deffgun,ls_deffgun,1,,1000,700,,100,,10,15,10,,,,KINETIC,80,,,0.8,6,0.2,0,15,2.5,6,,700,,,30,,,,"kinetic9, ls_ds_bp",,Deathskulls,,Универсальное,,,,,"Randomly fire projectile from the following weapons:
+%s
+%s
+%s
+%s
+%s",30% Heavy Mortar |20% Heavy Autocannon |20% Thumper | 20% Arbalest Autocannon | 10% Flak Cannon ,,,,15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nail Blasta,ls_nail_blasta,1,,1800,700,,250,300,50,25,13,40,,,KINETIC,200,,,3,6,0.2,0,5,1,5,,1000,,,,,,,"kinetic14, ls_es_bp",,Evil Sunz,,Против щитов,,,,,,,,,,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Kustom Shoota,ls_kustom_shoota,0,,400,500,,45,,2,45,4,,,,ENERGY,20,,,0.25,,,0,5,0.25,6,,700,,,10,,,PD,"energy4,pd4, ls_bm_bp",,Bad Moons,,Универсальное,,,,,Fire faster when the ship is at higher flux level.,,,,,21
+Snazz Gun,ls_snazzgun,1,,800,600,,80,,2,45,8,,,,ENERGY,80,,,0.4,1,,0,12,2,6,,800,,,10,,,ANTI_FTR,"energy7, ls_bm_bp",,Bad Moons,,Универсальное,,,,,"Chance to randomly apply one of the following effect on hit:
+
+Boom Blasta: %s
+Zzappy Shokka: %s
+Melty Burna: %s","Cause an small area explosion dealing 80 HE Damage| Cause a small emp pulse dealing 10 Energy and 80 EMP damage | When hitting hull, cause 25 direct armor damage",,,,2
+Snazz Kannon,ls_snazz_cannon,2,,2200,700,,175,,2,20,14,,,,ENERGY,175,,,0.5,1,,0,12,2,6,,800,,,10,,,,"energy12, ls_bm_bp",,Bad Moons,,Универсальное,,,,,"Chance to randomly apply one of the following effect on hit:
+
+Boom Blasta: %s
+Zzappy Shokka: %s
+Melty Burna: %s","Cause an small area explosion dealing 150 HE Damage| Cause a small emp pulse dealing 20 Energy and 150 EMP damage | When hitting hull, cause 40 direct armor damage",,,,2
+Snazz Mega Kannon,ls_snazz_mega_cannon,2,,4500,800,,350,,20,10,26,,,,ENERGY,450,,,1,2,0.25,,12,2,6,,800,,,,,,,"energy18, he17, kinetic17, ls_bm_bp",,Bad Moons,,Универсальное,,,,,"Apply one of the following effect on hit:
+
+Boom Blasta: %s
+Zzappy Shokka: %s
+Melty Burna: %s
+Thumpa: %s","Cause an small area explosion dealing 300 HE Damage| Cause an potentially shield-piercing emp pulse dealing 50 Energy and 300 EMP damage | When hitting hull, cause 80 direct armor damage | Deal 150 Kinetic Damage and apply some impact force",,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Skorcha Rokkit,ls_skorcha_rokkit,0,,150,1200,,200,,,30,4,2,,,HIGH_EXPLOSIVE,,,,,,,,,,,,400,100,3,200,,,SYSTEM,"rocket7, strike0, no_drop, no_drop_salvage",,Orky,,Универсальное,Fast,,,,Explode into a wave of flame close to target dealing energy damage.,,,,,
+Skorcha Rokkit Payload,ls_Skorcha_Rokkit_payload,0,,0,300,,25,,3,60,5,60,3,30,ENERGY,0,,,0.05,2,0.05,0,0,0,0,,500,,,,,,SYSTEM,,,,,,,,,,,,,,,
+Bomm Bay,ls_bomb,0,,300,1500,,300,,30,15,5,30,,,HIGH_EXPLOSIVE,0,,0,2,4,0.1,0,0,0,0,,20,20,30,200,,,"STRIKE,SYSTEM, BOMB","no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Stikka,ls_stikka,0,,200,700,,220,,50,25,3,,,,KINETIC,50,,,2.5,,,,,,,,600,600,1.25,300,,,,"kinetic4, ls_sb_bp",,Snakebites,,Против щитов,Fast,,,,Range unaffected by range improvement hullmods.,,,,,
+Heavy Squig Launcher,ls_heavy_squig_launcher,0,,1000,800,,150,,30,20,9,,,,HIGH_EXPLOSIVE,100,,,2.75,3,0.25,0,12,2,6,,500,,,,,,ANTI_FTR,"he8, ls_sb_bp",,Snakebites,,Anti-Armor/Fighter,,,,,"Fires different type of Squig based on ship's target.
+
+Against lighter target and fighters, Bomb Squig that deals %s in an Area.
+
+Against larger targets, Bile Squig that deals %s damage and then corrodes up to %s of armor over %s seconds.",150 HE Damage| 100 HE Damage | 100 | 10,,,,1
+Boom Squig,ls_bomb_squig,,,,800,,150,,30,,,,,,HIGH_EXPLOSIVE,,,,,,,0,12,2,6,,500,300,2.5,150,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+Bile Squig,ls_bile_squig,,,,800,,100,,30,,,,,,HIGH_EXPLOSIVE,,,,,,,0,12,2,6,,500,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Snipa Shoota,ls_sniper_shoota,0,,300,600,,40,,2,40,5,,,,KINETIC,25,,1.5,3,20,0.125,0,10,1,5,,700,,,10,,,,"kinetic6, ls_ba_bp",,Blood Axes,,Против щитов,,,,,"Have a lock on time before fire, during which rotation speed is massively decreased.",,,,,21
+Kombi-Shoota,ls_kombi_shoota,0,,450,500,,30,,2,40,5,30,3,30,KINETIC,10,,,0.2,,,0,10,1,5,,600,,,10,,,PD,"kinetic3,pd3, ls_orky_bp",,Orky,,Многоцелевое (ПВО),,,,,"While the weapon have %s ammo remaining, has chance per shot to fire a mini rokkit dealing %s damage.",50% | 125 HE Damage,,,,21
+Stikk Bomma,ls_stikk_bomma,0,,1000,600,,300,,30,20,3,4,0.25,2,FRAGMENTATION,,,,1.75,2,0.25,0,10,3,3,,400,350,1.5,80,,,"ANTI_FTR ,PD","pd4, ls_ba_bp",,Blood Axes,,Anti-Fighter,,,,,,150 HE Damage| 100 HE Damage | 100 | 10,,,,1
+Presechun Kannon,ls_precision_kannon,1,,1200,700,,70,,2,20,12,,,,KINETIC,55,,1.5,3.5,30,0.125,,12,1,5,,800,,,,,,,"kinetic11, ls_ba_bp",,Blood Axes,,Против щитов,,,,,"Have a lock on time before fire, during which rotation speed is massively decreased. 
+
+Explosive tipping deals %s extra HE damage when impacting hull.",30 HE Damage,,,,
+Krusha Kannon,ls_krusha_kannon,1,,1500,800,,350,,30,15,14,,,,ENERGY,350,,0,2.75,1,,0,12,6,4,,750,,,,,,ANTI_FTR,"he10,kinetic10, ls_ba_bp",,Blood Axes,,Multi-Role,,,,,"Fires different type of Shell based on ship's target.
+
+%s - Fired against shielded target at long range, dealing %s .
+
+%s - General purpose shell, dealing %s with a unreliable proximity fuse.
+
+%s - Fired against smaller target and fighter at close range, with %s .
+
+Have a %s to fire boom shells anyway, da boyz love da boom.",Shield Breaka| 350 Kinetic Damage | Boom Shell | 350 HE Damage | Scrap Kanister | 6 fragment with 90 HE Damage| 25%,,,,1
+Krusha - Boom Shell,ls_boom_shell,,,,800,,350,,30,,,,,,HIGH_EXPLOSIVE,,,,,,,0,12,2,6,,750,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+Krusha - Shield Breaka,ls_shield_breaka,,,,800,,350,,30,,,,,,KINETIC,,,,,,,0,12,2,6,,750,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+Krusha - Scrap Kanister,ls_kanister_frag,,,,800,,90,,30,,,,,,HIGH_EXPLOSIVE,,,,,,,0,12,2,6,,750,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+Krusha Battery,ls_krusha_battery,2,,5500,800,,350,,30,8,25,,,,HIGH_EXPLOSIVE,350,,0,2.75,3,0.25,0,10,2,6,,750,,,,,,ANTI_FTR,"he14,kinetic14, ls_ba_bp",,Blood Axes,,Multi-Role,,,,,"Fires different type of Shell based on ship's target.
+
+%s - Fired against shielded target at long range, dealing %s .
+
+%s - General purpose shell, dealing %s with a unreliable proximity fuse.
+
+%s - Fired against smaller target and fighter at close range, with %s .
+
+Have a %s to fire boom shells anyway, da boyz love da boom.",Shield Breaka| 350 Kinetic Damage | Boom Shell | 350 HE Damage | Scrap Kanister | 6 fragment with 90 HE Damage| 25%,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Deff Rolla,ls_deff_rolla,1,,0,30,500,750,,,,,,,,KINETIC,,400,0.05,0.05,,,,,,,,150,,,,,,"SYSTEM, SHOW_IN_CODEX","Strike14, no_drop, no_drop_salvage,ls_melee",,Goffs,,Ближний бой,,,,,Can deal up to %s more damage based on area of the roller in contact with enemy.,300%,,,,
+Deff Rolla (Segment),ls_deff_rolla_dummy,1,,0,30,500,750,,,,,,,,KINETIC,,0,0.05,0.05,,,,,,,,150,,,,,,SYSTEM,"Strike14, no_drop, no_drop_salvage,ls_melee",,Goffs,,Ближний бой,,,,,Will always fire together with the main deff rolla.,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Teef Shop,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Magnum Zappa Blasta,ls_magnum,3,,25000,1000,,2500,1000,100,5,30,,,,FRAGMENTATION,2000,,1,2,,,,,,,,1000,,,,,,SHOW_IN_CODEX,"energy20, no_drop, no_drop_salvage",,Bad Moons,,Выведение из строя / Добивание,,,,,"Projectile constantly generate energy arc to strike nearby target, dealing %s as energy damage and %s .",5% Weapon Damage| 10% Weapon EMP Damage,,,,
+Magnum Zappa Blasta (subshot),ls_magnum_subshot,3,,25000,200,,1250,500,100,5,30,,,,FRAGMENTATION,2000,,1,2,,,,,,,,200,,,,,,SYSTEM,"energy20, no_drop, no_drop_salvage",,Orky,,Выведение из строя / Добивание,,,,,,,,,,
+Kustom Mega Cannon (Blue),ls_blue_mega_cannon,3,,8000,600,,550,,50,20,12,8,0.4,1,ENERGY,625,,0.25,0.25,1,,,,,,,800,,,,,,"STRIKE, SHOW_IN_CODEX","Strike15, energy15,no_drop, no_drop_salvage",,Deathskulls,,Ударное,,,,,"Its blue and lucky, so it wont blow up, maybe.",,,,,56.2
+Splasha Attack Gun,ls_splasha_attackgun,3,,15000,500,,80,,3,15,20,128,8,128,ENERGY,40,,,0.05,2,0.05,0,0,0,0,,500,,,,,,"SHOW_IN_CODEX,ANTI_FTR","energy12,no_drop, no_drop_salvage",,Evil Sunz,,Штурмовое,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. On hitting hull, the heat from the flame increase target ship flux by %s per hit.",25% Weapon Damage | 20% Weapon Damage,,,,15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Big Drill,ls_big_drill,0,,10000,50,500,,,75,2,0,,,,HIGH_EXPLOSIVE,,150,0.05,0.05,,,0,0,0,0,,150,,,,,,"SYSTEM, SHOW_IN_CODEX","Strike12, no_drop, no_drop_salvage,ls_melee",,Orky,,Ближний бой,,,,,"This weapon cannot be disabled, quickly drill through armor.",,,,,
+Bigga Drill,ls_bigger_drill,0,,10000,60,850,,,90,2,0,,,,HIGH_EXPLOSIVE,,250,0.05,0.05,,,0,0,0,0,,150,,,,,,"SYSTEM, SHOW_IN_CODEX","Strike14, no_drop, no_drop_salvage,ls_melee",,Orky,,Ближний бой,,,,,"This weapon cannot be disabled, quickly drill through armor.",,,,,
+Mega Bubble Blasta,ls_mega_bubble_blasta,3,,12000,700,,300,,200,5,28,12,1,4,KINETIC,200,,0.2,1,4,0.2,0,20,5,5,,800,,,,,,"SYSTEM, SHOW_IN_CODEX","kinetic10, no_drop, no_drop_salvage",,Orky,,Против щитов,,,,,Has considerable Impact Force,,,,,1
+Moon Krumpin' Wyrd Kannon,ls_fantasy_blasta,3,,12000,700,,400,,20,5,28,24,2,12,ENERGY,250,,,0.2,,,0,30,2.5,10,,800,,,,,,"SYSTEM, SHOW_IN_CODEX","Strike14, no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,"Chance to Explode on fire dealing %s  Energy damage to itself, the chance %s .",200 | increases significantly when fewer ammo remains in clip,,,,
+Sola Flare Cannon,ls_sola_flare_kannon,3,,20000,1000,,650,,400,5,0,,,,ENERGY,700,,,4,1,,,20,20,2,,500,,,500,,,"SYSTEM, SHOW_IN_CODEX,PD,PD_ALSO","energy16, pd17, no_drop, no_drop_salvage",,Orky,,Против истребителей (по площади),,,,,Create a massive explosion covering a large area.,,,,,18
+Looted Thermal Pulse Cannon,ls_tpc,0,,100000,800,,225,,0,0,,15,0.8,,ENERGY,175,,0,0.2,1,,0,10,2,5,,1000,,,,,,"SYSTEM,SHOW_IN_CODEX",,TPC_only,Orky,,Универсальное,,,,,,,,,,40
+Blasta Torpedo Tube,ls_torpedo_bm_rail,0,,200,1800,,3000,,75,10,0,1,0.05,1,HIGH_EXPLOSIVE,0,,,20,,,5,0,0,0,,400,100,6,600,,,"SYSTEM,SHOW_IN_CODEX","strike8, rocket2, no_drop, no_drop_salvage",,Orky,,Ударное,Moderate,Terrible,,,"Durable Projectile, randomly takes between %s to arm, may travel between %s of its normal range.",0.5-2  seconds | 75% - 125% ,,,TRUE,
+Bursta Kannon,ls_bursta_cannon,0,,100000,1200,,1800,,1000,5,,,,,HIGH_EXPLOSIVE,1800,,,8,,,4,0,0,0,,500,,,600,,,"SYSTEM,SHOW_IN_CODEX,STRIKE","strike15, he15, no_drop, no_drop_salvage",,Orky,,Осадное,,,,,"On hit, cause an explosion dealing %s HE damage, but may explode prematurely during flight. 
+
+On fire, also shoot a spread of damaging fragments dealing 80 frag damage each.
+
+Has a %s chance to fire a %s instead, which has no blast radius, deals %s damage instead, and will have considerable impact force.",1200 | 20% | Dud | 3000 Kinetic,,,,
+Bursta Kannon Dud,ls_bursta_cannon_dud,0,,100000,1200,,3000,,1000,5,,,,,KINETIC,1800,,,8,,,4,0,0,0,,500,,,600,,,SYSTEM,"strike15, he15, no_drop, no_drop_salvage",,Orky,,Осадное,,,,,,,,,,
+Bursta Kannon HE,ls_bursta_cannon_he,0,,100000,1200,,1800,,1000,5,,,,,HIGH_EXPLOSIVE,1800,,,8,,,4,0,0,0,,500,,,600,,,SYSTEM,"strike15, he15, no_drop, no_drop_salvage",,Orky,,Осадное,,,,,,,,,,
+Fist of Gork,ls_gork_fist,0,,100000,800,,300,,0,0,,18,1.2,1,ENERGY,200,,,0.8,1,,0,10,2,5,,900,,,,,,"SYSTEM,SHOW_IN_CODEX",,TPC_only,Orky,,Универсальное,,,,,Clip size of this weapon cannot be increased,,,,,40
+Mini Rokkit Pod (Krima),ls_mini_rokkit_pod_krima,0,,150,800,,100,,10,30,0,24,1,24,HIGH_EXPLOSIVE,0,,0,2,4,0.1,10,10,0,0,,600,300,1.5,75,,,"SYSTEM, SHOW_IN_CODEX","rocket7, strike0, no_drop, no_drop_salvage",,Orky,,Против брони,Very Fast,None,,,,,,,,12
+Concealed Skorcha,ls_skorcha_concealed,0,,500,450,,20,,3,60,5,60,3,30,ENERGY,12,,,0.05,2,0.05,0,0,0,0,,500,,,,,,"SYSTEM,PD","energy6, , no_drop, no_drop_salvage",,Orky,,Штурмовое,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip.
+Has a built-in pump improving its range compared to normal burna, therefore does not further benefit from the Powah Pump hullmod.",25% Weapon Damage | 5,,,,
+Concealed Rokkit Launcha,ls_concealed_rokkit,0,,600,1800,,125,,5,45,0,,,,HIGH_EXPLOSIVE,0,,0.4,3.6,3,0.2,0,0,0,0,,450,50,5,75,,,"ANTI_FTR, DO_NOT_AIM,SYSTEM","utility3, missile3, no_drop, no_drop_salvage",,Orky,,Давление,Fast,Stupid,,,,,,,,16.3
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Big Shoota (Kan),ls_kan_shoota,0,,200,450,,30,,2,45,0,,,,KINETIC,4,,,0.2,,,0,20,1,5,,600,,,,,,"SYSTEM,PD","kinetic0, no_drop, no_drop_salvage",,Orky,,,,,,,,,,,,2
+Grotzooka,ls_grotzooka,0,,300,500,,80,,5,30,0,,,,FRAGMENTATION,5,,,2,1,,45,45,45,1,,500,,,,,,"SYSTEM,PD","he0, no_drop, no_drop_salvage",,Orky,,,,,,,,,,,,2
+Kan Klaw,ls_kanklaw,0,,300,30,,300,,300,30,,,,,HIGH_EXPLOSIVE,0,,,3,1,,0,0,0,0,,0,,,,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,,,,,,Rip off %s armor per hit,50,,,,2
+Supa Shoota (Built-in),ls_supashoota,0,,300,600,,70,,2,45,5,,,,KINETIC,50,,,0.4,1,,0,10,2,6,,700,,,,,,"SYSTEM,PD","no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,Explosive tipping deals %s extra HE damage when impacting hull.,30,,,,2
+Kan Drill,ls_kandrill,0,,300,10,250,,,10,20,,,,,HIGH_EXPLOSIVE,,50,0.05,0.05,,,,,,,3200,,,,,,,"SYSTEM, ANTI_FTR, SHOW_IN_CODEX","he0,beam0,no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,,,,,,2
+Kan Chain Choppa,ls_kansword,0,,300,10,350,,,5,20,,,,,HIGH_EXPLOSIVE,,200,0.05,0.05,0.9,3,,,,,3200,,,,,,,"SYSTEM, ANTI_FTR, SHOW_IN_CODEX","he0,beam0,no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,,,,,,
+Kan Skorcha,ls_kan_skorcha,0,,500,300,,20,,3,60,5,30,6,30,ENERGY,5,,,0.05,2,0.05,0,0,0,0,,500,,,,,,"SYSTEM,PD","energy0, no_drop, no_drop_salvage",,Orky,,Штурмовое,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. On hitting hull, the heat from the flame increase target ship by %s per hit.",25% Weapon Damage | 20% Weapon Damage,,,,13
+Grot Shoota,ls_grot_shoota_single,0,,100,250,,15,,1,75,1,20,5,20,FRAGMENTATION,1,,0,0.2,1,,0,15,1,15,,800,,,10,,,"SYSTEM,PD","pd4, no_drop, no_drop_salvage",,Orky,,ПВО,,,,,,,,,,1
+Tail Gunna,ls_tail_gunna,0,,100,300,,25,,1,75,1,20,5,20,FRAGMENTATION,1,,0,0.2,1,,0,15,1,15,,800,,,10,,,"SYSTEM,PD","pd4, no_drop, no_drop_salvage",,Orky,,ПВО,,,,,,,,,,1
+Blitza Bomm,ls_blitza_bomm,0,,0,400,,750,,30,30,0,2,,,HIGH_EXPLOSIVE,0,,,1,2,0.25,,,,,,20,20,20,600,,,"SYSTEM, STRIKE,SHOW_IN_CODEX","he0, no_drop, no_drop_salvage",,Orky,,Bomb,,,,,,,,,,
+Blitza Bomm Bay,ls_blitza_bomm_bay,0,,0,400,,750,,30,30,0,2,0.05,,HIGH_EXPLOSIVE,0,,,1,2,0.25,,,,,,20,20,20,600,,,"SYSTEM, STRIKE,SHOW_IN_CODEX","he0, no_drop, no_drop_salvage",,Orky,,Bomb,,,,,,,,,,
+Bomb Bay,ls_bomb_bay,,,0,1000,,400,,30,15,,24,,,HIGH_EXPLOSIVE,0,,,0.33,,,2,,,,,20,20,20,200,,,"STRIKE,SYSTEM, BOMB,SHOW_IN_CODEX","he0, no_drop, no_drop_salvage",,Orky,,Bomb,,,,,,,,,,
+Kustom Mega Blasta (POD),ls_kustom_mega_blasta_pod,,,,500,,300,,50,30,,5,,,ENERGY,0,,0.25,2,,,,,,,,800,,,,,,"STRIKE, USE_VS_FRIGATES, SYSTEM","Strike0,energy0, no_drop, no_drop_salvage",,Orky,,Ударное,,,,,High Chance to explode on fire and deal %s Energy damage to itself.,300,,,,56.1
+Drill Head,ls_drillhead,0,,300,10,275,,,10,20,,,,,HIGH_EXPLOSIVE,,50,0.05,0.05,,,,,,,3200,,,,,,,"SYSTEM, ANTI_FTR, SHOW_IN_CODEX","he0,beam0,no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,,,,,,2
+Smart Rokkit (Fighter),ls_mini_rokkit_fighta,0,,600,1200,,125,,5,45,3,2,,,HIGH_EXPLOSIVE,0,,0,3,1,,0,0,0,0,,450,100,3.5,75,,,"SYSTEM, ANTI_FTR, GUIDED_POOR","utility3, missile3, no_drop, no_drop_salvage",,Orky,,Против истребителей (по площади),Fast,Stupid,,,,,,,,16.3
+Blast Claw,ls_blast_klaw_r,2,,2200,700,,150,,2,15,14,,,,ENERGY,150,,,1,3,0.3,0,12,2,6,,800,,,10,,,"SYSTEM,SHOW_IN_CODEX","energy12,no_drop, no_drop_salvage",,Bad Moons,,Универсальное,,,,,"Chance to randomly apply one of the following effect on hit:
+
+Boom Blasta: %s
+Zzappy Shokka: %s
+Melty Burna: %s","Cause an small area explosion dealing 150 HE Damage| Cause a small emp pulse dealing 20 Energy and 150 EMP damage | When hitting hull, cause 40 direct armor damage",,,,2
+Blast Claw,ls_blast_klaw_l,2,,2200,700,,150,,2,15,14,,,,ENERGY,150,,,1,3,0.3,0,12,2,6,,800,,,10,,,"SYSTEM,SHOW_IN_CODEX","energy12,no_drop, no_drop_salvage",,Bad Moons,,Универсальное,,,,,"Chance to randomly apply one of the following effect on hit:
+
+Boom Blasta: %s
+Zzappy Shokka: %s
+Melty Burna: %s","Cause an small area explosion dealing 150 HE Damage| Cause a small emp pulse dealing 20 Energy and 150 EMP damage | When hitting hull, cause 40 direct armor damage",,,,2
+Kan Rokkit,ls_kan_bm_rokkit,0,,600,1500,,140,,5,45,3,,,,HIGH_EXPLOSIVE,0,,0,6,2,0.3,0,0,0,0,,500,200,3.5,75,,,"SYSTEM, ANTI_FTR, GUIDED_POOR","utility3, missile3, no_drop, no_drop_salvage",,Orky,,Против истребителей (по площади),Fast,Stupid,,,,,,,,16.3
+Kustom Shoota (Kan),ls_kan_shoota_bm,0,,400,450,,40,,2,45,4,,,,ENERGY,24,,,0.25,,,0,10,0.5,6,,700,,,10,,,"SYSTEM,PD","energy0, no_drop, no_drop_salvage",,Bad Moons,,Универсальное,,,,,Fire faster when the ship is at higher flux level.,,,,,21
+Grot Bomm (Single),ls_grot_single,0,,200,1000,,1200,,40,10,3,1,,,HIGH_EXPLOSIVE,0,,0,8,1,0,,,,,,350,50,5.5,400,,,"SYSTEM,GUIDED_POOR","strike9, missile1, no_drop, no_drop_salvage",,Orky,,Добивание,Fast,Grot,,,,,,,TRUE,14
+Speshul Shoota (Fighter),ls_speshul_shoota_fighter,0,,300,500,,60,,5,30,0,,,,FRAGMENTATION,5,,,1,1,,25,25,25,1,,500,,,,,,"SYSTEM,PD","he0, no_drop, no_drop_salvage",,Orky,,Против малых целей,,,,,,,,,,14
+Stikk Bomma (Fighter),ls_stikk_bomm_fighta,0,,1000,600,,300,,30,20,3,1,0.05,1,FRAGMENTATION,0,,,4,,,0,10,3,3,,400,350,1.5,80,,,"SYSTEM,PD","pd0, no_drop, no_drop_salvage",,Orky,,ПВО,,,,,,,,,,
+Zzap Bomb,ls_zzap_bomb_bay,0,,0,400,,600,600,30,30,0,2,,,ENERGY,0,,,3,1,,,,,,,50,50,10,500,,,"SYSTEM, STRIKE,SHOW_IN_CODEX","he0, no_drop, no_drop_salvage",,Orky,,Bomb,,,,,"On hit, spawn %s EMP arc with chance to pierce shield, each dealing a %s of the weapon's energy and emp damage.",4 | 25%,,,,
+Kombi-Shoota (Fighter),ls_kombi_shoota_fighter,0,,450,500,,30,,2,40,5,50,,,KINETIC,10,,,0.2,,,0,10,1,5,,600,,,10,,,"SYSTEM,PD","kinetic3,pd3, no_drop, no_drop_salvage",,Orky,,Многоцелевое (ПВО),,,,,"While the weapon have %s ammo remaining, has chance per shot to fire a mini rokkit dealing %s damage.",50% | 125 HE Damage,,,,21
+Boomstick,ls_boomstick_kan,0,,300,500,,60,,5,30,0,,,,HIGH_EXPLOSIVE,20,,,2.5,1,0,15,15,15,1,,600,,,,,,"SYSTEM,PD","he0, no_drop, no_drop_salvage",,Orky,,Против малых целей,,,,,,,,,,2
+Zzappa Stikk,ls_kan_zzapa,1,,500,250,,50,200,0,45,6,,,,ENERGY,20,,0.5,3,4,0.05,,,,,,10000,,,,,,"SYSTEM,ANTI_FTR","energy6, no_drop, no_drop_salvage",,Orky,,Универсальное,,,,Perfect,"Zzap the closest target to the weapon's facing, always hits.",,,,,19.6
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Deff Dreads,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Dread Heat Choppa,ls_deff_dread_heat_choppa,0,,0,25,450,,,15,30,,,,,ENERGY,,350,0.4,0.2,0.4,2.1,,,,,,1000,,,,,,"SYSTEM,PD,PD_ALSO","no_drop, no_drop_salvage",,Orky,,Ближний бой,,,,,"Deals hard flux damage to shield.
+Deals an Additional %s of Energy Damage to targets hit by the main attack swing.",80% Weapon Damage,,,,
+Dread Powah Axe,ls_deff_dread_axe,0,,0,25,500,,,15,25,,,,,HIGH_EXPLOSIVE,,450,0.4,0.2,0.4,3,,,,,,1000,,,,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,Ближний бой,,,,,"Deals hard flux damage to shield
+Deals an Additional %s of HE Damage to targets hit by the main attack swing.",80% Weapon Damage,,,,
+Dread Buzzsaw,ls_dread_buzzsaw,0,,0,25,375,,,5,30,,,,,ENERGY,,275,,,,,,,,,,1800,,,,,,"SYSTEM,PD,PD_ALSO","no_drop, no_drop_salvage",,Orky,,Ближний бой,,,,,Deals hard flux damage to shield,,,,,
+Power Klaw,ls_deff_dread_klaw_es,0,,0,25,800,,,50,25,,,,,HIGH_EXPLOSIVE,,600,0.4,3.1,1,,,,,,,600,,,30,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,Ближний бой,,,,,"On hit target's hull, strip %s",100 Points of Armor,,,,
+Gatla Shield,ls_dread_gatling_shield,0,,0,400,,50,,5,20,6,40,5,20,HIGH_EXPLOSIVE,20,,,0.5,10,0.125,,12,1,6,,600,,,30,,,"SYSTEM,PD,PD_ALSO","he0, no_drop, no_drop_salvage",,Orky,,Штурмовое,,,,,,,,,,
+Twin Kustom Shoota,ls_dread_twin_shoota,0,,400,500,,50,,2,45,4,,,,ENERGY,20,,,0.2,,,0,5,0.25,6,,700,,,10,,,"SYSTEM,PD","he0, no_drop, no_drop_salvage",,Bad Moons,,Универсальное,,,,,,,,,,
+Big Shoota (Deff Dread),ls_big_shoota_deff_dread,0,,0,400,,30,,2,45,3,20,5,20,KINETIC,5,,,0.2,,,0,10,1,5,,600,,,10,,,"SYSTEM,PD","pd0, no_drop, no_drop_salvage",,Orky,,ПВО,,,,,,,,,,
+Skorcha (Deff Dread),ls_skorcha_dread,0,,500,350,,20,,3,60,5,60,4,30,ENERGY,10,,,0.05,2,0.05,0,0,0,0,,500,,,,,,"SYSTEM,PD","he0, no_drop, no_drop_salvage",,Orky,,Штурмовое,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. On hitting hull, the heat from the flame increase target ship flux by %s per hit.",25% Weapon Damage | 20% Weapon Damage,,,,
+Stikk Bomma (Deff Dread),ls_stikk_bomm_dread,0,,1000,600,,300,,30,20,3,6,0.2,6,FRAGMENTATION,0,,,2.5,,,0,10,3,3,,400,350,1.5,80,,,"SYSTEM,PD","pd0, no_drop, no_drop_salvage",,Orky,,ПВО,,,,,,,,,,
+Kustom Mega Blasta (Deff Dread),ls_dread_mega_blasta,0,,0,300,,325,,50,30,,,,,ENERGY,275,,0.25,4.75,1,,,,,,,800,,,,,,"SYSTEM, STRIKE, USE_VS_FRIGATES","pd0, no_drop, no_drop_salvage",,Orky,,Ударное,,,,,Chance to explode on fire and deal %s Energy damage to itself.,200,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Stompas,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Deth Kannon,ls_deff_arsenal_stompa_deffkannon,2,,5500,800,,750,,200,15,,,,,HIGH_EXPLOSIVE,1000,,,6,1,,,15,15,2,,700,,,100,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,Против брони,,,,,"Cause a large explosion on hit dealing an additional %s HE damage in a large area.
+",750,,,,18
+Giga Shoota - Coaxial,ls_gigashoota_coaxial,0,,450,800,,75,,2,15,,,,,KINETIC,50,,,0.85,10,0.15,0,12,2,6,,700,,,,,,"SYSTEM,ANTI_FTR","no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,"Explosive tipping deals %s extra HE damage when impacting hull.
+
+Rotate together with the main weapon on this arm.",30,,,,2
+Rokkit Launcha - Coaxial,ls_rokkit_launcha_coaxial,0,,150,1200,,400,,0,15,,,,,HIGH_EXPLOSIVE,0,,0,2,,,0,15,5,4,,400,50,3,175,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,Против брони,Fast,None,,,Rotate together with the main weapon on this arm.,,,,,11
+Belly Lobba,ls_stompa_belly_lobba,0,,1200,700,,150,,15,10,,,,,HIGH_EXPLOSIVE,125,,,1.5,,,,20,10,5,,600,,,100,,,"SYSTEM,PD,PD_ALSO","no_drop, no_drop_salvage",,Orky,,Против брони,,,,,,200,,,,19
+Flame Belcha,ls_stompa_belly_flamer,1,,1500,500,,50,,3,10,,60,10,60,ENERGY,35,,,0.05,2,0.05,0,0,0,0,,500,,,,,,"SYSTEM,PD,PD_ALSO","no_drop, no_drop_salvage",,Orky,,Штурмовое,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. On hitting hull, the heat from the flame increase target ship flux by %s per hit.
+
+Already contains a high power pump and will not benefit from Powah Pump.",25% Weapon Damage | 20% Weapon Damage,,,,14
+Belly Hanger,ls_stompa_hanger,1,,6000,1500,,1200,,40,5,,10,,,HIGH_EXPLOSIVE,0,,0,5,,,,,,,,350,50,5.5,400,,,"SYSTEM,GUIDED_POOR","no_drop, no_drop_salvage",,Orky,,Добивание,Fast,Grot,,,,,,,TRUE,16
+Bellygun,ls_stompa_bellygun,0,,1200,900,,1200,,100,5,,6,,,HIGH_EXPLOSIVE,1000,,,10,,,,20,10,1,,600,,,100,,,"STRIKE, USE_VS_FRIGATES, SYSTEM","no_drop, no_drop_salvage",,Orky,,Против брони,,,,,"On hit, cause an explosion dealing %s HE damage, but may explode prematurely during flight. 
+
+Big opening reduce armor by %s .",1200|50,,,,19
+Mega Choppa,ls_stompa_choppa_ds,0,,0,75,1800,,,15,30,,,,,ENERGY,,1000,0.4,0.2,0.6,2.1,,,,,,1600,,,,,,"SYSTEM,PD,PD_ALSO","no_drop, no_drop_salvage,ls_melee",,Orky,,Ближний бой,,,,,"Deals hard flux damage to shield.
+Deals an Additional %s of Energy Damage to targets hit by the main attack swing.",80% Weapon Damage,,,,
+Mega Choppa,ls_stompa_choppa_bm,0,,0,75,1800,,,15,30,,,,,ENERGY,,1000,0.4,0.2,0.6,2.1,,,,,,1600,,,,,,"SYSTEM,PD,PD_ALSO","no_drop, no_drop_salvage,ls_melee",,Orky,,Ближний бой,,,,,"Deals hard flux damage to shield.
+Deals an Additional %s of Energy Damage to targets hit by the main attack swing.",80% Weapon Damage,,,,
+Mega Choppa,ls_stompa_choppa_red,0,,0,75,1800,,,15,30,,,,,ENERGY,,1000,0.4,0.2,0.6,2.1,,,,,,1600,,,,,,"SYSTEM,PD,PD_ALSO","no_drop, no_drop_salvage,ls_melee",,Orky,,Ближний бой,,,,,"Deals hard flux damage to shield.
+Deals an Additional %s of Energy Damage to targets hit by the main attack swing.",80% Weapon Damage,,,,
+Lifta Droppa,ls_stompa_lifta_droppa,2,,2000,900,900,,,,25,,30,,,ENERGY,,800,0.25,1,0.5,4,,,,,3000,,,,,,,"SYSTEM, SHOW_IN_CODEX","no_drop, no_drop_salvage",,Orky,,Против крупных / Нарушение,,,,,"Beam will latch onto the target's center mass then attempt to toss target towards the direction of its sweep, smaller target will be hit with slightly less force, and the beam may fail to latch on entirely, hitting shield will further reduce the force applied to the target.
+
+Can deal up to %s extra HE damage per burst, depending on the target's mass.",750,,,,
+Grabba Smasha,ls_stompa_grabba_smasha,2,,2000,900,750,,,,25,,30,,,ENERGY,,600,0.25,1,0.5,4,,,,,3000,,,,,,,"SYSTEM, SHOW_IN_CODEX","no_drop, no_drop_salvage",,Orky,,Против крупных / Нарушение,,,,,"Beam will latch onto the target's center mass then attempt to pull target towards its source, smaller target will be hit with slightly less force, and the beam may fail to latch on entirely, hitting shield will further reduce the force applied to the target.
+
+Can deal up to %s extra HE damage per burst, depending on the target's mass.",500,,,,
+Supa-Gatla,ls_stompa_supa_gatla,1,,4500,700,,150,,10,15,,60,6,60,KINETIC,75,,,0.1,1,,0,15,1,6,,800,,,30,,,"SYSTEM,ANTI_FTR","no_drop, no_drop_salvage",,Orky,,Против щитов,,,,,"%s . Increasing chance to jam as shots are fired, but at least a third of the clip will be fired.  Each shot deals %s extra HE damage on hitting hull. ","Cannot stop once it starts firing, unless it jams or ran out of ammo! | 40",,,,17
+Rotary Krusha Kannon,ls_stompa_tri_krusha,2,,5500,800,,350,,30,15,,6,1,6,HIGH_EXPLOSIVE,350,,0,1.5,3,0.2,0,10,2,6,,750,,,,,,ANTI_FTR,"no_drop, no_drop_salvage",,Blood Axes,,Multi-Role,,,,,"Fires different type of Shell based on ship's target.
+
+%s - Fired against shielded target at long range, dealing %s .
+
+%s - General purpose shell, dealing %s with a unreliable proximity fuse.
+
+%s - Fired against smaller target and fighter at close range, with %s .
+
+Have a %s to fire boom shells anyway, da boyz love da boom.",Shield Breaka| 350 Kinetic Damage | Boom Shell | 350 HE Damage | Scrap Kanister | 6 fragment with 90 HE Damage| 25%,,,,
+Snazz Mega Kannon,ls_stompa_snazzkannon,2,,4500,800,,350,,20,10,,,,,ENERGY,450,,,1,2,0.25,,12,2,6,,800,,,,,,SYSTEM,"no_drop, no_drop_salvage",,Bad Moons,,Универсальное,,,,,"Apply one of the following effect on hit:
+
+Boom Blasta: %s
+Zzappy Shokka: %s
+Melty Burna: %s
+Thumpa: %s","Cause an small area explosion dealing 300 HE Damage| Cause an potentially shield-piercing emp pulse dealing 50 Energy and 300 EMP damage | When hitting hull, cause 80 direct armor damage | Deal 150 Kinetic Damage and apply some impact force",,,,
+Splasha Attack Gun,ls_stompa_splasha,3,,15000,500,,80,,3,15,,120,12,120,ENERGY,40,,,0.05,2,0.05,0,0,0,0,,500,,,,,,"SYSTEM,ANTI_FTR","no_drop, no_drop_salvage",,Evil Sunz,,Штурмовое,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. On hitting hull, the heat from the flame increase target ship flux by %s per hit.",25% Weapon Damage | 20% Weapon Damage,,,,15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Horned Head,ls_stompa_head_horn,,,,0,0,,,,,,,,,ENERGY,0,,,,,,,,,,,0,,,,,,,,,,,,,,,,Increase armor by %s and ramming damage by %s ,75|25%,,,TRUE,
+Horned Head,ls_stompa_head_horn_red,,,,0,0,,,,15,,,,,ENERGY,0,,,,,,,,,,,0,,,,,,,,,,,,,,,,Increase armor by %s and ramming damage by %s ,75|25%,,,TRUE,
+Kommand Head,ls_stompa_head_hat,,,,0,0,,,,15,,,,,ENERGY,0,,,,,,,,,,,0,,,,,,,,,,,,,,,,Increase armor by %s and ramming damage by %s ,75|25%,,,TRUE,
+Eye of Mork - Stompa,ls_stompa_head_eye,1,,2000,700,,400,200,0,15,,24,,,ENERGY,400,,2,8,3,0.2,,,,,,10000,,,,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,Универсальное,,,,Perfect,"Zzap the closest target to the weapon's facing, always hits.",,,,,53
+Eye of Mork - Stompa,ls_stompa_head_eye_bm,1,,2000,700,,400,200,0,15,,24,,,ENERGY,400,,2,8,3,0.2,,,,,,10000,,,,,,SYSTEM,"no_drop, no_drop_salvage",,Orky,,Универсальное,,,,Perfect,"Zzap the closest target to the weapon's facing, always hits.",,,,,53
+High-Pressure Burna,ls_stompa_head_burna,1,,600,450,,30,,3,15,,40,8,40,HIGH_EXPLOSIVE,15,,,0.05,2,0.05,0,0,0,0,,500,,,,,,"SYSTEM,USE_LESS_VS_SHIELDS","no_drop, no_drop_salvage",,Orky,,Против брони,,,,,"Explode when destroyed, dealing %s damage for each remaining ammo in clip. Each hit remove %s flat points of armor. 
+
+Already contains a high power pump and will not benefit from Powah Pump.",25% Weapon Damage | 5,,,,12
+Head Rokkit Launcha,ls_stompa_head_missile,0,,600,1500,,140,,5,15,,,160,,HIGH_EXPLOSIVE,0,,0,4,4,0.25,0,0,0,0,,500,200,3.5,75,,,"SYSTEM, ANTI_FTR, GUIDED_POOR","no_drop, no_drop_salvage",,Orky,,Против истребителей (по площади),Fast,Stupid,,,,,,,,16.3
+Kannon Head,ls_stompa_head_kannon,1,,1500,800,,350,,30,15,,,,,ENERGY,350,,0,4,1,,0,12,6,4,,750,,,,,,"SYSTEM,ANTI_FTR","no_drop, no_drop_salvage",,Blood Axes,,Multi-Role,,,,,"Fires different type of Shell based on ship's target.
+
+%s - Fired against shielded target at long range, dealing %s .
+
+%s - General purpose shell, dealing %s with a unreliable proximity fuse.
+
+%s - Fired against smaller target and fighter at close range, with %s .
+
+Have a %s to fire boom shells anyway, da boyz love da boom.",Shield Breaka| 350 Kinetic Damage | Boom Shell | 350 HE Damage | Scrap Kanister | 6 fragment with 90 HE Damage| 25%,,,,1
+Belly Plating,ls_stompa_bellyarmor,,,,0,0,,,,,,,,,ENERGY,0,,,,,,,,,,,0,,,,,,,,,,,,,,,,Increase armor by %s,100,,,TRUE,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Shooting Star,miko_autokanon,0,,1200,700,,250,100,110,10,12,24,1.5,,ENERGY,200,,,0.45,,,,3,1,1.5,,1200,,,150,,,SYSTEM,"he12, no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,,,,,,19
+Komet Blasta,ls_komet_blasta,0,,1200,700,,300,,110,10,12,24,1.5,,ENERGY,250,,,0.4,,,,3,1,1.5,,1200,,,150,,,SYSTEM,"he12, no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,,,,,,19
+Nebula Star Mk. III,ls_cometshoota_es_l,0,,300,600,,30,,15,45,0,,,,ENERGY,10,,0.015,0.045,1,,0,20,0.5,1,,1500,,,,,,"SYSTEM,PD","energy18, he17, kinetic17, pd3, no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,Chance on fire to shoot supercharged shell dealing 2x damage and travel at 2x speed,,,,,
+Nebula Star Mk. III,ls_cometshoota_es_r,0,,300,600,,30,,15,45,0,,,,ENERGY,10,,0.015,0.045,1,,0,20,0.5,1,,1500,,,,,,"SYSTEM,PD","energy18, he17, kinetic17, pd3, no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,Chance on fire to shoot supercharged shell dealing 2x damage and travel at 2x speed,,,,,2
+Nebula Star Mk. III,ls_cometshoota_l,0,,300,600,,25,,15,45,0,,,,ENERGY,10,,0.015,0.045,1,,0,10,0.5,1,,1500,,,,,,"SYSTEM,PD","energy18, he17, kinetic17, pd3, no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,Chance on fire to shoot supercharged shell dealing 2x damage and travel at 2x speed,,,,,
+Nebula Star Mk. III,ls_cometshoota_r,0,,300,600,,25,,15,45,0,,,,ENERGY,10,,0.015,0.045,1,,0,10,0.5,1,,1500,,,,,,"SYSTEM,PD","energy18, he17, kinetic17, pd3, no_drop, no_drop_salvage",,Orky,,Универсальное,,,,,Chance on fire to shoot supercharged shell dealing 2x damage and travel at 2x speed,,,,,2
+Arty Minelayer,ls_arty_strike_minelayer,0,,200000,1000,,500,,25,30,12,30,,,HIGH_EXPLOSIVE,0,,0,3,1,,0,0,0,0,,25,25,20,500,,,SYSTEM,,,,,,,,,,,,,,,38.5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hanliucopter,ls_hanliucopter_launch,3,,0,2000,,6000,,20,5,,,,,HIGH_EXPLOSIVE,,,,,,,,,,,,400,50,10,1000,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+Fighter Crash,ls_uh_oh_minelayer,0,,,,,500,0,25,,,,,,HIGH_EXPLOSIVE,0,,,,1,,,,,,,0,0,20,1000,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,38.5
+Ramma Drone,ls_ramma_drone_minelayer,0,,,,,800,0,25,,,,,,HIGH_EXPLOSIVE,0,,,,1,,,,,,,0,0,20,1000,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+Killboy Crash,ls_uh_oh_killboy_minelayer,0,,,,,2500,0,25,,,,,,HIGH_EXPLOSIVE,0,,,,1,,,,,,,600,0,20,1000,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,38.5
+Lobbaa,ls_laobaa_lobba,0,,0,600,,100,,20,30,4,,,,HIGH_EXPLOSIVE,50,,0,1,3,0.5,0,10,4,4,,500,,,10,,,"SYSTEM,PD","no_drop, no_drop_salvage",,Orky?,,Против истребителей (по площади),,,,,,,,,,0.75
+Compact Thermal Pulse Cannon,ls_ctpc,0,,100000,700,,225,,10,20,18,12,0.75,,ENERGY,175,,0,0.25,1,,0,10,2,5,,1000,,,,,,SHOW_IN_CODEX,"energy15, restricted",TPC_only,Orky,,Универсальное,,,,,,,,,,40
+Frags,ls_frags,0,,300,600,,80,,5,30,0,,,,FRAGMENTATION,5,,,2,12,,45,45,45,1,,550,,,,,,"SYSTEM,PD","he0, no_drop, no_drop_salvage",,Orky,,,,,,,,,,,,2
+Astrapi Electro-Pulse Cannon,ls_astrapi,3,,50000,1000,,500,1000,100,5,30,,,,ENERGY,1750,,1,4,,,,,,,,500,,,,,,SYSTEM,"no_drop, no_drop_salvage",,Lambda Lab,,Контроль зоны,,,,,"Projectile constantly generate energy arc to strike nearby target, dealing %s as energy damage and %s .",10% Weapon Damage| 10% Weapon EMP Damage,,,,
+RAM Penetrator Launcher,ls_ramhorn_launcher,3,,10000,1600,,200,200,100,5,0,,,,KINETIC,0,,,3.4,3,0.2,0,0,0,,,1000,200,2,500,,,"SYSTEM,GUIDED_POOR","no_drop, no_drop_salvage",,Lambda Lab,,Против щитов,,,,,,,,,,
+Lambda Mote,ls_782_mote,,,,500,,100,750,,,,,,,ENERGY,0,,0,1,1,,30,30,0,0,,400,200,6,500,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+Lamblaster,ls_lamblaster,3,,15000,500,,600,,50,30,8,50,,,ENERGY,650,,0,5,2,0.2,,,,,,800,,,,,,"STRIKE, USE_VS_FRIGATES","no_drop_salvage, restricted",,Lambda Lab,,Ударное,,,,,Will reload 1 shot each time the ship it is on uses the Dance of Lights system.,200,,,,56.1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,10000,,,,,,,,,Orky,,System,,,,,,,,,,
+#Boarding Rail,ls_boarding_pod,0,,300,1200,,450,1500,,20,2,1,0.01,1,HIGH_EXPLOSIVE,0,,,5,1,,,,,,,300,100,5.5,1200,,,"SYSTEM,DO_NOT_AIM,SHOW_IN_CODEX","missile6,no_drop, no_drop_salvage, damage_special",,Orky,,Абордаж,Fast,,,,"Launch a boarding pod that will approach enemy ship and attempt to board them with cutting beam and inflict the following penalties when hitting hull:
+
+Up to %s engine and weapon malfunction chance
+Up to %s penalty to autofire accuracy, weapon and engine repair time.
+Up to %s additional Hull and Armor Damage taken
+
+%s will not suffer risk to malfunction or accuracy penalty. 
+
+these effect are maximized with %s/%s/%s/%s pods attacking the target depending on their hull size, and persist a while even after the pods are destroyed. 
+
+While the beam is hitting hull, the boarding party has additional chance to cause minor explosion across the enemy ship, that could cause some damage or extra soft flux. ",2%|25%|10%|Automated Ships|2|4|6|8,,,,
+Boarding Toob,ls_boarding_toob,0,,300,1200,,450,1500,,20,2,4,0.1,2,HIGH_EXPLOSIVE,0,,,10,2,0.5,,,,,,300,100,5.5,1200,,,"SYSTEM,DO_NOT_AIM,SHOW_IN_CODEX","missile6,no_drop, no_drop_salvage, damage_special",,Orky,,Абордаж,Fast,,,,"Launch a boarding pod that will approach enemy ship and attempt to board them with cutting beam and inflict the following penalties when hitting hull:
+
+Up to %s engine and weapon malfunction chance
+Up to %s penalty to autofire accuracy, weapon and engine repair time.
+Up to %s additional Hull and Armor Damage taken
+
+%s will not suffer risk to malfunction or accuracy penalty. 
+
+these effect are maximized with %s/%s/%s/%s pods attacking the target depending on their hull size, and persist a while even after the pods are destroyed. 
+
+While the beam is hitting hull, the boarding party has additional chance to cause minor explosion across the enemy ship, that could cause some damage or extra soft flux. ",2%|25%|10%|Automated Ships|2|4|6|8,,,,
+Boarding Beam,ls_boarding_beam,0,,100000,1,30,,50,10,20,1,1,,,ENERGY,,1,0.5,0.5,15,0,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+Kommando Rail,ls_kommando_pod,0,,300,1200,,450,1500,,20,,1,0.01,1,HIGH_EXPLOSIVE,0,,,5,1,,,,,,,350,100,5.5,1200,,,"SYSTEM,DO_NOT_AIM,SHOW_IN_CODEX","missile6,no_drop, no_drop_salvage, damage_special",,Orky,,Абордаж,Fast,,,,"Launch a elite boarding pod that will approach enemy ship and attempt to board them with cutting beam and inflict the following penalties when hitting hull:
+
+Up to %s engine and weapon malfunction chance
+Up to %s penalty to autofire accuracy, weapon and engine repair time, and fighter refit time.
+Up to %s penalty to flux dissipation and additional Shield, Hull and Armor Damage Taken
+
+%s will only suffer repair speed and damage taken penalty.
+
+these effect are maximized with %s/%s/%s/%s pods attacking the target depending on their hull size, and persist a while even after the pods are destroyed. 
+
+Kommandos are experts at hitting targets a clumsy ork would've missed, therefore all the above penalty %s with those caused by regular boarding pods.
+
+While the beam is hitting hull, the boarding party has additional chance to cause minor explosion across the enemy ship, that could cause some damage or extra soft flux. ",2%|25%|10%|Automated Ships|1|2|3|4|Stacks,,,,
+Kommando Beam,ls_kommando_beam,0,,100000,1,30,,75,10,20,1,1,,,ENERGY,,1,0.5,0.5,15,0,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_hulk_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_kan_ds_pad_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_kan_ds_pad_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_kan_es_pad_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_kan_es_pad_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_mekbox_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_yaroudomo_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_onihime_front_left,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_onihime_front_right,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_onihime_tail,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_onihime_mid_right,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_onihime_mid_left,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_eagle_front,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_megabommer_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_megabommer_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_megabommer_bombbay,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_star_krumpa_bow,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_smol_rok_head,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_lasher_es_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_scrapjet_es_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_scrapjet_es_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_phas_engine_l,,,0,300,,200,100,,,,,,,ENERGY,0,,,2.5,,,180,180,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_phas_engine_r,,,0,300,,200,100,,,,,,,ENERGY,0,,,2.5,,,180,180,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_phas_engine_exhaust,,,,400,,50,,,,,,,,ENERGY,0,,,1.5,20,0.05,,,,,,500,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_zzap_dummy,,,0,300,,150,75,,,,,,,FRAGMENTATION,0,,,1,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_smash_hamma_es_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_hellsquig_es_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_stheno_cover_l,,,0,300,,200,100,,,,,,,ENERGY,0,,,4,,,180,180,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_stheno_cover_r,,,0,300,,200,100,,,,,,,ENERGY,0,,,4,,,180,180,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_kan_bm_pad_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_kan_bm_pad_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_bursta_cover,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_rapid_zzap_dummy,,,0,300,,100,75,,,,,,,FRAGMENTATION,0,,,1,30,0.05,360,360,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_spine_rippa_mouth,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_comm_zzap_dummy,,,0,200,,50,50,,,,,,,FRAGMENTATION,0,,,1,3,0.1,360,360,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_kan_ba_pad_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_kan_ba_pad_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_deff_dread_pad_ba_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_deff_dread_pad_bm_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_deff_dread_pad_es_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_deff_dread_pad_ds_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_deff_dread_pad_ba_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_deff_dread_pad_bm_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
+,ls_deff_dread_pad_es_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_deff_dread_pad_ds_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_stompa_pad_ds_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_stompa_pad_ds_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_stompa_pad_ba_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_stompa_pad_ba_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_stompa_pad_bm_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_stompa_pad_bm_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_stompa_pad_es_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,ls_stompa_pad_es_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

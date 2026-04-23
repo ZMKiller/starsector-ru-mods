@@ -1,0 +1,94 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+
+		"A_S-F_henki_ass":4,
+		"A_S-F_henki_std":3.5,
+	},
+
+
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+		"hulls":{
+			"A_S-F_henki":0.5,
+		},
+    },
+
+    "knownShips":{
+        "hulls":[
+            "A_S-F_exegetes",
+            "A_S-F_misside",
+
+            "A_S-F_bathory",
+            "A_S-F_henki",
+
+            "A_S-F_lanner",
+            "A_S-F_initone",
+        ],
+    },
+
+	"knownWeapons":{
+		"weapons":[
+			"A_S-F_sakset",
+
+			"A_S-F_plas_burster",
+			"A_S-F_ir_autopulse",
+			"A_S-F_x-pulse",
+			"A_S-F_electroThermal_blaster",
+			"A_S-F_strobe",
+			"A_S-F_micropulser",
+			"A_S-F_ionDriver",
+			"A_S-F_heavypulser",
+
+			"A_S-F_bramble",
+			"A_S-F_thicket",
+			"A_S-F_wasteland",
+			"A_S-F_bipartisan",
+			"A_S-F_gimbal",
+			"A_S-F_sprocket",
+			"A_S-F_omer",
+			"A_S-F_albatreos",
+			"A_S-F_twister",
+		],
+	},
+
+	"knownHullMods":{
+		"hullMods":[
+			"A_S-F_ElectroVent",
+			"A_S-F_anarchyBallistic",
+			"A_S-F_anarchyEnergy",
+			"A_S-F_anarchyFlux",
+			"A_S-F_anarchyShields",
+			"A_S-F_anarchyTargeting",
+		],
+	},
+
+	"weaponSellFrequency":{
+		"A_S-F_sakset":3,
+
+		"A_S-F_plas_burster":2,
+		"A_S-F_ir_autopulse":2,
+		"A_S-F_x-pulse":2,
+		"A_S-F_electroThermal_blaster":2,
+		"A_S-F_micropulser":2,
+		"A_S-F_ionDriver":6,
+		"A_S-F_heavypulser":4,
+
+		"A_S-F_bramble":3,
+		"A_S-F_thicket":3,
+		"A_S-F_wasteland":3,
+		"A_S-F_bipartisan":2,
+		"A_S-F_gimbal":2,
+		"A_S-F_sprocket":2,
+		"A_S-F_omer":2,
+		"A_S-F_albatreos":3,
+		"A_S-F_twister":3,
+	},
+	"hullmodSellFrequency":{
+		"A_S-F_ElectroVent":4,
+		"A_S-F_anarchyEnergy":3,
+		"A_S-F_anarchyFlux":2,
+		"A_S-F_anarchyShields":2,
+	},
+
+},

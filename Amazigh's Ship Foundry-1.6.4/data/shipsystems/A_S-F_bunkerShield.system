@@ -1,0 +1,19 @@
+{
+	"id":"A_S-F_bunkerShield",
+	"type":"SHIELD_MOD",
+	"aiType":"FORTRESS_SHIELD",
+
+	"statsScript":"org.amazigh.foundry.shipsystems.scripts.ASF_bunkerShieldStats",
+	
+	"shieldRingColor":[255,255,255,255],
+	"shieldInnerColor":[255,100,255,75],
+	"shieldThicknessMult":1,
+	"shieldFluctuationMult":0.2,
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.75,
+	"soundFilterGainHF":0.0,
+	
+	"loopSound":"system_fortress_shield_loop",
+	"outOfUsesSound":"gun_out_of_ammo",	
+}

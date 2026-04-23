@@ -1,0 +1,25 @@
+{
+	"id":"tahlan_porph_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"onHitEffect":"org.niatahl.tahlan.weapons.PorphOnHitEffect",
+	#"spawnType":"BALLISTIC",
+	#"collisionClass":"PROJECTILE_FF",
+	#"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":100.0,
+	"hitGlowRadius":72,
+	"width":25.0,
+	"fadeTime":0.4,
+	"fringeColor":[255,40,0,255],
+	"coreColor":[255,160,34,205],
+	"glowColor":[255,60,0,50],
+	"glowRadius":60,
+	"pixelsPerTexel":5.0,
+	"textureType": [
+		"graphics/tahlan/fx/tahlan_flame_fringe.png",
+		"graphics/tahlan/fx/tahlan_flame_core.png"],
+	"textureScrollSpeed":-64,
+	#"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"
+}

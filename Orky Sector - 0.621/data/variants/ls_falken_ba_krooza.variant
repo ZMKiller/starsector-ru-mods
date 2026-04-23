@@ -1,0 +1,57 @@
+{
+    "displayName": "Krooza",
+    "fluxCapacitors": 10,
+    "fluxVents": 15,
+    "goalVariant": true,
+    "hullId": "ls_falken_ba",
+    "hullMods": [
+        "ls_bosspole",
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "ls_falken_ba_krooza",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "ls_deth_kannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "ls_grot_rail",
+                "WS 005": "ls_grot_rail",
+                "WS 008": "ls_grot_rail",
+                "WS 007": "ls_grot_rail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ls_krusha_kannon",
+                "WS 001": "ls_krusha_kannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "ls_boarding_toob",
+                "WS 010": "ls_boarding_toob"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 009": "ls_big_shoota",
+                "WS 004": "ls_big_shoota",
+                "WS 003": "ls_big_shoota"
+            }
+        }
+    ]
+}

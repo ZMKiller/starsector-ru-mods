@@ -1,0 +1,53 @@
+{
+  "hullName": "Akon Support Drone",
+  "hullId": "sfcakon",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/PAGSM/ships/fighters/sfc_akon.png",
+  "style": "MIDLINE",
+  "height": 32,
+  "width": 28,
+  "center": [14, 18],
+  "collisionRadius": 23.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 22,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [7.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, 2.5],
+      "length": 13,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-16, -2.5],
+      "length": 13,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    13, -6.5,
+    8, -11,
+    -2.5, -11,
+    -15, -5,
+    -15, 5,
+    -2.5, 11,
+    8, 11,
+    13, 6.5
+  ]
+}

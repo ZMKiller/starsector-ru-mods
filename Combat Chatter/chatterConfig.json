@@ -1,0 +1,30 @@
+{
+	# Note: With LunaLib, most (but not all) of these settings can be modified and saved ingame, in which case this file only serves to provide the default values
+	
+	"lowImportanceChatter":true,	# false makes most low-priority messages appear as floating text instead of in message field
+	"allyChatter":true,
+	"selfChatter":false,	# if true, player flagship will have chatter as well
+	"enemyChatter":false,
+	"chatterBox":true,	# adds (some) floating text to a message box on right side of screen (in addition to displaying it over the speaking ship)
+	"chatterBoxOfficerMode":false,	# only named officers appear in chatbox, and it prints their name instead of the ship's name
+	"factionSpecificCharacters": false,	# not all faction's officers will have all characters
+	"personalityChanceScaling": true,	# make characters with only 1-2 allowed personalities have higher chance to be picked
+	"genderChanceScaling": 1.5,	# make gender-specific characters more likely to be picked
+	"restrictAICharacters": true,	# only certain characters can be used for AI officers, controlled by character_factions.csv
+	"fleetIntro":true,	# intro splash for some fleet types, Project Wingman style
+	
+	# at least this proportion of the ship's weapon OPs should be in missiles, else it won't print "out of missiles" messages
+	"minMissileOPFractionForChatter": 0.2,
+	
+	"noEnemyChatterFactions":["derelict", "remnant", "mess", "mess_remnant", "domres", "blade_breakers", "omega", "sotf_taken", "rat_abyssals", "rat_abyssals_deep", "enigma", "threat", "dweller"],	# also applies when these factions join you as allies
+	
+	# any characters with any of the category tags in this list will not be picked ingame
+	# tags of interest may include: "othermedia" (all configs taken from another game, film, etc.); "meme"
+	"disallowedTags":["profanity", "nonsense"],
+	
+	# these fleets and factions can have intro splashes, but only if they're strong enough relative to player
+	"introSplashFleetTypes":[
+		"personBounty", "exerelinInvasionFleet", "vengeanceFleet", "nex_specialForces", "famousBounty",
+	],
+	"introSplashFactions":["remnant", "omega", "dweller", "threat", "mess", "mess_remnant", "blade_breakers", "rat_abyssals_deep"]
+}

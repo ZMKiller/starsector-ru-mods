@@ -1,0 +1,86 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 29,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "swp_boss_aurora",
+    "hullMods": [
+        "magazines",
+        "stabilizedshieldemitter",
+        "targetingunit",
+        "hardenedshieldemitter",
+        "fluxdistributor",
+        "fluxbreakers",
+        "unstable_injector",
+        "insulatedengine"
+    ],
+    "permaMods": [
+        "targetingunit",
+        "hardenedshieldemitter",
+        "fluxdistributor",
+        "fluxbreakers",
+        "unstable_injector"
+    ],
+    "sMods": [
+        "targetingunit",
+        "hardenedshieldemitter",
+        "fluxdistributor",
+        "fluxbreakers",
+        "unstable_injector"
+    ],
+    "variantId": "swp_boss_aurora_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 010": "autopulse"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "swarmer",
+                "WS0004": "swarmer",
+                "WS0005": "swarmer",
+                "WS0006": "swarmer"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 012": "heavyneedler"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "taclaser",
+                "WS0002": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "taclaser",
+                "WS 008": "swp_lightninggun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 007": "heavyblaster"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "pdburst",
+                "WS 003": "pdburst",
+                "WS 004": "pdburst",
+                "WS 006": "heavyburst",
+                "WS0001": "pdburst"
+            }
+        }
+    ]
+}

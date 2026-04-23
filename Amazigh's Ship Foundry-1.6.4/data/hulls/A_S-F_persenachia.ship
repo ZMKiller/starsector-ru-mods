@@ -1,0 +1,139 @@
+{
+  "hullName": "Persenachia",
+  "hullId": "A_S-F_persenachia",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/phase/A_S-F_persenachia.png",
+  "style": "HIGH_TECH",
+  "coversColor": "204,161,207,240",
+  "height": 134,
+  "width": 120,
+  "center": [60, 61],
+  "collisionRadius": 69,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 68,
+  "viewOffset": 0,
+  "builtInMods": [
+    "phasefield",
+    "A_S-F_UndyingMalice",
+    "A_S-F_MaliceCoils"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [26, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-18, 0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 80,
+      "angle": 18,
+      "locations": [-5, 29]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 80,
+      "angle": -18,
+      "locations": [-5, -29]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-31, 17],
+      "length": 42,
+      "width": 10,
+      "angle": 182,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-31, -17],
+      "length": 42,
+      "width": 10,
+      "angle": 178,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26, 26],
+      "length": 32,
+      "width": 8,
+      "angle": 175,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26, -26],
+      "length": 32,
+      "width": 8,
+      "angle": -175,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    34, -7,
+    61, -8,
+    62, -13,
+    26, -38,
+    5, -36,
+    4, -40,
+    -3, -48,
+    -15, -46,
+    -31, -47,
+    -36, -43,
+    -36, -40,
+    -27, -36,
+    -24, -30,
+    -24, -23,
+    -29, -21,
+    -45, -5,
+    -52, -4,
+    -54, -2,
+    -54, 2,
+    -52, 4,
+    -45, 5,
+    -29, 21,
+    -24, 23,
+    -24, 30,
+    -27, 36,
+    -36, 40,
+    -36, 43,
+    -31, 47,
+    -15, 46,
+    -3, 48,
+    4, 40,
+    5, 36,
+    26, 38,
+    62, 13,
+    61, 8,
+    34, 7
+  ]
+}

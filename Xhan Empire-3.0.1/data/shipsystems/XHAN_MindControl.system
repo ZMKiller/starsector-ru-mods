@@ -1,0 +1,25 @@
+{
+	"id":"XHAN_MindControl",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+    "aiScript":"org.xhan.shipsystems.ai.XHAN_MindControl_ShipSystemAI",
+
+	"statsScript":"org.xhan.shipsystems.XHAN_MindControl",
+
+	"canUseWhileRightClickSystemOn":true,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"XHAN_MIND_CONTROL_SOUND",
+	"outOfUsesSound":"system_phase_cloak_collision",
+
+	"aiHints":{
+		"threatRange":1500,
+		"threatAmount":10,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

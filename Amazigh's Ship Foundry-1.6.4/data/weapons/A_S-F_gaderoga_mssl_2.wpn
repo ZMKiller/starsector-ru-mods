@@ -1,0 +1,31 @@
+{
+	"id":"A_S-F_gaderoga_mssl_2",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"SMALL",
+	
+	"turretSprite":"",
+	"turretGlowSprite":"",
+	"hardpointSprite":"",
+	"hardpointGlowSprite":"",
+
+	"hardpointOffsets":[0, 0],
+	"turretOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],
+	"turretAngleOffsets":[0],
+	"barrelMode":"ALTERNATING",
+	"animationType": "SMOKE",
+	"smokeSpec": {
+		"particleSizeMin": 8,
+		"particleSizeRange": 14,
+		"cloudParticleCount": 3,
+		"cloudDuration": 0.8,
+		"cloudRadius": 7,
+		"blowbackParticleCount": 3,
+		"blowbackDuration": 1,
+		"blowbackLength": 18,
+		"blowbackSpread": 9,
+		"particleColor": [170,160,150,130]},
+	"projectileSpecId":"A_S-F_gaderoga_mssl",
+	"fireSoundTwo": "swarmer_fire"
+}

@@ -1,0 +1,41 @@
+{
+  "variantId": "XHAN_Vukan_Punisher",
+  "hullId": "XHAN_Vukan",
+  "displayName": "Punisher",
+  "goalVariant": true,
+  "fluxCapacitors": 17,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "annihilatorpod",
+        "WS0002": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "taclaser",
+        "WS0004": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightdualmg",
+        "WS0006": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

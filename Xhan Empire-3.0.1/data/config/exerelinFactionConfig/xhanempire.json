@@ -1,0 +1,323 @@
+{
+	"playableFaction":true,
+	"corvusCompatible":true,
+
+	# Currently unused
+	"baseFleetCostMultiplier":1.0,
+
+	# Currently unused
+	"customRebelFaction":"",
+	"customRebelFleetId":"",
+	"rebelFleetSuffix":"Splinter Group",
+
+	# Same list as the Java-side one used for non-random Sector
+	# The values aren't the same though, they map as follows:
+	#		Favorable/Suspicious:	±0.15
+	#		Welcoming/Inhospitable:	±0.35
+	#		Friendly/Hostile:		±0.6
+	#		Cooperative/Vengeful:	±0.8
+	"startRelationships":{
+		# Vanilla factions that should be manually set (IE not "hidden" ones)
+		"independent":-0.15,				# It is to be seen if the Xhan empire should tolerate you
+		"pirates":-0.6,						# Not worth our time
+		"persean":-0.6,						# An enemy to the Xhan empire
+		"tritachyon":0,					    # They are of use and can be tolerated
+		"hegemony":-0.6,				    # An enemy to the Xhan empire
+
+		# These should be set to the same relationship
+		"lions_guard":-0.6,				# An enemy to the Xhan empire
+		"sindrian_diktat":-0.6,			# An enemy to the Xhan empire
+
+		# More vanilla factions that should be manually set
+		"luddic_church":-0.15,				# harmless
+		"luddic_path":-0.8,					# They stand opposed to the ideals of the Xhan Empire
+		"remnant":-0.35,					# They are dangerous, but are of use to us
+
+		# Mod factions
+		"blackrock_driveyards":-0.35,		# A potential threat to the xhan empire
+		"br_consortium":-0.35,			    # A potential threat to the xhan empire
+		"6eme_bureau":0,					# Unknown
+		"dassault_mikoyan":-0.6,			# They stand in opposition to the ideals of the Xhan empire
+		"united_security":-0.35,			# Unknown threat
+		"blade_breakers":-0.35,				# Very dangerous, but
+		"diableavionics":-0.6,				# An enemy to the Xhan empire
+		"exigency":-0.35,					# Unknown threat
+		"exipirated":-0.6,					# Threat
+		#"fob":0,							# Unknown
+		"gmda":-0.6,						# Challengers to the authority of the Xhan empire
+		"gmda_patrol":-0.6,					# Challengers to the authority of the Xhan empire
+		"draco":-0.6,						# Unknown Threat
+		"fang":-0.6,						# Unknown Threat
+		"HMI":-0.6,						    # Should Not be tolerated
+		"mess":-0.35,						# Unknown Threat, but
+		"interstellarimperium":-0.35,	    # Do not follow the Divine Emperors methods of AGI control
+		"ii_imperial_guard":0,			    # Tolerated
+		"junk_pirates":-0.6,				# Waste of time
+		"junk_pirates_hounds":-0.6,			# Waste of time
+		"junk_pirates_junkboys":-0.6,		# Waste of time
+		"junk_pirates_technicians":-0.6,	# Waste of time
+		"pack":-0.35,						# Minor Threat
+		"syndicate_asp":-0.35,				# Minor Threat
+		"syndicate_asp_familia":-0.35,		# Threat
+		"al_ars":-0.35,						# Unknown Threat
+		"mayorate":-0.35,					# Unknown Threat
+		"metelson":-0.35,					# Unknown Threat
+		"ORA":-0.6,							# Gaudy Threat to the Xhan empire
+		"SCY":-0.6,						    # Threat
+		"shadow_industry":-0.6,		        # Gaudier Threat to the Xhan empire
+		"the_cartel":-0.6,					# Threat
+		"nullorder":-0.6,					# Opposed to the Ideals of the Xhan empire
+		"sylphon":0,						# Can be of some use
+		"templars":-0.6,					# Opposed to the Ideals of the Xhan empire
+		"Coalition":-0.15,					# Unknown
+		"cabal":-0.8,						# Waste of the universe
+		#"nomads":0,						# Unknown
+		#"approlight":0,					# Unknown
+		#"immortallight":0,					# Unknown
+		#"lte_boss":0,						# Unknown
+		#"Lte":0,							# Unknown
+		#"noir":-0.15,					    # Unknown Threat
+		#"crystanite":0,					# Unknown
+		"crystanite_pir":-0.6,				# Unknown Threat
+		#"exlane":0,						# Unknown
+		"infected":-0.6,					# Unknown threat
+		#"neutrinocorp":0,					# Unknown
+		#"oculus":0,						# Unknown
+		#"thulelegacy":0,					# Unknown
+		#"corvus_scavengers":0,				# Unknown
+		"new_galactic_order":-0.6,			# Opposed to the Ideals of the Xhan empire
+		"TF7070_D3C4":-0.6,					# Unknown threat
+		#"mayasura":0,						# Unknown
+		#"sad":0,							# Unknown
+		"cmc":0,							# Unknown
+		"kadur_remnant":-0.15,				# Threat
+		#"vesperon":0,						# Unknown
+		#"almighty_dollar":0,				# Unknown
+		#"communist_clouds":0,				# Unknown
+		#"science_fuckers":0,				# Unknown
+		#"warhawk_republic":0,				# Unknown
+		#"pulseindustry":0,					# Unknown
+		#"ae_ixbattlegroup":0,				# Unknown
+		#"omicron_faction":0,				# Unknown
+		#"fringe_defence_syndicate":0,		# Unknown
+		#"gladiator":0,						# Unknown
+		#"andorian":0,						# Unknown
+		#"united_federation":0,				# Unknown
+		#"klingon_empire":0,				# Unknown
+		#"romulan_empire":0,				# Unknown
+		#"vulcan":0,						# Unknown
+		#"borg":0,							# Unknown
+		#"tahlan_greathouses":0,			# Unknown
+		"tahlan_legioinfernalis":0,		# Unknown
+		"OCI":-0.35,						# Unknown threat
+		#"prv":0,							# Unknown
+		#"rb":0,							# Unknown
+		"magellan_protectorate":-0.35,		# Opposed to the Ideals of the Xhan Empire
+		#"sun_ice":0,						# Unknown
+		#"sun_ici":0,						# Unknown
+		"GKSec":-0.35,						# Unknown Threat
+		#"hiigaran_descendants":0,			# Unknown
+		#"AI":0,							# Unknown
+		#"ALIENS":0,						# Unknown
+		#"FFS":0,							# Unknown
+		#"FTG":0,							# Unknown
+		#"ISA":0,							# Unknown
+		#"MAR":0,							# Unknown
+		#"ROCK":0,							# Unknown
+		#"RSF":0,							# Unknown
+		#"UIN":0,							# Unknown
+		#"VNS":0,							# Unknown
+		#"WDW":0,							# Unknown
+		#"XLE":0,							# Unknown
+		"minor_independent_1":0,			# Unknown
+		"minor_independent_2":0,			# Unknown
+		"minor_independent_3":0,			# Unknown
+		"minor_independent_4":0,			# Unknown
+		"minor_independent_5":0,			# Unknown
+		"minor_independent_6":0,			# Unknown
+		"minor_independent_7":0,			# Unknown
+		"minor_independent_8":0,			# Unknown
+		"minor_independent_9":0,			# Unknown
+		"minor_independent_10":0,			# Unknown
+		"minor_independent_11":0,			# Unknown
+		"minor_independent_12":0,			# Unknown
+		"minor_independent_13":0,			# Unknown
+		"minor_independent_14":0,			# Unknown
+		"minor_independent_15":0,			# Unknown
+		"minor_independent_16":0,			# Unknown
+		"minor_independent_17":0,			# Unknown
+		"minor_independent_18":0,			# Unknown
+		"minor_independent_19":0,			# Unknown
+		"minor_independent_20":0,			# Unknown
+		"minor_pirate_1":-0.6,				# Unknown threat
+		"minor_pirate_2":-0.6,				# Unknown threat
+		"minor_pirate_3":-0.6,				# Unknown threat
+		"minor_pirate_4":-0.6,				# Unknown threat
+		"minor_pirate_5":-0.6,				# Unknown threat
+		"minor_pirate_6":-0.6,				# Unknown threat
+		"roider":-0.6,						# Unknown Threat
+		"bsg_cylons":0,					# Unknown
+		"COPS":-0.6,					    # challengers to the authority of the Xhan empire
+		"kingdom_of_terra":-0.6,		    # Unpredictable threat
+		"tiandong":-0.15,                   # Oppose the divine emperors methods but may be used circumstantially 
+	},
+
+	"maxRelationships":{},				# TBD, 
+	"diplomacyPositiveChance":{},		# TBD, 
+	"diplomacyNegativeChance":{},		# TBD, 
+
+	# Used by the diplomacy brain to decide whether we want to become friendlier or not with them
+	# This table sets the base disposition; other factors like relationship, alignment and recent events are also involved
+	"dispositions":{},					# TBD, 
+
+	# Used to determine alliance alignment; also affects disposition towards other factions
+	"alignments":{
+		"corporate":-1,
+		"technocratic":1,
+		"militarist":1,
+		"diplomatic":-1,
+		"ideological":1,
+	},
+	"diplomacyTraits":["paranoid", "stalwart", "law_and_order", "selfrighteous"],
+
+	# Used for dispositions, also affects rep penalty from slave trade
+	"morality":"evil",
+
+	"colonyExpeditionChance":0.5,		# 0 to disable colonization
+	"colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+
+	# Number of entries must equal number of vengeance tiers (0-3)
+	"vengeanceLevelNames":["Exterminators", "Decimators"],
+	"vengeanceFleetNames":["Authority", "Assassin"],
+	"vengeanceFleetNamesSingle":["an Authority", "an Assassin"],
+
+	# Randomly picked to add to a mining fleet
+	"miningVariantsOrWings":[
+		"Karoba_Hauler",
+		"Meiche_Fueler",
+		"OieHou_Skirmisher",
+		"OieHou_Skirmisher",
+		"Boulo_Support"		
+	],
+
+	# Campaign layer stations, array of custom entity def IDs
+	"customStations":["Xhan_Cluster_Station"],
+
+	"startShipsSolo":["OieHou_Skirmisher"],
+	"startShipsCombatSmall":["OieHou_Skirmisher", "Boulo_Support", "Boulo_Support"],
+	"startShipsTradeSmall":["XHAN_Ketsil_Lander", "OieHou_Skirmisher", "Meiche_Fueler"],
+	"startShipsCarrierSmall":["XHAN_Olkzan_Carrier_Support", "OieHou_EliteGuard", "Boulo_Support"],
+	"startShipsCombatLarge":["Olkzan_Eliteguard", "OieHou_Skirmisher", "OieHou_EliteGuard"],
+	"startShipsTradeLarge":["Olkzan_Lineman", "Karoba_Hauler", "Meiche_Fueler"],
+	#"startShipsCarrierLarge":[],
+	#"startShipsSuper":[],
+
+	# Defense stations used in random sector
+	"defenceStations":[
+		{"ids":["orbitalstation", "battlestation", "starfortress"]},
+		#{"ids":["orbitalstation", "battlestation", "starfortress"], "weight":0.5},
+	],
+
+	# Industries that this faction will always get in random sector
+	"industrySeeds":[
+	{"id":"orbitalworks", "mult":0.1},
+	
+	],
+	
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1},
+        {"id":"aiCore_station", "count":2, "mult":0.2},
+        {"id":"aiCore_military", "mult":0.4},
+        {"id":"aiCore_heavyindustry", "count":1},
+        {"id":"aiCore_any", "mult":1.5},
+    ],	
+
+	########################################
+	# Just to document the tags, The Xhan Empire doesn't use these
+
+	# Custom fleet names
+	#"asteroidMiningFleetName":"",
+	#"gasMiningFleetName":"",			# Unused
+	#"invasionFleetName":"",
+	#"responseFleetName":"",
+	#"invasionSupportFleetName":"",		# Strike fleets
+	#"defenceFleetName":"",
+	#"suppressionFleetName":"",
+	#"stationName":"",					# Unused
+
+	# In Nexerelin 0.8.4b and later, customStations can have specific size ranges
+	#"customStations":[
+		#{"entity":"STATION CUSTOM ENTITY ID GOES HERE", "minSize":1, "maxSize":3},
+		#{"entity":"STATION CUSTOM ENTITY ID GOES HERE", "minSize":4, "maxSize":5},
+		#{"entity":"STATION CUSTOM ENTITY ID GOES HERE", "minSize":6, "maxSize":10},
+	#],
+
+	# Defaults to playableFaction
+	# Set to prevent starting as this faction, or to make it pickable at start even if the faction isn't playable
+	#"startingFaction":true,
+
+	#"pirateFaction":false,				# Controls a bunch of stuff
+	#"isPirateNeutral":false,			# Pirate factions will normally be hostile to other non-pirate factions, this prevents that
+	#"noHomeworld":false,				# Will not get a 'homeworld' (has headquarters condition, size fixed at 7) in random Sector
+	#"showIntelEvenIfDead":false,		# Keep this faction in the intel tab even if it is not alive
+	#"spawnPatrols":true,				# Forces patrol spawning for factions that don't normally do so (e.g. vanilla pirates)
+	#"difficultyString":"hard",			# Appended to faction name in new game faction selection
+	#"ngcTooltip":"",					# This is shown in the new game faction selection screen
+	#"spawnAsFactionId":"player_npc",	# Transfer to this faction at start (after new game time pass)
+	#"noRandomizeRelations":false,		# Ignore when randomizing relationships at start
+	#"noSyncRelations":false,			# Don't touch this faction when syncing player-faction relationships with playerfaction-faction relationships
+
+	#"freeMarket":false,
+	#"marketSpawnWeight":1,				# The share of markets this faction gets in random Sector; 2 means double share etc.
+	#"tariffMult":1,
+
+	# Use this faction for the station, response fleet of a market with Headquarters market condition
+	# e.g. Lion's Guard defends Diktat HQ
+	#"factionIdForHqResponse":"faction_id",
+
+	#"allowAgentActions":true,			# Will use agents/saboteurs and can be targeted by them
+	#"allowPrisonerActions":true,		# Can ransom or repatriate prisoners
+	#"dropPrisoners":false,				# Can drop prisoners as post-battle loot? (disable for AI factions, aliens, uber-fanatics, etc.)
+
+	# This is an old inflexible way to set starting relationships; kept for reverse compatibility (also easier to fill out)
+	#"factionsLiked":[],				# Start at +40 rep
+	#"factionsDisliked":[],				# Start at -60 rep
+	#"factionsNeutral":[],				# Start at zero rep
+
+	# 1 = Inhospitable to player (if using own faction start), hostile to everyone else
+	# 2 = Hostile to everyone
+	# 3 = Vengeful to everyone
+	#"hostileToAll":0
+
+	#"disableDiplomacy":false,
+
+	#"invasionStrengthBonusAttack":0.1,	# Bonus to marine strength
+	#"invasionStrengthBonusDefend":0.2,
+	#"invasionFleetSizeMod":0.15,		# Bonus to fleet size
+	#"responseFleetSizeMod":0.15,
+	#"invasionPointMult":0.3,			# Multiplier for how often we can launch invasions
+
+	#"patrolSizeMult":1,				# No longer used
+	#"vengeanceFleetSizeMult":1,
+
+	#"directoryUseShortName":false,		# Make this faction use displayName instead of displayNameLong in faction directory and similar GUI parts
+
+	#"maxColonyDistance":18,			# In light years; measured from whichever market the colony expedition creater chose as the source market
+
+	# Modifiers for spawn chances when generating industries in random sector
+	#"industrySpawnMults":{
+	#	"heavyindustry":0,
+	#	"fuelproduction":0,
+	#},
+
+	# Bonus items that this faction will get in random sector
+	#"bonusSeeds":[
+	#	{"id":"nanoforge_pristine", "count":1},
+	#],
+
+	# Start with these items in cargo
+	#"startSpecialItems":[
+	#	[["corrupted_nanoforge", ""]],	# Will get a corrupted nanoforge
+	#	[["LC_package", ""], ["ship_bp", "hyperion"]],	# Will also randomly get either a Luddic Church blueprint package or a Hyperion blueprint
+	#],
+}

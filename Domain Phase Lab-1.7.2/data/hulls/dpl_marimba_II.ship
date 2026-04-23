@@ -1,0 +1,71 @@
+{
+  "hullName": "Marimba Mk.II",
+  "hullId": "dpl_marimba_II",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/dpl_marimba.png",
+  "style": "HIGH_TECH",
+  "height": 44,
+  "width": 38,
+  "center": [19, 17],
+  "collisionRadius": 52,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 45,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dpl_phonographair"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [8, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, -0],
+      "length": 20.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-15, 10.5],
+      "length": 14,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-15, -10.5],
+      "length": 14,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    22, -6.5,
+    15, -7.5,
+    8.5, -13.5,
+    0, -18.5,
+    -5, -18.5,
+    -15, -13.5,
+    -15, 13.5,
+    -5, 18.5,
+    0, 18.5,
+    8.5, 13.5,
+    15, 7.5,
+    22, 6.5
+  ]
+}

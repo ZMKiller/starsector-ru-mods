@@ -1,0 +1,275 @@
+{
+  "hullName": "Archangel",
+  "hullId": "swp_arcade_archangel",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/swp/ships/super/swp_archangel.png",
+  "style": "MIDLINE",
+  "height": 543,
+  "width": 252,
+  "center": [126, 271],
+  "collisionRadius": 273.00412,
+  "shieldCenter": [0.5, -0],
+  "shieldRadius": 270,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "plasma",
+    "WS0002": "plasma",
+    "WS0003": "plasma",
+    "WS0004": "plasma",
+    "WS0005": "plasma",
+    "WS0006": "plasma",
+    "WS0007": "plasma",
+    "WS0008": "plasma",
+    "WS0009": "plasma"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 0,
+      "locations": [-33.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [-33.5, 0.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [-33.5, -0.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [-34, 0.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [-34, -0.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 135,
+      "locations": [-34.5, 0.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -135,
+      "locations": [-34.5, -0.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 180,
+      "locations": [-34.5, -0]
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-34, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-117, 13],
+      "length": 120,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "CUSTOM",
+      "styleSpec": {
+        "type": "SMOKE",
+        "engineColor": [
+          255,
+          1,
+          15,
+          255
+        ],
+        "engineCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": "",
+        "contrailColor": [
+          2,
+          1,
+          175,
+          15
+        ],
+        "contrailCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "contrailParticleSizeMult": 3,
+        "contrailParticleFinalSizeMult": 0,
+        "contrailMaxSpeedMult": 0.75,
+        "contrailAngularVelocityMult": 0.25,
+        "contrailParticleDuration": 1
+      }
+    },
+    {
+      "location": [-117, -13],
+      "length": 120,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "CUSTOM",
+      "styleSpec": {
+        "type": "SMOKE",
+        "engineColor": [
+          255,
+          1,
+          15,
+          255
+        ],
+        "engineCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": "",
+        "contrailColor": [
+          2,
+          1,
+          175,
+          15
+        ],
+        "contrailCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "contrailParticleSizeMult": 3,
+        "contrailParticleFinalSizeMult": 0,
+        "contrailMaxSpeedMult": 0.75,
+        "contrailAngularVelocityMult": 0.25,
+        "contrailParticleDuration": 1
+      }
+    },
+    {
+      "location": [-115, -0.5],
+      "length": 160,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "CUSTOM",
+      "styleSpec": {
+        "type": "SMOKE",
+        "engineColor": [
+          255,
+          1,
+          15,
+          255
+        ],
+        "engineCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": "",
+        "contrailColor": [
+          2,
+          1,
+          175,
+          15
+        ],
+        "contrailCampaignColor": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "contrailParticleSizeMult": 3,
+        "contrailParticleFinalSizeMult": 0,
+        "contrailMaxSpeedMult": 0.75,
+        "contrailAngularVelocityMult": 0.25,
+        "contrailParticleDuration": 1
+      }
+    }
+  ],
+  "bounds": [
+    13.5, -0,
+    148.5, -9.5,
+    228.5, -16.5,
+    227.5, -21.5,
+    166.5, -21.5,
+    142.5, -30.5,
+    113, -26.5,
+    112.5, -35.5,
+    32, -37,
+    -28.5, -46.5,
+    74, -57.5,
+    72.5, -62.5,
+    3, -62.5,
+    -69.5, -93,
+    -143, -90.5,
+    -143, -83,
+    -227.5, -68.5,
+    -174, -64,
+    -167.5, -49.5,
+    -126.5, -46,
+    -109, -0,
+    -126.5, 46,
+    -167.5, 49.5,
+    -174, 64,
+    -227.5, 68.5,
+    -143, 83,
+    -143, 90.5,
+    -69.5, 93,
+    3, 62.5,
+    72.5, 62.5,
+    74, 57.5,
+    -28.5, 46.5,
+    32, 37,
+    112.5, 35.5,
+    113, 26.5,
+    142.5, 30.5,
+    166.5, 21.5,
+    227.5, 21.5,
+    228.5, 16.5,
+    148.5, 9.5
+  ]
+}
