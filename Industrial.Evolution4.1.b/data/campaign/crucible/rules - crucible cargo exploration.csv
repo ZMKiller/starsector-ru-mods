@@ -1,26 +1,26 @@
 id,trigger,conditions,script,text,options,notes
 #Explore the crucible,,,,,,
 IndEvo_crucible_explore_backToCamp,DialogOptionSelected,$option == IndEvo_crucible_explore_backToCamp,"FireAll CrucibleExploration
-$currentLoc = junction 0","The bustle of Salvage Central has not abated in the slightest. You are accosted from all sides by noise and smell alike - and, of course, by your trusty schedule helper bot.
+$currentLoc = junction 0","Шум и суета Salvage Central ничуть не утихают. На вас со всех сторон наваливаются звуки и запахи - и, разумеется, ваш верный бот-помощник по расписанию.
 
-Where to go?",,
+Куда направиться?",,
 ,,,,,,
 IndEvo_c_cargo_0,,,FireBest CrucibleCargoExplorationLaunch,,,
 IndEvo_c_cargo_1_init,CrucibleCargoExplorationLaunch,"!$c_cargoFirstVisitDone
 !$c_cargo_salvage_done",$c_cargoFirstVisitDone = true,,,Initial
 IndEvo_c_cargo_1_voluntary,CrucibleCargoExplorationLaunch,"$c_cargoFirstVisitDone
 !$c_cargo_salvage_done
-!$c_cargo_salvage_failed",FireAll CrucibleCargoEquipmentOptions,"You head towards the - clearly slacking - cargo salvage crew and are immediately greeted by the Chief.
+!$c_cargo_salvage_failed",FireAll CrucibleCargoEquipmentOptions,"Вы направляетесь к явно отлынивающей грузовой salvage-команде, и вас тут же встречает Старший.
 
-""Yer back! We’ve been waitin’ patiently. What’cha got for us?""
+""Вернулись! Мы тут терпеливо ждали. Чего нам принесли?""
 
-He tries his best to cover for his crew trying to hide the evidence of their unscheduled break, failing terribly.
-It is almost endearing.",,Return Voluntary
+Он изо всех сил пытается прикрыть команду, которая спешно прячет следы незапланированного перерыва, и получается у него из рук вон плохо.
+Это почти умиляет.",,Return Voluntary
 IndEvo_c_cargo_1_fail,CrucibleCargoExplorationLaunch,"$c_cargo_salvage_failed
 !$c_cargo_salvage_done",,,,Return after Failure
-IndEvo_c_cargo_1_success,CrucibleCargoExplorationLaunch,$c_cargo_salvage_done score:10,,"There is nothing to do here but watch the comings and goings of the salvage parties. 
+IndEvo_c_cargo_1_success,CrucibleCargoExplorationLaunch,$c_cargo_salvage_done score:10,,"Здесь больше нечего делать, кроме как наблюдать за снующими туда-сюда salvage-командами.
 
-You do not spot - or hear - the chief. He is probably deeper down in the holds managing the extraction.",IndEvo_crucible_explore_backToCamp:Return,Return after Success (There is nothing else to do here but watch the comings and goings of the salvage parties.)
+Старшего вы не видите - и не слышите тоже. Скорее всего, он сейчас глубже в трюмах и руководит извлечением груза.",IndEvo_crucible_explore_backToCamp:Назад,Return after Success (There is nothing else to do here but watch the comings and goings of the salvage parties.)
 ,,,,,,
 ,,,,,,
 ,CrucibleCargoEquipmentOptions,army,,,,

@@ -4,10 +4,10 @@ id,trigger,conditions,script,text,options,notes
 #Roider Tutorial,,,,,,
 ,,,,,,
 IndEvo_roiderTutorial_begin,BeginFleetEncounter,"$IndEvo_roider_tutorial score:10000
-!$IndEvo_roider_tutorial_complete","AddText ""You're being hailed."" highlight
+!$IndEvo_roider_tutorial_complete","AddText ""С вами пытаются связаться."" highlight
 $hailing = true 0",,,
 IndEvo_roiderTutorial_intro,OpenCommLink,"$entity.IndEvo_roider_tutorial score:1000
-!$entity.IndEvo_roider_tutorial_complete","SetTextHighlights ""five Gravburst missiles""
+!$entity.IndEvo_roider_tutorial_complete","SetTextHighlights ""пять ракет Gravburst""
 ","Потрепанный флот входит в зону связи, корпуса обожжены и усеяны кратерами. Голос в эфире сухой и надломленный, будто недели лишений выжгли из него весь комфорт.
 
 ""Имя - $personName. Независимый ройдер. Слушай, не буду тратить твое время, какие-то пиратские ублюдки прыгнули на нас за кольцом. Утащили все съедобное. А пусковые трубы проверить не додумались.""
@@ -15,8 +15,8 @@ IndEvo_roiderTutorial_intro,OpenCommLink,"$entity.IndEvo_roider_tutorial score:1
 ""У нас осталось пять ракет Gravburst, еще в боеготовности. Стоят кучу кредитов, но есть их нельзя. Мы сдохнем от голода.""","0:IndEvo_roiderTutorial_listenOffer:Ракеты в обмен на припасы - так?
 1:IndEvo_roiderTutorial_listenOfferDick:И почему это моя проблема?
 2:IndEvo_roiderTutorial_ignoreOffer1:Потянуться к разрыву связи",
-IndEvo_roiderTutorial_listenOffer,DialogOptionSelected,$option == IndEvo_roiderTutorial_listenOffer,"SetTextHighlights ""$entity.IndEvo_supplyTradeAmt units""
-AddTextSmall ""You have $player.supplies supplies available"" highlight","$personName кашляет. Тихое шипение намекает, что часть системы жизнеобеспечения доживает последние часы.
+IndEvo_roiderTutorial_listenOffer,DialogOptionSelected,$option == IndEvo_roiderTutorial_listenOffer,"SetTextHighlights ""$entity.IndEvo_supplyTradeAmt ед.""
+AddTextSmall ""У вас есть $player.supplies припасов"" highlight","$personName кашляет. Тихое шипение намекает, что часть системы жизнеобеспечения доживает последние часы.
 
 ""Отдам все за $IndEvo_supplyTradeAmt единиц ваших припасов. Эти ракеты стоят в разы больше, но наши жизни тоже чего-то стоят.""
 
@@ -29,8 +29,8 @@ IndEvo_roiderTutorial_ignoreOffer1,DialogOptionSelected,$option == IndEvo_roider
 ""Погоди. Пожалуйста, просто выслушай,"" выпаливает $personName, чуть слишком быстро.
 
 ""Идет огромный метеорный шторм, на этих ракетах ты отобьешь отданное нам тысячекратно, просто дослушай.""",0:IndEvo_roiderTutorial_listenOfferAfterRejectingOnce:Говори.,
-IndEvo_roiderTutorial_listenOfferAfterRejectingOnce,DialogOptionSelected,$option == IndEvo_roiderTutorial_listenOfferAfterRejectingOnce,"SetTextHighlights ""$entity.IndEvo_supplyTradeAmt units""
-AddTextSmall ""You have $player.supplies supplies available"" highlight","$personName кашляет. Тихое шипение намекает, что часть системы жизнеобеспечения доживает последние часы.
+IndEvo_roiderTutorial_listenOfferAfterRejectingOnce,DialogOptionSelected,$option == IndEvo_roiderTutorial_listenOfferAfterRejectingOnce,"SetTextHighlights ""$entity.IndEvo_supplyTradeAmt ед.""
+AddTextSmall ""У вас есть $player.supplies припасов"" highlight","$personName кашляет. Тихое шипение намекает, что часть системы жизнеобеспечения доживает последние часы.
 
 ""Отдам все за $IndEvo_supplyTradeAmt единиц ваших припасов. Эти ракеты стоят в разы больше, но наши жизни тоже чего-то стоят.""
 
@@ -71,14 +71,14 @@ MakeOtherFleetAggressive missileUse false
 unset $ignorePlayerCommRequests
 $missile_confirmedOffenseCount++ 14
 $missileUseCaughtConv = true 0
-AddText ""You're being hailed by the $faction $otherShipOrFleet."" $faction.baseColor
+AddText ""С вами пытается связаться $otherShipOrFleet фракции $faction."" $faction.baseColor
 OpenComms",,,
-IndEvo_missile_openComm_knowsPlayer,OpenCommLink,$entity.missileUseCaughtConv score:100,"AddText ""\""Deplyoying long-range strategic munitions in civilized $faction volumes is against the law. You're hereby ordered to submit the entirety of your arsenal for confiscation!\""""",,"0:tOff_comply:Подчиниться и подготовиться к досмотру
+IndEvo_missile_openComm_knowsPlayer,OpenCommLink,$entity.missileUseCaughtConv score:100,"AddText ""\""Развертывание стратегических боеприпасов большой дальности в цивилизованном пространстве $faction противозаконно. Вам приказано сдать весь арсенал для конфискации!\""""",,"0:tOff_comply:Подчиниться и подготовиться к досмотру
 1:IndEvo_missile_attemptSPTalk:Попробовать отговориться
 2:tOff_refuse:Отказаться и разорвать связь",
 IndEvo_missile_openComm_doesNotKnowPlayer,OpenCommLink,"!$entity.patrolAllowTOff
 $entity.missileUseCaughtConv score:100
-!$entity.knowsWhoPlayerIs","AddText ""\""Unknown $shipOrFleet, identify yourself! Deplyoying long-range strategic munitions in civilized $faction volumes is against the law. You're hereby ordered to turn your transponder on and submit the entirety of your arsenal for confiscation!\""""
+!$entity.knowsWhoPlayerIs","AddText ""\""Неопознанный $shipOrFleet, назовитесь! Развертывание стратегических боеприпасов большой дальности в цивилизованном пространстве $faction противозаконно. Вам приказано включить транспондер и сдать весь арсенал для конфискации!\""""
 AdjustRep $faction.id TRANSPONDER_OFF
 AdjustRepActivePerson TRANSPONDER_OFF
 SetStoryOption avoid_scan 1 avoidCargoScan ui_char_spent_story_point ""Talked your way out of a confiscation order""",,"0:tOff_comply:Включить транспондер и подчиниться
@@ -119,7 +119,7 @@ IndEvo_crucible_market_addTravelOptionPointDisabled,PopulateOptions,"$menuState 
 $hasMarket
 $IndEvo_crucible
 !$tag:crucible_enabled","SetEnabled IndEvo_crucible_addTravelOptions false
-SetTooltip IndEvo_crucible_addTravelOptions ""The doors to the control room appear to be locked shut. Attempts to circumvent or breach them may damage the delicate machinery inside  - you will have to find a way to power them.""",,IndEvo_crucible_addTravelOptions:Посетить Центральный пульт,
+SetTooltip IndEvo_crucible_addTravelOptions ""Двери в комнату управления, похоже, заперты наглухо. Попытка обойти или взломать их может повредить хрупкие механизмы внутри - придется найти способ подать на них питание.""",,IndEvo_crucible_addTravelOptions:Посетить Центральный пульт,
 ,,,,,,
 #Crucible without colony controls,,,,,,
 IndEvo_crucible_open,OpenInteractionDialog,$IndEvo_crucible score:100,FireAll CrucibleOptions,,,
@@ -134,13 +134,13 @@ $crucible_explored",,,0:IndEvo_crucible_startActivate:Активировать �
 IndEvo_crucible_addColonizeOption,CrucibleOptions,$crucible_explored,"FireBest IndEvo_crucible_addColonizeOption_disableIfNeeded
 ","Даже в небольшом исследованном секторе Горнила достаточно места для постоянного присутствия, здесь можно основать колонию.",3:IndEvo_crucible_colonize:Рассмотреть основание колонии,make it into a colony
 IndEvo_crucible_addColonizeOption_disableIfNeeded,IndEvo_crucible_addColonizeOption_disableIfNeeded,!$tag:crucible_enabled,"SetEnabled IndEvo_crucible_colonize false
-SetTooltip IndEvo_crucible_colonize ""The Crucible must be powered for a colony to be viable.""",,,
+SetTooltip IndEvo_crucible_colonize ""Для существования колонии Горнило должно быть запитано.""",,,
 ,,,,,,
 IndEvo_crucible_addTravelOptionPoint,CrucibleOptions,"$crucible_explored
 $tag:crucible_enabled",,,2:IndEvo_crucible_addTravelOptions:Посетить Центральный пульт,travel options 
 IndEvo_crucible_addTravelOptionPointDisabled,CrucibleOptions,"$crucible_explored
 !$tag:crucible_enabled","SetEnabled IndEvo_crucible_addTravelOptions false
-SetTooltip IndEvo_crucible_addTravelOptions ""The doors to the control room appear to be locked shut. Attempts to circumvent or breach them may damage the delicate machinery inside  - you will have to find a way to power them.""",,2:IndEvo_crucible_addTravelOptions:Посетить Центральный пульт,
+SetTooltip IndEvo_crucible_addTravelOptions ""Двери в комнату управления, похоже, заперты наглухо. Попытка обойти или взломать их может повредить хрупкие механизмы внутри - придется найти способ подать на них питание.""",,2:IndEvo_crucible_addTravelOptions:Посетить Центральный пульт,
 IndEvo_crucible_addCloseDialogueOption,CrucibleOptions,,"SetShortcut IndEvo_crucible_selectCloseOption ""ESCAPE""",,9:IndEvo_crucible_selectCloseOption:Вернуться,
 ,,,,,,
 #Crucible Movement options,,,,,,
@@ -150,13 +150,13 @@ IndEvo_crucible_unlockWormhole,CrucibleTravelOptions,"!$crucibleWormholeUnlocked
 IndEvo_HasGenericSpecialItemInCargo wormhole_anchor",,"Мониторы с оранжевой тревожной индикацией напоминают о пустующей алкубьерр-люльке в нижних секциях. Технические данные намекают на технологию червоточин эпохи Экспансии, но мало чем помогают.",1:IndEvo_crucible_unlockWormhole_select:Установить Якорь Червоточины в люльку,integrate wormhole
 IndEvo_crucible_unlockWormholeDisabled,CrucibleTravelOptions,"!$crucibleWormholeUnlocked
 !IndEvo_HasGenericSpecialItemInCargo coronal_portal","SetEnabled IndEvo_crucible_unlockWormhole_select false
-SetTooltip IndEvo_crucible_unlockWormhole_select ""You lack the prerequisite items to slot into the cradle. The markings reference Domain Explorarium Space Traversal Technology - whatever that is supposed to be.""","Мониторы с оранжевой тревожной индикацией напоминают о пустующей алкубьерр-люльке в нижних секциях. Технические данные намекают на технологию червоточин эпохи Экспансии, но мало чем помогают.",1:IndEvo_crucible_unlockWormhole_select:Попробовать починить алкубьерр-люльку,
+SetTooltip IndEvo_crucible_unlockWormhole_select ""У вас нет необходимых предметов, которые можно установить в люльку. Маркировка ссылается на Domain Explorarium Space Traversal Technology - что бы это ни значило.""","Мониторы с оранжевой тревожной индикацией напоминают о пустующей алкубьерр-люльке в нижних секциях. Технические данные намекают на технологию червоточин эпохи Экспансии, но мало чем помогают.",1:IndEvo_crucible_unlockWormhole_select:Попробовать починить алкубьерр-люльку,
 IndEvo_crucible_useWormhole,CrucibleTravelOptions,$crucibleWormholeUnlocked,,"Системы сообщают, что ваш Якорь Червоточины работает и готов к использованию.",1:IndEvo_crucible_useWormhole_select:Открыть червоточину,Fire wormhole if integrated
 IndEvo_crucible_unlockGate,CrucibleTravelOptions,"!$crucibleGateUnlocked
 IndEvo_HasGenericSpecialItemInCargo coronal_tap",,"Перед вами очень заметная голограмма чего-то вроде гипертехнологического силового моста. К соседней консоли приклеен лист синтбумаги с пометкой ""сломано?"".",2:IndEvo_crucible_unlockGate_select:Использовать Гипершунтовый Тап для ремонта гиперпространственного моста питания,integrate gate
 IndEvo_crucible_unlockGateDisabled,CrucibleTravelOptions,"!$crucibleGateUnlocked
 !IndEvo_HasGenericSpecialItemInCargo coronal_tap","SetEnabled IndEvo_crucible_unlockGate_select false
-SetTooltip IndEvo_crucible_unlockGate_select ""The relay is completely broken and you lack the components required to fix it. The tech level of this piece seems extremely out of place compared to the otherwise ancient equipment around it - almost alien, in fact. However, it is clearly hyperspace technology.""","Перед вами очень заметная голограмма чего-то вроде гипертехнологического силового моста. К соседней консоли приклеен лист синтбумаги с пометкой ""сломано?"".",2:IndEvo_crucible_unlockGate_select:Попробовать починить гиперпространственный мост питания,
+SetTooltip IndEvo_crucible_unlockGate_select ""Реле полностью выведено из строя, а нужных компонентов для ремонта у вас нет. Уровень этой технологии выглядит совершенно чужеродно на фоне окружающего древнего оборудования - почти инопланетно. Но это явно гиперпространственная технология.""","Перед вами очень заметная голограмма чего-то вроде гипертехнологического силового моста. К соседней консоли приклеен лист синтбумаги с пометкой ""сломано?"".",2:IndEvo_crucible_unlockGate_select:Попробовать починить гиперпространственный мост питания,
 IndEvo_crucible_useGate,CrucibleTravelOptions,$crucibleGateUnlocked,,"Голографический статус гипертехнологий показывает выжигающий глаза оранжевый знак предупреждения. На приклеенном к излучателю листке написано ""работает?"". Мост к Вратам, похоже, функционирует.",2:IndEvo_crucible_useGate_select:Подключиться к Вратам,Fire gate if integrated
 IndEvo_crucible_moveCrucible,CrucibleTravelOptions,$crucibleWormholeUnlocked,,,3:IndEvo_crucible_moveCrucible_select:Переместить Горнило,"unlocked with WH anchor, destroy on use"
 IndEvo_crucible_changeCatapultColour,CrucibleTravelOptions,,,,4:IndEvo_crucible_changeCatapultColour_select:Изменить цвет катапульт,Change catapult colours
@@ -170,9 +170,9 @@ FireAll PopulateOptions",,,
 IndEvo_crucible_selectCloseOption,DialogOptionSelected,$option == IndEvo_crucible_selectCloseOption,DismissDialog,,,
 ,,,,,,
 #Unlock options,,,,,,
-IndEvo_crucible_unlockWormhole_select,DialogOptionSelected,$option == IndEvo_crucible_unlockWormhole_select,"Highlight ""permanent""","Якорь Червоточины входит как родной, вероятно, так и было задумано. Установка постоянная, явного способа отключить энергопотребление без разрушения всей сборки не видно.","1:IndEvo_crucible_unlockWormhole_confirm:Подтвердить установку якоря
+IndEvo_crucible_unlockWormhole_select,DialogOptionSelected,$option == IndEvo_crucible_unlockWormhole_select,"Highlight ""постоянной""","Якорь Червоточины входит как родной, вероятно, так и было задумано. Установка постоянная, явного способа отключить энергопотребление без разрушения всей сборки не видно.","1:IndEvo_crucible_unlockWormhole_confirm:Подтвердить установку якоря
 2:IndEvo_crucible_addTravelOptions:Вернуться",
-IndEvo_crucible_unlockGate_select,DialogOptionSelected,$option == IndEvo_crucible_unlockGate_select,"Highlight ""destroy""",Ремонт реле питания потребует разборки Гипершунтового Тапа. Это безвозвратно уничтожит тап.,"1:IndEvo_crucible_unlockGate_confirm:Подтвердить жертву тапа ради восстановления моста
+IndEvo_crucible_unlockGate_select,DialogOptionSelected,$option == IndEvo_crucible_unlockGate_select,"Highlight ""уничтожит""",Ремонт реле питания потребует разборки Гипершунтового Тапа. Это безвозвратно уничтожит тап.,"1:IndEvo_crucible_unlockGate_confirm:Подтвердить жертву тапа ради восстановления моста
 2:IndEvo_crucible_addTravelOptions:Вернуться",
 ,,,,,,
 IndEvo_crucible_unlockWormhole_confirm,DialogOptionSelected,$option == IndEvo_crucible_unlockWormhole_confirm,"$crucibleWormholeUnlocked = true
@@ -192,7 +192,7 @@ IndEvo_crucible_unlockGate_confirm2,DialogOptionSelected,$option == IndEvo_cruci
 Сверху проходит шестерня, бросая тень на мигающие огни пульта.",,
 ,,,,,,
 #Colonize the crucible,,,,,,
-IndEvo_crucible_colonize,DialogOptionSelected,$option == IndEvo_crucible_colonize,"SetTextHighlights 10 1 ""full-size colony""
+IndEvo_crucible_colonize,DialogOptionSelected,$option == IndEvo_crucible_colonize,"SetTextHighlights 10 1 ""полноценной колонии""
 
 $crewReq = 1000 0
 $supReq = 200 0
@@ -276,7 +276,7 @@ $player.foogLocked == true","SetShortcut cutCommLink ""ESCAPE""","Геральд
 IndEvo_foog_aristrocratGreetingReturnedNoRep,PickGreeting,"$id == foogAristo score:1000
 $player.foogReturn == true
 $faction.rel != COOPERATIVE","SetShortcut cutCommLink ""ESCAPE""
-Highlight ""(Required: Cooperative)""","Геральдический знак крутится и крутится, но ответа нет.
+Highlight ""(Требуется: Cooperative)""","Геральдический знак крутится и крутится, но ответа нет.
 Вам стоит поработать над репутацией. Требуется, Cooperative.",cutCommLink:Разорвать связь,
 IndEvo_foog_aristrocratGreetingReturned,PickGreeting,"$id == foogAristo score:1000
 $player.foogReturn == true
@@ -310,7 +310,7 @@ SetShortcut cutCommLink ""ESCAPE""","Ее левая бровь на секун�
 
 Она обрывает связь.",cutCommLink:Вернуться,
 IndEvo_foog_rep,DialogOptionSelected,"$faction.rel == COOPERATIVE
-$option == IndEvo_foog_rep","Highlight ""300,000 credits""
+$option == IndEvo_foog_rep","Highlight ""300 000 кредитов""
 ShowPersonVisual
 DoCanAffordCheck 300000 IndEvo_foogPay false","""Хм. Похоже, ты не только языком треплешь, хотя одеваться явно не умеешь. Плата за вступление в число вассалов, 300,000 кредитов,"" ее лицо кривится в усмешке, "" - которые у тебя, я уверена, уже при себе.""","IndEvo_foogPay:Перевести кредиты.
 IndEvo_foogDelay:Придется сперва распродать часть активов.",
@@ -361,7 +361,7 @@ $market.isSurveyed
 #IndEvo_ArtilleryInitialPlanet_new,PrintNearbySurveyHostilesTextIfSo,"$IndEvo_ArtilleryStation score:1000
 !$defenderFleetDefeated
 $market.isPlanetConditionMarketOnly","SetEnabled surveyPerform false
-Highlight ""denies any chance of approach""","The giant weapons platform in orbit around $entityName denies any chance of approach, much less survey - and while the oversized armament lays silent for now, you get the feeling that this might change the moment you get closer.",,
+Highlight ""не оставляет ни малейшего шанса на сближение""","Гигантская орбитальная оружейная платформа вокруг $entityName не оставляет шансов даже на сближение, не то что на обследование, и хотя сверхкалиберное вооружение пока молчит, у вас есть ощущение, что это изменится в ту же секунду, когда вы подойдете ближе.",,
 IndEvo_ArtilleryInitialStation,OpenInteractionDialog,"$IndEvo_ArtilleryStation score:1000
 !$defenderFleetDefeated
 $tag:IndEvo_Artillery
@@ -380,20 +380,20 @@ IndEvo_ArtilleryDefeatPopulateOptions,DialogOptionSelected,$option == IndEvo_Art
 IndEvo_ArtilleryInitialPlanet_CircumventionProtection,PopulateOptions,"$market.isPlanetConditionMarketOnly
 !$defenderFleetDefeated
 $IndEvo_ArtilleryStation score:1000","SetEnabled surveyPerform false
-Highlight ""denies any chance of approach""
-SetTooltip surveyPerform ""A survey operation requires heavy machinery and satellites to be deployed. This is not possible with an active defence platform in orbit. Disable it first.""","Гигантская орбитальная оружейная платформа вокруг $entityName не оставляет шансов даже на сближение, не то что на обследование, и хотя сверхкалиберное вооружение пока молчит, у вас есть ощущение, что это изменится в ту же секунду, когда вы подойдете ближе.",,
+Highlight ""не оставляет ни малейшего шанса на сближение""
+SetTooltip surveyPerform ""Для обследования требуется развернуть тяжелую технику и спутники. При активной оборонительной платформе на орбите это невозможно. Сначала отключите ее.""","Гигантская орбитальная оружейная платформа вокруг $entityName не оставляет шансов даже на сближение, не то что на обследование, и хотя сверхкалиберное вооружение пока молчит, у вас есть ощущение, что это изменится в ту же секунду, когда вы подойдете ближе.",,
 IndEvo_ArtilleryInitialPlanet_NexEventDisabler,PopulateOptions,"$market.isPlanetConditionMarketOnly
 !$defenderFleetDefeated
 $IndEvo_ArtilleryStation score:1000","SetEnabled nex_decivEvent_interact false
-SetTooltip nex_decivEvent_interact ""Establishing an active connection while a planetary defence platform is in immediate range has a very high chance of causing a target lock-on and is thus heavily discouraged.""",,,
+SetTooltip nex_decivEvent_interact ""Установление активного соединения, пока планетарная оборонительная платформа находится в зоне немедленного поражения, с очень высокой вероятностью приведет к захвату цели, поэтому подобное категорически не рекомендуется.""",,,
 IndEvo_ArtilleryInitialPlanet_NexOutpostDisabler,PopulateOptions,"$market.isPlanetConditionMarketOnly
 !$defenderFleetDefeated
 $IndEvo_ArtilleryStation score:1000","SetEnabled nex_outpostPreview false
-SetTooltip nex_outpostPreview ""There is no way to build an outpost next to an active artillery defence platform.""",,,
+SetTooltip nex_outpostPreview ""Построить аванпост рядом с активной артиллерийской оборонительной платформой невозможно.""",,,
 IndEvo_ArtilleryInitialPlanet_RuinDisabler,PopulateOptions,"$market.isPlanetConditionMarketOnly
 !$defenderFleetDefeated
 $IndEvo_ArtilleryStation score:1000","SetEnabled salExplore false
-SetTooltip salExplore ""Your salvors refuse to descend to the surface under potential fire from an active defence platform.""",,,
+SetTooltip salExplore ""Ваши сборщики отказываются спускаться на поверхность, пока по ним может открыть огонь активная оборонительная платформа.""",,,
 ,,,,,,
 #watchtower,,,,,,
 #IndEvo_derelictWatchtower,OpenInteractionDialog,"$IndEvo_isArtilleryActive score:2000
@@ -410,7 +410,7 @@ $tag:IndEvo_watchtower score:1000",,"Взлом $aOrAn $shortName очистит
 Со временем обслуживание обнаружит и устранит взлом, но эффект должен сохраняться как минимум два месяца.",,
 IndEvo_derelictWatchtower_disableControlUnderAI,COB_DisableIndividualOptions,"$IndEvo_isArtilleryActive score:2000
 $tag:IndEvo_watchtower","SetEnabled COB_takeControl false
-SetTooltip COB_takeControl ""Any attempts at taking control of the $entityName get stifled by a heavily AI-backed counter-hack. Your engineers concede defeat after a few minutes to avoid a network breach.""",,,
+SetTooltip COB_takeControl ""Любая попытка взять под контроль $entityName тут же подавляется мощной контрвзломной системой с поддержкой ИИ. Через несколько минут ваши инженеры признают поражение, чтобы не допустить прорыва в сеть.""",,,
 ,,,,,,
 #Galatia Job List,,,,,,
 IndEvo_JobMenuPoint,PopulateOptions,$id == station_galatia_academy,,,4:IndEvo_JobMenuInit:Посетить Исследовательские тракты,
@@ -554,10 +554,10 @@ IndEvo_SalvageYardsColonyOptionMenu,IndEvo_ColonyOptionPoint,IndEvo_marketHasInd
 IndEvo_IntitiateYardsMenu,DialogOptionSelected,$option == IndEvo_IntitiateYardsMenu,FireAll IndEvo_YardsBaseMenu,"Неприятный едкий запах и гул промышленной техники встречают вас, когда шлюз шаттла отрабатывает цикл. Картина по-своему впечатляет, наполовину разобранные корпуса покоятся за грудами деталей и лома, туши великих кораблей, когда-то бороздивших звезды, теперь просто мусор для разборки и повторного использования. Дроны парят сверху, деловито перенося добычу туда, куда нужно.
 
 Бригадир нетерпеливо машет вам рукой, когда вы сходите по трапу.",,
-IndEvo_SYCustomProductionPanel,IndEvo_YardsBaseMenu,,"SetTooltip IndEvo_SYCustomProductionPanel_init ""The Salvage Yards can construct ships for you if you provide the blueprints and components that are too rare to ""acquire"".""",,1:IndEvo_SYCustomProductionPanel_init:Спросить о сборке кораблей,
-IndEvo_SYMoveDMods,IndEvo_YardsBaseMenu,IndEvo_HasValidShipPair,"SetTooltip IndEvo_SYMoveDMods_init ""The salvage yards can transfer D-Mods between ships of similar make.""",,2:IndEvo_SYMoveDMods_init:Переместить D-моды между схожими корпусами,
+IndEvo_SYCustomProductionPanel,IndEvo_YardsBaseMenu,,"SetTooltip IndEvo_SYCustomProductionPanel_init ""Дворы утилизации могут строить для вас корабли, если вы предоставите чертежи и компоненты, которые слишком редки, чтобы их можно было просто ""достать"".""",,1:IndEvo_SYCustomProductionPanel_init:Спросить о сборке кораблей,
+IndEvo_SYMoveDMods,IndEvo_YardsBaseMenu,IndEvo_HasValidShipPair,"SetTooltip IndEvo_SYMoveDMods_init ""Дворы утилизации могут переносить D-моды между кораблями схожего типа.""",,2:IndEvo_SYMoveDMods_init:Переместить D-моды между схожими корпусами,
 IndEvo_SYMoveDMods_disabled,IndEvo_YardsBaseMenu,!IndEvo_HasValidShipPair,"SetEnabled IndEvo_SYMoveDMods_init false
-SetTooltip IndEvo_SYMoveDMods_init ""The salvage yards can transfer D-Mods between ships of similar make, but you do not have any compatible ships.""",,2:IndEvo_SYMoveDMods_init:Переместить D-моды между схожими корпусами,
+SetTooltip IndEvo_SYMoveDMods_init ""Дворы утилизации могут переносить D-моды между кораблями схожего типа, но у вас нет подходящих судов.""",,2:IndEvo_SYMoveDMods_init:Переместить D-моды между схожими корпусами,
 IndEvo_SYLeave,IndEvo_YardsBaseMenu,,"SetShortcut IndEvo_SelectreturnToMenu ""ESCAPE""",,9:IndEvo_SelectreturnToMenu:Вернуться,
 ,,,,,,
 IndEvo_SYCustomProductionPanel_init,DialogOptionSelected,$option == IndEvo_SYCustomProductionPanel_init,IndEvo_InitSYCustomProductionDiag,,,
@@ -598,7 +598,7 @@ IndEvo_ambassadorNoFreeEmbassy,DialogOptionSelected,"$option == IndEvo_ambassado
 IndEvo_ambassadorHire,DialogOptionSelected,"$option == IndEvo_ambassadorHire
 IndEvo_noActiveAmbInCargo
 IndEvo_playerHasFreeEmbassy","ShowPersonVisual
-AddTextSmall ""You will have to transfer the Ambassador to an Embassy within 2 months, or someone might come looking for $himOrHer and cause trouble. Losing the Ambassador, or worse, getting $himOrHer killed, will cause a massive incident and permanently damage relations."" marketFlavorTextColor","""Я с удовольствием возьму на себя эту обязанность. Можем отправляться немедленно, если пожелаете.""","IndEvo_ambassadorConfirm:Попросить посла подготовиться к отбытию
+AddTextSmall ""Вам нужно перевести Посла в Посольство в течение 2 месяцев, иначе кто-нибудь может начать искать $himOrHer и устроить проблемы. Потеря Посла - или, что еще хуже, его гибель - вызовет крупный инцидент и навсегда испортит отношения."" marketFlavorTextColor","""Я с удовольствием возьму на себя эту обязанность. Можем отправляться немедленно, если пожелаете.""","IndEvo_ambassadorConfirm:Попросить посла подготовиться к отбытию
 IndEvo_convEndPolite:Передумать и уйти",
 IndEvo_ambassadorConfirm,DialogOptionSelected,$option == IndEvo_ambassadorConfirm,"ShowDefaultVisual
 EndConversation
@@ -628,28 +628,28 @@ FireAll IndEvo_AmbassadorMenu
 ",,,
 IndEvo_ambassadorRemove1,DialogOptionSelected,"$option == IndEvo_ambassadorRemove
 IndEvo_checkForRepResponse INHOSPITABLE","ShowPersonVisual
-AddTextSmall ""This action will not cause a reputation penalty due to the inhospitable relations between your factions."" marketFlavorTextColor","""Да, возможно, это правильное решение. Мне жаль, что мои усилия пропадут впустую, но, похоже, другого выхода нет.""",IndEvo_convEndPolite:Пожелать $himOrHer удачи и уйти,
+AddTextSmall ""Это действие не приведет к штрафу репутации из-за враждебных отношений между вашими фракциями."" marketFlavorTextColor","""Да, возможно, это правильное решение. Мне жаль, что мои усилия пропадут впустую, но, похоже, другого выхода нет.""",IndEvo_convEndPolite:Пожелать $himOrHer удачи и уйти,
 IndEvo_ambassadorRemove2,DialogOptionSelected,"$option == IndEvo_ambassadorRemove
 IndEvo_checkForRepResponse SUSPICIOUS","ShowPersonVisual
-AddTextSmall ""This action will cause a minor reputation penalty due to the suspicious climate between your factions."" marketFlavorTextColor","После короткого ожидания ваш запрос на связь принимают.
+AddTextSmall ""Это действие вызовет небольшой штраф к репутации из-за напряженной атмосферы между вашими фракциями."" marketFlavorTextColor","После короткого ожидания ваш запрос на связь принимают.
 
 ""Здравствуйте, $playerName. Не обращайте внимания, я просто собираю вещи и уеду в течение дня.""","IndEvo_ambassadorRemovalConfirm:Пожелать $himOrHer удачи и подтвердить увольнение
 IndEvo_convEndPolite:Передумать и уйти",
 IndEvo_ambassadorRemove3,DialogOptionSelected,"$option == IndEvo_ambassadorRemove
 IndEvo_checkForRepResponse NEUTRAL","ShowPersonVisual
-AddTextSmall ""This action will cause a reputation penalty. It is seen as uncalled for to dismiss an ambassador without good reason."" marketFlavorTextColor","""Я весьма удивлен, что вы хотите от меня избавиться. Разве мои усилия не оправдали ваших ожиданий? Отношения между нашими фракциями в хорошем состоянии и улучшаются каждый месяц.""","IndEvo_ambassadorRemovalConfirm:Пожелать $himOrHer удачи и подтвердить увольнение
+AddTextSmall ""Это действие вызовет штраф к репутации. Увольнять посла без веской причины считается недопустимым."" marketFlavorTextColor","""Я весьма удивлен, что вы хотите от меня избавиться. Разве мои усилия не оправдали ваших ожиданий? Отношения между нашими фракциями в хорошем состоянии и улучшаются каждый месяц.""","IndEvo_ambassadorRemovalConfirm:Пожелать $himOrHer удачи и подтвердить увольнение
 IndEvo_convEndPolite:Передумать и уйти",
 IndEvo_ambassadorRemove4,DialogOptionSelected,"$option == IndEvo_ambassadorRemove
 IndEvo_checkForRepResponse FAVORABLE","ShowPersonVisual
-AddTextSmall ""This action will cause a major reputation penalty. Dismissing the Ambassador of a friendly faction is a diplomatic insult."" marketFlavorTextColor","""Вы хотите, чтобы я ушел? Почему? У наших фракций хорошие отношения, нет причин покидать пост. Общественность воспримет это очень плохо.""","IndEvo_ambassadorRemovalConfirm:Пожелать $himOrHer удачи и подтвердить увольнение
+AddTextSmall ""Это действие вызовет серьезный штраф к репутации. Увольнение Посла дружественной фракции считается дипломатическим оскорблением."" marketFlavorTextColor","""Вы хотите, чтобы я ушел? Почему? У наших фракций хорошие отношения, нет причин покидать пост. Общественность воспримет это очень плохо.""","IndEvo_ambassadorRemovalConfirm:Пожелать $himOrHer удачи и подтвердить увольнение
 IndEvo_convEndPolite:Передумать и уйти",
 IndEvo_ambassadorRemove5,DialogOptionSelected,"$option == IndEvo_ambassadorRemove
 IndEvo_checkForRepResponse WELCOMING","ShowPersonVisual
-AddTextSmall ""This action will cause an extreme reputation penalty. At this relation stage, the only reason to dismiss an Ambassador is intentional sabotage of the political position of a faction."" marketFlavorTextColor","""Это какая-то шутка? Лучше приходите в гости, выпьем и спокойно обсудим. Вы же понимаете, что это вызовет огромный общественный скандал.""","IndEvo_ambassadorRemovalConfirm:Пожелать $himOrHer удачи и подтвердить увольнение
+AddTextSmall ""Это действие вызовет крайне тяжелый штраф к репутации. На этом уровне отношений увольнение Посла воспринимается только как намеренный саботаж политических позиций фракции."" marketFlavorTextColor","""Это какая-то шутка? Лучше приходите в гости, выпьем и спокойно обсудим. Вы же понимаете, что это вызовет огромный общественный скандал.""","IndEvo_ambassadorRemovalConfirm:Пожелать $himOrHer удачи и подтвердить увольнение
 IndEvo_convEndPolite:Передумать и уйти",
 IndEvo_ambassadorRemove6,DialogOptionSelected,"$option == IndEvo_ambassadorRemove
 IndEvo_checkForRepResponse FRIENDLY","ShowPersonVisual
-AddTextSmall ""This action will cause an extreme reputation penalty. At this relation stage, the only reason to dismiss an Ambassador is intentional sabotage of the political position of a faction."" marketFlavorTextColor","""Это какая-то шутка? Лучше приходите в гости, выпьем и спокойно обсудим. Вы же понимаете, что это вызовет огромный общественный скандал.""","IndEvo_ambassadorRemovalConfirm:Пожелать $himOrHer удачи и подтвердить увольнение
+AddTextSmall ""Это действие вызовет крайне тяжелый штраф к репутации. На этом уровне отношений увольнение Посла воспринимается только как намеренный саботаж политических позиций фракции."" marketFlavorTextColor","""Это какая-то шутка? Лучше приходите в гости, выпьем и спокойно обсудим. Вы же понимаете, что это вызовет огромный общественный скандал.""","IndEvo_ambassadorRemovalConfirm:Пожелать $himOrHer удачи и подтвердить увольнение
 IndEvo_convEndPolite:Передумать и уйти",
 IndEvo_ambassadorRemovalConfirm,DialogOptionSelected,$option == IndEvo_ambassadorRemovalConfirm,"ShowDefaultVisual
 EndConversation
@@ -658,11 +658,11 @@ IndEvo_ambMoveOption,DialogOptionSelected,$option == IndEvo_ambMoveOption,"ShowD
 EndConversation
 IndEvo_moveAmbassadorToClosestEmbassy","""Хорошо, я как можно скорее отправлюсь на новый пост.""",,
 IndEvo_ambSabotageRep,DialogOptionSelected,$option == IndEvo_ambSabotageRep,"ShowPersonVisual
-AddTextSmall ""This option will make all your active ambassadors use their influence to increase their factions contribution towards a hostile activity event."" marketFlavorTextColor","""Без проблем. Резкая смена курса может вызвать путаницу, но бокал бренди обычно помогает.""","IndEvo_ambSabotageRep_confirm:Подтвердить
+AddTextSmall ""Эта опция заставит всех ваших действующих послов использовать влияние, чтобы увеличить вклад их фракций в событие враждебной активности."" marketFlavorTextColor","""Без проблем. Резкая смена курса может вызвать путаницу, но бокал бренди обычно помогает.""","IndEvo_ambSabotageRep_confirm:Подтвердить
 IndEvo_showAmbassadorMenu:Пожалуй - в другой раз",
 IndEvo_ambStopSabotageRep,DialogOptionSelected,"$option == IndEvo_ambStopSabotageRep
 $global.IndEvo_HAASabotage","ShowPersonVisual
-AddTextSmall ""This will make all your active ambassadors use their influence to decrease their factions contribution towards a hostile activity event."" marketFlavorTextColor","""Конечно. Мне понадобятся средства, чтобы сгладить политическую встряску, которую могут испытать наши союзники, но это можно покрыть из обычного бюджета.""
+AddTextSmall ""Это заставит всех ваших действующих послов использовать влияние, чтобы уменьшить вклад их фракций в событие враждебной активности."" marketFlavorTextColor","""Конечно. Мне понадобятся средства, чтобы сгладить политическую встряску, которую могут испытать наши союзники, но это можно покрыть из обычного бюджета.""
 $HeOrShe делает паузу.
 
 ""И после этого мне понадобится небольшой отдых.""","IndEvo_ambStopSabotageRep_confirm:Подтвердить
@@ -760,7 +760,7 @@ IndEvo_SelectOfficerForTraining,IndEvo_AcademyBaseMenu,"!IndEvo_MarketIsTraining
 IndEvo_CreatePersonSelectionList TRAIN OFFICER check",,,1:IndEvo_personSelector_officer_train:Тренировка личности офицера,
 IndEvo_SelectOfficerForTraining_Failure,IndEvo_AcademyBaseMenu,"!IndEvo_MarketIsTraining OFFICER
 !IndEvo_CreatePersonSelectionList TRAIN OFFICER check","SetEnabled IndEvo_personSelector_officer_train false
-SetTooltip IndEvo_personSelector_officer_train ""This Academy is unable to train any of your officers, or you don't have any.""",,1:IndEvo_personSelector_officer_train:Тренировка личности офицера,
+SetTooltip IndEvo_personSelector_officer_train ""Эта Академия не может обучать ваших офицеров, либо у вас их нет.""",,1:IndEvo_personSelector_officer_train:Тренировка личности офицера,
 IndEvo_personSelector_officer_train,DialogOptionSelected,$option ==  IndEvo_personSelector_officer_train,"IndEvo_CreatePersonSelectionList TRAIN OFFICER
 IndEvo_DesignateSubListPageToLoad set 1
 IndEvo_DisplaySubListPage $IndEvo_subListPage",Выберите человека,,
@@ -775,7 +775,7 @@ IndEvo_LoadAbortDialogue_officer,DialogOptionSelected,$option ==  IndEvo_LoadAbo
 # Officer Storage,,,,,,
 IndEvo_SelectOfficerForStorage,IndEvo_AcademyBaseMenu,IndEvo_CreatePersonSelectionList STORE OFFICER check,,,3:IndEvo_personSelector_officer_store:Оставить офицера,
 IndEvo_SelectOfficerForStorage_FAILURE,IndEvo_AcademyBaseMenu,!IndEvo_CreatePersonSelectionList STORE OFFICER check,"SetEnabled IndEvo_personSelector_officer_store false
-SetTooltip IndEvo_personSelector_officer_store ""You do not have any officers to store.""",,3:IndEvo_personSelector_officer_store:Оставить офицера,
+SetTooltip IndEvo_personSelector_officer_store ""У вас нет офицеров для хранения.""",,3:IndEvo_personSelector_officer_store:Оставить офицера,
 IndEvo_personSelector_officer_store,DialogOptionSelected,$option ==  IndEvo_personSelector_officer_store,"IndEvo_CreatePersonSelectionList STORE OFFICER
 IndEvo_DesignateSubListPageToLoad set 1
 IndEvo_DisplaySubListPage $IndEvo_subListPage",Выберите человека,,
@@ -783,10 +783,10 @@ IndEvo_SelectOfficerForStorageRemoval,IndEvo_AcademyBaseMenu,"IndEvo_CreatePerso
 IndEvo_PlayerHasOfficerCapacity",,,4:IndEvo_personSelector_officer_retrieve:Забрать офицера,
 IndEvo_SelectOfficerForStorageRemoval_FAILURE_NOSTORE,IndEvo_AcademyBaseMenu,"!IndEvo_CreatePersonSelectionList RETRIEVE OFFICER check
 IndEvo_PlayerHasOfficerCapacity","SetEnabled IndEvo_personSelector_officer_retrieve false
-SetTooltip IndEvo_personSelector_officer_retrieve ""You do not have any officers stored here.""",,4:IndEvo_personSelector_officer_retrieve:Забрать офицера,
+SetTooltip IndEvo_personSelector_officer_retrieve ""Здесь у вас не хранится ни одного офицера.""",,4:IndEvo_personSelector_officer_retrieve:Забрать офицера,
 IndEvo_SelectOfficerForStorageRemoval_FAILURE_NOCAP,IndEvo_AcademyBaseMenu,"IndEvo_CreatePersonSelectionList RETRIEVE OFFICER check
 !IndEvo_PlayerHasOfficerCapacity","SetEnabled IndEvo_personSelector_officer_retrieve false
-SetTooltip IndEvo_personSelector_officer_retrieve ""You do not have any free officer slots.""",,4:IndEvo_personSelector_officer_retrieve:Забрать офицера,
+SetTooltip IndEvo_personSelector_officer_retrieve ""У вас нет свободных слотов офицеров.""",,4:IndEvo_personSelector_officer_retrieve:Забрать офицера,
 IndEvo_personSelector_officer_retrieve,DialogOptionSelected,$option ==  IndEvo_personSelector_officer_retrieve,"IndEvo_CreatePersonSelectionList RETRIEVE OFFICER
 IndEvo_DesignateSubListPageToLoad set 1
 IndEvo_DisplaySubListPage $IndEvo_subListPage",Выберите человека,,
@@ -797,7 +797,7 @@ IndEvo_SelectAdminForTraining,IndEvo_AcademyBaseMenu,"!IndEvo_MarketIsTraining A
 IndEvo_CreatePersonSelectionList TRAIN ADMIN check",,,2:IndEvo_personSelector_admin_train:Обучение навыкам администратора,
 IndEvo_SelectAdminForTraining_FAILURE,IndEvo_AcademyBaseMenu,"!IndEvo_MarketIsTraining ADMIN
 !IndEvo_CreatePersonSelectionList TRAIN ADMIN check","SetEnabled IndEvo_personSelector_admin_train false
-SetTooltip IndEvo_personSelector_admin_train ""This Academy is unable to train any of your administrators, or you don't have any.""",,2:IndEvo_personSelector_admin_train:Обучение навыкам администратора,
+SetTooltip IndEvo_personSelector_admin_train ""Эта Академия не может обучать ваших администраторов, либо у вас их нет.""",,2:IndEvo_personSelector_admin_train:Обучение навыкам администратора,
 IndEvo_personSelector_admin_train,DialogOptionSelected,$option ==  IndEvo_personSelector_admin_train,"IndEvo_CreatePersonSelectionList TRAIN ADMIN
 IndEvo_DesignateSubListPageToLoad set 1
 IndEvo_DisplaySubListPage $IndEvo_subListPage",Выберите человека,,
@@ -808,13 +808,13 @@ IndEvo_LoadAbortDialogue_admin,DialogOptionSelected,$option ==  IndEvo_LoadAbort
 # Admin Storage,,,,,,
 IndEvo_SelectAdminForStorage,IndEvo_AcademyBaseMenu,IndEvo_CreatePersonSelectionList STORE ADMIN check,,,5:IndEvo_personSelector_admin_store:Оставить администратора,
 IndEvo_SelectAdminForStorage_FAILURE,IndEvo_AcademyBaseMenu,!IndEvo_CreatePersonSelectionList STORE ADMIN check,"SetEnabled IndEvo_personSelector_admin_store false
-SetTooltip IndEvo_personSelector_admin_store ""You do not have any non assigned administrators to store.""",,5:IndEvo_personSelector_admin_store:Оставить администратора,
+SetTooltip IndEvo_personSelector_admin_store ""У вас нет неназначенных администраторов для хранения.""",,5:IndEvo_personSelector_admin_store:Оставить администратора,
 IndEvo_personSelector_admin_store,DialogOptionSelected,$option ==  IndEvo_personSelector_admin_store,"IndEvo_CreatePersonSelectionList STORE ADMIN
 IndEvo_DesignateSubListPageToLoad set 1
 IndEvo_DisplaySubListPage $IndEvo_subListPage",Выберите человека,,
 IndEvo_SelectAdminForStorageRemoval,IndEvo_AcademyBaseMenu,IndEvo_CreatePersonSelectionList RETRIEVE ADMIN check,,,6:IndEvo_personSelector_admin_retrieve:Забрать администратора,
 IndEvo_SelectAdminForStorageRemoval_FAILURE,IndEvo_AcademyBaseMenu,!IndEvo_CreatePersonSelectionList RETRIEVE ADMIN check,"SetEnabled IndEvo_personSelector_admin_retrieve false
-SetTooltip IndEvo_personSelector_admin_retrieve ""You do not have any administrators stored here.""",,6:IndEvo_personSelector_admin_retrieve:Забрать администратора,
+SetTooltip IndEvo_personSelector_admin_retrieve ""Здесь у вас не хранится ни одного администратора.""",,6:IndEvo_personSelector_admin_retrieve:Забрать администратора,
 IndEvo_personSelector_admin_retrieve,DialogOptionSelected,$option ==  IndEvo_personSelector_admin_retrieve,"IndEvo_CreatePersonSelectionList RETRIEVE ADMIN
 IndEvo_DesignateSubListPageToLoad set 1
 IndEvo_DisplaySubListPage $IndEvo_subListPage",Выберите человека,,
@@ -839,7 +839,7 @@ IndEvo_personWasSelected,DialogOptionSelected,IndEvo_OptionStartsWith IndEvo_Sel
 # Rift Generator,,,,,,
 IndEvo_RiftTarget_COLONY,IndEvo_RiftGenTargetOptions,IndEvo_MoreThanTwoColonies,,,1:IndEvo_RiftTarget_COLONY_panel:Сместиться к другой колонии,
 IndEvo_RiftTarget_COLONY_disabled,IndEvo_RiftGenTargetOptions,!IndEvo_MoreThanTwoColonies,"SetEnabled IndEvo_RiftTarget_COLONY_panel false
-SetTooltip IndEvo_RiftTarget_COLONY_panel ""You do not have another colonized star system.""",,1:IndEvo_RiftTarget_COLONY_panel:Сместиться к другой колонии,
+SetTooltip IndEvo_RiftTarget_COLONY_panel ""У вас нет другой колонизированной звездной системы.""",,1:IndEvo_RiftTarget_COLONY_panel:Сместиться к другой колонии,
 IndEvo_RiftTarget_CORE,IndEvo_RiftGenTargetOptions,,,,2:IndEvo_RiftTarget_CORE_panel:Сместиться к ядру Сектора,
 IndEvo_RiftTarget_FRINGE,IndEvo_RiftGenTargetOptions,,,,3:IndEvo_RiftTarget_FRINGE_panel:Сместиться к окраинам,
 IndEvo_RiftTarget_RANDOM,IndEvo_RiftGenTargetOptions,,,,4:IndEvo_RiftTarget_RANDOM_panel:Сместиться в случайном направлении,
@@ -897,12 +897,12 @@ IndEvo_marketHasIndustry IndEvo_RiftGen
 !IndEvo_requiresColonyMenuPoint
 !IndEvo_GeneratorReadyToFire
 IndEvo_GeneratorAllowedToFire","SetEnabled IndEvo_IntitiateRiftGenMenu false
-SetTooltip IndEvo_IntitiateRiftGenMenu ""The Rift Generator is not ready to fire yet.""",,99:IndEvo_IntitiateRiftGenMenu:Управление генератором разлома,
+SetTooltip IndEvo_IntitiateRiftGenMenu ""Генератор разломов еще не готов к выстрелу.""",,99:IndEvo_IntitiateRiftGenMenu:Управление генератором разлома,
 IndEvo_RiftControlMenuPoint2_disabled,IndEvo_ColonyOptionPoint,"IndEvo_marketHasIndustry IndEvo_RiftGen
 !IndEvo_GeneratorReadyToFire
 IndEvo_GeneratorAllowedToFire
 IndEvo_marketIsPlayerOwned","SetEnabled IndEvo_IntitiateRiftGenMenu false
-SetTooltip IndEvo_IntitiateRiftGenMenu ""The Rift Generator is not ready to fire yet.""",,3:IndEvo_IntitiateRiftGenMenu:Управление генератором разлома,
+SetTooltip IndEvo_IntitiateRiftGenMenu ""Генератор разломов еще не готов к выстрелу.""",,3:IndEvo_IntitiateRiftGenMenu:Управление генератором разлома,
 IndEvo_RiftControlMenuPoint_disabled2,PopulateOptions,"$hasMarket
 $menuState == main
 IndEvo_marketIsPlayerOwned
@@ -910,11 +910,11 @@ IndEvo_marketHasIndustry IndEvo_RiftGen
 !IndEvo_requiresColonyMenuPoint
 !IndEvo_GeneratorAllowedToFire
 IndEvo_marketIsPlayerOwned","SetEnabled IndEvo_IntitiateRiftGenMenu false
-SetTooltip IndEvo_IntitiateRiftGenMenu ""There is an entity disrupting the targeting process, prohibiting the Generator from firing. It is probably something in orbit around the planet.""",,99:IndEvo_IntitiateRiftGenMenu:Управление генератором разлома,
+SetTooltip IndEvo_IntitiateRiftGenMenu ""Есть объект, нарушающий процесс наведения и не позволяющий Генератору открыть огонь. Вероятно, это что-то на орбите планеты.""",,99:IndEvo_IntitiateRiftGenMenu:Управление генератором разлома,
 IndEvo_RiftControlMenuPoint2_disabled2,IndEvo_ColonyOptionPoint,"IndEvo_marketHasIndustry IndEvo_RiftGen
 !IndEvo_GeneratorAllowedToFire
 IndEvo_marketIsPlayerOwned","SetEnabled IndEvo_IntitiateRiftGenMenu false
-SetTooltip IndEvo_IntitiateRiftGenMenu ""There is an entity disrupting the targeting process, prohibiting the Generator from firing. It is probably something in orbit around the planet.""",,3:IndEvo_IntitiateRiftGenMenu:Управление генератором разлома,
+SetTooltip IndEvo_IntitiateRiftGenMenu ""Есть объект, нарушающий процесс наведения и не позволяющий Генератору открыть огонь. Вероятно, это что-то на орбите планеты.""",,3:IndEvo_IntitiateRiftGenMenu:Управление генератором разлома,
 IndEvo_IntitiateRiftGenMenu,DialogOptionSelected,$option == IndEvo_IntitiateRiftGenMenu,FireAll IndEvo_RiftGenTargetOptions,"Тесный центр управления, хоть и восстановленный, все равно выглядит древним. Инопланетные на вид панели покрыты, кажется, вечным слоем пыли, из-за чего свет сотен шкал и индикаторов заметно тускнеет. Неясно, работают ли они вообще.
 
 Когда вы входите, главный инженер перестает колотить по дисплею гаечным ключом.",,
@@ -939,7 +939,7 @@ IndEvo_COB_shipping,DialogOptionSelected,$option == IndEvo_COB_shipping,CourierP
 ,,,,,,
 # Ambassador Murdered,,,,,,
 IndEvo_bountyHunterHail,BeginFleetEncounter,"$IndEvo_bountyHunter score:1000
-!$ignorePlayerCommRequests","AddText ""You're being hailed by the $faction $otherShipOrFleet."" $faction.baseColor
+!$ignorePlayerCommRequests","AddText ""С вами пытается связаться $otherShipOrFleet фракции $faction."" $faction.baseColor
 $hailing = true 0",,,
 IndEvo_bountyHunterText,OpenCommLink,"$entity.IndEvo_bountyHunter score:1000
 !$entity.ignorePlayerCommRequests",$entity.ignorePlayerCommRequests = true,"""Помнишь $entity.IndEvo_name? Нет? Тогда освежу тебе память. Ты хладнокровно убил $entity.IndEvo_himOrHer по пути в свое посольство. $entity.IndEvo_theFaction не может оставить такое нарушение доверия без ответа.""
