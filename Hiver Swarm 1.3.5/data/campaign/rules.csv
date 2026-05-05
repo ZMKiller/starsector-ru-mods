@@ -2,30 +2,30 @@ id,trigger,conditions,script,text,options,notes
 ,,,,,,
 greetingHIVERFriendly,OpenCommLink,"$faction.id == HIVER
 $faction.friendlyToPlayer","$menuState = fleetConvMain 0
-FireAll PopulateOptions","""Acknowledging receipt of identity code. I see you, $playerName!""
+FireAll PopulateOptions","""Получение идентификационного кода подтверждено. Я вижу вас, $playerName!""
 OR
-""Scanning completed, double checking registry�Hey there $playerName! What can we help you with?""",cutCommLink:Cut the comm link,
+""Сканирование завершено, сверяем реестр... Эй, $playerName! Чем можем помочь?""",cutCommLink:Cut the comm link,
 greetingHIVERNeutral,OpenCommLink,"$faction.id == HIVER
 $faction.neutralToPlayer","$menuState = fleetConvMain 0
-FireAll PopulateOptions","""You have been scanned and identified as not a threat. 
+FireAll PopulateOptions","""Вы просканированы и определены как не представляющие угрозы.""
 OR
-""Your identity is known and checked against established registries. Any further action will be considered hostile.""
+""Ваша личность установлена и сверена с действующими реестрами. Любые дальнейшие действия будут расценены как враждебные.""
 OR
-""This isn't the first time you shifty pirate bastards have tried this. Clear off or we'll be forced to attack.""",cutCommLink:Cut the comm link,
+""Вы не первые мутные пиратские ублюдки, которые пытаются провернуть такое. Убирайтесь, иначе мы будем вынуждены атаковать.""",cutCommLink:Cut the comm link,
 greetingHIVERHostileWeaker,OpenCommLink,"$faction.id == HIVER
 $faction.hostileToPlayer
-$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""Hostile $shipOrFleet,  a partol fleet has been dispacted to deal with your incursion""
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""Враждебный $shipOrFleet, патрульный флот уже направлен для пресечения вашего вторжения.""
 OR
-""Hostile $shipOrFleet, be advised: our route is known and our absence will be noted. Cease all hostile activity and retreat.""",cutCommLink:Cut the comm link,
+""Враждебный $shipOrFleet, имейте в виду: наш маршрут известен, а наше отсутствие заметят. Прекратите все враждебные действия и отступите.""",cutCommLink:Cut the comm link,
 greetingHIVERHostileWeakerDefiant,OpenCommLink,"$faction.id == HIVER
 $faction.hostileToPlayer
 $relativeStrength < 0
-$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"The Hiver $personRank looks furiously defiant. ""Your identity has been registered, monkey."" $heOrShe says.",cutCommLink:Cut the comm link,
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"$personRank Hiver выглядит яростно и вызывающе. ""Твоя личность зарегистрирована, обезьяна,"" - говорит $heOrShe.",cutCommLink:Cut the comm link,
 greetingHIVERHostileStronger,OpenCommLink,"$faction.id == HIVER
 $faction.hostileToPlayer
-$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,The enemy $personRank does not respond to your comm request and moves in to attack.,cutCommLink:Cut the comm link,
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,Вражеский $personRank не отвечает на ваш запрос связи и переходит в атаку.,cutCommLink:Cut the comm link,
 hiver_cmsn_askForCommissionOpt_disable,PopulateOptions,"$isPerson
 Nex_Commission personCanGiveCommission
 !Nex_Commission hasFactionCommission
 $faction.id == HIVER","SetEnabled cmsn_askCommission false
-SetTooltip cmsn_askCommission ""The Hivers do not take in outsiders.""",,,
+SetTooltip cmsn_askCommission ""Hiver не принимают чужаков.""",,,

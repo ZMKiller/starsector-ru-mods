@@ -29,11 +29,11 @@ FireAll PopulateOptions","""Чего вы хотите от исполнител
 OR
 ""Империя Ксан оказывает вам свое бесконечное гостеприимство. Убедитесь, что вы и ваш экипаж оказываете Божественному Императору должное почтение.""",,
 flavorTextMarketxhanempire,TradePanelFlavorText,"$global.tradePanelMode == MARKET
-$faction.id == xhanempirescore:4","AddText ""Xhan market description"" marketFlavorTextColor",,,
+$faction.id == xhanempirescore:4","AddText ""Рынок Империи Ксан наполнен строгими имперскими порядками, религиозной символикой и пристальным надзором чиновников, следящих за исполнением воли Божественного Императора."" marketFlavorTextColor",,,
 flavorTextMarketxhanempirecluster,TradePanelFlavorText,"$global.tradePanelMode == MARKET
 $faction.id == xhanempire
 $market.id == xhanempire_cluster_market score:5
-$id == xhanempire_cluster","AddText ""Xhan Cluster Description"" marketFlavorTextColor",,,
+$id == xhanempire_cluster","AddText ""Кластер Ксан - укрепленный узел имперской власти, где торговля, военное присутствие и бюрократические ритуалы сплетены в единый механизм контроля."" marketFlavorTextColor",,,
 ,,,,,,
 bar_descxhanempire,BarPrintDesc,"$faction.id == xhanempire
 $market.id != xhanempire_cluster_market",ShowImageVisual space_bar,"Бар, как и большая часть архитектуры Ксан, аскетичен и пуст. Почти полностью утилитарное пространство: граждане в форме и военные сидят ровными, аккуратно распределенными группами. На электронных экранах медленно ползут производственные сводки и наличие товаров с соседних объектов. Ближе всего к развлечениям здесь - видеопанель, на которой вычурно одетый представитель свиты Божественного Императора зачитывает список отличившихся сегодня граждан. ",,

@@ -8,21 +8,21 @@
 	"lines":{
 		"start":[
 			# as you can see here, IDs don't have to be unique
-			{"id":"replytest_intro1", "text":"Introductory text"},
-			{"id":"replytest_intro1", "text":"Introductory text 2"},
-			{"id":"replytest_intro1", "text":"Introductory text 3"}
+			{"id":"replytest_intro1", "text":"Вступительный текст"},
+			{"id":"replytest_intro1", "text":"Вступительный текст 2"},
+			{"id":"replytest_intro1", "text":"Вступительный текст 3"}
 		],
 		"reply":[
-			{"id":"replytest_reply1", "text":"Reply to intro, commander faction $commanderFaction", "replyToId":"replytest_intro1"},
-			{"id":"replytest_reply2", "text":"Reply to reply, officer faction $officerFaction", "replyToId":"replytest_reply1"},
-			{"id":"replytest_reply3", "text":"Reply to reply to reply", "replyToId":"replytest_reply2"},
+			{"id":"replytest_reply1", "text":"Ответ на вступление, фракция командира $commanderFaction", "replyToId":"replytest_intro1"},
+			{"id":"replytest_reply2", "text":"Ответ на ответ, фракция офицера $officerFaction", "replyToId":"replytest_reply1"},
+			{"id":"replytest_reply3", "text":"Ответ на ответ на ответ", "replyToId":"replytest_reply2"},
 			
-			{"id":"replytest_reply4", "text":"Annoyed comment", "replyToId":"replytest_reply3"},
-			{"id":"replytest_reply5", "text":"Peevish retort", "replyToId":"replytest_reply4"},
-			{"id":"replytest_reply6", "text":"Insult at other party's parentage", "replyToId":"replytest_reply5"},
+			{"id":"replytest_reply4", "text":"Раздраженный комментарий", "replyToId":"replytest_reply3"},
+			{"id":"replytest_reply5", "text":"Обидчивый ответ", "replyToId":"replytest_reply4"},
+			{"id":"replytest_reply6", "text":"Оскорбление родни собеседника", "replyToId":"replytest_reply5"},
 			
-			{"id":"replytest_reply4Alt", "text":"Alternative route with friendly reply", "replyToId":"replytest_reply3"},
-			{"id":"replytest_reply5Alt", "text":"Gesture of affection <3", "replyToId":"replytest_reply4Alt"},
+			{"id":"replytest_reply4Alt", "text":"Альтернативная ветка с дружелюбным ответом", "replyToId":"replytest_reply3"},
+			{"id":"replytest_reply5Alt", "text":"Жест симпатии <3", "replyToId":"replytest_reply4Alt"},
 		]
 	}
 }

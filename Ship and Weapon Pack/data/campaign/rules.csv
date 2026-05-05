@@ -329,7 +329,7 @@ swpBTTextBar9B,swpBTText9B,,,"""В конце концов капитан Ли �
 ""Позже, когда я выбрался из бутылки, прошел целый цикл. Ни следа Ли, нигде."" Он пожимает плечами. ""Человек исчез. Такой как он не умеет сидеть тихо, так что я понял: что-то пошло не так.""",swpBT_startBar10:Продолжить,
 swpBTTextBar10,DialogOptionSelected,$option == swpBT_startBar10,"SetTextHighlightColors story
 SetTextHighlights $swpBT_silentHandRecall
-SetStoryOption swpBT_startBar10Story 1 swpBT_silentHand technology ""Recalled obscure lore about The Silent Hand""","""Потребовалось время, но я упорный. Мои поиски привели меня к корпорации Три-Тахион... точнее, я копнул в сторону наемников, которых они наняли.""
+SetStoryOption swpBT_startBar10Story 1 swpBT_silentHand technology ""Вспомнить малоизвестные сведения о The Silent Hand""","""Потребовалось время, но я упорный. Мои поиски привели меня к корпорации Три-Тахион... точнее, я копнул в сторону наемников, которых они наняли.""
 
 Таннен поднимает палец. ""Одно задание выделялось как красный кит на синих волнах. Большая часть деталей засекречена, но я узнал название отряда наемников: Тихая Рука."" Он делает паузу для веса, позволяя тишине повиснуть.
 
@@ -396,12 +396,12 @@ swpBTTextBar12OptionC,swpBTText12Options,!$swpBT_askedAboutScavenger,,,swpBT_sta
 swpBTTextBar12OptionCBribe,swpBTText12Options,$swpBT_wantsBribeForScavInfo,DoCanAffordCheck $swpBT_tannenBribe swpBT_startBar12cBribe,,swpBT_startBar12cBribe:Заплатить Таннену $swpBT_tannenBribe кредитов,
 swpBTTextBar12OptionCWhatGives,swpBTText12Options,"$swpBT_wantsBribeForScavInfo
 !$swpBT_calledTannenOut",,,swpBT_startBar12cWhatGives:Я уже заплатил тебе!,
-swpBTTextBar12OptionCStory,swpBTText12Options,$swpBT_wantsBribeForScavInfo,"SetStoryOption swpBT_startBar12cStory 1 swpBT_coerceTannen combat ""Coerced Captain Tannen into giving you the full story about the buried treasure""",,swpBT_startBar12cStory:Принудить Таннена выдать информацию о мародере,
+swpBTTextBar12OptionCStory,swpBTText12Options,$swpBT_wantsBribeForScavInfo,"SetStoryOption swpBT_startBar12cStory 1 swpBT_coerceTannen combat ""Вынудить Captain Tannen рассказать всю историю о зарытом сокровище""",,swpBT_startBar12cStory:Принудить Таннена выдать информацию о мародере,
 swpBTTextBar12OptionCPunch,swpBTText12Options,$swpBT_wantsBribeForScavInfo,"SetOptionColor swpBT_punch bad
 SetTooltip swpBT_punch ""Ваш рейтинг рукопашного боя: $swpBT_playerCombatPct""
 SetTooltipHighlightColors swpBT_punch highlight
 SetTooltipHighlights swpBT_punch $swpBT_playerCombatPct
-SWP_AddConfirmation swpBT_punch ""Are you sure you want to do this?""",,swpBT_punch:Ударить капитана Таннена,
+SWP_AddConfirmation swpBT_punch ""Вы уверены, что хотите это сделать?""",,swpBT_punch:Ударить капитана Таннена,
 swpBTTextBar12OptionD,swpBTText12Options,"$global.swpBT_rememberedRachmaninoff
 !$global.swpBT_mentionedRachmaninoff
 !$swpBT_wantsBribeForScavInfo
@@ -784,7 +784,7 @@ SetOptionColor swpBT_dismissTannenKill bad
 SetTooltip swpBT_dismissTannenKill ""Ваш рейтинг рукопашного боя: $swpBT_playerCombatPct""
 SetTooltipHighlightColors swpBT_dismissTannenKill highlight
 SetTooltipHighlights swpBT_dismissTannenKill $swpBT_playerCombatPct
-SWP_AddConfirmation swpBT_dismissTannenKill ""Are you sure you want to do this?""","Джакк Таннен врывается в ваш командный кабинет, а следом за ним забегает взмыленный охранник с оружием наготове. Охранник бросает на вас виноватый взгляд, пока Таннен тычет в вас пальцем, а его глаз пылает яростью. Кажется, ему плевать, что ваш телохранитель рядом нервно дергает оружие.
+SWP_AddConfirmation swpBT_dismissTannenKill ""Вы уверены, что хотите это сделать?""","Джакк Таннен врывается в ваш командный кабинет, а следом за ним забегает взмыленный охранник с оружием наготове. Охранник бросает на вас виноватый взгляд, пока Таннен тычет в вас пальцем, а его глаз пылает яростью. Кажется, ему плевать, что ваш телохранитель рядом нервно дергает оружие.
 
 ""Что это значит, капитан $playerLastName? Ты просил меня вступить в твой флот, а теперь выбрасываешь за борт? Обращаешься со мной как с лошадью: поработал и пристрелил? Не могу в это поверить...""
 
@@ -797,7 +797,7 @@ SetOptionColor swpBT_dismissTannenKill bad
 SetTooltip swpBT_dismissTannenKill ""Ваш рейтинг рукопашного боя: $swpBT_playerCombatPct""
 SetTooltipHighlightColors swpBT_dismissTannenKill highlight
 SetTooltipHighlights swpBT_dismissTannenKill $swpBT_playerCombatPct
-SWP_AddConfirmation swpBT_dismissTannenKill ""Are you sure you want to do this?""","Джакк Таннен врывается в ваш командный кабинет, а следом за ним забегает взмыленный охранник с оружием наготове. Охранник бросает на вас виноватый взгляд, пока Таннен тычет в вас пальцем, а его глаз пылает яростью. Кажется, ему плевать, что ваш телохранитель рядом нервно дергает оружие.
+SWP_AddConfirmation swpBT_dismissTannenKill ""Вы уверены, что хотите это сделать?""","Джакк Таннен врывается в ваш командный кабинет, а следом за ним забегает взмыленный охранник с оружием наготове. Охранник бросает на вас виноватый взгляд, пока Таннен тычет в вас пальцем, а его глаз пылает яростью. Кажется, ему плевать, что ваш телохранитель рядом нервно дергает оружие.
 
 ""Что это значит, капитан $playerLastName? Я думал, мы союзники, может даже друзья. А теперь ты выбрасываешь меня? Что я вообще тебе сделал, чтобы заслужить такое!? Не могу в это поверить...""
 
@@ -839,7 +839,7 @@ swpBTDismissTannenWhyOptionKill,swpBTDismissTannenWhyOptions,,"SetOptionColor sw
 SetTooltip swpBT_dismissTannenKill ""Ваш рейтинг рукопашного боя: $swpBT_playerCombatPct""
 SetTooltipHighlightColors swpBT_dismissTannenKill highlight
 SetTooltipHighlights swpBT_dismissTannenKill $swpBT_playerCombatPct
-SWP_AddConfirmation swpBT_dismissTannenKill ""Are you sure you want to do this?""",,swpBT_dismissTannenKill:Приказать телохранителю застрелить Таннена,
+SWP_AddConfirmation swpBT_dismissTannenKill ""Вы уверены, что хотите это сделать?""",,swpBT_dismissTannenKill:Приказать телохранителю застрелить Таннена,
 swpBTDismissTannenWhyMoney,DialogOptionSelected,$option == swpBT_dismissTannenWhyMoney,"AdjustRepPerson swp_tannen VENGEFUL -5
 SWP_BTCall removeTannen
 SWP_BTCall updateData","Таннен с отвращением плюет на ваш стол. ""Жалкая отмазка. Врать мне в лицо о таком - отвратительное зрелище."" Он в последний раз смотрит на вас. ""Надеюсь, мы больше не встретимся.""
@@ -937,11 +937,11 @@ swpBTNoProgressMany,swpBTNoProgress2,$global.swpBT_numNoProgressEvents >= 4,"Adj
 SWP_BTCall updateData
 FireAll swpBTNoProgressOptions","Предупреждение по внутренней связи начинает играть уже после того как Таннен успел ворваться прямо в ваш командный кабинет. В бешенстве он идет через кабинет швыряя ваши вещи на пол матеря вас за то что вы заставили его ждать непозволительно долго прежде чем начать охоту за сокровищем и в целом устраивая ужасный погром.
 Когда он наконец добирается до вашего стола Таннен каким-то образом ломает его пинком пополам и из пробитых конденсаторов вырываются искры. Лишь после этого он останавливается чтобы перевести дух тяжело дыша от напряжения.",,
-swpBTNoProgressOptionGoodRep,swpBTNoProgressOptions,$swpBT_tannenRepPct >= 35,"SetStoryOption swpBT_noProgressSmoothItOver 1 swpBT_noProgressSmoothOver leadership ""Smoothed over your treasure hunt tardiness with Captain Tannen""",Похоже его сильно раздражает что ему пришлось ждать. И все же пока что он явно не готов окончательно от вас отказаться.,"swpBT_noProgressSuckItUp:Терпение. Мы найдем сокровище Ли в свое время.
+swpBTNoProgressOptionGoodRep,swpBTNoProgressOptions,$swpBT_tannenRepPct >= 35,"SetStoryOption swpBT_noProgressSmoothItOver 1 swpBT_noProgressSmoothOver leadership ""Уладить с Captain Tannen задержку в поисках сокровища""",Похоже его сильно раздражает что ему пришлось ждать. И все же пока что он явно не готов окончательно от вас отказаться.,"swpBT_noProgressSuckItUp:Терпение. Мы найдем сокровище Ли в свое время.
 swpBT_noProgressSmoothItOver:Сгладить ситуацию
 swpBT_noProgressLeave:Пожалуй нам стоит разойтись. (уволить Таннена)",
 swpBTNoProgressOptionMiddlingRep,swpBTNoProgressOptions,"$swpBT_tannenRepPct < 35
-$swpBT_tannenRepPct >= 20","SetStoryOption swpBT_noProgressConvince 1 swpBT_noProgressConvince leadership ""Persuaded Captain Tannen to stay with your fleet, despite your treasure hunt tardiness""","""Я все меньше уверен в твоих приоритетах $swpBT_mateOrLuv. Ты мной просто пользуешься? Водишь за нос?"" Он закрывает глаз и медленно выдыхает готовясь сказать следующее.
+$swpBT_tannenRepPct >= 20","SetStoryOption swpBT_noProgressConvince 1 swpBT_noProgressConvince leadership ""Убедить Captain Tannen остаться с вашим флотом, несмотря на задержку в поисках сокровища""","""Я все меньше уверен в твоих приоритетах $swpBT_mateOrLuv. Ты мной просто пользуешься? Водишь за нос?"" Он закрывает глаз и медленно выдыхает готовясь сказать следующее.
 ""Я ухожу с твоей службы. Так больше не пойдет $swpBT_ladOrLass.""","swpBT_noProgressConvince:Убедить Таннена остаться с вами
 swpBT_noProgressFineLeave:Как скажешь. (уволить Таннена)",
 swpBTNoProgressOptionBadRep,swpBTNoProgressOptions,$swpBT_tannenRepPct < 20,,"""Честно говоря я сыт по горло твоим дерьмом $swpBT_mateOrLuv. Ты использовал меня для своих нужд и с меня хватит."" Он встает сохраняя спокойное лицо но в его глазу вспыхивает ярость.
@@ -1043,7 +1043,7 @@ swpBTCompletionStartFleet2Threaten,swpBTCompletionStartFleet2Threaten,,FireAll s
 swpBTCompletionStartFleet2Third,swpBTCompletionStartFleet2Third,,FireAll swpBTCompletionStartFleet2Options,"""Я больше не способен тебе доверять. Считай правило секретности недействительным. Половина меня хочет вычеркнуть все правила и убить тебя за это но вот что я скажу...""
 Таннен делает длинную затяжку и вместе с облаком дыма тянет: ""расскажи мне все что знаешь $swpBT_ladOrLass и я оставлю тебе жизнь.""",,
 swpBTCompletionStartFleet2OptionTalk,swpBTCompletionStartFleet2Options,,,,swpBT_completionStartFleetTalk:Рассказать Таннену что вы узнали,
-swpBTCompletionStartFleet2OptionLie,swpBTCompletionStartFleet2Options,!$global.swpBT_liedToTannen,"SetStoryOption swpBT_completionStartFleetLie 1 swpBT_completionLie combat ""Made Captain Tannen believe a made-up story about Captain Lee""",,swpBT_completionStartFleetLie:Сочинить историю на ходу,
+swpBTCompletionStartFleet2OptionLie,swpBTCompletionStartFleet2Options,!$global.swpBT_liedToTannen,"SetStoryOption swpBT_completionStartFleetLie 1 swpBT_completionLie combat ""Заставить Captain Tannen поверить выдуманной истории о Captain Lee""",,swpBT_completionStartFleetLie:Сочинить историю на ходу,
 swpBTCompletionStartFleet2OptionLieAgain,swpBTCompletionStartFleet2Options,$global.swpBT_liedToTannen,,"""И даже не думай снова кормить меня байками. Я знаю что ты сделал в прошлый раз $swpBT_ladOrLass. Больше это не сработает.""",,
 swpBTCompletionStartFleet2OptionBribe,swpBTCompletionStartFleet2Options,"!$global.swpBT_refusedBribe
 !$swpBT_askedBribe",,,swpBT_completionStartFleetBribe:А если я просто заплачу тебе?,
@@ -1373,7 +1373,7 @@ swpBTTTBarEncounterDesistWhat,DialogOptionSelected,$option == swpBT_TTBarEventDe
 swpBTTTBarEncounterDesistWhy,DialogOptionSelected,$option == swpBT_TTBarEventDesistWhy,FireBest swpBTTTBarEncounterNotWhere,,,
 swpBTTTBarEncounterDesistWho,DialogOptionSelected,$option == swpBT_TTBarEventDesistWho,FireBest swpBTTTBarEncounterNotWhere,,,
 swpBTTTBarEncounterDesistWhen,DialogOptionSelected,$option == swpBT_TTBarEventDesistWhen,FireBest swpBTTTBarEncounterNotWhere,,,
-swpBTTTBarEncounterDesistNotWhere,swpBTTTBarEncounterNotWhere,,"SetStoryOption swpBT_TTBarEventDesistShock 1 swpBT_shock combat ""Made a Tri-Tachyon employee cry""","Молодая женщина игнорирует ваш вопрос. ""Мы больше не будем вас предупреждать."" Она продолжает стоять и смотреть прямо на вас никак не реагируя на ваши дальнейшие попытки заговорить.","swpBT_TTBarEventDesistShock:Вывести жуткую женщину из равновесия
+swpBTTTBarEncounterDesistNotWhere,swpBTTTBarEncounterNotWhere,,"SetStoryOption swpBT_TTBarEventDesistShock 1 swpBT_shock combat ""Довести сотрудника Tri-Tachyon до слез""","Молодая женщина игнорирует ваш вопрос. ""Мы больше не будем вас предупреждать."" Она продолжает стоять и смотреть прямо на вас никак не реагируя на ваши дальнейшие попытки заговорить.","swpBT_TTBarEventDesistShock:Вывести жуткую женщину из равновесия
 swpBT_TTBarEventDesistLeave:Медленно отступить",
 swpBTTTBarEncounterDesistShock,DialogOptionSelected,$option == swpBT_TTBarEventDesistShock,"SetTextHighlightColors hColor hColor
 SetTextHighlights $swpBT_ttInsiderName $swpBT_ttInsiderMarketName","По какой-то причине, которую вы и сами не можете толком объяснить, вы решаете сорваться. Сначала это кажется дурной идеей, но вскоре становится легче: вы даете волю накопившемуся раздражению. Раз в некоторое время, убеждаете вы себя, это даже полезно.
@@ -1502,7 +1502,7 @@ swpBTUWContactTalk2Dagger,DialogOptionSelected,$option == swpBT_talkToUWContact2
 Вы рассказываете как получили его.
 ""Ничего себе. Ты и правда встретил его дочь да? Ту что зовут Мышь. Говорят очень юркая дрянь. Тебе повезло что я строго храню конфиденциальность с клиентами..."" $HeOrShe слегка усмехается. ""Многие бы очень плохо отнеслись к тому что ты потрепал Мышь.""",swpBT_talkToUWContact2Dagger2:Все было не так уж плохо.,
 swpBTUWContactTalk2Dagger2,DialogOptionSelected,$option == swpBT_talkToUWContact2Dagger2,"$global.swpBT_haveMouseDagger = false
-AddTextSmall ""Lost Captain Lee's dagger"" highlight","""Разумеется"" сухо бросает $heOrShe. ""В любом случае отправь этот кинжал мне. Я подготовил адрес куда ты можешь- эй нет пусть один из твоих головорезов запакует его! Что с тобой не так? Мы вообще-то разговариваем!""
+AddTextSmall ""Кинжал Captain Lee потерян"" highlight","""Разумеется"" сухо бросает $heOrShe. ""В любом случае отправь этот кинжал мне. Я подготовил адрес куда ты можешь- эй нет пусть один из твоих головорезов запакует его! Что с тобой не так? Мы вообще-то разговариваем!""
 Вы поручаете одному из своих людей отправить кинжал $personName.
 ""Хорошо. Теперь расскажу что знаю."" $HeOrShe наклоняется вперед и жестом просит слушать внимательно.",swpBT_talkToUWContact3:Продолжай.,
 swpBTUWContactTalk2NunyaHighRep,DialogOptionSelected,"$option == swpBT_talkToUWContact2Nunya
@@ -1867,20 +1867,20 @@ SWP_BTCall activateUWClue2
 SWP_BTCall progressedQuest
 SWP_BTCall updateData
 SWP_BTCall printIntel
-AddTextSmall ""Received Captain Lee's dagger"" highlight","Вы отпускаете Мышь и она отступает потирая шею от боли. ""Надеюсь то что убило папу сделает твою смерть мучительной"" произносит она с предельной ненавистью.
+AddTextSmall ""Получен кинжал Captain Lee"" highlight","Вы отпускаете Мышь и она отступает потирая шею от боли. ""Надеюсь то что убило папу сделает твою смерть мучительной"" произносит она с предельной ненавистью.
 Как только вы переводите внимание на разворачивающуюся позади ситуацию Мышь срывается с места и убегает ее шаги гулко разносятся по проходу. Ваши телохранители стоят в вооруженном противостоянии с местной охраной.
 Вы срываетесь с места и вырываетесь из заварушки. Выстрелы за спиной заставляют звенеть в ушах.",swpBT_UWBarEventFallout:Разобраться с последствиями,
 swpBT_UWBarEventMouseGTFO,DialogOptionSelected,$option == swpBT_UWBarEventMouseGTFO,"ShowDefaultVisual
 $global.swpBT_haveMouseDagger = true
 $global.swpBT_UWGenericBarExhausted = true
-AddTextSmall ""Received Captain Lee's dagger"" highlight
+AddTextSmall ""Получен кинжал Captain Lee"" highlight
 FireBest swpBTUWBarEncounterDagger",Решив не усугублять вы прячете кинжал капитана Ли за пояс и срываетесь бегом мимо безутешной Мыши. Быстрый вызов телохранителей и вскоре вы уже соединяетесь с ними и возвращаетесь к $shipOrFleet. Судя по реакции охраны на $marketName вы ушли буквально в последний момент; еще немного и вас бы накрыло рвение местных силовиков.,,No point visiting non-pirate bars now
 swpBT_UWBarEventMouseSteal,DialogOptionSelected,"$option == swpBT_UWBarEventMouseSteal
 !$global.swpBT_UWPiratesBarExhausted","ShowDefaultVisual
 AdjustRepPerson swp_mouse VENGEFUL -5
 $global.swpBT_haveMouseDagger = true
 $global.swpBT_UWGenericBarExhausted = true
-AddTextSmall ""Received Captain Lee's dagger"" highlight
+AddTextSmall ""Получен кинжал Captain Lee"" highlight
 SWP_BTCall updateData
 FireBest swpBTUWBarEncounterDagger",Пора уйти пока преимущество на вашей стороне. Вы прячете кинжал капитана Ли за пояс и быстрым шагом уходите оставляя Мышь беспомощно осыпать вас руганью вслед. Быстрый вызов телохранителей и вскоре вы соединяетесь с ними и возвращаетесь к $shipOrFleet.,,No point visiting non-pirate bars now
 swpBT_UWBarEventMouseDaggerAftermath,swpBTUWBarEncounterDagger,!$global.swpBT_UWPiratesBarExhausted,SetTextHighlights $swpBT_mediumImportance,"Найти надежную информацию о Ли будет трудно - по крайней мере без контакта, чьи связи глубоко уходят в подполье: уровень важности $swpBT_mediumImportance и выше. И все же, если продолжать посещать подпольные бары, могут появиться новые возможности.

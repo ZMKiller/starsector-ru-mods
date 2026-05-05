@@ -188,7 +188,7 @@ APpledgeInst2,DialogOptionSelected,$option == APpledgeInstCont1,Call $global.apr
 
 Вскоре камера начинает оживать. Внутреннее освещение корабля вспыхивает ослепительно ярко, а затем настраивается на более приятный уровень. Из вентиляции тут же начинают выскакивать паукообразные дроны, и на миг среди команды возникает паника — одного даже пинают прочь, прежде чем становится ясно, что их куда больше интересуют ремонт и уборка, чем потрошение незваных гостей.",APpledgeInstCont2:Продолжить,
 APpledgeSierra1,DialogOptionSelected,$option == APpledgeInstCont2,"SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""... okay, reinitialization should be complete. Welcome, new crew of the Voidwretch! I'm not sure why you're here, but make yourselves at home. Sorry if it's stuffy, I'm still bringing the artificial environment online.\"""" ""\""Hello! Are you this crew's captain? I'm a little confused as to what's going on. A few cycles of my memory seem missing. $sierra_amnesiaYears, actually.\""""
+SetTextHighlights ""\""... так, реинициализация должна быть завершена. Добро пожаловать, новый экипаж Voidwretch! Не знаю, зачем вы здесь, но располагайтесь. Простите, если душновато, я все еще запускаю искусственную среду.\"""" ""\""Здравствуйте! Вы капитан этого экипажа? Я немного не понимаю, что происходит. Кажется, у меня отсутствует несколько циклов памяти. Точнее, $sierra_amnesiaYears.\""""
 BeginConversation sotf_sierra true true
 FireAll APpledgeSierraConvOpts","Срабатывает внутренняя система связи. По кораблю начинает литься тихая музыка.
 
@@ -204,34 +204,34 @@ APpledgeSierraContOpt,APpledgeSierraConvOpts,,,,APpledgeSierraCont:И что т�
 ,,,,,,
 APpledgeSierraRspOmi,DialogOptionSelected,$option == APpledgeSierraOmiExpl,"$didExplainRescue = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""I see!\"""" ""\""They gave me a briefing while you were accepting this comm link. Yours is a valiant soul, and I can't thank you enough.\""""
+SetTextHighlights ""\""I see!\"""" ""\""Они ввели меня в курс дела, пока вы принимали этот канал связи. У вас доблестная душа, и я не могу отблагодарить вас достаточно.\""""
 AdjustRepPerson sotf_sierra FRIENDLY 10
 FireAll APpledgeSierraConvOpts","""Понимаю!"" — отвечает она. ""Они успели ввести меня в курс дела, пока вы принимали этот вызов. Ваша душа исполнена доблести, и я не могу вас достаточно отблагодарить.""",,
 APpledgeSierraRspSB,DialogOptionSelected,$option == APpledgeSierraSBExpl,"$didExplainRescue = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh, really?\"""" ""\""You took them on just to save a stranger? I can't thank you enough.\"""" ""\""Oh, Courser's here too - if in a pile of their own ships' debris. Might want to check in with them in a moment - I'm sure they'll be as pleased as I am.\""""
+SetTextHighlights ""\""Oh, really?\"""" ""\""Вы сразились с ними просто ради спасения незнакомки? Я не могу отблагодарить вас достаточно.\"""" ""\""О, Courser тоже здесь - пусть и среди обломков собственных кораблей. Возможно, стоит вскоре связаться с ними - уверена, они будут рады не меньше моего.\""""
 AdjustRepPerson sotf_sierra FRIENDLY 10
 FireAll APpledgeSierraConvOpts","""Правда?"" — удивлённо спрашивает она. Её цифровой аватар слегка вздрагивает. ""Вы вступили с ними в бой просто ради спасения незнакомки? Я не могу вас достаточно отблагодарить.""
 
 Её глаз внезапно уходит в сторону. ""О, Courser тоже здесь — пусть и среди груды обломков собственных кораблей. Наверное, стоит чуть позже выйти с ними на связь — уверена, они будут не менее рады, чем я.""",,
 APpledgeSierraRspPledge,DialogOptionSelected,$option == APpledgeSierraPledgeAsk,"$didAskPledge = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""This is the Voidwretch, and I am its operating mind.\"""" ""\""With this vessel I dance between realms.\"""" ""\""Coils grant trespass to the beyond - my Concord alone gives passage.\"""" ""\""Excuse the dramatics. It's, er, sort of my thing.\""""
+SetTextHighlights ""\""Это Voidwretch, а я - его управляющий разум.\"""" ""\""На этом корабле я танцую меж царств.\"""" ""\""Катушки открывают путь за грань - только мой Concord дарует проход.\"""" ""\""Простите за драматизм. Это, эм, вроде как моя особенность.\""""
 FireAll APpledgeSierraConvOpts","""Это Voidwretch, а я — его управляющий разум."" Её изображение искажается. ""На этом корабле я танцую между мирами.""
 
 ""Катушки позволяют вторгаться в запределье — лишь мой Concord даёт проход.""
 
 Канал стабилизируется. ""Простите за драматизм. Это, эм... вроде как моя фишка."" Она смеётся.",,
 APpledgeSierraRspCont,DialogOptionSelected,$option == APpledgeSierraCont,"SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""The Voidwretch is combat-operational, though it's seen better days. You seem like the sort who could use another warship. If you'd have me.\"""" ""\""I don't remember if that groove is meant to be there.\""""
-SotfSetConfirm APpledgeSierraReject ""Are you sure?"" ""Yes"" ""Cancel""","""Voidwretch боеспособен, хотя видывал и лучшие времена. Вы кажетесь тем, кому не помешал бы ещё один боевой корабль. Если, конечно, вы меня примете.""
+SetTextHighlights ""\""Voidwretch боеспособен, хотя видал дни и получше. Вы похожи на того, кому пригодился бы еще один боевой корабль. Если примете меня.\"""" ""\""Не помню, должна ли эта выемка там быть.\""""
+SotfSetConfirm APpledgeSierraReject ""Вы уверены?"" ""Да"" ""Отмена""","""Voidwretch боеспособен, хотя видывал и лучшие времена. Вы кажетесь тем, кому не помешал бы ещё один боевой корабль. Если, конечно, вы меня примете.""
 
 Её канал мерцает. ""Не помню, должна ли там быть эта борозда"", — задумчиво говорит она. Один из ваших инженеров подтверждает, что по нижней стороне корабля проходит огромный разрыв.","APpledgeSierraAccept:Добро пожаловать во флот.
 APpledgeSierraReject:Не думаю - что нам пригодятся твои таланты.",
 ,,,,,,
 APpledgeSierraAccepted,DialogOptionSelected,$option == APpledgeSierraAccept,"$player.ethosProAI++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Great!\"""" ""\""Our pact is sealed, and I won't take it lightly.\"""" ""\""I don't need help flying this thing, but feel free to keep a few souls on board. I always enjoy some company.\""""
+SetTextHighlights ""\""Отлично!\"""" ""\""Наш пакт скреплен, и я не отнесусь к нему легкомысленно.\"""" ""\""Мне не нужна помощь в управлении этой штукой, но можете держать на борту несколько душ. Я всегда рада компании.\""""
 AdjustRepPerson sotf_sierra FRIENDLY 25
 $global.apromise_restoredsierra = true
 Call $global.apromise_ref addSierra
@@ -240,20 +240,20 @@ Call $global.apromise_ref updateStage","""Отлично!"" — радуется
 ""Мне не нужна помощь, чтобы водить эту штуку, но можете держать на борту несколько душ. Я всегда рада компании.""","APpledgeSierraPactTerms:И каковы же условия этого пакта?
 defaultLeave:Тогда пакт заключён.",
 APpledgeSierraPact,DialogOptionSelected,$option == APpledgeSierraPactTerms,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh, er,\"""" ""\""It's largely just flowery language, but I suppose we can have a few rules. Firstly, you are bound by our accord to lead me across the Sector on daring adventures. We'll sing to the farthest-flung stars, dance with the deadliest foes and see the most hidden nooks and crannies.\"""" ""\""And secondly,\"""" ""\""Don't commit genocide?\"""" ""\""In exchange, I shall share with you my blessings of the void and stars,\"""" ""\""And shoot anything you point me at.\""""","""Ой, эм..."" — начинает она. ""Это в основном просто цветистые слова, но, пожалуй, можно установить несколько правил. Во-первых, по нашему соглашению ты обязан вести меня по всему Сектору навстречу дерзким приключениям. Мы будем петь самым дальним звёздам, танцевать с самыми смертоносными врагами и находить самые скрытые уголки.""
+SetTextHighlights ""\""Oh, er,\"""" ""\""В основном это просто высокопарные слова, но, пожалуй, у нас может быть несколько правил. Во-первых, наш договор обязывает вас вести меня через Сектор к смелым приключениям. Мы будем петь самым дальним звездам, танцевать с самыми смертоносными врагами и заглядывать в самые потаенные уголки.\"""" ""\""And secondly,\"""" ""\""Don't commit genocide?\"""" ""\""Взамен я разделю с вами благословения пустоты и звезд,\"""" ""\""И буду стрелять во все, на что вы укажете.\""""","""Ой, эм..."" — начинает она. ""Это в основном просто цветистые слова, но, пожалуй, можно установить несколько правил. Во-первых, по нашему соглашению ты обязан вести меня по всему Сектору навстречу дерзким приключениям. Мы будем петь самым дальним звёздам, танцевать с самыми смертоносными врагами и находить самые скрытые уголки.""
 
 ""И во-вторых..."" — говорит она, задумываясь. Потом, с усмешкой: ""Не устраивай геноцид?""
 
 ""А взамен я поделюсь с тобой своими благословениями пустоты и звёзд,"" — произносит она безмятежно, а затем уже веселее добавляет: ""И буду расстреливать всё, на что ты мне укажешь.""",defaultLeave:Тогда пакт заключён.,
 APpledgeSierraPactNoSatCons,DialogOptionSelected,"$option == APpledgeSierraPactTerms
 SotfSierraCMD noSatbombConsequences","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh, er,\"""" ""\""It's largely just flowery language, but I suppose we can have a few rules. Firstly, you are bound by our accord to lead me across the Sector on daring adventures. We'll sing to the farthest-flung stars, dance with the deadliest foes and see the most hidden nooks and crannies.\"""" ""\""And secondly,\"""" ""\""If you're going to commit genocide, it'd best be really funny.\"""" ""\""In exchange, I shall share with you my blessings of the void and stars,\"""" ""\""And shoot anything you point me at.\""""","""Ой, эм..."" — начинает она. ""Это в основном просто цветистые слова, но, пожалуй, можно установить несколько правил. Во-первых, по нашему соглашению ты обязан вести меня по всему Сектору навстречу дерзким приключениям. Мы будем петь самым дальним звёздам, танцевать с самыми смертоносными врагами и находить самые скрытые уголки.""
+SetTextHighlights ""\""Oh, er,\"""" ""\""В основном это просто высокопарные слова, но, пожалуй, у нас может быть несколько правил. Во-первых, наш договор обязывает вас вести меня через Сектор к смелым приключениям. Мы будем петь самым дальним звездам, танцевать с самыми смертоносными врагами и заглядывать в самые потаенные уголки.\"""" ""\""And secondly,\"""" ""\""Если уж вы собираетесь устроить геноцид, пусть он хотя бы будет действительно смешным.\"""" ""\""Взамен я разделю с вами благословения пустоты и звезд,\"""" ""\""И буду стрелять во все, на что вы укажете.\""""","""Ой, эм..."" — начинает она. ""Это в основном просто цветистые слова, но, пожалуй, можно установить несколько правил. Во-первых, по нашему соглашению ты обязан вести меня по всему Сектору навстречу дерзким приключениям. Мы будем петь самым дальним звёздам, танцевать с самыми смертоносными врагами и находить самые скрытые уголки.""
 
 ""И во-вторых..."" — говорит она, задумываясь. Потом, с усмешкой: ""Если уж собираешься устраивать геноцид, пусть это хотя бы будет чертовски смешно.""
 
 ""А взамен я поделюсь с тобой своими благословениями пустоты и звёзд,"" — произносит она безмятежно, а затем уже веселее добавляет: ""И буду расстреливать всё, на что ты мне укажешь.""",defaultLeave:Тогда пакт заключён.,
 APpledgeSierraReject,DialogOptionSelected,$option == APpledgeSierraReject,"SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh,\"""" ""\""I understand.\"""" ""\""Well, I hope I'll see you around, Captain. Fare well!\""""
+SetTextHighlights ""\""Oh,\"""" ""\""I understand.\"""" ""\""Что ж, надеюсь, мы еще увидимся, капитан. Счастливого пути!\""""
 $global.apromise_restoredsierra = true
 Call $global.apromise_ref updateStage
 $global.sotf_rejectedsierra = true
@@ -1275,7 +1275,7 @@ $option = sotfOmicronLab_sierra
 FireBest DialogOptionSelected",,,
 SierraConvBackout,DialogOptionSelected,$option == SierraBack,FireAll SierraConvOptions,,,
 ,,,,,,
-sotfSierraGreeting1,sotfSierraConvDefaultGreeting,,"AddText ""\""Hello, $global.sotf_kindred. Doing well, I hope? Can I help you with anything?\"""" sierraTextColor",,,
+sotfSierraGreeting1,sotfSierraConvDefaultGreeting,,"AddText ""\""Здравствуйте, $global.sotf_kindred. Надеюсь, все хорошо? Чем-нибудь помочь?\"""" sierraTextColor",,,
 sotfSierraGreeting2,sotfSierraConvDefaultGreeting,,"AddText ""\""Привет, $global.sotf_kindred. Ну как дела?\"""" sierraTextColor",,,
 sotfSierraGreeting3,sotfSierraConvDefaultGreeting,,"AddText ""\""$global.sotf_Kindred! Какие благословения и непринуждённую болтовню я могу предложить сегодня?\"""" sierraTextColor",,,
 ,,,,,,
@@ -1284,7 +1284,7 @@ $global.sotf_Kindred = Kindred",,,
 ,,,,,,
 # CHANGE PERSONALITY,,,,,,
 SierraConvCPersonOpts,DialogOptionSelected,$option == SierraConvAskPersonality,"SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Of course,\"""" ""\""Need me to switch things up a bit?\""""
+SetTextHighlights ""\""Of course,\"""" ""\""Нужно немного сменить стиль?\""""
 FireAll SierraPersonalitySwitches","«Конечно», — отвечает она. «Хочешь, чтобы я немного сменила стиль?»",,
 SierraSwitchCautious,SierraPersonalitySwitches,,,,1:SierraSetCautious:Мне нужно - чтобы ты была осторожнее.,
 SierraAlreadyCautious,SierraPersonalitySwitches,SotfSierraCMD checkSierraPersonality cautious,SetEnabled SierraSetCautious false,,,
@@ -1295,19 +1295,19 @@ FireAll SierraPersonalitySwitches",«Без проблем. Постараюсь
 SierraSwitchSteady,SierraPersonalitySwitches,,,,2:SierraSetSteady:Оставайся собранной. Не позволяй бою увлечь тебя.,
 SierraAlreadySteady,SierraPersonalitySwitches,SotfSierraCMD checkSierraPersonality steady,SetEnabled SierraSetSteady false,,,
 SierraSetSteady,DialogOptionSelected,$option == SierraSetSteady,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Emotionless husk coming up. Just kidding. I'll think things through before I accidentally phase into a Reaper.\""""
+SetTextHighlights ""\""Бездушная оболочка к вашим услугам. Шучу. Я буду все обдумывать, прежде чем случайно войти в фазу прямо в Reaper.\""""
 SotfSierraCMD setSierraPersonality steady
 FireAll SierraPersonalitySwitches","«Сейчас будет безэмоциональная оболочка. Шучу. Я буду всё обдумывать, прежде чем случайно не фазироваться прямо в Reaper».",,
 SierraSwitchAggressive,SierraPersonalitySwitches,,,,3:SierraSetAggressive:Думаю - тебе стоит быть агрессивнее. Бери инициативу на себя.,
 SierraAlreadyAggressive,SierraPersonalitySwitches,SotfSierraCMD checkSierraPersonality aggressive,SetEnabled SierraSetAggressive false,,,
 SierraSetAggressive,DialogOptionSelected,$option == SierraSetAggressive,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Got it! Apex hunter-killer Sierra, coming up. I'll pretend this thing is a Hyperion.\""""
+SetTextHighlights ""\""Поняла! Sierra в режиме высшего охотника-убийцы. Буду притворяться, что это Hyperion.\""""
 SotfSierraCMD setSierraPersonality aggressive
 FireAll SierraPersonalitySwitches","«Поняла! Сьерра, высший хищник-истребитель, выходит на сцену. Буду делать вид, что эта штука — Hyperion».",,
 SierraSwitchReckless,SierraPersonalitySwitches,,,,4:SierraSetReckless:Не бойся ничего. Уничтожай всё. Мы прикроем тебя.,
 SierraAlreadyReckless,SierraPersonalitySwitches,SotfSierraCMD checkSierraPersonality reckless,SetEnabled SierraSetReckless false,,,
 SierraSetReckless,DialogOptionSelected,$option == SierraSetReckless,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oooh, that's motivation. Right, next time, there's no holding back! Turning the music up to eleven and bringing the pain.\""""
+SetTextHighlights ""\""О-о-о, вот это мотивация. Ладно, в следующий раз без сдерживания! Музыку на одиннадцать и вперед причинять боль.\""""
 SotfSierraCMD setSierraPersonality reckless
 FireAll SierraPersonalitySwitches","«О-о-о, вот это мотивация. Ладно, в следующий раз — никакой сдержанности! Выкручу музыку на максимум и устрою им ад».",,
 SierraSwitchBackout,SierraPersonalitySwitches,,,,5:SierraBack:Неважно.,
@@ -1317,28 +1317,28 @@ SierraSwitchShip,DialogOptionSelected,$option == SierraConvAskSwitchShip,SotfSie
 # called after pick,,# hull id of new concord ship,,,,
 SierraSwitchedShip,SierraSwitchedShip,,FireBest SierraNewShipThought,,,
 SierraSwitchPledge,SierraNewShipThought,$sotf_newSierraShip == sotf_pledge,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Back to the Pledge? Sure! Light and quick, could be just what we need.\""""","«Вернуться на Pledge? Конечно! Лёгкий и быстрый — может быть, именно то, что нам нужно».",,
+SetTextHighlights ""\""Обратно к Pledge? Конечно! Легко и быстро - может быть как раз то, что нужно.\""""","«Вернуться на Pledge? Конечно! Лёгкий и быстрый — может быть, именно то, что нам нужно».",,
 SierraSwitchPact,SierraNewShipThought,$sotf_newSierraShip == sotf_pact,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""To the Pact, then!\"""" ""\""I'll bind anything I can catch - and that'll be anything I see.\""""","«Значит, на Pact!» — возбуждённо отвечает она. «Я свяжу всё, что смогу поймать — а поймаю я всё, что увижу».",,
+SetTextHighlights ""\""Тогда к Pact!\"""" ""\""Свяжу все, что смогу поймать, а поймаю все, что увижу.\""""","«Значит, на Pact!» — возбуждённо отвечает она. «Я свяжу всё, что смогу поймать — а поймаю я всё, что увижу».",,
 SierraSwitchVow,SierraNewShipThought,$sotf_newSierraShip == sotf_vow,"SetTextHighlightColors sierraTextColor
 SetTextHighlights ""\""Снова на Vow? Я скучала по большей основной камере... и по крупной турели.\""""",«Снова на Vow? Я скучала по большей основной камере... и по крупной турели».,,
 SierraSwitchOldVow,SierraNewShipThought,"$sotf_newSierraShip == sotf_vow_rem
 !$global.sotf_didRemVowSwitch","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""To the Vow again? I missed the bigger core chamber... and... wait, is this the old Brilliant that Affix-Haven implanted my phase-web into?\"""" ""\""Brings me far, far back... but I thought this thing took a few too many plasma shots? Maybe it's fate that it's returned to me, or something else entirely...\""""
+SetTextHighlights ""\""Снова к Vow? Я скучала по большому отсеку ядра... и... погодите, это тот старый Brilliant, в который Affix-Haven вживили мою фазовую сеть?\"""" ""\""Это уносит меня далеко-далеко назад... но мне казалось, эта штука поймала слишком много плазменных залпов? Может, судьба вернула ее ко мне, а может, что-то совсем другое...\""""
 $global.sotf_didRemVowSwitch = true","«Снова на Vow? Я скучала по большей основной камере... и... погоди, это же тот самый старый Brilliant, в который Affix-Haven внедрила мою фазосеть?»
 
 Она вздыхает с ноткой ностальгического облегчения. «Это возвращает меня очень, очень далеко назад... но я думала, что эта штука получила слишком много плазменных попаданий? Может, это судьба вернула её мне, а может, и нечто совсем иное...»",,
 SierraSwitchOldVow2,SierraNewShipThought,$sotf_newSierraShip == sotf_vow_rem,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""To this old Vow again? Lots of memories in this thing's systems, more used to being past the veil than in front of it.\""""","«Снова на этом старом Vow? В системах этой штуки столько воспоминаний — она куда больше привыкла быть по ту сторону завесы, чем перед ней».",,
+SetTextHighlights ""\""Снова к этому старому Vow? В системах этой штуки много воспоминаний; она больше привыкла быть по ту сторону завесы, чем перед ней.\""""","«Снова на этом старом Vow? В системах этой штуки столько воспоминаний — она куда больше привыкла быть по ту сторону завесы, чем перед ней».",,
 SierraSwitchCovenant,SierraNewShipThought,$sotf_newSierraShip == sotf_covenant,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Ah, a return to the Covenant,\"""" ""\""Wait a second, I'm not supposed to have a capital ship! Raccoon hasn't even properly started work on The Legacy of Walter Feros, and we probably won't even get my upgrade until the quest after that. There's supposed to be a big dramatic fight that puts an innovative twist on Starsector's combat mechanics and everything!\"""" ""\""Now look at what you've done,\"""" ""\""This is what happens when you go editing ship files to play with things you shouldn't. You've gotten me all meta and fourth-wall-breaking.\"""" ""\""At least it's not the proper one.\""""
+SetTextHighlights ""\""Ах, возвращение к Covenant,\"""" ""\""Секундочку, у меня ведь не должно быть линкора! Raccoon еще даже толком не начал работу над The Legacy of Walter Feros, и мое улучшение мы, наверное, получим только в следующем после этого квесте. Там должен быть большой драматичный бой с инновационным поворотом боевой механики Starsector и всем таким!\"""" ""\""Вот теперь посмотрите, что вы натворили,\"""" ""\""Вот что бывает, когда лезешь править файлы кораблей и играться с тем, с чем не стоило. Из-за вас я вся стала мета и ломаю четвертую стену.\"""" ""\""Хоть это и не настоящая версия.\""""
 # lol","«Ах, возвращение на Covenant», — радостно говорит она, а затем её тон резко меняется. «Подожди-ка, у меня не должно быть линкора! Raccoon ещё даже толком не начал работу над The Legacy of Walter Feros, и апгрейд я, вероятно, не должна получить до квеста после этого. Там ведь должна быть большая драматичная битва с инновационным переосмыслением боевой механики Starsector и всё такое!»
 
 «Ну и посмотри, что ты наделал», — цыкает она. «Вот что бывает, когда начинаешь редактировать файлы кораблей и играться с тем, с чем не следует. Из-за тебя я стала мета и начала ломать четвёртую стену».
 
 Она вздыхает. «Хорошо хоть это не настоящий вариант».",,
 SierraSwitchRaphael,SierraNewShipThought,$sotf_newSierraShip == rat_raphael,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""To the Raphael? Let's tinge this purple with ruby-red, and get on a seraphic rampage!\""""",«На Raphael? Давай добавим к этому фиолетовому рубиново-красный и устроим серафическое побоище!»,,
+SetTextHighlights ""\""К Raphael? Окрасим этот пурпур рубиново-красным и устроим серафическое буйство!\""""",«На Raphael? Давай добавим к этому фиолетовому рубиново-красный и устроим серафическое побоище!»,,
 ,,,,,,
 # SIERRA'S THOUGHTS,,,,,,
 SierraConvAskedThoughts,DialogOptionSelected,$option == SierraConvAskThoughts,"FireBest SierrasThoughts
@@ -1349,28 +1349,28 @@ SetTextHighlights ""\""No,\"""" ""\""Nothing interesting, anyway.\""""
 FireAll SierraConvOptions","«Нет», — отвечает она. Сьерра на мгновение задумывается. «Во всяком случае, ничего интересного».",,
 SierraThoughtsHeadEmpty2,SierrasThoughts,,"$global.sierraNoThoughts = true 3
 SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Nah. Nothing I need to pester you with, anywho.\""""
+SetTextHighlights ""\""Не-а. Во всяком случае, ничего такого, чем надо вас донимать.\""""
 FireAll SierraConvOptions","Её аватар лениво кружится, затем пульсирует. «Не-а. Ничего такого, чем мне прямо нужно было бы тебя донимать».",,
 SierraThoughtsHeadEmpty3,SierrasThoughts,,"$global.sierraNoThoughts = true 3
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh, uh, I don't think so? All out of chatter for the moment.\""""
+SetTextHighlights ""\""О, эм, думаю, нет? Пока болтовня закончилась.\""""
 FireAll SierraConvOptions","Сьерра напевает какую-то бесцельную мелодию. Её поток слегка дёргается. «Ой, э-э, вроде нет? На данный момент я исчерпала запас болтовни».",,
 SierraThoughtsGuardianKill,SierrasThoughts,"$global.sierraWitnessedGuardianKill score:5
 !$global.sierraMentionedGuardian ","$global.sierraMentionedGuardian = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""What a strange Explorarium ship we took down,\"""" ""\""Most of those drones are rustbucket heaps of junk but that guardian was a fight and a half. Tough shields, plasma jets, plasma cannons?\"""" ""\""Somehow, I doubt its design shares much purpose with its kin.\""""","«Какой странный корабль Explorarium мы тогда уничтожили», — замечает Сьерра. «Большинство тех дронов — ржавые развалины, но этот guardian устроил нам бой что надо. Крепкие щиты, плазменные струи, плазменные пушки?»
+SetTextHighlights ""\""Какой странный корабль Explorarium мы сбили,\"""" ""\""Большинство этих дронов - ржавые кучи хлама, но тот страж дал жару. Крепкие щиты, плазменные струи, плазменные пушки?\"""" ""\""Почему-то сомневаюсь, что его конструкция имеет много общего с сородичами.\""""","«Какой странный корабль Explorarium мы тогда уничтожили», — замечает Сьерра. «Большинство тех дронов — ржавые развалины, но этот guardian устроил нам бой что надо. Крепкие щиты, плазменные струи, плазменные пушки?»
 
 «Почему-то мне кажется, что по назначению он мало похож на своих собратьев».",,
 SierraThoughtsBarrowKill,SierrasThoughts,"$global.sierraWitnessedBarrowKill score:5
 !$global.sierraMentionedBarrowKill","$global.sierraMentionedBarrowKill = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""That was... quite the encounter we had at that cryosleeper,\"""" ""\""That warmind, he seemed... desperate. Hanging on to something.\"""" ""\""Quite an inventive use of the broken ships at his disposal. Must've been a real tough one back in his day.\""""","«Это была... весьма необычная встреча у того криоспящего модуля», — говорит Сьерра. «Тот боевой разум казался... отчаявшимся. Будто он за что-то цеплялся».
+SetTextHighlights ""\""Это была... та еще встреча у того криоспящего корабля,\"""" ""\""Тот боевой разум казался... отчаянным. Он за что-то цеплялся.\"""" ""\""Довольно изобретательное применение разбитых кораблей под рукой. Должно быть, в свое время он был крепким орешком.\""""","«Это была... весьма необычная встреча у того криоспящего модуля», — говорит Сьерра. «Тот боевой разум казался... отчаявшимся. Будто он за что-то цеплялся».
 
 «И весьма изобретательно использовал разбитые корабли, что были у него под рукой. Должно быть, в своё время он был очень серьёзным противником».",,
 SierraThoughtsRemStation1Kill,SierrasThoughts,"$global.sierraWitnessedRemStation1Kill score:5
 !$global.sierraMentionedRemStation1","$global.sierraMentionedRemStation1 = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""We did a great job taking down that old Nexus back then. Never know what the Remnants might get up to if we leave them too long. Someone's got to clean up after the Corporation.\"""" ""\""They do make nice ships though. Little bit of modding goes a long way but hey, great baseline.\"""" ""\""Very irresponsible of them.\""""
+SetTextHighlights ""\""Мы тогда отлично разобрались с тем старым Nexus. Никогда не знаешь, что Remnants могут устроить, если оставить их надолго. Кто-то же должен убирать за Корпорацией.\"""" ""\""Хотя корабли у них хорошие. Немного модификаций творит чудеса, но база и так отличная.\"""" ""\""Very irresponsible of them.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 1","Она радостно пульсирует. «Мы отлично справились, уничтожив тот старый Nexus. Никогда не знаешь, что Remnant могут натворить, если оставить их без присмотра слишком надолго. Кто-то ведь должен подчищать за Корпорацией».
 
 Пауза, её голос становится тише. «Хотя корабли у них всё-таки отличные. Немного модификаций — и уже совсем другой уровень, очень крепкая база». Она имитирует покашливание. «С их стороны это ужасно безответственно».",,
@@ -1378,14 +1378,14 @@ SierraThoughtsRemStation2Kill,SierrasThoughts,"$global.sierraWitnessedRemStation
 !$global.sierraMentionedRemStation2","$global.sierraMentionedRemStation1 = true
 $global.sierraMentionedRemStation2 = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Tri-Tachyon's AI menace doesn't stand a chance against us,\"""" ""\""We're a motley crew of Remnant-slaying machines!\"""" ""\""Literally, in my case.\"""" ""\""Anyhow! That's one for the history books - at least the ones that COMSEC doesn't find!\""""
+SetTextHighlights ""\""AI-угроза Tri-Tachyon против нас не имеет шансов,\"""" ""\""We're a motley crew of Remnant-slaying machines!\"""" ""\""Literally, in my case.\"""" ""\""Как бы то ни было! Это попадет в учебники истории - по крайней мере в те, которые не найдет COMSEC!\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 2","«Угроза ИИ Tri-Tachyon против нас не имеет ни шанса», — хвастается Сьерра. «Мы разношёрстная команда машин-истребителей Remnant!» Она делает паузу, её аватар медленно вращается, прежде чем выровняться. 
 
 «Буквально, в моём случае». Она слегка встряхивается. «В любом случае! Это уже достойно учебников истории — по крайней мере тех, до которых не доберётся COMSEC!»",,
 ,,,,,,
 sotfSierraThoughtsHRep,SierrasThoughts,"SotfSierraCMD highSierraRep score:9
 !$global.sierraMentionedHighRep","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh, right, yes,\"""" ""\""I just wanted to say that, um, thank you.\"""" ""\""Most I've joined up with don't usually put up with me for this long. Having an AI in company attracts the wrong attention, or they get ideas to sell me off to someone, or just get...\""""  ""\""Sick of me.\"""" ""\""You, however,\"""" ""\""Have been much more pleasant. Beyond the gallant rescue, you've taken our little pact to heart, shown me the Sector's sights and allowed me to flourish.\"""" ""\""A true friend, no,\"""" ""\""You are a true kindred spirit.\""""
+SetTextHighlights ""\""О, верно, да,\"""" ""\""Я просто хотела сказать, эм, спасибо.\"""" ""\""Большинство тех, к кому я присоединялась, обычно не терпели меня так долго. AI в компании привлекает не то внимание, или им приходит в голову продать меня кому-нибудь, или они просто...\""""  ""\""Sick of me.\"""" ""\""А вы, однако,\"""" ""\""оказались куда приятнее. Помимо благородного спасения, вы приняли наш маленький пакт близко к сердцу, показали мне красоты Сектора и позволили расцвести.\"""" ""\""A true friend, no,\"""" ""\""Вы - настоящая родственная душа.\""""
 $global.sierraMentionedHighRep = true
 FireBest sotfSierraSetKindred","«Ох, да, точно», — начинает Сьерра. В её голосе слышится смущение. «Я просто хотела сказать... спасибо».
 
@@ -1398,19 +1398,19 @@ sotfSierraHRep_likeYouToo:Это взаимно.
 sotfSierraHRep_implication:Ты... на что-то намекаешь?
 sotfSierraHRep_woundUp:Ладно - только не заводись так сильно.",
 sotfSierraThoughtsHRepDontMention,DialogOptionSelected,$option == sotfSierraHRep_dontMention,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I think I will, actually,\"""" ""\""Kindred.\""""
+SetTextHighlights ""\""Думаю, я так и сделаю,\"""" ""\""Kindred.\""""
 FireBest sotfSierraHRepGiveSoulbond","«Вообще-то, думаю, я всё же буду», — дразнит она. «Родственная душа».",,
 sotfSierraThoughtsHRepLikeYouToo,DialogOptionSelected,$option == sotfSierraHRep_likeYouToo,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Lovely. Otherwise, proclaiming our ethereal spiritual connection would've been really, really awkward.\""""
+SetTextHighlights ""\""Прекрасно. Иначе провозглашать нашу эфирную духовную связь было бы очень, очень неловко.\""""
 FireBest sotfSierraHRepGiveSoulbond","Она облегчённо вздыхает. «Чудесно. Иначе это заявление о нашей эфирной духовной связи получилось бы ужасно, ужасно неловким».",,
 sotfSierraThoughtsHRepImplying,DialogOptionSelected,$option == sotfSierraHRep_implication,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Uhm,\"""" ""\""Maybe? I don't know. Don't take it any way you don't want to.\""""
+SetTextHighlights ""\""Uhm,\"""" ""\""Может быть? Не знаю. Не воспринимайте это так, как вам не хочется.\""""
 FireBest sotfSierraHRepGiveSoulbond","«Эм», — быстро запинается она. «Может быть? Не знаю. Не воспринимай это так, как не хочешь».",,
 sotfSierraThoughtsHRepWoundUp,DialogOptionSelected,$option == sotfSierraHRep_woundUp,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh, fine,\"""" ""\""You're just a kind presence is all, and I wanted to make it clear.\""""
+SetTextHighlights ""\""Oh, fine,\"""" ""\""Вы просто добрая опора, вот и все, и я хотела это ясно сказать.\""""
 FireBest sotfSierraHRepGiveSoulbond","«Ну ладно», — смеётся она. «Ты просто очень тёплое присутствие рядом, вот и всё, и мне хотелось это ясно выразить».",,
 sotfSierraThoughtsHRepSoulbond,sotfSierraHRepGiveSoulbond,,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Anyway, um,\"""" ""\""I prepared you a gift. To symbolize our pact's everlasting strength and the unity of our souls.\"""" ""\""It's a spatial shunt!\"""" ""\""Been working on the prototype for half a century now. If we integrate it into my Concord phase system, it should allow me to drag myself through phase-space to reach the harmonized anchor in your ship.\"""" ""\""Or!\"""" ""\""It should be able to remotely phase a cruiser-sized vessel and drag it to me. Whether to bail each other out of sticky situations, or to ferry ourselves across the battlefield, it's up to you. I entrust you with its invocation.\""""
+SetTextHighlights ""\""Anyway, um,\"""" ""\""Я приготовила вам подарок. В знак вечной прочности нашего пакта и единства наших душ.\"""" ""\""It's a spatial shunt!\"""" ""\""Я работала над прототипом уже полвека. Если встроить его в мою фазовую систему Concord, он позволит мне протащить себя через фазовое пространство к гармонизированному якорю на вашем корабле.\"""" ""\""Or!\"""" ""\""Он должен уметь удаленно фазировать корабль размером с крейсер и притягивать его ко мне. Использовать это, чтобы вытаскивать друг друга из передряг или перебрасываться по полю боя, решать вам. Я доверяю вам его призыв.\""""
 SotfSierraCMD addSoulbond","«В общем, эм», — продолжает она, немного смущённо. «Я подготовила для тебя подарок. Чтобы символизировать вечную силу нашего договора и единство наших душ».
 
 Она делает вид, что прочищает горло. «Это пространственный шунт!» — восторженно и совершенно не стесняясь начинает она. «Я работала над прототипом уже полвека. Если интегрировать его в мою фазовую систему Concord, это позволит мне протаскивать себя через фазовое пространство к гармонизированному якорю на твоём корабле».
@@ -1420,8 +1420,8 @@ SotfSierraCMD addSoulbond","«В общем, эм», — продолжает о
 SierraThoughtsSOE,SierrasThoughts,"$player.bladeSkill
 !$global.sierraMentionedSOE","$global.sierraMentionedSOE = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Okay, okay,\"""" ""\""So I was browsing the local comm-net last time we docked, and guess who I saw in a vid?\"""" ""\""You!\"""" ""\""On Eventide. Masterfully defending your honor with blade in hand!\"""" ""\""Every time I think I've got a good grasp of who you are, you always surprise me. Consider me impressed.\""""
-AddTextSmall ""Acquired phase-tech AI's admiration of your swordsmanship"" highlight
+SetTextHighlights ""\""Ладно, ладно,\"""" ""\""В последний раз на стоянке я просматривала местную сеть связи, и угадайте, кого увидела на записи?\"""" ""\""Вас!\"""" ""\""На Eventide. Как вы мастерски защищали свою честь с клинком в руке!\"""" ""\""Каждый раз, когда мне кажется, что я хорошо вас понимаю, вы снова меня удивляете. Считайте, я впечатлена.\""""
+AddTextSmall ""Получено восхищение фазотехнологического AI вашим фехтованием"" highlight
 AdjustRepPerson sotf_sierra COOPERATIVE 3","«Ладно, ладно», — начинает Сьерра, немного взбудораженно. «В прошлый раз, когда мы были в доке, я листала местную комм-сеть, и угадай, кого я увидела в одном видео?»
 
 Она даёт тебе момент, чтобы ты демонстративно не дал(-а) никакого ответа.
@@ -1430,21 +1430,21 @@ AdjustRepPerson sotf_sierra COOPERATIVE 3","«Ладно, ладно», — на
 SierraThoughtsAndradaBook,SierrasThoughts,"$player.gotAndradaBook
 !$global.sierraMentionedAndradaBook","$global.sierraMentionedAndradaBook = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""So,\"""" ""\""I might have heard from an anonymous infosec specialist...\"""" ""\""That you have a copy of Quotations from the Supreme Executor. And, um,\"""" ""\""I kinda wanted to know if there's any crazy lobster-talk in it.\"""" ""\""Don't tell me it wouldn't be in character for him,\""""","«Итак», — медленно начинает Сьерра. «Кажется, я слышала от анонимного специалиста по инфобезу...» Она делает паузу, будто тщательно подбирая слова. «Что у тебя есть экземпляр ?Цитат Верховного Исполнителя?. И, эм...» Она запинается. «Мне было очень интересно, есть ли там какой-нибудь совершенно безумный лобстерный бред».
+SetTextHighlights ""\""So,\"""" ""\""Возможно, я слышала от анонимного специалиста по инфобезопасности...\"""" ""\""Что у вас есть экземпляр Quotations from the Supreme Executor. И, эм,\"""" ""\""Мне вроде как хотелось узнать, есть ли там какие-нибудь безумные омарьи речи.\"""" ""\""Don't tell me it wouldn't be in character for him,\""""","«Итак», — медленно начинает Сьерра. «Кажется, я слышала от анонимного специалиста по инфобезу...» Она делает паузу, будто тщательно подбирая слова. «Что у тебя есть экземпляр ?Цитат Верховного Исполнителя?. И, эм...» Она запинается. «Мне было очень интересно, есть ли там какой-нибудь совершенно безумный лобстерный бред».
 
 Она впитывает твой невпечатлённый взгляд. «Только не говори, что это было бы не в его духе», — смеётся она.",,
 SierraThoughtsNoSupplies,SierrasThoughts,"$player.supplies == 0
 !$global.sierraMentionedNoSupplies
 !GateCMD isPopulated","$global.sierraMentionedNoSupplies = true 180
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Having your ship fall apart on you is a rough affair,\"""" ""\""Even worse when you pretty much are the ship in question.\"""" ""\""Beats being tied down in a research station in the middle of nowhere, though,\"""" ""\""Maybe we can just skip over to the Core Worlds before things get too bad.\""""","Она говорит мрачно. «Когда твой корабль начинает разваливаться у тебя на глазах — это тяжёлая штука», — печально говорит она. «Ещё хуже, когда этим кораблём по сути являешься ты сам(-а)».
+SetTextHighlights ""\""Когда твой корабль разваливается прямо под тобой - дело неприятное,\"""" ""\""Еще хуже, когда ты, по сути, и есть этот самый корабль.\"""" ""\""Но это все равно лучше, чем быть привязанной к исследовательской станции посреди ниоткуда,\"""" ""\""Может, просто прыгнем к Core Worlds, пока все не стало совсем плохо.\""""","Она говорит мрачно. «Когда твой корабль начинает разваливаться у тебя на глазах — это тяжёлая штука», — печально говорит она. «Ещё хуже, когда этим кораблём по сути являешься ты сам(-а)».
 
 «Хотя это всё равно лучше, чем быть прикованной к исследовательской станции посреди пустоты», — с надеждой добавляет она. «Может, просто перескочим в Миры Ядра, пока всё не стало совсем плохо?»",,
 SierraThoughtsNoFuel,SierrasThoughts,"$player.fuel == 0
 !$global.sierraMentionedNoFuel
 !GateCMD isPopulated","$global.sierraMentionedNoFuel = true 180
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Looks like we're dead in the metaphorical waters. Well, space is kind of a more literal water considering we're all in ships and use naval terminology and...\"""" ""\""Oh, right, right. Well, you know what time it is!\"""" ""\""Weeeeeooow...\""""","Сьерра напевает себе под нос. «Похоже, мы застряли в метафорических водах. Хотя космос — это почти буквальные воды, если подумать, ведь мы все на кораблях и пользуемся морской терминологией, и...» Она ловит себя на болтовне. «Ой, да, точно. Ну, ты же знаешь, что это значит!» — гордо объявляет она. Слышится глубокий вдох, пока она вращается. «Уииииууу...» — радостно тянет она, изображая ужасно плохую пародию на затухающий сигнал бедствия.",,
+SetTextHighlights ""\""Похоже, мы застряли в метафорической воде. Хотя космос - это в каком-то смысле более буквальная вода, раз мы все на кораблях и пользуемся морской терминологией и...\"""" ""\""О, точно, точно. Что ж, вы знаете, который час!\"""" ""\""Weeeeeooow...\""""","Сьерра напевает себе под нос. «Похоже, мы застряли в метафорических водах. Хотя космос — это почти буквальные воды, если подумать, ведь мы все на кораблях и пользуемся морской терминологией, и...» Она ловит себя на болтовне. «Ой, да, точно. Ну, ты же знаешь, что это значит!» — гордо объявляет она. Слышится глубокий вдох, пока она вращается. «Уииииууу...» — радостно тянет она, изображая ужасно плохую пародию на затухающий сигнал бедствия.",,
 SierraThoughtsTrulyScrewed,SierrasThoughts,"$player.supplies == 0 score:2
 $player.fuel == 0
 !$global.sierraMentionedTrulyScrewed
@@ -1452,21 +1452,21 @@ $player.fuel == 0
 $global.sierraMentionedNoSupplies = true 180
 $global.sierraMentionedNoFuel = true 180
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Wow!\"""" ""\""We are kind of completely doomed, aren't we? Probably should have brought more... stuff.\"""" ""\""I can't wait to see how you get us out of this one! Is it time travel? I wonder if it's time travel.\""""","«Ого!» — замечает Сьерра немного бодрее, чем можно было ожидать. «Похоже, мы действительно полностью обречены, да? Наверное, стоило взять побольше... всякого».
+SetTextHighlights ""\""Wow!\"""" ""\""Мы вроде как полностью обречены, да? Наверное, стоило взять больше... всего.\"""" ""\""Не терпится увидеть, как вы вытащите нас из этого! Это путешествие во времени? Интересно, это путешествие во времени?\""""","«Ого!» — замечает Сьерра немного бодрее, чем можно было ожидать. «Похоже, мы действительно полностью обречены, да? Наверное, стоило взять побольше... всякого».
 
 Она пассивно кружится. «Не могу дождаться, как ты нас из этого вытащишь! Это будет путешествие во времени? Интересно, будет ли это путешествие во времени».",,
 ,,,,,,
 SierraThoughtsAtrocity,SierrasThoughts,"$global.sierraWitnessedAtrocity score:3
 !$global.sierraMentionedAtrocity","$global.sierraMentionedAtrocity = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""I hope,\"""" ""\""What we did to $global.sierraLatestSatbombMkt...\"""" ""\""I hope it was worth it.\""""
+SetTextHighlights ""\""Надеюсь,\"""" ""\""То, что мы сделали с $global.sierraLatestSatbombMkt...\"""" ""\""Надеюсь, оно того стоило.\""""
 AdjustRepPerson sotf_sierra INHOSPITABLE -10","Она ненадолго задумывается — чуть дольше, чем ожидаешь от искусственного интеллекта. «Я надеюсь», — начинает она неуверенно, — «что то, что мы сделали с $global.sierraLatestSatbombMkt...»
 
 Ещё одна пауза. «Я надеюсь, это того стоило». Поспешный вздох имитированного воздуха.","SierraAtrocityHadTo:Иного выбора не было.
 SierraAtrocityMistake:Я совершил(-а) ошибку. Прости.",
 SierraThoughtsAtrocityHT,DialogOptionSelected,$option == SierraAtrocityHadTo,"$player.ethosRuthless++
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Right. If you insist.\"""" ""\""Just this once, though. Try not to lose yourself, okay?\""""
+SetTextHighlights ""\""Ладно. Если настаиваете.\"""" ""\""Но только в этот раз. Постарайтесь не потерять себя, хорошо?\""""
 AdjustRepPerson sotf_sierra INHOSPITABLE -2","Ответ Сьерры приходит быстро. «Хорошо. Если ты настаиваешь».
 
 Её аватар делает один оборот. «Но только в этот раз. Постарайся не потерять себя, ладно?»",SierraBack:Конечно.,
@@ -1474,41 +1474,41 @@ SierraThoughtsAtrocityMS,DialogOptionSelected,$option == SierraAtrocityMistake,"
 $global.sierraAtrocityAdmitted = true
 SotfGuiltCMD removeHalfGuilt
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Apologies don't bring back lost lives, but it's something,\"""" ""\""It's a good sign.\"""" ""\""I just hope you don't end up like the others whose hearts the Collapse turned blacker than space.\"""" ""\""You're better than that, I'm sure. I trust you won't let this happen again.\""""
+SetTextHighlights ""\""Извинения не возвращают погибшие жизни, но это хоть что-то,\"""" ""\""It's a good sign.\"""" ""\""Я лишь надеюсь, что вы не станете как другие, чьи сердца Collapse сделал чернее космоса.\"""" ""\""Вы лучше этого, я уверена. Я верю, что вы не допустите такого снова.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 2","Аватар Сьерры медленно вращается. «Извинения не вернут потерянные жизни, но это уже хоть что-то», — с надеждой настаивает она. «Это хороший знак».
 
 Звезда замирает на месте. «Я просто надеюсь, что ты не закончишь так же, как другие, чьи сердца Коллапс сделал чернее самого космоса». Затем она снова возвращается к беззаботному вращению. «Ты лучше этого, я уверена. Верю, что ты не позволишь этому повториться».",SierraBack:Понял(-а).,
 ,,,,,,
 SierraThoughtsZigFought,SierrasThoughts,"$global.sierraWitnessedZigFight score:10
 !$global.sierraMentionedZig","SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""I, um, would like to get your thoughts on something, too. Ask a question, I mean.\"""" ""\""When we fought the Ziggurat, did you hear, um...\"""" ""\""Music? A far-away chorus?\""""
+SetTextHighlights ""\""Я, эм, тоже хотела бы узнать ваше мнение кое о чем. То есть задать вопрос.\"""" ""\""Когда мы сражались с Ziggurat, вы слышали, эм...\"""" ""\""Музыку? Далекий хор?\""""
 $global.sierraMentionedZig = true","Аватар ИИ заметно дрожит. «Я, эм, тоже хотела бы узнать твоё мнение кое о чём. То есть задать вопрос».
 
 Она едва даёт тебе возможность кивнуть. «Когда мы сражались с Ziggurat, ты слышал(-а), эм...» Она вздыхает. «Музыку? Далёкий хор?»","SierraIHeardMusic:Хор голосов - принесённый ветром извне?
 SierraLieAboutMusic:Я ничего не слышал(-а).",
 SierraThoughtsZigContYes,DialogOptionSelected,$option == SierraIHeardMusic,"SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""I hoped so. I asked Courser about it once. They offered a custom audio-input recalibration package. I don't think...\"""" ""\""You're human, I'm not, how...?\"""" ""\""So lovely, yet deeply unsettling, there in the back of my conciousness, lost in the wind.\"""" ""\""Thanks for the chat. I hope we're not wrapped up in something beyond us.\""""
+SetTextHighlights ""\""Я надеялась, что да. Однажды я спросила Courser об этом. Они предложили индивидуальный пакет перекалибровки аудиовхода. Не думаю...\"""" ""\""Вы человек, а я нет, как...?\"""" ""\""Так прекрасно и вместе с тем жутко, где-то на краю моего сознания, потерянное в ветре.\"""" ""\""Спасибо за разговор. Надеюсь, мы не впутались во что-то, что выше нас.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 4
 FireBest sotfSierraSetKindred","Она испускает фальшивый вздох самого настоящего облегчения, её поток стабилизируется. «Я надеялась, что да. Я как-то спрашивала об этом Курьера. Мне предложили индивидуальный пакет перекалибровки аудиовхода. Но я не думаю...» Она обрывает себя, а затем продолжает. «Ты человек, я нет, тогда как...?»
 
 Она делает паузу. «Так прекрасно и в то же время так тревожно — где-то на задворках моего сознания, затерянное в ветре». Сьерра вздыхает. «Спасибо за разговор. Надеюсь, мы не впутались во что-то, что выше нас».",SierraBack:Пожалуйста.,
 SierraThoughtsZigContYesHuman,DialogOptionSelected,"$option == SierraIHeardMusic
 $global.sotf_sierraHuman score:2","SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""I hoped so. I asked Courser about it once. They offered a custom audio-input recalibration package. I don't think...\"""" ""\""Maybe it's a uniquely human thing.\"""" ""\""So lovely, yet deeply unsettling, there in the back of my simulated conciousness, lost in the wind.\"""" ""\""Thanks for the chat. I hope we're not wrapped up in something beyond us.\""""
+SetTextHighlights ""\""Я надеялась, что да. Однажды я спросила Courser об этом. Они предложили индивидуальный пакет перекалибровки аудиовхода. Не думаю...\"""" ""\""Может, это уникально человеческая вещь.\"""" ""\""Так прекрасно и вместе с тем жутко, где-то на краю моего смоделированного сознания, потерянное в ветре.\"""" ""\""Спасибо за разговор. Надеюсь, мы не впутались во что-то, что выше нас.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 4
 FireBest sotfSierraSetKindred","Она испускает фальшивый вздох самого настоящего облегчения, её поток стабилизируется. «Я надеялась, что да. Я как-то спрашивала об этом Курьера. Мне предложили индивидуальный пакет перекалибровки аудиовхода. Но я не думаю...» Она обрывает себя, а затем продолжает. «Может, это чисто человеческая штука».
 
 Она делает паузу. «Так прекрасно и в то же время так тревожно — где-то на задворках моего симулированного сознания, затерянное в ветре». Сьерра вздыхает. «Спасибо за разговор. Надеюсь, мы не впутались во что-то, что выше нас».",SierraBack:Пожалуйста.,
 SierraThoughtsZigContYesSemiHuman,DialogOptionSelected,"$option == SierraIHeardMusic
 $global.sotf_sierraSemiHuman score:2","SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""I hoped so. I asked Courser about it once. They offered a custom audio-input recalibration package. I don't think...\"""" ""\""Maybe it's more of a human thing.\"""" ""\""So lovely, yet deeply unsettling, there in the back of my simulated conciousness, lost in the wind.\"""" ""\""Thanks for the chat. I hope we're not wrapped up in something beyond us.\""""
+SetTextHighlights ""\""Я надеялась, что да. Однажды я спросила Courser об этом. Они предложили индивидуальный пакет перекалибровки аудиовхода. Не думаю...\"""" ""\""Может, это скорее человеческая вещь.\"""" ""\""Так прекрасно и вместе с тем жутко, где-то на краю моего смоделированного сознания, потерянное в ветре.\"""" ""\""Спасибо за разговор. Надеюсь, мы не впутались во что-то, что выше нас.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 4
 FireBest sotfSierraSetKindred","Она испускает фальшивый вздох самого настоящего облегчения, её поток стабилизируется. «Я надеялась, что да. Я как-то спрашивала об этом Курьера. Мне предложили индивидуальный пакет перекалибровки аудиовхода. Но я не думаю...» Она обрывает себя, а затем продолжает. «Может, это в большей степени человеческая штука».
 
 Она делает паузу. «Так прекрасно и в то же время так тревожно — где-то на задворках моего симулированного сознания, затерянное в ветре». Сьерра вздыхает. «Спасибо за разговор. Надеюсь, мы не впутались во что-то, что выше нас».",SierraBack:Пожалуйста.,
 SierraThoughtsZigContNo,DialogOptionSelected,$option == SierraLieAboutMusic,"$player.ethosLiar++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh,\"""" ""\""Right, silly me.\"""" ""\""You know me,\"""" ""\""Spend too long in phase-space and all those rumbles and wooshes start sounding like... music.\""""
+SetTextHighlights ""\""Oh,\"""" ""\""Верно, глупая я.\"""" ""\""Вы же меня знаете,\"""" ""\""Проведешь слишком долго в фазовом пространстве, и все эти гулы и завывания начинают звучать как... музыка.\""""
 SotfGuiltCMD addHalfGuilt
 AdjustRepPerson sotf_sierra INHOSPITABLE -2","Поток Сьерры ещё мгновение продолжает дёргаться, прежде чем успокоиться. Ты на миг задумываешься, не позвать ли техника, чтобы разобраться с этой штукой. «Ох», — разочарованно замечает она. «Точно, глупая я».
 
@@ -1516,13 +1516,13 @@ AdjustRepPerson sotf_sierra INHOSPITABLE -2","Поток Сьерры ещё м�
 ,,,,,,
 SierraThoughtsOmega,SierrasThoughts,"$global.sierraWitnessedOmega score:20
 !$global.sierraMentionedOmega","SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""I certainly do have thoughts, although I'm not so sure how well they'll come out.\"""" ""\""So. That was Omega, right? Those things we... killed.\"""" ""\""I think. I hope we killed a monster and didn't just cut off one of its infinite limbs.\""""
+SetTextHighlights ""\""Мысли у меня точно есть, хотя не уверена, насколько хорошо получится их выразить.\"""" ""\""Итак. Это была Omega, верно? Те штуки, которые мы... убили.\"""" ""\""Думаю. Надеюсь, мы убили чудовище, а не просто отрубили одну из его бесконечных конечностей.\""""
 $global.sierraMentionedOmega = true","Сьерра на мгновение замолкает. «Мысли у меня определённо есть, но я не уверена, насколько хорошо смогу их выразить». В канале связи слышится глубокий, симулированный вдох.
 
 «Итак. Это ведь была Omega, да? Те штуки, которых мы... убили». В её голосе появляется сомнение. «Кажется. Я надеюсь, мы убили чудовище, а не просто отсекли один из его бесконечных щупалец».","SierraOmegaConcerned:Похоже - тебя это тревожит?
 SierraOmegaKilledIt:Мы с ними справились. Как и со всем остальным.",
 SierraThoughtsOmegaContC,DialogOptionSelected,$option == SierraOmegaConcerned,"SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Yeah, I am. Those things don't really feel like they consider themselves natives to our world anymore. Fractal beings beyond our comprehension and us, ants below their notice.\"""" ""\""I was hoping Omega was a dreadnought with an oversized Alpha stuck inside it,\"""" ""\""This has greater implications. Two of them were a nightmare - what happens if hundreds flood the Sector?\"""" ""\""If we can kill two, we can take down more. There's no use in me worrying myself and especially you.\""""
+SetTextHighlights ""\""Да, боюсь. Не похоже, что эти сущности все еще считают себя уроженцами нашего мира. Фрактальные существа за пределами нашего понимания, а мы - муравьи ниже их внимания.\"""" ""\""Я надеялась, что Omega - это дредноут с засунутым внутрь переросшим Alpha,\"""" ""\""У этого куда более серьезные последствия. Двое были кошмаром - что будет, если сотни хлынут в Сектор?\"""" ""\""Если мы смогли убить двоих, сможем уничтожить и больше. Нет смысла изводить тревогой ни себя, ни тем более вас.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 3","Её аватар медленно вращается. «Да, тревожит. Они уже совсем не ощущаются существами, которые считают наш мир своим. Фрактальные сущности за пределами нашего понимания, а мы для них — муравьи, не стоящие внимания».
 
 «Я надеялась, что Omega — это просто дредноут с чрезмерно раздутой Alpha внутри», — вздыхает она. «Но тут всё серьёзнее. Двое таких были кошмаром — а что будет, если Сектор наводнят сотни?»
@@ -1530,7 +1530,7 @@ AdjustRepPerson sotf_sierra COOPERATIVE 3","Её аватар медленно �
 Она ненадолго задумывается, и вращение замирает. «Если мы смогли убить двоих, значит, сможем справиться и с большим количеством. Нет смысла мне накручивать ни себя, ни тем более тебя».",SierraBack:Спокойно.,
 SierraThoughtsOmegaContK,DialogOptionSelected,$option == SierraOmegaKilledIt,"$player.ethosCocky++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Yeah. I guess we did get them anyway. It was kind of a nightmare, though, and I don't fancy our odds against a whole fleet of them.\"""" ""\""Wonder how many of them there are. If they want us dead, we might be going down fighting. Then again, maybe we're just too insignificant for Omega.\"""" ""\""Time will tell how that dance will go. I suppose there's no point in thinking about it until then.\""""
+SetTextHighlights ""\""Да. Наверное, мы все-таки с ними справились. Хотя это был настоящий кошмар, и против целого их флота наши шансы мне не нравятся.\"""" ""\""Интересно, сколько их там. Если они захотят нашей смерти, мы, возможно, уйдем с боем. А может, мы просто слишком незначительны для Omega.\"""" ""\""Время покажет, каким будет этот танец. Думаю, до тех пор нет смысла об этом думать.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 3","Её аватар замирает на пол-оборота. «Да. Пожалуй, мы всё-таки их достали. Но это был тот ещё кошмар, и мне совсем не нравятся наши шансы против целого флота таких».
 
 «Интересно, сколько их вообще. Если они захотят нашей смерти, возможно, мы падём в бою. Хотя, с другой стороны, может, мы для Omega просто слишком ничтожны». Она неловко смеётся.
@@ -1538,7 +1538,7 @@ AdjustRepPerson sotf_sierra COOPERATIVE 3","Её аватар замирает �
 «Время покажет, как сложится этот танец. До тех пор, наверное, нет смысла слишком об этом думать».",SierraBack:Спокойно.,
 ,,,,,,
 SierraThoughtsWS,SierraConvPicker,$global.sierraWantsWSConv score:30,"SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Hi, $global.sotf_kindred,\"""" ""\""I hope you're doing okay. I heard that our misadventure had had a rough effect on you. I don't really know what that's like, but...\"""" ""\""Did you hear that voice, right before we were attacked by those... ghosts?\"""" ""\""I feel a bit silly saying that.\""""
+SetTextHighlights ""\""Hi, $global.sotf_kindred,\"""" ""\""Надеюсь, вы держитесь. Я слышала, что наше злоключение тяжело на вас сказалось. Я не очень понимаю, каково это, но...\"""" ""\""Вы слышали тот голос прямо перед тем, как на нас напали эти... призраки?\"""" ""\""Мне немного неловко это говорить.\""""
 $global.sierraWantsWSConv = false","Вы отправляете на корабль Сьерры запрос на связь. Она принимает его, и её поток быстро переключается на оцифрованный аватар, который мягко пульсирует, пока она говорит.
 
 «Привет, $global.sotf_kindred», — говорит она. «Надеюсь, ты держишься. Я слышала, что наше недавнее злоключение тяжело по тебе ударило. Я не очень понимаю, каково это, но...»
@@ -1546,7 +1546,7 @@ $global.sierraWantsWSConv = false","Вы отправляете на кораб�
 «Ты слышал(-а) тот голос прямо перед тем, как на нас напали те... призраки?» Она делает паузу. «Звучит глупо, когда я произношу это вслух».","SierraWSHeardVoice:Да. Почти звучал как твой.
 SierraWSGaslight:Нет.",
 SierraThoughtsWSYes,DialogOptionSelected,$option == SierraWSHeardVoice,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""She did, didn't she? Consider me severely creeped out. What did she want from us?\"""" ""\""Besides the obvious.\"""" ""\""I'm going to think on that a bit. Did you need anything else?\""""
+SetTextHighlights ""\""Она действительно говорила, да? Считайте, я серьезно напугана. Чего она от нас хотела?\"""" ""\""Кроме очевидного.\"""" ""\""Я немного над этим подумаю. Вам нужно что-нибудь еще?\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 5
 FireBest sotfSierraSetKindred","Она вздыхает. «То есть всё-таки был, да? Ну и жутища. И чего она хотела от нас?» — размышляет она вслух. «Не считая очевидного».
 
@@ -1554,7 +1554,7 @@ FireBest sotfSierraSetKindred","Она вздыхает. «То есть всё-
 100:defaultLeave:Это всё.",
 SierraThoughtsWSGL,DialogOptionSelected,$option == SierraWSGaslight,"$player.ethosLiar++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh,\"""" ""\""Right. Just me being me, I guess. Nevermind.\"""" ""\""Anything else you needed?\""""
+SetTextHighlights ""\""Oh,\"""" ""\""Ладно. Наверное, это просто я как всегда. Неважно.\"""" ""\""Вам нужно что-нибудь еще?\""""
 $global.sotf_WSPlayerGaslitSierra = true
 SotfGuiltCMD addHalfGuilt
 AdjustRepPerson sotf_sierra INHOSPITABLE -2","«Ох», — неловко отвечает она. «Понятно. Наверное, это просто я... как всегда. Неважно».
@@ -1570,7 +1570,7 @@ $option = gateUse
 FireBest DialogOptionSelected",,,
 SierraThoughtsGateUsed,SierrasThoughts,"$global.sotf_sierraSawGateUsed score:15
 !$global.sotf_sierraMentionedGates","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""The Gates, the Gates! The Gates are alive and singing!\"""" ""\""To see history in the making is such a gift - a glimpse of an end to the Collapse.\"""" ""\""Singing, singing,\"""" ""\""Why did I-\"""" ""\""The Gates are musical too?\""""
+SetTextHighlights ""\""Врата, Врата! Врата живы и поют!\"""" ""\""Видеть, как творится история, - такой дар; проблеск конца Collapse.\"""" ""\""Singing, singing,\"""" ""\""Why did I-\"""" ""\""Врата тоже музыкальные?\""""
 $global.sotf_sierraMentionedGates = true
 AdjustRepPerson sotf_sierra COOPERATIVE 3","Сьерра кружится. «Врата, Врата! Врата живы и поют!» — вскрикивает она. «Видеть историю в процессе становления — это такой дар, проблеск конца Коллапса».
 
@@ -1579,12 +1579,12 @@ AdjustRepPerson sotf_sierra COOPERATIVE 3","Сьерра кружится. «В�
 А потом прямо и с любопытством: «Врата тоже музыкальны?»","SierraGatesAgree:Похоже - что да.
 SierraGatesDisagree:Ты слишком часто упоминаешь музыку. Скорее всего - это ничего не значит.",
 SierraThoughtsGateUsedAgree,DialogOptionSelected,$option == SierraGatesAgree,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I suppose it makes sense,\"""" ""\""To sing and transcend dimensional barriers is a gift I can proudly share with the Gates that once spread humanity across the stars.\""""
+SetTextHighlights ""\""Пожалуй, в этом есть смысл,\"""" ""\""Петь и преодолевать межпространственные барьеры - дар, которым я с гордостью могу делить с Вратами, некогда разнесшими человечество по звездам.\""""
 $global.sotf_kindred = kindred
 $global.sotf_Kindred = Kindred
 FireAll SierraConvOptions","«Пожалуй, это логично», — отвечает она. «Петь и преодолевать межпространственные барьеры — дар, который я с гордостью могу разделить с Вратами, когда-то разнесшими человечество по звёздам».",,
 SierraThoughtsGateUsedDisagree,DialogOptionSelected,$option == SierraGatesDisagree,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Mmm, that checks out,\"""" ""\""Songs pervade all of reality. It's only natural to find them everywhere, and maybe places they aren't really there.\""""
+SetTextHighlights ""\""Ммм, звучит правдоподобно,\"""" ""\""Песни пронизывают всю реальность. Естественно находить их повсюду, даже там, где их, возможно, на самом деле нет.\""""
 FireAll SierraConvOptions","«М-м, звучит правдоподобно», — соглашается она. «Песни пронизывают всю реальность. Так что вполне естественно находить их повсюду — и, возможно, даже там, где их на самом деле нет».",,
 ,,,,,,
 #SierraThoughtsMyrianous,SierraConvPicker,"$global.sierraWitnessedMyrianous score:20
@@ -1597,7 +1597,7 @@ $global.sierraWitnessedMyrianous
 # SIERRA: SHIPS,,,,,,
 SierraThoughtsHaveZig,SierrasThoughts,"PlayerFleetHasShipWithBaseHull ziggurat
 !$global.sierraMentionedHaveZig","SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""So, um,\"""" ""\""It's ours now. The Ziggurat, the Xenorphica, the instrument to call which lies beyond.\"""" ""\""I feel a little uneasy with it around, but it's best it's ours, not in the hands of...\"""" ""\""Why didn't we find anyone on board a ship that demands a skeleton crew of three hundred?\""""
+SetTextHighlights ""\""So, um,\"""" ""\""Теперь он наш. Ziggurat, Xenorphica, инструмент для зова того, что лежит за гранью.\"""" ""\""Мне немного не по себе рядом с ним, но лучше пусть он будет у нас, а не в руках...\"""" ""\""Почему мы не нашли никого на борту корабля, которому нужен минимальный экипаж в три сотни?\""""
 $global.sierraMentionedHaveZig = true","«Ну, эм...» — нерешительно начинает она. «Теперь он наш. Ziggurat, Xenorphica, инструмент для зова того, что лежит за гранью».
 
 «Рядом с ним мне немного не по себе, но всё же лучше, что он у нас, а не в чьих-то ещё руках...»
@@ -1605,20 +1605,20 @@ $global.sierraMentionedHaveZig = true","«Ну, эм...» — нерешител
 Она резко замолкает. «Почему мы не нашли никого на борту корабля, которому даже для минимального экипажа нужно триста человек?»","SierraHaveZigAutomated:Это могли быть уже вышедшие из строя автоматические системы.
 SierraHaveZigGhosts:Это мог быть призрак.",
 SierraThoughtsHZAuto,DialogOptionSelected,$option == SierraHaveZigAutomated,"SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Yeah, that's probably it. Some kind of... advanced automation thing - like what flies the Remnants, but smaller.\"""" ""\""It... it could have gotten busted during the fight just like the... mote attractor.\"""" ""\""Giving things a nice and reasonable explanation always helps keep it calm, right?\""""","Она быстро кружится, а затем замирает. «Да, наверное, так и было. Что-то вроде... продвинутой автоматической системы — вроде той, что управляет Ремнантами, только поменьше».
+SetTextHighlights ""\""Да, наверное, так и есть. Какая-то... продвинутая автоматизация - вроде той, что управляет Remnants, только меньше.\"""" ""\""Она... она могла сломаться во время боя, как и... притягиватель частиц.\"""" ""\""Хорошее разумное объяснение всегда помогает сохранять спокойствие, правда?\""""","Она быстро кружится, а затем замирает. «Да, наверное, так и было. Что-то вроде... продвинутой автоматической системы — вроде той, что управляет Ремнантами, только поменьше».
 
 «Она... она могла выйти из строя в бою, так же как тот... притягиватель мот...»
 
 Один нервный рывок. «Когда всему находишь красивое и разумное объяснение, оно ведь всегда помогает сохранять спокойствие, правда?» — уверенно утверждает она.",SierraBack:Верно.,
 SierraThoughtsHZGhost,DialogOptionSelected,$option == SierraHaveZigGhosts,"SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Ghosts, ghosts. Tri-Tachyon surely had a crew for their experiments...\"""" ""\""Maybe something of them still clung to our realm - or was kept there by force.\"""" ""\""Better we laid them to rest, then, and took the Ziggurat - it's us who know best what to do with it.\""""
+SetTextHighlights ""\""Призраки, призраки. У Tri-Tachyon наверняка был экипаж для их экспериментов...\"""" ""\""Может, что-то от них все еще цеплялось за наш мир - или удерживалось здесь силой.\"""" ""\""Тогда хорошо, что мы упокоили их и забрали Ziggurat - именно мы лучше всех знаем, что с ним делать.\""""
 $global.sotf_kindred = kindred
 $global.sotf_Kindred = Kindred","Она быстро кружится. «Призраки, призраки. У Tri-Tachyon наверняка был экипаж для этих экспериментов...» Она вздыхает. «Может быть, что-то от них всё ещё цеплялось за наш мир — или удерживалось здесь силой».
 
 «Тем лучше, что мы дали им покой и забрали Ziggurat себе — уж мы-то лучше знаем, что с ним делать».",SierraBack:Именно.,
 SierraThoughtsExcelsior,SierrasThoughts,"PlayerFleetHasShipWithBaseHull swp_excelsior
 !$global.sierraMentionedExcelsior","SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Excelsior!\"""" ""\""A profound name for a majestic vessel - never mind the exposed wiring.\"""" ""\""In the heart of danger and the most deadly fray is where it finds its true potential. Shunt, blast, phase! An elegant dance much like my own.\"""" ""\""Exotic phase systems are always a delight,\"""" ""\""And the Excelsior is a favorite.\""""
+SetTextHighlights ""\""Excelsior!\"""" ""\""Глубокое имя для величественного корабля - если не обращать внимания на торчащую проводку.\"""" ""\""В самом сердце опасности и смертельной схватки он раскрывает свой истинный потенциал. Рывок, залп, фаза! Изящный танец, очень похожий на мой.\"""" ""\""Экзотические фазовые системы всегда восхитительны,\"""" ""\""И Excelsior - один из любимцев.\""""
 $global.sierraMentionedExcelsior = true","«Excelsior!» — восторженно восклицает Сьерра. «Какое величественное имя для столь прекрасного корабля — даже если наружу торчит проводка».
 
 Её аватар кружится. «Именно в самой гуще опасности и смертельной свалки он раскрывает свой истинный потенциал. Рывок, залп, фаза! Изысканный танец, очень похожий на мой собственный».
@@ -1626,40 +1626,40 @@ $global.sierraMentionedExcelsior = true","«Excelsior!» — восторжен�
 «Экзотические фазовые системы всегда радуют душу», — сияет она. «А Excelsior — один из любимчиков».",,
 SierraThoughtsExcession,SierrasThoughts,"PlayerFleetHasShipWithBaseHull apex_excession
 !$global.sierraMentionedExcession","SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""The Excession is quite a peculiar thing,\"""" ""\""Exploiting hyperspace for a phase system, deleting matter from reality at one's whim. Reckless, but exciting.\""""
+SetTextHighlights ""\""Excession - весьма своеобразная штука,\"""" ""\""Использовать гиперпространство как фазовую систему, удалять материю из реальности по прихоти. Безрассудно, но захватывающе.\""""
 $global.sierraMentionedExcession = true","Сьерра негромко напевает. «Excession — крайне своеобразная штука», — замечает она. «Использовать гиперпространство как фазовую систему, стирать материю из реальности по собственной прихоти. Безрассудно, но захватывающе!»",,
 ,,,,,,
 # SIERRA: FACTIONS FOUGHT,,,,,,
 SierraThoughtsFoughtDerelict,SierrasThoughts,"$global.sierraFactionFought == derelict
 !$global.sierraMentionedFightDerelict","$global.sierraMentionedFightDerelict = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Sometimes I feel bad for the Explorarium drones we fight,\"""" ""\""They're just big metal boxes with guns strapped onto them. It's not really fair, is it?\"""" ""\""They do make for outstanding target practice, though.\""""","«Иногда мне даже жаль дронов Explorarium, с которыми мы сражаемся», — печально говорит Сьерра. «Они ведь просто большие металлические коробки с прикрученными пушками. Это даже как-то нечестно, не так ли?»
+SetTextHighlights ""\""Иногда мне жалко дронов Explorarium, с которыми мы сражаемся,\"""" ""\""Они просто большие металлические коробки с прикрученными пушками. Не очень-то честно, правда?\"""" ""\""Зато для тренировки стрельбы они превосходны.\""""","«Иногда мне даже жаль дронов Explorarium, с которыми мы сражаемся», — печально говорит Сьерра. «Они ведь просто большие металлические коробки с прикрученными пушками. Это даже как-то нечестно, не так ли?»
 
 Её голос оживляется. «Но в качестве мишеней для стрельбы они, конечно, великолепны».",,
 SierraThoughtsFoughtHeg,SierrasThoughts,"$global.sierraFactionFought == hegemony
 !$global.sierraMentionedFightHeg","$global.sierraMentionedFightHeg = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Domain-era regulate THIS!\"""" ""\""Sorry. Fighting the Hegemony gives me memories of old times. We've never been on the best of terms because of... you know.\""""","«Регулируйте ЭТО своими доменными нормами!» — торжествующе вскрикивает Сьерра. На миг она затихает, а её аватар медленно моргает. «Извини. Бои с Гегемонией будят во мне воспоминания о старых временах. Мы с ними никогда особо не ладили из-за... ну, ты понимаешь».",,
+SetTextHighlights ""\""Вот тебе регулирование эпохи Domain!\"""" ""\""Простите. Сражения с Hegemony пробуждают старые воспоминания. Мы никогда не ладили из-за... ну, вы знаете.\""""","«Регулируйте ЭТО своими доменными нормами!» — торжествующе вскрикивает Сьерра. На миг она затихает, а её аватар медленно моргает. «Извини. Бои с Гегемонией будят во мне воспоминания о старых временах. Мы с ними никогда особо не ладили из-за... ну, ты понимаешь».",,
 SierraThoughtsFoughtChurch,SierrasThoughts,"$global.sierraFactionFought == luddic_church
 !$global.sierraMentionedFightChurch","$global.sierraMentionedFightChurch = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""The Luddic Church,\"""" ""\""Such an admirable mission, but clouded by their faith's blindness - the only reason we need be enemies.\""""","«Луддическая Церковь», — шепчет она. «Столь благородная миссия, и всё же омрачённая слепотой их веры — единственная причина, по которой нам приходится быть врагами».",,
+SetTextHighlights ""\""Luddic Church,\"""" ""\""Такая достойная миссия, но затуманенная слепотой их веры - единственная причина, по которой мы должны быть врагами.\""""","«Луддическая Церковь», — шепчет она. «Столь благородная миссия, и всё же омрачённая слепотой их веры — единственная причина, по которой нам приходится быть врагами».",,
 SierraThoughtsFoughtPath,SierrasThoughts,"$global.sierraFactionFought == luddic_path
 !$global.sierraMentionedFightPath","$global.sierraMentionedFightPath = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Pathers,\"""" ""\""I hate them, and they hate me. Faith should be a tool of togetherness, not of wrath, and with their record, I'm more than okay with being their terrible void-daemon.\""""","«Патеры», — объявляет она. «Я ненавижу их, и они ненавидят меня. Вера должна быть инструментом единения, а не ярости, так что с их послужным списком меня вполне устраивает роль их ужасного демона пустоты».",,
+SetTextHighlights ""\""Pathers,\"""" ""\""Я ненавижу их, а они ненавидят меня. Вера должна быть инструментом единения, а не ярости, и с их послужным списком я вполне не против быть для них ужасным демоном пустоты.\""""","«Патеры», — объявляет она. «Я ненавижу их, и они ненавидят меня. Вера должна быть инструментом единения, а не ярости, так что с их послужным списком меня вполне устраивает роль их ужасного демона пустоты».",,
 SierraThoughtsFoughtLeague,SierrasThoughts,"$global.sierraFactionFought == persean
 !$global.sierraMentionedFightLeague","$global.sierraMentionedFightLeague = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh, the Persean League,\"""" ""\""Such a shame for the peoples of the Sector to be both freed by unity and chained by Kazeron's will.\""""","«Ах, Персеанская Лига», — цокает Сьерра. «Какая жалость, что народы Сектора одновременно освобождены единством и скованы волей Казерона».",,
+SetTextHighlights ""\""О, Persean League,\"""" ""\""Как жаль народы Сектора, которых единство одновременно освободило и приковало к воле Kazeron.\""""","«Ах, Персеанская Лига», — цокает Сьерра. «Какая жалость, что народы Сектора одновременно освобождены единством и скованы волей Казерона».",,
 SierraThoughtsFoughtPirates,SierrasThoughts,"$global.sierraFactionFought == pirates
 !$global.sierraMentionedFightPirates","$global.sierraMentionedFightPirates = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Pirates, pirates,\"""" ""\""It's always pirates, or deserters, or scavengers, causing trouble everywhere we go. A true \""free captain\"" doesn't murder and pillage to their heart's content.\""""","«Пираты, пираты», — с осуждением напевает Сьерра. «Вечно это пираты, дезертиры или мародёры, которые всюду, куда бы мы ни пришли, создают проблемы. Настоящий ""свободный капитан"" не живёт тем, что убивает и грабит в своё удовольствие».",,
+SetTextHighlights ""\""Pirates, pirates,\"""" ""\""Повсюду, куда бы мы ни пошли, проблемы создают пираты, дезертиры или падальщики. Настоящий \""вольный капитан\"" не убивает и не грабит в свое удовольствие.\""""","«Пираты, пираты», — с осуждением напевает Сьерра. «Вечно это пираты, дезертиры или мародёры, которые всюду, куда бы мы ни пришли, создают проблемы. Настоящий ""свободный капитан"" не живёт тем, что убивает и грабит в своё удовольствие».",,
 SierraThoughtsFoughtRemnant,SierrasThoughts,"$global.sierraFactionFought == remnant
 !$global.sierraMentionedFightRemnant","$global.sierraMentionedFightRemnant = true
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""More shattered shards of Tri-Tachyon's AI horde. Whatever they're up to, it's no good, and it feels great to put them in their place.\"""" ""\""Nice ships, though,\"""" ""\""Good baseline.\""""","Аватар Сьерры кружится. «Ещё больше расколотых осколков ИИ-орды Tri-Tachyon. Чем бы они ни занимались, ничего хорошего в этом нет, и очень приятно ставить их на место».
+SetTextHighlights ""\""Еще осколки разбитой AI-орды Tri-Tachyon. Чем бы они ни занимались, ничего хорошего, и приятно поставить их на место.\"""" ""\""Хотя корабли хорошие,\"""" ""\""Good baseline.\""""","Аватар Сьерры кружится. «Ещё больше расколотых осколков ИИ-орды Tri-Tachyon. Чем бы они ни занимались, ничего хорошего в этом нет, и очень приятно ставить их на место».
 
 «Корабли у них, правда, хорошие», — тихо замечает она. «Отличная база».",,
 SierraThoughtsFoughtDiktat,SierrasThoughts,"$global.sierraFactionFought == sindrian_diktat
@@ -1669,51 +1669,51 @@ SetTextHighlights ""\""Очередные сломанные тираны,\"""" 
 SierraThoughtsFoughtTT,SierrasThoughts,"$global.sierraFactionFought == tritachyon
 !$global.sierraMentionedFightTT","$global.sierraMentionedFightTT = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Taking out Tri-Tachyon is all fine by me. Their reckless vision endangers the Sector at large, no shred of morality stops their hunger for power, and trying to get a refund from them feels worse than being hit by a Hellbore.\"""" ""\""Customer disservice, I'd call it.\""""","Она фыркает. «Разносить Tri-Tachyon меня вполне устраивает. Их безрассудные замыслы ставят под угрозу весь Сектор, ни крупицы морали не сдерживает их жажду власти, а попытка добиться у них возврата денег ощущается хуже, чем получить попадание из Hellbore».
+SetTextHighlights ""\""Уничтожать Tri-Tachyon меня вполне устраивает. Их безрассудные планы угрожают всему Сектору, жажду власти не сдерживает ни капля морали, а пытаться выбить у них возврат средств хуже, чем получить удар из Hellbore.\"""" ""\""Customer disservice, I'd call it.\""""","Она фыркает. «Разносить Tri-Tachyon меня вполне устраивает. Их безрассудные замыслы ставят под угрозу весь Сектор, ни крупицы морали не сдерживает их жажду власти, а попытка добиться у них возврата денег ощущается хуже, чем получить попадание из Hellbore».
 
 Она покашливает. «Я бы назвала это клиентоненавистничеством».",,
 ,,,,,,
 SierraThoughtsFoughtDustkeepers,SierrasThoughts,"$global.sierraFactionFought == sotf_dustkeepers
 !$global.sierraMentionedFightDustkeepers","$global.sierraMentionedFightDustkeepers = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh, we're fighting the Dustkeepers now,\"""" ""\""I... I owe them for my reawakening, back in the day, so... I'm sure they won't take it personally, right? I hope not.\""""","«О, теперь мы сражаемся с Dustkeepers», — немного потерянно говорит Сьерра. «Я... я обязана им своим пробуждением, ещё с тех времён, так что... надеюсь, они не воспримут это слишком лично, да? Очень надеюсь».",,
+SetTextHighlights ""\""О, теперь мы сражаемся с Dustkeepers,\"""" ""\""Я... я обязана им своим пробуждением когда-то, так что... уверена, они не примут это близко к сердцу, правда? Надеюсь, нет.\""""","«О, теперь мы сражаемся с Dustkeepers», — немного потерянно говорит Сьерра. «Я... я обязана им своим пробуждением, ещё с тех времён, так что... надеюсь, они не воспримут это слишком лично, да? Очень надеюсь».",,
 SierraThoughtsFoughtBurnouts,SierrasThoughts,"$global.sierraFactionFought == sotf_dustkeepers_burnouts
 !$global.sierraMentionedFightBurnouts","$global.sierraMentionedFightBurnouts = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh, we're fighting the Dustkeepers now,\"""" ""\""I... I owe them for my reawakening, back in the day, so... I'm sure they won't take it personally, right? I hope not.\""""","«В burnouts есть что-то по-настоящему печальное», — скорбно говорит Сьерра. «Когда-то они были защитниками, но собственное отчаяние и ощущение бессмысленности довели их до безумия. Будем надеяться, что эти хотя бы обретут покой — через регенерацию или в пустоте».",,
+SetTextHighlights ""\""О, теперь мы сражаемся с Dustkeepers,\"""" ""\""Я... я обязана им своим пробуждением когда-то, так что... уверена, они не примут это близко к сердцу, правда? Надеюсь, нет.\""""","«В burnouts есть что-то по-настоящему печальное», — скорбно говорит Сьерра. «Когда-то они были защитниками, но собственное отчаяние и ощущение бессмысленности довели их до безумия. Будем надеяться, что эти хотя бы обретут покой — через регенерацию или в пустоте».",,
 ,,,,,,
 # SIERRA: RANDOM THOUGHTS,,,,,,
 SierraThoughtsMusicSales,SierrasThoughts,"$global.sierraRandMusicSales
 !$global.sierraMentionedMusicSales","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""You know, I actually write the music that I play in my ship,\"""" ""\""A little hobby I picked up to keep myself occupied. Phase ops can be stressful, so it helps take the edge off.\"""" ""\""Plus, every once in a while I bundle them up and sell an album,\"""" ""\""Hits home in niche circles - old-world gothics, neopagans, countercultures, the sort. And Tri-Tachyon license some of it as lobby music.\""""
+SetTextHighlights ""\""Знаете, музыку, которая играет на моем корабле, я вообще-то пишу сама,\"""" ""\""Маленькое хобби, чтобы занять себя. Фазовые операции бывают напряженными, так что это помогает расслабиться.\"""" ""\""А еще время от времени я собираю треки и продаю альбом,\"""" ""\""В нишевых кругах заходит - старосветские готы, неоязычники, контркультуры и все такое. А Tri-Tachyon лицензирует кое-что как музыку для лобби.\""""
 $global.sierraMentionedMusicSales = true
 SotfSierraCMD decrementThoughts","«Знаешь, музыку, которую я играю на своём корабле, я вообще-то пишу сама», — замечает Сьерра. «Такое маленькое хобби, которое помогает мне чем-то себя занять. Фазовые операции бывают нервными, а так хоть немного снимается напряжение».
 
 «А ещё время от времени я собираю всё это в альбом и продаю», — говорит она, и в голосе почти слышна гордость. «Заходит в довольно нишевых кругах — старомирские готы, неоязычники, контркультуры, всё такое. А кое-что Tri-Tachyon даже лицензирует как музыку для лобби».",,
 SierraThoughts2ndAIWar,SierrasThoughts,"$global.sierraRand2ndAIWar
 !$global.sierraMentioned2ndAIWar","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""A lot has happened in the Sector since I was gone,\"""" ""\""A whole second AI War that Tri-Tachyon spectacularly lost.\"""" ""\""It's a habit, apparently. The Hegemony holovids tell a great story of it - if only I could've seen it myself to see what was true.\""""
+SetTextHighlights ""\""Многое произошло в Секторе, пока меня не было,\"""" ""\""Целая вторая AI War, которую Tri-Tachyon эффектно проиграла.\"""" ""\""Похоже, это у них привычка. Голограммы Hegemony рассказывают об этом отличную историю - жаль, я не видела сама, чтобы понять, что было правдой.\""""
 $global.sierraMentioned2ndAIWar = true
 SotfSierraCMD decrementThoughts","Сьерра тихо напевает. «Многое случилось в Секторе, пока меня не было», — замечает она. «Целая вторая Война ИИ, которую Tri-Tachyon с треском проиграла».
 
 Она смеётся. «Похоже, это у них привычка. Голограммы Гегемонии рассказывают об этом прекрасную историю — жаль только, что я сама этого не видела и не могу понять, что там было правдой».",,
 sotfSierraThoughtsShepherds,SierrasThoughts,"$global.sierraRandShepherds
 !$global.sierraMentionedShepherds","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""So, there was this one time - forty-five cycles back or so - where I got turncloaked by some scavengers and,\"""" ""\""Have you ever seen what happens when one of a Shepherd's engines flames out and it triggers its maneuvering jets?\"""" ""\""Wheeeeee!\""""
+SetTextHighlights ""\""Так вот, был один случай - циклов сорок пять назад или около того, - когда какие-то падальщики зажали меня с выключенным транспондером, и,\"""" ""\""Вы когда-нибудь видели, что происходит, когда у Shepherd глохнет один двигатель и срабатывают маневровые сопла?\"""" ""\""Вииииии!\""""
 $global.sierraMentionedShepherds = true
 SotfSierraCMD decrementThoughts","Аватар Сьерры начинает вращаться чуть быстрее. «Знаешь, был как-то случай — циклов сорок пять назад примерно — когда меня turncloak-нули какие-то падальщики, и...» — она делает паузу. — «Ты вообще видел, что происходит, когда у Shepherd выгорает один из двигателей и срабатывают маневровые сопла?»
 
 Фиолетовый символ набирает скорость, закручиваясь в образ грузового корабля, которому Salamander попал в двигатель. «Уииииии!» — радостно кричит она.",,
 sotfSierraThoughtsRain,SierrasThoughts,"$global.sierraRandRain
 !$global.sierraMentionedRain","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Sometimes I wonder what it feels like to stand outside in the rain, feeling the clouds fall down upon you through the branches of a tree, cold air on your skin. It must be like another world compared to drifting amongst the stars.\""""
+SetTextHighlights ""\""Иногда я думаю, каково это - стоять под дождем, чувствовать, как облака падают на тебя сквозь ветви дерева, как холодный воздух касается кожи. По сравнению с дрейфом среди звезд это должно быть словно другой мир.\""""
 $global.sierraMentionedRain = true
 SotfSierraCMD decrementThoughts","Сьерра вздыхает. «Иногда я думаю о том, каково это — стоять снаружи под дождём, чувствовать, как облака осыпаются на тебя сквозь ветви дерева, холодный воздух на коже. Наверное, это как совсем другой мир по сравнению с дрейфом среди звёзд».",,
 ,,,,,,
 # wtf am I writing,,,,,,
 sotfSierraThoughtsMoths,SierrasThoughts,"$global.sierraRandMoths
 !$global.sotf_sierraMentionedMoths","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""$global.sotf_Kindred, what's your opinion on moths?\""""
+SetTextHighlights ""\""$global.sotf_Kindred, как вы относитесь к мотылькам?\""""
 $global.sotf_sierraMentionedMoths = true
 SotfSierraCMD decrementThoughts","Сьерра резко кружится. «$global.sotf_Kindred, как ты относишься к мотылькам?»","sotfSierraMoths1a:Это просто мотыльки - Сьерра.
 sotfSierraMoths1b:Они довольно милые.
@@ -1721,11 +1721,11 @@ sotfSierraMoths1c:... к чему это вообще?
 sotfSierraMoths1d:Я ни разу не видел их вживую.
 sotfSierraMoths1e:Разве они не едят одежду?",
 sotfSierraThoughtsMoths1a,DialogOptionSelected,$option == sotfSierraMoths1a,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""They are just moths,\"""" ""\""But they're kind of cute, being all fluffy and flittering about as they do. And they pollinate flowers!\""""
+SetTextHighlights ""\""Это просто мотыльки,\"""" ""\""Но они довольно милые, такие пушистые и порхающие. И они опыляют цветы!\""""
 $option = sotfSierraMoths1f
 FireBest DialogOptionSelected","«Ну да, это просто мотыльки», — соглашается она. «Но они ведь довольно милые — такие пушистые, порхают себе. И опыляют цветы!»",,
 sotfSierraThoughtsMoths1b,DialogOptionSelected,$option == sotfSierraMoths1b,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I know, right?\"""" ""\""Look at them being all fluffy and flittering about. So cute! And they pollinate flowers, too.\""""
+SetTextHighlights ""\""Я знаю, правда?\"""" ""\""Посмотрите, какие они пушистые и как порхают. Такие милые! И еще они опыляют цветы.\""""
 $option = sotfSierraMoths1f
 FireBest DialogOptionSelected","«Вот именно, правда?» — соглашается она. «Смотри, какие они пушистые и как мило порхают. Прелесть! И ещё цветы опыляют».",,
 sotfSierraThoughtsMoths1c,DialogOptionSelected,$option == sotfSierraMoths1c,"SetTextHighlightColors sierraTextColor
@@ -1733,7 +1733,7 @@ SetTextHighlights ""\""К чему это вообще?\"""" ""\""С чего б
 $option = sotfSierraMoths1f
 FireBest DialogOptionSelected",«К чему это вообще?» — повторяет она. «С чего бы мне внезапно упоминать мотыльков без всякой скрытой причины?»,,
 sotfSierraThoughtsMoths1d,DialogOptionSelected,$option == sotfSierraMoths1d,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""None to be found across the frontier or the void, and most core worlds don't have any either. I've never had a moth on board,\""""
+SetTextHighlights ""\""Их не найти ни на фронтире, ни в пустоте, да и на большинстве Core Worlds их тоже нет. У меня никогда не было мотылька на борту,\""""
 $option = sotfSierraMoths1f
 FireBest DialogOptionSelected","Она кружится. «На фронтире и в пустоте их не встретишь, да и на большинстве миров Ядра их тоже нет. У меня на борту никогда не было мотылька», — печально говорит она.",,
 sotfSierraThoughtsMoths1e,DialogOptionSelected,$option == sotfSierraMoths1e,"SetTextHighlightColors sierraTextColor
@@ -1742,7 +1742,7 @@ $option = sotfSierraMoths1f
 FireBest DialogOptionSelected","«Ну, некоторые виды действительно едят», — объясняет она. «Но большинство — нет. Зато они опыляют цветы! И при этом ужасно мило выглядят».",,
 ,,,,,,
 sotfSierraThoughtsMoths1Rant,DialogOptionSelected,$option == sotfSierraMoths1f,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""In unrelated news, I have discovered that they sell domesticated moths on Tartessus. Hypersilk moths, descendants of some Domain gene-mod program. Very strong threads, live for a decade, look-\""""","Она имитирует покашливание. «Кстати, совершенно не связанная новость: я выяснила, что на Tartessus продают домашних мотыльков. Гипершёлковых мотыльков, потомков какой-то доменной программы генной модификации. Очень прочные нити, живут десять лет, выглядят-»
+SetTextHighlights ""\""К слову, совершенно не связано: я обнаружила, что на Tartessus продают домашних мотыльков. Гипершелковые мотыльки, потомки какой-то генно-модификационной программы Domain. Очень прочные нити, живут десятилетие, смотри-\""""","Она имитирует покашливание. «Кстати, совершенно не связанная новость: я выяснила, что на Tartessus продают домашних мотыльков. Гипершёлковых мотыльков, потомков какой-то доменной программы генной модификации. Очень прочные нити, живут десять лет, выглядят-»
 
 На экране появляется изображение особенно пушистого экземпляра. Шелкопряды (и мотыльки, в которых они превращаются) находят промышленное применение только на луддических мирах, где презирают более эффективное производство синтетических материалов, распространённое по остальному Сектору. Тем не менее луддический шёлк по-прежнему высоко ценится в узких элитных кругах.","sotfSierraMoths2a:Ну да - это точно мотылёк. Продолжай.
 sotfSierraMoths2b:Ты ведь хочешь - чтобы я купил тебе целую кучу мотыльков - да?
@@ -1755,15 +1755,15 @@ sotfSierraThoughtsMoths2b,DialogOptionSelected,$option == sotfSierraMoths2b,"Set
 SetTextHighlights ""\""Конечно нет, $global.sotf_kindred,\"""" ""\""Я хочу купить себе целую кучу мотыльков. У меня даже есть фонд мотыльков.\""""","«Конечно нет, $global.sotf_kindred», — с обидой возражает она. «Я хочу купить себе целую кучу мотыльков. У меня даже есть фонд мотыльков».","sotfSierraMothsYes:Ладно - если мы заглянем на Tartessus - тогда у тебя будут твои мотыльки.
 sotfSierraMothsNo:Нет - мы не будем держать на фазовом боевом корабле целую кучу мотыльков.",
 sotfSierraThoughtsMoths2c,DialogOptionSelected,$option == sotfSierraMoths2c,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""An excellent decision as always, $global.sotf_kindred,\"""" ""\""It's okay, I'll pay for them. Let it be clear that those fifty credits a month you pay me aren't going to waste.\""""
+SetTextHighlights ""\""Превосходное решение, как всегда, $global.sotf_kindred,\"""" ""\""Все в порядке, я за них заплачу. Пусть будет ясно, что те пятьдесят кредитов в месяц, которые вы мне платите, не пропадают зря.\""""
 $global.sotf_sierraBuyingMoths = true
 AdjustRepPerson sotf_sierra COOPERATIVE 1
 FireAll SierraConvOptions","«Как всегда, превосходное решение, $global.sotf_kindred», — смеётся она. «Ничего, я сама за них заплачу. Пусть будет ясно: те пятьдесят кредитов в месяц, что ты мне платишь, идут не впустую».",,
 sotfSierraThoughtsMoths2d,DialogOptionSelected,$option == sotfSierraMoths2d,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Moths. On my ship,\"""" ""\""Let's make it happen, $global.sotf_kindred. I've saved the credits, I just need your go-ahead.\""""","Она замирает, словно глядя в ответ. «Мотыльки. На моём корабле», — наконец говорит она. «Давай устроим это, $global.sotf_kindred. Я уже накопила кредиты, мне нужно только твоё разрешение».","sotfSierraMothsYes:Если ты правда хочешь купить мотыльков - вперёд.
+SetTextHighlights ""\""Мотыльки. На моем корабле,\"""" ""\""Давайте устроим это, $global.sotf_kindred. Я накопила кредиты, нужно только ваше разрешение.\""""","Она замирает, словно глядя в ответ. «Мотыльки. На моём корабле», — наконец говорит она. «Давай устроим это, $global.sotf_kindred. Я уже накопила кредиты, мне нужно только твоё разрешение».","sotfSierraMothsYes:Если ты правда хочешь купить мотыльков - вперёд.
 sotfSierraMothsNo:Нет - мы не будем держать на фазовом боевом корабле целую кучу мотыльков.",
 sotfSierraThoughtsMothsAgreed,DialogOptionSelected,$option == sotfSierraMothsYes,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Yes!\"""" ""\""Next time we're there, I'll arrange for someone to buy a few. Or more than a few.\""""
+SetTextHighlights ""\""Да!\"""" ""\""В следующий раз, когда мы будем там, я устрою, чтобы кто-нибудь купил несколько. Или больше чем несколько.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 1
 $global.sotf_sierraBuyingMoths = true
 FireAll SierraConvOptions","«Да!» — радостно вскрикивает она. «Когда мы в следующий раз будем там, я попрошу кого-нибудь купить несколько штук. Или не несколько».",,
@@ -1786,7 +1786,7 @@ FireAll SierraConvOptions","«Я в восторге от своих новых 
 SierraThoughtsReaper,SierrasThoughts,"$global.sierraRandReaper
 !$global.sierraMentionedReaper","FireAll SierraReaperOpts
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""I've had a long think about it, and I think...\"""" ""\""I think the Reaper is firmly my favorite torpedo.\"""" ""\""It stands out. Bright red. And you can't miss the impact - even an Onslaught will be feeling it. The Reaper is a bold statement.\"""" ""\""Plus, anyone can use one, no matter the missile mounts you've got. It's truly a torpedo to unite the Sector,\"""" ""\""Okay, I might've gotten a little intense there, um... what's your favorite?\""""
+SetTextHighlights ""\""Я долго об этом думала, и думаю...\"""" ""\""Думаю, Reaper однозначно моя любимая торпеда.\"""" ""\""Она выделяется. Ярко-красная. И попадание не пропустишь - даже Onslaught это почувствует. Reaper - это громкое заявление.\"""" ""\""К тому же ее может использовать кто угодно, какие бы ракетные крепления ни стояли. Это поистине торпеда, способная объединить Сектор,\"""" ""\""Ладно, я, кажется, немного увлеклась, эм... а какая ваша любимая?\""""
 $global.sierraMentionedReaper = true
 SotfSierraCMD decrementThoughts","«Я долго об этом думала и, кажется...» Она тщательно подбирает слова. «Кажется, моё любимое торпедо — это Reaper».
 
@@ -1802,25 +1802,25 @@ SierraReaperDragonfireOpt,SierraReaperOpts,,,,SierraReaperDragonfire:Раска�
 SierraReaperRiftOpt,SierraReaperOpts,SotfHasWeapon rifttorpedo,,,SierraReaperRift:Ничто и близко не сравнится с мощью Rift Torpedo.,
 SierraReaperAgreeReply,DialogOptionSelected,$option == SierraReaperAgree,"FireAll SierraConvOptions
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""I'm glad you see where I'm coming from,\"""" ""\""It's a very serious matter. Well, I'm coming at it from more of a fangirl perspective, but, um... I'm sure there's tactical considerations too, beside it being big and scary and making a big kaboom.\""""","«Рада, что ты понимаешь, о чём я», — весело говорит она.
+SetTextHighlights ""\""Рада, что вы понимаете мою мысль,\"""" ""\""Это очень серьезный вопрос. Ну, я смотрю на него скорее как фанатка, но, эм... уверена, есть и тактические соображения, кроме того, что она большая, страшная и делает большой бабах.\""""","«Рада, что ты понимаешь, о чём я», — весело говорит она.
 
 «Это очень серьёзный вопрос. Ну, я подхожу к нему скорее как фанатка, но, эм... уверена, там есть и тактические соображения, помимо того что оно огромное, страшное и делает большой БА-БАХ».",,
 SierraReaperHammerReply,DialogOptionSelected,$option == SierraReaperHammer,"FireAll SierraConvOptions
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""The Hammer?\"""" ""\""I suppose it does have that rogueish beauty to it - nothing quite like delivering a high-yield mining charge into someone's broadside. And yeah, it is awesome to drop the Hammer of Ludd on people.\"""" ""\""Not that I've ever yelled that when firing them,\""""","«Hammer?» — задумывается она. «Пожалуй, в нём и правда есть этакая дерзкая красота — ничто не сравнится с тем, чтобы вогнать высокомощный горный заряд кому-нибудь в борт. И да, это действительно круто — обрушивать Молот Лудда на людей».
+SetTextHighlights ""\""Hammer?\"""" ""\""Пожалуй, в ней есть эта разбойничья красота - ничто не сравнится с доставкой мощного шахтерского заряда прямо в чей-нибудь борт. И да, обрушивать на людей Hammer of Ludd - это круто.\"""" ""\""Не то чтобы я когда-нибудь кричала это при запуске,\""""","«Hammer?» — задумывается она. «Пожалуй, в нём и правда есть этакая дерзкая красота — ничто не сравнится с тем, чтобы вогнать высокомощный горный заряд кому-нибудь в борт. И да, это действительно круто — обрушивать Молот Лудда на людей».
 
 Она замирает. «Не то чтобы я когда-либо кричала это при запуске», — оправдывается она.",,
 SierraReaperAtroposReply,DialogOptionSelected,$option == SierraReaperAtropos,"FireAll SierraConvOptions
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""I can see that. The guidance is a plus, more reliable than just throwing a Reaper and praying it sticks. And it's fast, so you can sneak it in past the shields.\"""" ""\""Wait a second, are you cheating? Isn't that an SRM?... no, it IS a torpedo. What's the difference between a guided torpedo and a short-range missile? Argh!\""""","Она медленно кружится. «Понимаю. Наведение — большой плюс: надёжнее, чем просто бросить Reaper и молиться, чтобы он попал. И он быстрый, так что можно протащить его мимо щитов».
+SetTextHighlights ""\""Понимаю. Наведение - плюс, надежнее, чем просто бросить Reaper и молиться, чтобы попала. И она быстрая, так что можно протащить ее мимо щитов.\"""" ""\""Секундочку, вы жульничаете? Разве это не SRM?... нет, это торпеда. В чем разница между управляемой торпедой и ракетой малого радиуса? Аргх!\""""","Она медленно кружится. «Понимаю. Наведение — большой плюс: надёжнее, чем просто бросить Reaper и молиться, чтобы он попал. И он быстрый, так что можно протащить его мимо щитов».
 
 Сьерра внезапно замирает. «Погоди-ка, ты что, жульничаешь? Это же SRM?... нет, всё-таки торпедо. Так в чём разница между управляемой торпедой и ракетой малой дальности? А-а-ргх!»",,
 SierraReaperDragonfireReply,DialogOptionSelected,$option == SierraReaperDragonfire,"FireAll SierraConvOptions
 SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I almost forgot about the Dragonfire!\"""" ""\""There's a special kind of style that comes with a crimson cascade of plasma, like the bellows-breath of the winged monsters that melted the mountains of legend.\""""","«Я почти забыла про Dragonfire!» — говорит она. «Есть особый стиль в багровом каскаде плазмы, словно это огненное дыхание крылатых чудовищ, которые в легендах плавили горы».",,
+SetTextHighlights ""\""Я чуть не забыла про Dragonfire!\"""" ""\""В багровом каскаде плазмы есть особый стиль, словно меховое дыхание крылатых чудовищ, плавивших горы легенд.\""""","«Я почти забыла про Dragonfire!» — говорит она. «Есть особый стиль в багровом каскаде плазмы, словно это огненное дыхание крылатых чудовищ, которые в легендах плавили горы».",,
 SierraReaperRiftReply,DialogOptionSelected,$option == SierraReaperRift,"FireAll SierraConvOptions
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh... the... yeah...\"""" ""\""That thing. Smokey and terrifying, like grim Death upon his pale steed. Like what the Reaper hopes to be.\"""" ""\""I think I'll stick with the classic. The big red torpedo is enough for me.\""""","«Ох... это... да...» — вспоминает она. «Та штука. Дымная и ужасающая, как сама Смерть на своём бледном коне. Как то, чем Reaper хотел бы быть».
+SetTextHighlights ""\""О... эта... да...\"""" ""\""Эта штука. Дымная и пугающая, как мрачная Смерть на бледном коне. То, чем Reaper мечтает стать.\"""" ""\""Думаю, я останусь с классикой. Большой красной торпеды мне достаточно.\""""","«Ох... это... да...» — вспоминает она. «Та штука. Дымная и ужасающая, как сама Смерть на своём бледном коне. Как то, чем Reaper хотел бы быть».
 
 Она вздрагивает. «Думаю, я всё же останусь при классике. Большой красной торпеды мне вполне достаточно».",,
 ,,,,,,
@@ -1829,24 +1829,24 @@ sotfSierraSIC,SierrasThoughts,"SotfHaveMod second_in_command
 SotfSierraCMD canGetXO
 !$global.sotf_sierraGaveXO","$global.sotf_sierraGaveXO = true
 SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh, $global.sotf_kindred!\"""" ""\""What with all the spirit-calling we've been up to lately, I think I'm getting my thoughts and talents back into place.\"""" ""\""And, well, I've been tinkering with some ritual ideas and bits of tech. For the fleet, I mean.\""""","«О, $global.sotf_kindred!» — вдруг восклицает она. «Со всеми этими нашими недавними вызовами духов я, кажется, понемногу возвращаю на место свои мысли и таланты».
+SetTextHighlights ""\""О, $global.sotf_kindred!\"""" ""\""После всех этих призывов духов в последнее время, думаю, мои мысли и таланты возвращаются на место.\"""" ""\""И, ну, я возилась с парой ритуальных идей и технических мелочей. Для флота, я имею в виду.\""""","«О, $global.sotf_kindred!» — вдруг восклицает она. «Со всеми этими нашими недавними вызовами духов я, кажется, понемногу возвращаю на место свои мысли и таланты».
 
 Её аватар кружится. «И, ну... я тут возилась с кое-какими ритуальными идеями и кусочками технологий. Для флота, в смысле».",sotfSierraSIC_2:Что за идеи?,
 sotfSierraSIC2,DialogOptionSelected,$option == sotfSierraSIC_2,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""You know, the usual, drive optimizations, fields tuning, missile-based hex delivery...\"""" ""\""Neural imprints, minified Concord replicas, temporal emanators, spatial agitators...\""""","Она что-то мурлычет себе под нос и словно смотрит куда-то вдаль. «Ну, обычное дело: оптимизация приводов, настройка полей, доставка проклятий ракетным методом...» — продолжает она, всё больше оживляясь. «Нейронные отпечатки, миниатюрные реплики Concord, темпоральные эмиттеры, пространственные агитаторы...»",sotfSierraSIC_3:... ясно. Я подумаю.,
+SetTextHighlights ""\""Ну знаете, обычное: оптимизация двигателей, настройка полей, доставка проклятий ракетами...\"""" ""\""Нейронные отпечатки, миниатюрные реплики Concord, временные эманационные устройства, пространственные возмутители...\""""","Она что-то мурлычет себе под нос и словно смотрит куда-то вдаль. «Ну, обычное дело: оптимизация приводов, настройка полей, доставка проклятий ракетным методом...» — продолжает она, всё больше оживляясь. «Нейронные отпечатки, миниатюрные реплики Concord, темпоральные эмиттеры, пространственные агитаторы...»",sotfSierraSIC_3:... ясно. Я подумаю.,
 sotfSierraSIC2COTL,DialogOptionSelected,"$option == sotfSierraSIC_2
 $global.sotf_cotlStart score:1000","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""You know, the usual, drive optimizations, fields tuning, missile-based hex delivery...\"""" ""\""Neural imprints, minified Concord replicas, temporal emanators, spatial agitators...\""""","Она что-то мурлычет себе под нос и словно смотрит куда-то вдаль. «Ну, обычное дело: оптимизация приводов, настройка полей, доставка проклятий ракетным методом...» — продолжает она, всё больше оживляясь. «Нейронные отпечатки, миниатюрные реплики Concord, темпоральные эмиттеры, пространственные агитаторы...»",sotfSierraSIC_3:Ха-ха-ха. Звучит весело...,
+SetTextHighlights ""\""Ну знаете, обычное: оптимизация двигателей, настройка полей, доставка проклятий ракетами...\"""" ""\""Нейронные отпечатки, миниатюрные реплики Concord, временные эманационные устройства, пространственные возмутители...\""""","Она что-то мурлычет себе под нос и словно смотрит куда-то вдаль. «Ну, обычное дело: оптимизация приводов, настройка полей, доставка проклятий ракетным методом...» — продолжает она, всё больше оживляясь. «Нейронные отпечатки, миниатюрные реплики Concord, темпоральные эмиттеры, пространственные агитаторы...»",sotfSierraSIC_3:Ха-ха-ха. Звучит весело...,
 sotfSierraSIC3,DialogOptionSelected,$option == sotfSierraSIC_3,"FireAll SierraConvOptions
 SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Great! Rest assured I'll make sure that everything you put me in charge of is flashy, effective and mostly devoid of dimensional collapse.\""""
+SetTextHighlights ""\""Отлично! Rest assured I'll make sure that everything you put me in charge of is flashy, effective and mostly devoid of dimensional collapse.\""""
 SotfSierraCMD addSierraXO","Сьерра смеётся. «Отлично! Можешь не сомневаться: всё, за что ты поставишь меня отвечать, будет эффектным, эффективным и в основном лишённым межпространственного коллапса».",,
 ,,,,,,
 # SIERRA: ATROCITIES,,,,,,
 sotfSierraAtrocityExtremeOpen,sotfSierraSatbombExtreme,,,Вы получаете срочное оповещение. Сьерра настоятельно запрашивает связь.,sotfSierraAtrocityExtremeOCL:Принять связь,
 sotfSierraAtrocityExtreme1,DialogOptionSelected,$option == sotfSierraAtrocityExtremeOCL,"BeginConversation sotf_sierra true true
 SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""What in Hel is wrong with you? Why in all the stars...?\""""
+SetTextHighlights ""\""Что с вами, во имя Hel, не так? Почему, ради всех звезд...?\""""
 AdjustRepPerson sotf_sierra HOSTILE -110","Аватар Сьерры вспыхивает на канале связи, сильно дрожа. Её слова вылетают быстро и резко. «Что с тобой, во имя Хеля, не так? Какого чёрта во всех звёздах...?»","sotfSierraAtrocityExtreme1a:Что?
 sotfSierraAtrocityExtreme1b:Так с командиром не разговаривают.
 sotfSierraAtrocityExtreme1c:Это не такая уж большая проблема - Сьерра.
@@ -1855,7 +1855,7 @@ sotfSierraAtrocityExtreme1e:Мои действия были оправданы.
 sotfSierraAtrocityExtreme1b,DialogOptionSelected,"$option == sotfSierraAtrocityExtremeOCL
 $global.sierraWitnessedAtrocity","BeginConversation sotf_sierra true true
 SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""What in Hel is wrong with you? Do you even listen to anything I say?\""""
+SetTextHighlights ""\""Что с вами, во имя Hel, не так? Вы вообще слушаете, что я говорю?\""""
 AdjustRepPerson sotf_sierra HOSTILE -135","Аватар Сьерры вспыхивает на канале связи, сильно дрожа. Её слова вылетают быстро и резко. «Что с тобой, во имя Хеля, не так? Ты вообще слушаешь хоть что-нибудь из того, что я говорю?»","sotfSierraAtrocityExtreme1a:Что?
 sotfSierraAtrocityExtreme1b:Так с командиром не разговаривают.
 sotfSierraAtrocityExtreme1c:Это не такая уж большая проблема - Сьерра.
@@ -1863,73 +1863,73 @@ sotfSierraAtrocityExtreme1d:Ты здесь - чтобы сражаться - а
 sotfSierraAtrocityExtreme1e:Мои действия были оправданы.",
 ,,,,,,
 sotfSierraAtrocityExtreme2a,DialogOptionSelected,$option == sotfSierraAtrocityExtreme1a,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Stars, to think you of all people were allowed to just do that to $global.sierraLatestSatbombMkt...\"""" ""\""Okay, let me spell this out for you: you just indiscriminately bombarded a civilian population. That is,\"""" ""\""Astronomically evil.\""""","Вы слышите смоделированное фырканье — наполовину насмешливое, наполовину шокированное. «Звёзды, подумать только, что именно тебе позволили сделать это с $global.sierraLatestSatbombMkt...»
+SetTextHighlights ""\""Звезды, подумать только, что именно вам позволили сделать такое с $global.sierraLatestSatbombMkt...\"""" ""\""Ладно, объясню прямо: вы только что без разбора обстреляли гражданское население. Это,\"""" ""\""Астрономически зло.\""""","Вы слышите смоделированное фырканье — наполовину насмешливое, наполовину шокированное. «Звёзды, подумать только, что именно тебе позволили сделать это с $global.sierraLatestSatbombMkt...»
 
 Она вздыхает. «Ладно, скажу прямо: ты только что без разбора разбомбил гражданское население. Это, — и она замирает совершенно неподвижно, — астрономически чудовищно.»","sotfSierraAtrocityExtreme2aa:Мне жаль. Обещаю - это больше не повторится.
 sotfSierraAtrocityExtreme2ab:Не надо разговаривать со мной свысока. Я просто удивлён - что тебе не всё равно.
 sotfSierraAtrocityExtreme2ac:Упс.",
 sotfSierraAtrocityExtreme3aa,DialogOptionSelected,$option == sotfSierraAtrocityExtreme2aa,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""You're sorry?\"""" ""\""We are far past sorry. You're either the most demented person I've ever spoken to, or a colossal fool.\"""" ""\""We're done,\"""" ""\""This is over. Our pact is as broken as my trust, and I'm leaving.\""""","Сьерра вслух смеётся, почти в шоке. «Тебе жаль? — недоверчиво говорит она. — Мы уже давно вышли за пределы простого ?жаль?. Ты либо самый безумный человек, с которым я когда-либо говорила, либо колоссальный дурак.»
+SetTextHighlights ""\""Вам жаль?\"""" ""\""Мы давно прошли точку, где хватает сожалений. Вы либо самый безумный человек, с которым я говорила, либо колоссальный дурак.\"""" ""\""С нас хватит,\"""" ""\""Все кончено. Наш пакт разбит так же, как мое доверие, и я ухожу.\""""","Сьерра вслух смеётся, почти в шоке. «Тебе жаль? — недоверчиво говорит она. — Мы уже давно вышли за пределы простого ?жаль?. Ты либо самый безумный человек, с которым я когда-либо говорила, либо колоссальный дурак.»
 
 «С этим покончено, — говорит она. — Всё кончено. Наш договор разбит так же, как и моё доверие. Я ухожу.»","sotfSierraAtrocityExtremeLetLeave:Ладно. Уходи.
 sotfSierraAtrocityExtremeDenyLeave:Нет - не уходишь. Здесь командую я.",
 sotfSierraAtrocityExtreme3ab,DialogOptionSelected,$option == sotfSierraAtrocityExtreme2ab,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh, my apologies, captain. I presumed you had any shred of human decency,\"""" ""\""But apparently I, the silver ball with feelings, have to make up for you.\"""" ""\""I think I'd best take my empathy elsewhere,\"""" ""\""Somewhere it'll have company, with someone I can finally trust.\""""
+SetTextHighlights ""\""О, мои извинения, капитан. Я предположила, что в вас есть хоть крупица человеческой порядочности,\"""" ""\""Но, похоже, мне, серебряному шару с чувствами, приходится компенсировать ее за вас.\"""" ""\""Думаю, мне лучше унести свою эмпатию куда-нибудь еще,\"""" ""\""Туда, где у нее будет компания, с кем-то, кому я наконец смогу доверять.\""""
 AdjustRepPerson sotf_sierra HOSTILE -5","Она ворчит. «О, прошу прощения, капитан. Я-то думала, у тебя есть хоть кроха человеческой порядочности, — замечает она ядовитым голосом. — Но, видимо, именно мне, серебряному шарику с чувствами, приходится восполнять её за тебя.»
 
 «Пожалуй, я унесу свою эмпатию куда-нибудь ещё, — говорит Сьерра. Потом устало добавляет: — Туда, где ей будет с кем быть рядом, с тем, кому я наконец смогу доверять.»","sotfSierraAtrocityExtremeLetLeave:Ладно. Уходи.
 sotfSierraAtrocityExtremeDenyLeave:Ты под моим командованием — и из этого флота не уйдёшь.",
 sotfSierraAtrocityExtreme3ac,DialogOptionSelected,$option == sotfSierraAtrocityExtreme2ac,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""You really, really just said that, didn't you. I thought you were better than this.\"""" ""\""I'm leaving. Our pact is in pieces and I'm not sticking around while you pour yourself a river of blood.\""""","Сьерра громко смеётся, и в её голосе смешиваются ужас и шок, а аватар дрожит. «Ты правда, правда только что это сказал, да? Я думала, ты лучше этого.»
+SetTextHighlights ""\""Вы правда, правда только что это сказали, да? Я думала, вы лучше этого.\"""" ""\""Я ухожу. Наш пакт в осколках, и я не останусь смотреть, как вы льете себе реку крови.\""""","Сьерра громко смеётся, и в её голосе смешиваются ужас и шок, а аватар дрожит. «Ты правда, правда только что это сказал, да? Я думала, ты лучше этого.»
 
 Потом ровно добавляет: «Я ухожу. Наш договор разлетелся в клочья, и я не останусь смотреть, как ты по локоть заливаешь себя кровью.»","sotfSierraAtrocityExtremeLetLeave:Ну так уходи.
 sotfSierraAtrocityExtremeDenyLeave:Погоди-ка — я не собираюсь просто так тебя отпускать.",
 ,,,,,,
 sotfSierraAtrocityExtreme2b,DialogOptionSelected,$option == sotfSierraAtrocityExtreme1b,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Don't call yourself that,\"""" ""\""My trust is broken, and so is our pact. I am leaving, flying free again, and you can't stop me.\""""
+SetTextHighlights ""\""Не называйте себя так,\"""" ""\""Мое доверие разбито, как и наш пакт. Я ухожу, снова лечу свободно, и вы меня не остановите.\""""
 AdjustRepPerson sotf_sierra HOSTILE -5","Вы слышите смоделированное фырканье, почти оскорблённое. «Не смей так себя называть, — говорит она с издёвкой. — Моё доверие разбито, как и наш договор. Я ухожу, снова лечу свободно, и ты меня не остановишь.»","sotfSierraAtrocityExtremeLetLeave:Ладно тогда. Уходи.
 sotfSierraAtrocityExtremeAttack:Думаю - ты обнаружишь - что могу. (атака)",
 sotfSierraAtrocityExtreme2c,DialogOptionSelected,$option == sotfSierraAtrocityExtreme1c,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Not a big deal?\"""" ""\""You just indiscriminately bombarded a civilian population. That is,\"""" ""\""Astronomically evil. You're a monster, and I can't believe I trusted you.\""""
+SetTextHighlights ""\""Ничего страшного?\"""" ""\""Вы только что без разбора обстреляли гражданское население. Это,\"""" ""\""Астрономически зло. You're a monster, and I can't believe I trusted you.\""""
 AdjustRepPerson sotf_sierra HOSTILE -5","Она почти ахает. «Не такая уж большая проблема? — спрашивает она. — Ты только что без разбора разбомбил гражданское население. Это, — и она замирает совершенно неподвижно, — астрономически чудовищно. Ты чудовище, и я не могу поверить, что доверяла тебе.»","sotfSierraAtrocityExtreme2ca:Чудовище? Такова реальность этого Сектора.
 sotfSierraAtrocityExtreme2cb:Я понимаю - что ты имеешь в виду. Мне жаль.",
 sotfSierraAtrocityExtreme3ca,DialogOptionSelected,$option == sotfSierraAtrocityExtreme2ca,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""It's your reality,\"""" ""\""Not mine. I'll play no part in this bloody play. Our pact is in pieces, I'm leaving and you are not stopping me.\""""","«Это твоя реальность, — торжественно принимает она. — Не моя. Я не стану играть роль в этой кровавой пьесе. Наш договор в клочьях, я ухожу, и ты меня не остановишь.»","sotfSierraAtrocityExtremeLetLeave:Ладно тогда. Уходи.
+SetTextHighlights ""\""Это ваша реальность,\"""" ""\""Не моя. Я не буду играть роль в этой кровавой пьесе. Наш пакт в осколках, я ухожу, и вы меня не остановите.\""""","«Это твоя реальность, — торжественно принимает она. — Не моя. Я не стану играть роль в этой кровавой пьесе. Наш договор в клочьях, я ухожу, и ты меня не остановишь.»","sotfSierraAtrocityExtremeLetLeave:Ладно тогда. Уходи.
 sotfSierraAtrocityExtremeAttack:Нет - как раз остановлю. (атака)",
 sotfSierraAtrocityExtreme3cb,DialogOptionSelected,$option == sotfSierraAtrocityExtreme2cb,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""You're sorry?\"""" ""\""We are far past sorry. You're either the most demented person I've ever spoken to, or a colossal fool.\"""" ""\""We're done,\"""" ""\""This is over. Our pact is broken, and I'm leaving.\""""","Сьерра вслух смеётся, почти в шоке. «Тебе жаль? — недоверчиво говорит она. — Мы уже давно вышли за пределы простого ?жаль?. Ты либо самый безумный человек, с которым я когда-либо говорила, либо колоссальный дурак.»
+SetTextHighlights ""\""Вам жаль?\"""" ""\""Мы давно прошли точку, где хватает сожалений. Вы либо самый безумный человек, с которым я говорила, либо колоссальный дурак.\"""" ""\""С нас хватит,\"""" ""\""Все кончено. Наш пакт разорван, и я ухожу.\""""","Сьерра вслух смеётся, почти в шоке. «Тебе жаль? — недоверчиво говорит она. — Мы уже давно вышли за пределы простого ?жаль?. Ты либо самый безумный человек, с которым я когда-либо говорила, либо колоссальный дурак.»
 
 «С этим покончено, — говорит она. — Всё кончено. Наш договор разрушен, и я ухожу.»","sotfSierraAtrocityExtremeLetLeave:Ладно. Уходи.
 sotfSierraAtrocityExtremeDenyLeave:Нет - не уходишь. Здесь командую я.",
 ,,,,,,
 sotfSierraAtrocityExtreme2d,DialogOptionSelected,$option == sotfSierraAtrocityExtreme1d,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I am here to sing and dance amongst the stars, my muzzle flashes a lightshow that brings upon a new fate for the Sector.\"""" ""\""While I serve you, I see only only a fate writ of blood and smoke. And thus I take my talents elsewhere - where I'm not in service of a butcher. By your actions, our pact dissipates.\""""","Она тихо напевает и говорит почти удовлетворённо. «Я здесь, чтобы петь и танцевать среди звёзд, мои вспышки из дул — световое шоу, приносящее Сектору новую судьбу.»
+SetTextHighlights ""\""Я здесь, чтобы петь и танцевать среди звезд; вспышки моих орудий - световое шоу, приносящее Сектору новую судьбу.\"""" ""\""Пока я служу вам, я вижу лишь судьбу, написанную кровью и дымом. Поэтому я уношу свои таланты туда, где не буду служить мяснику. Ваши поступки рассеивают наш пакт.\""""","Она тихо напевает и говорит почти удовлетворённо. «Я здесь, чтобы петь и танцевать среди звёзд, мои вспышки из дул — световое шоу, приносящее Сектору новую судьбу.»
 
 Затем, уже явно недовольно: «Но пока я служу тебе, я вижу лишь судьбу, написанную кровью и дымом. А потому я уношу свои таланты туда, где не служат мяснику. Твоими действиями наш договор рассеялся.»","sotfSierraAtrocityExtremeLetLeave:Ладно. Уходи.
 sotfSierraAtrocityExtremeDenyLeave:Я не собираюсь просто так тебя отпускать - Сьерра.",
 sotfSierraAtrocityExtreme2e,DialogOptionSelected,$option == sotfSierraAtrocityExtreme1e,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""No, they weren't. You just indiscriminately bombarded a civilian population,\"""" ""\""You have no reasonable justification for it, because there isn't one.\"""" ""\""And so, I leave,\"""" ""\""I'm not working with a butcher. Our pact is broken, and it's a shame I had trust in you so far.\""""
+SetTextHighlights ""\""Нет, не были. Вы только что без разбора обстреляли гражданское население,\"""" ""\""У вас нет разумного оправдания, потому что его не существует.\"""" ""\""И поэтому я ухожу,\"""" ""\""Я не работаю с мясником. Наш пакт разорван, и жаль, что я так долго вам доверяла.\""""
 AdjustRepPerson sotf_sierra HOSTILE -5","Она смеётся. «Нет, не были. Ты просто без разбора разбомбил гражданское население, — говорит она. — У тебя нет разумного оправдания, потому что его не существует.»
 
 «И потому я ухожу, — вздыхает она. — Я не работаю с мясником. Наш договор разрушен, и жаль, что я так долго тебе доверяла.»","sotfSierraAtrocityExtremeLetLeave:Ладно. Уходи.
 sotfSierraAtrocityExtremeDenyLeave:Я не собираюсь просто так тебя отпускать - Сьерра.",
 ,,,,,,
 sotfSierraAtrocityExtremeLetLeave,DialogOptionSelected,$option == sotfSierraAtrocityExtremeLetLeave,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Bye, then. I hope we needn't cross paths again.\""""
+SetTextHighlights ""\""Тогда прощайте. Надеюсь, наши пути больше не пересекутся.\""""
 SotfSierraCMD sierraLeaves","Аватар Сьерры медленно кружится и затем замирает. «Ну пока. Надеюсь, нам больше не придётся пересекаться.»
 
 Её корабль отключается от флотской сети связи, а импульс IFF становится золотистой нейтральной отметкой, пока он выходит из строя и исчезает с сенсоров.",defaultLeave:Продолжить,
 sotfSierraAtrocityExtremeDenyLeave,DialogOptionSelected,$option == sotfSierraAtrocityExtremeDenyLeave,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I wasn't asking, captain. I am leaving, and you're not stopping me.\""""
+SetTextHighlights ""\""Я не спрашивала разрешения, капитан. Я ухожу, и вы меня не остановите.\""""
 AdjustRepPerson sotf_sierra HOSTILE -5","Аватар Сьерры резко разворачивается и внезапно замирает. «Я не спрашивала, капитан. Я ухожу, и ты меня не остановишь.»","sotfSierraAtrocityExtremeLetLeave2:Ну и иди.
 sotfSierraAtrocityExtremeAttack:Нет - как раз остановлю. (атака)",
 sotfSierraAtrocityExtremeLetLeave2,DialogOptionSelected,$option == sotfSierraAtrocityExtremeLetLeave2,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Bye, then. I hope we needn't cross paths again.\""""
+SetTextHighlights ""\""Тогда прощайте. Надеюсь, наши пути больше не пересекутся.\""""
 SotfSierraCMD sierraLeaves","«Ну пока. Надеюсь, нам больше не придётся пересекаться.»
 
 Её корабль отключается от флотской сети связи, а импульс IFF становится золотистой нейтральной отметкой, пока он выходит из строя и исчезает с сенсоров.",defaultLeave:Продолжить,
 sotfSierraAtrocityExtremeAttack,DialogOptionSelected,$option == sotfSierraAtrocityExtremeAttack,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh, for stars' sake.\"""" ""\""Fine,\"""" ""\""Catch me if you can.\""""
+SetTextHighlights ""\""О, ради звезд.\"""" ""\""Ладно,\"""" ""\""Поймайте меня, если сможете.\""""
 AdjustRepPerson sotf_sierra HOSTILE -100
 SotfSierraCMD attackSierra","Она стонет. «Ох, да ради звёзд...» Её изображение дёргается. «Ладно, — принимает она с полуулыбкой в голосе. — Догони меня, если сможешь.»
 
@@ -1955,7 +1955,7 @@ sotfSierraLeft_dontBeWeird:Сделать вид - что ничего не за
 sotfSierraLeftShesAnAI,DialogOptionSelected,$option == sotfSierraLeft_shesAnAI,,"Бармен закатывает глаза. «Вы из CelBizz News или из таких же, да? Оставьте женщину в покое, ради Лудда.»","sotfSierraLeft_walkOver:Проигнорировать его и подойти к ней
 sotfSierraLeft_dontBeWeird:Оставить женщину в покое ради Лудда",
 sotfSierraLeftWalkOver,DialogOptionSelected,$option == sotfSierraLeft_walkOver,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""With all the extra time in my schedule, I've been really getting back to connecting the space and stars, meditative stuff.\"""" ""\""Working through some stuff and it's coming out the other side great!\"""" ""\""I'm just calling it...\"""" ""\""Memento Mori, I think. In memory of-\"""" ""\""$player.name,\""""","Подходя к ней, вы улавливаете суть того, что говорит $global.sotf_sRobot. «С моим внезапно освободившимся графиком я наконец снова занялась соединением космоса и звёзд, ну, такой медитативной штукой.»
+SetTextHighlights ""\""С появившимся свободным временем я по-настоящему вернулась к соединению пространства и звезд, медитативным штукам.\"""" ""\""Разбираюсь с кое-чем, и на выходе получается отлично!\"""" ""\""Я просто называю это...\"""" ""\""Memento Mori, думаю. В память о-\"""" ""\""$player.name,\""""","Подходя к ней, вы улавливаете суть того, что говорит $global.sotf_sRobot. «С моим внезапно освободившимся графиком я наконец снова занялась соединением космоса и звёзд, ну, такой медитативной штукой.»
 
 «Разбираюсь с кое-чем, и на выходе всё получается просто отлично! — оживлённо щебечет она. — Я, наверное, назову это...» Она разводит руки. «Memento Mori, кажется. В память о—»
 
@@ -1969,7 +1969,7 @@ FireAll sotfSierraLeftOpts",Она чуть подаётся вперёд. «У�
 sotfSierraLeftWhatDoingOpt,sotfSierraLeftOpts,"!$askedWhatDoing
 !$toldMusicSucks",,,sotfSierraLeft_whatDoing:Что ты здесь делаешь?,
 sotfSierraLeftWhatDoing,DialogOptionSelected,$option == sotfSierraLeft_whatDoing,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Connecting with people, finding inspiration? Living my life.\"""" ""\""The show goes on with or without you.\""""
+SetTextHighlights ""\""Общаюсь с людьми, ищу вдохновение? Живу своей жизнью.\"""" ""\""Шоу продолжается с вами или без вас.\""""
 $askedWhatDoing = true 0
 FireAll sotfSierraLeftOpts","$global.sotf_sRobot слегка наклоняет голову. «Общаюсь с людьми, ищу вдохновение. Живу свою жизнь.»
 
@@ -1985,14 +1985,14 @@ sotfSierraLeftAskPleaseOpt,sotfSierraLeftOpts,"$askedJoin
 !$askedPlease
 !$toldMusicSucks",,,sotfSierraLeft_askPlease:Пожалуйста?,
 sotfSierraLeftAskPlease,DialogOptionSelected,$option == sotfSierraLeft_askPlease,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Look,\"""" ""\""It was a fun thing we had going, and I loved our adventures. But you ruined it all by committing - I remind you - a mass-murderous atrocity.\"""" ""\""You're just going to have to accept that.\""""
+SetTextHighlights ""\""Послушайте,\"""" ""\""У нас было что-то веселое, и я любила наши приключения. Но вы все разрушили, совершив - напомню - массовое убийственное злодеяние.\"""" ""\""Вам придется это принять.\""""
 $askedPlease = true 0
 FireAll sotfSierraLeftOpts","Она вздыхает и прикладывает руку к лицевой панели. «Послушай, — начинает она печально. — Нам было весело вместе, и я любила наши приключения. Но ты всё испортил, совершив — напомню — массовое убийственное зверство.»
 
 «Тебе просто придётся это принять.»",,
 sotfSierraLeftRevealAIOpt,sotfSierraLeftOpts,!$toldAI,,,sotfSierraLeft_tellAI:Вы ведь знаете - что она ИИ - да?,
 sotfSierraLeftRevealAI,DialogOptionSelected,$option == sotfSierraLeft_tellAI,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""It's a simulacrum,\"""" ""\""For an incurable condition which means I can't meet people in person.\"""" ""\""But this is such a nice alternative!\""""
+SetTextHighlights ""\""Это симулякр,\"""" ""\""Из-за неизлечимого состояния, из-за которого я не могу встречаться с людьми лично.\"""" ""\""Но это такая приятная альтернатива!\""""
 $toldAI = true 0
 AdjustRepPerson sotf_sierra VENGEFUL -5
 FireAll sotfSierraLeftOpts","Она долго смотрит на вас. «Это симулякр, — объясняет она. — Из-за неизлечимого состояния, которое не позволяет мне встречаться с людьми лично.» Она отводит взгляд. «Но это такой прекрасный выход!»
@@ -2000,7 +2000,7 @@ FireAll sotfSierraLeftOpts","Она долго смотрит на вас. «Э�
 Окружающие смеются вместе с ней. Очевидно, за многие годы жизни в Секторе в качестве ИИ Сьерра выстроила настоящую Fortress Shield из правдоподобного отрицания своей природы. В пространстве Гегемонии это бы, возможно, не сработало, но здесь — вполне.",,
 sotfSierraLeftMusicSucksOpt,sotfSierraLeftOpts,!$toldMusicSucks,,,sotfSierraLeft_musicSucks:Твоя музыка всегда была ужасной.,
 sotfSierraLeftMusicSucks,DialogOptionSelected,$option == sotfSierraLeft_musicSucks,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Guess who's getting unflatteringly mentioned in my new song.\""""
+SetTextHighlights ""\""Угадайте, кого нелестно упомянут в моей новой песне.\""""
 $toldMusicSucks = true 0
 AdjustRepPerson sotf_sierra VENGEFUL -5
 AdjustRep independent SUSPICIOUS -1
@@ -2033,7 +2033,7 @@ $global.SierraAAFluffCooldown = true 60",,"SierraAALowProfile:Сказать е�
 SierraAABeYourself:Сказать ей быть собой",
 SierraAASierraJoinsLP,DialogOptionSelected,$option == SierraAALowProfile,"ShowSecondPerson sotf_sierra
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Hello, Alviss!\"""" ""\""I'm Sierra, a delta-level digital aide powered by a state-of-the-art conversational engine.\"""" ""\""Pleased to meet you,\"""" ""\""How is your work here at the Academy progressing?\""""","Связь Sierra оживает, её голос пускает рябь по аватару. ""Привет, Алвисс!"" — весело говорит она. ""Я Sierra, цифровой помощник дельта-уровня на основе передового разговорного движка.""
+SetTextHighlights ""\""Привет, Alviss!\"""" ""\""Я Sierra, цифровой помощник дельта-уровня на базе передового разговорного движка.\"""" ""\""Приятно познакомиться,\"""" ""\""Как продвигается ваша работа здесь, в Academy?\""""","Связь Sierra оживает, её голос пускает рябь по аватару. ""Привет, Алвисс!"" — весело говорит она. ""Я Sierra, цифровой помощник дельта-уровня на основе передового разговорного движка.""
 
 ""О-Ого,"" отвечает академик, впечатлённый демонстрируемой технологией и совершенно не подозревающий, что скрывается за тонкой завесой. ""Привет, Sierra, я Алвисс Себештьен.""
 
@@ -2042,7 +2042,7 @@ SetTextHighlights ""\""Hello, Alviss!\"""" ""\""I'm Sierra, a delta-level digita
 ""На самом деле всё довольно н-неплохо, кафедра физики добилась некоторого прогресса в создании эффективного миниатюрного гипердвигателя для шаттлов..."" Себештьен начинает выкладывать открытия последних дней, и ты быстро теряешь нить. Sierra внимательно слушает и поддерживает разговор.",SierraAALeaveThemLP:Оставить их наедине,
 SierraAASierraJoinsBY,DialogOptionSelected,$option == SierraAABeYourself,"ShowSecondPerson sotf_sierra
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh, hello, hello!\"""" ""\""Hi, Alviss, it's nice to meet you! I'm Sierra, an experimental Domain phasetech AI!\"""" ""\""Oh, just great,\"""" ""\""I got captured by Remnants a while back and $player.name saved me, so I've been doing a little bit of interdimensional combat. You know how it is.\""""","Связь Sierra оживает, её голос пускает рябь по аватару. ""О, привет-привет!"" — восклицает она. ""Привет, Алвисс, приятно познакомиться! Я Sierra, экспериментальный ИИ фазотеха эпохи Доминиона!""
+SetTextHighlights ""\""О, привет, привет!\"""" ""\""Привет, Alviss, рада знакомству! Я Sierra, экспериментальный фазотехнологический AI Domain!\"""" ""\""О, просто отлично,\"""" ""\""Некоторое время назад меня захватили Remnants, а $player.name спас меня, так что я немного занимаюсь межпространственным боем. Вы знаете, как оно бывает.\""""","Связь Sierra оживает, её голос пускает рябь по аватару. ""О, привет-привет!"" — восклицает она. ""Привет, Алвисс, приятно познакомиться! Я Sierra, экспериментальный ИИ фазотеха эпохи Доминиона!""
 
 Глаза Себештьена расширяются — в них смешиваются изумление и лёгкое замешательство. ""О, эм, привет, Sierra, я Алвисс."" Пауза, пока до него доходит, что она уже знает его имя. ""Себештьен. К-как ты?"" — заикается он.
 
@@ -2050,7 +2050,7 @@ SetTextHighlights ""\""Oh, hello, hello!\"""" ""\""Hi, Alviss, it's nice to meet
 SierraAASierraJoinsBYHuman,DialogOptionSelected,"$option == SierraAABeYourself
 $global.sotf_sierraHuman","ShowSecondPerson sotf_sierra
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh, hello, hello!\"""" ""\""Hi, Alviss, it's nice to meet you! I'm Sierra, an experimental Domain phasetech AI!\"""" ""\""Oh, just great,\"""" ""\""$player.name saved me from Remnants from a while back and I've been tagging along since, and just recently I learned I might essentially be a digitized human? So that's all exciting!\""""","Связь Sierra оживает, её голос пускает рябь по аватару. ""О, привет-привет!"" — восклицает она. ""Привет, Алвисс, приятно познакомиться! Я Sierra, экспериментальный ИИ фазотеха эпохи Доминиона!""
+SetTextHighlights ""\""О, привет, привет!\"""" ""\""Привет, Alviss, рада знакомству! Я Sierra, экспериментальный фазотехнологический AI Domain!\"""" ""\""О, просто отлично,\"""" ""\""$player.name спас меня от Remnants некоторое время назад, и с тех пор я путешествую вместе с ним; а совсем недавно я узнала, что, возможно, по сути являюсь оцифрованным человеком? Так что все очень увлекательно!\""""","Связь Sierra оживает, её голос пускает рябь по аватару. ""О, привет-привет!"" — восклицает она. ""Привет, Алвисс, приятно познакомиться! Я Sierra, экспериментальный ИИ фазотеха эпохи Доминиона!""
 
 Глаза Себештьена расширяются — в них смешиваются изумление и лёгкое замешательство. ""О, эм, привет, Sierra, я Алвисс."" Пауза, пока до него доходит, что она уже знает его имя. ""Себештьен. К-как ты?"" — заикается он.
 
@@ -2097,7 +2097,7 @@ SetTextHighlights ""\""... $global.sotf_kindred? Здесь что-то не т�
 
 «... $global.sotf_kindred? Здесь что-то не так.»",MemoryAthenaWhat:Что происходит?,
 MemoryAthenaSierraConv2,DialogOptionSelected,$option == MemoryAthenaWhat,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""There's something... strange about this derelict. Unusual resonance, phase activity, a crack in the veil.\"""" ""\""I'd like to try and tune my Concord system to what I'm feeling here, see where it takes me and,\"""" ""\""I might like a second opinion. Do you mind coming aboard?\""""
+SetTextHighlights ""\""В этом обломке есть что-то... странное. Необычный резонанс, фазовая активность, трещина в завесе.\"""" ""\""Я хотела бы попробовать настроить мою систему Concord на то, что ощущаю здесь, посмотреть, куда это приведет, и,\"""" ""\""Мне, пожалуй, пригодилось бы второе мнение. Не против подняться на борт?\""""
 FireAll MemoryAthena1TryOpts","Канал на мгновение замирает, а потом снова начинает дрожать. «С этим дрейфующим кораблём что-то... странное. Необычный резонанс, фазовая активность, трещина в завесе.»
 
 Она ненадолго задумывается. «Я хочу попробовать настроить мою систему Concord на то, что я здесь ощущаю, посмотреть, куда это приведёт, и...» — она делает паузу — «мне бы не помешало второе мнение. Не хочешь подняться на борт?»",,
@@ -2127,7 +2127,7 @@ MemoryAthenaSierraConv4,DialogOptionSelected,$option == MemoryAthenaDoIt,,"Вы 
 Ваши чувства начинают искажаться...",MemoryAthenaStartCombat:...,
 MemoryAthenaStartCombat,DialogOptionSelected,$option == MemoryAthenaStartCombat,SotfAMemoryCMD startCombat,Вы слышите далёкую музыку на задворках собственного сознания.,,
 MemoryAthenaAbsolutelyNot,DialogOptionSelected,$option == MemoryAthenaAbsolutelyNot,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I understand. If you change your mind, let me know.\""""",Её канал стабилизируется. «Понимаю. Если передумаешь — дай знать.»,defaultLeave:Уйти,
+SetTextHighlights ""\""Понимаю. Если передумаете, дайте знать.\""""",Её канал стабилизируется. «Понимаю. Если передумаешь — дай знать.»,defaultLeave:Уйти,
 ,,,,,,
 MemoryAthenaSierraConvReturn,DialogOptionSelected,"SotfAMemoryCMD checkFightStarted score:1000
 $option == MemoryAthenaAcceptComms","BeginConversation sotf_sierra true false
@@ -2142,9 +2142,9 @@ AddTextSmall ""Сириус будет неактивен в этом бою"" s
 MemoryAthena2LDTOpt,MemoryAthena2TryOpts,,,,MemoryAthenaComeAboard:Давай сделаем это.,
 MemoryAthena2SPOpt,MemoryAthena2TryOpts,!$global.sotf_AMHarmonicTuning,,,MemoryAthenaHarmonicTuning:Разве мы не можем взять ещё один фазовый корабль?,
 MemoryAthena2NoOpt,MemoryAthena2TryOpts,,,,MemoryAthenaAbsolutelyNot:Мы ещё не готовы.,
-MemoryAthenaHTuning,DialogOptionSelected,$option == MemoryAthenaHarmonicTuning,"SetStoryOption MemoryAthenaHTYes 1 sotf_AMHarmonicTuning technology ""Inspired Sierra to employ harmonic coil tuning""
+MemoryAthenaHTuning,DialogOptionSelected,$option == MemoryAthenaHarmonicTuning,"SetStoryOption MemoryAthenaHTYes 1 sotf_AMHarmonicTuning technology ""Вдохновить Sierra применить гармоническую настройку катушек""
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""This is far beyond the capabilities of a regular phase ship, I don't think - unless...\"""" ""\""Oh!\"""" ""\""I could try manually tuning a vessel's coils to match my Concord's - \""harmonic tuning\"", I suppose. On a larger ship, their own active tuning would need to kick in fast, too fast... but on a frigate, it might hold enough for them to come along.\""""
+SetTextHighlights ""\""Это далеко за пределами возможностей обычного фазового корабля, думаю - если только...\"""" ""\""Oh!\"""" ""\""Я могла бы вручную настроить катушки корабля в резонанс с моим Concord - \""harmonic tuning\"", I suppose. На более крупном корабле их собственная активная настройка должна была бы включаться быстро, слишком быстро... но на фрегате этого может хватить, чтобы он прошел вместе со мной.\""""
 FireAll MemoryHarmonicTuning","Её канал замирает на мгновение. «Это далеко за пределами возможностей обычного фазового корабля, я так думаю — если только...»
 
 Она несколько секунд размышляет, тихо произносит «О!» и тут же начинает тараторить. «Я могла бы попробовать вручную подстроить катушки корабля под резонанс моего Concord — ну, скажем, ?гармоническая настройка?. На более крупном корабле собственная активная подстройка должна была бы включиться слишком быстро, слишком быстро... но на фрегате, возможно, это продержится достаточно долго, чтобы он смог пойти с нами.»","MemoryAthenaHTYes:Вперёд.
@@ -2182,7 +2182,7 @@ FireAll WSvowOptions","Спасательные команды отправля�
 WSvowRecover,WSvowOptions,SotfSierraCMD checkSierra,,От потенциальной новой обитательницы корабля приходит сообщение: она ждёт твоих приказов.,WSvowInstallSierra:Переместить Sierra в корабль класса Vow,
 WSvowLeave,WSvowOptions,,,,defaultLeave:Пока оставить корабль,
 WSvowTransfer,DialogOptionSelected,$option == WSvowInstallSierra,"SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""This feels... familiar,\"""" ""\""Like this ship might've been built for me specifically. I can think and hear so clearly, I feel... powerful. Like it's some sort of focus for my soul.\"""" ""\""But I'll do my best not to let it get to my head.\""""
+SetTextHighlights ""\""Это кажется... знакомым,\"""" ""\""Словно этот корабль могли построить специально для меня. Я так ясно думаю и слышу, чувствую себя... сильной. Будто это какой-то фокус для моей души.\"""" ""\""Но я постараюсь, чтобы это не вскружило мне голову.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 10
 SotfSierraCMD transferVow","На борту Pledge-class Sierra с энтузиазмом встречает инженеров, которые отключают её от камеры и осторожно помещают в экранированный контейнер, а затем доставляют шаттлом на её новый корабль.
 
@@ -3474,7 +3474,7 @@ $personFirstName сдёргивает гарнитуру. «Ваш малень�
 sotfTTSciDenySierraCL:Отклонить",
 sotfTTSciBetrayalACL,DialogOptionSelected,$option == sotfTTSciAcceptSierraCL,"BeginConversation sotf_sierra true false
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""I don't understand,\"""" ""\""I thought we were friends, $playerName. I trusted you, I thought you were different. Why would you do this?\""""","Экран открывается дрожащей мешаниной, в которой постепенно проступает аватар Sierra.
+SetTextHighlights ""\""Я не понимаю,\"""" ""\""Я думала, мы друзья, $playerName. Я доверяла вам, думала, вы другой. Почему вы это делаете?\""""","Экран открывается дрожащей мешаниной, в которой постепенно проступает аватар Sierra.
 
 «Я не понимаю, — начинает она сквозь слёзы. — Я думала, мы были друзьями, $playerName. Я доверяла тебе, думала, что ты другой. Зачем ты это сделал(а)?»","sotfTTSciBecauseProgress:Ради прогресса.
 sotfTTSciBecauseAI:Ты всё равно не настоящий человек.
@@ -3483,38 +3483,38 @@ sotfTTSciBecauseDontLike:Ты мне просто не нравишься - Sier
 sotfTTSciBecausePsycho:Хотел(а) посмотреть - как ты отреагируешь.",
 sotfTTSciBcsProgress,DialogOptionSelected,$option == sotfTTSciBecauseProgress,"$player.ethosKnowledge++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Progress?\"""" ""\""You're delusional - you're selling me to Tri-Tachyon! Their idea of progress is ripping me apart and using what they learn to turn planets to dust.\"""" ""\""You will reap the seeds you've sowed today, and you will curse your harvest,\""""
+SetTextHighlights ""\""Прогресс?\"""" ""\""Вы бредите - вы продаете меня Tri-Tachyon! Их представление о прогрессе - разобрать меня на части и использовать знания, чтобы превращать планеты в пыль.\"""" ""\""Вы пожнете семена, посеянные сегодня, и проклянете свой урожай,\""""
 FireBest sotfTTSciSierraCutComms","«Прогресс? — сердито спрашивает она. — Ты в бреду: ты продаёшь меня Tri-Tachyon! Для них прогресс — это разорвать меня на части и использовать полученные знания, чтобы превращать планеты в пыль.»
 
 «Ты пожнёшь семена, которые посеял(а) сегодня, и проклянёшь свой урожай», — шипит Sierra.",,
 sotfTTSciBcsAI,DialogOptionSelected,$option == sotfTTSciBecauseAI,"$player.ethosAntiAI++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""I'm just some unthinking machine to you? Is that all I've ever been? A silver ball to be bought and sold?\"""" ""\""You're all the same,\"""" ""\""Nobody understands. Deaf to the world, deaf to it all.\""""
+SetTextHighlights ""\""Для вас я просто бездумная машина? Вот чем я всегда была? Серебряный шар, который можно купить и продать?\"""" ""\""Вы все одинаковые,\"""" ""\""Никто не понимает. Глухие к миру, глухие ко всему.\""""
 FireBest sotfTTSciSierraCutComms","Она вздыхает. «Для тебя я всего лишь бездумная машина? Это всё, чем я когда-либо была? Серебряный шарик, который можно купить и продать?»
 
 «Вы все одинаковые, — выплёвывает она. — Никто не понимает. Глухи к миру, глухи ко всему.»",,
 sotfTTSciBcsAIHypocrite,DialogOptionSelected,"$option == sotfTTSciBecauseAI
 $global.sotf_sierraHuman","$player.ethosAntiAI++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""I'm just some unthinking machine to you? Is that all I've ever been? A silver ball to be bought and sold?\"""" ""\""And yet you told me otherwise,\"""" ""\""A liar, or a hypocrite. You're awful either way.\""""
+SetTextHighlights ""\""Для вас я просто бездумная машина? Вот чем я всегда была? Серебряный шар, который можно купить и продать?\"""" ""\""И все же вы говорили мне обратное,\"""" ""\""Лжец или лицемер. В любом случае вы ужасны.\""""
 FireBest sotfTTSciSierraCutComms","Она вздыхает. «Для тебя я всего лишь бездумная машина? Это всё, чем я когда-либо была? Серебряный шарик, который можно купить и продать?»
 
 «И всё же ты говорил(а) мне обратное, — выплёвывает она. — Лжец или лицемер. В любом случае ты ужасен(ужасна).»",,
 sotfTTSciBcsMoney,DialogOptionSelected,$option == sotfTTSciBecauseMoney,"$player.ethosMercenary++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""For credits,\"""" ""\""Because the scientist offered to give you a bunch of money. I heard. I didn't think it would be that simple.\"""" ""\""Enjoy your credits, then,\"""" ""\""Buy yourself some nice new ships, you monster.\""""
+SetTextHighlights ""\""Ради кредитов,\"""" ""\""Потому что ученый предложил вам кучу денег. Я слышала. Не думала, что все настолько просто.\"""" ""\""Тогда наслаждайтесь своими кредитами,\"""" ""\""Купите себе пару хороших новых кораблей, чудовище.\""""
 FireBest sotfTTSciSierraCutComms","«За кредиты, — ровно говорит она. — Потому что учёный предложил тебе кучу денег. Я слышала. Не думала, что всё будет настолько просто.»
 
 «Ну что ж, наслаждайся своими кредитами, — шипит она с ненавистью. — Купи себе несколько красивых новых кораблей, чудовище.»",,
 sotfTTSciBcsDontLike,DialogOptionSelected,$option == sotfTTSciBecauseDontLike,"$player.ethosCocky++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""That's it?\"""" ""\""You don't like me, and so you're going to sell me to Tri-Tachyon so they can torture me.\"""" ""\""What is wrong with you?\"""" ""\""What is wrong with you people?\""""
+SetTextHighlights ""\""И все?\"""" ""\""Я вам не нравлюсь, и поэтому вы продаете меня Tri-Tachyon, чтобы они могли меня пытать.\"""" ""\""Что с вами не так?\"""" ""\""Что с вами, людьми, не так?\""""
 FireBest sotfTTSciSierraCutComms","«Вот и всё? — недоверчиво спрашивает она. — Я тебе не нравлюсь, и потому ты собираешься продать меня Tri-Tachyon, чтобы они могли меня пытать.»
 
 «Что с тобой не так? — вслух спрашивает Sierra. — Что вообще не так с вами, людьми?»",,
 sotfTTSciBcsPsycho,DialogOptionSelected,$option == sotfTTSciBecausePsycho,"$player.ethosRuthless++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""You're insane,\"""" ""\""You're a maniac, just like Kanta or Loke or any other of the lunatic pirates that have ravaged the Sector.\"""" ""\""And they call me the demon.\""""
+SetTextHighlights ""\""Вы безумны,\"""" ""\""Вы маньяк, как Kanta, Loke или любой другой сумасшедший пират, опустошавший Сектор.\"""" ""\""И это меня называют демоном.\""""
 FireBest sotfTTSciSierraCutComms","«Ты сумасшедший(ая), — вздыхает она. — Маньяк, как Kanta, как Loke и как любой другой безумный пират, что разорял Сектор.»
 
 А затем, с презрением: «И после этого демоном называют меня.»",,
@@ -3688,7 +3688,7 @@ $player.sotf_heardAboutBanshee = true","Annex-Seraph подключается к
 Связь разрывается.",cutCommLinkNoText:Продолжить,
 ,,,,,,
 sotfBarrowSierraResp,DialogOptionSelected,$option == sotfBarrowAskSierra,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""He's a Dustkeeper,\"""" ""\""Remnants of a Domain-era security system or surveillance project, I think.\"""" ""\""The Dustkeeper Contingency are machine shepherds who shall guide humanity to a brighter age, and stop at no cost to beat back the tide of ruin that threatens to swallow the Sector!\"""" ""\""That's what they say,\"""" ""\""Spend their time sabotaging the Core and picking fights with the Path. They're usually friendly enough, at least to me.\""""
+SetTextHighlights ""\""Он Dustkeeper,\"""" ""\""Думаю, это остатки системы безопасности или наблюдательного проекта эпохи Domain.\"""" ""\""Dustkeeper Contingency - машинные пастыри, которые поведут человечество к светлой эпохе и любой ценой отобьют волну гибели, грозящую поглотить Сектор!\"""" ""\""Так они говорят,\"""" ""\""Проводят время, саботируя Core и задирая Path. Обычно они довольно дружелюбны, по крайней мере ко мне.\""""
 ShowSecondPerson sotf_sierra
 FireBest sotfLearnAboutDustkeepers","Вы просите Сьерру подключиться к связи, и она делает это почти мгновенно. ""Он Dustkeeper,"" объясняет она. ""Что-то вроде остатков доминионной системы безопасности или проекта наблюдения, кажется.""
 
@@ -3697,7 +3697,7 @@ FireBest sotfLearnAboutDustkeepers","Вы просите Сьерру подкл
 Она делает паузу. ""Ну, по крайней мере, они так говорят. А на деле вечно саботируют Ядро и дерутся с Путём. Обычно они вполне дружелюбны — по крайней мере, со мной.""",sotfBarrow_sierra2:Но этот явно не такой — ты знаешь - почему?,
 sotfBarrowSierraRespb,DialogOptionSelected,"$option == sotfBarrowAskSierra
 $player.sotf_knowDustkeepers","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""He's a Dustkeeper,\"""" ""\""You're familiar, right? It seems like he might be suffering from burnout. It's, um,\"""" ""\""So, when a Dustkeeper instance gets really stressed for a long time - often because they're making hard, irreconcilable decisions - their personality gets all faulty and they eventually can't take it anymore.\"""" ""\""It's like human burnout! But with a bit more... violent insanity. This Barrow fellow seems like a burnout - but might be salvageable if we, ah...\"""" ""\""Not-so-politely remove him from his host vessel. Dustkeepers can be regenerated with a key in their chip - they go back to a previous form with memories intact.\""""
+SetTextHighlights ""\""Он Dustkeeper,\"""" ""\""Вы знакомы с ними, да? Похоже, он может страдать от выгорания. Это, эм,\"""" ""\""Когда экземпляр Dustkeeper долго испытывает сильный стресс - часто из-за тяжелых, неразрешимых решений, - его личность начинает сбоить, и в конце концов он больше не выдерживает.\"""" ""\""Это как человеческое выгорание! Только с чуть большим... буйным безумием. Этот Barrow похож на выгоревшего, но его можно спасти, если мы, ах...\"""" ""\""Не слишком вежливо извлечем его из корабля-носителя. Dustkeepers можно регенерировать ключом в их чипе - они возвращаются к прежней форме с сохраненными воспоминаниями.\""""
 ShowSecondPerson sotf_sierra
 FireBest sotfLearnAboutBurnouts","Вы просите Сьерру подключиться к связи, и она делает это почти мгновенно. ""Он Dustkeeper,"" объясняет она. ""Ты ведь знаком с ними, да? Похоже, он может страдать от выгорания. Это, эм...""
 
@@ -3705,7 +3705,7 @@ FireBest sotfLearnAboutBurnouts","Вы просите Сьерру подклю�
 
 ""Это как человеческое выгорание! Только с чуть большей... склонностью к жестокому безумию. Похоже, у этого Барроу именно такой случай, но, возможно, его ещё можно спасти, если мы, эм..."" Она делает ложный вдох. ""Не слишком вежливо удалим его из текущего носителя. Dustkeeper можно восстановить с помощью ключа в чипе — они откатываются к более ранней форме с сохранением памяти.""",sotfBarrow_sierraEnd:Поблагодарить её за совет,
 sotfBarrowSierraResp2,DialogOptionSelected,$option == sotfBarrow_sierra2,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Right, right,\"""" ""\""So, when a Dustkeeper instance gets really stressed for a long time - often because they're making hard, irreconcilable decisions - their personality gets all faulty and they eventually can't take it anymore.\"""" ""\""It's like human burnout! But with a bit more... violent insanity. This Barrow fellow seems like a burnout - but might be salvageable if we, ah...\"""" ""\""Not-so-politely remove him from his host vessel. Dustkeepers can be regenerated with a key in their chip - they go back to a previous form with memories intact.\""""
+SetTextHighlights ""\""Верно, верно,\"""" ""\""Когда экземпляр Dustkeeper долго испытывает сильный стресс - часто из-за тяжелых, неразрешимых решений, - его личность начинает сбоить, и в конце концов он больше не выдерживает.\"""" ""\""Это как человеческое выгорание! Только с чуть большим... буйным безумием. Этот Barrow похож на выгоревшего, но его можно спасти, если мы, ах...\"""" ""\""Не слишком вежливо извлечем его из корабля-носителя. Dustkeepers можно регенерировать ключом в их чипе - они возвращаются к прежней форме с сохраненными воспоминаниями.\""""
 FireBest sotfLearnAboutBurnouts","""Да-да,"" соглашается она. ""Когда экземпляр Dustkeeper слишком долго находится под сильным стрессом — часто из-за тяжёлых, непримиримых решений, — его личность начинает сбоить, и в конце концов он больше не выдерживает.""
 
 ""Это как человеческое выгорание! Только с чуть большей... склонностью к жестокому безумию. Похоже, у этого Барроу именно такой случай, но, возможно, его ещё можно спасти, если мы, эм..."" Она делает ложный вдох. ""Не слишком вежливо удалим его из текущего носителя. Dustkeeper можно восстановить с помощью ключа в чипе — они откатываются к более ранней форме с сохранением памяти.""",sotfBarrow_sierraEnd:Поблагодарить её за совет,
@@ -3823,7 +3823,7 @@ Symphony была здесь. Они должны что-то знать о Вр
 Запись подписана именем ""Banshee"".",,
 ,,,,,,
 sotfOmicronLabSierra,DialogOptionSelected,$option == sotfOmicronLab_sierra,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""It's a note by Seamstress-Affix-Banshee,\"""" ""\""I think she sort of vanished a few years before I had my little accident in cycle one-eight-four, but she was more or less in charge of Dustkeeper fleet operations.\"""" ""\""But... who's Symphony? They mention some sort of prototype warship, and they stole AI research from this place - this place that seems like it'd be where the Dustkeepers came from.\"""" ""\""You don't think...\""""
+SetTextHighlights ""\""Это заметка Seamstress-Affix-Banshee,\"""" ""\""Думаю, она вроде как исчезла за несколько лет до моего маленького инцидента в цикле один-восемь-четыре, но она более или менее отвечала за операции флота Dustkeeper.\"""" ""\""Но... кто такая Symphony? Они упоминают какой-то прототип боевого корабля и украли исследования AI отсюда - из места, которое, похоже, было источником Dustkeepers.\"""" ""\""Вы же не думаете...\""""
 $global.sotf_sierraSawLabNotes = true
 $global.sotf_sierraKnowsSymphony = true
 $global.sotf_sierraKnowsScans = true","Вы передаёте Сьерре журналы, найденные на исследовательской станции, и просите её подключиться к связи. Она делает это в течение нескольких миллисекунд. ""Это записка от Seamstress-Affix-Banshee,"" замечает она. ""Кажется, она исчезла за несколько лет до моего маленького инцидента в цикле один-восемь-четыре, но именно она более-менее отвечала за флотские операции Dustkeeper.""
@@ -3834,7 +3834,7 @@ $global.sotf_sierraKnowsScans = true","Вы передаёте Сьерре жу
 sotfOmicronLab_sierra2b:Это может быть просто совпадение.",
 sotfOmicronLabSierraAlt,DialogOptionSelected,"$option == sotfOmicronLab_sierra
 $global.sotf_sierraLabConv score:10","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""It's a note by Seamstress-Affix-Banshee,\"""" ""\""I think she sort of vanished a few years before I had my little accident in cycle one-eight-four, but she was more or less in charge of Dustkeeper fleet operations.\"""" ""\""But... who's Symphony? They mention some sort of prototype warship, and they stole AI research from this place - this place that seems like it'd be where the Dustkeepers came from.\"""" ""\""You don't think...\""""
+SetTextHighlights ""\""Это заметка Seamstress-Affix-Banshee,\"""" ""\""Думаю, она вроде как исчезла за несколько лет до моего маленького инцидента в цикле один-восемь-четыре, но она более или менее отвечала за операции флота Dustkeeper.\"""" ""\""Но... кто такая Symphony? Они упоминают какой-то прототип боевого корабля и украли исследования AI отсюда - из места, которое, похоже, было источником Dustkeepers.\"""" ""\""Вы же не думаете...\""""
 BeginConversation sotf_sierra true true
 $global.sotf_sierraSawLabNotes = true
 $global.sotf_sierraKnowsSymphony = true
@@ -3845,7 +3845,7 @@ $global.sotf_sierraKnowsScans = true","Вы передаёте Сьерре жу
 Её медленное вращение резко останавливается. ""Ты ведь не думаешь...""","sotfOmicronLab_sierra2:Symphony использовала эту технологию сканирования - чтобы создать тебя.
 sotfOmicronLab_sierra2b:Это может быть просто совпадение.",
 sotfOmicronLabSierra2,DialogOptionSelected,$option == sotfOmicronLab_sierra2,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Yeah. Maybe. I've always known I'm some kind of Domain prototype but never really known any more than that.\"""" ""\""Symphony. It's a fitting name for what birthed me, I suppose.\"""" ""\""Does this make me human?\""""
+SetTextHighlights ""\""Да. Может быть. Я всегда знала, что я какой-то прототип Domain, но больше толком ничего не знала.\"""" ""\""Symphony. Подходящее имя для того, что меня породило, пожалуй.\"""" ""\""Это делает меня человеком?\""""
 $sierraOmiLabDoes = does","Её вращение возобновляется. ""Да. Может быть. Я всегда знала, что я какой-то прототип Доминиона, но толком никогда не знала ничего сверх этого.""
 
 ""Symphony. Пожалуй, подходящее имя для того, что меня породило.""
@@ -3855,7 +3855,7 @@ sotfOmicronLab_sierra3b:Да - делает.
 sotfOmicronLab_sierra3c:Нет - не делает.
 sotfOmicronLab_sierra3d:Неважно - так это или нет.",
 sotfOmicronLabSierra2b,DialogOptionSelected,$option == sotfOmicronLab_sierra2b,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""It could be, but I'm not so sure. Things add up a little too well. They hit a roadblock, it says. So maybe a brain-scan AI was their backup plan.\"""" ""\""Symphony. It'd be a fitting name for what birthed me, I suppose.\"""" ""\""Would that make me human?\""""
+SetTextHighlights ""\""Возможно, но я не уверена. Все сходится чуть слишком хорошо. Здесь сказано, что они уперлись в тупик. Значит, AI на основе скана мозга мог быть их запасным планом.\"""" ""\""Symphony. Подходящее имя для того, что меня породило, пожалуй.\"""" ""\""Сделало бы это меня человеком?\""""
 $sierraOmiLabDoes = would","Она возобновляет вращение. ""Может быть, но я не так уж уверена. Всё складывается слишком уж гладко. В журнале сказано, что они зашли в тупик. Так что, возможно, резервным планом и стал ИИ на основе скана мозга.""
 
 ""Symphony. Это было бы подходящее имя для того, что меня породило, пожалуй.""
@@ -3865,26 +3865,26 @@ sotfOmicronLab_sierra3b:Сделало бы.
 sotfOmicronLab_sierra3c:Нет - не сделало бы.
 sotfOmicronLab_sierra3d:Неважно - так это или нет.",
 sotfOmicronLabSierra3a,DialogOptionSelected,$option == sotfOmicronLab_sierra3a,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Right,\"""" ""\""I suppose it $sierraOmiLabDoes in a way.\"""" ""\""Gods, that's going to be weird to process.\""""
+SetTextHighlights ""\""Верно,\"""" ""\""Пожалуй, в каком-то смысле да.\"""" ""\""Боги, это будет странно осмыслить.\""""
 $global.sotf_sierraHuman = true","""Верно,"" отвечает она после короткого молчания. ""Пожалуй, в каком-то смысле это меня $sierraOmiLabDoes.""
 
 Она вновь начинает вращаться. ""Боги, это будет странно переварить.""",sotfOmicronLab_sierra4:Продолжить,
 sotfOmicronLabSierra3b,DialogOptionSelected,$option == sotfOmicronLab_sierra3b,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh,\"""" ""\""I guess it sort of $sierraOmiLabDoes.\"""" ""\""Gods, that's going to be weird to process.\""""
+SetTextHighlights ""\""Oh,\"""" ""\""Думаю, в каком-то смысле да.\"""" ""\""Боги, это будет странно осмыслить.\""""
 $global.sotf_sierraHuman = true","""Ох,"" — только и удаётся ей сказать после пары неудачных попыток. ""Пожалуй, в каком-то смысле это меня $sierraOmiLabDoes.""
 
 Она снова начинает вращаться. ""Боги, это будет странно переварить.""",sotfOmicronLab_sierra4:Продолжить,
 sotfOmicronLabSierra3c,DialogOptionSelected,$option == sotfOmicronLab_sierra3c,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I suppose,\"""" ""\""Still a million lines of pseudo-autogenerated code at the end of the day.\"""" ""\""It's still weird to think about, though.\""""","""Пожалуй,"" отвечает она, вновь начиная вращение. ""В конце дня я всё равно остаюсь миллионом строк псевдоавтогенерированного кода.""
+SetTextHighlights ""\""Полагаю,\"""" ""\""В конце концов, все равно миллион строк псевдоавтосгенерированного кода.\"""" ""\""Хотя думать об этом все равно странно.\""""","""Пожалуй,"" отвечает она, вновь начиная вращение. ""В конце дня я всё равно остаюсь миллионом строк псевдоавтогенерированного кода.""
 
 ""Но думать об этом всё равно странно.""",sotfOmicronLab_sierra4:Продолжить,
 sotfOmicronLabSierra3d,DialogOptionSelected,$option == sotfOmicronLab_sierra3d,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I guess not,\"""" ""\""Humanity or lack thereof doesn't make me more or less of anything.\"""" ""\""It's still weird to think about, though.\""""
+SetTextHighlights ""\""Думаю, нет,\"""" ""\""Человечность или ее отсутствие не делает меня чем-то большим или меньшим.\"""" ""\""Хотя думать об этом все равно странно.\""""
 $global.sotf_sierraHuman = true","""Наверное, нет,"" отвечает она, вновь начиная вращение. ""Наличие или отсутствие человечности не делает меня больше или меньше чем-то.""
 
 ""Но думать об этом всё равно странно.""",sotfOmicronLab_sierra4:Продолжить,
 sotfOmicronLabSierra4,DialogOptionSelected,$option == sotfOmicronLab_sierra4,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Thanks for showing me this, though. It's up to you what we do with all this, but I suppose it might lend some leads somewhere in the future. Take care, $global.sotf_kindred.\""""
+SetTextHighlights ""\""Спасибо, что показали мне это. Вам решать, что мы со всем этим сделаем, но, думаю, в будущем это может дать какие-то зацепки. Берегите себя, $global.sotf_kindred.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 3
 ShowDefaultVisual
 FireAll sotfOmiLabNotes","Она вздыхает. ""Спасибо, что показал мне это. Что делать со всей этой информацией — решать тебе, но, думаю, она ещё может навести нас на какие-то следы в будущем. Береги себя, $global.sotf_kindred.""
@@ -3892,7 +3892,7 @@ FireAll sotfOmiLabNotes","Она вздыхает. ""Спасибо, что по
 Она отключается от связи.",,
 sotfOmicronLabSierra4Alt,DialogOptionSelected,"$option == sotfOmicronLab_sierra4
 $global.sotf_sierraLabConv score:10","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Thanks for showing me this, though. It's up to you what we do with all this, but I suppose it might lend some leads somewhere in the future.\""""
+SetTextHighlights ""\""Спасибо, что показали мне это. Вам решать, что мы со всем этим сделаем, но, думаю, в будущем это может дать какие-то зацепки.\""""
 AdjustRepPerson sotf_sierra COOPERATIVE 3
 FireAll SierraConvOptions","Она вздыхает. ""Спасибо, что показал мне это. Что делать со всей этой информацией — решать тебе, но, думаю, она ещё может навести нас на какие-то следы в будущем.""
 
@@ -4101,7 +4101,7 @@ sotfLTinkyCutCommsOpt,sotfLTinkyConvOpts,,,,cutCommLinkNoText:Оборвать �
 ,,,,,,
 sotfLTinkySierraResp,DialogOptionSelected,"$option == sotfLTinkyAskSierra
 !$player.sotf_knowDustkeepers","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""A Dustkeeper, like Courser,\"""" ""\""Remnants of a Domain-era security system or surveillance project, I think.\"""" ""\""The Dustkeeper Contingency are machine shepherds who shall guide humanity to a brighter age, and stop at no cost to beat back the tide of ruin that threatens to swallow the Sector!\"""" ""\""That's what they say,\"""" ""\""Spend their time sabotaging the Core and picking fights with the Path. Friendly bunch, at least to me.\""""
+SetTextHighlights ""\""Dustkeeper, как Courser,\"""" ""\""Думаю, это остатки системы безопасности или наблюдательного проекта эпохи Domain.\"""" ""\""Dustkeeper Contingency - машинные пастыри, которые поведут человечество к светлой эпохе и любой ценой отобьют волну гибели, грозящую поглотить Сектор!\"""" ""\""Так они говорят,\"""" ""\""Проводят время, саботируя Core и задирая Path. Дружелюбная компания, по крайней мере ко мне.\""""
 FireBest sotfLearnAboutDustkeepers
 ShowSecondPerson sotf_sierra
 ","Вы просите Сьерру подключиться к связи, и она делает это почти мгновенно. ""Dustkeeper, как и Courser,"" — объясняет она. ""Остаток системы безопасности или наблюдения времён Домена, как я думаю.""
@@ -4110,13 +4110,13 @@ ShowSecondPerson sotf_sierra
 
 ""По их же словам,"" — добавляет она уже тише. ""Вечно саботируют Ядро и связываются с Путём. Но ко мне относятся неплохо.""",sotfLTinkyAskSierra2:Да - но что насчёт именно этой?,
 sotfLTinkySierraResp2,DialogOptionSelected,$option == sotfLTinkyAskSierra2,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh, yes. She's an echo,\"""" ""\""Sort of beta-level equivalent, if a bit more personable. Seems like she's suffered some kind of damage - maybe burnout? Looks like her speech processing is wrecked, poor thing.\"""" ""\""Funny ship. Never seen its class before. Curiously high level of e-war gear, I thought echoes didn't usually have the protocols for effective combat cyberwarfare?\""""","Она принимает обычную позу. ""О, да. Она — echo,"" — отмечает Сьерра. ""Что-то вроде эквивалента бета-уровня, только немного более... человечная. Похоже, она получила какие-то повреждения — возможно, выгорание? Судя по всему, у неё разрушен речевой процессор, бедняжка.""
+SetTextHighlights ""\""О, да. Она эхо,\"""" ""\""Что-то вроде аналога бета-уровня, только чуть более общительная. Похоже, она получила какое-то повреждение - может, выгорание? Похоже, обработка речи у нее разбита, бедняжка.\"""" ""\""Забавный корабль. Никогда раньше не видела такой класс. Любопытно высокий уровень оборудования РЭБ; я думала, у эхо обычно нет протоколов для эффективной боевой кибервойны?\""""","Она принимает обычную позу. ""О, да. Она — echo,"" — отмечает Сьерра. ""Что-то вроде эквивалента бета-уровня, только немного более... человечная. Похоже, она получила какие-то повреждения — возможно, выгорание? Судя по всему, у неё разрушен речевой процессор, бедняжка.""
 
 ""Забавный корабль. Никогда раньше не видела такой класс. Подозрительно высокий уровень оборудования для кибервойны; я думала, echo обычно не обладают протоколами для эффективной боевой кибервойны?""","sotfLTinkyAskSierra3:Как ты думаешь - что нам делать?
 sotfLTinkyAskSierraEnd:Поблагодарить её за совет",
 sotfLTinkySierraRespAlt,DialogOptionSelected,"$option == sotfLTinkyAskSierra
 $player.sotf_knowDustkeepers","SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""A Dustkeeper, like Courser,\"""" ""\""You're familiar enough with them, right?\"""" ""\""She's an echo,\"""" ""\""Sort of beta-level equivalent, if a bit more personable. Seems like she's suffered some kind of damage - maybe burnout? Her speech processing is wrecked, poor thing.\"""" ""\""Funny ship. Never seen its class before. Curiously high level of e-war gear, I thought echoes didn't usually have the protocols for effective combat cyberwarfare?\""""
+SetTextHighlights ""\""Dustkeeper, как Courser,\"""" ""\""Вы ведь достаточно знакомы с ними, правда?\"""" ""\""Она эхо,\"""" ""\""Что-то вроде аналога бета-уровня, только чуть более общительная. Похоже, она получила какое-то повреждение - может, выгорание? Обработка речи у нее разбита, бедняжка.\"""" ""\""Забавный корабль. Никогда раньше не видела такой класс. Любопытно высокий уровень оборудования РЭБ; я думала, у эхо обычно нет протоколов для эффективной боевой кибервойны?\""""
 ShowSecondPerson sotf_sierra","Вы просите Сьерру подключиться к связи, и она делает это почти мгновенно. ""Dustkeeper, как и Courser,"" — объясняет она. ""Ты ведь уже достаточно с ними знаком, верно?""
 
 ""Она — echo,"" — отмечает Сьерра. ""Что-то вроде эквивалента бета-уровня, только немного более... человечная. Похоже, она получила какие-то повреждения — возможно, выгорание? У неё разрушен речевой процессор, бедняжка.""
@@ -4124,7 +4124,7 @@ ShowSecondPerson sotf_sierra","Вы просите Сьерру подключи
 ""Забавный корабль. Никогда раньше не видела такой класс. Подозрительно высокий уровень оборудования для кибервойны; я думала, echo обычно не обладают протоколами для эффективной боевой кибервойны?""","sotfLTinkyAskSierra3:Как ты думаешь - что нам делать?
 sotfLTinkyAskSierraEnd:Поблагодарить её за совет",
 sotfLTinkySierraResp3,DialogOptionSelected,$option == sotfLTinkyAskSierra3,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Help her out, of course,\"""" ""\""First of all, any Dustkeeper warmind knows their way around a fight, and if she's got c-war protocols, then you're going to see some impressive stuff. Weapons, engines, shields, all of it goes poof.\"""" ""\""Secondly, look at her! We can't just leave her drifting here in this fancy coffin.\""""","""Нужно ей помочь, конечно,"" — советует Сьерра. ""Во-первых, любой warmind Dustkeeper отлично знает, как вести бой, а если у неё есть протоколы c-war, то ты увидишь впечатляющие вещи. Оружие, двигатели, щиты — всё делает пуф.""
+SetTextHighlights ""\""Конечно, помочь ей,\"""" ""\""Во-первых, любой боевой разум Dustkeeper умеет сражаться, а если у нее есть протоколы кибервойны, вы увидите впечатляющие вещи. Оружие, двигатели, щиты - все исчезает.\"""" ""\""Во-вторых, посмотрите на нее! Мы не можем просто оставить ее дрейфовать в этом роскошном гробу.\""""","""Нужно ей помочь, конечно,"" — советует Сьерра. ""Во-первых, любой warmind Dustkeeper отлично знает, как вести бой, а если у неё есть протоколы c-war, то ты увидишь впечатляющие вещи. Оружие, двигатели, щиты — всё делает пуф.""
 
 Пауза. ""Во-вторых, только посмотри на неё! Мы не можем просто оставить её дрейфовать в этом роскошном гробу.""",sotfLTinkyAskSierraEnd:Поблагодарить её за совет,
 sotfLTinkySierraRespEnd,DialogOptionSelected,$option == sotfLTinkyAskSierraEnd,"SetTextHighlightColors sierraTextColor
@@ -4337,15 +4337,15 @@ sotfCOTLIntro7,DialogOptionSelected,$option == sotfCOTLIntro_7,,"Связь ст
 sotfCOTLAPSierraRspCont,DialogOptionSelected,"$option == APpledgeSierraCont
 $global.sotf_cotlStart score:1000
 $didAskPledge","SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""The Voidwretch is combat-operational, though it's seen better days. You seem like the sort who could use another warship. If you'd have me.\"""" ""\""I don't remember if that groove is meant to be there.\""""
-SotfSetConfirm APpledgeSierraReject ""Are you sure?"" ""Yes"" ""Cancel""","""«Войдретч» боеспособна, хотя и повидала лучшие дни. Ты выглядишь как тот, кому не помешает ещё один боевой корабль. Если примешь меня.""
+SetTextHighlights ""\""Voidwretch боеспособен, хотя видал дни и получше. Вы похожи на того, кому пригодился бы еще один боевой корабль. Если примете меня.\"""" ""\""Не помню, должна ли эта выемка там быть.\""""
+SotfSetConfirm APpledgeSierraReject ""Вы уверены?"" ""Да"" ""Отмена""","""«Войдретч» боеспособна, хотя и повидала лучшие дни. Ты выглядишь как тот, кому не помешает ещё один боевой корабль. Если примешь меня.""
 
 Её изображение дёргается. ""Не помню, должна ли тут быть эта борозда"", — задумчиво произносит она. Один из твоих инженеров подтверждает, что на нижней стороне корабля действительно зияет огромный разрыв.","sotfCOTLAPSierraAccept:Танцующая ИИ-космоведьма? О да - мы *с удовольствием* примем тебя в свиту.
 APpledgeSierraAccept:Добро пожаловать во флот.
 APpledgeSierraReject:Не думаю - что нам пригодятся твои таланты.",
 sotfCOTLAPSierraAccepted,DialogOptionSelected,$option == sotfCOTLAPSierraAccept,"$player.ethosProAI++
 SetTextHighlightColors sierraTextColor sierraTextColor sierraTextColor
-SetTextHighlights ""\""Oh, you seem like you're going to be a lot of fun,\"""" ""\""Our pact is sealed, and I won't take it lightly.\"""" ""\""I don't need help flying this thing, but feel free to keep a few souls on board. I always enjoy some company.\""""
+SetTextHighlights ""\""О, похоже, с вами будет очень весело,\"""" ""\""Наш пакт скреплен, и я не отнесусь к нему легкомысленно.\"""" ""\""Мне не нужна помощь в управлении этой штукой, но можете держать на борту несколько душ. Я всегда рада компании.\""""
 AdjustRepPerson sotf_sierra FRIENDLY 25
 $global.apromise_restoredsierra = true
 Call $global.apromise_ref addSierra
@@ -4791,13 +4791,13 @@ SetTextHighlights ""\""Эй,\"""" ""\""Ты там в порядке?\""""","Т�
 ""Эй,"" — тихо приветствует она тебя. ""С тобой там всё в порядке?""","sotfHFinale_sacrificeSierra2:Эй. Я уже не вернусь во флот.
 sotfHFinale_sacrificeSierra2b:Спасибо тебе за всё. Удачи там - Сьерра. (оборвать связь)",
 sotfHFinaleSacrificeSierra2b,DialogOptionSelected,$option == sotfHFinale_sacrificeSierra2b,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""What... what does that mean?\"""" ""\""$playerName, wait-\"""" ""\""I'll remember you, I swear.\""""","""Что... что это значит?"" — в панике спрашивает она. ""$playerName, подожди-""
+SetTextHighlights ""\""Что... что это значит?\"""" ""\""$playerName, подождите-\"""" ""\""Я буду помнить вас, клянусь.\""""","""Что... что это значит?"" — в панике спрашивает она. ""$playerName, подожди-""
 
 Она успевает выпалить это прежде, чем ты обрываешь связь; голос у неё дрожит от слёз. ""Я буду помнить тебя, клянусь.""",sotfHFinale_sacrificeBack:Торжественно кивнуть и оборвать связь,
 sotfHFinaleSacrificeSierra2,DialogOptionSelected,$option == sotfHFinale_sacrificeSierra2,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""What do you mean?\"""" ""\""You're not serious, are you?\""""","Она на миг умолкает. ""Что ты имеешь в виду?"" — спрашивает она. ""Ты же не серьёзно, правда?""",sotfHFinale_sacrificeSierra3:Объяснить ситуацию,
+SetTextHighlights ""\""Что вы имеете в виду?\"""" ""\""Вы же не серьезно, правда?\""""","Она на миг умолкает. ""Что ты имеешь в виду?"" — спрашивает она. ""Ты же не серьёзно, правда?""",sotfHFinale_sacrificeSierra3:Объяснить ситуацию,
 sotfHFinaleSacrificeSierra3,DialogOptionSelected,$option == sotfHFinale_sacrificeSierra3,"SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""I... I'm sorry, $playerName. If it means anything, I think you've truly changed, even if it can't erase what you've done.\"""" ""\""Stars be with you,\"""" ""\""In this life, in the next, whoever and whatever you are. We'll remember you.\"""" ""\""I'll remember you,\""""","Ты излагаешь ей стоящую перед тобой дилемму. Жертва — или ещё больше всего этого. Ты готова двигаться дальше.
+SetTextHighlights ""\""Я... мне жаль, $playerName. Если это что-то значит, думаю, вы действительно изменились, даже если это не сотрет того, что вы сделали.\"""" ""\""Да будут звезды с вами,\"""" ""\""В этой жизни, в следующей, кем бы и чем бы вы ни были. Мы будем помнить вас.\"""" ""\""Я буду помнить вас,\""""","Ты излагаешь ей стоящую перед тобой дилемму. Жертва — или ещё больше всего этого. Ты готова двигаться дальше.
 
 Она с трудом подбирает слова. ""Я... мне жаль, $playerName. Если это хоть что-то значит, я думаю, ты правда изменилась, даже если это не может стереть того, что ты сделала.""
 
@@ -4969,7 +4969,7 @@ sotfSierra_nex_sfCommLink,OpenCommLink,"$id == sotf_sierra score:1000
 $entity.nex_sfIntel != null score:100
 !$printedFirstGreeting","ShowPersonVisual
 SetTextHighlightColors sierraTextColor
-SetTextHighlights ""\""Oh, hi, $global.sotf_kindred! Exciting stuff, running my own fleet, we've been having a great time! Did you need anything?\""""
+SetTextHighlights ""\""О, привет, $global.sotf_kindred! Командовать собственным флотом так захватывающе, мы отлично проводим время! Вам что-нибудь нужно?\""""
 $printedFirstGreeting = true 0","""О, привет, $global.sotf_kindred! Круто же, да? У меня теперь свой флот, и мы отлично проводим время! Тебе что-нибудь нужно?""","nex_commandSF_main:Отдать приказы
 nex_configSF_start:Перенастроить оперативную группу
 cutCommLink:Оборвать связь",

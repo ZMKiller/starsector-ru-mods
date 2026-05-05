@@ -1,11 +1,11 @@
 id,trigger,conditions,script,text,options,notes
 # SC start blurb,,,,,,
 TTSC_nex_NGCPickStartingShips,ExerelinNGCStep3,"$playerFaction == TTSC
-!$TTSC_ChangeMind","AddText ""Special Circumstances membership is by invitation only. This exclusivity combined with the often morally ambiguous or outright unsavory tactics they sometimes employ leads to a certain amount of negative feeling among the average Corvus citizen.""
+!$TTSC_ChangeMind","AddText ""Членство в Special Circumstances возможно только по приглашению. Эта закрытость, вместе с часто морально неоднозначными или откровенно сомнительными методами, которые они иногда применяют, вызывает у обычных граждан Корвуса немало неприязни.""
 
-AddText ""Interventions by SC usually take the form of covert operations (military or otherwise) designed to strengthen or weaken factions within less advanced civilizations. Special Circumstances does not always play nice like the rest of the corporation. Their activities have been known to include assassinations, smuggling of illicit goods and weapons, manipulation and blackmail.""
+AddText ""Вмешательства SC обычно принимают форму тайных операций, военных или иных, призванных усилить или ослабить фракции внутри менее развитых цивилизаций. Special Circumstances не всегда играет так же вежливо, как остальная корпорация. В их деятельности были замечены убийства, контрабанда незаконных товаров и оружия, манипуляции и шантаж.""
 
-AddText ""All SC ships are modified to extend the range, turn rate and damage of beam weapons. The hullmod from Commissioned Crews grants access to subroutines that improve ship flux venting and dissipation.""
+AddText ""Все корабли SC модифицированы для увеличения дальности, скорости поворота и урона лучевого оружия. Модификация корпуса от Commissioned Crews открывает доступ к подпрограммам, улучшающим сброс и рассеивание потока корабля.""
 $TTSC_ChangeMind = true
 ",,,
 ,,,,,,
@@ -61,7 +61,7 @@ ttscmtwoOfferOptionBar,ttscmtwo_optionBar,,,,ttscmtwo_startBar:Узнать - ч
 ttscmtwoOfferTextBar,DialogOptionSelected,$option == ttscmtwo_startBar,"$missionId = ttscmtwo
 SetTextHighlights $ttscmtwo_quantity $ttscmtwo_dist $ttscmtwo_reward
 ShowRemainingCapacity $ttscmtwo_commodityId
-Call $ttscmtwo_ref showMap ""Destination: $ttscmtwo_marketName""","Когда вы подходите, $ttscmtwo_manOrWoman бросает текущую «жертву» прямо посреди презентации и переключает $hisOrHer внимание на вас.
+Call $ttscmtwo_ref showMap ""Пункт назначения: $ttscmtwo_marketName""","Когда вы подходите, $ttscmtwo_manOrWoman бросает текущую «жертву» прямо посреди презентации и переключает $hisOrHer внимание на вас.
 
 ""Эй, капитан, да-да, именно вы, вы же видите честное лицо, когда встречаете его!"" $HeOrShe криво улыбается. ""Вот, взгляните,"" - $heOrShe сует вам в руки мерцающий экран датапада: грузовой манифест, в основном с недорогими стройматериалами на складе в совсем другой системе.
 
@@ -70,7 +70,7 @@ contact_declineBarNoContinue:Отказаться",
 ttscmtwoOfferTextContact,DialogOptionSelected,$option == ttscmtwo_start,"$missionId = ttscmtwo
 SetTextHighlights $ttscmtwo_quantity $ttscmtwo_dist $ttscmtwo_reward
 ShowRemainingCapacity $ttscmtwo_commodityId
-Call $ttscmtwo_ref showMap ""Destination: $ttscmtwo_marketName""","Мне нужно перевезти $ttscmtwo_quantity единиц $ttscmtwo_commodityName в $ttscmtwo_marketName, это в $ttscmtwo_dist световых годах отсюда. Ваша скрытность критична: местные власти не должны узнать о поставке. По факту доставки вы получите $ttscmtwo_reward кредитов.","contact_accept:Принять
+Call $ttscmtwo_ref showMap ""Пункт назначения: $ttscmtwo_marketName""","Мне нужно перевезти $ttscmtwo_quantity единиц $ttscmtwo_commodityName в $ttscmtwo_marketName, это в $ttscmtwo_dist световых годах отсюда. Ваша скрытность критична: местные власти не должны узнать о поставке. По факту доставки вы получите $ttscmtwo_reward кредитов.","contact_accept:Принять
 contact_decline:Отказаться",
 ttscmtwoPostAccept,ContactPostAccept,$missionId == ttscmtwo,AddCommodity $ttscmtwo_commodityId $ttscmtwo_quantity,,,
 # arrived at destination,,,,,,
@@ -88,7 +88,7 @@ $tradeMode != SNEAK
 Call $market.ttscmtwo_ref updateData
 $ttscmtwo_playerHasEnough","$ttscmtwo_noCompleteShown = true 0
 SetTextHighlightColors bad bad
-Highlight ""coming in with your transponder turned off"" ""without attracting the attention of patrols""
+Highlight ""с выключенным транспондером"" ""без привлечения внимания патрулей""
 FireBest MarketPostDock",Доставка $ttscmtwo_commodityName требует входа с выключенным транспондером и без привлечения внимания патрулей.,,
 ttscmtwo_notEnough,MarketPostDock,"$market.ttscmtwo_target score:1000
 !$ttscmtwo_noCompleteShown

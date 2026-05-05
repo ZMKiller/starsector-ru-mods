@@ -13,7 +13,7 @@ tmeIntro_BarText2_2,DialogOptionSelected,$option == tmeIntro_barText2_2,,"Она
 tmeIntro_barReject:Возможно - в другой раз",increase contact favorability
 tmeIntro_BarAccept,DialogOptionSelected,$option == tmeIntro_barAccept,"$missionId = tmeIntro
 SetTextHighlights $tmeIntro_planetName $tmeIntro_systemName $tmeIntro_reward
-Call $tmeIntro_ref showMap ""Target: $tmeIntro_systemName""","Она наклоняется к вам и показывает Tri-Pad. ""Я хочу, чтобы вы сопроводили меня на $tmeIntro_planetName в системе $tmeIntro_systemName. Я заплачу $tmeIntro_reward сразу после посадки.""","contact_acceptBarNoText:Звучит несложно
+Call $tmeIntro_ref showMap ""Цель: $tmeIntro_systemName""","Она наклоняется к вам и показывает Tri-Pad. ""Я хочу, чтобы вы сопроводили меня на $tmeIntro_planetName в системе $tmeIntro_systemName. Я заплачу $tmeIntro_reward сразу после посадки.""","contact_acceptBarNoText:Звучит несложно
 tmeIntro_barReject:Если подумать - давайте в другой раз",
 tmeIntro_BarDeciline,DialogOptionSelected,$option == tmeIntro_barDecline,Call $global.tmeIntro_ref rejectContact,"""Понимаю, капитан; если передумаете, просто свяжитесь со мной здесь,"" - говорит она и снова смотрит в свой Tri-Pad.",contact_declineBarNoContinue:Уйти,
 tmeIntro_HegeFleetMet,BeginFleetEncounter,"$tmeIntro_hegeFleet score:1000
