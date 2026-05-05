@@ -1,0 +1,55 @@
+{
+  "id": "CFT_heavywburst",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/CFT/weapons/CFT_heavywburst_turret_base.png",
+  "turretGlowSprite": "graphics/CFT/weapons/CFT_heavywburst_turret_glow.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_heavywburst_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/CFT/weapons/CFT_heavywburst_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    125,
+    60,
+    125
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    22,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    28,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    0,
+    0,
+    155,
+    255
+  ],
+  "coreColor": [
+    201,
+    116,
+    16,
+    100
+  ],
+  "width": 28,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 128,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "heavy_burst_laser_fire"
+}

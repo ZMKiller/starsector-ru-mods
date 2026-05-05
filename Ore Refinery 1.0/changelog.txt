@@ -1,0 +1,80 @@
+v1.0 -Not Compatible with game version .97a saves
+	-Updated code to work with version .98a of Starsector
+
+v0.9.1 -Save game compatible*
+	-Changed the commodity listing for Fuel Cannisters from fuel to a custom designation - Ty balordezul for initially reporting the issue
+		*Though save compatible, any Canisters in your inventory will be effected by this change as market prices are based on demand. The canister is still worth 2500 but 
+		markets will buy it for less due to it now being a low demand custom commodity so sell any in your cargo before updating -I received multiple private messages to change it 
+		as the original version disrupted fuel procurement missions and market listings. 
+
+v0.9 -Save game compatible
+	-Added an Asteroid Icon for the mod to the LunaLib & TriOS menus 
+	-Added a missing sound ID from the Famine Wafer commodity when it becomes cargo - Fixing an oopsie from the previous update
+	-Added a new ability - Fuel compression that compresses 94 fuel and 1 Heavy Machinery to a Compressed Fuel Cannister worth 2500 credits - TY Nanoelite001 for the idea
+	-Added a new custom commodity, Compressed Fuel Cannister for the new toggle ability - Ty Tesser for the initial sprite which I used as a base for the kitbashed icon
+	-Doubled the default amount of ore compressed from 185 to 370, uses 2 Heavy Machinery per cycle with an output of 2 Platinum - Ty mkire for making the point that it could take forever to convert
+		-To revert to the previous ratio, navigate to data\config\settings.json with notepad++, navigate to "MF_OreConversionRate": revert from 20 to 10 and "MF_OreCost": from 370 to 185
+	-Changed the mod description by changing the phrase "mined resources" to "resource commodities" - For consistency sake since Food and Fuel are not mined
+	-Changed the ore conversion graphic on the mod page to reflect the change
+	-Added a new mod graphic for Fuel on the mod page to detail the conversion ratio
+	-Added the new fuel toggle icon and the Compressed Fuel Cannister sprite to the mod page - Take a peek if interested
+	-Added a note to the mod page that the mod can be installed during a saved game but cannot be uninstalled during due to the custom commodities
+
+v0.8 -Save game compatible
+	-Added a new ability, Food Compression, which compresses food into a new commodity Famine Wafer Crate - Lore wise, makes sense with the constant wars and invasions - TY GoldenGlory for the idea
+	-Updated the forum OP with the new icons and food values added to the conversion chart
+	-Note: with food being an even number and machinery being an odd number and having to use round numbers for food consumption, I have the conversion round down resulting in a slight loss (see chart) 
+		-I set it to a 10 credit loss per conversion to prevent exploit but as a whole it is a gain to not have to dump food into space
+		-To instead round up for a 20 credit gain per conversion you can open data\config\settings.json with notepad++, or w/e java editor you prefer, navigate to "MF_FOODCost": 93, and change it to 92 
+
+v0.7.1 -Save game compatible with v0.7
+	-Updated to 0.97a	
+
+V0.7	-Save game compatible with v0.65
+	-Darkened the icon for biophotovoltaics and gave it some depth - Player request that it was too shiny and out of place compared to the other icons
+	-Added a direct download link to the Version file that mod managers can use to auto-update - Ty Timid for showing me how
+	-Added a direct download link to the forum and discord d/l links that bypasses the google drive preview - one less step to get to the good stuff :)
+	-Adjusted the code to work with 0.96a
+	
+v0.65
+	-Added version checker support
+	-Replaced the cargo icons for Palladium and Compressed Volatile - TY Yunru for the donation
+	-Replaced the cargo icons for Biophotovoltaics and Platinum - Bashed newer hi-rez versions
+	
+v0.6
+	-Added compatibility with the latest version of Starsector
+	
+v0.55
+	-Added a new toggle ability that condenses Volatiles into a new custom commodity, Compressed Volatiles Canister or CompV for short
+	-Added new altered versions of royalty free icons for above from Vectorstock.com
+	-Tidied up all the tool tips and floating text to now show all commodities in proper lower case
+	
+v0.5
+	-Changed some calculations in the files so that the custom commodities show up correctly on the market tool tip -TY Jaghaimo for pointing me in the correct direction!
+
+v0.4
+	-As requested, I finally figured out how to have more than one toggle ability per mod - cheer! -mkire ask and ye shall receive! :)
+	-Created two new commodities Palladium and Biophotovoltaics
+	-Added new royalty free icons for above from Vectorstock.com
+	-Scripted a new toggle ability for Rare Ore that converts it into Palladium
+	-Scripted a new toggle ability for Organics that converts them into Biophotovoltaics
+	-Changed the commodity valuation of Platinum to be more in line with ore -Ty slowpersun for pointing that out
+
+v0.3
+	-Cleaned up the code, deleting several references and graphics for compressing other commodities.
+	-I tired oh I tried to get more than one toggle ability in the same mod but this is my release version and I am happy with it. :)
+
+v0.2 
+	-Added an all new conversion chart to the forum
+	-Adjusted the ratios in the formula to increase the compression for a base savings of 186 to 1 	
+	-Increased the price of Platinum to 2000 and set it's demand closer to the combination of ore and heavy machinery
+
+v0.1 
+	-Ready for test release
+	-Separated the ability from the mod Junk Yard Dogs to form it's own utility mod.	
+	-Ore forged to Platinum a success!
+	-Rare Ore turned to Palladium a failure :( Keeping the resource and it's icon in the mod for future use.
+	-Added Platinum as a resource
+	-Added Palladium as a resource
+	-Added royalty free icons for above from Vectorstock.com
+	-Obtained permission from Techpriest to modify code from Supply Forge

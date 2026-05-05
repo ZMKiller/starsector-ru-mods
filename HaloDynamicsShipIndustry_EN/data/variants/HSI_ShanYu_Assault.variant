@@ -1,0 +1,54 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 50,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "HSI_ShanYu",
+    "hullMods": [
+        "missile_autoloader",
+        "HSI_EnhancedShield",
+        "targetingunit",
+        "HSI_ProtocalAssault"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_ShanYu_Assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "HWI_ionpulser"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "HWI_Thunder_S",
+                "WS0012": "HWI_Thunder_S",
+                "WS0013": "HWI_Thunder_S",
+                "WS0014": "HWI_Thunder_S",
+                "WS0015": "HWI_Thunder_S",
+                "WS0016": "HWI_Thunder_S"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "HWI_phasebeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "HWI_heavyblaster"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "HWI_ionpulser",
+                "WS0003": "HWI_ionpulser"
+            }
+        }
+    ],
+    "wings": ["sarissa_wing"]
+}

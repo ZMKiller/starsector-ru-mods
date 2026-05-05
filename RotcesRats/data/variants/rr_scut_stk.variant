@@ -1,0 +1,59 @@
+{
+  "variantId": "rr_scut_stk",
+  "hullId": "rr_scut",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rr_c_typhoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "arbalest",
+        "WS0006": "lightdualac",
+        "WS0007": "lightdualac",
+        "WS0008": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavymg",
+        "WS0009": "lightmg",
+        "WS0010": "lightmg",
+        "WS0011": "vulcan",
+        "WS0012": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

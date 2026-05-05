@@ -1,0 +1,88 @@
+{
+  "hullName": "Viridula",
+  "hullId": "HIVER_viridula",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/HIVER_viridula.png",
+  "style": "HIGH_TECH",
+  "height": 104,
+  "width": 89,
+  "center": [44.5, 55],
+  "collisionRadius": 68.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 67,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull",
+    "repair_gantry"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [9.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-42, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": 0,
+      "locations": [23, 11]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": 0,
+      "locations": [23, -11]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-53.5, -6],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-53, 6],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    51.5, -14,
+    26, -47.5,
+    5.5, -37.5,
+    -16, -53.5,
+    -34, -40,
+    -62, -8,
+    -62, 8,
+    -34, 40,
+    -16, 53.5,
+    5.5, 37.5,
+    26, 47.5,
+    51.5, 14
+  ]
+}

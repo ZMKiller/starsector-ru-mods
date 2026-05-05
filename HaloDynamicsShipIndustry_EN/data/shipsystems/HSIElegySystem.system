@@ -1,0 +1,25 @@
+{
+	"id":"HSI_ElegySystem",
+	"type":"STAT_MOD",
+	#"aiType":"CUSTOM",
+	#"aiScript":"data.ai.HSIPOZAI",
+	"aiType":"ENTROPY_AMPLIFIER",
+	
+	"runScriptWhileIdle":true,
+	"canUseWhileRightClickSystemOn":true,
+	
+	"statsScript":"data.shipsystems.scripts.HSIElegyShipSystem",
+	
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_entropy",
+	"loopSound":"system_entropy_loop",
+	"deactivateSound":"system_entropy_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}
+
+
+
+

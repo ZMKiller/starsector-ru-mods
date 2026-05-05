@@ -1,0 +1,50 @@
+{
+    "displayName": "Saturation",
+    "fluxCapacitors": 4,
+    "fluxVents": 30,
+    "hullId": "SCY_khalkotauroi",
+    "hullMods": ["pointdefenseai"],
+    "permaMods": [],
+    "quality": 0.8,
+    "variantId": "SCY_khalkotauroi_saturation",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"MAIN": "SCY_khalkotauroiMain"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_minigun2",
+                "WS0002": "SCY_minigun2",
+                "WS0003": "SCY_minigun2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_minigun1",
+                "WS0005": "SCY_minigun1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "SCY_minigun1",
+                "WS0007": "SCY_minigun1"
+            }
+        },
+    ],
+        "modules": [
+                {"E1_MULTI": "SCY_khalkPA_standard"},
+                {"E2_MULTI": "SCY_khalkPB_standard"},
+                {"E3_MULTI": "SCY_khalkPC_standard"},
+                {"E4_MULTI": "SCY_khalkPD_standard"},
+                {"E5_MULTI": "SCY_khalkPE_standard"},
+                {"E6_MULTI": "SCY_khalkPF_standard"},
+        ],
+}

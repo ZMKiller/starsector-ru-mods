@@ -1,0 +1,57 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 19,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "SCY_khalkotauroi",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_khalkotauroi_Close_Support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAIN": "SCY_khalkotauroiMain",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_kacc2",
+                "WS0002": "SCY_kacc2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_intercept",
+                "WS0004": "SCY_intercept",
+                "WS0007": "vulcan",
+                "WS0006": "vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"E1_MULTI": "SCY_khalkPA_Close_Support"},
+        {"E2_MULTI": "SCY_khalkPB_Close_Support"},
+        {"E3_MULTI": "SCY_khalkPC_Close_Support"},
+        {"E4_MULTI": "SCY_khalkPD_Close_Support"},
+        {"E5_MULTI": "SCY_khalkPE_Close_Support"},
+        {"E6_MULTI": "SCY_khalkPF_Close_Support"},
+    ],
+}

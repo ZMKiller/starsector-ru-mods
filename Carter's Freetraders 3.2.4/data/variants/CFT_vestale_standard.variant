@@ -1,0 +1,43 @@
+{
+  "variantId": "CFT_vestale_standard",
+  "hullId": "CFT_vestale",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "reinforcedhull",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_wavepulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "CFT_falconet"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_volleyrocket",
+        "WS0004": "CFT_volleyrocket"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_mizzen_standard_wing"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 0,
+    "fluxVents": 17,
+    "goalVariant": false,
+    "hullId": "SCY_argus",
+    "hullMods": ["pointdefenseai"],
+    "permaMods": [],
+    "quality": 0.25,
+    "variantId": "SCY_argus_escort",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"VML": "SCY_smallMrm"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_minigun1",
+                "WS0003": "SCY_minigun1",
+                "WS0004": "SCY_minigun1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "SCY_hack"}
+        }
+    ],
+    "wings": [
+        "SCY_akhlys_wing",
+        "SCY_akhlys_wing"
+    ]
+}

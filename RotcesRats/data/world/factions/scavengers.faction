@@ -1,0 +1,15 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+		"rr_onquest_elt":0.5, # no... we shouldn't have this
+		"rr_onquest_std":1, # hmmm... that's a bit more like it
+		"rr_onquest_scv":2.5, # Yes! There we go! That's Scavenger Gaming!
+	},
+
+    "knownShips":{
+        "hulls":[
+            "rr_onquest",
+        ],
+    },
+
+},

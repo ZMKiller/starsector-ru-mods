@@ -1,0 +1,55 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 17,
+    "fluxVents": 17,
+    "goalVariant": true,
+    "hullId": "SCY_corocottaA",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_corocottaA_Close_Support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_orion",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "gravitonbeam",
+                "WS0003": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_laser2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_intercept",
+                "WS0006": "SCY_minigun1",
+                "WS0007": "SCY_minigun1",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"WW1_MULTI": "SCY_corAF_Close_Support"},
+        {"WW2_MULTI": "SCY_corAFL_Close_Support"},
+        {"WW3_MULTI": "SCY_corAFR_Close_Support"},
+        {"WW4_MULTI": "SCY_corAL_Close_Support"},
+        {"WW5_MULTI": "SCY_corAR_Close_Support"},
+    ],
+}

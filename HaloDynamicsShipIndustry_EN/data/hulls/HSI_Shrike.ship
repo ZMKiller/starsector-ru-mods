@@ -1,0 +1,205 @@
+{
+  "hullName": "Shrike (HSI)",
+  "hullId": "HSI_Shrike",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HSI_shrike.png",
+  "style": "HSI_TECH",
+  "height": 151,
+  "width": 102,
+  "center": [51, 75.5],
+  "collisionRadius": 111.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 86.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo"
+  ],
+  "builtInWeapons": {
+    "WS00A": "HSI_LED"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 166,
+      "angle": 59,
+      "locations": [41.5, 21.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [59.5, -24]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 34,
+      "angle": 0,
+      "locations": [30.5, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 166,
+      "angle": 84.5,
+      "locations": [11, 28]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 166,
+      "angle": -84.5,
+      "locations": [11, -28]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 166,
+      "angle": 119.5,
+      "locations": [-37, 32]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 166,
+      "angle": -119.5,
+      "locations": [-37, -32]
+    },
+    {
+      "id": "WS00A",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 6,
+      "angle": 0,
+      "locations": [-9, -2]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-72, 27],
+      "length": 42,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-72, -27],
+      "length": 42,
+      "width": 19,
+      "angle": -180,
+      "contrailSize": 19,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-73, 27],
+      "length": 69,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-73, -27],
+      "length": 69,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-57, 46],
+      "length": 32.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-57, -46],
+      "length": 32.5,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-76, 27.5],
+      "length": 5.5,
+      "width": 52,
+      "angle": 180,
+      "contrailSize": 52,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-76, -27.5],
+      "length": 5.5,
+      "width": 52,
+      "angle": -180,
+      "contrailSize": 52,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    9.5, -40.5,
+    -9, -40.5,
+    -17.5, -30,
+    -25.5, -30.5,
+    -27.5, -48.5,
+    -32.5, -51,
+    -54.5, -51,
+    -57, -42.5,
+    -64.5, -41.5,
+    -64, -37,
+    -70.5, -34.5,
+    -70.5, -22.5,
+    -65.5, -16.5,
+    -57.5, -16.5,
+    -57, -12.5,
+    -76, -6.5,
+    -76, 6.5,
+    -57, 12.5,
+    -57.5, 16.5,
+    -65.5, 16.5,
+    -70.5, 22.5,
+    -70.5, 34.5,
+    -64, 37,
+    -64.5, 41.5,
+    -57, 42.5,
+    -54.5, 51,
+    -32.5, 51,
+    -27.5, 48.5,
+    -26, 32.5,
+    -15.5, 32,
+    -9, 40.5,
+    30.5, 41,
+    65, 29,
+    76, 17,
+    55.5, 16.5,
+    48, 6,
+    38.5, 5,
+    38.5, -5.5,
+    35.5, -7.5,
+    35.5, -13,
+    63.5, -14.5,
+    62, -36.5,
+    19.5, -39
+  ]
+}

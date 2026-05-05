@@ -1,0 +1,18 @@
+{
+	"id":"HSI_DeployCitadel",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.ai.HSICitadelDeployAI",
+	
+	"statsScript":"data.shipsystems.scripts.HSICitadelDeploy",
+	"runScriptWhilePaused":false, # only for the player's ship
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	"blockActionsWhileChargingDown":false,
+	
+	"canNotCauseOverload":true,
+		
+	"useSound":"system_phase_cloak_activate",
+	#"deactivateSound":"system_phase_cloak_deactivate",
+	"deactivateSound":"system_phase_cloak_deactivate",
+	"outOfUsesSound":"system_phase_cloak_collision",
+}

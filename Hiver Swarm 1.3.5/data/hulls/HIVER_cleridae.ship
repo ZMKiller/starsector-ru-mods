@@ -1,0 +1,125 @@
+{
+  "hullName": "Cleridae",
+  "hullId": "HIVER_cleridae",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HIVER_cleridae.png",
+  "style": "HIGH_TECH",
+  "height": 171,
+  "width": 68,
+  "center": [34.5, 79],
+  "collisionRadius": 114,
+  "shieldCenter": [0, -0.5],
+  "shieldRadius": 110.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "tow_cable",
+    "drive_field_stabilizer",
+    "HIVER_biohull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [49.5, 0.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [70, 0.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [38.5, -12.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [37.5, 13.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-32.5, 20]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-32.5, -21]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 180,
+      "locations": [-50, 0.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": 0,
+      "locations": [-1, 0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-76, 0.5],
+      "length": 37,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-72.5, 20.5],
+      "length": 19.197601,
+      "width": 5.814503,
+      "angle": 159.5,
+      "contrailSize": 5.814503,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-72.5, -20],
+      "length": 19.197601,
+      "width": 5.814503,
+      "angle": -159.5,
+      "contrailSize": 5.814503,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    97.5, 42.5,
+    -88.5, 34.5,
+    -86, -39.5,
+    97.5, -33
+  ]
+}

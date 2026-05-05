@@ -1,0 +1,38 @@
+{
+  "id": "JYD_al",
+  "specClass": "projectile",
+  "projectileSpecId": "al_shot",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/weapons/JYD_al_turret.png",
+  "turretGlowSprite":"graphics/weapons/JYD_al_glow.png", 
+  "hardpointSprite": "graphics/weapons/JYD_al_hardpoint.png",
+  "hardpointGlowSprite":"graphics/weapons/JYD_al_glow.png",  
+  "glowColor": [
+    192,
+    192,
+    192,
+    255
+  ],
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    -9,
+    1
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    -1.5,
+    1
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW",
+  "fireSoundTwo": "atropos_fire"
+}

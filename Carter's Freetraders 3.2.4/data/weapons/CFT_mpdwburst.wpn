@@ -1,0 +1,61 @@
+{
+  "id": "CFT_mpdwburst",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/CFT/weapons/CFT_mpdwburst_turret_base.png",
+  "turretGlowSprite": "graphics/CFT/weapons/CFT_mpdwburst_turret_glow.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_mpdwburst_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/CFT/weapons/CFT_mpdwburst_hardpoint_glow.png",
+  "glowColor": [
+    190,
+    194,
+    205,
+    125
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    20.5,
+    5,
+    20.5,
+    -5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    27.5,
+    5.5,
+    27.5,
+    -5.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "fringeColor": [
+    0,
+    0,
+    155,
+    255
+  ],
+  "coreColor": [
+    255,
+    125,
+    60,
+    125
+  ],
+  "width": 17,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 128,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "burst_pd_fire"
+}

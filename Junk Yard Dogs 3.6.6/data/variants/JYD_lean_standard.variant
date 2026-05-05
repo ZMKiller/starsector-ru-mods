@@ -1,0 +1,41 @@
+{
+  "variantId": "JYD_lean_standard",
+  "hullId": "JYD_lean",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 19,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "JYD_mp",
+        "WS0002": "JYD_mp",
+        "WS0004": "JYD_srm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "JYD_lrm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "JYD_flea_wing",
+    "JYD_mite_wing"
+  ]
+}

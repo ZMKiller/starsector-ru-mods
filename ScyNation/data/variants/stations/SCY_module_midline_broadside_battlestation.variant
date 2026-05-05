@@ -1,0 +1,76 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "module_midline_broadside",
+    "hullMods": [
+        "heavyarmor",
+        #"SCY_reactiveArmor",
+        "reinforcedhull",
+        "hardenedshieldemitter",
+        "magazines",
+        "fluxcoil",
+        "fluxdistributor",
+        "stabilizedshieldemitter",
+        "fluxbreakers",
+        "autorepair",
+        "turretgyros",
+        "armoredweapons"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_module_midline_broadside_battlestation",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "SCY_minigun3",
+                "WS 008": "SCY_minigun3"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "SCY_kacc3",
+                "WS 004": "SCY_kacc3",
+                "WS 007": "SCY_kacc3"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "SCY_ricochet",
+                "WS 003": "SCY_ricochet",
+                "WS 005": "SCY_ricochet",
+                "WS 006": "SCY_ricochet"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "SCY_teb",
+                "WS 011": "SCY_teb",
+                "WS 012": "SCY_teb",
+                "WS 013": "SCY_teb",
+                "WS 014": "SCY_teb",
+                "WS 015": "SCY_teb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 016": "SCY_intercept",
+                "WS 017": "SCY_intercept",
+                "WS 018": "SCY_intercept",
+                "WS 019": "SCY_intercept",
+                "WS 020": "SCY_intercept",
+                "WS 021": "SCY_intercept",
+                "WS 022": "SCY_intercept"
+            }
+        }
+    ]
+}

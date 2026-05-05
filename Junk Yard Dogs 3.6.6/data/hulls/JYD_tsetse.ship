@@ -1,0 +1,99 @@
+{
+  "hullName": "Tsetse",
+  "hullId": "JYD_tsetse",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/JYD_tsetse.png",
+  "style": "LOW_TECH",
+  "height": 36,
+  "width": 44,
+  "center": [22, 18],
+  "collisionRadius": 30,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 28.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "armoredweapons"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-14, 14.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-14, -14.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [14, 14]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [14, -14]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [0, 18]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [0, -18]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16.5, 3.5],
+      "length": 15,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-16.5, -3.5],
+      "length": 15,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    19, -7,
+    17.5, -23,
+    -18.5, -22,
+    -18.5, 22,
+    17.5, 23,
+    19, 7
+  ]
+}

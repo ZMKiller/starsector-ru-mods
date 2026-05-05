@@ -1,0 +1,25 @@
+{
+	"id":"ora_pdS",
+	"specClass":"projectile",
+	"onHitEffect":"data.scripts.weapons.ORA_pdEMP_effect",
+            #"spawnType":"BALLISTIC_AS_BEAM",
+            #"collisionClass":"RAY",
+            #"collisionClassByFighter":"RAY_FIGHTER",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+            #"length":20.0,
+            #"width":10.0,
+	"length":20.0,
+	"width":20.0,
+	"fadeTime":0.05,
+	"fringeColor":[25,100,155,150],
+	"coreColor":[180,200,255,255],
+	"glowColor":[5,20,30,100],
+	"glowRadius":0,
+	"hitGlowRadius":40,	
+            #"textureType":"WEAVE",  # only needed for BEAM spawnType
+	"textureScrollSpeed":1.0,
+	"pixelsPerTexel":2.0,
+	"bulletSprite":"graphics/ORA/missiles/ora_pdS.png"
+}

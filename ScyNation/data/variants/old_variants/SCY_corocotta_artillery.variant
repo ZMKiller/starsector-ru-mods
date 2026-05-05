@@ -1,0 +1,45 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
+    "hullId": "SCY_corocotta",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_corocotta_artillery",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_orion"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_hemor2",
+                "WS0004": "SCY_hemor1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_kacc2",
+                "WS0005": "SCY_kacc1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "vulcan",
+                "WS0007": "vulcan",
+                "WS0008": "vulcan",
+                "WS0009": "vulcan"
+            }
+        }
+    ]
+}

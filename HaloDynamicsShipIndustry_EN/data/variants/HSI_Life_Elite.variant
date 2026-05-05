@@ -1,0 +1,63 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 50,
+    "fluxVents": 50,
+    "hullId": "HSI_Life",
+    "hullMods": [
+        "HSI_HardenShield",
+        "armoredweapons",
+        "autorepair",
+        "converted_hangar",
+        "fluxbreakers",
+        "turretgyros",
+        "HSI_ProtocalSuppression"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Life_Elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "HWI_plasma",
+                "WS 001": "HWI_plasma",
+                "WS 002": "HWI_plasma",
+                "WS 003": "HWI_plasma",
+                "WS 004": "HWI_plasma"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "HWI_heavyneedler",
+                "WS 008": "HWI_heavyneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 010": "HWI_ionpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "HWI_Duality",
+                "WS 006": "HWI_Duality",
+                "WS 009": "HWI_Duality",
+                "WS 011": "HWI_TurbocannonSPD",
+                "WS 012": "HWI_TurbocannonSPD",
+                "WS 013": "HWI_TurbocannonSPD",
+                "WS 014": "HWI_TurbocannonSPD",
+                "WS 021": "HWI_TurbocannonSPD",
+                "WS 023": "HWI_TurbocannonSPD"
+            }
+        }
+    ],
+    "wings": [
+        "mining_drone_wing",
+        "mining_drone_wing"
+    ]
+}

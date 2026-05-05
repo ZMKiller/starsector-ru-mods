@@ -1,0 +1,49 @@
+{
+  "hullName": "Skiff",
+  "hullId": "CFT_skiff",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_skiff.png",
+  "style": "MIDLINE",
+  "height": 31,
+  "width": 26,
+  "center": [13, 15.5],
+  "collisionRadius": 23,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 20,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 0,
+      "locations": [10, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-13, 6],
+      "length": 10,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "LOW_TECH_FIGHTER"
+    },
+    {
+      "location": [-13.5, -6],
+      "length": 10,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "LOW_TECH_FIGHTER"
+    }
+  ],
+  "bounds": [
+    15, 11.5,
+    -16.5, 15,
+    -16.5, -15,
+    15, -11.5
+  ]
+}

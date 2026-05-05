@@ -1,0 +1,173 @@
+{
+  "hullName": "Stalwart",
+  "hullId": "JYD_stalwart",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/JYD_stalwart.png",
+  "style": "LOW_TECH",
+  "height": 193,
+  "width": 224,
+  "center": [112, 96.5],
+  "collisionRadius": 140.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 136,
+  "viewOffset": 0,
+  "builtInMods": [
+    "surveying_equipment",
+    "hiressensors",
+    "repair_gantry"
+  ],
+  "builtInWings": [
+    "JYD_Termite_wing",
+    "JYD_Mosquito_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [57.5, -45]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [38.5, -70]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [56.5, 45]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [38.5, 70]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-11, 103]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-11, -102]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [7.5, 83.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [7.5, -83.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 180,
+      "locations": [-58.5, -0.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -42, 28,
+        -42, 15.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -41.5, -14,
+        -42, -26.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-70.5, 77],
+      "length": 45,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-70.5, 65.5],
+      "length": 45,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-69.5, -78.5],
+      "length": 45,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-70, -66],
+      "length": 45,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    75.5, 102,
+    -96.5, 122,
+    -91.5, -121,
+    21.5, -113,
+    101.5, -40.5,
+    62.5, 1,
+    93.5, 35.5
+  ]
+}

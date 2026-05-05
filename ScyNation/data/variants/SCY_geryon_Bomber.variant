@@ -1,0 +1,42 @@
+{
+    "displayName": "Bomber",
+    "fluxCapacitors": 14,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "SCY_geryon",
+    "hullMods": [
+        "escort_package",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_geryon_Bomber",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_kacc2",
+                "WS0006": "SCY_kacc1",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "phasecl",
+                "WS0002": "phasecl",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "vulcan",
+                "WS0005": "vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

@@ -1,0 +1,231 @@
+{
+  "hullName": "Industrious",
+  "hullId": "JYD_industrious",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/JYD_industrious.png",
+  "style": "LOW_TECH",
+  "height": 340,
+  "width": 295,
+  "center": [176.5, 160],
+  "collisionRadius": 237.5,
+  "shieldCenter": [-2.5, -0],
+  "shieldRadius": 222.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "repair_gantry",
+    "surveying_equipment",
+    "hiressensors",
+    "tow_cable"
+  ],
+  "builtInWings": [
+    "JYD_heavydrone_wing",
+    "JYD_heavydrone_wing"
+  ],
+  "builtInWeapons": {
+    "WS0010": "JYD_al"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 90,
+      "locations": [-56, 163.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-34.5, 103.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [38, -92.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [126.5, 58.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 55,
+      "angle": 0,
+      "locations": [137.5, 89.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [161, 73]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -90,
+      "locations": [-87, -81.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-87, 137.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -21, 142.5,
+        -15, 142.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -21, 139.5,
+        -15, 139.5
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -1.5,
+      "locations": [90.5, -86.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-94, -0]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-126, -48.5]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -180,
+      "locations": [-105.5, 76.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-148, -45.5],
+      "length": 65,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-150.5, -32],
+      "length": 65,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-149.5, 30.5],
+      "length": 65,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-148, 44],
+      "length": 65,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-120.5, 115.5],
+      "length": 35,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-122, 121],
+      "length": 35,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-122, 127],
+      "length": 35,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    156, -110.5,
+    178, -50.5,
+    102, -39,
+    101, 31.5,
+    155.5, 33,
+    194, 89,
+    -68, 179,
+    -126.5, 147,
+    -160, 78,
+    -158.5, -116.5
+  ]
+}

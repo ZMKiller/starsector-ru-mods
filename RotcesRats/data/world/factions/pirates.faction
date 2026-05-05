@@ -1,0 +1,47 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+		"rr_lout_raider": 4,
+
+		"rr_undertaking_out": 1.5,
+		"rr_undertaking_raid": 1.5,
+	},
+
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "hulls":[
+            "rr_lout",
+        ],
+    },
+
+    "knownShips":{
+        "hulls":[
+            "rr_lout",
+        ],
+    },
+
+	"knownWeapons":{
+		"weapons":[
+			"rr_flint_coil",
+			"rr_miser_coil",
+
+			"rr_arpo",
+			"rr_arpopod",
+			"rr_creeper",
+			"rr_c_typhoon",
+			"rr_gyro",
+			"rr_bearing",
+			"rr_axle",
+
+			"rr_mini_mblast",
+		],
+	},
+
+	"knownFighters":{
+		"fighters":[
+			"rr_rumbler_wing",
+			"rr_piranha_p_wing",
+		],
+	},
+},

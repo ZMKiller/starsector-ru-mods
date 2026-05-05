@@ -1,0 +1,58 @@
+{
+  "variantId": "rr_rednus_as",
+  "hullId": "rr_rednus",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 18,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxbreakers",
+    "targetingunit",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "annihilator",
+        "WS0002": "annihilator"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "sabot",
+        "WS 005": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "pulselaser",
+        "WS 004": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "vulcan",
+        "WS 007": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

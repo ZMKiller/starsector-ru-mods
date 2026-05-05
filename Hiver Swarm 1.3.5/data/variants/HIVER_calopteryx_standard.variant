@@ -1,0 +1,62 @@
+{
+  "variantId": "HIVER_calopteryx_standard",
+  "hullId": "HIVER_calopteryx",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "expanded_deck_crew",
+    "fluxcoil",
+    "fluxdistributor",
+    "heavyarmor",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "HIVER_irpulse",
+        "WS0002": "HIVER_irpulse",
+        "WS0003": "HIVER_twinpd",
+        "WS0004": "Hiver_eyeball",
+        "WS0005": "HIVER_mirv",
+        "WS0006": "HIVER_blaster",
+        "WS0007": "Hiver_eyeball"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "HIVER_scorpifly_standard_wing",
+    "HIVER_scorpifly_standard_wing",
+    "HIVER_flyter_standard_wing",
+    "HIVER_flyter_standard_wing",
+    "HIVER_katydid_standard_wing",
+    "HIVER_allsup_standard_wing"
+  ]
+}

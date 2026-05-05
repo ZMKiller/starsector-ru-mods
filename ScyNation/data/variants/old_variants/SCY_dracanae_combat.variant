@@ -1,0 +1,41 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 3,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "SCY_dracanae",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "SCY_dracanae_combat",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_kacc2",
+                "WS0002": "SCY_kacc2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "SCY_kacc2"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_hemor2",
+                "WS0005": "SCY_hemor2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dualflak",
+                "WS0007": "dualflak"
+            }
+        }
+    ]
+}

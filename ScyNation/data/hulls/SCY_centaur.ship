@@ -1,0 +1,106 @@
+{
+  "hullName": "Centaur",
+  "hullId": "SCY_centaur",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/SCY/ships/SCY_centaur.png",
+  "style": "SCYHULL",
+  "height": 107,
+  "width": 79,
+  "center": [42, 65],
+  "collisionRadius": 70,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 69,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering",
+    #"civgrade",
+    #"SCY_militarized"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame1",
+    "BLINKER1": "SCY_ZblinkerA",
+    "BLINKER2": "SCY_ZblinkerA",
+    "D_HEAT_CENTER": "SCY_ZcentaurHeat"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-30, -0]
+    },
+    {
+      "id": "D_HEAT_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-34.5, -0]
+    },
+    {
+      "id": "BLINKER2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-6.5, -7.5]
+    },
+    {
+      "id": "BLINKER1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-6.5, 7.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 180,
+      "locations": [6, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [25, 31]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-31, -0],
+      "length": 16,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    28.5, 40.5,
+    5.5, 40.5,
+    -14.5, 22.5,
+    -48.5, 9.5,
+    -32.5, 9.5,
+    -32.5, -9.5,
+    -48.5, -9.5,
+    -25.5, -17.5,
+    5.5, -35.5,
+    23.5, -35.5,
+    40.5, -27.5,
+    32.5, -18
+  ]
+}

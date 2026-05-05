@@ -1,0 +1,35 @@
+{
+	"id":"SCY_interceptS",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":75.0,
+	"hitGlowRadius":30,
+	"width":6.5,
+	"fadeTime":0.2,
+	"fringeColor":[200,175,00,255],
+	"coreColor":[255,150,50,255],	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_large_blue.png",
+	"behaviorSpec":{
+                "behavior":"PROXIMITY_FUSE",
+                "range":0,
+                "vsMissileRange":7,
+                "explosionSpec":{
+                        "duration":0.1f,
+                        "radius":14,
+                        "coreRadius":7, # full damage within core radius - also equal to proximity fuse range
+                        "collisionClass":PROJECTILE_FF,
+                        "collisionClassByFighter":PROJECTILE_FIGHTER,
+                        "particleSizeMin":5.0,
+                        "particleSizeRange":10.0,
+                        "particleDuration":0.15,
+                        "particleCount":5,
+                        "particleColor":[255,155,100,255],
+                        "sound":"explosion_flak"
+                },
+        },
+	#"onHitEffect":"org.scy.weapons.SCY_interceptEffect",
+}

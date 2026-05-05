@@ -1,0 +1,28 @@
+{
+	"id":"SCY_kacc1",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":550,
+	"turretSprite":"graphics/SCY/weapons/SCY_kacc1T.png",
+	"hardpointSprite":"graphics/SCY/weapons/SCY_kacc1H.png",
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[4, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[7, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+        "muzzleFlashSpec":{"length":20.0,
+                           "spread":5.0,
+                           "particleSizeMin":10.0,
+                           "particleSizeRange":30.0,
+                           "particleDuration":0.15,
+                           "particleCount":12,
+                           "particleColor":[150,200,255,150]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	#"projectileSpecId":"railgun_shot",  # projectile that will be fired		
+	"projectileSpecId":"SCY_kacc1S",  # projectile that will be fired	
+	"fireSoundTwo":"SCY_kacc1",
+}

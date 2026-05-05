@@ -1,0 +1,66 @@
+{
+    "displayName": "Elite_advanced_B",
+    "fluxCapacitors": 50,
+    "fluxVents": 50,
+    "hullId": "HSI_Life",
+    "hullMods": [
+        "HSI_HardenShield",
+        "armoredweapons",
+        "converted_hangar",
+        "fluxbreakers",
+        "turretgyros",
+        "heavyarmor",
+        "armoredweapons",
+        "auxiliarythrusters",
+        "HSI_ProtocalMeltDown",
+        "advancedoptics"
+    ],
+    "permaMods": [
+        "heavyarmor",
+        "autorepair",
+        "armoredweapons",
+        "auxiliarythrusters"
+    ],
+    "sMods": [
+        "heavyarmor",
+        "autorepair",
+        "armoredweapons",
+        "auxiliarythrusters"
+    ],
+    "variantId": "HSI_Life_Elite_B",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "HWI_FirstMantitude",
+                "WS 001": "HWI_FirstMantitude",
+                "WS 002": "HWI_FirstMantitude",
+                "WS 003": "HWI_FirstMantitude",
+                "WS 004": "HWI_FirstMantitude"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 009": "HWI_IonLanceM",
+                "WS 010": "HWI_IonLanceM"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 007": "HWI_IonLanceM"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 008": "HWI_IonLanceM"}
+        }
+    ],
+    "wings": [
+        "HSI_Mayfly_wing",
+        "HSI_Mayfly_wing"
+    ]
+}

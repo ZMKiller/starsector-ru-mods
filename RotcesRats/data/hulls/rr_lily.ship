@@ -1,0 +1,191 @@
+{
+  "hullName": "Lily",
+  "hullId": "rr_lily",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/rr_lily.png",
+  "style": "MIDLINE",
+  "height": 178,
+  "width": 158,
+  "center": [79, 82],
+  "collisionRadius": 110,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 107,
+  "viewOffset": 0,
+  "builtInMods": [
+    "rr_RapidForgedMissiles",
+    "missleracks"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 10,
+      "locations": [35, 32]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": 0,
+      "locations": [52, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -10,
+      "locations": [35, -32]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 60,
+      "locations": [-14, 44]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -60,
+      "locations": [-14, -44]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 60,
+      "locations": [30, 64]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": -60,
+      "locations": [30, -64]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 110,
+      "locations": [13, 68]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -110,
+      "locations": [13, -68]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 160,
+      "locations": [-53, 23]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -160,
+      "locations": [-53, -23]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-80, 43],
+      "length": 80,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-80, -43],
+      "length": 80,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-80, -28],
+      "length": 72,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-80, 28],
+      "length": 72,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-76, -13],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-76, 13],
+      "length": 64,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    70, -17,
+    60, -58,
+    41, -60,
+    21, -71,
+    2, -64,
+    -43, -66,
+    -52, -53,
+    -79, -48,
+    -75, -8,
+    -61, -0,
+    -75, 8,
+    -79, 48,
+    -52, 53,
+    -43, 66,
+    2, 64,
+    21, 71,
+    41, 60,
+    60, 58,
+    70, 17,
+    83, -0
+  ]
+}

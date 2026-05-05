@@ -1,0 +1,134 @@
+{
+  "hullName": "Lean",
+  "hullId": "JYD_lean",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/JYD_lean.png",
+  "style": "MIDLINE",
+  "height": 192,
+  "width": 107,
+  "center": [53.5, 96],
+  "collisionRadius": 123,
+  "shieldCenter": [-1, 1],
+  "shieldRadius": 118.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [22, 39]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-6.5, 0.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [58.5, -27]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        39, 32,
+        47.5, 32.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        38.5, 24.5,
+        47.5, 24.5
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        27, 24,
+        32.5, 24.5
+      ]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [72.5, 0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-85, -21.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-85.5, 22.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-94.5, 0.5],
+      "length": 34,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    97, -21,
+    74, -23,
+    80, -49.5,
+    22, -58,
+    -14.5, -38,
+    -10.5, -18,
+    -32, -25,
+    -74, -38.5,
+    -100, -19,
+    -100, 19,
+    -74, 38.5,
+    -32, 25,
+    -10.5, 18,
+    -14.5, 38,
+    22, 58,
+    80, 49.5,
+    74, 23,
+    97, 21
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "variantId": "JYD_muscular_standard",
+  "hullId": "JYD_muscular",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliary_fuel_tanks",
+
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "JYD_ab",
+        "WS0002": "JYD_ab"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "JYD_af",
+        "WS0006": "JYD_af"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "JYD_ab",
+        "WS0004": "JYD_ab"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

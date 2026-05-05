@@ -1,0 +1,202 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME Diable Avionics,,,,,,
+,,,,,,
+# Diable Avionics fleet greeting lines,,,,,,
+greetingDAFriendly,OpenCommLink,"$faction.id == diableavionics
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Приветствую, $playerName. Может ли $theFaction что-нибудь сделать для одного из наших ценных партнеров?""",,
+greetingDAHostileWeaker,OpenCommLink,"$faction.id == diableavionics
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""Если вы хоть немного понимаете, что для вас лучше, уходите сейчас и присоединяйтесь к $theFaction.""",cutCommLink:Разорвать связь,
+greetingDAHostileWeakerDefiant,OpenCommLink,"$faction.id == diableavionics
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""Знайте: однажды вы и ваша семья будете работать на $theFaction рабами.""",cutCommLink:Разорвать связь,
+greetingDAHostileStronger,OpenCommLink,"$faction.id == diableavionics
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""Я вижу лишь отличное пополнение либо для своего флота, либо для списка убитых.""",cutCommLink:Разорвать связь,
+greetingDANeutral,OpenCommLink,"$faction.id == diableavionics
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Вы говорите с $PersonRank $personName из флота $theFaction. Изложите цель обращения.""",,
+#END Diable Avionics fleet greeting lines,,,,,,
+,,,,,,
+# Trade panel flavor text,,,,,,
+flavorTextMarketEclipse,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == diableavionics
+$market.id == eclipse_market","AddText ""Сильно укрепленный плацдарм корпорации Diable Avionics. Начало возвращения Домина Человечества."" textGrayColor",,,
+flavorTextMarketDiableAvionics,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == diableavionics","AddText ""На вас впиваются взгляды; презрение вокруг ясно дает понять, что вас здесь лишь терпят, а не приветствуют."" textGrayColor",,,
+#END Trade panel flavor text,,,,,,
+,,,,,,
+"# default commission conversation strings, copy and adjust this section for faction-specific conversation flavor",,,,,,
+CMSNTextRejectHostile_diableavionics,CMSNTextRejectHostile,$faction.id == diableavionics,,"""Это какая-то шутка? Если вы тот, за кого себя выдаете, вы числитесь в нескольких списках розыска $faction.""",,
+CMSNTextHasOther_diableavionics,CMSNTextHasOther,$faction.id == diableavionics,,"""У вас уже есть комиссия от $theOtherCommissionFaction. Вам придется отказаться от нее, прежде чем получить комиссию от $theFaction.""",,
+CMSNTextUnsuited_diableavionics,CMSNTextUnsuited,$faction.id == diableavionics,,"""Извините, но вы не соответствуете нашим критериям для получения комиссии.""",,
+CMSNTextSuitedPart1_diableavionics,CMSNTextSuitedPart1,$faction.id == diableavionics,,"""Хм, да, вы подходящий кандидат.\n\nПринятие комиссии - серьезный шаг. От вас потребуется сражаться с врагами $theFaction, где бы они ни находились.\n\nВы сможете отказаться от комиссии в любое время, хотя не думаю, что такой поступок будет встречен с пониманием.""",,
+CMSNTextSuitedPart2_diableavionics,CMSNTextSuitedPart2,$faction.id == diableavionics,,"""Итак, что скажете? Все еще хотите подписаться?""",,
+CMSNTextWelcomePart1_diableavionics,CMSNTextWelcomePart1,$faction.id == diableavionics,,"""Отлично! Добро пожаловать на службу.""",,
+CMSNTextWelcomePart2_diableavionics,CMSNTextWelcomePart2,$faction.id == diableavionics,,"""Могу ли я еще чем-то помочь?""",,
+CMSNTextChangeMind_diableavionics,CMSNTextChangeMind,$faction.id == diableavionics,,"""Да, не каждому дано поддерживать ценности $theFaction на столь высоком уровне. В этом нет стыда.\n\nМогу ли я еще чем-то помочь?""",,
+CMSNResignAskToConfirm_diableavionics,CMSNResignAskToConfirm,$faction.id == diableavionics,,"""Вы уверены? $TheFaction нужны люди, на которых можно положиться, и такой отказ не забудут легко.""",,
+CMSNResignConfirmed_diableavionics,CMSNResignConfirmed,$faction.id == diableavionics,,"""Вижу, вас не переубедить. Что ж, по крайней мере, вы проявили любезность и подали отставку лично.""",,
+CMSNResignCancelled_diableavionics,CMSNResignCancelled,$faction.id == diableavionics,,"""Хорошее решение. Нам пригодятся такие люди, как вы.""",,
+"#END default commission conversation strings, copy and adjust this section for faction-specific conversation flavor",,,,,,
+,,,,,,
+DASubject71_greetingNotFriendly,OpenCommLink,"$virtuous score:10
+!$faction.friendlyToPlayer score:10","$menuState = fleetConvMain 0
+FireBest DA_Subject71_showGreetingText
+AddText """"
+AddText ""На сигналы, отправленные через канал связи, нет ответа. Система, с которой вы связываетесь, вероятно, требует корректные коды IFF, получаемые только через служебные каналы Diable Avionics.""
+FireAll PopulateOptions","Канал связи успешно открыт, однако на визуальном экране нет изображения.",,
+DASubject71_showGreetingText,DA_Subject71_showGreetingText,,"SetTextHighlightColors textGreenColor textGreenColor
+SetTextHighlights ""This system is property of the Diable Avionics Corporation. Unauthorized access is prohibited."" ""ERR: Fleet simulation component has signs of corruption. Recommend repair. See sysinfo.txt for more information.""",Эта система является собственностью корпорации Diable Avionics. Несанкционированный доступ запрещен. ERR: Компонент симуляции флота имеет признаки повреждения. Рекомендуется ремонт. См. sysinfo.txt для дополнительной информации.,,
+DASubject71_showCommandPrompt,DA_Subject71_showCommandPrompt,,"SetTextHighlightColors textGreenColor
+SetTextHighlights ""subject71 >""",subject71 >,,
+DASubject71_greetingFirst,OpenCommLink,"$virtuous score:10
+!$simulationRunning
+!$metSubject71","$menuState = fleetConvMain 0
+$metSubject71 = true
+FireBest DA_Subject71_showGreetingText
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Канал связи успешно открыт, однако на визуальном экране нет изображения. Вместо этого отображается командная строка.",,
+DASubject71_greeting,OpenCommLink,"$virtuous score:10
+!$simulationRunning
+$metSubject71","$menuState = fleetConvMain 0
+FireBest DA_Subject71_showGreetingText
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Канал связи успешно открыт, показывая знакомую командную строку.",,
+DASubject71_greetingAfterSimulationSuccess,OpenCommLink,"$virtuous score:10
+$simulationRunning
+$simulationSuccessful","$menuState = fleetConvMain 0
+unset $simulationRunning
+$simulationRun = true
+SetTextHighlightColors textGreenColor textGreenColor
+SetTextHighlights ""Simulation complete."" ""Permissions of transfer file modified.""
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Визуальный поток канала связи внезапно темнеет и возвращается к командной строке, где появилась новая строка: Simulation complete.
+
+Через мгновение командная строка быстро вводит сотни или даже тысячи команд, прежде чем выдать финальную строку: Permissions of transfer file modified.",,
+DASubject71_greetingAfterSimulationFailure,OpenCommLink,"$virtuous score:10
+$simulationRunning
+!$simulationSuccessful","$menuState = fleetConvMain 0
+unset $simulationRunning
+$simulationRun = true
+SetTextHighlightColors textGreenColor
+SetTextHighlights ""Simulation failed. Recommend re-running simulation.""
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Визуальный поток канала связи внезапно темнеет и возвращается к командной строке, где появилась новая строка: Simulation failed. Recommend re-running simulation.",,
+DASubject71_optionHelp,PopulateOptions,"$virtuous
+!$helpUsed",,,subject71Help:> help,
+DASubject71_help,DialogOptionSelected,"$virtuous
+$option == subject71Help
+!$helpUsed","$helpUsed = true
+SetTextHighlightColors textGreenColor textGreenColor textGreenColor textGreenColor textGreenColor textGreenColor textGreenColor textGreenColor
+SetTextHighlights ""subject71 > help"" ""Available commands:"" help whoami list read exec
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Консоль пару секунд прокручивается с невероятной скоростью, выводя текст быстрее, чем человеческий глаз способен прочитать. В конце она показывает доступные команды.
+
+Available commands: whoami list read exec",,
+DASubject71_optionWhoAmI,PopulateOptions,"$virtuous
+$helpUsed",,,subject71WhoAmI:> whoami,
+DASubject71_optionLS,PopulateOptions,"$virtuous
+$helpUsed",,,subject71List:> list,
+DASubject71_optionRead,PopulateOptions,"$virtuous
+$helpUsed
+!$lsUsed",,,subject71Read:> read,
+DASubject71_optionReadSysInfo,PopulateOptions,"$virtuous
+$lsUsed",,,subject71ReadSysInfo:> read sysinfo.txt,
+DASubject71_optionExec,PopulateOptions,"$virtuous
+$helpUsed
+!$lsUsed",,,subject71Exec:> exec,
+DASubject71_optionExecBattleSim,PopulateOptions,"$virtuous
+$lsUsed",,,subject71ExecBattleSim:> exec battlesim,
+DASubject71_optionExecTransfer,PopulateOptions,"$virtuous
+$lsUsed
+!$transferring",,,subject71ExecTransfer:> exec transfer,
+DASubject71_whoAmI,DialogOptionSelected,"$virtuous
+$option == subject71WhoAmI","SetTextHighlightColors textGreenColor
+SetTextHighlights subject
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","subject
+
+Это не выглядит особенно полезным.",,
+DASubject71_Read,DialogOptionSelected,"$virtuous
+$option == subject71Read","SetTextHighlightColors textGreenColor
+SetTextHighlights ""Missing filename.""
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Missing filename.
+
+Это не выглядит особенно полезным.",,
+DASubject71_Exec,DialogOptionSelected,"$virtuous
+$option == subject71Exec","SetTextHighlightColors textGreenColor
+SetTextHighlights ""Missing filename.""
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Missing filename.
+
+Это не выглядит особенно полезным.",,
+DASubject71_LS,DialogOptionSelected,"$virtuous
+$option == subject71List","$lsUsed = true
+SetTextHighlightColors textGreenColor
+SetTextHighlights ""sysinfo.txt, battlesim, transfer""
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Команда выводит текущий список файлов в директории.
+
+sysinfo.txt, battlesim, transfer",,
+DASubject71_ReadSysInfo,DialogOptionSelected,"$virtuous
+$option == subject71ReadSysInfo","SetTextHighlightColors textGreenColor textGreenColor textGreenColor textGreenColor textGreenColor textGreenColor textGreenColor
+SetTextHighlights ""This file is updated daily with system condition. As of the last 24 hours, diagnostics reported the following:"" ""Brain condition: 100%."" ""Blood pump condition: 100%."" ""Oxygen levels: 100%."" ""Security checks: 100%."" ""Fleet duel simulation diagnostic: 99%."" ""Supporting fleet simulation diagnostic: 0%.""
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Файл выводится на командный дисплей:
+
+This file is updated daily with system condition. As of the last 24 hours, diagnostics reported the following:
+Brain condition: 100%. Blood pump condition: 100%. Oxygen levels: 100%. Security checks: 100%. Fleet simulation component status: corrupted.",,
+DASubject71_ExecTransfer,DialogOptionSelected,"$virtuous
+$option == subject71ExecTransfer
+!$simulationSuccessful","SetTextHighlightColors textGreenColor
+SetTextHighlights ""Access denied.""
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Access denied.
+
+Это не выглядит особенно полезным.",,
+DASubject71_ExecBattleSim,DialogOptionSelected,"$virtuous
+$option == subject71ExecBattleSim
+!$simulationSuccessful","$simulationRunning = true
+SetTextHighlightColors textGreenColor
+SetTextHighlights ""Entering simulation...""
+FireBest DA_Subject71_showCommandPrompt
+DASubject71_BattleSim",Entering simulation...,,
+DASubject71_ExecBattleSimSimulationSuccessful,DialogOptionSelected,"$virtuous
+$option == subject71ExecBattleSim
+$simulationSuccessful","SetTextHighlightColors textGreenColor
+SetTextHighlights ""Process exited with error code -1.""
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Process exited with error code -1.
+
+К сожалению, симуляцию нельзя запустить снова.",,
+DASubject71_ExecTransferSimulationSuccessful,DialogOptionSelected,"$virtuous
+$option == subject71ExecTransfer
+$simulationSuccessful
+!$transferring","$transferring = true
+SetTextHighlightColors textGreenColor textGreenColor textGreenColor
+SetTextHighlights ""Missing second argument. Valid options are:"" virtuous subject71
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions",Missing second argument. Valid options are: virtuous subject71,,
+DASubject71_optionTransferSubject71,PopulateOptions,"$virtuous
+$transferring",,,subject71TransferSubject71:> exec transfer subject71,
+DASubject71_optionTransferVirtuous,PopulateOptions,"$virtuous
+$transferring",,,subject71TransferVirtuous:> exec transfer virtuous,
+DASubject71_ExecTransferSubject71SimulationSuccessful,DialogOptionSelected,"$virtuous
+$option == subject71TransferSubject71","SetTextHighlightColors textGreenColor
+SetTextHighlights ""Process exited with error code -1.""
+FireBest DA_Subject71_showCommandPrompt
+FireAll PopulateOptions","Process exited with error code -1.
+
+Это не выглядит особенно полезным.",,
+DASubject71_ExecTransferVirtuousSimulationSuccessful,DialogOptionSelected,"$virtuous
+$option == subject71TransferVirtuous","SetTextHighlightColors textGreenColor textGreenColor
+SetTextHighlights ""Executing transfer..."" ""Disconnecting...""
+DASubject71_TransferVirtuous","Executing transfer...
+
+От флота обнаружена активная сигнатура поля двигателя. Ваш офицер безопасности инстинктивно тянется к переключателю тревоги, но после второго взгляда на сенсоры отводит руку.
+
+Мех Virtuous приближается к вашему флоту, ожидая приема на борт.",cutCommLink:Забрать Virtuous.,

@@ -1,0 +1,30 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 12,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "SCY_lamiaA",
+    "hullMods": ["targetingunit"],
+    "modules": [
+        {"WW1MULTI": "SCY_lamiaAF_standard"},
+        {"WW2MULTI": "SCY_lamiaAL_standard"},
+        {"WW3MULTI": "SCY_lamiaAR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_lamiaA_escort",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_lvds",
+                "WS0003": "SCY_lvds"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_anti2"}
+        }
+    ]
+}

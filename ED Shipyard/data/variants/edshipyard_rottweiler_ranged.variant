@@ -1,0 +1,54 @@
+{
+  "displayName": "Дальнобойный",
+  "fluxCapacitors": 24,
+  "fluxVents": 30,
+  "goalVariant": true,
+  "hullId": "edshipyard_rottweiler",
+  "hullMods": [
+    "extendedshieldemitter",
+    "hardenedshieldemitter",
+    "targetingunit",
+    "fluxbreakers"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_rottweiler_ranged",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "edshipyard_CC"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hveldriver",
+        "WS0005": "hveldriver"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "edshipyard_2_Dust",
+        "WS0004": "edshipyard_2_Dust"
+	  }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "edshipyard_Wisp_Launcher",
+        "WS0007": "edshipyard_Wisp_Launcher",
+        "WS0008": "edshipyard_Wisp_Launcher",
+        "WS0009": "edshipyard_Wisp_Launcher",
+        "WS0010": "edshipyard_Wisp_Launcher"
+      }
+    }
+  ],
+  "wings": []
+}

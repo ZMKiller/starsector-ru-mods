@@ -1,0 +1,31 @@
+{
+	"id":"ora_incantation",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretSprite":"graphics/ORA/weapons/ora_incantationT.png",
+	"turretGlowSprite":"graphics/ORA/weapons/ora_incantationTG.png",
+	"hardpointSprite":"graphics/ORA/weapons/ora_incantationH.png",
+	"hardpointGlowSprite":"graphics/ORA/weapons/ora_incantationHG.png",
+	"glowColor":[255,100,150,255],
+	"turretOffsets":[12, -8, 12, 8],
+	"turretAngleOffsets":[0,0],
+	"hardpointOffsets":[17, -8, 17, 8],
+	"hardpointAngleOffsets":[0,0],
+	"barrelMode":"LINKED",
+        "separateRecoilForLinkedBarrels":"TRUE",
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{
+                "length":34.0,
+                "spread":15.0,
+                "particleSizeMin":15.0,
+                "particleSizeRange":15.0,
+                "particleDuration":0.25,
+                "particleCount":30,
+                "particleColor":[255,100,150,255]
+        },
+	"interruptibleBurst":false,
+	"autocharge":true,
+	"projectileSpecId":"ora_incantationS",
+	"fireSoundTwo":"ora_incantation_fire",
+}

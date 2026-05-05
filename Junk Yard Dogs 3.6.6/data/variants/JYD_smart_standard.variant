@@ -1,0 +1,64 @@
+{
+  "variantId": "JYD_smart_standard",
+  "hullId": "JYD_smart",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "JYD_lrk",
+        "WS0002": "JYD_lrk",
+        "WS0003": "JYD_mrb",
+        "WS0015": "JYD_af",
+        "WS0016": "JYD_ab"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0010": "JYD_srm",
+        "WS0011": "JYD_srm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "JYD_ab",
+        "WS0006": "JYD_ab",
+        "WS0008": "JYD_ab",
+        "WS0012": "JYD_ab",
+        "WS0013": "JYD_ab",
+        "WS0014": "JYD_ab"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "JYD_lrm",
+        "WS0007": "JYD_lrm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "JYD_mrb"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,60 @@
+{
+  "hullName": "Panotti",
+  "hullId": "SCY_panotti",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/SCY/ships/fighters/SCY_panotti.png",
+  "style": "SCYHULL",
+  "height": 30,
+  "width": 30,
+  "center": [15, 15],
+  "collisionRadius": 21.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 21,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux",
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SCY_Fgrenade",
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [9, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, 6],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES"
+    },
+    {
+      "location": [-14, -6],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES"
+    }
+  ],
+  "bounds": [
+    12, 5,
+    0, 13,
+    -12, 8,
+    -12, -8,
+    0, -13,
+    12, -5
+  ]
+}

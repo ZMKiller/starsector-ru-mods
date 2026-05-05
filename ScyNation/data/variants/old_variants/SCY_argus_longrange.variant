@@ -1,0 +1,31 @@
+{
+    "displayName": "Long Range",
+    "fluxCapacitors": 0,
+    "fluxVents": 4,
+    "goalVariant": false,
+    "hullId": "SCY_argus",
+    "hullMods": ["pointdefenseai"],
+    "permaMods": [],
+    "variantId": "SCY_argus_longrange",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"VML": "SCY_smallMrm"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "taclaser",
+                "WS0002": "taclaser",
+                "WS0003": "taclaser",
+                "WS0004": "taclaser"
+            }
+        }
+    ],
+    "wings": [
+        "SCY_ker_wing",
+        "SCY_stygere_wing"
+    ]
+}

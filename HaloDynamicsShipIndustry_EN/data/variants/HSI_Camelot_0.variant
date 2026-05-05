@@ -1,0 +1,53 @@
+{
+    "displayName": "UNI",
+    "fluxCapacitors": 30,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "HSI_Camelot",
+    "hullMods": [
+        "converted_hangar",
+        "ballistic_rangefinder",
+        "targetingunit",
+        "heavyarmor",
+        "armoredweapons",
+        "shield_shunt",
+        "autorepair",
+        "reinforcedhull"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Camelot_0",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "HWI_Arbiter",
+                "WS 001": "HWI_Arbiter",
+                "WS 002": "HWI_Arbiter",
+                "WS 003": "HWI_Arbiter",
+                "WS 004": "HWI_heavyac",
+                "WS 005": "HWI_heavyac",
+                "WS 006": "HWI_heavyac",
+                "WS 007": "HWI_heavyac",
+                "WS 009": "HWI_lightneedler"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 008": "HWI_lightneedler"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 011": "HWI_lightneedler"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 010": "HWI_lightneedler"}
+        }
+    ],
+    "wings": ["sarissa_wing"]
+}

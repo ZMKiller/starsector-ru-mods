@@ -1,0 +1,39 @@
+{
+	"id":"HWI_FirstMantitude",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/HWI_FMLAAM.png",
+	"size":[16,16],	
+	"center":[8,8],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"onFireEffect":"data.weapons.scripts.HWIFMOnFire",
+	"explosionColor":[255,255,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":250, # purely visual
+	"engineSpec":{"turnAcc":180,
+				  "turnRate":180,
+				  "acc":300,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[0, 0],
+				    #"style":"MISSILE_LOW_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,255,255,200],
+						"contrailDuration":0,
+						"contrailWidthMult":0,
+						"contrailWidthAddedFractionAtEnd":-1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[255,255,255,200],
+						"glowSizeMult":0,
+						"glowAlternateColor":[55,55,255,225],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":0.5,
+				    "length":0.5,
+				    "angle":180.0},
+				    ],
+}

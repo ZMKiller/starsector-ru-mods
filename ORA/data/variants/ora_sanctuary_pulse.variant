@@ -1,0 +1,60 @@
+{
+    "displayName": "Pulse",
+    "fluxCapacitors": 8,
+    "fluxVents": 18,
+    "goalVariant": true,
+    "hullId": "ora_sanctuary",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_sanctuary_pulse",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0011": "harpoon",
+                "WS0012": "harpoon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0013": "sabot",
+                "WS0014": "sabot"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "irpulse",
+                "WS0007": "ioncannon",
+                "WS0009": "ioncannon",
+                "WS0015": "irpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "irpulse",
+                "WS0008": "ioncannon",
+                "WS0010": "ioncannon",
+                "WS0016": "irpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ora_choir",
+                "WS0002": "ora_choir",
+                "WS0003": "ora_choir",
+                "WS0004": "ora_choir"
+            }
+        }
+    ],
+    "wings": ["ora_wisdom_wing"]
+}

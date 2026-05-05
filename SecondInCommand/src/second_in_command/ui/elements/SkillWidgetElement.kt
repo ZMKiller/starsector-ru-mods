@@ -20,17 +20,14 @@ class SkillWidgetElement(var id: String, var aptitudeId: String, var activated: 
     var activeBorder = Global.getSettings().getSprite("graphics/secondInCommand/skillBorderActive.png")
     var eliteStars = Global.getSettings().getSprite("graphics/secondInCommand/elite_stars.png")
     var eliteBackground = Global.getSettings().getSprite("graphics/secondInCommand/elite_background.png")
-    var eliteCombatBorder = Global.getSettings().getSprite("graphics/icons/skills/elite_combat.png")
 
     var hoverFade = 0f
     var time = 0f
 
     var isElite = false
-    var isDistributionActivated = false
 
     companion object {
-        var shader = 0
-        var eliteShader = 0
+        var shader = 0;
     }
 
     var glitchInterval = IntervalUtil(3f, 120f)
@@ -60,17 +57,6 @@ class SkillWidgetElement(var id: String, var aptitudeId: String, var activated: 
 
         onHoverEnter {
             playSound("ui_button_mouseover")
-        }
-
-        if (eliteShader == 0) {
-            eliteShader = ShaderLib.loadShader(
-                Global.getSettings().loadText("data/shaders/baseVertex.shader"),
-                Global.getSettings().loadText("data/shaders/eliteBorderFragment.shader"))
-            if (eliteShader != 0) {
-                GL20.glUseProgram(eliteShader)
-                GL20.glUniform1i(GL20.glGetUniformLocation(eliteShader, "tex"), 0)
-                GL20.glUseProgram(0)
-            }
         }
 
         /*onClick {
@@ -119,9 +105,7 @@ class SkillWidgetElement(var id: String, var aptitudeId: String, var activated: 
         sprite.alphaMult = alphaMult
 
         //Contrast Mode
-        if (isDistributionActivated) {
-            sprite.color = Color(200, 140, 50)
-        } else if (SCSettings.highConstrastIcons!!) {
+        if (SCSettings.highConstrastIcons!!) {
             if (!canChangeState && !activated) {
                 sprite.color = Color(40, 40, 40)
             }
@@ -147,6 +131,14 @@ class SkillWidgetElement(var id: String, var aptitudeId: String, var activated: 
         sprite.renderAtCenter(x + (width / 2).toInt(), y + (height / 2).toInt())
 
 
+        if (isElite) {
+            eliteBackground.setNormalBlend()
+            eliteBackground.color = color.darker()
+            eliteBackground.setSize(width, height)
+            eliteBackground.alphaMult = alphaMult * 0.7f
+            eliteBackground.renderAtCenter(x + (width / 2).toInt(), y + (height / 2).toInt())
+        }
+
         //Glitch Effect for Abyssal
 
         if (aptitudeId == "rat_abyssal" && activated && glitchDuration > 0 && shader != 0) {
@@ -169,18 +161,17 @@ class SkillWidgetElement(var id: String, var aptitudeId: String, var activated: 
         }
 
 
-        if (activated || isDistributionActivated) {
-            val borderColor = if (isDistributionActivated) Color(180, 120, 40) else color
+        if (activated) {
 
             activeBorder.setNormalBlend()
-            activeBorder.color = borderColor
+            activeBorder.color = color
             activeBorder.setSize(width, height)
             activeBorder.alphaMult = alphaMult
             activeBorder.renderAtCenter(x + (width / 2).toInt(), y + (height / 2).toInt())
 
 
             activeBorder.setAdditiveBlend()
-            activeBorder.color = borderColor
+            activeBorder.color = color
             activeBorder.setSize(width, height)
             activeBorder.alphaMult = alphaMult * 0.2f
             activeBorder.renderAtCenter(x + (width / 2).toInt(), y + (height / 2).toInt())
@@ -202,36 +193,20 @@ class SkillWidgetElement(var id: String, var aptitudeId: String, var activated: 
             inactiveBorder.renderAtCenter(x + (width / 2).toInt(), y + (height / 2).toInt())
         }
 
-        if (isElite && activated && eliteShader != 0) {
-            // Shader samples the activeBorder sprite's alpha as a shape mask, so the
-            // glow follows its rounded corners exactly and applies the diagonal gradient.
-            GL20.glUseProgram(eliteShader)
-            GL20.glUniform1f(GL20.glGetUniformLocation(eliteShader, "alphaMult"), alphaMult)
-
-            GL11.glEnable(GL11.GL_BLEND)
-            GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE)  // additive glow
-
-            GL13.glActiveTexture(GL13.GL_TEXTURE0)
-            GL11.glBindTexture(GL11.GL_TEXTURE_2D, activeBorder.textureId)
-
-            activeBorder.setSize(width, height)
-            activeBorder.renderAtCenter(x + (width / 2).toInt(), y + (height / 2).toInt())
-
-            GL20.glUseProgram(0)
-
-            // Stars badge on top at correct icon size
-            eliteStars.setNormalBlend()
-            eliteStars.color = Color(255, 255, 255)
-            eliteStars.setSize(width - 8, height - 8)
-            eliteStars.alphaMult = alphaMult
-            eliteStars.renderAtCenter(x + (width / 2).toInt(), y + (height / 2).toInt())
-        }
-
         sprite.setAdditiveBlend()
         sprite.setSize(width-8, height-8)
         sprite.alphaMult = alphaMult * 0.5f * hoverFade
         sprite.renderAtCenter(x + (width / 2).toInt(), y + (height / 2).toInt())
 
+        if (isElite) {
+
+
+            eliteStars.setNormalBlend()
+            //eliteStars.color = color
+            eliteStars.setSize(width, height)
+            eliteStars.alphaMult = alphaMult
+            eliteStars.renderAtCenter(x + (width / 2).toInt(), y + (height / 2).toInt()+1f)
+        }
     }
 
     override fun renderBelow(alphaMult: Float) {

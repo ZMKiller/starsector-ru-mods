@@ -1,0 +1,56 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 0,
+    "fluxVents": 23,
+    "goalVariant": false,
+    "hullId": "SCY_nemeanlion",
+    "hullMods": [
+        "advancedoptics",
+        "targetingunit"
+    ],
+    "modules": [
+        {"M_FL": "SCY_lionFL_standard"},
+        {"M_FR": "SCY_lionFR_standard"},
+        {"M_RL": "SCY_lionRL_standard"},
+        {"M_RR": "SCY_lionRR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_nemeanlion_beamer",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "MAW1": "SCY_scpb",
+                "MAW2": "SCY_scpb",
+                "MAW3": "SCY_scpb"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "SCY_laser2",
+                "WS0002": "SCY_laser2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "pdburst",
+                "WS0006": "pdburst",
+                "WS0007": "pdburst",
+                "WS0008": "pdburst"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_lvds",
+                "WS0004": "SCY_lvds"
+            }
+        }
+    ]
+}

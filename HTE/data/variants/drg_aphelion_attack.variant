@@ -1,0 +1,46 @@
+{
+    "displayName": "Attack",
+    "goalVariant": true,
+    "fluxCapacitors": 11,
+    "fluxVents": 20,
+    "hullId": "drg_aphelion",
+    "hullMods": [
+        "targetingunit",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "drg_aphelion_attack",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "pulselaser",
+                "WS0002": "pulselaser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "gorgon",
+                "WS0006": "gorgon",
+                "WS0007": "gorgon",
+                "WS0008": "gorgon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "pdlaser",
+                "WS0004": "pdlaser",
+                "WS0009": "pdlaser",
+                "WS0010": "pdlaser",
+                "WS0017": "pdlaser"
+            }
+        }
+    ],
+    "wings": ["broadsword_wing"]
+}

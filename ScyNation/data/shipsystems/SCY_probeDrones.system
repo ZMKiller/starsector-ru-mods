@@ -1,0 +1,40 @@
+{
+	"id":"SCY_probeDrones",
+	"type":"DRONE_LAUNCHER",
+	"aiType":"DRONE_LAUNCHER_STANDARD",
+	
+	"statsScript":"data.shipsystems.scripts.SensorDroneStats",
+	
+	"droneVariant":"SCY_probe_recon",
+	
+	"allowFreeRoam":true,
+	
+	"launchSpeed":10,
+	"launchDelay":2,
+	"maxDrones":1,
+	"droneBehavior":[
+		{"droneIndex":[0,1,2,3,4,5,6,7,8,9],
+		 "defaultFacing":"MATCH_DRONE_HEADING",	# MATCH_DRONE_HEADING, MATCH_SHIP_HEADING, MATCH_SHIP_FACING, AWAY_FROM_SHIP
+		 "faceEnemy":true,
+		 "holdRoamRange":250,
+		 "freeRoamRange":1000,
+		 "targetPriority":[FIGHTER, MISSILE, SHIP_TARGET, SHIP],
+		 "initialOrbitAngle":0,
+		 "orbitRadius":1500, 				# plus ship radius
+		 "orbitDir":1, 					# -1 or 1
+		 "orbitSpeed":0, 				# pixels/second
+		},
+	],
+	
+	"useSound":"drone_launch",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"weaponAssignmentSuitability":{
+			"LIGHT_ESCORT":{"mult":1, "flat":5},
+			"DESTROYER_ESCORT":{"mult":1, "flat":5},
+			"FULL_ESCORT":{"mult":1, "flat":5},
+		}
+	}
+}
+

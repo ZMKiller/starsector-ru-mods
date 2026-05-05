@@ -1,0 +1,601 @@
+v3.2.4 - Save game compatible
+	-Finally fixed the issue with CFT spawning multiple planets in Nexerelin's random core worlds mode - Big Hugs to Histidine for all the help!	
+
+v3.2.3 - Save game compatible
+	-Added a new ship, the Astrolabe: Yes I know like CFT needs another ship :)- Requested by TheCrispyDud, a Combat Engineer version of the Venture but midline and built for exploration
+	-Re-arranged the "all ships image" found on the forum and discord post by separating the CE ships to the bottom two rows - new ship is bottom left
+	-NOTE: see the announcement post of a proposed update to the mod on the forum, your opinion is most welcome - too long to put here
+
+v3.2.2 - Save game compatible
+	-Narubet: Touched up the ship sprite, eliminating the dark circles around the turret - TY Maritusa for point it they were jarring to look at
+	-Collier: Replaced the ship sprite to bring it more in line with the other combat engineer ships - TY TheCrispyDud for pointing out it stood out too much
+	-Replaced the above two ship on the "all ships image" found on the website and discord
+	-Added a comparison image of the before/after of the above ships to the forum post announcing the update - take a peek if interested
+
+v3.2.1 - Save game compatible
+	-Brig Interceptor: Increased the refit time from 3 to 8 putting it in line with the Skiff - CanItFlux made a good point that it was too low for it's power level
+	-Wavemotion Pulse Laser: Changed the sound effect from antimatter blaster to IR pulse laser - Ty CanItFlux for noting the previous was too loud when used in bulk
+
+v3.2 - Save game compatible - Note: You will need to refit any Danube & Bombardier in your current fleet
+	-Schooner: Fixed an misalignment of the flame exhausts - TY blueharizon for noting it
+	-Wavemotion Beam: Removed an incorrect sprite entry that could cause a crash in certain circumstance - TY Kherae and Bugatti for letting me know
+	-Danube: Converted two open wing slots to built-in Tender drones and reduced OP by 10 - It was too OP for a mining rig - TY Wizzball and KalHirol for your analysis
+	-Bombardier: Changed the front mount from medium to large and increased the OP by 10 - TY Steelux for noting it was a bit underpowered
+	-Freebooter: Increased the shield arc by 20 degrees, changed the front rear facing small mount to front facing and adjusted the sprite to reflect - TY KalHirol for your notes
+	-Mizzen: Added the "stay_in_front_of_ship, support0" tag so it will act more like a pd drone
+	-Tender: Changed the role from Fighter to Interceptor, reduced the engagement range from 4000 to 3000 and changed the description - Was always meant to be more defense focused
+	-Replaced the Freebooter sprite on the All Ships image on the forum and discord post
+	@JamesDyk: The report you posted was regarding a JYD weapon which I have fixed on that mod - Ty for reporting it
+
+v3.1 - Save game compatible - Note: the planetary change takes effect with a new game (new sector generation) only
+	-Porthleah: Fixed a discrepancy between the planet size and the population - TY JC220 for noting it (new game only)
+	-Cutter: Raised the refit time from 8 to 10 - needed a small nerf to counterbalance 3.0's adjustment
+	-Cog: Added a targeting hull mod to the variant and reassigned the weapon grouping - Had some unused OP and should now better engage with it's missiles
+	-Raven: Increased the DP from 9 to 10 and flux dissipation from 280 to 410 - Puts it on par with other destroyers
+	-Apollo: Added a fog of war pd turret - To help better defend itself
+	-Blackburn: Raised the speed from 150 to 180 and removed the pd mount - The mount forced it to move closer to a target than intended
+	-Centurion: Reverted the change from v3.0 bringing the wing count to 3 and increasing the refit to 8
+	-Skjold: Raised the speed from 130 to 180 - Puts it on par with other fighters
+	-Tender: Will now show it's mining strength when using the Nexerelin mod 
+	-Katyusha: Raised the EMP damage by 100 - Was a bit low and rarely disabled like it should
+	-Note: Many of the above adjustments were inspired by a submission from KalHirol - TY for your committed and humorous input 
+
+v3.0.1 - Save game compatible - A quick Deslopify update
+	-Carrack: Added the Civ grade built in hull mod - TY KalHirol for noting it was missing
+	-Collier: Added the ship to the default ship roles as a combat freighter so it should now show up for sale and used in CFT fleets - KalHirol again to the rescue!
+	-Danube: Replaced the built-in hull mod Monofilament Tow Cable with Solar Shielding - Removing a depreciated hull mod before Alex deletes it
+	-Chester: Changed the top three weapon mounts to Hybrid - No need to rearm any in your fleet - Just a QOL/OCD change
+	-Added missing strings to the Asteroid fields in Pengersick - Note: will only show up on new sector generation (new game) - Ty Expensive paper-77 for noting it
+
+v3.0 - Save game compatible Note: You will need to re-arm any Bourbon and possibly Griffon in your saved game fleets 
+	-Basilisk: Raised the turn rate from 6 to 12 - Had trouble engaging
+	-Shredder: Raised the range from 700 to 800 -To match the range of other CFT weapons
+	-Hellfire Mirv: Lowered the damage from 40 to 35 - Was a bit too overpowered and was in need of adjustment
+	-Firestorm MIRV Launcher: Raised the range from 1000 to 1200 - To match the range of other CFT missiles
+	-CFT wings: Raised the wing count by 1 except for the Blackburn and Skiff -In testing I found them underpowered except for the omitted ones 
+	-Arethusa: Raised the cargo from 750 to 1550 and fuel carried from 750 to 1000 - As a combat support ship it need more support aspect 
+	-Lennox: Raised the armor from 200 to 300 -As a command destroyer for a wolfpack player it was a little too fragile for front line
+	-Bolster: Lowered the base cost from 40k to 30k -Was a bit pricy for what it offers
+	-Retourschip: Raised the cost to deploy and supply per month from 10 to 20 -It was low for a Capital ship
+	-Bourbon: Lowered the ordinance points from 320 to 310 and rearmed the variant -It was  little too OP even for a capital
+	-Chester: Raised max flux from 4200 to 5000 and flux dissipation from 300 to 350 - Struggled to feed it's weapon layout	
+	-Cog PD Platform: Raised the cost to deploy and supply per month from 8 to 10 -It was low for  the amount of pd weapons it sports
+	-Collier: Raised the burn from 6 to 8 -Not sure why I had it that low for a destroyer oopsie :)
+	-Galleon: Changed the ship system from cannister flack to maneuvering jets - Makes more sense since it has so many side facing mounts
+	-Griffon: Changed the side facing turrets from ballistic to composite and raised the ordinance points by 10 -Gives more options
+	-Knarr: Raised the speed from 50 to 60 -To fulfill a fan's wish :)
+	-Raven: Raised the flux regen from 250 to 280 -Struggled to keep up with that large mount
+	-Exeter: Changed all the energy and ballistic mounts to hybrid - no need to rearm any current ones - Apparently the previous layout triggered OCD fits :)
+		-Note: the above changes were inspired from commentary by a post from KalHirol - rather than note that for each line, this seemed more concise ;)
+	-Changed the image on the forum page from the CFT flag to the All Ships Image and removed the spoiler tag
+	-Note: I've read commentary from players that do not like the flag but it is a historically accurate non-military British flag from John Carter's time so this is my best accommodation
+
+v2.9 - Save game compatible Note: You will need to re-arm any Odam in your saved game fleet
+	-Basilisk: Raised the energy per shot from 160 to 180 -TY Titann for your commentary
+	-Shredder: Raised the energy per shot from 20 to 35 -TY Titann for your commentary
+	-Wrecker: Raised the energy per shot from 350 to 365 -TY Titann for your commentary
+	-Doubled the EMP damage for all three Electro-Magnetic ballistic weapons - small 4 to 8, medium 8 to 16 and large 16 to 32
+	-Chet Scrap Launcher: Raised the damage/second from 5 to 6 - A minor bump for a fragmentation weapon to make it more worthwhile	
+	-Cove & Pestreath: Deleted an unneeded space in the string for the planets - TY expensive-paper-77 for noting it
+	-Added missing descriptor strings for the two asteroid fields in Pengersick - TY expensive-paper-77 for noting it
+	-Note: The above two fixes will only take effect with a new sector generation (new game)
+	-Odam: Increased the size, replaced a small turret with a medium, added two small hardpoints, one medium hardpoint and 10 OP - TY Maritusa for your commentary
+	-Updated the game version number from "0.98a-RC5" to the current "0.98a-RC8"	
+	-Replaced the Odam sprite with the new version on the "All Ships Image" found on the Forum page and discord link
+	
+v2.8 -Not Compatible with game version .97a saves
+	-Updated code to work with version .98a of Starsector
+	
+v2.7 - Save game compatible Note: You may need to re-arm any of the drone carriers listed below
+	-Fixed a spelling error in the faction description - TY Reshy for letting me know
+	-Changed the graphic for the Shredder - Was a bit too JYD brown - TY Maritusa for suggesting it
+	-Naruebet: Increased the base DP (and supply cost) to 12 and reduced the CR/deployment to 8 - Easier to deploy but costlier to run
+	-Cog PD Platform: Added the hull mod Defensive Targeting Array - TY Maritusa for the idea
+	-Added a new built-in drone only hull mod on all CFT drone carriers and opened up the slots for the player to equip the drones of their choice on the following ships:
+		-Arethusa: added 20 OP and equipped the variant with 4 Tenders
+		-Bawley: Equipped the variant with 2 Tenders
+		-Danube: Added 20 OP and equipped the variant with 2 Apollo and 2 Brig
+		-Draeck: Added 5 OP and equipped the variant with 1 Tender
+		-Exeter: Added the hull mod but no increase in OP
+		-Griffon: Added 20 OP and equipped the variant with 2 Cutter and 2 Brig
+		-Kerberos: Added 10 OP and equipped the variant with 2 Cutter 			
+
+v2.6 - Save game compatible
+	-Replaced the sprite for the Griffon - Was a bit of an eyesore and now has better turret coverage - TY leafybonsai for your commentary 
+	-Apollo and Arkyd, Blackburn, Centurion, Skjold, Tender: Widened the weapon arcs from 0 to 5 which is standard for wings - TY IceFire for you commentary
+	-Hellfire Mirv: Lowered the launch speed from 400 to 250 - Gives them a more standard time before their engines ignite - TY KalHirol for you commentary
+	-Freebooter: Switched the two rear turrets to Hybrid - Relieves OCD issues for players who enjoy symmetry - TY maksatat for pointing it out
+	-Exeter: Reduced the deployment cost, supplies to recover and supply per month from 45 to 23 and added the High Maintenance hull mod - TY Maritusa for the idea
+	-Reviewed all CFT ship and wing images and removed any stray particles - faster load time and reduced vram use - TY IceFire for going over it with me
+	-Updated the "All Ships Image" on the forum and discord with the new Griffon and added a comparison image 
+
+v2.5 - Save game compatible
+	-Bourbon: Added to the list of variants that CFT sells in their markets - TY Zangetsuke for noting this long time oopsie
+	-Basilisk: Lowered the flux per shot from 210 to 160 - Ty Zangetsuke for pointing out that the previous increase was extreme
+	-TY KalHirol for asking me to review the deployment costs of CFT ships to better balance their power to DP ratio, the following ships have been adjusted:	
+		-Knarr: Raised the deployment cost, supplies to recover and supply per month from 20 to 30
+		-Barkentine: Raised the deployment cost, supplies to recover and supply per month from 11 to 14
+		-Bawley: Raised the deployment cost, supplies to recover and supply per month from 6 to 8
+		-Coventry: Lowered the deployment cost, supplies to recover and supply per month from 30 to 28
+		-Exeter: Lowered the deployment cost, supplies to recover and supply per month from 55 to 45
+
+v2.4 - Save game compatible
+	-Basilisk: Raised the energy per shot from 110 to 210 to better match it's description of being good damage but flux inefficient
+	-Raven: Changed the system from burn drive to maneuvering jets - Fits it's fleet role better - Ty 5ColouredWalker for the suggestion
+	-Dhow: Raised the supplies to recover and supply per month from 18 to 22 - Puts it more in line with other phase ships 
+	-Kerberos: Raised the supplies to recover and supply per month from 25 to 30 - To offset it's high ordinance capacity
+	-Odam: Raised the supplies to recover and supply per month from 13 to 18 - TY dani.320 for noting it was a little broken at 13
+	-Added an optional set of AI enhanced Hi-Rez portraits made by therealzOh, Gamemstery and Tigris 
+		-To enable: from the CFT mod folder navigate to graphics\CFT\ delete the "portraits" folder then rename the "hi-rez portraits" folder to portraits
+
+v2.3.2 - Save game compatible
+	-Basilisk: Rebalanced the stats to make it a flux inefficient 800 range HE weapon with good damage - TY Zangetsuke for pointing out it's previous uselessness
+	-Basilisk: Widened the shot sprite to match the barrels being widened in the previous hotfix
+
+v2.3.1 - Save game compatible
+	-Exeter: Raised the fuel/ly from 15 to 18 and supplies/mo from 50 to 55 - TY ymarsakar for your commentary
+	-Fixed an error with the description of the Katyusha Missile
+	-Changed the sprite of the Basilisk to look less like the Heavy AC by widening the barrels and darkening the sprite - TY Roxorium for your input	
+	-Reduced the flash of the Basilisk when it fires and added a visual recoil to the barrels which now alternate rather than all at once
+
+v2.3 - Save game compatible
+	-Changed the aspect ratio of the CFT crest to a standard 256x256 - it was originally elongated to look more like the flag but did not show correctly in game
+	-Added a CFT icon to the LunaLib & TriOS menus
+	-Arethusa: Lowered the speed from 60 to 50 and raised the Flux Regen from 680 to 700 - Helps prevent it from rushing ahead of the fleet alone and getting swarmed
+	-Bolster: Changed two of the small side facing ballistic mounts to medium front facing and rearmed the variant - Gives it some offensive power and worth deploying
+	-Cog PD Platform: Assigned a missing default ship role - Long overdue oversight that prevented it from being assigned to AI controlled fleets
+	-Barkentine: Replaced the ship system from reserve wing to flare launcher - For a light carrier with three wings and that strong a system it was OP 
+	-Lennox: Changed the wing count from 2 to 1 and reduced the op from 100 to 95 
+	-Vestale: Changed the wing count from 2 to 1 - Ty soundso for your post regarding CFT small carriers being OP
+	-Wave Burst PD Laser - Reduced the size of the glow when firing - looked like a flashbang went off every time it fired :)
+
+v2.2 - Save game compatible
+	-Changed the behavior of all CFT PD weapons to prioritize fighters over enemy ships - TY Shogouki for the idea and sorry it took me so long to get to it
+	-Added the Hint DO_NOT_AIM to the Hellfire missile so it will fire outside of it's weapon arc - TY Axelord for the suggestion
+	-Add the Hint CONSERVE_FOR_ANTI_ARMOR to the Inferno, Hellfire, Sledge and Firestorm as they are all Explosive and best not used on Shields
+	-Increased the size of the Hellfire rocket, Chet and point defense missiles to make them more visible - TY Axelord for the suggestion
+	-Lowered the speed of the Firestorm, Chet, Point Defense and Carronade missiles to bring them in line with similar vanilla analogs - TY Axelord yet again :)
+	-Lowered the Armor on the Chester from 1090 to 900 - TY emto demto for your discord commentary
+	-Lowered the wing count of the Cutter from 3 to 2 and the op cost from 7 to 6 - TY Hablmet for your discord commentary
+	-Raised the default ship role of the Exeter from 3 to 12 - Increases the odds of it showing up for sale in CFT markets - They are traders after all :)
+	-Noted the Danube (destroyer) and Bawley (frigate) both had 7 deployment so I changed the Danube to 6 and the Bawley to 8 - Both are logistics ships with similar roles
+	-Changed the OP message on discord for CFT to describe the mod and what it offers in more detail
+
+v2.1 -Save game compatible - Note: The new "NoNex" optional does require a new game if enabled
+	-Cutter: Changed the Culverin firing arc from 360 degrees to 45 degrees rear facing - Repositions it in it's proper role as a PD mount and not contribute to overall DPS - Ty Aaroooon for your insights
+	-Skjold: Increased armor from 400 to 500. lowered wing count from 2 to 1, cost from 9k to 6k, OP from 12 to 10 and refit from 10 to 9 - Puts it in it's role as a heavy fighter - TY Aaroooon & Shogouki for your comments
+	-Triton: Raised the fleet points to 30, supplies per month to 50 and deployment cost to 50 - Better reflects it's big-boy status 
+	-Hellfire MIRV Launcher: Increased the ammo count from 30 to 60 giving it 10 more shots to keep it relevant throughout a fight - TY Shogouki for pointing it out
+	-Katyusha Missile: Increased the projectile speed from 225 to 300 and launch speed from 125 to 150- Helps it's performance as a point defense distractor 
+	-Culverin: Fixed a long standing typo by changing the chargedown from 0.01 to the correct 0.1 and adjusting the damage to compensate - TY BirdWanderer for pointing out that it was below the hard cap
+	-Fog of war: Reimagined it to be a 2 OP PD weapon by adjusting it's stats - I try to offer options that are not already offered and 3 OP PD weapons are common whereas 2 OP is lacking
+	-Saker: Added a burst delay of 0.1 - Fixing an oopsie on my part where it was blank - TY Maritusa for pointing it out
+	-Increased the range of all CFT unguided rockets to 1200 with the exception of the Chet - Puts them in line with Vanilla rocket ranges - I exempted the Chet for theme reasons - TY Shogouki for your commentary
+	-Added optional files to enable CFT to work w/out Nexerelin - Instructions on the Forum OP - TY Morrow for giving me the idea
+
+v2.0 -Save game compatible - 1 change is more impactful with a new game, see notes below
+	-Paixhan: Changed the damage from 800 to 200 and increased the flux per shot from 15 to 40 - With the other differences between the two it makes it an analog for a small version of the flak cannon as was intended
+	-Bawley: Raised the fleet points, deployment points and supply per month from 4 to 7 - Meant to do that when I unlocked the wings in 1.9 - TY 5ColouredWalker for this and the above suggestions
+	-Barkentine: Changed the speed from 90 to 70 and raised the DP from 10 to 11 - With it's heavier than normal armor and mass it did not make sense that it was so fast - TY Aaroooon for pointing that out
+	-Cutter: Lowered the armor from 250 to 200 and raised the acceleration from 125 to 150 
+	-Fixed an error with the Skiff, Centurion and Dinghy not having a max crew by matching the max with the min - oversight on my part that I just caught
+	-Corrected several minor grammar mistakes in the descriptions of ships and weapons
+	-Changed CFT fleet doctrine to prioritize warships over carriers - I had them set to equal but I never intended CFT to be so carrier heavy - will not effect existing NPC fleets, more noticeable in new game
+	-Changed the description of the Paixhan to reflect it's new role - Essentially it is now a small more flux efficient but shorter range version of the vanilla medium Flak Cannon
+	-Adjusted the faction image on the blueprint package and commissioned crews hull mod to be left justified - I changed the flag and Seal in 1.9 but neglected those two - TY Cenbes for pointing it out
+
+v1.9.5 -Save game compatible - If you have a Knarr in your fleet you will need to re-arm it
+	-Narubet: Changed the ability from flare launchers to reserve wing - This change improves the reason to choose it over the newly changed Bawley 
+	-Dhow: Changed a small turret to a medium, realigned the left fin small turret, added 10 OP and equipped the variant with dual flak - Was under performing and the misaligned image hurt my OCD once I saw it :)
+	-Coventry: Changed all energy and ballistic mounts to hybrid, changed the system to fast missile racks and increased the speed to 65 - Helps it better stand out and the speed allows it to keep up with other CFT ships
+	-Kerberos: Increased the max flux by 1k and the flux regen by 200 - It was flux starved and upon review I noticed I had the regen lower than my light cruiser 
+	-Chester: Increased the max speed, acceleration and deceleration by 10 - As a lightly armed medium carrier it needed to be more nimble to be worth using	
+	-Note: The above changes were based on suggestions from 5ColouredWalker and I yet again thank him for the work put in
+	-Knarr: Increased the OP to 260, unlocked the wings and armed the variant with a mix of pd and damaging weapons - Fixing an oopsie I made last patch I unlocked some mounts but never armed the variant -TY last_misadventure for letting me know
+	-Increased the energy per shot of each weapon in the Electromagnetic line of weapons by 10% -Ty doll for pointing out they needed an adjustment and 5ColouredWalker for comparison suggestions
+	-Dingy: Increased the refit from 10 to 12 -Puts it inline with similar bomber wings
+	-Blackburn: Increased the refit from 8 to 10 and changed it's tag from bomber3 to bomber5 - same as above + correctly places it in the torpedo bomber class when you refit
+	-Updated the all ships image on the forum and discord with the new Dhow
+
+v1.9 -Save game compatible but you will need to rearm most of the ships below if you have them in your current fleet
+	-Increased the range of the Shredder and Saker kinetic weapons from 650 to 700 to better pair with CFT's 700 range HE weapons 
+	-Adjusted the CFT crest for the floral image to be left justified (was center) like the flag - I remember seeing a discord comment about how that really triggered their OCD and since then I could not unsee it :)
+		-The reason CFT is jumping to 1.9 is the following list of ship adjustments based on feedback given from various players but specifically by 5ColouredWalker:
+	-Assigned the title "Quality Assurance Specialist" to 5ColouredWalker on the forum OP for all the help he has given		
+	-Freebooter: Lowered the DP and supplies/mo from 50 to 45, removed the built in wings and added tender wings to the variant
+	-Bourbon: Replaced all the ballistic and energy mounts with hybrid, changed the shield from front to omni, efficiency from .9 to .6 and reduced the shield arc from 200 to 180 - My gift to 5ColouredWalker
+	-Exeter: Added a missing civilian-grade hull tag,changed the designation to a Civilian ship, removed the built in wings and added mining drones to the variant
+	-Galleon: Removed the two built in wings and added 2 brig wings to the variant
+	-Bolster: Lowered the DP and supplies/mo from 50 to 40, unlocked all the wings, reduced the wing count from 6 to 4 and increased the OP from 250 to 265
+	-Retourschip: Added a missing civilian-grade hull tag, removed the built in wings and added borer drones to the variant
+	-Odam: Removed the built in wings and added them to the open slots on the variant
+	-Kerebos: Removed the built in wings, changed the small turrets to all be 360 degrees to better use them as PD mounts and added 5 OP to compensate
+	-Conventry- Changed the variant loadout by replacing the volley rockets with a mix of hellfire and point defense missiles
+	-Bombadier: Removed the built in wings, added 5 OP, replaced the Volley rockets with Inferno Mirv on the variant, and put mining drones in the open slots
+	-Ironclad: Added advanced turret gyros to the variant to fill in the unused OP
+	-Dhow: Widened the front side facing mounts from 190 to 225 degrees to better engage targets and added insulated engine assembly to the variant by replacing culverns with mining lasers
+	-Griffon: Added built-in Advanced turret gyros and replaced the wings to 2 Brigs and 2 Cutters
+	-Foudre: Raised the deployment/supplies per month to 25 and the Fleet points to 18 to better reflect it's power
+	-Dromon: Unlocked the built in wings, changed the mounts to a mix of hybrid, composite and synergy and added 2 Borer drones to the open slots on the variant
+	-Cog: Unlocked the two built in wings and added 2 Mining drones to the open slots on the variant and filled in the extra op with Advanced Turret Gyros
+	-Knarr: Unlocked the large and two medium turrets and set them to energy
+	-Collier: Added a missing civilian-grade hull tag, unlocked all the weapon mounts and wings, set them to hybrid, increased the OP to 115 and equipped the variant with a mix of mining lasers, mining drones and electro-magnetic railguns
+	-Carrack: Unlocked the wing slots and fitted the variant with mining drones
+	-Astera: Converted into a Combat Tanker by replacing the civilian tag with a built in targeting unit, increasing FP to 10, armor to 560, MF to 2800, FD to 280, DP/supply to 10 and refitted the variant with combat weapons
+	-Lennox: Unlocked the built-in wings, added 1d0 OP and added two brig wings to the variant
+	-Clipper: Raised the armor by 50, lowered the max speed from 110 to 90, added 10 mass, and increased min crew by 10
+	-Brigantine: Increased the shield arc to 100 since it so wide of a ship 
+	-Barque: Lowered the DP/supply per month by 1 
+	-Barkentine: Unlocked the third wing slot, raised the op by 5 and added a brig to the open slot on the variant
+	-Vergulde: Added a missing civilian-grade hull tag, added built in insulated engines, lowered the OP by 10 and removed reinforced bulkheads on the variant 
+	-Jacht: Added a missing civilian-grade hull tag and raised the DP/supply per month by 2
+	-Vestale: Unlocked the built in wings and added 2 Mizzen to the now open slots on the variant
+	-Scow: Changed the PD turret on the variant to a mining laser and used the free op to add blast doors for better survivability
+	-Jackdaw: I noticed there were 4 unused OP on the variant so I added the Flux Coil Adjunct hull mod
+	-Fusta: Added the missing civilian-grade hull tag that I forgot when I made it
+	-Bawley: Unlocked the wing slots, added 10 OP, added tenders to the open slots on the variant and advanced turret gyros with the leftover OP
+	-Draeck: Unlocked the built in Mizzen wing and added mining drones to the variant
+	-Sloop: Added a missing civilian-grade hull tag
+
+	
+v1.8 -Save compatible with v1.7.1 - Some changes require a new game to take effect, see notes below
+	-Added a new capital sized mining and salvage combat support ship, the Arethusa - Gives CFT players a capital ship with an operations center to lead their fleets
+	-Added the Arethusa to the list of ships that form CFT NPC mining fleets - Gives their NPC mining fleets more effectiveness and teeth
+	-Added the Arethusa to the "Explorer Large" Nexerelin starting option along with the Bolster 
+	-Added the Arethusa to the "all ships image" on the forum OP and discord post - It is the large yellow one (I made it yellow in memory of Vayra's utility ships, miss you.)
+	-Updated the mod description on the forum and discord to state that CFT is intentionally a vanilla plus faction mod with generous Ordinance Point allotments - Because CFT=OP :)
+	-Updated the "Mod technical notes" on the forum OP to reflect changes made to the mod since I wrote it
+	-Removed the Irradiated flag on Porthleah - In retrospect it does not make sense for that planet - new game (sector generation) only	
+		-The following changes are based on suggestions by a long time collaborator 5ColouredWalker - You are the best!
+	-Increased the size of the planet Porthleah from 4 to 6 - Better stability and gives the pirates in the system more teeth - new game (sector generation) only			
+	-Increased the deployment points and supply use of the Jackdaw from 5 to 7 - Reflects the fact that it is a bit more extra than a standard frigate
+	-Slightly widened the spread per shot on the line of Electro-Magnetic Rail weapons - For spam machines they were a little too accurate
+	-Changed the loadout on the Clipper variant to use Electro-Magnetic and Pulse mining weapons - I introduced these weapons after making the Clipper and they make more sense	
+
+v1.7.1 -Save compatible with v1.7a
+	-Unlocked the turrets on the Bawley, changed them to Synergy and added 10 OP - Gives the player more options
+	-Updated to 0.97a
+
+v1.7a -Save compatible with v1.7 - A quick "HOT" fix :)
+	-Changed the planetary condition on the Frozen World Porthleah from "hot" to "cold" -Ty Mephyr for letting me know -New game only
+
+v1.7 - Save compatible with v1.61 but you will need to re-arm any ships changed in this update that are in your saved fleet
+	-A needed ship re-balance update - TY 5ColouredWalker for your suggestions:	
+	-Increased the cost of the Danube by 50k, lowered the OP by 10 and added survey equipment 
+	-Replaced the middle PMB on the Tender drone with a mining laser - Brings down the power and mining strength but keeps is effective
+	-Changed the medium mounts on the Scow to Synergy and Hybrid to give more options in loadout - Better matches CFT's multiuse lore
+	-Changed out the small missile mount on the Barque to a medium - Gives it better punch w/out increasing the OP
+	-Lowered the OP on the Naruebet by 5 and switched out one of the Skiff fighters with a brig interceptor on the variant 
+	-Widened the side facing turrets on the Knarr from 180 to 200 degrees - Gives them better engagement
+	-Increased the OP on the Foudre by 15 and changed the loadout on the variant - Allows it to carry a better compliment of fighters
+	-Re-wrote the description to Combat Engineers to clarify they only effect the ship they are assigned to - TY Indie Winter for pointing it out
+	-Lowered the range of the line of CFT railguns to 1k - 5ColouredWalker made a good point that the range advantage was a bit too much	
+	-Corrected grammar errors in the descriptions by replacing all instances of it's with its` - TY jamitron for letting me know	
+	-Touched up the ship sprite for the Barque to reflect the medium mount and cleaned it up - Barque_old is in the ZIP if you are curious to compare
+	-Replaced the sprite for the Barque on the "All Ships Image" with the updated version
+	-Converted the compression from RAR to ZIP - Received some "requests" and it is a more widely used format
+
+
+V1.6.1 - Just a quick hotfix - Save Compatible with v 1.6
+	-Adjusted the sprites for the Wrecker base and recoil to differentiate them from the HVD - TY Inhilicon for pointing out that it was very similar just darker
+	-Fixed an error with the Wrecker not producing any sound - TY Inhilicon again for noticing it and letting me know
+
+v1.6 - Save Save Compatible with v 1.5.2 - Fine tuning update
+	-Fixed an issue with the Schooner having misaligned turret arcs - TY oporpu for letting me know
+	-Fixed an issue with the medium pulse mining blaster being underpowered, I raised the damage from 60 to 120 and energy from 55 to 110 - TY sajberhippien for the report
+	-Fixed the shield placement on the Apollo - It was slightly misaligned
+	-Realigned the launch bays on the Barkentine - The launch animation is synched now
+	-Realigned the center of the Clipper - Only slightly off but helps with weapon accuracy to have it precise
+	-Widened the side missile firing arcs from 15 to 25 degrees on the Coventry - Increases the chance of a lock on
+	-Widened the firing arcs of the forward facing turrets from 75 to 120 degrees on the Dhow - matches the arcs on the side and rear facing turrets
+	-Widened the firing arcs of the side facing turrets from 180 to 270 and the rear missile mounts from 5 to 25 on the Griffon - Better symmetry and greater chance of engagement
+	-Widened the firing arcs of the forward facing turrets from 75 to 360 degrees on the Jackdaw - Now matches the rear facing turret arcs
+	-Note: There is still an unsolved issue with Linux that popped up in the .96a update as reported by Solar Mechanis that I am still trying to find an answer to 
+	
+v1.5.2 - Nex is back! edition - Not save compatible with prior versions - Sorry, if I had only waited another day before releasing 1.51 :(
+	-Re-enabled Nexerelin interactions and features
+
+v1.5.1 - Not save compatible with prior versions
+	-Updated the mod to work with 0.96a
+	-Disabled Nexerelin interactions - I will re-enable them once a stable patch for that mod is released by Histidine
+		-NOTE: mod integrations will be re-enabled as they are made 0.96a compliant	
+
+v1.5  Save Compatible with v 1.4 - note if you have a Fusta in your fleet, you may need to reallocate OP
+	-Expanded the new CFT specific smuggling mission that occurs in CFT bars introduced in v1.3 - Lucrative "Free Trade" missions now show up with priority from CFT military and trade contacts - TY Timid 
+	-Added a new light cruiser carrier, the Foudre - ARandomRobloxJal asked me to add a sprite he made, emto demto had some suggestions and I cleaned it up to it's final form - hope you like the group effort :)
+	-Re-classified the Dromon in the default ship roles from combat capital to large carrier - Noticed the boo boo when I was adding the Foudre
+	-Added two new mining weapons 1 med and 1 large based on the Electro-Magnetic Rail Gun released last update - I received some nice comments and requests for larger versions
+	-Fixed a typo in the Electro-Magnetic Rail gun's description - noticed it when I was adding the medium and large variants
+	-Changed the vanilla escort package hullmod on the Fusta variant to fluxbreakers - there was a conflict with the mod 'Of Ludd and Lions' escort package hull mod
+	-Replaced the image used for Biolab - numerous complaints that the stock image I used was out of place - TY to Butterslingshot for the initial image I bashed from
+	-Replaced the image used for Grey Industry - Same as above, ok I get it discord fans, no more stock images - A kitbash remake of light industry not great but not a stock image :)
+	-Added the new ship to the "All Ships Image" on the forum OP - Take a peek! :)
+	
+v1.4 - Save Compatible with v 1.3
+	-Swapped/fixed the designations destroyer/heavy destroyer of the Cute and the Happy - The Cute is an in and out skirmisher and the Happy is a hard charger
+	-Added a direct download link to the forum and discord d/l links that bypasses the google drive preview - one less step to get to the good stuff :)
+	-Added a missing label to the asteroid field near the Prussia jump point - TY Maradrax for noting it
+	-Added a new small long range fragmentation mining weapon, the Electro-Magnetic Rail Gun  - CFT lacked a non-PD frag weapon and it gives them a long range option for small ballistic mounts - TY Madbadger2 for helping balance it
+	-Added a new manned fighter mining wing, the Arkyd - It is equipped with the new weapon and a custom ship system that deploys four mining drones - Ty HopeFall for giving me the idea
+	-Added the new fighter to the "all ships image" link on the forum OP so you can take a sneak peek! - Hint, it's the one with the black and yellow lines ;)
+
+v1.3 - Save Compatible with v 1.2.1  - Some changes will only take effect on a new game (see log notes for details)
+	-Added new lore-friendly descriptions to the CFT fighters and drones written by KMS
+	-Finished adding new lore friendly descriptions for all CFT ships - Ty so much KMS for writing these and helping me flesh out the CFT lore. 
+	-Re-named the Dingy to its' proper spelling of Dinghy - My guess is spellcheck changed it at some point and it took KMS' keen eyes to spot it, ty again.
+	-Fixed an error in the title of the Carronade Torpedo Pod and made the description grammatically correct- TY SteelSirokos for noticing my boo boos.
+	-Re-wrote the description for the Volley Rocket that better describes its flaws - TY Maradrax for pointing out that is was vague
+	-Lowered the impact particle effect of the Pulse Mining Blaster - for a small weapon it had quite the eye glaring whallop :)
+	-Ditto for the medium Pulse Mining Blaster - a happy medium between the small and the large
+	-Lowered the probability that CFT NPC fleets will use combat freighters in favor of standard combat ships from 40% to 10% - Too many tankers were being used in their fleets
+	-Raised the probability that CFT NPC fleets will use combat freighters in favor of standard freighters from 60% to 80% - Helps balance the above change
+	-Added two built in Mizzen drone wings on the Kerebos - When I designed the sprite I put two hangers on it but neglected to add the wings in the code -just fixin yet another oopsie :)	
+	-The following eight changes give the CFT ships with the yellow and black stripes a common identity and purpose
+		-Changed the effects of the Combat Engineer hullmod - they still repair damage but now they reduce d-mods on the ships they are installed on - Timid kindly let me know that my assumptions in the old version were incorrect
+		-Added a new cruiser, the Knarr - A combat engineer mining & salvage rig - CFT lacked a cruiser mining ship and it adds another combat engineer ship to the lineup - win/win
+		-Added a new mining drone, the Tender - Able to withstand the battering of an asteroid field it also doubles as an armored fighter when things get hairy
+		-Added a new ship system for the Knarr, EMP Burst Wave - a modified version of the EMP system that has a larger radius and does more damage but has lower uptime and increased flux cost
+		-The Bawley, Bolster, Clipper, Collier, Danube and Knarr all now have the Combat Engineer hull mod and EMP burst ship system 
+		-Changed the built in Borer drones on the Bawley, Bolster, Collier and Danube to the new Tender drone but left the mining drone wings as was - On brand that all Combat Engineer ships have them 
+		-Added/adjusted Nexerelin mining strength to the above Combat Engineer ships varying on their ship size - CFT lacked dedicated mining ships for Nexerelin
+		-Added all the above CE ships to the list of ships that are randomly picked to add to NPC mining fleets 
+	-Added the Knarr and Tender to the ship image on the forum OP
+	-The following is added to the mod with the insight and generous code donation from Timid who's assistance allowed me to offer the following additions/changes:
+		-Added an RNG mission and bar event that allows Freetraders to ask you to smuggle in goods to other factions for the sake of free trade (save-game compatible)
+		-Once the first smuggling mission is completed you receive the option to develop that quest giver a trade or military agent who will give new smuggling missions every 2 game days
+		-Removed some unnecessary conditions (up to you if you were keeping those not save-game compatible but wont break old saves)
+		-Kings Cove now has 5 industry cap instead of 4 (this change not save-game compatible, but wont break old saves)
+		-Added introduction text if you start as the Carter's Freetraders - requires a new game start to see this (duh?)
+		-Updated the description text of the faction information in the intel blurb
+		-Updated the description of Prussia Station 
+		-Added a direct download link to the Version file that mod managers can use to auto-update
+
+V1.2.1 Just a quick little fix - Save Compatible with v 1.2
+	-Changed the mixed engines on the following ships to all midline - A style choice I made for JYD and carried over to CFT - TY Klize1917 for noting that it did not fit with CFT
+		-Astera,Barkentine, Barque, Carrack, Chester, Clipper, Collier, Coventry, Exeter, Griffon, Jacht,Jackdaw, Schooner, Sloop and Vasa
+	-Widened the boundary lines on the Bourbon, Exeter and Scow - noticed it while I was checking the engines
+	-Removed an extra engine exhaust on the Draeck - Only has one engine, I guess I double clicked when I made it 
+
+v1.2 - Save Compatible with v 1.1 - Note: you may need to rearm any CFT ships in your fleet that have been adjusted
+	-Added new lore-friendly descriptions to some of the CFT ships - Ty so much KMS for writing these and helping me flesh out the CFT lore - more to come!
+	-Added a new ship, the Fusta, a very fast corvette sized ship equipped with flares and shielded cargo holds - makes it a favorite among blockade running smugglers or capturing strategic points when deployed
+	-Fixed an error regarding the Basilisk's description not showing in game - TY Noobishnoob for pointing it out
+	-Went through the other description texts and fixed some grammatical errors - because punctuation matters!
+	-Added a line of HE damage energy mining weapons, small medium and large pulse mining blasters - though CFT has some mining ships, they lacked weapons with mining stats plus it adds HE energy to the offering
+	-Fixed the glow effect on the Wavemotion Pulse Laser - mistake on my part when I introduced it I misspelled the file path
+	-Re-equipped all the variants of CFT mining ships (Bawley, Danube, Clipper, Collier, and Bolster) with the new mining weapons
+	-Changed the weapon mounts on the Danube from 2 Ballistic/2energy to 4 Synergy - because options are nice :)
+	-Adjusted the sprite for the Barkentine -Took out a lot of the green tint and changed the sides to be less grimy
+	-Cleaned up the sprite for the Pinnacle - The body was too blurry and chaotic and the saucer tail was choppy
+	-Removed some stray pixels on the Barque ship sprite - Noticed it when I adding the new ships to the forum ship image
+	-Added 20 AI generated portraits (10 female 10 male) all in CFT white and red -Formerly it was set to random and I was unhappy with some of the results - Ty to Severian Void for hosting Stable Diffusion Image Generation
+	-Added the new Fusta as well as the improved Barkentine, Pinnacle and Barque to the ship image on the forum OP
+	-Made a new spoiler post on the forum OP that shows the added portraits 
+
+v1.1 -The great hull mod migration and fixing the oopsies edition - NOT save compatible - New game required due to removed content
+	- TY edixo for noticing the shield on the Freebooter was off center and giving me the idea to check all the ships for errors and fixed the following: 
+		-Centered the shield on the Freebooter, Chester, Danube, Exeter, Jacht, Mizzen, Vergulde
+		-Fixed misaligned engine exhaust on the Apollo, Bombardier, Bourbon, Brig, Brigantine, Carrack, Chester, Clipper, Pinnacle, Retourschip, Skjold, Vasa, Vergulde, Vestale
+		-Fixed some off center mounts on the Bombardier, Bourbon, Clipper, Coventry, Cutter, Dhow, Dromon, Galleon, Raven,Schooner, Scow, Shallop, Sloop, Triton, 
+		-Matched weapon alignments on the Carrack, Clipper, Cutty, Dhow, Dromon, Exeter, Freebooter, Ironclad, Jackt, Schooner, Skjold, Sloop, Triton, Vasa, Vestale - the right mount didn't match the left
+		- Sorry for the sloppy coding and visual headaches and overall OCD nightmares all
+	-While I was doing all that close up work I noted a couple ships that needed some clean up, nothing major like I did for Hiver Swarm but a little nicer I think:
+		-Barkentine - Deleted some stray pixels, lightened the edges, added a light strip to the engines like the apogee has and changed the side strip from a dirty brown to a bronze
+		-Barque - Cleaned up the engines from some stray grey pixels, lightened the lower body a shade and darkened the side stripe to be closer to the Barkentine's stripe
+		-Oram - added a missing outline on the sides, raised the lower right turret to the same height as the left, darkened the side strip and added bridge lights
+		-Pinnacle - added some missing pixels and lightened up all the black pixels along the lower bottom, cleaned up the sides and changes the purple lighting to yellow
+		-Shallop - Added some bridge lighting, lighted up the sides a little and filled in some missing sprites on the hardpoints and lightened the side strip to better match the other Apogee rip offs :)
+		-Coventry - deleted some loose pixels along the sides
+	-Based on numerous "feedback" regarding the balance of the Sledge I decided to rework it: Lowered range and damage from 10k to 5k, increased turn rate and ammo count to 6, reduced the chargedown to 40 and HP down to 2000
+	-Removed all hull mods with the exception of the commissioned crews and combat engineers mods and added them to the new CJHM mod (link in my forum signature)
+	-Removed the former CFT hull mods from the following CFT ship and variants:
+		-missile_ammo built-in hull mod from the galleon
+		-salvagedarmor hull mod from the bawley_standard variant
+		-missile_ammo hull mod from the galleon_standard, ironclad_standard, pdplat_standard variants
+	-Updated the ships image on the forum OP with the cleaned up sprites mentioned above
+		
+	
+v1.0 - Save Compatible with 0.9
+	-Added a new kinetic interceptor, the Centurion as requested by Centurion Chet, Fighter Enjoyer - Though fragile, it is fast and deadly and equipped with a front shield to help stay in the fight
+	-Added a new bomber, the Blackburn as requested by Centurion Chet - Armed with Carronade torpedoes, equipped with a rear pd turret to defend against interceptors and an active flare launcher to fend off missiles
+	-Added a new rocket weapon, the Chet Scrap Launcher also requested by, you guessed it! - A cheap, fast, and terrible frag damage brawler weapon - Quantity over quality best describes it
+	-Fixed a minor error with the Skiff being described as a drone
+	-Fixed a couple spelling mistakes in the weapons descriptions
+	-Fixed the Inferno Rocket not rendering it's missile before firing
+	-Added a turret sprite for the Volley Rocket
+	-Redesigned the Heavy Railgun with greatly changed stats to be a High Explosive version of the Hypervelocity Driver - The past version was the #1 complaint against CFT and now it fills a hole in the vanilla weapon lineup - win/win
+	-Added the two new fighters to the All Ships Image on the forum OP 
+
+v0.9 - Save Compatible with 0.8 
+	-Reduced the impact visual effect of the Basilisk - TY Titann for pointing it out - the length was set to 48 instead of 8 lol
+	-Changed the stats of the Saker - Range 750 to 650, energy/shot 9 to 10, burst size 10 to 8, projectile speed from 1200 to 800 - Titann made a good point that for it's OP it was too strong
+	-Lowered the range of the Heavy Railgun from 1500 to 1100 - I received numerous complaints regarding that extended range causing issues
+	-Lowered the cargo capacity of the Dhow from 1300 to 1000 - Essentially I matched the fuel capacity for balance reasons
+	-Increased the supply use and deployment of the Carrack from 12 to 18 - Having the same as the Schooner was too low for it's size - (edit ty Mendora for your comments)	
+	-Increased the supply use and deployment of the Scow from 4 to 5 - I felt being a combat freighter it should use more than the standard freighter
+	-Changed the nanoforges on all CFT industries from pristine to corrupted - Made them a bit too OP  - Also pristine are way too rare for a bunch of hardscrabble smugglers
+	-In 0.7 I added custom Tech/Manufacturer tags to all CFT weapons and Ships but apparently I neglected the drones and fighters - fixed
+	-Added a new Heavy Fighter, the Skjold - CFT lacked a manned fighter option in it's lineup and I wanted to give them a punch with some staying power
+	-Added missing fleet points to all CFT drones and fighters - Had not realized they were blank until I designed the Skjold - oopsie :)
+	-Fixed a capitalization mismatch in the wing data that could cause issues with players who use Linux
+	-Slanted the small lower side mounts on the Bombardier and widened the firing arcs from 15 to 35 degrees to help them better engage - TY Mendora for your comments 
+	-Fixed the middle right side slanted mount on the Bombardier being off center - noticed it when I was widening the arcs
+	-Added the new fighter pixel and replaced the Bombardier pixel with the updated one on the "All Ships Image" on the forum OP
+
+v0.8 - v0.7 Save Compatible 
+	-Changed the name of Salvaged hull to Stripped Hull - More in line with what it does
+	-Change the graphic of Salvaged hull - looked too similar to reinforced hull
+	-Deleted some redundant Java files - less load and HD space (not much but every little bit)
+	-Replaced the center section of the Clipper due to a plagiarism claim by MesoTroniK -  A lingering issue that I thought I had corrected months ago
+	-Changed the graphic for the Clipper in the "All Ships Image" on the forum OP with the updated Dazs kitbash version 
+	-Corrected the designation and description of the Clipper from Light Cruiser to Heavy Destroyer - Hadn't thought it an issue until I tried to install a targeting core...
+	-Increased the Supply use and deployment of the Freebooter from 45 to 50 - As was pointed out by SirStargateur it is a powerful ship
+	-Lowered the projectile speed of the Heavy Railgun from 2500 to 1500 and projectile HP from 750 to 75 - that was a insane mistake on my part woops!
+	-Flagged all CFT stations as Freeports - Ty N3ophobe for pointing out that having a free market w/out that "can be a bit awkward" :)
+	-Added CFT as well as it's two industries (Bioloab & Grey Industry) to Timid's Better Colonies mod Age of Innovation feature whitelist
+	-Added a link to Better Colonies as a mod integration on the Forum OP
+	-Changed the name of King's Cove to Kings Cove - Improper grammar, I know, but for some reason the system map could not translate the ' - TY Stormy Fairweather for the comment
+		-Note: the above change will only take effect on a new game start when the system is generated
+
+v0.7 -  Save Compatible with 0.6 
+	-Increased the fleet points, deployment and supply use of the Danube from 6 to 7 - Ty to 5ColouredWalker for noting that when I updated the ship I should have done it then
+	-Added custom Tech/Manufacturer tags to all CFT weapons and Ships - TY Hexxod for suggesting the QOL idea, sorry it took me so long to update :)
+	-Centered the shields on the Freebooter - Good catch from 5ColouredWalker
+	-Increased the fleet points for the Freebooter to 30 and deployment/supply use to 45 - More in line with it's performance
+	-Changed the four side hardpoints on the Ironclad from small to medium, increased it's OP by 5, redesigned it's variant and updated the Ship Image - 5ColouredWalker made a good point that it lacked a role in is past form
+	-Added the phase field built in hull mod to all CFT phase ships - Another good point made by 5ColouredWalker
+	-Added a new Phase Combat Tender, the Dhow - A cruiser sized freighter/tanker for smugglers that rely on super sneaky phase tech - A gift for 5ColouredWalker for all the testing he has done
+	-Adjusted the CFT doctrine to have less warships and more phase ships. - When I added phase ships to the faction I neglected to tell the game to use them, oopsie :)
+	-Changed the rear turret of the Cutter from Fog of War to Culvern, increased speed by 50 and lowered rebuild time by 1 - It was slower than the heavy drone and the range of the fog of war was too low to be of use
+	-Added the Bawley, Naruebet and Lennox to the CFT blueprint - The first was listed under JYD, the second and third were blank - oopsies on my part - TY yet again 5ColouredWalker
+	-Added the new ship to the forum front page image (it's on the bottom left if you'd like a peek) and re-arranged the image so it no longer cuts off on the right on smaller monitors
+	-Cleaned up the Forum page making it an easier read - TY Liral for your suggestion
+
+v0.6 - Save Compatible with 0.5 - Some changes require a new game to take effect
+	-Fixed an error with the Carrack, the right rear turret was incorrectly flagged as a medium and is now small - you will have to re-arm it if you have one
+	-Fixed a typo with the Odam being listed as the Oram in the description
+	-Fixed some grammar issues with he CFT faction description
+	-Changed the description of the Inferno Rocket to be more descriptive of it's two stage firing system
+	-Widened the firing arcs of the Danube's rear turrets to 360 and front turrets to 275 - Gives it complete PD coverage as was intended in the design
+	-Widened shield arc of the Bourbon from 110 to 200 to better protect it's sides from strikecraft and missiles	
+	-Renamed the Auto Cannon to Heavy Railgun - A suggestion by Centurion Chet on discord to help soothe his OCD
+	-Fixed an error in the description of the Wrecker from Kinetic to Explosive - TY Waffle for pointing it out on discord
+	-Fixed the boundary lines of the Bombardier that could cause a crash in rare cases - TY to my favorite Discord fan, MapleDaddy for noticing it
+	-Fixed the description of the Howitzer to correctly state it is a 2 burst weapon not 3 - Was originally 3 but I had lowered it w/out fixing the description - TY DemonX3 on Discord for catching it
+	-Increased the flux per shot of the Howitzer from 250 to 275 - My main man on Discord, MappleDaddy, correctly pointed out that it needed a balance pass
+	-Decreased the speed of the Galleon from 70 to 50 and removed the missile auto forge and added the CFT hull mod missile storage expansion to the Standard loadout - Received numerous complaints it was OP for the missile forge
+	-Lowered the armor on the Triton from 1690 to 1500 and increased the deployment and supply use to 48 - Balance pass based on comments on Discord
+	-Fixed two case sensitive mistakes that would cause a crash in Linux - TY Oik for letting me know
+	-*NOTE*: Unless otherwise stated, changes below are thanks to 5ColouredWalker for his tireless pursuit in helping me balance the mod
+	-Increased the wing count of the Mizzen from 1 to 2, widened the shield arc to 270, lowered the hit points from 125 to 100 and armor from 100 to 80 - Gives them a better chance of intercepting missiles 
+	-Increased the wing count of the Brig interceptor from 2 to 3	
+	-Increased the OP on the Danube from 70 to 80 and added twO hullmods to the Standard layout - gives it more flexibility in weapon choice and/or hullmods
+	-Re-aligned the two small energy turrets on the Barque to forward facing, widened the arcs to 360, increased the DP by 1 and added surveying equipment to it's built in mods - It is an Apogee based variant after all
+	-Added two built in Mizzen PD drones to the Carrack and increased its DP and supply use from 10 to 12 - With it's size and weapon layout it had difficulty engaging missiles
+	-Added a battered Clipper to the list of recoverable ships in Pengersick - A request from 5ColouredWalker and implemented by me as a personal TY for all their hard work
+	-Changed the Standard layout of the Raven to be more offensive by replacing the Bombard with a Saker, the Shredder with a Basilisk, Inferno rockets with volley rockets and added a Flux Distributer
+	-Lowered the DP and supply use of the Griffon from 33 to 28 - It is partially automated after all
+	-Lowered the speed of the Kerberos from 85 to 70 and acceleration from 60 to 50 - As a more armored ship it shouldn't have been so fast
+	-Increased the speed of the Odam from 60 to 70 and acceleration from 50 to 60 - As a light cruiser ship it shouldn't have been so slow
+	-Lowered the OP of the Falconet from 6 to 5 - Brings it more in line with similar explosive weapons
+	-Decreased the ammo count of the Inferno from 100 to 60, the Volley from 250 to 200, the Firestorm from 180 to 120 and the PD missile from 360 to 300 
+	-Increased the speed of the Volley Rockets from 750 to 850 - with it's low hp per missile, not many were reaching their target
+	-Changed the sound used on the point defense misses to be less loud
+	-Reduced the MIRV split of the Hellfire and Firestorm rockets from 12 to 8 
+	-Changed the descriptions of the Hellfire and Firestorm to reflect that they are MIRV and split into 8 homing missiles and that the Inferno splits into 4
+	-Changed the names of the Hellfire, Inferno and Firestorm rockets to correctly reflect that they are actually MIRV launchers
+	-Changed the damage type of the Firestorm from Kinetic to Explosive, added the STRIKE AI hint and reduced the range from 2000 to 1000 to match the other CFT MIRV Launchers
+	-Reduced the damage of the Wrecker from 500 to 450 - was outperforming similar weapons
+	-Reduced the range of the Heavy Railgun (formerly Autocannon) from 2500 to 1500, the damage from 2700 to 2500 and increased the energy per shot from 750 to 900
+	-Added a new medium sized direct fire kinetic rocket - The Twin Plasma Rocket Launcher fires two fast direct fire unguided superheated rockets that deplete enemy shields - Fills a gap left in the CFT weapon lineup when I changed the Firestorm
+
+v0.5 Save Compatible with 0.45 but if you have a Scow in your fleet, it may need to be refitted.
+	-Fixed an error with the Inferno and Hellfire MIRV behavior, makes them more effective and flashy - TY Wasara for pointing this out 
+	-Added Nexerelin and lib dependencies to the mod files - TY Avanitia, drunk test pilot and Tim, IRS Mommy for the idea and solution
+	-Removed the small missile mount from the Scow, touched up it's graphic to reflect the change and lowered it's OP by 5 - TY Kumquat & 5ColouredWalker for your valid points that is was OP for a combat freighter
+	-Lowered the speed of the Scow from 180 to 120 putting in line with other CFT frigates - PeopleThief made a valid point that the speed was OP for a combat freighter
+	-Updated the ship image on the forum OP with the new Scow sprite
+	
+v0.45 - Save Compatible with 0.4
+	-Fixed a typo on the Demi-Culvern - changed the flux per shot from 2 to 20 as was intended
+	-Changed the damage of the PD rockets 75 to 35 - Balances them and puts them in line with other PD weapons 
+	-Fixed an error on the Inferno rockets by swapping the damage rating of 25 and impact rating of 50 - They do the correct damage now
+	-Reduced the Ammo count on the Auto Cannon from 100 to 50 - Makes the ammo limitation more realistic - 
+	-Reduced the OP on the Sloop tanker from 60 to 50 and replaced the weapons on the variant to lower OP ones - was a tad too OP for it's role
+	-Changed the Ship System of the Bombardier from microdrive to forgevats
+	-Changed the Ship System of the Galleon form microburn to cannister flack - Both ships are meant to be backline support and giving them a speed boost did not make sense
+	-Replaced the sprites of the PD and inferno missile images with larger versions
+	-A big THANK YOU to rawkhawklives and 5ColouredWalker for the above Balance and graphic suggestions - I've added you both to my list of Beta testers *hugs*
+	-Added a new sound file to the Autocannon - TY ThatFolfy for pointing out that the previous sound was bugged
+	-Sharpened the image of the Fog of War hardpoint and base - was a little too blurry and the barrel was not showing up
+	-Added three torpedo weapons to the CFT lineup - All based on the new Carronade Fragmentation Torpedo in small medium and large sizes
+	-Added a new small long range fragmentation missile the Katyusha - designed to be a small version of the Pilum
+	-Replaced the single medium Pilum missile on the Apollo missile pod to a dual small mount Katyusha missile and the wing count from 2 to 1
+	-Added a new Hull mod - Overclocked Shields inserts new circuitry into a shield generator that increases shield turn rate and unfolding speed at the cost of an overload duration increase
+
+v0.4 Save compatible with v0.35a - Weapon balance changes and many graphic updates - Some ships in you current fleet may need to be re-armed (see below)
+	-Changed the weapon mounts on the following CFT ships (Astera, Barque, Bolster, Bourbon, Carrack, Chester, Exeter, Griffon, Ironclad, Pinnacle, Retourschip) to be side by side symmetrical 
+		-In testing I found the AI had problems with the different ranges when facing forward in the asymmetrical layouts and it gave the more OCD players a headache :) -Ty 5ColouredWalker for having me look into it
+			- NOTE: If you have any of the following ships in your fleet you will need to re-arm them due to the symmetry changes:
+				-Bourbon: Changed the left large turret to be energy and the right medium turret to be ballistic 
+				-Carrack: Changed the left medium turret to ballistic and the left small turret to energy
+				-Freebooter: Changed the right large turret to ballistic and the left small turret to energy and increased the OP by 5 
+				-Griffon: Changed the top left small turret to ballistic
+				-Pinnacle: Changed the left small turret to energy		
+	-Widened the firing arcs of the Astera mounts to line up with the symmetrical changes
+	-Replaced the middle turret graphic on the Astera - Accidently used a side facing instead of a forward facing
+	-Replaced the medium turret graphics on the Chester and re-aligned the left small turrets from 94 degrees to the proper 90 degrees - Fixing minor initial release oopsies
+	-Re-designed the Dingy making it more symmetrical - Added missing boundary lines and weapon mount graphics and changed the rear forward facing hardpoint to a rear facing turret
+	-Added a missing small turret graphic on the Cutter and centered the ship sprite - another graphical fix from the initial release
+	-The above graphic changes are reflected on the forum OP image
+	-Equipped a Wave Burst PD laser on an empty weapon mount on the Bolster variant - fixing a mistake on my part from initial release
+	-Lowered the range of the Auto Cannon from 3k to 2500, Increases the flux per shot from 630 to 750 and projectile speed from 2k to 2500 - Balance suggestions from rawkhawklives and ThatFolfy
+	-Adjusted the Culverin PD to be an upgraded version of the Fog of war PD - same damage/flux, more range and better accuracy for 2 OP more - Ty rawkhawklives for pointing out it was unsustainable in it's past stats
+	-Increased the projectile speed of the Fog of War PD from 200 to 400 - puts it in line with the Culverin changes but still below the light machine gun
+	-Increased the damage of the Paixhan and reduced it's charge down - Making it worthy of a 7 OP PD weapon 
+	-Added a new Hull mod, Salvaged Shield - Similar to makeshift shield but instead of a speed penalty it has a 15% hull & armor penalty - For when players use ships like the Hound but want to keep the CFT midline playstyle
+	
+v0.35a Save game compatible
+	-Fixed some capitalization mismatches that would case a crash under Linux - Ty polkageist for taking the time to make a forum account to let me know, appreciated!
+	
+v0.35 Tested with 0.3a save with no problems
+	-Added a CFT emoji to the SS discord, you can now show your love CFT style - Ty to Timid for suggesting it and Avanitia for adding it!
+	-Added the following missing code to the CFT weapons and Wings - TY to Shadow Rune for their help in tracking them down!
+		-Added a PD tag to the Culverin so it will now target missiles and wings as intended
+		-Changed the description of the Inferno rocket to reflect that is NOT a large mount, has tracking unlike the volley rocket and that it is explosive.
+		-Added missing UI tags to all wings to better matchup when autofitting
+		-Added UI tags to all weapons to better classify them and improve their functionality
+	-Fixed an error in the planet King's Cove starting conditions - TY Kris_xK for that bug hunt
+	-Added a fighter flare launcher system to the Mizzen PD drone - Makes them even more PD!
+	-Changed the damage type of the point defense rockets from fragmentation to high explosive and set them to priority target fighters
+	-Changed the following stats on the Barque - FP 8 to 10, flux 3200 to 6700, flux regen 230 to 400, price 29k to 39k - Puts it between the Hammerhead and the Sunder 
+	-Changed the following stats on the Barkentine - OP from 110 to 100, locked the first fighter bay to a Mizzen PD drone, changed the shield from omni to front - Puts it on balance with the Dover
+	-Changed the flux rate of the Basilisk to be more efficient - TY Zoro89 for this and the two above suggestions
+	-Touched up the graphic for the Barkentine to look less battered - As I was working on it I realized it looked more low tech than midline
+	-Removed the scar running across the Pinnacle's graphic - Same reason as above - I can change either or both back if enough players want the previous battered sprites
+	-Updated the ship picture on the Forum OP with the two new ship sprites if you'd like a peek
+	-Updated the description string for the Barkentine to reflect the above ship changes
+	-Added a missing description for the Dingy heavy bomber
+	-Fixed a spelling error in the description string for the Skiff interceptor preventing it's description from showing - It's skiff not skif - D'oh!
+		
+v0.3a -Minor change save game compatible
+	-Changed the version file to reflect being moved to the MOD forum
+
+v0.3 Tested with a 0.2 save with no issues though if you have one of the changed ships in your current fleet they may need to be re-outfitted.
+	-Re-designated the Ironclad from cruiser to Heavy Cruiser - I felt that the size and stats were a little out of line for a standard cruiser and the faction lacks a heavy cruiser so voila 2 birds 1 stone :)
+	-Changed the Firestorm Missile damage type from Explosive to Kinetic, raised the damage to 50, increased the charge down to 2, and reduced the ammo count to 180 - Rounds out the CFT missile lineup	
+	-Removed two of the missile pods from the Freebooter - it was a little too much and needed a balance pass
+	-Replaced the built in hull mod, missile auto forge, on the Cog PD platform with expanded missile racks and removed the advanced turret gyros- Yet another balance pass change
+	-Added a new phase cruiser, the Vasa - Partially to replace the Ironclad's slot as a phase cruiser but it adds a phase strike ship to the lineup
+	-Added a new missile focused capital ship, the Galleon - A back line capital that will stay out of direct combat while flooding the field with ordnance to tie up enemy PD systems and deliver extended long range damage
+	-Added a new light cruiser variant of the Apogee, the Odam - The faction lacked a medium/large scout/explorer ship	
+	-Added a new hull mod that increases missile ammo storage by reducing cargo space - Since most CFT ships (especially the Bombard) have missile hardpoints this mod would allow them to be relevant longer
+	-Added a new hull mod that increases ship speed when at zero flux, Zeroflux (original I know) - Could be used for several applications but envisioned as a way to give a boost to fleeing ships like freighters
+	-Added a new hull mod that increases ship speed in combat, Booster Rockets - Similar effect of unstable injector but at a much lower OP and effect - UA and SO are incompatible
+	-Fixed an error with the Volley Rockets being labeled as Anti-Armor to Anti-Shield as they are Kinetic damage 
+	-Optimized the script for the Pengersick system - Cleaned up some unneeded code and arranged the structure logically
+	-Did a spelling and grammar pass on the CFT hull mods and fixed some mistakes
+	-Raised the XP earned by salvaging the fields in Pengersick by 20% - Not game breaking by any means but it gives a new player a little head start
+	-Removed 2 duplicates from the list of screen variants and sim opponents - Just removing some unneeded bloat
+	-Updated the sprite for the Firestorm missile to reflect that it is a MIRV - The previous sprite only had 1 missile holder
+	-Updated the sprites for the Fog of War base and turret - In the editor they looked fine but in-game they were kind of a JYD early era blurry mess :)
+
+V 0.2 Tested with a 0.1a save with no issues
+	-Removed the repair gantry from the Draeck - Balance change, it did not make sense for a ship that small to have that many mods
+	-Added a new frigate sized logistics/mining ship the Bawley - Partially to make up for the loss of a small ship gantry but also to add a frigate sized miner for wolfpack players
+	-Increased the cargo space of the Danube - it was a little low for a logistics destroyer
+	-Adjusted the "Good trait frequency" for Starship Legends to be in line with CFT being a lightweight good shield smuggler faction
+	-Added the Scow, Shallop and Sloop to the list of ships that can be generally offered in the Starship Legends derelict bar event 
+	-Added the Bolster and the Ironclad to the list of ships that can only be offered at a CFT faction bar in the Starship Legends derelict bar event
+	-Fixed several grammatical errors found in the ship and weapon description files - Should have done that before initial release sorry
+	-Cleaned up some of the CSV code - Essentially made it more efficient
+	-Modified the the med energy turret on the Clipper by widening it to match the med ballistic turrets - I also touched up the sprite work a little while I was there
+	-Did some minor touch up work on the Bolster's sprites
+	-Fixed an issue with version checker - I had accidently referenced JYD instead of CFT in the file (I swear it wasn't some marketing gimmick :) ) - TY andristzr for brining it to my attention!
+	
+V 0.1a - Should be save game compatible
+		-Received a PM regarding a conflict crash and had to do a quick hotfix
+		-Updated the graphic on the Clipper - I accidently left a nono sprite and only noticed when I posted the op picture - my bad sorry
+
+v 0.1
+	- Initial release for review, testing and constructive criticism.

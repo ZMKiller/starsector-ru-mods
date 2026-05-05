@@ -1,0 +1,18 @@
+{
+	"id":"SCY_grenadeS",
+	"specClass":"missile",	
+	"missileType":"BOMB_WITH_SLOW",
+	"sprite":"graphics/SCY/missiles/SCY_clusterbomb.png",
+	"size":[9,9],	
+	"center":[4.5,4.5],
+	"collisionRadius":4,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[255,100,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":75, # purely visual
+        "maxFlightTime":8,
+	"engineSpec":{"turnAcc":0,
+                        "turnRate":0,
+                        "acc":40,
+                        "dec":40,
+                        "maxSpeed":100},
+} 

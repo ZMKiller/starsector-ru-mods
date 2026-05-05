@@ -1,0 +1,87 @@
+{
+	"playableFaction":true,
+	"corvusCompatible":true,
+    "marketSpawnWeight":2,	
+    "rebelFleetSuffix":"Traitors",
+	"asteroidMiningFleetName":"Scrappy Doo",	
+	"startRelationships":{
+		"independent":0.8,
+		"pirates":-0.6,
+		"tritachyon":0.1,
+		"hegemony":0.1,
+		"luddic_church":-0.1,	
+		"luddic_path":-0.6,
+		"persean": 0.1,
+		"lions_guard":-0.1,			
+	    "sindrian_diktat":-0.1,	
+		"remnant":-0.6,		
+	},
+
+	# Used to determine alliance alignment; also affects disposition towards other factions
+	"alignments":{
+		"corporate":0.1,
+		"technocratic":0.1,
+		"militarist":0.1,
+		"diplomatic":0.25,
+		"ideological":0.1,
+	},
+	"diplomacyTraits":["lowprofile", "neutralist"],
+	
+	"colonyExpeditionChance":0.55,
+    "colonyTargetValuator":"exerelin.campaign.colony.ColonyTargetValuator",		
+
+	# Number of entries must equal number of vengeance tiers (0-3)
+	"vengeanceLevelNames":["Piker", "Doghunt", "Woof"],
+	"vengeanceFleetNames":["DOG The Bounty Hunter", "Dog Catcher", "Woof Woof"],
+	"vengeanceFleetNamesSingle":["DOG Bounty Hunter fleet", "a Dog Catcher", "Woof Wolf"],
+	
+	# Randomly picked to add to a mining fleet
+	"miningVariantsOrWings":[
+		"JYD_short_standard",
+		"JYD_obedient_standard",
+		"JYD_eager_standard",
+		"JYD_lively_standard",
+		"JYD_intelligent_standard",
+		"JYD_exuberant_standard",
+		"JYD_protective_standard",
+		"JYD_cordelia_standard",
+		"JYD_protective_standard",
+		"JYD_lean_standard",
+		"JYD_empathetic_standard",
+	],
+
+    "startShipsSolo":["JYD_adorable_standard"], 
+    "startShipsCombatSmall":["JYD_cute_standard", "JYD_adorable_standard", "JYD_happy_standard"], 
+    "startShipsTradeSmall":["JYD_irksome_standard", "JYD_short_standard", "JYD_relaxed_standard"],    
+    "startShipsCarrierSmall":["JYD_lean_standard", "JYD_spirited_standard", "JYD_short_standard"], 
+	#"startShipsCombatLarge":["JYD_ intense_standard", "JYD_trusty_standard", "JYD_happy_standard"],
+	"startShipsTradeLarge":["JYD_knowledgeable_standard", "JYD_obedient_standard", "JYD_intelligent_standard"],
+    #"startShipsCarrierLarge":[""],
+    "startShipsExplorerLarge":["JYD_industrious_standard", "JYD_peppy_standard"],	
+    "startShipsSuper":["JYD_smart_standard"],	
+	
+	"startSpecialItems":[
+        [["jyd_package", ""]],
+        [["jydwe_package", ""]],	
+        [["jydwi_package", ""]],		
+    ],	
+	
+   "industrySeeds":[
+ 		{"id":"militarybase", "mult":1},
+        {"id":"orbitalworks", "mult":1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+    ],
+
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1},
+        {"id":"population_upsize", "count":1},		
+    ],
+
+
+	# Defense stations used in random sector
+	"defenceStations":[
+		{"ids":["orbitalstation", "battlestation", "starfortress"]},
+		{"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"]},
+	],
+}

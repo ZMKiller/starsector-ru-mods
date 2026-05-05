@@ -1,0 +1,60 @@
+{
+  "id": "drg_tawa_battery",
+  "specClass": "projectile",
+  "projectileSpecId": "drg_tawa",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/drg_tawa_battery_turret_base.png",
+  "hardpointSprite": "graphics/weapons/drg_tawa_battery_hardpoint_base.png",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    15,
+    10,
+    15,
+    0,
+    15,
+    -10
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    23,
+    10,
+    23,
+    0,
+    23,
+    -10
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 12,
+    "particleSizeRange": 12,
+    "cloudParticleCount": 6,
+    "cloudDuration": 1.5,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 4,
+    "blowbackDuration": 2,
+    "blowbackLength": 22,
+    "blowbackSpread": 15,
+    "particleColor": [
+      159,
+      116,
+      218,
+      105
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "atropos_fire"
+}

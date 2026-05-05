@@ -1,0 +1,41 @@
+{
+    "displayName": "Area Denial",
+    "fluxCapacitors": 10,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "SCY_lealaps",
+    "hullMods": [
+        "eccm",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_lealaps_Area_Denial",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_minigun1",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "swarmer",
+                "WS0002": "swarmer",
+                "WS0004": "swarmer",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_intercept",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

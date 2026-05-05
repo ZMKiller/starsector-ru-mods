@@ -1,0 +1,34 @@
+{
+  "variantId": "HIVER_hornet_standard",
+  "hullId": "HIVER_hornet",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 17,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "additional_berthing",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "HIVER_twinpd",
+        "WS0002": "HIVER_twinpd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "Hiver_eyeball",
+        "WS0004": "Hiver_eyeball"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

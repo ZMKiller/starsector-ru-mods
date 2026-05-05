@@ -1,0 +1,133 @@
+{
+  "hullName": "Happy",
+  "hullId": "JYD_happy",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/JYD_happy.png",
+  "style": "LOW_TECH",
+  "height": 150,
+  "width": 120,
+  "center": [60, 70.5],
+  "collisionRadius": 107,
+  "shieldCenter": [0, 0.5],
+  "shieldRadius": 99,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [47, 41]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [16.5, -18]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [16.5, 18]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [-16.5, -14.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [-16.5, 14.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [47, -41]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -50, -0,
+        -53, -0
+      ]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 180,
+      "locations": [-55.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-67, -47.5],
+      "length": 35.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-66, -35.5],
+      "length": 35.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-64.5, 36.5],
+      "length": 35.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-66, 47.5],
+      "length": 35.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    61.5, -51,
+    77, -11.5,
+    76.5, 11.5,
+    61, 53,
+    -70, 64,
+    -71, -58.5
+  ]
+}

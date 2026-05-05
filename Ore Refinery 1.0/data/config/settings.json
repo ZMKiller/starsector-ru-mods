@@ -1,0 +1,51 @@
+{	
+	"MF_OreConversionRate": 20,
+	"MF_OreCost": 370,
+	"MF_RARE_OREConversionRate": 10,
+	"MF_RARE_ORECost": 62,
+	"MF_ORGANICSConversionRate": 10,
+	"MF_ORGANICSCost": 95,
+	"MF_VOLATILESConversionRate": 5,
+	"MF_VOLATILESCost": 24,
+	"MF_FOODConversionRate": 10,
+	"MF_FOODCost": 93,	
+	"MF_FUELConversionRate": 10,
+	"MF_FUELCost": 94,	
+	"MF_HeavyMachineryCost":1,	
+	#Just don't set those values above to zero or less. Because... you can't really set it to zero without the whole thing bamming and crashing.
+	
+	"MF_CorruptedOre":0.10,
+	"MF_PristineOre":0.20,
+	"MF_CorruptedRARE_ORE":0.10,
+	"MF_PristineRARE_ORE":0.20,
+	"MF_CorruptedORGANICS":0.10,
+	"MF_PristineORGANICS":0.20,	
+	"MF_CorruptedVOLATILES":0.10,
+	"MF_PristineVOLATILES":0.20,	
+	"MF_CorruptedFOOD":0.10,
+	"MF_PristineFOOD":0.20,	
+	"MF_CorruptedFUEL":0.10,
+	"MF_PristineFUEL":0.20,	
+	"MF_SalvageGantry":0.10,
+	#This is like the modifier that messes with the... bonus modifiers.
+	
+	"MF_Input":true, # Should the modifier affect the input? (Ore and Heavy Machinery Cost)
+	"MF_Output":true, # Should the modifier affect the output? (Supply)
+	
+	"MineralForgingSensorProfileIncreasePercent": 50,
+
+	#UseExtraCommodities can either be set from 0-whateverasmuchasyoulike. If it's, 0 it will not detect any extra commodity to convert.
+	"MFUseExtraCommodities": 0,
+
+	#Here's a list of all the commodities: organics,volatiles,ore,rare_ore,rare_Ores,domestic_goods,organs,drugs,hand_weapons,luxury_goods,lobster,alpha_core,beta_core,gamma_core
+	"ExtraCommodities0":"rare_ore",
+	"ExtraCommodities1":"organics",
+	
+	#ExtraCommodities0, ExtraCommodities1, ExtraCommodities2, ExtraCommodities3, ExtraCommodities4 must then have text string that make sense or else it'll CTD!
+	
+	#The cost should be more than zero or I'll get really mad.
+	"ExtraCommoditiesCost0":5,
+	"ExtraCommoditiesCost1":3,
+
+	#Not to mention you need to also put a corresponding Cost as well like ExtraCommoditiesCost2, and so on.
+}

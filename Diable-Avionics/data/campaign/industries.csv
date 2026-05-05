@@ -1,0 +1,56 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order
+diableavionics_orbitalstation,Орбитальная станция - Diable Avionics,50,90,,3,,diableavionics_battlestation,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:diableavionics_station_tier1,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,data.campaign.industry.Diableavionics_orbitalStation,"Кориолисова космическая станция с умеренной огневой мощью и существенной обороной истребителями.
+
+Должна быть подавлена до начала вторжения или бомбардировки.",2010
+
+
+diableavionics_battlestation,Боевая станция - Diable Avionics,100,120,,4,diableavionics_orbitalstation,diableavionics_starfortress,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:diableavionics_station_tier2,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,data.campaign.industry.Diableavionics_orbitalStation,"Кориолисова боевая станция, усиленная оружейными батареями с тяжёлым вооружением и обширным присутствием истребителей.
+
+Должна быть подавлена до начала вторжения или бомбардировки.",2020
+
+
+diableavionics_starfortress,Звёздная крепость - Diable Avionics,200,180,,5,diableavionics_battlestation,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:diableavionics_station_tier3,
+fleetName:Star Fortress
+}",graphics/icons/industry/battlestation.png,data.campaign.industry.Diableavionics_orbitalStation,"Кориолисова звёздная крепость, усиленная модулями РЭБ и продвинутыми объектами для ванзеров.
+
+Должна быть подавлена до начала вторжения или бомбардировки.",2030
+
+
+
+
+
+diableavionics_orbitalstation_lock,Orbital Station - Diable Avionics,50,90,,3,,diableavionics_battlestation,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:diableavionics_station_lock1,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,data.campaign.industry.Diableavionics_orbitalStation_lock,"A coriolis space station, featuring moderate firepower and substantial fighter defenses.
+
+Must be reduced before invasions or bombardment can be attempted.",2010
+
+
+diableavionics_battlestation_lock,Battlestation - Diable Avionics,100,120,,4,diableavionics_orbitalstation,diableavionics_starfortress,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:diableavionics_station_lock2,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,data.campaign.industry.Diableavionics_orbitalStation_lock,"A coriolis battle station, augmented with weapon batteries featuring heavy armaments and extensive fighter presence.
+
+Must be reduced before invasions or bombardment can be attempted.",2020
+
+
+diableavionics_starfortress_lock,Starfortress - Diable Avionics,200,180,,5,diableavionics_battlestation,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:diableavionics_station_lock3,
+fleetName:Star Fortress
+}",graphics/icons/industry/battlestation.png,data.campaign.industry.Diableavionics_orbitalStation_lock,"A coriolis starfortress that has been enhanced with ECM warfare modules and advanced Wanzer facilities.
+
+Must be reduced before invasions or bombardment can be attempted.",2030

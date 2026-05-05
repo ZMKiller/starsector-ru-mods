@@ -1,0 +1,165 @@
+{
+  "hullName": "Rambunctious",
+  "hullId": "JYD_rambunctious",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/JYD_rambunctious.png",
+  "style": "MIDLINE",
+  "height": 180,
+  "width": 147,
+  "center": [72.5, 94.5],
+  "collisionRadius": 126.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 122,
+  "viewOffset": 0,
+  "builtInMods": [
+    "heavyarmor",
+    "repair_gantry",
+    "tow_cable"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [52, 22]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [52, -24]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-37.5, -44.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-37.5, 42.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 275,
+      "angle": -135,
+      "locations": [45, -65.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 275,
+      "angle": 135,
+      "locations": [45, 65.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 90,
+      "locations": [19.5, 16.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": -90,
+      "locations": [19.5, -19.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-91.5, -44],
+      "length": 35,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-91, -32.5],
+      "length": 45.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-90, 30.5],
+      "length": 45.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-92, 41.5],
+      "length": 35,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-88, 17.5],
+      "length": 58,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-89, -20.5],
+      "length": 58,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    90, -13.5,
+    81, -59.5,
+    34, -80,
+    32, -32,
+    -4.5, -46.5,
+    -44.5, -59.5,
+    -56.5, -46.5,
+    -97, -53.5,
+    -97.5, -6,
+    -63.5, -3.5,
+    -63.5, 3.5,
+    -97.5, 6,
+    -97, 53.5,
+    -56.5, 46.5,
+    -44.5, 59.5,
+    -4.5, 46.5,
+    32, 32,
+    34, 80,
+    81, 59.5,
+    90, 13.5
+  ]
+}

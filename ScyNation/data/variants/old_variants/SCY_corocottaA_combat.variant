@@ -1,0 +1,46 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 20,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "SCY_corocottaA",
+    "hullMods": ["fluxbreakers"],
+    "modules": [
+        {"WW1_MULTI": "SCY_corAF_standard"},
+        {"WW2_MULTI": "SCY_corAFL_standard"},
+        {"WW3_MULTI": "SCY_corAFR_standard"},
+        {"WW4_MULTI": "SCY_corAL_standard"},
+        {"WW5_MULTI": "SCY_corAR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_corocottaA_combat",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_kacc3"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "ionpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_hemor2",
+                "WS0003": "SCY_hemor2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_intercept",
+                "WS0006": "vulcan",
+                "WS0007": "vulcan"
+            }
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+  "bounds": [
+    5,
+    -9.5,
+    -6,
+    -9.5,
+    -6,
+    9.5,
+    5,
+    9.5
+  ],
+  "builtInWeapons": {
+    "WS0003": "edshipyard_0_Dust",
+    "WS0004": "edshipyard_0_Dust"
+  },
+  "center": [
+    12,
+    12
+  ],
+  "collisionRadius": 15.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 11,
+      "location": [
+        -6,
+        -0
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 6
+    }
+  ],
+  "height": 24,
+  "hullId": "edshipyard_papillon",
+  "hullName": "Pappilon",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 14.5,
+  "spriteName": "graphics/ships/edshipyard_papillon.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 45,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        3.5,
+        6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -45,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        3.5,
+        -6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0005",
+      "locations": [
+        1,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 24
+}

@@ -1,0 +1,54 @@
+{
+    "displayName": "Elite_advanced",
+    "fluxCapacitors": 50,
+    "fluxVents": 50,
+    "hullId": "HSI_Life",
+    "hullMods": [
+        "armoredweapons",
+        "autorepair",
+        "converted_hangar",
+        "fluxbreakers",
+        "turretgyros",
+        "HSI_HardenShield",
+        "HSI_ProtocalMeltDown",
+        "advancedoptics",
+        "auxiliarythrusters"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Life_Elite_A",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "HWI_FocusLance",
+                "WS 001": "HWI_FocusLance",
+                "WS 003": "HWI_FocusLance",
+                "WS 004": "HWI_FocusLance"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "HWI_FocusLance"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "HWI_IonLanceM",
+                "WS 008": "HWI_IonLanceM"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 009": "HWI_IonLanceM"}
+        }
+    ],
+    "wings": [
+        "mining_drone_wing",
+        "mining_drone_wing"
+    ]
+}

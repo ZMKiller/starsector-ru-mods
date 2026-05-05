@@ -1,0 +1,58 @@
+{
+  "variantId": "rr_undertaking_od",
+  "hullId": "rr_undertaking",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 12,
+  "fluxVents": 30,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "sabotpod",
+        "WS0003": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "breach",
+        "WS0005": "breach",
+        "WS0006": "breach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "pulselaser",
+        "WS0008": "irpulse",
+        "WS0009": "rr_mini_mblast"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,27 @@
+{
+    "id":"SCY_twinShield",
+    "type":"SHIELD_MOD",
+    "aiType":"FORTRESS_SHIELD",
+
+    "statsScript":"org.scy.shipsystems.SCY_twinShieldStats",
+
+    "shieldRingColor":[200,225,255,255],
+    "shieldInnerColor":[50,150,255,175],
+    "shieldThicknessMult":1,
+    "shieldFluctuationMult":1.5,
+
+    "soundFilterType":"LOWPASS",
+    "soundFilterGain":0.5,
+    "soundFilterGainHF":1.5,
+
+    "useSound":"SCY_layer_start",
+    "loopSound":"SCY_layer_loop",
+    "deactivateSound":"SCY_layer_end",
+    "outOfUsesSound":"gun_out_of_ammo",	
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

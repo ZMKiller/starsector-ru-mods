@@ -1,391 +1,386 @@
 name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
-Orky Ship,ls_orky,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_orky,"Dis 'ere ship have been made propa orky by the da boyz. Now it goez fasta and krump stuff real good! WAAAGH!
+Орочий корабль,ls_orky,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_orky,"Эта посудина сделана парнями по-настоящему орочьей. Теперь она летит быстрей и крушит все как надо! ВААААГХ!
 
-Ork's love for speed inevitably result in various modifications made to make their ships go fasta. On the other hand, their complete disregard for maintenance and proper targetting also hinder their ship's reliability and accuracy, but these ships also tend to lack vulernable bits to be damaged in battle.
+Любовь орков к скорости неизбежно приводит к самым разным переделкам, чтобы их корабли летели быстрее. С другой стороны, полное пренебрежение обслуживанием и нормальным наведением снижает надежность и точность, зато у таких кораблей обычно меньше уязвимых деталей, которые можно повредить в бою.
 
-- Top speed increased by %s/%s/%s/%s su
-- Ballistic and energy weapon range reduced by %s 
-- Weapon recoil increased by %s
-- Peak CR time reduced by %s
-- Weapon and engine durability increased by %s
-- Ship deals %s more collision damage and receives %s less damage from exploding ships.
+- Максимальная скорость увеличена на %s/%s/%s/%s ед.
+- Дальность баллистического и энергетического оружия снижена на %s 
+- Отдача оружия увеличена на %s
+- Пиковое время боеготовности снижено на %s
+- Прочность оружия и двигателей увеличена на %s
+- Корабль наносит на %s больше урона при столкновениях и получает на %s меньше урона от взрывающихся кораблей.
 
-The orky modification already made a mockery of standard safety protocol, installing regular safety overrides on this ship is pointless. ",,,graphics/hullmods/orky.png
-Deathskulls,ls_deathskull,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_deathskulls,"That git iz now a proppa dee-re-lik good for lootin'. Now, were iz me blue paints, hur hur.
+Орочья переделка уже превратила стандартные протоколы безопасности в шутку, так что установка обычных аварийных форсажей на этот корабль бессмысленна.",,,graphics/hullmods/orky.png
+Смерточерепа,ls_deathskull,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_deathskulls,"Эта рухлядь теперь годится для настоящего лута. Где моя синяя краска, хе-хе.
 
-Even amongst the Orks, the Deathskulls are known for their thieving and looting ways. Therefore it is no surprise they hoard significant amount of looted bits stored in every nook and cranny of their ships, allowing spare bits to be readily available when repair are needed. 
+Даже среди орков Смерточерепа известны своей страстью к воровству и трофеям. Неудивительно, что они забивают все закоулки кораблей украденными деталями, так что запасные части всегда под рукой, когда нужен ремонт.
 
-The Deathskulls holds a superstition that the color blue will somehow bring them luck. Strangely enough, it seems their blue-painted ship are indeed able avoid some damage often enough to be a statistical anomaly.
+Смерточерепа суеверно верят, что синий цвет приносит удачу. Как ни странно, их выкрашенные в синий корабли действительно подозрительно часто избегают части повреждений.
 
-- Weapon and engine repair speed increased by %s
-- Gain %s/%s/%s/%s points of armor for damage calculation only, fighter gets %s
-",,,graphics/hullmods/DS.png
-Mek Speshul,ls_mek,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_mek,"Dis ship have da biggest and shininest generatas that give yer zzappas and blastas all da proper juice! Oi, don't touch that!
+- Скорость ремонта оружия и двигателей увеличена на %s
+- Получает %s/%s/%s/%s очков брони только для расчета урона, истребители получают %s",,,graphics/hullmods/DS.png
+Мек-спешл,ls_mek,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_mek,"На этом корабле стоят самые большие и блестящие генераты, чтобы все ззаппы и бласты получали правильный сок! Эй, не трогай это!
 
-This ship has been especially 'kustomized' by a mek boy and is even more deranged than the usual ork warship. Various handy bits and gubbins increase ship repair rate by %s , and supercharged generators increase energy weapon damage by %s . 
+Этот корабль особенно 'кастомизирован' мекбоем и еще безумнее обычного орочьего боевого корабля. Разные полезные детали и прибамбасы повышают скорость ремонта корабля на %s, а перегруженные генераторы повышают урон энергетического оружия на %s.
 
-However, overcharged and often hazardous power system layout makes the ship extremely vulnerable to failure in its power systems, causing a %s increase in overload duration and increase EMP damage taken by %s .",,,graphics/hullmods/mek.png
-Bad Moons,ls_badmoons,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_badmoons,"We'z got da most teef, da snazziest ship, and da most dakka! Dats why wez da best!
+Однако перегруженная и опасная схема энергосистем делает корабль крайне уязвимым к отказам питания, увеличивая длительность перегрузки на %s и получаемый ЭМИ-урон на %s.",,,graphics/hullmods/mek.png
+Дурные Луны,ls_badmoons,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_badmoons,"У нас больше всех зубов, самый шикарный корабль и больше всего дакки! Вот почему мы лучшие!
 
-The Bad Moons are the richest of all the Ork klanz, serving as a sort of merchant caste. These Orks prefer a posh and refined lifestyle, at least by Ork standards, but also spend their considerable wealth to purchase the most snazzy gear and gubbins. This resulted in a generally higher standard of equipment for orks. 
+Дурные Луны - самый богатый из орочьих кланов, что-то вроде торговой касты. Эти орки предпочитают роскошный и утонченный образ жизни, по орочьим меркам, и тратят богатство на самые шикарные штуки и прибамбасы. Поэтому их снаряжение обычно лучше среднего орочьего.
 
-In combat, The Bad Moons are also know to prefer to hang back and brandish their overwhelming ranged fire power instead of 'getting stuck in'.
+В бою Дурные Луны тоже любят держаться подальше и демонстрировать подавляющую дальнобойную мощь, вместо того чтобы 'лезть в драку'.
 
-- Increase Max CR by %s
-- Increase energy and ballistic range by %s/%s/%s/%s
-- Fighter energy nad ballistic range increased by %s",,,graphics/hullmods/BM.png
-Evil Suns,ls_evilsuns,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_evilsuns,"Red unz go fasta!
+- Максимальная боеготовность увеличена на %s
+- Дальность энергетического и баллистического оружия увеличена на %s/%s/%s/%s
+- Дальность энергетического и баллистического оружия истребителей увеличена на %s",,,graphics/hullmods/BM.png
+Злые Солнца,ls_evilsuns,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_evilsuns,"Красные летят быстрее!
 
-Evil Sunz are an Ork clan who are dedicated to speed and making as loud a noise as possible when in combat. The adopted the ork belief that things painted red will travel faster, and just like the deathskull's belief that blue is a lucky color, this has resulted in an actually noticiable increase in their ship's speed and mobility. 
+Злые Солнца - орочий клан, помешанный на скорости и максимально громком шуме в бою. Они приняли орочью веру в то, что покрашенное красным едет быстрее; и, как вера Смерточерепов в удачный синий цвет, это почему-то дает заметный прирост скорости и маневренности.
 
-- Increase manuverability by %s 
-- Increase ship top speed by %s/%s/%s/%s su
-- Increase fighter top speed %s su",,,graphics/hullmods/ES.png
-Snakebites,ls_snakebites,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_snakebites,"Da old wayz iz da best!
+- Маневренность увеличена на %s 
+- Максимальная скорость корабля увеличена на %s/%s/%s/%s ед.
+- Максимальная скорость истребителей увеличена на %s ед.",,,graphics/hullmods/ES.png
+Змеекусы,ls_snakebites,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_snakebites,"Старые пути - самые лучшие!
 
-The snakebites are a rather primitive ork clan dedicated to the 'old ways', replacing many electronic in their ship with primitive counter part or squigs means they they are next to immune to electronic warfare, and their tough-as-nails ship are surprisingly hard to put down for good.
+Змеекусы - довольно примитивный орочий клан, преданный 'старым путям'. Они заменяют большую часть электроники на примитивные аналоги или сквигов, из-за чего почти невосприимчивы к электронной войне, а их крепкие как гвозди корабли удивительно трудно вывести из строя окончательно.
 
-- Reduce EMP damage taken by %s .
-- Non-fighter ships can slowly repair up to %s or %s of their max HP in battle, whichever is higher. ",,,graphics/hullmods/SB.png
-Blood Axes,ls_bloodaxes,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_bloodaxes,"Fink, you git! Fink! Getting duff'ed up before you can get stuck'in iz just wasteful it iz!
+- Получаемый ЭМИ-урон снижен на %s.
+- Неистребители медленно чинятся в бою до %s или %s от максимальной прочности, смотря что выше.",,,graphics/hullmods/SB.png
+Кровавые Топоры,ls_bloodaxes,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_bloodaxes,"Думай, болван! Думай! Получить по башке до того, как влезешь в драку, просто расточительство!
 
-The Blood Axes are an extremely unorthodox clan of orks known for using tactics, camouflage, and would even consider retreat as something to be done intentionally. Despite having no actual understanding of camouflage and electronic warfare, their attempt to imitate these 'taktiks' have somehow resoulted in similar results.
+Кровавые Топоры - крайне необычный орочий клан, известный использованием тактики, камуфляжа и даже тем, что считает отступление чем-то, что можно сделать намеренно. Несмотря на полное непонимание камуфляжа и электронной войны, их попытки копировать эти 'тактики' почему-то дают похожий результат.
 
-- Ships sensor profile reduced by %s
-- Each ship contribute %s/%s/%s/%s ECM rating based on size of the ship
-- Damage taken from non-missile projectile fired by ships at least %s/%s/%s/%s/%s",,,graphics/hullmods/BA.png
-Goffs,ls_goffs,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_goffs,"We'z da biggest and strongest! Tink ovvuawise? Come hav a go then, yer runty little git!
+- Профиль сенсоров корабля снижен на %s
+- Каждый корабль дает %s/%s/%s/%s рейтинга РЭБ в зависимости от размера
+- Урон от неракетных снарядов, выпущенных кораблями как минимум %s/%s/%s/%s/%s",,,graphics/hullmods/BA.png
+Гоффы,ls_goffs,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_goffs,"Мы самые большие и сильные! Думаешь иначе? Подойди и попробуй, мелкий сопляк!
 
-The Goffs are the largest and strongest ork clan, with largest and strongest orks. Unlike most other orks, Goffs take fighting extremely seriously and shuns most fancy tricks and tech, preferring to charge enemy head on and overwhelm with their heavy prow armor and close range weapons.
+Гоффы - самый крупный и сильный орочий клан, с самыми крупными и сильными орками. В отличие от большинства орков, Гоффы относятся к драке крайне серьезно и презирают хитрые трюки и технологии, предпочитая лобовую атаку с тяжелой носовой броней и оружием ближнего боя.
 
-- Ship Armor increased by %s in the front portion of the ship.
-- Ship Armor decreased by %s in the side and rear of the ship.",,,graphics/hullmods/ls_GO.png
-Kommandoz,ls_kommando,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_kommando,"Da uvva gitz can say wot dey want, but all dey do is gettin all shot up by oomies wiv half decent dakka. If yooz want da jobz done quick, proppa, and all sneaky-like, yooz call da Kommandoz.
+- Броня корабля увеличена на %s в передней части.
+- Броня корабля снижена на %s по бокам и в корме.",,,graphics/hullmods/ls_GO.png
+Коммандос,ls_kommando,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_kommando,"Другие болваны могут говорить что хотят, но они только и делают, что ловят пули от людей с нормальной даккой. Если хочешь, чтобы работа была сделана быстро, правильно и скрытно, зовешь Коммандос.
 
-Kommando are a subgroup of orks that actually favor stealthy approach to warfare. Instead of charging in and guns blazinging, they prefer to hide in the darkness of the void before striking where the target is the weakest. Their various tricks and disguise used to hide themselves somehow works and reduce their sensor signature by %s. Their ability to sniff out vulernable targets also increase their damage to weapon and engine by %s. 
+Коммандос - подгруппа орков, которая действительно предпочитает скрытный подход к войне. Вместо лобовой атаки с ревущими пушками они прячутся во тьме пустоты и бьют туда, где цель слабее всего. Их трюки и маскировка каким-то образом работают и снижают сигнатуру сенсоров на %s. Умение вынюхивать уязвимые цели также повышает урон по оружию и двигателям на %s.
 
-Their disguise is so effective that for %s/%s/%s/%s seconds after the battle start (depending on hull size), Kommando ships have NO collision and cannot be hit unless they fire any weapon or enter within approximately %s/%s/%s/%s of an enemy ship or fighter. ",,,graphics/hullmods/ls_Kommando.png
-Fox Fervor,mikohime_dash,0,,,,,,,TRUE,,0,0,0,0,data.shipsystems.mikohime_dash,"Whoever designed this system has an almost ork-like obsession with speed. Despite the massive time-warping effect of this engine, the precieved timeflow of all living creatures in its area of effect is locked to the normal time-stream, creating a sense of extreme acceleration. 
+Маскировка настолько эффективна, что в течение %s/%s/%s/%s секунд после начала боя, в зависимости от размера корпуса, корабли Коммандос НЕ имеют столкновений и не могут быть поражены, пока не выстрелят или не приблизятся примерно на %s/%s/%s/%s к вражескому кораблю или истребителю.",,,graphics/hullmods/ls_Kommando.png
+Лисья ярость,mikohime_dash,0,,,,,,,TRUE,,0,0,0,0,data.shipsystems.mikohime_dash,"Тот, кто спроектировал эту систему, почти по-орочьи одержим скоростью. Несмотря на мощный эффект искривления времени, воспринимаемый поток времени всех живых существ в зоне действия привязан к нормальному временному потоку, создавая ощущение экстремального ускорения.
 
-Press C in combat to shift the ship in the direction of the ship's current velocity, while multiplying ship timeflow by 4x for a brief moment. This will not affect the precieved time flow of those controlling it. Excess flux of the ship is also vented as EMP arcs if there are enemy targets within 500 SU, up to 8 arcs can be generated each dash. Quickly regenerate up to 4 charges. 
+Нажмите C в бою, чтобы сместить корабль в направлении текущей скорости и на короткий миг умножить поток времени корабля в 4 раза. Это не влияет на воспринимаемый поток времени тех, кто им управляет. Избыточный поток корабля также сбрасывается ЭМИ-дугами, если в пределах 500 ед. есть вражеские цели; каждый рывок может создать до 8 дуг. Быстро восстанавливает до 4 зарядов.
 
-THIS SYSTEM IS DELICATE AND WILL NOT FUNCTION IF SHIP HAS D-Mods",.,.,graphics/hullmods/maiden_serenade_refit.png
-Maiden Serenade (Looted),ls_onihime_serenade,0,,,,,,,TRUE,,0,0,0,0,data.shipsystems.ls_onihime_serenade,"The origin of this system and its original capability has been lost under a mess of orky wiring and generators. Allows gradual built up of charges in the engine that can be released by pressing 'C' during battle to grant a massive burst of speed along the ship's current direction of movement, the excessive power can also speed up reload of the ship's energy weapon and their ammo briefly. 
+ЭТА СИСТЕМА ХРУПКАЯ И НЕ БУДЕТ РАБОТАТЬ, ЕСЛИ НА КОРАБЛЕ ЕСТЬ D-МОДЫ",.,.,graphics/hullmods/maiden_serenade_refit.png
+Серенада девы (трофейная),ls_onihime_serenade,0,,,,,,,TRUE,,0,0,0,0,data.shipsystems.ls_onihime_serenade,"Происхождение этой системы и ее исходные возможности потерялись под грудой орочьей проводки и генераторов. Позволяет постепенно накапливать заряды в двигателе, которые можно выпустить нажатием 'C' в бою, чтобы получить мощный рывок в направлении текущего движения корабля; избыточная мощность также ненадолго ускоряет перезарядку энергетического оружия корабля и его боезапаса.
 
-Highly sensitive system means this system WILL NOT FUNCTION whilst the ship has any D-mods.",.,.,graphics/hullmods/maiden_serenade_refit.png
-Red Sun Boosta,ls_redsun_boosta,0,,,,,,,TRUE,,0,0,0,0,data.shipsystems.ls_redsun_boosta,"Press C in combat to activate a dash that also temporarily increase ship mass and flux dissipation, can store up to 4 charges.
+Из-за высокой чувствительности система НЕ БУДЕТ РАБОТАТЬ, пока на корабле есть любые D-моды.",.,.,graphics/hullmods/maiden_serenade_refit.png
+Ускоритель Красного Солнца,ls_redsun_boosta,0,,,,,,,TRUE,,0,0,0,0,data.shipsystems.ls_redsun_boosta,"Нажмите C в бою, чтобы активировать рывок, который также временно увеличивает массу корабля и рассеивание потока. Может хранить до 4 зарядов.
 
-Highly sensitive system means this system WILL NOT FUNCTION whilst the ship has any D-mods.",,,graphics/hullmods/maiden_serenade_refit.png
-Mega Bommer,ls_Bommer,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_bommer,"Da big bommaz iz wot yooz need when you need some gitz krumped good! Nuff dakka or bommas to blast or bomm any gitz with plenty to spare!
+Из-за высокой чувствительности система НЕ БУДЕТ РАБОТАТЬ, пока на корабле есть любые D-моды.",,,graphics/hullmods/maiden_serenade_refit.png
+Мега-бомма,ls_Bommer,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_bommer,"Большие боммы нужны, когда надо как следует раскрошить врагов! Хватит дакки и бомб, чтобы взорвать кого угодно, и еще останется!
 
-This ship is a specialized ork Bommer craft, with large internal bay to carry %s more Missile and Ballistic Weapon Ammo, if those ammo regenerate, they also regenerate %s faster. However, these bays are generally not efficient in storing long range missile and their fuel, as a result, any large missile with a max range greater than %s will not receive additional ammo. 
+Этот корабль - специализированный орочий бомбардировщик с большими внутренними отсеками, дающими на %s больше боезапаса ракетного и баллистического оружия; если этот боезапас восстанавливается, он восстанавливается на %s быстрее. Однако эти отсеки плохо подходят для дальнобойных ракет и их топлива, поэтому большие ракеты с максимальной дальностью больше %s не получают дополнительный боезапас.
 
-Ork Bommer sometime specialize in delivering heavy ballistic payload, accordingly, any large ballistic weapon on this ship will additionally gain %s rate of fire and flux cost reduction.
+Орочьи бомбардировщики иногда специализируются на доставке тяжелого баллистического груза, поэтому любое большое баллистическое оружие на этом корабле дополнительно получает %s к скорострельности и снижению затрат потока.
 
-Not compatible with expanded magazine or missile racks. ",,,graphics/hullmods/ls_bomma.png
-Da Rok,ls_rok,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_rok,"Ork Roks are hollowed out asteroids repurposed for war. These ramshackle construction often comes with various combat modules bolted around the rocky core. 
+Несовместимо с расширенными магазинами и ракетными стойками.",,,graphics/hullmods/ls_bomma.png
+Да Рок,ls_rok,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_rok,"Орочьи Роки - выдолбленные астероиды, переделанные для войны. Эти шаткие конструкции часто несут разные боевые модули, прикрученные вокруг каменного ядра.
 
-The rock itself is generally not armored, but its rocky mass can absorb low strength weapons, giving it an additional %s effective armor that cannot be destroyed by weapon hit. The sheer mass of the Rok also makes penetrating kinetic weapon ineffective, reducing kinetic weapon damage to hull and armor by %s . The protection offered by volumes of rocks and a general lack of critical ship systems, also reduce crew loss and damage to the ship's weapon by %s .
+Сама скала обычно не бронирована, но ее каменная масса поглощает слабое оружие, давая дополнительные %s эффективной брони, которую нельзя уничтожить попаданиями. Огромная масса Рока также делает пробивное кинетическое оружие менее эффективным, снижая кинетический урон по корпусу и броне на %s. Защита за счет объемов камня и малого числа критических систем также снижает потери экипажа и урон оружию корабля на %s.
 
-Not compatible with Unstable Injector, Heavy Armor or 'Ard Case.
+Несовместимо с нестабильным инжектором, тяжелой броней и крепким корпусом.
 
-The Rok's module will not be able to install Converted Hanger, Shield Conversion, Unstable Injector, and Supa Overdrive. Though the main rok's super-overdrive effect is applied to the modules.",,,graphics/hullmods/ls_rok.png
-Roky,ls_half_rok,,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_half_rok,"Portions of this ship is built upon and supported by chunks of asteroids, while the ship has grown to subsume the asteroid pieces, the rocky interior still provides some structural protection, giving it an additional %s effective armor that cannot be destroyed by weapon hit. The protection offered by volumes of rocks and a general lack of critical ship systems, also reduce crew loss and damage to the ship's weapon by %s .",,,graphics/hullmods/ls_rok.png
-Supa Gitfinda,ls_supa_gitfinda,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_supa_git_finda,"This improved gitafinda built into an orky ship is far more advanced, improving autofire accuracy by %s and reducing the recoil of weapons by %s . The ship's range is also massively increased (by ork standards) by %s . 
+Модуль Рока не сможет установить переоборудованный ангар, конверсию щита, нестабильный инжектор и супа-перегруз. Однако эффект супа-перегруза основного Рока применяется к модулям.",,,graphics/hullmods/ls_rok.png
+Роки,ls_half_rok,,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_half_rok,"Части этого корабля построены на кусках астероидов и поддерживаются ими. Хотя корабль разросся вокруг этих кусков, каменная внутренняя структура все еще дает защиту, добавляя %s эффективной брони, которую нельзя уничтожить попаданиями. Защита за счет объемов камня и малого числа критических систем также снижает потери экипажа и урон оружию корабля на %s.",,,graphics/hullmods/ls_rok.png
+Супа-гитфайнда,ls_supa_gitfinda,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_supa_git_finda,"Этот улучшенный гитфайнда, встроенный в орочий корабль, куда продвинутее обычного: точность автоогня повышается на %s, а отдача оружия снижается на %s. Дальность корабля также сильно увеличивается, по орочьим меркам, на %s.
 
-Not compatible with most other fire-control hullmods.",,,graphics/hullmods/ls_supa_gitfinda.png
-Ramma,ls_ramma,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_ramma,"Only pansy gitz muck'bout wiv dem dakka gubbinz! Getting stuck'in iz wotz real proppa orky!
+Несовместимо с большинством других модификаций управления огнем.",,,graphics/hullmods/ls_supa_gitfinda.png
+Таранщик,ls_ramma,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_ramma,"Только трусливые болваны возятся со всякими дакка-штуками! Врезаться в врага - вот что по-настоящему орочье!
 
-A ship dedicated towards close range ramming attack with various weapons, being built to tear through armored hull while padded with all sort of junks to absorbthe inevitable explosion when they hit something good, but less effective against kinetic penetration when compared to real armor. All this focus on gettin'stuck in means there is little effort to make the ship able to shoot worth a zog. 
+Корабль посвящен тарану на ближней дистанции, с оружием для разрывания бронированного корпуса и кучей хлама для поглощения неизбежного взрыва, когда он попадет во что-то хорошее. Однако против кинетического пробития это хуже настоящей брони. Из-за сосредоточенности на сближении мало кто заботился о том, чтобы корабль нормально стрелял.
 
--Weapon range is heavily reduced beyond %s. (If Supa Override is installed, weapon range penalty from Supa Override applies instead) 
+- Дальность оружия сильно снижается за пределами %s. Если установлен супа-перегруз, применяется его штраф дальности.
 
--Kinetic damage to the ship's armor increased by %s 
+- Кинетический урон по броне корабля увеличен на %s
 
--Damage of this ship's explosion, and ship explosion damage taken both reduced to %s
+- Урон от взрыва этого корабля и получаемый урон от взрывов кораблей снижены до %s
 
 -%s
 
-This ship will behave more aggressively in battle and attempt to ram enemies when engaging. Not compatible with most range increasing hullmods and unstable injector.",,,graphics/hullmods/ls_ramma.png
-Ramshackle,ls_ramshackle,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_ramshackle,"The ramshackle construction of this ship makes it very easy to bail out of our put back together if damaged. Reduce crew loss in combat by %s and the ship will be recovered with an addtionall %s to %s of Hull and CR. After battle, the ship will repair up to %s of the damage received instantly at no cost.",,,graphics/hullmods/ls_ramshackle.png
-Buzza Generata,ls_buzza_generata,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_buzza_generata,"If the ship is installed with Supa Override increase time flow of ship by %s when the ship system is active, and by a further %s if shield shunt is also installed. However, the routing of power to the generator for this effect reduce weapon rof by %s and top speed by %s . 
+В бою корабль ведет себя агрессивнее и пытается таранить врагов при атаке. Несовместимо с большинством модификаций увеличения дальности и нестабильным инжектором.",,,graphics/hullmods/ls_ramma.png
+Развалюха,ls_ramshackle,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_ramshackle,"Шаткая конструкция этого корабля позволяет легко покинуть его или собрать обратно после повреждений. Снижает потери экипажа в бою на %s, а корабль восстанавливается с дополнительными %s-%s корпуса и боеготовности. После боя корабль бесплатно мгновенно ремонтирует до %s полученного урона.",,,graphics/hullmods/ls_ramshackle.png
+Базза-генерата,ls_buzza_generata,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_buzza_generata,"Если на корабле установлен супа-перегруз, увеличивает поток времени корабля на %s при активной системе корабля и еще на %s, если также установлен шунт щита. Однако перенаправление энергии к генератору снижает скорострельность оружия на %s и максимальную скорость на %s.
 
-If Supa Override is not installed, the generator reroute excess power to shield, reducing shield damage taken by %s.",,,graphics/hullmods/ls_buzza_generata.png
-Landa,ls_landa,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_landa,"Landing shuttle specialized to land a mob of ork boyz on da ground and provide support. Increases the effective strength of planetary raids by %s, up to the total number of marines in the fleet.",,,graphics/hullmods/ls_landa.png
-Ray-on Generata,ls_loadsa_generata,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_loadsa_generata,"A crude orky imitation of the Aperion's unique reactor, where sheer volume of generators are installed to mimic partial effect of the original, depending on the output configuration. If the ship is installed with Supa Override increase time flow of ship by %s when the ship system is active, and by a further %s if shield shunt is also installed.
+Если супа-перегруз не установлен, генератор перенаправляет избыток энергии в щит, снижая получаемый щитом урон на %s.",,,graphics/hullmods/ls_buzza_generata.png
+Ланда,ls_landa,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_landa,"Посадочный шаттл, предназначенный для высадки толпы орочьих парней на поверхность и поддержки. Увеличивает эффективную силу планетарных рейдов на %s, вплоть до общего числа морпехов во флоте.",,,graphics/hullmods/ls_landa.png
+Рэй-он генерата,ls_loadsa_generata,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_loadsa_generata,"Грубая орочья имитация уникального реактора Апейрона: огромное количество генераторов пытается воспроизвести часть исходного эффекта в зависимости от конфигурации выхода. Если установлен супа-перегруз, поток времени корабля увеличивается на %s при активной системе корабля и еще на %s, если также установлен шунт щита.
 
-If Supa Override is not installed, the generator reroute excess power to shield, reducing shield damage taken by %s.",,,graphics/hullmods/ls_loadsa_generata.png
-Basilisk's Gaze,ls_basilisk_gaze,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_basilisk_gaze,"Advanced Point Defense system integration greatly improves the performance of any PD weapon installed on this ship. 
+Если супа-перегруз не установлен, генератор перенаправляет избыток энергии в щит, снижая получаемый щитом урон на %s.",,,graphics/hullmods/ls_loadsa_generata.png
+Взгляд василиска,ls_basilisk_gaze,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_basilisk_gaze,"Продвинутая интеграция систем точечной обороны значительно улучшает любое ПВО-оружие, установленное на этом корабле.
 
-Reduce OP cost of all small PD weapon by %s .PD weapon are immune to flares and have the best possible accuracy.Damage to fighter and missiles are increased by %s , PD weapon range is increased by %s and they are now immune to flares. Beam PD weapon range are increased by %s instead. ",,,graphics/hullmods/ls_basilisk_gaze.png
-Mork's Gaze,ls_mork_gaze,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_mork_gaze,"Bastardized basilisk gaze system modified to improve performance of small ballistic and energy weapons. 
+Стоимость ОП всех малых ПВО-орудий снижена на %s. ПВО-оружие невосприимчиво к ловушкам и имеет максимально возможную точность. Урон по истребителям и ракетам увеличен на %s, дальность ПВО-оружия увеличена на %s, и оно теперь невосприимчиво к ловушкам. Дальность лучевого ПВО вместо этого увеличена на %s.",,,graphics/hullmods/ls_basilisk_gaze.png
+Взгляд Морка,ls_mork_gaze,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_mork_gaze,"Искаженная версия системы Взгляда василиска, измененная для улучшения малого баллистического и энергетического оружия.
 
-Reduce OP cost of all small ballistic and energy weapon by %s. Damage to fighter and missiles are increased by %s , PD weapon range is increased by %s and they are now immune to flares. Furthermore, all weapon recoil is reduced by %s ,improving the ork's poor accuracy. ",,,graphics/hullmods/ls_mork_gaze.png
-Orky Core,ls_orky_core,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_orky_core,"Boss! Wez looted one of dem sparkly thingz, it even flies one of dem smooth botes dat da boyz cant fly! So yooz can go krump da useless gitz while da sparkly thing do da flyin fer ya!
+Стоимость ОП всего малого баллистического и энергетического оружия снижена на %s. Урон по истребителям и ракетам увеличен на %s, дальность ПВО-оружия увеличена на %s, и оно теперь невосприимчиво к ловушкам. Кроме того, отдача всего оружия снижена на %s, что компенсирует плохую орочью точность.",,,graphics/hullmods/ls_mork_gaze.png
+Орочье ядро,ls_orky_core,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_orky_core,"Босс! Мы стырили одну из этих блестящих штук, она даже водит один из гладких кораблей, которые парни не могут пилотировать! Теперь ты можешь крушить бесполезных болванов, пока блестяшка летает за тебя!
 
-Ork meks have some how managed to subdue an AI core through a mix of zzappy gubbinz, bonk with spanner, and green paint. Regardless, this AI core now controls this formally automated ship together with a small ork crew. The AI control offset much of the ork's terrible gunnery skills, whilest allow various orky gubbinz to be installed. However, such forceful control of an AI core is inheriently unstable, causing various issues.
+Орочьи меки каким-то образом подчинили ИИ-ядро смесью ззапающих прибамбасов, ударов гаечным ключом и зеленой краски. Как бы то ни было, это ИИ-ядро теперь управляет бывшим автоматизированным кораблем вместе с небольшой орочьей командой. Управление ИИ компенсирует большую часть ужасной орочьей стрельбы и позволяет устанавливать разные орочьи прибамбасы. Однако такое грубое принуждение ИИ-ядра нестабильно и вызывает проблемы.
 
 - %s
-- Reduce max CR by %s 
-- Minor chance to cause %s in combat. ",,,graphics/hullmods/ls_orky_core.png
-Ram Prow,ls_ram_prow_ship,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_ram_prow_ship,"A reinforced ram prow is attached to the front of this ship, with %s HP and %s Armor. When the parent ship activate its ship system, the ram prow will activate a low power damper field, reducing all damage taken by %s . The Prow itself is reinfroced with various junk padding, reducing explosive damage recieved by %s .
+- Максимальная боеготовность снижена на %s 
+- Небольшой шанс вызвать %s в бою.",,,graphics/hullmods/ls_orky_core.png
+Таранный нос,ls_ram_prow_ship,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_ram_prow_ship,"К передней части корабля прикреплен усиленный таранный нос с %s прочности и %s брони. Когда основной корабль активирует систему, таранный нос включает маломощное демпферное поле, снижая весь получаемый урон на %s. Сам нос усилен разным хламом, снижая получаемый взрывной урон на %s.
 
-The Prow will also recieve the half the benefit from Ard Case or Heavy Armor installed on the Parent Ship. ",,,graphics/hullmods/ls_ram_prow.png
-Weird Ship,ls_weird,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_weird,"This ship is build to house ork pskyers known as weird boys, extremely volitile and unstable orks that can magnify the ork's innate psychic ability to empower various systems.
+Нос также получает половину бонуса от крепкого корпуса или тяжелой брони, установленных на основном корабле.",,,graphics/hullmods/ls_ram_prow.png
+Странный корабль,ls_weird,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_weird,"Этот корабль построен для размещения орочьих псайкеров, известных как страннобои, крайне нестабильных орков, способных усиливать врожденные психические способности орков для питания разных систем.
 
-This ship provide %s cound as two ships for mob rule, (does not stack with Golden Paint). Each ship contributing to mob rule additionally provide this ship with %s Energy Weapon damage, shield efficiency, and system cooldown reduction.
+Этот корабль дает %s и считается двумя кораблями для правила толпы (не складывается с золотой краской). Каждый корабль, участвующий в правиле толпы, дополнительно дает этому кораблю %s к урону энергетического оружия, эффективности щита и сокращению перезарядки системы.
 
-Furthermore, the ship also gains up to %s Speed, mobility, and energy weapon damage as flux level increase, with the effect maxed out at max flux level. ",,,graphics/hullmods/ls_weird.png
-Snazzy Dakka,ls_snazzdakka,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_snazzdakka,"This ship is specialized to carry the largest and fanciest dakka the orkz got.
+Кроме того, корабль получает до %s скорости, маневренности и урона энергетического оружия по мере роста уровня потока, достигая максимума при полном потоке.",,,graphics/hullmods/ls_weird.png
+Шикарная дакка,ls_snazzdakka,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_snazzdakka,"Этот корабль создан, чтобы нести самую большую и шикарную дакку, какая есть у орков.
 
-The ship's ballstic and energy ammo regeneration rate is increased by  %s , and the large weapons on the ship receive a bonus depends on the weapon's rate of fire.
+Скорость восстановления боезапаса баллистического и энергетического оружия корабля увеличена на %s, а крупное оружие получает бонус в зависимости от своей скорострельности.
 
-If the weapon's rate of fire is greater than  %s per second, that weapon gains  %s  base range.
+Если скорострельность оружия выше %s выстрелов в секунду, оно получает %s базовой дальности.
 
-Otherwise the weapon would gain  %s  rate of fire bonus if ballistic, and  %s  flux cost reduction if energy. ",,,graphics/hullmods/ls_snazzdakka.png
-More iz Bigga!,ls_more_is_big,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_more_is_big,"Certain mekboy annoyed the fact that the size of their guns are limited by the gitz called 'phsiks' came to the glorious realization that having a more gunz means you have bigger gunz as well. Whoever doubted the claim soon find out that all that dakka can sure make any smart-gitz a lot smaller. As a result, this ship is designed to carry overwhelming firepower in the form of dakka and rokkits, even if they have to be smaller than usual be crammed into every nook and cranny of the ship.
+Иначе баллистическое оружие получает %s к скорострельности, а энергетическое - %s снижение затрат потока.",,,graphics/hullmods/ls_snazzdakka.png
+Больше значит больше!,ls_more_is_big,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_more_is_big,"Один мекбой, раздраженный тем, что размер его пушек ограничен болванами по имени 'физика', пришел к гениальному выводу: если пушек больше, значит и пушки больше. Все сомневавшиеся быстро убедились, что такая дакка делает любых умников намного меньше. В итоге этот корабль создан для подавляющей огневой мощи в виде дакки и ракет, даже если ради этого приходится ставить оружие меньше обычного и пихать его во все щели.
 
-All of the weapons on the ship's small ballistic and composite mounts gain %s base range. 
-All small ballistic weapon has their OP cost reduced by %s .
-All small ballistic and missile weapon with a base range below 1600 SU have their clip size increased by %s .
-Missile wepaon have their rate of fire reduced by %s . ",,,graphics/hullmods/ls_more_is_big.png
-Shouty Toobz,ls_big_megaphone,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_big_megaphone,"This ship is equipped with cuttin' edge ork takital kommand un' kontrol syshutum. Giant megaphone of some sort that broadcast a warboss' command directly into the ears of their underlings. The ways in which these broadcast are transmitted to other ork ships across the void of space ranges from half-a-weirdboy brain to signal kannonz connected directly to da shoty toob.
+Все малые баллистические и композитные слоты корабля получают %s базовой дальности.
+Стоимость ОП всего малого баллистического оружия снижена на %s.
+Размер магазина всего малого баллистического и ракетного оружия с базовой дальностью ниже 1600 ед. увеличен на %s.
+Скорострельность ракетного оружия снижена на %s.",,,graphics/hullmods/ls_more_is_big.png
+Кричащие трубы,ls_big_megaphone,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_big_megaphone,"Этот корабль оснащен передовой орочьей системой тактического командования и контроля. Это что-то вроде гигантского мегафона, который вещает приказы варбосса прямо в уши подчиненных. Способы передачи этих приказов другим орочьим кораблям через пустоту космоса варьируются от половины мозга страннобоя до сигнальных пушек, подключенных прямо к кричащей трубе.
 
-While commanded by the player, the ship increase the player's command point recovery rate by %s. The ship's Max CR is increased by %s regardless. 
+Под командованием игрока корабль увеличивает скорость восстановления командных очков игрока на %s. Максимальная боеготовность корабля увеличена на %s в любом случае.
 
-In battle, each deployed ship with Shouty Toobz increase the max ships used for calculating mob rule buff by %s , up to a maximum of %s ships (the cap is shared with bonus provided by bosspole, mounting a boss pole on this ship will not provide more cap). 
+В бою каждый развернутый корабль с кричащими трубами увеличивает максимум кораблей, используемых для расчета бонуса правила толпы, на %s, вплоть до %s кораблей (предел общий с бонусом босс-шеста; установка босс-шеста на этот корабль не даст большего предела).
 
-This ship count as %s ships for the purpose of calculating mob rule bonus, not stacking with other similar bonus.
+Этот корабль считается %s кораблями для расчета бонуса правила толпы, не складываясь с похожими бонусами.
 
-Can only be installed on Orky Ships and not compatible with Operations Center.",,,graphics/hullmods/ls_megaphone.png
-Escort Karrier,ls_escort_karrier,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_escort_karrier,"The Blood Axes are unique amongst the Orks by having something all other clan lacked. Patience. The are the only ones who can accept the concept of 'not krumping now can mean betta krumping later', and their fly boys can actually be seen with dedicated carriers that work with larger ork warships to carry out effective coordinated strikes that could impress even human carrier commanders.
+Можно установить только на орочьи корабли. Несовместимо с операционным центром.",,,graphics/hullmods/ls_megaphone.png
+Эскортный карриер,ls_escort_karrier,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_escort_karrier,"Кровавые Топоры уникальны среди орков тем, что обладают качеством, которого нет у других кланов: терпением. Только они способны принять мысль, что 'не крушить сейчас значит крушить лучше потом', и их летуны действительно используют специализированные авианосцы рядом с крупными орочьими кораблями для скоординированных ударов, способных впечатлить даже человеческих командиров авианосцев.
 
-While within %s SU of a larger ork ship, fighter refit speed increased by up to %s . This effect is %s if the ship is a capital ship. ",,,graphics/hullmods/ls_escort_karrier.png
-Orky Sub,ls_orky_sub,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_orky_sub,"An exceptional specimen of proper ork utilization of Phase technologies, these ramshackle 'subs' operate much like maritime submersibles the orks would build for plantary invasions, dipping in and out of p-space to launch a barrage of fire before going into hiding. Their potentially intentional alteration to the phase coil greatly slowed down the time flow effect the ship would gain by entering p-space and reduced engine performance in exchange of surprisingly low energy requirement for prolonged dive.
+В пределах %s ед. от более крупного орочьего корабля скорость восстановления истребителей увеличивается до %s. Если корабль является линкором, эффект равен %s.",,,graphics/hullmods/ls_escort_karrier.png
+Орочья подлодка,ls_orky_sub,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_orky_sub,"Выдающийся пример правильного орочьего применения фазовых технологий. Эти шаткие 'подлодки' действуют почти как морские субмарины, которые орки строили бы для планетарных вторжений: ныряют в p-пространство и обратно, дают залп и снова скрываются. Их, возможно намеренная, переделка фазовой катушки сильно замедлила эффект потока времени при входе в p-пространство и снизила работу двигателей, зато дала удивительно низкие энергозатраты для долгого погружения.
 
-Phase timeflow effect reduced by %s
-While phased, the ship's max speed is further reduced to %s of normal
-However, while phased, the ship's speed %s ",,,graphics/hullmods/ls_orky_sub.png
-Kan,ls_kan,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_kan,"Ork Kans are crude combat mechs piloted by Ork or Gretchins, they are far sturdier than conventional fighters and the amount of junks piled upon them makes them very difficult to destroy without heavy firepower.
+Эффект фазового потока времени снижен на %s
+В фазе максимальная скорость корабля дополнительно снижается до %s от нормы
+Однако в фазе скорость корабля %s",,,graphics/hullmods/ls_orky_sub.png
+Кан,ls_kan,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_kan,"Орочьи Каны - грубые боевые мехи, пилотируемые орками или гретчинами. Они куда прочнее обычных истребителей, а куча наваленного на них хлама делает их очень трудными для уничтожения без тяжелого огня.
 
-Weapon and Engine Durability increased by %s (Strike Craft only gains %s )
+Прочность оружия и двигателей увеличена на %s (ударные корабли получают только %s)
 
-Projectile and Missile hit that deals less than %s of the ship's current hp as damage will have their damage reduced by up to %s .
+Попадания снарядов и ракет, наносящие меньше %s текущей прочности корабля, получают снижение урона до %s.
 
-Smaller size of these craft prevent the use of Hard Shell.",,,graphics/hullmods/ls_kan.png
+Малый размер этих аппаратов не позволяет использовать твердый панцирь.",,,graphics/hullmods/ls_kan.png
 ,,,,,,,,,,,,,,,,,,,
-Boss Pole,ls_bosspole,0,,Orky,special,Support,3000,,,,0,0,12,20,data.hullmods.ls_bosspole,"A real warboss haz plenty of 'eads for his pointy stikk.
+Босс-шест,ls_bosspole,0,,Орочий,special,Поддержка,3000,,,,0,0,12,20,data.hullmods.ls_bosspole,"У настоящего варбосса много голов на его остром шесте.
 
-A boss pole marks this ship as the ride of a  powerful ork nob or warboss, under its watch, ork crew work extra hard. While commanded by the player, it increase the player's command point recovery rate by %s. The ship's Max CR is increased by %s regardless. 
+Босс-шест отмечает этот корабль как транспорт могучего орочьего ноба или варбосса; под его присмотром орочий экипаж работает усерднее. Под командованием игрока увеличивает скорость восстановления командных очков на %s. Максимальная боеготовность корабля увеличена на %s в любом случае.
 
-In battle, each deployed ship with Bosspole increase the max ships used for calculating mob rule buff by %s , up to a maximum of %s ships.
+В бою каждый развернутый корабль с босс-шестом увеличивает максимум кораблей, используемых для расчета бонуса правила толпы, на %s, вплоть до %s кораблей.
 
-Can only be installed on Orky Ships and not compatible with Operations Center.",,,graphics/hullmods/ls_bosspole.png
-Supa Overdrive,ls_orky_override,0,,Orky,"special, engines, offensive","Special, Engines,Weapons",4000,,,,15,30,45,60,data.hullmods.ls_orky_override,"Yooz will nevva have nuff dakka or nuff speed. But this is close.
+Можно установить только на орочьи корабли. Несовместимо с операционным центром.",,,graphics/hullmods/ls_bosspole.png
+Супа-перегруз,ls_orky_override,0,,Орочий,"special, engines, offensive","Особое,Двигатели,Оружие",4000,,,,15,30,45,60,data.hullmods.ls_orky_override,"Тебе никогда не хватит дакки или скорости. Но это близко.
 
-A ludicrous overcharge of the ship's reactor and system, at this point even Ork's latent psychic ability struggles to hold this ship together. 
+Безумная перегрузка реактора и систем корабля; на этом этапе даже скрытые психические способности орков с трудом удерживают корабль целым.
 
-Increase ship speed by %s/%s/%s based on hull size, acceleration is massively increased while deceleration button is removed, you pansy git!
+Скорость корабля увеличена на %s/%s/%s в зависимости от размера корпуса, ускорение сильно повышено, а кнопка торможения снята, трусливый болван!
 
-Peak Operating time is further reduced by %s. Range Beyond 500su is reduced to %s. 
+Пиковое время работы дополнительно снижено на %s. Дальность за пределами 500 ед. снижена до %s.
 
-Flux Dissipation Rate is increased by %s , but ship can no longer actively vent. Weapon Flux cost is also decreased by %s and ballistic and energy weapon damage is increased by %s.
+Рассеивание потока увеличено на %s, но корабль больше не может активно вентилировать поток. Затраты потока оружия также снижены на %s, а урон баллистического и энергетического оружия увеличен на %s.
 
-All these insane modifications makes all ship system more vulernable to damage, increase weapon and engine damage taken by %s.
+Все эти безумные переделки делают системы корабля уязвимее к повреждениям, увеличивая получаемый оружием и двигателями урон на %s.
 
-Can only be installed on Cruiser or smaller Orky ships. 
+Можно установить только на орочьи корабли класса крейсер или меньше.",,,graphics/hullmods/ls_orky_override.png
+Крепкий корпус,ls_ard_case,0,,Орочий,defensive,Защита,2500,,,,8,15,20,40,data.hullmods.ls_ard_case,"Настоящая металлическая коробка вокруг всех мягких частей, собранная из украденных крепких кусков.
 
-",,,graphics/hullmods/ls_orky_override.png
-'Ard Case,ls_ard_case,0,,Orky,defensive,Defenses,2500,,,,8,15,20,40,data.hullmods.ls_ard_case,"A proppa methul bawks around all da squishy bits with all da looted ard bits.
+Прикрученная природа этой брони снижает эффективность брони до %s от нормы. Однако огромное количество внешних плит также увеличивает значение брони на %s/%s/%s/%s в зависимости от размера корпуса. Чрезмерная масса внешней обшивки мешает генерации щита и увеличивает получаемый щитом урон на %s.
 
-The bolted on nature of this armor reduces armor effective to %s of normal. However, the excessive amount of bolt on plates also increase armor value by %s/%s/%s/%s based on hull size. Excessive bulk of the outer plating interfare with shield generation and increase shield damage taken by %s .
+Можно установить только на орочьи корабли. Несовместимо с тяжелой броней.",,"Получаемый фугасный и осколочный урон увеличен на %s, получаемый щитом урон и содержание щита дополнительно увеличены на %s, но корабль получает еще %s брони.",graphics/hullmods/ls_ard_case.png
+Битца-генерата,ls_blitza,1,,Орочий,offensive,Оружие,3000,,,,3,5,7,10,data.hullmods.ls_blitza,"Особый генерата, который заставляет все модные бласты лететь быстрее. Его можно перегрузить, чтобы стало еще быстрее, а кто не любит быстрее!
 
-Can only be installed on orky ships and not compatible with heavy armor.",,"Increase HE and Frag Damage taken by %s , shield damage taken and upkeep further increased by %s , but gains an additional %s armor.",graphics/hullmods/ls_ard_case.png
-Bitza Generata,ls_blitza,1,,Orky,offensive,Weapons,3000,,,,3,5,7,10,data.hullmods.ls_blitza,"Special generata that makes all da fancy blasta go fasta. Can be overcharged to go even fasta, and who doesn't like fasta!
+Скорость энергетических снарядов увеличена на %s, восстановление энергетического боезапаса увеличено на %s.
 
-Increase energy projectile speed by %s  and energy ammo regen by %s .
+При установке на неорочий корабль неэффективный генерата увеличивает затраты потока энергетического оружия на %s.",,"Скорострельность энергетического оружия увеличена на %s, но оружие корабля также получает шанс неисправности %s.",graphics/hullmods/ls_blitza.png
+Громовой зарядник,ls_thunda_charga,2,,Орочий,offensive,Оружие,4000,,,,8,15,20,30,data.hullmods.ls_thunda_charga,"Вот это даст врагам настоящий ззапп!
 
-When mounted on non-ork ship, the inefficent generata increase energy weapon flux cost by %s .",,"Increase energy weapon rof by %s  , but also cause ship's weapon to have a malfunction chance of %s .",graphics/hullmods/ls_blitza.png
-Thunda Charga,ls_thunda_charga,2,,Orky,offensive,Weapons,4000,,,,8,15,20,30,data.hullmods.ls_thunda_charga,"Now dis will give da gitz a proppa zzapp! 
+Особый конденсатор увеличивает затраты потока и снижает скорострельность энергетического оружия на %s, но перегруженный выстрел значительно повышает урон энергетического оружия на %s.
 
-Special capciator that increase flux cost and decrease rate of fire of energy weapon by  %s, but the overcharged blast significantly improve energy weapon damage by %s
+Попытка использовать это на обычных кораблях неизбежно мешает бортовой электронике, снижая дальность энергетического оружия на %s и максимальную боеготовность на %s.",,,graphics/hullmods/ls_thunda_charga.png
+Взрывчатый метатель,ls_explody_propella,0,,Орочий,offensive,Оружие,2000,,,,5,10,15,20,data.hullmods.ls_explody_propella,"Что заставляет дакку лететь быстрее? Дакка в твоей дакке!
 
-Trying to use these on regular ships will inevitably interfare with onboard electronics, reducing energy weapon range by %s and Max CR by %s .",,,graphics/hullmods/ls_thunda_charga.png
-'Xplody Propellant,ls_explody_propella,0,,Orky,offensive,Weapons,2000,,,,5,10,15,20,data.hullmods.ls_explody_propella,"What makes dakka go fasta? Dakka yer dakka!
+Взрывчатый метательный заряд перегружает все баллистическое оружие и дает плоский бонус дальности %s. Этот нестабильный метод стрельбы увеличивает отдачу на %s и получаемый оружием урон на %s. Перегруженные снаряды также летят на %s быстрее.
 
-Explosive propellant over charge all ballistic weapons and grant a flat range bonus of %s. This unstable method of firing will increase recoil by %s and increase weapon damage taken by %s. Super charged projectile also travel %s faster.
+Только орки достаточно безумны, чтобы использовать такой метатель.",,"Дальность баллистического оружия вместо этого увеличена на %s, но хранение взрывчатого метателя также заставляет корабль получать %s урона корпусу и броне.",graphics/hullmods/ls_explody_propella.png
+Гитфайнда,ls_git_finda,1,,Орочий,offensive,Оружие,3000,,,,3,5,7,10,data.hullmods.ls_git_finda,"Вон они, болваны, стреляйте туда!
 
-Only orks wouold be mad enough to use this kind of propellant.",,"Ballistic range increase by %s instead, but storage for explosive propellant also cause ship to take %s damage to hull and armor.",graphics/hullmods/ls_explody_propella.png
-Gitfinda,ls_git_finda,1,,Orky,offensive,Weapons,3000,,,,3,5,7,10,data.hullmods.ls_git_finda,"Dere dey are ya gitz, dakka dat place!
+Странное прицельное оборудование, от гигантского телескопа до особых сквигов, повышает точность автоогня на %s и снижает отдачу на %s.
 
-Strange targetting equipment that could range from giant telescope to special squigs, increase autofire accuracy by %s and reduce recoil by %s.
+На орочьем корабле также увеличивает дальность нелучевого ПВО на %s.",,Дальность баллистического и энергетического оружия увеличена на %s,graphics/hullmods/ls_gitfinda.png
+Пауэр-помпа,ls_pump,1,,Орочий,offensive,Оружие,3000,,,,3,5,10,15,data.hullmods.ls_pump,"Большому боссу нужна большая помпа!
 
-On ork ship, also increase Non-Beam PD weapon Range by %s .",,Increase ballistic and energy weapon range by %s,graphics/hullmods/ls_gitfinda.png
-Powah Pump,ls_pump,1,,Orky,offensive,Weapons,3000,,,,3,5,10,15,data.hullmods.ls_pump,"Da bigga boss needs da bigga pump!
+Увеличивает дальность всего орочьего огнеметного оружия на %s ед.
 
-Increase range of all ork flamer weapon by %s SU.
+Установка на неорочий корабль вызывает проблемы с обслуживанием, снижая максимальную боеготовность на %s, а опасные трубопроводы склонны лопаться, увеличивая боевые потери экипажа на %s.",,,graphics/hullmods/ls_pump.png
+Ракетные коротышки,ls_rokkit_runt,0,,Орочий,offensive,Оружие,5000,,,,6,10,15,25,data.hullmods.ls_rokkit_runts,"Эй, не смей ронять мою ракету, мелкий грот! А то следующим я тебя засуну в пусковую трубу!
 
-Mounting this on non-orky ship will cause maintenance issues, reducing max CR by %s , and the dangerous piping are prone to bursting, increasing crew combat loss by %s .",,,graphics/hullmods/ls_pump.png
-Rokkit Runts,ls_rokkit_runt,0,,Orky,offensive,Weapons,5000,,,,6,10,15,25,data.hullmods.ls_rokkit_runts,"Oi, dont ya dare drop me rokkit ya runty grot! Or yooz da next un I shove into da launch toob!
+Большая группа гретчинов-заряжающих и носильщиков боеприпасов вместе с расширенными ракетными магазинами значительно увеличивает боезапас ракет на %s и скорость восстановления боезапаса на %s. Однако бонус вместимости применяется только к ракетам с дальностью меньше %s. Много рук для перезарядки также увеличивает скорострельность ракет на %s. Но плохое обращение гротов с боеприпасами увеличивает получаемый кораблем взрывной урон на %s.
 
-A large group of gretchin loader and ammo carrier together with expanded missile magazine greatly increase missile ammo capacity by %s and ammo regeneration rate by %s , however, the capacity bonus applies only to missile with less than %s range. Lots of hand to reload the missile also increase missile rate of fire by %s . However, Poor ammo handling of the Grots also increase explosive damage this ship receive by %s . 
+Если установлено на неорочий корабль, получаемый этим кораблем урон %s будет увеличен на %s.",,,graphics/hullmods/ls_rokkit_runt.png
+Грот-техник,ls_grot_rigger,1,,Орочий,"defensive, special","Особое,Защита",6000,,,,8,16,24,40,data.hullmods.ls_grot_rigger,"Пожалуйста! Н-не бейте больше! Мы сделаем крепко и красиво!
 
-If installed on non-orky ship, %s damage this ship receive will be increased by %s . ",,,graphics/hullmods/ls_rokkit_runt.png
-Grot Rigger,ls_grot_rigger,1,,Orky,"defensive, special","Special, Defenses",6000,,,,8,16,24,40,data.hullmods.ls_grot_rigger,"Please! N-no more kicking! Wez gonna make it nice and strong!
+Большая команда гретчинов-ремонтников может кое-как латать и обслуживать разные части корабля с сомнительной эффективностью. Скорость ремонта оружия и двигателей в бою увеличена на %s. Также увеличивает пиковое время боеготовности кораблей на %s/%s/%s/%s секунд соответственно.
 
-A large team of gretchin repair crew can jury rigg and maintain various part of the ship with questionable effectiveness. Increase the rate of weapon and engine repair in combat by %s . Also increase Peak CR time of ships by %s/%s/%s/%s seconds respectively.
+В бою медленно ремонтирует корпус корабля, когда его прочность ниже %s, вплоть до %s или %s от максимальной прочности корабля, смотря что выше.
 
-While in combat, can slowly repairt the ship's HP when the ship's HP is below %s , up to %s or %s of the ship's max HP, which ever is higher. 
+При использовании на неорочьих кораблях ужасные привычки гротов в обслуживании снижают максимальную боеготовность корабля на %s. Несовместимо с закаленными подсистемами и автоматизированным ремонтным блоком.",,,graphics/hullmods/ls_grot_rigger.png
+Грот-масленщик,ls_grot_oiler,1,,Орочий,offensive,Истребители,5000,,,,5,10,15,25,data.hullmods.ls_grot_oiler,"Мы заправим ее как надо, босс!
 
-If used on non-orky ships, the grot's horrible maintenance habit will reduce the ship's max CR by %s. Not compatible with hardened subsytem or Automated Repair Unit.",,,graphics/hullmods/ls_grot_rigger.png
-Grot Oiler,ls_grot_oiler,1,,Orky,offensive,Fighters,5000,,,,5,10,15,25,data.hullmods.ls_grot_oiler,"We'z gonna fill her up right and proppa boss!
+Большая команда гротов занимается ремонтом и заправкой ударных кораблей в ангаре, увеличивая скорость их восстановления и запуска на %s. Однако их плохое обслуживание и обращение с деталями истребителей также увеличивает падение восполнения из-за потерь истребителей на %s.
 
-A large team of grots is charged with repairing on refueling of strike crafts in the hanger increase the rate strike crafts are refitted and launched by %s . However, their poor maintenance habit and care of fighter part also increase the rate replacement rate decrease due to fighter loss by %s .
+Несовместимо с расширенной палубной командой. При использовании на неорочьих кораблях ужасные привычки гротов в обслуживании снижают максимальную боеготовность корабля на %s.",,,graphics/hullmods/ls_grot_oiler.png
+Золотая краска,ls_golden_paint,1,,Дурные Луны,defensive,Защита,6000,,,,4,6,9,12,data.hullmods.ls_golden_paint,"Самая блестящая краска, какую мы нашли! С ней твой круза будет очень блестящим и взрывным! Плохо? Кто не любит большой бабах?!
 
-Not compatible with expanded deck crew. If used on non-orky ships, the grot's horrible maintenance habit will reduce the ship's max CR by %s.",,,graphics/hullmods/ls_grot_oiler.png
-Golden Paint,ls_golden_paint,1,,Bad Moons,defensive,Defenses,6000,,,,4,6,9,12,data.hullmods.ls_golden_paint,"Da flashiest paint we can find! With this, yer krooza will be ded flashy and xplody! Bad? Who doesnt like a big boom?!
+Сильно отражающее покрытие из золота или чего-то другого блестящего покрывает корпус корабля, снижая ЭМИ- и энергетический урон по броне и корпусу на %s. Но желтый - еще и цвет взрывов, поэтому фугасный урон по броне и корпусу увеличен на %s.
 
-A highly reflective coating of gold or whatever other shiny stuff was used to cover the ship's hull, reducing EMP and Energy damage taken by armor and hull by %s. But yellow is also da explody color, increasing HE damage taken by armor and hull by %s.
+Блестящее покрытие также вдохновляет парней, из-за чего этот корабль считается %s кораблями для правила толпы, если он также орочий.
 
-The flashy coating is also extra inspiring to da boyz, making this ship count as %s ships for mob rule if the ship is also orky.
-
-Maintaining this on non-orky ship require constant maintenance to actually have an effect, increasing monthly supply cost by %s.
-
-",,,graphics/hullmods/ls_golden_paint.png
+Поддержание этого на неорочьем корабле требует постоянного обслуживания, чтобы эффект вообще работал, увеличивая ежемесячные расходы припасов на %s.",,,graphics/hullmods/ls_golden_paint.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 # STOMPA BUILDER,,,,,,,,,,,,,,,,,,,
-Effigy,ls_effigy,0,,Orky,,,,,TRUE,,0,0,0,0,data.hullmods.ls_effigy,"Stompas and Gargants are Effigy of Gork and Mork, designed to personify the ork gods and serve as an inspiration to orks on the battlefield. While not as agile as smaller ork mechs, they are nevertheless mobile enough mostly manuver around collision and explosions.
+Идол,ls_effigy,0,,Орочий,,,,,TRUE,,0,0,0,0,data.hullmods.ls_effigy,"Стомпы и Гарганты - идолы Горка и Морка, созданные воплощать орочьих богов и вдохновлять орков на поле боя. Хотя они не так проворны, как меньшие орочьи мехи, они все же достаточно подвижны, чтобы в основном обходить столкновения и взрывы.
 
-Increase weapon and engine HP by %s 
-Reduce collision and ship explosion damage taken by %s
+Прочность оружия и двигателей увеличена на %s
+Получаемый урон от столкновений и взрывов кораблей снижен на %s
 
-The following effect do not stack with other similar effects:
-Count as %s ships for the purpose of calculating mob rule bonus
-Increase the max ships used for calculating mob rule buff by %s , up to a maximum of %s ships.
+Следующие эффекты не складываются с похожими эффектами:
+Считается %s кораблями для расчета бонуса правила толпы
+Увеличивает максимум кораблей, используемых для расчета бонуса правила толпы, на %s, вплоть до %s кораблей.
 
-Not compatible with 'Ard Case.",,,graphics/hullmods/ls_effigy2.png
-Kustomized Stompa (DS),ls_stompa_swap_ds,,,Deathskulls,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_ds,Swappable Weapons,,,
-Kustomized Stompa (BA),ls_stompa_swap_ba,,,Blood Axes,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_ba,Swappable Weapons,,,
-Kustomized Stompa (BM),ls_stompa_swap_bm,,,Bad Moons,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_bm,Swappable Weapons,,,
-Kustomized Stompa (ES),ls_stompa_swap_es,,,Evil Sunz,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_es,Swappable Weapons,,,
+Несовместимо с крепким корпусом.",,,graphics/hullmods/ls_effigy2.png
+Кастомный Стомпа (СЧ),ls_stompa_swap_ds,,,Смерточерепа,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_ds,Сменное оружие,,,
+Кастомный Стомпа (КТ),ls_stompa_swap_ba,,,Кровавые Топоры,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_ba,Сменное оружие,,,
+Кастомный Стомпа (ДЛ),ls_stompa_swap_bm,,,Дурные Луны,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_bm,Сменное оружие,,,
+Кастомный Стомпа (ЗС),ls_stompa_swap_es,,,Злые Солнца,no_build_in,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_stompa_swap_es,Сменное оружие,,,
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 # BELLYS,,,,,,,,,,,,,,,,,,,
-Belly: Armor,ls_selector_stompa_bellyarmor,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_bellyarmor,"Apply additional armor plating, increase armor by %s
+Пузо: броня,ls_selector_stompa_bellyarmor,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_bellyarmor,"Устанавливает дополнительную броневую обшивку, увеличивая броню на %s
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
-Belly: Lobba,ls_selector_stompa_belly_lobba,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_belly_lobba,"Add a belly lobba firing flak shells.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_belly_selector.png
+Пузо: лобба,ls_selector_stompa_belly_lobba,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_belly_lobba,"Добавляет пузовую лоббу, стреляющую зенитными снарядами.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
-Belly: Flamer,ls_selector_stompa_belly_flamer,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_belly_flamer,"Add a belly flamer.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_belly_selector.png
+Пузо: огнемет,ls_selector_stompa_belly_flamer,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_belly_flamer,"Добавляет пузовой огнемет.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
-Belly: Hanger,ls_selector_stompa_belly_hanger,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_belly_hanger,"Add a belly hanger for grot bombs, large opening reduce armor by %s
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_belly_selector.png
+Пузо: ангар,ls_selector_stompa_belly_hanger,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_belly_hanger,"Добавляет пузовой ангар для грот-бомб; большой проем снижает броню на %s
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
-Belly: Gun,ls_selector_stompa_bellygun,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_bellygun,"Add a slow firing, but monstrously powerful bellygun, large opening reduce armor by %s
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_belly_selector.png
+Пузо: пушка,ls_selector_stompa_bellygun,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_bellygun,"Добавляет медленно стреляющую, но чудовищно мощную пузовую пушку; большой проем снижает броню на %s
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_belly_selector.png
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_belly_selector.png
 ,,,,,,,,,,,,,,,,,,,
 # HEADS:,,,,,,,,,,,,,,,,,,,
-Head: Big Horn,ls_selector_stompa_head_horn,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_horn,"Add a big horned head to the stompa, increase armor by %s and improve ramming damage.
+Голова: большие рога,ls_selector_stompa_head_horn,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_horn,"Добавляет Стомпе большую рогатую голову, увеличивая броню на %s и улучшая урон тарана.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
-Head: Big Hat,ls_selector_stompa_head_hat,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_hat,"Add an important looking hat to the stompa, provide %s ECM rating for the fleet and cause the stompa to count as %s ships for the purpose of calculating Mob Rules (replacing the effect from Effigy)
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_head_selector.png
+Голова: большая шляпа,ls_selector_stompa_head_hat,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_hat,"Добавляет Стомпе важного вида шляпу, дает флоту %s рейтинга РЭБ и заставляет Стомпу считаться %s кораблями для расчета правила толпы (заменяет эффект идола)
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
-Head: Powah Burna,ls_selector_stompa_head_burna,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_burna,"Add a head with a built in high pressure burna with improved performance.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_head_selector.png
+Голова: пауэр-бурна,ls_selector_stompa_head_burna,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_burna,"Добавляет голову со встроенной высоконапорной бурной улучшенной эффективности.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
-Head: Krusha Kannon,ls_selector_stompa_head_krusha,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_krusha,"Add a head with a built in Krusha Kannon, cramped space severely limit its rate of fire, however. 
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_head_selector.png
+Голова: круша-пушка,ls_selector_stompa_head_krusha,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_krusha,"Добавляет голову со встроенной круша-пушкой; тесное пространство, однако, сильно ограничивает ее скорострельность.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
-Head: Rokkit Toob,ls_selector_stompa_head_missile,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_missile,"Add a head with a built-in smart rokkit tubes, effective against smaller targets.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_head_selector.png
+Голова: ракетная труба,ls_selector_stompa_head_missile,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_missile,"Добавляет голову со встроенными умными ракетными трубами, эффективными против малых целей.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
-Head: Eye of Mork,ls_selector_stompa_head_eye,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_eye,"Add a built in eye of mork to the stompa's head with limited charges, exposed circuit next to the control cockpit increase emp damage taken by %s
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_head_selector.png
+Голова: око Морка,ls_selector_stompa_head_eye,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_head_eye,"Добавляет встроенное око Морка в голову Стомпы с ограниченным числом зарядов; открытая проводка рядом с кабиной управления увеличивает получаемый ЭМИ-урон на %s
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_head_selector.png
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_head_selector.png
 ,,,,,,,,,,,,,,,,,,,
 # GUN_ARM,,,,,,,,,,,,,,,,,,,
-R Arm: Deth Kannon,ls_selector_stompa_arm_deth,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_deth,"Add a Deth Kannon firing very powerful HE shells
+П рука: дет-пушка,ls_selector_stompa_arm_deth,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_deth,"Добавляет дет-пушку, стреляющую очень мощными фугасными снарядами
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
-R Arm: Supa Gatla,ls_selector_stompa_arm_gatla,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_gatla,"Add a supa-gatla able to spit out terrifying about of bolts able to shread shield and pressure light armor.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_r_arm_selector.png
+П рука: супа-гатла,ls_selector_stompa_arm_gatla,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_gatla,"Добавляет супа-гатлу, способную выплевывать пугающее количество болтов, рвущих щиты и давящих легкую броню.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
-R Arm: Splasha Attack Gun,ls_selector_stompa_arm_splasha,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_splasha,"Add a massive flamer able to overheat a target's flux grid and melt exposed hull.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_r_arm_selector.png
+П рука: сплэша-пушка,ls_selector_stompa_arm_splasha,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_splasha,"Добавляет массивный огнемет, способный перегревать потоковую сеть цели и плавить открытый корпус.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
-R Arm: Snazz Megakannon,ls_selector_stompa_arm_snazz,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_snazz,"Add a fancy snazz mega kannon able to deal a variety of deadly effect on hit.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_r_arm_selector.png
+П рука: шикарная мегапушка,ls_selector_stompa_arm_snazz,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_snazz,"Добавляет шикарную мегапушку, способную накладывать разные смертельные эффекты при попадании.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
-R Arm: Grabba Smasha,ls_selector_stompa_arm_grabba,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_grabba,"Add a Grabba-Smasha to pull target close for a good krumpin.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_r_arm_selector.png
+П рука: грабба-смаша,ls_selector_stompa_arm_grabba,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_grabba,"Добавляет грабба-смашу, чтобы подтянуть цель поближе для хорошей трепки.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
-R Arm: Rotary Krusha,ls_selector_stompa_arm_krusha,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_krusha,"Add a rotary krusha kannon able to rapidly fire a variety of shell to handle almost any targets, limited by its magazine size.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_r_arm_selector.png
+П рука: роторная круша,ls_selector_stompa_arm_krusha,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_krusha,"Добавляет роторную круша-пушку, способную быстро стрелять разными снарядами почти по любым целям, но ограниченную размером магазина.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_r_arm_selector.png
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_r_arm_selector.png
 ,,,,,,,,,,,,,,,,,,,
 # TECH_ARM,,,,,,,,,,,,,,,,,,,
-L Arm: Mega Choppa,ls_selector_stompa_arm_choppa,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_choppa,"Add a powerful mega-choppa able to destroy almost any target up close. 
+Л рука: мега-чоппа,ls_selector_stompa_arm_choppa,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_choppa,"Добавляет мощную мега-чоппу, способную уничтожить почти любую цель вблизи.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_l_arm_selector.png
-L Arm: Lifta Droppa,ls_selector_stompa_arm_lifta,,,Orky,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_lifta,"Add a lifta-droppa beam that allows the stompa to pick up smaller ships and toss them.
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_l_arm_selector.png
+Л рука: лифта-дроппа,ls_selector_stompa_arm_lifta,,,Орочий,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.selector.ls_selector_stompa_arm_lifta,"Добавляет луч лифта-дроппа, позволяющий Стомпе поднимать меньшие корабли и швырять их.
 
-Remove this Hullmod to Swap Options",,,graphics/hullmods/ls_l_arm_selector.png
+Удалите эту модификацию корпуса, чтобы сменить вариант",,,graphics/hullmods/ls_l_arm_selector.png
 ,,,,,,,,,,,,,,,,,,,
-Ard Boyz,ls_orky_commission,,,Orky,,,,FALSE,TRUE,,0,0,0,0,data.hullmods.ls_orky_commission,"Now yooz working for da clanz, yooz get da 'ardest gitz working for ya.
+Крутые парни,ls_orky_commission,,,Орочий,,,,FALSE,TRUE,,0,0,0,0,data.hullmods.ls_orky_commission,"Теперь ты работаешь на кланы, и к тебе идут самые крепкие парни.
 
-Tougher Ork ard boyz take over control of your ships, their toughness means they are harder to kill in battle, and also handle the unreliable ork ships better. A greater concentration of orks on even non-orky ships means those ship can somewhat contribute to the psychic field of the orks.
+Более стойкие орочьи крутые парни берут управление кораблями на себя. Их живучесть делает их труднее убиваемыми в бою, а также помогает лучше справляться с ненадежными орочьими кораблями. Большая концентрация орков даже на неорочьих кораблях позволяет им немного вносить вклад в психическое поле орков.
 
-- Crew loss in combat reduced by %s
-- PEAK CR Time increased by %s on orky ships only
-- Every non-orky ship now count as %s ships for calculating mob rule bonus. (Note that they will not receive benefit from mob rule)",,,graphics/hullmods/ls_ard_boyz.png
+- Потери экипажа в бою снижены на %s
+- Пиковое время боеготовности увеличено на %s только на орочьих кораблях
+- Каждый неорочий корабль теперь считается %s кораблями для расчета бонуса правила толпы. Обратите внимание, что они не получают выгоду от правила толпы",,,graphics/hullmods/ls_ard_boyz.png
 ,,,,,,,,,,,,,,,,,,,
-Mob Rule,ls_mob_rule,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_orky,,,,graphics/hullmods/ls_mob_rule.png
-Rok Module,ls_RokModule,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_RokModule,Reduce Explosive Damage on destruction by half,,,graphics/hullmods/reduced_explosion.png
-Temporal Forcefield,ls_temporal_forcefield,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.shipsystems.ls_temporal_forcefield,,,,
-Temporal Shield,ls_temporal_shield,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.shipsystems.ls_temporal_shield,,,,
-Ram Prow,ls_ram_prow,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_ram_prow,"Reduce Explosive Damage on destruction, reduce a quarter of high explosive damage recieved",,,
-Armor Module,ls_armor_module,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_armor_module,,,,
-Ard Field,ls_ard_field,0,,Orky,,,,,TRUE,TRUE,0,0,0,0,data.shipsystems.ls_ard_field,,,,
-Paramork Engines,ls_paramork_engine,0,,Orky,,,,,TRUE,,0,0,0,0,data.hullmods.ls_paramork_engine,"The ship is propelled by two extra modular engine that provides it with an additional %s of top speed and increased mobility in combat. This bonus is lost if these engines are destroyed. 
+Правило толпы,ls_mob_rule,0,,Орочий,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_orky,,,,graphics/hullmods/ls_mob_rule.png
+Модуль Рока,ls_RokModule,0,,Орочий,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_RokModule,Снижает взрывной урон при уничтожении вдвое,,,graphics/hullmods/reduced_explosion.png
+Темпоральное силовое поле,ls_temporal_forcefield,0,,Орочий,,,,,TRUE,TRUE,0,0,0,0,data.shipsystems.ls_temporal_forcefield,,,,
+Темпоральный щит,ls_temporal_shield,0,,Орочий,,,,,TRUE,TRUE,0,0,0,0,data.shipsystems.ls_temporal_shield,,,,
+Таранный нос,ls_ram_prow,0,,Орочий,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_ram_prow,Снижает взрывной урон при уничтожении и уменьшает четверть получаемого фугасного урона,,,
+Броневой модуль,ls_armor_module,0,,Орочий,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.ls_armor_module,,,,
+Крепкое поле,ls_ard_field,0,,Орочий,,,,,TRUE,TRUE,0,0,0,0,data.shipsystems.ls_ard_field,,,,
+Двигатели Параморка,ls_paramork_engine,0,,Орочий,,,,,TRUE,,0,0,0,0,data.hullmods.ls_paramork_engine,"Корабль приводится в движение двумя дополнительными модульными двигателями, которые дают ему дополнительные %s максимальной скорости и повышенную маневренность в бою. Этот бонус теряется, если двигатели уничтожены.
 
-Each engine has %s HP and %s armor, these can be increased further by Heavy Armor or Ard Case installed on the main body. (Considered frigate for the purpose of calculating bonus amount.
+Каждый двигатель имеет %s прочности и %s брони; эти значения можно дополнительно повысить тяжелой броней или крепким корпусом, установленными на основном корпусе. Для расчета бонуса считается фрегатом.
 
-The highly unusual engine arrangement prevent the installation of Supa Override or Unstable Injector.",,,
-Boosta Module,ls_stompa_factory_engine,0,,Orky,,,,,TRUE,,0,0,0,0,data.hullmods.ls_stompa_factory_engine,The ship is propelled by two extra modular engine that provides it with majority of its speed and mobility.,,,
+Крайне необычная компоновка двигателей не позволяет установить супа-перегруз или нестабильный инжектор.",,,
+Бустерный модуль,ls_stompa_factory_engine,0,,Орочий,,,,,TRUE,,0,0,0,0,data.hullmods.ls_stompa_factory_engine,"Корабль приводится в движение двумя дополнительными модульными двигателями, которые обеспечивают большую часть его скорости и маневренности.",,,
 ,,,,,,,,,,,,,,,,,,,
-Fighta Ace,ls_fighta_ace,0,,Orky,,,,,TRUE,,0,0,0,0,data.shipsystems.ls_fighta_ace,"This git knooz wot his doing.
+Ас файты,ls_fighta_ace,0,,Орочий,,,,,TRUE,,0,0,0,0,data.shipsystems.ls_fighta_ace,"Этот тип знает, что делает.
 
-Can use a quick combat dash with multiple charges, damage taken reduced during the dash.",,,graphics/hullmods/ls_killboy.png
-Deff Skwardon,ls_deff_skwardon_hullmod,0,,Orky,,,,,TRUE,,0,0,0,0,data.hullmods.ls_deff_skwardon_hullmod,"Elite Ork Fighta-Bomma Skwadron lead by boss Uzgob ""Mavaork"". The Deff Skwardron are known to gettin da job done even when they got 'fragged to zog'. 
+Может использовать быстрый боевой рывок с несколькими зарядами; получаемый урон снижен во время рывка.",,,graphics/hullmods/ls_killboy.png
+Дефф-сквадрон,ls_deff_skwardon_hullmod,0,,Орочий,,,,,TRUE,,0,0,0,0,data.hullmods.ls_deff_skwardon_hullmod,"Элитная орочья эскадрилья файта-бомм под командованием босса Узгоба ""Маваорк"". Дефф-сквадрон известен тем, что выполняет задачу даже после того, как его ""разнесли к зогу"".
 
-Damage to Fighter and Missile increased by %s .
-Frag and Kinetic damage taken reduced by %s .
+Урон по истребителям и ракетам увеличен на %s.
+Получаемый осколочный и кинетический урон снижен на %s.
 
-After combat start, spawns the two wingmen. If Uzgob is destroyed or land to refit, the wingmen will ditch to get a new plane when their boss return to the battle field. 
+После начала боя вызывает двух ведомых. Если Узгоб уничтожен или садится на перевооружение, ведомые уходят за новым самолетом, когда их босс возвращается на поле боя.
 
 %s
-An absolute madboy who can't fly or shoot worth a zog, but can be counted to get the job done one way or another.
-750 HP, 150 Armor
-2x Gatla Blasta
-2x Mini Rokkit Pod
+Абсолютный безумец, который не умеет ни летать, ни стрелять нормально, но на него можно рассчитывать, что он так или иначе сделает дело.
+750 прочности, 150 брони
+2x Гатла-бласта
+2x Мини-ракетный блок
 
-When slightly damaged, will go berserk and attempt to ram nearby enemy, gain massive damage reduction for the duration of the effect.
+При небольшом повреждении впадает в бешенство и пытается таранить ближайшего врага, получая мощное снижение урона на время эффекта.
 
 %s
-Never shot down (self-claimed), 219 kills (27 confirmed).
-2x Big Shoota
-2x Grot Shoota
-2x Smart Rokkit
+Никогда не был сбит (по собственным словам), 219 убийств (27 подтверждено).
+2x Большая шута
+2x Грот-шута
+2x Умная ракета
 
-Fire Fancy Flare that iz supposed to do stuff.",,,graphics/hullmods/ls_killboy.png
+Запускает модные ловушки, которые типа должны что-то делать.",,,graphics/hullmods/ls_killboy.png
 ,,,,,,,,,,,,,,,,,,,
-Lao Baa Squadron,ls_baa,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_baa,"The Lao Baa mercenary groups are known for their tenancity in combat and their ship modification shows this, increasek peak CR duration by %s and reduce duration of overload by %s. Their well tuned ship also has improved OP and comes with built-in Miemieko drones providng powerful defensive support.",,,graphics/hullmods/ls_baa.png
-Apeiron Reactor,ls_apeiron_reactor,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_apeiron_reactor,"Original spec reactor of the Aperion class gunship, improving the ship's timeflow by %s.",,,graphics/hullmods/ls_apeiron_reactor.png
-Lambda Engineering,ls_lambda_engineering,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_lambda_engineering,"The mysterious Lambda research lab incorporated many cutting edge tech into this vessal to give it a great burst of firepower before falling back to vent. These modification results in %s increase in rate of fire and ammo regeneration for energy weapon, and flux cost is reduced by the same amount. Overcharged flux outflow pipe also %s increase in vent rate.
+Эскадрилья Лао Баа,ls_baa,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_baa,"Группа наемников Лао Баа известна своей упорностью в бою, и их модификации кораблей это отражают: пиковая длительность боеготовности увеличена на %s, а длительность перегрузки снижена на %s. Их хорошо настроенный корабль также имеет улучшенные ОП и встроенные дроны Миемиеко, обеспечивающие мощную оборонительную поддержку.",,,graphics/hullmods/ls_baa.png
+Реактор Апейрона,ls_apeiron_reactor,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_apeiron_reactor,"Оригинальный реактор канонерки класса Апейрон, улучшающий поток времени корабля на %s.",,,graphics/hullmods/ls_apeiron_reactor.png
+Инженерия Лямбда,ls_lambda_engineering,0,,,,,,,TRUE,,0,0,0,0,data.hullmods.ls_lambda_engineering,"Таинственная исследовательская лаборатория Лямбда встроила в этот корабль множество передовых технологий, чтобы дать ему мощный всплеск огня перед отходом на вентиляцию. Эти модификации дают %s к скорострельности и восстановлению боезапаса энергетического оружия, а затраты потока снижаются на ту же величину. Перегруженные трубы вывода потока также дают %s к скорости вентиляции.
 
-There is some speculation that the tech employed aren't fully human in nature. ",,,graphics/hullmods/ls_lambda.png
+Есть предположения, что использованные технологии не совсем человеческой природы.",,,graphics/hullmods/ls_lambda.png

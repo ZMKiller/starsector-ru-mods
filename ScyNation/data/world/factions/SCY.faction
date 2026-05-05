@@ -1,0 +1,424 @@
+{
+  id: "SCY",
+
+  "color": [5,100,200,255],
+  "baseUIColor": [155,195,255,255],
+  "darkUIColor": [5,100,200,175],
+  "gridUIColor": [50,150,225,75],
+
+  "secondaryUIColor": [200,200,200,255],
+  "secondarySegments": 12,
+
+  "displayName": "Scy Nation",
+  "displayNameWithArticle": "the Scy Nation",
+
+  "displayNameLong": "Scy Nation",
+  "displayNameLongWithArticle": "the Scy Nation",
+  "personNamePrefixAOrAn": "a",
+  "displayNameIsOrAre": "is",
+
+  "logo": "graphics/SCY/factions/SCY_flag.png",
+  "crest": "graphics/SCY/factions/SCY_crest.png",
+
+  "shipNamePrefix": "SNS",
+
+  "shipNameSources": {
+    "SCY": 1
+  },
+
+  "names": {
+    "fringe": 1,
+    "world": 1
+  },
+
+  # variantOverrides restricts hulls to listed variants and adjusts their probability
+  "variantOverrides": {
+  },
+
+  # multiplier for how often hulls show up in the faction's fleets
+  "hullFrequency": {
+    "tags": {
+      "scy_bp": 1,
+      "scy_adv_bp": 0.5
+    },
+    "hulls": {
+      "SCY_alecto": 1,
+      "SCY_tisiphone": 0.5,
+      "SCY_lealaps": 0.5,
+      "SCY_talos": 1,
+      "SCY_megaera": 1,
+      "SCY_stymphalianbird": 0.2,
+
+      "SCY_centaur": 1,
+
+      "SCY_lamia": 1,
+      "SCY_lamiaA": 0.5,
+      "SCY_geryon": 0.5,
+      "SCY_pyraemon": 0.5,
+      "SCY_hydra": 0.5,
+
+      "SCY_argus": 1,
+
+      "SCY_telchine": 1,
+      "SCY_baliusF": 1,
+      "SCY_baliusT": 1,
+
+      "SCY_dracanae": 0.5,
+      "SCY_corocotta": 1,
+      "SCY_corocottaA": 0.5,
+      "SCY_erymanthianboar": 0.5,
+      "SCY_siren": 0.4,
+      "SCY_khalkotauroi": 0.4,
+
+      "SCY_manticore": 1,
+
+      "SCY_nemeanlion": 1,
+      "SCY_keto": 1,
+
+      "SCY_xanthus": 1,
+    },
+  },
+
+  # ships the faction gets access to when importing S&W out-of-faction
+  "shipsWhenImporting": {
+    "tags": [
+      "base_bp",
+      "scy_bp"
+    ],
+    "hulls": [
+      "SCY_alecto",
+      "SCY_tisiphone",
+      "SCY_lealaps",
+      "SCY_talos",
+      "SCY_megaera",
+      "SCY_stymphalianbird",
+
+      "SCY_centaur",
+
+      "SCY_lamia",
+      "SCY_lamiaA",
+      "SCY_geryon",
+      "SCY_pyraemon",
+      "SCY_hydra",
+
+      "SCY_argus",
+
+      "SCY_telchine",
+      "SCY_baliusF",
+      "SCY_baliusT",
+
+      "SCY_dracanae",
+      "SCY_corocotta",
+      "SCY_corocottaA",
+      "SCY_erymanthianboar",
+      "SCY_siren",
+      "SCY_khalkotauroi",
+
+      "SCY_manticore",
+
+      "SCY_nemeanlion",
+      "SCY_keto",
+
+      "SCY_xanthus"
+    ],
+  },
+
+  "knownShips": {
+    "tags": ["scy_bp", "scy_adv_bp"],
+    "hulls": [
+      "SCY_alecto",
+      "SCY_tisiphone",
+      "SCY_lealaps",
+      "SCY_talos",
+      "SCY_megaera",
+      "SCY_stymphalianbird",
+
+      "SCY_centaur",
+
+      "SCY_lamia",
+      "SCY_lamiaA",
+      "SCY_geryon",
+      "SCY_pyraemon",
+      "SCY_hydra",
+
+      "SCY_argus",
+
+      "SCY_telchine",
+      "SCY_baliusF",
+      "SCY_baliusT",
+
+      "SCY_dracanae",
+      "SCY_corocotta",
+      "SCY_corocottaA",
+      "SCY_erymanthianboar",
+      "SCY_siren",
+      "SCY_khalkotauroi",
+
+      "SCY_manticore",
+
+      "SCY_nemeanlion",
+      "SCY_keto",
+
+      "SCY_xanthus",
+    ],
+  },
+
+  # listing ships here will make the faction mostly use them even if other hulls become available
+  "priorityShips": {
+    "tags": ["scy_bp", "scy_adv_bp"],
+    "hulls": [
+      "SCY_alecto",
+      "SCY_tisiphone",
+      "SCY_lealaps",
+      "SCY_talos",
+      "SCY_megaera",
+      "SCY_stymphalianbird",
+
+      "SCY_centaur",
+
+      "SCY_lamia",
+      "SCY_lamiaA",
+      "SCY_geryon",
+      "SCY_pyraemon",
+      "SCY_hydra",
+
+      "SCY_argus",
+
+      "SCY_telchine",
+      "SCY_baliusF",
+      "SCY_baliusT",
+
+      "SCY_dracanae",
+      "SCY_corocotta",
+      "SCY_corocottaA",
+      "SCY_erymanthianboar",
+      "SCY_siren",
+      "SCY_khalkotauroi",
+
+      "SCY_manticore",
+
+      "SCY_nemeanlion",
+      "SCY_keto",
+
+      "SCY_xanthus",
+    ],
+  },
+  "knownFighters": {
+    "tags": ["base_bp", "scy_bp", "scy_adv_bp"],
+    "fighters": [
+      "SCY_akhlys_wing",
+      "SCY_nosos_wing",
+      "SCY_stygere_wing",
+      "SCY_ker_wing",
+      "SCY_eris_wing",
+      "SCY_panotti_wing",
+    ],
+  },
+
+  "priorityFighters": {
+    "tags": ["scy_bp", "scy_adv_bp"],
+    "fighters": [
+      "SCY_akhlys_wing",
+      "SCY_nosos_wing",
+      "SCY_stygere_wing",
+      "SCY_ker_wing",
+      "SCY_eris_wing",
+      "SCY_panotti_wing",
+    ],
+  },
+
+  "knownWeapons": {
+    "tags": ["scy_wep_bp"],
+    "weapons": [
+      "SCY_scpb",
+      "SCY_orion",
+      "SCY_singularity",
+      "SCY_ricochet",
+      "taclaser",
+      "vulcan",
+      "ionpulser",
+      "chaingun",
+      "heavymg",
+      "dualflak",
+      "flak",
+      "squall",
+      "swarmer",
+      "sabot",
+      "annihilatorpod",
+      "mininglaser",
+      "atropos",
+      "pdburst",
+      "amblaster",
+      "lrpdlaser",
+      "ioncannon",
+      "lightneedler",
+      "hammerrack",
+      "reaper",
+      "ionbeam",
+      "phasecl",
+      "typhoon"
+    ],
+  },
+  "priorityWeapons": {
+    "tags": ["scy_wep_bp"],
+    "weapons": [
+      "SCY_scpb",
+      "SCY_orion",
+      "SCY_ricochet",
+      "vulcan",
+      "dualflak",
+      "flak",
+      "ionbeam",
+    ],
+  },
+
+  "hullMods": [
+    "advancedshieldemitter",
+    "advancedoptics",
+    "turretgyros",
+    "armoredweapons",
+    "autorepair",
+    "blast_doors",
+    "targetingunit",
+    "eccm",
+    "magazines",
+    "missleracks",
+    "extendedshieldemitter",
+    "fluxcoil",
+    "fluxdistributor",
+    "frontemitter",
+    "frontshield",
+    "hardenedshieldemitter",
+    "hardened_subsystems",
+    "heavyarmor",
+    "insulatedengine",
+    "pointdefenseai",
+    "targetingunit",
+    "adaptiveshields",
+    "reinforcedhull",
+    "fluxbreakers",
+    "solar_shielding",
+    "stabilizedshieldemitter",
+    "surveying_equipment",
+    "shielded_holds",
+    "expanded_deck_crew",
+    "recovery_shuttles",
+    "operations_center",
+    "nav_relay",
+    "ecm",
+  ],
+
+  "factionDoctrine": {
+    "warships": 4,
+    "carriers": 3,
+    "phaseShips": 0,
+
+    "officerQuality": 2,
+    "shipQuality": 3,
+    "numShips": 2,
+
+    "shipSize": 4,
+    "aggression": 3,
+
+    "combatFreighterProbability": 0.1,     				    # instead of some portion of the freighters in a fleet
+    "combatFreighterCombatUseFraction": 0.1,  				# as part of the normal combat lineup
+    "combatFreighterCombatUseFractionWhenPriority": 0.33,   # as part of normal combat lineup, when marked as priority ship
+    "autofitRandomizeProbability": 0.1,
+
+    "commanderSkillsShuffleProbability": 0.5,
+    "commanderSkills": [
+      "fighter_uplink",
+      "carrier_group",
+      "crew_training",
+      "officer_training",
+      "coordinated_maneuvers",
+      "electronic_warfare",
+      "flux_regulation",
+    ],
+  },
+
+  "illegalCommodities": [
+    "drugs",
+    "hand_weapons",
+  ],
+
+  "internalComms": "SCY_internal",
+
+  "music": {
+    "theme": "SCY_market_interaction_neutral",
+    "market_neutral": "SCY_market_interaction_neutral",
+    "market_hostile": "SCY_market_interaction_hostile",
+    "market_friendly": "SCY_market_interaction_friendly",
+    "encounter_neutral": "SCY_market_interaction_neutral",
+    "encounter_hostile": "SCY_market_interaction_hostile",
+    "encounter_friendly": "SCY_market_interaction_friendly",
+  },
+
+  "portraits": {
+    "standard_male": [
+      "graphics/SCY/portraits/GENERIC_portrait01.png",
+      "graphics/SCY/portraits/SCY_portrait02.png",
+      "graphics/SCY/portraits/SCY_portrait03.png",
+      "graphics/SCY/portraits/SCY_portrait05.png",
+      "graphics/SCY/portraits/SCY_portrait07.png",
+      "graphics/SCY/portraits/SCY_portrait10.png",
+      "graphics/SCY/portraits/SCY_portrait11.png",
+    ],
+    "standard_female": [
+      "graphics/SCY/portraits/GENERIC_portrait02.png",
+      "graphics/SCY/portraits/SCY_portrait01.png",
+      "graphics/SCY/portraits/SCY_portrait04.png",
+      "graphics/SCY/portraits/SCY_portrait06.png",
+      "graphics/SCY/portraits/SCY_portrait08.png",
+      "graphics/SCY/portraits/SCY_portrait09.png",
+      "graphics/SCY/portraits/SCY_portrait12.png",
+    ],
+  },
+
+  "ranks": {
+    "ranks": {
+      "spaceCommander": {"name": "Operation Manager"},
+    },
+    "posts": {
+      "patrolCommander": {"name": "Intelligence Officer"},
+      "fleetCommander": {"name": "Defense Fleet Admiral"},
+      "baseCommander": {"name": "Local Spoke-person"},
+    },
+  },
+
+  "custom": {
+    "offersCommissions": true,
+    "engagesInHostilities": true,
+    "buysAICores": true,
+    "AICoreValueMult": 2.5,
+    "AICoreRepMult": 0.75,
+    "buysSurveyData": true,
+    "hostilityImpactOnGrowth": true,
+    "punitiveExpeditionData": {
+      "vsCompetitors": false,
+      "vsFreePort": false,
+      "canBombard": false,
+      "territorial": true,
+    },
+    "simulatorData":{
+      "showInSimulator":true,
+    },
+  },
+
+  "fleetTypeNames": {
+    "trade": "Trade Fleet",
+
+    "tradeLiner": "Acheron Spaceline",
+    "tradeSmuggler": "Trafficker",
+    "smallTrader": "Licenced Delivery",
+
+    "patrolSmall": "Squad",
+    "patrolMedium": "Division",
+    "patrolLarge": "Fleet",
+
+    "inspectionFleet": "Customs",
+    "taskForce": "Strategic Force",
+
+    "foodReliefFleet": "Relief Convoy",
+  },
+},

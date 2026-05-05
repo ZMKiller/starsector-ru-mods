@@ -1,0 +1,82 @@
+{
+	"id":"rr_creeper_torp",
+	"specClass":"missile",
+	#"missileType":"ROCKET",
+	"missileType":"MIRV",
+	"sprite":"graphics/missiles/rr_missile_torpedo_clust.png",
+	"size":[14,23],	
+	"center":[7,11],
+	"collisionRadius":20,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,150,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+	#"explosionSpec":{"duration":0.1f, # not visual
+	#				 "radius":175,
+	#				 "coreRadius":75, # full damage within core radius
+	#				 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+	#				 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+	#				 "particleSizeMin":5.0,
+	#				 "particleSizeRange":3.0,
+	#				 "particleDuration":1,
+	#				 "particleCount":200,
+	#				 "particleColor":[255,155,155,255]},
+	"flameoutTime":3,
+	"armingTime":0.5,
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration					 
+	"engineSpec":{"turnAcc":350,	#0 40
+				  "turnRate":50,	#0 20
+				  "acc":400,
+				  "dec":60},	#0
+	"engineSlots":[{"id":"ES1",
+					"loc":[-11, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[200,150,100,255],
+						"contrailDuration":2,
+						"contrailWidthMult":1.5,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[200,150,100,50],
+						"glowSizeMult":2.5,
+						"glowAlternateColor":[200,80,0,255],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":80.0,
+				    "angle":180.0}],
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":600,	#1000
+					"minTimeToSplit":0.5,
+					"canSplitEarly":false,	#true
+					"splitSound":"bomb_bay_fire",
+					"numShots":6, #10
+					"damage":400,
+					"impact":50,
+					"emp":0,
+					"damageType":HIGH_EXPLOSIVE,
+					"hitpoints":150,
+					"arc":40,	#30
+					"arcOffset":0,
+					"evenSpread":false,
+					"spreadSpeed":60,
+					"spreadSpeedRange":90,
+					"projectileSpec":"rr_creeper_bomb_proj",
+					#"emptySpec":"type_1_mirv_empty",
+					"smokeSpec":{"particleSizeMin":30.0,
+								 "particleSizeRange":20.0,	#30
+								 "cloudParticleCount":10,
+								 "cloudDuration":1.0,
+								 "cloudRadius":20.0,
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[150,100,50,100]}
+					}
+}
+			

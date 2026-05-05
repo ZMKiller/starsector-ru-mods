@@ -1,0 +1,41 @@
+{
+  "variantId": "HIVER_scarabaeidae_standard",
+  "hullId": "HIVER_scarabaeidae",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "HIVER_fraglg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "HIVER_fragmed",
+        "WS0002": "HIVER_fragmed"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "HIVER_fragsm",
+        "WS0004": "HIVER_fragsm"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

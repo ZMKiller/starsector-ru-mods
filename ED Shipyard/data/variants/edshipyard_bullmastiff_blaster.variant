@@ -1,0 +1,55 @@
+{
+  "displayName": "Бластер",
+  "fluxCapacitors": 1,
+  "fluxVents": 50,
+  "goalVariant": true,
+  "hullId": "edshipyard_bullmastiff",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_bullmastiff_blaster",
+  "weaponGroups": [
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {"WS0011": "plasma"}
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {"WS0010": "plasma"}
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0013": "heavyblaster",
+              "WS0014": "heavyblaster"
+          }
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0001": "edshipyard_SC1",
+              "WS0002": "edshipyard_SC1",
+              "WS0003": "edshipyard_SC1",
+              "WS0004": "edshipyard_SC1",
+              "WS0005": "edshipyard_SC1",
+              "WS0006": "edshipyard_SC1",
+              "WS0008": "edshipyard_SC1",
+              "WS0009": "edshipyard_SC1"
+          }
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {"WS0012": "edshipyard_SC2"}
+      }
+  ],
+  "wings": []
+}

@@ -1,0 +1,58 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 12,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "ora_harmony",
+    "hullMods": [
+        "missleracks",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_harmony_blaster",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "sabot",
+                "WS0010": "sabot"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "harpoon",
+                "WS0008": "harpoon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_animus"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "pulselaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "ora_litany",
+                "WS0006": "ora_litany"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_choir",
+                "WS0004": "ora_choir"
+            }
+        }
+    ]
+}

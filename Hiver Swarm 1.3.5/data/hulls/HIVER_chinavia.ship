@@ -1,0 +1,119 @@
+{
+  "hullName": "Chinavia",
+  "hullId": "HIVER_chinavia",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/HIVER_chinavia.png",
+  "style": "HIGH_TECH",
+  "height": 201,
+  "width": 120,
+  "center": [59.5, 103.5],
+  "collisionRadius": 123.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 120,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull",
+    "repair_gantry"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": 0,
+      "locations": [39, -33.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": 0,
+      "locations": [37.5, 35.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-48, 31.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-47.5, -32.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": 0,
+      "locations": [24.5, 1.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [63, 15]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [61, -12]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-89, -0.5],
+      "length": 64.5,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-94.5, -16],
+      "length": 45,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-93.5, 15],
+      "length": 45,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -55.5, -61.5,
+    81.5, -66.5,
+    105.5, -27,
+    102, 32,
+    80, 67.5,
+    -69.5, 58,
+    -106.5, 22.5,
+    -108.5, -28
+  ]
+}

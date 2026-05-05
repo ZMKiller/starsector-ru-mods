@@ -1,0 +1,55 @@
+{
+  "id": "HWI_TurbocannonL",
+  "specClass": "projectile",
+  "projectileSpecId": "HWI_TurboCannonL_Shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "everyFrameEffect": "data.weapons.scripts.HWITurboChargerWeapon",
+  "turretSprite": "graphics/weapons/HWI_TurboCannonL_turret.png",
+  "turretGlowSprite": "graphics/weapons/HWI_TurboCannonL_turret_glow.png",
+  "turretGunSprite": "graphics/weapons/HWI_TurboCannonL_turret_recoil.png",
+  "hardpointSprite": "graphics/weapons/HWI_TurboCannonL_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/HWI_TurboCannonL_hardpoint_glow.png",
+  "hardpointGunSprite": "graphics/weapons/HWI_TurboCannonL_hardpoint_recoil.png",
+  "glowColor": [
+    55,
+    55,
+    255,
+    255
+  ],
+  "visualRecoil": 7,
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "turretOffsets": [
+    29,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    37.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 25,
+    "spread": 15,
+    "particleSizeMin": 15,
+    "particleSizeRange": 5,
+    "particleDuration": 0.12,
+    "particleCount": 17,
+    "particleColor": [
+      105,
+      100,
+      255,
+      175
+    ]
+  },
+  "fireSoundTwo": "shock_repeater_fire"
+}

@@ -1,0 +1,31 @@
+{
+	"id":"rr_drone_scope",
+	"type":"DRONE_LAUNCHER",
+	"aiType":"DRONE_LAUNCHER_STANDARD",
+	
+	"statsScript":"data.shipsystems.scripts.SensorDroneStats",
+	
+	"droneVariant":"rr_drone_scope",
+	
+	"allowFreeRoam":false,
+	
+	"launchSpeed":100,
+	"launchDelay":1,
+	"maxDrones":1,
+	"droneBehavior":[
+		{"droneIndex":[0],
+		 "defaultFacing":"MATCH_SHIP_FACING",	# MATCH_DRONE_HEADING, MATCH_SHIP_HEADING, MATCH_SHIP_FACING, AWAY_FROM_SHIP
+		 "faceEnemy":true,
+		 "holdRoamRange":0,
+		 "freeRoamRange":150,
+		 "targetPriority":[MISSILE, FIGHTER, SHIP],
+		 "initialOrbitAngle":-70,
+		 "orbitRadius":-40, 				# plus ship radius
+		 "orbitDir":1, 					# -1 or 1
+		 "orbitSpeed":0, 				# pixels/second
+		},
+	],
+	
+	"useSound":"drone_launch",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

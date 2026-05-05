@@ -1,0 +1,31 @@
+{
+	"id":"edshipyard",
+	"name":"ED Shipyards",
+	"author":"Ed, Nick XR",
+	"version":"2.6.8",
+	"description":"Adds unique ships focused on fun, also fair and balanced!",
+
+	# Breaking changes to this mod are only done between major game versions.
+	# If you change this to force compatability it's very likely you wont be able to upgrade this mod without breaking your save.
+	# Consider waiting a day or two for mod authors to update their stuff and Alex to release a new build fixing what ever bugs there are
+	"gameVersion":"0.98a-RC5",
+
+	"utility": "false",
+	"source": "https://bitbucket.org/NickWWest/edshipyard/",
+	"jars":["jars/EDShipyard.jar"],
+	"dependencies": [
+		{
+			"id": "lw_lazylib",
+			"name": "LazyLib"
+		},
+		{
+			"id": "MagicLib",
+			"name": "MagicLib"
+		},
+		{
+			"id": "shaderLib",
+			"name": "GraphicsLib"
+		}
+	],
+	"modPlugin":"data.scripts.edshipyard.ED_modPlugin",
+}

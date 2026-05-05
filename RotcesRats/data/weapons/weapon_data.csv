@@ -1,0 +1,37 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autoFireAccBonus,extraArcForAI,hints,tags,GroupTag,tech/manufacturer,,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+Flint Coilgun,rr_flint_coil,1,,400,650,,90,,40,22,5,,,,KINETIC,67,,0.25,0.5,1,,1,9,2,5,,850,,,40,,,,"kinetic7, LR, pirate_bp",,Pirate,,Против щитов,,,,,,,,,,2223.75
+Miser Heavy Coilgun,rr_miser_coil,1,0.7,1600,850,,240,,60,8,11,,,,KINETIC,264,,0.35,1.25,1,,3,12,3,3,,850,,,250,,,,"kinetic14, LR, pirate_bp",,Pirate,,Против щитов,,,,,"Снаряд разлетается при попадании, нанося %s урона.",80 Fragmentation,,,,2223.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mini Mining Blaster,rr_mini_mblast,0,,200,400,,100,,0,15,5,4,0.4,,HIGH_EXPLOSIVE,150,,0,0.2,,,0,0,0,0,,1000,,,,,,USE_LESS_VS_SHIELDS,"energy7, base_bp, ind",,,,Универсальное,,,,,Каждый заряд наносит броне дополнительно %s урона. Этот урон не снижается броней.,40,,,,22222.125
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Arpo MRM,rr_arpo,0,,150,2000,,500,,15,30,2,3,,,HIGH_EXPLOSIVE,0,,0,0.9,1,,0,0,0,0,,240,90,12.5,150,,,DO_NOT_AIM,"missile7, strike2, pirate_bp",,Pirate,,Добивание,Средняя,Средняя,,,,,,,TRUE,22211.5
+Arpo MRM Pod,rr_arpopod,1,,800,2000,,500,,15,10,7,18,,,HIGH_EXPLOSIVE,0,,0,6.7,3,0.25,0,0,0,0,,240,90,12.5,150,,,DO_NOT_AIM,"missile12, strike8, pirate_bp",,Pirate,,Добивание,Средняя,Средняя,,,,,,,TRUE,22212
+Creeper Cluster Torpedo,rr_creeper,0,,150,1200,,2400,,80,10,1,1,,,FRAGMENTATION,0,,0,5,1,,0,0,0,0,,320,100,4.25,350,,10,"STRIKE, DIRECT_AIM","strike7, rocket2, pirate_bp",,Pirate,,Торпеда,Средняя,Плохое,,,,,,,TRUE,2229
+Typhoon Creeper Launcher,rr_c_typhoon,0,,1000,1200,,2400,,80,20,8,10,,,FRAGMENTATION,0,,0,11.2,2,0.8,0,0,0,0,,320,120,4.25,350,,10,"STRIKE, DIRECT_AIM","strike12, rocket7, pirate_bp",,Pirate,,Торпеда,Средняя,Плохое,,,,,,,TRUE,22214
+Gyro Micromissile Launcher,rr_gyro,0,,200,800,,100,30,10,50,2,2,0.4,,FRAGMENTATION,0,,0,0.1,1,,30,40,5,3,,500,125,4,40,,,"ANTI_FTR, DO_NOT_AIM, DO_NOT_CONSERVE, MISSILE_SPREAD","utility7, missile0, missile_bp, ind",,,,Против малых целей,Очень быстрая,Отличное,,,,,,,,22210
+Bearing Microrocket Rack,rr_bearing,0,,200,1200,,75,,20,20,4,12,0.6,3,KINETIC,0,,0,1.25,3,0.25,8,14,2,2,,500,50,2.75,50,,,DO_NOT_CONSERVE,"kinetic4, rocket6, strike0, missile_bp, ind",,,,Ближняя поддержка,Быстрая,Нет,,,,,,,,22211
+Axle Microtorpedo Launcher,rr_axle,0,,200,1200,,360,,25,10,3,10,,,HIGH_EXPLOSIVE,0,,0,4.1,2,0.4,2,4,2,0.5,,550,50,4,175,,,STRIKE,"strike6, rocket4, missile_bp, merc, ind",,,,Торпеда,Быстрая,Нет,,,,,,,TRUE,2229.8
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Wrath of ludd,rr_wrath,0,,100000,1500,,6000,,200,10,20,10,,,HIGH_EXPLOSIVE,0,,0,60,1,,0,0,0,0,,300,75,6,750,,,"GUIDED_POOR, STRIKE, SYSTEM, SHOW_IN_CODEX",,,,,Добивание,Средняя,Очень плохое,,,"При попадании создает %s вторичных взрывов, каждый наносит %s урона.",16 | 150 Energy,,,TRUE,22299
+Wrath Burst Dummy,rr_wrath_burst,0,,1000,1,,150,30,10,10,1,,,,ENERGY,0,,0,0.5,1,,0,0,0,0,,10,,,10,,,SYSTEM,dummy_proj,,,,Макет детонации,,,,,,,,,,80055
+Flint Coilgun (Fighter),rr_flint_coil_f,0,,1000,400,,70,,40,25,6,,,,KINETIC,60,,0.15,0.25,1,,2,10,2,6,,800,,,50,,,"SYSTEM, PD_ALSO, SHOW_IN_CODEX",,,Pirate,,Против щитов,,,,,,,,,,2223.8
+Quagmire Suppressor,rr_quagmire,0,,10000,700,,70,,10,40,8,,,,KINETIC,35,,0,1.1,3,0.2,10,20,2,8,,700,,,30,,,"SYSTEM, PD, ANTI_FTR, FIRE_WHEN_INEFFICIENT, SHOW_IN_CODEX",,,,,ПКО по площади,,,,,"Снаряды разбрасывают %s осколков, каждый наносит %s осколочного и %s ЭМИ-урона.",7 | 10 | 40,,,,2224
+Quagmire Suppressor (Fighter),rr_quagmire_f,0,,10000,650,,40,,10,40,8,,,,KINETIC,30,,0,1.6,5,0.1,10,20,2,8,,700,,,30,,,"SYSTEM, PD, ANTI_FTR, FIRE_WHEN_INEFFICIENT, SHOW_IN_CODEX",,,,,ПКО по площади,,,,,"Снаряды разбрасывают %s осколков, каждый наносит %s осколочного и %s ЭМИ-урона.",4 | 10 | 40,,,,2224.1
+Quagmire Splinter,rr_quagmire_splinter,0,,1000,40,,10,40,2,1,,,,,FRAGMENTATION,,,0,1,1,,0,0,0,0,,800,,,10,,,SYSTEM,,,,,,,,,,,,,,,2224.2
+Diffused Thermal Pulse Cannon,rr_d-tpc,0,,100000,1000,,180,,0,0,,36,1.5,6,ENERGY,108,,0.15,0.65,1,,14,20,2,1,,1000,,,,,,"SYSTEM, SHOW_IN_CODEX",,TPC_only,,,Универсальное,,,,Разброс,,,,,,22240
+D-TPC Dummy,rr_d-tpc_split,0,,100000,1000,,180,,0,0,,,,,ENERGY,108,,0,0.1,1,,0,0,0,0,,1000,,,,,,"SYSTEM, SHOW_IN_CODEX",,,,,Универсальное,,,,,,,,,,22240.1
+Axle Microtorpedo Rack,rr_axle_f,0,,1000,1200,,360,,25,10,1,2,,,HIGH_EXPLOSIVE,0,,0,4.1,2,0.5,16,24,8,0.5,,550,50,4,175,,,"SYSTEM, STRIKE, SHOW_IN_CODEX","strike6, rocket4",,,,Торпеда,Быстрая,Нет,,,,,,,TRUE,2229.9
+Light Needler (Compact),rr_lightneedler_c,0,,1000,500,,40,,1,20,8,,,,KINETIC,30,,0,2.85,10,0.05,5,20,1.5,5,,1000,,,10,,,"SYSTEM, SHOW_IN_CODEX",kinetic9,,,,Против щитов,,,,,,,,,,2223.65
+Arpo MRM (Twin),rr_arpo_f,0,,1000,1200,,500,,15,30,2,2,,,HIGH_EXPLOSIVE,0,,0,0.9,1,,10,10,0,0,,240,90,10,150,,,"SYSTEM, DO_NOT_AIM, SHOW_IN_CODEX","missile7, strike2",,Pirate,,Добивание,Средняя,Средняя,,,,,,,TRUE,22211.5
+Gyro Micromissile Array,rr_conc_gyro_array,0,,1000,800,,100,30,10,0,,9,1.5,3,FRAGMENTATION,0,,0,0.15,1,,25,40,5,3,,500,125,4.5,40,,,"SYSTEM, ANTI_FTR, DO_NOT_AIM, DO_NOT_CONSERVE, MISSILE_SPREAD, SHOW_IN_CODEX","utility7, missile0",,,,Против малых целей,Очень быстрая,Отличное,,,,,,,,22210.1
+Newt MRM,rr_newt,0,,1000,1500,,60,750,7,30,,,,,FRAGMENTATION,0,,0,25,1,,0,0,0,,,400,50,11.5,100,,,"SYSTEM, DO_NOT_AIM, HEATSEEKER, SHOW_IN_CODEX","utility13, missile0",,,,Против двигателей,Быстрая,Отличное,,,,,,,TRUE,22211.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Itano Gyro Dummy,rr_gyro_itano,0,,1000,1000,,100,30,10,50,,,,,FRAGMENTATION,0,,0,0.1,1,,30,40,5,3,,500,125,5,40,,,"SYSTEM, MISSILE_SPREAD",,,,,,,,,,,,,,,2229.11
+Itano Bearing Dummy,rr_bearing_itano,0,,1000,1200,,75,,25,20,,,,,KINETIC,0,,0,0.1,1,,8,14,2,2,,500,50,4,60,,,"SYSTEM, MISSILE_SPREAD, DIRECT_AIM",,,,,,,,,,,,,,,2229.12
+Itano Swarmer Dummy,rr_swarmer_itano,0,,1000,1000,,100,,15,50,,,,,HIGH_EXPLOSIVE,0,,0,0.1,1,,5,5,0,0,,300,100,5,50,,,"SYSTEM, MISSILE_SPREAD",,,,,,,,,,,,,,,2229.13
+Itano Locust Dummy,rr_locust_itano,0,,1000,1400,,200,,5,30,,,,,FRAGMENTATION,0,,0,0.1,1,,5,5,0,0,,400,100,6,60,,,"SYSTEM, MISSILE_SPREAD",,,,,,,,,,,,,,,2229.14
+Flare Stream Launcher,rr_flarelauncher,0,,1000,400,,10,100,50,,,,,,ENERGY,0,,0,0.1,12,0.4,60,80,5,0,,150,300,3,1,,,SYSTEM,,,,,,,,,,,,,,,22236
+Itano Squall Dummy,rr_squall_itano,0,,1000,1500,,180,60,10,20,,,,,KINETIC,0,,0,0.1,1,,0,0,0,0,,600,100,5,300,,,"SYSTEM, MISSILE_SPREAD, DIRECT_AIM",,,,,,,,,,,,,,,2229.21
+Itano Pilum Dummy,rr_pilum_itano,0,,1000,1500,,400,400,20,20,,,,,FRAGMENTATION,0,,0,0.1,1,,0,0,0,0,,300,50,8,150,,,"SYSTEM, MISSILE_SPREAD",,,,,,,,,,,,,,,2229.22
+Itano Mine Dummy,rr_mine_itano,0,,1000,1000,,300,,25,30,,,,,FRAGMENTATION,0,,0,1,1,,0,0,0,0,,120,400,4,250,,,"SYSTEM, ANTI_FTR, PD",,,,,,,,,,,,,,,2229.23
+Creeper Bomb,rr_creeper_bomb,0,,1000,1000,,400,,50,15,,,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,0,,170,20,10,150,,,"SYSTEM, STRIKE, BOMB",,,,,,,,,,,,,,TRUE,2223.5

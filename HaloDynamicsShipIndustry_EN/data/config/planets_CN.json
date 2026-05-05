@@ -1,0 +1,63 @@
+{
+	"HSI_Intrusion":{
+		"name":"偏移视界投影",
+		"tilt":-16, # left-right (>0 tilts to the left)
+		"pitch":10, # towards-away from the viewer (>0 pitches towards)
+		"rotation":-2, # degrees/second
+		"planetColor":[0,0,0,255],
+		"atmosphereThickness":0.25, # as fraction of radius.  Set to 0 for no atmosphere
+		"atmosphereThicknessMin":10, #  minimum thickness in pixels
+		"atmosphereColor":[140,90,255,255],
+		"texture":"graphics/planets/star_white.jpg",
+		"icon":"graphics/icons/blackhole.png",
+		#"icon":"graphics/icons/icon_portal.png",
+		"starscapeIcon":"graphics/starscape/blackhole.png",
+		"iconColor":[100,60,100,255],
+		"starCoronaSprite":"graphics/fx/star_halo.png", # optional, defaults to really bright particle
+		"starCoronaColor":[255,170,255,255], # optional, defaults to white
+		"starCoronaSizeMult":2.56, # required, multiplier for star's radius
+		"isStar":true,
+		#"isBlackHole":true,
+		"scaleMultMapIcon":2.5,
+		"scaleMultStarscapeIcon":2.5,
+		"lightPosition":[0,0,10], # in planet radii.  Not used for stars.  z > 0 is above the playing field.
+	},
+  
+	"HSI_Wanderer":{
+		"name":"流浪冰冻",
+		"tilt":-27, # left-right (>0 tilts to the left)
+		"pitch":4, # towards-away from the viewer (>0 pitches towards)
+		"rotation":-5, # degrees/second
+		"planetColor":[255,255,255,255],
+		"atmosphereThickness":2, # as fraction of radius.  Set to 0 for no atmosphere
+		"atmosphereThicknessMin":12, #  minimum thickness in pixels
+		"atmosphereColor":[100,120,160,155],
+		"texture":"graphics/planets/frozen02.jpg",
+		"icon":"graphics/warroom/icon_planet.png",
+		"iconColor":[102,103,106,255],
+		"isStar":false,
+		"lightPosition":[-2,-8,10], # in planet radii.  Not used for stars.  z > 0 is above the playing field.
+	},
+	
+	"HSI_Minion":{
+		"name":"流浪冰冻",
+		"tilt":-11, # left-right (>0 tilts to the left)
+		"pitch":2, # towards-away from the viewer (>0 pitches towards)
+		"rotation":-6, # degrees/second
+		"planetColor":[255,255,255,255],
+		"atmosphereThickness":0, # as fraction of radius.  Set to 0 for no atmosphere
+		"atmosphereThicknessMin":4, #  minimum thickness in pixels
+		"atmosphereColor":[100,140,160,155],
+		"texture":"graphics/planets/frozen02.jpg",
+		"icon":"graphics/warroom/icon_planet.png",
+		"iconColor":[102,103,106,255],
+		"isStar":false,
+		"lightPosition":[-2,-8,10], # in planet radii.  Not used for stars.  z > 0 is above the playing field.
+	},
+
+}
+
+
+
+
+

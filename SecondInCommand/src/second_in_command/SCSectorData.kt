@@ -15,5 +15,4 @@ class SCSectorData {
     var continiousRepairsDPSoFar = 0f
 
     var hoveredOverOfficerPickerHelp = false
-
 }

@@ -1,0 +1,47 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 0,
+    "fluxVents": 23,
+    "goalVariant": false,
+    "hullId": "SCY_corocotta",
+    "hullMods": [
+        "pointdefenseai",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "quality": 0.4,
+    "variantId": "SCY_corocotta_escort",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_scorcher"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_lvds",
+                "WS0003": "SCY_lvds"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_minigun1",
+                "WS0005": "SCY_minigun1",
+                "WS0006": "SCY_minigun1",
+                "WS0007": "SCY_minigun1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "SCY_minigun1",
+                "WS0009": "SCY_minigun1"
+            }
+        }
+    ]
+}

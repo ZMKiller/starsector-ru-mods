@@ -1,0 +1,18 @@
+{
+	"id":"nskr_warp",
+	"type":"ENGINE_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"lostsector.shipsystems.ai.WarpAI",
+	"statsScript":"lostsector.shipsystems.WarpStats",
+	
+	"clampMaxSpeedAfter":true,
+	"fadeActivationSoundOnChargedown":true,
+
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"activeSpeedIncrease":300,
+		"burstMovementPotential":500,
+		"averageSpeedIncrease":50,
+	}
+}

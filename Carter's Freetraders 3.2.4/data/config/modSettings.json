@@ -1,0 +1,57 @@
+{
+    "nexerelin":{
+		"mining_ship_strengths":{
+			"CFT_bawley":20,
+			"CFT_bolster":60,
+			"CFT_clipper":30,			
+			"CFT_collier":40,
+			"CFT_danube":30,				
+			"CFT_knarr":50,		
+			"CFT_tender":8,	
+			"CFT_arkyd":18,	
+			"CFT_exeter":16,	
+			"CFT_astrolabe":17,				
+			"CFT_arethusa":50,			
+
+		},
+		"mining_weapon_strengths":{
+			"CFT_pmb": 8,
+			"CFT_mpmb": 14,
+			"CFT_lpmb": 25,	
+			"CFT_ltautocannon": 6,	
+			"CFT_medautocannon": 12,				
+			"CFT_lrgautocannon": 18,				
+		},
+		"mining_hidden_ships_and_weapons":[""],
+    },
+	
+   "SCY":{
+        "amity_factionWhitelist":[
+            # Lists factions that should have their known ships and weapons sold in Amity's Freeport discount trader.
+            "CFT",
+        ],
+        #"amity_blacklist":[
+        #    # Lists ships, weapons and wings ids that should be culled from Amity's Freeport discount trader.
+        #    # Consider that tier 3 weapons/wings and ships above 5/10/14/23 FP are already culled from that store automatically.
+        #],
+    },	
+
+	"PerseanChronicles": {
+		  # Controls what systems/markets may be used as quest starting/mid/ending locations.
+		  # Valid for v1.0.1 and later
+		#"entity_tags_to_blacklist": [
+		#	# SectorEntityTokens containing a tag listed here will be blacklisted.
+		#],
+		#"system_ids_to_blacklist": [
+		#	# Star systems with an id listed here will be blacklisted.
+		#],
+		#"market_ids_to_blacklist": [
+		#	# Markets with an id listed here will be blacklisted.
+		#],
+		"faction_ids_to_whitelist": [
+			# Markets whose controlling faction's id is listed here will be *whitelisted*.
+			# Vanilla factions are whitelisted by default.
+			"CFT",
+		]
+	},	
+}

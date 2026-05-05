@@ -1,0 +1,82 @@
+{
+	"playableFaction":true,
+	"corvusCompatible":true,
+    "marketSpawnWeight":2,	
+    "rebelFleetSuffix":"Traitors",
+	"asteroidMiningFleetName":"Resource Harvester",	
+	"startRelationships":{
+		"independent":0.4,
+		"pirates":0.1,
+		"tritachyon":-0.1,
+		"hegemony":-0.2,
+		"luddic_church":-0.1,	
+		"luddic_path":-0.2,
+		"persean": 0.1,
+		"lions_guard":-0.1,			
+	    "sindrian_diktat":0.2,	
+		"remnant":-0.6,		
+	},
+
+	# Used to determine alliance alignment; also affects disposition towards other factions
+	"alignments":{
+		"corporate":0.1,
+		"technocratic":0.1,
+		"militarist":0.05,
+		"diplomatic":0.5,
+		"ideological":0.2,
+	},
+	"diplomacyTraits":["lowprofile", "neutralist"],
+	
+	"colonyExpeditionChance":0.55,
+    "colonyTargetValuator":"exerelin.campaign.colony.ColonyTargetValuator",		
+
+	# Number of entries must equal number of vengeance tiers (0-3)
+	"vengeanceLevelNames":["Piker", "Hunter", "Wolf"],
+	"vengeanceFleetNames":["Bounty Hunter", "Bounty Catcher", "Woof Wolf"],
+	"vengeanceFleetNamesSingle":["Bounty Hunter fleet", "a Catcher", "Woof Wolf"],
+	
+	# Randomly picked to add to a mining fleet
+	"miningVariantsOrWings":[
+		"CFT_arethusa_standard",	
+		"CFT_bawley_standard",
+		"CFT_bolster_standard",	
+		"CFT_clipper_standard",			
+		"CFT_collier_standard",
+		"CFT_danube_standard",
+		"CFT_knarr_standard",				
+	],
+
+    "startShipsSolo":["CFT_vestale_standard"], 
+    "startShipsCombatSmall":["CFT_lennox_standard", "CFT_jackdaw_standard", "CFT_barque_standard"], 
+    "startShipsTradeSmall":["CFT_brigantine_standard", "CFT_vergulde_standard", "CFT_scow_standard"],    
+    "startShipsCarrierSmall":["CFT_barkentine_standard", "CFT_danube_standard", "CFT_naruebet_standard"], 
+	"startShipsCombatLarge":["CFT_coventry_standardd", "CFT_clipper_standard", "CFT_kerberos_standard"],
+	"startShipsTradeLarge":["CFT_exeter_standard", "CFT_carrack_standard", "CFT_schooner_standard"],
+    #"startShipsCarrierLarge":[""],
+    "startShipsExplorerLarge":["CFT_bolster_standard", "CFT_arethusa_standard"],	
+    "startShipsSuper":["CFT_freebooter_standard"],	
+	
+	"startSpecialItems":[
+        [["cft_package", ""]],
+        [["cftweapon_package", ""]],		
+    ],	
+	
+   "industrySeeds":[
+ 		{"id":"militarybase", "mult":1},
+        {"id":"orbitalworks", "mult":1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+    ],
+
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1},
+        {"id":"pocftlation_upsize", "count":1},		
+    ],
+
+
+	# Defense stations used in random sector
+	"defenceStations":[
+		{"ids":["orbitalstation", "battlestation", "starfortress"]},
+		{"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"]},
+	],
+}

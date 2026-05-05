@@ -1,0 +1,22 @@
+{
+	"starSystem":"tyle",
+	"markets":[
+		{
+			"entities":["SCY_tyleOutpost"],
+			"faction":"SCY",
+			"size":3,
+            "freePort":false,
+			"startingConditions":[
+				"population_3"
+			],
+			"industries":[
+				["population"],
+				["spaceport"],
+				["patrolhq"],
+                #["militarybase"],
+				["orbitalstation"],
+                ["waystation"]
+			]
+		}
+	]
+}

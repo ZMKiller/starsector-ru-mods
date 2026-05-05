@@ -1,0 +1,41 @@
+{
+  "displayName": "Пиратский",
+  "fluxCapacitors": 4,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "edshipyard_wolfhound_p",
+  "hullMods": [
+    "hardenedshieldemitter",
+    "magazines"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_wolfhound_pirate",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "edshipyard_SB1",
+        "WS 004": "edshipyard_SB2"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "harpoon"
+	  }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "lightmortar",
+        "WS 003": "lightmortar"
+	  }
+    }
+  ],
+  "wings": []
+}

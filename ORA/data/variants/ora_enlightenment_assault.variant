@@ -1,0 +1,77 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 44,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "ora_enlightenment",
+    "hullMods": [
+        "fluxbreakers",
+        "targetingunit",
+        "missleracks",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_enlightenment_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ora_incantation",
+                "WS0006": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ora_incantation",
+                "WS0007": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "ora_incantation"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "ora_incantation"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "pilum",
+                "WS0008": "pilum",
+                "WS0009": "pilum",
+                "WS0010": "pilum",
+                "WS0011": "pilum"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "heatseeker",
+                "WS0016": "heatseeker",
+                "WS0017": "heatseeker",
+                "WS0018": "heatseeker",
+                "WS0019": "heatseeker",
+                "WS0020": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "ora_choir",
+                "WS0014": "ora_choir",
+                "WS0021": "ora_choir",
+                "WS0022": "ora_choir"
+            }
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+  "hullName": "Alecto",
+  "hullId": "SCY_alecto",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/SCY/ships/SCY_alecto.png",
+  "style": "SCYHULL",
+  "height": 109,
+  "width": 96,
+  "center": [48, 58],
+  "collisionRadius": 70,
+  "shieldCenter": [-2, -0],
+  "shieldRadius": 68,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame1",
+    "BLINKER1": "SCY_ZblinkerB",
+    "BLINKER2": "SCY_ZblinkerB",
+    "D_HEAT_CENTER": "SCY_ZfrigateHeat"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-24, -0]
+    },
+    {
+      "id": "D_HEAT_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-28.5, -0]
+    },
+    {
+      "id": "BLINKER1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-9.5, -31.5]
+    },
+    {
+      "id": "BLINKER2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-9.5, 31.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 230,
+      "angle": 135,
+      "locations": [-4, 23]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 230,
+      "angle": -135,
+      "locations": [-4, -23]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 230,
+      "angle": 45,
+      "locations": [33, 13]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 230.009995,
+      "angle": -45,
+      "locations": [33, -13]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [43, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-24, -0],
+      "length": 16,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    46, 6.5,
+    42, 22,
+    21, 25,
+    -3, 46,
+    -30, 42,
+    -30, 22,
+    -24, 18,
+    -43, 11,
+    -24, 11,
+    -24, -11,
+    -43, -11,
+    -24, -18,
+    -30, -22,
+    -30, -42,
+    -3, -46,
+    21, -25,
+    42, -22,
+    46, -6.5
+  ]
+}

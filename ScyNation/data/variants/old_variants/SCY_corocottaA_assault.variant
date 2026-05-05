@@ -1,0 +1,48 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
+    "hullId": "SCY_corocottaA",
+    "hullMods": [
+        "targetingunit",
+        #"SCY_reactiveArmor"
+    ],
+    "modules": [
+        {"WW1_MULTI": "SCY_corAF_standard"},
+        {"WW2_MULTI": "SCY_corAFL_standard"},
+        {"WW3_MULTI": "SCY_corAFR_standard"},
+        {"WW4_MULTI": "SCY_corAL_standard"},
+        {"WW5_MULTI": "SCY_corAR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_corocottaA_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_ricochet"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "SCY_hemor2"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_kacc2",
+                "WS0003": "SCY_kacc2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_hack",
+                "WS0006": "SCY_intercept",
+                "WS0007": "SCY_intercept"
+            }
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+  "hullName": "Malinois",
+  "hullId": "JYD_malinois",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/JYD_malinois.png",
+  "style": "MIDLINE",
+  "height": 32,
+  "width": 29,
+  "center": [14, 14],
+  "collisionRadius": 22,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 21,
+  "viewOffset": 0,
+  "builtInMods": [
+    "hardenedshieldemitter"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 95,
+      "angle": 0,
+      "locations": [1, 9.5]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 95,
+      "angle": 0,
+      "locations": [2.5, -9]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [10, -0.5]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 180,
+      "locations": [-5, -0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12.5, 3.5],
+      "length": 13,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-12, -4],
+      "length": 13,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -14.5, -10.5,
+    -14.5, 10.5,
+    -8.5, 16,
+    6.5, 11,
+    9, 7,
+    18.5, 6,
+    18.5, -7,
+    8.5, -8,
+    6, -12.5,
+    -10.5, -16
+  ]
+}

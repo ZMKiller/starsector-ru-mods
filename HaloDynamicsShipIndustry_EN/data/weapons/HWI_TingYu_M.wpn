@@ -1,0 +1,42 @@
+{
+  "id": "HWI_TingYu_M",
+  "specClass": "projectile",
+  "projectileSpecId": "HWI_TingYu_torp",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "displayArcRadius": 2000,
+  "turretSprite": "graphics/weapons/HWI_Fireworks_M_turret_base.png",
+  "hardpointSprite": "graphics/weapons/HWI_Fireworks_M_hardpoint_base.png",
+  "turretOffsets": [
+    20.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    26,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 16,
+    "particleSizeRange": 18,
+    "cloudParticleCount": 8,
+    "cloudDuration": 1.5,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 4,
+    "blowbackDuration": 2,
+    "blowbackLength": 22,
+    "blowbackSpread": 15,
+    "particleColor":[150,150,220,25]
+  },
+  "fireSoundTwo": "dragonfire_fire"
+}

@@ -1,0 +1,45 @@
+{
+  "displayName": "Штурм",
+  "fluxCapacitors": 13,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "edshipyard_beagle",
+  "hullMods": [
+    "targetingunit",
+    "extendedshieldemitter",
+    "turretgyros"
+  ],
+  "modules": [
+    {
+      "M001": "edshipyard_dobermann_shieldmodule_omni"
+    },
+    {
+      "M002": "edshipyard_dobermann_shieldmodule_omni"
+    }
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_beagle_assault",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "edshipyard_GS2",
+        "WS0002": "edshipyard_SC2",
+        "WS0003": "edshipyard_SC2"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

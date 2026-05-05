@@ -1,0 +1,29 @@
+{
+    "displayName": "Hacker",
+    "fluxCapacitors": 5,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "SCY_stymphalianbird",
+    "hullMods": [
+        "hardened_subsystems",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "SCY_stymphalianbird_hacker",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"GUN": "SCY_stymphalianMain"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_hack",
+                "WS0002": "SCY_hack"
+            }
+        }
+    ]
+}

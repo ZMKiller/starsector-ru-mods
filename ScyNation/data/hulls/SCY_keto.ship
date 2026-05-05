@@ -1,0 +1,432 @@
+{
+    "hullName": "Keto",
+    "hullId": "SCY_keto",
+    "hullSize": "CAPITAL_SHIP",
+    "style": "SCYHULL",
+    "spriteName": "graphics/SCY/ships/SCY_keto.png",
+    "height": 490,
+    "width": 184,
+    "center": [
+        92, 245
+    ],
+    "collisionRadius": 305,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 281,
+    "viewOffset": 0,
+    "builtInMods": [
+        "SCY_engineering",
+        "hiressensors",
+        "SCY_modules"
+    ],
+    "builtInWeapons": {
+        "ASTRAPIOS": "SCY_ketoMain",
+        "A_FLAME_CENTER": "SCY_Zflame3",
+        "A_FLAME_LEFT": "SCY_Zflame3",
+        "A_FLAME_RIGHT": "SCY_Zflame3",
+        "D_HEAT_CENTER": "SCY_XcruiserHeat",
+        "D_HEAT_LEFT": "SCY_WketoHeat",
+        "D_HEAT_RIGHT": "SCY_WketoHeat",
+        "F_DOT": "SCY_WWketoDot",
+        "F_HEAT": "SCY_WWketoHeat",
+        "F_LIGHT": "SCY_WWketoLight",
+        "Z_GUN": "SCY_WWketoGun"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "A0_ROOT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   -45.5,        0
+            ]
+        },
+        {
+            "id": "A1_MULTI",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     161,       58
+            ]
+        },
+        {
+            "id": "A2_MULTI",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   169.5,    -42.5
+            ]
+        },
+        {
+            "id": "A_FLAME_LEFT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    -151,       38
+            ]
+        },
+        {
+            "id": "A_FLAME_CENTER",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    -161,        0
+            ]
+        },
+        {
+            "id": "A_FLAME_RIGHT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    -151,      -38
+            ]
+        },
+        {
+            "id": "D_HEAT_CENTER",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    -186,        0
+            ]
+        },
+        {
+            "id": "D_HEAT_LEFT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    -176,       38
+            ]
+        },
+        {
+            "id": "D_HEAT_RIGHT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    -176,      -38
+            ]
+        },
+        {
+            "id": "F_HEAT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   -45.5,        0
+            ]
+        },
+        {
+            "id": "F_LIGHT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   -45.5,        0
+            ]
+        },
+        {
+            "id": "F_DOT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                   -45.5,        0
+            ]
+        },
+        {
+            "id": "Z_GUN",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   130.5,       51
+            ]
+        },
+        {
+            "id": "ASTRAPIOS",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     224,       59
+            ]
+        },
+        {
+            "id": "WS0001",
+            "size": "LARGE",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                      52,       15
+            ]
+        },
+        {
+            "id": "WS0002",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": 45,
+            "locations": [
+                      21,       48
+            ]
+        },
+        {
+            "id": "WS0003",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": -45,
+            "locations": [
+                      21,      -48
+            ]
+        },
+        {
+            "id": "WS0004",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": 135,
+            "locations": [
+                    -111,       48
+            ]
+        },
+        {
+            "id": "WS0005",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": -135,
+            "locations": [
+                    -111,      -48
+            ]
+        },
+        {
+            "id": "WS0006",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": 45,
+            "locations": [
+                      41,       66
+            ]
+        },
+        {
+            "id": "WS0007",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": -45,
+            "locations": [
+                      41,      -66
+            ]
+        },
+        {
+            "id": "WS0008",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": 135,
+            "locations": [
+                    -130,       66
+            ]
+        },
+        {
+            "id": "WS0009",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": -135,
+            "locations": [
+                    -130,      -66
+            ]
+        },
+        {
+            "id": "SYSTEM",
+            "size": "SMALL",
+            "type": "SYSTEM",
+            "mount": "TURRET",
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                      70,      -22
+            ]
+        },
+        {
+            "id": "LB 1",
+            "size": "LARGE",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                      57,      -18,
+                      71,      -16
+            ]
+        },
+        {
+            "id": "LB 2",
+            "size": "LARGE",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                    71.5,    -28.5,
+                      78,      -22
+            ]
+        },
+        {
+            "id": "LB 3",
+            "size": "LARGE",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                    61.5,      -24,
+                    70.5,      -22
+            ]
+        },
+        {
+            "id": "LB 4",
+            "size": "LARGE",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 360,
+            "angle": 0,
+            "locations": [
+                    81.5,      -29,
+                    84.5,    -22.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -151, 38
+            ],
+            "length": 36.5,
+            "width": 24,
+            "angle": 180,
+            "contrailSize": 24,
+            "style": "SCYENGINE"
+        },
+        {
+            "location": [
+                -151, -38
+            ],
+            "length": 36.5,
+            "width": 24,
+            "angle": -180,
+            "contrailSize": 24,
+            "style": "SCYENGINE"
+        },
+        {
+            "location": [
+                -161, 0
+            ],
+            "length": 36.5,
+            "width": 24,
+            "angle": 180,
+            "contrailSize": 24,
+            "style": "SCYENGINE"
+        }
+    ],
+    "bounds": [
+            62.5,     -0.5,
+            62.5,     30.5,
+            46.5,     30.5,
+            46.5,     34.5,
+            88.5,     35.5,
+        
+            99.5,     57.5,
+            97.5,     80.5,
+           -20.5,     80.5,
+           -34.5,     89.5,
+           -59.5,     89.5,
+        
+           -69.5,     80.5,
+          -188.5,     80.5,
+          -164.5,       61,
+          -181.5,     57.5,
+          -177.5,     52.5,
+        
+          -153.5,     52.5,
+          -153.5,     24.5,
+            -144,       20,
+          -163.5,     13.5,
+          -163.5,    -13.5,
+        
+            -144,      -20,
+          -153.5,    -24.5,
+          -153.5,    -52.5,
+          -177.5,    -52.5,
+          -181.5,    -57.5,
+        
+          -164.5,      -61,
+          -188.5,    -80.5,
+           -69.5,    -80.5,
+           -59.5,    -89.5,
+           -34.5,    -89.5,
+        
+           -20.5,    -80.5,
+            97.5,    -80.5,
+             102,    -63.5,
+            87.5,    -52.5,
+            96.5,     -5.5,
+        
+              46,     -3.5,
+            46.5,     -0.5
+    # 37 points total.
+    ]
+}

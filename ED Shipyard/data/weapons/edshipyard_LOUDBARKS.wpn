@@ -1,0 +1,33 @@
+{
+	"id":"edshipyard_LOUDBARKS",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+    "turretSprite":"graphics/ships/edshipyard_shiba_glow1.png", #reusing the obligatory ship glows
+    "hardpointSprite":"graphics/ships/edshipyard_shiba_glow1.png", #reusing the obligatory ship glows
+	"turretGlowSprite":"graphics/ships/edshipyard_shiba_glow2.png", #reusing the obligatory ship glows
+    "hardpointGlowSprite":"graphics/ships/edshipyard_shiba_glow2.png", #reusing the obligatory ship glows
+	"turretOffsets":[25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0,25, 0],
+	"turretAngleOffsets":[0,-1,1,-2,2,-3,3,-4,4,-5,5,-6,6,-7,7,-8,8,-9,9,-10,10,-11,11,-12,12,-13,13,-14,14,-15,15,-16,16,-17,17,-18,18,-19,19,-20,20,-21,21,-22,22],
+	"hardpointOffsets":[37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0,37, 0],
+	"hardpointAngleOffsets":[0,-1,1,-2,2,-3,3,-4,4,-5,5,-6,6,-7,7,-8,8,-9,9,-10,10,-11,11,-12,12,-13,13,-14,14,-15,15,-16,16,-17,17,-18,18,-19,19,-20,20,-21,21,-22,22],
+	"barrelMode":"LINKED",
+	"animationType":"GLOW_AND_FLASH",
+    "renderHints":[RENDER_ADDITIVE],
+	"fringeColor":[150,50,100,75],
+	"coreColor":[225,125,175,175],
+	"glowColor":[170,140,155,150],
+    "displayArcRadius":600,
+    "muzzleFlashSpec":{"length":450.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":45.0,
+					   "particleSizeMin":5.0,
+					   "particleSizeRange":7.0,
+					   "particleDuration":1,
+					   "particleCount":25,
+					   "particleColor":[225,100,255,255]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"interruptibleBurst":false,
+	"requiresFullCharge":false,  # for pulse weapons - whether the weapon will fire at a lower strength partial charge
+	"projectileSpecId":"edshipyard_BARKS_Wave_p",  # projectile that will be fired
+	"fireSoundTwo":"ed_barks",
+}

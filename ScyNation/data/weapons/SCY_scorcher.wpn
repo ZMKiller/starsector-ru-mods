@@ -1,0 +1,29 @@
+{
+	"id":"SCY_scorcher",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":1200,
+	"turretSprite":"graphics/SCY/weapons/SCY_scorcherT.png",
+	"turretGunSprite":"graphics/SCY/weapons/SCY_scorcherTB.png",
+	"hardpointSprite":"graphics/SCY/weapons/SCY_scorcherH.png",
+	"hardpointGunSprite":"graphics/SCY/weapons/SCY_scorcherHB.png",
+	"visualRecoil":10,
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[38, -7,38, 0,38, 7],
+	"turretAngleOffsets":[0,0,0],
+	"hardpointOffsets":[46, -7,46, 0,46, 7],
+	"hardpointAngleOffsets":[0,0,0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":50,   # only used if animationType = MUZZLE_FLASH
+                            "spread":15.0,
+                            "particleSizeMin":20.0,
+                            "particleSizeRange":40.0,
+                            "particleDuration":0.5,
+                            "particleCount":10,
+                            "particleColor":[250,75,25,100]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"SCY_scorcherS",
+	"fireSoundTwo":"SCY_scorcher",
+}

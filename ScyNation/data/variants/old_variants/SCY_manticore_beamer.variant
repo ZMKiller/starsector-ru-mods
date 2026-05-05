@@ -1,0 +1,35 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "SCY_manticore",
+    "hullMods": [
+        "advancedoptics",
+        "recovery_shuttles"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "SCY_manticore_beamer",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_scpb"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_hack",
+                "WS0003": "SCY_hack",
+                "WS0004": "SCY_hack"
+            }
+        }
+    ],
+    "wings": [
+        "SCY_nosos_wing",
+        "SCY_nosos_wing",
+        "SCY_nosos_wing"
+    ]
+}

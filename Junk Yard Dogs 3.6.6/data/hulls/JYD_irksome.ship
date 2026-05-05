@@ -1,0 +1,85 @@
+{
+  "hullName": "Irksome",
+  "hullId": "JYD_irksome",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/JYD_irksome.png",
+  "style": "LOW_TECH",
+  "height": 79,
+  "width": 94,
+  "center": [48, 40],
+  "collisionRadius": 78.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 71,
+  "viewOffset": 0,
+  "builtInMods": [
+    "armoredweapons",
+    "heavyarmor",
+    "reinforcedhull",
+    "repair_gantry"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [16.5, 6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -90,
+      "locations": [-21, -21.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        7, -32,
+        13, -32
+      ]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [10.5, -33]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-22.5, -39],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-23.5, 38],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    41, -51,
+    -38.5, -46,
+    -38.5, 46,
+    41, 51
+  ]
+}

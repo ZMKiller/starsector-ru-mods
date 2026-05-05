@@ -1,0 +1,249 @@
+{
+    "hullName": "J01",
+    "hullId": "HSI_J01",
+    "hullSize": "CAPITAL_SHIP",
+    "style": "HSI_TECH",
+    "spriteName": "graphics/ships/J01/HSI_J01_Main.png",
+    "height": 701,
+    "width": 1058,
+    "center": [
+        529, 350.5
+    ],
+    "collisionRadius": 687,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 620.5,
+    "viewOffset": 0,
+    "builtInMods": [
+        "HSI_Halo",
+        "supercomputer",
+        "HSI_JuggernautCore"
+    ],
+    "builtInWeapons": {
+        "WS 000": "HWI_SkyFire",
+        "WS 001": "HWI_SkyFire"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 60,
+            "locations": [
+                     120,      232
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 300,
+            "locations": [
+                     120,     -232
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "LARGE",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 0,
+            "locations": [
+                     205,        0
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 30,
+            "locations": [
+                   242.5,       42
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 330,
+            "locations": [
+                   242.5,      -42
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 45,
+            "locations": [
+                   215.5,       66
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 315,
+            "locations": [
+                   215.5,      -66
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 180,
+            "locations": [
+                  -200.5,      258
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 180,
+            "locations": [
+                  -200.5,     -258
+            ]
+        },
+        {
+            "id": "WS 009",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 180,
+            "locations": [
+                  -233.5,      258
+            ]
+        },
+        {
+            "id": "WS 010",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 180,
+            "locations": [
+                  -233.5,     -258
+            ]
+        },
+        {
+            "id": "WS 011",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   502.5,        0
+            ]
+        },
+        {
+            "id": "WS 012",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   365.5,    633.5
+            ]
+        },
+        {
+            "id": "WS 013",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   365.5,   -633.5
+            ]
+        },
+        {
+            "id": "WS 014",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       2,    635.5
+            ]
+        },
+        {
+            "id": "WS 015",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       2,   -635.5
+            ]
+        },
+        {
+            "id": "WS 016",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      96,        0
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+            -165,    -38.5,
+             -64,    -36.5,
+          -192.5,   -173.5,
+            -347,   -182.5,
+          -233.5,   -335.5,
+        
+          -121.5,     -330,
+             -40,     -521,
+           213.5,   -530.5,
+           289.5,     -359,
+             276,   -134.5,
+        
+             316,    -84.5,
+             316,     84.5,
+             276,    134.5,
+           289.5,      359,
+           213.5,    530.5,
+        
+             -40,      521,
+          -121.5,      330,
+          -233.5,    335.5,
+            -347,    182.5,
+          -192.5,    173.5,
+        
+             -64,     36.5,
+            -165,     38.5
+    # 22 points total.
+    ]
+}

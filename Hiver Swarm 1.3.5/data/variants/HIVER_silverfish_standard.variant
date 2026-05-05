@@ -1,0 +1,40 @@
+{
+  "variantId": "HIVER_silverfish_standard",
+  "hullId": "HIVER_silverfish",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_cargo_holds"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "HIVER_irpulse",
+        "WS0007": "HIVER_irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "HIVER_twinpd",
+        "WS0002": "HIVER_twinpd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "Hiver_eyeball"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

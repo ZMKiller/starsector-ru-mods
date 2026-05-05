@@ -10,33 +10,31 @@ import second_in_command.specs.SCBaseAptitudePlugin
 class AptitudeTactical : SCBaseAptitudePlugin() {
 
     override fun addCodexDescription(tooltip: TooltipMakerAPI) {
-        tooltip.addPara("Tactical is an aptitude that assists in building more diverse fleets. " +
-                "It has multiple tactics skills, which are skills with strong but diminishing effects.",
+        tooltip.addPara("Tactical is one of the more versatile aptitudes in the mod. " +
+                "While it does not quite stand out much on its own, you can often use it for the purpose of finishing up your build. ",
             0f, Misc.getTextColor(), Misc.getHighlightColor(), "Tactical", "")
     }
 
     override fun getOriginSkillId(): String {
-        return "sc_tactical_war_room"
+        return "sc_tactical_focused_fire"
     }
 
     override fun createSections() {
 
         var section1 = SCAptitudeSection(true, 0, "combat1")
-
-        section1.addSkill("sc_tactical_sustain_tactics")
-        section1.addSkill("sc_tactical_strike_tactics")
-        section1.addSkill("sc_tactical_wing_tactics")
-        section1.addSkill("sc_tactical_suppression_tactics")
-        section1.addSkill("sc_tactical_phasespace_tactics")
-        section1.addSkill("sc_tactical_vanguard_tactics")
-        section1.addSkill("sc_tactical_bulwark_tactics")
-        section1.addSkill("sc_tactical_anchor_tactics")
+        section1.addSkill("sc_tactical_spotters")
+        section1.addSkill("sc_tactical_rapid_response")
+        section1.addSkill("sc_tactical_pristine_condition")
+        section1.addSkill("sc_tactical_tactical_drills")
+        section1.addSkill("sc_tactical_efficient_ordnance")
+        //section1.addSkill("sc_tactical_superiority")
         addSection(section1)
 
-        // Capstones: pick one
-        var section2 = SCAptitudeSection(false, 4, "combat2")
-        section2.addSkill("sc_tactical_distribution_tactics")
-        section2.addSkill("sc_tactical_doctrine_tactics")
+        var section2 = SCAptitudeSection(true, 3, "combat2")
+        section2.addSkill("sc_tactical_full_throttle")
+        section2.addSkill("sc_tactical_accelerated_barrels")
+        section2.addSkill("sc_tactical_mass_bombardment")
+        section2.addSkill("sc_tactical_defensive_protocols")
         addSection(section2)
 
 

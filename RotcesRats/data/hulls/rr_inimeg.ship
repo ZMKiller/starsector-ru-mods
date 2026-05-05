@@ -1,0 +1,153 @@
+{
+  "hullName": "Inimeg",
+  "hullId": "rr_inimeg",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/rr_inimeg.png",
+  "style": "MIDLINE",
+  "coversColor": "255,255,255,255",
+  "height": 166,
+  "width": 158,
+  "center": [79, 81],
+  "collisionRadius": 116,
+  "shieldCenter": [12, -0],
+  "shieldRadius": 106,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 75,
+      "locations": [47, 45]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -75,
+      "locations": [47, -45]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [79, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 45,
+      "locations": [-28, 72]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -45,
+      "locations": [-28, -72]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -30,
+      "locations": [6, -25]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 100,
+      "locations": [19, 38]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-79, 30],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-80, 20],
+      "length": 56,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-79, 10],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-79, -10],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-80, -20],
+      "length": 56,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-79, -30],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    73, -16,
+    79, -34,
+    74, -65,
+    43, -75,
+    24, -62,
+    22, -39,
+    -26, -68,
+    -53, -69,
+    -77, -36,
+    -77, -7,
+    -46, -0,
+    -77, 7,
+    -77, 36,
+    -53, 69,
+    -26, 68,
+    22, 39,
+    24, 62,
+    43, 75,
+    74, 65,
+    79, 34,
+    73, 16
+  ]
+}

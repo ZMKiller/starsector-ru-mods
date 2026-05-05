@@ -1,0 +1,217 @@
+{
+  "bounds": [
+    -94.5,
+    -60.5,
+    -106.5,
+    -26,
+    -106.5,
+    26,
+    -94.5,
+    60.5,
+    -43.5,
+    62,
+    -43,
+    50.5,
+    111.5,
+    5.5,
+    100.5,
+    -4,
+    1.5,
+    -1.5,
+    1.5,
+    -22,
+    13,
+    -22,
+    15,
+    -34,
+    9.5,
+    -43,
+    -64.5,
+    -61
+  ],
+  "builtInWeapons": {
+    "CR": "edshipyard_CR",
+    "Cylinder": "edshipyard_Cylinder",
+    "Loader": "edshipyard_Loader",
+    "TR01": "edshipyard_thruster",
+    "TR02": "edshipyard_thruster"
+  },
+  "center": [
+    65,
+    109
+  ],
+  "collisionRadius": 152,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 60,
+      "location": [
+        -101,
+        42.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 60,
+      "location": [
+        -101,
+        -42.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 17
+    },
+    {
+      "angle": 180,
+      "contrailSize": 28,
+      "length": 90,
+      "location": [
+        -107.5,
+        17
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 28
+    },
+    {
+      "angle": -180,
+      "contrailSize": 28,
+      "length": 90,
+      "location": [
+        -107.5,
+        -17
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 28
+    }
+  ],
+  "height": 218,
+  "hullId": "edshipyard_carolina",
+  "hullName": "Каролина",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 145.5,
+  "spriteName": "graphics/ships/edshipyard_carolina.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 210,
+      "id": "WS0001",
+      "locations": [
+        42,
+        10
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "TR01",
+      "locations": [
+        -67.5,
+        60.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "TR02",
+      "locations": [
+        -67.5,
+        -60.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 90,
+      "arc": 210,
+      "id": "WS0002",
+      "locations": [
+        11,
+        16
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 210,
+      "id": "WS0003",
+      "locations": [
+        -49,
+        -45
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 210,
+      "id": "WS0004",
+      "locations": [
+        -75,
+        32
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "Cylinder",
+      "locations": [
+        -45.5,
+        -18
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "CR",
+      "locations": [
+        4,
+        -11.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "Loader",
+      "locations": [
+        -12.5,
+        -30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 130
+}

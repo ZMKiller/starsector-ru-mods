@@ -1,0 +1,56 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 0,
+    "fluxVents": 12,
+    "hullId": "ora_elevation",
+    "hullMods": [
+        "targetingunit",
+        "pointdefenseai",
+        "advancedoptics"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_elevation_beamer",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "hil"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "gravitonbeam",
+                "WS0003": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "taclaser",
+                "WS0009": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "taclaser",
+                "WS0005": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "taclaser",
+                "WS0007": "taclaser",
+                "WS0012": "taclaser",
+                "WS0013": "taclaser"
+            }
+        }
+    ],
+    "wings": ["xyphos_wing"]
+}

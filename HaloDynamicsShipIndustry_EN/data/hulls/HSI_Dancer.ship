@@ -1,0 +1,133 @@
+{
+  "hullName": "Dancer",
+  "hullId": "HSI_Dancer",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/Dancer/HSI_Dancer_Body.png",
+  "style": "HSI_TECH",
+  "height": 39,
+  "width": 60,
+  "center": [30, 19.5],
+  "collisionRadius": 50,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 35.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "terminator_core"
+  ],
+  "builtInWeapons": {
+    "WS0001": "HSI_Dancer_Head",
+    "WS0002": "HSI_Dancer_RA"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [1, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 53,
+      "angle": 0,
+      "locations": [3.5, -8]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 131,
+      "locations": [-14, 19]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -131,
+      "locations": [-14, -19]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15.5, 12.5],
+      "length": 20,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-15.5, -12.5],
+      "length": 20,
+      "width": 22,
+      "angle": -180,
+      "contrailSize": 22,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-16, 12.5],
+      "length": 58,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-16, -12.5],
+      "length": 58,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-16, 12.5],
+      "length": 58,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-16, -12.5],
+      "length": 58,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-16.5, 12.5],
+      "length": 42.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-16.5, -12.5],
+      "length": 42.5,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    13, -2,
+    0, -8,
+    -18, -3.5,
+    -18, 3.5,
+    0, 8,
+    13, 2
+  ]
+}

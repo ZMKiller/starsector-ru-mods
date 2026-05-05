@@ -1,0 +1,194 @@
+{
+  "hullName": "Odam",
+  "hullId": "CFT_odam",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/CFT_odam.png",
+  "style": "MIDLINE",
+  "height": 212,
+  "width": 104,
+  "center": [53.5, 105.5],
+  "collisionRadius": 121.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 116.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "surveying_equipment",
+    "repair_gantry",
+    "hiressensors"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 280,
+      "angle": 90,
+      "locations": [-46.5, 25.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 280,
+      "angle": -90,
+      "locations": [-46.5, -22.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 280,
+      "angle": 0,
+      "locations": [52.5, 1.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [88, -17.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 280,
+      "angle": 0,
+      "locations": [33.5, -37.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 280,
+      "angle": -0,
+      "locations": [33.5, 40.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 28,
+      "angle": 0,
+      "locations": [89.5, 1.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": -45,
+      "locations": [-27.5, -38.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": 45,
+      "locations": [-27.5, 40.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -93.5, 7.5,
+        -93.5, 4.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -93.5, -1,
+        -93.5, -4
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-103, -17],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-92.5, 46.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-92.5, -44],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-103, 20],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-104, 5.5],
+      "length": 39,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-104, -2.5],
+      "length": 39,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    110, -37.5,
+    87, -38.5,
+    34.5, -56.5,
+    15.5, -36,
+    -9.5, -39.5,
+    -37.5, -55.5,
+    -101, -57.5,
+    -113.5, -26.5,
+    -113.5, 26.5,
+    -101, 57.5,
+    -37.5, 55.5,
+    -9.5, 39.5,
+    15.5, 36,
+    34.5, 56.5,
+    87, 38.5,
+    110, 37.5
+  ]
+}

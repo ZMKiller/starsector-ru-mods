@@ -1,0 +1,33 @@
+{
+	"id":"SCY_burstS",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":50.0,
+	"hitGlowRadius":30,
+	"width":5,
+	"fadeTime":0.5,
+	"fringeColor":[240,100,10,200],
+	"coreColor":[255,255,255,255],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_small_yellow.png",
+
+#	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+#					"shotRangeVariance":0.5,
+#					"range":15,
+#					"explosionSpec":{"duration":0.1f,
+#                                                        "radius":25,
+#                                                        "coreRadius":15, # full damage within core radius - also equal to proximity fuse range
+#                                                        "collisionClass":PROJECTILE_FF,
+#                                                        "collisionClassByFighter":PROJECTILE_FIGHTER,
+#                                                        "particleSizeMin":2.0,
+#                                                        "particleSizeRange":3.0,
+#                                                        "particleDuration":0.5,
+#                                                        "particleCount":10,
+#                                                        "particleColor":[255,225,55,255],
+#                                                        "explosionColor":[255,225,55,125],
+#                                                        "sound":"devastator_explosion"},
+#					}
+}

@@ -1,0 +1,48 @@
+{
+  "id": "CFT_lpmb",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_miningblaster_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/CFT/weapons/CFT_lpmb_turret.png",
+  "turretGlowSprite": "graphics/CFT/weapons/CFT_lpmb_turret_glow.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_lpmb_hardpoint.png",
+  "hardpointGlowSprite": "graphics/CFT/weapons/CFT_lpmb_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    100,
+    100,
+    255
+  ],
+  "turretOffsets": [
+    23,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    31.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 50,
+    "spread": 35,
+    "particleSizeMin": 25,
+    "particleSizeRange": 10,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      255,
+      100,
+      100,
+      255
+    ]
+  },
+  "fireSoundTwo": "mining_blaster_fire"
+}

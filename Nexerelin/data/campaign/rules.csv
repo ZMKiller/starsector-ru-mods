@@ -529,7 +529,7 @@ Nex_DecivEvent hasEvent
 HostileFleetNearbyAndAware",SetEnabled nex_decivEvent_interact false,Одно из поселений выживших на поверхности вызывает ваш корабль. Но рядом враждебный флот и сейчас у вас вряд ли есть время на это.,nex_decivEvent_interact:Ответить на вызов,
 nex_decivEvent_init,DialogOptionSelected,$option == nex_decivEvent_interact,Nex_DecivEvent greet,"Вы открываете канал связи, а офицер связи настраивает протокол под то собранное на коленке оборудование, которым пользуется другая сторона.",,
 nex_decivEvent_greetingFirstTime,Nex_DecivEvent_Greeting,"!$market.nex_decivEvent_visitedBefore
-!Nex_DecivEvent wasCivilized",,"""Hello? Is this thing on?
+!Nex_DecivEvent wasCivilized",,"""Эй? Эта штука включена?
 
 ""Эй? Эта штука вообще работает?
 
@@ -3847,7 +3847,7 @@ $nex_remSalvation_playerFactionId == luddic_church score:100","ShowPersonVisual
 AdjustRep $faction.id COOPERATIVE 20
 AdjustRepActivePerson COOPERATIVE 5
 unset $entity.genericHail
-unset $entity.genericHail_openComms","""Lay-$playerBrotherOrSister $playerLastName,"" $personLastName smiles beatifically. ""Your deeds in the defense of $nex_remSalvation_targetName, the faithful and Mother Church are without peer. Truly, you are elevated in the eyes of God and the prophet Ludd.""",nex_remSalvation_epilogueCommission2:Поблагодарить $himOrHer за похвалу.,TODO: Luddic commission version with medal; probably requires knowledge of Luddic leadership in Starsector 0.96
+unset $entity.genericHail_openComms","""Брат/сестра по вере $playerLastName,"" $personLastName блаженно улыбается. ""Ваши деяния в защите $nex_remSalvation_targetName, верующих и Матери-Церкви не имеют равных. Воистину, вы возвышены в глазах Бога и пророка Лудда.""",nex_remSalvation_epilogueCommission2:Поблагодарить $himOrHer за похвалу.,TODO: Luddic commission version with medal; probably requires knowledge of Luddic leadership in Starsector 0.96
 #nex_remSalvation_epilogueCommission2,DialogOptionSelected,$option == nex_remSalvation_epilogueCommission2,FireBest Nex_RemSalvation_EpilogueCommissionOpts,"""The Synod has come to a decision with remarkable celerity. You shall be rewarded as a hero of the Church deserves. Please report to the Mount Palace in twenty-four hours for the ceremony.""",,
 #nex_remSalvation_epilogueCommissionOpts,Nex_RemSalvation_CommissionOpts,,,,cutCommLinkPolite:Для меня это большая честь. Я буду там.,
 #nex_remSalvation_epilogueCommissionOpts_alreadyThere,Nex_RemSalvation_CommissionOpts,"$entity.hasMarket
@@ -3891,7 +3891,7 @@ Call $global.nex_remSalvation_ref complete","$personLastName вздыхает и
 
 $HeOrShe качает $hisOrHer головой. ""Прошу прощения за многословие, капитан. Еще раз спасибо за все, что вы сделали.""","#nex_remSalvation_epilogue3:Продолжить
 cutCommLinkPolite:Попрощаться и разорвать связь",
-#nex_remSalvation_epilogue3,DialogOptionSelected,$option == nex_remSalvation_epilogue3,$player.haveArgentShrineInvitation = true,"""Oh, and... if you are ever on Gilead again, we could visit the shrine together. It is a beautiful place, and one that soothes body and soul alike.""",cutCommLinkPolite:Поблагодарить $himOrHer за предложение и завершить связь,
+#nex_remSalvation_epilogue3,DialogOptionSelected,$option == nex_remSalvation_epilogue3,$player.haveArgentShrineInvitation = true,"""О, и... если вы когда-нибудь снова будете на Гилеаде, мы могли бы вместе посетить святилище. Это прекрасное место, успокаивающее и тело, и душу.""",cutCommLinkPolite:Поблагодарить $himOrHer за предложение и завершить связь,
 nex_remSalvation_knightGeneric,OpenCommLink,"$id == nex_luddicKnight score:5
 $global.nex_remSalvation_ref != null score:5
 !$entity.isHostile",$entity.ignorePlayerCommRequests = true 1,"""Сейчас не время для разговоров. Мы должны быть готовы встретить демонов.""

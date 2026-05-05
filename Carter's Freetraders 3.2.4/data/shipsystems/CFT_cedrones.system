@@ -1,0 +1,34 @@
+{
+	"id":"CFT_cedrones",
+	"type":"DRONE_LAUNCHER",
+	 "aiType":"DRONE_LAUNCHER_PD",
+	
+	"droneVariant":"mining_drone_Standard",
+	
+	"allowFreeRoam":false,
+	
+	"launchSpeed":300,
+	"launchDelay":0.4,
+	"maxDrones":4,
+	"droneBehavior":[
+		{"droneIndex":[0,1,2,3],
+		 "defaultFacing":"AWAY_FROM_SHIP",
+		 "faceEnemy":true,
+		 "holdRoamRange":0,
+		 "freeRoamRange":0,
+		 "targetPriority":[MISSILE, FIGHTER, SHIP],
+		 "initialOrbitAngle":0,
+		 "orbitRadius":25, 				
+		 "orbitDir":-1,					
+		 "orbitSpeed":60, 				
+		},
+
+	],
+	
+	"useSound":"drone_launch",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+
+	}
+}

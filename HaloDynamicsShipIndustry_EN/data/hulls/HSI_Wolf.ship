@@ -1,0 +1,174 @@
+{
+  "hullName": "Wolf",
+  "hullId": "HSI_Wolf",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/HSI_wolf.png",
+  "style": "HSI_TECH",
+  "height": 59,
+  "width": 108,
+  "center": [54, 26.5],
+  "collisionRadius": 96,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 78,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo",
+    "HSI_LightTorpDesign"
+  ],
+  "builtInWeapons": {
+    "WS0002": "HSI_wolf_LED"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 000",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [15.5, 22]
+    },
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [15.5, -22]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6.5, 44]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6.5, -44]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": -0,
+      "locations": [-12, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-26.5, 24],
+      "length": 47,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-26.5, -24],
+      "length": 47,
+      "width": 17,
+      "angle": -180,
+      "contrailSize": 17,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-26.5, -24],
+      "length": 29.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-26.5, 24],
+      "length": 29.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-30, -24],
+      "length": 3.5,
+      "width": 39,
+      "angle": -180,
+      "contrailSize": 39,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-30, 24],
+      "length": 3.5,
+      "width": 39,
+      "angle": 180,
+      "contrailSize": 39,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-22, 35],
+      "length": 19.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-22, -35],
+      "length": 19.5,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-21.5, 35],
+      "length": 34.5,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-21.5, -35],
+      "length": 34.5,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    -21, -3,
+    -24, -10,
+    -21, -37,
+    -9, -53.5,
+    3.5, -53.5,
+    8.5, -38,
+    32, -29,
+    24, -27,
+    23.5, -12,
+    13.5, -9.5,
+    16.5, -5,
+    16.5, 5,
+    13.5, 9.5,
+    23.5, 12,
+    24, 27,
+    32, 29,
+    8.5, 38,
+    3.5, 53.5,
+    -9, 53.5,
+    -21, 37,
+    -24, 10,
+    -21, 3
+  ]
+}

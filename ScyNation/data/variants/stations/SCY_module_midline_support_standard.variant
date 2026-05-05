@@ -1,0 +1,51 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "module_midline_support",
+    "hullMods": [
+        "heavyarmor",
+        "hardenedshieldemitter",
+        #"SCY_reactiveArmor",
+        "eccm",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_module_midline_support_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "SCY_coasting2",
+                "WS 001": "SCY_coasting2",
+                "WS 002": "SCY_coasting2",
+                "WS 003": "SCY_coasting2"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "SCY_grenade",
+                "WS 005": "SCY_grenade",
+                "WS 008": "SCY_grenade",
+                "WS 009": "SCY_grenade"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "SCY_hack",
+                "WS 007": "SCY_hack"
+            }
+        }
+    ],
+    "wings": [
+        "SCY_akhlys_wing",
+        "SCY_akhlys_wing",
+        "SCY_akhlys_wing",
+        "SCY_akhlys_wing"
+    ]
+}

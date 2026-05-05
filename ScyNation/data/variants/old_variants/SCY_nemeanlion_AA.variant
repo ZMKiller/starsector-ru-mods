@@ -1,0 +1,56 @@
+{
+    "displayName": "Anti-Fighters",
+    "fluxCapacitors": 0,
+    "fluxVents": 35,
+    "hullId": "SCY_nemeanlion",
+    "hullMods": [
+        "pointdefenseai",
+        "turretgyros",
+        "hardenedshieldemitter"
+    ],
+    "modules": [
+        {"M_FL": "SCY_lionFL_standard"},
+        {"M_FR": "SCY_lionFR_standard"},
+        {"M_RL": "SCY_lionRL_standard"},
+        {"M_RR": "SCY_lionRR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_nemeanlion_AA",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "MAW2": "SCY_ricochet",
+                "MAW3": "SCY_ricochet"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_minigun2",
+                "WS0004": "SCY_minigun2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_minigun1",
+                "WS0006": "SCY_minigun1",
+                "WS0007": "SCY_minigun1",
+                "WS0008": "SCY_minigun1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAW1": "SCY_scorcher",
+                "WS0001": "SCY_anti2",
+                "WS0002": "SCY_anti2"
+            }
+        }
+    ]
+}

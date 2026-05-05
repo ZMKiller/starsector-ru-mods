@@ -1,0 +1,68 @@
+{
+    # HTE settings file
+    
+    # setting this to true will disable particle effects for plasma streamers (and other graphics-heavy effects, if I add more and forget to update this file).
+    # Should probably set it to true if you don't have a dedicated GPU.
+    "lowGraphicsMode":false,
+
+    # PROCGEN STUFF
+
+    # set to false to disable the specialty market at Svarog
+    # this only gets checked on system generation, so turning it off mid-save won't do anything
+    "svarogOutpostMarketEnabled":true,      # default = true
+    
+    # set to false to disable spawning the Zarmazd system on a new game
+    "zarmazdSystemEnabled":true,            # default = true
+    
+    # you'll need a new save for new coordinates to take effect
+    "zarmazdX":4250,
+    "zarmazdY":-23000,
+
+    # SPECIALTY MARKET STUFF
+    # this only affects the special market on Svarog, not the standard ones
+
+    # Tariff for hulls, weapons, and fighter LPCs sold at Svarog Shipyards.
+    "svarogSpecialtyMarketTariff":1.25,     # default = 1.25, which is a 125% tariff.
+
+    # controls frequency of various hull sizes and types for sale at Svarog Shipyards.
+    # the weight for a ship is effectively hull_size_weight * tag_weight
+    "svarogHullWeights":{
+        "frigate":1,
+        "destroyer":2,
+        "cruiser":2,
+        "capital":1
+    },
+    # ships that have one or more of these tags will be sold at Svarog
+    # you can add more tags here if you want
+    # if a ship has multiple tags it'll use whichever one gives it the highest weighting
+    # you could always add in rare_bp, just for fun (I did :3)
+    "svarogTagWeights":{
+        "rare_bp":2,
+        "XIV_bp":2,
+        "hightech_bp":2,
+        "midline_bp":1
+    },
+
+    # minimum number of weapons, fighter LPCs, and hulls Svarog will have for sale (maximum is generally a few more)
+    # hardcoded as a mix of Persean League and Tritachyon weapons/fighters
+    "svarogNumWeapons":20,                  # default = 20
+    "svarogNumWings":10,                    # default = 10
+    "svarogNumHulls":4,                     # default = 7. Minimum number of hulls, max amount will be double this.
+
+    # AI STUFF
+    # If you have suggestions for AI behavior, feel free to let me know on discord or the forums
+
+    # Minimum time in seconds between AI update checks for ship systems (only systems from HTE)
+    # Lower values will improve AI responsiveness at a performance cost. (How much is the performance cost? Dunno, 0.1 works fine on my machine but I have a pretty beefy computer.)
+    # If you set this to zero, it'll update every frame. (Or maybe not at all, idk)
+    "aiUpdateInterval":0.5,                 # default = 0.5
+
+    # Flux percentage at which the AI will trigger the flux compressor
+    "aiFluxCompressorThreshold":0.75,       # default = 0.75
+
+    # Maximum flux percentage at which the AI will activate the range overclock
+    "aiRangeOverclockActivateMax":0.33,     # default = 0.33
+
+    # Flux percentage at which the AI will always turn off the range overclock, regardless of enemy positioning
+    "aiRangeOverclockDeactivateAt":0.75      # default = 0.75
+}

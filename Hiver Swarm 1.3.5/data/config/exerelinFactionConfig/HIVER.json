@@ -1,0 +1,104 @@
+{
+	"playableFaction":true,
+	"startingFaction":false,	
+	"corvusCompatible":true,
+    "hostileToAll":true,  
+    "dropPrisoners":false,	
+	"noRandomizeRelations":true,
+    "showIntelEvenIfDead":false,	
+    "noSyncRelations":true,
+    "raidsFromBases":true,
+    "allowAgentActions":false,	
+    "noMissionTarget":true,	
+    "rebelFleetSuffix":"Purged",
+	"asteroidMiningFleetName":"Resource Scraper",		
+	"freeMarket":true,	
+
+    "marketSpawnWeight":1,
+	
+	"invasionFleetSizeMod":0.05,
+	"responseFleetSizeMod":0.05,
+	"invasionPointMult":1.25,
+	"invasionFleetName":"Swarm",	
+    "invasionSupportFleetName":"Swarm Support",	
+	
+        "startRelationships":{
+			"default":-0.75, 			
+    		"player": -0.75,
+  },
+    "maxRelationships":{
+			"default":-0.75, 		
+    		"player": -0.75,
+  },
+    "morality":"evil",	  
+
+	
+	# Used to determine alliance alignment; also affects disposition towards other factions
+	"alignments":{
+		"corporate": -0.75,
+		"technocratic": -0.72,
+		"militarist": -0.75,
+		"diplomatic": -0.75,
+		"ideological": -0.72,
+	},
+	"diplomacyTraits":["selfrighteous", "irredentist", "foreverwar", "temperamental", "envious", "monstrous"],
+
+   "industrySeeds":[
+ 		{"id":"militarybase", "mult":2},
+        {"id":"orbitalworks", "mult":0.2},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+    ],
+
+    "bonusSeeds":[
+        {"id":"nanoforge_corrupted", "count":1},
+        {"id":"population_upsize", "count":2},		
+    ],
+	
+	"colonyExpeditionChance":1.75,	
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",	
+    "maxColonyDistance": 24,	
+
+	# Number of entries must equal number of vengeance tiers (0-3)
+	"vengeanceLevelNames":["Purge", "Obliteration", "Nemesis"],
+	"vengeanceFleetNames":["Purge", "Obliteration", "Nemesis"],
+	"vengeanceFleetNamesSingle":["a Purge Force", "an Obliteration Force", "a Nemesis Force"],
+	"vengeanceFleetSizeMult":2,
+
+	# Randomly picked to add to a mining fleet
+	"miningVariantsOrWings":[
+		"HIVER_carabidae_standard",
+		"HIVER_burrower_standard",
+		"HIVER_weevil_standard",
+		"HIVER_chalcosoma_standard",
+		"HIVER_lucanidae_standard",
+		"HIVER_chinavia_standard",
+		"HIVER_viridula_standard",
+	],	
+	
+
+    "startShipsSolo":["HIVER_chrysopidae_standard"], 
+    "startShipsCombatSmall":["HIVER_snipper_standard", "HIVER_crabby_standard", "HIVER_moth_standard"], 
+    #"startShipsTradeSmall":["HIVER_aphid_standard", "HIVER_snipper_standard", "HIVER_swimmer_standard"],    
+    "startShipsCarrierSmall":["HIVER_aphid_standard", "HIVER_deathfly_standard", "HIVER_burrower_standard"], 
+	"startShipsCombatLarge":["HIVER_prince_standard", "HIVER_eyes_standard", "HIVER_catcher_standard"],
+	"startShipsTradeLarge":["HIVER_weevil_standard", "HIVER_chinavia_standard", "HIVER_swimmer_standard"],
+    "startShipsCarrierLarge":["HIVER_calopteryx_standard", "HIVER_mantabee_standard", "HIVER_burrower_standard"],
+    "startShipsSuper":["HIVER_queen_standard"],
+	
+	"startSpecialItems":[
+        [["hiversmall_package", ""]],
+        [["hivermedium_package", ""]],
+		[["hiverlarge_package", ""]],
+        [["hiverwing_package", ""]],
+		[["hivermweapon_package", ""]],
+		[["hiverpweapon_package", ""]],
+		[["hiverplweapon_package", ""]],	
+		[["hiverbweapon_package", ""]],			
+    ],	
+
+	# Defense stations used in random sector
+    "defenceStations":[
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+    ],
+}

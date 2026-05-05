@@ -1,0 +1,55 @@
+{
+  "displayName": "Штурм",
+  "fluxCapacitors": 46,
+  "fluxVents": 30,
+  "goalVariant": true,
+  "hullId": "edshipyard_leonberger",
+  "hullMods": [
+    "armoredweapons",
+    "heavyarmor",
+    "reinforcedhull",
+    "adaptive_coils"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_leonberger_assault",
+  "weaponGroups": [
+    {
+        "autofire": false,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0008": "typhoon",
+            "WS0010": "typhoon",
+            "WS0011": "typhoon",
+            "WS0012": "typhoon"
+        }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS 001": "edshipyard_SB3",
+            "WS 002": "edshipyard_SB3"
+        }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "edshipyard_SC1",
+            "WS0003": "edshipyard_SC1",
+            "WS0004": "edshipyard_SC1",
+            "WS0005": "edshipyard_SC1"
+        }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0002": "edshipyard_SC2",
+        }
+    }
+  ],
+  "wings": []
+}

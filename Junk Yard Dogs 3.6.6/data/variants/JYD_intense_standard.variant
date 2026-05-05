@@ -1,0 +1,64 @@
+{
+  "variantId": "JYD_intense_standard",
+  "hullId": "JYD_intense",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "heavyarmor",
+    "reinforcedhull",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "JYD_lab"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "JYD_mrm",
+        "WS0008": "JYD_mrm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "JYD_hab",
+        "WS0009": "JYD_hab"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "JYD_sc",
+        "WS0006": "JYD_sc"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "JYD_srm",
+        "WS0003": "JYD_srm"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

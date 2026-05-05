@@ -1,0 +1,60 @@
+{
+  "hullName": "Mosquito",
+  "hullId": "JYD_mosquito",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/JYD_mosquito.png",
+  "style": "LOW_TECH",
+  "height": 27,
+  "width": 32,
+  "center": [16, 13.5],
+  "collisionRadius": 23.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 21.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 125,
+      "angle": 0,
+      "locations": [5.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11, -8],
+      "length": 16.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH_FIGHTER"
+    },
+    {
+      "location": [-11, 8],
+      "length": 16.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH_FIGHTER"
+    }
+  ],
+  "bounds": [
+    13.5, -10.5,
+    8.5, -16,
+    -13.5, -16,
+    -13.5, 16,
+    8.5, 16,
+    13.5, 10.5
+  ]
+}

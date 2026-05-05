@@ -1,0 +1,51 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 0,
+    "fluxVents": 16,
+    "goalVariant": false,
+    "hullId": "SCY_khalkotauroi",
+    "hullMods": [
+        "advancedoptics",
+        "targetingunit"
+    ],
+    "modules": [
+        {"E1_MULTI": "SCY_khalkPA_standard"},
+        {"E2_MULTI": "SCY_khalkPB_standard"},
+        {"E3_MULTI": "SCY_khalkPC_standard"},
+        {"E4_MULTI": "SCY_khalkPD_standard"},
+        {"E5_MULTI": "SCY_khalkPE_standard"},
+        {"E6_MULTI": "SCY_khalkPF_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_khalkotauroi_beamer",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"MAIN": "SCY_khalkotauroiMain"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_scatter",
+                "WS0003": "SCY_scatter"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_hack",
+                "WS0005": "SCY_hack",
+                "WS0006": "SCY_hack",
+                "WS0007": "SCY_hack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_lvds"}
+        }
+    ]
+}

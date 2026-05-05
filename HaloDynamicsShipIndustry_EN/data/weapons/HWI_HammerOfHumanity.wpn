@@ -1,0 +1,48 @@
+{
+  "id": "HWI_HammerOfHumanity",
+  "specClass": "projectile",
+  "projectileSpecId": "HWI_HOH_Shot",
+  "type": "BALLISTIC",
+  "mountTypeOverride": "HYBRID",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/HWI_HammerOfHumanity.png",
+  "everyFrameEffect": "data.weapons.scripts.HWIHOHWeapon",
+  "hardpointSprite": "graphics/fx/empty.png",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    32,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    32,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 65,
+    "spread": 15,
+    "particleSizeMin": 10,
+    "particleSizeRange": 35,
+    "particleDuration": 0.75,
+    "particleCount": 50,
+    "particleColor": [
+      65,
+      75,
+      255,
+      245
+    ]
+  },
+  "fireSoundOne":"high_intensity_laser_loop",
+  #"fireSoundTwo":"gigacannon_fire",
+  "fireSoundTwo":"plasma_cannon_fire",
+}

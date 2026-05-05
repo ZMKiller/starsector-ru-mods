@@ -1,0 +1,27 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 1,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "SCY_megaera",
+    "hullMods": ["ecm"],
+    "permaMods": [],
+    "variantId": "SCY_megaera_escort",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "lrpdlaser",
+                "WS0002": "lrpdlaser",
+                "WS0003": "lrpdlaser",
+                "WS0004": "lrpdlaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "vulcan"}
+        }
+    ]
+}

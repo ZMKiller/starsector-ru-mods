@@ -1,0 +1,59 @@
+{
+  "hullName": "Dingy",
+  "hullId": "CFT_dingy",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_dingy.png",
+  "style": "MIDLINE",
+  "height": 40,
+  "width": 36,
+  "center": [18, 21],
+  "collisionRadius": 28,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 25,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-7.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 360,
+      "locations": [15.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17.5, -8.5],
+      "length": 15.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-18, 8.5],
+      "length": 15.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -22, 15.5,
+    -22.5, -17.5,
+    0.5, -26,
+    26.5, -1.5,
+    2.5, 23.5
+  ]
+}

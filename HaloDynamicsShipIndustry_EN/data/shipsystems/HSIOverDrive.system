@@ -1,0 +1,27 @@
+{
+	"id":"HSI_OverDrive",
+	"type":"ENGINE_MOD",
+	"aiType":"MANEUVERING_JETS",
+	
+	"statsScript":"data.shipsystems.scripts.HSIOverDrive",
+
+	"engineGlowColor":[240,200,220,255],
+	"engineGlowLengthMult":1.5,
+	"engineGlowWidthMult":1.5,
+	"engineGlowGlowMult":2.5,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":false,
+
+	"useSound":"system_plasma_jets",
+	"loopSound":"system_plasma_jets_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":75,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":70,
+	}
+}

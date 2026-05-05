@@ -1,0 +1,55 @@
+{
+    "displayName": "Pulse",
+    "fluxCapacitors": 27,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "ora_beatitude",
+    "hullMods": ["hardenedshieldemitter"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_beatitude_pulse",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ionpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "pulselaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "pulselaser",
+                "WS0007": "pulselaser",
+                "WS0009": "pulselaser",
+                "WS0013": "ioncannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "pulselaser",
+                "WS0008": "pulselaser",
+                "WS0010": "pulselaser",
+                "WS0014": "ioncannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_choir",
+                "WS0004": "ora_choir",
+                "WS0011": "ora_choir",
+                "WS0012": "ora_choir",
+                "WS0015": "ora_choir",
+                "WS0016": "ora_choir"
+            }
+        }
+    ]
+}

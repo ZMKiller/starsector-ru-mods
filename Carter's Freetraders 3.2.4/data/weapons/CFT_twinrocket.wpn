@@ -1,0 +1,53 @@
+{
+  "id": "CFT_twinrocket",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_twinrocket_shot",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/CFT/weapons/CFT_twinrocket_launcher_turret_base.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_twinrocket_launcher_hardpoint_base.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    5,
+    -8,
+    5,
+    8
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    8,
+    -8,
+    8,
+    8
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 15,
+    "particleSizeRange": 15,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 2,
+    "blowbackLength": 20,
+    "blowbackSpread": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "fireSoundTwo": "sabot_srm_fire"
+}

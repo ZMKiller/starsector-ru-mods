@@ -1,0 +1,55 @@
+{
+  "id": "HWI_FirstMantitude",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "data.weapons.scripts.beam.HWIFMBeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/HWI_FM_turret.png",
+  "hardpointSprite": "graphics/weapons/HWI_FM_hardpoint.png",
+  "glowColor": [
+    85,
+    110,
+    255,
+    255
+  ],
+  "hitGlowRadius": 350,
+  "turretOffsets": [
+    21,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    35,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    85,110,255,225
+  ],
+  "coreColor": [
+    205,
+    235,
+    255,
+    255
+  ],
+  "width": 75,
+  "textureType": LASER,
+  "textureScrollSpeed": 64,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF,
+    FIGHTER,
+    ASTEROID
+  ],
+  "fireSoundOne": "dragonfire_payload_fire"
+}

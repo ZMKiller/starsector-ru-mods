@@ -1,0 +1,19 @@
+{
+	"id":"HWI_StellaShard_Shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.weapons.scripts.proj.HWIStellarShardOnHitEffect",
+	"onFireEffect":"data.weapons.scripts.proj.HWIStellarShardOnHitEffect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY_FIGHTER",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":50.0,
+	"width":30.0,
+	"hitGlowRadius":100,
+	"fadeTime":0.5,
+	"fringeColor":[100,150,255,255],
+	"coreColor":[150,150,255,255],
+	#"coreColor":[255,255,255,50],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0
+}

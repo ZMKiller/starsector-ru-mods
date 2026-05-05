@@ -1,0 +1,27 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "SCY_megaera",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "SCY_megaera_blaster",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "SCY_seb",
+                "WS0002": "SCY_seb",
+                "WS0003": "SCY_seb",
+                "WS0004": "SCY_seb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "SCY_intercept"}
+        }
+    ]
+}

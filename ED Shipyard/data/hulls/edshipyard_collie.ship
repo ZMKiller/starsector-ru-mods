@@ -1,0 +1,155 @@
+{
+  "bounds": [
+    39.5,
+    -23,
+    5.5,
+    -39,
+    -42.5,
+    -27.5,
+    -42.5,
+    27.5,
+    5.5,
+    39,
+    39.5,
+    23
+  ],
+  "builtInMods": [
+    "edshipyard_pd_only_weapons",
+    "edshipyard_small_drone_hangar"
+  ],
+  "builtInWeapons": {
+    "BLINKER": "edshipyard_PATH"
+  },
+  "center": [
+    43,
+    46
+  ],
+  "collisionRadius": 65.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 27,
+      "location": [
+        -43,
+        24.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 27,
+      "location": [
+        -43,
+        -24.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 14,
+      "location": [
+        -37.5,
+        16
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 14,
+      "location": [
+        -37.5,
+        -16
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 8
+    }
+  ],
+  "height": 92,
+  "hullId": "edshipyard_collie",
+  "hullName": "Колли",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 62.5,
+  "spriteName": "graphics/ships/edshipyard_collie.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 37.5,
+      "arc": 210,
+      "id": "WS0001",
+      "locations": [
+        28,
+        19
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -37.5,
+      "arc": 210,
+      "id": "WS0002",
+      "locations": [
+        28,
+        -19
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        12.5,
+        -0,
+        39,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": -180,
+      "arc": 210,
+      "id": "WS0003",
+      "locations": [
+        -31,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BLINKER",
+      "locations": [
+        20.5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 86
+}

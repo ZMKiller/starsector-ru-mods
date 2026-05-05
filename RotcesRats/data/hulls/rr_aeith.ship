@@ -1,0 +1,116 @@
+{
+  "hullName": "Aeith",
+  "hullId": "rr_aeith",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/rr_aeith.png",
+  "style": "HIGH_TECH",
+  "height": 84,
+  "width": 76,
+  "center": [38, 46],
+  "collisionRadius": 64,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 52,
+  "viewOffset": 0,
+  "builtInMods": [
+    "high_maintenance"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 60,
+      "locations": [11, 11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -56.5,
+      "locations": [11, -11]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [26, 17]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [26, -17]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [30, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10, 28],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-10, -28],
+      "length": 64,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-23, 13],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-23, -13],
+      "length": 64,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    22, -23,
+    11, -34,
+    -8, -35,
+    -9, -21,
+    -21, -16,
+    -22, -9,
+    -35, -7,
+    -42, 0,
+    -35, 7,
+    -22, 9,
+    -21, 16,
+    -9, 21,
+    -8, 35,
+    11, 34,
+    22, 23,
+    29, -0
+  ]
+}

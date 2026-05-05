@@ -1,0 +1,243 @@
+{
+  "hullName": "Erymanthian Boar",
+  "hullId": "SCY_erymanthianboar",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/SCY/ships/SCY_erymantianBoar.png",
+  "style": "SCYHULL",
+  "height": 351,
+  "width": 96,
+  "center": [48, 196],
+  "collisionRadius": 197.124329,
+  "shieldCenter": [-14, 0.5],
+  "shieldRadius": 182.098877,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering",
+    "hiressensors"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame3",
+    "BLINKER1": "SCY_ZblinkerB",
+    "BLINKER2": "SCY_ZblinkerB",
+    "BLINKER3": "SCY_ZblinkerB",
+    "D_HEAT_CENTER": "SCY_XcruiserHeat",
+    "WS0009": "SCY_mrm2",
+    "WS0010": "SCY_mrm2",
+    "Z_DISH": "SCY_Zdish3"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-112, -0]
+    },
+    {
+      "id": "D_HEAT_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-137, -0]
+    },
+    {
+      "id": "BLINKER1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-31.5, 38.5]
+    },
+    {
+      "id": "BLINKER2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-42.5, -34.5]
+    },
+    {
+      "id": "BLINKER3",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-29.5, -34.5]
+    },
+    {
+      "id": "Z_DISH",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-10, -18]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [113, -0]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -135,
+      "locations": [-62, -33]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 135,
+      "locations": [-62, 33]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 45,
+      "locations": [86, 19]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -45,
+      "locations": [86, -19]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 0,
+      "locations": [31, -0.5],
+      "renderOrderMod":50,
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 0,
+      "locations": [62, -0]
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [40.5, -22]
+    },
+    {
+      "id": "WS0010",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [40.5, 22]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-112, 0],
+      "length": 40.5,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    },
+    {
+      "location": [-79, -34],
+      "length": 40,
+      "width": 8,
+      "angle": -175,
+      "contrailSize": 128,
+      "style": "CUSTOM",
+      "styleId": "SCYBOOSTER"
+    },
+    {
+      "location": [-79, 34],
+      "length": 40,
+      "width": 8,
+      "angle": 175,
+      "contrailSize": 128,
+      "style": "CUSTOM",
+      "styleId": "SCYBOOSTER"
+    },
+    {
+      "location": [-79, -42],
+      "length": 30,
+      "width": 8,
+      "angle": -170,
+      "contrailSize": 128,
+      "style": "CUSTOM",
+      "styleId": "SCYBOOSTER"
+    },
+    {
+      "location": [-79, 42],
+      "length": 30,
+      "width": 8,
+      "angle": 170,
+      "contrailSize": 128,
+      "style": "CUSTOM",
+      "styleId": "SCYBOOSTER"
+    }
+  ],
+  "bounds": [
+    124, 19.5,
+    132.5, 27,
+    154, 28,
+    154, 34,
+    17, 36.5,
+    8.5, 45.5,
+    -69.5, 43.5,
+    -74.5, 38.5,
+    -67.5, 22.5,
+    -77.5, 26.5,
+    -121.5, 26.5,
+    -143.5, 19.5,
+    -140.5, 15.5,
+    -114.5, 15.5,
+    -114.5, -15.5,
+    -140.5, -15.5,
+    -143.5, -19.5,
+    -121.5, -26.5,
+    -77.5, -26.5,
+    -67.5, -22.5,
+    -74.5, -38.5,
+    -69.5, -43.5,
+    8.5, -45.5,
+    17, -36.5,
+    154, -34,
+    154, -28,
+    132.5, -27,
+    124, -19.5
+  ]
+}

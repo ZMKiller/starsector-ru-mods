@@ -1,0 +1,8 @@
+id,trigger,conditions,script,text,options,notes,,
+wpnxt_automatedDefensesReplacer,TriggerAutomatedDefenses,$wpnxt_fortifiedCacheFlag,wpnxt_CacheDefenderInteraction,"По мере приближения вашего $shipOrFleet, офицер связи докладывает, что на ближней дистанции обнаружено несколько сенсорных контактов.
+
+Ваши запросы по каналу связи остаются без ответа. Тот, кто — или что — командует этим флотом, явно не желает вступать в переговоры.",,,,
+wpnxt_prePerformSalvage,DialogOptionSelected,"$option == salPerform
+$wpnxt_fortifiedCacheFlag",wpnxt_PrePerformSalvage,,,,,
+wpnxt_salvageProceed,DialogOptionSelected,$option == wpnxt_proceedWithSalvage,SalvageEntity performSalvage,,,,,
+wpnxt_consumeFleetEncounter,BeginFleetEncounter,$wpnxt_cacheDefenseFleet score:10000,,,,,,

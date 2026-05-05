@@ -1,0 +1,48 @@
+{
+  "variantId": "JYD_intelligentmkq_standard",
+  "hullId": "JYD_intelligentmkq",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 19,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "JYD_mrm",
+        "WS0002": "JYD_mrm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "JYD_srm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "JYD_pbtorp",
+        "WS0006": "JYD_pbtorp"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "JYD_ab"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

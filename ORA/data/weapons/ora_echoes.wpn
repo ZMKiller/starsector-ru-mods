@@ -1,0 +1,26 @@
+{
+	"id":"ora_echoes",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/ORA/weapons/ora_echoesT.png",
+	"turretGlowSprite":"graphics/ORA/weapons/ora_echoesTG.png",
+	"hardpointSprite":"graphics/ORA/weapons/ora_echoesH.png",
+	"hardpointGlowSprite":"graphics/ORA/weapons/ora_echoesHG.png",
+	"glowColor":[100,100,255,255],
+	"turretOffsets":[5, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[5, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":60.0,   # only used if animationType = MUZZLE_FLASH
+                            "spread":10.0,
+                            "particleSizeMin":20.0,
+                            "particleSizeRange":20.0,
+                            "particleDuration":0.2,
+                            "particleCount":10,
+                            "particleColor":[100,100,255,255]},
+	"projectileSpecId":"ora_echoesS",  # projectile that will be fired
+	"fireSoundTwo":"ora_echoes",
+}

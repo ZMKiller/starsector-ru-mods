@@ -1,0 +1,83 @@
+{
+  "variantId": "CFT_freebooter_standard",
+  "hullId": "CFT_freebooter",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "targetingunit",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_pdwburst",
+        "WS0006": "CFT_fogger",
+        "WS0008": "CFT_paixhan",
+        "WS0015": "CFT_autocannon",
+        "WS0016": "CFT_autocannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "CFT_wavepulse",
+        "WS0007": "CFT_wavepulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0018": "CFT_shredder",
+        "WS0020": "CFT_shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0017": "CFT_wavemotion",
+        "WS0021": "CFT_wavemotion"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0022": "CFT_volleyrocket",
+        "WS0023": "CFT_volleyrocket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "CFT_fogger",
+        "WS0012": "CFT_fogger",
+        "WS0014": "flak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "CFT_pdwburst",
+        "WS0009": "CFT_pdwburst",
+        "WS0010": "CFT_pdwburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_tender_standard_wing",
+    "CFT_tender_standard_wing"
+  ]
+}

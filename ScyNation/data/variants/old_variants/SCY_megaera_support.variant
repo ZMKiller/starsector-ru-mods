@@ -1,0 +1,27 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "goalVariant": false,
+    "hullId": "SCY_megaera",
+    "hullMods": ["advancedoptics"],
+    "permaMods": [],
+    "variantId": "SCY_megaera_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_hack",
+                "WS0002": "SCY_hack",
+                "WS0003": "SCY_hack",
+                "WS0004": "SCY_hack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "SCY_intercept"}
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+	"id":"rr_itano_pilum_second_stage",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/pilum_stage2.png",
+	"onHitEffect":"com.fs.starfarer.api.impl.combat.PilumOnHitEffect",
+	"size":[6,14],	
+	"center":[3,7],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[200,205,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":70, # purely visual
+	"fadeTime":1, # fadeout duration
+	"engineSpec":{
+				  "turnAcc":100,
+				  "turnRate":70,
+				  "acc":400,
+				  "dec":300},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-7, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[200,210,75,255],
+						"contrailDuration":2,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":15, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.75, # how far away from engine it starts
+						"contrailColor":[160,170,100,150],
+						"glowSizeMult":2,
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":28.0,
+				    "angle":180.0}],
+}

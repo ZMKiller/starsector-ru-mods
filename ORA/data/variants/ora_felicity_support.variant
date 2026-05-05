@@ -1,0 +1,50 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 18,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "ora_felicity",
+    "hullMods": ["stabilizedshieldemitter"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_felicity_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "ora_litany"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "swarmer",
+                "WS0006": "swarmer",
+                "WS0007": "swarmer",
+                "WS0008": "swarmer",
+                "WS0009": "swarmer",
+                "WS0010": "swarmer",
+                "WS0011": "swarmer",
+                "WS0012": "swarmer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "ora_litany"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ora_choir",
+                "WS0004": "ora_choir"
+            }
+        }
+    ],
+    "wings": [
+        "ora_allure_wing",
+        "ora_allure_wing",
+        "ora_awareness_wing"
+    ]
+}

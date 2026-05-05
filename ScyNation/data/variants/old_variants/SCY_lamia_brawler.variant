@@ -1,0 +1,36 @@
+{
+    "displayName": "Brawler",
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
+    "goalVariant": false,
+    "hullId": "SCY_lamia",
+    "hullMods": ["hardenedshieldemitter"],
+    "permaMods": [],
+    "variantId": "SCY_lamia_brawler",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_teb",
+                "WS0002": "SCY_teb"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "reaper",
+                "WS0006": "reaper"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_intercept",
+                "WS0004": "SCY_intercept"
+            }
+        }
+    ]
+}

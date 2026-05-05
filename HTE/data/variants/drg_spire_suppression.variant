@@ -1,0 +1,69 @@
+{
+    "displayName": "Suppression",
+    "goalVariant": true,
+    "fluxCapacitors": 10,
+    "fluxVents": 50,
+    "hullId": "drg_spire",
+    "hullMods": [
+        "targetingunit",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "drg_spire_suppression",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "tachyonlance",
+                "WS0014": "tachyonlance"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0015": "drg_fissure"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "gravitonbeam",
+                "WS0004": "gravitonbeam",
+                "WS0005": "gravitonbeam",
+                "WS0006": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "pdlaser",
+                "WS0002": "pdlaser",
+                "WS0007": "pdlaser",
+                "WS0008": "pdlaser",
+                "WS0009": "pdlaser",
+                "WS0010": "pdlaser",
+                "WS0016": "pdlaser",
+                "WS0017": "pdlaser",
+                "WS0018": "pdlaser",
+                "WS0019": "pdlaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "heavyburst",
+                "WS0012": "heavyburst"
+            }
+        }
+    ],
+    "wings": [
+        "broadsword_wing",
+        "broadsword_wing",
+        "broadsword_wing",
+        "broadsword_wing"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+	"id":"ora_fortressshield",
+	"type":"SHIELD_MOD",
+	"aiType":"FORTRESS_SHIELD",
+
+	"statsScript":"data.shipsystems.scripts.FortressShieldStats",
+	
+	"shieldRingColor":[255,255,255,255],
+	"shieldInnerColor":[255,100,255,75],
+	"shieldThicknessMult":1,
+	"shieldFluctuationMult":0,
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.85,
+	"soundFilterGainHF":0.0,
+
+	"loopSound":"system_fortress_shield_loop",
+	"outOfUsesSound":"gun_out_of_ammo",	
+}

@@ -1,0 +1,89 @@
+{
+  "hullName": "Adaw",
+  "hullId": "JYD_adaw",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/JYD_adaw.png",
+  "style": "LOW_TECH",
+  "height": 40,
+  "width": 40,
+  "center": [20, 20],
+  "collisionRadius": 33,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 30.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "fluxbreakers"
+  ],
+  "builtInWeapons": {
+    "WS0001": "clusterbomb",
+    "WS0002": "JYD_abf"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 145,
+      "angle": 0,
+      "locations": [11.5, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-1, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17, 11.5],
+      "length": 16.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH_FIGHTER"
+    },
+    {
+      "location": [-17, -11.5],
+      "length": 16.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH_FIGHTER"
+    },
+    {
+      "location": [-3, -19.5],
+      "length": 6.5,
+      "width": 4,
+      "angle": -90,
+      "contrailSize": 4,
+      "style": "LOW_TECH_FIGHTER"
+    },
+    {
+      "location": [-3, 19.5],
+      "length": 6.5,
+      "width": 4,
+      "angle": 90,
+      "contrailSize": 4,
+      "style": "LOW_TECH_FIGHTER"
+    }
+  ],
+  "bounds": [
+    24.5, -2.5,
+    18, -14,
+    5, -18,
+    -6, -21.5,
+    -6.5, -17.5,
+    -19, -17.5,
+    -19, 17.5,
+    -6.5, 17.5,
+    -6, 21.5,
+    5, 18,
+    18, 14,
+    24.5, 2.5
+  ]
+}

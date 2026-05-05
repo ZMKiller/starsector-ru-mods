@@ -1,0 +1,76 @@
+{
+  "hullName": "Skjold",
+  "hullId": "CFT_skjold",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_skjold.png",
+  "style": "MIDLINE",
+  "height": 33,
+  "width": 40,
+  "center": [20, 16.5],
+  "collisionRadius": 30.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 27,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [13, 8.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [13, -8.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [3.5, 16]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [3.5, -15.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15, 11.5],
+      "length": 12.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-15, -11.5],
+      "length": 12.5,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    22.5, -19,
+    -20, -27.5,
+    -20, 27.5,
+    22.5, 19
+  ]
+}

@@ -1,0 +1,47 @@
+{
+	"knownShips":{
+		"hulls":[
+			"drg_bombardier",
+			"drg_gila",
+			"drg_incursion",
+			"drg_spire",
+			"drg_tigershark",
+			"drg_equality",
+			"drg_gloom",
+			"drg_shoebill"
+		]
+	},
+	"knownFighters":{
+		"fighters":[
+			"drg_khanjali_wing",
+			"drg_kukri_wing",
+			"drg_blaze_wing"
+		]
+	},
+	"knownWeapons":{
+		"weapons":[
+			"drg_ahab",
+			"drg_nyx",
+			"drg_alecto",
+			"drg_tawa_rack",
+			"drg_tawa_pod",
+			"drg_tawa_battery",
+			"drg_plp",
+			"drg_arc_l",
+			"drg_flamer",
+			"drg_flamer_heavy"
+		]
+	},
+	# gotta have this for capitals since
+	# their other capital hulls are marked as priority
+	# so modded ones will almost never show up if you don't mark em as priority too
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+			"drg_spire",
+			"drg_equality",
+			"drg_incursion"
+		]
+	}
+}
+

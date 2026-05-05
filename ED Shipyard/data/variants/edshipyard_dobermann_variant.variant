@@ -1,0 +1,61 @@
+{
+  "displayName": "Страж",
+  "fluxCapacitors": 20,
+  "fluxVents": 49,
+  "goalVariant": true,
+  "hullId": "edshipyard_dobermann",
+  "hullMods": [
+    "hardenedshieldemitter",
+    "reinforcedhull",
+  ],
+  "modules": [
+    {
+      "M004": "edshipyard_dobermann_shieldmodule_variant"
+    },
+    {
+      "M003": "edshipyard_dobermann_shieldmodule_variant"
+    },
+    {
+      "M002": "edshipyard_dobermann_shieldmodule_variant"
+    },
+    {
+      "M001": "edshipyard_dobermann_shieldmodule_variant"
+    }
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_dobermann_variant",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mjolnir",
+        "WS0002": "mjolnir",
+        "WS0003": "mjolnir"
+      }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0011": "edshipyard_SC2",
+            "WS0012": "edshipyard_SC2"
+        }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0004": "edshipyard_SC1",
+            "WS0005": "edshipyard_SC1",
+            "WS0006": "edshipyard_SC1",
+            "WS0007": "edshipyard_SC1",
+            "WS0008": "edshipyard_SC1",
+            "WS0009": "edshipyard_SC1",
+            "WS0010": "edshipyard_SC1"
+        }
+    }
+  ],
+  "wings": []
+}

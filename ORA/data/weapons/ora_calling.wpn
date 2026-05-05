@@ -1,0 +1,55 @@
+{
+	"id":"ora_calling",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretSprite":"graphics/ORA/weapons/ora_callingT.png",
+	"turretGlowSprite":"graphics/ORA/weapons/ora_callingTG.png",
+	"hardpointSprite":"graphics/ORA/weapons/ora_callingH.png",
+	"hardpointGlowSprite":"graphics/ORA/weapons/ora_callingHG.png",
+	"glowColor":[255,100,150,255],
+	"turretOffsets":[
+8, -8,
+7, -4,
+6, 0,
+7, 4,
+8, 8
+],
+	"turretAngleOffsets":[
+-6,
+-3,
+0,
+3,
+6
+],
+	"hardpointOffsets":[
+14, -8,
+13, -4,
+12, 0,
+13, 4,
+14, 8
+],
+	"hardpointAngleOffsets":[
+-6,
+-3,
+0,
+3,
+6
+],
+	#"barrelMode":"ALTERNATING",
+	"barrelMode":"LINKED",
+        "separateRecoilForLinkedBarrels":"TRUE",
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":34.0,
+                            "spread":15.0,
+                            "particleSizeMin":15.0,
+                            "particleSizeRange":15.0,
+                            "particleDuration":0.15,
+                            "particleCount":30,
+                            "particleColor":[150,100,250,255]},
+	"interruptibleBurst":true,
+	"autocharge":true,
+	"projectileSpecId":"ora_callingS",
+	"fireSoundTwo":"ora_calling",
+        "everyFrameEffect":"data.scripts.weapons.ORA_callingEffect",
+}

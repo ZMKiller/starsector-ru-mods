@@ -1,0 +1,56 @@
+{
+  "id": "HSI_Apostle_LAD",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/ships/Apostle/HSI_Apostle_LArm.png",
+  "hardpointSprite": "",
+  "showDamageWhenDecorative": true,
+  "glowColor": [
+    255,
+    0,
+    200,
+    255
+  ],
+  "hitGlowRadius": 10,
+  "turretOffsets": [
+    34.5,
+    18
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "beamFireOnlyOnFullCharge": true,
+  "fringeColor": [
+    255,
+    50,
+    100,
+    255
+  ],
+  "coreColor": [
+    255,
+    200,
+    200,
+    255
+  ],
+  "width": 12,
+  "textureType": LASER,
+  "textureScrollSpeed": -64,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "dragonfire_payload_fire",
+  "fireSoundTwo": "high_intensity_laser_loop"
+}

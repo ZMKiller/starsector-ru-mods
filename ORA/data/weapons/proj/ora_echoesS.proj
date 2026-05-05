@@ -1,0 +1,36 @@
+{
+	"id":"ora_echoesS",
+	"specClass":"missile",	
+	"missileType":"ROCKET",
+	"sprite":"graphics/ORA/missiles/ora_echoesS.png",
+	"size":[88,88],	
+	"center":[44,44],
+	"collisionRadius":0,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[50,165,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual
+	"engineSpec":{"turnAcc":0,
+                        "turnRate":0,
+                        "acc":1,
+                        "dec":0},
+	"engineSlots":[{"id":"ES1",
+			"loc":[5, 0],
+			"style":"CUSTOM",
+			"styleSpec":{
+                                "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+                                "engineColor":[10,20,50,250],
+                                "contrailDuration":1,
+                                "contrailWidthMult":2.5,
+                                "contrailWidthAddedFractionAtEnd":0,  # can be negative. makes trail spread out/narrow at the end
+                                "contrailMinSeg":20, # min segment length, in pixels
+                                "contrailMaxSpeedMult":0f,
+                                "contrailAngularVelocityMult":0f,
+                                "contrailSpawnDistMult":0, # how far away from engine it starts
+                                "contrailColor":[50,150,250,100],
+                                "type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+                        },
+                        "width":44.0,
+                        "length":60.0,
+                        "angle":180.0}],
+        "renderTargetIndicator":false,				    
+}

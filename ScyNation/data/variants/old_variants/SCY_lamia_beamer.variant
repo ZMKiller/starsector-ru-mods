@@ -1,0 +1,36 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 10,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "SCY_lamia",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "SCY_lamia_beamer",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_scatter",
+                "WS0002": "SCY_scatter"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "atropos",
+                "WS0006": "atropos"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_hack",
+                "WS0004": "SCY_hack"
+            }
+        }
+    ]
+}

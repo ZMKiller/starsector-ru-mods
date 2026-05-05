@@ -1,0 +1,78 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 36,
+    "fluxVents": 26,
+    "goalVariant": true,
+    "hullId": "ora_discernment",
+    "hullMods": [
+        "expanded_deck_crew",
+        "recovery_shuttles",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_discernment_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "pilum",
+                "WS0005": "pilum",
+                "WS0006": "pilum",
+                "WS0007": "pilum",
+                "WS0008": "pilum",
+                "WS0009": "pilum",
+                "WS0010": "pilum",
+                "WS0011": "pilum"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0012": "heatseeker",
+                "WS0013": "heatseeker",
+                "WS0014": "heatseeker",
+                "WS0015": "heatseeker",
+                "WS0016": "heatseeker",
+                "WS0017": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_eschewal"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ora_eschewal",
+                "WS0003": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0018": "lrpdlaser",
+                "WS0019": "lrpdlaser",
+                "WS0020": "lrpdlaser",
+                "WS0021": "lrpdlaser",
+                "WS0022": "lrpdlaser",
+                "WS0023": "lrpdlaser",
+                "WS0024": "lrpdlaser",
+                "WS0025": "lrpdlaser"
+            }
+        }
+    ],
+    "wings": [
+        "wasp_wing",
+        "wasp_wing",
+        "wasp_wing",
+        "wasp_wing",
+        "wasp_wing",
+        "wasp_wing"
+    ]
+}

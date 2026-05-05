@@ -1,0 +1,34 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "SCY_manticore",
+    "hullMods": [
+        "missleracks",
+        "eccm"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_manticore_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_intercept",
+                "WS0003": "vulcan",
+                "WS0004": "vulcan"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_phased"}
+        }
+    ],
+    "wings": [
+        "SCY_panotti_wing",
+        "SCY_panotti_wing",
+        "SCY_eris_wing"
+    ]
+}

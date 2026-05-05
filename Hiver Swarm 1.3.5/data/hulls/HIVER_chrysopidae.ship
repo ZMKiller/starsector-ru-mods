@@ -1,0 +1,73 @@
+{
+  "hullName": "Chrysopidae",
+  "hullId": "HIVER_chrysopidae",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/HIVER_chrysopidae.png",
+  "style": "HIGH_TECH",
+  "height": 140,
+  "width": 135,
+  "center": [68.5, 81.5],
+  "collisionRadius": 102,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 100.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [4.5, 28]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [4.5, -26]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-23, 0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-54.5, -5],
+      "length": 42,
+      "width": 13,
+      "angle": -170.5,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-54.5, 5],
+      "length": 42,
+      "width": 13,
+      "angle": 170.5,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -88.5, -18,
+    -39, -60,
+    54.5, -78,
+    69, -5.5,
+    56.5, 76.5,
+    -21.5, 63,
+    -86.5, 21.5
+  ]
+}

@@ -1,0 +1,46 @@
+{
+    "displayName": "Pest Control",
+    "fluxCapacitors": 0,
+    "fluxVents": 12,
+    "hullId": "SCY_corocotta",
+    "hullMods": [
+        "pointdefenseai",
+        "converted_hangar"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_corocotta_pestControl",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_minigun3"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_minigun2",
+                "WS0003": "SCY_minigun2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_minigun1",
+                "WS0005": "SCY_minigun1",
+                "WS0006": "SCY_minigun1",
+                "WS0007": "SCY_minigun1"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "SCY_minigun1",
+                "WS0009": "SCY_minigun1"
+            }
+        }
+    ],
+    "wings": ["SCY_akhlys_wing"]
+}

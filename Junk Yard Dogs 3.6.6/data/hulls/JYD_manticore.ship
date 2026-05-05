@@ -1,0 +1,60 @@
+{
+  "hullName": "Manticore",
+  "hullId": "JYD_manticore",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/JYD_manticore.png",
+  "style": "LOW_TECH",
+  "height": 38,
+  "width": 30,
+  "center": [15.5, 18],
+  "collisionRadius": 26.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 25.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "eccm"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [8.5, 0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17.5, -6],
+      "length": 14.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "LOW_TECH_FIGHTER"
+    },
+    {
+      "location": [-17.5, 8],
+      "length": 14.5,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "LOW_TECH_FIGHTER"
+    }
+  ],
+  "bounds": [
+    19.5, -9,
+    10.5, -10,
+    7.5, -16,
+    -12.5, -16,
+    -14.5, -12,
+    -18.5, -12,
+    -18.5, 12,
+    -14.5, 12,
+    -12.5, 16,
+    7.5, 16,
+    10.5, 10,
+    19.5, 9
+  ]
+}

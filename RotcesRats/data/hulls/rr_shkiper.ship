@@ -1,0 +1,107 @@
+{
+  "hullName": "Shkiper",
+  "hullId": "rr_shkiper",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/rr_shkiper.png",
+  "style": "LOW_TECH",
+  "height": 126,
+  "width": 74,
+  "center": [37, 63],
+  "collisionRadius": 85,
+  "shieldCenter": [4, -0],
+  "shieldRadius": 81,
+  "viewOffset": 0,
+  "builtInMods": [
+    "repair_gantry",
+    "surveying_equipment",
+    "rugged"
+  ],
+  "builtInWings": [
+    "rr_borer_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 85,
+      "locations": [5, 28]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -110,
+      "locations": [5, -25]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 40,
+      "locations": [32, 8]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [58, 9]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 135,
+      "locations": [-13, 15]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-60, -0],
+      "length": 45,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-59, -6],
+      "length": 19,
+      "width": 5,
+      "angle": -178,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-59, 6],
+      "length": 19,
+      "width": 5,
+      "angle": 178,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    51, -24,
+    45, -30,
+    -24, -30,
+    -31, -18,
+    -57, -16,
+    -57, 16,
+    -31, 18,
+    -20, 31,
+    40, 28,
+    57, 12
+  ]
+}

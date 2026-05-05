@@ -1,0 +1,41 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 18,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "HSI_Sunder",
+    "hullMods": [
+        "HSI_EnhancedShield",
+        "advancedoptics",
+        "targetingunit",
+        "converted_hangar",
+        "HSI_ProtocalSuppression"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Sunder_Support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "HWI_FocusLance"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "HWI_Stella",
+                "WS0005": "HWI_Stella"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "taclaser",
+                "WS0007": "taclaser"
+            }
+        }
+    ],
+    "wings": ["HSI_Maid_wing"]
+}

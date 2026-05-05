@@ -1,0 +1,44 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 8,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "ora_grace",
+    "hullMods": [
+        "unstable_injector",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_grace_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyblaster"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "harpoonpod",
+                "WS0004": "harpoonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "pulselaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "ora_choir",
+                "WS0006": "ora_choir",
+                "WS0007": "ora_choir",
+                "WS0008": "ora_choir"
+            }
+        }
+    ]
+}

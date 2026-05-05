@@ -1,0 +1,116 @@
+{
+	#MODS INTEGRATION
+    "nexerelin":{
+		"mining_ship_strengths":{
+			"HIVER_carabidae": 50,
+			"HIVER_burrower": 20,
+			"HIVER_weevil": 6,
+			"HIVER_chalcosoma": 30,
+			"HIVER_lucanidae": 35,			
+			"HIVER_chinavia": 10,
+			"HIVER_viridula": 5,
+			"HIVER_katydid": 3,	
+			"HIVER_gnawler": 2,				
+		},
+		"mining_weapon_strengths":{
+			"HIVER_fragmed": 12,	
+			"HIVER_fragsm": 6,
+			"HIVER_fraglg": 20,		
+		},
+		"mining_hidden_ships_and_weapons":["HIVER_gnawler", "HIVER_katydid"],
+    },	
+	
+	
+	"SCY":{
+		#"amity_factionWhitelist":[
+		#	# Lists factions that should have their known ships and weapons sold in Amity's Freeport discount trader.
+		#],
+		"amity_blacklist":[
+			# Lists ships, weapons and wing ids that should be culled from Amity's Freeport discount trader.
+			# Consider that tier 3 weapons/wings and ships above 5/10/14/23 FP are already culled from that store.
+			"HIVER_emperor",
+			"HIVER_chinavia",
+			"HIVER_burrower",
+			"HIVER_deathfly",
+			"HIVER_weevil",
+			"HIVER_mantabee",
+			"HIVER_queen",
+			"HIVER_swimmer",
+			"HIVER_prince",
+			"HIVER_moth",
+			"HIVER_snipper",
+			"HIVER_swallowtail",
+			"HIVER_viridan",
+			"HIVER_lacewing",
+			"HIVER_beetle",
+			"HIVER_aphid",
+			"HIVER_catcher",
+			"HIVER_crabby",
+			"HIVER_eyes",
+			"HIVER_chrysopidae",	
+			"HIVER_calopteryx",		
+			"HIVER_carabidae",
+			"HIVER_scarab",
+			"HIVER_princess",
+			"HIVER_hornet",	
+			"HIVER_cleridae",
+			"HIVER_lucanidae",
+			"HIVER_viridula",
+			"HIVER_silverfish",	
+			"HIVER_ceruchus",
+			"HIVER_scarabaeus",	
+			"HIVER_chalcosoma",	
+			"HIVER_cerambycidae",
+			"HIVER_caelifera",
+			"HIVER_scarabaeidae",
+			"HIVER_creatonotos",	
+			"HIVER_gangis",				
+			
+			"HIVER_allsup_standard_wing",
+            "HIVER_katydid_standard_wing",
+            "HIVER_flyter_standard_wing",
+			"HIVER_gnawler_standard_wing",	
+			"HIVER_scorpifly_standard_wing",	
+			"HIVER_meloidae_standard_wing",					
+
+			"HIVER_blaster",
+            "HIVER_launcher",
+            "HIVER_lrblaster",
+            "HIVER_mirv",
+            "HIVER_plascannon",
+            "HIVER_spitter",
+		    "HIVER_twinblaster",
+            "HIVER_twinpd",
+            "HIVER_twinplas",
+            "HIVER_htorp",	
+            "Hiver_eyeball",		
+			"HIVER_fraglg",
+			"HIVER_fragmed",
+			"HIVER_fragsm",			
+		],
+	},
+		
+    "diableavionics":{
+		#"missile_resist_derecho": [
+		#	# Lists missiles id that should loose guidance but not get flamed out by the Derecho ECM system
+		#],
+		"missile_immune_derecho": [
+			# Lists missiles id that should not get affected at all by the Derecho ECM system
+			# please be mindful to not break player expectations, only very special projectiles should be immune
+			# Such as phased missiles or "smart" bullets
+			"HIVER_htorp",
+            "HIVER_mirv",
+            "HIVER_launcher",			
+		],
+    },
+
+	"armaarmatura":{
+		"missile_resist_karma":[
+		    #list of missiles that cannot be hacked and switch to the ship using
+			"HIVER_htorp",
+            "HIVER_mirv",
+            "HIVER_launcher",			
+		],
+	},
+  "TakeNoPrisoners":{"factionsWithConfigs":["HIVER"]},	
+}

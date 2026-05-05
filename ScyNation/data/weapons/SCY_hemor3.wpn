@@ -1,0 +1,43 @@
+{
+	"id":"SCY_hemor3",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":550,
+	"turretSprite":"graphics/SCY/weapons/SCY_hemor3T.png",
+	"turretGunSprite":"graphics/SCY/weapons/SCY_hemor3TB.png",	
+	"hardpointSprite":"graphics/SCY/weapons/SCY_hemor3H.png",
+	"hardpointGunSprite":"graphics/SCY/weapons/SCY_hemor3HB.png",	
+	"visualRecoil":8,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[33, 7, 33, -7],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[43, 7, 43, -7],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+        "separateRecoilForLinkedBarrels":"TRUE",
+	#"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+        "muzzleFlashSpec":{"length":40.0,   
+                            "spread":10.0,
+                            "particleSizeMin":30.0,
+                            "particleSizeRange":60.0,
+                            "particleDuration":0.3,
+                            "particleCount":10,
+                            "particleColor":[255,75,50,100]},
+	"animationType":"SMOKE",
+	"smokeSpec":{"particleSizeMin":10.0,
+                    "particleSizeRange":20.0,
+                    "cloudParticleCount":15,
+                    "cloudDuration":0.5,
+                    "cloudRadius":20.0;
+                    "blowbackParticleCount":15,
+                    "blowbackDuration":1,
+                    "blowbackLength":-30.0,
+                    "blowbackSpread":2.0,
+                    "particleColor":[100,75,75,50]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	"projectileSpecId":"hellbore_shot",  # projectile that will be fired	
+        #"everyFrameEffect":"org.scy.weapons.SCY_hemorMuzzle",
+        "everyFrameEffect":"org.scy.weapons.SCY_addToMuzzlePlugin",
+	"fireSoundTwo":"SCY_hemor3",
+}

@@ -1,0 +1,50 @@
+{
+  "variantId": "CFT_jackdaw_standard",
+  "hullId": "CFT_jackdaw",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "reinforcedhull",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "CFT_dartgun",
+        "WS0007": "CFT_dartgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_falconet",
+        "WS0004": "CFT_falconet"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "CFT_hellfirerockets"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lrpdlaser",
+        "WS0002": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

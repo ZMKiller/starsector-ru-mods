@@ -1,0 +1,49 @@
+{
+  "id": "CFT_wavepulse",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_wavepulse_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "turretSprite": "graphics/CFT/weapons/CFT_wavepulse_turret.png",
+  "turretGlowSprite": "graphics/CFT/weapons/CFT_wavepulse_turret_glow.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_wavepulse_hardpoint.png",
+  "hardpointGlowSprite": "graphics/CFT/weapons/CFT_wavepulse_hardpoint_glow.png",
+  "glowColor": [
+     250,
+    205,
+    210,
+    125
+  ],
+  "turretOffsets": [
+    12,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    14.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 5,
+    "particleSizeMin": 15,
+    "particleSizeRange": 20,
+    "particleDuration": 0.12,
+    "particleCount": 10,
+    "particleColor": [
+      255,
+      125,
+      60,
+      125
+    ]
+  },
+  "fireSoundTwo": "ir_pulse_laser_fire"
+}

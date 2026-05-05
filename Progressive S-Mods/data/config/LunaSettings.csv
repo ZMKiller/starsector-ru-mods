@@ -1,0 +1,46 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+psm_headerIncreaseSModLimit,Increasing S-Mod Limit,Header,Increasing S-Mod Limit,,,,,General
+psm_allowIncreaseSModLimit,Allow Increase,Boolean,true,,Allows increasing S-mod limit by spending story points and ship XP.,,,General
+psm_baseExtraSModSPCostFrigate,Frigate Base SP Cost,Double,0.5,,SP cost for the first time the S-mod limit is increased on a frigate. Fractional amounts award bonus XP at a fraction equal to one minus the fractional part.,0,10,General
+psm_baseExtraSModSPCostDestroyer,Destroyer Base SP Cost,Double,1,,SP cost for the first time the S-mod limit is increased on a destroyer. Fractional amounts award bonus XP at a fraction equal to one minus the fractional part.,0,10,General
+psm_baseExtraSModSPCostCruiser,Cruiser Base SP Cost,Double,1.5,,SP cost for the first time the S-mod limit is increased on a cruiser. Fractional amounts award bonus XP at a fraction equal to one minus the fractional part.,0,10,General
+psm_baseExtraSModSPCostCapital,Capital Base SP Cost,Double,2,,SP cost for the first time the S-mod limit is increased on a capital ship. Fractional amounts award bonus XP at a fraction equal to one minus the fractional part.,0,10,General
+psm_extraSModSPCostGrowthType,SP Cost Growth Is Exponential,Boolean,true,,"If enabled, the SP cost increase per additional S-mod slot is exponential. Otherwise, it's linear.",,,General
+psm_extraSModSPCostGrowthFactor,SP Cost Growth Factor,Double,1,,"SP Cost for additional S-mod slots is base+factor*n if linear, or base*factor^n if exponential.",0,5,General
+psm_baseExtraSModXPCostFrigate,Frigate Base XP Cost,Double,800,,Base XP cost for the first time the S-mod limit is increased on a frigate. Will be modified by the ship's deployment cost.,0,2500,General
+psm_baseExtraSModXPCostDestroyer,Destroyer Base XP Cost,Double,1600,,Base XP cost for the first time the S-mod limit is increased on a destroyer. Will be modified by the ship's deployment cost.,0,5000,General
+psm_baseExtraSModXPCostCruiser,Cruiser Base XP Cost,Double,3200,,Base XP cost for the first time the S-mod limit is increased on a cruiser. Will be modified by the ship's deployment cost.,0,10000,General
+psm_baseExtraSModXPCostCapital,Capital Base XP Cost,Double,6400,,Base XP cost for the first time the S-mod limit is increased on a capital ship. Will be modified by the ship's deployment cost.,0,20000,General
+psm_extraSModXPCostGrowthType,XP Cost Growth Is Exponential,Boolean,true,,"If enabled, the XP cost increase per additional S-mod slot is exponential. Otherwise, it's linear.",,,General
+psm_extraSModXPCostGrowthFactor,XP Cost Growth Factor,Double,2.25,,"XP Cost for additional S-mod slots is base*(1+factor*n) if linear, or base*factor^n if exponential.",0,5,General
+,,,,,,,,
+,,,,,,,,
+psm_headerBuildIn,Building in S-Mods,Header,Building in S-Mods,,,,,General
+psm_xpCostMultiplierFrigate,Frigate XP Cost Multiplier,Double,1,,Multiplies XP cost for building in hullmods on a frigate by the specified amount.,0,10,General
+psm_xpCostMultiplierDestroyer,Destroyer XP Cost Multiplier,Double,1,,Multiplies XP cost for building in hullmods on a destroyer by the specified amount.,0,10,General
+psm_xpCostMultiplierCruiser,Cruiser XP Cost Multiplier,Double,1,,Multiplies XP cost for building in hullmods on a cruiser by the specified amount.,0,10,General
+psm_xpCostMultiplierCapital,Capital XP Cost Multiplier,Double,1,,Multiplies XP cost for building in hullmods on a capital ship by the specified amount.,0,10,General
+psm_xpRefundFactor,XP Refund Fraction,Double,0.8,,Fraction of XP spent refunded when removing S-mods.,0,1,General
+psm_reserveXPFraction,Reserve XP Fraction,Double,0.8,,"When the player loses a ship with XP, this fraction of XP lost is added to a reserve pool that can be used by any ship with the same hull type.",0,1,General
+,,,,,,,,
+,,,,,,,,
+psm_headerMiscellaneous,Miscellaneous,Header,Miscellaneous,,,,,General
+psm_IgnoreNoBuildIn,"Ignore ""no_build_in"" Tag",Boolean,false,,"If enabled, allows hullmods that can't normally be built in, such as safety overrides, to be built in.",,,General
+psm_deploymentCostPenalty,Additional S-Mods DP Penalty,Double,0.06,,"Increases ship DP by this fraction of their base DP values for each S-mod over the standard limit.",0,0.25,General
+psm_recentlyBuiltInListSize,Show Recent Size,Int,20,,"The maximum number of hull mods that will show up when ""Show recent"" is pressed.",5,100,General
+psm_disableMod,Disable Mod (Requires Reload),Boolean,false,,"If enabled, disables this mod's features.",,,General
+
+psm_headerCombat,Combat,Header,Combat,,,,,Combat
+psm_xpGainMultiplier,XP Gain Multiplier,Double,45,,"All XP Gained by ships in combat is multiplied by this amount.",1,200,Combat
+psm_xpFractionAttack,Attack XP Fraction,Double,0.34,,"Fraction of XP awarded for offensive actions.",0,1,Combat
+psm_xpFractionDefense,Defense XP Fraction,Double,0.33,,"Fraction of XP awarded for defensive actions.",0,1,Combat
+psm_xpFractionSupport,Support XP Fraction,Double,0.33,,"Fraction of XP awarded for support actions.",0,1,Combat
+psm_targetDModLowerBound,D-Mod Minimum XP Fraction,Double,0.6,,"Enemy ships with d-mods give less XP than pristine ships. However, regardless of the number of d-mods, they will always give at least this fraction of a pristine ship's XP.",0,1,Combat
+psm_postBattleXPFraction,Post-Battle Additional XP Fraction,Double,0.025,,"All ships gain this fraction of the total XP gain as additional XP per combat.",0,0.1,Combat
+psm_postBattleCivilianMultiplier,Post-Battle Civilian XP Multiplier,Double,2,,"Civilian ships gain increased post-battle XP, by this much.",0,5,Combat
+psm_postBattleAutoPursuitMultiplier,Auto-Resolve XP Multiplier,Double,4,,"Combat ships gain increased post-battle XP for auto-resolve pursuits, by this much.",0,10,Combat
+psm_combatUpdateInterval,Combat Update Interval,Double,3,,"Adjusts how often ship contribution is tallied up during combat, in seconds.",1,10,Combat
+psm_giveXPToDisabledShips,Give XP To Disabled Ships,Boolean,false,,"If enabled, receive XP for ships even if they were disabled in combat.",,,Combat
+psm_onlyGiveXPForKills,Only Give XP For Kills,Boolean,false,,"If enabled, only enemy ships that are destroyed give XP.",,,Combat
+psm_condenseXPGainMessages,Condense XP Gain Messages,Boolean,false,,"If enabled, condenses XP gain messages post-battle and no longer displays individual ship contributions.",,,Combat
+

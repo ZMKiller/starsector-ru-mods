@@ -1,0 +1,81 @@
+{
+  "hullName": "Crabby",
+  "hullId": "HIVER_crabby",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HIVER_crabby.png",
+  "style": "HIGH_TECH",
+  "height": 155,
+  "width": 180,
+  "center": [90, 76.5],
+  "collisionRadius": 121,
+  "shieldCenter": [0, 0.5],
+  "shieldRadius": 119.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull",
+    "phasefield",
+    "delicate"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": 0,
+      "locations": [22.5, 51.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [-27.5, -26.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-15, -0.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": 0,
+      "locations": [17, -44.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-60.5, -0.5],
+      "length": 52,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -60.5, -54,
+    -22.5, -80.5,
+    49.5, -65,
+    23.5, -16,
+    17, 13.5,
+    80.5, 44,
+    89, 72,
+    40, 97.5,
+    -38, 69,
+    -90, 43,
+    -75.5, 1.5,
+    -83, -32.5
+  ]
+}

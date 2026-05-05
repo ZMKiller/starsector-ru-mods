@@ -1,0 +1,55 @@
+{
+    "displayName": "Rocketeer",
+    "fluxCapacitors": 0,
+    "fluxVents": 28,
+    "hullId": "SCY_nemeanlion",
+    "hullMods": [
+        "missleracks",
+        "eccm",
+        "converted_hangar"
+    ],
+    "modules": [
+        {"M_FL": "SCY_lionFL_standard"},
+        {"M_FR": "SCY_lionFR_standard"},
+        {"M_RL": "SCY_lionRL_standard"},
+        {"M_RR": "SCY_lionRR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_nemeanlion_rocketeer",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"MAW3": "hammerrack"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "MAW1": "squall",
+                "MAW2": "squall"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "annihilatorpod",
+                "WS0002": "annihilatorpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "flak",
+                "WS0004": "flak",
+                "WS0005": "vulcan",
+                "WS0006": "vulcan",
+                "WS0007": "vulcan",
+                "WS0008": "vulcan"
+            }
+        }
+    ],
+    "wings": ["SCY_eris_wing"]
+}

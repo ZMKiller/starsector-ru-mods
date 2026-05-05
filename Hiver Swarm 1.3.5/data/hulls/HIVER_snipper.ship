@@ -1,0 +1,77 @@
+{
+  "hullName": "Snipper",
+  "hullId": "HIVER_snipper",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HIVER_snipper.png",
+  "style": "HIGH_TECH",
+  "height": 155,
+  "width": 180,
+  "center": [90, 81],
+  "collisionRadius": 123.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 121,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [19, -52]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [19, 52]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-20.5, 21.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-20.5, -22]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-59, 0],
+      "length": 39,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -86, -39.5,
+    36.5, -99,
+    91, -75.5,
+    63, -38.5,
+    20.5, -27,
+    20, 6,
+    81.5, 44.5,
+    83.5, 84,
+    39.5, 104,
+    -86.5, 52.5
+  ]
+}

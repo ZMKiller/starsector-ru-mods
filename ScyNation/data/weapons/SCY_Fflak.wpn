@@ -1,0 +1,27 @@
+{
+	"id":"SCY_Fflak",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":350,
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[0,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0,0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":1.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":1.0,
+					   "particleSizeMin":25.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.5,
+					   "particleCount":1,
+					   "particleColor":[250,100,50,255]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"SCY_flakS",  # projectile that will be fired	
+	"fireSoundTwo":"SCY_flak",
+}

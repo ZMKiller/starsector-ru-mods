@@ -1,0 +1,50 @@
+{
+  "variantId": "rr_pteroma_pd",
+  "hullId": "rr_pteroma",
+  "displayName": "Point Defense",
+  "goalVariant": true,
+  "fluxCapacitors": 14,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "phasecl",
+        "WS0005": "phasecl"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "swarmer",
+        "WS0009": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyburst",
+        "WS0002": "heavyburst",
+        "WS0003": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "pdburst",
+        "WS0007": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

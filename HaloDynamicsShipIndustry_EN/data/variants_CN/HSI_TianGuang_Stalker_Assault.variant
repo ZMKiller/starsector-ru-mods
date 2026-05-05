@@ -1,0 +1,34 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 10,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "HSI_TianGuang_Stalker",
+    "hullMods": [
+        "HSI_EnhancedShield",
+        "HSI_ProtocalAssault"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_TianGuang_Stalker_Assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "HWI_amblaster"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "HWI_amblaster",
+                "WS0004": "HWI_heavyblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "HWI_amblaster"}
+        }
+    ]
+}

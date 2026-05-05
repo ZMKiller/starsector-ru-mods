@@ -1,0 +1,66 @@
+{
+  "id": "CFT_pointmissiles",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_pointmissiles_rocket",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/CFT/weapons/CFT_pointmissiles_turret_base.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_pointmissiles_hardpoint_base.png",
+
+  "glowColor": [
+    170,
+    160,
+    150,
+    155
+  ],
+  "turretOffsets": [
+    9,
+    -4,
+    9,
+    -1.5,
+    9,
+    1.5,
+    9,
+    4
+  ],
+  "turretAngleOffsets": [
+    -20,
+    -10,
+    10,
+    20
+  ],
+  "hardpointOffsets": [
+    15,
+    -4,
+    15,
+    -2,
+    15,
+    2,
+    15,
+    4
+  ],
+  "hardpointAngleOffsets": [
+    -20,
+    -10,
+    10,
+    20
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 10,
+    "spread": 10,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [
+      250,
+      170,
+      90,
+      255
+    ]
+  },
+  "fireSoundTwo": "pilum_lrm_fire"
+}

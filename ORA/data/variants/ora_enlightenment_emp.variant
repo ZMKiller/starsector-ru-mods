@@ -1,0 +1,76 @@
+{
+    "displayName": "EMP",
+    "fluxCapacitors": 44,
+    "fluxVents": 50,
+    "hullId": "ora_enlightenment",
+    "hullMods": [
+        "nav_relay",
+        "targetingunit",
+        "hardenedshieldemitter",
+        "advancedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_enlightenment_emp",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_sempiternal"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "ora_sempiternal"}
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "sabotpod",
+                "WS0008": "sabotpod",
+                "WS0009": "sabotpod",
+                "WS0010": "sabotpod",
+                "WS0011": "sabotpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "heatseeker",
+                "WS0016": "heatseeker",
+                "WS0017": "heatseeker",
+                "WS0018": "heatseeker",
+                "WS0019": "heatseeker",
+                "WS0020": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "ioncannon",
+                "WS0021": "ioncannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "ioncannon",
+                "WS0022": "ioncannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "guardian",
+                "WS0004": "guardian",
+                "WS0006": "ora_echoes",
+                "WS0007": "ora_echoes"
+            }
+        }
+    ]
+}

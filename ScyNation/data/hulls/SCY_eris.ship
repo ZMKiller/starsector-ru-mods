@@ -1,0 +1,58 @@
+{
+  "hullName": "Eris",
+  "hullId": "SCY_eris",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/SCY/ships/fighters/SCY_eris.png",
+  "style": "SCYHULL",
+  "height": 25,
+  "width": 27,
+  "center": [13.5, 12.5],
+  "collisionRadius": 16.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 16.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux",
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SCY_Frotary"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [4, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11.5, 4],
+      "length": 20.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES"
+    },
+    {
+      "location": [-11.5, -4],
+      "length": 20.5,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES"
+    }
+  ],
+  "bounds": [
+    7.5, 6.5,
+    -9, 11,
+    -9, -11,
+    7.5, -6.5
+  ]
+}

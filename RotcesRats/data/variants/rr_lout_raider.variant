@@ -1,0 +1,41 @@
+{
+  "variantId": "rr_lout_raider",
+  "hullId": "rr_lout",
+  "displayName": "Raider",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 9,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "rr_arpo",
+        "WS0005": "rr_arpo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "rr_flint_coil",
+        "WS0003": "rr_flint_coil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

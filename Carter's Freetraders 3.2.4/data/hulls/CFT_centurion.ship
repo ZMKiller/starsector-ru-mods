@@ -1,0 +1,52 @@
+{
+  "hullName": "Centurion",
+  "hullId": "CFT_centurion",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_centurion.png",
+  "style": "MIDLINE",
+  "height": 37,
+  "width": 32,
+  "center": [16, 18.5],
+  "collisionRadius": 26.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 24.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-0.5, 11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -0,
+      "locations": [-0.5, -11]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15.5, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    20, -3.5,
+    -4, -19,
+    -21, -14,
+    -21, 14,
+    -4, 19,
+    20, 3.5
+  ]
+}

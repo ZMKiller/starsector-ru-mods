@@ -1,0 +1,55 @@
+{
+  "id": "HIVER_twinpd",
+  "specClass": "projectile",
+  "projectileSpecId": "hiver_irpulse_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "turretSprite": "graphics/weapons/HIVER_twinpd_turret.png",
+  "turretGlowSprite": "graphics/weapons/HIVER_twinpd_turret__glow.png",
+  "hardpointSprite": "graphics/weapons/HIVER_twinpd.png",
+  "hardpointGlowSprite": "graphics/weapons/HIVER_twinpd_glow.png",
+  "glowColor": [
+    128,
+    250,
+    100,
+    200
+  ],
+  "turretOffsets": [
+    11.5,
+    3,
+    11.5,
+    -3
+  ],
+  "turretAngleOffsets": [
+    -0,
+    0
+  ],
+  "hardpointOffsets": [
+    21,
+    -4,
+    21,
+    4
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "requiresFullCharge": false,
+  "muzzleFlashSpec": {
+    "length": 23,
+    "spread": 5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 12,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      255,
+      100,
+      100,
+      255
+    ]
+  },
+  "fireSoundTwo": "ir_pulse_laser_fire"
+}

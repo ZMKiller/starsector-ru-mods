@@ -1,0 +1,89 @@
+{
+  "hullName": "Endurance",
+  "hullId": "JYD_endurance",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/JYD_endurance.png",
+  "style": "MIDLINE",
+  "height": 148,
+  "width": 122,
+  "center": [62, 74.5],
+  "collisionRadius": 124,
+  "shieldCenter": [0, 1],
+  "shieldRadius": 121,
+  "viewOffset": 0,
+  "builtInMods": [
+    "missile_reload"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 75,
+      "angle": 0,
+      "locations": [32.5, 1]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-40.5, 39]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-40.5, -37]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 180,
+      "locations": [-49.5, 1]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-73.5, -26.5],
+      "length": 42.5,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-73.5, 28.5],
+      "length": 42.5,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    55, -17,
+    74, -32.5,
+    74, -62,
+    -32.5, -63.5,
+    -58, -48,
+    -84, -36,
+    -73.5, -11,
+    -73.5, 11,
+    -84, 36,
+    -58, 48,
+    -32.5, 63.5,
+    74, 62,
+    74, 32.5,
+    55, 17
+  ]
+}

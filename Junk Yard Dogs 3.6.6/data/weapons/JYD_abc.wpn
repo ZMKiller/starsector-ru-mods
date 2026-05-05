@@ -1,0 +1,47 @@
+{
+  "id": "JYD_abc",
+  "specClass": "projectile",
+  "projectileSpecId": "shell_small",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "turretSprite": "graphics/weapons/JYD_abc_turret_base.png",
+  "turretGunSprite": "graphics/weapons/JYD_abc_turret_barrel.png",
+  "hardpointSprite": "graphics/weapons/JYD_abc_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/weapons/JYD_abc_hardpoint_barrel.png",
+  "visualRecoil": 10,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    3,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    8.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 20,
+    "spread": 6,
+    "particleSizeMin": 6,
+    "particleSizeRange": 12,
+    "particleDuration": 0.7,
+    "particleCount": 14,
+    "particleColor": [
+      255,
+      200,
+      200,
+      255
+    ]
+  },
+  "fireSoundTwo": "railgun_fire"
+}

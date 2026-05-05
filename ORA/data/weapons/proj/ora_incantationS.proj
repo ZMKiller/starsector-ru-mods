@@ -1,0 +1,26 @@
+{
+	"id":"ora_incantationS",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"onHitEffect":"data.scripts.weapons.ORA_incantation_effect",
+	#"passThroughMissiles":true,
+
+	"length":5.0,
+	"width":30.0,
+	"fadeTime":2.5,
+
+	"coreColor":[255,150,100,255],
+	"fringeColor":[150,50,255,255],
+
+	"glowColor":[75,25,100,150],
+	"glowRadius":60,
+	"hitGlowRadius":90,
+
+	"textureType":ROUGH,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":1.0,
+
+	#"bulletSprite":"graphics/ORA/missiles/ora_invocationSub.png"
+}

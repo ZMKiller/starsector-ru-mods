@@ -1,0 +1,31 @@
+{
+	"id":"edshipyard_CC",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/weapons/edshipyard_cc_l_turret_base.png",
+	"turretGunSprite":"graphics/weapons/edshipyard_cc_l_turret_barrel.png",
+	"hardpointSprite":"graphics/weapons/edshipyard_cc_l_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/edshipyard_cc_l_hardpoint_barrel.png",
+	"visualRecoil":6.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[25, -10,25, 0,25, 10],
+	"turretAngleOffsets":[0,0,0],
+	"hardpointOffsets":[37,-10,37,0,37,10],
+	"hardpointAngleOffsets":[0,0,0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"SMOKE",
+	"smokeSpec":{"particleSizeMin":6.0,
+				 "particleSizeRange":12.0,
+				 "cloudParticleCount":8,
+				 "cloudDuration":1,
+				 "cloudRadius":12.0;
+				 "blowbackParticleCount":0,
+				 "blowbackDuration":0.45,
+				 "blowbackLength":20.0,
+				 "blowbackSpread":6.0,
+				 "particleColor":[150,150,150,95]},
+	"projectileSpecId":"edshipyard_cc_p",  # projectile that will be fired
+	"fireSoundTwo":"ed_clustercannon",
+}

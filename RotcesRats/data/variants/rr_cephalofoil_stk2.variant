@@ -1,0 +1,50 @@
+{
+  "variantId": "rr_cephalofoil_stk2",
+  "hullId": "rr_cephalofoil",
+  "displayName": "Strike",
+  "goalVariant": false,
+  "fluxCapacitors": 1,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "dragon",
+        "WS 002": "dragon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "lightdualac",
+        "WS 004": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "lightdualac",
+        "WS 006": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "pdlaser",
+        "WS 008": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

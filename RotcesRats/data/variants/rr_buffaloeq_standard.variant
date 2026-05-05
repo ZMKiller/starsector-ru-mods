@@ -1,0 +1,56 @@
+{
+  "variantId": "rr_buffaloeq_standard",
+  "hullId": "rr_buffaloeq",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "rr_flint_coil",
+        "WS 005": "rr_flint_coil"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 008": "rr_arpopod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "rr_arpo",
+        "WS 007": "rr_arpo"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lrpdlaser",
+        "WS 003": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

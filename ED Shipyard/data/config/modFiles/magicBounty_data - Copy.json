@@ -1,0 +1,1908 @@
+{
+    "tart_upstart":{
+
+        "trigger_marketFaction_any":["independent","persean"],
+        "trigger_market_minSize":4,
+        "trigger_playerRelationship_atMost":{
+            "pirates":-0.25,
+        },
+
+        "job_name":"Take down a pirate upstart",
+        "job_description":"The son of some Tri-Tachyon bigwig has made very public their dislike for a sheltered lavish life of luxure and decided to invest \"their\" money to form a merry band of \"pirates\" and enjoy a more eventful existence. They even went as far as to make an announcement when entering the $system system! This is an outrage, and proof of the utter disregard from the rich about the 99%% yadda yadda yadda.\nThe part that interests me, and by extension the reader of this note, is that in the Tri-Tachyon influential spheres there is always something to gain from shining a light on the antics of one's troublesome heir. Find the fleet and destroy it. The target's survival is irrelevant, we will have our media coverage ready before the deed is done.\nTime is of the essence here.",
+        "job_comm_reply":"Finally, time for some action! Come at me dude, I'll show you what this baby can do!",
+        "job_intel_success": "Minutes after the battle ended your comm officer signals you the reception an anonymous payment, along a link to a Hypernet article describing the damning actions of one rising Tri-Tachyon exec's child and their gruesome end at the hand of a courageous mercenary outfit. You witness in real time the brutal efficiency of a coodinated PR attack spreading accross the network.",
+        "job_intel_expired": "Your Comm officer presents you a plethora of Hypernet articles describing the heroic boarding of that troublesome heir flagship by an elite Tri-Tachyon commando, the capture of the Pirate wannabe and their subsequent admission in an Addiction Recovery Center. Those reporters also showered their father with praises for their level headed actions and swift decision making that prevented what could have been a PR disaster. You close the dossier before learning too much about their new political ambitions.",
+        "job_forFaction":"persean",
+        "job_difficultyDescription": "auto",
+        "job_deadline":60,
+        "job_reputation_reward":10,
+        "job_credit_reward":70000,
+        "job_reward_scaling":0.15,
+        "job_type":"assassination",
+        "job_show_fleet":"all",
+        "job_show_distance":"vague",
+
+        "target_first_name":"Jonas-August",
+        "target_last_name":"Lindenburg the Third",
+        #"target_portrait":"",
+        "target_gender":"MALE",
+        "target_rank":"citizen",
+        "target_post":"aristocrat",
+        "target_personality":"reckless",
+        "target_level":1,
+        "target_skill_preference":"YES_ENERGY_NO_BALLISTIC_NO_MISSILE_YES_DEFENSE",
+
+        "fleet_name":"A merry band of pirates",
+        "fleet_faction":"pirates",
+        "fleet_flagship_variant":"LaL_aurora_pulser",
+        "fleet_flagship_name":"Conqueror of the Stars",
+        "fleet_flagship_recoverable":true,
+          #"fleet_flagship_autofit": true,
+        "fleet_preset_ships":{
+                "LaL_tempest_pulser":1,
+                "revenant_Elite":1,
+        },
+          "fleet_preset_autofit": true,
+        "fleet_scaling_multiplier":0.25,
+        "fleet_min_FP":60,
+        "fleet_composition_faction":"tritachyon",
+        "fleet_composition_quality":1,
+        "fleet_transponder":false,
+        "fleet_behavior":"ROAMING",
+
+        "location_distance":"CORE",
+        "location_themes":[
+                "theme_core_unpopulated",
+        ],
+        "location_themes_blacklist": [
+          "theme_already_occupied","theme_hidden","no_pulsar_blackhole"
+        ],
+        "location_prioritizeUnexplored":false,
+        "location_defaultToAnyEntity":true
+    },
+
+    "tart_competition":{
+
+        "trigger_marketFaction_any":["tritachyon"],
+        "trigger_marketFaction_alliedWith":true,
+        "trigger_market_minSize":5,
+        "trigger_playerRelationship_atLeast":{"tritachyon":0.25,},
+
+        "job_name": "Neutering the Competition",
+        "job_description": "A private convoy set to transport a precious cargo from the Nayatomi Shipyards at ==$location== is getting ready for departure. Unfortunately for its crew, the Nayatomi CEO is quite the penny pincher, therefore they are relying on discretion rather than dissuasion to ensure this cargo gets delivered to their new shipbuilding site. As you have certainly inferred from this revelation, they were not successful in keeping this transfer quiet.\nYou are tasked to intercept that convoy and ensure their ==transport is disabled==. We do not require the cargo to be recovered, if you find it valuable it is yours for the taking.",
+        "job_comm_reply": "Your casual exchange with the convoy captain reveals nothing. They carefully and skillfully avoided leaving any hint about their cargo, client, or destination. Despite their seemingly low rank, this is a professional that should not be underestimated in a fair fight.",
+        "job_intel_success": "As this mysterious client hinted, the cargo was indeed valuable. It is not every day that a genuine blueprint chip gets moved around. This job offer leads to interesting speculation on who exactly will benefit the most from a competitor suddenly unable to fill existing orders.\nIs is another corporation vying for their contracts? Or just looking to sell them those items at a heightened price? Who knows but at the very least they paid their full dues on time.",
+        "job_forFaction":"tritachyon",
+        "job_difficultyDescription": "auto",
+        "job_deadline":90,
+        "job_credit_reward":20000,
+        "job_reputation_reward":10,
+        "job_item_reward": {
+            "weapon_bp amblaster": 1,
+        },
+        "job_type":"assassination",
+        "job_show_captain":false,
+        "job_show_fleet":"presetText",
+        "job_show_distance":"vague",
+
+        "target_rank":"spaceSailor",
+        "target_post":"trader",
+        "target_personality":"cautious",
+        "target_level":5,
+
+        "fleet_name":"A regular convoy",
+        "fleet_faction":"tritachyon",
+        "fleet_flagship_variant":"buffalo_tritachyon_Standard",
+        "fleet_flagship_name":"TTS Beautiful Day",
+        "fleet_flagship_recoverable":true,
+        "fleet_flagship_autofit": true,
+        "fleet_preset_ships":{
+                "wolf_Strike":1,
+                "wolf_Assault":1,
+                "brawler_tritachyon_Standard":1,
+        },
+        "fleet_preset_autofit": true,
+        "fleet_composition_faction":"tritachyon",
+        "fleet_composition_quality":2,
+        "fleet_transponder":true,
+        "fleet_behavior":"ROAMING",
+
+        "location_marketFactions":["tritachyon"],
+        "location_distance":"CORE",
+        "location_themes":[
+                "theme_core_populated",
+        ],
+        "location_themes_blacklist": [
+          "theme_already_occupied","theme_hidden",
+        ],
+        "location_entities":[
+                "station",
+                "planet",
+        ],
+        "location_prioritizeUnexplored":false,
+        "location_defaultToAnyEntity":true
+    },
+
+    "tart_organs":{
+
+        "trigger_marketFaction_any":["pirates", "independent"],
+        "trigger_market_minSize":4,
+        "trigger_min_fleet_size": 60,
+        "trigger_min_days_elapsed":120,
+
+        "job_name": "Organ donor escort",
+        "job_description": "You notice a meandering message with a hefty reward posted by a Tri-Tachyon law firm:\n\"We represent a husband and a father, a scholar and an esteemed senior member of the College for Universal Prosperity think tank. To everyone's dismay, he has fallen ill and is in need of a heart transplant. A man of his stature had several tank grown spares to precisely provide that relief, however for unknown reasons those organs revealed themselves defective and unusable.\nBut all is not lost for our client as a compatible healthy donor has been found. While it would be unconscionable to harm one person to save the life of another, it happens that the donor currently serves as a crewmember on the ==$shipName==, a patrol flagship currently operating in the ==$system system== within the ==$faction== navy.\nThis occupation is obviously a hazardous one, therefore we have been mandated by our client to hire a modest protection team to, should the worse happen, recover the donor's body, stabilize its condition and send it back to us through appropriate means. While any loss of life is a tragedy, this person could still spare another family terrible grief, provided their remains are delivered before the worse happens.\nOur client is ready to show themselves considerably generous toward the professional outfit that would ensure their timely recovery.\"\nAppended to the message is a lengthy contract to sign as well as medical documents detailing the genetic signature of the donor body you will need to recover.",
+        "job_comm_reply": "Nothing out of the ordinary happens during your exchange with the fleet's captain. If anything, $heSheThey have been assigned to pretty uneventful patrols for the past few months.",
+        "job_intel_success": "Your team inspects the wreckage and start sorting the bodies. It is a gruesome operation in 0G as the scan requires a clean tissue sample. Fortunately, you get confirmation the body has been found in a secured room attending the CIC after only a few dozen of corpses had to be processed. No one ask why this mysterious donor seems to have a fresh gunshot wound.\nOut of curiosity you zoom on the name on the uniform. \"Lt Marcus H. Worthyson\". Your intelligence officer mutters some profanity.\nAfter further inquiries, you learn that they are the estranged youngest son of a wealthy and influencial grey eminence from the League's political spheres. The cuthroat dealings of his father had lead Marcus to publicly severe all relations with him and join the Navy to atone for his passive connivance. It also happens that Mr. Worthyson senior is a very old man with rumored health troubles...",
+        "job_difficultyDescription": "auto",
+        "job_deadline":120,
+        "job_credit_reward":100000,
+        "job_type":"assassination",
+        "job_show_captain":false,
+        "job_show_fleet":"vanilla",
+        "job_show_distance":"exact",
+
+        "target_rank":"spaceCaptain",
+        "target_post":"patrolCommander",
+        "target_personality":"steady",
+        "target_level":4,
+        "target_skill_preference":"NO_ENERGY_NO_BALLISTIC_YES_MISSILE_YES_DEFENSE",
+
+        "fleet_name":"Anti-piracy Patrol",
+        "fleet_faction":"persean",
+        "fleet_flagship_variant":"LaL_gryphon_frontline",
+        "fleet_flagship_name":"PLS Honor and Grit",
+        "fleet_flagship_recoverable":true,
+        "fleet_preset_ships":{
+          "eagle_Assault":3,
+        },
+        "fleet_preset_autofit": true,
+        "fleet_min_FP":75,
+        "fleet_composition_faction":"persean",
+        "fleet_composition_quality":1,
+        "fleet_transponder":true,
+        "fleet_behavior":"ROAMING",
+
+        "location_marketFactions":["persean"],
+        "location_distance":"CORE",
+        "location_themes":[
+          "theme_core_populated",
+        ],
+        "location_themes_blacklist": [
+          "theme_hidden",
+        ],
+        "location_entities":[
+                "station",
+                "planet",
+        ],
+        "location_prioritizeUnexplored":false,
+        "location_defaultToAnyEntity":true
+    },
+
+    "tart_searchlight":{
+        "trigger_marketFaction_any":["independent"],
+        "trigger_marketFaction_alliedWith":true,
+        "trigger_min_fleet_size": 50,
+        "trigger_min_days_elapsed":30,
+
+        "job_name": "Kill the searchlight",
+        "job_description": "This is an abridged message from a significant group of self-proclaimed freedom fighters trying to topple the government of $location. From what you can gather they are on the backfoot since the people in power hired a mercenary fleet to provide tactical bombardment and orbital intelligence to the loyal troops.\nEliminating that force could give them the means to regroup and retake the initiative. While the reward is somewhat meager for the task at hand, the rebels can also provide a significant amount of valuable commodities taken from captured facilities and pillaged mansions.",
+        "job_comm_reply": "The enemy commander stares at you with utter disgust.\n\"Those scums found another little helper. How many slaves did they promise you for taking us out? I will take you out and make this hell-hole of a sector a better place for it.\"\nThey abruptly cut the communication and you turn a searing eye at your Intelligence Officer. Helping slavers is the kind of detail you should have been made aware of before taking the job, regardless of your ultimate decision, but they look puzzled at this revelation. There is no telling if indeed your client is funding their rebellion through human trafficking, or if it was a particularly well improvized attempt at manipulating you.",
+        "job_intel_success": "You receive a communication from the ground even before the enemy's hulls finished to explode. You can hear a celebration going on in the background as an officer indicates landing coordinates to pick up your payment. Your shuttles come back from the rebel base in a sacked city with quite a bit more loot than you expected.",
+        "job_intel_expired": "Your Intelligence officer mentions having seen a Hypernet article that may interest you. The government of $location had finally quelled the rebellion after several cycles of strife. The article mentions the use of orbital kinetic-kill missiles against the traitor's main base after a dirty nuclear bomb detonated inside a major city.",
+        "job_difficultyDescription": "auto",
+        "job_deadline":120,
+        "job_credit_reward":32000,
+        "job_item_reward": {
+          "luxury_goods": 266,
+          "lobster": 23,
+          "drugs": 89,
+          "organs": 65,
+        },
+        "job_type":"neutralisation",
+        "job_show_fleet":"vanilla",
+        "job_show_distance":"exact",
+
+        "target_rank":"spaceCaptain",
+        "target_post":"patrolCommander",
+        "target_personality":"steady",
+        "target_level":3,
+        "target_skill_preference": "YES_ENERGY_NO_BALLISTIC_NO_MISSILE_YES_DEFENSE",
+
+        "fleet_name":"Orbital Support Fleet",
+        "fleet_faction":"independent",
+        "fleet_flagship_variant":"LaL_champion_brawler",
+        "fleet_flagship_name":"ISS Wizard",
+        "fleet_flagship_recoverable":true,
+        "fleet_preset_ships":{
+                "lasher_Assault":1,
+                "lasher_CS":2,
+                "lasher_PD":1,
+                "lasher_Standard":2,
+                "lasher_Strike":2,
+                "lasher_Starting":1,
+                "buffalo_Standard":1,
+                "phaeton_Standard":1,
+        },
+        "fleet_preset_autofit": true,
+        "fleet_min_FP":75,
+        "fleet_composition_faction":"mercenary",
+        "fleet_composition_quality":0.66,
+        "fleet_transponder":true,
+        "fleet_behavior":"GUARDED",
+
+        #"location_entitiesID":[],
+        "location_marketFactions":["independent"],
+        "location_distance":"CORE",
+        "location_themes":[
+                "theme_core_populated",
+        ],
+        "location_themes_blacklist": [
+          "theme_already_occupied","theme_hidden",
+        ],
+        "location_entities":[
+                "planet",
+        ],
+        #"location_prioritizeUnexplored":false,
+        #"location_defaultToAnyEntity":true
+    },
+
+    "tart_cleanup":{
+        "trigger_marketFaction_any":["independent"],
+        "trigger_min_fleet_size": 50,
+
+        "job_name": "Taking care of business",
+        "job_description": "This message has been posted by a small independent polity in the $system system.\n\"We require the urgent intervention of a mercenary fleet to deal with an encroaching pirate fleet. The exclusive deal we signed with another mercenary group backfired: Instead of eliminating the pirate fleet they only chase them away and patrol our immediate volume of space while collecting a hefty check every month. On the other hand, firing them before the pirate menace is eliminated would incur massive breach of contract fees. We cannot risk to cross the merc guild and find ourselves defenseless once new pirates come to fill the void.\nHowever they are gone for a few weeks for maintenance and we would like to take that opportunity to get rid of this pirate fleet swiftly, then legally terminate their commission.\"",
+        "job_comm_reply": "As soon as the communication establishes, you notice something is wrong. You have seen your share of pirate bridges during your career, but this one looks slightly off, like a holo-vid set. While exchanging the usual threats and banter, you discreetly signal your Intelligence officer to run a facial scan on that captain. As the communication closes, they come back to you with an interesting finding: this person used to be a mercenary, and a known associate of the commander hired by your client. Protection rackets are relatively common, but this one is both the most elegant and the most needlessly convoluted you have seen in a while.",
+        "job_intel_success": "You receive a warm message from your client thanking you for a timely victory, and you take this opportunity to suggest contacting the merc guild. They will love to hear about the machinations of one of their members. Those guilds get built on mutual trust, and there is no faster way to get hunted by your former colleagues than to betray that institutional trust.",
+        "job_forFaction": "independent",
+        "job_difficultyDescription": "auto",
+        "job_deadline":30,
+        "job_credit_reward":55000,
+        "job_type":"obliteration",
+        "job_show_distance":"exact",
+
+        "target_rank":"spaceCaptain",
+        "target_post":"warlord",
+        "target_personality":"steady",
+        "target_level":3,
+        "target_skill_preference": "NO_ENERGY_NO_BALLISTIC_YES_MISSILE_YES_DEFENSE",
+
+        "fleet_name":"Stubborn Pirate Fleet",
+        "fleet_faction":"pirates",
+        "fleet_flagship_variant":"LaL_dominator_burst",
+        "fleet_flagship_name":"Blood Cravings",
+        "fleet_flagship_recoverable":false,
+        "fleet_preset_ships":{
+                "condor_Attack":2,
+                "condor_Strike":2,
+                "condor_Support":2,
+        },
+        "fleet_preset_autofit":true,
+        "fleet_min_FP":70,
+        "fleet_composition_faction":"pirates",
+        "fleet_composition_quality":1,
+        "fleet_transponder":false,
+        "fleet_behavior":"AGGRESSIVE",
+
+        #"location_entitiesID":[],
+        "location_marketFactions":["pirates"],
+        "location_distance":"CORE",
+        "location_themes":[
+                "theme_core_populated",
+        ],
+        "location_themes_blacklist": [
+          "theme_already_occupied","theme_hidden",
+        ],
+        "location_entities":[
+                "planet",
+        ],
+        #"location_prioritizeUnexplored":false,
+        #"location_defaultToAnyEntity":true
+    },
+
+    "tart_attention":{
+        "trigger_marketFaction_any":["persean"],
+        "trigger_marketFaction_alliedWith":false,
+        "trigger_min_fleet_size": 80,
+        "trigger_min_days_elapsed":360,
+        "trigger_playerRelationship_atLeast":{
+          "persean": 0.2,
+        },
+
+        "job_name": "Unwanted attention",
+        "job_description": "This item on the board required some higher than usual credentials to access, but its content is quite enticing. An anonymized audio recording plays:\n\"$name is a disgusting pig, and I want $himHerThem slaughtered! ^$heIsSheIsTheyAre a disgrace to the ==League== uniform that uses $hisHerTheir rank, $hisHerTheir money, $hisHerTheir influence and even $hisHerTheir subordinates to groom young cadets and throw them to the wolves. The Admiralty keeps muzzling reports of these abuses, the military courts gag any complaints, the press ignores all witnesses, the high society turns a blind eye to the rapists in its midst, but it will not matter anymore. My kids took their own lives, and there is only one possible outcome for this infamy. ==$reward credits== for $lastName's head, it is as simple as that.\"",
+        "job_comm_reply": "A most elegant officer shows up on the screen, $heIsSheIsTheyAre clearly are posing for the communication but it is so natural you suspect it is not even conscious. You can sense $heIsSheIsTheyAre a charismatic leader and must have an irresistible pull over impressionable recruits.\nIt only takes a few bland exchanges to convince you $heIsSheIsTheyAre a cunning and dangerous individual that can wield a significant fraction of the Persean League military power. You take a minute to weigh the value of the bounty against getting on the bad side of the League.",
+        "job_intel_success": "In the days following the death of Admiral $name you see numerous articles posted on the Hypernet about the tragedy, calling for various forms of retaliation against any and all suspected enemies of the League.\nCuriously though, there was barely any mention of the officer in command. Almost as if the powerful allies of the Admiral were now trying to conceal $hisHerTheir demise, and avoid any scrutiny about the motives for the attack.",
+        "job_forFaction": "persean",
+        "job_difficultyDescription": "auto",
+        "job_deadline":180,
+        "job_credit_reward":200000,
+        "job_type":"assassination",
+        "job_show_distance":"exact",
+
+        "target_rank":"spaceAdmiral",
+        "target_post":"aristocrat",
+        "target_personality":"aggressive",
+        "target_level":5,
+        "target_skill_preference": "NO_ENERGY_YES_BALLISTIC_NO_MISSILE_YES_DEFENSE",        
+
+        "fleet_name":"Persean League Force",
+        "fleet_faction":"persean",
+        "fleet_flagship_variant":"LaL_conquest_breacher",
+        "fleet_flagship_name":"PLS Loyal Servant",
+        "fleet_flagship_recoverable":true,
+        "fleet_preset_ships":{
+          "conquest_Standard":2,
+        },
+        "fleet_preset_autofit": true,
+        "fleet_min_FP":125,
+        "fleet_composition_faction":"persean",
+        "fleet_composition_quality":1,
+        "fleet_transponder":true,
+        "fleet_behavior":"ROAMING",
+
+        "location_distance":"CORE",
+        "location_themes":[
+          "theme_core_unpopulated",
+        ],
+        "location_themes_blacklist": [
+          "theme_hidden",
+        ],
+        "location_entities":[
+          "planet",
+        ],
+    },
+    
+    "tart_head":{
+        "trigger_marketFaction_any":["independent"],
+        "trigger_min_fleet_size": 90,
+        "trigger_min_days_elapsed":360,
+
+        "job_name": "Cutting off the head",
+        "job_description": "For once, this looks like a straight-up no-nonsense bounty you can take on with a light heart:\n\"Pirates have always been a nuisance in our system, however things have gotten worse after the Tri-Tachyon Corp. cleaned up their backyard. More specifically, a pirate warlord calling $himslefHerselfThemselves $name has decided to raid our planet with increasing frequency and is rapidly growing $hisHerTheir fleet. We fear $heSheThey will soon outpace our capacity to afford a bounty on $hisHerTheir head, thus $heSheThey must be eliminated now or never.\"",
+        "job_comm_reply": "The pirate warlord will not talk to strangers due to being extremely busy organizing $hisHerTheir force, allegedly. However, the communication officer notes that your fleet would be a fine addition to $hisHerTheir armada and asks you if you want to join in. They proceed to outline an honor-based contract with surprisingly generous terms: a guarantee to keep your command, a precise share of the pillage, incapacitation insurance, and even equal parts in a significant retirement fund. Of course, you will have to murder and rob the innocent, but still...",
+        "job_intel_success": "With their leader gone and a war for $hisHerTheir throne likely brewing, $name's other fleets should rapidly scatter. Pirates are a vermin already hard enough to contain, they should never be left to organize.",
+        "job_forFaction": "independent",
+        "job_difficultyDescription": "auto",
+        "job_deadline":90,
+        "job_credit_reward":150000,
+        "job_reward_scaling":0.5,
+        "job_type":"neutralisation",
+
+        "target_rank":"spaceAdmiral",
+        "target_post":"warlord",
+        "target_personality":"aggressive",
+        "target_level":7,
+        "target_elite_skills":4,
+        "target_skill_preference": "NO_ENERGY_YES_BALLISTIC_YES_MISSILE_YES_DEFENSE",
+
+        "fleet_name":"Growing Armada",
+        "fleet_faction":"pirates",
+        "fleet_flagship_variant":"LaL_atlas2_assault",
+        "fleet_flagship_name":"Tortuga",
+        "fleet_flagship_recoverable":true,
+        "fleet_preset_ships":{
+          "LaL_atlas2_assault":3,
+        },
+        "fleet_preset_autofit": false,
+        "fleet_scaling_multiplier":1,
+        "fleet_min_FP":130,
+        "fleet_composition_faction":"pirates",
+        "fleet_composition_quality":0.75,
+        "fleet_transponder":false,
+        "fleet_behavior":"GUARDED",
+
+        "location_marketFactions":["pirates"],
+        "location_distance":"CORE",
+        "location_themes":[
+          "theme_core_unpopulated", "procgen_no_theme_pulsar_blackhole"
+        ],
+        "location_themes_blacklist": [
+          "theme_hidden",
+        ],
+        "location_entities":[
+                "planet",
+                "station",
+        ],
+    },
+
+    "tart_takeover":{
+
+      "trigger_market_id": ["independent", "player"],
+      "trigger_market_minSize": 4,
+      "trigger_min_fleet_size": 90,
+
+      "job_name": "Payback for back-stabbing",
+      "job_description": "The message comes in the form of a video recording. On-screen appears a visibly flustered and angry woman. She seems to have started the recording on an impulse and needs to take a second to collect her thoughs:\n\"I just had a very disappointing call with the head of our salvager cooperative. Some...\"\nShe stops for a second, trying to avoid cursing.\n\"Another group of ship-breakers decided to throw every single piece of morals and honor they had through the airlock and ==attacked one of my prospector fleets.== They took their maps then pillaged the previously ==untapped ruins== my crew had found. I'm certain they did it because that system is away from the beaten paths, but it contained a working comm relay. I know my crew left a claim buoy there, yet my fleet is missing, and those thieves say they got to the system first. Our guild master says they won't do anything about it without more tangible proof, but they may also be getting some kickback.\"\nShe makes a quick calculation.\n\"I can only offer ==$reward credits== for the elimination of the fleet that killed my men and women. I know it's not that much for the job, however they are currently loaded with loot. What do they say? ==You can't steal from a thief==, right?\"",
+      "job_comm_reply": "As much as $heSheThey seems miffed by your fleet's presence in the system, $heSheThey does mention at some point $hisHerTheir claim on it, the scavenger captain maintains a professional attitude throughout your exchange. When you inquire about the missing prospectors $heSheThey does not react in any suspicious way, although your tactical officer soon notices changes in $hisHerTheir fleet's formation with heavier ships moving to the front.\n\nYou are about to conclude there is indeed something fishy going on when your ship's sensors catch a glimpse of a previously hidden signature at the core of the fleet: The missing prospector ship is there, floating in formation, completely unscathed and using a different transponder.",
+      "job_intel_success": "After the battle your crew is able to recover goods, but also several weapons and even a ship blueprint from the enemy's cargo holds.\nYour client seems delighted by your report. She informs you that her main scavenger fleet has already resumed their route to the system to restore their claim and mentions her intent to use some of the profits from the salvage to compensate the families of the lost prospector crew. Given how murky the whole situation is, you decide to avoid mentioning their likely defection.",
+      "job_forFaction": "independent",
+      "job_deadline": 180,
+      "job_credit_reward": 35000,
+      "job_reputation_reward":10,
+      "job_item_reward": {
+        "cyclone":1,
+        "tachyonlance":1,
+        "magazines":1,
+        "ship_bp wolf":1,
+        "luxury_goods":97,
+      },
+      "job_type":"neutralization",
+      "job_show_fleet": "vanilla",
+      "job_show_distance": "vague",
+      "job_difficultyDescription": "auto",
+
+      "target_rank": "spaceCommander",
+      "target_post": "trader",
+      "target_personality": "aggressive",
+      "target_level": 4,
+      "target_skill_preference": "YES_ENERGY_NO_BALLISTIC_NO_MISSILE_YES_DEFENSE",
+
+      "fleet_name":"Shifty salvager fleet",
+      "fleet_faction": "scavengers",
+      "fleet_flagship_variant":"LaL_apogee_shipbreaker",
+      "fleet_flagship_name":"ISS Finder Keeper",
+      "fleet_flagship_recoverable": true,
+        #"fleet_flagship_autofit": true,
+      "fleet_preset_ships": {
+        "LaL_venture_strike":4,
+      },
+        #"fleet_preset_autofit": true,
+      "fleet_min_FP": 120,
+      "fleet_composition_quality": 0.5,
+      "fleet_transponder": false,
+      "fleet_behavior": "ROAMING",
+
+      "location_distance": "CLOSE",
+      "location_themes": [
+        "theme_ruins_main", "theme_derelict_survey_ship",
+      ],
+      "location_themes_blacklist": ["theme_hidden", "no_pulsar_blackhole"],
+      "location_entities": [
+        "wreck",
+        "debris",
+        "comm_relay",
+      ],
+      "location_prioritizeUnexplored": true,
+      "location_defaultToAnyEntity": false,
+    },
+
+    "tart_diversion":{
+      
+      "trigger_marketFaction_any": ["persean"],
+      "trigger_min_fleet_size": 120,
+      
+      "job_name": "Looking for a diversion",
+      "job_description": "This message required quite a few credentials to open.\n\"We need a commotion in the ==$system system== to distract the local patrols and picket fleets. We selected a suitable target that should elicit a suitable reaction. While we do not require their death specifically, you are required to hold that fleet busy for a while.\"\nFrom the limited appendices, you can only speculate about the origin of the post. A few things are clear: distracting the patrols means something, or someone, needs to be smuggled in or out of a major market without any risk of an impromptu inspection. However, to create such a commotion, you would have to attack a much bigger fleet than the target. Unless there is some VIP on it.\nYou ask your intelligence officer to update your databases for $system, no need to step on a mine if you can avoid it.",
+      "job_comm_reply": "As the screen comes online, it becomes evident why your client was confident attacking this fleet would cause a disproportionate reaction from the local fleets. Commander $name, heir to the $lastName family, only $sonDaughterChild of Admiral $lastName senior, in command of the Hegemony defense forces for this system. You exchange a few banalities before cutting the communication, then decide your next move.",
+      "job_intel_success": "The payment is processed before you have time to send word to your client, confirming your suspicion that another fleet was conducting a covert operation in the system. You do not get a reply to your report, which does not surprise you given the tight operational security surrounding this whole operation.",
+      "job_deadline": 120,
+      "job_credit_reward": 125000,
+      "job_type":"neutralization",
+      "job_show_type": true,
+      "job_show_captain": false,
+      "job_show_fleet": "vanilla",
+      "job_show_distance": "exact",
+      "job_difficultyDescription": "auto",
+
+      "target_rank": "spaceCommander",
+      "target_post": "patrolCommander",
+      "target_personality": "steady",
+      "target_level": 5,
+      "target_skill_preference": "NO_ENERGY_YES_BALLISTIC_YES_MISSILE_NO_DEFENSE",
+
+      "fleet_name":"Heavy Patrol",
+      "fleet_faction": "hegemony",
+      "fleet_flagship_variant":"LaL_legion_xiv_hammer",
+      "fleet_flagship_name":"HSS Retribution",
+      "fleet_flagship_recoverable": true,
+      "fleet_flagship_autofit": false,
+      "fleet_preset_ships": {"LaL_legion_saturation":2,},
+      "fleet_preset_autofit": false,
+      "fleet_min_FP": 140,
+      "fleet_composition_faction": "hegemony",
+      "fleet_composition_quality": 1,
+      "fleet_transponder": true,
+      "fleet_behavior": "ROAMING",
+
+      "location_marketFactions": [
+        "hegemony",           
+      ],
+
+    },
+
+    "tart_rogue":{
+      "trigger_marketFaction_any": ["sindrian_diktat",],
+      "trigger_min_fleet_size": 120,
+
+      "job_name": "Eliminate rogue mercs",
+      "job_description": "A local transport company on the rise posted this message.\n\"We are under attack by a ==rogue mercenary fleet== targeting our freight. They used to be under our employment, but it now seems this was just a ruse to get access to our convoys' schedule and cargo manifests. Using different travel routes does not help much since they know exactly when and where our deliveries are due. They need to be stopped sooner rather than later, thus we are offering ==$reward credits== for their elimination.\"",
+      "job_comm_reply": "The captain answering your hail immediately catches your attention. They look professional, ex-military probably, and their bridge is immaculate. They must run a tight ship, and should not be underestimated.\n\n\"I gather you took that job to stop us. Please, allow me to fill you in on a few key details missing from that bounty post. Mister Kovach was more than happy with our normal rates, as long as we just scared pirates away from his fleets. The day we had to fight off a serious opponent though, then our damage fees were suddenly unreasonable. Before we could get paid in full, we had another costly battle escorting those freighters. You can imagine the rest: Kovach refused to fulfill his obligations, so now we are taking our due the only way left to us. Funnily enough, the bounty reward is not that far off from the initial bill, but we are way past that now.\"\n\nJoining $hehisHerTheir fingers $heSheThey looks at you in the eye, trying to reach for a common understanding.\n\n\"Look, we aren't monsters, we tried to avoid any unnecessary deaths and most escorts took our surrender offers. Heck, given the pirate psychos we chased away most of these crews are probably alive thanks to us. But at the same time we can't afford to get fleeced, surely you can understand how tight money can be when running a fleet. So what do you say we simply move along and out of each other's hair?\"",
+      "job_intel_success": "At first, the owner of the freight company tried to weasel his way out of paying the full amount owed. After a quick bluff about how his cargo schedule you pretended to have secured from the wreck could find their way to the nearest pirate haven, he came to his senses.",
+      "job_intel_expired": "During your daily review of the comm traffic, you are presented with a raving message from H. Kovach, the owner of the freight company. He accuses you of deliberately endangering his crews and threatening legal actions for aiding and abating pirate activity against his interests.",
+      "job_forFaction": "sindrian_diktat",
+      "job_deadline": 90,
+      "job_credit_reward": 150000,
+      "job_type":"neutralization",
+      "job_show_fleet": "vanilla",
+      "job_show_distance": "vague",
+      "job_difficultyDescription": "auto",
+
+      "target_rank": "spaceCaptain",
+      "target_post": "fleetCommander",
+      "target_personality": "aggressive",
+      "target_level": 6,
+      "target_skill_preference": "YES_ENERGY_YES_BALLISTIC_NO_MISSILE_NO_DEFENSE",
+
+      "fleet_name":"Rogue mercenary fleet",
+      "fleet_faction": "mercenary",
+      "fleet_flagship_variant":"LaL_eradicator_strike",
+      "fleet_flagship_name":"ISS Knuckle-Duster",
+      "fleet_flagship_recoverable": true,
+      "fleet_preset_ships": {
+        "LaL_eradicator_support":2,
+        "LaL_manticore_standoff":2,
+        "LaL_manticore_shield":2,
+        "LaL_vanguard_reliable":5,
+        "colossus_Standard":1,
+        "phaeton_Standard":1,
+        },
+      "fleet_preset_autofit": false,
+      "fleet_min_FP": 150,
+      "fleet_composition_faction": "mercenary",
+      "fleet_composition_quality": 0.5,
+      "fleet_transponder": false,
+      "fleet_behavior": "GUARDED",
+
+      "location_distance": "CORE",
+      "location_themes": [
+        "theme_core_unpopulated",
+        "theme_interesting_minor",	
+        "theme_ruins_secondary",
+        "theme_derelict_probes",
+      ],
+      "location_themes_blacklist": [
+        "theme_hidden",
+        "no_pulsar_blackhole"],
+      "location_prioritizeUnexplored": true,
+      "location_defaultToAnyEntity": false,
+    },
+
+  "avan_devilish_astronauts": {
+    
+    "required_mods_id": ["diableavionics"],
+
+    "trigger_marketFaction_any": [
+      "diableavionics",
+      "pirates"
+    ],
+    "trigger_marketFaction_alliedWith": false,
+    "trigger_market_minSize": 3,
+    "trigger_player_minLevel": 6,
+    "trigger_min_days_elapsed": 60,
+    "trigger_weight_mult": 0.5,
+    "trigger_playerRelationship_atLeast": {
+      "diableavionics": 0.1
+    },
+		#BOUNTY DESCRIPTION
+    "job_name": "Pirate Warband Elimination",
+    "job_description": "Your target is Miss Tolstaya. She is a leader of the group calling itself Devilish Astronauts. According to our sources she took that position by defeating previous leader in combat, but we could not confirm that information. \nSince then, under her leadership, this group has obtained a few vessels made by the Diable Avionics. That includes a Versant, used by the Tolstaya as her personal flagship, as well as one Vapor and two Sleet frigates. They have also managed to obtain limited pirate production run versions of the Stratus and the Rime. \nThe group then raided several small Diable Avionics and Pirate convoys, causing large damage to stocks of certain companies and making a fool of few particular military officers. \nOur backers are not happy, so you will be paid for elimination of both Miss Tolstaya and the entirety of her warband.",
+    "job_comm_reply": "Your target, Tolstaya, is looking at you. Her demeanor fits the bloodthirsty pirate you expected to see. \n'I assume someone posted a bounty on us. Someone like you wouldn't bother otherwise. So, it is about time to look into the eyes of death once again.'",
+    "job_deadline": 90,
+    "job_credit_reward": 90000,
+    "job_reputation_reward": 5,
+    "job_type": "obliteration",
+    "job_show_type": true,
+    "job_show_captain": true,
+    "job_show_fleet": "preset",
+    "job_show_distance": "vanilla",
+    "job_show_arrow": false,
+    "job_difficultyDescription": "auto",
+    "job_pick_option": "Accept the job",
+		#TARGET COMMANDER (OPTIONAL)
+    "target_first_name": "Miss",
+    "target_last_name": "Tolstaya",
+    "target_portrait": "vanilla_pirate14",
+    "target_gender": "FEMALE",
+    "target_rank": "terrorist",
+    "target_post": "warlord",
+    "target_personality": "aggressive",
+    "target_isAI": false,
+    "target_level": 5,
+    "target_elite_skills": 2,
+    "target_skill_preference": "GENERIC",
+		#TARGET FLEET
+		#2x diableavionics_sleet_assault
+		#1x diableavionics_sleet_standard
+		#1x diableavionics_versant_assault - flagship
+		#1x diableavionics_vapor_attack
+		#1x diableavionics_vapor_standard
+		#2x diableavionics_stratus_p_combat
+		#1x diableavionics_rime_p_support
+    "fleet_name": "Devilish Astronauts",
+    "fleet_faction": "pirates",
+    "fleet_flagship_variant": "diableavionics_versant_assault",
+    "fleet_flagship_name": "Hyperspace Flower",
+    "fleet_flagship_recoverable": true,
+    "fleet_preset_ships": {
+      "diableavionics_sleet_assault": 2,
+			#"diableavionics_sleet_standard":1, disabled for the other frigates
+			#"diableavionics_vapor_attack":1, disabled for the other frigates
+      "cerberus_d_pirates_Shielded": 2,
+      "diableavionics_vapor_standard": 1,
+      "diableavionics_stratus_p_combat": 1, #was 2
+      "diableavionics_rime_p_support": 1,
+      "mule_d_pirates_Standard": 1
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_FP": -1,
+    "fleet_composition_quality": 2,
+    "fleet_transponder": false,
+    "fleet_behavior": "AGGRESSIVE",
+		#LOCATION
+    "location_themes": [
+      "theme_derelict",
+      "theme_derelict_survey_ship",
+      "theme_derelict_probes",
+      "theme_interesting_minor",
+      "procgen_no_theme"
+    ],
+    "location_themes_blacklist": [
+      "theme_already_occupied","theme_already_colonized","theme_hidden","no_pulsar_blackhole"
+    ],
+    "location_entities": [
+      "gate",
+      "station",
+      "wreck",
+      "debris",
+      "gas_giant",
+      "planet",
+      "jump_point"
+    ],
+    "location_prioritizeUnexplored": true,
+    "location_defaultToAnyEntity": true
+  },
+
+  "klaw_rogue_tt_fleet": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_marketFaction_alliedWith": false,
+    "trigger_market_minSize": 3,
+    "trigger_player_minLevel": 3,
+    "trigger_min_days_elapsed": 20,
+    "trigger_weight_mult": 1,
+    "trigger_playerRelationship_atLeast": {
+      "tritachyon": -0.25
+    },
+
+		#BOUNTY DESCRIPTION
+
+    "job_name": "Privateering Opportunity",
+    "job_description": "A corporate holo-record flickers into your TriPad and starts playing. A blue suit with a very big smile, sitting in a nice, all-white office explains the details of the mission while maintaining eye contact.\nThe ==Tri-Tachyon Corporation== is always on the look for bright, entrepreneuring captains. If you command a small mercenary fleet, we wish to offer you a legally binding elimination contract. Cooperate with the Corporation interests, get handsomely rewarded, and be granted  profitable opportunities within Tri-Tachyon space in the future!.\nThere's a former task force fleet that went rogue and ran away with Tri-Tachyon goods, failing to uphold their contract terms. Their captain was a low rank military officer, ==$name==. Your job is to find and decimate the entirety of the fleet by any means, preferably starship weapon fire. We are not interested in prisoners or salvage and will not grant extra credits for any of them. It is mandatory that captain $firstname is eliminated.\nCaptain, although they are nothing but pirates at this point, these ships are advanced combat vessels piloted by professional combat pilots. Captain $name commands a Shrike-class destroyer as $hisHerTheir flagship. Caution is advised before engaging them in combat.\nLastly, if you happen to find any of the stolen items, bring them to any Tri-Tachyon Station Commander and you will be adequately rewarded for them. The mission terms don't include bringing the items back, since it is not assured that Hoxe still has them.\n$name's fleet has been located near $location in the $system system.",
+    "job_comm_reply": "As the terminal shows the feed of the enemy flagship's bridge, you can see $hisHerTheir crew quickly getting systems ready and taking to their seats in the commands. You can tell they are military: the way they move around, the orderly equipment...\nYou barely grasp sight of some kind of high security tech crate in the background, when captain $name sits on front of the feed and blocks view of it.\n'So the suits found us again, and sent yet another genius entrepreneur as their latest lap dog to kill us. How curious -laughs and chuckles can be heard near $lastName-. This is gonna be fun. Do you think the Corp gives a damn about you? You are just another expendable, delusional fool if you thought this would be an easy job.\nEngage combat protocols. Prepare to die, scum.'",
+    "job_deadline": 90,
+    "job_credit_reward": 95000,
+    "job_item_reward": {
+      "beta_core": 1
+    },
+    "job_difficultyDescription": "auto",
+    "job_reputation_reward": 15,
+    "job_type": "obliteration",
+    "job_show_type": true,
+    "job_show_captain": true,
+    "job_show_fleet": "presetText",
+    "job_show_distance": "vanillaDistance",
+    "job_pick_option": "Accept the Tri-Tachyon contract",
+
+		#TARGET COMMANDER (OPTIONAL)
+    "target_first_name": "Vadius",
+    "target_last_name": "Hoxe",
+    "target_portrait": "graphics/portraits/portrait35.png",
+    "target_gender": "MALE",
+    "target_rank": "agent",
+    "target_post": "mercenary",
+    "target_personality": "aggressive",
+    "target_isAI": false,
+    "target_level": 6,
+    "target_elite_skills": 2,
+    "target_skill_preference": "GENERIC",
+
+		#TARGET FLEET
+
+    "fleet_name": "Rogue TT Task Force",
+    "fleet_faction": "pirates",
+    "fleet_flagship_variant": "medusa_Attack",
+    "fleet_flagship_name": "Ghost",
+    "fleet_flagship_recoverable": true,
+    "fleet_preset_ships": {
+      "wolf_Assault": 2,
+      "wolf_CS": 1,
+      "brawler_tritachyon_Standard": 1,
+      "centurion_Starting": 1,
+      "mule_Fighter_Support": 1
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_FP": -1,
+    "fleet_composition_quality": 2,
+    "fleet_transponder": false,
+    "fleet_behavior": "AGGRESSIVE",
+
+		#LOCATION
+
+    "location_themes": [
+      "theme_derelict_survey_ship",
+      "theme_derelict_probes",
+      "theme_remnant_no_fleets",
+      "theme_ruins_secondary",
+      "theme_remnant_secondary",
+      "theme_remnant_destroyed"
+    ],
+    "location_themes_blacklist": [
+      "theme_already_colonized",
+      "theme_remnant_resurgent",
+      "theme_hidden",
+			"no_pulsar_blackhole",
+    ],
+    "location_entities": [
+      "gate",
+      "wreck",
+      "debris",
+      "planet",
+      "jump_point"
+    ],
+    "location_prioritizeUnexplored": true,
+    "location_defaultToAnyEntity": true
+  },
+
+  "alexatheos_cruor_penal": {
+	
+		#TRIGGERS (ALL OPTIONAL)
+		
+    "trigger_market_id": [
+      "cruor"
+    ],
+    "trigger_marketFaction_any": [
+      "sindrian_diktat"
+    ],
+    "trigger_marketFaction_alliedWith": false,
+    "trigger_player_minLevel": 8,
+    "trigger_min_days_elapsed": 90,
+    "trigger_playerRelationship_atLeast": {
+      "sindrian_diktat": 0.25
+    },
+    "trigger_playerRelationship_atMost": {
+      "pirates": -0.5
+    },
+		
+		#BOUNTY DESCRIPTION
+		
+    "job_name": "Hunt down a pack of convicts",
+    "job_description": "Always on the lookout for solutions to foreign threats, a particularly ingenious Diktat officer came up with the idea of forcing murderers, thieves, and other death row prisoners to \"atone for their sins\". He would send them out on dangerous, frequently suicidal missions in expendable ships while giving orders from his elite battlecruiser. Eventually, this band of convicts was forged into a half-decent band of scumbags, more than capable of surviving the trivial patrols assigned to them./nOn their way back from a routine sortie, the penal unit conspired to kill the officer and seize control of the fleet. After sending the bodies of the Conquest crewmembers on a course towards Salus, they were sighted at Umbra preparing to leave the system, and are likely far from here by now./nAnyone who thinks that they can escape the claws of the Lion are sorely mistaken. Make them pay for their sins.",
+    "job_comm_reply": "The comms screen opens up to reveal $name, disheveled and weary. $firstName eyes your attire and chuckles. \n\"You're not the Diktat officer I was expecting. No matter. I've lead this fleet through battles that would give the most experienced Diktat captain nightmares, so no spacer's going to tell this $sonOrDaughter of freedom to turn themselves in. Especially not after all that we've suffered at the hands of that miserable coward.\"",
+    "job_intel_success": "The rogue penal unit has been obliterated. The Diktat thanks you for your service.",
+    "job_intel_expired": "The window of opportunity has closed, and the escaped penal unit has slipped away from the eyes of the Lion. A fleet matching their description has hit a trade fleet on the outskirts of the core. It will likely be very long until they can be pinned down again, if at all.",
+    "job_forFaction": "sindrian_diktat",
+    "job_deadline": 90,
+    "job_credit_reward": 170000,
+    "job_reward_scaling": 1,
+    "job_reputation_reward": 10,
+    "job_type": "obliteration",
+    "job_show_type": true,
+    "job_show_captain": false,
+    "job_show_fleet": "flagshipText",
+    "job_show_distance": "vague",
+    "job_show_arrow": false,
+    "job_difficultyDescription": "auto",
+    "job_pick_option": "Accept the job",
+
+		#TARGET COMMANDER (OPTIONAL)
+		
+    "target_rank": "terrorist",
+    "target_post": "criminal",
+    "target_personality": "aggressive",
+    "target_aiCoreId": null,
+    "target_level": 6,
+    "target_elite_skills": 2,
+    "target_skill_preference": "GENERIC",
+    "target_skills": {
+    # Default: random. OVERRIDES ALL RANDOM SKILLS
+      "crew_training": 2
+    },
+	
+		#TARGET FLEET
+		
+    "fleet_name": "Spare Armada",
+    "fleet_faction": "pirates",
+    "fleet_flagship_variant": "conquest_Elite",
+    "fleet_flagship_name": "Warden Of Freedom",
+    "fleet_flagship_recoverable": true,
+    "fleet_scaling_multiplier": 1,
+    "fleet_min_FP": 60,
+    "fleet_composition_faction": "pirates",
+    "fleet_transponder": false,
+    "fleet_behavior": "ROAMING",
+
+		#LOCATION
+		
+    "location_distance": "CLOSE",
+    "location_themes": [
+      "theme_interesting",
+      "theme_interesting_minor",
+      "theme_ruins",
+      "procgen_no_theme_pulsar_blackhole"
+    ],
+    "location_themes_blacklist": [
+      "theme_already_occupied",
+      "theme_hidden",
+      "theme_core",
+      "theme_derelict",
+      "theme_unsafe",
+      "theme_remnant",
+    ],
+    "location_entities": [
+      "gate",
+      "station",
+      "wreck",
+      "debris",
+      "stable_location",
+      "comm_relay",
+      "nav_buoy",
+      "sensor_array",
+      "gas_giant",
+      "planet",
+      "jump_point"
+    ],
+    "location_prioritizeUnexplored": true,
+    "location_defaultToAnyEntity": true
+  },
+
+  "alexatheos_derelict_researcher": {
+	
+		#TRIGGERS (ALL OPTIONAL)
+    "trigger_marketFaction_any": [
+      "luddic_path"
+    ],
+    "trigger_marketFaction_alliedWith": true,
+    "trigger_marketFaction_none": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 3,
+    "trigger_player_minLevel": 5,
+    "trigger_min_days_elapsed": 60,
+    "trigger_weight_mult": 0.25,
+    
+		#BOUNTY DESCRIPTION
+		
+    "job_name": "Track down a blasphemous researcher",
+    "job_description": "A wayward Tri-Tachyon scholar has once again endeavored to open the box of Pandora. He has discovered a way to directly control the Exploratorium drones found in the outskirts of the Sector, and was very close to spreading this sinful knowledge when the devilish company that he keeps decided to betray him. By driving him out of his cradle of blasphemy, these greedy traitors have created an opening for devout followers of Ludd to ensure that his knowledge and technology die with him, and prevent a repeat of the terrible AI wars.\nThese credits should be enough to ensure that you deliver justice to this fool. May he see the error of his ways, and repent before his life is forsaken.",
+    "job_comm_reply": "The comms screen opens to reveal a young, visibly exhausted man, who leans back in his chair with a look of resignation. \"Damn it, damn it, damn it! Why can't you lot just leave me be?\"\nHis face slowly molds into one of determination. He suddenly straightens up, and proclaims, \"Fine then! Those Luddic blithering idiots think I'm going to hell? I'll take them with me!\" He turns to face you. \"No amount of prayer is going to save you now!\"",
+    "job_intel_success": "The researcher's death has been confirmed, and your willingness to carry out the will of Ludd has not gone unnoticed. The Path looks more favorably on you. Providence provides.",
+    "job_intel_failure": "By claiming the researcher's flagship as your own, you have turned your back on Ludd and betrayed the Path. They are unlikely to forget this treachery anytime soon. Providence provides, but certainly not for you.",
+    "job_intel_expired": "The researcher has escaped, and no devout follower of Ludd can rest knowing that his accursed knowledge may be spread to the rest of the sector. Your failure to kill him has cast a shadow over the sector.",
+    "job_forFaction": "luddic_path",
+    "job_deadline": 60,
+    "job_credit_reward": 74924,
+    "job_reward_scaling": 1,
+    "job_reputation_reward": 15,
+    "job_type": "destruction",
+    "job_show_type": true,
+    "job_show_captain": true,
+    "job_show_fleet": "flagship",
+    "job_show_distance": "vague",
+    "job_show_arrow": false,
+    "job_difficultyDescription": "auto",
+    "job_pick_option": "Accept the job",
+    
+		#TARGET COMMANDER (OPTIONAL)
+		
+    "target_portrait": "graphics/portraits/portrait_league06.png",
+    "target_gender": "MALE",
+    "target_rank": "academician",
+    "target_post": "citizen",
+    "target_personality": "cautious",
+    "target_aiCoreId": null,
+    "target_level": 1,
+    "target_elite_skills": 0,
+    "target_skill_preference": "GENERIC",
+    
+		#TARGET FLEET
+		
+    "fleet_name": "Wayward Researcher",
+    "fleet_faction": "tritachyon",
+    "fleet_flagship_variant": "lal_apogee_Exploration",
+    "fleet_flagship_name": "TTS Hardspace Shipbreaker",
+    "fleet_flagship_recoverable": true,
+    "fleet_scaling_multiplier": 1,
+    "fleet_min_FP": 50,
+    "fleet_composition_faction": "derelict",
+    "fleet_composition_quality": 1,
+    "fleet_transponder": false,
+    "fleet_behavior": "GUARDED",
+    
+		#LOCATION
+		
+    "location_distance": "FAR",
+    "location_themes": [
+      "theme_interesting_minor",	
+      "theme_ruins_secondary",
+      "theme_derelict_survey_ship",
+      "theme_derelict_probes",        
+      "procgen_no_theme_pulsar_blackhole",
+    ],
+		"location_themes_blacklist":[
+			"theme_already_occupied",
+			"theme_already_colonized",
+			"theme_hidden",
+		],
+    "location_entities": [
+      "gate",
+      "station",
+      "wreck",
+      "debris",
+      "stable_location",
+      "comm_relay",
+      "nav_buoy",
+      "sensor_array",
+      "gas_giant",
+      "planet",
+      "jump_point"
+    ],
+    "location_prioritizeUnexplored": true,
+    "location_defaultToAnyEntity": true
+  },
+
+  "alexatheos_serrots_wild_ride":{
+		"trigger_marketFaction_any": ["independent"],
+		"trigger_marketFaction_none": ["hegemony"], 
+		"trigger_market_minSize": 3,
+		"trigger_player_minLevel": 10,
+		"trigger_min_days_elapsed": 180,
+		"trigger_weight_mult": 0.25,
+		"trigger_playerRelationship_atLeast": {
+			"hegemony":0.25,
+		},	
+		"job_name": "Perform a discreet Hegemony assassination",
+		"job_description": "The bounty board officer looks around warily before handing you a Tri-pad chip. You insert it into your pad, and a prerecorded video is transmitted to your ocular implants, for your eyes only.\n\"Some individuals are exempt from rules that should apply to everyone.\"\nA young man in Hegemony uniform sitting at his desk addresses the camera. Beads of sweat are visible on his forehead.\n\"Captain $firstName Serrot was a very prominent officer during the Second AI War. His tactical expertise on the battlefield and his skills as a cruiser captain single-handedly turned the tide of several decisive battles. Sorties that would have resulted in the deaths of many crew members became no more dangerous than crossing the street when $lastName was leading the way. But a hero is suddenly a risk factor the moment the war is over. His pride and ambition mirror that of the traitor Andrada, and the following he has gained within military circles makes him a threat to the stability of the Hegemony. Even more concerning are the dangerous ideals he is spreading to those close to him. Right now, he is performing a routine sweep of a suspected pirate-held system. Given your reputation in the sector, we know we can trust you to keep this a secret. Normally, we wouldn't order mercenaries to kill our own men, but...\"\nHe sighs. \"Some individuals are exempt from rules that should apply to everyone.\"",
+		"job_comm_reply": "The screen lights up to display the sullen face of $firstName. Dark shadows under his eyes and a grizzled beard accent the many wrinkles on his face; you are looking into the eyes of a depleted man.\n\"This is Captain Serrot, commander of the Aegir Fleet, hunting for pirates in this system.\" A smile forms near the corner of his mouth. \"We have been tasked with ending the lives of those who would dare oppose peace in this sector. With these weapons, we will bring salvation to the people of the Persean Sector. Stand down, or we will take your lives as well.\"\nAt this point, he is visibly trying to suppress a grin. One of your officers on the bridge looks at you nervously.",
+        "job_intel_success": "The Hegemony mourns the loss of one of its most experienced officers to misleading intel and a deadly pirate trap. The same unnamed officer who first contacted you thanks you on the behalf of the Hegemony for avenging him by defeating said pirates, and reminds you to never reveal what really happened to Captain Serrot.",
+        "job_intel_expired": "Serrot has safely returned to Hegemony space, and is expected to be applauded for his diligence in eliminating the enemies of sector-wide peace. His fervor and influence continues to grow.",
+		"job_forFaction": "hegemony",
+		"job_deadline": 60,
+		"job_credit_reward": 200000,
+		"job_reward_scaling": 1.0,
+		"job_reputation_reward":20,
+		"job_type":"assassination",
+		"job_show_type": true,
+		"job_show_captain": true,
+		"job_show_fleet": "all",
+		"job_show_distance": "vanillaDistance",
+		"job_show_arrow": true,
+		"job_difficultyDescription": "auto",
+		"job_pick_option": "Accept the job",
+    "target_last_name":"Serrot",
+		"target_portrait":"graphics/portraits/portrait_hegemony07.png",
+    "target_gender":"MALE",
+		"target_rank": "spaceCaptain",
+		"target_post": "fleetCommander",
+		"target_personality": "aggressive",
+		"target_aiCoreId": null,
+		"target_level": 6,
+		"target_elite_skills":2,
+		"target_skill_preference": "GENERIC",
+		"fleet_name":"Aegis Fleet",
+		"fleet_faction": "hegemony",
+		"fleet_flagship_variant":"dominator_XIV_Elite",
+		"fleet_flagship_name":"HSS Tannager",
+		"fleet_flagship_recoverable": true,
+		"fleet_scaling_multiplier": 1,
+		"fleet_min_FP": 130,
+		"fleet_composition_faction": "hegemony",
+		"fleet_composition_quality": 2,
+		"fleet_transponder": true,
+		"fleet_behavior": "GUARDED",
+    "location_distance": "CLOSE",
+		"location_themes_blacklist": [
+			"theme_already_occupied",
+      "theme_already_colonized",
+			"theme_derelict",
+			"theme_remnant",
+      "no_pulsar_blackhole",
+      "theme_hidden",
+		],
+		"location_entities": [
+      "gas_giant",
+			"planet",
+		],
+		"location_prioritizeUnexplored": true,
+		"location_defaultToAnyEntity": true,
+	},
+
+  "alexatheos_culann_scavs":{
+		
+		"trigger_market_id": ["culann"],
+		"trigger_player_minLevel": 6,
+		"trigger_min_days_elapsed": 120,
+		"trigger_weight_mult": 0.25,
+		"trigger_playerRelationship_atLeast": {
+			"tritachyon":0.25,
+		},
+		"job_name": "Scavenger Swatting",
+		"job_description": "Somehow, someway, a group of independent scavengers have touched down on the forgotten vaults of Culann. Whether they exploited a gap in our orbital security or bribed their way onto the planet's surface, we do not know. Fortunately, we have assessed the value of the lost tech to be negligible to the Company as a whole, but trespassing onto Company property cannot go unanswered. You will be paid a modest sum to hunt down these scavengers, as well as the rights to keep whatever you can recover from the wreck.\nIntelligence suggests that the scavengers will be staying for a short time at ==Donn== before leaving the system in ==two weeks==.",
+		"job_comm_reply": "The visual feed is overlaid with white noise, but you can clearly discern the face of a panicked scav captain. \n\"Damn it all!\" $heSheThey exclaims, surrounded by an anxious mess of a bridge crew.\"It wasn't supposed to be like this! We were supposed to find some sciencey junk, haul it out of here, and make a fortune! I wanted to crush those corpo stiffs one and for all, and instead we're all out of fuel and stranded in orbit of some Ludd forsaken hunk of stone. God, what were we thinking? ",
+    "job_intel_success": "The independent scavenger fleet has been neutralized over Donn. Tri-Tachyon is pleased with your performance.",
+    "job_intel_expired": "The independent scavenger fleet has escaped from the Hybrasil system. Tracking them in hyperspace will be difficult. Tri-Tachyon is disapointed at your lack of productivity after all you have been entrusted with.",
+		"job_forFaction": "tritachyon",
+		"job_deadline": 14,
+		"job_credit_reward": 40000,
+		"job_reward_scaling": 1.0,
+		"job_reputation_reward":10,
+		"job_item_reward": {
+			"survey_data_5":1,
+			"heavy_machinery":347,
+			"corrupted_nanoforge":1,
+    },
+		"job_type":"neutralisation",
+		"job_show_type": true,
+		"job_show_captain": true,
+		"job_show_fleet": "vanillaText",
+		"job_show_distance": "vanillaDistance",
+		"job_difficultyDescription": "auto",
+		
+		"target_personality": "steady",
+		"target_level": 1,
+		"target_elite_skills":2,
+
+		"fleet_name":"Renegade Reclaimers",
+		"fleet_faction": "pirates",
+		"fleet_flagship_variant":"venture_Exploration",
+		"fleet_flagship_recoverable": true,
+		"fleet_scaling_multiplier": 1,
+		"fleet_min_DP": 40,
+		"fleet_composition_faction": "independent",
+		"fleet_composition_quality": 0.4,
+		"fleet_transponder": false,
+		"location_marketIDs": [
+			"donn"
+		],
+		"location_distance": "CORE",
+		"location_themes": [
+			"theme_core_unpopulated",
+			"theme_core_populated",
+			"theme_core"
+		],
+		"location_themes_blacklist": [
+			"theme_already_occupied","theme_hidden",
+		],
+		"location_entities": [ # Default: no preference. Possible entities to spawn the fleet around. Default to PLANET + JUMP_POINT + STABLE_LOCATION if left empty
+			"planet"
+		],
+
+	},
+
+  "jrg_gens_baby":{
+		"trigger_marketFaction_any": ["persean"],
+		"trigger_market_minSize": 4,
+		"trigger_player_minLevel": 8,
+		"trigger_min_days_elapsed": 700,
+		"trigger_weight_mult": 1,	
+		"job_name": "Problem-Solving Skills Required",
+		"job_description": "\"Greetings, commander,\" a distorted voice says through the display panel. \n\"You've shown yourself to be a true friend to the ==Persean League==, so we've decided to take a risk in coming to you with this. It's no secret that the gens control nearly everything around here. While getting rid of them is neither practical nor feasible, their reach is not unlimited; if one of their own becomes a political liability, even the great gens of Kazeron won't protect an ignominious scion, not too much at least. /nWe believe you could be just the person to arrange for the disappearance of ==$name==, a $sonDaughterChild of the nobility recently put in charge of system security, and already responsible for an estimated several hundred thousand credits worth of League citizen-harvested organs 'accidentally' escaping customs searches, along with hundreds of unrelated casualties. /nWhether this is due to corruption, incompetence, or both, this $manWomanPerson, this gens-baby, is quite literally bleeding the ==$system system== dry. ==$reward credits== are waiting in an untraceable account, which will be transferred to you in the unfortunate event that $hisHerTheir flagship, the Odyssey-class battlecruiser ==$shipName==, were to be destroyed in a tragic pirate raid or similar event. A ==blueprint== for the same vessel should provide additional incentive.\"",
+		"job_comm_reply": "A disheveled $manWomanPerson appears on the comms screen, clearly having rushedly fixed $hisHerTheir once-pristine uniform before the hail. \n\"Do you have any idea who you're disturbing?\" $heSheThey shouts. \"I am $name of gens $lastName, and ==I am not to be disturbed!==\" \n\"Well? Where's my apology? Do you perhaps not want to be spared?\", $heSheThey says, with as much condescension as technology allows to be transmitted over comms. \nSeeing as an apology was not, in fact, forthcoming after several passed seconds, $firstName makes an obscene gesture and cuts the transmission. Sensors indicate $heSheThey then ordered $hisHerTheir fleet to power up weapons.",
+    "job_intel_success": "The head of security in the $system system has met a tragic demise. Undoubtedly, $heSheThey will be missed—at least, missed by the black market organ harvesters who've lost a payday.",
+    "job_intel_failure": "Though $name is dead, the recovery of the $shipName makes operational deniability impossible. While you have been shielded from some of the consequences, there will be no reward.",
+		"job_forFaction": "persean",
+		"job_credit_reward": 100000,
+		"job_reputation_reward":0,
+		"job_item_reward": {
+			"ship_bp odyssey": 1
+		},
+		"job_type":"destruction",
+		"job_show_type": true,
+		"job_show_captain": true,
+		"job_show_fleet": "vanilla",
+		"job_show_distance": "vanillaDistance",
+		"job_show_arrow": false,
+		"job_difficultyDescription": "auto",
+		"job_pick_option": "Agree to pay the fleet commander a visit.",
+		"target_last_name":"Hannan",
+		"target_post": "fleetCommander",
+		"target_personality": "reckless",
+		"target_level": 4,
+		"target_elite_skills":1,
+		"target_skills": {
+			"helmsmanship":2,
+			"shield_modulation":1,
+			"systems_expertise":1,
+			"point_defense":1,
+		}, 
+		"fleet_name":"Gens Hannan Inspection Fleet",
+		"fleet_faction": "persean",
+		"fleet_flagship_variant":"odyssey_Balanced",
+		"fleet_flagship_name":"Diamondine",
+		"fleet_flagship_recoverable": true,
+		"fleet_preset_ships": {
+			"champion_Elite":1,
+			"aurora_Strike":2,
+			"gryphon_FS":1,
+			"fury_Attack":3,
+			"sunder_Assault":2,
+			"hammerhead_Elite":3,
+			"sunder_Overdriven":2,
+			"centurion_Assault":3,
+		},
+		"fleet_scaling_multiplier": 0.5,
+		"fleet_composition_faction": "persean",
+		"fleet_composition_quality": 2,
+		"fleet_behavior": "ROAMING",
+		"location_marketFactions": [  
+			"persean" 
+		],
+    "location_themes_blacklist": [ 
+			"theme_hidden",
+			"theme_already_occupied",
+		],
+		"location_entities": [
+			"gate",
+			"station",
+      "stable_location",
+			"comm_relay",
+			"nav_buoy",
+			"sensor_array",
+      "gas_giant",
+			"planet",
+			"jump_point",
+		],
+		"location_defaultToAnyEntity": true,
+	},
+
+  "wisp_find_fubar": {
+    "trigger_marketFaction_any": [
+      "independent"
+    ],
+    "trigger_marketFaction_alliedWith": true,
+    "trigger_market_minSize": 4,
+    "trigger_player_minLevel": 1,
+    "trigger_min_days_elapsed": 1,
+    "trigger_weight_mult": 1,
+    "trigger_playerRelationship_atMost": {
+      "pirates": -0.25
+    },
+    "job_name": "Find Fubar",
+    "job_description": "I represent the village of New Turil. One year ago, we were saved from a pirate raid by a small group of traveling spacers, but our mayor was killed. One of the spacers stayed in the area, ran for, and was elected mayor. His term was beset by scandal and incompetence from the very beginning, but on the very eve of elections, he has disappeared with the entire treasury!\nFortunately, a few of us saw this coming and purchased Asymmetrical Justice Insurance a while back; half of the payout is yours if you can take him out. His name is Dante 'Fubar' Fresco.",
+    "job_comm_reply": "Greetings! Would you perchance have food to spare? We are running dangerously low on wine, we ran out of milk chocolate just yesterday, and my advisor says we have to wait months before returning to restock the sashimi. No? Oh...",
+    "job_forFaction": "independent",
+    "job_difficultyDescription": "auto",
+    "job_deadline": 60,
+    "job_reputation_reward": 5,
+    "job_credit_reward": 25000,
+    "job_reward_scaling": 1,
+    "job_type": "assassination",
+    "job_show_type": true,
+    "job_show_captain": true,
+    "job_show_fleet": "preset",
+    "job_show_distance": "vanillaDistance",
+    "job_show_arrow": true,
+    "job_pick_option": "Accept the job",
+    "job_memKey": "$mb_fubar",
+    "target_first_name": "Dante 'Fubar'",
+    "target_last_name": "Fresco",
+    "target_gender": "MALE",
+    "target_rank": "citizen",
+    "target_post": "aristocrat",
+    "target_personality": "cautious",
+    "target_isAI": false,
+    "target_level": 1,
+    "target_elite_skills": -1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Fubar's Caravan",
+    "fleet_faction": "pirates",
+    "fleet_flagship_variant": "buffalo2_Fighter_Support",
+    "fleet_flagship_name": "'New' New Turil",
+    "fleet_flagship_recoverable": true,
+    "fleet_preset_ships": {
+      "brawler_Assault": 2
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_FP": -1,
+    "fleet_composition_faction": "independent",
+    "fleet_composition_quality": 2,
+    "fleet_transponder": false,
+    "fleet_behavior": "ROAMING",
+    "location_distance": "CORE",
+    "location_themes": [
+      "theme_core_unpopulated"
+    ],
+    "location_themes_blacklist": [
+      "theme_already_occupied","theme_hidden",
+    ],
+    "location_entities": [
+      "gate",
+      "station",
+      "wreck",
+      "debris",
+      "stable_location",
+      "comm_relay",
+      "nav_buoy",
+      "sensor_array",
+      "gas_giant",
+      "planet",
+      "jump_point"
+    ],
+    "location_prioritizeUnexplored": false,
+    "location_defaultToAnyEntity": true,
+    "author": "Wisp"
+  },
+
+  "wisp_corpEsp_I": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 4,
+    "job_name": "Deal with corporate espionage",
+    "job_description": "I am the ==Head of Sales== for a promising startup that is ==disrupting the financial sector==. By cutting out the middle-man, we save our clients ==MILLIONS== on everyday fees.\nUnfortunately, one of my partners has stolen valuable client information and taken refuge in orbit around $location. The employment contract they signed is clear; protection of the company IP is paramount, with penalties up to, and including, ==termination==.\nI, of course, deeply regret to be forced into following this specific course of action, but my hands are completely tied.",
+    "job_comm_reply": "A silky, recorded voice plays. \"Mr. Collins is on vacation. Please leave a message and he may get back to you.\"",
+    "job_forFaction": "tritachyon",
+    "job_credit_reward": 30000,
+    #"job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "all",
+    #"job_difficultyDescription": "auto",
+    "job_show_distance": "vanillaDistance",
+    #"job_show_arrow": true,
+    "job_memKey": "$mb_wisp_corpesp_I",
+    "target_first_name": "George",
+    "target_last_name": "Collins",
+    "target_gender": "MALE",
+    "target_rank": "citizen",
+    "target_post": "executive",
+    "target_personality": "cautious",
+    "target_level": 2,
+    "target_elite_skills": -1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Live Laugh Work",
+    "fleet_faction": "neutral",
+    "fleet_flagship_variant": "mercury_Attack",
+    "fleet_flagship_name": "FinMin Can Save You Millions",
+    "fleet_preset_ships": {
+      "tempest_Attack": 1
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_FP": -1,
+    "fleet_composition_faction": "tritachyon",
+    "fleet_transponder": false,
+    "fleet_behavior": "AGGRESSIVE",
+    "location_distance": "CORE",
+    "location_marketFactions": [
+      "tritachyon" 
+    ],
+    "location_themes_blacklist": [
+      "theme_hidden",
+    ],
+  },
+
+  "wisp_corpEsp_II": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 4,
+    "trigger_memKeys_all": {
+      "$mb_wisp_corpesp_I": true,
+    },
+    "job_name": "Handle corporate espionage",
+    "job_description": "I am the ==COO== of a promising startup that is ==disrupting the financial sector==. By cutting out the middle-man, we save our clients ==MILLIONS== on everyday fees.\nUnfortunately, one of my partners has stolen valuable client information and taken refuge in orbit around $location. The employment contract they signed is clear; protection of the company IP is paramount, with penalties up to, and including, termination.\nI, of course, deeply regret to be forced into following this specific course of action, but my hands are completely tied.",
+    "job_comm_reply": "A husky, recorded voice plays. \"Ms. Treepah is currently busy. For questions regarding MinFin, please contact Eoin Shilherry. For all other questions, leave a message.\"",
+    "job_forFaction": "tritachyon",
+    #"job_credit_reward": 65000,
+    "job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "all",
+    #"job_difficultyDescription": "auto",
+    "job_show_distance": "vanillaDistance",
+    "job_memKey": "$mb_wisp_corpesp_II",
+    "target_first_name": "Ellery",
+    "target_last_name": "Treepah",
+    "target_gender": "FEMALE",
+    "target_rank": "citizen",
+    "target_post": "executive",
+    "target_personality": "cautious",
+    "target_level": 2,
+    "target_elite_skills": -1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Ms. Treepah's Fleet",
+    "fleet_faction": "neutral",
+    "fleet_flagship_variant": "mercury_Attack",
+    "fleet_flagship_name": "Cats and Money",
+    "fleet_preset_ships": {
+      "tempest_Attack": 2
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_FP": -1,
+    "fleet_composition_faction": "tritachyon",
+    "fleet_transponder": false,
+    "fleet_behavior": "AGGRESSIVE",
+    "location_distance": "CORE",
+    "location_marketFactions": [
+      "tritachyon" 
+    ],
+    "location_themes_blacklist": [
+      "theme_hidden",
+    ],
+  },
+
+  "wisp_corpEsp_III": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 4,
+    "trigger_memKeys_all": {
+      "$mb_wisp_corpesp_II": true,
+    },
+    "job_name": "\"Fix\" corporate espionage",
+    "job_description": "I am the ==COO and co-founder== of a promising startup that is ==disrupting the financial sector==. By cutting out the middle-man, we save our clients ==MILLIONS== on everyday fees.\nUnfortunately, one of my partners has stolen valuable client information and taken refuge in orbit around $location. The employment contract they signed is clear; protection of the company IP is paramount, with penalties up to, and including, termination.\nI, of course, deeply regret to be forced into following this specific course of action, but my hands are completely tied.",
+    "job_comm_reply": "A gravely, recorded voice plays. \"Mr. Shilherry is on the golf course. For questions regarding MinFin, please leave a message or contact Brad Weatherspoon.\"",
+    "job_forFaction": "tritachyon",
+    "job_credit_reward": 90000,
+    #"job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "all",
+    #"job_difficultyDescription": "auto",
+    "job_show_distance": "vanillaDistance",
+    #"job_show_arrow": true,
+    "job_memKey": "$mb_wisp_corpesp_III",
+    "target_first_name": "Brad",
+    "target_last_name": "Shilherry",
+    "target_gender": "MALE",
+    "target_rank": "citizen",
+    "target_post": "executive",
+    "target_personality": "aggressive",
+    "target_level": 2,
+    "target_elite_skills": -1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Brad Shilherry's Fleet",
+    "fleet_faction": "neutral",
+    "fleet_flagship_variant": "wolf_Assault",
+    "fleet_flagship_name": "The Wolf of Space Fleet",
+    "fleet_preset_ships": {
+      "tempest_Attack": 3
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_FP": -1,
+    "fleet_composition_faction": "tritachyon",
+    "fleet_transponder": false,
+    "fleet_behavior": "AGGRESSIVE",
+    "location_distance": "CORE",
+    "location_marketFactions": [
+      "tritachyon" 
+    ],
+    "location_themes_blacklist": [
+      "theme_hidden",
+    ],
+  },
+
+  "wisp_corpEsp_IV": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 4,
+    "trigger_memKeys_all": {
+      "$mb_wisp_corpesp_III": true,
+    },
+    "job_name": "End corporate espionage",
+    "job_description": "I am the ==CTO and co-founder== of a promising startup that is ==disrupting the financial sector==. By cutting out the middle-man, we save our clients ==MILLIONS== on everyday fees.\nUnfortunately, one of my partners has stolen valuable client information and taken refuge in orbit around $location. The employment contract they signed is clear; protection of the company IP is paramount, with penalties up to, and including, termination.\nI, of course, deeply regret to be forced into following this specific course of action, but my hands are completely tied.",
+    "job_comm_reply": "A professionally honest-sounding, recorded voice plays. \"Brad Weatherspoon is too cool to take your call right now.\"",
+    "job_forFaction": "tritachyon",
+    "job_credit_reward": 90000,
+    #"job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "all",
+    #"job_difficultyDescription": "auto",
+    "job_show_distance": "vanillaDistance",
+    #"job_show_arrow": true,
+    "job_memKey": "$mb_wisp_corpesp_IV",
+    "target_first_name": "Brad",
+    "target_last_name": "Weatherspoon",
+    "target_gender": "MALE",
+    "target_rank": "citizen",
+    "target_post": "executive",
+    "target_personality": "steady",
+    "target_level": 3,
+    "target_elite_skills": -1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "FinMin To The Moon",
+    "fleet_faction": "neutral",
+    "fleet_flagship_variant": "apogee_Balanced",
+    "fleet_flagship_name": "Schedule a Demo",
+    "fleet_preset_ships": {
+      "buffalo2_Fighter_Support": 1,
+      "dram_Light": 1
+    },
+    "fleet_scaling_multiplier": 1,
+    "fleet_min_FP": -1,
+    "fleet_composition_faction": "tritachyon",
+    "fleet_transponder": false,
+    "fleet_behavior": "PASSIVE",
+    "location_distance": "CORE",
+    "location_themes_blacklist": [
+      "theme_hidden",
+    ],
+  },
+
+  "wisp_corpEsp_V-a": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 5,
+    "trigger_memKeys_all": {
+      "$mb_wisp_corpesp_IV": true,
+    },
+    "trigger_memKeys_none": {
+      "$mb_wisp_corpesp_V-b": true,
+    },
+    "job_name": "Finish off corporate espionage",
+    "job_description": "I am the ==CEO and co-founder== of a promising startup that is ==disrupting the financial sector==. By cutting out the middle-man, we save our clients ==MILLIONS== on everyday fees.\nUnfortunately, one of my partners has stolen valuable client information and taken refuge in orbit around $location. The employment contract they signed is clear; protection of the company IP is paramount, with penalties up to, and including, termination.\nI, of course, deeply regret to be forced into following this specific course of action, but my hands are completely tied.",
+    "job_comm_reply":"It's you, isn't it? You're the one that's done all of James's handiwork? That man has overreached...I'm going after him as soon as I'm done with you.",
+    "job_intel_success": "A prerecorded message plays. \"I hope you've enjoyed your work as much as I've enjoyed climbing the corporate ladder. It's good to be on top, isn't it?\"",
+    "job_forFaction": "tritachyon",
+    "job_credit_reward": 150000,
+    #"job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "all",
+    #"job_difficultyDescription": "auto",
+    "job_show_distance": "vanillaDistance",
+    #"job_show_arrow": true,
+    "job_memKey": "$mb_wisp_corpesp_V-a",
+    "target_first_name": "Charles",
+    "target_last_name": "California",
+    "target_gender": "MALE",
+    "target_rank": "citizen",
+    "target_post": "executive",
+    "target_personality": "steady",
+    "target_level": 4,
+    "target_elite_skills": 1,
+    "target_skill_preference": "PHASE",
+    "fleet_name": "FinMin Company Fleet",
+    "fleet_faction": "neutral",
+    "fleet_flagship_variant": "doom_Strike",
+    "fleet_flagship_name": "Realized Profit",
+    "fleet_preset_ships": {
+      "buffalo2_Fighter_Support": 1,
+      "apogee_Balanced": 1
+    },
+    "fleet_scaling_multiplier": 1,
+    "fleet_min_FP": -1,
+    "fleet_composition_faction": "tritachyon",
+    "fleet_transponder": false,
+    "fleet_behavior": "PASSIVE",
+    "location_distance": "CORE",
+    "location_themes_blacklist": [
+      "theme_hidden",
+    ],
+  },
+
+  "wisp_corpEsp_V-b": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 5,
+    "trigger_memKeys_all": {
+      "$mb_wisp_corpesp_IV": true,
+    },
+    "trigger_memKeys_none": {
+      "$mb_wisp_corpesp_V-a": true,
+    },
+    "job_name": "Investigate an employee",
+    "job_description": "I am the founder of a promising startup that is disrupting the financial sector. Members of the company have been disappearing and all signs point to one of my rising stars being behind it. Their ambition is admirable, but they need to be put in their place. ==Neutralize== him and his escorts; if he survives, I'll have a chat with him about his future at MinFin.",
+    "job_comm_reply": "A slick, recorded voice plays. \"Welcome to the personal fleet of James Nelson, CEO and co-founder of MinTech. For business inquiries - \", the recording cuts off, and a panicked voice breaks in, \"What are you doing?! Get out of here; don't you know who I am?! Just walk away!\"",
+    "job_intel_success": "A prerecorded message plays. \"Thank you for checking into this matter. Unfortunately, I do not believe that Charles has what it takes to lead this company, but his actions and termination have brought FinMin into the public eye. In the end, he served the company well.\"",
+    "job_forFaction": "tritachyon",
+		"job_type":"neutralization", 
+    "job_credit_reward": 100000,
+    #"job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "all",
+    #"job_difficultyDescription": "auto",
+    "job_show_distance": "vanillaDistance",
+    #"job_show_arrow": true,
+    "job_memKey": "$mb_wisp_corpesp_V-b",
+    "target_first_name": "James",
+    "target_last_name": "Nelson",
+    "target_gender": "MALE",
+    "target_rank": "citizen",
+    "target_post": "executive",
+    "target_personality": "steady",
+    "target_level": 4,
+    "target_elite_skills": 1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "FinMin's CEO and Co-Founder Fleet",
+    "fleet_faction": "neutral",
+    "fleet_flagship_variant": "medusa_Attack",
+    "fleet_flagship_name": "Shooting Star",
+    "fleet_preset_ships": {
+      "hyperion_Strike": 2
+    },
+    "fleet_scaling_multiplier": 1,
+    "fleet_min_FP": -1,
+    "fleet_composition_faction": "tritachyon",
+    "fleet_transponder": false,
+    "fleet_behavior": "PASSIVE",
+    "location_distance": "CORE",
+    "location_themes_blacklist": [
+      "theme_hidden",
+    ],
+  },
+
+  "nuke_kill_a_poet": {
+    "trigger_marketFaction_any": [
+      "sindrian_diktat"
+    ],
+    "trigger_market_minSize": 5,
+    "trigger_playerRelationship_atLeast": {
+      "sindrian_diktat":0,
+    },
+    "job_name": "Dispose of a politically inconvenient poet",
+    "job_description": "The Lion, of course, permits poetry in the Sindrian Diktat. However, $name and $hisHerTheir associates have left their poetic niche and begun questioning matters of state. The security bureaus gathered the deviant artists and offered them a few friendly warnings, but after being released, they have claimed asylum in Independent territory.\nNobody can betray the Lion's trust. Not if they expect to survive.",
+    "job_comm_reply": "A gaunt face stares at you with contempt. You see $hisHerTheir lips move, but the blast of EM jammers from their protectors drown out what $heSheThey had to say. \nIt seems that $hisHerTheir last words will die with $himHerThem.",
+    "job_intel_success": "You send footage of the carnage back to the Diktat. Maybe the Cultural Acceleration Board will spin it as a agitprop holo for the masses, or maybe the fanatical police state will attempt to erase the very memory of the dead poets. Nobody can guess what Andrada's whims will be.",
+    "job_forFaction": "sindrian_diktat",
+		"job_type":"obliteration", 
+    "job_credit_reward": 50000,
+    "job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "preset",
+    "job_show_distance": "vanillaDistance",
+    "job_show_arrow": true,
+    "fleet_name": "Heaven In A Wild Flower",
+    "fleet_faction": "independent",
+    "fleet_flagship_variant": "omen_PD",
+    "fleet_flagship_name": "Sunflower's Bloom",
+    "fleet_preset_ships": {
+      "omen_PD":3,			
+    },
+    "fleet_scaling_multiplier": 1.2 ,
+    "fleet_min_FP": 60,
+    "fleet_composition_faction": "independent",
+    "fleet_transponder": false,
+    "fleet_behavior": "PASSIVE",
+    "location_distance": "CORE",
+    "location_themes_blacklist": [
+      "theme_already_occupied","theme_hidden",
+    ],
+  },
+  
+  "nuke_break_Nova_Maxios": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 5,
+    "job_name": "Break the bleak house of Nova Maxios",
+    "job_description": "A property dispute with Tri-Tachyon dating back to the Maxios Collapse has been a low level obsession in Nova Maxios for two hundred cycles. The Sector has never taken the claims of the Maxios refugees seriously, due to their utter inability to enforce any of their claims.\nEmbarrassingly, the $sonDaughterChild of a senior Tri-Tachyon executive has recently defected to the independents, drawn to the quixotic cause of Maxios revanchism. To prove their ultimate loyalty to the company, the executive has contracted out a bounty against their own progeny.\nKill $name within 90 days, and $hisHerTheir $fatherMotherParent will have something positive to report in the next shareholder meeting.", 
+    "job_comm_reply": "The target is silent when you tell them who sent you.",
+    "job_intel_success": "You wonder if the Tri-Tachyon executive really wanted you to succeed, or if the bounty was just for show. Either way, the credits came through.",
+    "job_forFaction": "tritachyon",
+		"job_type":"assassination", 
+    "job_credit_reward": 60000,
+    #"job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "presetText",
+    "job_difficultyDescription": "auto",
+    "job_show_distance": "vanillaDistance",
+    #"job_show_arrow": true,
+    "target_rank": "spaceCaptain",
+    "target_post": "spacer",
+    "target_personality": "aggressive",
+    "target_level": 7,
+    "target_elite_skills": 1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Nova Maxios Grand People's Reclamation Armada",
+    "location_marketIDs": ["new_maxios"],
+    "location_marketFactions": "independent",
+    "fleet_faction": "independent",
+    "fleet_flagship_variant": "tempest_Attack",
+    "fleet_flagship_name": "Burn The Company Store",
+    "fleet_scaling_multiplier": 0.8,
+    "fleet_min_FP": 40,
+    "fleet_composition_faction": "independent",
+    "fleet_transponder": true,
+    "fleet_behavior": "PASSIVE",
+    "location_distance": "CORE",
+    "location_themes_blacklist": [
+      "theme_already_occupied","theme_hidden",
+    ],
+  },
+
+  "nuke_intervene_corporate_struggle": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "job_name": "Intervene in an executive power struggle",
+    "job_description": "The Tri-Tachyon corporate rat race is filled with interminable and internecine power struggles. Some of these grudges periodically lead to assassination bounties placed on workplace rivals. It seems that CEO Sun unofficially approves of ambitious underlings placing hits on each other, as it distracts them from plots like the coup which unseated her during the Second AI War.\nYou can't tell the difference between the feuding candidates this time. However, one of them seems to pay a larger bounty, and that's good enough for you. Eliminate $name before the next board meeting and receive ample credits for your part in the Darwinian corporate process.", 
+    "job_comm_reply": "They offer to pay you more. Sadly for them, their rival can do better.",
+    "job_intel_success": "One of the executives won the duel of bounties. Maybe in a few months, another opportunity will open up on the surviving head. ",
+    "job_forFaction": "tritachyon",
+		"job_type":"assassination", 
+    "job_deadline": 90,
+    "job_credit_reward": 10000,
+    "job_reputation_reward": 7, #to make up for kill penalty
+    "job_reward_scaling": 1.1,
+    "job_show_captain": true,
+    "job_show_fleet": "all",
+    "job_show_distance": "vanillaDistance", 
+    "job_show_arrow": true,
+    "target_rank": "spaceCaptain",
+    "target_post": "executive",
+    "target_personality": "aggressive",
+    "target_level": 7,
+    "target_gender": "any",
+    "target_elite_skills": 1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Tri-Tachyon Assistant Executive Fleet",
+    "location_marketFactions": "tritachyon",
+    "fleet_faction": "tritachyon",
+    "fleet_flagship_variant": "medusa_Attack",
+    "fleet_flagship_name": "Assistant Executive",
+    "job_difficultyDescription": "auto",
+    "fleet_scaling_multiplier": 1.3,
+    "fleet_min_FP": 20,
+    "fleet_composition_faction": "tritachyon",
+    "fleet_transponder": false,
+    "fleet_behavior": "ROAMING",
+    "location_distance": "CORE",
+		"location_themes_blacklist": [
+			"theme_hidden"
+		],
+  },
+
+  "nuke_help_priest_flock": {
+    "trigger_marketFaction_any": [
+      "luddic_church"
+    ],
+    "trigger_playerRelationship_atLeast": { 
+      "luddic_church": 0
+    }, 
+    "trigger_market_minSize": 5,
+    "job_name": "Help a priest mind his flock",
+    "job_description": "An old priest clasped your hand outside of a church and offered you a fortune in credits if you took care of a lost child for him. A set of coordinates, an ident chip, and a tactical map stamped in wax made it clear what he really wanted. Apparently a Pather in his flock confessed something $heSheThey shouldn't have.", 
+    "job_comm_reply": "The Pather's eyes flash with panic.\n\"Nobody should have known I was here.\"",
+    "job_intel_success": "The old man closes his eyes and prays after you tell him the news. The credits come as promised.",
+    "job_forFaction": "luddic_church",
+    "job_type":"assassination", 
+    "job_deadline": 180,
+    "job_credit_reward": 40000,
+    "job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "all",
+    "job_show_distance": "vanillaDistance", 
+    "job_show_arrow": true,
+    "target_rank": "spaceCaptain",
+    "target_post": "spacer",
+    "target_personality": "reckless",
+    "target_level": 3,
+    "target_gender": "ANY",
+    "target_elite_skills": 1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Justification Through Faith",
+    "fleet_faction": "luddic_path",
+    "fleet_flagship_variant": "colossus2_Pather",
+    "fleet_flagship_name": "For Father Derry",
+    "job_difficultyDescription": "auto",
+    "fleet_scaling_multiplier": 1,
+    "fleet_min_FP": 40,
+    "location_distance": "CLOSE",
+    "location_themes": "theme_core_unpopulated",
+    "location_themes_blacklist": [ # Default: none. System themes to never spawn the fleet at.
+      "theme_already_occupied", #Will avoid systems with "hostile" themes taken from a merged list between mods. Includes all Remnant, Plague-Bearer, OCI, Blade-Breaker systems 
+      "theme_already_colonized", #Will explicitely exclude systems with active markets, kind of mandatory for pirate bounties given that faction colonize otherwise interesting systems with Nexerelin
+      "theme_hidden", #Used by that one story system
+    ], 
+    "location_entities": "debris",
+    "fleet_composition_faction": "luddic_path",
+    "fleet_transponder": false,
+    "fleet_behavior": "GUARDED",
+  },
+
+  "nuke_suppress_eventide_house": {
+    "trigger_marketFaction_any": [
+      "hegemony"
+    ],
+    "trigger_playerRelationship_atLeast": { 
+      "hegemony": 0.5
+    }, 
+    "trigger_market_minSize": 6,
+    "job_name": "Suppress a rogue Eventide house",
+    "job_description": "Disputes among the Eventide elite of the Hegemony are almost always shrouded in gossipy silk, not slugged out with DU or hellbore rounds. Though the Hegemony gives a fair amount of local autonomy as long as taxes are paid and political dissenters are rooted out, interfamily fighting is strongly discouraged, as it would bleed away manpower and materiel needed for reuniting the Sector.\nA few days ago, that tacit rule was broken. A high society dispute ended in scandal, then in a suicide, and then in an angry $fatherMotherParent extracting bloody vengeance upon an entire crowd of the Hegemony's upper crust. Nothing in the last two hundred cycles of Eventide drama could compare to this crime upon crimes. The pressure is on the local governor to solve the situation immediately, before the white-gloved consensus of the Hegemony ruling class is shattered forever.\nAfter the massacre at Eventide, the angry $fatherMotherParent escaped with all the wealth of a grand Eventide house. The governor has no clues, no hints, nothing to show where all those ships and spacers have absconded overnight. Even COMSEC, for once, is silent. The only thing you know is that an incredible fortune and plaudits upon plaudits are yours for the having, if you can hunt down those responsible.", 
+    "job_comm_reply": "Frankly, you can't make head or tail of the high society nonsense being screeched at you.",
+    "job_intel_success": "Your salvage teams pull the apparent instigator of the incident out of the wreckages alive. ^$heSheThey blabbles on about $hisHerTheir daughter, but seems entirely incoherent about his motives. It'll be the governor's problem to sort this one out.",
+    "job_forFaction": "hegemony",
+    "job_type":"neutralization", 
+    "job_deadline": 180,
+    "job_credit_reward": 300000,
+    "job_reputation_reward": 20,
+    "job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "all",
+    "job_show_distance": "vague", 
+    "job_show_arrow": true,
+    "target_rank": "spaceCaptain",
+    "target_post": "spacer",
+    "target_personality": "reckless",
+    "target_level": 1,
+    "target_gender": "ANY",
+    "target_elite_skills": 1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "House Annadin Vengeance Fleet",
+    "fleet_faction": "pirates",
+    "fleet_flagship_variant": "onslaught_Elite",
+    "fleet_flagship_name": "Anna, My Love",
+    "job_difficultyDescription": "auto",
+    "fleet_scaling_multiplier": 1.5,
+    "fleet_min_DP": 200,
+    "location_distance": "CLOSE",
+    "location_themes": "theme_core_unpopulated",
+    "location_themes_blacklist": [
+      "theme_already_occupied",
+      "theme_already_colonized",
+      "theme_hidden",
+    ], 
+    "fleet_composition_faction": "hegemony",
+    "fleet_transponder": true,
+    "fleet_behavior": "GUARDED",
+  },
+
+  "nuke_directors_cut_vic": {
+
+    "required_mods_id": ["vic"],
+
+    "trigger_marketFaction_any": [
+      "independent"
+    ],
+    "trigger_market_minSize": 4,
+    "trigger_player_minLevel": 1,
+    "trigger_min_days_elapsed": 0,
+    "trigger_weight_mult": 1,
+    "trigger_playerRelationship_atLeast": {
+      "VIC": 0.5 ,
+	    "Hegemony": 0.2,
+    },
+    "job_name": "Stop the stream of shameless slander",
+    "job_description": "This particular posting seems just a little bit strange from a first glance. It's an extremely rare sight to find a job offer from someone most likely affiliated with VIC in broad daylight in such sort of networks, but here we are, even if they try to hide the tracks as much as possible and label themselves as \"anonymouse benefactor protecting corporate interests\". Perhaps, the corps' own hands are too full of other things to take care of? Or someone does indeed wish to earn the Conglomerate's favour by these sort of means for whatever reason. Nonethelss, no matter what the truth is, the reward looks enticing enough to consider the offer. \n\"A not really promising documentary series filmmaker from Hegemony has been building their questionable publicity by portraying the VIC in an unfavorable light, using, as they say, \"extensive anonymous interviews\", \"confidential footage\", and the so called \"leaked corporate plans\". As one can easily imagine, almost all of it is just a crude re-interpretation of what's already been openly stated by the megacorp's Public Relations Department long time ago. However, the whole ordeal still hurts the image of their partnership with the Hegemony and sows the seeds of distrust among the populace. Normally it wouldn't take long for the production to get shut down and the documentary being justly branded as public defamation, but for some unexpected reasons, the process is being a bit too slow, and the reputation of the Conglomerate is yet to be protected adequately. Thus, a more direct approach is required for the time being. \nMake sure the aforementioned filmmaker misses their upcoming interview, and other contractors will take care of the rest. Apply force at your own discretion, if needed of course\".",
+    "job_comm_reply": "The director almost jumps in their place, being startled from a sudden comm signal. Their forehead shimmering with little beads of sweat, concentration and focus quickly leaving the laden mind. They look as if ready to start screaming at you through the screens, but by some unknown virtue manage to suppress their emotions after a lengthy, almost meditative-looking exhale. \"Please. Please, please, please. Don't maneuver into the frame, we've been waiting for this precise planetary-stellar position for almost an entire cycle. Okay, okay, I'll give you an autograph and a chat after we're done, just don't interrupt us right now. The Art is in making...\" The filmmaker returns to their work, looking away from the comm screens and completely forgetting to turn them off. Would be quite a shame if such enthralling labour didn't bear any fruit in the end.",
+  	"job_intel_success": "The deed is done, and the payment comes in rather quickly after sending all the required confirmations. Soon enough, the news about the filmmaker's sudden disappearance start spreading through the networks, most of the discussions heavily moderated and yet still full of conspiracy theories of all sorts, only adding to the murkiness of the situation and burying what's little left of the truth. The mysterious \"benefactor\" is nowhere to be found, even if you paid the more experienced people to try and fish them out of the convoluted web of proxies. Surely, something is brewing between the Conglomerate's and the Hegemony's parties with quite a lot of other people involved, but you know better than to jump right into the pool of carnivorous xenofish.", 
+    "job_forFaction": "vic",
+    "job_difficultyDescription": "auto",
+    "job_deadline": 60, 
+    "job_reputation_reward": -15,
+    "job_credit_reward": 100000,
+    "job_reward_scaling": 1,
+    "job_type": "obliteration",
+    "job_show_type": true,
+    "job_show_captain": true,
+    "job_show_fleet": "preset",
+    "job_show_distance": "vanillaDistance",
+    "job_show_arrow": true,
+    "job_pick_option": "Accept the job",
+  	"target_last_name": "Zanzin",
+    "target_rank": "citizen",
+    "target_post": "Film Auteur",
+    "target_personality": "cautious",
+    "target_isAI": false,
+    "target_level": 1,
+    "target_elite_skills": -1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Zanzin Studios Camerata",
+    "fleet_faction": "Hegemony",
+    "fleet_flagship_variant": "kite_Stock_actual",
+    "fleet_flagship_name": "Long Take",
+    "fleet_flagship_recoverable": true,
+    "fleet_scaling_multiplier": 1,
+    "fleet_min_DP": 75,
+    "fleet_composition_faction": "independent",
+    "fleet_composition_quality": 2,
+    "fleet_transponder": true,
+    "fleet_behavior": "ROAMING",
+    "location_distance": "CORE",
+    "location_themes": [
+      "theme_core_unpopulated",
+    ],
+    "location_themes_blacklist": [
+      "theme_already_occupied","theme_hidden",
+    ],
+    "location_entities": [
+      "gate",
+      "wreck",
+      "debris",
+      "stable_location",
+      "comm_relay",
+      "nav_buoy",
+      "sensor_array",
+      "jump_point",
+    ],
+    "location_prioritizeUnexplored": false,
+    "location_defaultToAnyEntity": true,
+    "author": "NuclearStudent & Astarat",
+  },
+
+  "swag_redline": {
+		"trigger_marketFaction_any": [
+			"pirates"
+		],
+		"trigger_marketFaction_alliedWith": false,
+		"trigger_market_minSize": 3,
+		"trigger_player_minLevel": 5,
+		"trigger_min_days_elapsed": 90,
+		"trigger_weight_mult": 0.2,
+		"trigger_playerRelationship_atLeast": {
+			"pirates": -0.1
+		},
+
+		"job_name": "On the subject of pole-position.",
+		"job_description": "The entry you selected lights up and a rugged-looking figure appears on the screen. The transmission appears to be real-time, made apparent by the way the man addresses you.\n \"Hey, hotshot! You've been makin' some noise over 'ere, to me it sounds like you want to make it in one of our crews. Tell you what, forget all ya've learned about us \"pirates\", we're just simple entrepreneurial spirits looking to make a quick buck. Not all of us resort to pillaging and looting, some of us even take contractor work, it's one step up from the common rabble.\"\nYou're quite surprised by how eloquent he is, but the next thing he says takes you off-guard: \"You know, no big difference between me and your average Hegemony chump, or Sindrian citizen, or Tri-Tachyon corporate figure, we're all people! Mmm, maybe scratch that last one out, but you get what I'm tryin' to say. Anyways, let me get to the point.\"\nThe man begins what seems to be a rant, about conditions and life in the sector, but he does get to the job at hand, as promised. \"I like to race, ya get me? I do that for money, and many other things. I bust my hide for people who don't really see eye-to-eye with me. Hegemony military, Tri-Tachyon corporate types, even for the academically inclined, those guys are more open to my shenanigans. But racing gets the blood pumping, you know!? Lately, there's been this chump, ==$name==. A pirate in name only, if you will. I say that because it's clear $heSheThey only ever ran Tri-Tachyon jobs, to the point where $heSheThey got a nice severance package from them. Anyways, this package includes ==one of their really spooky prototype gunships, and $firstName made it into a death trap.== I'm saying, ==engine modifications, $heSheThey really voided the warranty on that sucker, ya get me?== And because of that, I want you to ==take it and turn it into Tri-Tachyon scrap.== Ever since $firstName got that ship, racing's not what it used to be. And more people share my sentiment. Not enough of them, since $heSheThey still spend time ==around our stations, most of the time==. All I'm sayin' is, most of us would be pleased if that thing didn't exist anymore. Or $himHerThem. If you want a ==quick way to a reputation with us 'less reputable folks'==, this is the way to do it, ==but do it fast. Get in, get done and get gone==. Notoriety pays around these parts, and I'll make sure you get paid.\"\nThe transmission ends and you're left with a decision.",
+		"job_comm_reply": "You notice the fleet in your sights, the ships look a lot better maintained than your average pirate fleet. This could be Tri-Tachyon's money at work. And without even time to take a breath, you get hailed. \"If you want any autographs, get lost. Go have a chat with my merchandise division for that sorta stuff.\"\nYou can definitely sense that $heIsSheIsTheyAre enjoying the corporate lifestyle a bit too much from $hisHerTheir tone. It will certainly bring you great pleasure to blast $himHerThem to bits, though you're not so sure about the ship, the thought occurs in your head, and you begin to consider your options.",
+		"job_intel_success": "\"Wooooooooo! You're tearing 'em up today! If you want any more fun odd jobs like that, hit me up and I'll make sure you get paid.\"\nThe charming and surprisingly educated pirate leaves you but not after he does a little flourish. He really is a showman.",
+		"job_intel_failure": "\"You did WHAT?! You took the ship for yourself? Ah, well, that was always a possibility, I'm not gonna hold it against ya. But, try not to show around here with it, might leave people with a bad taste in their mouth, ya get me? If you want more jobs, you know where to find me. Time to get paid!\"\nThe pirate pulls out what seems to be an antique-looking handgun and shoots the recording device with it, with a smile. You don't know if you should take this as a threat or a warning. He seemed happy about it though.",
+		"job_intel_expired": "\"Hey man, you're slacking! I saw him flying that thing in a tournament three days ago! Maybe this one wasn't a good fit for you. No matter though, there's more where that came from, just find me and I'll make it worth your while.\"\nAs the message ends, he gives you a salute, though he does look a little disappointed.",
+		"job_forFaction": "pirates",
+		"job_deadline": 45,
+		"job_credit_reward": 80000,
+		"job_reward_scaling": 0.6,
+		"job_reputation_reward": 10,
+		"job_type": "destruction",
+		"job_show_type": true,
+		"job_show_captain": true,
+		"job_show_fleet": "vanilla",
+		"job_show_distance": "vanillaDistance",
+		"job_show_arrow": false,
+		"job_difficultyDescription": "auto",
+		"job_pick_option": "Let the man know you agree with the terms discussed.",
+
+		"target_first_name": "Julio 'Redline'",
+		"target_last_name": "Campanella",
+		"target_gender": "MALE",
+		"target_rank": "spaceSailor",
+		"target_post": "spacer",
+		"target_personality": "aggressive",
+		"target_level": 4,
+		"target_elite_skills": 2,
+		"target_skill_preference": "GENERIC",
+		"target_skills": {
+			"helmsmanship": 2,
+			"systems_expertise": 2,
+			"target_analysis": 1,
+			"wolfpack_tactics": 1
+		},
+
+		"fleet_name": "Team Redline Racing Convoy",
+		"fleet_faction": "ML_bounty",
+		"fleet_flagship_variant": "swag_hyperion_Hotwired",
+		"fleet_flagship_name": "Redline",
+		"fleet_flagship_recoverable": true,
+		"fleet_scaling_multiplier": 1,
+		"fleet_min_FP": 80,
+		"fleet_composition_faction": "pirates",
+		"fleet_composition_quality": 2,
+		"fleet_transponder": false,
+		"fleet_behavior": "ROAMING",
+
+		"location_marketFactions": [
+			"pirates"
+		],
+		"location_distance": "CORE",
+		"location_themes": [
+			"theme_core_unpopulated",
+			"theme_core_populated",
+			"theme_core"
+		],
+		"location_themes_blacklist": [
+			"theme_already_occupied",
+			"theme_already_colonized",
+			"theme_hidden"
+		],
+		"location_entities": [
+			"station",
+			"planet"
+		],
+		"location_prioritizeUnexplored": false,
+		"location_defaultToAnyEntity": true
+	},
+}

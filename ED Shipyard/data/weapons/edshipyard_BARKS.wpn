@@ -1,0 +1,33 @@
+{
+	"id":"edshipyard_BARKS",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+    "turretSprite":"graphics/ships/edshipyard_shiba_glow1.png", #reusing the obligatory ship glows
+    "hardpointSprite":"graphics/ships/edshipyard_shiba_glow1.png", #reusing the obligatory ship glows
+	"turretGlowSprite":"graphics/ships/edshipyard_shiba_glow2.png", #reusing the obligatory ship glows
+    "hardpointGlowSprite":"graphics/ships/edshipyard_shiba_glow2.png", #reusing the obligatory ship glows
+	"turretOffsets":[25, 1, 25, 0,25, -1,25, 1, 25, 0,25, -1,25, 1, 25, 0,25, -1,25, 1, 25, 0,25, -1,25, 1, 25, 0,25, -1,25, 1, 25, 0,25, -1,25, 1, 25, 0,25, -1,25, 1, 25, 0,25, -1],
+	"turretAngleOffsets":[-1,1,-3,3,-5,5,-7,7,-9,9,-11,11,-13,13,-15,15,-17,17,-19,19,-21,21,-23,23],
+	"hardpointOffsets":[37, 1, 37, 0,37, -1,37, 1, 37, 0,37, -1,37, 1, 37, 0,37, -1,37, 1, 37, 0,37, -1,37, 1, 37, 0,37, -1,37, 1, 37, 0,37, -1,37, 1, 37, 0,37, -1,37, 1, 37, 0,37, -1],
+	"hardpointAngleOffsets":[-1,1,-3,3,-5,5,-7,7,-9,9,-11,11,-13,13,-15,15,-17,17,-19,19,-21,21,-23,23],
+	"barrelMode":"LINKED",
+	"animationType":"GLOW_AND_FLASH",
+    "renderHints":[RENDER_ADDITIVE],
+	"fringeColor":[150,50,100,75],
+	"coreColor":[225,125,175,175],
+	"glowColor":[170,140,155,150],
+    "displayArcRadius":400,
+    "muzzleFlashSpec":{"length":300.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":45.0,
+					   "particleSizeMin":5.0,
+					   "particleSizeRange":7.0,
+					   "particleDuration":1,
+					   "particleCount":20,
+					   "particleColor":[225,100,255,255]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"interruptibleBurst":false,
+	"requiresFullCharge":false,  # for pulse weapons - whether the weapon will fire at a lower strength partial charge
+	"projectileSpecId":"edshipyard_BARKS_Wave_p",  # projectile that will be fired
+	"fireSoundTwo":"ed_barks",
+}

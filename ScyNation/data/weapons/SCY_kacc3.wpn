@@ -1,0 +1,30 @@
+{
+	"id":"SCY_kacc3",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":750,
+	"turretSprite":"graphics/SCY/weapons/SCY_kacc3T.png",
+	"hardpointSprite":"graphics/SCY/weapons/SCY_kacc3H.png",
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[3, 7, 3, -7],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[10, 6, 10, -6],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+        "separateRecoilForLinkedBarrels":"TRUE",
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":50.0,   # only used if animationType = MUZZLE_FLASH
+                            "spread":5.0,
+                            "particleSizeMin":5.0,
+                            "particleSizeRange":30.0,
+                            "particleDuration":0.2,
+                            "particleCount":30,
+                            "particleColor":[200,200,255,150]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	#"projectileSpecId":"SCY_kaccS",  # projectile that will be fired		
+	"projectileSpecId":"SCY_kacc3S",  # projectile that will be fired	
+        "everyFrameEffect":"org.scy.weapons.SCY_addToMuzzlePlugin",
+	"fireSoundOne":"SCY_kacc3",
+}

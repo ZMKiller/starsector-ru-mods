@@ -1,0 +1,49 @@
+{
+    "displayName": "Defense",
+    "fluxCapacitors": 50,
+    "fluxVents": 46,
+    "goalVariant": true,
+    "hullId": "HSI_Oath_GF3",
+    "hullMods": [
+        "HSI_EnhancedShield",
+        "HSI_ProtocalAssault",
+        "armoredweapons",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Oath_GF3_Defense",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "HWI_FocusLance",
+                "WS0002": "HWI_FocusLance",
+                "WS0003": "HWI_FocusLance",
+                "WS0006": "HWI_lightneedler",
+                "WS0007": "HWI_lightneedler",
+                "WS0008": "HWI_lightneedler",
+                "WS0009": "HWI_lightneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "HWI_Duality",
+                "WS0011": "HWI_Duality"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0021": "HWI_TurbocannonSPD",
+                "WS0023": "HWI_TurbocannonSPD",
+                "WS0024": "HWI_TurbocannonSPD"
+            }
+        }
+    ],
+    "wings": ["sarissa_wing"]
+}

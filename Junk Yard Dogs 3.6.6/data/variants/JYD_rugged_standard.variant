@@ -1,0 +1,52 @@
+{
+  "variantId": "JYD_rugged_standard",
+  "hullId": "JYD_rugged",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "JYD_mabc",
+        "WS0002": "JYD_mabc"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "JYD_srm",
+        "WS0005": "JYD_srm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "JYD_spe",
+        "WS0006": "JYD_spe",
+        "WS0007": "JYD_spe"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "JYD_bea"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "JYD_botfly_wing"
+  ]
+}

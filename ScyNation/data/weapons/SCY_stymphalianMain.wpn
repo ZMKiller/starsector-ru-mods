@@ -1,0 +1,30 @@
+{
+	"id":"SCY_stymphalianMain",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":750,
+	"turretSprite":"graphics/SCY/weapons/SCY_stymphalianCodex.png",
+	"turretGlowSprite":"",
+	"hardpointSprite":"",
+	"hardpointGlowSprite":"",
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+        "turretOffsets":[-20,0],
+	"turretAngleOffsets":[0],
+        "hardpointOffsets":[-20,0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":75.0,   # only used if animationType = MUZZLE_FLASH
+                           "spread":10.0,
+                           "particleSizeMin":25.0,
+                           "particleSizeRange":75.0,
+                           "particleDuration":0.25,
+                           "particleCount":10,
+                           "particleColor":[250,200,55,100]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	"projectileSpecId":"SCY_spearS",		
+	"fireSoundTwo":"SCY_spear_fire",
+        "everyFrameEffect":"org.scy.weapons.SCY_stymphalianEffect",
+}

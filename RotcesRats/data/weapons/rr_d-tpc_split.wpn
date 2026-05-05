@@ -1,0 +1,27 @@
+{
+	"id":"rr_d-tpc_split",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretSprite":"graphics/weapons/onslaught_thermal_turret_base.png",
+	"turretGlowSprite":"",
+	"hardpointSprite":"",
+	"hardpointGlowSprite":"graphics/weapons/onslaught_thermal_glow.png",
+	"turretOffsets":[18, -4, 21, -2, 25, -1, 25, 1, 21, 2, 18, 4],
+	"turretAngleOffsets":[-3.5, -2, -0.5, 0.5, 2, 3.5],
+	"hardpointOffsets":[6, -4, 9, -2, 15, -1, 15, 1, 9, 2, 6, 4],
+	"hardpointAngleOffsets":[-3.5, -2, -0.5, 0.5, 2, 3.5],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"glowColor":[255,100,100,255],
+	"muzzleFlashSpec":{"length":30.0,
+					   "spread":5.0,
+					   "particleSizeMin":15.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.12,
+					   "particleCount":10,
+					   "particleColor":[255,100,100,255]},		
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"rr_d-tpc_shot",  # projectile that will be fired
+	"fireSoundTwo":"thermal_pulse_cannon_fire",
+}

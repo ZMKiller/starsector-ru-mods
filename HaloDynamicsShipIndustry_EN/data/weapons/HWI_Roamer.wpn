@@ -1,0 +1,48 @@
+{
+  "id": "HWI_Roamer",
+  "specClass": "projectile",
+  "projectileSpecId": "HWI_Roamer_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/HWI_Roamer_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/HWI_Roamer_turret_glow.png",
+  "turretGunSprite": "graphics/weapons/HWI_Roamer_turret_barrel.png",
+  "hardpointSprite": "graphics/weapons/HWI_Roamer_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/HWI_Roamer_hardpoint_glow.png",
+  "hardpointGunSprite": "graphics/weapons/HWI_Roamer_hardpoint_barrel.png",
+  "fireSoundTwo":"ion_pulser_fire",
+	"glowColor":[100,150,255,225],
+  "turretOffsets": [
+    25,
+    19.5,
+    25,
+    -19.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    32.5,
+    16,
+    32.5,
+    -16.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "visualRecoil": 4,
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec":{"length":33.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":12.0,
+					   "particleSizeMin":11.0,
+					   "particleSizeRange":14.0,
+					   "particleDuration":0.12,
+					   "particleCount":7,
+					   "particleColor":[100,200,255,255]},
+}

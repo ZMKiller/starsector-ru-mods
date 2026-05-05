@@ -1,0 +1,30 @@
+{
+	"baseHullId":"HSI_Oath",
+	"skinHullId":"HSI_Oath_Stalker",
+	"hullName":"誓约(追猎者)",
+	"descriptionPrefix":"为追猎者提供的特殊型号。这些舰船内设有特殊改装，能大幅度减弱操作安全协议造成的影响，以适应这些刀口舔血的狂徒的需求。",
+	"tags":["Stalker_bp","no_dealer","no_sell","no_bp_drop"],
+	"tech":"追猎者",
+	"spriteName":"graphics/ships/HSI_Oath_F.png",
+	"baseValueMult":1.2,
+	"fleetPoints":32,
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":["HSI_Stalker"],
+    "weaponSlotChanges":{
+                		"WS0003":{
+                			"type": "SYNERGY",
+                			"size": "LARGE"
+                		},
+                		"WS0005":{
+                            "type": "SYNERGY",
+                            "size": "MEDIUM"
+                        },
+                        "WS0004":{
+                             "type": "SYNERGY",
+                             "size": "MEDIUM"
+                        },
+                	},
+}

@@ -1,0 +1,71 @@
+{
+  "hullName": "Fervor",
+  "hullId": "ora_fervor",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ORA/ships/ora_fervor.png",
+  "style": "HIGH_TECH",
+  "height": 48,
+  "width": 48,
+  "center": [24, 20],
+  "collisionRadius": 32,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 40,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux",
+    "pointdefenseai",
+    "turretgyros"
+  ],
+  "builtInWeapons": {
+    "WS0001": "ora_eschewalFighter",
+    "WS0002": "ora_recital"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [23.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-4, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, 3],
+      "length": 38,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-16, -3],
+      "length": 38,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    21.5, 4.5,
+    -0.5, 23,
+    -18.5, 9.5,
+    -13, -0,
+    -18.5, -9.5,
+    -0.5, -23,
+    12.5, -13.5,
+    19.5, -13.5
+  ]
+}

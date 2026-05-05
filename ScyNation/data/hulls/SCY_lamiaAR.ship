@@ -1,0 +1,45 @@
+{
+  "hullName": "Armor",
+  "hullId": "SCY_lamiaAR",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/SCY/ships/SCY_lamiaAR.png",
+  "style": "SCYHULL",
+  "height": 73,
+  "width": 24,
+  "center": [12, 36.5],
+  "collisionRadius": 37,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 37,
+  "viewOffset": 0,
+  "builtInMods": [
+    "reduced_explosion",
+    "always_detaches",
+    "SCY_armorChild"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SCY_anti1"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [19, 2.5]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -28, -7.5,
+    -28, 0.5,
+    -15.5, 6.5,
+    -11.5, -3.5,
+    4, -3.5,
+    8.5, 6.5,
+    31, 6.5,
+    35, 1.5,
+    27, -7.5
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "hullName": "Symphalian Bird",
+  "hullId": "SCY_stymphalianbird",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/SCY/ships/SCY_stymphalianBird.png",
+  "style": "SCYHULL",
+  "height": 167,
+  "width": 86,
+  "center": [43, 65],
+  "collisionRadius": 107,
+  "shieldCenter": [16, -0],
+  "shieldRadius": 90,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame1",
+    "BLINKER1": "SCY_ZblinkerA",
+    "BLINKER2": "SCY_ZblinkerA",
+    "D_HEAT_CENTER": "SCY_ZstymphalianHeat",
+    "GUN": "SCY_stymphalianMain",
+    "Z_HEAT_MAIN": "SCY_ZZstymphalianWeapon",
+    "Z_SYSTEM1": "SCY_ZZstymphalianCharge",
+    "Z_SYSTEM2": "SCY_ZZstymphalianSpark",
+    "Z_SYSTEM3": "SCY_ZZstymphalianSystem"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-31, -0]
+    },
+    {
+      "id": "D_HEAT_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-34, -0]
+    },
+    {
+      "id": "Z_SYSTEM1",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [19, -0]
+    },
+    {
+      "id": "Z_SYSTEM2",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [29, -0]
+    },
+    {
+      "id": "Z_SYSTEM3",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12, -20.5]
+    },
+    {
+      "id": "Z_HEAT_MAIN",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [52, 0]
+    },
+    {
+      "id": "BLINKER2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [34.5, -4.5]
+    },
+    {
+      "id": "BLINKER1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [34.5, 4.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 60,
+      "locations": [-5, 17]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -60,
+      "locations": [-5, -17]
+    },
+    {
+      "id": "GUN",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [42, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-31, -0],
+      "length": 16,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    -28.5, 41.5,
+    -37.5, 32.5,
+    -28.5, 18.5,
+    -50.5, 10.5,
+    -33.5, 10.5,
+    -33.5, -10.5,
+    -50.5, -10.5,
+    -28.5, -18.5,
+    -37.5, -32.5,
+    -28.5, -41.5,
+    -1.5, -21.5,
+    12, -26.5,
+    29, -11.5,
+    48, -7.5,
+    48, 7.5,
+    30.5, 10.5,
+    48.5, 16,
+    30.5, 21.5,
+    -1.5, 21.5
+  ]
+}

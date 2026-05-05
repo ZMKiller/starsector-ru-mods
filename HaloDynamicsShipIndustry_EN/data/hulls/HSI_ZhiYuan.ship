@@ -1,0 +1,260 @@
+{
+  "hullName": "ZhiYuan",
+  "hullId": "HSI_ZhiYuan",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HSI_ZhiYuan.png",
+  "style": "HSI_TECH",
+  "height": 100,
+  "width": 184,
+  "center": [92, 51],
+  "collisionRadius": 123.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 108.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo",
+    "HSI_Drift",
+    "HSI_DisplacerExtendFx",
+    "fluxshunt"
+  ],
+  "builtInWeapons": {
+    "WS0009": "HWI_Phenomenon",
+    "WS00A": "HSI_LED"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 58,
+      "angle": 0,
+      "locations": [13.5, 43]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 58,
+      "angle": 0,
+      "locations": [13.5, -43]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [-5.5, 64]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 315,
+      "locations": [-5.5, -64]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 58,
+      "angle": 0,
+      "locations": [30.5, -35.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 58,
+      "angle": 0,
+      "locations": [30.5, 35.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 58,
+      "angle": 0,
+      "locations": [15.5, 61.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 58,
+      "angle": 0,
+      "locations": [15.5, -61.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 58,
+      "angle": 0,
+      "locations": [48.5, 0]
+    },
+    {
+      "id": "WS00A",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 58,
+      "angle": 0,
+      "locations": [-10, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-34.5, 23.5],
+      "length": 73.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-34.5, -23.5],
+      "length": 73.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-34, 24],
+      "length": 42.5,
+      "width": 25,
+      "angle": -180,
+      "contrailSize": 25,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-34, -24],
+      "length": 42.5,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-26, 41.5],
+      "length": 32,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-26, -41.5],
+      "length": 32,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-24, 86.5],
+      "length": 4.088837,
+      "width": 41.402,
+      "angle": 132.5,
+      "contrailSize": 41.402,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-24, -86.5],
+      "length": 4.088837,
+      "width": 41.402,
+      "angle": -132.5,
+      "contrailSize": 41.402,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-29, 91.5],
+      "length": 3.934619,
+      "width": 34.337662,
+      "angle": 132.5,
+      "contrailSize": 34.337662,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-29, -91.5],
+      "length": 3.934619,
+      "width": 34.337662,
+      "angle": -132.5,
+      "contrailSize": 34.337662,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-21.5, 84],
+      "length": 35.628639,
+      "width": 5.2345,
+      "angle": 132.5,
+      "contrailSize": 5.2345,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-21.5, -84],
+      "length": 35.628639,
+      "width": 5.2345,
+      "angle": -132.5,
+      "contrailSize": 5.2345,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    31, -7,
+    4, -11,
+    19.5, -13,
+    21, -21.5,
+    26, -22,
+    31, -19.5,
+    43.5, -22,
+    43, -29,
+    27.5, -49,
+    12, -75,
+    11, -91.5,
+    -8, -91.5,
+    -24.5, -82.5,
+    -25, -79,
+    -20.5, -72,
+    -22.5, -48,
+    -26.5, -45,
+    -25.5, -39.5,
+    -32, -29,
+    -33, -16.5,
+    -29, -12.5,
+    -47.5, -6,
+    -47.5, 6,
+    -29, 12.5,
+    -33, 16.5,
+    -32, 29,
+    -25.5, 39.5,
+    -26.5, 45,
+    -22.5, 48,
+    -20.5, 72,
+    -25, 79,
+    -24.5, 82.5,
+    -8, 91.5,
+    11, 91.5,
+    12, 75,
+    27.5, 49,
+    43, 29,
+    43.5, 22,
+    31, 19.5,
+    26, 22,
+    21, 21.5,
+    19.5, 13,
+    4, 11,
+    31, 7
+  ]
+}

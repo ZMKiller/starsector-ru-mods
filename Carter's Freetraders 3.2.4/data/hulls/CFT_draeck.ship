@@ -1,0 +1,51 @@
+{
+  "hullName": "Draeck",
+  "hullId": "CFT_draeck",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/CFT_Draeck.png",
+  "style": "MIDLINE",
+  "height": 68,
+  "width": 68,
+  "center": [34, 35],
+  "collisionRadius": 48,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 44,
+  "viewOffset": 0,
+  "builtInMods": [
+    "shielded_holds",
+    "increased_maintenance",
+    "civgrade",
+    "drive_field_stabilizer",
+    "CFT_dronebays"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -2.5, -0,
+        3, -0
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-32.5, -0],
+      "length": 44.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    39, -38,
+    -40.5, -36,
+    -40.5, 36,
+    39, 38
+  ]
+}

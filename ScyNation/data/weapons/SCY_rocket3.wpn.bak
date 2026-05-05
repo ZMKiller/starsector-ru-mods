@@ -1,0 +1,111 @@
+{
+	"id":"SCY_rocket3",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"LARGE",
+	"turretSprite":"graphics/SCY/weapons/SCY_rocket3T.png",
+	"hardpointSprite":"graphics/SCY/weapons/SCY_rocket3H.png",
+	"hardpointOffsets":[
+22, -9.5,
+        22, -4.5,
+19, -8.5,
+        19, -5.5,
+
+22, 4.5,
+        22, 9.5,
+19, 5.5,
+        19, 8.5,
+
+25.5, -14.5,
+        25.5, -9.5,
+27.5, -13.5,
+        27.5, -10.5,
+
+25.5, -2.5,
+        25.5, 2.5,
+27.5, -1.5,
+        27.5, 1.5,
+
+25.5, 9.5,
+        25.5, 14.5,
+27.5, 10.5,
+        27.5, 13.5,
+],
+
+
+	"turretOffsets":[
+18, -9.5,
+        18, -4.5,
+15, -8.5,
+        15, -5.5,
+
+18, 4.5,
+        18, 9.5,
+15, 5.5,
+        15, 8.5,
+
+21.5, -14.5,
+        21.5, -9.5,
+23.5, -13.5,
+        23.5, -10.5,
+
+21.5, -2.5,
+        21.5, 2.5,
+23.5, -1.5,
+        23.5, 1.5,
+
+21.5, 9.5,
+        21.5, 14.5,
+23.5, 10.5,
+        23.5, 13.5,
+],
+
+	"hardpointAngleOffsets":[
+-5, 5,
+-3, 3,
+
+-5, 5,
+-3, 3,
+
+-5, 5,
+-3, 3,
+
+-5, 5,
+-3, 3,
+
+-5, 5,
+-3, 3,
+],
+	"turretAngleOffsets":[
+-5, 5,
+-3, 3,
+
+-5, 5,
+-3, 3,
+
+-5, 5,
+-3, 3,
+
+-5, 5,
+-3, 3,
+
+-5, 5,
+-3, 3,],
+	"barrelMode":"ALTERNATING",	
+	"animationType":"SMOKE",
+	"interruptibleBurst":false,
+	"autocharge":true,
+	"displayArcRadius":500,
+	"smokeSpec":{"particleSizeMin":10.0,
+                    "particleSizeRange":14.0,
+                    "cloudParticleCount":2,
+                    "cloudDuration":0.5,
+                    "cloudRadius":12.0;
+                    "blowbackParticleCount":4,
+                    "blowbackDuration":1.5,
+                    "blowbackLength":-20.0,
+                    "blowbackSpread":6.0,
+                    "particleColor":[190,180,160,60]},
+	"projectileSpecId":"SCY_rocketS",
+	"fireSoundTwo":"SCY_rocket",
+}

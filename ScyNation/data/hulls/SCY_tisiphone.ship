@@ -1,0 +1,188 @@
+{
+  "bounds": [
+    43.5,
+    4.5,
+    43.5,
+    22.5,
+    15.5,
+    27.5,
+    1,
+    17.5,
+    -25.5,
+    17.5,
+    -45.5,
+    10.5,
+    -25,
+    10,
+    -25,
+    -10,
+    -45.5,
+    -10.5,
+    -25.5,
+    -17.5,
+    1,
+    -17.5,
+    15.5,
+    -27.5,
+    43.5,
+    -22.5,
+    43.5,
+    -4.5,
+    56,
+    -0
+  ],
+  "builtInMods": [
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "ANTIMISSILE1": "SCY_anti1",
+    "ANTIMISSILE2": "SCY_anti1",
+    "A_FLAME_CENTER": "SCY_Zflame1",
+    "BLINKER1": "SCY_ZblinkerA",
+    "BLINKER2": "SCY_ZblinkerA",
+    "D_HEAT_CENTER": "SCY_ZfrigateHeat",
+    "Y_BRIDGE": "SCY_ZtisiphoneBridge"
+  },
+  "center": [
+    29,
+    60
+  ],
+  "collisionRadius": 75,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 16,
+      "location": [
+        -26,
+        -0
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE",
+      "width": 16
+    }
+  ],
+  "height": 117,
+  "hullId": "SCY_tisiphone",
+  "hullName": "Tisiphone",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    8,
+    -0
+  ],
+  "shieldRadius": 74,
+  "spriteName": "graphics/SCY/ships/SCY_tisiphone.png",
+  "style": "SCYHULL",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "A_FLAME_CENTER",
+      "locations": [
+        -26,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "D_HEAT_CENTER",
+      "locations": [
+        -30.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "Y_BRIDGE",
+      "locations": [
+        32.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BLINKER1",
+      "locations": [
+        16.5,
+        9.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "BLINKER2",
+      "locations": [
+        16.5,
+        -9.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        39,
+        14
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0.01,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        39,
+        -14
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 20,
+      "id": "ANTIMISSILE1",
+      "locations": [
+        2,
+        3
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 20,
+      "id": "ANTIMISSILE2",
+      "locations": [
+        2,
+        -3
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 58
+}

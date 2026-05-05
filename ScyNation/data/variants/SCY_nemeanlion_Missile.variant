@@ -1,0 +1,53 @@
+{
+    "displayName": "Missile",
+    "fluxCapacitors": 37,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "SCY_nemeanlion",
+    "hullMods": [
+        "eccm",
+        "missleracks",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_nemeanlion_Missile",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAW1": "SCY_swarmer",
+                "MAW2": "SCY_laser3",
+                "MAW3": "SCY_laser3",
+                "WS0001": "SCY_cluster2",
+                "WS0002": "SCY_cluster2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "flak",
+                "WS0004": "flak",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_intercept",
+                "WS0006": "SCY_intercept",
+                "WS0007": "vulcan",
+                "WS0008": "vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"M_FL": "SCY_lionFL_Missile"},
+        {"M_FR": "SCY_lionFR_Missile"},
+        {"M_RL": "SCY_lionRL_Missile"},
+        {"M_RR": "SCY_lionRR_Missile"},
+    ],
+}

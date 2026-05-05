@@ -1,0 +1,23 @@
+{
+	"id":"ora_invokedS",
+	"specClass":"projectile",
+	"onHitEffect":"data.scripts.weapons.ORA_invoked_effect",
+            #"spawnType":"BALLISTIC_AS_BEAM",
+            #"collisionClass":"RAY",
+            #"collisionClassByFighter":"RAY_FIGHTER",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":50.0,
+	"width":10.0,
+	"fadeTime":0.1,
+	"fringeColor":[100,50,255,50],
+	"coreColor":[0,0,0,0],
+	"glowColor":[0,0,0,0],
+	"glowRadius":0,
+	"hitGlowRadius":75,	
+            #"textureType":"WEAVE",  # only needed for BEAM spawnType
+	"textureScrollSpeed":1.0,
+	"pixelsPerTexel":2.0,
+	"bulletSprite":""
+}

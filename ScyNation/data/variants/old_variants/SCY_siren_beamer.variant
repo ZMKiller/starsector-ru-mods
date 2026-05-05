@@ -1,0 +1,34 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 17,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "SCY_siren",
+    "hullMods": [
+        "pointdefenseai",
+        "recovery_shuttles"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "SCY_siren_beamer",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_sirenMain"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "taclaser",
+                "WS0003": "taclaser",
+                "WS0004": "taclaser",
+                "WS0005": "taclaser",
+                "WS0006": "taclaser",
+                "WS0007": "taclaser"
+            }
+        }
+    ],
+    "wings": ["SCY_nosos_wing"]
+}

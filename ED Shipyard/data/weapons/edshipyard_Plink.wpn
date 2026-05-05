@@ -1,0 +1,27 @@
+{
+	"id":"edshipyard_Plink",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"displayArcRadius":900,
+	"turretSprite":"graphics/weapons/edshipyard_plink_s_turret_base.png",
+	"turretGlowSprite":"graphics/weapons/edshipyard_plink_s_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/edshipyard_plink_s_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/weapons/edshipyard_plink_s_hardpoint_glow.png",		
+	"turretOffsets":[6, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[6, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"interruptibleBurst":false,
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":2.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":1.0,
+					   "particleCount":2,
+					   "particleColor":[225,100,225,255]},
+	"projectileSpecId":"edshipyard_plink",  # projectile that will be fired
+	"fireSoundTwo":"ir_pulse_laser_fire",
+}

@@ -1,0 +1,70 @@
+{
+  "hullName": "Apollo",
+  "hullId": "CFT_apollo",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_apollo.png",
+  "style": "LOW_TECH",
+  "height": 40,
+  "width": 35,
+  "center": [17.5, 18.5],
+  "collisionRadius": 26.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 25.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "eccm"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [16, 8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [16, -8]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-5.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17.5, -7],
+      "length": 14.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "LOW_TECH_FIGHTER"
+    },
+    {
+      "location": [-17.5, 7],
+      "length": 14.5,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "LOW_TECH_FIGHTER"
+    }
+  ],
+  "bounds": [
+    24, -17.5,
+    -20.5, -20.5,
+    -20, 20.5,
+    24, 18
+  ]
+}

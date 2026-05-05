@@ -1,0 +1,79 @@
+{
+  "variantId": "edshipyard_riptide_variant",
+  "hullId": "edshipyard_riptide",
+  "displayName": "Риптайд",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull",
+    "heavyarmor",
+    "dedicated_targeting_core",
+    "armoredweapons"
+  ],
+      "weaponGroups": [
+          {
+              "autofire": true,
+              "mode": "LINKED",
+              "weapons": {
+                  "WS0013": "hil",
+                  "WS0014": "hil"
+              }
+          },
+          {
+              "autofire": true,
+              "mode": "LINKED",
+              "weapons": {
+                  "WS0001": "edshipyard_riptide_beam",
+                  "WS0002": "edshipyard_riptide_beam",
+                  "WS0003": "edshipyard_riptide_beam",
+                  "WS0004": "edshipyard_riptide_beam",
+                  "WS0005": "edshipyard_riptide_beam",
+                  "WS0006": "edshipyard_riptide_beam",
+                  "WS0007": "edshipyard_riptide_beam",
+                  "WS0008": "edshipyard_riptide_beam",
+                  "WS0009": "edshipyard_riptide_beam",
+                  "WS0010": "edshipyard_riptide_beam",
+                  "WS0011": "edshipyard_riptide_beam",
+                  "WS0012": "edshipyard_riptide_beam",
+                  "WS0015": "edshipyard_riptide_beam",
+                  "WS0016": "edshipyard_riptide_beam",
+                  "WS0017": "edshipyard_riptide_beam",
+                  "WS0018": "edshipyard_riptide_beam"
+              }
+          },
+          {
+              "autofire": true,
+              "mode": "LINKED",
+              "weapons": {"WS0031": "guardian"}
+          },
+          {
+              "autofire": true,
+              "mode": "LINKED",
+              "weapons": {
+                  "WS0023": "edshipyard_SC1",
+                  "WS0024": "edshipyard_SC1",
+                  "WS0029": "edshipyard_SC1",
+                  "WS0030": "edshipyard_SC1"
+              }
+          },
+          {
+              "autofire": true,
+              "mode": "LINKED",
+              "weapons": {
+                  "WS0019": "flak",
+                  "WS0020": "flak",
+                  "WS0025": "vulcan",
+                  "WS0026": "vulcan"
+              }
+          }
+      ],
+  "modules": [
+    {"ARMOR 1": "module_armour1_Standard"},
+    {"ARMOR 2": "module_armour1_Standard"},
+    {"ARMOR 3": "module_armour1_Standard"},
+  ],
+  "wings": []
+}

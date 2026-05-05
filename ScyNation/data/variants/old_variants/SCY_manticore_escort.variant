@@ -1,0 +1,42 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 0,
+    "fluxVents": 6,
+    "goalVariant": false,
+    "hullId": "SCY_manticore",
+    "hullMods": [
+        "pointdefenseai",
+        "expanded_deck_crew",
+        "recovery_shuttles"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "SCY_manticore_escort",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_scorcher"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "SCY_minigun1"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "SCY_minigun1"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "SCY_minigun1"}
+        }
+    ],
+    "wings": [
+        "SCY_akhlys_wing",
+        "SCY_akhlys_wing",
+        "SCY_akhlys_wing"
+    ]
+}

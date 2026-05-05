@@ -1,0 +1,182 @@
+{
+  "hullName": "Talos",
+  "hullId": "SCY_talos",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/SCY/ships/SCY_talos.png",
+  "style": "SCYHULL",
+  "height": 114,
+  "width": 78,
+  "center": [39, 67],
+  "collisionRadius": 79,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 78,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_LEFT": "SCY_Zflame1",
+    "A_FLAME_RIGHT": "SCY_Zflame1",
+    "BLINKER1": "SCY_ZblinkerB",
+    "BLINKER2": "SCY_ZblinkerB",
+    "D_HEAT_LEFT": "SCY_ZfrigateHeat",
+    "D_HEAT_RIGHT": "SCY_ZfrigateHeat_noScript",
+    "SYSTEM": "SCY_ZZtalosSystem",
+    "Y_BRIDGE": "SCY_ZtalosBridge"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-33, 12]
+    },
+    {
+      "id": "A_FLAME_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-33, -12]
+    },
+    {
+      "id": "D_HEAT_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-36.5, 12]
+    },
+    {
+      "id": "D_HEAT_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-36.5, -12]
+    },
+    {
+      "id": "Y_BRIDGE",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [25, -0]
+    },
+    {
+      "id": "BLINKER1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6.5, 6.5]
+    },
+    {
+      "id": "BLINKER2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [6.5, -6.5]
+    },
+    {
+      "id": "SYSTEM",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-4, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [40, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 235,
+      "angle": 90,
+      "locations": [9, 25]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 235,
+      "angle": -90,
+      "locations": [9, -25]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [30, 25]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [30, -25]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-33, 12],
+      "length": 16,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    },
+    {
+      "location": [-33, -12],
+      "length": 16,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    44.5, 6.5,
+    23.5, 17.5,
+    31.5, 20.5,
+    31.5, 29.5,
+    -0.5, 36,
+    -52.5, 23.5,
+    -34.5, 23,
+    -34.5, -23,
+    -52.5, -23.5,
+    -0.5, -36,
+    31.5, -29.5,
+    31.5, -20.5,
+    23.5, -17.5,
+    44.5, -6.5
+  ]
+}

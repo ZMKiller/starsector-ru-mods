@@ -1,0 +1,172 @@
+{
+  "hullName": "Xanthus",
+  "hullId": "SCY_xanthus",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/SCY/ships/SCY_xanthus.png",
+  "style": "SCYHULL",
+  "height": 457,
+  "width": 112,
+  "center": [56, 242],
+  "collisionRadius": 244.85965,
+  "shieldCenter": [-10, -0],
+  "shieldRadius": 234.333633,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering",
+    #"civgrade",
+    #"SCY_militarized"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_LEFT": "SCY_Zflame3",
+    "A_FLAME_RIGHT": "SCY_Zflame3",
+    "BLINKER1": "SCY_ZblinkerB",
+    "BLINKER2": "SCY_ZblinkerB",
+    "BLINKER3": "SCY_ZblinkerA",
+    "BLINKER4": "SCY_ZblinkerA",
+    "D_HEAT_LEFT": "SCY_XcruiserHeat",
+    "D_HEAT_RIGHT": "SCY_XcruiserHeat_noScript"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-158, 19]
+    },
+    {
+      "id": "A_FLAME_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-158, -19]
+    },
+    {
+      "id": "D_HEAT_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-183, 19]
+    },
+    {
+      "id": "D_HEAT_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-183, -19]
+    },
+    {
+      "id": "BLINKER2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-76.5, -22.5]
+    },
+    {
+      "id": "BLINKER1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-76.5, -17.5]
+    },
+    {
+      "id": "BLINKER3",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [158.5, -17.5]
+    },
+    {
+      "id": "BLINKER4",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [158.5, -22.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [30, -20]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-29, -20]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-158, -19],
+      "length": 37.5,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    },
+    {
+      "location": [-158, 19],
+      "length": 37.5,
+      "width": 24,
+      "angle": -180,
+      "contrailSize": 24,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    179.5, 38.5,
+    166.5, 51.5,
+    104.5, 51.5,
+    95, 42,
+    85.5, 51.5,
+    -83.5, 51.5,
+    -89.5, 45.5,
+    -158.5, 45.5,
+    -187.5, 38.5,
+    -184, 34.5,
+    -160.5, 34.5,
+    -160.5, 5.5,
+    -150.5, 0,
+    -160.5, -5.5,
+    -160.5, -34.5,
+    -184, -34.5,
+    -187.5, -38.5,
+    -158.5, -45.5,
+    -89.5, -45.5,
+    -83.5, -51.5,
+    85.5, -51.5,
+    95, -42,
+    104.5, -51.5,
+    166.5, -51.5,
+    185.5, -31.5,
+    198.5, -29.5,
+    198.5, -11,
+    185.5, -8.5,
+    179.5, 0.5
+  ]
+}

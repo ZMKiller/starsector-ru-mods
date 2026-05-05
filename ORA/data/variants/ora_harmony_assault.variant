@@ -1,0 +1,49 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 8,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "ora_harmony",
+    "hullMods": ["stabilizedshieldemitter"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_harmony_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_eschewal"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "ionpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "ora_litany",
+                "WS0007": "ora_litany",
+                "WS0009": "ora_litany"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0006": "ora_litany",
+                "WS0008": "ora_litany",
+                "WS0010": "ora_litany"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_choir",
+                "WS0004": "ora_choir"
+            }
+        }
+    ]
+}

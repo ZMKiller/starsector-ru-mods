@@ -1,0 +1,149 @@
+{
+  "hullName": "Telchine",
+  "hullId": "SCY_telchine",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/SCY/ships/SCY_telquine.png",
+  "style": "SCYHULL",
+  "height": 241,
+  "width": 97,
+  "center": [46, 129],
+  "collisionRadius": 128.639999,
+  "shieldCenter": [-10, -0],
+  "shieldRadius": 122.262016,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering",
+    #"civgrade",
+    #"SCY_militarized",
+    "surveying_equipment"
+  ],
+  "builtInWings": [
+    "SCY_automatos_wing"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame2",
+    "BLINKER3": "SCY_ZblinkerB",
+    "BLINKER4": "SCY_ZblinkerB",
+    "D_HEAT_CENTER": "SCY_YdestroyerHeat",
+    "WS0001": "SCY_telchineMain",
+    "WS0002": "mininglaser"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-73, -0]
+    },
+    {
+      "id": "D_HEAT_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-85, -0]
+    },
+    {
+      "id": "BLINKER3",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [46.5, 7.5]
+    },
+    {
+      "id": "BLINKER4",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [46.5, -7.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [98, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [59, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 45,
+      "locations": [66, 30]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -45.009998,
+      "locations": [66, -30]
+    },
+    {
+      "id": "SYSTEM",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 45,
+      "locations": [33, 35]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-73, -0],
+      "length": 32.5,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    -26.5, 40.5,
+    -34.5, 21.5,
+    -83, 19.5,
+    -99.5, 12.5,
+    -75.5, 12.5,
+    -75.5, -12.5,
+    -99.5, -12.5,
+    -83, -19.5,
+    -34.5, -21.5,
+    -21.5, -48.5,
+    -1.5, -48.5,
+    16.5, -32.5,
+    29.5, -42.5,
+    74.5, -38.5,
+    79.5, -19.5,
+    90.5, -18.5,
+    90.5, 18.5,
+    79.5, 19.5,
+    74.5, 38.5,
+    16.5, 40.5,
+    9.5, 27.5,
+    2.5, 40.5
+  ]
+}

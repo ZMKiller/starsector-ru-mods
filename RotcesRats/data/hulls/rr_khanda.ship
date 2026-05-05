@@ -1,0 +1,70 @@
+{
+  "hullName": "Khanda",
+  "hullId": "rr_khanda",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/rr_khanda.png",
+  "style": "MIDLINE",
+  "height": 44,
+  "width": 38,
+  "center": [19, 23],
+  "collisionRadius": 32,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 30,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 0,
+      "locations": [-2, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 15,
+      "locations": [18, 8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -15,
+      "locations": [18, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-22, 7],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-22, -7],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    16, 11,
+    16, -11,
+    -6, -18,
+    -20, -9.5,
+    -17, -0,
+    -20, 9,
+    -6, 18
+  ]
+}

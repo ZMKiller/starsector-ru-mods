@@ -1,0 +1,81 @@
+{
+  "hullName": "Lacewing",
+  "hullId": "HIVER_lacewing",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/HIVER_lacewing.png",
+  "style": "HIGH_TECH",
+  "height": 160,
+  "width": 95,
+  "center": [47.5, 90.5],
+  "collisionRadius": 97.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 96,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [17, 9.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [17, -9.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [-4.5, 25]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [-5.5, -26.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-75, -15],
+      "length": 30.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-75, 15],
+      "length": 30.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -91, -27.5,
+    -45.5, -56,
+    75.5, -33.5,
+    75.5, 33,
+    -53.5, 57,
+    -92.5, 21.5
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "rr_inimeg",
+  "hullMods": [
+    "targetingunit",
+    "turretgyros",
+    "armoredweapons"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "rr_inimeg_sup",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "heatseeker",
+        "WS0002": "heatseeker",
+        "WS0003": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "heavyac",
+        "WS 002": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "pdlaser"
+      }
+    }
+  ],
+  "wings": []
+}

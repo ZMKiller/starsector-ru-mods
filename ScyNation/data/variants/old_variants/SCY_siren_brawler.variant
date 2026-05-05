@@ -1,0 +1,39 @@
+{
+    "displayName": "Brawler",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "hullId": "SCY_siren",
+    "hullMods": [
+        "missleracks",
+        "eccm",
+        "expanded_deck_crew"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_siren_brawler",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_sirenMain"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "SCY_grenade",
+                "WS0003": "SCY_grenade",
+                "WS0004": "SCY_grenade",
+                "WS0005": "SCY_grenade"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "SCY_intercept",
+                "WS0007": "SCY_intercept"
+            }
+        }
+    ],
+    "wings": ["SCY_stygere_wing"]
+}

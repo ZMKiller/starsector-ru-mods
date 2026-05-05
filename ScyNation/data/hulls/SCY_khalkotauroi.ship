@@ -1,0 +1,384 @@
+{
+    "hullName": "Khalkotauroi",
+    "hullId": "SCY_khalkotauroi",
+    "hullSize": "CRUISER",
+    "style": "SCYHULL",
+    "spriteName": "graphics/SCY/ships/SCY_khalkotauroi.png",
+    "height": 355,
+    "width": 108,
+    "center": [
+        54, 177.5
+    ],
+    "collisionRadius": 200,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 190,
+    "viewOffset": 0,
+    "builtInMods": [
+        "SCY_engineering"
+    ],
+    "builtInWeapons": {
+        "MAIN": "SCY_khalkotauroiMain",
+        "A_FLAME_CENTER": "SCY_Zflame3",
+        "BLINKER1": "SCY_ZblinkerA",
+        "BLINKER2": "SCY_ZblinkerA",
+        "BLINKER5": "SCY_ZblinkerB",
+        "BLINKER6": "SCY_ZblinkerB",
+        "D_HEAT_CENTER": "SCY_XcruiserHeat",
+        "Z_HEAT": "SCY_XXkhalkotauroiWeapon"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "A_FLAME_CENTER",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -93,        0
+            ]
+        },
+        {
+            "id": "D_HEAT_CENTER",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                  -118.5,        0
+            ]
+        },
+        {
+            "id": "E0_ROOT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "E1_MULTI",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   113.5,       25
+            ]
+        },
+        {
+            "id": "E4_MULTI",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   113.5,      -25
+            ]
+        },
+        {
+            "id": "E2_MULTI",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    82.5,       25
+            ]
+        },
+        {
+            "id": "E5_MULTI",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    82.5,      -25
+            ]
+        },
+        {
+            "id": "E3_MULTI",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    51.5,       25
+            ]
+        },
+        {
+            "id": "E6_MULTI",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    51.5,      -25
+            ]
+        },
+        {
+            "id": "BLINKER1",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -21,     22.5
+            ]
+        },
+        {
+            "id": "BLINKER2",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -21,    -22.5
+            ]
+        },
+        {
+            "id": "BLINKER5",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     155,     15.5
+            ]
+        },
+        {
+            "id": "BLINKER6",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     155,    -15.5
+            ]
+        },
+        {
+            "id": "Z_HEAT",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      50,        0
+            ]
+        },
+        {
+            "id": "MAIN",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      14,        0
+            ]
+        },
+        {
+            "id": "WS0002",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180.009995,
+            "angle": 30,
+            "locations": [
+                   140.5,       24
+            ]
+        },
+        {
+            "id": "WS0003",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -30,
+            "locations": [
+                   140.5,      -24
+            ]
+        },
+        {
+            "id": "WS0006",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": 135,
+            "locations": [
+                   -24.5,       38
+            ]
+        },
+        {
+            "id": "WS0007",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": -135,
+            "locations": [
+                   -24.5,      -38
+            ]
+        },
+        {
+            "id": "WS0004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": 45,
+            "locations": [
+                     163,       27
+            ]
+        },
+        {
+            "id": "WS0005",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": -45,
+            "locations": [
+                     163,      -27
+            ]
+        },
+        {
+            "id": "WS0001",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": -45,
+            "locations": [
+                     7.5,      -23
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -93.5, 0
+            ],
+            "length": 48,
+            "width": 24,
+            "angle": 180,
+            "contrailSize": 32,
+            "style": "SCYENGINE"
+        },
+        {
+            "location": [
+                -59.5, 34
+            ],
+            "length": 35,
+            "width": 8,
+            "angle": 175,
+            "contrailSize": 128,
+            "style": "SCYBOOSTER"
+        },
+        {
+            "location": [
+                -59.5, -34
+            ],
+            "length": 35,
+            "width": 8,
+            "angle": -175,
+            "contrailSize": 128,
+            "style": "SCYBOOSTER"
+        },
+        {
+            "location": [
+                -59.5, 42
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": 170,
+            "contrailSize": 128,
+            "style": "SCYBOOSTER"
+        },
+        {
+            "location": [
+                -59.5, -42
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": -170,
+            "contrailSize": 128,
+            "style": "SCYBOOSTER"
+        }
+    ],
+    "bounds": [
+              29,     45.5,
+              10,     47.5,
+               6,     51.5,
+             -59,     44.5,
+             -59,     31.5,
+        
+             -51,     30.5,
+             -52,     20.5,
+             -59,     27.5,
+            -103,     26.5,
+            -125,     19.5,
+        
+            -122,     15.5,
+             -96,     15.5,
+             -96,    -15.5,
+            -122,    -15.5,
+            -125,    -19.5,
+        
+            -103,    -26.5,
+             -59,    -27.5,
+             -52,    -20.5,
+             -51,    -30.5,
+             -59,    -31.5,
+        
+             -59,    -44.5,
+               6,    -51.5,
+              10,    -47.5,
+              33,    -47.5,
+              36,    -34.5,
+        
+             121,    -33.5,
+             126,    -37.5,
+             169,    -37.5,
+             175,    -30.5,
+             151,     -6.5,
+        
+             131,     -6.5,
+             128,    -12.5,
+            29.5,    -10.5,
+            22.5,        0,
+            29.5,     10.5,
+        
+             128,     12.5,
+             131,      6.5,
+             151,      6.5,
+             175,     30.5,
+             169,     37.5,
+        
+             126,     37.5,
+             121,     33.5,
+              36,     34.5
+    # 43 points total.
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "variantId": "JYD_energetic_standard",
+  "hullId": "JYD_energetic",
+  "displayName": "Stadard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "solar_shielding"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "JYD_lbl",
+        "WS0003": "JYD_lbl"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "JYD_beb",
+        "WS0005": "JYD_beb"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "JYD_mrm"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

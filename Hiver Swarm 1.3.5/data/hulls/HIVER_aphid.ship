@@ -1,0 +1,113 @@
+{
+  "hullName": "Aphid",
+  "hullId": "HIVER_aphid",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HIVER_aphid.png",
+  "style": "HIGH_TECH",
+  "height": 140,
+  "width": 135,
+  "center": [69, 77],
+  "collisionRadius": 95.5,
+  "shieldCenter": [0, 0.5],
+  "shieldRadius": 94,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "builtInWings": [
+    "HIVER_allsup_standard_wing",
+    "HIVER_katydid_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": -0,
+      "locations": [15, 20.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [15, -20.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-16.5, 20.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-16.5, -20.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -37.5, 8.5,
+        -26, 8
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -37.5, -6,
+        -27, -5.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-46.5, -3.5],
+      "length": 53.804474,
+      "width": 10.968792,
+      "angle": -171,
+      "contrailSize": 10.968792,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-46.5, 5.5],
+      "length": 53.804474,
+      "width": 10.968792,
+      "angle": 171,
+      "contrailSize": 10.968792,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -81.5, 23.5,
+    -27.5, 48,
+    17, 85.5,
+    75.5, 51.5,
+    56.5, 18,
+    58, -5,
+    73.5, -47,
+    35, -81,
+    -28, -48,
+    -81.5, -18
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "CFT_medautocannon",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_med_auto_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "displayArcRadius": 200,
+  "turretSprite": "graphics/CFT/weapons/CFT_medautocannon_turret_base.png",
+  "turretGlowSprite": "graphics/CFT/weapons/CFT_mpmb_turret_glow.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_medautocannon_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/CFT/weapons/CFT_mpmb_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    245,
+    155,
+    200
+  ],
+  "turretOffsets": [
+    14.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    19,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "separateRecoilForLinkedBarrels": true,
+  "animationType": "GLOW_AND_FLASH",
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 15,
+    "spread": 8,
+    "particleSizeMin": 1,
+    "particleSizeRange": 10,
+    "particleDuration": 0.15,
+    "particleCount": 15,
+    "particleColor": [
+      255,
+      240,
+      165,
+      200
+    ]
+  },
+  "fireSoundTwo": "light_machinegun_fire"
+}

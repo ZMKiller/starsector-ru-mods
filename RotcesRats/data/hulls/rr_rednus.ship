@@ -1,0 +1,194 @@
+{
+  "hullName": "Rednus",
+  "hullId": "rr_rednus",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/rr_rednus.png",
+  "style": "MIDLINE",
+  "height": 172,
+  "width": 114,
+  "center": [57, 95],
+  "collisionRadius": 109,
+  "shieldCenter": [-2, -0],
+  "shieldRadius": 107,
+  "viewOffset": 100,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-6, 45],
+      "position": [
+        51,
+        80
+      ]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [68, 16],
+      "position": [
+        121,
+        50
+      ]
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [68, -16],
+      "position": [
+        121,
+        -50
+      ]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-6, -45],
+      "position": [
+        51,
+        -75
+      ]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": 105,
+      "locations": [-17, 18],
+      "position": [
+        -22,
+        65
+      ]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": -105,
+      "locations": [-17, -18],
+      "position": [
+        -24,
+        -65
+      ]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [44, 0],
+      "position": [
+        -124,
+        0
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [50, 37]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [50, -37]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-39, 49],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-45, 33],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-45, -33],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-39, -49],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-75, 0],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    56, 6,
+    67, 11,
+    67, 21,
+    45, 27,
+    47, 41,
+    -2, 17,
+    -10, 25,
+    -9, 50,
+    -35, 53,
+    -44, 28,
+    -70, 26,
+    -92, 10,
+    -74, 0,
+    -92, -10,
+    -70, -26,
+    -44, -28,
+    -35, -53,
+    -9, -50,
+    -10, -25,
+    -2, -17,
+    47, -41,
+    45, -27,
+    67, -21,
+    67, -11,
+    56, -6
+  ]
+}

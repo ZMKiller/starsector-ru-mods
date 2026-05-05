@@ -1,0 +1,43 @@
+{
+  "variantId": "rr_ox_2_pd",
+  "hullId": "rr_ox_2",
+  "displayName": "Point Defense",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 4,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "armoredweapons",
+    "pointdefenseai",
+    "reinforcedhull",
+    "blast_doors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "flak"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lrpdlaser",
+        "WS0002": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,13 @@
+{
+    "id":"edshipyard_field_shield_control",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.edshipyard.shipsystems.ai.FieldShieldControlAI",
+
+    "statsScript":"data.scripts.edshipyard.shipsystems.FieldShieldControlStats",
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	
+	#"fadeActivationSoundOnChargedown":true,
+	"useSound":"ed_shock",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

@@ -1,0 +1,52 @@
+{
+    "displayName": "Special",
+    "fluxCapacitors": 50,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "HSI_ShanYu",
+    "hullMods": [
+        "missile_autoloader",
+        "targetingunit",
+        "HSI_EnhancedShield",
+        "HSI_ProtocalAssault"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_ShanYu_Special",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "HWI_phasebeam"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "HWI_Fireworks_S",
+                "WS0012": "HWI_Fireworks_S",
+                "WS0013": "HWI_Fireworks_S",
+                "WS0014": "HWI_Fireworks_S",
+                "WS0015": "HWI_Fireworks_S",
+                "WS0016": "HWI_Fireworks_S"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "HWI_phasebeam",
+                "WS0006": "HWI_phasebeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "HWI_heavyneedler",
+                "WS0003": "HWI_heavyneedler"
+            }
+        }
+    ],
+    "wings": ["sarissa_wing"]
+}

@@ -1,0 +1,36 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 10,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "HSI_Qiming_GF3",
+    "hullMods": [
+        "HSI_EnhancedShield",
+        "safetyoverrides",
+        "HSI_ProtocalAssault"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Qiming_GF3_Strike",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "HWI_ionpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "HWI_IonLanceM"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "HWI_lightneedler",
+                "WS0002": "HWI_lightneedler"
+            }
+        }
+    ],
+    "wings": ["HSI_Flanker_wing"]
+}

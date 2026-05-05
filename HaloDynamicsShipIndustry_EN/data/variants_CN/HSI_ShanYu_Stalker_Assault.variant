@@ -1,0 +1,54 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 50,
+    "fluxVents": 40,
+    "goalVariant": true,
+    "hullId": "HSI_ShanYu_Stalker",
+    "hullMods": [
+        "missile_autoloader",
+        "HSI_EnhancedShield",
+        "HSI_ProtocalAssault"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_ShanYu_Stalker_Assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "HWI_Fireworks_S",
+                "WS0012": "HWI_Fireworks_S",
+                "WS0014": "HWI_Fireworks_S",
+                "WS0015": "HWI_Fireworks_S",
+                "WS0016": "HWI_Fireworks_S"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "HWI_heavyblaster"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "HWI_ionpulser"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "HWI_ionpulser"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "HWI_heavyblaster"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "HWI_heavyblaster"}
+        }
+    ],
+    "wings": ["sarissa_wing"]
+}

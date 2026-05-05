@@ -1,0 +1,35 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 3,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "SCY_lealaps",
+    "hullMods": [
+        "hardened_subsystems",
+        "eccm"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "SCY_lealaps_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "taclaser"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "SCY_arcSmall",
+                "WS0003": "SCY_arcSmall",
+                "WS0004": "SCY_arcSmall"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "vulcan"}
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+  "hullName": "Wisdom",
+  "hullId": "ora_wisdom",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ORA/ships/ora_wisdom.png",
+  "style": "HIGH_TECH",
+  "height": 37,
+  "width": 38,
+  "center": [19, 15],
+  "collisionRadius": 24.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 24,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [10.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": 0,
+      "locations": [0, 9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12, -0],
+      "length": 25,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    12.5, -8.5,
+    0, -18,
+    -11.5, -9.5,
+    -11.5, 9.5,
+    0, 18,
+    12.5, 8.5
+  ]
+}

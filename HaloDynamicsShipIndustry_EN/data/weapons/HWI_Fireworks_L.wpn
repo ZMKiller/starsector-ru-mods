@@ -1,0 +1,45 @@
+{
+  "id": "HWI_Fireworks_L",
+  "specClass": "projectile",
+  "projectileSpecId": "HWI_FireWorks",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "displayArcRadius": 1000,
+  "turretSprite": "graphics/weapons/HWI_Fireworks_L_turret_base.png",
+  "hardpointSprite": "graphics/weapons/HWI_Fireworks_L_hardpoint_base.png",
+  "turretOffsets": [
+    28.5,
+    5.5,
+    28.5,
+    -5.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    35,
+    -5.5,
+    35,
+    5.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 16,
+    "particleSizeRange": 18,
+    "cloudParticleCount": 8,
+    "cloudDuration": 1.5,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 4,
+    "blowbackDuration": 2,
+    "blowbackLength": 22,
+    "blowbackSpread": 15,
+    "particleColor":[225,150,150,25]
+  },
+  "fireSoundTwo": "hammer_fire"
+}

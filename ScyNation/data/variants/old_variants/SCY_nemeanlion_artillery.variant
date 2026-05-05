@@ -1,0 +1,59 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 2,
+    "fluxVents": 50,
+    "goalVariant": false,
+    "hullId": "SCY_nemeanlion",
+    "hullMods": ["targetingunit"],
+    "modules": [
+        {"M_FL": "SCY_lionFL_standard"},
+        {"M_FR": "SCY_lionFR_standard"},
+        {"M_RL": "SCY_lionRL_standard"},
+        {"M_RR": "SCY_lionRR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_nemeanlion_artillery",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "MAW1": "SCY_orion",
+                "MAW2": "SCY_orion",
+                "MAW3": "SCY_orion"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "SCY_coasting2",
+                "WS0002": "SCY_coasting2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "SCY_seb",
+                "WS0008": "SCY_seb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_seb",
+                "WS0006": "SCY_seb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "flak",
+                "WS0004": "flak"
+            }
+        }
+    ]
+}

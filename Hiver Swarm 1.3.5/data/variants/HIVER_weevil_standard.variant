@@ -1,0 +1,47 @@
+{
+  "variantId": "HIVER_weevil_standard",
+  "hullId": "HIVER_weevil",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_cargo_holds"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "HIVER_irpulse",
+        "WS0012": "HIVER_irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "HIVER_twinpd",
+        "WS0006": "HIVER_twinpd",
+        "WS0009": "HIVER_twinpd",
+        "WS0010": "HIVER_twinpd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Hiver_eyeball",
+        "WS0002": "Hiver_eyeball",
+        "WS0003": "Hiver_eyeball",
+        "WS0004": "Hiver_eyeball"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "HIVER_flyter_standard_wing"
+  ]
+}

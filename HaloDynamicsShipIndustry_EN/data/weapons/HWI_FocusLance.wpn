@@ -1,0 +1,40 @@
+{
+  "id": "HWI_FocusLance",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "data.weapons.scripts.beam.HWIFocusBeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/HWI_FocusLance_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/HWI_FocusLance_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/HWI_FocusLance_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/HWI_FocusLance_hardpoint_glow.png",
+  "turretOffsets": [
+    27,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    29.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "glowColor":[255,110,85,255],	
+	"fringeColor":[255,85,110,225],
+	"coreColor":[255,235,205,255],
+  "hitGlowBrightenDuration":0,
+	"hitGlowRadius":350,
+	"width":80.0,
+	#"textureType":LASER,
+  "textureType":["graphics/fx/beam_weave_core.png","graphics/fx/beamcorec.png"],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF,FIGHTER,ASTEROID],
+	"playFullFireSoundOne":true,
+	"fireSoundOne":"dragonfire_payload_fire",
+}

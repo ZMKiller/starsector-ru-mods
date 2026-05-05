@@ -1,0 +1,19 @@
+{
+	"id":"SCY_clusterempty",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"SMALL",
+	"displayArcRadius":0,
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[0,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0,0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"NONE",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held	
+        "projectileSpecId":"SCY_clusteremptyS",
+}

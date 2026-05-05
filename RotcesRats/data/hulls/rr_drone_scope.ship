@@ -1,0 +1,50 @@
+{
+  "hullName": "Scope Drone",
+  "hullId": "rr_drone_scope",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/rr_scope_drone.png",
+  "style": "MIDLINE",
+  "height": 28,
+  "width": 70,
+  "center": [35, 12],
+  "collisionRadius": 18,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 17,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [5, -3]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11, 7],
+      "length": 12,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-11, -7],
+      "length": 12,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    5, -12,
+    5, 12,
+    -9, 12,
+    -9, -12,
+    -9, -12
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "hullName": "Kackdaw",
+  "hullId": "CFT_jackdaw",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/CFT_jackdaw.png",
+  "style": "MIDLINE",
+  "height": 148,
+  "width": 99,
+  "center": [50, 82.5],
+  "collisionRadius": 98.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 94,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-32, 29]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-31.5, -28]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [15, -28]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [15, 29]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [47, 0.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [40.5, 22]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [40.5, -21]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-79.5, -10],
+      "length": 33.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-79.5, 11],
+      "length": 33.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-78, -27.5],
+      "length": 20.198027,
+      "width": 9.064156,
+      "angle": -155.5,
+      "contrailSize": 9.064156,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-78, 28.5],
+      "length": 20.198027,
+      "width": 9.064156,
+      "angle": 153.5,
+      "contrailSize": 9.064156,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-80, 0.5],
+      "length": 42.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    72, -58.5,
+    -90.5, -51,
+    -90.5, 52,
+    72, 59.5
+  ]
+}

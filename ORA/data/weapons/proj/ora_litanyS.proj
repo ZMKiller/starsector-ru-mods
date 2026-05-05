@@ -1,0 +1,19 @@
+{
+    "id":"ora_litanyS",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":60.0,
+	"hitGlowRadius":75,
+	"width":8,
+	"fadeTime":0.5,
+	"glowRadius":30,
+	"fringeColor":[50,50,150,200],
+	"coreColor":[100,150,200,255],
+	"glowColor":[75,100,250,100],
+	"textureType":"CHUNKY",  # only needed for BEAM spawnType
+	"textureScrollSpeed":2,
+	"pixelsPerTexel":2,
+	"bulletSprite":"graphics/ORA/missiles/ora_litany.png",
+}

@@ -1,0 +1,250 @@
+{
+  "hullName": "Стрелок",
+  "hullId": "edshipyard_doppelglock",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/edshipyard_doppelglock.png",
+  "style": "HIGH_TECH",
+  "height": 218,
+  "width": 218,
+  "center": [109, 68.5],
+  "collisionRadius": 175,
+  "shieldCenter": [0, 0.5],
+  "shieldRadius": 169.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "CR1": "edshipyard_CR",
+    "CR2": "edshipyard_CR",
+    "Cylinder1": "edshipyard_Cylinder",
+    "Cylinder2": "edshipyard_Cylinder",
+    "Loader1": "edshipyard_Loader",
+    "Loader2": "edshipyard_Loader",
+    "TR01": "edshipyard_thruster",
+    "TR02": "edshipyard_thruster"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [82.5, 55]
+    },
+    {
+      "id": "TR01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-27, 105.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [51.5, 61]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [-34.5, 77]
+    },
+    {
+      "id": "Cylinder1",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-5, 27]
+    },
+    {
+      "id": "CR1",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [44.5, 33.5]
+    },
+    {
+      "id": "Loader1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [28, 15]
+    },
+    {
+      "id": "WS2001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [82.5, -55]
+    },
+    {
+      "id": "TR02",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-27, -105.5]
+    },
+    {
+      "id": "WS2002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [51.5, -61]
+    },
+    {
+      "id": "WS2004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [-34.5, -77]
+    },
+    {
+      "id": "Cylinder2",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-5, -27]
+    },
+    {
+      "id": "CR2",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [44.5, -33.5]
+    },
+    {
+      "id": "Loader2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [28, -15]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-8.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-60.5, 87.5],
+      "length": 60,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-60.5, -0.5],
+      "length": 70,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-67, 62],
+      "length": 90,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-67, 28],
+      "length": 90,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-66.5, -28],
+      "length": 90,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-66.5, -61.5],
+      "length": 90,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-61, -87.5],
+      "length": 60,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    }
+  ],
+  "bounds": [
+    56.5, -43.5,
+    111.5, -43,
+    115, -46.5,
+    146.5, -46,
+    150.5, -51.5,
+    -0.5, -95,
+    -2.5, -107.5,
+    -53.5, -105.5,
+    -67.5, -76.5,
+    -67.5, -18,
+    -61.5, -9.5,
+    -61.5, 9.5,
+    -67.5, 18,
+    -67.5, 76.5,
+    -53.5, 105.5,
+    -2.5, 107.5,
+    -0.5, 95,
+    150.5, 51.5,
+    146.5, 46,
+    115, 46.5,
+    111.5, 43,
+    56.5, 43.5
+  ]
+}

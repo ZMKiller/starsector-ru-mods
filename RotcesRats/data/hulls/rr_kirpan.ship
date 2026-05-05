@@ -1,0 +1,76 @@
+{
+  "hullName": "Kirpan",
+  "hullId": "rr_kirpan",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/rr_kirpan.png",
+  "style": "LOW_TECH",
+  "height": 34,
+  "width": 36,
+  "center": [18, 17],
+  "collisionRadius": 28,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 28,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [12, 8]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [12, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15, 6],
+      "length": 22,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-15, -6],
+      "length": 22,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-14, 9],
+      "length": 9,
+      "width": 6,
+      "angle": 170,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-14, -9],
+      "length": 9,
+      "width": 6,
+      "angle": -170,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -6, 15,
+    10, 13,
+    10, -13,
+    -7, -15,
+    -12, -8,
+    -12, 8
+  ]
+}

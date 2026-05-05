@@ -1,0 +1,34 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "HSI_Scarab_Stalker",
+    "hullMods": ["HSI_EnhancedShield"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Scarab_Stalker_Assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "HWI_amblaster",
+                "WS0004": "HWI_amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "HWI_lightdualac",
+                "WS0002": "HWI_lightdualac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "reaper"}
+        }
+    ]
+}

@@ -1,0 +1,165 @@
+{
+  "hullName": "Saga",
+  "hullId": "rr_saga",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/rr_saga.png",
+  "style": "HIGH_TECH",
+  "height": 122,
+  "width": 246,
+  "center": [123, 57],
+  "collisionRadius": 130,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 128,
+  "viewOffset": 0,
+  "builtInMods": [
+    "hiressensors"
+  ],
+  "builtInWeapons": {
+    "WS0001": "guardian"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [-26, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        29, 12,
+        20, -0,
+        29, -11
+      ]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 40,
+      "locations": [26, 50]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -40,
+      "locations": [26, -50]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 70,
+      "locations": [1, 86]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -70,
+      "locations": [1, -86]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -30,
+      "locations": [19, -82]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 30,
+      "locations": [19, 82]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42, 79],
+      "length": 70,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-42, -79],
+      "length": 70,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-41, 66],
+      "length": 65,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-41, -66],
+      "length": 65,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-36, -43],
+      "length": 40,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-36, 43],
+      "length": 40,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    53, -55,
+    23, -91,
+    10, -119,
+    -9, -120,
+    -38, -103,
+    -28, -33,
+    -45, -21,
+    -55, -0,
+    -45, 21,
+    -28, 33,
+    -38, 103,
+    -9, 120,
+    10, 119,
+    23, 91,
+    53, 55
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "hullName": "Brig",
+  "hullId": "CFT_brig",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_brig.png",
+  "style": "MIDLINE",
+  "height": 56,
+  "width": 36,
+  "center": [18, 28],
+  "collisionRadius": 28.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 24.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [5, -5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-18, 1],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH_FIGHTER"
+    }
+  ],
+  "bounds": [
+    27.5, -15,
+    -23, -17,
+    -23, 17,
+    27.5, 15
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "hullName": "Lamia",
+  "hullId": "SCY_lamia",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/SCY/ships/SCY_lamia.png",
+  "style": "SCYHULL",
+  "height": 195,
+  "width": 76,
+  "center": [38, 133],
+  "collisionRadius": 132.034088,
+  "shieldCenter": [-23, -0],
+  "shieldRadius": 108.501152,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame2",
+    "BLINKER3": "SCY_ZblinkerA",
+    "BLINKER4": "SCY_ZblinkerA",
+    "D_HEAT_CENTER": "SCY_YdestroyerHeat",
+    "SYSTEM": "SCY_YlamiaSystem"
+  },
+  "weaponSlots": [
+    {
+      "id": "SYSTEM",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, 0]
+    },
+    {
+      "id": "A_FLAME_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-77, -0]
+    },
+    {
+      "id": "D_HEAT_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-88.5, -0]
+    },
+    {
+      "id": "BLINKER4",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-17.5, -32.5]
+    },
+    {
+      "id": "BLINKER3",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-17.5, 32.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -60.009998,
+      "locations": [6, -23]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 60,
+      "locations": [6, 23]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [31, 12.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [31, -12.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [53, 18]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [53, -18]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-77, -0],
+      "length": 38,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    58, 10,
+    42.5, 25.5,
+    51.5, 28.5,
+    48.5, 32.5,
+    -25, 34.5,
+    -35.5, 14.5,
+    -55, 24,
+    -89, 23.5,
+    -112.5, 15.5,
+    -85.5, 15.5,
+    -79.5, 9.5,
+    -79.5, -9.5,
+    -85.5, -15.5,
+    -112.5, -15.5,
+    -89, -23.5,
+    -55, -24,
+    -35.5, -14.5,
+    -25, -34.5,
+    48.5, -32.5,
+    51.5, -28.5,
+    42.5, -25.5,
+    58, -10
+  ]
+}

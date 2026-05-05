@@ -1,0 +1,239 @@
+{
+  "bounds": [
+    62.5,
+    5.5,
+    70.5,
+    7.5,
+    70.5,
+    16.5,
+    48.5,
+    26.5,
+    43.5,
+    44.5,
+    -24.5,
+    42.5,
+    -32.5,
+    26.5,
+    -58.5,
+    26.5,
+    -80.5,
+    19.5,
+    -77.5,
+    15.5,
+    -51.5,
+    15.5,
+    -51.5,
+    -15.5,
+    -77.5,
+    -15.5,
+    -80.5,
+    -19.5,
+    -58.5,
+    -26.5,
+    -32.5,
+    -26.5,
+    -24.5,
+    -42.5,
+    43.5,
+    -44.5,
+    48.5,
+    -26.5,
+    70.5,
+    -16.5,
+    70.5,
+    -7.5,
+    62.5,
+    -5.5
+  ],
+  "builtInMods": [
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame3",
+    "BLINKER1": "SCY_ZblinkerA",
+    "BLINKER2": "SCY_ZblinkerA",
+    "D_HEAT_CENTER": "SCY_YhydraHeat"
+  },
+  "center": [
+    48,
+    133
+  ],
+  "collisionRadius": 135,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 26,
+      "length": 30.5,
+      "location": [
+        -49,
+        -0
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE",
+      "width": 26
+    }
+  ],
+  "height": 207,
+  "hullId": "SCY_hydra",
+  "hullName": "Hydra",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    -15,
+    -0
+  ],
+  "shieldRadius": 118,
+  "spriteName": "graphics/SCY/ships/SCY_hydra.png",
+  "style": "SCYHULL",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "A_FLAME_CENTER",
+      "locations": [
+        -49,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "D_HEAT_CENTER",
+      "locations": [
+        -74,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BLINKER1",
+      "locations": [
+        7.5,
+        21.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "BLINKER2",
+      "locations": [
+        7.5,
+        -21.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0003",
+      "locations": [
+        51,
+        14
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "renderOrderMod":-5,
+    },
+    {
+      "angle": -0,
+      "arc": 120,
+      "id": "WS0004",
+      "locations": [
+        51,
+        -14
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "renderOrderMod":-5,
+    },
+    {
+      "angle": 45,
+      "arc": 135,
+      "id": "WS0005",
+      "locations": [
+        31,
+        23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -45,
+      "arc": 135,
+      "id": "WS0006",
+      "locations": [
+        31,
+        -23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 225,
+      "id": "WS0007",
+      "locations": [
+        14,
+        30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "renderOrderMod":+5,
+    },
+    {
+      "angle": -90,
+      "arc": 225,
+      "id": "WS0008",
+      "locations": [
+        14,
+        -30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "renderOrderMod":+5,
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0001",
+      "locations": [
+        49,
+        34
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0002",
+      "locations": [
+        49,
+        -34
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    }
+  ],
+  "width": 96
+}

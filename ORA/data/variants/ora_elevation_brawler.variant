@@ -1,0 +1,58 @@
+{
+    "displayName": "Brawler",
+    "fluxCapacitors": 22,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "ora_elevation",
+    "hullMods": [
+        "unstable_injector",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_elevation_brawler",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_sempiternal"}
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "typhoon",
+                "WS0003": "typhoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "ora_recital",
+                "WS0009": "ora_recital"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "ioncannon",
+                "WS0005": "ora_recital",
+                "WS0010": "ora_recital",
+                "WS0011": "ora_recital"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "ora_choir",
+                "WS0007": "ora_choir",
+                "WS0012": "ora_choir",
+                "WS0013": "ora_choir"
+            }
+        }
+    ],
+    "wings": ["ora_fervor_wing"]
+}

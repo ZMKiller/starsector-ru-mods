@@ -1,0 +1,29 @@
+{
+	"id":"ora_animus",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/ORA/weapons/ora_animusT.png",
+	"turretGlowSprite":"graphics/ORA/weapons/ora_animusTG.png",
+	"hardpointSprite":"graphics/ORA/weapons/ora_animusH.png",
+	"hardpointGlowSprite":"graphics/ORA/weapons/ora_animusHG.png",
+	"glowColor":[155,100,255,255],
+	"turretOffsets":[25, -5.5, 25, 5.5],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[15, -4.5, 15, -4.5],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":50.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":15.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":0.12,
+					   "particleCount":15,
+					   "particleColor":[155,100,255,255]},	
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"interruptibleBurst":true,
+	"requiresFullCharge":true,  # for pulse weapons - whether the weapon will fire at a lower strength partial charge
+	"projectileSpecId":"amblaster_shot",  # projectile that will be fired
+	"fireSoundTwo":"antimatter_blaster_fire",
+}

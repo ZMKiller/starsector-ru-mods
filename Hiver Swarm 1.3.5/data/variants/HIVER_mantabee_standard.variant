@@ -1,0 +1,52 @@
+{
+  "variantId": "HIVER_mantabee_standard",
+  "hullId": "HIVER_mantabee",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 28,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "HIVER_launcher",
+        "WS0004": "HIVER_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "HIVER_blaster",
+        "WS0009": "HIVER_blaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "HIVER_twinpd",
+        "WS0002": "HIVER_twinpd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "Hiver_eyeball",
+        "WS0010": "Hiver_eyeball"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "HIVER_allsup_standard_wing",
+    "HIVER_gnawler_standard_wing",
+    "HIVER_katydid_standard_wing",
+    "HIVER_flyter_standard_wing"
+  ]
+}

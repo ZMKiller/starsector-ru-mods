@@ -1,0 +1,110 @@
+{
+  "hullName": "Adorable",
+  "hullId": "JYD_adorable",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/JYD_adorable.png",
+  "style": "LOW_TECH",
+  "height": 101,
+  "width": 80,
+  "center": [41.5, 49],
+  "collisionRadius": 74.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 72.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [19, -18.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [19, 21.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [45, -18.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [45, 21.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": 0,
+      "locations": [5.5, 1.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-48, -19],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-47, 22.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-47.5, 12.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-48.5, -9.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    50, -9.5,
+    51.5, -26.5,
+    23.5, -30.5,
+    0, -38.5,
+    -26.5, -40.5,
+    -51, -25.5,
+    -51.5, 28.5,
+    -26.5, 40.5,
+    -3, 42,
+    18.5, 37.5,
+    52, 27.5,
+    51, 15,
+    23.5, 2.5
+  ]
+}

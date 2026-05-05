@@ -1,0 +1,44 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 1,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "SCY_hydra",
+    "hullMods": ["hardened_subsystems"],
+    "permaMods": [],
+    "variantId": "SCY_hydra_combat",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_hemor1",
+                "WS0006": "SCY_hemor1"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "SCY_grenade",
+                "WS0002": "SCY_grenade"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_kacc1",
+                "WS0004": "SCY_kacc1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "SCY_intercept",
+                "WS0008": "SCY_intercept"
+            }
+        }
+    ]
+}

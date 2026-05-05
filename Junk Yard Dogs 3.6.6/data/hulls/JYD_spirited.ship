@@ -1,0 +1,197 @@
+{
+  "hullName": "Spirited",
+  "hullId": "JYD_spirited",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/JYD_spirited.png",
+  "style": "LOW_TECH",
+  "height": 185,
+  "width": 130,
+  "center": [66, 88],
+  "collisionRadius": 116.5,
+  "shieldCenter": [0, 0.5],
+  "shieldRadius": 111,
+  "viewOffset": 0,
+  "builtInMods": [
+    "repair_gantry",
+    "surveying_equipment"
+  ],
+  "builtInWings": [
+    "JYD_botfly_wing",
+    "JYD_Termite_wing",
+    "JYD_Mosquito_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        11, 18,
+        11.5, 24
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        22.5, 18,
+        22, 25
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        34, 18.5,
+        33.5, 26
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [71.5, -29]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [80, 29.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [5.5, 54.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [47.5, -32]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": 0,
+      "locations": [16.5, -28]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -35.5,
+      "locations": [5, -52]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-64, 1]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [1.5, 1]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-84, 15],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-83.5, -13.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-60.5, 47],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-61, -45],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84.5, 1.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    12, -5.5,
+    100.5, -16,
+    90.5, -29,
+    78, -54,
+    16.5, -58,
+    8, -68,
+    -20, -61,
+    -67.5, -55,
+    -65, -34,
+    -87.5, -18,
+    -87.5, 18,
+    -65, 34,
+    -67.5, 55,
+    -20, 61,
+    8, 68,
+    16.5, 58,
+    78, 54,
+    90.5, 29,
+    100.5, 16,
+    12, 5.5
+  ]
+}

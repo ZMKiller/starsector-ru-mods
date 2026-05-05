@@ -1,0 +1,80 @@
+{
+  "variantId": "CFT_bombardier_standard",
+  "hullId": "CFT_bombardier",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "missleracks",
+    "turretgyros",
+    "blast_doors",
+    "solar_shielding"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "CFT_volleyrocket",
+        "WS0009": "CFT_volleyrocket",
+        "WS0010": "CFT_hellfirerockets",
+        "WS0011": "CFT_hellfirerockets",
+        "WS0012": "CFT_hellfirerockets",
+        "WS0013": "CFT_hellfirerockets"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "CFT_l_carronade"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "CFT_infernorockets",
+        "WS0015": "CFT_infernorockets"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_pdwburst",
+        "WS0002": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_fogger",
+        "WS0004": "CFT_fogger"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vulcan",
+        "WS0006": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "mining_drone_wing",
+    "mining_drone_wing"
+  ]
+}

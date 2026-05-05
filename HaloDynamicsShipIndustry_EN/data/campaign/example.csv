@@ -1,0 +1,12 @@
+id,trigger,conditions,script,text,options,notes
+Example,OpenInteractionDialog,$tag:gamma_cactus,"ShowDefaultVisual
+SetShortcut gammaCactusLeave ""ESCAPE""",一棵……非常突兀的仙人掌生长在虚空中。你和你的船员已经习惯了伽马星系里的诡异场面，这不算什么大事，对吧。,gammaCactusLeave:最好还是别被扎到,
+唯一的独特id,一些trigger 这个意味着开始对话,判断tag 也有其他方式，甚至可以用写好的cmd。其中$tag表示这是预设的存储所有tag的地方。rules里的token都应以$开头，否则不会被视为变量名。,"会运行的东西。
+也可以在这里加入文本，例如
+AddText ""你的到来成功地让她从tripad上移开目光。\""贵安， $playerName 阁下。看起来您终于注意到我了?\"""" 255，140，200，255
+前面是文本内容，后面是颜色。
+是的，比起直接使用后一列唯一的优点是可以改色。
+可使用的cmd com\fs\starfarer\api\impl\campaign\rulecmd  或者直接去原版 rules里面寻找。
+必须是此路径下的 可以有子文件夹的cmd 才会被自动识别为可用的。",直接出现的文本。,对话的选项。可以提供一些其他选项然后通过下一行的例子展开。这些选项会自动排列,
+ExampleLeave,DialogOptionSelected,$option == gammaCactusLeave,DismissDialog,,,
+,意思是对话里选择了选项,$option会自动存入上一个选择的选项，内容是选项的id,关掉对话，当然你也可以做别的。,,,

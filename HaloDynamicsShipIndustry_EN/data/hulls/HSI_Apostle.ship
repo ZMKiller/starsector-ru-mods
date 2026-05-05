@@ -1,0 +1,213 @@
+{
+    "hullName": "Apostle",
+    "hullId": "HSI_Apostle",
+    "hullSize": "FRIGATE",
+    "style": "HSI_TECH",
+    "spriteName": "graphics/ships/Apostle/HSI_Apostle_Body_Base.png",
+    "height": 34,
+    "width": 36,
+    "center": [
+        11, 16.5
+    ],
+    "collisionRadius": 44.5,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 43.5,
+    "viewOffset": 0,
+    "builtInMods": [
+        "HSI_Halo"
+    ],
+    "builtInWeapons": {
+        "LA": "HSI_Apostle_LA",
+        "LAD":"HSI_Apostle_LAD",
+        "RA": "HSI_Apostle_RA",
+        "LS": "HSI_Apostle_LS",
+        "RS": "HSI_Apostle_RS",
+        "HEAD": "HSI_Apostle_Head",
+        "LEG": "HSI_Apostle_Leg",
+        "BODY": "HSI_Apostle_Body"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "BODY",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 10,
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "LEG",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": -1000,
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      -8,        0
+            ]
+        },
+        {
+            "id": "LA",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 10,
+            "renderOrderMod": 0,
+            "locations": [
+                       0,        5
+            ]
+        },
+        {
+            "id": "LAD",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 10,
+            "renderOrderMod": 0,
+            "locations": [0,5]
+            },
+        {
+            "id": "RA",
+            "size": "SMALL",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 350,
+            "renderOrderMod": 0,
+            "locations": [
+                       0,       -5
+            ]
+        },
+        {
+            "id": "LS",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 10,
+            "renderOrderMod": 30,
+            "locations": [
+                       0,        5
+            ]
+        },
+        {
+            "id": "RS",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 350,
+            "renderOrderMod": 30,
+            "locations": [
+                       0,       -5
+            ]
+        },
+        {
+            "id": "HEAD",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "renderOrderMod": 40,
+            "arc": 135,
+            "angle": 0,
+            "locations": [
+                       0,        0
+            ]
+        },
+        {
+            "id": "WS0001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "renderOrderMod": 100,
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                     -18,       16
+            ]
+        },
+        {
+            "id": "WS0002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "renderOrderMod": 100,
+            "arc": 5,
+            "angle": 0,
+            "locations": [
+                     -18,      -16
+            ]
+        },
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -14, -6
+            ],
+            "length": 18,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 8,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -14, 6
+            ],
+            "length": 18,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 8,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -11.5, -11
+            ],
+            "length": 11,
+            "width": 8,
+            "angle": -148,
+            "contrailSize": 128,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -11.5, 11
+            ],
+            "length": 11,
+            "width": 8,
+            "angle": 148,
+            "contrailSize": 128,
+            "style": "HSI_TECH_PARTICLE"
+        }
+    ],
+    "bounds": [
+              14,     -4.5,
+               6,       -9,
+               2,    -13.5,
+              -2,    -13.5,
+              -5,       -8,
+        
+             -14,     -5.5,
+             -14,      5.5,
+              -5,        8,
+              -2,     13.5,
+               2,     13.5,
+        
+               6,        9,
+              14,      4.5
+    # 12 points total.
+    ]
+}

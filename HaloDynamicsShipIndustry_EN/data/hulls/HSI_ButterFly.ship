@@ -1,0 +1,53 @@
+{
+  "hullName": "ButterFly",
+  "hullId": "HSI_ButterFly",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/HSI_Butterfly.png",
+  "style": "OMEGA",
+  "height": 23,
+  "width": 28,
+  "center": [14, 11.5],
+  "collisionRadius": 21.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 19.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 65,
+      "angle": 0,
+      "locations": [2, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10, 2],
+      "length": 0,
+      "width": 0,
+      "angle": 180,
+      "contrailSize": 0,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-10, -2],
+      "length": 0,
+      "width": 0,
+      "angle": -180,
+      "contrailSize": 0,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -9.5, -9.5,
+    8.5, -14.5,
+    11, -8.5,
+    4.5, -2.5,
+    4.5, 2.5,
+    11, 8.5,
+    8.5, 14.5,
+    -9.5, 9.5
+  ]
+}

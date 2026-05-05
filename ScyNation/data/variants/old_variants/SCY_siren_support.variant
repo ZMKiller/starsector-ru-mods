@@ -1,0 +1,42 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 27,
+    "goalVariant": false,
+    "hullId": "SCY_siren",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "SCY_siren_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_sirenMain"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "SCY_hack",
+                "WS0007": "SCY_hack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_hack",
+                "WS0003": "SCY_hack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_hack",
+                "WS0005": "SCY_hack"
+            }
+        }
+    ],
+    "wings": ["SCY_ker_wing"]
+}

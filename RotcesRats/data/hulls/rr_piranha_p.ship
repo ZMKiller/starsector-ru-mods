@@ -1,0 +1,51 @@
+{
+  "hullName": "Piranha (P)",
+  "hullId": "rr_piranha_p",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/rr_piranha.png",
+  "style": "LOW_TECH",
+  "height": 34,
+  "width": 30,
+  "center": [15, 17],
+  "collisionRadius": 22,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 22,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [3, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, 7],
+      "length": 22,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-16, -7],
+      "length": 22,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -15, 10,
+    -6, -0,
+    -15, -10,
+    12, -9,
+    5, -0,
+    12, 9
+  ]
+}

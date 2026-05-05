@@ -1,0 +1,30 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 0,
+    "fluxVents": 2,
+    "hullId": "SCY_manticore",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "variantId": "SCY_manticore_combat",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_laser3"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_intercept",
+                "WS0003": "SCY_intercept",
+                "WS0004": "SCY_intercept"
+            }
+        }
+    ],
+    "wings": [
+        "SCY_stygere_wing",
+        "SCY_stygere_wing",
+        "SCY_eris_wing"
+    ]
+}

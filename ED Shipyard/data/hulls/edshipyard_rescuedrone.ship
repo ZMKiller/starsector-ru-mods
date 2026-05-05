@@ -1,0 +1,95 @@
+{
+  "bounds": [
+    15,
+    -4.5,
+    4.5,
+    -15.5,
+    -4,
+    -15.5,
+    -15,
+    -4.5,
+    -15,
+    4.5,
+    -4,
+    15.5,
+    4.5,
+    15.5,
+    15,
+    4.5
+  ],
+  "builtInWeapons": {
+    "Thruster01": "edshipyard_thruster",
+    "Thruster02": "edshipyard_thruster",
+    "Thruster03": "edshipyard_thruster",
+    "Thruster04": "edshipyard_thruster"
+  },
+  "center": [
+    20,
+    20
+  ],
+  "collisionRadius": 19.5,
+  "engineSlots": [],
+  "height": 40,
+  "hullId": "edshipyard_rescuedrone",
+  "hullName": "Drone",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 32,
+  "spriteName": "graphics/ships/edshipyard_guardian_orb.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "Thruster03",
+      "locations": [
+        0,
+        -18
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "Thruster02",
+      "locations": [
+        0,
+        18
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "Thruster04",
+      "locations": [
+        18,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 180,
+      "arc": 180,
+      "id": "Thruster01",
+      "locations": [
+        -18,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 40
+}

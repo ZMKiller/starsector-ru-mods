@@ -1,0 +1,43 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 4,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "SCY_corocotta",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "SCY_corocotta_beamer",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_scpb"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "taclaser",
+                "WS0005": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_scatter",
+                "WS0003": "SCY_scatter"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "SCY_hack",
+                "WS0007": "SCY_hack",
+                "WS0008": "SCY_hack",
+                "WS0009": "SCY_hack"
+            }
+        }
+    ]
+}

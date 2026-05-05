@@ -1,0 +1,41 @@
+{
+  "hullName": "Wingman",
+  "hullId": "HSI_Wingman_Trail",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/missiles/HWI_WingmanDEM.png",
+  "style": "OMEGA",
+  "height": 21,
+  "width": 18,
+  "center": [9, 10.5],
+  "collisionRadius": 30,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 30,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 000",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": -0,
+      "locations": [0, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-7.5, -0],
+      "length": 9.5,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HSI_TECH_PARTICLE_CONTRAIL"
+    }
+  ],
+  "bounds": [
+    9.5, -5,
+    -7, -5,
+    -7, 5,
+    9.5, 5
+  ]
+}

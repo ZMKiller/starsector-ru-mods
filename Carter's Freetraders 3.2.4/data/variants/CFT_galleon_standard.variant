@@ -1,0 +1,85 @@
+{
+  "variantId": "CFT_galleon_standard",
+  "hullId": "CFT_galleon",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "CFT_firestorm",
+        "WS0015": "CFT_firestorm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "CFT_hellfirerockets",
+        "WS0011": "CFT_hellfirerockets",
+        "WS0012": "CFT_hellfirerockets",
+        "WS0014": "CFT_hellfirerockets"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0016": "CFT_infernorockets",
+        "WS0017": "CFT_infernorockets"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0018": "CFT_pointmissiles",
+        "WS0019": "CFT_pointmissiles",
+        "WS0020": "CFT_pointmissiles"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0021": "CFT_pointmissiles",
+        "WS0022": "CFT_pointmissiles",
+        "WS0023": "CFT_pointmissiles"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "CFT_pdwburst",
+        "WS0006": "CFT_pdwburst",
+        "WS0007": "CFT_pdwburst",
+        "WS0008": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_fogger",
+        "WS0002": "CFT_fogger",
+        "WS0003": "CFT_fogger",
+        "WS0004": "CFT_fogger"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_brig_standard_wing",
+    "CFT_brig_standard_wing"
+  ]
+}

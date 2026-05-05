@@ -1,0 +1,27 @@
+{
+	"id":"SCY_Fhammer",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":50,
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[0,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0,0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	        "muzzleFlashSpec":{"length":20.0,   # only used if animationType = MUZZLE_FLASH
+                           "spread":1.0,
+                           "particleSizeMin":10.0,
+                           "particleSizeRange":5.0,
+                           "particleDuration":0.1,
+                           "particleCount":20,
+                           "particleColor":[150,200,255,255]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	"projectileSpecId":"SCY_hammerS",  # projectile that will be fired		
+	"fireSoundTwo":"SCY_kacc1",
+}

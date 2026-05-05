@@ -1,0 +1,42 @@
+{
+  "variantId": "rr_portico_pd",
+  "hullId": "rr_portico",
+  "displayName": "Point Defense",
+  "goalVariant": true,
+  "fluxCapacitors": 16,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "stabilizedshieldemitter",
+    "magazines",
+    "pointdefenseai"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "swarmer",
+        "WS0003": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "pdburst",
+        "WS0005": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,22 @@
+name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u (base cap),cr/u,max uses,regen,charge up,active,down,cooldown,toggle,noDissipation,noHardDissipation,hardFlux,noFiring,noTurning,noStrafing,noAccel,noShield,isPhasedCloak,tags,icon
+# SPECIAL SYSTEMS
+Экспериментальный телепортатор,SCY_experimentalTeleporter,,,,,,,,1,0.05,0,0,0.5,0.5,,,,TRUE,,,,,,,,graphics/icons/hullsys/displacer.png
+#
+# OFFENSE SYSTEMS
+Аварийный переключатель,SCY_safeties,,,,,,,,,,1,5,1,10,TRUE,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Телепортирующий снаряд,SCY_teleport,,,,,,,,4,0.02,,,,10,TRUE,,,,,,,,,,,graphics/SCY/icons/hullsys/SCY_teleport.png
+Приоритеты наведения,SCY_targeting,,,,,,,,,,0.25,,0.25,,,,,,,,,,,,,graphics/SCY/icons/hullsys/SCY_ping.png
+#
+# DEFENSE SYSTEMS
+Двуслойный щит,SCY_twinShield,,,,,,0.05,,,,0.25,,1,2,TRUE,,,TRUE,,,,,,,,graphics/SCY/icons/hullsys/SCY_twinShield.png
+Стазис-щит,SCY_stasisShield,,,,1000,,,,,,0.5,4,0.5,8,,TRUE,TRUE,TRUE,TRUE,,,,,,,graphics/SCY/icons/hullsys/SCY_stasisShield.png
+Импульсный ЭМИ-излучатель,SCY_emp,,,,,,,,,,0,1,0,2,,,,,,,,,,,,graphics/icons/hullsys/emp_emitter.png
+#
+# MOBILITY SYSTEMS
+Вспомогательные двигатели,SCY_secondaryThrusters,,,,,,,,,,1,5,1,10,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+#
+# DRONE SYSTEMS
+Шахтёрский дрон,SCY_miningDrones,,,,,,,,20,0,0,,0,0,,,,,,,,,,,,graphics/icons/hullsys/drone_borer.png
+Мобильная CIWS,SCY_ciwsDrones,,,,,,,,2,0.05,0,,0,0,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
+Мобильная CIWS,SCY_ciwsDrones4,,,,,,,,4,0.05,0,,0,0,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
+Зонд ДРЛО,SCY_probeDrones,,,,,,,,1,0.05,0,,0,0,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png

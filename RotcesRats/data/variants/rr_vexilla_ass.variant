@@ -1,0 +1,49 @@
+{
+  "variantId": "rr_vexilla_ass",
+  "hullId": "rr_vexilla",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 1,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "rr_mini_mblast",
+        "WS 005": "rr_mini_mblast"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "sabot",
+        "WS0001": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "breach",
+        "WS 007": "breach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

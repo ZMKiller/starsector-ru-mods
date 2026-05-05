@@ -1,0 +1,67 @@
+{
+  "displayName": "Спасение",
+  "fluxCapacitors": 25,
+  "fluxVents": 25,
+  "goalVariant": true,
+  "hullId": "edshipyard_retriever",
+  "hullMods": [
+    "pointdefenseai",
+    "targetingunit"
+  ],
+  "modules": [
+    {
+      "SHIELD": "edshipyard_retriever_shield_variant"
+    },
+    {
+      "DRONER": "edshipyard_retriever_control_rescue"
+    },
+    {
+      "DRONEL": "edshipyard_retriever_control_rescue"
+    }
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_retriever_rescue",
+  "weaponGroups": [ #POINT DEFENSE ONLY BECAUSE OF BUILT IN MODS
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+            "WS0009": "lrpdlaser",
+            "WS0010": "lrpdlaser",
+            "WS0012": "lrpdlaser",
+            "WS0013": "lrpdlaser",
+            "WS0014": "lrpdlaser",
+            "WS0018": "lrpdlaser"
+          }
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0001": "edshipyard_Rad_m",
+              "WS0003": "edshipyard_Rad_m",
+              "WS0004": "edshipyard_Rad_m",
+              "WS0005": "edshipyard_Rad_m",
+              "WS0006": "edshipyard_Rad_m",
+              "WS0007": "edshipyard_Rad_m",
+              "WS0008": "edshipyard_Rad_m"
+          }
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {"WS0002": "edshipyard_Rad_m"}
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0015": "edshipyard_Wisp_Launcher",
+              "WS0016": "edshipyard_Wisp_Launcher",
+              "WS0017": "edshipyard_Wisp_Launcher"
+          }
+      }
+  ],
+  "wings": []
+}

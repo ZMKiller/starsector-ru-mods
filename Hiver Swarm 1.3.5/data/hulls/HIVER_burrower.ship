@@ -1,0 +1,181 @@
+{
+  "hullName": "Burrower",
+  "hullId": "HIVER_burrower",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/HIVER_burrower.png",
+  "style": "HIGH_TECH",
+  "height": 342,
+  "width": 175,
+  "center": [88, 168],
+  "collisionRadius": 211,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 207,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull",
+    "repair_gantry"
+  ],
+  "builtInWings": [
+    "HIVER_allsup_standard_wing",
+    "HIVER_allsup_standard_wing",
+    "HIVER_flyter_standard_wing",
+    "HIVER_flyter_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [88.5, 21.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [88.5, -21.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -180,
+      "locations": [-82.5, -1]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [34, 26]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [34, -26]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-29.5, -30]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-29.5, 30]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -51.5, -1.5,
+        -44, -1.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -7.5, -1.5,
+        1.5, -1
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        61, -1.5,
+        68, -1
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        99, -1,
+        102, -1
+      ]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [10.5, 18]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [11, -21]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-158, -14.5],
+      "length": 73.5,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-158, 14.5],
+      "length": 73.5,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -186, -49.5,
+    28.5, -100.5,
+    180.5, -60.5,
+    177, 60,
+    29.5, 98,
+    -179.5, 56.5
+  ]
+}

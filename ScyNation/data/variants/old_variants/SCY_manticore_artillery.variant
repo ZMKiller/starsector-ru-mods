@@ -1,0 +1,31 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 0,
+    "fluxVents": 7,
+    "goalVariant": false,
+    "hullId": "SCY_manticore",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "SCY_manticore_artillery",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_orion"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_intercept",
+                "WS0003": "vulcan",
+                "WS0004": "vulcan"
+            }
+        }
+    ],
+    "wings": [
+        "SCY_ker_wing",
+        "SCY_ker_wing",
+        "SCY_nosos_wing"
+    ]
+}

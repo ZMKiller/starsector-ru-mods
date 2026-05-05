@@ -1,0 +1,51 @@
+{
+  "id": "CFT_lrgautocannon",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_lrg_auto_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "displayArcRadius": 200,
+  "turretSprite": "graphics/CFT/weapons/CFT_lrgautocannon_turret_base.png",
+  "turretGlowSprite": "graphics/CFT/weapons/CFT_lpmb_turret_glow.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_lrgautocannon_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/CFT/weapons/CFT_lpmb_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    245,
+    155,
+    200
+  ],
+  "turretOffsets": [
+    22,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    29.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "separateRecoilForLinkedBarrels": true,
+  "animationType": "GLOW_AND_FLASH",
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 15,
+    "spread": 8,
+    "particleSizeMin": 1,
+    "particleSizeRange": 10,
+    "particleDuration": 0.15,
+    "particleCount": 15,
+    "particleColor": [
+      255,
+      240,
+      165,
+      200
+    ]
+  },
+  "fireSoundTwo": "heavy_machinegun_fire"
+}

@@ -1,0 +1,48 @@
+{
+  "variantId": "CFT_astrolabe_standard",
+  "hullId": "CFT_astrolabe",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_shredder",
+        "WS0002": "CFT_shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_hellfirerockets",
+        "WS0004": "CFT_hellfirerockets"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "CFT_katyusha",
+        "WS0006": "CFT_katyusha"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "CFT_mpmb"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

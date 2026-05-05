@@ -1,0 +1,56 @@
+{
+    "displayName": "Missile",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "hullId": "SCY_nemeanlion",
+    "hullMods": [
+        "missleracks",
+        "eccm",
+        "converted_hangar"
+    ],
+    "modules": [
+        {"M_FL": "SCY_lionFL_standard"},
+        {"M_FR": "SCY_lionFR_standard"},
+        {"M_RL": "SCY_lionRL_standard"},
+        {"M_RR": "SCY_lionRR_standard"}
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "SCY_nemeanlion_missile",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "MAW1": "SCY_swarmer",
+                "MAW2": "SCY_laser3",
+                "MAW3": "SCY_phased"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_arc"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_lvds",
+                "WS0004": "SCY_lvds"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_anti2",
+                "WS0005": "SCY_hack",
+                "WS0006": "SCY_hack",
+                "WS0007": "SCY_hack",
+                "WS0008": "SCY_hack"
+            }
+        }
+    ],
+    "wings": ["SCY_eris_wing"]
+}

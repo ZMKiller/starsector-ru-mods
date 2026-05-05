@@ -1,0 +1,348 @@
+1.7.0
+
+Updated to 0.98a
+
+Skylight
+deployment points 12->15
+
+Arena Store
+temporarily removed Poem of Stars
+added Arc Blaster
+
+Stalkers contact
+purchased ships now directly enter your fleet
+
+Mass Accelerator
+revised projectile selection logic
+[DATA EXPUNGED]
+
+Kraken Rocket Pod
+medium missile weapon installable in any slot
+does not hit targets directly, detonates nearby instead
+
+Arc Blaster
+large hybrid weapon
+deals additional damage on hit, and exerts moderate pull force on targets
+
+Space Bridge is now protected by new fleets after the sinking of the Ephemeral dreadnought
+
+1.6.2
+Data rebalancing
+Now supports hotfixes
+Weapons
+Focus Lance
+ordnance points 25->30
+
+Mass Accelerator
+flux/damage 一 now 0.8
+
+Starstream DEM
+ammo 12->10
+
+Firework
+ammo 4/10/32->3/8/28
+
+Thunder MIRV Pod
+ordnance points 8->9
+ammo 4->3
+
+Cloudburst Torpedo Pod
+ordnance points 14->12
+ammo 3->2
+hitpoints 800->750
+projectile speed 225->50
+flight time 22->60
+decreased maneuverability
+
+Needler conversion
+now identical to original Needler
+
+Autopulse Laser conversion
+now identical to original Autopulse Laser
+
+Duality
+ordnance points 12->15
+
+Ships
+Oath
+armor 1850->1650
+
+Moonwind
+armor 1400->1200
+flux capacity 12000->9000
+ordnance points 330->240
+
+Moonwind (3G)
+armor 1400->1200
+flux capacity 12000->9000
+ordnance points 330->260
+
+Citadel
+Tactical System no longer refreshes armor damage
+deployment points 42->47
+
+Vision
+armor 1900->1700
+flux capacity 12000->10000
+
+Overlord
+flux dissipation 800>700
+armor 1400->1200
+ordnance points 330->300
+Tactical Systems: Maneuvering Jets->Space Storm
+Special: Emergency Barrier->Laminar Flow
+
+Northwind
+armor 1050->950
+deployment points 22->26
+
+Planet
+deployment points 30->28
+
+Lamplight
+deployment points 4->5
+
+Papercut
+armor 650->550
+flux capacity 6000->5000
+ordnance points 100->80
+deployment points 8->11
+
+Elegy
+flux capacity 5000->6000
+deployment points 14->22
+
+Weaver
+flux capacity 4500->2000
+ordnance points 110->80
+deployment points 12->17
+
+Peregrine
+deployment points 12->15
+
+Coldrain
+flux capacity 6000->5000
+
+Strix
+flux capacity 5000->4400
+deployment points 9->10
+
+Comet
+flux capacity 4000->3000
+flux dissipation 300->250
+
+Skylight
+deployment points 8->9
+
+Mallet
+ordnance points 60->40
+flux dissipation 180->100
+deployment points 5->4
+
+Longwind
+flux dissipation 250->225
+
+Fighter Wings
+Thor
+ordnance points 18->21
+
+Flanker
+ordnance points 14->18
+
+Mayfly
+ordnance points 9->12
+
+Apocalypse
+ordnance points 20->23
+
+Arbalétrier
+Arbalétrier Support charge reduced to 1
+ordnance points 18->21
+
+Dancer
+ordnance points 8->11
+
+Tactical Systems
+Torpedo Factory
+no longer refreshes CD
+
+Emergency Barrier
+CD5->11
+charge recovery rate 0.03->0.025
+
+Laminar Flow
+CD0->6
+charge recovery rate 0.05->0.0333
+
+Bug Fixes
+Fixed hull damage causing crew/marine losses during bar mission with the Director
+Fixed Ephemeral Entrophy Feedback System overcounting stacks
+Fixed incorrect damage nullification during active venting
+Fixed Butterfly-class incorrectly reducing (instead of increasing) max HP on respawn
+Fixed HPSID HiNet cumulative reward calculation
+
+Other Changes
+Increased Butterfly-class point cost
+Reduced Poem of Stars point cost, WIP not recommended for purchase
+Deploying too many ships during Ephemeral battle now triggers planetary ground battery fire
+
+1.6.1
+New campaign content.
+Additional tooltip text.
+
+Ephemeral
+ordnance points 360->440
+new hullmod Vast Hanger
+
+1.6.0-r
+Torpedo Factory system now properly resupplies ammo when used.
+Decorative weapons now have the SYSTEM tag to prevent accidental acquisition.
+
+1.6.0
+Texture overhaul
+Numerical adjustments
+
+# Older entries not translated #
+
+1.5.0
+贴图重置
+
+机制调整
+湍流护盾: 现在称为能量屏障.完全调整了展示形式和内部逻辑.修改了视觉效果.
+
+Ships调整
+新增: 稻禾 ,稻禾Mk.2 ,征服者(HSI) ,雄鹰(HSI) ,极光(HSI) ,破甲(HSI) ,美杜莎(HSI) ,伯劳鸟(HSI) ,野狼(HSI) ,圣甲虫(HSI).
+Oath(T): 更名为Vision-class.
+黑桃: 更名为未明-class.
+其他Ships性能调整.
+
+Weapons调整
+新增: 黄昏炮.
+部分性能调整.
+
+船插调整
+势不可挡: 重做
+硬化护盾: 重做
+预测式护盾控制&反射式护盾控制: 移除
+
+系统调整
+超级护盾充能: 移除
+Laminar Flow: 新增Special ,代替超级护盾充能 ,持续期间屏障承受的伤害计算一次armor 减伤.此效果不会低于50%armor .将屏障恢复计时器调整到较低的水平.
+Emergency Barrier: 额外屏障数值降低 ,取消立刻开始恢复.
+
+任务
+新增绝望骑士任务.
+
+1.5.1
+修复了小帮手导致的问题
+
+1.5.2
+
+1.5.3
+Duality所用的防空导弹更新了制导方法以大幅提高命中率.
+小帮手现在会尽量指向目标.
+修复了 Butterfly-class 部分文本效果未生效的问题.
+调整了 光环系统 Weapons工业升级 柔性机库 船插的说明.现在可以通过按下L-alt键以展开详细的说明.
+调整了 生涯中向安全信息部干员提供稀有物品时的流程.现在会额外说明提交物品对推动进度条的影响.
+修复了数个船插opad错误的问题.
+更新了 理事长 的头像.
+Moonwind-class 山雨-class 贴图更新.
+破甲(HSI)级 不正确的小型导弹炮塔被替换为挂载点.
+
+1.5.4
+Focus Lance
+爆发dps 2300->1500
+单轮伤害3066->3144
+持续dps 383->383
+总开火间隔 8->8.2
+幅伤比 1.08->1.1
+调整了爆发模式
+
+Moonwind
+柔性机库船插: 
+后备整备速度上限减半
+部署后10秒不进行任何后备部署和后备整备速度补充 ,以双倍速度恢复后备整备速度（即每甲板每秒恢复10%上限）
+
+1.5.5
+修复备件生产不正确计算buff导致战斗战备消耗为0的问题.
+修复生产界面闪退的问题.
+和1.5.4兼容.
+fix
+修复rules变量错误的问题.
+
+1.5.6
+更新大部分船图.
+野狼(HSI) 移除 ,替换为 Mallet-class
+圣甲虫(HSI) 替换为 长风-class
+美杜莎(HSI) 替换为 Coldrain-class
+破甲(HSI) 替换为 Peregrine-class
+未明-class Tactical Systems 闪现->战术折跃
+Papercut-class Tactical Systems 代码更换
+
+Butterfly-class
+修复了数个EGO系统与描述不符的问题
+
+Citadel-class
+现在不再将部署的模块以撤退方式移除
+现在部署的模块会正确面向附近的目标
+
+Elegy-class
+被动效果不再锁定战机
+
+其他文本更新.
+
+fix
+修复一个备件生产导致的问题.
+
+fix2
+修复了可能导致战斗Ships幅能条/结构条归0导致无敌的问题.
+
+fix3
+修复了海拉甲提供的计算甲被复数次计算的问题.
+
+1.4.0
+全面重置
+
+1.4.1
+删除了一部分不使用的素材
+测试Weapons现在不可使用
+
+1.4.2
+使用了Scythe提供的li解装配
+修复了一个在军官为空时出错的问题
+修复了充能为0时超级充能不能正确取消的问题
+修复了护盾为0时错误地忽略了计算受击的问题
+修复了护盾恢复时可能因为立刻受到攻击而错误保持在恢复状态的问题
+
+1.4.3
+修复了船插物品导致错误的问题
+修复了涡轮不正确计算射速提升和过度受升级的影响
+Mass Accelerator现在会在非自动开火时依据最近的目标选择弹药
+修复了酒馆事件导致错误的问题
+
+未明
+Special: 亚空行者->Emergency Barrier
+
+超级护盾充能
+容量: 2.5倍护盾容量->2倍护盾容量
+
+星极/Starstream
+增加了升级文本
+
+以上为忘改了
+
+感谢大莉老师的试玩
+
+1.4.4
+修复了Moonwind ai在战斗最开始崩溃的问题
+fix-修复使用了未更新的settings导致出现加载问题
+
+1.4.5
+酒馆事件现在不再随机触发 ,而是满足条件后自动出现在玩家拜访的非隐藏星球的酒馆中.
+Arena Store现在会展示购买物品的单价.
+为加密网络增加了引导 ,现在会提示提交物品的位置.
+
+1.4.5-fix2
+尝试修复装配界面发生的随机闪退.
+尝试修复人理之锤制导导致的随机闪退.
+修复Moonwind全空甲板时产生的船插介绍闪退.

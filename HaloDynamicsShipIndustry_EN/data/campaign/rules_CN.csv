@@ -1,0 +1,643 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME HSI,,,,,,
+,,,,,,
+# greetings,,,,,,
+greetingHSIFriendly,OpenCommLink,"$faction.id == HSI
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions",""" $personRank 向你致意，朋友。"" 
+OR
+"" 没想到能在这里遇见你，朋友。""",,
+greetingHSIHostileWeaker,OpenCommLink,"$faction.id == HSI
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"""与光环动力继续敌对的下场不会太好，希望你考虑清楚了，舰长。"" $personRank 切断了通讯链接，舰队似乎打算脱离接触。
+OR
+""我以光环动力的名义要求你停止敌对行为，舰长。"" 你注意到$heOrShe的舰队正在做出撤退机动。",cutCommLink:切断通讯,
+greetingHSIHostileWeakerDefiant,OpenCommLink,"$faction.id == HSI
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"""支援舰队已经在路上了，现在，我们将拖住你——以一切代价。"" $personRank 切断了通讯链接。武器开始充能。
+OR
+""我们不会动摇。""$personRank 切断了通讯链接。你侦测到对方进入了战斗状态。",cutCommLink:切断通讯,
+greetingHSIHostileStronger,OpenCommLink,"$faction.id == HSI
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""我们将粉碎一切与理事会敌对的实体。""
+OR
+""理事会已授权使用致命武力。请立即投降。""",cutCommLink:切断通讯,
+greetingHSINeutral,OpenCommLink,"$faction.id == HSI
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""你好，旅人。如果没有什么事的话，我还有其他任务。""
+",,
+relLevelNeutralHSI,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == HSI",,光环动力并不觉得你有什么东西值得他们费心。,,
+relLevelFavorableHSI,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == HSI",,舰船工业和武器工业向你提供一些常规设计。,,
+relLevelWelcomingHSI,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == HSI",,你的名字出现在理事会的报告上，舰船工业和武器工业向你出售部分轻度限制级的军火。,,
+relLevelFriendlyHSI,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == HSI",,理事会授予你临时雇员身份，你享受大部分光环动力雇员的待遇。,,
+relLevelCooperativeHSI,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == HSI",,你拥有在提前预约的情况下和理事长会面的权利。这意味着理事会接纳了你——在英仙座。,,
+relLevelSuspiciousHSI,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == HSI",,一个稍有摩擦的雇佣兵，不足以让光环动力做出什么反应。,,
+relLevelInhospitableHSI,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == HSI",,舰船工业和武器工业拒绝与你交易。,,
+relLevelHostileHSI,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == HSI",,理事会授权对你使用致命性武力。光环动力的领域会让你寸步难行。,,
+relLevelVengefulHSI,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == HSI",,理事会授意战争部将你列入追捕名单。一支特殊舰队似乎也在搜寻你。,,
+flavorTextMarketHSINormal,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == HSI
+$market.id != HSI_SpaceBridge_Market","AddText ""随处可见的休闲设施，不明的能量网络和奢华的内饰把此地装饰得像一座度假圣地，但其中行色匆匆的星舰学员和舰长打破了这种伪装。"" marketFlavorTextColor
+AddText ""全副武装的警卫比对了你的身份证明，随后将你带到了市场大厅。"" marketFlavorTextColor",,,
+flavorTextMarketHSISpaceBridge,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market","AddText ""这座设施上几乎只有科学家和警卫。偶尔也有一些期望能找到优秀合作者的人物到访。"" marketFlavorTextColor
+",,,
+convCommissionerGreetingRefuse,PickGreeting,"HSIPersonIdentityCheck PersonIsTheCommissioner
+!$global.HSITC0Finished
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowDefaultVisual",理事长并不是那么好预约的，秘书委婉地拒绝了你的请求。,cutCommLink:离开,
+convCommissionerGreetingAccept,PickGreeting,"HSIPersonIdentityCheck PersonIsTheCommissioner
+$global.HSITC0Finished
+!$faction.HSIisTraitor
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowPersonVisual
+FireAll PopulateOptions","""贵安， $playerName 阁下。""",,
+convCommissionerGreetingTraitor,PickGreeting,"HSIPersonIdentityCheck PersonIsTheCommissioner
+$global.HSITC0Finished
+$faction.HSIisTraitor
+!$faction.HSIforgiven
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowPersonVisual
+FireBest HSITraitor","""贵安， $playerName 阁下。你好像闹得不太好看，我还以为你不会再来了。""",cutCommLink:离开,
+convCommissionerGreetingTraitor2,PickGreeting,"HSIPersonIdentityCheck PersonIsTheCommissioner
+$global.HSITC0Finished
+$faction.HSIisTraitor
+$faction.HSIforgiven
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowDefaultVisual",没有人会原谅一个背叛过两次的人。你最好在招来巡逻队之前自行离开。,cutCommLink:离开,
+barDesc_HSI,BarPrintDesc,$faction.id == HSI,ShowImageVisual space_bar,不明的能量网络在酒吧的墙壁上编织出各种图形，显然这些只是装饰用途。空气清新剂压制了各种奇怪的气味，酒座设计得低调而奢侈，其中既有看起来是高管的人物，也有压低嗓门的太空人和军官。,,
+,,,,,,
+#END greetings,,,,,,
+#Traitor,,,,,,
+HSITraitor0,HSITraitor,,,,"HSITraitorTryToDeal1:""我也不想事情闹得那么难看。""",
+HSITraitor1_1,DialogOptionSelected,"$option == HSITraitorTryToDeal1
+!$faction.HSIFLLostToPlayer",,"""什么叫不想事情闹得那么难看呢， $playerName 阁下。袭击光环动力资产可不是什么小罪名，特别是对一位拿过好处的合作者而言。""","HSITraitorTryToDeal2:""也许我能带来更多的利益。""",
+HSITraitor1_2,DialogOptionSelected,"$option == HSITraitorTryToDeal1
+$faction.HSIFLLostToPlayer",,"""什么叫不想事情闹得那么难看呢， $playerName 阁下。袭击光环动力资产可不是什么小罪名，特别是对一位拿过好处的合作者而言，更别提那条被击沉的无畏舰了。""","HSITraitorTryToDeal2:""也许我能带来更多的利益。""",
+HSITraitor2,DialogOptionSelected,$option == HSITraitorTryToDeal2,FireAll HSITraitorDealTurnOffOptions,"你好像听到有人笑了一下。但又好像是错觉。""多少利益呢。""","HSITraitorDeal1:""1,000,000星币。""
+HSITraitorDeal2:""5,000,000星币。""
+HSITraitorDeal3:""10,000,000星币。""
+cutCommLink:离开",
+HSITraitor3_1,DialogOptionSelected,$option == HSITraitorDeal1,FireAll HSITraitorDealTurnOffOptions,"""总得有点诚意吧，$playerName 阁下。""","HSITraitorDeal2:""5,000,000星币。""
+HSITraitorDeal3:""10,000,000星币。""
+cutCommLink:离开",
+HSITraitor3_2,DialogOptionSelected,"$option == HSITraitorDeal2
+!$faction.HSIFLLostToPlayer",HSISetPerson RemoveTraitor,"""5,000,000星币，成交。""",cutCommLink:离开,
+HSITraitor3_3,DialogOptionSelected,"$option == HSITraitorDeal2
+$faction.HSIFLLostToPlayer",FireAll HSITraitorDealTurnOffOptions,"""本来这些也就够了。但是算上那条无畏舰就不太够了。$playerName 阁下，那是另外的价钱。""","HSITraitorDeal3:""10,000,000星币。""
+cutCommLink:离开",
+HSITraitor3_4,DialogOptionSelected,$option == HSITraitorDeal3,HSISetPerson RemoveTraitor,"""10,000,000星币，成交。""",cutCommLink:离开,
+,,,,,,
+,,,,,,
+HSITraitorTurnOff1M,HSITraitorDealTurnOffOptions,$player.credits < 1000000,SetEnabled HSITraitorDeal1 false,,,
+HSITraitorTurnOff5M,HSITraitorDealTurnOffOptions,$player.credits < 5000000,SetEnabled HSITraitorDeal2 false,,,
+HSITraitorTurnOff10M,HSITraitorDealTurnOffOptions,$player.credits < 10000000,SetEnabled HSITraitorDeal3 false,,,
+,,,,,,
+#StellaArena,,,,,,
+HSISA_First,PopulateOptions,"$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$global.HSITC0Finished
+!$global.HSISA_FCFinished
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner",,,HSISA_FC:询问理事长这个看起来很精致的沙盘是什么,
+HSISA_FC0,DialogOptionSelected,$option == HSISA_FC,ShowPersonVisual,"""这是我从各处收集来的藏品——的投影。和 Sagitta 学院的那台是一样的原理，能让人和模拟的敌人进行战斗。""",HSISA_FC1:我能用吗？,
+HSISA_FC1,DialogOptionSelected,$option == HSISA_FC1,,"""可以。就当员工福利吧。如果表现足够亮眼的话，我也可以再给你一些好玩的奖品。""",HSISA_FC3:有点意思.,
+HSISA_FC3,DialogOptionSelected,$option == HSISA_FC3,"$global.HSISA_FCFinished = true
+$global.HSISACredits = 0
+$global.HSISALevelTraining = 1
+$global.HSISALevelHard = 1","""那不如我现在开始?""",HSISA_Join:访问群星竞技场,
+HSISA_Greetings,PopulateOptions,"$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$global.HSISA_FCFinished
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner
+",,,HSISA_Join:访问群星竞技场,
+HSISA_Main,DialogOptionSelected,$option == HSISA_Join,FireAll HSISAOptions,,,
+HSISA_Shop,HSISAOptions,,,,3:HSISA_ShopOpen:访问竞技场商店(你现在具有$global.HSISACredits点数),
+HSISA_Battle,HSISAOptions,,,,1:HSISA_BattleOpen:进行训练模式挑战($global.HSISALevelTraining层),
+HSISA_BattleHard,HSISAOptions,,,,2:HSISA_BattleOpenHard:进行挑战模式挑战($global.HSISALevelHard层),
+HSISA_BattleAdventure,HSISAOptionsNN,,,,4:HSISA_BattleOpenAdventure:查看冒险模式挑战！,
+HSISA_Leave,HSISAOptions,,,,6:HSISA_LeaveOpen:离开竞技场,
+HSISA_ModeExplain,HSISAOptions,,,,5:HSISA_Explain:关于竞技场,
+HSISA_ShopPage,DialogOptionSelected,$option == HSISA_ShopOpen,HSISAShop,"""看看你的奖励。""",,
+HSISA_BattlePage,DialogOptionSelected,$option == HSISA_BattleOpen,HSISABattle Training,,,
+HSISA_BattlePageHard,DialogOptionSelected,$option == HSISA_BattleOpenHard,HSISABattle Hard,,,
+HSISA_LeavePage,DialogOptionSelected,$option == HSISA_LeaveOpen,FireAll PopulateOptions,你想起还有其他事要做，离开了竞技场。,,
+HSISA_Explain,DialogOptionSelected,$option == HSISA_Explain,FireAll HSISAOptions,"训练模式:这个模式会自动生成规模逐渐增加的舰队，并按照正常对战的规则进行战斗。每3层能获得1点数。
+挑战模式：这个模式下敌人舰队的质量会大幅增高。每层都能获得1点数。",,
+HSISA_AdventureStatus,DialogOptionSelected,$option == HSISA_BattleOpenAdventure,HSISABattle ShowAdventureStatus,,,
+HSISA_StartBattleAdventure,DialogOptionSelected,$option == HSISA_BattleStartAdventure,HSISABattle Adventure,,,
+HSISA_PickedBuffAdventure,DialogOptionSelected,HSISABattle PickedBuffOption,HSISABattle AddBuff,,,
+,,,,,,
+,,,,,,
+#HPSID,,,,,,
+HSI_startTurnIn,PopulateOptions,"$isPerson
+HSIPersonIdentityCheck PersonIsHPSIDOperator
+!$faction.HSIisTraitor
+$faction.id == HSI",,"""您好。安全部对外干员，有什么事?""","10:HSI_aiCores_startTurnIn:""我有一些ai核心...""
+11:HSI_specialShip_startTurnIn:""我有一些罕见的舰船...""
+13:HSI_surveyData_startTurnIn:""我有一些勘探数据...""",
+HSI_startTurnInDenied,PopulateOptions,"$isPerson
+HSIPersonIdentityCheck PersonIsHPSIDOperator
+$faction.HSIisTraitor
+$faction.id == HSI",FireAll PopulateOptions,"""没人会信任一个背后捅过刀子的人，$PlayerSirOrMadam。""",,
+HSI_aiCores_disableTurnInOption,DisableTurnInCoresOptionIfNeeded,"$isPerson
+AICores personCanAcceptCores
+$faction.id == HSI score:1000","SetTooltip aiCores_startTurnIn ""你应该去找能接收这些东西的人。按照规定，这些物品不该由我处理。""
+SetEnabled aiCores_startTurnIn false",,,
+HSI_aiCores_turnInOptionSel,DialogOptionSelected,"$option == HSI_aiCores_startTurnIn
+$faction.id == HSI",FireAll HSICoresTurnInOptions,"""你找对人了。我们很乐意回收这些危险物品。""",,
+HSI_aiCores_playerHasOption,HSICoresTurnInOptions,,,AI核心据按照等级折算为5/10/20/40进度点数，同时也会影响关系。,0:HSI_aiCores_selectCores:选择提交的ai核心,
+HSI_aiCores_neverMindOption,HSICoresTurnInOptions,,,,"100:aiCores_neverMind:""我其实没有ai核心。""",
+HSI_aiCores_turnInOptionSelected,DialogOptionSelected,$option == HSI_aiCores_selectCores,HPSIDTurnIn AI_CORE selectCores,,,
+HSI_aiCores_turnInResponse,HSIAICoresTurnedIn,,FireAll PopulateOptions,"干员 $personLastName 不动声色地收下了你提交的东西。""做的很好，我会向上级报告你的贡献。""",,
+HSI_ships_turnInOptionSelected,DialogOptionSelected,$option == HSI_specialShip_startTurnIn,,"""这些舰船会根据舰船等级折算为15/30/45/60进度点数，并以原价购入，立刻到账。""","HSI_specialShip_startTurnInContinue:继续
+HSI_specialShip_startTurnInBreak:换个话题",
+HSI_ships_turnInOptionSelectedContinue,DialogOptionSelected,$option == HSI_specialShip_startTurnInContinue,HPSIDTurnIn SPECIAL_SHIP selectRareship,,,
+HSI_ships_turnInOptionSelectedBreak,DialogOptionSelected,$option == HSI_specialShip_startTurnInBreak,FireAll PopulateOptions,,,
+HSI_ships_turnInResponse,HSITurnedInRareShip,,FireAll PopulateOptions,"干员 $personLastName 打量了一下Tripad上的舰船状态。""做的很好。我们不会让你后悔的。""",,
+HSI_surveydata_turnInOptionSelectedContinue,DialogOptionSelected,$option == HSI_surveyData_startTurnInContinue,HPSIDTurnIn SURVEY_DATA selectSurveyData,,,
+HSI_surveydata_turnInOptionSelectedBreak,DialogOptionSelected,$option == HSI_surveyData_startTurnInBreak,FireAll PopulateOptions,,,
+HSI_surveydata_turnInOptionSelected,DialogOptionSelected,$option == HSI_surveyData_startTurnIn,,勘探数据按照等级折算为2/4/7/11/15进度点数，同时也会影响关系。,"HSI_surveyData_startTurnInContinue:继续
+HSI_surveyData_startTurnInBreak:换个话题",
+HSI_surveydata_turnInResponse,HSISurveyDataTurnedIn,,FireAll PopulateOptions,"干员 $personLastName 敲打了几下Tripad。""做的很好。光环动力感谢你的勘探。""",,
+,,,,,,
+#HSIContractForge,,,,,,
+HSI_Forge_Start,PopulateOptions,"$isPerson
+HSIPersonIdentityCheck PersonIsHSIForgeContact
+!$faction.HSIisTraitor
+$faction.id == HSI",,"""您好，舰船工业和武器工业能承接各类舰船和武器生产。您可以看看我们的产品介绍。""",HSI_Forge_Pick:阅读产品清单,
+HSI_Forge_Pick,DialogOptionSelected,$option == HSI_Forge_Pick,HSIContactForge,,,
+HSI_Forge_Picked,HSIForgePicked,,"$option = HSI_Forge_out 0
+FireBest DialogOptionSelected",,,
+HSI_Forge_Out,DialogOptionSelected,$option == HSI_Forge_out,FireAll PopulateOptions,"""感谢惠顾。一般在六十日内就能完成生产，不提供包邮服务，请本人或持有有效证明的代理人到空间桥取货。""",,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+#HSI_TCEvent0,,,,,,
+HSI_TC0Start,AddBarEvents,"!$global.HSITC0Started
+!$global.HSITC0Finished
+!$market.isHidden
+RepIsAtWorst HSI COOPERATIVE","AddBarEvent HSI_TC0_BarEvent ""一位与酒吧显得格格不入的少女坐在角落里，不知为何，似乎没有人注意到她。"" ""拥挤的酒吧里，不知为何出现了一个突兀的冷清角落。"" 255，140，200，255",,,
+HSI_TC0Event1,DialogOptionSelected,$option == HSI_TC0_BarEvent,"AddText ""你的到来成功地让她从tripad上移开目光。\""贵安， $playerName 阁下。看起来您终于注意到我了?\"""" 255，140，200，255
+HSISetPerson TheCommissioner
+ShowPersonVisual
+$global.HSITC0Started = true",,"HSI_TC0_1_1:沉默
+HSI_TC0_1_2:""很难想象您这样耀眼的女士会被人忽视。""",
+HSI_TC0Event2_1,DialogOptionSelected,$option == HSI_TC0_1_1,"AddText ""\""请坐吧， $playerName 阁下，不必这么拘谨。\"""" 255，140，200，255",,HSI_TC0_2:坐下,
+HSI_TC0Event2_2,DialogOptionSelected,$option == HSI_TC0_1_2,"AddText ""\""我可没想到您会这么油嘴滑舌。\""你仿佛看见她笑了一下，又好像是错觉。\""请坐吧， $playerName 阁下，不必这么……我觉得您倒也称不上拘谨。\"""" 255，140，200，255",,HSI_TC0_2:坐下,
+HSI_TC0Event3,DialogOptionSelected,$option == HSI_TC0_2,"AddText ""她的邀请似乎有某种魔力，你顺势坐在她对面。她在tripad上点了几下。\""我找上您单纯只是因为好奇。开诚布公的说，您很有趣。\"""" 255，140，200，255",,"HSI_TC0_3_1:""我可不觉得自己有趣。""
+HSI_TC0_3_2:""嗯……我确实很有趣。""",
+HSI_TC0Event4_1,DialogOptionSelected,$option == HSI_TC0_3_2,"AddText ""\""那我大可以多夸夸您。不过，我还是想试一试您的能力。\""她推来一张晶片。\""这是一点见面礼。\""她顿了顿，把手边放着的一杯酒推给了你，\""我希望您的实力能和您的口才一样好。\"""" 255，140，200，255",,"HSI_TC0_4_1:接下晶片
+HSI_TC0_4_2:""我想我不是很感兴趣。""",
+HSI_TC0Event_2,DialogOptionSelected,$option == HSI_TC0_3_1,"AddText ""\""您要是愿意，我可以慢慢和您讲。不过，我还是想试一试您的能力。\""她推来一张晶片。\""这是一点见面礼。\""她把手边的酒倒进两个空杯里，自己抿了一口，把另一杯推给了你。\""希望下次见面时，您不必如此戒备。\"""" 255，140，200，255",,"HSI_TC0_4_1:接下晶片
+HSI_TC0_4_2:""我想我不是很感兴趣。""",
+HSI_TC0Fight,DialogOptionSelected,$option == HSI_TC0_4_1,HSITCEventFight TC0,,,
+HSI_TC0Leave,DialogOptionSelected,$option == HSI_TC0_4_2,"AddText ""对方没有再说话。"" 255，140，200，255
+BarCMD returnFromEvent false",,,
+HSI_TC0End,DialogOptionSelected,$option == HSI_TC0_End,"AddText ""你骤然恍惚了一下。等你回过神来，对方已经不见了。你的Tripad上提示有一笔信用点转入，和一条奇怪的未读消息。奇怪……"" 255，140，200，255
+$global.HSITC0Finished = true",,"backToBar:""请来空间桥面谈……这是什么意思？""",
+,,,,,,
+#HSI_TCEvent1,,,,,,
+HSI_TC1_Start,PopulateOptions,"$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$global.HSITC0Finished
+!$global.HSITC1Accepted
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner",,,HSI_TC1_1:理事长正在等你。,
+HSI_TC1_1,DialogOptionSelected,$option == HSI_TC1_1,"AddText ""\""贵安 ， $playerName 阁下。\""理事长坐在窗边。这里可能是空间桥上视野最好的舱室之一，她的背后正是庞大的Intrusion。你盯着那片巨大的幽暗，即使对最老练的太空人来说也是极为不安的存在。\n\""我不建议您继续盯着它看，事件视界确实是很有魔力的东西。，看多了也许会导致黑洞恐惧症。\""理事长的声音从背后响起。你吃了一惊，发现不知何时她已经不在座位上了。\""抱歉，让您久等了。\"""" 255，140，200，255
+$global.HSITC1Accepted = true",,HSI_TC1_2:摇头。,
+HSI_TC1_2,DialogOptionSelected,$option == HSI_TC1_2,"AddText ""\""您上次做的很好，所以这次我想请您帮一个忙。\""她望着你，\""从上次的测试来看，您完全没有受到影响，这非常罕见。\"""" 255，140，200，255",,"HSI_TC1_3_1:""测试？""
+HSI_TC1_4_1:""可以，说吧。""
+HSI_TC1_4_2:""除非你说明白，否则我不会接受这种含糊其辞的委托。""",
+HSI_TC1_3_1,DialogOptionSelected,$option == HSI_TC1_3_1,"AddText ""\""总之不是什么大事…… $playerName 阁下，还是不要问为好。\"""" 255，140，200，255",,"HSI_TC1_4_1:""好吧，请说吧。""
+HSI_TC1_3_2:""我不打算做不明不白的委托。""",
+HSI_TC1_3_2,DialogOptionSelected,$option == HSI_TC1_3_2,"AddText ""理事长微微蹙眉。\""真是难缠呢， $playerName 阁下。\""她指向窗外的Intrusion，\""正如我们之前说到的，有些东西会影响人的心智。您上次见过了它，您没受影响，您也不会受到它同类的影响。并不是每个人都有这种天赋的。\"""" 255，140，200，255",,"HSI_TC1_4_1:""说说你的委托。""
+HSI_TC1_4_2:""我对猜谜不感兴趣。""",
+HSI_TC1_4_1,DialogOptionSelected,$option == HSI_TC1_4_1,"AddText ""\""回收一份特殊存在，我不知道它具体是什么样子。\""理事长说道，\""我只知道它非常虚弱——想必您的能力足够控制它。我恰好抽不出身，只能拜托您了。坐标会发送到你的TriPad上，它似乎并不具备转移的能力。\"""" 255，140，200，255",,"HSI_TC1_5_1:""好吧，替你跑一趟。""",
+HSI_TC1_4_2,DialogOptionSelected,$option == HSI_TC1_4_2,"AddText ""理事长思考良久，最终说道：\""是我冒昧了。请回吧，$playerName 阁下。\"""" 255，140，200，255",,cutCommLink:离开她的办公室,
+HSI_TC1_5_1,DialogOptionSelected,$option == HSI_TC1_5_1,"AddText ""\""谢谢您，$playerName 阁下。不过……正如您上次见到的那样。大部分特殊存在都相当灵敏且诡异。尽管有些冒昧，还是希望您安全为上。\""她拿出一个小巧的通讯器：\""遇到突发情况的话，请及时联系我。\"""" 255，140，200，255
+HSITC1Orders ShowMap",,cutCommLink:接过通讯器,
+HSI_TC1_6,OpenInteractionDialog,"$HSI_TC1_MeetTheKnight score:1000
+!$global.HSITC1Finished","ShowDefaultVisual
+FireBest HSITC1MeetTheKnight
+$HSI_TC1_MeetTheKnight = false","你的$shipOrFleet接近了这片残骸区。
+
+一条不败-级无畏舰和更多的小型舰船失去了动力，漂浮在真空中。",,
+HSI_TC1_6_MeetTheKnight,HSITC1MeetTheKnight,,,,HSI_TC1_7:命令传感器技师分析残骸,
+HSI_TC1_7,DialogOptionSelected,$option == HSI_TC1_7,,"传感器技师花了相当长的时间才面色古怪地向你报告。显然他正在努力说服自己：""从涂装、徽记、以及舰队构成上来看，这是同一支卢德骑士舰队。""
+
+卢德教会的这些无畏舰通常不会被随意遗弃——周围的残骸更说明了这里曾经有一场大战。传感器技师报告说没有能量读数反应，这条不败完全是空壳——尚不清楚一支这种规模的卢德骑士舰队在与什么对象交火中蒙受了如此巨大的损失。",HSI_TC1_8:接近无畏舰,
+HSI_TC1_8,DialogOptionSelected,$option == HSI_TC1_8,,"你小心翼翼地接近了这条废弃的巨舰。放大之后，你和传感器技师对视了一眼，两人都觉得这种损伤有什么地方不对。舰桥里弥漫着诡异的沉默。最终行动组长开口说：""长官，你觉不觉得这些痕迹不太像能量武器?""
+
+你点了点头。显然这些舰船装甲上的烧灼痕迹是高爆武器留下的。传感器技师开始仔细分析这些残骸的损伤模式。鉴于目前的形势，你有理由怀疑这些残骸和舰队本身有关。
+
+你们在轨道上环绕了数个小时，传感器技师带来了他的最终结论：无畏舰与舰队的其余舰船相互攻击导致全军覆没。",HSI_TC1_9:准备登船,
+HSI_TC1_9,DialogOptionSelected,$option == HSI_TC1_9,"HSISetPerson Knight
+ShowPersonVisual","你决定直接从舰桥附近登陆，然后直接进入舰桥，或许那里还有能恢复运作的传感器。
+
+在你进入舰桥的时候，你看到了一抹身影。显然其他军官和陆战队员并没有看到这一幕，但你还是叫停了他们。",HSI_TC1_10:打开通讯器,
+HSI_TC1_10,DialogOptionSelected,$option == HSI_TC1_10,,"通讯器几乎立刻接通了。你举起通讯器——并期望这玩意应该不只是个通讯器。""能看见吗?""
+
+""能的。看起来……一位骑士。""你感觉对方的语气似乎非常轻松，""有点意料之外，还算好处理。我相信您能靠着口才自行解决的，$playerName 阁下。""",HSI_TC1_11:尝试交流,
+HSI_TC1_11,DialogOptionSelected,$option == HSI_TC1_11,,"一位卢德骑士，宣誓捍卫卢德的教义。遵从教会的指令，清除摩洛克的造物，以剑与锤捍卫卢德的精神。
+
+努力守护卢德教众，清理异端和邪恶造物。在数十年间，伴随着赫赫战功，疑问也日益加深。是否所有的邪恶造物都会泯灭人的精神？在漫长的征战岁月里，并非所有异端都如主教们说的那样，被机器夺去了灵魂。在这片行将就木的星域，有太多不借助机器就会被自然杀死的地方。
+
+不安随着调查加深，怀疑的阴云涌动着。现实与信仰摩擦，它始终无法和同僚一样灵活处理自己面对的事实。
+
+绝望吞噬了骑士。
+
+""我其实没想过这个时代还会有这样的信徒。""通讯器又响了起来，""也没想过还会有这样的骑士。或许等您回来可以给您一些旧地球的文学作品，偶尔也会有这样的人物出现。""","HSI_TC1_12:""我觉得现在的重点是接下去怎么做。""",
+HSI_TC1_12,DialogOptionSelected,$option == HSI_TC1_12,"SetStoryOption HSI_TC1_13_1 general ""说服骑士还有可守护的人。""","""最简单的办法，说服它守护您。""
+
+""你最好确定没什么副作用。""
+
+""通常来说……副作用也不是您该考虑的事了。不过为了避免额外的麻烦，您以后可别死了。""你似乎听出了一丝揶揄。现在该做决定了。
+","HSI_TC1_13_1:说服骑士还有可守护的人。
+HSI_TC1_13_2:说服骑士她是受蒙蔽的。",
+HSI_TC1_13_1,DialogOptionSelected,$option == HSI_TC1_13_1,,"你向骑士反复陈明它做的没错。至少不是它的错，而是那些主教——与它的同行相比，它才是一位真正的骑士。
+
+直到你说到它还有可守护的人，骑士终于抬起了头。""名字。""你听到它说。
+
+你在迟疑，但是并没有什么破局的办法。通讯器里似乎传来了一声响动。你突然决定赌一把。","HSI_TC1_14_1:""$playerName。""",
+HSI_TC1_13_2,DialogOptionSelected,$option == HSI_TC1_13_2,,"你向骑士反复陈明它做的没错。至少不是它的错，而是那些主教——与它的同行相比，它才是一位真正的骑士。
+
+直到你说到它是受人蒙蔽，骑士终于抬起了头。""名字。""你听到它说。
+
+你在迟疑，但是并没有什么破局的办法。通讯器里似乎传来了一声响动。你突然决定赌一把。","HSI_TC1_14_2:""$playerName。""",
+HSI_TC1_14_1,DialogOptionSelected,$option == HSI_TC1_14_1,"AddText ""\""我将守护你。\""你听见骑士这样说。"" 110，110，250，255
+HSITC1Orders GenKnight_SP
+AddText ""\""嗯……皆大欢喜？\""沉默了很久的通讯器又响了起来，你发现自己没有关掉它。很难想象另一头的理事长以什么表情听完了你的表演。你迅速关掉了它。"" 110，110，250，255
+$global.HSITC1Finished = true
+HSITC1Orders ClearImportant HSI_TC1_MeetTheKnight
+$player.KnownByTheCommissioner = true",,defaultLeave:该离开这里了,
+HSI_TC1_14_2,DialogOptionSelected,$option == HSI_TC1_14_2,"AddText ""\""我将守护你。\""你听见骑士这样说。"" 110，110，250，255
+HSITC1Orders GenKnight
+AddText ""\""嗯……皆大欢喜？\""沉默了很久的通讯器又响了起来，你发现自己没有关掉它。很难想象另一头的理事长以什么表情听完了你的表演。你迅速关掉了它。"" 110，110，250，255
+$global.HSITC1Finished = true
+HSITC1Orders ClearImportant HSI_TC1_MeetTheKnight
+$player.KnownByTheCommissioner = true",,defaultLeave:该离开这里了,
+,,,,,,
+#HSITC1_后日谈,,,,,,
+HSI_TC1_A_0,PopulateOptions,"$global.HSITC1Finished
+!$global.HSITC1AFinished
+$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner",,,HSI_TC1_A_1:你依稀记得上次来接你的并不是这位秘书……,
+HSI_TC1_A_1,DialogOptionSelected,$option == HSI_TC1_A_1,,"""$playerName $PlayerSirOrMadam ，请您带上回收的实体和我来。""
+你花了几秒反应过来所谓的""实体""是指骑士。你命令骑士跟在你身后，随后跟上了那位秘书。",HSI_TC1_A_2:观察四周……,
+HSI_TC1_A_2,DialogOptionSelected,$option == HSI_TC1_A_2,,"虽然已经有一段时间没来了，你还是觉得自己今天走的路线有点过于安静了。
+
+这位秘书带着你们穿过了一条稍显曲折的走廊，你感觉自己的记忆出现了偏差。",HSI_TC1_A_3:上次有走过这个转角吗？,
+HSI_TC1_A_3,DialogOptionSelected,$option == HSI_TC1_A_3,,最终你们在一扇熟悉的门前停下。秘书没有敲门，而是直接推开了门，示意你们进去。,HSI_TC1_A_4:也许只是业务生疏……,
+HSI_TC1_A_4,DialogOptionSelected,$option == HSI_TC1_A_4,,"在你们进入那扇门的时候，异变陡生。穿过一层似有似无仿佛幻觉的隔层，你见到了理事长，她背对着你们站在桌前。
+
+你感觉今天的理事长似乎更加冷酷，尽管你并不能看到她的表情，但这是一种直觉。你觉得以自己这些年的经验应该不至于看岔。骑士开始不安，它的手抚上剑柄，警惕地移动到你的身前。
+
+理事长仍然一言不发。",HSI_TC1_A_5:是否应该出声询问呢？,
+HSI_TC1_A_5,DialogOptionSelected,$option == HSI_TC1_A_5,,"正当你思考的时候，面容模糊的""理事长""突然向你们冲来。你终于意识到整件事情透露着诡异。骑士毫不犹豫地拔剑，""理事长""在触碰到剑尖的时候，周围的一切都仿佛溶解一般，在一瞬间变成了另一种样子。你甚至开始怀疑是不是看错了什么。
+
+理事长正坐在桌前，拨弄着一个水晶摆件。","HSI_TC1_A_6:""我需要一个解释。""",
+HSI_TC1_A_6,DialogOptionSelected,$option == HSI_TC1_A_6,$global.HSITC1AFinished = true,"""这是一点安全测试。对您的，也是对它的。""理事长把摆件扔给你，你手忙脚乱地接住它。骑士仍然没有放下它的剑，直到理事长以一种哄孩子的口气让它""放下武器""。你总感觉骑士的手似乎突然有了自己的想法，在骑士极不情愿的目光下把剑插回了剑鞘。
+
+""总之，结果还算满意。$playerName 阁下，您得到了一位可靠的帮手。""她停了一下，""也许我也得到了一位可靠的帮手。下次再见，助手。""
+
+你感觉自己好像没得到什么解释，不知怎么就跟着秘书回到了空间桥的大厅。
+",cutCommLink:也许还有别的事要做,
+,,,,,,
+#HSI_TCEvent2,,,,,,
+HSI_TC2_0,AddBarEvents,"$global.HSITC1AFinished
+!$market.isHidden
+RepIsAtWorst HSI COOPERATIVE
+$global.HSILifeSentBack","AddBarEvent HSI_TC2_BarEvent ""和他一起喝酒。"" ""一位看起来非常忧郁而绝望的男人在自顾自喝闷酒。"" 255，40，40，255",,,
+HSI_TC2_1,DialogOptionSelected,$option == HSI_TC2_BarEvent,"HSISetPerson Salvation
+ShowPersonVisual",男人醉醺醺地坐在吧台前，自顾自地喝着酒。你一边高声呼喊着酒保给酒吧里所有人都再上一轮，一边坐到他边上的座位。男人听到你面前的酒杯发出的声音，向你举了举杯子。,HSI_TC2_1:朝他回礼,
+HSI_TC2_2,DialogOptionSelected,$option == HSI_TC2_1,,你扬了扬杯子，算是回礼。两人自顾自喝着酒，你决定说点什么打破这种尴尬的氛围——并满足你的好奇心。,"HSI_TC2_2_1:""什么事让你这样愁眉苦脸，兄弟。""
+HSI_TC2_2_2:""最近生活不顺利吗，哥们。""",
+HSI_TC2_3_1,DialogOptionSelected,$option == HSI_TC2_2_1,,"男人看了你一眼，继续喝着酒。你感觉自讨没趣，没打算再继续问下去。
+
+过了一会，男人喝完了他那杯酒，拿起你刚请的那杯，""如果有一天你一醒来，发现自己在一个完全陌生的世界，离你熟悉的一切有几万光年，你会怎么样？""","HSI_TC2_3_1:""嗯……愁眉苦脸？""
+HSI_TC2_3_2:""那不是刚好从头开始？""",
+HSI_TC2_3_2,DialogOptionSelected,$option == HSI_TC2_2_2,,"男人看了你一眼，继续喝着酒。你感觉自讨没趣，没打算再继续问下去。
+
+过了一会，男人喝完了他那杯酒，拿起你刚请的那杯，""如果有一天你一觉醒来，发现自己在一个完全陌生的世界，离你熟悉的一切有几万光年，你会怎么样？""","HSI_TC2_3_1:""嗯……愁眉苦脸？""
+HSI_TC2_3_2:""那不是刚好从头开始？""",
+HSI_TC2_4_1,DialogOptionSelected,$option == HSI_TC2_3_1,,"""这就是我为什么这么愁眉苦脸。""",HSI_TC2_4:邀请他换个地方谈谈,
+HSI_TC2_4_2,DialogOptionSelected,$option == HSI_TC2_3_2,,"男人明显愣了一下，然后摇摇头，""这可不在我的计划之内，$PlayerSirOrMadam 。""",HSI_TC2_4:邀请他换个地方谈谈,
+HSI_TC2_5,DialogOptionSelected,$option == HSI_TC2_4,,男人看来不是很想在酒吧里讨论他的遭遇。你邀请他去附近一处僻静的餐馆谈谈。他接受了。,"HSI_TC2_5:""难道你真的一觉醒来就远离家乡了？""",
+HSI_TC2_6,DialogOptionSelected,$option == HSI_TC2_5,,"男人苦涩地笑了笑，给出了他的故事。
+
+他参加一个穿越时空的实验，实验者保证即使传错了也能给他拉回去。结果现在他已经在这个世界流浪了整整三个月，而且没人信他。
+
+为了防止你也不信他，他给你展示了两个怀表样子的东西。他表示这叫时间-空间-现实三相稳定锚，和把他送到这里的实验一样，是从一条不知从何而来的未知舰船上发现的技术。
+
+你感觉他可能疯了，但也不一定。","HSI_TC2_6:""不如再说说别的事？""",
+HSI_TC2_7,DialogOptionSelected,$option == HSI_TC2_6,,"""我到了这里还以为到了什么蛮荒之地。哪怕是新开发的星区也比这里好的多。我刚来的时候到处打听人之领的事，结果老板和我说人之领已经没了两百年啦。""
+
+""我再想尽办法去查日期，才发现现在是一万年前。一万年前！这不知道怎么发生的大崩塌更是闻所未闻。""
+
+""更可气的是，我发现现在离所长经常说的，那位消失在实验事故里的传奇前所长还活着的时候也只差两百多年。为什么不能再定早一点呢，早一点也好啊。""",HSI_TC2_7:他是不是有点醉了？,
+HSI_TC2_8,DialogOptionSelected,$option == HSI_TC2_7,,"""如果能见到那位传说中的Tamamo所长，困在这里也不算坏事了。""这是他的最后一句话。你依稀记得一位在大崩塌前担任所长的……联络人，似乎无论真假但是公开的名字就是Tamamo。",HSI_TC2_8:还得再打听一下,
+HSI_TC2_9,DialogOptionSelected,$option == HSI_TC2_8,,过了一会，男人的酒好像醒了。你不动声色地套话，确定他口中的传奇前所长就是理事长。但是他口中的那位因实验事故失踪在大崩塌前27年。,"HSI_TC2_9:不如成全他见偶像一面的梦想
+cutCommLink:总之看起来活蹦乱跳的，大概是没什么事辽。",
+,,,,,,
+,,,,,,
+,,,,,,
+#HSI_PickSkye,,,,,,
+HSI_Skye_Planet,OpenInteractionDialog,"$market.isPlanetConditionMarketOnly
+$tag:HSI_Perureino
+$global.HSITC0Finished
+!$global.HSI_Scythe_Saved",ShowDefaultVisual,"你的 $shipOrFleet 接近了 $entityName。
+
+似乎有什么人在尝试和轨道上取得联系，但轨道上空无一物。",HSI_Skye_TryContact:询问通讯技师能否定位来源,
+HSI_Skye_1,DialogOptionSelected,$option == HSI_Skye_TryContact,,"""这种通讯模式……""通讯技师鼓捣着面板，""就快……成了！""
+
+""喂喂————今天有人吗……""你和军官们面面相觑，镜头里只有一条鱼尾巴。","HSI_Skye_1:""你确定视频没错吗？""",
+HSI_Skye_2,DialogOptionSelected,$option == HSI_Skye_1,"HSISetPerson Skye
+ShowPersonVisual","通讯技师使劲示意你通讯还开着。对方显然是听到了你刚刚说的话，镜头开始剧烈抖动起来。
+
+不一会，一位少女出现在镜头里。""乃好啊。这个盒子果然会说话诶。""","HSI_Skye_2:""你好？""",
+HSI_Skye_3,DialogOptionSelected,$option == HSI_Skye_2,,"""乃好————给咱这个盒子的人类说有一天会有天上的人用它说话的辽。""对方认真地盯着镜头，""咱问了好久终于说话辽。""
+
+你看到通讯技师在查阅刚刚的记录确认自己是不是真看到了鱼尾巴，行动长官在考虑是不是最近幻觉有点多。看得出来你也没机会得到什么建议了。","HSI_Skye_3:""你是失事的船员吗？下面还有其他人吗？""",
+HSI_Skye_4,DialogOptionSelected,$option == HSI_Skye_3,,"""失事的船员？在问那些人类吗？他们早就回去辽。""对方似乎找了个地方把'盒子'放下了，""咱只是听说辽盒子的故事才每天拿着问一问辽。""
+
+你感觉对方并不是很能沟通，行动长官朝你挑了挑眉毛，你心领神会。不一会，一支小型队伍搭着穿梭机前往行星地表。通讯技师指引你们前往信号源，同时勉为其难地和对方保持着通讯。
+
+这颗行星上的落脚处很少，你们降落在一串岛屿附近。很快，你就看到了石头上的通讯器，和正在使用通讯器的'人'。","HSI_Skye_4:""我觉得你不用查记录了。是真的。""",
+HSI_Skye_5,DialogOptionSelected,$option == HSI_Skye_4,,"""啊，是天空中的人类。""对方甩着背后的尾巴，""乃们下来辽。""
+
+对方逮着你们问了许多""天空""上的事情。等到你终于有空从暴风骤雨般的问题里收拢思绪的时候，你终于问出了那个你一开始就想问的问题：""你是谁？""
+
+""辽？对辽，还有……""
+
+为了避免你们继续遭受无穷的问题轰炸，""我有个提议。""你几乎把'闭嘴'用一切可表达的肢体语言表达了一遍。
+
+","HSI_Skye_5:""你跟我们一起走怎么样。或许亲眼看到会比较容易理解。""",
+HSI_Skye_6,DialogOptionSelected,$option == HSI_Skye_5,,"""但是姐姐们说外面的世界很可怕的辽，会有人类打来打去的辽，还有人类会来抓辽的辽。""
+
+这倒是实话。""但还是想出去看看辽。""对方小心翼翼地收起了通讯器，""人类什么时候可以出发辽。""
+
+你觉得今天你和行动长官面面相觑的次数有些多了。你们缩到一边开始讨论要没要必要把这家伙带回去，她看起来对外面的世界毫无认识，稍不注意恐怕就是灭顶之灾。
+
+行动长官突然灵感爆发：""她看起来不是人类，你不是刚好认识那位……""你立时福临心至，摸出了理事长给的通讯器。
+
+""……你的意思是你在外面捡到了人鱼娘，对方还想看看外面的世界要跟你走，你觉得外面太危险了要交给我。""理事长的语气仿佛带着一丝无奈的裂痕，""好吧，好吧。 $playername 阁下，你真的很适合接触这行。""","HSI_Skye_6:""我给你找了张饭票。""",
+HSI_Skye_7,DialogOptionSelected,$option == HSI_Skye_6,"ShowDefaultVisual
+$global.HSI_Scythe_Saved = true
+HSITC1Orders ClearImportant HSI_Skye","""什么叫饭票辽？""
+
+你感觉自己自讨苦吃。就这样有一搭没一搭地聊到理事长派来的舰队抵达，你目送她乘上穿梭机，感恩于再也不用被问题轰炸辽。",defaultLeave:该继续辽,
+,,,,,,
+HSI_Skye_Random1_Start,PopulateOptions,"$global.HSI_Scythe_Saved
+$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+HSIPersonIdentityCheck SkyeRandom1
+!$isPerson
+!$global.HSI_ScytheRandomHappened
+!$global.HSI_ScytheNotInSpaceBridge",,,HSI_Skye_Random1:窗外是不是有什么东西在游……,
+HSI_Skye_Random1,DialogOptionSelected,$option == HSI_Skye_Random1,"HSISetPerson Skye
+ShowPersonVisual
+$global.HSI_ScytheRandomHappened = true 3",那个蓝色的身影越来越近然后一头撞在了窗户上，你这才发现这是在太空中漂流的Skye。也许不是漂流，更像是游泳……游泳？,cutCommLink:总之看起来活蹦乱跳的，大概是没什么事辽。,
+,,,,,,
+,,,,,,
+#HSI_Stalker,,,,,,
+HSI_Stalker_GreetingTraitor,PickGreeting,"HSIPersonIdentityCheck PersonIsStalkerContact
+$faction.HSIisTraitor
+$isPerson",,"""你还活着？看来那些旧刀子钝了。""",defaultLeave:离开,
+HSI_Stalker_GreetingTooLowLevel,PickGreeting,"HSIPersonIdentityCheck PersonIsStalkerContact
+HSIPersonIdentityCheck PlayerLevelBelow5
+!$global.HSISS_Start
+$isPerson",ShowDefaultVisual,对方似乎没有接起你通讯的兴趣。,,
+HSI_Stalker_Greeting_Not_Joined,PickGreeting,"HSIPersonIdentityCheck PersonIsStalkerContact
+HSIPersonIdentityCheck PlayerLevelAbove5
+!$global.HSISS_Start
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowPersonVisual
+","""你是来报名的？""","HSI_SS_Ask:""什么报名？""
+cutCommLink:离开",
+HSI_Stalker_Ask,DialogOptionSelected,$option == HSI_SS_Ask,,"对方沉默了一会。""追猎者军团。我们需要一些雇佣兵，我们出钱，你出力，除此之外还能卖给你一些外面搞不到的好东西，就这样。只要不背叛，其他事情随便你。""","HSI_SS_Join:""我加入。""
+defaultLeave:不感兴趣",
+HSI_Stalker_Join,DialogOptionSelected,$option == HSI_SS_Join,"$global.HSISS_Start = true
+$global.HSI_Traitor_Base = true","""欢迎加入，猎手。我会把你的信息录入系统，下次来的时候也许会有些新货。""",defaultLeave:离开,
+HSI_Stalker_Contact,PopulateOptions,"$isPerson
+HSIPersonIdentityCheck PersonIsStalkerContact
+$faction.id == HSI
+!$faction.HSIisTraitor",,"""你好，猎手。""","HSI_Stalker_OpenShop:""看看有什么新货。""",
+HSI_Stalker_Shop,DialogOptionSelected,$option == HSI_Stalker_OpenShop,HSIStalkerShop,,,
+,,,,,,
+#TTMission,,,,,,
+HSI_TTMission_Start,DialogOptionSelected,"$option == marketVisitBar
+$faction.id == tritachyon
+$hasMarket
+$market.id == culann
+!$global.HSI_TTMission_Finished
+!$global.HSI_TTMission_Combat_Finished
+$global.HSI_TTMission_Start
+$player.KnownByTheCommissioner
+!HSIPersonIdentityCheck isTraitor","FireBest BarShuttleDownPrintDesc
+FireBest BarPrintDesc
+$option = HSITTMissionMet 0
+FireBest DialogOptionSelected",,,
+HSI_TTMission_Met0,DialogOptionSelected,$option == HSITTMissionMet,,"虽然身处 $marketName 上繁华的娱乐区，但白天总感觉人流比晚上少得多。你盘算着先喝一杯再去其他地方逛逛。看得出来速子方面为这次访问加强了安保，你在几处要道都看到了身着动力甲的陆战队员，和一些穿着作战服的速子特工——你认出那是军械员前些日子和你说的""高级货""。
+
+冥冥之中似乎有什么指引，让你走进了第三间酒吧。比起前两间，这间酒吧只有寥寥数人分散在各个卡座上，酒保看了你一眼，继续低着头擦杯子。
+
+你的视线和一位新闻上不该在这里的大人物交汇，随后很快移开。
+",HSI_TTMission_Met1:走过去，在她对面坐下,
+HSI_TTMission_Met1,DialogOptionSelected,$option == HSI_TTMission_Met1,"HSISetPerson TheCommissioner
+HSISetPerson ShowCommissionerTTMissionBar","你正要开口，被 理事长 用眼神压了回去。她起身换到了你边上的座位，背对着那位不知道是忙碌还是在磨洋工的酒保，装作帮你整理头发的样子，为你戴上一个体积极小的耳机。
+
+你感觉她和你的距离陡然接近，她附在你耳边，用极小的声音向你解释：""这里到处都是眼睛，务必要小心。干扰器能让他们听不到我们小声说话，记得控制音量。""
+
+你感觉耳边的气息远了一些。","HSI_TTMission_Met2:""看起来我卷入了什么了不得的事件里？""",
+HSI_TTMission_Met2,DialogOptionSelected,$option == HSI_TTMission_Met2,,"她微不可察地点点头，转身靠在你的肩膀上。在面前的 Tripad 上点了几下，划出一个很小的档案，你注意到上面的职务是安全部外勤科对英仙座三科的""副科长""，一个微妙的身份。你立刻明白了当下的处境，装作要酒的样子，趁机将酒吧里的所有人打量了一遍。
+
+你推测其中一名顾客是特工，酒保虽然看起来正常，但也给你一种说不明白的感觉。你不知道他们准备做什么。那名顾客的眼神略有些明显，让你感觉如芒在背。你低头看向理事长，希望她能多说点什么。
+
+""不要揣摩疯子， $playerName 阁……""","HSI_TTMission_Met3:""……趴下！""",
+HSI_TTMission_Met3,DialogOptionSelected,$option == HSI_TTMission_Met3,ShowPersonVisual,"你还没反应过来就被理事长按到了桌子下面。一串麻痹弹扫过你们刚刚的位置。你开始后悔今天信了那些速子官员的什么临时管制不允许持有武器的鬼话，以至于你们现在被压制在这个酒吧角落的卡座里没法反击。你顾不得压低声音说话了，""好了，现在怎么办？""
+
+理事长装作在思考对策的样子，演技浮夸到你一眼就能看出她毫不在乎。""你在想，为什么我明知暴露了还要选一个逃不出去的位置吧？""
+
+""因为只有拖的够久才能把事情闹大——大到那些速子的家伙没法对使团搪塞过去。""
+
+
+",HSI_TTMission_Met4:沉默地打量着环境,
+HSI_TTMission_Met4,DialogOptionSelected,$option == HSI_TTMission_Met4,,"你打量周围，试图寻找一个安全的出口，或是一把趁手的家伙事。虽然身边这位看起来神神秘秘的，但你下意识觉得她没什么战斗力。或许有什么陷阱可以利用……
+
+""别走神， $playerName 阁下。""理事长 用一根硬物戳了你一下，你感觉那东西看起来像把折扇，""看看怎么样了。""
+
+你刚探出头，其中一人立刻瞄准你开火。你缩回卡座后面，发现 理事长 不见了。
+
+",HSI_TTMission_Met5:原来我是靶子吗？,
+HSI_TTMission_Met5,DialogOptionSelected,$option == HSI_TTMission_Met5,,"一声痛苦的呻吟响起。你再次探出头，刚好看到 理事长 用手里的折扇重重砸在酒保的喉咙上，酒保——或者说其中一位特工倒了下去。另一位已经躺在地上了，恐怕就是刚刚发出呻吟的人。
+
+其他顾客早就逃干净了。你决定……
+","HSI_TTMission_Met6_1:拉上 理事长 往外跑
+HSI_TTMission_Met6_1_pickWeapon:捡起速子特工的武器",
+HSI_TTMission_Met6,DialogOptionSelected,$option == HSI_TTMission_Met6_1,,"你带着 理事长 冲出酒吧，发现信号屏蔽还没接触，附近的陆战队员和速子特工已经开始向你们包围过来。好在一些慌忙逃窜的民众干扰了他们的行动，你跟着 理事长 在建筑间穿梭。
+
+这些人就像你想的那样并不友好，有几发子弹从你们附近擦过。理事长 找准机会，拐进了一条小巷，并把你也拉了进去。追兵似乎不太清楚你们拐进了哪条巷子，这给了你们一些喘息时间。
+
+巷子里安静的和外面的骚乱仿佛处于两个世界。你抓紧时间调整状态，理事长的折扇突然在你眼前和一把近乎透明的单分子刀撞在一起。单分子刀没能切开不知什么材料的扇骨，那名特工立刻后退，激烈动作导致他的光学迷彩失效。","HSI_TTMission_Met7:""还有一个， $playerName 阁下，当心点。""",
+HSI_TTMission_Met6_pickWeapon,DialogOptionSelected,$option == HSI_TTMission_Met6_1_pickWeapon,,"速子特工看起来还活着，你发现枪里只有麻痹弹。看起来里面的速子特工多少清楚分寸——但是外面的陆战队员就说不好了。
+
+还是别带武器了吧。",HSI_TTMission_Met6_1:拉上 理事长 往外跑,
+HSI_TTMission_Met7,DialogOptionSelected,$option == HSI_TTMission_Met7,,"你回忆着陆战队指挥官之前告诉你的要领，靠着直觉和一点肌肉记忆躲开了另一名隐身特工的袭击。显形的那名特工还在招架 理事长 的进攻，显然已经落入下风。打斗的声音不大，但那些追兵还是很快就会找到这里，如果能快速解决这个特工的话，也许你们可以彻底甩掉那波追兵。
+
+在你躲过三波攻击后，速子特工改变了战术，你感觉自己好像捕捉不到他的位置了。是走了吗，还是……
+
+背后传来一段合成音，与人类的闷哼几乎同时响起：""往前走， $playerName $PlayerSirOrMadam，小心你背后的刀。""",HSI_TTMission_Met8:小心翼翼地照做,
+HSI_TTMission_Met8,DialogOptionSelected,$option == HSI_TTMission_Met8,,"你走出几步才转身。速子特工被穿透心脏的尸体被什么拖动着，移动到了障碍物后面。理事长 此时打昏了最开始显形的那名特工，向你这边跑来。
+
+理事长先绕着你看了一圈，你表示自己没受伤。她把目光转向你面前的空气，""法瑞斯大师，你准备就这样吗？""
+
+先前的合成音再次响起，""我记得是您说如果我暴露的话可能导致严重的外交问题，理事长。""它解除了隐形系统，你发现这好像是一台""舞者""，和你之前见过的标准型不太一样。它看向你，""法瑞斯。""","HSI_TTMission_Met9_1:""$playerName。""
+HSI_TTMission_Met9_2:""你可以叫我 $playerName。""",
+HSI_TTMission_Met9_1,DialogOptionSelected,$option == HSI_TTMission_Met9_1,"HSISetPerson ShowCommissionerTTMissionDepartment
+FireAll HSITTMissionNewsBrief","你们成功摆脱了速子的追踪，最终抵达了一处安全屋。稍事休息，你们得知速子颁布了戒严令，并在到处搜捕""实施恐怖袭击，意图破坏和谈的左径分子""。
+
+你看向 理事长 手中的简报。",,
+HSI_TTMission_Met9_2,DialogOptionSelected,$option == HSI_TTMission_Met9_2,"HSISetPerson ShowCommissionerTTMissionDepartment
+FireAll HSITTMissionNewsBrief","你们成功摆脱了速子的追踪，最终抵达了一处安全屋。稍事休息，你们得知速子颁布了戒严令，并在到处搜捕""实施恐怖袭击，意图破坏和谈的左径分子""。
+
+你看向 理事长 手中的简报。",,
+HSI_TTMission_Ambassadar,HSITTMissionNewsBrief,!$AskedAmbassadar,,,HSI_TTMission_NewsBrief_Ambassadar:询问能否获得使团的帮助,
+HSI_TTMission_Fleet,HSITTMissionNewsBrief,!$AskedFleet,,,HSI_TTMission_NewsBrief_Fleet:询问能否获得访问舰队的帮助,
+HSI_TTMission_Plan,HSITTMissionNewsBrief,,,,HSI_TTMission_NewsBrief_Plan:询问下一步计划,
+HSI_TTMission_Ambassadar_Answer,DialogOptionSelected,$option == HSI_TTMission_NewsBrief_Ambassadar,"$AskedAmbassadar = true 0
+FireAll HSITTMissionNewsBrief","""速子的反应很快，他们借口有左径分子活动，需要提高使团的安保等级，把使团牢牢控制起来。波罗季诺夫理事不是那么容易糊弄的，恐怕很快他就会想办法通知远征军，到那时候对英仙座来说事情可能会有点麻烦。""",,
+HSI_TTMission_Fleet_Answer,DialogOptionSelected,$option == HSI_TTMission_NewsBrief_Fleet,"$AskedFleet = true 0
+FireAll HSITTMissionNewsBrief","""信号完全被截断了。这里是速子首都，只要他们仔细搜索，即使动用其他手段发出去也只会暴露我们的位置。""",,
+HSI_TTMission_Plan_Answer0,DialogOptionSelected,"$option == HSI_TTMission_NewsBrief_Plan
+!$AskedFleet
+!$AskedAmbassadar",,"""恐怕只有一个办法，$playerName 阁下。比如……绕过速子监控直接和舰队联络。""
+
+显然这是不可能的，你开始思考这句话背后的含义。
+
+""消息想不被发现地从地面到太空是不可能了。但是太空到太空也许可以。""
+
+你感觉这个点子恐怕比今天早些时候加起来还要可怕。","HSI_TTMission_BattleBrief_0:""感觉我也没得选了？""",
+HSI_TTMission_Plan_Answer1,DialogOptionSelected,"$option == HSI_TTMission_NewsBrief_Plan
+!$AskedFleet
+$AskedAmbassadar",,"""恐怕只有一个办法，$playerName 阁下。直接和舰队联络。""
+
+既然速子能监视使团，恐怕也不会放过任何一条溜进太空的消息，你开始思考这句话背后的含义。
+
+""消息想不被发现地从地面到太空是不可能了。但是太空到太空也许可以。""
+
+你感觉这个点子恐怕比今天早些时候加起来还要可怕。","HSI_TTMission_BattleBrief_0:""感觉我也没得选了？""",
+HSI_TTMission_Plan_Answer2,DialogOptionSelected,"$option == HSI_TTMission_NewsBrief_Plan
+$AskedFleet
+!$AskedAmbassadar",,"""恐怕只有一个办法，$playerName 阁下。绕过速子监控直接和舰队联络。""
+
+鉴于你们刚刚讨论过这点，你开始思考这句话背后的含义。""或许我们应该和使团联络。""
+
+""使团也被监控了。而消息想不被发现地从地面到太空是不可能了。但是太空到太空也许可以。""
+
+你感觉这个点子恐怕比今天早些时候加起来还要可怕。","HSI_TTMission_BattleBrief_0:""感觉我也没得选了？""",
+HSI_TTMission_Plan_Answer3,DialogOptionSelected,"$option == HSI_TTMission_NewsBrief_Plan
+$AskedFleet
+$AskedAmbassadar",,"""恐怕只有一个办法，$playerName 阁下。我们直接和舰队联络。""
+
+显然这是不可能的，你开始思考这句话背后的含义。
+
+""消息想不被发现地从地面到太空是不可能了。但是太空到太空也许可以。""
+
+你感觉这个点子恐怕比今天早些时候加起来还要可怕。","HSI_TTMission_BattleBrief_0:""感觉我也没得选了？""",
+HSI_TTMission_BattleBrief_0,DialogOptionSelected,$option == HSI_TTMission_BattleBrief_0,,"""也不一定啦，$playerName 阁下。""理事长 抿了抿唇。
+
+""但是 博罗季诺夫 理事一定会想办法通知远征军。在不暴露的情况下，目前完全没办法通知他。一旦任何我失踪的消息传回去，第三舰队立刻会做出反应。他们跨过虫洞的那一刻，恐怕英仙座所有人都会坐不住。""
+
+""到那时候，恐怕睡不着的就不止我们了。所以——""她拉长了声音，
+
+""现在整个英仙座的未来就全看你咯，助•手•阁•下。""
+
+你开始思考对策。
+
+","HSI_TTMission_BattleBrief_1:""那我们得先搞到一艘船。""",
+HSI_TTMission_BattleBrief_1,DialogOptionSelected,$option == HSI_TTMission_BattleBrief_1,,"""我倒是知道……或者说这就是本来的计划。隐秘行动处 秘密控制了这里的一处武器开发设施，其中包含一台技术来源不明的人形机甲。对低轨道能遇到的任何东西来说都足够强大，至于高轨道就只能希望他们跑不过我们了。""
+
+""很巧的是，它能坐下两个人，不过可以由一个人控制。原计划是通过其他途径带出去的，行动因为和谈搁置了，刚好我们用得上。""
+
+你突然觉得她蓄谋已久，仿佛是什么正在书写某种老套英雄电影剧本的作者那样很希望看到这样的剧情发生。不过事到如今也没有别的办法了。",HSI_TTMission_StartBattle:好吧，总得有个了结,
+HSI_TTMission_StartBattle,DialogOptionSelected,$option == HSI_TTMission_StartBattle,"ShowLargePlanet
+HSITCEventFight TTMission",,,
+HSI_TTMission_AfterBattle_0,DialogOptionSelected,$option == HSI_TTMission_CombatEnd,"$global.HSI_TTMission_Combat_Finished = true
+$global.HSI_TTMission_JustFinished = true 20","速子追兵仍然死死咬着你。在你们冲出卡门线后，一些低轨道巡逻队也前来堵截你们。要在这种情况下突破封锁，抵达这台机甲能直接联络光环动力舰队距离的可能性和0也差不了多少。你按着机载电脑的规划路线，试着突破封锁。
+
+你听到 理事长 似乎在她的面板上操作着什么。HUD上的路线突然发生了变化，转而指向行星上空空旷的某处。没有友军，没有掩体，任何人都不会觉得那是一条逃离路线。","HSI_TTMission_AfterBattle_0:提出问题
+HSI_TTMission_AfterBattle_1:专心驾驶",
+HSI_TTMission_AfterBattle_0_1,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_0,,"你在警报声中嘶吼着:""确定要走这条路吗！""
+
+""专心驾驶，助手阁下。那是我刚刚算出来的逃脱路线。""",HSI_TTMission_AfterBattle_1:你其实没得选，不是吗？,
+HSI_TTMission_AfterBattle_1,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_1,,"突然转向让一部分本想组成包围圈的巡逻队被甩到了后面，但如果得不到支援，你们终究还是会被追上。速子舰队先前曾经给武器充能，这是个很危险的信号。
+
+“好了，助手阁下，控制权转交给我。”
+
+你感觉压力一松，精神连接带来的不适感很快散去。在后有追兵的情况下，你们不知为何开始减速。你紧盯着雷达上密密麻麻的标记，事已至此，只能相信你的这位临时武器官真的有算出什么逃脱路线。","HSI_TTMission_AfterBattle_2_1:祈祷
+HSI_TTMission_AfterBattle_2_2:我是无神论者",
+HSI_TTMission_AfterBattle_2_1,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_2_1,,"主警报在狭小的驾驶舱里骤然响起，HUD上显示前方空无一物的虚空中出现了强烈能量反应，一条从未见过的相位主力舰在距离你们极近的地方上浮，穿梭机库的门正对着你。
+
+五秒后，你们就撞进了早已打开的穿梭机库，在辅助着陆设施的作用下安全着陆。随着一阵震动——你分不清到底是着陆装置的震动，还是舰船在移动，没有警报再响起了。","HSI_TTMission_AfterBattle_3:""你算的是这个？""",
+HSI_TTMission_AfterBattle_2_2,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_2_2,,"主警报在狭小的驾驶舱里骤然响起，HUD上显示前方空无一物的虚空中出现了强烈能量反应，一条从未见过的相位主力舰在距离你们极近的地方上浮，穿梭机库的门正对着你。
+
+五秒后，你们就撞进了早已打开的穿梭机库，在辅助着陆设施的作用下安全着陆。随着一阵震动——你分不清到底是着陆装置的震动，还是舰船在移动，没有警报再响起了。","HSI_TTMission_AfterBattle_3:""你算的是这个？""",
+HSI_TTMission_AfterBattle_3,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_3,,"""是吧。""
+
+""和英仙座一起享受今天的日出如何？""","HSI_TTMission_AfterBattle_4_1:""我可不像地上的人一样在乎日出。""
+
+HSI_TTMission_AfterBattle_4_2:""但确实值得纪念。""",
+HSI_TTMission_AfterBattle_4_1,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_4_1,$global.HSI_TTMission_Finished = true,"你沉浸在劫后余生的虚脱中，没有再说什么。理事长 贴心地没有打扰你。
+
+在沉默中过了几分钟，你终于打开了机甲的舱门。几名军官看到你的时候愣了一下，旋即看到了后座的 理事长 ，表情立时恢复了严肃，其中一位级别稍低的军官上前帮你离开机甲，一旁的军医开始为你做基本的健康扫描。确认无碍后，那位军官礼貌地请你前往准备好的舱室。你跟着他在舰上绕了好一会才抵达。
+
+两小时后，还是那位军官按响了你的门铃，表示穿梭机已经准备好了，可以送你回到自己的舰队。",cutCommLink:登上穿梭机，给这一天画上句号,
+HSI_TTMission_AfterBattle_4_2,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_4_2,$global.HSI_TTMission_Finished = true,"你沉浸在劫后余生的虚脱中，没有再说什么。理事长 贴心地没有打扰你。
+
+在沉默中过了几分钟，你终于打开了机甲的舱门。几名军官看到你的时候愣了一下，旋即看到了后座的 理事长 ，表情立时恢复了严肃，其中一位级别稍低的军官上前帮你离开机甲，一旁的军医开始为你做基本的健康扫描。确认无碍后，那位军官礼貌地请你前往准备好的舱室。你跟着他在舰上绕了好一会才抵达。
+
+两小时后，还是那位军官按响了你的门铃，表示穿梭机已经准备好了，可以送你回到自己的舰队。",cutCommLink:登上穿梭机，给这一天画上句号,
+,,,,,,
+HSI_TTMission_After_0,PopulateOptions,"$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner
+$global.HSI_TTMission_Combat_Finished
+!$global.HSI_TTMission_JustFinished
+!$global.HSI_TTMission_Apostle_Got",,,"HSI_TTMission_After_0:""我下次一定绕着你们走。""",
+HSI_TTMission_After_1,DialogOptionSelected,$option == HSI_TTMission_After_0,,"""至少是很有趣的一天嘛，$playerName 阁下。当一回拯救全星区的无名英雄的感觉如何？""","HSI_TTMission_After_1:""不怎么样。""",
+HSI_TTMission_After_2,DialogOptionSelected,$option == HSI_TTMission_After_1,,"""可惜了。""她的语气一点听不出可惜的意思，""那台机甲已经被技术部门分析完了，技术稍显落后，因此不算什么重要资产。""
+
+""我本来还打算送给某位无名英雄呢。""","HSI_TTMission_After_2_1:""话又说回来，偶尔也需要一点冒险活动。""
+HSI_TTMission_After_2_2:""我还是觉得有点太刺激了。""",
+HSI_TTMission_After_3_1,DialogOptionSelected,$option == HSI_TTMission_After_2_1,,"""你应该读读那本书的，让我找找放在哪了。""
+
+理事长 走到她办公室里那面巨大的书架前。你心不在焉地看着她的手指一本本划过那些书的书脊，好像这一列都是些历史书。你的历史知识不足以让你认识这上面写的任何一个实体，比如""地球联合理事会""或是""辛达里联邦""。不过很快她就走到了文学区，不知道从书架哪里抽出了一本印刷考究的书。","HSI_TTMission_After_3:""《变色龙》？""",
+HSI_TTMission_After_3_2,DialogOptionSelected,$option == HSI_TTMission_After_2_2,$global.HSI_TTMission_Apostle_Got = true,"""那好吧。""理事长 把目光放回了面前的Tripad上。""祝你健康，$playerName 阁下。""",cutCommLink:也许还有别的事要做,
+HSI_TTMission_After_4,DialogOptionSelected,$option == HSI_TTMission_After_3,"HSITCEventFight AddShipTTMission
+$global.HSI_TTMission_Apostle_Got = true","""你会用得上的，$playerName 阁下。""理事长 的语气似乎有一些揶揄。""但不是什么坏事。""
+
+她在Tripad上点了几下，然后开始打量桌上的摆件，似乎是在找没有什么可以顺手塞给你的。你并不是很想扩充自己的摆件库存，特别是这种来路和用途都不明但绝不是普通摆件的东西。
+
+好在她很快放弃了这个主意，""去船坞看看吧，$playerName 阁下。""",cutCommLink:去船坞看看,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

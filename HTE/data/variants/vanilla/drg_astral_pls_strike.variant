@@ -1,0 +1,59 @@
+{
+    "displayName": "Plasma",
+    "fluxCapacitors": 5,
+    "fluxVents": 0,
+    "hullId": "astral",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "drg_astral_pls_strike",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 014": "gravitonbeam",
+                "WS 015": "gravitonbeam",
+                "WS 023": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 011": "hurricane",
+                "WS 012": "hurricane"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 024": "gravitonbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "pdlaser",
+                "WS 003": "pdlaser",
+                "WS 005": "pdlaser",
+                "WS 006": "pdlaser",
+                "WS 007": "pdlaser",
+                "WS 008": "pdlaser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 013": "gravitonbeam"}
+        }
+    ],
+    "wings": [
+        "drg_kukri_wing",
+        "dagger_wing",
+        "longbow_wing",
+        "longbow_wing",
+        "drg_kukri_wing",
+        "drg_kukri_wing"
+    ]
+}

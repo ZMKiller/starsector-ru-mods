@@ -1,0 +1,195 @@
+{
+  "hullName": "Calopteryx",
+  "hullId": "HIVER_calopteryx",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/HIVER_calopteryx.png",
+  "style": "HIGH_TECH",
+  "height": 204,
+  "width": 300,
+  "center": [149.5, 114.5],
+  "collisionRadius": 175.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 171.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull",
+    "missleracks"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -88, 2,
+        -57.5, 4.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -88, 1,
+        -57, 3
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -88, 0,
+        -56.5, 1.5
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -88.5, -0.5,
+        -57, 0.5
+      ]
+    },
+    {
+      "id": "LB 5",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -88.5, -1.5,
+        -57.5, -1
+      ]
+    },
+    {
+      "id": "LB 6",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -88.5, -3,
+        -58, -2.5
+      ]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [36, -11.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [36, 11.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [18, 20.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [18, -20.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [19.5, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-29.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-84.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-108, -0.5],
+      "length": 51,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [9.5, -15],
+      "length": 20.550621,
+      "width": 10.615453,
+      "angle": -150.5,
+      "contrailSize": 10.615453,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [9.5, 15],
+      "length": 20.550621,
+      "width": 10.615453,
+      "angle": 150.5,
+      "contrailSize": 10.615453,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -113.5, 17,
+    -15, 37,
+    -57.5, 131,
+    28.5, 155,
+    43, 30,
+    89.5, 12.5,
+    89.5, -12.5,
+    43, -30,
+    28.5, -155,
+    -57.5, -131,
+    -15, -37,
+    -113.5, -17
+  ]
+}

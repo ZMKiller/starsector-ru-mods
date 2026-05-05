@@ -1,0 +1,80 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 40,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "ora_enlightenment",
+    "hullMods": [
+        "fluxbreakers",
+        "targetingunit",
+        "advancedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_enlightenment_artillery",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "ora_incantation",
+                "WS0005": "ora_eschewal",
+                "WS0006": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "ora_incantation",
+                "WS0007": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_invocation",
+                "WS0008": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "ora_invocation",
+                "WS0009": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "sabot",
+                "WS0016": "sabot",
+                "WS0017": "sabot",
+                "WS0018": "sabot",
+                "WS0019": "sabot",
+                "WS0020": "sabot"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0010": "ora_echoes",
+                "WS0011": "ora_echoes"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "ora_choir",
+                "WS0014": "ora_choir",
+                "WS0021": "ora_choir",
+                "WS0022": "ora_choir"
+            }
+        }
+    ]
+}

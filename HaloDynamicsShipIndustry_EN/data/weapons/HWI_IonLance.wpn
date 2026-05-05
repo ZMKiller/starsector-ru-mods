@@ -1,0 +1,58 @@
+{
+  "id": "HWI_IonLance",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/HWI_FocusBeamM_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/HWI_FocusBeamM_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/HWI_FocusBeamM_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/HWI_FocusBeamM_hardpoint_glow.png",
+  "beamEffect": "data.weapons.scripts.beam.HWIIonLanceEffect",
+  "glowColor": [
+    100,
+    100,
+    255,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    15,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    13.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    55,
+    55,
+    225,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 20,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 64,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "phase_beam_loop"
+}

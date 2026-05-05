@@ -1,0 +1,23 @@
+{
+    "id":"edshipyard_magnetic_burst",
+    "type":"STAT_MOD",
+	"aiType":"CUSTOM",
+    "aiScript":"data.scripts.edshipyard.shipsystems.ai.MagneticBurstAI",
+
+    "statsScript":"data.scripts.edshipyard.shipsystems.MagneticBurstStats",
+
+	"canUseWhileRightClickSystemOn":true,
+
+    "fadeActivationSoundOnChargedown":true,
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+        "threatRange":800,
+        "threatAmount":6,
+        "threatAngle":0,
+        "threatArc":360,
+    }
+}

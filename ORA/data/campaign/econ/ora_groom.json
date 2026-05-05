@@ -1,0 +1,60 @@
+{
+    "starSystem":"ORA_groom",
+    "markets":[
+        {
+            "entities":["ora_camillia", "ora_dock"],
+            "faction":"ORA",
+            "size":4,
+            "startingConditions":[
+                "water_surface",
+		"habitable",
+                "ore_sparse",
+                "rare_ore_sparse",
+                "high_gravity",
+		"population_4",
+            ],
+            "industries":[
+                "population",
+                "aquaculture",
+                "mining",
+                "spaceport",
+                "patrolhq",
+            ],
+        },
+
+        {
+            "entities":["ora_haunted"],
+            "faction":"tritachyon",
+            "size":4,
+            "startingConditions":[
+                "population_4",
+				"irradiated",
+				"ruins_extensive",
+            ],
+            "industries":[
+                "population",
+                "spaceport",
+                "orbitalstation_high",
+                "grounddefenses",
+				"patrolhq",
+				"techmining",
+            ],
+        },
+
+        {
+            "entities":["ora_portia"],
+            "faction":"pirates",
+            "size":4,
+            "startingConditions":[
+                "population_4",
+            ],
+            "industries":[
+                "population",
+                "spaceport",
+                "orbitalstation",
+                "heavyindustry",
+                "grounddefenses",
+            ],
+        },
+    ],
+}

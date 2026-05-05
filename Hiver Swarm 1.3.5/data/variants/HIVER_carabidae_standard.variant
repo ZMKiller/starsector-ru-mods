@@ -1,0 +1,85 @@
+{
+  "variantId": "HIVER_carabidae_standard",
+  "hullId": "HIVER_carabidae",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "fluxbreakers",
+    "fluxdistributor",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "HIVER_irpulse",
+        "WS0002": "HIVER_irpulse",
+        "WS0007": "HIVER_twinpd",
+        "WS0008": "HIVER_twinpd",
+        "WS0009": "HIVER_twinpd",
+        "WS0016": "HIVER_twinpd",
+        "WS0017": "HIVER_irpulse",
+        "WS0018": "HIVER_irpulse",
+        "WS0021": "HIVER_irpulse",
+        "WS0022": "HIVER_irpulse",
+        "WS0025": "HIVER_twinpd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "HIVER_launcher",
+        "WS0014": "HIVER_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "HIVER_twinplas"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0012": "HIVER_lrblaster",
+        "WS0013": "HIVER_blaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "HIVER_blaster",
+        "WS0019": "HIVER_twinpd",
+        "WS0020": "HIVER_twinpd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0010": "HIVER_mirv",
+        "WS0011": "HIVER_mirv"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0023": "Hiver_eyeball",
+        "WS0024": "Hiver_eyeball"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

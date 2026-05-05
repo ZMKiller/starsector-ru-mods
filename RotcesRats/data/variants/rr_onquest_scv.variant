@@ -1,0 +1,79 @@
+{
+  "variantId": "rr_onquest_scv",
+  "hullId": "rr_onquest",
+  "displayName": "Scavenged",
+  "goalVariant": true,
+  "fluxCapacitors": 36,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ballistic_rangefinder"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rr_d-tpc"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "squall"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "harpoonpod",
+        "WS 020": "breachpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 013": "hephag",
+        "WS 017": "miningblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 014": "mark9",
+        "WS 023": "ionbeam",
+        "WS0004": "lightdualac",
+        "WS0006": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 018": "dualflak",
+        "WS0002": "flak",
+        "WS0003": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "mininglaser",
+        "WS 007": "pdlaser",
+        "WS 008": "pdlaser",
+        "WS 009": "vulcan",
+        "WS 010": "lrpdlaser",
+        "WS0005": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

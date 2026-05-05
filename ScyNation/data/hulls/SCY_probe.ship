@@ -1,0 +1,78 @@
+{
+  "bounds": [
+    15,
+    3.5,
+    2,
+    9.5,
+    -11,
+    6.5,
+    -11,
+    -6.5,
+    2,
+    -9.5,
+    15,
+    -3.5
+  ],
+  "builtInWeapons": {
+    "WS0001": "SCY_hack"
+  },
+  "builtInWings": [],
+  "center": [
+    10.5,
+    13
+  ],
+  "collisionRadius": 20,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 22,
+      "location": [
+        -12,
+        4.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 22,
+      "location": [
+        -12,
+        -4.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES",
+      "width": 6
+    }
+  ],
+  "height": 30,
+  "hullId": "SCY_probe",
+  "hullName": "Remote Probe",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    2,
+    -0
+  ],
+  "shieldRadius": 17,
+  "spriteName": "graphics/SCY/ships/fighters/SCY_probe.png",
+  "style": "SCYHULL",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        12,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 21
+}

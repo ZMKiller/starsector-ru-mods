@@ -1,0 +1,26 @@
+{
+	"id":"CFT_empburst",
+	"type":"EMP",
+	"aiType":"EMP",
+	
+	"range":750,
+	
+	"empDamage":700,
+	"damage":150,
+	"damageType":ENERGY,
+	
+	"effectColor1":[100,255,230,100],
+	"effectColor2":[100,255,230,255],
+
+	"useSound":"system_emp_emitter_activate",
+	"loopSound":"system_emp_emitter_loop",
+	"impactSound":"system_emp_emitter_impact",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":600,
+		"threatAmount":4,
+		"threatAngle":0,
+		"threatArc":660,
+	}
+}

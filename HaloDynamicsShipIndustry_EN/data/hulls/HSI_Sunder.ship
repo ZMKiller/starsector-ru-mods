@@ -1,0 +1,193 @@
+{
+  "hullName": "Sunder (HSI)",
+  "hullId": "HSI_Sunder",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HSI_sunder.png",
+  "style": "HSI_TECH",
+  "height": 158,
+  "width": 113,
+  "center": [56, 72.5],
+  "collisionRadius": 104.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 101.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo"
+  ],
+  "builtInWeapons": {
+    "WS00A": "HSI_LED"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [40, -0.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [30.5, 30]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [30.5, -30]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [30.5, 48.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [30.5, -48.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 122,
+      "angle": 37,
+      "locations": [12, 17]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 122,
+      "angle": -37,
+      "locations": [12, -17]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 122,
+      "angle": 180,
+      "locations": [-44, -0]
+    },
+    {
+      "id": "WS00A",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 122,
+      "angle": 0,
+      "locations": [-6.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-71, -0.5],
+      "length": 67.5,
+      "width": 19,
+      "angle": -180,
+      "contrailSize": 19,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-65, 18.5],
+      "length": 29.5,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-65, -18.5],
+      "length": 29.5,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-65.5, 18],
+      "length": 56,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-65.5, -18],
+      "length": 56,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-84.5, -0.5],
+      "length": 9,
+      "width": 94,
+      "angle": -180,
+      "contrailSize": 94,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    54, -6.5,
+    49.5, -8.5,
+    84.5, -9.5,
+    84.5, -11.5,
+    37.5, -26,
+    34.5, -52.5,
+    13, -56,
+    1, -42,
+    -4, -24.5,
+    -9.5, -36,
+    -17.5, -40,
+    -27, -36.5,
+    -36, -44.5,
+    -49.5, -44.5,
+    -72.5, -33,
+    -72, -29,
+    -64.5, -22.5,
+    -64, -10,
+    -72.5, -5,
+    -72.5, 5,
+    -64, 10,
+    -64.5, 22.5,
+    -72, 29,
+    -72.5, 33,
+    -49.5, 44.5,
+    -36, 44.5,
+    -27, 36.5,
+    -17.5, 40,
+    -9.5, 36,
+    -4, 24.5,
+    1, 42,
+    13, 56,
+    34.5, 52.5,
+    37.5, 26,
+    84.5, 11.5,
+    84.5, 9.5,
+    49.5, 8.5,
+    54, 6.5
+  ]
+}

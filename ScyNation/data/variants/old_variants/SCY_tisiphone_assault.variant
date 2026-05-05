@@ -1,0 +1,29 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "SCY_tisiphone",
+    "hullMods": ["hardenedshieldemitter"],
+    "permaMods": [],
+    "quality": 1.0,
+    "variantId": "SCY_tisiphone_assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "SCY_teb",
+                "WS0002": "SCY_teb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "ANTIMISSILE1": "SCY_anti1",
+                "ANTIMISSILE2": "SCY_anti1"
+            }
+        }
+    ]
+}

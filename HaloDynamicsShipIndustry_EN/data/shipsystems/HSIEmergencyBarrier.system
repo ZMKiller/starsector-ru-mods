@@ -1,0 +1,19 @@
+{
+	"id":"HSI_EmergencyBarrier",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.ai.HSILowShieldAI",
+	#"aiType":"DAMPER_FIELD",
+	
+	"statsScript":"data.shipsystems.scripts.HSIEmergencyBarrier",
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_damper",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}
+
+
+

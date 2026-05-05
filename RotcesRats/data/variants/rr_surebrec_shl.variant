@@ -1,0 +1,39 @@
+{
+  "displayName": "Shielded",
+  "fluxCapacitors": 6,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "rr_surebrec",
+  "hullMods": [
+    "frontshield"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "rr_surebrec_shl",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightmortar",
+        "WS 002": "lightmortar",
+        "WS 003": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "flak"
+      }
+    }
+  ],
+  "wings": []
+}

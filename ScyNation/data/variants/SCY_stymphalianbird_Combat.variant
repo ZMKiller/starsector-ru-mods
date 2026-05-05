@@ -1,0 +1,33 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 10,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "SCY_stymphalianbird",
+    "hullMods": [
+        "hardenedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_stymphalianbird_Combat",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "GUN": "SCY_stymphalianMain",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_intercept",
+                "WS0002": "SCY_intercept",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

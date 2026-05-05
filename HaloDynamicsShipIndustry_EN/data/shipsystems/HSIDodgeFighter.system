@@ -1,0 +1,14 @@
+{
+	"id":"HSI_DodgeFighter",
+	"type":"STAT_MOD",
+	"statsScript":"data.shipsystems.scripts.HSIDodgeFighter",
+	#"aiType":"DAMPER_FIELD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.ai.HSISystemAI.HSIDodgeFighterAI",
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_damper",
+	"loopSound":"system_damper_loop",
+	"deactivateSound":"system_damper_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

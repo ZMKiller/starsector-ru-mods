@@ -1,0 +1,66 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 10,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "ora_elevation",
+    "hullMods": [
+        "targetingunit",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_elevation_blaster",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_invocation"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0010": "breach",
+                "WS0011": "breach"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ora_eschewal",
+                "WS0003": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "ora_recital",
+                "WS0009": "ora_recital"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "ora_recital"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "ora_litany"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "ora_choir",
+                "WS0007": "ora_choir",
+                "WS0012": "ora_choir",
+                "WS0013": "ora_choir"
+            }
+        }
+    ],
+    "wings": ["ora_wisdom_wing"]
+}

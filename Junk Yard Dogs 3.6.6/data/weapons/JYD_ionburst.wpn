@@ -1,0 +1,64 @@
+{
+  "id": "JYD_ionburst",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "com.fs.starfarer.api.impl.combat.IonBeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/JYD_ionburst.png",
+  "turretGlowSprite": "graphics/weapons/JYD_ionburst_glow.png",
+  "hardpointSprite": "graphics/weapons/JYD_ionburst.png",
+  "hardpointGlowSprite": "graphics/weapons/JYD_ionburst_glow.png",
+  "glowColor": [
+    255,
+    255,
+    250,
+    120
+  ],
+  "hitGlowRadius": 75,
+  "turretOffsets": [
+    28,
+    12,
+    28,
+    -12
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    42.5,
+    12.5,
+    42.5,
+    -12.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "fringeColor": [
+    150,
+    150,
+    0,
+    0
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 30,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 130,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundOne": "thermal_pulse_cannon_fire"
+}

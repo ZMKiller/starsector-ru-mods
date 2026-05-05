@@ -1,0 +1,54 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 300,
+  "fireSoundTwo": "harpoon_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    8,
+    -8,
+    8,
+    8
+  ],
+  "hardpointSprite": "graphics/weapons/rr_arpo_pod_hardpoint_base.png",
+  "id": "rr_arpopod",
+  "projectileSpecId": "rr_arpo_mrm",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "size": "MEDIUM",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 10,
+    "particleColor": [
+      75,
+      75,
+      75,
+      200
+    ],
+    "particleSizeMin": 20,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    5,
+    -8,
+    5,
+    8
+  ],
+  "turretSprite": "graphics/weapons/rr_arpo_pod_turret_base.png",
+  "type": "MISSILE"
+}

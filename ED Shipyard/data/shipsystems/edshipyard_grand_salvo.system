@@ -1,0 +1,14 @@
+{
+    "id":"edshipyard_grand_salvo",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.edshipyard.shipsystems.ai.GrandSalvoAI",
+
+    "statsScript":"data.scripts.edshipyard.shipsystems.GrandSalvoStats",
+	#"runScriptWhilePaused":true, # only for the player's ship
+    "runScriptWhileIdle":true,  # this means unapply() never gets called
+
+	#"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_burn_drive_deactivate",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

@@ -1,0 +1,137 @@
+{
+  "hullName": "Apocalyse",
+  "hullId": "HSI_Apocalyse",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/Apocalypse/HSI_Apocalypse_Body.png",
+  "style": "HSI_TECH",
+  "height": 29,
+  "width": 22,
+  "center": [11, 15],
+  "collisionRadius": 54.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 50,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo",
+    "HSI_Apocalypse"
+  ],
+  "builtInWeapons": {
+    "WS0001": "HSI_Apocalypse_Head",
+    "WS0002": "HSI_Apocalypse_LS",
+    "WS0003": "HSI_Apocalypse_RS",
+    "WS0004": "HSI_Apocalypse_LA",
+    "WS0005": "HSI_Apocalypse_RA",
+    "WS0006": "HWI_Apocalypse"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [4, 0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": 0,
+      "locations": [-1.5, 18.5],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 21.5,
+      "locations": [2.5, 13.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [4, -15.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-0.5, 0],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [3.5, -20],
+      "renderOrderMod": 125
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, 0.5],
+      "length": 41.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-10, 0.5],
+      "length": 52.332401,
+      "width": 37.179012,
+      "angle": 179,
+      "contrailSize": 37.179012,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-20.5, 0.5],
+      "length": 4,
+      "width": 64,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-16.5, -0],
+      "length": 41.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-16.5, 0],
+      "length": 41.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    12.5, -4,
+    5.5, -9,
+    -8, -10.5,
+    -13, -5,
+    -13, 5,
+    -8, 10.5,
+    5.5, 9,
+    12.5, 4
+  ]
+}

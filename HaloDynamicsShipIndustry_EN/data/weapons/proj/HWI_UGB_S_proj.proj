@@ -1,0 +1,24 @@
+{
+	"id":"HWI_UGB_S_proj",
+	"specClass":"missile",
+	"missileType":"BOMB",
+	#"missileType":"BOMB_WITH_SLOW",
+	#"missileType":"ROCKET",
+	"sprite":"graphics/missiles/HWI_UGB_S.png",
+	"size":[8,18],	
+	"center":[3,9],
+	"collisionRadius":9,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[50,100,250,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+	"armingTime":0.1,	
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":75,
+					 "coreRadius":25, # full damage within core radius
+					 "collisionClass":PROJECTILE_NO_FF,
+					 "collisionClassByFighter":PROJECTILE_NO_FF},				  
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":0,
+				  "dec":0}
+}

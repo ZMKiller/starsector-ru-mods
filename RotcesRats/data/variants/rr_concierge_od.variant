@@ -1,0 +1,39 @@
+{
+  "variantId": "rr_concierge_od",
+  "hullId": "rr_concierge",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 3,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "rr_quagmire"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "irpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

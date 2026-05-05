@@ -1,0 +1,26 @@
+{
+  "displayName": "Gunship",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "ora_fervor",
+  "hullMods": [],
+  "quality": 0.6,
+  "variantId": "ora_fervor_gunship",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ora_eschewalFighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ora_recital",
+        #"WS0003": "ora_recital"
+      }
+    }
+  ]
+}

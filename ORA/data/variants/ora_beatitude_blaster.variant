@@ -1,0 +1,60 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 14,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "ora_beatitude",
+    "hullMods": [
+        "fluxbreakers",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_beatitude_blaster",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "harpoonpod",
+                "WS0010": "harpoonpod"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0013": "breach",
+                "WS0014": "breach"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyblaster"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ora_eschewal",
+                "WS0005": "ora_eschewal",
+                "WS0006": "ora_eschewal",
+                "WS0007": "ora_eschewal",
+                "WS0008": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_choir",
+                "WS0004": "ora_choir",
+                "WS0011": "ora_choir",
+                "WS0012": "ora_choir",
+                "WS0015": "ora_choir",
+                "WS0016": "ora_choir"
+            }
+        }
+    ]
+}

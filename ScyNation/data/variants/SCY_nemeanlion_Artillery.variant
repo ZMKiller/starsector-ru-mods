@@ -1,0 +1,65 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 22,
+    "fluxVents": 22,
+    "goalVariant": true,
+    "hullId": "SCY_nemeanlion",
+    "hullMods": [
+        "magazines",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_nemeanlion_Artillery",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAW2": "SCY_orion",
+                "MAW3": "SCY_orion",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "SCY_coasting2",
+                "WS0002": "SCY_coasting2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAW1": "SCY_scpb",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ionbeam",
+                "WS0004": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "vulcan",
+                "WS0005": "vulcan",
+                "WS0007": "vulcan",
+                "WS0006": "vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"M_FL": "SCY_lionFL_Artillery"},
+        {"M_FR": "SCY_lionFR_Artillery"},
+        {"M_RL": "SCY_lionRL_Artillery"},
+        {"M_RR": "SCY_lionRR_Artillery"},
+    ],
+}

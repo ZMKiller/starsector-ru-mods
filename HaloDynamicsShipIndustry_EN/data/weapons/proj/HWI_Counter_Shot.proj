@@ -1,0 +1,41 @@
+{
+	"id":"HWI_Counter_Shot",
+	"specClass":"missile",
+	"missileType":"BOMB",
+	"onFireEffect":"data.weapons.scripts.proj.HWITimeFuseProjectile",
+	"sprite":"graphics/missiles/rift_torpedo.png",
+	"size":[14,14],	
+	"center":[7,7],
+	"collisionRadius":8,
+	"collisionClass":"PROJECTILE_FIGHTER",
+	"explosionColor":[95,95,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":200, # purely visual
+	"fizzleOnReachingWeaponRange":true,
+	"flameoutTime":0.05, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.05, # time spent without the engine glow being rendered
+	"fadeTime":0.05, # fadeout duration		
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":150,
+					 "coreRadius":125, # full damage within core radius
+					 "collisionClass":PROJECTILE_FIGHTER,
+					 "collisionClassByFighter":PROJECTILE_FIGHTER},
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"range":0,
+					"vsMissileRange":0,
+					"explosionSpec":{"duration":0.12f,
+									 "radius":200,
+					 				"coreRadius":125,# full damage within core radius - also equal to proximity fuse range
+									 "collisionClass":PROJECTILE_FIGHTER,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":10.0,
+									 "particleSizeRange":5.0,
+									 "particleDuration":0.1f,
+									 "particleCount":25,
+									 "particleColor":[40,155,200,255],
+									 "sound":"explosion_flak"},							 
+					},
+	"engineSpec":{"turnAcc":100,
+				  "turnRate":10,
+				  "acc":100,
+				  "dec":100}
+}

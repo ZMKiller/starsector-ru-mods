@@ -1,0 +1,527 @@
+V1.3.5 - Save compatible 
+	-Added linked descriptions to the asteroid field sector entity tokens in Zesketet - TY Bugatti for letting me know
+	-Increased the Fuel Capacity of the Cerambycidae by 800 and the cargo capacity of the Chalcosoma by 500 - TY Chikanuk for noting it was not enough for all the travel they do
+	-Svrerresh Bio-Plasmic Launcher: Increased the range from 600 to 700 - Now matches the range of other hiver energy weapons for better engagement
+	-Hard Mode Version: Increased the difficulty curve from 25% to 50% - Read multiple posts on discord that it was not hard enough - enjoy the pain :)
+	-Fixed a pathing issue when replacing portraits to HI-Rez in Vplus and hardmode versions
+
+v1.3.4 - Save compatible - Squashing the Bug bugs
+	-Vxitterr Thermionic Sling: Increased the damage from 600 to 650 - For a 20 OP medium weapon I felt it was a tad underpowered for a Hiver weapon
+	-Fixed an issue with the Burrower replacement file for Hard mode -TY Asd90275 for informing me
+	-Burrower: Changed the two medium mounts from energy to missiles on the variant - Still synergy so either can fit but missiles make more sense for a standoff carrier
+	-Replacement Burrower: (All difficulties) Added two missing small synergy slots and rearmed the variant with 2 MIRV missiles -Fixing a big oopsie from way back 
+	-Fixed an issue with the replacement ship tab not being updated to the current version on all difficulties - Fixing an oopsie from the 1.3.3 update sorry about that
+	-Replacement ships:(All difficulties) Added salvage gantries to the following ships: Carabidae, Burrower, Weevil, Chalcosoma, Lucanidae, Chinavia, and Viridula - Neglected that in v1.06 :(
+	-Removed the ZIP files "Hard mode hulls" and "Vplus" from the standard version - No longer needed as they have their own downloads now and saves space
+	-Fixed the file pathing for the "Hi Rez Portraits" zip to decompress to the correct path for all difficulties - Fixing another oversight from 1.3.3 
+
+v1.3.3 - Save compatible
+	-Burrower: Raised armor from 350 to 450, Flux dis from 390 to 400, speed from 90 to 95 and shield efficiency from 1.2 to 1.3 - TY SoSD for pointing out it's fragility
+	-Chrysopidae variant: Changed the armament to have two forward facing blasters and one omnidirectional pd turret - Previous variant had mismatched weapons and struggled to stay on target
+	-Raised the percentage difficulty increase for hard mode from 20% to 25% - Had some complaints it was not hard enough so I made an incremental increase
+	-Updated the game version number from "0.98a-RC5" to the current "0.98a-RC8"
+
+v1.3.2 - Save compatible (with the latest version of Stellar Networks(3.30), older versions may cause a crash)
+	-Added a blacklist for Stellar Networks to omit Hiver markets from the commodity market view to all versions of the mod
+		-A long time multi-requested feature that volt(the maintainer of Stelnet) has been able to make happen, buy them a coffee! :)
+
+v1.3.1 - Save compatible
+	-Deathfly: Added the missing HIDE_IN_CODEX tag -Ty TS360 / Hugh 359 for letting me know
+	-Updated the code to the Blueprints from no_bp_drop to no_drop - Apparently that was updated at some point and BP were still dropping in standard and hard modes
+	-Updated the hard mode replacement ships to have the hard mode hull mod - oversight on my part sorry
+	-Updated the Vplus mode replacement ships to have the Vplus mode hull mod - oversight on my part sorry	
+	-Removed the Hard Mode Hulls.zip and Vplus.zip files from the hard mode and Vplus versions as they are duplicative in these modes - Saves some disk space
+
+v-1.3 -Save compatible if updating the Standard mode version from 1.2 to 1.3, need a new game if switching between versions
+	-Fixed an oopsie with the unrecoverable_wing_data file - TY Joejoemyo for letting me know
+	-Removed a duplicate variant file for the Catcher - TY Star007 for noticing it and letting me know
+	-Fixed incorrect names for the variants of Aphid, Gnawler and Katydid
+	-Added an optional set of higher resolution AI made portraits for players who prefer that look, instructions in the README file - TY Bisaster for your help
+	-Emperor: Added a third large turret and increased the OP by 20 and flux regen by 100 - Ty wraithyouth for suggesting that the big bad needed another big tooth :)
+	-Emperor (alternate): Added a missing small weapon to the rear of the ship - turret graphic was there but I guess I missed a weapon - oops ;)
+	-Changed the Blueprints availability to unrecoverable for the standard version of the mod - numerous requests as it is alien technology
+	-Added a zip to the mod folder to make Blueprints recoverable -instructions in the README and on the forum page under spoilers
+	-Added two more versions of the mod for a total of three (only install one at a time):
+		-Vanilla plus: Ships 10% weaker vs the player, a much lower aggressive invasive nature, no sat bombing and recoverable ships/weapons/bp - For players with few (0-3) faction mods installed 		
+		-Standard mode: Standard ships with an aggressive invasive nature and recoverable ships/weapons, unrecoverable bp - For players with (4-7) faction mods installed
+		-Hard Mode: Enhanced ships that are 20% tougher vs the player as well as game controlled fleets and unrecoverable ships/weapons/bp - For players with multiple (8+) faction mods installed
+
+v1.2 -Not Compatible with game version .97a saves
+	-Updated code to work with version .98a of Starsector
+
+v1.1.7 - Save compatible
+	-Added the "monstrous" diplomacy trait to the Nexerelin faction config file which makes sat bombing them have a lesser negative effect- TY Reshy for informing me of the trait
+	-Added missing ship class designations in the descriptions for the Carabidae and the Chalcosoma - TY Star007 for letting me know
+	-Updated the mod title in Vplus.zip to the current version of the mod - TY Star007 for your correspondence
+
+v1.1.6 - Save compatible - Quick update to fix a rare Linux Issue
+	-Removed all files pertaining to Stellar Networks integration - If it ever gets revived I will add them back
+	-Carabidae: Raised the speed from 36 to 55 -It was so slow it struggled to maintain contact and it is a Battelcruiser not a Battleship
+	-Updated the optional file "Hard Mode hulls" with the current Carabidae change and the autofighter change from last patch I neglected to add
+	-Fixed a capitalization mismatch which would sometimes cause the game to crash under Linux - TY alexwtb234 for letting me know	
+
+v1.1.5 - Save compatible
+	-Added the autofighter tag to all Hiver drones and adjusted the descriptions slightly - TY Maritusa for reaching out on discord
+	-Ommatidia: changed the flux/shot to flux/sec to properly match the weapon's specClass - TY EnigmaniteZ for pointing it out and float for your input
+
+v1.1.4 - Save compatible 
+	-Added the HIVER crest to the LunaLib & TriOS menus
+	-Fixed an oopsie on my part making some Hiver ships unrecoverable by default in the previous update
+
+v1.1.3 - Save compatible with v1.12
+	-Added a new optional Hard Mode as suggested by TheSAguy, when enabled it does the following:
+		-Adds a built-in hullmod to all Hiver ships and wings that raises multiple stats by 20%
+		-Increases the fleet pts of all Hiver Ships by 20% - Used for when two AI fleets clash in the campaign to determine fleet strength calculations
+		-Makes all Hiver ships and wings unrecoverable - Way too OP to be in a player's fleet IMO - Weapons are still lootable as they are not changed
+	-Added instructions to the forum OP and README located in the mod ZIP on how to enable the new Hard Mode option
+	-New hull mod icon provided by Tesser - TY
+
+v1.1.2 - Save compatible with v1.11
+	-Changed the numbering system for the mod versions going forward using the standard decimal format - example this update would have been 1.12 and is now 1.1.2
+	-Added instructions on how to change the difficulty level of the mod to the README file and Forum OP that outlines all the optionals
+	-Added Sundog's Ruthless Sector mod as a recommendation on the forum OP since it adds Remnant fleets in hyperspace that will intercept Hiver invasion fleets (and you :))
+	-Added no_drop and no_sell tags in unrecoverable_ship_data for the Caelifera, Scarabaeidae, Gangis and Creatonotos -TY Joejoemyo for noting my oopsie :)
+	-Added a new optional file to make wings unrecoverable - Instructions to enable it is in the README and forum OP - TY Joejoemyo for the idea
+	-Added instructions to the README and Forum OP on how to manually adjust the difficulty level of the mod
+	-Added a ZIP with pre-configured setting files that are intended for a more vanilla plus playthrough with few mods enabled for players who do not want to do the above manual adjustments - instructions in the README
+		-The files in the ZIP lower their aggression, halves the invasion and colony fleet frequency, lowers their officer & ship quality, the number and size of ships in a fleet, and turns off saturation bombing
+	-Added instructions to the README and Forum OP on how to delay invasions using the LunaLib mod settings for Nexerelin on the game menu - Note, effects ALL faction invasions		
+	-Updated the version checker to the latest version of Starsector
+	-Updated the replacement ships ZIP to the current version of the mod (1.1.2) 
+
+v1.11 - Save compatible with v1.10
+	-Increased the max flux by 50 and flux regen by 100 on the Princess - Noticed it was struggling to maintain fire while watching Butter Baronet's videos
+	-Increased the range of the Ommatidia to 200 - Though mainly a credit reward trophy weapon it was not working on some ships due to boundary lines
+	-Renamed the Replacement Ships Zip to the current mod version (1.11) - Sorry for any confusion, I missed that last time in 1.10
+	-Updated to 0.97a	
+
+v1.10 - Save compatible with v1.09
+	-Changed all Hiver tankers and freighters to civilian hulls - They will not be deployed in combat over military ships now - TY Uther Phobos for making the point
+	-Widened the boundary lines on the Calopteryx and Carabidae - Fixing an issue that could case a crash in rare instances
+	-Adjusted the default ship roles of several ships - This effects a ship's chance to spawn in a formed fleet and should field a better mix
+	-Increased the range of the Medium Rizokis Laser to match the range of the light - They are generally used in conjunction on the variants
+
+v1.09 -Save compatible with v1.08c
+	-Updated the working version to RC-10
+	-Renamed the asteroid fields in Zesketet -TY KDR_11k for noticing and letting me know I left placeholders
+	-Added the Fragmentation line of weapons to the alternate pack -TY Zalpha for letting me know
+	-Widened the shield arc and boundary lines on the Scarabaeidae -TY NaitNait for informing me
+	-Widened the shield arc and boundary lines on the Scarabaeidae Alternate - TY Kreo for providing screenshots
+	-Changed the version of the alternate pack to match the current version of the mod
+	-Went through every ship in the alternate pack and redefined the boundary lines to be more detailed - Fixing my previous sloppy work, sorry about that
+	-Went through every ship in the main pack and fixed some issues with the boundary lines, cantering and shield arcs - details matter in an investigation :)
+	-Fixed an issue with the alternate Meloidae loading the incorrect graphic
+	-Centered the mounts on the Snipper - noticed they were misaligned when I was fixing boundary issues 
+	-Changed the verbiage of the README to clarify which files are the optional files - Ty Richared for sticking with it until we drilled it down
+	-Changed the compression of the mod and the "Replacement Ships" file from RAR to Zip - A popular request that I received for my other mods and it is a more widely used format
+
+v1.08c -Save game compatible with v1.08b
+	-Updated the forum OP and in the RAR README file with instructions on how to make them appear in the sector when random core worlds is enabled - TY eidolad for the idea
+	-Added the required libs for the mod to show in the mod menu - Ty KDR_11k for letting me know I oopsied that :)
+	-Added an optional file that lowers weapon prices to base vanilla levels - Good for players who do not want high value loot and/or expensive manufacturing costs
+	-Updated the RAR README and forum OP with instructions on how to activate the new optional file - TY NasaBrindle and KDR_11k for inspiring the idea
+
+v1.08b -Not save compatible with prior versions
+	-Added a blacklist for stelnet that prevents Hiver ships and weapons showing up - Jaghaimo is working on a commodities blacklist and I will add to it once released
+	-Updated the mod to work with 0.96a
+
+v1.08a -Just a quick hotfix for a potential issue, Save game compatible with 1.08
+	-Changed a couple ships that had the Ommatidia (eyeball) weapon set to hidden to turret/hard point - Ty ruddygreat for letting me know it could cause a problem
+	-Added two Ommatidia to the Lucanidae for symmetry with the ship image
+
+v 1.08 -Save game compatible but if you have a captured Hiver logistics ships with Militarized Subsystems on it you want to remove it before installing or it may get wonky
+	-Changed the percent Hivers will use logistics ships as part of their overall fleets - I've noted an overabundance of tankers and freighters - ty mllhild for the heads up
+	-Changed supplies/rec and supplies/mo form 14 to 24 on the Cerambycidae and the Scarabaeidae -  14 was higher than an Atlas but they are beefier
+	-Raised the fleet points of all Hiver ships by 10% - Correctly calculates their strength when used in AI vs AI battles based on their stats/loadouts vs vanilla ships
+	-Removed the block on Hiver patrols remembering patrol data - Makes their home systems a little more dangerous
+	-Reduced the value of the Ommatidia weapon by 25% - received numerous complaints that even though it is a trophy it was still too high a value
+	-Removed the civilian tag from all logistics ships to give them more teeth - Hivers are a militant empire it makes sense lore wise that everything they do is martially focused - Ty mllhild for the suggestion
+	-Replaced the ship and alternate ship images on the forum with a larger format - you no longer need a magnifying glass to see them in all their glory
+	-Re-arranged the forum page and organized subsections under spoilers for easier navigation between the various mod optional features
+	
+v1.07 -Save game compatible but if you started a new game with 1.06 then a new 1.07 game required if you want them to invade, sorry folks I made a boo boo
+	-Added the built in mod Delicate Machinery to all Hiver phase ships - It is pretty standard for phase ships and gives them a bit of a nerf
+	-Raised the deployment points and supplies used per month on the Crabby and the Eyes - when going over the phase ships they were a little low
+	-Raised the phase cost and upkeep on all Hiver phase ships - Reduces the time they can stay in phase and heal
+	-Raised the fleet costs of all the Hiver Phase ships - They will be less used in their their fleet deployment - TY Madbadger2 for helping balance the phase ships
+	-Lowered the chance of Hiver AI fleets having combat freighters instead of combat ships
+	-Greatly reduced the price of the small Hiver weapons - Still higher than Vanilla but this will balance the "payout" when looting since they are the most frequent drops
+	-Fixed a mistake with the naming of the alternate ship pack RAR - I forgot to change it from 1.05 to 1.06 last update, it is now correct at 1.07
+	-Fixed a mistake on the Princess alternate - Accidently placed a small in the medium slot and vice versa - TY Bloodbath for noticing it and letting me know
+	-Added a method and instructions on how to make their blueprints not lootable as salvage to the instructions on the forum and in the README - Ty Volsungare for giving me the idea
+	-Reverted the following changes made in 1.06 due to some unforeseen consequences, sorry:
+		-By taking them off the market it gutted their economy and essentially pulled their teeth, apparently they could not trade with each other to afford invasion fleets
+			-Initial Hiver markets no longer show up on the StelNet commodity market - Numerous requests and finally untangled it 
+			-Initial Hiver planets no longer initially show as owned on the sector map - They will show when discovered by the player same as others 
+			-Initial Hiver planets and stations are no longer the target of vanilla quests - Note: this and the above two notes do not effect planets that Hivers conquer	
+	-Deleted the instructions on the forum OP and in the README for re-enabling their markets since this update does that by default - again sorry for the hassle
+
+V1.06 -v1.05 save game compatible but some changes (marked) require a new game to take effect
+	-Fixed a issue with the old weapon BP still being available - when I divided them up I forgot to delete the original that had them all together
+	-Added mining stats to the Hiver frag beam weapons
+	-Added mining stats and salvage gantries to the following ships: Carabidae, Burrower, Weevil, Chalcosoma, Lucanidae, Chinavia, and Viridula
+	-Added the above ships to the list of randomly picked ships to add to a mining fleet - TY mllhild for pointing out that they lacking any mining features
+	-Added an additional line to the above ship and weapon descriptions indicating that they serve as mining assets
+	-Added several ships to the SCY amity blacklist - I never updated it as I added ships to the mod, woops
+	-Added all of the Secrets of the Frontier factions to the list of factions in the HIVER_gen java file that are set to Vengeful - mllhild made a good point that they needed to be added
+	-Added integration with presidentmattdamon's Take No Prisoners mod - Lowered the chance of capturing a Hiver officer and they will now send a vengeance fleet if you do
+	-Changed the flag to "punitiveExpeditionData" "vsFreePort" from false to true - yea they really don't like anything Corvus do they?
+	-Changed the stations used by Hiver planets from low/midline to high tech - I initially had them use ballistics but later decided to go full high tech but forgot to change that - Ty WENth100 for noting it- New game only
+	-Changed the descriptions for the Hiver planets and made them more lore friendly - TY Cgoober for calling out my lazyness :)
+	-Increased the size of Hiver Nexerelin vengeance fleets dispatched and the the length of time they spend searching to 2x - They now love you long time :)
+	-Added the new weapon BP's to a player's starting inventory if they use the optional file(s) to make them playable and start as them - New game only
+	-Initial Hiver markets no longer show up on the StelNet commodity market - Numerous requests and finally untangled it -Thanks to Histidine, Alex, Dalton and Lukas04 for helping me figure it out - New game only
+	-Initial Hiver planets no longer initially show as owned on the sector map - They will show when discovered by the player same as others - New game only
+	-Initial Hiver planets and stations are no longer the target of vanilla quests - Note: this and the above two notes do not effect planets that Hivers conquer - Ty to Madbadger2 for being a sounding board and keeping me sane - New game only
+	-Added an additional optional file and updated the instructions in the README file and on the forum OP that would revert the above three changes for players who want to see their markets
+	-Added a note to the instructions in the README file and on the forum OP regarding the optional BP only works when installed before a new game start
+	-Fixed an error with the optional weapon no-drop file - TY Volsungare for noticing it and letting me know
+
+v1.05 -v1.04b save game compatible
+	-Corrected a mistake with the Calopteryx requiring 58 DP to deploy and is now 38 as intended - TY Paragon Bane for brining it to my attention
+	-Changed the description of the Eyes - TY st0mpa for noticing that I had not changed the text when last modified it from a capital ship to a cruiser
+	-Added descriptions to the asteroid fields in Zesketet - TY Wojmistrz for noticing they were missing and letting me know
+	-Added the Phase Field hull mod to the Crabby and Eyes - TY st0mpa for let me know  - now they can better sneaky sneak!
+	-Added the hint "HIDE_IN_CODEX" to the Chalcosoma and Cerambycidae - must have missed that when I added then last patch oopsie
+	-Fixed three mistakes in the Replacement Ships RAR and it will now work correctly for all ships - TY Bloodbath for noticing it and helping me correct the errors
+	-Added two new requested phase ships:
+		-Creatonotos - Phase Capital - A terrifying sight to behold as it phases in and out of reality. Imbedded powerful energy emitters can devastate it's enemies before needing to phase out to recover.
+		-Gangis - Phase Frigate - Able to sneak into enemy formations and phase into reality to emit a powerful EMP burst and unload it's energy weapons on it's disabled prey.
+	-Increased the deployment cost of the Mantis battleship from 12 to 18 - was little too low for it's loadout
+	-Added both versions (main/replacement) of the two new ships to their respective all ships images on the forum OP
+	-Added a direct download link to the Version file that mod managers can use to auto-update - Ty Timid for showing me how
+	-Added a direct download link to the forum d/l link that bypasses the google drive preview - one less step to get to the good stuff :)
+
+v1.04b - Just a minor tweak - v1.04a save game compatible
+	-Added optional ship and weapon csv for players who would like them to be purchasable and available at the Arms Dealer - TY herkul121 for letting me know
+	-Updated the instructions on the forum OP and in the README to include how to activate the above option
+
+v1.04a - Just a quick oopsie hotfix - v1.04 save game compatible
+	-Fixed the Swimmer's engine exhaust being misaligned - Noticed when I captured one and decided to go through all the ships for similar errors:
+		-Widened the boundary lines on the Aphid, Calopteryx, Gnawler, Katydid, and Snipper
+		-Better aligned the engine exhaust on the Aphid, and Scorpifly
+		-Weapon placement alignment on the Caelifera, and Silverfish
+		-Centered the shield on the Cerambycidae, Ceruchus,and Moth 
+	-Fixed an issue with the weapon BP not working correctly - Ty Ensign vjhc for taking the time to help diagnose it, you're a captain in my book :)
+
+v1.04 - 1.03 save game compatible
+	-Lowered the cost of all Hiver weapons by 50% - TY alaricdragon for noting that the risk/reward for loot as a total salvage was still too high on the reward end
+	-Increased the range on the Ommatidia from 80 to 100 and the damage from 1 to 2 - More of a sellable trophy than a weapon but with the price drop I buffed it a little
+	-Starting with the new lowered prices as the base, I increased the cost spread between small medium and large weapons -TY steve1592 for making the case
+	-Added the tags "no_dealer, no_sell" to all Hiver ships and weapons to prevent them from showing up under the Arms Dealer - TY Paragon Bane for pointing this out
+	-Changed the hostilityImpactOnGrowth flag from false to true - Yes let the hate flow through you
+	-Removed Hiver weapons from the Industrial Evolution blacklist - Forgot to remove it when I made the BP learnable - Ty vjhc for pointing it out
+	-Added a README file in the RAR that details how to activate all the optional files included
+	-An apology to the players who asked for Hiver commodities to be omitted from Stelnet - Spent several hours and asked multiple people to no avail, hopefully next update
+
+v1.03 -Sort of save game compatible - Your 1.02 game will load and work but a new game start is needed to load the faction relation code changes
+	-Replaced the following Hiver ships with organic looking versions for the default lineup:
+	- Beetle, Caelifera, Catcher, Cerambycidae, Ceruchu, Chalcosoma, Cleridae, Crabby, Emperor, Eyes, Deathfly, Hornet, Lucanidae, Moth, Prince, Scarabaeus, Scarab, Silverfish, Snipper, Viridan, Viridula  
+	-Replaced all the Hiver drones with organic looking versions for the default lineup
+	-Replaced all the Hiver portraits with higher resolution versions and added two new ones (One male and One female)
+	-Replaced the Hiver BP with a cleaner version
+	-Big Thanks to HuginBlar for your collaboration and team work in making these new sprites over the last two months and for all your work!	
+	-Widened the firing arcs of the Prince's medium turret mounts from 60 degrees to 75 degrees to accommodate the new placement on the updated sprite
+	-Re-sized the Lucanidae to be more SS compatible - The original sprite I used from Spiral arms was huge and it was a good time to address it
+	-Added a second Ommatidia mount to the Eyes for symmetry on the updated sprite
+	-Slightly darkened the details on the Princess to be more in line with the other ships - essentially it doesn't shine as much now
+	-Changed the settings for Hiver relations using the code generously donated by Harmful Mechanic - essentially if a faction ever reaches neutral with them it will automatedly reset to vengeful- TY HM!
+	-Deleted some unneeded code that could potentially cause a small memory leak - old code from a previous version that I hadn't removed in 1.02 my bad sorry	
+	-Added a line of Fragmentary damage beams (sm,med.lg) to the Hiver Lineup of weapons - Ty steve1592 for the suggestion noting they lacked a frag weapon
+	-Broke down the Hiver weapon BP into four different packages by missile, pulse, plasma and beam - Makes their full weapon lineup harder to obtain
+	-Added the new beam weapons as well as the Ommatidia weapon to the prism freeport blacklist
+	-Added two new light beams to the Allsup interceptor and one to the Katydid fighter
+	-Added a new drone, the Meloidae - It is armed with one medium and two small beams it is specialized for hull depletion 
+	-Added a new destroyer sized drone carrier, the Scarabaeidae - Carries four of the new Meloidae and is designed as a close in ship with one large, two medium and two small beams
+	-Designed mechanical analogs of both the new drone and the drone carrier for the replacement ships RAR
+	-Renamed the Beetle to the Mantis - the old sprite was oversized and the new one doesn't look like a beetle at all :)
+	-Added the new drone and the drone carrier to the Prism freeport blacklist
+	-Updated some ship descriptions and added descriptions for the new ships/drone and weapons
+	-Updated the ship images for both the standard layout as well as the Mechanical version on the forum OP - take a peek!
+	-Added the portraits to a spoiler linked image to the forum OP - I am so happy with the higher resolution versions I wanted to show them :)
+	-Added a Comsec Declassified lore entry to the forum main page - TY KMS so much for writing it!
+
+v1.02
+	-Lowered the armor of the phase ships Eyes and Crabby by 20% - deathkahhn on discord made a good point that it was tedious to fight them
+	-Finished a complete mechanical ship alternate pack RAR - A huge TY to by Sparranova on discord for submitting base and part sprites which were a great help!
+	-Added a weapon sprite alternate pack for players who want a complete aesthetic included in the replacement RAR - TY again to Sparranova for their work!
+	-Added UAF to the list of mod factions Hivers are set hostile to - Saw some complaints on discord regarding the relations
+	-Re-made the Alternate Pack image found on the forum OP with the new sprites and added the new weapon pack image as well
+
+v1.01 - 1.0 save game compatible - Note: If you have any captured Hiver ships that have been replaced in this patch in your fleet they may need to be re-armed
+	-Raised the energy per shot of the Svreraxx Bio-Plasmic Catapult from 192 to 230 as a balance change - TY sevhern for noting it's efficiency was too OP
+	-Increased the supplies/rec and supplies/mo of every Hiver ship by 15% (rounded up) - This will lower the amount of ships Hivers can deploy at once
+	-Increased the fleet points on the Emperor from 55 to 60 - Being one of the strongest ships in the game it deserved a little more
+	-Added a file named unrecoverable_ship_data.csv located in data/hulls - If you delete the current ship_data.csv and rename the new file ship_data.csv it will make all Hiver ships and their BP unrecoverable
+	-Added a file named unrecoverable_weapon.data_csv located in data/weapons If you delete the current weapon_data.csv and rename the new file weapon_data.csv it will make all Hiver weapons unrecoverable
+	-NOTE: If you retain the current ship_data but use the new weapon_data then weapons can still be recovered from wrecks and salvaged wrecks but not as salvage themselves
+	-Increased the OP of the Catcher by 5 and changed one of the small mounts to medium
+	-Increased the OP of the Princess by 20 and changed four of the small mounts to medium and added 2 Ommatidia mounts to the front
+	-Replaced the sprites and data files for the Aphid, Beetle, Burrower, Carabidae, catcher, Chinavia, Chrysopidae, Lacewing, Mantabee, Princess, Silverfish, Swallowtail, Swimmer, Viridan and Weevil ships
+	-Replaced the sprites and data files for the Allsup, Flyter, Gnawler, Katydid and Scorpifly drones
+	-*A HUGE TY to Hyperion505 for supplying the high res versions of the above Spiral Arms sprites*
+	-Replaced the vanilla weapons on the Flyter with Hiver ones - Made that drone before I made the hiver weapons 
+	-Halved the value of all Hiver weapons - Island makes a good point that individually it was a reward but as a whole loot haul it was a bit much
+	-Increased the size and explosion radius of the Xrrymm-type Hive and Launcher Istkrrtc-type Hive missile sprites to be more visually hefty - Island made the point that they looked like pop-guns
+	-Widened the sprites for the Xrrymm-type Hive and the Istkrrtc-type Hive in order to fit the larger missiles made for this patch
+	-Hiver Xrrymm-type Hive and Istkrrtc-type Hive now properly render and fire all their missiles - Been meaning to fix that	
+	-Lowered the hit points of the Scorpifly from 1800 to 1500 and armor from 450 to 400 - Island made the point that it was on par with a destroyer and this puts it just above the Flyter
+	-Increased the range of the Ommatidia from 60 to 80 - gives it an actual chance to engage fighters
+	-Added a new light cruiser, the Caelifera - the Hiver fleet lacked a light cruiser and with the increase in overall fleet supply use it fills a niche role
+	-Added the new ship and all updated sprites to their respective images on the forum OP
+	
+v1.0 -.99 save game compatible - Note: IF you have a captured Cleradie in your fleet it may need to be re-armed
+	-Increased the deployment and supply use of the Burrower from 3 to 23 - typo on my part TY Bonisagus for noting it 
+	-Increased the deployment and supply use of the Viridan and Crabby to 9 - noticed they were set low as well
+	-Fixed an error with the Cleradie using the Crabby variant as it's standard loadout - Must have been an issue for a bit sorry about that
+	-Replaced the Ommatidia weapon mounts on all Hiver ships that had them - there was an issue with looting them - TY Bonisagus for pointing that out
+	-Added a missing weapon on the Calopteryx standard loadout - noticed it when I was replacing the Ommatidia
+	-Fixed a misaligned turret mount on the Hornet - It was facing backward instead of forward - idk 
+	-Added Ommatidia mounts to the Moth - If a Hiver needed eyes it was this one :)
+	-Added Ommatidia mounts to the Viridula - For the cuteness factor
+	-Did a spelling, grammar and punctuation check on all Hiver asset descriptions - woo wee it needed that
+	-Added the Ommatidia to the list of Hiver "knownweapons" - in case that was causing an issue since it is not on their BP
+	-Updated the replacement ship pack RAR to 1.0 - you will need to re-install it if you are using it
+	-Added the Ommatidia to the list of blacklisted weapons from from Amity's Freeport discount trader is you are using the SCY mod - Love SCY but no eyes for them! 
+
+v0.99 -0.98 save compatible - some changes will only take effect in a new game
+	-Fixed an error with the Queen's Tech being BioTech instead of Bio Tech - TY alaricdragon for noticing it
+	-Reduced the range and damage of the Ezkepren-type Hive torpedo -received numerous concerns that the Gnawler was too OP and making the game less fun
+	-Added additional tips on how to fight Hivers under the spoiler tags on the main page - TY to Candelestine for their writeup on reddit
+	-Reduced the turn rate on the Emperor from 40 to 30 - Saw a discussion on Discord that made some good points regarding its size vs nimbleness
+	-Touched up the graphic on the Princess giving her darker green highlights and tinting the weapon mounts - Sort of stood out how bright she was
+	-Touched up the graphic for the Chinavia, Lacewing, Viridan, Viridula, Silverfish and Aphid by darkening the tint and sharpening the lines - Same reason as above	
+	-Added a new EMP "weapon", Hiver Eyes - They are mounted on each bio-metal style Hiver ship - More of a high value sellable than actual useable weapon, also adds a little cosmic horror :)
+	-Replaced the Pristine Nanoforges with Corrupted on all Hiver planets with the exception of their capital, Vilani  - Should satisfy the multiple requests to tone down their fleet production
+		-Note: The above change does not effect fleets that are already in game so will not be as noticeable in a saved game
+	-Added the UNBOARDABLE AI tag to the Beetle so they cannot be recovered like the Emperor and Queen - I felt that it too was a tad too OP to put in player hands
+	-Added the no_drop UI tag to the Beetle, Emperor and Queen to prevent their blueprint from dropping during exploration missions
+	-Updated the folder used in the replacement ships RAR to match the current folder 0.99 - Should have been doing that since 0.95, my bad
+	-Remade the forum OP ship image to reflect the graphic changes made this update
+	-Made a separate image on the forum OP that shows the lineup if you use the replacement images - Again something I should have done a bit ago, ah well better late than never
+	-Added a message on the forum OP that the mod is not recommend for use in Nexerelin's Random Core Worlds option - It really weakens them and defeats their purpose
+
+v0.98
+	-Increased the price for the Swallowtail and Princess Heavy Cruisers to be inline with other Hiver Ships - Good catch by 5ColouredWalker - TY
+	-Changed the Tech Tree that Hiver ships and weapons are listed under from High Tech to Bio Tech 
+	-Removed the shields on every Hiver drone and increased their HP by 20% - I believe this will address OP complaints while interacting with their bio hull better - this *should* bring them in line and more manageable
+	-Added a flag to the Emperor and the Queen to be UNBOARDABLE, meaning that they cannot be recovered - These two are OP living ships and are meant only for Hivers
+	-Raised the price of every Hiver weapon by 100k to reflect tier above average status - Ty gentuff for the suggestion
+	-Increased the probability that a Hiver ship will explode to 90% - *Should* make their ships, based on this stat, to be in the worst shape if recovered
+	-Lowered the combat readiness recovery per day by 1 for each hiver ship - slows down their recovery if they are fleeing a battle, doing a hard burn or coming out of a storm
+	-Added a missing description for the Krrakt Thermionic Exiter weapon
+	-Added a missing description for the Cerambycidae capital tanker
+	-Added a new ship system Bio Energy Focus - Similar to High Energy focus but longer lasting and more charges for a higher flux use plus it glows a nice Hiver green when activated :)
+
+v0.97 - Save Compatible with 0.96 however, The Rizdet system change will only take effect on a new game start
+	-Moved the Rizdet star system to be clustered with the other two Hiver systems - due to the aggression fixes in the last patch it no longer needs to be so far away
+	-Increased the flux per shot of every Hiver energy weapon by 10% - Ty derrzzedd for making the case their weapons were a bit too OP
+	-Decreased the ammo count of the Istkrrtc-type Hive by 3 and the Xrrymm-type Hive by 4 - A needed fix for their damage
+	-Reduced the speed of the Beetle, Carabidae, Queen, Emperor, and Lucanidae by 10% - These are the larger tankier Hiver ships that with their armor needed a little nerf
+	-Added hostile flags for Iron Shell and HMI - TY gufiu for noticing those two factions were too close to neutral
+	-Changed the percentage of hull that the BIO Hull mod kicks in from 90 to 95% - Will kick in faster and repair more
+
+v0.96 -Save compatible with V 0.95 -IF you have them set to be playable revisit the instructions on the forum OP - I recommend a new game start to take advantage of all changes  
+	-Added a "Buy me a Coffee" tip link to Ko-Fi on the forum OP - By no means do I expect anyone to use it :) but it was requested by travhill20		
+	-Added some lines to the code to better integrate Hivers in the picking of colony fleets in NEX 
+	-Added some code to better interact with NEX so that Hivers are more aggressive in invading the sector (you have been warned) - Ty so much Histidine for all your help!
+	-Added new custom greetings when a player encounters a Hiver fleet or attempts to interact with a Hiver planet
+	-Increased the range of the Krrakt Thermionic Hyper-Exiter PD from 350 to 400 - minor range increase to make it more competitive
+	-Increase the speed of the Istkrrtc-type Hive from 225 to 325 - Allows it a better chance of reaching it's target
+	-Increased the armor of the Scorpifly heavy drone from 325 to 450 - With it being unshielded this change will allow it to survive a little longer vs PD weapons
+	-Added the Cerambycidae to the Hiver blueprint - Was incorrectly added to the high tech bp by mistake
+	-Removed entries in unused columns on the ship hulls - Just removing some bloat that I though was needed when I started the project
+	-Removed the nanoforge from each instance of light industry on Hiver planets - Learned that it was unneeded when fixing JYD so another small bloat removal
+	-Changed the instructions on the forum OP on how to make the Hiver faction playable - The code changes made the previous way obsolete
+
+v0.95 Save Game compatible with version 0.9
+	-Replaced the Hiver crest graphic with a better quality one
+	-Received some requests to add more Hiver ship graphics to the alternate ship pack so I made replacements for the Aphid, Chrysopidae, Lacewing, and Lucanidae
+	-Replaced the ship sprite for the Cleridae freighter with a cleaner version - Same graphic just less saturated
+	-Replaced the ship sprite for the Viridula tanker with a less blurry version - Darker tint with some minor changes
+	-Added a new Super Freighter to the Hiver lineup, the Chalcosoma - With the new colony added in 0.9 I felt they needed a large well defended freighter for their long distance trade fleets
+	-Added a new Super Tanker to the Hiver lineup, the Cerambycidae - Same reason as above but for fuel
+	-Added a new small energy weapon to the Hiver lineup, the Krrakt Thermionic Exiter and gave it a custom shot
+		-Based of the vanilla IR pulse laser but does 10 more damage per shot, has a longer range of 700, a higher energy per shot of 70 and an additional chargedown of 0.1
+	-Replaced every vanilla IR pulse laser equipped on all Hiver ship variants with the new Krrakt Thermionic Exiter
+	-Changed the projectile of the Krrakt Thermionic Hyper-Exiter PD to the new custom shot I made for the Krrakt Thermionic Exiter
+	-Added a glow effect to the Krrakt Thermionic Hyper-Exiter PD	
+	-Added a turret image and glow effect to the Krrakt Thermionic Hyper-Exiter PD - The base image was a bit too large for a turret mount
+	-Added a glow effect to the Svrerresh Bio-Plasmic Launcher and gave it a custom shot - Previously used the vanilla pulse laser shot
+	-Added a glow effect to the Sverrtrrsx Bio-Plasmic Caster
+	-Added a glow effect to the Xhezek Thermionic Sling - seeing a pattern here yet :)
+	-Fixed and error in the Hiver weapons to prioritize - Added a missing entry for the Ezkepren-type Hive torpedo
+	-Added turret mount images to the Deathfly and sharpened it up a little, also added missing Biological Hull mod - Just cleaning it up a little and noticed the missing hull mod
+	-Added turret mount images to the Princess and sharpened it up, also added two missing small weapons on the variant 
+	-Fixed and error with the Scarabaeus not being added to the Hiver medium blueprint
+	-Added the four new replacement ship sprites to the side by side comparison image on the forum OP
+	-Re-made the ship sprite image on forum OP - replaced the above changed images and added the two new logistics ships(bottom of the image)- The old image was being cropped on smaller monitors
+	-Added a Hiver emoji to the SS discord, you can now show your love Hiver style - Ty to Timid for suggesting it and Avanitia for adding it!
+
+v0.9 - Save Game compatible however I recommend a new game since the new system requires a new game start to appear - Also, if you currently have any of the ships listed below in your save game fleet, you may need to refit them
+	-Increased the % that the Biological Hullmod will kick in from 75% to 90% - Received some feedback that it needed a tweak
+	-Added a new Hiver system; Rizdet is located on the map at the diametrical opposite of the other Hiver systems which should force Hiver fleets to travel the map to reach each other but still far away from normal traffic
+	-Added yet more code flags to make Hivers aggressively hostile - An ongoing process that I am sure I'll nail down eventually :)
+	-Increased the supply use and deployment points of the cruisers Prince, Catcher and Eyes from 15 to 20 - Brings them in line with other cruisers
+	-Changed the loadout of the Scarab by removing it's offensive missile mounts and replacing them with more small turrets for defense - it is a freighter after all	
+	-Increased the OP and the flux on the Eyes phase cruiser and added a second medium turret to bring it more in line with similar ships
+	-Added a new logistics cruiser, the Ceruchus is well defended with PD mounts and equipped with a salvage & survey suite - Their fleet lacked these logistics - Essentially a heavy Apogee 
+	-Added a new destroyer, the Scarabaeus is primarily an energy weapon powerhouse for it's size - Essentially a beefier Sunder - The Hiver midweight class was lacking  
+	-Updated the sprite for the Emperor - Same graphic just less saturated
+	-Replaced the sprite of the Twinblaster weapon - the previous sprite was a blurry mess
+	-Updated the sprite for the Twinpd weapon - Same graphic, just darkened a little 	
+	-Replaced the graphic used for the Scarab - Replacing one of my early blown up blurry messes, I swear I'll get them all eventually :)
+	-The above graphic changes and additions are reflected on the Forum OP picture
+	-Added a secondary RAR file to the download called "Replacement Ships.rar" that when extracted over the base mod will replace 11 pixel and data files for the biological looking ships (see below)
+		-This is a request I have received from several players and the number one complaint regarding the "bug" sprites that I see on discord
+		-The added RAR makes no other changes to the mod and can be ignored if you want to keep the original sprites
+		-The replaced ships are the Beetle, Calopteryx, Crabby, Eyes, Flyter, Moth, Prince, Scorpifly, Snipper, Swimmer and the Viridula - Added a graphic to the mod main page showing the side by side differences
+		-To enable all these changes, first install the base mod then open the "Replacement Ships.rar" (found in the Hiver Swarm base folder) and extract to your mod folder (same as any other mod)and accept overwritten files
+		-To replace only some of the old sprites then install the mod as above but extract the "Replacement Ships.rar" to a dummy folder. Select the files for hull, variant and ship graphic you want and drag these to your HIVER folder and overwrite
+		-To revert back to the original sprites, delete the HIVER mod from your mod folder and extract the base Hiver RAR to your mod folder. You can ignore or delete the Replacement Ships.rar file
+
+v0.85a - Save Compatible from 0.85
+	-Raised the break point of all Hiver ships to 60% for the smaller up to 90% for the larger to make them less recoverable
+	-Raised the base cost of all Hiver assets by ~25% to make them more of a prize and more expensive to rebuild- TY vcuaoiwk for this and the above idea idea
+	-A code update to fix a compatibility crash when using Linux - TY Phantasia for brining this to my attention	
+
+v0.85 - 0.8 Save Compatible however most changes require a new sector generation and will only take effect on a new game 
+	-Tagged all Hiver ships to no longer be able to be spit out by the machine god during an Industrial Evolution sacrifice event - Big thanks to SirHartly for adding a tag to allow this - will take effect on the next Indi Evo update
+	-Reviewed every major modded faction config and set Hivers to a higher percentage to be picked for colony evaluation - Best I can do to force them to be picked other than writing my own custom colony code (sadly way beyond my abilities) 
+	-Increased the distance Hiver fleets can travel to find a colony planet - Should cover the map
+	-Installed Alpha Cores to run all Hiver Star Fortresses - Being a high tech civilization it is on brand plus it gives their planetary defense a little more teeth
+	-Tweaked the Hiver planets to produce more fuel - Fuel was a limiting factor in their production of ships and fleets, this will hopefully increase their Invasion and Colony fleets in campaign mode
+	-Increased the Hiver invasion chance a little to spur their growth
+	-Increased the size of Hiver invasion and vengeance fleets - Makes them more of a threat
+	-Added the tag that if the Hivers are used in Random mode they will get a bonus Orbital Works and Fuel production to give them a decent start in that mode  
+	-Fixed an issue with the Zesketet background image causing a crash. - Essentially I changed the name of the sector but not the image - Ty to Omega_DarkPotato for the crash report
+
+v0.8
+	-Added Version Checker integration
+	-Renamed Homehive to a Hiver name - Will only effect new games since SS only assigns system names at game creation
+	-Hiver ships are no longer searchable in the codex - TY gentulf for this and the above suggestions
+	-Added a Industrial Evolution black list making HIVER assets not available at the requisitions center industry 
+	-Added a Blacklist to exclude all Hiver ships, weapons and wings from SCY's Amity's Freeport discount trader
+	-Added the ability for all Hiver missiles to be immune to Diable Avionics' Derecho ECM system - see below
+	-Added the ability for all Hiver missiles to be immune to Arma Armatura's Karma hacking - I feel that Hiver weapons are too alien to be effected by these two mod's abilities
+	-Changed Hiver relationship status to all from Hostile to Vengeful - enter their systems at your own risk!
+	-Changed the ship system of the Queen to Targeting Feed  -More in line with the Queen being a back line command ship
+	-Changed the ship system of the Calopteryx to Recall device - More in line with the Calopteryx being a highly mobile strike carrier  - TY to grinningsphinx for this and the above suggestions
+	-Changed the weapon type of the Calopteryx from energy to synergy and added Expanded missile racks as a built in mod. Also reset the Standard refit to reflect these changes - Gives it more flexibility
+	-Changed all ship weapon mounts from hidden to shown (Turret & Hardpoint). TY Namesarethings for brining this discord discussion to my attention and guiding my research into the topic
+		Did this for three reasons:
+		1) As hidden mounts they could not be disabled which made them a little too hard to overcome
+		2) By converting some of the hidden mounts to hardpoints they gained the benefit of having lower recoil 
+		3) What self respecting cyborg wouldn't want to show off it's shiny?
+	
+v0.75
+	-Added a blacklist for the Hivers that exempts the Hivers adjusting reputation if a player uses the Ruthless Sector mod
+	-Added more AI tags to the faction ID that limit their chances of showing up on missions 
+	-Added all their weapons and ships to a blacklist preventing them from showing up at the Prism Freeport
+	-Added HIVER to a faction blacklist preventing them from interacting with Varya Bounties
+	-Configured all options for HIVER to flag false under the conditions for bar events when a player has the Starship Legends mod
+
+v07a - quick hot fix - 0.7 save game compatible
+	-Re-drew the boundaries on all Hiver hulls - Read a comment on discord that if player owned Hiver ships with hidden weapon mounts are equipped with non-Hiver weapons there is a small chance it may go out of bounds and cause a crash. 
+
+v0.7 Save Game Compatible - New game start needed for rep level changes see below
+	-Lowered the starting and max possible relationship with Hivers to Vengeful - Essentially they hate you personally now and will do so to perpetuity - **This will only take effect on new game starts**
+		Reason: Read a couple comments of players "working the system" and making them trade partners which is very op since their economy is very strong and not on brand
+	-After some testing I decided to increase the dps of the Twin Blaster from 300 to 600 and energy per shot from 95 to 85 - it is essentially two medium pulse lasses (300 dmg and 40 energy) on a large mount
+	-After some consultation with Histidine, I increased the range that Hivers will look for colony planets - This will help but overall it is a matter of how many faction mods installed that determines colony change %
+	-Upgraded the Hornet's ground support to advanced groud support - ty to grinningsphinx for the suggestion
+	-Increased the break probability of all the unarmored living ship variety of Hiver (Calopteryx, Crabby, Eyes, Moth, Prince, Snipper) to make them less recoverable
+	-Removed the above list from the Industrial Evolution whitelist which disables them from being reverse engineered
+	-Lowered the deployment points of the Emperor from 90 to 70 -It's dps was lowered by fixing the OP error on the Twin Blaster so it seems more balanced
+	-Added a new torpedo weapon- grinningsphinx pointed out that the Hiver bomber was underpowered with the MIRV plus they lacked a torpedo so voila here it is!
+	-Replaced the MIRV with the new torpedo on the Gnawler bomber drone and reduced the wing count from 2 to 1
+	-Increased the EMP damage on the two plasma weapons - 100 to 125 and 200 to 250 respectively
+	-Swapped out missile mounts on some of the ship variants with the new torpedo mount
+	-Renamed all Hiver weapons and added custom description as wrote by grinningsphinx - At this point thank you just does not seem enough for all his efforts for this mod but TY just the same :)	
+	
+v0.6
+	-Changed the faction colony behavior based on feedback. They will now look for standard colony planets instead of industrial and I increased their chance to send a fleet from 1 to 1.5 -let me know if you see a difference
+	-After reading numerous discord comments about the Twin Blaster being overpowered, I looked over the code and realized I made a typo and fixed it 
+		The charge up and charge down were set to 0.05 instead of 0.5. I intended it to be 300 dps not 3000, my bad
+	-Changed the graphics of the two beetle ships adapting Protonus's designs after receiving a private messages that they were too disturbing and reading discord comments that they were too different from the other ships
+		FYI: the Emperor is also a Prontus adaptation so he's not so lonely now :)
+	-The Cleridae has been redesigned from a frigate to a destroyer and to not only be a tug for the Hivers but also a good small pd ship which they lacked and is now armed with 7 pd mounts and 1 small missile
+	-Added 2 small hard point missile mounts to the Scarab giving it a bit more teeth 
+	-Replaced the graphics of the two beetle ships with the new ones on the picture posed in the OP
+	-Fixed some code and naming left over from when the Hivers were part of my JYD mod
+	-Took a posted suggestion from Tipnick on my JYD mod and going forward the mod tab and RAR updates will have version numbers
+	-Added text descriptions to all the Hiver weapons, ships and drones. Not my best work but I banged it out this morning for this patch, I'll probably update them later - Feel free to give me suggestions!
+		At least there is no more lazy boilerplate "Very little is known about Hiver ships. They are bio-cybernetic in nature featuring high tech weapons and living heavy armor." :)
+	
+v0.55 oopise edition
+	-Quick hotfix: 
+		Essentially I accidentally assigned JYD SRM missiles instead of HIVER MIRV missiles on the new Scorpifly drone (fixed) and it you do not have JYD installed it would kick a fit - ty Futanagatari!	
+v0.5
+	-Added a new heavy drone - the Scorpifly is a heavily armored drone equipped with 2 MIRV missile launchers, 1 Spitter and 1 Twin PD - TY grinningsphinx for the collaboration and great name!
+	-Added a new large Drone Tender - the Lucanidae is heavily armed and comes pre equipped with 6 drones including 2 of the new Scorpifly Heavy Drone - you have been warned
+	-Fixed the AI tags for the HIVER wings, they should fight more intelligently now
+	-Added 2 new ships that fill in missing utility ships for people who play as HIVERS:
+		small tanker - the Viridula  - I'm pretty happy with the kitbash, hope you like it
+		small combat freighter - the Silverfish - a beefier analogue of the hound but high tech with weak shields
+	-Increased the fuel capacity of the Swimmer to 1400 and designated it as a medium/large tanker
+	-Increased the range of the Spitter from 750 to 800
+	-Added a Cryosanctum to Chozanti to supply Harvested Organs to the Hivers
+	-Removed Harvested Organs from illegal wares and added Hand Weapons - They do not have hands after all :)
+	-Increased the % that the Biological Hull hull Mod kicks in from 50% to 75% - Ty grinningsphinx for that last minute callout
+	-Added the Biological Hull hull mod to all HIVER fighters and drones - sort of of an oversight I fixed when I was tinkering with it
+	-Added images of the three new ships and the new heavy drone to the op link
+
+V0.45
+	-Reworked the HIVER economy to be less cheatery by limiting industries to standard and adding an additional settled planet to each system to compensate - TY MapleDaddy__ TTV for the suggestion.
+	-Added new patrol fleets to each HIVER system to cover some blind spots
+	-Added a mine laying system to the Beetle - Ty grinningsphinx for the idea to add Hive mines :)
+	-Added an emp system to the Snipper making it a more effective pd ship
+	-Adjusted the Queen's standard variant to use all its OP
+	-Reworked the ship systems of several ships. They can now do more than microburn and high energy focus. TY grinningsphinx for the suggestion
+	-Changed the Crabby to a Phase Destroyer
+	-Changed the Eyes to a Phase Cruiser - It's eyes now glow in the dark oOoOoOooo spooky!
+	-Changed the weapons on the Katydid to be more in line with Hiver high tech
+	-Added a new troop transport ship the Hornet - TY grinningsphinx again for the suggestion, hope you like it I'm pretty happy with the kitbash
+	-Added a new Tug utility ship the Cleridae
+	-Added images of the Hornet and Cleridae to the op link (bottom) - The two beetles are holding hands how cute :)
+
+v0.4
+	-Fixed a typo with the long range blaster. Now uses 175 flux per shot - TY grinningsphinx for pointing out that OP mistake :)
+	-Added a new Heavy Cruiser, the Princess. Heavy armor and hull with 2 small missiles as well as 5 medium and 3 small energy mounts
+	-Added image of the princess to the op link (bottom)
+	
+v0.35
+   -Made changes and tested to ensure compatibility with the latest version of Starsector
+   -Fixed an error in the starting blueprints graphics when you flag them as playable
+   -Added 16 Hiver player portraits that the player can enable if they choose to make them playable - see forum OP for instructions
+   -Added two Hiver specific interaction images for their planets
+   -Each Hiver planet now has a market that will only sell Hiver ships
+   -Hiver Military markets sell Hiver weapons as well as other Corvus energy and missile weapons
+   -Added detailed instructions on how to make them playable to the forum page
+   -Hiver ships will now remain in dark running even if you are commissioned with them
+   -Lowered the price of the Chrysopidae and changed the class from destroyer to heavy frigate
+   -Increased the size of the Crabby and Deathfly to be more in line with other destroyer hulls
+
+v0.3
+	-Added 5 new Hiver specific BP packages that can be found when looting any area a BP pack can be found, for example a research station
+	-Added the new BP packs as start items if you enable the mod to be playable 
+	-Added some functionality code to the Hiver wing AI 
+	-Fixed a mistake with the Scarab being accidentally flagged as a JYD ship
+	-Ran a spell check on every text file and fixed several errors in spelling/grammar
+
+v0.25
+	-All Hiver weapons and Ships are now blacklisted for the Prism Freeport and will not show up for sale
+	-Disabled the Hiver blueprint package so it should now not show up as loot. - may cause a crash if you have it in your inventory
+	
+v0.2 New Game Required
+	-Added new hull - Scarab - Medium Freighter
+	-Greatly increased the credit value of Hiver weapons as a reward for salvaging them (assuming you do not use them)
+	-Reworked initial Hiver system to be more self sufficient
+	-Added a secondary Hiver system for inter faction trade
+	-Increased patrols in both Hiver systems
+	-Set Player relations to Inhospitable (just a little above hostile) - you can visit their systems and view their assets but one wrong move....
+
+v0.1
+	- Initial release for review, testing and constructive criticism.
+
+	

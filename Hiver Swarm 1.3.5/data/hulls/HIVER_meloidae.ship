@@ -1,0 +1,98 @@
+{
+  "hullName": "Meloidae",
+  "hullId": "HIVER_meloidae",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/HIVER_meloidae.png",
+  "style": "HIGH_TECH",
+  "height": 40,
+  "width": 32,
+  "center": [16, 20],
+  "collisionRadius": 28,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 27.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [14, 5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [14, -5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10.5, -0],
+      "length": 22.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-18.5, 11],
+      "length": 8,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-18.5, 8],
+      "length": 8,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-19, -11],
+      "length": 8,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-18, -8],
+      "length": 8,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    21, -13,
+    -2, -14.5,
+    -16.5, -20,
+    -23, -6,
+    -23, 6,
+    -16.5, 20,
+    -2, 14.5,
+    21, 13
+  ]
+}

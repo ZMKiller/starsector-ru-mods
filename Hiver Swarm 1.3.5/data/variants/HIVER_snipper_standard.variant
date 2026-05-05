@@ -1,0 +1,35 @@
+{
+  "variantId": "HIVER_snipper_standard",
+  "hullId": "HIVER_snipper",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxbreakers",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "HIVER_spitter",
+        "WS0002": "HIVER_spitter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "HIVER_twinpd",
+        "WS0004": "HIVER_twinpd"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

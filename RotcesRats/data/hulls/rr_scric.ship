@@ -1,0 +1,162 @@
+{
+  "hullName": "Ekirhs",
+  "hullId": "rr_scric",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/rr_scric.png",
+  "style": "HIGH_TECH",
+  "height": 146,
+  "width": 108,
+  "center": [54, 84],
+  "collisionRadius": 110,
+  "shieldCenter": [-4, -0],
+  "shieldRadius": 104,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": 100,
+      "locations": [-20, 36]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": -100,
+      "locations": [-20, -36]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [55, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": 50,
+      "locations": [28, 34]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": -50,
+      "locations": [28, -34]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [5, 45]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [5, -45]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-84, 10],
+      "length": 48,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-84, -10],
+      "length": 48,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-74, 30],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-77, 24],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-79, 19],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-79, -19],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-77, -24],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-75, -30],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -5, 50,
+    28, 47,
+    56, 28,
+    60, 12,
+    60, -12,
+    56, -28,
+    28, -47,
+    -5, -50,
+    -25, -46,
+    -73, -29,
+    -82, -6,
+    -50, -0,
+    -82, 6,
+    -73, 29,
+    -25, 46
+  ]
+}

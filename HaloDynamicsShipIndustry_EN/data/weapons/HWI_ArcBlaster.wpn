@@ -1,0 +1,30 @@
+{
+	"id":"HWI_ArcBlaster",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type": "ENERGY",
+      "mountTypeOverride": "HYBRID",
+	"size":"LARGE",
+	"turretSprite":"graphics/weapons/HWI_heavy_assault_cannon_turret_base.png",
+	"turretGunSprite":"graphics/weapons/HWI_heavy_assault_cannon_turret_recoil.png",
+	"hardpointSprite":"graphics/weapons/HWI_heavy_assault_cannon_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/HWI_heavy_assault_cannon_hardpoint_recoil.png",	
+	"visualRecoil":15.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[28, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[40, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # LINKED or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":45.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":25,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":22.0,
+					   "particleDuration":0.13,
+					   "particleCount":35,
+					   "particleColor":[165,155,225,175]},
+	"projectileSpecId":"HWI_ArcBlaster_shot",  # projectile that will be fired
+	 "autocharge":true,
+
+	"fireSoundTwo":"HSI_Blaster",
+}

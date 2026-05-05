@@ -1,0 +1,55 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "module_midline_support",
+    "hullMods": [
+        "heavyarmor",
+        "hardenedshieldemitter",
+        #"SCY_reactiveArmor",
+        "eccm",
+        "reinforcedhull",
+        "stabilizedshieldemitter",
+        "fluxcoil",
+        "fluxdistributor",
+        "armoredweapons",
+        "autorepair",
+        "blast_doors",
+        "turretgyros",
+        "magazines",
+        "fluxbreakers",
+        "pointdefenseai"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_module_midline_support_fortress",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "SCY_minigun1",
+                "WS 005": "SCY_minigun1",
+                "WS 006": "SCY_minigun1",
+                "WS 007": "SCY_minigun1",
+                "WS 008": "SCY_minigun1",
+                "WS 009": "SCY_minigun1"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "SCY_arc",
+                "WS 001": "SCY_arc",
+                "WS 002": "SCY_arc",
+                "WS 003": "SCY_arc"
+            }
+        }
+    ],
+    "wings": [
+        "SCY_stygere_wing",
+        "SCY_stygere_wing",
+        "SCY_stygere_wing",
+        "SCY_stygere_wing"
+    ]
+}

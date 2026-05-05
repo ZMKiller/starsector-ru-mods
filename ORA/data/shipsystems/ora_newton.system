@@ -1,0 +1,26 @@
+{
+    "id":"ora_newton",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+
+    "statsScript":"data.shipsystems.scripts.ORA_newtonStats",
+    "aiScript":"data.shipsystems.scripts.ai.ORA_newtonAI",	
+
+
+    #"engineGlowColor":[255,175,125,255],
+    #"engineGlowContrailColor":[100,165,255,25],
+    #"engineGlowLengthMult":0.5,
+    #"engineGlowWidthMult":0.7,
+    #"engineGlowGlowMult":0.5,
+
+    "useSound":"ora_newton_in",
+    "loopSound":"ora_newton_loop",
+    "deactivateSound":"ora_newton_out",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":100,  # not right since it's ship-dependent, but hopefully close enough
+        "burstMovementPotential":100,
+        "averageSpeedMult":1.5,
+    }
+}

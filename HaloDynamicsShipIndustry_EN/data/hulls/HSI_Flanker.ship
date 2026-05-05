@@ -1,0 +1,85 @@
+{
+  "hullName": "Flanker",
+  "hullId": "HSI_Flanker",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/HSI_Mourning.png",
+  "style": "HSI_TECH",
+  "height": 40,
+  "width": 48,
+  "center": [24, 20],
+  "collisionRadius": 32.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 29.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_ReturnFighter"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 000",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [15.5, 6.5]
+    },
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [15.5, -6.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10.5, -0],
+      "length": 89.5,
+      "width": 36,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-23.5, 0.5],
+      "length": 7,
+      "width": 76,
+      "angle": 180,
+      "contrailSize": 76,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-12.5, -0],
+      "length": 65,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    -1.5, -3.5,
+    -18.5, -8.5,
+    -19, -12.5,
+    -8, -13,
+    -8, -22,
+    -4.5, -23,
+    9, -11,
+    13.5, -9.5,
+    20, -5,
+    12.5, -3.5,
+    12.5, 3.5,
+    20, 5,
+    13.5, 9.5,
+    9, 11,
+    -4.5, 23,
+    -8, 22,
+    -8, 13,
+    -19, 12.5,
+    -18.5, 8.5,
+    -1.5, 3.5
+  ]
+}

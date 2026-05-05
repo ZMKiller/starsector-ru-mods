@@ -1,0 +1,31 @@
+{
+	"id":"SCY_orion",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":1500,
+	"turretSprite":"graphics/SCY/weapons/SCY_orionT.png",
+	"turretGunSprite":"graphics/SCY/weapons/SCY_orionTB.png",
+	"hardpointSprite":"graphics/SCY/weapons/SCY_orionH.png",
+	"hardpointGunSprite":"graphics/SCY/weapons/SCY_orionHB.png",
+	"visualRecoil":5,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[28, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[38, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":30.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":10.0,
+					   "particleSizeMin":50.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.2,
+					   "particleCount":5,
+					   "particleColor":[255,50,10,128]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	#"projectileSpecId":"SCY_orionfakeS",  # projectile that will be fired
+        "projectileSpecId":"SCY_orionS",
+	"everyFrameEffect":"org.scy.weapons.SCY_orionTracking",
+	"fireSoundTwo":"SCY_orion",
+}

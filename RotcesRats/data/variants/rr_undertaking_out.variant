@@ -1,0 +1,58 @@
+{
+  "variantId": "rr_undertaking_out",
+  "hullId": "rr_undertaking",
+  "displayName": "Outdated",
+  "goalVariant": true,
+  "fluxCapacitors": 1,
+  "fluxVents": 30,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "annihilatorpod",
+        "WS0003": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "annihilator",
+        "WS0005": "annihilator",
+        "WS0006": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "miningblaster",
+        "WS0008": "rr_mini_mblast",
+        "WS0009": "rr_mini_mblast"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

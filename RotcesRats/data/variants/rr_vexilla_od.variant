@@ -1,0 +1,50 @@
+{
+  "variantId": "rr_vexilla_od",
+  "hullId": "rr_vexilla",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 1,
+  "fluxVents": 0,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "blast_doors",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "atropos",
+        "WS0001": "atropos"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "sabot",
+        "WS 007": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "lightdualmg",
+        "WS 005": "lightdualmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

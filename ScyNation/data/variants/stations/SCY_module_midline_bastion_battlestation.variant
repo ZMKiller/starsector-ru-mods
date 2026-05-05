@@ -1,0 +1,49 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "module_midline_bastion",
+    "hullMods": [
+        "pointdefenseai",
+        "hardenedshieldemitter",
+        "heavyarmor",
+        #"SCY_reactiveArmor",
+        "reinforcedhull",
+        "eccm",
+        "missleracks",
+        "fluxcoil",
+        "fluxdistributor",
+        "magazines"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_module_midline_bastion_battlestation",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "SCY_laser3"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "SCY_swarmer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "SCY_minigun2",
+                "WS 003": "SCY_minigun2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "SCY_intercept",
+                "WS 006": "SCY_intercept",
+                "WS 007": "SCY_intercept"
+            }
+        }
+    ]
+}

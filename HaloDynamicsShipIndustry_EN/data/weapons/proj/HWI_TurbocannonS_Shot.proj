@@ -1,0 +1,17 @@
+{
+	"id":"HWI_TurboCannonS_Shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"onHitEffect":"data.weapons.scripts.proj.HWITurboChargerProjectile",
+	"onFireEffect":"data.weapons.scripts.proj.HWITurboChargerProjectile",
+	"length":25.0,
+	"width":10,
+	"fadeTime":0.3,
+	"fringeColor":[25,25,230,255],
+	"coreColor":[255,255,255,255],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

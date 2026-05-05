@@ -1,0 +1,31 @@
+{
+    "id":"edshipyard_wizard",
+    "specClass":"projectile",
+    "type":"ENERGY",
+    "size":"MEDIUM",
+    "turretSprite":"graphics/ships/edshipyard_shiba_glow1.png", #reusing the obligatory ship glows
+    "hardpointSprite":"graphics/ships/edshipyard_shiba_glow1.png", #reusing the obligatory ship glows
+	"turretGlowSprite":"graphics/ships/edshipyard_shiba_glow2.png", #reusing the obligatory ship glows
+    "hardpointGlowSprite":"graphics/ships/edshipyard_shiba_glow2.png", #reusing the obligatory ship glows
+    "hardpointOffsets":[0, 0],
+    "turretOffsets":[0, 0],
+    "hardpointAngleOffsets":[0],
+    "turretAngleOffsets":[0],
+    "barrelMode":"ALTERNATING",
+    "animationType":"GLOW_AND_FLASH",
+    "renderHints":[RENDER_ADDITIVE],
+	"fringeColor":[150,75,135,75],
+	"coreColor":[225,125,225,175],
+	"glowColor":[170,125,155,100],
+    "interruptibleBurst":false,
+    "displayArcRadius":300,
+    "muzzleFlashSpec":{"length":100.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":45.0,
+					   "particleSizeMin":20.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.25,
+					   "particleCount":25,
+					   "particleColor":[225,100,255,255]},
+    "projectileSpecId":"edshipyard_wizard",
+    "fireSoundTwo":"wurg_sensor",
+}

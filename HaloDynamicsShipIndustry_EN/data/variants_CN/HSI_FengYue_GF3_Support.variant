@@ -1,0 +1,53 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 50,
+    "fluxVents": 32,
+    "hullId": "HSI_FengYue_GF3",
+    "hullMods": [
+        "HSI_WeaponIndAdaption",
+        "HSI_HardenShield",
+        "HSI_ProtocalSuppression",
+        "expanded_deck_crew"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_FengYue_GF3_Support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "HWI_tachyonlance",
+                "WS0002": "HWI_tachyonlance"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "HWI_Duality",
+                "WS0006": "HWI_Duality"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "sabotpod"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "sabotpod"}
+        }
+    ],
+    "wings": [
+        "HSI_Flanker_wing",
+        "HSI_Flanker_wing",
+        "HSI_Flanker_wing",
+        "HSI_Flanker_wing",
+        "HSI_Flanker_wing",
+        "HSI_Flanker_wing",
+        "HSI_Flanker_wing",
+        "HSI_Flanker_wing"
+    ]
+}

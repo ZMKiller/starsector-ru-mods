@@ -1,0 +1,131 @@
+{
+  "hullName": "Gangis",
+  "hullId": "HIVER_gangis",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/HIVER_gangis.png",
+  "style": "HIGH_TECH",
+  "height": 135,
+  "width": 152,
+  "center": [76, 67.5],
+  "collisionRadius": 96.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 95.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull",
+    "phasefield",
+    "delicate"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [38, 28.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": -0,
+      "locations": [38, -28.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [8, 27.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": -0,
+      "locations": [8, -27.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-29, 16]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -180,
+      "locations": [-29, -16]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, -0],
+      "length": 65,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-20.5, 34.5],
+      "length": 15.878584,
+      "width": 4.947958,
+      "angle": 175,
+      "contrailSize": 4.947958,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-20.5, -34.5],
+      "length": 15.878584,
+      "width": 4.947958,
+      "angle": -175.5,
+      "contrailSize": 4.947958,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-3.5, 56],
+      "length": 15.878584,
+      "width": 4.947958,
+      "angle": 140,
+      "contrailSize": 4.947958,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-4, -56.5],
+      "length": 15.878584,
+      "width": 4.947958,
+      "angle": -140,
+      "contrailSize": 4.947958,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    73, 7,
+    46, 55,
+    16.5, 66.5,
+    -8.5, 85,
+    -64.5, 69,
+    -82, 15.5,
+    -82, -15.5,
+    -64.5, -69,
+    -8.5, -85,
+    16.5, -66.5,
+    46, -55,
+    73, -7
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "hullName": "Megaera",
+  "hullId": "SCY_megaera",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/SCY/ships/SCY_megaera.png",
+  "style": "SCYHULL",
+  "height": 112,
+  "width": 72,
+  "center": [37, 69],
+  "collisionRadius": 74,
+  "shieldCenter": [-1, -0],
+  "shieldRadius": 71,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_LEFT": "SCY_Zflame1",
+    "A_FLAME_RIGHT": "SCY_Zflame1",
+    "BLINKER1": "SCY_ZblinkerB",
+    "BLINKER2": "SCY_ZblinkerB",
+    "D_HEAT_LEFT": "SCY_ZfrigateHeat",
+    "D_HEAT_RIGHT": "SCY_ZfrigateHeat_noScript"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-35, 12]
+    },
+    {
+      "id": "A_FLAME_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-35, -12]
+    },
+    {
+      "id": "D_HEAT_LEFT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-38.5, 12]
+    },
+    {
+      "id": "D_HEAT_RIGHT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-38.5, -12]
+    },
+    {
+      "id": "BLINKER1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-8.5, 8.5]
+    },
+    {
+      "id": "BLINKER2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-8.5, -8.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-8, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [19, 8]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [19, -8]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [36, 13]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [36, -13]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-35, 12],
+      "length": 16,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    },
+    {
+      "location": [-35, -12],
+      "length": 16,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    -16, 30.5,
+    -30.5, 30.5,
+    -54.5, 22.5,
+    -35.5, 22.5,
+    -35.5, -22.5,
+    -54.5, -22.5,
+    -30.5, -30.5,
+    -9, -28.5,
+    10.5, -34,
+    33.5, -21.5,
+    39, -5.5,
+    39, 5.5,
+    33.5, 20.5,
+    22.5, 23.5,
+    18.5, 33.5,
+    -12.5, 33.5
+  ]
+}

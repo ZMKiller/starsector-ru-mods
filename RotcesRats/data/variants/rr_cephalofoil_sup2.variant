@@ -1,0 +1,51 @@
+{
+  "variantId": "rr_cephalofoil_sup2",
+  "hullId": "rr_cephalofoil",
+  "displayName": "Support",
+  "goalVariant": false,
+  "fluxCapacitors": 3,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "targetingunit",
+    "extendedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "gazerpod",
+        "WS 002": "gazerpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "lightac",
+        "WS 004": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "lightag",
+        "WS 006": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "lrpdlaser",
+        "WS 008": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

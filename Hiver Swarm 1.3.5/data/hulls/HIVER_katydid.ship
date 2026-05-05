@@ -1,0 +1,80 @@
+{
+  "hullName": "Katydid",
+  "hullId": "HIVER_katydid",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/HIVER_katydid.png",
+  "style": "HIGH_TECH",
+  "height": 47,
+  "width": 40,
+  "center": [20, 26.5],
+  "collisionRadius": 34.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 33,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2, 5.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2, -5.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [8.5, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-5, 9.5],
+      "length": 12.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-4.5, -9.5],
+      "length": 12.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-7.5, 0],
+      "length": 12.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -6.5, 24,
+    24.5, 8,
+    24.5, -9,
+    -7, -23.5,
+    -30, -12.5,
+    -29, 13
+  ]
+}

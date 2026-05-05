@@ -1,0 +1,49 @@
+{
+  "hullName": "Mizzen",
+  "hullId": "CFT_mizzen",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_mizzen.png",
+  "style": "MIDLINE",
+  "height": 24,
+  "width": 26,
+  "center": [13, 14],
+  "collisionRadius": 22.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 21,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-0.5, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-13.5, 4.5],
+      "length": 10,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-13.5, -4.5],
+      "length": 10,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    12.5, -14,
+    -16.5, -16,
+    -16.5, 17,
+    12.5, 15
+  ]
+}

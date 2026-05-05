@@ -1,0 +1,50 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 0,
+    "fluxVents": 24,
+    "goalVariant": false,
+    "hullId": "SCY_corocottaA",
+    "hullMods": [
+        "missleracks",
+        "eccm"
+    ],
+    "permaMods": [],
+    "quality": 0.4,
+    "variantId": "SCY_corocottaA_escort",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_swarmer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "SCY_arc"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_lvds",
+                "WS0003": "SCY_lvds",
+                "WS0005": "SCY_minigun1",
+                "WS0006": "SCY_hack",
+                "WS0007": "SCY_hack"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+            }
+        }
+        ],
+        "modules": [
+                {"WW1_MULTI": "SCY_corAF_standard"},
+                {"WW2_MULTI": "SCY_corAFL_standard"},
+                {"WW3_MULTI": "SCY_corAFR_standard"},
+                {"WW4_MULTI": "SCY_corAL_standard"},
+                {"WW5_MULTI": "SCY_corAR_standard"},
+        ],
+}

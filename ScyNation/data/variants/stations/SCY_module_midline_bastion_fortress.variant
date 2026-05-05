@@ -1,0 +1,46 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "module_midline_bastion",
+    "hullMods": [
+        "pointdefenseai",
+        "hardenedshieldemitter",
+        "heavyarmor",
+        #"SCY_reactiveArmor",
+        "reinforcedhull",
+        "eccm",
+        "missleracks",
+        "fluxcoil",
+        "fluxdistributor"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_module_midline_bastion_fortress",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+				"WS 000": "SCY_teb",
+				"WS 003": "SCY_teb"
+			}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "SCY_phased",
+                "WS 002": "SCY_phased"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "SCY_minigun1",
+                "WS 006": "SCY_minigun1",
+                "WS 007": "SCY_minigun1"
+            }
+        }
+    ]
+}

@@ -1,0 +1,198 @@
+{
+  "hullName": "TianGuang",
+  "hullId": "HSI_TianGuang",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/HSI_TianGuang.png",
+  "style": "HSI_TECH",
+  "height": 125,
+  "width": 74,
+  "center": [37, 62.5],
+  "collisionRadius": 78.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 68,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo",
+    "HSI_TimeAnchor"
+  ],
+  "builtInWeapons": {
+    "WS 000": "HSI_RapidBlinker",
+    "WS 001": "HSI_LongBlinker"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 0,
+      "locations": [14, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 40,
+      "locations": [34, 7.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 63.5,
+      "locations": [-4.5, 12]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 128,
+      "angle": -45,
+      "locations": [-22.5, -7]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 1,
+      "angle": 0,
+      "locations": [5.5, -15]
+    },
+    {
+      "id": "WS 000",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [38, -8.5]
+    },
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [43, -20.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-59.5, -0.5],
+      "length": 31,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-50, -32],
+      "length": 26.657753,
+      "width": 14.368602,
+      "angle": -140.5,
+      "contrailSize": 14.368602,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-50, 32],
+      "length": 26.657753,
+      "width": 14.368602,
+      "angle": 140.5,
+      "contrailSize": 14.368602,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-18, -32],
+      "length": 14.71637,
+      "width": 7.662499,
+      "angle": -138,
+      "contrailSize": 7.662499,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-18, 32],
+      "length": 14.71637,
+      "width": 7.662499,
+      "angle": 138,
+      "contrailSize": 7.662499,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-52, -34.5],
+      "length": 3.758937,
+      "width": 41.188366,
+      "angle": -138,
+      "contrailSize": 41.188366,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-52, 34.5],
+      "length": 3.758937,
+      "width": 41.188366,
+      "angle": 138,
+      "contrailSize": 41.188366,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-59.5, -39.5],
+      "length": 2.62762,
+      "width": 25.067558,
+      "angle": -140.5,
+      "contrailSize": 25.067558,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-59.5, 39.5],
+      "length": 2.62762,
+      "width": 25.067558,
+      "angle": 140.5,
+      "contrailSize": 25.067558,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-60.5, -0],
+      "length": 30.5,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    -22, -31.5,
+    -26.5, -38,
+    -34.5, -39,
+    -43, -39.5,
+    -48.5, -37,
+    -53, -34.5,
+    -52.5, -28.5,
+    -62, -21,
+    -62, 16,
+    -52.5, 23.5,
+    -53, 29.5,
+    -50, 34,
+    -44, 36.5,
+    -34, 37,
+    -25, 32.5,
+    -22.5, 29.5,
+    -17, 33.5,
+    -2.5, 33.5,
+    38.5, 18.5,
+    59.5, 3.5,
+    60, -1.5,
+    29, -2.5,
+    23, -7.5,
+    9.5, -8.5,
+    9.5, -19.5,
+    30.5, -20.5,
+    -9.5, -37
+  ]
+}

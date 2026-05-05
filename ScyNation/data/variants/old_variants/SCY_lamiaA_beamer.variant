@@ -1,0 +1,34 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 0,
+    "fluxVents": 19,
+    "goalVariant": false,
+    "hullId": "SCY_lamiaA",
+    "hullMods": [
+        "missleracks",
+        "eccm"
+    ],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "SCY_lamiaA_beamer",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_laser2"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_scatter",
+                "WS0003": "SCY_scatter"
+            }
+        },
+    ],
+        "modules": [
+                {"WW1MULTI": "SCY_lamiaAF_standard"},
+                {"WW2MULTI": "SCY_lamiaAL_standard"},
+                {"WW3MULTI": "SCY_lamiaAR_standard"},
+        ],
+}

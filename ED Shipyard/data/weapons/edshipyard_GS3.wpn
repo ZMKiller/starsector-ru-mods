@@ -1,0 +1,28 @@
+{
+	"id":"edshipyard_GS3",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":900,
+	"turretSprite":"graphics/weapons/edshipyard_gs_l_turret_base.png",
+	"turretGunSprite":"graphics/weapons/edshipyard_gs_l_turret_barrel.png",
+	"hardpointSprite":"graphics/weapons/edshipyard_gs_l_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/edshipyard_gs_l_hardpoint_barrel.png",	
+	"visualRecoil":7.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[28, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[37, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":150.0,  
+					   "spread":5.0,
+					   "particleSizeMin":7.0,
+					   "particleSizeRange":10.0,
+					   "particleDuration":2,
+					   "particleCount":24,
+					   "particleColor":[255,150,50,245]},
+	"projectileSpecId":"edshipyard_gs3_p",  # projectile that will be fired
+	"fireSoundTwo":"ed_grapeshot_l",
+}

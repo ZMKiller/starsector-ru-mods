@@ -1,0 +1,64 @@
+{
+  "id": "JYD_hdml",
+  "specClass": "projectile",
+  "projectileSpecId": "LR_missile",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/JYD_hdml.png",
+  "hardpointSprite": "graphics/weapons/JYD_hdml.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    30.5,
+    10.5,
+    30.5,
+    4.5,
+    30.5,
+    -5.5,
+    30.5,
+    -12
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    30.5,
+    10.5,
+    30.5,
+    4.5,
+    30.5,
+    -5.5,
+    30.5,
+    -12
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 20,
+    "particleSizeRange": 20,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 20,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackSpread": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "fireSoundTwo": "hurricane_mirv_fire"
+}

@@ -1,0 +1,195 @@
+{
+  "hullName": "Грузовой вагон",
+  "hullId": "edshipyard_newfoundland_combatfreighter",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/edshipyard_newfoundland_2.png",
+  "style": "HIGH_TECH",
+  "height": 256,
+  "width": 176,
+  "center": [88, 242],
+  "collisionRadius": 285,
+  "shieldCenter": [-118, -0],
+  "shieldRadius": 148,
+  "viewOffset": 0,
+  "builtInMods": [
+    "reduced_explosion",
+    "always_detaches",
+    "edshipyard_no_shields",
+    "expanded_cargo_holds",
+    "advancedcore",
+    "edshipyard_small_drone_hangar"
+  ],
+  "builtInWeapons": {
+    "P1": "edshipyard_PATH"
+  },
+  "weaponSlots": [
+    {
+      "id": "SEGMENT",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 120,
+      "angle": 0,
+      "locations": [-222, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": 90,
+      "locations": [-207.5, 17.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": -90,
+      "locations": [-207.5, -17.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": 90,
+      "locations": [-164.5, 17.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": -90,
+      "locations": [-164.5, -17.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": 90,
+      "locations": [-121.5, 17.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": -90,
+      "locations": [-121.5, -17.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-57, 19]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -180,
+      "locations": [-57, -19]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -42, -0,
+        -68, -0
+      ]
+    },
+    {
+      "id": "P1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-56, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-70, 78],
+      "length": 50,
+      "width": 30,
+      "angle": 145,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-70, -78],
+      "length": 50,
+      "width": 30,
+      "angle": -145,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    }
+  ],
+  "bounds": [
+    -3, -8,
+    -5, -11.5,
+    -15, -10,
+    -20.5, -12.5,
+    -19, -17.5,
+    -31.5, -47.5,
+    -21, -54.5,
+    -24.5, -63,
+    -51, -82.5,
+    -67, -84,
+    -75, -72.5,
+    -79, -66,
+    -98, -75,
+    -205, -75,
+    -208, -82,
+    -213.5, -86.5,
+    -217.5, -85.5,
+    -219.5, -79,
+    -230, -78.5,
+    -240, -73,
+    -233, -64.5,
+    -239, -59,
+    -239, 59,
+    -233, 64.5,
+    -240, 73,
+    -230, 78.5,
+    -219.5, 79,
+    -217.5, 85.5,
+    -213.5, 86.5,
+    -208, 82,
+    -205, 75,
+    -98, 75,
+    -79, 66,
+    -75, 72.5,
+    -67, 84,
+    -51, 82.5,
+    -24.5, 63,
+    -21, 54.5,
+    -31.5, 47.5,
+    -19, 17.5,
+    -20.5, 12.5,
+    -15, 10,
+    -5, 11.5,
+    -3, 8
+  ]
+}

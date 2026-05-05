@@ -1,0 +1,61 @@
+{
+	"id":"HWI_Astesia",
+	"specClass":"missile",	
+	#"missileType":"MISSILE",
+	#"missileType":"HEATSEEKER",
+	"missileType":"CIRCLE_TARGET",
+	"onFireEffect":"data.weapons.scripts.proj.HWIDEMEffect",
+	"behaviorSpec":{"behavior":"CUSTOM",
+		"circleRadius":[500,600],
+		"angledApproachDist":[300,450],
+		"minDelayBeforeTriggering":0,
+		"triggerAngle":[120,180], # fast-tracks the trigger delay if this much angle offset from facing of target
+		"triggerDistance":[400,500],
+		"preferredMinFireDistance":400,
+		"preferredMaxFireDistance":500,
+		"allowedDriftFraction":0.1,
+		"turnRateBoost":200,
+		"targetingTime":0.5,
+		"firingTime":1.5,
+		"targetingLaserId":"targetinglaser1",
+		"targetingLaserRange":0,
+		"payloadWeaponId":"HWI_Astesia_Payload",
+		"targetingLaserArc":30,
+		#"randomStrafe":true,
+		#"bombPumped":true,
+		#"fadeOutEngineWhenFiring":false;
+		"destroyMissleWhenDoneFiring":true,
+		"destroyedExplosionColor":[200,200,255,255],
+	},
+	#"maxFlightTime":10,
+	"sprite":"graphics/missiles/HWI_AsteriaDEM.png",
+	"size":[10,19],	
+	"center":[5, 9.5],
+	"collisionRadius":6,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,255,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":120, # purely visual	
+	"engineSpec":{"turnAcc":400,
+				  "turnRate":200,
+				  "acc":400,
+				  "dec":200},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-6, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,255,255,255],
+						"contrailDuration":1.5,
+						"contrailWidthMult":1.4,
+						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[255,255,255,75],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":30.0,
+				    "angle":180.0},
+				    ]
+}

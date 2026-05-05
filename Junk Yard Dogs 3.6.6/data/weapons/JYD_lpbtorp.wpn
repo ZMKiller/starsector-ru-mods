@@ -1,0 +1,58 @@
+{
+  "id": "JYD_lpbtorp",
+  "specClass": "projectile",
+  "projectileSpecId": "lpbtorp",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/JYD_lpbtorp.png",
+  "hardpointSprite": "graphics/weapons/JYD_lpbtorp.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES_UNLESS_HIDDEN
+  ],
+  "turretOffsets": [
+    2,
+    7,
+    2,
+    0,
+    2,
+    -7
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    13.5,
+    7,
+    13.5,
+    0,
+    13.5,
+    -7
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "cloudParticleCount": 0,
+    "cloudDuration": 2,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 8,
+    "blowbackDuration": 1,
+    "blowbackLength": 10,
+    "blowbackSpread": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "fireSoundTwo": "hammer_fire"
+}

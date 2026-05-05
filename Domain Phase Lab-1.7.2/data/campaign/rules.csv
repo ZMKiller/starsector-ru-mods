@@ -2,13 +2,13 @@ id,trigger,conditions,script,text,options,notes
 #Opening Intro in the Nex,,,,,,
 dpl_nex_NGCPickStartingShips,ExerelinNGCStep3,"$playerFaction == dpl_phase_lab
 !$dpl_ChangeMind
-$corvusMode","AddText ""The Domain Phase Lab is a faction formed by the remnants of a military research institute working for the Domain Navy. Prior to the Collapse, their research was focused on the intricacies of phase space, though many records were lost to the Orion-Perseus abyss during the Collapse. Due to a lack of fuel, the people of the Phase Lab were lost to the abyss for two centuries prior to reaching the core worlds. During the journey, they lost many lives to attacks by drone ship fleets, fostering a deep hostility against the Tri-Tachyon Corporation.""
+$corvusMode","AddText ""Domain Phase Lab - фракция, образованная остатками военного исследовательского института, работавшего на флот Домина. До Коллапса их исследования были сосредоточены на тонкостях фазового пространства, хотя многие записи были потеряны в Бездне Орион-Персей во время Коллапса. Из-за нехватки топлива люди Phase Lab два столетия блуждали в бездне, прежде чем достигли центральных миров. В пути они потеряли много жизней из-за атак флотов дронов, что породило глубокую враждебность к корпорации Tri-Tachyon.""
 SetTextHighlightColors hColor
 SetTextHighlights Domain Phase Lab
 $dpl_ChangeMind = true 0",,,
 dpl_nex_NGCPickStartingShips2,ExerelinNGCStep3,"$playerFaction == dpl_phase_lab
 dpl_CheckCCEnabled EnabledCC
-!$dpl_ChangeMind","AddText ""Commissioned Crews Bonus: Increases weapon damage and reload time; weapon damage bonus is enhanced for phase ships.""
+!$dpl_ChangeMind","AddText ""Бонус Commissioned Crews: увеличивает урон оружия и время перезарядки; бонус урона оружия усилен для фазовых кораблей.""
 SetTextHighlights Commissioned Crews Bonus
 $dpl_ChangeMind = true 0",,,
 ,,,,,,
@@ -267,7 +267,7 @@ dpl_ColonyDealMeetingCont3End,DialogOptionSelected,$option == dpl_colony_deal_co
 
 Робот-слуга выводит вас из комнаты переговоров, а у выхода вас уже ждет шаттл.",dpl_colony_deal_leave:Сесть в шаттл и уйти.,
 dpl_ColonyDealMeetingCont3,DialogOptionSelected,$option == dpl_colony_deal_cont3,,"На мгновение маска Вейерштрасса трескается, и он выглядит по-настоящему злым: ""Что?! Это невозможно... Эти люди были лучшими из лучших! Закаленные ветераны, которые..."" Его глаза расширяются, но он быстро берет себя в руки и снова улыбается: ""...я не знаю, кого именно, как вам кажется, вы поймали, но вы не сможете доказать их связь со мной; и будь у вас действительно такие железные доказательства, мы бы сейчас тут не разговаривали. Сожалею, капитан $playerName, но ложь со мной не сработает.""",dpl_colony_deal_cont4:Думаешь - твоя жалкая отмазка снимает с тебя все подозрения?,
-dpl_ColonyDealMeetingCont4,DialogOptionSelected,$option == dpl_colony_deal_cont4,"AddTextSmall ""collected evidence: Weierstrass ordered the attacks"" highlight
+dpl_ColonyDealMeetingCont4,DialogOptionSelected,$option == dpl_colony_deal_cont4,"AddTextSmall ""собраны доказательства: Weierstrass приказал провести атаки"" highlight
 $global.dpl_CrisisHasEvidence = true","""Даже если так, это ничего не меняет, но все равно поздравляю,"" Вейерштрасс саркастично несколько раз хлопает в ладоши: ""И все же помните: я член комитета. Я занятой человек и не вожусь с отбросами вроде вас. Итак, вы принимаете сделку или нет?""","dpl_colony_deal_cont2Y:Я передумал - давайте обсудим сделку.
 dpl_colony_deal_cont4End:Я отказываюсь.",
 dpl_ColonyDealMeetingCont4End,DialogOptionSelected,$option == dpl_colony_deal_cont4End,,"""Что ж, в таком случае, капитан $playerName,"" он поднимается со стула: ""Вы не сможете сказать, что мое предложение не было щедрым. Но глупец не понимает цену жизни, пока не встретится с отчаянием. Из великодушия я позволю вам вернуться ко мне, когда вы осознаете серьезность положения.""
@@ -326,7 +326,7 @@ dpl_ColonyDealMeeting6YContGood,DialogOptionSelected,"$option == dpl_colony_deal
 $global.dpl_defeatedDPLAttack
 $dpl_CrisisAskDefeat",,"""Нет, вы не понимаете, о чем говорите,"" он смеется. ""Просто скажите, принимаете вы сделку или нет, и больше не задавайте вопросов. Раз уж вы доказали свои боевые навыки, я готов дать вам 2,000,000 кредитов вместо 1,000,000.""","dpl_colony_deal_good1:Ладно - отдам вам колонию за 2 -000 -000 кредитов.
 dpl_colony_deal_cont4End:Нет - я не хочу иметь с вами дел.",
-dpl_ColonyDealMeetingCont7,DialogOptionSelected,$option == dpl_colony_deal_cont7,"AddTextSmall ""collected evidence: Weierstrass is a traitor"" highlight
+dpl_ColonyDealMeetingCont7,DialogOptionSelected,$option == dpl_colony_deal_cont7,"AddTextSmall ""собраны доказательства: Weierstrass - предатель"" highlight
 $global.dpl_CrisisHasEvidence = true
 $global.dpl_CrisisHasGoodEvidence = true","""...О? Неожиданно. Моя разведка не сообщала, что вы один из нас."" Он улыбается: ""Прошу прощения, что сразу не узнал. Наше Превосходство слишком велико, чтобы знать в лицо каждого члена. В любом случае, давайте без притворства. Вы знаете, что индустриальная база критически важна для нашего Превосходства, так что вы должны передать ее мне. Я организую для вас награду в 2,000,000 кредитов. Все ясно?""","dpl_colony_deal_good1:Да - сэр! С радостью приму эту награду!
 dpl_colony_deal_cont4End:Ну уж нет - этого слишком мало...",
@@ -523,7 +523,7 @@ dpl_EventideBaijiu3,DialogOptionSelected,$option == dpl_try_Baijiu,,"Барме�
 dpl_EventideBaijiu4,DialogOptionSelected,$option == dpl_try_Baijiu2,"SetTextHighlights ""500""
 DoCanAffordCheck 500 dpl_pay_fee false","""Вам повезло, молодой человек,"" смеется бармен. ""На сегодня у меня осталась последняя бутылка Baijiu. Отдам за 500 кредитов, без торга.""","dpl_pay_fee:Заплатить 500 кредитов
 dpl_think_eventide:Дайте подумать (Уйти)",
-dpl_EventideBaijiu5,DialogOptionSelected,$option == dpl_pay_fee,"AddTextSmall ""Bought a bottle of Baijiu"" highlight
+dpl_EventideBaijiu5,DialogOptionSelected,$option == dpl_pay_fee,"AddTextSmall ""Куплена бутылка Baijiu"" highlight
 $global.getBaijiu = true 45
 $global.buyBaijiu = false
 AddCredits -500","Вы покупаете бутылку Baijiu и храните ее в своем кабинете на корабельном острове, а не на общем складе. Можно оставить ее себе или подарить друзьям, которые рекомендовали вам этот напиток.",dpl_leave_bar_eventide:Уйти,
@@ -533,7 +533,7 @@ EndConversation",,,
 dpl_ElizaBaijiuCheck,PopulateOptions,"$id == eliza_lovelace
 $global.getBaijiu",,,dpl_got_Baijiu:Эй - Элиза - я вернулся с Baijiu - он реально хорош.,
 dpl_ElizaAskBaijiu,DialogOptionSelected,$option == dpl_got_Baijiu,ShowPersonVisual,"Элиза выглядит удивленной: ""Что? Ты правда... Только не говори, что ты действительно летал на Eventide.""",dpl_give_Baijiu:О да! Я правда купил бутылку - для тебя!,
-dpl_ElizaGiveBaijiu,DialogOptionSelected,$option == dpl_give_Baijiu,"AddTextSmall ""Lost a bottle of Baijiu"" highlight
+dpl_ElizaGiveBaijiu,DialogOptionSelected,$option == dpl_give_Baijiu,"AddTextSmall ""Потеряна бутылка Baijiu"" highlight
 AdjustRepPerson eliza_lovelace COOPERATIVE 10
 $global.getBaijiu = false
 ShowPersonVisual","Элиза тихо выдыхает, не веря своим глазам. Несколько секунд она молчит в изумлении... потом снова выдыхает, и ее взгляд скользит по бутылке в ваших руках. Она не сдерживает усмешку, затем тихо хихикает. Наконец она смущенно улыбается: ""Ты такой нелепый...
@@ -868,7 +868,7 @@ $dpl_foundRevengeShip = true","Когда ваша спасательная ко
 dpl_RevengeSalvage2,DialogOptionSelected,$option == dpl_RevengeSalvage1,,"""Ты не один из нас,"" голос дрожит. ""И никогда о нас не узнаешь. Проклятый чужак... Уничтожил наши танкеры и оставил нас здесь.""
 
 Голос замирает, а затем внезапно срывается: ""Во имя Превосходства!"" После этого слышен выстрел из гаусс-пистолета. На корабле становится тихо.",dpl_RevengeSalvage2:Продолжить,
-dpl_RevengeSalvage3,DialogOptionSelected,$option == dpl_RevengeSalvage2,"AddTextSmall ""Recovered encrypted data storage"" highlight","Ваша спасательная команда входит на мостик. Кроме тела, единственным интересным объектом оказывается сильно зашифрованное хранилище данных.",dpl_RevengeSalvage3:Поручить техофицеру проверить его.,
+dpl_RevengeSalvage3,DialogOptionSelected,$option == dpl_RevengeSalvage2,"AddTextSmall ""Получен зашифрованный накопитель данных"" highlight","Ваша спасательная команда входит на мостик. Кроме тела, единственным интересным объектом оказывается сильно зашифрованное хранилище данных.",dpl_RevengeSalvage3:Поручить техофицеру проверить его.,
 dpl_RevengeSalvage4,DialogOptionSelected,$option == dpl_RevengeSalvage3,"Highlight ""Lab Factory"" ""Muspelheim""","Ваш техофицер и инженеры попытались расшифровать базу данных, но безуспешно. Однако им удалось восстановить последнюю точку, которую посещал этот корабль. Это Lab Factory в системе Muspelheim. Лучше отправиться туда как можно скорее, пока Фазовая Лаборатория не потеряла интерес к этому делу.",dpl_RevengeSalvage4:Продолжить,
 dpl_RevengeSalvage5,DialogOptionSelected,$option == dpl_RevengeSalvage4,"ShowDefaultVisual
 $salvageLeaveText = Leave 0
@@ -893,7 +893,7 @@ dpl_RossIntro4A,DialogOptionSelected,$option == dpl_RevengeRoss4A,,"""Что ж,
 dpl_RossIntro5,DialogOptionSelected,$option == dpl_RevengeRoss4,"SetStoryOption dpl_RevengeRoss5A general ""Asked Ross for more credits.""","""Давайте просто. 150,000 кредитов за модуль данных и ваше молчание."" Она тянется к документам: ""Принимаете?""","dpl_RevengeRoss5:Сделка.
 dpl_RevengeRoss5A:Похоже - для вас это стоит куда больше.",
 dpl_RossIntro5A,DialogOptionSelected,$option == dpl_RevengeRoss5A,AddCredits 100000,"Хиггс усмехается: ""Вижу, за дурака вас не примешь. Ладно, я и сама не люблю долгий торг. Позвольте на этот раз показать свою честность."" Она быстро меняет цифры в Tri-Pad: ""250,000 кредитов. Последнее предложение.""",dpl_RevengeRoss5:Сделка.,
-dpl_RossIntro6,DialogOptionSelected,$option == dpl_RevengeRoss5,"AddTextSmall ""Lost encrypted data storage"" highlight
+dpl_RossIntro6,DialogOptionSelected,$option == dpl_RevengeRoss5,"AddTextSmall ""Потерян зашифрованный накопитель данных"" highlight
 AddCredits 150000
 AdjustRepPerson ross_higgs  COOPERATIVE 5
 AdjustRep dpl_phase_lab COOPERATIVE 5","""Хороший выбор, капитан $playerName,"" она прочищает горло. ""Спасибо за сотрудничество.""",dpl_RevengeRoss6:Так что именно в этом хранилище данных?,
@@ -1079,7 +1079,7 @@ dpl_RestrictedBPNo:Дайте мне еще немного времени - чт
 dpl_RestrictedBPStationYes,DialogOptionSelected,$option == dpl_RestrictedBPStationYes,"AddCredits -1000000
 $gotStation = true
 $player.dpl_CanBuildStation = true
-AddTextSmall ""Learned how to build Phase Lab stations."" highlight
+AddTextSmall ""Изучено строительство станций Phase Lab."" highlight
 FireAll dpl_BPOptions","""Хороший выбор, сейчас выдам авторизацию,"" она вызывает офицера, подписывает несколько документов, и офицер уносит бумаги.
 
 Она улыбается, хоть и выглядит усталой: ""Итак, вас интересует что-то еще?""",,
@@ -1103,16 +1103,16 @@ FireAll dpl_BPOptions","""Я рада, что вы все еще помните 
 #Ross wants matcha,,,,,,
 dpl_RossResponseOfferMatcha,PopulateOptions,"$id == ross_higgs score:1000
 $rel > 0.1","SetEnabled dpl_RossMakeOffering false
-SetTooltip dpl_RossMakeOffering ""You do not have matcha in your cargo.""
+SetTooltip dpl_RossMakeOffering ""У вас нет маття в грузовом отсеке.""
 FireBest dpl_RossOfferingOptionCheck",,0:dpl_RossMakeOffering:Предложить Росс немного матчи.,
 dpl_RossOfferingOptionCheck,dpl_RossOfferingOptionCheck,PlayerHasCargo dpl_matcha 1,"SetEnabled dpl_RossMakeOffering true
-SetTooltip dpl_RossMakeOffering ""Offer 1 unit of matcha to Ross.""",,,
+SetTooltip dpl_RossMakeOffering ""Предложить Ross 1 единицу маття.""",,,
 dpl_RossOfferingAlreadyMade,DialogOptionSelected,"$option == dpl_RossMakeOffering
 $dpl_offeringMade score:100",,"""Боюсь, я еще не использовала всю матчa, оставшуюся с прошлого раза. Я ценю жест, но подарок теряет свою особенность, когда его дарят в избытке.""",,
 dpl_RossOfferingEnough,DialogOptionSelected,$option == dpl_RossMakeOffering,"SetTextHighlightColors buttonShortcut
 SetTextHighlights ""1"" ""matcha""","""О, это матча, и только для меня?"" Росс выглядит удивленной, на мгновение замолкает, затем тепло улыбается: ""Спасибо... Это правда... довольно много. Сколько же вы вообще купили? Н-нет, неважно. Обычно у меня нет времени летать на Research Site V, так что у меня редко бывает шанс насладиться матчей. Я ценю ваш жест.""","0:dpl_RossGiveOffering:Передать 1 матчу
 1:dpl_RossCancelOffering:Неважно",
-dpl_RossGiveOffering,DialogOptionSelected,$option == dpl_RossGiveOffering,"AddText ""Ross looks quite happy and appreciates your kind gift.""
+dpl_RossGiveOffering,DialogOptionSelected,$option == dpl_RossGiveOffering,"AddText ""Ross выглядит очень довольным и благодарит за добрый подарок.""
 AddRemoveCommodity dpl_matcha -1 true
 AdjustRepActivePerson 1
 $dpl_offeringMade = true 30
@@ -1180,10 +1180,10 @@ BeginMission dpl_mpm","Она смотрит на вас, и в ее выраж�
 #Ross Buys Data,,,,,,
 dpl_RossResponseOfferData,PopulateOptions,"$id == ross_higgs score:1000
 $rel > 0.1","SetEnabled dpl_RossMakeDataOffering false
-SetTooltip dpl_RossMakeDataOffering ""You do not have data archives in your cargo.""
+SetTooltip dpl_RossMakeDataOffering ""У вас нет архивов данных в грузовом отсеке.""
 FireBest dpl_RossOfferingDataOptionCheck",,0:dpl_RossMakeDataOffering:Предложить Росс специальные архивы данных.,
 dpl_RossOfferingDataOptionCheck,dpl_RossOfferingDataOptionCheck,PlayerHasCargo dpl_data_archive 1,"SetEnabled dpl_RossMakeDataOffering true
-SetTooltip dpl_RossMakeDataOffering ""Offer some special data archives to Ross.""",,,
+SetTooltip dpl_RossMakeDataOffering ""Предложить Ross несколько особых архивов данных.""",,,
 dpl_RossOfferingData,DialogOptionSelected,$option == dpl_RossMakeDataOffering,FireAll dpl_RossDataTradeOptions,"""О, архивы данных, нам они точно пригодятся,"" Росс улыбается с жадным огоньком: ""А в награду я могу организовать для вас особое продвинутое оружие, разработанное инженерным департаментом. Сейчас отправлю подробности.""
 
 Она делает несколько касаний, и детали предложения появляются на вашем TriPad.",,
@@ -1191,27 +1191,27 @@ dpl_RossAskAboutWeaponsCheck,dpl_RossDataTradeOptions,!$dplAsked_Weapon_Ross,,,d
 dpl_RossAskAboutWeapons,DialogOptionSelected,$option == dpl_RossAskAboutWeapons,"$dplAsked_Weapon_Ross = true 0
 FireAll dpl_RossDataTradeOptions","""Итак, вас интересует это особое оружие? Что ж, у меня недостаточно полномочий, чтобы открывать доступ к строго засекреченным образцам,"" Росс вздыхает. ""Но как глава инженерного департамента я могу предложить вам часть наших самых продвинутых систем. Они меньше, чем засекреченные образцы, уровень секретности у них ниже, но публике они все равно неизвестны. Можете называть их ""элитным"" оружием, если хотите.""",,
 dpl_RossRandomSmallCheck,dpl_RossDataTradeOptions,PlayerHasCargo dpl_data_archive 1,,,dpl_RossRandomSmall:Передать 1 архив данных за случайное малое особое оружие,
-dpl_RossRandomSmall,DialogOptionSelected,$option == dpl_RossRandomSmall,"AddText ""received an exotic weapon.""
+dpl_RossRandomSmall,DialogOptionSelected,$option == dpl_RossRandomSmall,"AddText ""получено экзотическое оружие.""
 AddRemoveAnyItem SPECIAL dpl_data_archive -1
 AdjustRepActivePerson 1
 dpl_RossTradeCMD rollSmall
 FireAll dpl_RossDataTradeOptions","Росс улыбается: ""Отлично, хотите что-нибудь еще?""",,
 dpl_RossRandomMediumCheck,dpl_RossDataTradeOptions,PlayerHasCargo dpl_data_archive 2,,,dpl_RossRandomMedium:Передать 2 архива данных за случайное среднее особое оружие,
-dpl_RossRandomMedium,DialogOptionSelected,$option == dpl_RossRandomMedium,"AddText ""received an exotic weapon.""
+dpl_RossRandomMedium,DialogOptionSelected,$option == dpl_RossRandomMedium,"AddText ""получено экзотическое оружие.""
 AddRemoveAnyItem SPECIAL dpl_data_archive -2
 AdjustRepActivePerson 2
 dpl_RossTradeCMD rollMedium
 FireAll dpl_RossDataTradeOptions","Росс улыбается: ""Отлично, хотите что-нибудь еще?""",,
 dpl_RossSpecificWeapons,dpl_RossDataTradeOptions,,"SetEnabled dpl_RossSpecificWeapons false
-SetTooltip dpl_RossSpecificWeapons ""You don't have enough Data Archives to make specific orders.""
+SetTooltip dpl_RossSpecificWeapons ""У вас недостаточно архивов данных для конкретных заказов.""
 FireBest dpl_CanOrderSpecific","Росс улыбается: ""Я могу немедленно запустить производство конкретного оружия, которое вы выберете, на наших орбитальных верфях. Это может вызвать отклонения в нашем производственном цикле. Но если вы готовы передавать нам дополнительные архивы данных за каждую выбранную позицию, такие отклонения будут незначительными.""",dpl_RossSpecificWeapons:Выбрать у Росс оружие для заказа.,
 dpl_RossSpecificWeaponsSel,DialogOptionSelected,$option == dpl_RossSpecificWeapons,dpl_RossTradeCMD showWeaponPicker,,,
 dpl_RossSpecificWeaponPicked,dpl_RossSpecificWeaponPicked,,"SetEnabled dpl_RossSpecificWeapons false
-SetTooltip dpl_RossSpecificWeapons ""You don't have enough Data Archives to make specific orders.""
+SetTooltip dpl_RossSpecificWeapons ""У вас недостаточно архивов данных для конкретных заказов.""
 FireBest dpl_CanOrderSpecific","Росс улыбается: ""Отлично, хотите что-нибудь еще?""","dpl_RossSpecificWeapons:Выбрать у Росс оружие для заказа.
 dpl_RossOtherOptions:Спросить Росс о других вариантах.",
 dpl_CanOrderSpecific,dpl_CanOrderSpecific,PlayerHasCargo dpl_data_archive 2,"SetEnabled dpl_RossSpecificWeapons true
-SetTooltip dpl_RossSpecificWeapons ""Use more data archives to order specific weapons.""",,,
+SetTooltip dpl_RossSpecificWeapons ""Использовать больше архивов данных для заказа конкретного оружия.""",,,
 dpl_RossOtherOptions,DialogOptionSelected,$option == dpl_RossOtherOptions,FireAll dpl_RossDataTradeOptions,"Росс делает несколько касаний в датападе: ""Итак, хотите что-нибудь еще?""",,
 dpl_RossCancelDataOfferingCheck,dpl_RossDataTradeOptions,,,,dpl_RossCancelDataOffering:Неважно,
 dpl_RossCancelDataOffering,DialogOptionSelected,$option == dpl_RossCancelDataOffering,FireAll PopulateOptions,,,
@@ -1465,21 +1465,21 @@ EndConversation",,,
 dpl_CamillaResponseOfferLobster,PopulateOptions,"$id == camilla_wiener score:1000
 $rel > 0.01
 $market.dpl_ask_camilla_lobster","SetEnabled dpl_CamillaMakeOffering false
-SetTooltip dpl_CamillaMakeOffering ""You do not have lobster in your cargo.""
+SetTooltip dpl_CamillaMakeOffering ""У вас нет омаров в грузовом отсеке.""
 FireBest dpl_CamillaOfferingOptionCheck",,0:dpl_CamillaMakeOffering:Предложить Камилле немного лобстеров. (5 единиц),
 dpl_CamillaResponseOfferLobsterMoved,PopulateOptions,"$id == camilla_wiener score:1000
 $rel > 0.01
 $market.dpl_asked_camilla_factory","SetEnabled dpl_CamillaMakeOffering false
-SetTooltip dpl_CamillaMakeOffering ""You do not have lobster in your cargo.""
+SetTooltip dpl_CamillaMakeOffering ""У вас нет омаров в грузовом отсеке.""
 FireBest dpl_CamillaOfferingOptionCheck",,0:dpl_CamillaMakeOffering:Предложить Камилле немного лобстеров. (5 единиц),
 dpl_CamillaOfferingOptionCheck,dpl_CamillaOfferingOptionCheck,PlayerHasCargo lobster 5,"SetEnabled dpl_CamillaMakeOffering true
-SetTooltip dpl_CamillaMakeOffering ""Offer 5 units of lobster to Camilla.""",,,
+SetTooltip dpl_CamillaMakeOffering ""Предложить Camilla 5 единиц омаров.""",,,
 dpl_CamillaOfferingAlreadyMade,DialogOptionSelected,"$option == dpl_CamillaMakeOffering
 $offeringMade score:100",,"""Вау, спасибо за такой добрый подарок, сэр $playerName,"" Камилла выглядит удивленной: ""Я еще не доела всех лобстеров, что вы принесли в прошлый раз, а выбрасывать хоть одного - грех. Может, в следующий раз?""",,
 dpl_CamillaOfferingEnough,DialogOptionSelected,$option == dpl_CamillaMakeOffering,"SetTextHighlightColors buttonShortcut
 SetTextHighlights ""5"" ""lobster""","""Вау, сэр $playerName, вы правда делаете мне такой щедрый подарок?"" Вы видите, как у Камиллы сияют глаза: ""Те самые знаменитые лобстеры сектора... Можно попросить 5 единиц? Я буду их обожать, очень-очень!""","0:dpl_CamillaGiveOffering:Передать 5 лобстеров
 1:dpl_CamillaCancelOffering:Неважно",
-dpl_CamillaGiveOffering,DialogOptionSelected,$option == dpl_CamillaGiveOffering,"AddText ""Camilla appreciates you for your kind offerings, and she makes a big smile.""
+dpl_CamillaGiveOffering,DialogOptionSelected,$option == dpl_CamillaGiveOffering,"AddText ""Camilla благодарна за ваши добрые подношения и широко улыбается.""
 AddRemoveCommodity lobster -5 true
 AdjustRepActivePerson 5
 $offeringMade = true 30
@@ -1518,7 +1518,7 @@ dpl_lcCMD dpl_CheckShip",DoCanAffordCheck 100000 dpl_LC_Install false,,dpl_LC_In
 dpl_LC_Special2,DialogOptionSelected,$option == dpl_LC_Install,"AdjustRepActivePerson 2
 dpl_lcCMD dpl_AddHullmod
 AddCredits -100000
-AddTextSmall ""Logistic Center installed on your ship."" highlight",,dpl_LCSelectionGoBack:Проверить другие корабли,
+AddTextSmall ""Логистический центр установлен на ваш корабль."" highlight",,dpl_LCSelectionGoBack:Проверить другие корабли,
 dpl_LC_NewShip,dpl_ShipPicked,,,,dpl_LCSelectionGoBack:Выбрать другой корабль,
 dpl_LC_SelectionGoBackSel,DialogOptionSelected,$option == dpl_LCSelectionGoBack,"FireAll dpl_LCSelection
 unset $dpl_LC_pickedShip",,,
@@ -1575,7 +1575,7 @@ dpl_rcam_defenderDesc,TriggerAutomatedDefenses,"$dpl_rcam_targetStation score:10
 
 Они заняты охраной стройплощадки, и это дает вам возможность выбрать: вступить в бой или отступить.",,
 dpl_rcam_infoTextNext,BeginSalvage,"$dpl_rcam_targetStation score:1000
-!$global.dpl_rcam_gotSpecialArmor","AddTextSmall ""Data Storage recovered"" highlight
+!$global.dpl_rcam_gotSpecialArmor","AddTextSmall ""Накопитель данных получен"" highlight
 $global.dpl_rcam_gotSpecialArmor = true
 unset $entity.missionImportant","Вы стыкуетесь с заброшенной исследовательской станцией. После нескольких боев низкой интенсивности на борту ваша спасательная команда докладывает, что успешно извлекла все данные из резервной копии центрального компьютера станции. Хотя данные сильно зашифрованы, и как именно их применять, команда понять не смогла.
 
@@ -1583,7 +1583,7 @@ unset $entity.missionImportant","Вы стыкуетесь с заброшенн
 dpl_rcam_completeOpen,PopulateOptions,"$id == ross_higgs
 $global.dpl_rcam_gotSpecialArmor
 !$global.dpl_rcam_completed",SetOptionColor dpl_rcam_complete buttonShortcut,,dpl_rcam_complete:Я вернулся(лась) с хранилищем данных.,
-dpl_rcam_complete,DialogOptionSelected,$option == dpl_rcam_complete,"AddTextSmall ""Data Storage lost"" highlight
+dpl_rcam_complete,DialogOptionSelected,$option == dpl_rcam_complete,"AddTextSmall ""Накопитель данных потерян"" highlight
 $global.dpl_rcam_completed = true","Росс выглядит чуть более расслабленной, чем обычно: ""Спасибо, капитан $playerName! Вы вернули наши ценные знания из рук пиратов.""",dpl_rcam_complete1:Почему эти данные так важны?,
 dpl_rcam_complete1,DialogOptionSelected,$option == dpl_rcam_complete1,,"""В них записаны результаты наших экспериментов по самым разным свойствам новой брони."" Росс улыбается: ""Она сделана из металлов с новыми наноструктурами, и, к счастью, вы можете модифицировать броню своего корабля в эту новую версию на любой космостанции.""",dpl_rcam_complete2:Вау - то есть я могу ее попробовать?,
 dpl_rcam_complete2,DialogOptionSelected,$option == dpl_rcam_complete2,AddRemoveAnyItem SPECIAL modspec dpl_special_armor 1,"""Конечно! Сейчас сделаю для вас корректную копию всех необходимых процедур."" Росс отворачивается и делает несколько касаний в датападе: ""После этого вы сможете свободно использовать нашу новую броню.""",dpl_rcam_complete3:Вы очень щедры - спасибо!,
@@ -1605,7 +1605,7 @@ dpl_rcwo_defenderDesc,TriggerAutomatedDefenses,"$dpl_rcwo_targetStation score:10
 
 Они заняты охраной стройплощадки, и это дает вам возможность выбрать: вступить в бой или отступить.",,
 dpl_rcwo_infoTextNext,BeginSalvage,"$dpl_rcwo_targetStation score:1000
-!$global.dpl_rcwo_gotWeaponOverride","AddTextSmall ""Data Storage recovered"" highlight
+!$global.dpl_rcwo_gotWeaponOverride","AddTextSmall ""Накопитель данных получен"" highlight
 $global.dpl_rcwo_gotWeaponOverride = true
 unset $entity.missionImportant","Вы стыкуетесь с заброшенной исследовательской станцией. После нескольких боев низкой интенсивности на борту ваша спасательная команда докладывает, что успешно извлекла все из резервной копии центрального компьютера станции. Хотя данные сильно зашифрованы, и как они работают, команда понять не смогла.
 
@@ -1613,7 +1613,7 @@ unset $entity.missionImportant","Вы стыкуетесь с заброшенн
 dpl_rcwo_completeOpen,PopulateOptions,"$id == ross_higgs
 $global.dpl_rcwo_gotWeaponOverride
 !$global.dpl_rcwo_completed",SetOptionColor dpl_rcwo_complete buttonShortcut,,dpl_rcwo_complete:Я вернулся(лась) с хранилищем данных.,
-dpl_rcwo_complete,DialogOptionSelected,$option == dpl_rcwo_complete,"AddTextSmall ""Data Storage lost"" highlight
+dpl_rcwo_complete,DialogOptionSelected,$option == dpl_rcwo_complete,"AddTextSmall ""Накопитель данных потерян"" highlight
 $global.dpl_rcwo_completed = true","Росс выглядит чуть более расслабленной, чем обычно: ""Спасибо, капитан $playerName! Вы спасли наши ценные знания из рук этих патеров.""",dpl_rcwo_complete1:Почему эти данные так важны?,
 dpl_rcwo_complete1,DialogOptionSelected,$option == dpl_rcwo_complete1,,"""Как я уже упоминала, в них записан новый протокол, позволяющий перегружать оружие и повышать его урон."" Росс улыбается: ""Протокол сложный, но, к счастью, вы все равно можете устанавливать и настраивать его для своих кораблей на любой космостанции.""",dpl_rcwo_complete2:Вау - то есть я могу это попробовать?,
 dpl_rcwo_complete2,DialogOptionSelected,$option == dpl_rcwo_complete2,AddRemoveAnyItem SPECIAL modspec dpl_weapon_overcharge 1,"""Конечно! Сейчас сделаю для вас корректную копию этого протокола и всей документации к нему."" Росс отворачивается и делает несколько касаний в датападе: ""После этого вы сможете свободно использовать новый протокол.""",dpl_rcwo_complete3:Раз это просто протокол - почему бы не сделать новый?,
@@ -1890,10 +1890,10 @@ dpl_invention_leave,DialogOptionSelected,$option == dpl_invention_leave,"ShowDef
 EndConversation",,,
 dpl_RossResponseGetKit,PopulateOptions,"$id == ross_higgs score:1000
 $dpl_invention_Completed","SetEnabled dpl_RossGetKitOffering false
-SetTooltip dpl_RossGetKitOffering ""The Nano Fluid Condensers are not ready yet. Please come back later.""
+SetTooltip dpl_RossGetKitOffering ""Конденсаторы наножидкости еще не готовы. Пожалуйста, вернитесь позже.""
 FireBest dpl_RossGetKitOptionCheck",,1:dpl_RossGetKitOffering:Попросить у Росс несколько Nano Fluid Condenser.,
 dpl_RossGetKitOptionCheck,dpl_RossGetKitOptionCheck,dpl_invention_CMD checkKitAvailable,"SetEnabled dpl_RossGetKitOffering true
-SetTooltip dpl_RossGetKitOffering ""You can collect $dpl_numKits Nano Fluid Condensers.""",,,
+SetTooltip dpl_RossGetKitOffering ""Вы можете забрать $dpl_numKits конденсаторов наножидкости.""",,,
 dpl_RossResponseGetKit1,DialogOptionSelected,$option == dpl_RossGetKitOffering,"dpl_invention_CMD CollectKits
 FireAll PopulateOptions","""Конечно, мой дорогой капитан!"" Росс улыбается и делает несколько касаний в датападе: ""Я все оформила, примите это как нашу благодарность за ваш вклад в это великое изобретение. Хотите обсудить что-нибудь еще?""",,
 ,,,,,,
@@ -2014,10 +2014,10 @@ Orbital Works соединен с военной базой которая об�
 И наконец ваш тактический офицер отмечает что добывающий комплекс со стороны планеты охраняется слабо. Для его захвата даже не нужны морпехи.",dpl_tlwf_complete1:Посмотреть все варианты.,
 dpl_tlwf_complete1,DialogOptionSelected,$option == dpl_tlwf_complete1,FireAll dpl_tlwf_stage1,,,
 dpl_tlwf_military_base1,dpl_tlwf_stage1,,"SetEnabled dpl_tlwf_military_base1 false
-SetTooltip dpl_tlwf_military_base1 ""You do not have enough marines.""
+SetTooltip dpl_tlwf_military_base1 ""У вас недостаточно морпехов.""
 FireBest dpl_twlf_base1Check",,dpl_tlwf_military_base1:Приказать морпехам атаковать военную базу напрямую.,
 dpl_twlf_base1Check,dpl_twlf_base1Check,PlayerHasCargo marines 500,"SetEnabled dpl_tlwf_military_base1 true
-SetTooltip dpl_RossMakeOffering ""Order 500 units of marine to strike the military base.""",,,
+SetTooltip dpl_RossMakeOffering ""Приказать 500 морпехам атаковать военную базу.""",,,
 dpl_twlf_base1Result,DialogOptionSelected,$option == dpl_tlwf_military_base1,ShowImageVisual raid_disrupt_result,"Ваши морпехи провели внезапный штурм военной базы. По их отчетам врагом оказались киборги которые однозначно запрещены в этом Секторе.
 
 К счастью ваши 500 отрядов морпехов захватили базу с минимальными потерями. Они также спасли офицера Фазовой Лаборатории который высоко оценил ваши смелые действия.
@@ -2028,10 +2028,10 @@ dpl_twlf_base1Result,DialogOptionSelected,$option == dpl_tlwf_military_base1,Sho
 
 Теперь пора присоединиться к финальному бою там.",dpl_tlwf_complete2:Приказать силам присоединиться к бою у Orbital Works.,
 dpl_tlwf_space_port1,dpl_tlwf_stage1,,"SetEnabled dpl_tlwf_space_port1 false
-SetTooltip dpl_tlwf_space_port1 ""You do not have enough fuel.""
+SetTooltip dpl_tlwf_space_port1 ""У вас недостаточно топлива.""
 FireBest dpl_twlf_port1Check",,dpl_tlwf_space_port1:Приказать флоту провести бомбардировку космопорта.,
 dpl_twlf_port1Check,dpl_twlf_port1Check,$player.fuel >= 200,"SetEnabled dpl_tlwf_space_port1 true
-SetTooltip dpl_tlwf_space_port1 ""Use 200 units of fuel to tactically bombard the space port.""",,,
+SetTooltip dpl_tlwf_space_port1 ""Использовать 200 единиц топлива для тактической бомбардировки космопорта.""",,,
 dpl_twlf_port1Result,DialogOptionSelected,$option == dpl_tlwf_space_port1,ShowImageVisual raid_valuables_result,"Ваш флот провел тактическую бомбардировку космопорта. Вражеские части были застигнуты врасплох и подавить их оказалось несложно. После бомбардировки ваши силы легко заняли космопорт. По отчетам противником были киборги которые однозначно запрещены в этом Секторе.
 
 Они также спасли офицера Фазовой Лаборатории который поблагодарил вас за смелые действия. Он сообщил что ранее в космопорт аварийно сел старый звездный лайнер и из него вырвалось более 2000 киборгов. Они пришли не для технологического налета а для полномасштабного вторжения. Силы Lab Factory быстро разделили на части и затем уничтожали одну за другой.
@@ -2056,7 +2056,7 @@ dpl_tlwf_port_story5,DialogOptionSelected,$option == dpl_tlwf_port_story5,ShowIm
 
 Очевидно что и Росс и Арес сейчас должны сражаться в Orbital Works и пора присоединиться к финальному бою там.",dpl_tlwf_complete2:Приказать силам присоединиться к бою у Orbital Works.,
 dpl_tlwf_mining1,dpl_tlwf_stage1,,"SetEnabled dpl_tlwf_mining1 true
-SetTooltip dpl_tlwf_mining1 ""You only need some crews to do this.""",,dpl_tlwf_mining1:Приказать командам захватить добывающий комплекс.,
+SetTooltip dpl_tlwf_mining1 ""Для этого нужна лишь небольшая команда.""",,dpl_tlwf_mining1:Приказать командам захватить добывающий комплекс.,
 dpl_tlwf_mining1Result,DialogOptionSelected,$option == dpl_tlwf_mining1,ShowImageVisual raid_covert_result,"Ваши команды проникли в комплекс добычи летучих веществ со стороны атмосферы газового гиганта под станцией Lab Factory. Оборона здесь была слабой и ваши люди легко ее подавили. По их отчетам противником были киборги которые однозначно запрещены в этом Секторе.
 
 Они также спасли офицера Фазовой Лаборатории вместе с большим числом рабочих. Те поблагодарили вас за смелые действия и рассказали что раньше в космопорт аварийно сел старый звездный лайнер а затем из него вырвалось более 2000 киборгов. Эти киборги пришли не для налета на технологии а для полномасштабного вторжения. Силы Lab Factory быстро раздробили на многие группы и затем уничтожали одну за другой.
@@ -2188,7 +2188,7 @@ dpl_btcl_defenderDesc,TriggerAutomatedDefenses,"$dpl_btcl_targetStation score:10
 
 ""В этот раз у нас настоящий лучший корабль и настоящее лучшее оружие. Просто чтобы прикончить вас. Живыми вы отсюда не уйдете."" Командир флота делает грубый жест и обрывает связь.",,
 dpl_btcl_infoTextNext,BeginSalvage,"$dpl_btcl_targetStation score:1000
-!$global.dpl_btcl_knowArkLoc","AddTextSmall ""Data Storage recovered"" highlight
+!$global.dpl_btcl_knowArkLoc","AddTextSmall ""Накопитель данных получен"" highlight
 $global.dpl_btcl_knowArkLoc = true
 unset $entity.missionImportant","Вы стыкуетесь с заброшенной станцией. Хотя вашей спасательной команде не удалось найти что-либо от грузовика украденного Аресом они все же смогли восстановить часть флотских журналов оставленных здесь флотом Darktides.
 
@@ -2318,7 +2318,7 @@ Highlight $dpl_bidw_systemName $dpl_bidw_dist $dpl_bidw_reward","""Десять 
 ""Теперь наша разведка получила данные что пленника Луддического Пути перевозят из системы $dpl_bidw_systemName на расстоянии $dpl_bidw_dist световых лет отсюда. Пленника охраняет высокопоставленный командир патеров и мы считаем что этим пленником может быть наш агент. С учетом уровня угрозы я назначила выплату в $dpl_bidw_reward кредитов.""","contact_accept:Принять
 contact_decline:Отклонить",
 dpl_bidwEncounter,BeginFleetEncounter,"$dpl_bidw_patherfleet score: 1000
-!$dpl_bidw_metpather","AddTextSmall ""Agent recovered"" highlight
+!$dpl_bidw_metpather","AddTextSmall ""Агент возвращен"" highlight
 $dpl_bidw_metpather = true
 $global.dpl_bidw_killed = true
 unset $entity.missionImportant","$personName смеется. ""Ха! Значит древняя жрица Молоха все-таки послала свою марионетку. О слепая пешка Молоха разве ты не видишь что это ловушка а ее другая марионетка лишь приманка? Теперь мне нужно лишь раздавить твой жалкий флот и забрать ваши коды IFF. Тогда мы принесем армагеддон на злую планету под названием Research Site V.""
@@ -2454,7 +2454,7 @@ dpl_jaspMacarioShipReadyAnswer2,DialogOptionSelected,$option == dpl_jasp_macario
 
 В любом случае можете проверить что вам нужно журналы и прочее. Сейчас там должно быть пусто.""",dpl_jasp_macarioShipReady3:Спросить его об агенте,
 dpl_jaspMacarioShipReadyAnswer3,DialogOptionSelected,$option == dpl_jasp_macarioShipReady3,"dpl_jasp_CMD diktatLearnAnthem
-AddTextSmall ""Agent recovered"" highlight","Он улыбается: ""Что ж капитан загляните на парковку шаттлов должен быть человек который вас ждет. Не заставляйте его ждать долго."" На площадке посадки шаттлов вашего флагмана вы замечаете спаскапсулу. Из нее выходит человек. Вы проверяете его ID и это действительно агент.
+AddTextSmall ""Агент возвращен"" highlight","Он улыбается: ""Что ж капитан загляните на парковку шаттлов должен быть человек который вас ждет. Не заставляйте его ждать долго."" На площадке посадки шаттлов вашего флагмана вы замечаете спаскапсулу. Из нее выходит человек. Вы проверяете его ID и это действительно агент.
 
 Макарио задумчиво проводит рукой по подбородку явно заинтригованный вами: ""У вас действительно впечатляющая сеть контактов капитан. Вам не кажется что все складывается слишком удачно? Дам совет: игрок который постоянно делает крупные ходы либо слишком наивен либо слишком хорошо скрывает свои карты. Думаю вы поняли о чем я и не будем тратить время. Теперь можете идти.""",dpl_jasp_leave:Уйти,
 dpl_jasp_completeOpen,PopulateOptions,"$id == eliza_lovelace
@@ -2536,7 +2536,7 @@ dpl_swtsElizaAnswer4,DialogOptionSelected,$option == dpl_swts_askEliza4,ShowPers
 dpl_swtsElizaAnswer5,DialogOptionSelected,$option == dpl_swts_askEliza5,ShowPersonVisual,"Элиза смеется: ""Хорошая шутка капитан $playerName. А теперь кого именно в Персеанской Лиге вы считаете достаточно надежным для сотрудничества?""","dpl_swts_askEliza6:Хорус Ярибай. У него выдающиеся дипломатические навыки и острый ум.
 dpl_swts_askEliza7:А как насчет меня?",
 dpl_swtsElizaAnswer6,DialogOptionSelected,$option == dpl_swts_askEliza6,"ShowPersonVisual
-AddTextSmall ""Electronic Documents Received"" highlight","Элиза на мгновение задумывается смотрит в потолок и будто перебирает старые воспоминания. Она вздыхает. ""Семья Ярибай. Я их помню. Они действительно блестящие дипломаты. Мне нравится их дух и открытое мышление. Я искренне уважаю их и немного жалею что наш долг и наши доктрины помешали нам объединиться с ними и Лигой. Я рада что вы подтвердили мои мысли. Я подготовлю документ с моим разрешением на использование чертежа Choir. Передайте его Лиге и постарайтесь заключить хорошую сделку.""","dpl_swts_leave:Отлично. Тогда я пойду.
+AddTextSmall ""Электронные документы получены"" highlight","Элиза на мгновение задумывается смотрит в потолок и будто перебирает старые воспоминания. Она вздыхает. ""Семья Ярибай. Я их помню. Они действительно блестящие дипломаты. Мне нравится их дух и открытое мышление. Я искренне уважаю их и немного жалею что наш долг и наши доктрины помешали нам объединиться с ними и Лигой. Я рада что вы подтвердили мои мысли. Я подготовлю документ с моим разрешением на использование чертежа Choir. Передайте его Лиге и постарайтесь заключить хорошую сделку.""","dpl_swts_leave:Отлично. Тогда я пойду.
 dpl_swts_askEliza8:И еще Элиза. Ярибай сказал что он и его старшие искренне тебя уважают.",
 dpl_swtsElizaAnswer7,DialogOptionSelected,$option == dpl_swts_askEliza7,ShowPersonVisual,"Элиза смеется: ""Мне нравится ваш юмор капитан $playerName. Но пожалуйста я спрашиваю ваше мнение а не шутку. Вы пока даже не Генс Персеанской Лиги а мне нужен человек способный вести этот бизнес с истребителями.""",dpl_swts_askEliza6:Хорус Ярибай. У него выдающиеся дипломатические навыки и острый ум.,
 dpl_swtsElizaAnswer8,DialogOptionSelected,$option == dpl_swts_askEliza8,"ShowPersonVisual
@@ -2548,7 +2548,7 @@ dpl_swtsYaribayAnswerFighter,DialogOptionSelected,$option == dpl_swts_askFighter
 $global.dpl_swtsAskedFighter = true
 Highlight ""a week""
 $global.dpl_swts_preparingAgent = true 7
-AddTextSmall ""Electronic Documents Transferred"" highlight
+AddTextSmall ""Электронные документы переданы"" highlight
 dpl_swts_CMD leagueLearnChoir","Он бросает взгляд на документы и его брови постепенно поднимаются от удивления: ""Противокапитальный истребитель который можно массово производить на наших мощностях в Казероне и который использует DEM-ракеты к которым мы привыкли? Другие Генсы точно заинтересуются этим проектом.""
 
 Потом он выглядит еще более удивленным: ""И Фазовая Лаборатория даже официально расширяет авторизацию на распространение этого чертежа... Это вообще реально? Очень хорошо. Этого более чем достаточно чтобы договориться об освобождении вашего агента."" Он усмехается: ""Возможно я даже получу пару услуг в ответ... Отлично. Вы действительно оказали мне большую помощь. Через неделю агент будет у вас.""","dpl_swts_askFighter2:И еще. Вице-адмирал Лавлейс просила передать что она искренне уважает семью Ярибай.
@@ -2561,7 +2561,7 @@ dpl_swts_AgentReady,PopulateOptions,"$id == horus_yaribay score: 1000
 $global.dpl_swtsAskedFighter",,,dpl_swts_askAgentReady:Спросить Ярибая об агенте,
 dpl_swts_AgentReady2,DialogOptionSelected,$option == dpl_swts_askAgentReady,"ShowPersonVisual
 $global.dpl_swts_RecoveredAgent= true
-AddTextSmall ""Agent Recovered"" highlight
+AddTextSmall ""Агент возвращен"" highlight
 unset $global.dpl_swts_preparingAgent
 AddCommodity credits 50000","Он улыбается: ""Да я нашел агента. Мне потребовалось немало усилий чтобы убедить других Генсов что этот агент не шпион Гегемонии. Его код IFF батлгруппы XIV создал много проблем.""
 
@@ -2589,7 +2589,7 @@ dpl_lmtdOfferTextContact,DialogOptionSelected,$option == dpl_lmtd_start,"$missio
 Highlight ""Kanta's Den"" $dpl_lmtd_systemName $dpl_lmtd_dist $dpl_lmtd_reward","""Как вы знаете десять лет назад я отправила нескольких агентов на разные планеты миров ядра. В этот раз мы идем к пиратам. И в этот раз мы точно знаем где они. Хотя это не выглядит как удачная находка - скорее они намеренно позволили нам узнать их местоположение. Это может быть ловушка но риск меня не останавливает. Наш агент находится в Kantas Den, станции в системе $dpl_lmtd_systemName на расстоянии $dpl_lmtd_dist световых лет отсюда. Соответственно я назначила выплату в $dpl_lmtd_reward кредитов. Подробности я сообщу если вы примете задание. Но вы должны понимать что все что вы увидите должно остаться в тайне.""","dpl_lmtd_begin:Принять
 contact_decline:Отклонить",
 dpl_lmtdAcceptContact,DialogOptionSelected,$option == dpl_lmtd_begin,"$global.dpl_lmtdStarted = true
-AddTextSmall ""Extremely classified pod installed"" highlight","Элиза смотрит вам прямо в глаза. Чувствуется напряжение. ""Слушайте $playerName. Я установлю на ваш корабль капсулу высшей секретности. Это критично для миссии. Никто не должен знать где именно она установлена включая вас. Вы не должны никому говорить о существовании этой капсулы и обязаны не допускать осмотра корабля инженерами техниками или кем-либо еще и не позволять никому уходить в боковые секции чтобы ее не нашли. Ни при каких обстоятельствах вы не должны допустить уничтожения капсулы.""
+AddTextSmall ""Сверхсекретная капсула установлена"" highlight","Элиза смотрит вам прямо в глаза. Чувствуется напряжение. ""Слушайте $playerName. Я установлю на ваш корабль капсулу высшей секретности. Это критично для миссии. Никто не должен знать где именно она установлена включая вас. Вы не должны никому говорить о существовании этой капсулы и обязаны не допускать осмотра корабля инженерами техниками или кем-либо еще и не позволять никому уходить в боковые секции чтобы ее не нашли. Ни при каких обстоятельствах вы не должны допустить уничтожения капсулы.""
 
 Затем она подходит к вешалке в кабинете и надевает адмиральскую форму в которой вы не привыкли ее видеть: ""И я поднимусь на ваш корабль и буду находиться только с вами в командном отсеке. Никто не должен знать что я на борту. Как я уже говорила этот агент владеет жизненно важной информацией: офицер логистики Флота Доминиона все еще жива.""
 
@@ -2645,7 +2645,7 @@ dpl_lmtdkdKantaFirstIntro6,DialogOptionSelected,$option == dpl_lmtd_meetKanta7,,
 
 ""Понимаю."" Элиза вздыхает на мгновение задумывается и принимает стойку адмирала: ""Триста тысяч кредитов.""",dpl_lmtd_meetKanta8:Продолжить,
 dpl_lmtdkdKantaFirstIntro7,DialogOptionSelected,$option == dpl_lmtd_meetKanta8,"$global.dpl_lmtdRecoveredAgent = true
-AddTextSmall ""Agent Recovered"" highlight","""Принято."" Канта издает зловещий синтетический смех будто все пошло именно по ее плану. ""Считай миссию успешной. Но Доминиона БОЛЬШЕ НЕТ. И на прощание дам совет. Пора тебе брать все в свои руки.""
+AddTextSmall ""Агент возвращен"" highlight","""Принято."" Канта издает зловещий синтетический смех будто все пошло именно по ее плану. ""Считай миссию успешной. Но Доминиона БОЛЬШЕ НЕТ. И на прощание дам совет. Пора тебе брать все в свои руки.""
 
 Элиза вздыхает переводит кредиты и уже собирается уходить: ""И я надеюсь вы будете жить хорошо Военачальник Канта."" Она поворачивается спиной не глядя в сторону Канты и вы вдвоем покидаете ее покои. Вскоре к вам присоединяется агент Элизы.
 
@@ -2660,7 +2660,7 @@ dpl_ElizalmtdBack,PickGreeting,"$id == eliza_lovelace
 $global.dpl_lmtdStarted
 $global.dpl_lmtdRecoveredAgent
 !$global.dpl_lmtd_completed","ShowPersonVisual
-AddTextSmall ""Extremely classified pod uninstalled"" highlight","На ваш запрос связи отвечает старший офицер Фазовой Лаборатории: ""Добро пожаловать! Вам разрешено использовать специальную зону стыковки. Пожалуйста уведите флот с текущего дока и стыкуйтесь в зоне 1."" Вы выполняете.
+AddTextSmall ""Сверхсекретная капсула демонтирована"" highlight","На ваш запрос связи отвечает старший офицер Фазовой Лаборатории: ""Добро пожаловать! Вам разрешено использовать специальную зону стыковки. Пожалуйста уведите флот с текущего дока и стыкуйтесь в зоне 1."" Вы выполняете.
 
 Элиза извиняется и говорит что ей нужно сначала вернуться в кабинет а вы можете подойти туда позже. Она незаметно покидает ваш корабль вместе с агентом.
 
@@ -2773,7 +2773,7 @@ $global.dpl_ptrsAsked
 !$global.dpl_ptrsAskedEliza",SetOptionColor dpl_ptrs_askEliza buttonShortcut,,dpl_ptrs_askEliza:Спросить Элизу о позиции Фазовой Лаборатории по войне,
 dpl_ptrsElizaAnswer1,DialogOptionSelected,$option == dpl_ptrs_askEliza,"ShowPersonVisual
 $global.dpl_ptrsAskedEliza = true
-AddTextSmall ""Signed Document Received"" highlight","Вы объясняете Элизе что узнали и кратко описываете характер Арройо. Она улыбается услышав такой поворот: ""Понимаю. Я рада что значительная часть Tri-Tachyon все же мыслит разумно и хочет мира. Да у нас есть доказательства что за дрон-кораблями стояла Tri-Tachyon но сохранять взаимную вражду десять лет - это слишком. Совет комитета и я считаем что пора ставить точку в этом вопросе но мы не понимаем как именно это сделать.
+AddTextSmall ""Подписанный документ получен"" highlight","Вы объясняете Элизе что узнали и кратко описываете характер Арройо. Она улыбается услышав такой поворот: ""Понимаю. Я рада что значительная часть Tri-Tachyon все же мыслит разумно и хочет мира. Да у нас есть доказательства что за дрон-кораблями стояла Tri-Tachyon но сохранять взаимную вражду десять лет - это слишком. Совет комитета и я считаем что пора ставить точку в этом вопросе но мы не понимаем как именно это сделать.
 
 Мы пытались отправлять дипломатов в их системы но все наши дипломатические корабли были уничтожены их корпоративными флотилиями а все их директора отрицали что посылали такие флотилии. Поэтому мы прекратили отправку новых судов чтобы не ухудшать ситуацию.
 
@@ -2784,7 +2784,7 @@ $global.dpl_ptrsAskedEliza",,,dpl_ptrs_askArroyo:Передать докумен
 dpl_ptrsArroyoAnswerPeace,DialogOptionSelected,$option == dpl_ptrs_askArroyo,"ShowPersonVisual
 $global.dpl_ptrsAskedArroyo = true
 Highlight ""Port Tse Franchise""
-AddTextSmall ""Signed Document Transferred"" highlight","Арройо выглядит непривычно довольным: ""Хм... Вице-адмирал ""Элиза Лавлейс""... так ее зовут? Может за эти годы меня и перекормили дерьмом но я рад узнать что она не жадная истеричная особа какой ее рисуют наши ястребы.""
+AddTextSmall ""Подписанный документ передан"" highlight","Арройо выглядит непривычно довольным: ""Хм... Вице-адмирал ""Элиза Лавлейс""... так ее зовут? Может за эти годы меня и перекормили дерьмом но я рад узнать что она не жадная истеричная особа какой ее рисуют наши ястребы.""
 
 Губы Арройо складываются в улыбку а веки расслабленно прикрываются будто он наконец получил шанс выдохнуть. ""Этого более чем достаточно чтобы убедить других исполнительных директоров организовать еще одну встречу. Я проведу встречу в Port Tse Franchise как можно скорее.""
 
@@ -2794,18 +2794,18 @@ $global.dpl_ptrsAskedArroyo
 !$global.dpl_ptrsDiplomatsArranged",SetOptionColor dpl_ptrs_askElizaDiplomats buttonShortcut,,dpl_ptrs_askElizaDiplomats:Спросить Элизу о дипломатической команде,
 dpl_ptrsElizaAnswerDiplomats1,DialogOptionSelected,$option == dpl_ptrs_askElizaDiplomats,"ShowPersonVisual
 $global.dpl_ptrsDiplomatsArranged = true
-AddTextSmall ""Picked up the diplomatic team"" highlight","Элиза улыбается: ""Все готово. Они ждут вас на посадочной площадке. Я хочу чтобы вы перевезли их лично на всякий случай. Думаю ваш флот - самое безопасное место в Секторе для них. Если только у вас совсем нет гражданских кораблей... В любом случае пожалуйста заберите их и верните живыми. Если мы потеряем этих дипломатов это будет катастрофа: они последние кто еще готов дать Tri-Tachyon шанс. Если они погибнут больше никто не захочет с ними говорить и этот бред никогда не закончится. Ну что капитан? Судьба двух целых фракций у вас на плечах. Без давления!""",dpl_ptrs_leave:Я очень рад(а) что ты настолько в меня веришь...,
+AddTextSmall ""Дипломатическая группа взята на борт"" highlight","Элиза улыбается: ""Все готово. Они ждут вас на посадочной площадке. Я хочу чтобы вы перевезли их лично на всякий случай. Думаю ваш флот - самое безопасное место в Секторе для них. Если только у вас совсем нет гражданских кораблей... В любом случае пожалуйста заберите их и верните живыми. Если мы потеряем этих дипломатов это будет катастрофа: они последние кто еще готов дать Tri-Tachyon шанс. Если они погибнут больше никто не захочет с ними говорить и этот бред никогда не закончится. Ну что капитан? Судьба двух целых фракций у вас на плечах. Без давления!""",dpl_ptrs_leave:Я очень рад(а) что ты настолько в меня веришь...,
 dpl_ptrsPortTseIntro,OpenInteractionDialog,"$id == port_tse
 $global.dpl_ptrsDiplomatsArranged
 !$global.dpl_ptrsRecoveredAgent","ShowDefaultVisual
-AddTextSmall ""The diplomatic team left"" highlight",Ваш $shipOrFleet садится в парковочной зоне Port Tse Franchise. Дипломатическая команда сходит с корабля и проходит в переговорную комнату.,dpl_ptrs_continueDiplomats:Продолжить,
+AddTextSmall ""Дипломатическая группа покинула корабль"" highlight",Ваш $shipOrFleet садится в парковочной зоне Port Tse Franchise. Дипломатическая команда сходит с корабля и проходит в переговорную комнату.,dpl_ptrs_continueDiplomats:Продолжить,
 dpl_ptrsPortTseIntro1,DialogOptionSelected,$option == dpl_ptrs_continueDiplomats,"ShowPersonVisual true arroyo
 AdjustRepPerson arroyo COOPERATIVE 5
 $global.dpl_canMakePeaceTT = true","Проходит много часов. Вы держите все под контролем но враждебных сил которые могли бы сорвать встречу не появляется. Когда ожидание кажется вечностью Арройо встречает вас довольной физиономией: ""Что тут сказать? Все прошло гладко. Гладко как элитное масло с Гилеада. Скоро все перейдут на нашу сторону и естественно именно я возглавлю переговоры.""",dpl_ptrs_continueDiplomats2:А что с тем мудаком?,
 dpl_ptrsPortTseIntro2,DialogOptionSelected,$option == dpl_ptrs_continueDiplomats2,"ShowPersonVisual true arroyo
 $global.dpl_ptrsRecoveredAgent = true
 dpl_ptrs_CMD makePeaceTT
-AddTextSmall ""Picked up the diplomatic team and the agent"" highlight","Арройо дьявольски улыбается: ""Ха. Это как раз лучшее: похоже ваше присутствие заставило их запаниковать и ошибиться. Из-за их ошибки с мобилизацией огромного печально известного флота в вашу сторону их личности вскрылись и в итоге их уволили.""
+AddTextSmall ""Дипломатическая группа взята на борт and the agent"" highlight","Арройо дьявольски улыбается: ""Ха. Это как раз лучшее: похоже ваше присутствие заставило их запаниковать и ошибиться. Из-за их ошибки с мобилизацией огромного печально известного флота в вашу сторону их личности вскрылись и в итоге их уволили.""
 
 Затем щелчком пальцев он открывает дверь и несколько его людей ведут к вашему флоту мужчину. ""Бонусом я взял на себя смелость освободить вашего агента. Убедить компанию было непросто так что считайте этот вопрос закрытым - никто никому не должен. Ну и хотя было бы принято пригласить вас на празднование окончания войны уверен у вас найдутся дела поважнее.""
 
@@ -2907,7 +2907,7 @@ dpl_mtshipOfferTextContactAsk2,DialogOptionSelected,$option == dpl_mtship_ask2,S
 dpl_mtshipOfferTextContact2,DialogOptionSelected,$option == dpl_mtship_start2,"ShowPersonVisual
 $missionId = dpl_mtship","Элиза делает глоток чая: ""Да капитан $playerName. Вы хотите принять это задание? У него нет срока, а все награды будут рассчитаны и выданы после завершения проекта.""","dpl_mtship_begin:Принять
 contact_decline:Отклонить",
-dpl_mtshipAcceptContact,DialogOptionSelected,$option == dpl_mtship_begin,"AddTextSmall ""Classified Scan Device Installed"" highlight
+dpl_mtshipAcceptContact,DialogOptionSelected,$option == dpl_mtship_begin,"AddTextSmall ""Секретное сканирующее устройство установлено"" highlight
 $global.dpl_mtshipStarted = true","""Удачи в поиске хотя бы одного abyssal light! Я до сих пор помню старые добрые дни в бездне когда пела вместе с этими милыми существами."" Элиза улыбается: ""Но не подходите слишком близко. Иногда за ними может прятаться дракон.""",contact_accept:Уйти,
 dpl_AbyssalLightStudy,AbyssalLightOptions,"!$global.dpl_mtship_scanned
 $global.dpl_mtshipStarted",,,dpl_mtship_scan:Запустить код анализа Элизы.,
@@ -2932,7 +2932,7 @@ $global.dpl_mtshipStarted",ShowImageVisual abyssal_light2,"Холодный св
 Вы сознательно отрываете взгляд от этого лишенного утешения света - ослабленного но все еще зовущего даже через скудный канал основного дисплея.
 
 Он пришел к вам.",abyssalLight_dwellerCont:Продолжить,
-dpl_AbyssalLightStudy2,DialogOptionSelected,$option == dpl_mtship_scan,"AddTextSmall ""Scan Finished"" highlight
+dpl_AbyssalLightStudy2,DialogOptionSelected,$option == dpl_mtship_scan,"AddTextSmall ""Сканирование завершено"" highlight
 $global.dpl_mtship_scanned = true
 FireAll AbyssalLightOptions","Вы запустили код Элизы для сканирования abyssal light. Несколько малых спутников отделились и начали облет объекта. Странно но они вообще не излучали ЭМ-волны и abyssal light не был потревожен после их возвращения. Ваш техофицер попытался разобрать данные сканирования и похоже эти спутники записывали гравитационный тензорный поля рядом с abyssal light, а также массу другой сильно скомпилированной информации. Даже техофицер не смог понять эти данные.",,
 dpl_mtship_askElizaShip,PopulateOptions,"$id == eliza_lovelace score: 1000
@@ -2941,7 +2941,7 @@ $global.dpl_mtship_scanned",SetOptionColor dpl_mtship_askElizaShip buttonShortcu
 dpl_mtship_askElizaShip2,DialogOptionSelected,$option == dpl_mtship_askElizaShip,"Highlight ""phase cruiser"" ""one week""
 $global.dpl_mtship_preparingShip = true 7
 $global.dpl_mtshipAskedElizaShip = true
-AddTextSmall ""Classified Scan Device Uninstalled"" highlight","Элиза забрала данные и сняла засекреченное устройство. Она приглашает вас вместе пройти в ее кабинет. Открыв данные в специальном исследовательском ПО Фазовой Лаборатории и изучив их три минуты она улыбается: ""Капитан $playerName ваши данные стали для нас прорывом. Они подтверждают одну из наших гипотез и теперь мы понимаем куда двигаться дальше. Нам нужны phase lightnings чтобы открыть более крупный и стабильный разлом. Тогда крупномасштабные мот-подобные аномалии смогут выходить через него. Мы внесем эту модификацию в текущий прототип фазового крейсера и закончим через неделю.""",dpl_mtship_leave:Понял. Увидимся через неделю.,
+AddTextSmall ""Секретное сканирующее устройство демонтировано"" highlight","Элиза забрала данные и сняла засекреченное устройство. Она приглашает вас вместе пройти в ее кабинет. Открыв данные в специальном исследовательском ПО Фазовой Лаборатории и изучив их три минуты она улыбается: ""Капитан $playerName ваши данные стали для нас прорывом. Они подтверждают одну из наших гипотез и теперь мы понимаем куда двигаться дальше. Нам нужны phase lightnings чтобы открыть более крупный и стабильный разлом. Тогда крупномасштабные мот-подобные аномалии смогут выходить через него. Мы внесем эту модификацию в текущий прототип фазового крейсера и закончим через неделю.""",dpl_mtship_leave:Понял. Увидимся через неделю.,
 dpl_mtship_completeOpen,PopulateOptions,"$id == eliza_lovelace
 $global.dpl_mtshipAskedElizaShip
 !$global.dpl_mtship_preparingShip
@@ -3239,7 +3239,7 @@ dpl_justiceDerelictOpenForge,DialogOptionSelected,$option == dpl_justice_forge,A
 dpl_justiceDerelictOpenCredits,DialogOptionSelected,$option == dpl_justice_credits,AddCommodity credits 250000,"Он бросает вам небольшую коробку: ""Хех, марионетка Элизы. Так она тобой управляет? Невидимыми нитями под названием кредиты. Забирай и уходи, ты недостоин говорить с верховным завоевателем."" Он закрывает дверь спаскапсулы.
 
 В коробке команда находит электронные токены на сумму 250000 кредитов.",dpl_justice_board2A:Продолжить.,
-dpl_justiceDerelictArrest,DialogOptionSelected,$option == dpl_justice_arrest,"AddTextSmall ""Arrested Nelson Bonaparte."" highlight
+dpl_justiceDerelictArrest,DialogOptionSelected,$option == dpl_justice_arrest,"AddTextSmall ""Nelson Bonaparte арестован."" highlight
 $global.dpl_justice_arrested = true
 Call $global.dpl_justice_ref updateStage",В капсуле видно как он яростно орет. Вы игнорируете этот отвратительный шум и приказываете команде перевезти капсулу на флагман.,dpl_justice_notice:Жить ты можешь. Но сбежать - нет.,
 dpl_justiceDerelictNotice,DialogOptionSelected,$option == dpl_justice_notice,"Highlight ""Unique Ship""","Внимание: это уникальный корабль. Если вы летаете на нем, в секторе все будут знать что это вы даже при выключенном транспондере.",dpl_justice_finish:Понял.,
@@ -3296,7 +3296,7 @@ Highlight $dpl_pilgrimage_reward","""После обороны Research Site V �
 contact_decline:Отклонить",
 dpl_pilgrimageOfferTextContact1,DialogOptionSelected,$option == dpl_pilgrimage_begin,"Highlight $dpl_pilgrimage_system2Name $dpl_pilgrimage_dist 
 $global.dpl_pilgrimageStarted = true
-AddTextSmall ""Extremely classified pod installed"" highlight","Элиза закрывает глаза и выглядит спокойной: ""Спасибо капитан $playerName, для меня это действительно важно. И раз вы приняли запрос, я должна установить на ваш корабль капсулу с высшим уровнем секретности - это критично. Простите но по регламентам Фазовой Лаборатории по засекреченным материалам никто не имеет права знать где именно установлена капсула, включая вас. И вы будете единственным кто знает что капсула вообще есть на вашем флагмане. Пожалуйста защищайте ее любой ценой.""
+AddTextSmall ""Сверхсекретная капсула установлена"" highlight","Элиза закрывает глаза и выглядит спокойной: ""Спасибо капитан $playerName, для меня это действительно важно. И раз вы приняли запрос, я должна установить на ваш корабль капсулу с высшим уровнем секретности - это критично. Простите но по регламентам Фазовой Лаборатории по засекреченным материалам никто не имеет права знать где именно установлена капсула, включая вас. И вы будете единственным кто знает что капсула вообще есть на вашем флагмане. Пожалуйста защищайте ее любой ценой.""
 
 Она продолжает: ""И я поднимусь на ваш корабль, буду находиться только с вами в командном отсеке. Никто не должен знать что я на борту. Я хочу посетить $dpl_pilgrimage_system2Name в $dpl_pilgrimage_dist световых годах отсюда. Точные координаты я предоставлю. Это черная дыра между бездной Orion-Perseus и Персеанским сектором. Думаю все обломки той великой битвы могли собраться вокруг этой черной дыры.""
 
@@ -3479,7 +3479,7 @@ Output: Elly Lovelace понравилось Self. Elly Lovelace теперь Se
 Memory Updated.
 Waiting for Response.""",dpl_pilgrimage_ask23:Отлично!,
 dpl_ElizapilgrimageBack24,DialogOptionSelected,$option == dpl_pilgrimage_ask23,"HideSecondPerson
-AddTextSmall ""Extremely classified pod uninstalled"" highlight","Элиза улыбается: ""Спасибо капитан $playerName. Теперь действительно все завершено. Я прикажу демонтировать эту капсулу, а затем вернусь в кабинет вместе с Элли. Я даже не знаю какими словами выразить благодарность.""",dpl_pilgrimage_ask24:И последнее Элиза.,
+AddTextSmall ""Сверхсекретная капсула демонтирована"" highlight","Элиза улыбается: ""Спасибо капитан $playerName. Теперь действительно все завершено. Я прикажу демонтировать эту капсулу, а затем вернусь в кабинет вместе с Элли. Я даже не знаю какими словами выразить благодарность.""",dpl_pilgrimage_ask24:И последнее Элиза.,
 dpl_ElizapilgrimageBack25,DialogOptionSelected,$option == dpl_pilgrimage_ask24,FireAll dpl_pilgrimageShipOption,"Элиза смотрит вам в глаза: ""Да капитан $playerName?""",dpl_pilgrimage_ask25:Пожалуйста. Береги себя и отдохни.,
 dpl_pilgrimageGiveShip,dpl_pilgrimageShipOption,"$id == eliza_lovelace score: 1000
 dpl_pilgrimage_CMD findVibraphone
@@ -3553,7 +3553,7 @@ $global.dpl_home_Started
 !$global.dpl_home_picked",SetOptionColor dpl_home_deliver buttonShortcut,,dpl_home_deliver:Я хотел бы узнать насчет мебели мисс Лавлейс.,
 dpl_homeEncounter1,DialogOptionSelected,$option == dpl_home_deliver,$global.dpl_home_picked = true,"Портмастер на мгновение задумывается, а затем $heOrShe улыбается: ""А, вы, должно быть, о сестре Лавлейс. Мы хотели доставить это ей, но нам пришлось бы ждать месяцами, пока утихнут пиратские рейды. Если вы пришли забрать груз, вам придется взять довольно много вещей.""",dpl_home_deliver1:Подождите. Сестре?,
 dpl_homeEncounter2,DialogOptionSelected,$option == dpl_home_deliver1,,"Портмастер смеется: ""Да! Ее добрые дела хорошо известны церкви. Она делает пожертвования, организует флоты с продовольствием для голодающих и помогает рыцарям Лудда очищать внешние миры от Молоха. В церкви о ней знают и уважают ее.""",dpl_home_deliver2:Но разве вы не против продвинутых исследований Phase Lab?,
-dpl_homeEncounter3,DialogOptionSelected,$option == dpl_home_deliver2,"AddTextSmall ""Gained a lot of furnitures."" highlight","Портмастер вздыхает: ""Ну, она изо всех сил старается следовать Лудду и защищать своих людей от искушений Молоха. Полагаю, как лидер мощной фракции она вынуждена идти на некоторые жертвы. Кстати, ваша мебель уже готова к отправке. Пожалуйста, обращайтесь с ней аккуратно: она вся ручной работы и местами хрупкая.""",cutCommLink:Спасибо. Тогда я отправляюсь.,
+dpl_homeEncounter3,DialogOptionSelected,$option == dpl_home_deliver2,"AddTextSmall ""Получено много мебели."" highlight","Портмастер вздыхает: ""Ну, она изо всех сил старается следовать Лудду и защищать своих людей от искушений Молоха. Полагаю, как лидер мощной фракции она вынуждена идти на некоторые жертвы. Кстати, ваша мебель уже готова к отправке. Пожалуйста, обращайтесь с ней аккуратно: она вся ручной работы и местами хрупкая.""",cutCommLink:Спасибо. Тогда я отправляюсь.,
 dpl_ElizahomeLeave,PickGreeting,"$id == eliza_lovelace
 $global.dpl_home_Started
 !$global.dpl_home_completed
@@ -3818,7 +3818,7 @@ $global.dpl_ascensionStarted",,,dpl_ascension_question5:Я удовлетвор�
 dpl_ascensionOption51,DialogOptionSelected,$option == dpl_ascension_question5,$global.dpl_ascensionOption5 = true,"""query... INTERRUPT Отлично. Пожалуйста помни: Omega должна увидеть артефакты.""",dpl_ascension_omega9:Посмотрим.,
 dpl_ascensionOmegaDerelictOpen10,DialogOptionSelected,$option == dpl_ascension_omega9,,"Электронный голос замолкает, и вы начинаете думать, где может быть особое оружие. У Фарадея нет воспоминаний об этом, он в итоге предал Helheim Supremacy, и все на этом судне в целом должны понимать, что ""song of light"" - оружие мощное и важное. Чтобы вывезти такое крупное вооружение из обломка, нужен шаттл. Вы уже бывали на этом прототипе и помните, что он несет только один шаттл, который хранится рядом с командным центром.",dpl_ascension_omega10:Начать поиск в шаттле Фарадея.,
 dpl_ascensionOmegaDerelictOpen11,DialogOptionSelected,$option == dpl_ascension_omega10,,"Вы берете удостоверение Фарадея и открываете дверь выхода. В его шаттле вы находите двух высокопоставленных офицеров Helheim Supremacy, пытающихся запустить шаттл, и большой свинцовый ящик в грузовом отсеке.",dpl_ascension_omega11:Застрелить их из гаусс-пистолета.,
-dpl_ascensionOmegaDerelictOpen12,DialogOptionSelected,$option == dpl_ascension_omega11,"AddTextSmall ""Gained the lead crate."" highlight","Вы стреляете в двух офицеров Helheim Supremacy, и ваш офицер по спасработам сообщает, что по базовому сканированию этот свинцовый ящик с высокой вероятностью содержит оружие 'song_of_light'. Вы начинаете переносить ящик к своему шаттлу.
+dpl_ascensionOmegaDerelictOpen12,DialogOptionSelected,$option == dpl_ascension_omega11,"AddTextSmall ""Получен свинцовый ящик."" highlight","Вы стреляете в двух офицеров Helheim Supremacy, и ваш офицер по спасработам сообщает, что по базовому сканированию этот свинцовый ящик с высокой вероятностью содержит оружие 'song_of_light'. Вы начинаете переносить ящик к своему шаттлу.
 
 Проходя мимо командного отсека, ИИ Omega говорит: ""artworks, submit! INTERRUPT Отлично. Ты нашел их! Теперь пусть Omega увидит их.""",dpl_ascension_omega12:Я ведь не принимал твое предложение.,
 dpl_ascensionOmegaDerelictOpen13,DialogOptionSelected,$option == dpl_ascension_omega12,,"""artworks, submit! INTERRUPT Эй, $playerName, так нельзя, ты нарушил сделку!""",dpl_ascension_omega13:Ты сам говорил про инструменты Фарадей. Я просто возвращаю оружие Элизе.,
@@ -3839,7 +3839,7 @@ unset $global.dpl_ascensionOption4
 unset $global.dpl_ascensionOption5
 unset $global.dpl_ascensionDecoded
 unset $global.dpl_ascensionAsked","""Спасибо, капитан $playerName."" Элиза выглядит счастливее обычного: ""Ранее мы подтвердили, что Olympias был мобильной станцией, и он уничтожен. Примите мою глубочайшую благодарность, капитан $playerName. Без ваших усилий этого бы не случилось.""",dpl_ascension_complete1:И я вернул оружие 'song of light'.,
-dpl_ascension_complete1,DialogOptionSelected,$option == dpl_ascension_complete1,"AddTextSmall ""Lost the lead crate."" highlight
+dpl_ascension_complete1,DialogOptionSelected,$option == dpl_ascension_complete1,"AddTextSmall ""Потерян свинцовый ящик."" highlight
 AdjustRepPerson eliza_lovelace COOPERATIVE 5","Ваш офицер по спасработам открывает свинцовый ящик и передает оружие 'song of light' в офис Элизы. Элиза удивленно улыбается: ""Капитан $playerName, вы просто невероятны! Спасибо! Теперь мы наконец вернули все секретное оружие с украденных прототипов.""",dpl_ascension_complete1A:И я хочу отметить что друг из Galatia Academy критически помог взломать координаты.,
 dpl_ascension_complete1A,DialogOptionSelected,$option == dpl_ascension_complete1A,,"Глаза Элизы сияют: ""Galatia Academy... Я помню, что вы оттуда выпустились. И знаю вашу легенду. Они помогли вам вновь открыть врата. Поистине выдающаяся академия.""
 
@@ -3904,17 +3904,17 @@ dpl_OlympiasRepairUnlock,dpl_OlympiasOptions,!$dpl_OlympiasRepairUnlocked,"SetSt
 dpl_OlympiasRepairUnlock1,DialogOptionSelected,$option == dpl_unlock_repair,$dpl_OlympiasRepairUnlocked = true,После тяжелой попытки разобраться в устройстве этой модифицированной автоматической станции и среди переплетений проводки ваши техкоманды смогли активировать местные ремонтные мощности. Теперь вы можете выполнять базовый ремонт флота на этой станции за счет собственных припасов.,defaultLeave:Уйти,
 dpl_OlympiasAddOptionRepair1,dpl_OlympiasOptions,"$dpl_OlympiasRepairUnlocked
 RepairNeeded
-RepairEnoughSupplies","SetTooltip marketRepair ""Full repairs require $global.repairSupplyCost supplies. $player.supplies supplies are available.""
+RepairEnoughSupplies","SetTooltip marketRepair ""Полный ремонт требует $global.repairSupplyCost припасов. Доступно $player.supplies припасов.""
 SetTooltipHighlightColors marketRepair buttonShortcut buttonShortcut
 SetTooltipHighlights marketRepair $global.repairSupplyCost $player.supplies
 SetShortcut marketRepair ""A"" true",,15:marketRepair:Ремонтировать корабли в доках,
 dpl_OlympiasAddOptionRepair2,dpl_OlympiasOptions,"$dpl_OlympiasRepairUnlocked
-!RepairNeeded","SetTooltip marketRepair ""Your $shipOrFleet does not require any repairs.""
+!RepairNeeded","SetTooltip marketRepair ""Ваш $shipOrFleet не требует ремонта.""
 SetShortcut marketRepair ""A"" true
 SetEnabled marketRepair false",,15:marketRepair:Ремонтировать корабли в доках,
 dpl_OlympiasAddOptionRepair3,dpl_OlympiasOptions,"$dpl_OlympiasRepairUnlocked
 RepairNeeded
-!RepairEnoughSupplies","SetTooltip marketRepair ""Full repairs require $repairSupplyCost supplies. Only $supplies supplies are available.""
+!RepairEnoughSupplies","SetTooltip marketRepair ""Полный ремонт требует $repairSupplyCost припасов. Доступно только $supplies припасов.""
 SetTooltipHighlightColors marketRepair buttonShortcut buttonShortcut
 SetTooltipHighlights marketRepair $global.repairSupplyCost $player.supplies
 SetShortcut marketRepair ""A"" true
@@ -4313,7 +4313,7 @@ AdjustRepPerson sebestyen FRIENDLY 1","Себештен широко улыба�
 
 Себештен тихо выходит и закрывает дверь, а Элиза начинает представлять свои разработки.",dpl_gaMeetingRCTap2:Продолжить.,
 dpl_gaMeetingRCTap3,DialogOptionSelected,$option == dpl_gaMeetingRCTap2,,"""Хорошо. Тогда ваш следующий шаг,"" говорит Бэрд. ""Возвращайтесь к корональному ответвителю, установите тот сенсор и потом возвращайтесь. Этот сенсор выполнит все нужные нам измерения, и он действительно критически важен.""",dpl_gaMeetingRCTap3:Понял.,
-dpl_gaMeetingRCTap4,DialogOptionSelected,$option == dpl_gaMeetingRCTap3,"AddTextSmall ""Gained the Special Sensor."" highlight
+dpl_gaMeetingRCTap4,DialogOptionSelected,$option == dpl_gaMeetingRCTap3,"AddTextSmall ""Получен специальный сенсор."" highlight
 HideSecondPerson","""Звучит отлично!"" говорит Элиза. ""И прошу позволить мне вернуться к работе. Мы сейчас разрабатываем прототип устройства, которое обнаруживает и объединяет фазовые многообразия, для следующего шага - соединения устройства Врат с существующей сетью. Вся моя команда занята, и мне нужно срочно вернуться.""
 
 ""Хорошо. Считаю этот короткий брифинг завершенным."" Бэрд отворачивается, отпуская вас и Элизу.
@@ -4360,7 +4360,7 @@ dpl_ElizaAtGAAskDamagedTap7,DialogOptionSelected,$option == dpl_ElizaAtGAAskDama
 #Install the sensor,,,,,,
 dpl_cTapInstallSensor,dpl_CTapPrintEffect,"$global.dpl_RepairCTap_GotSensor
 !$global.dpl_RepairCTap_SensorSet",,,dpl_cTapInstallSensor:Установить специальный сенсор Элизы.,
-dpl_cTapInstallSensor1,DialogOptionSelected,$option == dpl_cTapInstallSensor,"AddTextSmall ""Lost the Special Sensor."" highlight
+dpl_cTapInstallSensor1,DialogOptionSelected,$option == dpl_cTapInstallSensor,"AddTextSmall ""Потерян специальный сенсор."" highlight
 $global.dpl_RepairCTap_SensorSet = true
 Call $global.dpl_RepairCTap_ref updateStage","Ваши люди установили специальный сенсор Элизы на поврежденный корональный ответвитель. Он автоматически подключился к структуре, и вы увидели мигание зеленых и синих индикаторов. Техофицер докладывает, что сенсор функционирует.",100:defaultLeave:Уйти,
 # Going back to the academy again,,,,,,
@@ -4442,7 +4442,7 @@ $player.dpl_RossStartedGatherRS = true","""Предложение отклоне
 ""Принято,"" говорит Кантор. ""Тогда вопрос закрыт. Отключаюсь.""
 
 ""Прошу прощения за этот спор. Нужно было решить раньше,"" вздыхает Росс. ""Значит нам нужно 15 000 единиц металла и 5 000 единиц редкого металла. Строительство начнется, как только вы все подготовите. Если хотите, можете использовать местное хранилище для ресурсов.""",dpl_RossDeployHELA8:Понял. Я подготовлю все ресурсы вовремя.,
-dpl_RossDeployHELA9,DialogOptionSelected,$option == dpl_RossDeployHELA8,"AddTextSmall ""Gained a power hammer."" highlight","""О, и вот еще,"" Росс ищет что-то под столом. ""Чуть не забыла. Думаю, лучше отдать это вам прямо сейчас.""
+dpl_RossDeployHELA9,DialogOptionSelected,$option == dpl_RossDeployHELA8,"AddTextSmall ""Получен силовой молот."" highlight","""О, и вот еще,"" Росс ищет что-то под столом. ""Чуть не забыла. Думаю, лучше отдать это вам прямо сейчас.""
 
 ""Возьмите. Если у любого винта HELA-device окажется неизвестный дефект, на месте может не быть никого, кто это починит."" Она достает тяжелый силовой молот и передает его вам. ""Я заказала его как последний резерв. Этим молотом можно выполнять быстрый полевой ремонт.""
 
@@ -4452,23 +4452,23 @@ $player.dpl_PPrometheusKnowMissions
 $player.dpl_RossStartedGatherRS
 !$global.dpl_HELA_noshield","SetOptionColor dpl_RossDeployHELAGiveRS buttonShortcut
 SetEnabled dpl_RossDeployHELAGiveRS false
-SetTooltip dpl_RossDeployHELAGiveRS ""You need 22,500 metals and 12,000 transplutonics.""
+SetTooltip dpl_RossDeployHELAGiveRS ""Вам нужно 22,500 металлов и 12,000 трансплутоников.""
 FireBest dpl_RossDeployHELAGiveRSCheck",,dpl_RossDeployHELAGiveRS:Передать Росс все нужные ресурсы.,
 dpl_RossDeployHELAGiveRS1,PopulateOptions,"$id == ross_higgs
 $player.dpl_PPrometheusKnowMissions
 $player.dpl_RossStartedGatherRS
 $global.dpl_HELA_noshield","SetOptionColor dpl_RossDeployHELAGiveRS1 buttonShortcut
 SetEnabled dpl_RossDeployHELAGiveRS1 false
-SetTooltip dpl_RossDeployHELAGiveRS1 ""You need 15,000 metals and 5,000 transplutonics.""
+SetTooltip dpl_RossDeployHELAGiveRS1 ""Вам нужно 15,000 металлов и 5,000 трансплутоников.""
 FireBest dpl_RossDeployHELAGiveRSCheck",,dpl_RossDeployHELAGiveRS1:Передать Росс все нужные ресурсы.,
 dpl_RossDeployHELAGiveRSCheck,dpl_RossDeployHELAGiveRSCheck,"!$global.dpl_HELA_noshield
 PlayerHasCargo metals 22500
 PlayerHasCargo rare_metals 12000","SetEnabled dpl_RossDeployHELAGiveRS true
-SetTooltip dpl_RossMakeOffering ""Offer metals and transplutonics to Ross.""",,,
+SetTooltip dpl_RossMakeOffering ""Предложить Ross металлы и трансплутоники.""",,,
 dpl_RossDeployHELAGiveRSCheck1,dpl_RossDeployHELAGiveRSCheck,"$global.dpl_HELA_noshield
 PlayerHasCargo metals 15000
 PlayerHasCargo rare_metals 5000","SetEnabled dpl_RossDeployHELAGiveRS1 true
-SetTooltip dpl_RossMakeOffering ""Offer metals and transplutonics to Ross.""",,,
+SetTooltip dpl_RossMakeOffering ""Предложить Ross металлы и трансплутоники.""",,,
 dpl_RossDeployHELAGiveRSDone,DialogOptionSelected,$option == dpl_RossDeployHELAGiveRS,"Highlight ""2 weeks""
 $dpl_RossHELAWait = true 14
 unset $player.dpl_RossStartedGatherRS
@@ -4507,7 +4507,7 @@ FireBest dpl_Stable_BuildConfirmOptions","Стабильная точка соз
 dpl_stable_confirmOpts,dpl_Stable_BuildConfirmOptions,dpl_colony_CMD hasHELATransport,,,"dpl_SL_buildProceed:Продолжить
 SL_cancelBuild:Отмена",
 dpl_stable_confirmOptsCant,dpl_Stable_BuildConfirmOptions,!dpl_colony_CMD hasHELATransport,"SetEnabled dpl_SL_buildProceed false
-SetTooltip dpl_SL_buildProceed ""You need to bring the HELA transport with you.""",,"dpl_SL_buildProceed:Продолжить
+SetTooltip dpl_SL_buildProceed ""Вам нужно привести с собой транспорт HELA.""",,"dpl_SL_buildProceed:Продолжить
 SL_cancelBuild:Отмена",
 dpl_stable_buildProceed,DialogOptionSelected,$option == dpl_SL_buildProceed,"$global.dpl_DD_DeviceDeployed = true
 Call $global.dpl_DeployDevice_ref updateStage
@@ -4564,7 +4564,7 @@ dpl_gaMeetingActHelaStart4,DialogOptionSelected,$option == dpl_gaMeetingActHela3
 dpl_gaMeetingActHelaStart5,DialogOptionSelected,$option == dpl_gaMeetingActHela4,"ShowPersonVisual
 ShowSecondPerson eliza_lovelace
 ShowThirdPerson gargoyle
-AddTextSmall ""Gained a prototype device"" highlight","""Я загрузила устройство в грузовой отсек,"" уверенно улыбается Элиза. ""Я уже выполнила настройку, оно готово к использованию. Нужно лишь установить этот прототип на HELA-device. После этого адмирал флотилии Кантор подключит наш HELA-device к сети Врат.""",dpl_gaMeetingActHela5:И что именно мне нужно сделать?,
+AddTextSmall ""Получено прототипное устройство"" highlight","""Я загрузила устройство в грузовой отсек,"" уверенно улыбается Элиза. ""Я уже выполнила настройку, оно готово к использованию. Нужно лишь установить этот прототип на HELA-device. После этого адмирал флотилии Кантор подключит наш HELA-device к сети Врат.""",dpl_gaMeetingActHela5:И что именно мне нужно сделать?,
 dpl_gaMeetingActHelaStart6,DialogOptionSelected,$option == dpl_gaMeetingActHela5,"Highlight ""5,000 units of supplies"" ""5,000 units of fuels""","""Все просто. Долетите туда, установите устройство и обеспечьте достаточный объем топлива и припасов для зажигания,"" объясняет Элиза. ""После этого HELA-device выйдет в онлайн и начнет брать энергию с поврежденного коронального ответвителя. Для запуска, вероятно, потребуется 5 000 единиц припасов и 5 000 единиц топлива.""",dpl_gaMeetingActHela6:Хорошо. И как мне понять что это не взорвет меня?,
 dpl_gaMeetingActHelaStart7,DialogOptionSelected,$option == dpl_gaMeetingActHela6,"BeginMission dpl_ActivateHELA
 $player.dpl_CanRepairHELA = true","""Я полечу с вами,"" улыбается Элиза. ""Это эксперимент, и нам нужны измерения.""
@@ -4608,7 +4608,7 @@ RemoveCommodity supplies $suppliesReq
 $usable = true
 dpl_Objectives activate
 unset $player.dpl_CanRepairHELA
-AddTextSmall ""Lost the prototype device"" highlight
+AddTextSmall ""Потеряно прототипное устройство"" highlight
 FireBest dpl_HELARepairInitiatedText",,100:defaultLeave:Уйти,
 dpl_HELARepairInitText,dpl_HELARepairInitiatedText,,,"Ваша команда завершает установку прототипа и выгрузку сырья. Вы отправляете сигнал активации на HELA-device и видите, как загорается множество сигнальных индикаторов.
 
@@ -4677,7 +4677,7 @@ $global.dpl_CurtainCall_Started",SalvageDefenderInteraction,"Когда ваш $
 После расшифровки техофицер докладывает: в сообщении сказано ""Сдохни, Simia Profanus!"" Эти сущности идентифицируют себя как ""Helheim Singularity Nodes"".",,
 dpl_CurtainCallStoryOption,PopulateSalvageOptions1,"$customType == dpl_damaged_tap score:1000
 $global.dpl_CurtainCall_Started","SetStoryOption dpl_CurtainCallStoryOption general ""Performed a crush landing into the damaged coronal tap.""",,dpl_CurtainCallStoryOption:Выполнить жесткую посадку на поврежденный корональный ответвитель.,
-dpl_CurtainCall_defenderDesc1,DialogOptionSelected,$option == dpl_CurtainCallStoryOption,"AddTextSmall ""Gained records from coronal tap sensors."" highlight
+dpl_CurtainCall_defenderDesc1,DialogOptionSelected,$option == dpl_CurtainCallStoryOption,"AddTextSmall ""Получены записи с сенсоров коронального отвода."" highlight
 $global.dpl_CurtainCall_GotSensor = true
 Call $global.dpl_CurtainCall_ref updateStage
 dpl_Objectives makeHostile
@@ -4689,7 +4689,7 @@ unset $global.dpl_CurtainCall_Started","Вы приказываете флоту
 
 Вы фиксируете данные об этих неизвестных судах и забираете сенсор, в котором записана вся телеметрия поврежденного ответвителя. Теперь пора проверить HELA-device.",100:defaultLeave:Уйти,
 dpl_CurtainCallMakeHostile,dpl_CTapPrintEffect,$global.dpl_CurtainCall_Started,,,dpl_HELA_MakeHostile:Высадиться на поврежденный ответвитель и забрать сенсоры.,
-dpl_CurtainCallMakeHostile1,DialogOptionSelected,$option == dpl_HELA_MakeHostile,"AddTextSmall ""Gained records from coronal tap sensors."" highlight
+dpl_CurtainCallMakeHostile1,DialogOptionSelected,$option == dpl_HELA_MakeHostile,"AddTextSmall ""Получены записи с сенсоров коронального отвода."" highlight
 $global.dpl_CurtainCall_GotSensor = true
 Call $global.dpl_CurtainCall_ref updateStage
 dpl_Objectives makeHostile
@@ -4712,7 +4712,7 @@ dpl_HELA_defeatDefender1,DialogOptionSelected,$option == dpl_HELA_defeatDefender
 
 Если ничего не делать, максимум через две недели HELA-device буквально перебросит значительную часть звезды Helheim в систему Thule, сожжёт все миры там, включая Kazeron.",dpl_HELA_defeatDefender1:И где Кантор?,
 dpl_HELA_defeatDefender2,DialogOptionSelected,$option == dpl_HELA_defeatDefender1,,"""Кантор исчез. Мы не можем его здесь найти,"" говорит Элиза. ""Но мы обязаны что-то сделать, чтобы остановить эту катастрофу.""",dpl_HELA_defeatDefender2:Как это вообще возможно? Устройство слишком большое чтобы его уничтожить.,
-dpl_HELA_defeatDefender3,DialogOptionSelected,$option == dpl_HELA_defeatDefender2,"AddTextSmall ""Gained records from HELA device sensors."" highlight","""Мы можем уничтожить его собственной энергией,"" говорит Элиза. ""Через фазовый резонанс мы переведем фазовое многообразие в неустойчивое возбужденное состояние. Энергии хватит, чтобы взорвать HELA-device.""
+dpl_HELA_defeatDefender3,DialogOptionSelected,$option == dpl_HELA_defeatDefender2,"AddTextSmall ""Получены записи с сенсоров устройства HELA."" highlight","""Мы можем уничтожить его собственной энергией,"" говорит Элиза. ""Через фазовый резонанс мы переведем фазовое многообразие в неустойчивое возбужденное состояние. Энергии хватит, чтобы взорвать HELA-device.""
 
 ""Сейчас мне нужна помощь,"" Элиза смотрит на вас и Гаргойла. ""Гаргойл, должен быть какой-то нейроинтерфейс для создания и передачи сигнальных паттернов. Подключи меня к нему.""
 
@@ -4936,8 +4936,8 @@ dpl_CurtainCallDoneGA15,DialogOptionSelected,$option == dpl_CurtainCallDoneGA14,
 dpl_CurtainCallDoneGA16,DialogOptionSelected,$option == dpl_CurtainCallDoneGA15,ShowSecondPerson gargoyle,"""Мы столкнулись там с чем-то жутким,"" говорит Гаргойл. ""С какими-то странными кораблями, способными начать третью войну ИИ!""
 
 Бэрд безэмоционально смотрит на Гаргойла, и хакер замолкает меньше чем за секунду.",dpl_CurtainCallDoneGA16:И мы вернули все сенсоры.,
-dpl_CurtainCallDoneGA17,DialogOptionSelected,$option == dpl_CurtainCallDoneGA16,"AddTextSmall ""Lost records from HELA device sensors."" highlight
-AddTextSmall ""Lost records from coronal tap sensors."" highlight","""Хорошо,"" говорит Бэрд. ""Значит, мы получили самые важные результаты этого проекта. Теперь подождем академика Элизу.""",dpl_CurtainCallDoneGA17:Продолжить.,
+dpl_CurtainCallDoneGA17,DialogOptionSelected,$option == dpl_CurtainCallDoneGA16,"AddTextSmall ""Потеряны записи с сенсоров устройства HELA."" highlight
+AddTextSmall ""Потеряны записи с сенсоров коронального отвода."" highlight","""Хорошо,"" говорит Бэрд. ""Значит, мы получили самые важные результаты этого проекта. Теперь подождем академика Элизу.""",dpl_CurtainCallDoneGA17:Продолжить.,
 dpl_CurtainCallDoneGA18,DialogOptionSelected,$option == dpl_CurtainCallDoneGA17,ShowThirdPerson eliza_lovelace,"Элиза выходит с вашего флагмана, на ней новый лабораторный халат.
 
 ""О, академик Элиза! Я так рада снова вас видеть."" Бэрд приветствует ее с необычной теплотой. ""Раз все в сборе, вернемся в мой кабинет для короткой встречи, хорошо?""",dpl_CurtainCallDoneGA18:Конечно.,

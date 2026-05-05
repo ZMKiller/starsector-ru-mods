@@ -1,0 +1,66 @@
+{
+  "id": "rr_conc_gyro_array",
+  "specClass": "projectile",
+  "projectileSpecId": "rr_gyro_missile",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/weapons/rr_conc_gyro_array.png",
+  "hardpointSprite": "",
+  "turretOffsets": [
+    3,
+    12,
+    3,
+    8,
+    3,
+    -2,
+    3,
+    2,
+    3,
+    -8,
+    3,
+    -12,
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    4,
+    12,
+    4,
+    8,
+    3,
+    -2,
+    3,
+    2,
+    2,
+    -8,
+    2,
+    -12,
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 8,
+    "particleSizeRange": 14,
+    "cloudParticleCount": 3,
+    "cloudDuration": 0.8,
+    "cloudRadius": 7,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 1,
+    "blowbackLength": 18,
+    "blowbackSpread": 9,
+    "particleColor": [
+      170,
+      160,
+      150,
+      130
+    ]
+  },
+  "fireSoundTwo": "swarmer_fire"
+}

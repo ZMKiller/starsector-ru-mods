@@ -1,0 +1,27 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 3,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "SCY_telchine",
+    "hullMods": ["pointdefenseai"],
+    "permaMods": [],
+    "variantId": "SCY_telchine_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_telchineMain"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "mininglaser",
+                "WS0003": "mininglaser",
+                "WS0004": "mininglaser"
+            }
+        }
+    ],
+    "wings": []
+}

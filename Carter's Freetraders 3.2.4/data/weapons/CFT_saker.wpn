@@ -1,0 +1,53 @@
+{
+  "id": "CFT_saker",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_saker_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/CFT/weapons/CFT_saker_turret_base.png",
+  "turretGunSprite": "graphics/CFT/weapons/CFT_saker_turret_recoil.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_saker_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/CFT/weapons/CFT_saker_hardpoint_recoil.png",
+  "visualRecoil": 10,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    25,
+    -3,
+    25,
+    3
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    40,
+    -3,
+    40,
+    3
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 54,
+    "spread": 20,
+    "particleSizeMin": 9,
+    "particleSizeRange": 12,
+    "particleDuration": 0.12,
+    "particleCount": 16,
+    "particleColor": [
+      255,
+      185,
+      115,
+      215
+    ]
+  },
+  "fireSoundTwo":"needler_fire",
+}

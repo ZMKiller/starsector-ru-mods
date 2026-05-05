@@ -1,0 +1,267 @@
+{
+  "bounds": [
+    49.5,
+    10.5,
+    54.5,
+    22.5,
+    41.5,
+    23.5,
+    36.5,
+    45.5,
+    -38.5,
+    39.5,
+    -38.5,
+    24.5,
+    -30.5,
+    24.5,
+    -30.5,
+    12,
+    -54,
+    23.5,
+    -89,
+    23,
+    -111.5,
+    16,
+    -84.5,
+    16,
+    -79.5,
+    9.5,
+    -79.5,
+    -9.5,
+    -84.5,
+    -16,
+    -111.5,
+    -16,
+    -89,
+    -23,
+    -54,
+    -23.5,
+    -30.5,
+    -12,
+    -30.5,
+    -24.5,
+    -38.5,
+    -24.5,
+    -38.5,
+    -39.5,
+    36.5,
+    -45.5,
+    41.5,
+    -23.5,
+    54.5,
+    -22.5,
+    49.5,
+    -10.5
+  ],
+  "builtInMods": [
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame2",
+    "BLINKER1": "SCY_ZblinkerB",
+    "BLINKER2": "SCY_ZblinkerB",
+    "D_HEAT_CENTER": "SCY_YdestroyerHeat"
+  },
+  "center": [
+    48,
+    133
+  ],
+  "collisionRadius": 140,
+  "engineSlots": [
+    {
+      "angle": -175,
+      "contrailSize": 128,
+      "length": 40,
+      "location": [
+        -40,
+        -28
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYBOOSTER",
+      "width": 8
+    },
+    {
+      "angle": 175,
+      "contrailSize": 128,
+      "length": 40,
+      "location": [
+        -40,
+        28
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYBOOSTER",
+      "width": 8
+    },
+    {
+      "angle": -170,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        -40,
+        -36
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYBOOSTER",
+      "width": 8
+    },
+    {
+      "angle": 170,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        -40,
+        36
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYBOOSTER",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 18,
+      "length": 30,
+      "location": [
+        -77,
+        -0
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE",
+      "width": 18
+    }
+  ],
+  "height": 192,
+  "hullId": "SCY_geryon",
+  "hullName": "Geryon (M)",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    -20.5,
+    -0
+  ],
+  "shieldRadius": 115,
+  "spriteName": "graphics/SCY/ships/SCY_geryon.png",
+  "style": "SCYHULL",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "A_FLAME_CENTER",
+      "locations": [
+        -77,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "D_HEAT_CENTER",
+      "locations": [
+        -88.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BLINKER2",
+      "locations": [
+        7.5,
+        -32.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "BLINKER1",
+      "locations": [
+        7.5,
+        32.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        44,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0003",
+      "locations": [
+        35,
+        -34
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        35,
+        34
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -120,
+      "arc": 270,
+      "id": "WS0005",
+      "locations": [
+        -4,
+        -32
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 120,
+      "arc": 270,
+      "id": "WS0004",
+      "locations": [
+        -4,
+        32
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 235,
+      "id": "WS0006",
+      "locations": [
+        20,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    }
+  ],
+  "width": 96
+}

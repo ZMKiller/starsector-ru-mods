@@ -1,0 +1,57 @@
+{
+  "variantId": "CFT_cutty_standard",
+  "hullId": "CFT_cutty",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "CFT_dartgun",
+        "WS0003": "CFT_dartgun",
+        "WS0005": "CFT_culverin"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_falconet",
+        "WS0004": "CFT_falconet"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "CFT_wavepulse",
+        "WS0010": "CFT_wavepulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "CFT_pdwburst",
+        "WS0007": "CFT_pdwburst",
+        "WS0008": "CFT_pdwburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

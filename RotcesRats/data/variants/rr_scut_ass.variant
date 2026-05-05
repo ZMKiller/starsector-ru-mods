@@ -1,0 +1,59 @@
+{
+  "variantId": "rr_scut_ass",
+  "hullId": "rr_scut",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rr_arpopod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "rr_arpo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "rr_flint_coil",
+        "WS0007": "rr_flint_coil",
+        "WS0008": "rr_flint_coil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "flak",
+        "WS0005": "pdlaser",
+        "WS0009": "lightmg",
+        "WS0010": "lightmg",
+        "WS0011": "lightmg",
+        "WS0012": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

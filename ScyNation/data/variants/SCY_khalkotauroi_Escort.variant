@@ -1,0 +1,57 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 15,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "SCY_khalkotauroi",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_khalkotauroi_Escort",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAIN": "SCY_khalkotauroiMain",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_laser2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_minigun2",
+                "WS0002": "SCY_minigun2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_hack",
+                "WS0004": "SCY_hack",
+                "WS0007": "vulcan",
+                "WS0006": "vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"E1_MULTI": "SCY_khalkPA_Escort"},
+        {"E2_MULTI": "SCY_khalkPB_Escort"},
+        {"E3_MULTI": "SCY_khalkPC_Escort"},
+        {"E4_MULTI": "SCY_khalkPD_Escort"},
+        {"E5_MULTI": "SCY_khalkPE_Escort"},
+        {"E6_MULTI": "SCY_khalkPF_Escort"},
+    ],
+}

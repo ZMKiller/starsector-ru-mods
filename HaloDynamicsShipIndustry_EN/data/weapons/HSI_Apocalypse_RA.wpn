@@ -1,0 +1,58 @@
+{
+  "id": "HSI_Apocalypse_RA",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/Apocalypse/HSI_Apocalypse_RA.png",
+  "turretGlowSprite": "graphics/fx/empty.png",
+  "hardpointSprite": "graphics/weapons/Apocalypse/HSI_Apocalypse_RA.png",
+  "hardpointGlowSprite": "graphics/fx/empty.png",
+  "glowColor": [
+    115,
+    85,
+    255,
+    255
+  ],
+  "hitGlowRadius": 150,
+  "turretOffsets": [
+    43,
+    -10
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    66.5,
+    -10
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    115,
+    85,
+    255,
+    255
+  ],
+  "coreColor": [
+    225,
+    205,
+    255,
+    255
+  ],
+  "width": 12,
+  "textureType": LASER,
+  "textureScrollSpeed": -64,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF,
+    FIGHTER,
+    ASTEROID
+  ]
+}

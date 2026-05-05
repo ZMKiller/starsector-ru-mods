@@ -1,0 +1,82 @@
+{
+  "variantId": "CFT_dromon_standard",
+  "hullId": "CFT_dromon",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "dedicated_targeting_core",
+    "reinforcedhull",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "CFT_dartgun",
+        "WS0010": "CFT_dartgun",
+        "WS0011": "CFT_dartgun",
+        "WS0012": "CFT_dartgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_wavepulse",
+        "WS0006": "CFT_wavepulse",
+        "WS0015": "CFT_wavepulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "CFT_culverin"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "CFT_wavemotion"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "CFT_shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_pdwburst",
+        "WS0002": "CFT_pdwburst",
+        "WS0005": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "CFT_infernorockets",
+        "WS0008": "CFT_infernorockets"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_skiff_standard_wing",
+    "CFT_dingy_standard_wing",
+    "borer_wing",
+    "borer_wing"
+  ]
+}

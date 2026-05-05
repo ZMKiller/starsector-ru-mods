@@ -1,0 +1,31 @@
+{
+	"id":"JYD_ramdrive",
+	"type":"ENGINE_MOD",
+	"aiType":"BURN_DRIVE_TOGGLE",
+    "aiScript":"data.shipsystems.scripts.ai.JYD_RamDriveAI",
+	
+	"statsScript":"data.shipsystems.scripts.JYD_RamDriveStats",
+	
+	"engineGlowColor":[255,155,55,255],
+	"engineGlowContrailColor":[255,255,105,25],
+	"engineGlowLengthMult":2.5,
+	"engineGlowWidthMult":3.5,
+	"engineGlowGlowMult":3,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	"useSound":"system_burn_drive_activate",
+	"loopSound":"system_burn_drive_loop",
+	"deactivateSound":"system_burn_drive_deactivate",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":900,
+		"burstMovementPotential":300,
+		"averageSpeedIncrease":900,
+	}
+}

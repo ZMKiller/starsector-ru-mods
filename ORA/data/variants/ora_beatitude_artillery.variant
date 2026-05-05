@@ -1,0 +1,65 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 3,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "ora_beatitude",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_beatitude_artillery",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_echoes"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ora_eschewal",
+                "WS0004": "ora_litany"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "ora_eschewal",
+                "WS0007": "ora_eschewal",
+                "WS0009": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0006": "ora_eschewal",
+                "WS0008": "ora_eschewal",
+                "WS0010": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0013": "ora_litany"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0014": "ora_litany"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_choir",
+                "WS0011": "ora_choir",
+                "WS0012": "ora_choir",
+                "WS0015": "ora_choir",
+                "WS0016": "ora_choir"
+            }
+        }
+    ]
+}

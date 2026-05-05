@@ -1,0 +1,88 @@
+{
+  "variantId": "JYD_massive_standard",
+  "hullId": "JYD_massive",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "JYD_srm",
+        "WS0008": "JYD_srm",
+        "WS0012": "JYD_srm",
+        "WS0013": "JYD_srm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "JYD_mrm",
+        "WS0004": "JYD_mrm",
+        "WS0014": "JYD_mrm",
+        "WS0015": "JYD_mrm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "JYD_ab",
+        "WS0002": "JYD_ab",
+        "WS0005": "vulcan",
+        "WS0007": "JYD_ab",
+        "WS0018": "JYD_ab",
+        "WS0019": "JYD_ab"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "JYD_hdml"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "JYD_mrb",
+        "WS0011": "JYD_mrb"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0020": "JYD_lrm",
+        "WS0021": "JYD_lrm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0016": "JYD_af",
+        "WS0017": "JYD_af"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "JYD_flea_wing",
+    "JYD_flea_wing",
+    "JYD_mite_wing",
+    "JYD_mite_wing",
+    "JYD_tick_wing",
+    "JYD_tick_wing"
+  ]
+}

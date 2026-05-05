@@ -1,0 +1,687 @@
+{
+	"edshipyard_DestroyTheWurg":{
+		"trigger_marketFaction_any":["independent"],
+		"trigger_market_minSize": 4,
+		"trigger_player_minLevel": 13,
+		"trigger_min_fleet_size": 300,
+
+		"job_name": "Уничтожить Вургандаль",
+		"job_description": "После проверки полномочий строже обычного вы быстро понимаете, почему заказчику нужна секретность.\n\nКомандующий флотом независимого бюро Eccentric Design, харизматичный адмирал Кадиз, украла прототип дредноута и ушла на окраины Сектора. Адмирал собирается основать собственное военное государство, разумеется, с собой во главе.\nМы обнаружили украденный корабль и сопровождающий флот в системе ==$system==, где они ищут подходящее место для своей \"империи\".\n\nПрототип ==Wurgandal== построен вокруг оружия планетарного класса. Если о нем узнают, последствия для Eccentric Design будут крайне тяжелыми. Поэтому корабль должен быть полностью ==уничтожен== и не подлежит восстановлению.\n\nВы понимаете, капитан: этой миссии не существует и никогда не существовало.\n",
+		"job_comm_reply": "На экране появляется собранная и суровая Джейми Кадиз. Ее пронзительный взгляд будто прожигает вас сквозь пустоту. Адмирал Кадиз говорит:\n\n\"Ты мальчик на побегушках, посланный лавочниками взыскать счет.\nКак называется, когда убийцы обвиняют убийцу? Ложь. Ложь, и мы должны быть милосердны.\"\n\nЭкран гаснет, и флот Кадиз начинает сближение.\n",
+		"job_intel_success": "Независимые ценят вашу осторожность в этом деле. Оплата произведена.",
+		"job_intel_failure": "Вы ничем не лучше ее, знаете ли. И однажды убийцы придут и за вами.",
+		"job_intel_expired": "",
+		"job_forFaction": "independent",
+		"job_credit_reward": 2000000,
+		"job_reward_scaling": 0,
+		"job_reputation_reward":60,
+        "job_item_reward": {
+          "fuel": 1000,
+          "supplies": 500
+        },
+		"job_type":"destruction",
+		"job_show_type": true,
+		"job_show_captain": true,
+		"job_show_fleet": "presetText",
+		"job_show_distance": "exact",
+		"job_show_arrow": true,
+		"job_difficultyDescription": "none",
+        "job_conclusion_script": "edshipyard_DestroyTheWurg_completion_trigger", #Revenge fleet
+
+		"target_first_name":"Jamie",
+		"target_last_name":"Cadiz",
+		"target_gender": "FEMALE",
+		"target_rank": "spaceAdmiral",
+		"target_post": "Founder",
+		"target_personality": "aggressive",
+		"target_level": 7,
+		"target_elite_skills":3,
+		"target_skill_preference": "GENERIC",
+
+		"fleet_name":"Основной флот Республики Кадиз",
+		"fleet_faction": "ML_bounty",
+		"fleet_flagship_variant":"edshipyard_wurgandal_worldeater",
+		"fleet_flagship_name":"ED Пожиратель миров",
+		"fleet_flagship_recoverable": true,
+		"fleet_flagship_autofit": false,
+		"fleet_preset_ships": {
+			#frigates
+			"edshipyard_wolfhound_assault": 4,
+			"edshipyard_bischon_assault": 4,
+
+			#destroyers
+			"edshipyard_pomeranian_beam": 3,
+			"edshipyard_shiba_assault": 2,
+			"edshipyard_shiba_beamer": 1,
+			"edshipyard_corgi_dust": 3,
+			"edshipyard_basset_beamer": 3,
+			"edshipyard_redbone_assault": 2,
+			"edshipyard_beagle_assault": 3,
+
+			#cruisers,
+			"edshipyard_carolina_gunner": 1,
+			"edshipyard_beauceron_rescue": 3,
+			"edshipyard_malinois_support": 1,
+			"edshipyard_rottweiler_ranged": 3,
+		    "edshipyard_rottweiler_assault": 3,
+			"edshipyard_saluki_beam": 2,
+			"edshipyard_saluki_assault": 2,
+
+			#caps,
+			"edshipyard_bullmastiff_assault": 2,
+            "edshipyard_bullmastiff_blaster": 1,
+			"edshipyard_newfoundland_warfreighter": 2,
+			"edshipyard_dobermann_variant": 3,
+			"edshipyard_retriever_rescue": 2,
+			"edshipyard_leonberger_assault": 1,
+			"edshipyard_groenendael_dust": 1,
+            "edshipyard_groenendael_beam": 1,
+		 	"edshipyard_groenendael_ranged": 1,
+
+			"edshipyard_bernese_tug": 2, #construction,
+			"edshipyard_bernard_variant": 2, #tanker
+		},
+
+		"fleet_preset_autofit": true,
+		"fleet_composition_faction": "ed_shipyard_faction",
+		"fleet_composition_quality": 2,
+		"fleet_transponder": true,
+		"fleet_no_retreat": false,
+		"fleet_behavior": "ROAMING",
+
+		"location_distance": "FAR",
+		"location_themes": [
+			"theme_interesting",
+			"theme_interesting_minor",
+			"theme_ruins",
+			"theme_ruins_main",
+			"theme_derelict_cryosleeper"
+		],
+		"location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+		"location_prioritizeUnexplored": true,
+		"location_defaultToAnyEntity": true
+	},
+
+	"edshipyard_Deserters":{        
+        "trigger_min_fleet_size": 50,
+        "trigger_min_days_elapsed": 150, #change
+        "trigger_playerRelationship_atLeast": {"independent":0.25,},
+        
+        #BOUNTY DESCRIPTION
+        
+        "job_name": "Дезертиры Eccentric Design",
+        "job_description": "После победы над местной пиратской бандой и вида всей добычи, которую те успели собрать, оборонный флот ED решил сам заняться пиратством.\nПокажите им ошибочность этого решения.",
+        "job_comm_reply": "У вас нет ни единого шанса!",
+        "job_intel_success": "К тому времени как ваши спасательные дроны заканчивают разбирать светящиеся обломки, система связи сообщает о поступлении оплаты.",
+        "job_intel_expired": "Короткая заметка в голонете упоминает пиратов, которых вам поручали уничтожить. Судя по всему, после захвата местной банды пираты ED отправились на пир в свою честь к соседнему пиратскому лидеру под предлогом дележа территории. Той ночью их всех убили.",
+        "job_forFaction": "independent",
+        "job_credit_reward": 100000,
+        "job_reward_scaling": 0.4,
+        "job_reputation_reward":5,
+        "job_type":"neutralisation",
+        "job_show_type": true,
+        "job_show_captain": false,
+        "job_show_fleet": "presetText",
+        "job_show_distance": "vague",
+        "job_show_arrow": false,
+        "job_difficultyDescription": "auto",
+
+        #TARGET COMMANDER (OPTIONAL)
+		"target_first_name":"Rabal",
+        "target_personality": "aggressive",
+        "target_level": 5,
+        "target_elite_skills":2,
+        "target_skill_preference": "ANY",
+
+        #TARGET FLEET
+        "fleet_name":"Рейдеры Рабала",
+        "fleet_faction": "ML_bounty",
+		"fleet_flagship_variant": ["edshipyard_basset_beamer", "edshipyard_rottweiler_assault",  "edshipyard_saluki_beam", "edshipyard_bullmastiff_assault"],
+        "fleet_flagship_autofit": true,
+        "fleet_preset_autofit": true,
+        "fleet_scaling_multiplier": 1.2,
+        "fleet_min_FP": 100,
+        "fleet_composition_faction": "ed_shipyard_faction",
+        "fleet_composition_quality": 1,
+        "fleet_transponder": false,
+		"fleet_no_retreat": false,
+        "fleet_behavior": "AGGRESSIVE",
+        
+        #LOCATION
+        
+        "location_distance": "CLOSE",
+        "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+        "location_prioritizeUnexplored": true,
+        "location_defaultToAnyEntity": true,
+    },
+	"edshipyard_DestroyScienceExpedition":{
+        "trigger_marketFaction_any": ["hegemony","persean"],
+		"trigger_market_minSize":5,
+		"trigger_marketFaction_alliedWith": true, 
+        "trigger_marketFaction_none": ["independent"],
+        "trigger_player_minLevel": 8,
+        "trigger_min_fleet_size": 100,
+		#"trigger_weight_mult": 100,
+        
+        #BOUNTY DESCRIPTION
+        
+        "job_name": "Уничтожить научную экспедицию Eccentric Design",
+		"job_description": "Бюро Eccentric Design отправило экспедицию в систему ==$system system==, предположительно в поисках утраченных технологий для своих исследований. К сожалению для них, они подошли слишком близко к вещам, которые нам хотелось бы оставить скрытыми. Уничтожьте их.",
+		"job_comm_reply": "Приветствуем! Мы нашли поблизости аномальные показания. Не хотите исследовать их вместе с нами?",
+		"job_intel_success": "Остатки научной экспедиции безмолвно дрейфуют в космосе, а редкие искры из бывших внутренностей разбитого корабля вспыхивают на тепловом изображении. Деньги теперь ваши, как и репутация.",
+		"job_intel_expired": "Поступили новости, что исследовательская экспедиция ED к внешнему краю провалилась: новых миров и руин не нашли.",
+        "job_credit_reward": 67000,
+        "job_reward_scaling": 0.25,
+        "job_reputation_reward":5,
+        "job_type":"obliteration",
+        "job_show_type": true,
+        "job_show_captain": false,
+        "job_show_fleet": "presetText",
+        "job_show_distance": "vague",
+        "job_show_arrow": false,
+        "job_difficultyDescription": "auto",
+
+        "target_rank": "Head Researcher",
+        "target_post": "research",
+        "target_personality": "aggressive",
+        "target_level": 2,
+        "target_elite_skills":1,
+
+        "fleet_name":"Экспедиция к внешнему краю",
+        "fleet_faction": "independent",
+        "fleet_flagship_variant":"edshipyard_newfoundland_warfreighter",
+        "fleet_flagship_recoverable": true,
+        "fleet_flagship_autofit": true,
+        "fleet_preset_autofit": true,
+        "fleet_scaling_multiplier": 0.25,
+        "fleet_min_FP": 150,
+        "fleet_composition_faction": "ed_shipyard_faction",
+        "fleet_composition_quality": 1,
+        "fleet_transponder": true,
+		"fleet_no_retreat": false,
+        "fleet_behavior": "ROAMING",
+		"fleet_preset_ships": {
+			#frigates
+			"edshipyard_wolfhound_assault": 2,
+
+			#destroyers
+			"edshipyard_shiba_assault": 2,
+			"edshipyard_corgi_dust": 3,			
+			"edshipyard_beauceron_rescue": 1,
+
+			#cruisers
+			"edshipyard_malinois_support": 1,
+			"edshipyard_rottweiler_assault": 1,
+			"edshipyard_rottweiler_ranged": 1,
+
+			#caps,
+		 	"edshipyard_groenendael_beam": 1,
+			"edshipyard_newfoundland_warfreighter": 1,
+
+			"edshipyard_basenji_explorer": 2, #sci ship
+			"edshipyard_bernese_tug": 1, #construction,
+			"edshipyard_bernard_variant": 1, #tanker
+		},
+        
+        #LOCATION
+		"location_distance": "FAR",
+		"location_themes": [
+          "theme_interesting_minor",
+          "theme_ruins_secondary",
+          "theme_derelict_survey_ship",
+          "theme_derelict_probes",
+          "procgen_no_theme_pulsar_blackhole",
+		],
+		"location_themes_blacklist":[
+			"theme_already_occupied",
+			"theme_already_colonized",
+			"theme_hidden",
+		],
+		"location_entities": [
+          "gate",
+          "station",
+          "wreck",
+          "debris",
+          "stable_location",
+          "comm_relay",
+          "nav_buoy",
+          "sensor_array",
+          "gas_giant",
+          "planet",
+          "jump_point"
+		],
+		"location_prioritizeUnexplored": true,
+		"location_defaultToAnyEntity": true
+    },
+	"edshipyard_DestroyEspionageFleet":{        
+        "trigger_marketFaction_any": ["tritachyon"],
+        "trigger_marketFaction_alliedWith": true, 
+        "trigger_marketFaction_none": ["independent"],
+        "trigger_player_minLevel": 5,
+        "trigger_min_fleet_size": 90,
+		#"trigger_weight_mult": 100,
+        
+        #BOUNTY DESCRIPTION
+        
+        "job_name": "Уничтожить шпионов ED",
+		"job_description": "Бюро Eccentric Design давно подозревают в краже секретов. Пост дальней связи в глубоком космосе системы ==$system system== засек аномальные отражения сигнала, указывающие на присутствие шпионского флота ED. Найдите его и уничтожьте до ухода.",
+		"job_comm_reply": "Немедленно уходите.",
+		"job_intel_success": "\"Шпионский\" флот уничтожен, награда получена.",
+        "job_credit_reward": 90000,
+        "job_reward_scaling": 0.0,
+        "job_reputation_reward":8,
+        "job_type":"neutralisation",
+        "job_show_type": true,
+        "job_show_captain": false,
+        "job_show_fleet": "presetText",
+        "job_show_distance": "exact",
+        "job_show_arrow": false,
+        "job_difficultyDescription": "auto",
+
+
+        #TARGET COMMANDER (OPTIONAL)
+        
+        "target_rank": "Agent",
+        "target_post": "Sig Int",
+        "target_personality": "aggressive",
+        "target_level": 4,
+        "target_elite_skills":1,
+    
+    
+        #TARGET FLEET
+        
+        "fleet_name":"Флот перехвата сигнала",
+        "fleet_faction": "independent",
+        "fleet_flagship_variant":"edshipyard_leonberger_assault",
+        "fleet_flagship_recoverable": true,
+        "fleet_flagship_autofit": true,
+        "fleet_preset_autofit": true,
+        "fleet_scaling_multiplier": 0,
+        "fleet_min_FP": 100,
+        "fleet_composition_faction": "ed_shipyard_faction",
+        "fleet_composition_quality": 2,
+        "fleet_transponder": false,
+		"fleet_no_retreat": false,
+        "fleet_behavior": "PASSIVE",
+		"fleet_preset_ships": { #SHIPS WITH LOW SIGNATURES
+			#Util
+			"edshipyard_chin_smuggler": 2,
+			"edshipyard_dalmatian_phase":1,
+			"edshipyard_basenji_explorer": 1,
+
+			#combat
+			"edshipyard_collie_rescue": 1,
+			"edshipyard_bischon_assault": 2,
+			"edshipyard_redbone_assault": 2,			
+			"edshipyard_saluki_beam": 1,
+			"edshipyard_saluki_assault": 1,
+            "edshipyard_chihuahua_assault": 3,
+            "edshipyard_chihuahua_beamer": 3,
+            "edshipyard_shiba_assault": 2,
+            "edshipyard_shiba_beamer": 2,
+		},
+        
+        #LOCATION
+		"location_distance": "CORE",
+		"location_themes": [
+			"theme_core_populated"
+		],
+		"location_themes_blacklist": [
+			"theme_hidden",
+		],
+		"location_entities": [
+            "wreck",
+            "stable_location",
+            "comm_relay",
+            "nav_buoy",
+            "sensor_array",
+            "gas_giant",
+            "planet",
+		],
+		"location_prioritizeUnexplored": false,
+    	"location_defaultToAnyEntity": true,
+    },
+	"edshipyard_Gunslinger_HVB":{
+        "trigger_player_minLevel": 5,
+
+        "trigger_min_fleet_size": 50,
+        #"trigger_weight_mult": 1000, #todo remove
+        
+        #BOUNTY DESCRIPTION
+        
+        "job_name": "Икар Матаан, \"Стрелок\"",
+		"job_description": "Несколько лет назад Икар Матаан, начальник смены ремонтной бригады на верфях Eccentric Designs в Nova Maxios, получил задачу разобраться с безумной аварией корабельной сборки. Икар с командой справились, но решили забрать получившийся уникальный корабль и продать его пиратам. Переговоры пошли плохо, а перестрелка пришлась им по вкусу. Теперь они стали самостоятельной угрозой. Найдите Матаана и верните этот урок в более окончательной форме.",
+		"job_comm_reply": "Думаете, вы первые, кто решил нас достать? Да вы даже не первые в этом месяце! Ваши корабли станут славным пополнением.",
+		"job_intel_success": "Бешеный Икар Матаан предан правосудию, компенсация получена.",
+        "job_intel_failure": "",
+        "job_intel_expired": "", #doesn't Expire
+        #"job_forFaction": "independent",
+        "job_credit_reward": 100000,
+        "job_reward_scaling": .4,
+        "job_type":"assassination",
+        "job_show_fleet": "presetText",
+        "job_show_distance": "vanilla",
+        "job_difficultyDescription": "auto",
+
+        #TARGET COMMANDER (OPTIONAL)
+        
+        "target_first_name":"Icarus",
+        "target_last_name":"Mataan",
+        "target_personality": "aggressive",
+        "target_level": 4,
+        "target_elite_skills":2,
+        "target_rank": "spaceCaptain",
+        "target_post": "Fleet Commander",
+        "target_skill_preference": "YES_ENERGY_YES_BALLISTIC_NO_MISSILE_NO_DEFENSE",
+    
+        #TARGET FLEET
+        
+        "fleet_name":"Самые лихие всадники",
+        "fleet_faction": "ML_bounty",
+        "fleet_flagship_variant":"edshipyard_doppelglock_variant",
+        "fleet_flagship_name":"Стрелок",
+        "fleet_flagship_recoverable": true,
+        "fleet_flagship_autofit": false,
+        "fleet_preset_autofit": false,
+        "fleet_scaling_multiplier": 1,
+        "fleet_min_FP": 80,
+        "fleet_composition_faction": "pirates",
+        "fleet_composition_quality": 1,
+        "fleet_transponder": false,
+		"fleet_no_retreat": true,
+        "fleet_behavior": "AGGRESSIVE",
+        
+        #LOCATION
+        "location_distance": "CLOSE",
+        "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+        "location_prioritizeUnexplored": true,
+        "location_defaultToAnyEntity": true
+    },
+	"edshipyard_Riptide_HVB":{
+        "trigger_player_minLevel": 11,
+
+        "trigger_min_fleet_size": 180,
+        #"trigger_weight_mult": 1000, #todo remove
+        
+        #BOUNTY DESCRIPTION
+        
+        "job_name": "Охота на Риптайд",
+		"job_description": "Когда кажется, что хуже уже не будет, становится хуже. Пираты на окраинах нашли старый доменианский массив разделки кораблей, кое-как поставили на него двигатели и запитали гравитационный организатор от древнего сингулярного ядра. Эта чудовищная конструкция уже некоторое время бесчинствует на окраинах. Остановите ее.",
+		"job_comm_reply": "Еще мясо для машины!",
+		"job_intel_success": "Стольким бойням и хаосу положен конец, и Сектор, пусть ненадолго, стал немного безопаснее. Что важнее, вы стали заметно богаче.",
+        "job_intel_failure": "",
+        "job_intel_expired": "",
+        #"job_forFaction": "independent",
+        "job_credit_reward": 250000,
+        "job_item_reward": {
+          "fuel": 800,
+          "supplies": 400
+        },
+        "job_reward_scaling": .5,
+        "job_type":"assassination",
+        "job_show_fleet": "presetText",
+        "job_show_distance": "vanilla",
+        "job_difficultyDescription": "auto",
+
+        #TARGET COMMANDER (OPTIONAL)
+        
+        "target_personality": "aggressive",
+        "target_level": 6,
+        "target_elite_skills":2,
+        "target_rank": "spaceCaptain",
+        "target_post": "Fleet Commander",
+        "target_skill_preference": "YES_ENERGY_YES_BALLISTIC_NO_MISSILE_YES_DEFENSE",
+    
+        #TARGET FLEET
+        
+        "fleet_name":"Садистские разборщики",
+        "fleet_faction": "ML_bounty",
+        "fleet_flagship_variant":"edshipyard_riptide_variant",
+        "fleet_flagship_name":"Риптайд",
+        "fleet_flagship_recoverable": true,
+        "fleet_flagship_autofit": false,
+        "fleet_preset_ships": 
+        {
+            "edshipyard_retriever_pirate": 2,
+            "edshipyard_dachshund_pirate": 3,
+            "edshipyard_carolina_pirate" : 3,
+            "edshipyard_beauceron_pirate": 2,
+
+             #logi
+            "edshipyard_bernard_variant": 1,
+        },
+        "fleet_preset_autofit": false,
+        "fleet_scaling_multiplier": 2,
+        "fleet_min_FP": 200,
+        "fleet_composition_faction": "pirates",
+        "fleet_composition_quality": 1,
+        "fleet_transponder": false,
+		"fleet_no_retreat": true,
+        "fleet_behavior": "AGGRESSIVE",
+        
+        #LOCATION
+        "location_distance": "FAR",
+        "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+        "location_prioritizeUnexplored": true,
+        "location_defaultToAnyEntity": true
+    },
+    "edshipyard_Chupacabra_HVB":{
+        "trigger_player_minLevel": 8,
+
+        "trigger_min_fleet_size": 250,
+        #"trigger_weight_mult": 1,
+
+        #BOUNTY DESCRIPTION
+
+        "job_name": "Усыпить Чупакабру",
+		"job_description": "К Лудду, еще один украденный прототип. Что вообще происходит с этим Сектором?\nНовейший демонстратор технологий ED, \"Chupacabra\", был украден после установки сверхсекретного вооружения. Tri-Tachyon начала операцию, интегрировав в корабль альфа-ядро, обученное вытаскивать корабли из \"сложных\" ситуаций. Как только ядро полностью слилось с Chupacabra, оно убило всех на борту и ушло. Уничтожьте корабль, пока он не натворил большего.",
+		"job_comm_reply": "01010000 01010010 01000101 01010000 01000001 01010010 01000101 00100000 01010100 01001111 00100000 01000100 01001001 01000101",
+		"job_intel_success": "Чужая неудача снова решена насилием. По крайней мере на время.",
+        "job_intel_failure": "",
+        "job_intel_expired": "", #doesn't Expire
+        #"job_forFaction": "independent",
+        "job_credit_reward": 200000,
+        "job_reward_scaling": .20,
+        "job_type":"assassination",
+        "job_show_fleet": "flagship",
+        "job_show_distance": "exact",
+        "job_difficultyDescription": "auto",
+        "job_conclusion_script": "edshipyard_Chupacabra_HVB_completion_trigger", #easy fight, spawn a bunch of murder fleets right on top of the player
+
+        #TARGET COMMANDER (OPTIONAL)
+
+        "target_first_name":"Exfiltration",
+        "target_last_name":"Core",
+        "target_personality": "reckless",
+        "target_aiCoreId": "alpha_core",
+        "target_level": 7,
+        "target_elite_skills": 7,
+        "target_rank": "specialAgent",
+        "target_post": "Fleet Commander",
+        "target_skill_preference": "ANY",
+
+        #TARGET FLEET
+
+        "fleet_name":"01000100 01001001 01000101",
+        "fleet_faction": "remnant",
+        "fleet_flagship_variant":"edshipyard_chupacabra_assault",
+        "fleet_flagship_name":"Чупакабра",
+        "fleet_flagship_recoverable": true,
+        "fleet_flagship_autofit": false,
+        "fleet_preset_autofit": false,
+        "fleet_scaling_multiplier": .1,
+        "fleet_min_FP": 150,
+        "fleet_composition_faction": "remnant",
+        "fleet_composition_quality": 2,
+        "fleet_transponder": true,
+		"fleet_no_retreat": true,
+        "fleet_behavior": "GUARDED",
+
+        #LOCATION
+        "location_themes_blacklist": ["theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+        "location_themes": ["theme_remnant", "theme_remnant_main", "theme_remnant_secondary"],
+        "location_prioritizeUnexplored": true,
+        "location_defaultToAnyEntity": true
+    },
+    "edshipyard_DestroyTradeFleet":{
+      "trigger_player_minLevel": 7,
+
+      "trigger_min_fleet_size": 110,
+
+      "trigger_marketFaction_any": ["pirates"],
+      "trigger_marketFaction_alliedWith": true,
+      "trigger_marketFaction_none": ["independent"],
+
+      #BOUNTY DESCRIPTION
+
+      "job_name": "Нарушить торговый маршрут ED Shipyards",
+      "job_description": "На голоэкране появляется хорошо одетый мужчина в кресле. Он расслаблен, но взгляд угрожающий, а лицо не скрыто: он явно не боится опознания и хочет известности.\n\n\"У ED Shipyards на $location новое руководство, и в знак доброй воли я великодушно предложил продолжить защиту, которой пользовались их предшественники. Новое руководство посмеялось над моим разумным предложением, решив, что я несерьезный человек. Исправьте это недоразумение, уничтожив их торговый маршрут.\"",
+      "job_comm_reply": "Тщательно обдумайте свои действия.",
+      "job_intel_success": "Флот снабжения ED уничтожен, его груз теперь ваш, а оплата получена.",
+      "job_intel_failure": "",
+      "job_intel_expired": "", #doesn't Expire
+      "job_forFaction": "pirates",
+      "job_credit_reward": 78000,
+      "job_type":"neutralisation",
+      "job_show_captain": false,
+      "job_show_fleet": "vanilla",
+      "job_show_distance": "none",
+      "job_difficultyDescription": "auto",
+      "job_pick_script": "edshipyard_DestroyTradeFleet_trigger",
+      "job_reputation_reward":10,
+      "job_item_reward": {
+        "fighter_bp edshipyard_maltese_wing": 1
+      },
+
+      #TARGET COMMANDER (OPTIONAL)
+      "target_personality": "cautious",
+      "target_level": 2,
+      "target_elite_skills":1,
+      "target_rank": "spaceCaptain",
+      "target_post": "fleetCommander",
+      "target_skill_preference": "NO_ENERGY_NO_BALLISTIC_NO_MISSILE_YES_DEFENSE",
+
+      #TARGET FLEET
+
+      "fleet_name":"Транспортный флот чувствительных грузов ED",
+      "fleet_faction": "independent",
+      "fleet_flagship_variant":"edshipyard_newfoundland_warfreighter",
+      "fleet_flagship_recoverable": true,
+      "fleet_flagship_autofit": true,
+      "fleet_preset_autofit": true,
+      "fleet_scaling_multiplier": 0,
+      "fleet_min_FP": 160,
+      "fleet_composition_faction": "ed_shipyard_faction",
+      "fleet_composition_quality": 2,
+      "fleet_transponder": true,
+      "fleet_no_retreat": false,
+      "fleet_behavior": "PASSIVE",
+      "fleet_preset_ships": {
+        #Util
+        "edshipyard_dachshund_variant": 3,
+        "edshipyard_bernard_variant": 1,
+
+        #combat
+        #frigates
+        "edshipyard_wolfhound_assault": 2,
+        "edshipyard_bischon_assault": 1,
+
+        #destroyers
+        "edshipyard_pomeranian_beam": 1,
+        "edshipyard_shiba_beamer": 1,
+        "edshipyard_corgi_dust": 1,
+
+        #cruisers,
+        "edshipyard_malinois_support": 1,
+        "edshipyard_rottweiler_assault": 1,
+        "edshipyard_saluki_beam": 1,
+      },
+
+      #LOCATION
+      "location_entitiesID": [
+        "new_maxios",
+        "nex_prismFreeport",
+      ],
+      "location_marketFactions": [
+        "independent"
+      ],
+      "location_distance": "CLOSE",
+      "location_defaultToAnyEntity": true
+    },
+
+    "edshipyard_Doog_HVB":{
+      "trigger_player_minLevel": 12,
+
+      "trigger_min_fleet_size": 200,
+
+      #"trigger_weight_mult": 1000,
+
+      #BOUNTY DESCRIPTION
+
+      "job_name": "Убить Нероко Гамиину",
+      "job_description": "Корпорация Eccentric Designs объявила награду за безумную женщину, укравшую прототип и целый флот кораблей с Nova Maxios во время пиратского рейда. Ее лидер безжалостна и крайне опасна. Известно, что она собирает пальцы своих врагов.",
+      "job_comm_reply": "Отдайте мне ваши пальцы!",
+      "job_intel_success": "Нероко Гамиину больше не будет собирать пальцы. Оплата получена.",
+      "job_intel_failure": "",
+      "job_intel_expired": "", #doesn't Expire
+      #"job_forFaction": "independent",
+      "job_credit_reward": 250000,
+      "job_reward_scaling": .25,
+      "job_reputation_reward":10,
+      "job_item_reward": {
+        "ed_exotic_ship_package":1,
+      },
+      "job_type":"assassination",
+      "job_show_fleet": "flagship",
+      "job_show_distance": "vanilla",
+      "job_difficultyDescription": "auto",
+
+      #TARGET COMMANDER (OPTIONAL)
+
+      "target_first_name":"Neroko",
+      "target_last_name":"Gamiinu",
+      "target_gender":"FEMALE",
+      "target_personality": "aggressive",
+      "target_level": 5,
+      "target_elite_skills": 5,
+      "target_rank": "spaceAdmiral",
+      "target_post": "Fleet Commander",
+      "target_skill_preference": "ANY",
+
+      #TARGET FLEET
+
+      "fleet_name":"Нерокосуки",
+      "fleet_faction": "ML_bounty",
+      "fleet_flagship_variant":"edshipyard_doog_prototype",
+      "fleet_flagship_name":"EekumBokum",
+      "fleet_flagship_recoverable": true,
+      "fleet_flagship_autofit": false,
+      "fleet_preset_ships":
+      {
+        "edshipyard_groenendael_dust": 1,
+        "edshipyard_bullmastiff_assault": 1,
+        "edshipyard_rottweiler_assault": 1,
+        "edshipyard_beauceron_rescue": 1,
+        "edshipyard_beagle_assault": 1,
+        "edshipyard_malinois_support": 1,
+        "edshipyard_pomeranian_dust": 1,
+        "edshipyard_shiba_assault": 1,
+        "edshipyard_bischon_assault": 1,
+        "edshipyard_chihuahua_assault": 1,
+      },
+      "fleet_preset_autofit": false,
+      "fleet_scaling_multiplier": 1.4,
+      "fleet_min_FP": 600,
+      "fleet_composition_faction": "pirates",
+      "fleet_composition_quality": 0,
+      "fleet_transponder": false,
+      "fleet_no_retreat": true,
+      "fleet_behavior": "AGGRESSIVE",
+
+      #LOCATION
+      "location_distance": "FAR",
+      "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+      "location_prioritizeUnexplored": true,
+      "location_defaultToAnyEntity": true
+    },
+}

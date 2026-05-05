@@ -1,0 +1,57 @@
+{
+  "id": "CFT_katyusha",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_katyusha_missile",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "displayArcRadius": 1000,
+  "turretSprite": "graphics/CFT/weapons/CFT_katyusha_base.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_katyusha_hardpoint.png",
+
+  "turretOffsets": [
+    8.5,
+    3,
+    8.5,
+    0,
+    8.5,
+    -3
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    10,
+    3,
+    10,
+    0,
+    10,
+    -3
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 10,
+    "particleSizeRange": 16,
+    "cloudParticleCount": 3,
+    "cloudDuration": 0.9,
+    "cloudRadius": 8,
+    "blowbackParticleCount": 4,
+    "blowbackDuration": 1.1,
+    "blowbackLength": 20,
+    "blowbackSpread": 10,
+    "particleColor": [
+      170,
+      160,
+      150,
+      130
+    ]
+  },
+  "fireSoundTwo": "swarmer_fire"
+}

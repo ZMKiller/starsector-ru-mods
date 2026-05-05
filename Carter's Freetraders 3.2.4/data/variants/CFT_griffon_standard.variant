@@ -1,0 +1,71 @@
+{
+  "variantId": "CFT_griffon_standard",
+  "hullId": "CFT_griffon",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "CFT_infernorockets",
+        "WS0008": "CFT_infernorockets",
+        "WS0009": "CFT_infernorockets",
+        "WS0010": "CFT_infernorockets"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lrpdlaser",
+        "WS0004": "lrpdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "CFT_culverin",
+        "WS0006": "CFT_culverin"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_pdwburst",
+        "WS0011": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "CFT_mpdwburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_brig_standard_wing",
+    "CFT_brig_standard_wing",
+    "CFT_cutter_standard_wing",
+    "CFT_cutter_standard_wing"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+	"id":"edshipyard_BARKS_Wave_p",
+	"specClass":"projectile",
+	"onHitEffect":"data.scripts.edshipyard.weapons.KineticFieldProjector",
+            #"spawnType":"BALLISTIC_AS_BEAM",
+            #"collisionClass":"RAY",
+            #"collisionClassByFighter":"RAY_FIGHTER",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_NO_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"length":1.0,
+	"width":20.0,
+	"fadeTime":0.05,
+	"fringeColor":[200,100,140,50],
+	"coreColor":[255,125,200,255],
+	"glowColor":[255,100,185,200],
+	"glowRadius":10,
+	"hitGlowRadius":50,
+	"textureScrollSpeed":1.0,
+	"pixelsPerTexel":2.0,
+	"bulletSprite":"graphics/weapons/proj/edshipyard_BARKS.png"
+}

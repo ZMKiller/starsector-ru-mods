@@ -1,0 +1,59 @@
+{
+  "id": "CFT_firestorm",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_hellfirerockets_rocket",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/CFT/weapons/CFT_firestorm_turret_base.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_firestorm_hardpoint_base.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    12,
+    -7.5,
+    13.5,
+    0,
+    12,
+    7.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    13.5,
+    -7,
+    14,
+    0,
+    13.5,
+    7
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 20,
+    "particleSizeRange": 20,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackSpread": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "fireSoundTwo": "resonator_mrm_fire"
+}

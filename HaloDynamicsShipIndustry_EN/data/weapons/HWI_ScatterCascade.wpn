@@ -1,0 +1,70 @@
+{
+  "id": "HWI_ScatterCascade",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "everyFrameEffect": "data.weapons.scripts.beam.HSIScatterBeamEveryFrameEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/HWI_rift_cascade_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/HWI_rift_cascade_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/HWI_rift_cascade_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/HWI_rift_cascade_hardpoint_glow.png",
+  "glowColor": [
+    225,
+    200,
+    65,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    34,
+    1.5,
+    34,
+    -1.5,
+    31.5,
+    1.5,
+    31.5,
+    -1.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    36.5,
+    1.5,
+    36.5,
+    -1.5,
+    33.5,
+    1.5,
+    33.5,
+    -1.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "fringeColor": [
+    225,
+    200,
+    65,
+    255
+  ],
+  "coreColor": [
+    55,
+    15,
+    55,
+    175
+  ],
+  "width": 15,
+  "textureType": LASER,
+  "textureScrollSpeed": 64,
+  "pixelsPerTexel": 5,
+  "fireSoundTwo": "riftcascade_loop",
+  "coreWidthMult": 0.6
+}

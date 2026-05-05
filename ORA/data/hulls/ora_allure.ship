@@ -1,0 +1,122 @@
+{
+  "bounds": [
+    23.5,
+    7.5,
+    7.5,
+    23.5,
+    -10.5,
+    23.5,
+    -20.5,
+    13.5,
+    -15,
+    -0,
+    -20.5,
+    -13.5,
+    -10.5,
+    -23.5,
+    7.5,
+    -23.5,
+    23.5,
+    -7.5,
+    14,
+    -0
+  ],
+  "builtInWeapons": {
+    "WS0001": "ora_choir",
+    "WS0002": "ora_AMbomb",
+    "WS0003": "ora_AMbomb"
+  },
+  "builtInMods": ["no_weapon_flux"],
+  "builtInWings": [],
+  "center": [
+    25,
+    22
+  ],
+  "collisionRadius": 32,
+  "engineSlots": [
+    {
+      "angle": 177,
+      "contrailSize": 8.211119,
+      "length": 26.75153,
+      "location": [
+        -17,
+        6
+      ],
+      "style": "HIGH_TECH",
+      "width": 8.211119
+    },
+    {
+      "angle": -177,
+      "contrailSize": 8.211119,
+      "length": 26.75153,
+      "location": [
+        -17,
+        -6
+      ],
+      "style": "HIGH_TECH",
+      "width": 8.211119
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 41,
+      "location": [
+        -17,
+        -0
+      ],
+      "style": "HIGH_TECH",
+      "width": 8
+    }
+  ],
+  "height": 50,
+  "hullId": "ora_allure",
+  "hullName": "Allure",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 30,
+  "spriteName": "graphics/ORA/ships/ora_allure.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 180,
+      "arc": 120,
+      "id": "WS0001",
+      "locations": [
+        -1.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        -1,
+        19.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        -1,
+        -19.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 50
+}

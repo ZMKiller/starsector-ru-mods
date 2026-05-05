@@ -1,0 +1,51 @@
+{
+  "id": "HIVER_blaster",
+  "specClass": "projectile",
+  "projectileSpecId": "hiverblaster",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/HIVER_blaster.png",
+  "turretGlowSprite": "graphics/weapons/HIVER_blaster_glow.png",
+  "turretGunSprite": "graphics/weapons/HIVER_blaster.png",
+  "hardpointSprite": "graphics/weapons/HIVER_blaster.png",
+  "hardpointGlowSprite": "graphics/weapons/HIVER_blaster_glow.png",
+  "hardpointGunSprite": "graphics/weapons/HIVER_blaster.png",
+  "glowColor": [
+    128,
+    255,
+    0,
+    150
+  ],
+  "turretOffsets": [
+    -10,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    1,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 5,
+    "particleSizeMin": 15,
+    "particleSizeRange": 20,
+    "particleDuration": 0.12,
+    "particleCount": 10,
+    "particleColor": [
+      100,
+      255,
+      100,
+      255
+    ]
+  },
+  "fireSoundTwo": "pulse_laser_fire"
+}

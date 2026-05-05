@@ -1,0 +1,26 @@
+{
+    "id":"ora_solid",
+
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.shipsystems.scripts.ai.ORA_solidAI",
+
+    "statsScript":"data.shipsystems.scripts.ORA_solid",
+
+    "shieldRingColor":[255,255,255,255],
+    "shieldInnerColor":[100,255,200,75],
+    "shieldThicknessMult":1,
+    "shieldFluctuationMult":1.25,
+
+    "soundFilterType":"LOWPASS",
+    "soundFilterGain":0.75,
+    "soundFilterGainHF":0.75,
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    },
+
+    "loopSound":"system_fortress_shield_loop",
+    "outOfUsesSound":"gun_out_of_ammo",	
+}

@@ -1,0 +1,48 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 1000,
+  "fireSoundTwo": "reaper_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    17,
+    1
+  ],
+  "hardpointSprite": "graphics/weapons/rr_wrath_base.png",
+  "id": "rr_wrath",
+  "projectileSpecId": "rr_wrath_missile",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "size": "LARGE",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 25,
+    "blowbackParticleCount": 6,
+    "blowbackSpread": 16,
+    "cloudDuration": 1.5,
+    "cloudParticleCount": 10,
+    "cloudRadius": 13,
+    "particleColor": [
+      125,
+      15,
+      25,
+      105
+    ],
+    "particleSizeMin": 16,
+    "particleSizeRange": 24
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    5,
+    1
+  ],
+  "turretSprite": "graphics/weapons/rr_wrath_base.png",
+  "type": "MISSILE"
+}

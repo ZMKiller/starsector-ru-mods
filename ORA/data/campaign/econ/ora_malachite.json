@@ -1,0 +1,68 @@
+{
+    "starSystem":"ORA_malachite",
+    "markets":[
+        {
+            "entities":["ora_marble", "ora_spore"],
+            "faction":"ORA",
+            "size":6,
+            "startingConditions":[
+                "population_6",
+                "habitable",
+                "ore_sparse",
+                #"rare_ore_sparse",
+                #"farmland_adequate",
+                "farmland_poor",
+                "organics_common",
+                "thin_atmosphere",
+                "pollution",
+                "extreme_weather",
+            ],
+            "industries":[
+                "population",
+                #"farming",
+                "megaport",
+                #"spaceport",
+                "mining",
+                #"refining",
+                #["orbitalworks", "corrupted_nanoforge"],
+                ["orbitalworks"],
+                #"lightindustry",
+                "starfortress_high",
+                "heavybatteries",
+                "highcommand",
+                #"commerce",
+            ],
+        },
+
+        {
+            "entities":["ora_refinery"],
+            "faction":"independent",
+            "size":1,
+            "freePort":true,
+            "startingConditions":[
+                "population_1",
+            ],
+            "industries":[
+                "population",
+                "spaceport",
+                "techmining",
+            ],
+        },
+
+        {
+            "entities":["ora_collector"],
+            "faction":"ORA",
+            "size":3,
+            "startingConditions":[
+                "volatiles_abundant",
+                "poor_light",
+                "population_3",
+            ],
+            "industries":[
+                "population",
+                "spaceport",
+                "mining",
+            ],
+        },
+    ],
+}

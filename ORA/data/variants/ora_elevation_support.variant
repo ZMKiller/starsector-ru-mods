@@ -1,0 +1,35 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 26,
+    "fluxVents": 30,
+    "hullId": "ora_elevation",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "ora_elevation_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_incantation"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ora_eschewal",
+                "WS0003": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "ora_choir",
+                "WS0005": "ora_choir",
+                "WS0006": "ora_choir",
+                "WS0007": "ora_choir"
+            }
+        }
+    ],
+    "wings": ["ora_allure_wing"]
+}

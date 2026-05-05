@@ -1,0 +1,242 @@
+{
+    "hullName": "Yunyan",
+    "hullId": "HSI_YunYan",
+    "hullSize": "FRIGATE",
+    "style": "HSI_TECH",
+    "spriteName": "graphics/ships/HSI_YunYan.png",
+    "height": 107,
+    "width": 146,
+    "center": [
+        73, 53
+    ],
+    "collisionRadius": 100,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 94,
+    "viewOffset": 0,
+    "builtInMods": [
+        "HSI_Halo",
+        "HSI_ArmoredShield"
+    ],
+    "builtInWeapons": {
+        "WS00A": "HSI_LED"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS0001",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 62,
+            "angle": 0,
+            "locations": [
+                    11.5,       36
+            ]
+        },
+        {
+            "id": "WS0002",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 62,
+            "angle": 0,
+            "locations": [
+                    11.5,      -36
+            ]
+        },
+        {
+            "id": "WS0003",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 88,
+            "angle": -26.5,
+            "locations": [
+                     -12,      -49
+            ]
+        },
+        {
+            "id": "WS0004",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 88,
+            "angle": 26.5,
+            "locations": [
+                     -12,       49
+            ]
+        },
+        {
+            "id": "WS0005",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 167,
+            "angle": -116.5,
+            "locations": [
+                   -17.5,    -28.5
+            ]
+        },
+        {
+            "id": "WS0006",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 167,
+            "angle": 116.5,
+            "locations": [
+                   -17.5,     28.5
+            ]
+        },
+        {
+            "id": "WS0007",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "HARDPOINT",
+            "arc": 7,
+            "angle": 0,
+            "locations": [
+                    17.5,        0
+            ]
+        },
+        {
+            "id": "WS00A",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 167,
+            "angle": 0,
+            "locations": [
+                    -9.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -38.5, 25.5
+            ],
+            "length": 27,
+            "width": 15,
+            "angle": 180,
+            "contrailSize": 15,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -38.5, -25.5
+            ],
+            "length": 27,
+            "width": 15,
+            "angle": -180,
+            "contrailSize": 15,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -45.5, 44.5
+            ],
+            "length": 58,
+            "width": 28,
+            "angle": 180,
+            "contrailSize": 28,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -45.5, -44.5
+            ],
+            "length": 58,
+            "width": 28,
+            "angle": -180,
+            "contrailSize": 28,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -45.5, 44
+            ],
+            "length": 85,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 6,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -45.5, -44
+            ],
+            "length": 85,
+            "width": 6,
+            "angle": -180,
+            "contrailSize": 6,
+            "style": "HSI_TECH_PARTICLE"
+        }
+    ],
+    "bounds": [
+              28,    -20.5,
+            37.5,      -28,
+              50,      -29,
+            50.5,    -33.5,
+             5.5,      -48,
+        
+               5,      -54,
+              13,    -54.5,
+            16.5,    -58.5,
+            16.5,      -61,
+             -16,      -69,
+        
+             -21,      -72,
+           -33.5,    -71.5,
+           -47.5,    -61.5,
+           -47.5,    -58.5,
+           -33.5,    -58.5,
+        
+           -33.5,    -54.5,
+             -39,    -54.5,
+             -45,      -49,
+             -45,      -38,
+           -33.5,    -33.5,
+        
+             -39,    -29.5,
+             -39,    -22.5,
+           -27.5,      -16,
+             -28,       -7,
+             -32,       -3,
+        
+             -32,        3,
+             -28,        7,
+           -27.5,       16,
+             -39,     22.5,
+             -39,     29.5,
+        
+           -33.5,     33.5,
+             -45,       38,
+             -45,       49,
+             -39,     54.5,
+           -33.5,     54.5,
+        
+           -33.5,     58.5,
+           -47.5,     58.5,
+           -47.5,     61.5,
+           -33.5,     71.5,
+             -21,       72,
+        
+             -16,       69,
+            16.5,       61,
+            16.5,     58.5,
+              13,     54.5,
+               5,       54,
+        
+             5.5,       48,
+            50.5,     33.5,
+              50,       29,
+            37.5,       28,
+              28,     20.5
+    # 50 points total.
+    ]
+}

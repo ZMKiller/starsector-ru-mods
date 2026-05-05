@@ -1,0 +1,82 @@
+{
+    "displayName": "Bombardment",
+    "fluxCapacitors": 0,
+    "fluxVents": 16,
+    "goalVariant": true,
+    "hullId": "ora_discernment",
+    "hullMods": ["stabilizedshieldemitter"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_discernment_bomber",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "hammer",
+                "WS0015": "hammer",
+                "WS0017": "hammer"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0012": "hammer",
+                "WS0014": "hammer",
+                "WS0016": "hammer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ora_eschewal",
+                "WS0002": "ora_eschewal",
+                "WS0003": "ora_eschewal",
+                "WS0005": "ora_eschewal",
+                "WS0007": "ora_eschewal",
+                "WS0009": "ora_eschewal",
+                "WS0011": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0018": "ora_litany",
+                "WS0019": "ora_litany",
+                "WS0020": "ora_litany",
+                "WS0021": "ora_litany"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "ora_echoes",
+                "WS0006": "ora_echoes",
+                "WS0008": "ora_echoes",
+                "WS0010": "ora_echoes"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0022": "ora_choir",
+                "WS0023": "ora_choir",
+                "WS0024": "ora_choir",
+                "WS0025": "ora_choir"
+            }
+        }
+    ],
+    "wings": [
+        "ora_wisdom_wing",
+        "ora_wisdom_wing",
+        "ora_allure_wing",
+        "ora_allure_wing",
+        "ora_awareness_wing",
+        "ora_awareness_wing"
+    ]
+}

@@ -1,0 +1,71 @@
+{
+  "variantId": "HIVER_swallowtail_standard",
+  "hullId": "HIVER_swallowtail",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "fluxdistributor",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "HIVER_launcher",
+        "WS0005": "HIVER_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "HIVER_irpulse",
+        "WS0002": "HIVER_irpulse",
+        "WS0011": "HIVER_irpulse",
+        "WS0012": "HIVER_irpulse",
+        "WS0013": "HIVER_irpulse",
+        "WS0017": "HIVER_irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "HIVER_twinblaster",
+        "WS0016": "HIVER_blaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "Hiver_eyeball",
+        "WS0015": "Hiver_eyeball"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "HIVER_twinpd",
+        "WS0018": "HIVER_twinpd",
+        "WS0019": "HIVER_twinpd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "HIVER_mirv"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

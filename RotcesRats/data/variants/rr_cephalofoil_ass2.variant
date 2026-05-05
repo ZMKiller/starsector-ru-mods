@@ -1,0 +1,50 @@
+{
+  "variantId": "rr_cephalofoil_ass2",
+  "hullId": "rr_cephalofoil",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "gorgonpod",
+        "WS 002": "gorgonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "lightdualac",
+        "WS 004": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "lightag",
+        "WS 006": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "pdlaser",
+        "WS 008": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,479 @@
+{ 
+    "starSystems": {
+      
+	},
+	"campaign":{
+		"HSITC0_start":"一位与酒吧显得格格不入的少女坐在角落里，不知为何，似乎没有人注意到她。",
+		"HSITC0_startopt":"走过去，站到她对面",
+		"HSITC0_text0":"你的到来成功地让她从tripad上移开目光。\"贵安， %s 阁下。看起来您终于注意到我了?\"",
+		"HSITC0_opt1_1":"沉默",
+		"HSITC0_opt1_2":"\"很难想象您这样耀眼的女士会被人忽视。\"",
+		"HSITC0_text1_1":"\"请坐吧， %s 阁下，不必这么拘谨。\"",
+		"HSITC0_text1_2":"\"我可没想到你会这么油嘴滑舌。\"你仿佛看见她笑了一下，又好像是错觉。\"请坐吧， %s 阁下，不必这么……我觉得您倒也称不上拘谨。\"",
+		"HSITC0_opt2":"坐下",
+		"HSITC0_text2":"她的邀请似乎有某种魔力，你顺势坐在她对面。她在tripad上点了几下。\"我找上您单纯只是因为好奇。开诚布公的说，您很有趣。\"",
+		"HSITC0_opt3_1":"\"嗯……我确实很有趣。\"",
+		"HSITC0_opt3_2":"\"我可不觉得自己有趣。\"",	
+		"HSITC0_text3_1":"\"那我大可以多夸夸您。不过，我还是想试一试您的能力。\"她推来一张晶片。\"这是一点见面礼。\"她顿了顿，把手边放着的一杯酒推给了你，\"我希望您的实力能和您的口才一样好。\"",
+		"HSITC0_text3_2":"\"您要是愿意，我可以慢慢和您讲。不过，我还是想试一试您的能力。\"她推来一张晶片。\"这是一点见面礼。\"她把手边的酒倒进两个空杯里，自己抿了一口，把另一杯推给了你。\"希望下次见面时，您不必如此戒备。\"",
+		"HSITC0_opt4_1":"接下晶片",
+		"HSITC0_opt4_2":"接下晶片(进行一场轻松的战斗)",
+		"HSITC0_opt4_3":"表示不感兴趣",
+		"HSITC0_text4_1":"你骤然恍惚了一下。等你回过神来，对方已经不见了。你的Tripad上提示有一笔信用点转入，和一条奇怪的未读消息。奇怪……",
+		"HSITC0_text4_2":"对方没有再说话。",
+		"HSITC0_end":"\"请来空间桥面谈……这是什么意思？\"",
+		"HSITC0FightOption": "进入一场莫名其妙的战斗",
+		"HSITC0FightEngagement": "你决定从这种莫名其妙感中抽身",
+
+		"HSITC1_NameBefore":"不明异常",
+		"HSITC1_NameFinished":"绝望骑士",
+		"HSITC1_ShortDesc1":"理事长委托你前往一颗未知的星球附近调查异常。",
+		"HSITC1_ShortDesc2":"前往未知星球调查。",
+
+		"HSIKnight_SkillDesc0":"与玩家舰船同时在场时,双方+ %s 伤害, -- %s 受到的伤害.",
+		"HSIKnight_SkillDesc1":"如果旗舰被摧毁, 在30秒内 + %s 伤害.随后永久失去相应属性.",
+		"HSIKnight_SkillDesc2":"如果座舰属于卢德派系使用的舰船，+ %s 受到的伤害.",
+		"HSIKnight_SkillDesc3":"对船体结构低于 %s 的目标直接造成伤害时，如果造成的伤害全为船体结构伤害，消灭目标.",
+
+		"HSIMissionFuseTF33Name":"光环动力护卫队 与 商船",
+		"HSIMissionFuseTTName":"迷途的速子公司卫队",
+		"HSIMissionFuseTarget0":"别让一点消息漏出去.",
+		"HSIMissionFuseTarget1":"也别管什么外交风险了，先把这票干完.",
+
+		"HSIMissionTheFinaleHSIName": "第一近卫舰队主力分舰队",
+		"HSIMissionTheFinaleTTName": "速子公司卫队断后舰队",
+		"HSIMissionTheFinaleTarget0": "冲锋！",
+
+		"HSIMissionMCName":"光环动力\"补给船队\"",
+		"HSIMissionMCTTName":"速子掠袭部队",
+		"HSIMissionMCTarget0":"保存自己",
+
+		"HSISAShop1":"选择物品",
+		"HSISAShop2":"确认选择",
+		"HSISAShop3":"取消选择",
+		"HSISAShipProviderRightClick":"右击以获取",
+		"HSISAShopName":"竞技场兑换",
+		"HSISAShipProviderCost":"消耗点数: ",
+		"HSISAShopPicked":"这些物品将花费 %s 竞技场点数，而你现在拥有 %s.",
+
+		"HSISAAdvLevel": "当前进度：",
+		"HSISAAdvBuff": "持有的加成：",
+		"HSISAAdvStartBattle": "进行冒险！",
+		"HSISAAdvPickBuff": "选择加成-",
+
+		"HPSIDIntelName":"HiNet",
+		"HPSIDIntelGuidence":"前往 Intrusion 与 各部门代理人 联络，提供各种稀有物品、订购商品同时与光环动力保持良好关系以提高HiNet等级。\n随着等级提高，可以获得更多的权限和便利，但是在那之后与光环动力的敌对行为将被视为背叛。",
+		"HPSIDIntelGuidenceHL":"10/50/300",
+		"HPSIDStageJuniorCoop":"提供一定程度的津贴.",
+		"HPSIDStageJuniorCoopHL":"津贴",
+		"HPSIDStageSeniorCoop":"提供一些技术物品和额外的津贴.",
+		"HPSIDStageSeniorCoopHL1":"技术物品",
+		"HPSIDStageSeniorCoopHL2":"津贴",
+		"HPSIDStageDSSS":"解锁深空补给系统的权限.",
+		"HPSIDStageDSSSHL":"深空补给系统",
+		"HPSIDStageSSP":"解锁订购精英舰船的权限.",
+		"HPSIDStageSSPHL":"精英舰船",
+		"HPSIDFNDesc":"光环动力为你的合作提供的津贴.",
+
+
+		"HPSIDForgeDesc":"采购订单",
+
+		"HPSIDConfirmText":"确认",
+		"HPSIDCancelText":"取消",
+		"HPSIDBountyValue":"收益: ",
+		"HPSIDRepValue":"关系: ",
+		"HPSIDTurnInSD":"选择提交的勘探数据",
+		"HPSIDTurnInSDBounty":"向 %s 提交勘探数据:",
+		"HPSIDTurnInSDReward":"如果你上交了这些勘探数据，作为与 %s 合作的奖励，你将获得 %s 的收益和 %s 的关系提升.",
+		"HPSIDTurnInCore":"选择提交的AI核心",
+		"HPSIDTurnInCoreBounty":"向 %s 提交AI核心:",
+		"HPSIDTurnInCoreReward":"如果你上交了这些AI核心，作为与 %s 合作的奖励，你将获得 %s 的收益和 %s 的关系提升.",
+		"HPSIDTurnInRS":"选择提交的稀有舰船",
+		"HSITurnedInBenefit": "光环动力认可了你的能力.",
+		"HPSIDMonthlyReward":"基于你最近提交的物品,已向你发送了 %s pt奖励.",
+		"HPSID_TurnInString":"提交",
+		"HPSIDTalesTutorial":"在左侧边栏内选择需要查看的消息。",
+		"HPSIDTales": "小道消息",
+		"HSI_Failed":"随着最后一个殖民地陷落，光环动力暂时离开了英仙座……这个频道当前无人应答。",
+		"HSI_Hostile": "你与光环动力的恶劣关系导致你的访问请求被拒绝了。",
+		"HSI_Shop_name":"深空补给系统",
+		"HSI_Shop_Deliver_Fee":"包装费(免运费!)",
+		"HSI_Shop_Reset":"重置",
+		"HSI_Shop_Total":"合计",
+		"HSI_Shop_Owner_Name":"Skye",
+		"HSI_Shop_Owner_Rank":"补给官(?)",
+		"HSI_Shop_Index":"普通补给",
+		"HSI_Shop_Forge":"装备补给",
+		"HSI_Shop_List":"购物车",
+		"HSI_Shop_Discount":"报销额度",
+		"HSI_Shop_Confirm":"提交",
+		"HSI_Shop_ConfirmFail":"无法提交，星币不足",
+		"HSI_Shop_Cancel":"真的不买了吗？",
+		"HSI_Shop_Delay":"预计将于 %s 后抵达",
+		"HSI_Shop_Arrival":"订购的 %s 已经抵达 %s",
+		"HSI_Shop_Pod_Name":"深空补给",
+		"HSI_ShopOwner_ChatConfirm0":"呃……好啦，已经送出去了……这样就可以辽吧？",
+		"HSI_ShopOwner_ChatConfirm1":"你知道的……他们送到这里也很要力气的，多收一点钱也没什么吧？",
+		"HSI_ShopOwner_ChatConfirm2":"唉……刚刚有一队补给队被海盗袭击啦，真倒霉……饱和式补给供应，还是可以送到的啦？",
+		"HSI_ShopOwner_ChatTouch0":"唉……你应该也是在看着价格犹豫吧？其实……对于这种服务因为路上的损失……都是亏本的？",
+		"HSI_ShopOwner_ChatTouch1":"好呢……我在看着tripad辽啦……但是好累……不过还是能等的？",
+		"HSI_ShopOwner_ChatTouch2":"再怎么说这些已经是最低价了……如果能便宜我也想便宜一些辽呀？",
+
+		"HSI_ShopOwner_Normal_ChatConfirm0":"已经安排送出了。",
+		"HSI_ShopOwner_Normal_ChatConfirm1":"收到货款了，交易愉快。",
+		"HSI_ShopOwner_Normal_ChatConfirm2":"在路上了。",
+		"HSI_ShopOwner_Normal_ChatTouch0":"一口价，别问了。",
+		"HSI_ShopOwner_Normal_ChatTouch1":"需知？没有需知。",
+		"HSI_ShopOwner_Normal_ChatTouch2":"送过去需要一点时间，但总比自己找市场买方便。",
+		"HSI_Shop_Owner_Normal_Name":"Elisa",
+		"HSI_Shop_Owner_Normal_Rank":"补给官",
+
+		"HPSIDContracts": "生产订单",
+
+		"HPSIDContracts_Title": "订单",
+		"HPSIDContracts_TimeLeft": "预计时间：",
+
+		"HPSIDContracts_Tutorial": "前往 光环动力空间桥 ，与舰船工业联络人商讨采购事宜。",
+
+
+
+		"HSI_HPSIDRelFactor": "关系影响",
+
+		"HSIDreadnoughtFleetName": "主力分舰队",
+		"HSIDreadnoughtArtilleryWarning": "已被防空火力锁定",
+		"HSIDreadnoughtArtilleryWarningCountdown": "下次打击时间-",
+
+
+		"HSI_TTMission_Name": "和平使命",
+		"HSI_TTMission_Desc0": "由于双方关系的缓和，以及对于速子科技不同分部不应一视同仁的呼吁，光环动力与速子科技期望在 Culann 进行一次和平会谈。",
+		"HSI_TTMission_Desc1": "光环动力的副理事长，公关部理事 博罗季诺夫 带领使团出访速子科技，以表现对会谈的重视。",
+
+		"HSI_TTMission_Desc2": "和谈相当顺利。双方顺利了签订框架协议，推动建立友好互信。",
+		"HSI_TTMission_Desc3": "虽然存在一些不太和谐的声音，但是 速子科技董事会 迅速以雷霆手段弹压了下去。",
+
+		"HSI_TTMission_Desc4": "虽然存在一些小小的骚乱，但是 速子科技董事会 迅速控制了局面。",
+
+		"HSI_TTMission_NextStep": "Culann此时正是星区的焦点。",
+		"HSI_TTMission_NextStep2": "最好还是换个地方度假。",
+
+		"HSITTMissionStartFight": "\"来得真快。\"",
+
+		"HSI_Continue": "继续",
+
+		"HSI_JuggeranutFleetName": "核心惩戒舰队",
+		"HSI_JuggeranutName": "J-01",
+
+		"HSI_Campaign_Destination":"目标:"
+	},
+	"shipSystem": {
+		"HSIShieldSystem":"护盾系统",
+		"HSITurbulanceShieldSuperChargeName":"护盾充能",
+		"HSITurbulanceShieldSuperCharge0":"消耗大量幅能快速回充护盾。护盾可恢复时以每秒 %s 的速度累积充能值，至多为 %s 。启动时以每秒 %s 的速度回充护盾， 造成 %s 的幅能。期间无法开火。",
+		"HSIFortifiedShieldName":"固化屏障",
+		"HSIFortifiedShield0":"屏障受到的伤害 x 0.1 ",
+		"HSIDeployCitadel":"部署坚城",
+		"HSIDeployCitadelRecall":"召回坚城",
+		"HSIDeployCitadelBuff":"坚城-提高200%射程和25%射速",
+		"HSIDeployCitadelRecallBuff":"坚城-降低25%射程和50%射速",
+		"HSIEmergencyBarrierName":"紧急屏障",
+		"HSIEmergencyBarrier0":"立即获得 %s 额外护盾。额外护盾容量无法超过基础护盾容量，承受伤害时不会中断护盾恢复进程。立刻开始恢复护盾。",
+		"HSIEmergencyBarrierStatus":"% 系统充能再生速度",
+
+		"HSIBurial0":"庄严哀悼",
+
+		"HSIPhaseText0":"相位线圈稳定",
+		"HSIPhaseText1":"相位线圈负载",
+		"HSIPhaseText2":"当前速度:",
+
+		"HSITimeBoosterHangar":"战机整备时间缩短",
+		"HSITimeBoosterWeapon":"武器开火速度提高",
+		"HSITimeBoosterWeapon2":"武器开火幅能降低",
+		"HSITimeBoosterFighter":"战机时间流速提高",
+		"HSITimeBoosterModeHangar":"聚焦：机库",
+		"HSITimeBoosterModeWeapon":"聚焦：武器",
+		"HSITimeBoosterModeFighter":"聚焦：战机",
+
+		"HSIIFFDisruptorHints":"IFF压制强度",
+
+		"HSIElegyStatusData0":"目标受到",
+		"HSIElegyStatusData1":"%伤害",
+		"HSIElegyStatusData2":"受到",
+		"HSIElegyFloaty":"受伤提高!",
+
+		"HSILuminarFlowHints":"受到的伤害降低 50% ",
+
+		"HSISpaceWind": "受到伤害降低",
+
+		"HSIDeepDive": "进入深潜，机动性和最大航速提高",
+
+		"HSIUplinkFireControlTitle": "上行火控链路",
+		"HSIUplinkFireControlContent0": "免疫ECM惩罚",
+		"HSIUplinkFireControlContent1": "射程和武器伤害提高",
+		"HSIUplinkFireControlContent2": "大幅提高自动开火精度",
+
+		"HSIUTimeFlow": "时流改变：",
+
+		"HSITSControl": "正在进行时空操作",
+
+		"HSIFF0": "武器射速降低",
+		"HSIFF1": "受到的伤害降低",
+		"HSIFF2": "由于被锁定而提高的装甲强度",
+
+		"HSIOD0": "机动性大幅提高",
+		"HSIOD1": " 最大航速",
+
+		"HSIOverBurstDrive": "引擎出力超限",
+
+		"HSITSControlAName": "时空操作",
+
+		"HSIOutOfRange":"超出范围",
+		"HSINoTarget":"无目标",
+		"HSIUsable":"可用"
+	} ,
+    "hullMod": {
+		"HSITurbulanceShieldName":"能量屏障",
+		"HSITurbulanceShield0":"屏障",
+		"HSITurbulanceShieldSafe":"稳定",
+		"HSITurbulanceShieldDanger":"危险",
+		"HSIShieldControl":"屏障控制",
+		"HSIShieldControlOn":"开启",
+
+		"HSITurbulanceShieldV2Name":"能量屏障",
+		"HSITurbulanceShieldV2Desc1":"在装甲表面形成一层能量屏障，优先于装甲和船体承受伤害。屏障的容量为幅能容量的 %s ，屏障的恢复速度为幅能耗散的 %s 。屏障具有相当于容量 %s 的装甲计算值。",
+		"HSITurbulanceShieldV2Desc2":"停止承受硬幅能伤害后一定时间开始再生，再生时产生软幅能。\n屏障在降低到 %s 前免疫EMP影响。\n如果附近的敌人较少,再生的冷却将会大幅降低。",
+		"HSITurbulanceShieldV2Desc2Old":"停止承受硬幅能伤害后一定时间开始再生，再生时产生软幅能。\n低于一定数值的伤害不会立刻影响再生或重启再生的进程，而是额外消耗总额相当于容量 %s 的缓冲区.缓冲区不足时，低于此阈值的伤害也会停止再生.\n缓冲区仅在屏障恢复时以 %s 的速度一同恢复.\n这一阈值与屏障容量正相关，但不会超过75。\n如果附近的敌人较少,再生的冷却将会大幅降低.",
+		"HSITurbulanceShieldV2Desc3":"过载和强制排幅时严重降低恢复率。",
+		"HSITurbulanceShieldV2Desc4":"屏障可额外获得等于护盾、装甲、船体减伤三者平均的减伤。\n屏障会以硬幅能耗散比例的 40% 进行相同比例的再生，不受其他条件影响。",
+		"HSITurbulanceShieldV2TableTitle":"性能参数",
+		"HSITurbulanceShieldV2TableRowHeadL":"参数",
+		"HSITurbulanceShieldV2TableRowHeadR":"数值",
+		"HSITurbulanceShieldV2Row1":"屏障容量",
+		"HSITurbulanceShieldV2Row2":"屏障强度",
+		"HSITurbulanceShieldV2Row3":"屏障再生速度",
+		"HSITurbulanceShieldV2Row4":"屏障再生冷却",
+		"HSITurbulanceShieldV2Row5":"屏障再生率",
+		"HSITurbulanceShieldV2Row6Old":"屏障中止再生阈值",
+		"HSITurbulanceShieldV2Row6":"屏障装甲",
+		"HSITurbulanceShieldV2Row7":"屏障再生消耗",
+		"HSITurbulanceShieldV2RowDesc1":"#屏障容量：用于吸收伤害的额度，与幅能容量正相关",
+		"HSITurbulanceShieldV2RowDesc2":"#屏障强度：每吸收1点伤害消耗的屏障容量，不含其他减伤；上表显示为 屏障强度 x 舰船减伤",
+		"HSITurbulanceShieldV2RowDesc3":"#屏障再生速度：屏障处于再生状态时，每秒增加的容量，与幅能耗散正相关",
+		"HSITurbulanceShieldV2RowDesc4":"#屏障再生冷却：屏障中止再生后，需要不受伤害以重启再生的时间",
+		"HSITurbulanceShieldV2RowDesc5":"#屏障再生率：任何非额外部分的屏障增加效果都将与此数值乘算",
+		"HSITurbulanceShieldV2RowDesc6Old":"#屏障中止再生阈值：屏障承受低于此数额的伤害时不会立刻停止再生，而是额外消耗缓冲区;缓冲区归零时，低于此阈值的伤害也会停止再生",
+		"HSITurbulanceShieldV2RowDesc6":"#屏障装甲：屏障承受伤害时依据此计算装甲值",
+		"HSITurbulanceShieldV2RowDesc7":"#屏障再生消耗：屏障再生时产生的软幅能比例",
+		"HSITurbulanceDetailedDescTitle":"能量屏障计算说明",
+		"HSITurbulanceDetailedDesc":"能量屏障对任何非破片伤害都以同等数值吸收，破片伤害折算为四分之一。\n对于屏障存在期间的舰船承受的每点伤害，首先通过屏障强度、舰船减伤计算、部分系统及其他特殊注明的机制提供的特殊减伤得到用于其他计算的基础值。\n基于此基础值，再结算其他相关插件和屏障装甲的效果。屏障装甲计算中，伤害的穿甲力不受屏障效率和减伤影响。",
+		"HSITurbulanceDetailedDescOld":"能量屏障对任何非破片伤害都以同等数值吸收，破片伤害折算为四分之一。\n对于屏障存在期间的舰船承受的每点伤害，首先通过屏障强度、舰船减伤的一半、部分系统及其他特殊注明的机制提供的特殊减伤得到用于其他计算的基础值。\n基于此基础值，再结算其他相关插件和中止再生的效果。",
+
+		"HSIShieldModIncompatible":"不能安装更多屏障升级",
+		"HSIWeaponModIncompatible":"不能安装更多武器工业升级",
+
+		"HSIHardenedShieldName":"刚毅护盾",
+		"HSIHardenedShield0":"护盾受到伤害高于 %s 时将伤害降低至 %s，降低至多 %s。",
+		"HSIHardenedShieldSystem0":"系统持续期间额外提高 %s 的护盾吸收效率。",
+		"HSIHardenedShieldConflictWarning":"不能与强化屏障同时安装",
+
+		"HSIBarrierName":"强化屏障",
+		"HSIBarrier0":"每 %s 秒获得等于 %s 最大护盾容量的额外护盾。额外护盾无法超过 %s 。",
+		"HSIBarrierSystem0":"系统启动时，立即获得等于 %s 最大护盾容量的额外护盾。但是最大速度降低 %s 。",
+		"HSIBarrierConflictWarning":"不能与强化屏障同时安装",
+
+		"HSIPredictShield":"对光束武器，基于来源的距离计算；对射弹武器，基于飞行时间计算 。",
+		"HSIPredictShieldConflictWarning":"不能与预知式护盾控制同时安装",
+
+		"HSIReflectShield0":"光束武器的攻击每秒计算为5次攻击 。",
+		"HSIReflectShield1":"计数器将在护盾开始恢复时重置 。",
+		"HSIReflectShieldConflictWarning":"不能与反射式护盾控制同时安装",
+
+		"HSIFlexibleHangar0":"额外部署与整备",
+		"HSIFlexibleHangar1":"每个机库提供共享整备速率上限和备用部署上限，受到战机装配点和整备时间的影响。\n在机库全速运行时累计整备速率,在联队全满时累计备用部署。\n如果机库的整备速率不满，消耗共享整备速率补充。如果联队减员，消耗可用的备用部署立刻补充。",
+		"HSIFlexibleHangar2":"联队",
+		"HSIFlexibleHangar3":"共享整备",
+		"HSIFlexibleHangar4":"后备部署",
+		"HSIFlexibleHangar5":"整备累计",
+		"HSIFlexibleHangar6":"部署累计",
+		"HSIFlexibleHangar7":"后备部署的上限由战机装配点数控制。基础为3，大于7为2，大于15为1。\n后备部署的累计速度由联队的整备时间确定，每1后备部署需要满员机库3倍整备时间(最多60秒)来累计。",
+		"HSIFlexibleHangar8":"共享整备速度的上限由战机整备时间控制。每个机库可提供的共享整备上限为10/整备时间(最大为150%)。\n每个满员机库每秒可以提供自身上限对应5%的共享整备速度。\n入场后10秒内以双倍速度恢复共享整备速度，不进行整备速度补充和后备部署的计算。",
+
+		"HSINoSafetyOverridesWarning":"必须安装安全协议超载",
+
+
+
+		"HSIShieldModifier":"护盾修正",
+		"HSIShieldModConflict": "只能安装1个护盾升级",
+
+		"HSISystemModifier":"系统修正",
+
+		"HSIEGOmaintain0":"当前情感等级：",
+
+		"HSIEGO0":"一种不存在于人之领的技术。理事长私人控制的L部门设计并建造了这套系统。",
+		"HSIEGO1":"情感系统",
+		"HSIEGO2":"在承受结构伤害和造成结构伤害时，EGO系统会积累情感。每受到 %s 结构伤害和造成 %s 结构伤害会积累 %s 点负面/正面情感。累计到一定点数后情感等级提高，基础为 %s 点，每级提高 %s 点需求，最高 %s 级。",
+		"HSIEGO3":"每级提高 %s 幅能耗散、幅能容量、战术系统冷却速度。随等级提高，部分船体会强化或解锁能力。",
+		"HSIEGO4":"每场战斗初次受到致命的潜在伤害时，立即恢复全部弹药、战术系统充能、战备，额外提高 %s 结构和装甲，并在一段时间内完全修复。期间无法开火、无法受到伤害、无视碰撞。并获得 %s 负面情感。峰值时间不受时流效果影响。",
+		"HSIEGO_HUNT": "在一定时间内造成过伤害的目标被摧毁时，立刻恢复 %s 战备。战备降低的速度变为原本降低速度的 %s 。因为此效果获得的战备超过最大值的场合，超出的部分以一半继续恢复战备，额外战备随时间衰减而且无法超过 %s 。",
+		"HSIEGO5":"情感等级",
+		"HSIEGO6":"每次情感等级提升时，会随机抽取一种额外效果。效果分为正面和负面，根据本次提升的等级中包含的负面/正面情感分配概率。效果不会重复抽取，部分效果具有等级和EGO类型的限制。",
+		"HSIEGO7":"生涯效果",
+		"HSIEGO8":"累计受到的船体伤害和结构伤害会折算为情感。折算需求会逐渐提高。当前情感: %s / %s ",
+
+		"HSIEGOButterFly0":"哀悼",
+		"HSIEGOButterFly1":"EGO等级2：战术系统变更为庄严哀悼。大幅缩短冷却时间，增加 %s 亡蝶数量。每次启用时可以消耗已造成伤害的 %s ,恢复 %s 消耗值的结构和装甲。",
+		"HSIEGOButterFly2":"EGO等级4：提高 %s 的亡蝶伤害。",
+		"HSIEGOButterFly3":"EGO等级6：增加 %s 亡蝶数量。",
+
+
+		"HSIEGOCardsEffect": "情感等级",
+		"HSIEGOCardsEffectPleasure": "由于击沉获得的CR增加 50% ",
+		"HSIEGOCardsEffectSteady": "射程提高到 115% ",
+		"HSIEGOCardsEffectRIP": "对结构低于 33% 的目标，伤害提高到 115%",
+		"HSIEGOCardsEffectCoffin": "造成伤害时，每1基础伤害有 0.5% 概率使目标的一个引擎熄火",
+		"HSIEGOCardsEffectDesire": "受到的船体伤害提高 10% ，机动性和最大航速提高 10%",
+		"HSIEGOCardsEffectDepression": "射程降低 10% ，伤害提高 10%",
+		"HSIEGOCardsEffectAnger": "受到的船体伤害提高 10% ，伤害提高 10%",
+		"HSIEGOCardsEffectMourning": "处于不利状态的目标受到的伤害提高",
+		"HSIEGOCardsEffectGrief": "降低V排或过载时受到的伤害，提高对V排或过载敌人的伤害",
+
+
+		"HSITorpDesign1":"开幕雷击",
+		"HSITorpDesign2":"进入和脱离交战状态时，所有前方导弹挂载点发射一轮导弹。不消耗备弹，但是使武器进入 %s 秒的冷却。这些导弹的飞行时间延长 %s 秒。爆发开火的导弹每开火两发会提高开火消耗，使最终数目低于通常开火的数目。这一效果不会被船体等级和数量显著低于自身的敌人触发。",
+
+
+		"HSITorpDesign3_Old":"长程雷击",
+		"HSITorpDesign4_Old":"导弹武器伤害降低 %s ,导弹武器射程提高 %s 。",
+
+		"HSI_LTorpDesign_NoRacks": "不能安装扩展发射架",
+		"HSI_ProtocalMeltdown_NoAMP": "不能安装高散射增幅器",
+
+		"HSIAdaption":"武器工业改装套组",
+		"HSIAdaptionText":"武器工业为舰载维护设施提供了可快速改装部分武器的套件蓝图。部分武器安装后可以转换为改造版本。详情见 %s 模组。",
+		"HSIAdaptionText_mjolnir": "雷神炮",
+		"HSIAdaptionText_needler": "轻/重型针刺",
+		"HSIAdaptionText_iral": "ir自动长矛。现在是点防御武器，射程降低，命中时造成小额破片伤害。",
+		"HSIAdaptionText_guardian": "保卫者PD。开火间隔提高。移除弹匣。",
+		"HSIAdaptionText_autopulse": "自动脉冲激光",
+		"HSIAdaptionText_plasma": "等离子炮",
+		"HSIAdaptionText_hil": "高强度激光",
+		"HSIAdaptionText_tachyonlance": "速子长矛",
+		"HSIAdaptionText_phasebeam": "相位长矛",
+		"HSIAdaptionText_heavyblaster": "重型冲击波。伤害、幅伤比降低。",
+		"HSIAdaptionText_gravitonbeam": "引力子束。不适用熔毁升级。",
+		"HSIAdaptionText_ionbeam": "离子束",
+		"HSIAdaptionText_mininglaser": "钻探激光",
+		"HSIAdaptionText_heavyac": "重型自动炮。改为3轮3发开火，开火间隔延长，精度提高。",
+		"HSIAdaptionText_ionpulser": "离子脉冲。爆发开火和弹匣恢复模式改动。",
+		"HSIAdaptionText_gauss": "高斯炮",
+		"HSIAdaptionText_amblaster": "反物质冲击波",
+		"HSIAdaptionText_hveldriver": "高速打击者",
+		"HSIAdaptionText_lightdualac": "轻型双管自动炮",
+		"HSIAdaptionText_heavymauler": "重型撕裂者",
+
+
+		"HSIUpgrades":"可升级武器",
+		"HSIUpgradesEffect":"升级",
+		"HSIUpgradesHWI_Counter":"爆炸时造成引力干扰效果",
+		"HSIUpgradesHWI_TurbocannonL":"最低能保持 50% 充能,额外提供4层上限",
+		"HSIUpgradesHWI_TurbocannonM":"最低能保持 50% 充能,额外提供4层上限",
+		"HSIUpgradesHWI_TurbocannonS":"最低能保持 50% 充能,额外提供4层上限",
+		"HSIUpgradesHWI_Stella":"启用自动装填,但是伤害降低 50% ",
+		"HSIUpgradesHWI_Astesia":"启用自动装填,但是伤害降低 33% ",
+		"HSIUpgradesHWI_mjolnir":"启用自动装填,但是伤害降低 33% ",
+		"HSIUpgradesEmpty":"没有可用的升级。安装具有升级词条的武器以适用此插件效果。",
+		"HSIUpgradesListTitle":"当前所有的可升级武器",
+
+		"HSINanoRepairContent": "正在进行缓慢修复",
+
+
+		"HSIElegyHeading0":"灵视",
+		"HSIElegyDesc0":"锁定当前目标和附近结构最低的另一个敌对目标，这些目标受到 %s 伤害。",
+		"HSIElegyHeading1":"灵之歌",
+		"HSIElegyDesc1":"生成环绕自身的灵。 对战机和导弹造成 %s 伤害，对舰船造成 %s 能量伤害。灵视锁定的目标被摧毁时，生成 %s 枚灵。",
+
+		"HSILogisticLimitedReached":"已达到舰队安装上限",
+
+		"HSICombatAutomateRepirSystemManager_Title":"战斗自动护理系统",
+		"HSICombatAutomateRepirSystemWeapon":"正在修复武器: ",
+		"HSICombatAutomateRepirSystemArmor":"正在修复装甲-剩余: ",
+
+		"HSIGuardFleet3Section": "近卫第三舰队",
+		"HSIGuardFleet3Intro0": "因Delta-Kerm歼灭战的英勇表现被授予近卫称号。在近卫一向三支速子战斗群发起决死突击后的第四十九分钟，第三舰队强行突破了脉冲星爆发的封锁。在接到近卫二传来的情报后，第三舰队立刻启动了近程折跃系统。速子科技保存主力的希望被彻底摧毁，促成了速子科技的全面投降。重整后的近卫三被建设为快速反应部队，有情报表示他们有至少半数分舰队驻扎在Intrusion事件视界的另一侧——这是一支足以颠覆如今破败的英仙座的军事力量。",
+
+		"HSIGuardFleet1Section": "近卫第一舰队",
+		"HSiGuardFleet1Intro0": "因于C+51的Nasu对峙事件中重创联邦雇佣舰队，使联邦的战略目的完全失败而被授予近卫称号。在驻防研究所的第100战斗群与联邦主力在超空间遥相对峙时，秘密组建的第一舰队与联邦雇佣舰队展开了隐秘而残酷的厮杀，最终联邦雇佣舰队的主力：速子科技公司卫队和天苑四-乌托邦地形改造集团卫队选择撤出战场，余下的雇佣兵四散而逃，联邦的兵锋立时瓦解。",
+
+		"HSIStalkerSection": "追猎者",
+		"HSIStalkerIntro": "一支独立于正式舰队外的、半官方性质的松散集合体，由许多被吸纳的佣兵团体、海盗和变节者组成。只要不与光环动力为敌，表面上遵守几十页但实质内容只有几行的规章，以及完成几乎不存在的任务KPI，战争部就几乎不会干涉他们的任何行动并为他们提供一些\"方便\"。提供给他们的装备大多是一些昂贵的实验室产品，或是不宜在正式舰队中使用的装备。",
+
+		"HSIStalkerRandomSection": "'非正式改装'",
+		"HSIStalkerRandomIntro": "这些舰船未必是全新的，甚至可能是打捞回来的。由于种种原因并未完全恢复到原始状态，因此：",
+		"HSIStalkerHullModification": "由于 %s ，装甲 %s ，结构 %s ",
+		"HSIStalkerManuModification": "由于 %s ，最大航速 %s ，机动性 %s ",
+		"HSIStalkerStatsModification": "由于 %s ，武器受到的伤害 %s ，武器造成的伤害 %s ",
+
+		"HSIStalkerReasonH0": "前任舰长喝醉后强行要求工程师加强船体",
+		"HSIStalkerReasonH1": "早前的船员进行了细致入微的维护和加固",
+		"HSIStalkerReasonH2": "遭受过致命性破坏",
+		"HSIStalkerReasonH3": "在某个未知的世界接受了不明升级",
+
+		"HSIStalkerReasonM0": "不知道先前的工程师从哪个残骸场里找到的引擎",
+		"HSIStalkerReasonM1": "调谐极佳的驱动场参数",
+		"HSIStalkerReasonM2": "遭受过致命性破坏",
+		"HSIStalkerReasonM3": "在某个未知的世界接受了不明升级",
+
+		"HSIStalkerReasonS0": "幅能网中充满了非标准电容器",
+		"HSIStalkerReasonS1": "为武器系统配置的优质能量电容",
+		"HSIStalkerReasonS2": "遭受过致命性破坏",
+		"HSIStalkerReasonS3": "在某个未知的世界接受了不明升级",
+
+
+
+		"HSIEntrophyFeedBackBuff":"[熵反馈]",
+		"HSIEntrophyFeedBackBuffIntro":"%s :每层提高能量和实弹武器伤害 %s ，射速 %s ，降低武器产生的幅能 %s 。",
+		"HSIEntroplyFeedBackSystemIntro0": "随幅能水平提高获得 %s ，最多在 %s 时获得 %s 层。",
+		"HSIEntroplyFeedBackSystemIntro1": "战斗中每秒产生的幅能每超出耗散 %s 点就会额外获得 1 层 %s ，最多 %s 层。 由此获得的层数会维持在最高的状态，直到幅能持续降低 %s 秒后每秒降低 %s 层。",
+		"HSIEntroplyFeedBackSystemRegen": "低温导能网络",
+		"HSIEntroplyFeedBackSystemRegenIntro0": "主动散幅速率提高到 %s 倍，耗散的幅能会以 %s 充能屏障。",
+
+		"HSIMatrixTargetingBuff":"能量与实弹武器射程",
+		"HSIMatrixTargetingSelfBonus": "双倍",
+
+		"HWIDisruptorTitle": "干扰矩阵生效中",
+		"HWIDisruptorWeapon": "系统与护盾控制被禁用:",
+
+		"HSIProtocalSuppressionTitle": "协同压制",
+		"HSIProtocalSuppressionContent": "受到伤害提高 ",
+
+		"HSIMirageTriggered":"泡影...",
+
+		"HSIApostleBladeDefenseTitle": "激活剑防御",
+		"HSIApostleBladeDefense": "剑防御：",
+
+		"HSITSControlName": "时空操作系统",
+		"HSITSControlDesc": "可以在战斗中使用时空操作系统，提高自身时间流动速度，期间偏折附近的射弹、导弹与光束。免受时间流速降低的影响。",
+
+		"HSIOP":"战争部曾经在操典中严禁舰长以任何方式绕过安全协议。然而在五十年战争初期，受限于旧式主宰纪元舰船的低机动性而被速子科技舰队四处牵制的舰长们很快大规模私自超弛安全协议。/n这一风气最终导致了操典的全面修改,舰船工业也为此开发了适配安全协议超弛的船体方案。尽管新一代舰船已经具备了充沛的机动性能,仍然有不少舰长执着于超弛安全协议。",
+		"HSIFreischutzWarning":"恶魔的交易不容更改……",
+		"HSINoTurbulanceWarning":"必须安装在具有能量屏障的舰船上",
+		"HSIUnitPercentagePerSec":"%/秒",
+		"HSIUnitSec":"秒",
+		"HSITypeArc":"50%电弧" ,
+		"HSIClickToChange":"按住[ %s ]键以切换模式",
+		"HSIClickToChangeDetail":"按住[ %s ]键以展开详细信息",
+		"HSIHullModSupplement":"备注"
+	},
+	"econ":{
+		"HSIHomeRelayDesc0":"本部生产",
+		"HSIShipQuality0":"提高舰船质量:%s",
+		"HSIShipQuality1":"只会对势力中最大的舰船生产中心生效。",
+		"HSI_SpySat_NAME":"情报收集",
+		"HSI_SpySat_0":"我们需要你把一颗间谍卫星送入",
+		"HSI_SpySat_1":"的轨道。它处在",
+		"HSI_SpySat_2":"。"
+	},
+	"weapon":{
+		"HWI_mjolnir":"%s :命中时降低目标%s最大速度,在%s内迅速衰减",
+		"HWI_mjolnir_HL":"迟滞力场|50%|0.2秒"
+	}
+}

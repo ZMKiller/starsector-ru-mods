@@ -1,0 +1,51 @@
+{
+	"id":"rr_mine_itano",
+	"specClass":"missile",
+	"missileType":"PHASE_CHARGE",
+	"sprite":"graphics/missiles/canister_flak2.png",
+	"size":[8,12],	
+	"center":[4,6],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,150,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":80, # purely visual
+	"flameoutTime":0.1,
+	"fadeTime":0.1,
+	"noEngineGlowTime":0.05,
+
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":120,
+					 "coreRadius":70, # full damage within core radius
+					 "collisionClass":MISSILE_NO_FF,
+					 "collisionClassByFighter":MISSILE_NO_FF},
+
+	"engineSpec":{"turnAcc":150,
+				  "turnRate":30,
+				  "acc":40,
+				  "dec":40},
+
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"range":40,
+					"slowToMaxSpeed":true,
+					"explosionSpec":{"duration":0.12f,
+									 "radius":120,
+									 "coreRadius":70, # full damage within core radius
+									 "collisionClass":PROJECTILE_NO_FF,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":3.0,
+									 "particleSizeRange":5.0,
+									 "particleDuration":1,
+									 "particleCount":60,
+									 "particleColor":[255,225,125,255],
+									 "explosionColor":[155,125,75,255],
+									 "useDetailedExplosion":true,
+									 "useDetailedExplosionColorAlpha":true,
+									 "detailedExplosionRadius":80,
+									 "detailedExplosionFlashRadius":250,
+									 "detailedExplosionFlashDuration":0.5,
+									 "detailedExplosionFlashColorFringe":[200,175,100,255],
+									 "detailedExplosionFlashColorCore":[155,155,155,255],
+									 "sound":"system_canister_flak_explosion"},
+					}
+}
+			

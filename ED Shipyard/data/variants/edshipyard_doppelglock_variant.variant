@@ -1,0 +1,44 @@
+{
+    "displayName": "Стрелок",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "edshipyard_doppelglock",
+    "hullMods": [
+        "frontshield",
+        "dedicated_targeting_core",
+        "reinforcedhull"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "edshipyard_doppelglock_variant",
+    "weaponGroups": [
+    {
+        "autofire": false,
+        "mode": "LINKED",
+        "weapons": {
+            "CR1": "edshipyard_CR",
+            "CR2": "edshipyard_CR"
+        }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "taclaser",
+            "WS0002": "taclaser",
+            "WS0003": "taclaser",
+            "WS2001": "taclaser",
+            "WS2002": "taclaser"
+        }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0004": "taclaser",
+            "WS2004": "taclaser"
+        }
+    }
+]
+}

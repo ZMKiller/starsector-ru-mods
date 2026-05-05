@@ -1,0 +1,87 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+,,,,,,,,,,,,,,,,,,,
+Вызыватель Aquila,diableavionics_aquila,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.diableAvionicsAquila,"Спасибо, Tim. Очень круто",,,graphics/da/hullmods/diableavionics_mount.png
+,,,,,,,,,,,,,,,,,,,
+Продвинутая авионика,diableavionics_avionics,4,0.33,Diable Avionics,"no_build_in, req_spaceport","Weapons, Engines, Requires Dock",30000,,,,15,30,45,70,data.hullmods.DiableAvionicsUpgrade,"Комплексная модернизация внутренних систем, доступная исключительно кораблям корпорации Diable Avionics. Точная настройка продвинутых двигателей и энергетических систем повышает выход реактора без ущерба надежности.",Значительно повышает эффективность оружия ценой потоковой эффективности. Позволяет Zero Flux Boost работать при большем потоке.,,graphics/da/hullmods/diableavionics_avionics.png
+,,,,,,,,,,,,,,,,,,,
+Прочная рама,diableavionics_wanzer,,,,,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsWanzer,"Wanzers - исключительно живучие малые аппараты с усиленными внутренними системами и тройным резервированием. Они получают %s сопротивления ЭМИ, а их оружие и двигатели на %s реже выходят из строя.",Дает Wanzers %s сопротивления ЭМИ и снижает урон их оружию и двигателям на %s.,,graphics/da/hullmods/diableavionics_quantumsensor.png
+,,,,,,,,,,,,,,,,,,,
+Снайперский комплект,diableavionics_sniperkit,2,,Diable Avionics,req_spaceport,Fighters,15000,,,,3,4,6,10,data.hullmods.DiableAvionicsSniperkit,"Специальный комплект модернизации для использования поддерживающей роли истребителя Warlust wanzer; содержит особые боеприпасы и лазерный прицел нового поколения для DMR. Оснащен связующим ядром наведения малого радиуса, которое позволяет всему крылу действовать как поддержка.","Переводит Warlust в роль ""крыльев поддержки"" и дает дополнительную дальность.",При S-моде снижает дальность вступления Warlust только на %s вместо %s.,graphics/da/hullmods/dibaleavionics_sniperkit.png
+,,,,,,,,,,,,,,,,,,,
+Тесный корпус,diableavionics_cramped,,,,,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsCramped,"Этот корпус необычно мал и не может вместить модификации, требующие много места, такие как %s, %s или %s. Скорострельность ракетного оружия снижена на %s.","Запрещает установку крупных модификаций корпуса, снижает скорострельность ракет на %s.",,graphics/da/hullmods/diableavionics_cramped.png
+,,,,,,,,,,,,,,,,,,,
+Негабаритный корпус,diableavionics_oversized,,,,,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsOversized,"Этот корабль необычно велик, что создает логистический кошмар при подготовке к бою. Увеличивает стоимость восстановления CR на %s.",Увеличивает стоимость восстановления CR на %s.,,graphics/da/hullmods/diableavionics_oversized.png
+,,,,,,,,,,,,,,,,,,,
+Модульная корабельная система,diableavionics_switchsubsystem,,,Diable Avionics,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.DiableaAvionicsSwitchsubsystem,"Набор подсистем, установленных на фрегат класса Coldfront, позволяет ему переключаться между двумя корабельными системами и быстро адаптироваться к меняющимся требованиям поля боя как в малых, так и в крупных флотах.",,,graphics/da/hullmods/diableavionics_switchsubsystem.png
+,,,,,,,,,,,,,,,,,,,
+Демпфированные крепления,diableavionics_mountBI,4,,Diable Avionics,,,,TRUE,,,0,0,0,0,data.hullmods.DiableAvionicsMountBI,"Орудийные установки корабля построены вокруг усиленных демпферов отдачи, позволяя снарядному оружию стрелять на слегка увеличенную дальность %s с уменьшением отдачи на %s. Снарядное оружие в крупных слотах получает меньший бонус.",,"Орудийные установки переработаны под установку оружия Diable Avionics, снижая стоимость OP на %s/%s/%s по размеру для баллистического и энергетического оружия корпорации. Однако такая сложная интеграция повышает требования к обслуживанию.",graphics/da/hullmods/diableavionics_mount.png
+Пакет демпфированных креплений,diableavionics_mount,3,0.33,Diable Avionics,"offensive, req_spaceport","Weapons, Requires Dock",15000,,,,8,12,20,30,data.hullmods.DampenedMounts,"Орудийные установки оснащены дополнительными демпферами отдачи, позволяя снарядному оружию стрелять на слегка увеличенную дальность %s с уменьшением отдачи на %s, но только при %s максимальной скорострельности.",,"Орудийные установки полностью интегрируются с дополнительными демпферами, устраняя штраф скорострельности. Оружие Diable Avionics заметно проще установить на новые крепления, снижая стоимость OP.",graphics/da/hullmods/diableavionics_mount.png
+,,,,,,,,,,,,,,,,,,,
+# WANZER GANTRY,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Обслуживающая эстакада Wanzer,diableavionics_universaldecksExtra,,,Diable Avionics,,,,TRUE,,,10,15,25,40,data.hullmods.WanzerGantry,"Увеличенные пусковые ангары облегчают обслуживание негабаритных космических аппаратов, таких как Wanzers. Оптимизированные инструменты и использование пространства позволяют палубной команде обслуживать %s за каждое установленное крыло Wanzer. Эти специализированные помещения не помогают обычным истребителям.",,"Один раз за бой, когда скорость пополнения истребителей достигает %s, ангары переключаются на работу с ""B-палубы"". Резервные истребители запускаются, чтобы быстро вернуть крылья к полной численности.",graphics/da/hullmods/diableavionics_decks.png
+Дизрапция Wanzer,diableavionics_subsystem_wanzerdisruption,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.WanzerBurstHullmod,"Корабли класса Gust оснащены тактическим устройством подавления, позволяющим направлять ЭМИ-всплеск через их Wanzers по целям и выводить их из строя на продолжительное время. Это помогает Wanzers выживать.",,,graphics/da/hullmods/diableavionics_quantumsensor.png
+,,,,,,,,,,,,,,,,,,,
+# COMMISSIONED CREW,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+#Оптимизированные операции,diableavionics_cc,,,,,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsCC,"Экипаж этого корабля обучен следовать крайне строгим протоколам корпорации Diable Avionics, что приводит к несколько более экономичному обслуживанию на %s или %s припасов в месяц, в зависимости от того, что наступит раньше. Однако восстановление CR также ухудшается.","Снижает ежемесячное обслуживание, но также снижает восстановление CR.",,graphics/da/hullmods/diableavionics_cc.png
+Протоколы гиперпространственной навигации,diableavionics_cc,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsCC,Экипаж этого корабля обучен замечать и переживать глубокие гиперпространственные штормы; корабли получают на %s меньше урона от ударов.,Снижает воздействие гиперпространственных штормов на флот.,,graphics/da/hullmods/diableavionics_cc.png
+,,,,,,,,,,,,,,,,,,,
+# STATION REVERSE ROTAION,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Осевое вращение,diableAvionics_axialrotation,,,,,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsAxialRotation,Эта конструкция постоянно вращается вокруг своей оси.,,,graphics/hullmods/axial_rotation.png
+,,,,,,,,,,,,,,,,,,,
+# VERSANT WEAPON SELECTOR,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Рама Versant,diableavionics_tuning,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsTuning,"Рама Versant предлагает ограниченную настройку в виде разных профилей стрельбы для встроенных пушек MP66-6 Harvest.
+
+%s: этот корабль - мастерски настроенная военная машина, уже работающая со сниженными потерями эффективности.",,,graphics/da/hullmods/diableavionics_tuning.png
+Переключатель огня: АВТО,diableavionics_selector_auto,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsAuto,"Профиль стрельбы встроенных Harvest можно менять под предпочтения капитана.
+
+%s имеет лучшую длительную огневую мощь, но худшую точность и дальность.
+
+%s",,,graphics/da/hullmods/diableavionics_selector_auto.png
+Переключатель огня: ОЧЕРЕДЬ,diableavionics_selector_burst,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsBurst,"Профиль стрельбы встроенных Harvest можно менять под предпочтения капитана.
+
+%s имеет лучшую точность и потоковую эффективность, но худшую длительную огневую мощь.
+
+%s",,,graphics/da/hullmods/diableavionics_selector_burst.png
+Переключатель огня: ПОЛУАВТО,diableavionics_selector_semi,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsSemi,"Профиль стрельбы встроенных Harvest можно менять под предпочтения капитана.
+
+%s имеет намного больший урон за выстрел и дальность, но худшую длительную огневую мощь и потоковую эффективность.
+
+%s",,,graphics/da/hullmods/diableavionics_selector_semi.png
+,,,,,,,,,,,,,,,,,,,
+# VIRTUOUS LOADOUT SELECTOR,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Рама Virtuous,diableavionics_virtuousMasterHullmod,,,,no_build_in,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsVirtuous_system,"Рама Virtuous предлагает широкие возможности настройки. Это нестандартное оборудование может глубоко менять летный профиль корабля.
+
+%s: этот корабль - мастерски настроенная военная машина, уже работающая с особыми ограничениями.",,,graphics/da/hullmods/diableavionics_virtuousHM.png
+,,,,,,,,,,,,,,,,,,,
+Сломанная рама,diableavionics_virtuousBroken,,,,,,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsVirtuous_broken,"%s, этот корпус сломан и не может использоваться в бою, пока не будет восстановлен.",,,graphics/icons/intel/investigation.png
+,,,,,,,,,,,,,,,,,,,
+Конфигурация корпуса: Застрельщик,diableavionics_virtuous_skirmisher,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsVirtuous_teleport,Эта конфигурация корпуса предназначена для максимального раскрытия способности Virtuous достигать и использовать бреши в любой точке поля боя.,,,graphics/da/hullmods/diableavionics_virtuousHM_hullA.png
+Конфигурация корпуса: Драчун,diableavionics_virtuous_brawler,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsVirtuous_temporalShell,Эта конфигурация корпуса предназначена для максимального урона Virtuous при столкновении с врагом или для быстрого выхода из неблагоприятных ситуаций.,,,graphics/da/hullmods/diableavionics_virtuousHM_hullB.png
+Конфигурация корпуса: Защитник,diableavionics_virtuous_defender,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsVirtuous_citadel,"Эта конфигурация корпуса оптимизирует использование потока, повышая пассивную защиту рамы Virtuous и ее выживаемость против превосходящих сил.",,,graphics/da/hullmods/diableavionics_virtuousHM_hullC.png
+Конфигурация корпуса: Разведчик,diableavionics_virtuous_scout,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsVirtuous_itanoCircus,Эта конфигурация корпуса улучшает логистический профиль рамы Virtuous и максимизирует ее стратегическую и тактическую мобильность.,,,graphics/da/hullmods/diableavionics_virtuousHM_hullD.png
+,,,,,,,,,,,,,,,,,,,
+Правый комплект: Scicle,diableavionics_virtuous_scicle_R,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,Бластер Scicle предназначен для крайне быстрого уничтожения малых и средних целей на короткой дистанции.,,,graphics/da/hullmods/diableavionics_virtuousHM_kitA.png
+Правый комплект: Snowblast,diableavionics_virtuous_snowblast_R,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,"Дробовик Snowblast становится жестокой проблемой для любого корабля, достаточно близкого для его кинетического двойного выстрела.",,,graphics/da/hullmods/diableavionics_virtuousHM_kitB.png
+Правый комплект: Excision,diableavionics_virtuous_excision_R,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,Винтовка Excision предназначена для поддержки союзных кораблей дальними высокоточными фугасными выстрелами.,,,graphics/da/hullmods/diableavionics_virtuousHM_kitC.png
+Правый комплект: Glaux,diableavionics_virtuous_glaux_R,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,Повторитель Glaux предназначен для разрушения брони и корпуса противника мощными очередями и достойным длительным уроном.,,,graphics/da/hullmods/diableavionics_virtuousHM_kitD.png
+Правый комплект: Grasshopper,diableavionics_virtuous_grasshopper_R,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,"Гранатомет Grasshopper предназначен для борьбы с вражескими авианосцами, выпуская огромный залп гранат, наносящих серьезный урон всему рядом.",,,graphics/da/hullmods/diableavionics_virtuousHM_kitD.png
+Правый комплект: Beast,diableavionics_virtuous_beast_R,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,Пушка Beast - проверенное оружие против любой брони. Модифицированный Mostro быстро ломает любые типы брони.,,,graphics/da/hullmods/diableavionics_virtuousHM_kitD.png
+Правый комплект: Roar,diableavionics_virtuous_roar_R,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,"Миниган Roar идеален для давления на щиты с дистанции, быстро поднимая поток противника, чтобы другое оружие могло его уничтожить.",,,graphics/da/hullmods/diableavionics_virtuousHM_kitD.png
+,,,,,,,,,,,,,,,,,,,
+Левый комплект: Scicle,diableavionics_virtuous_scicle_L,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,Бластер Scicle предназначен для крайне быстрого уничтожения малых и средних целей на короткой дистанции.,,,graphics/da/hullmods/diableavionics_virtuousHM_kitA.png
+Левый комплект: Snowblast,diableavionics_virtuous_snowblast_L,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,"Дробовик Snowblast становится жестокой проблемой для любого корабля, достаточно близкого для его кинетического двойного выстрела.",,,graphics/da/hullmods/diableavionics_virtuousHM_kitB.png
+Левый комплект: Excision,diableavionics_virtuous_excision_L,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,Винтовка Excision предназначена для поддержки союзных кораблей дальними высокоточными фугасными выстрелами.,,,graphics/da/hullmods/diableavionics_virtuousHM_kitC.png
+Левый комплект: Glaux,diableavionics_virtuous_glaux_L,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,Повторитель Glaux предназначен для разрушения брони и корпуса противника мощными очередями и достойным длительным уроном.,,,graphics/da/hullmods/diableavionics_virtuousHM_kitD.png
+Левый комплект: Grasshopper,diableavionics_virtuous_grasshopper_L,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,"Гранатомет Grasshopper предназначен для борьбы с вражескими авианосцами, выпуская огромный залп гранат, наносящих серьезный урон всему рядом.",,,graphics/da/hullmods/diableavionics_virtuousHM_kitD.png
+Левый комплект: Beast,diableavionics_virtuous_beast_L,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,Пушка Beast - проверенное оружие против любой брони. Модифицированный Mostro быстро ломает любые типы брони.,,,graphics/da/hullmods/diableavionics_virtuousHM_kitD.png
+Левый комплект: Roar,diableavionics_virtuous_roar_L,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor1,"Миниган Roar идеален для давления на щиты с дистанции, быстро поднимая поток противника, чтобы другое оружие могло его уничтожить.",,,graphics/da/hullmods/diableavionics_virtuousHM_kitD.png
+,,,,,,,,,,,,,,,,,,,
+Головное оружие: Burchel,diableavionics_virtuous_headA,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor2,Этот тип головы оснащен импульсным ПКО-лучом Burchel.,,,graphics/da/hullmods/diableavionics_virtuousHM_headA.png
+Головное оружие: Winee,diableavionics_virtuous_headB,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor2,Этот тип головы оснащен ЭМИ-излучателем Winee.,,,graphics/da/hullmods/diableavionics_virtuousHM_headB.png
+Головное оружие: Grave,diableavionics_virtuous_headC,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor2,Этот тип головы оснащен легкой штурмовой пушкой Grave.,,,graphics/da/hullmods/diableavionics_virtuousHM_headC.png
+Головное оружие: Magicbox,diableavionics_virtuous_headD,,,,"req_spaceport, no_build_in",,,,TRUE,,0,0,0,0,data.hullmods.DiableAvionicsFlavor2,Этот тип головы оснащен пусковой установкой противоракетной обороны Magicbox.,,,graphics/da/hullmods/diableavionics_virtuousHM_headD.png

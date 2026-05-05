@@ -1,0 +1,312 @@
+{
+  "bounds": [
+    178.5,
+    3,
+    78.5,
+    25.5,
+    31.5,
+    30.5,
+    25.5,
+    36.5,
+    -39.5,
+    33.5,
+    -45.5,
+    27.5,
+    -92.5,
+    26.5,
+    -114.5,
+    19.5,
+    -111.5,
+    15.5,
+    -85.5,
+    15.5,
+    -85.5,
+    -15.5,
+    -111.5,
+    -15.5,
+    -114.5,
+    -19.5,
+    -92.5,
+    -26.5,
+    -45.5,
+    -27.5,
+    -39.5,
+    -33.5,
+    25.5,
+    -36.5,
+    31.5,
+    -30.5,
+    78.5,
+    -25.5,
+    178.5,
+    -3
+  ],
+  "builtInMods": [
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame3",
+    "BLINKER1": "SCY_ZblinkerA",
+    "BLINKER2": "SCY_ZblinkerA",
+    "D_HEAT_CENTER": "SCY_XcruiserHeat",
+    "E_CHARGE": "SCY_XXsirenCharge",
+    "E_HEAT": "SCY_XXsirenHeat",
+    "F_GUNLEFT": "SCY_XXsirenDoorFL",
+    "F_GUNRIGHT": "SCY_XXsirenDoorFR",
+    "G_GUNLEFT": "SCY_XXsirenDoorRL",
+    "G_GUNRIGHT": "SCY_XXsirenDoorRR",
+    "WS0001": "SCY_sirenMain"
+  },
+  "center": [
+    43,
+    167
+  ],
+  "collisionRadius": 200,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 24,
+      "length": 40.5,
+      "location": [
+        -83,
+        -0
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE",
+      "width": 24
+    }
+  ],
+  "height": 360,
+  "hullId": "SCY_siren",
+  "hullName": "Siren",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    7,
+    -0
+  ],
+  "shieldRadius": 192,
+  "spriteName": "graphics/SCY/ships/SCY_siren.png",
+  "style": "SCYHULL",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "A_FLAME_CENTER",
+      "locations": [
+        -83,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "D_HEAT_CENTER",
+      "locations": [
+        -108,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "E_CHARGE",
+      "locations": [
+        108.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "E_HEAT",
+      "locations": [
+        123,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "F_GUNLEFT",
+      "locations": [
+        155,
+        7.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "F_GUNRIGHT",
+      "locations": [
+        155,
+        -7.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "G_GUNLEFT",
+      "locations": [
+        101.5,
+        12.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "G_GUNRIGHT",
+      "locations": [
+        101.5,
+        -12.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BLINKER1",
+      "locations": [
+        -31.5,
+        24.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "BLINKER2",
+      "locations": [
+        -31.5,
+        -24.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        126,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 105,
+      "arc": 225,
+      "id": "WS0006",
+      "locations": [
+        -21,
+        24
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -105,
+      "arc": 225,
+      "id": "WS0007",
+      "locations": [
+        -21,
+        -24
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 45,
+      "arc": 225,
+      "id": "WS0002",
+      "locations": [
+        54,
+        4
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -45,
+      "arc": 225,
+      "id": "WS0003",
+      "locations": [
+        34,
+        -6
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 45,
+      "arc": 225,
+      "id": "WS0004",
+      "locations": [
+        16,
+        8
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -45,
+      "arc": 225,
+      "id": "WS0005",
+      "locations": [
+        0,
+        -10
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        2.5,
+        -28,
+        13.5,
+        -28.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 86
+}

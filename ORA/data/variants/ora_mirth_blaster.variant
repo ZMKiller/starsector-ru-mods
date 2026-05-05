@@ -1,0 +1,35 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 10,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "ora_mirth",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_mirth_blaster",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyblaster"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "ora_recital",
+                "WS0006": "ora_recital"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ora_choir",
+                "WS0003": "ora_choir",
+                "WS0004": "ora_choir"
+            }
+        }
+    ]
+}

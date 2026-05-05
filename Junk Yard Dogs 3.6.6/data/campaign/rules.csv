@@ -1,0 +1,8 @@
+id,trigger,conditions,script,text,options,notes
+JYD_nex_NGCPickStartingShips,ExerelinNGCStep3,"$playerFaction == JYD
+!$JYD_ChangeMind","AddText ""The Junk Yard Dogs are comprised of working class independent miners. With pirates and other outlaw factions strategically attacking their initial low quality civilian ships stealing their cargo and killing their crews, they banded together and started commissioning their own designs from the Independent ship yards. ""
+
+AddText ""They provide many raw materials for the core worlds through mining of the asteroid belts and planets in their system, Dogstar. You start in Dogstar which is littered with many opportunities for salvage with salvage areas, wrecked ships, supplies, weapons and some blueprints floating around.""
+
+AddText ""The hullmod from Commissioned Crews improves fighter and drone operations by lowering their replacement time, requiring less flight crew to operate and lowering skeleton crew requirements.""
+$JYD_ChangeMind = true",,,

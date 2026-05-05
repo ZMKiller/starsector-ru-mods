@@ -1,0 +1,60 @@
+{
+  "hullName": "Anaplekte",
+  "hullId": "SCY_anaplekte",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/SCY/ships/fighters/SCY_anaplekte.png",
+  "style": "SCYHULL",
+  "height": 30,
+  "width": 32,
+  "center": [16, 15],
+  "collisionRadius": 29,
+  "shieldCenter": [5, -0],
+  "shieldRadius": 22,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux",
+    "SCY_engineering",
+    "magazines"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SCY_intercept"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": 0,
+      "locations": [8, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, 6.5],
+      "length": 19,
+      "width": 8,
+      "angle": 175,
+      "contrailSize": 8,
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES"
+    },
+    {
+      "location": [-14, -6.5],
+      "length": 19,
+      "width": 8,
+      "angle": -175,
+      "contrailSize": 8,
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES"
+    }
+  ],
+  "bounds": [
+    -3.5, 14.5,
+    -11.5, 8.5,
+    -11.5, -8.5,
+    -3.5, -14.5,
+    17, -1.5
+  ]
+}

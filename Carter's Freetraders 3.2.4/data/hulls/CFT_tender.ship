@@ -1,0 +1,67 @@
+{
+  "hullName": "Tender",
+  "hullId": "CFT_tender",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_tender.png",
+  "style": "MIDLINE",
+  "height": 50,
+  "width": 50,
+  "center": [25, 25],
+  "collisionRadius": 30,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 27.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [9.5, 5.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -0,
+      "locations": [9.5, -5.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-4, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16.5, 8.5],
+      "length": 18,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-16.5, -8.5],
+      "length": 18,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    19.5, -15.5,
+    -22.5, -18.5,
+    -22.5, 18.5,
+    19.5, 15.5
+  ]
+}

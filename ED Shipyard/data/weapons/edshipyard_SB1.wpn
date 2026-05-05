@@ -1,0 +1,31 @@
+{
+	"id":"edshipyard_SB1",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":450,
+	"turretSprite":"graphics/weapons/edshipyard_sb_s_turret_base.png",
+	"turretGunSprite":"graphics/weapons/edshipyard_sb_s_turret_barrel.png",
+	"hardpointSprite":"graphics/weapons/edshipyard_sb_s_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/edshipyard_sb_s_hardpoint_barrel.png",	
+	"visualRecoil":7.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[13, 3, 13, -3,13, 3, 13, -3,13, 3, 13, -3,13, 3, 13, -3],
+	"turretAngleOffsets":[-7, -7,-4, -4,4, 4,7, 7],
+	"hardpointOffsets":[18, 3, 18, -3,18, 3, 18, -3,18, 3, 18, -3,18, 3, 18, -3],
+	"hardpointAngleOffsets":[-7, -7,-4, -4,4, 4,7, 7],
+	"specialWeaponGlowWidth":12,
+	"specialWeaponGlowHeight":30,
+	"separateRecoilForLinkedBarrels":"TRUE",
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":20.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":30.0,
+					   "particleSizeMin":2.0,
+					   "particleSizeRange":4.0,
+					   "particleDuration":0.25,
+					   "particleCount":8,
+					   "particleColor":[225,125,225,175]},
+	"projectileSpecId":"edshipyard_sb_p",  # projectile that will be fired
+	"fireSoundTwo":"ed_shotgun_s",
+}

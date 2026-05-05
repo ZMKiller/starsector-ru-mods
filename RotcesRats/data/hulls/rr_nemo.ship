@@ -1,0 +1,115 @@
+{
+  "hullName": "Nemo",
+  "hullId": "rr_nemo",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/rr_nemo.png",
+  "style": "HIGH_TECH",
+  "height": 76,
+  "width": 66,
+  "center": [31, 34],
+  "collisionRadius": 64,
+  "shieldCenter": [-1, -0],
+  "shieldRadius": 53,
+  "viewOffset": 0,
+  "builtInMods": [
+    "hiressensors",
+    "ecm",
+    "eccm",
+    "nav_relay"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 30,
+      "locations": [14, 17]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -45,
+      "locations": [0, -27]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 235,
+      "angle": 110,
+      "locations": [-14, 21]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": -45,
+      "locations": [7, -20]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 90,
+      "locations": [0.5, 24]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-33, -21],
+      "length": 44,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-31, -28],
+      "length": 44,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, 26],
+      "length": 44,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-34, 19],
+      "length": 44,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    39.5, 12,
+    16, 28,
+    -29, 29,
+    -32, 17,
+    -23, 13,
+    -23, -17,
+    -31, -19,
+    -28, -31,
+    -11, -32,
+    17, -12,
+    23, -3,
+    20, 7
+  ]
+}

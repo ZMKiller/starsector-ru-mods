@@ -1,0 +1,110 @@
+{
+  "hullName": "Pilaster",
+  "hullId": "rr_pilaster",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/rr_Pilaster.png",
+  "style": "HIGH_TECH",
+  "coversColor": "255,255,255,255",
+  "height": 107,
+  "width": 88,
+  "center": [44, 48],
+  "collisionRadius": 82,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 77,
+  "viewOffset": 0,
+  "builtInMods": [
+    "fluxshunt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 50,
+      "locations": [29, 11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -50,
+      "locations": [29, -11]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 45,
+      "locations": [-4, 37]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -45,
+      "locations": [-4, -37]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-46, 14],
+      "length": 56,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-46, -14],
+      "length": 56,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-45, 24],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-45, -24],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    43, -10,
+    35, -18,
+    18, -18,
+    -3, -25,
+    -15, -35,
+    -40, -29,
+    -46, -10,
+    -35, -0,
+    -46, 10,
+    -40, 29,
+    -15, 35,
+    -3, 25,
+    18, 18,
+    35, 18,
+    43, 10,
+    51, 10,
+    57, -0,
+    51, -10
+  ]
+}

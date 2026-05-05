@@ -1,0 +1,410 @@
+{
+    "HSI_Stalker_1": {
+		"trigger_marketFaction_any": ["HSI"],
+        "trigger_marketFaction_alliedWith": false,
+
+		"trigger_memKeys_all": {
+			"$HSISS_Start":true
+	    },
+
+		"job_name": "追猎者赏金：噤声",
+		"job_forFaction": "HSI",
+		"job_description": "一支返航中的英仙座联盟舰队碰巧遭遇了隐秘行动处舰队，并发起了攻击。隐秘行动处摆脱了他们的追击，在他们返回报告前清理掉他们。",
+		"job_comm_reply": "……",
+		"job_intel_success": "很不错，新的权限已经向你开放。",
+		"job_intel_expired": "你失败了。",
+        "job_deadline":90,
+		"job_pick_option":"……",
+		"job_credit_reward": 100000,
+		"job_reputation_reward":8,
+		"job_reward_scaling": 0,
+		"job_item_reward": {
+		},
+		"job_type":"obliteration",
+		"job_show_type":true,
+		"job_show_captain": true,
+		"job_show_fleet": true,
+        "job_show_distance": "exact",
+        "job_show_arrow": true,
+
+		"target_rank": "spaceCaptain",
+        "target_post": "fleetCommander",
+
+		"target_personality": "aggressive",
+		"target_skills": { 
+			
+		    "tactical_drills":1,
+		    "coordinated_maneuvers":1,
+		    "crew_training":1,
+		    "electronic_warfare":1,
+		    "flux_regulation":1,
+
+			"helmsmanship":2,
+			"combat_endurance":2,
+			"gunnery_implants":2,
+			"damage_control":2,
+			"field_modulation":2,
+			"systems_expertise":2,
+			"missile_specialization":2
+        },
+
+		"fleet_name": "英仙座联盟巡逻队",
+		"fleet_faction": "ML_bounty",
+		"fleet_flagship_variant": "gryphon_HSISS_HVB1",
+		"fleet_flagship_autofit": false,
+		"fleet_flagship_recoverable": true,
+
+		"fleet_no_retreat": true,
+		"fleet_scaling_multiplier": 0,
+		"fleet_preset_ships": {
+			"gryphon_HSISS_HVB1": 1,
+			"centurion_HSISS_HVB1": 8,
+			"brawler_HSISS_HVB1": 6
+		},
+		"fleet_preset_autofit": false,
+		"fleet_transponder": false,
+		"fleet_behavior": "AGGRESSIVE",
+        "fleet_composition_faction": "persean",
+        "fleet_composition_quality": 2,
+        
+        "location_entities":["planet"],
+		"location_distance": "CLOSE",
+		"location_prioritizeUnexplored": true,
+		"location_defaultToAnyEntity": true
+	},
+
+    "HSI_Stalker_2": {
+		"trigger_marketFaction_any": ["HSI"],
+        "trigger_marketFaction_alliedWith": false,
+
+		"trigger_memKeys_all": {
+			"$HSISS_Start":true,
+            "$HSI_Stalker_1":true
+	    },
+
+		"job_name": "追猎者赏金：报应",
+		"job_forFaction": "HSI",
+		"job_description": "刺杀一队曾经在Intrusion附近区域伏击商队的速子科技雇佣兵头领。",
+		"job_comm_reply": "……",
+		"job_intel_success": "很不错，新的权限已经向你开放。",
+		"job_intel_expired": "你失败了。",
+        "job_deadline":180,
+		"job_pick_option":"……",
+		"job_credit_reward": 150000,
+		"job_reputation_reward":8,
+		"job_reward_scaling": 0,
+		"job_item_reward": {
+		},
+		"job_type":"assassination",
+		"job_show_type":true,
+		"job_show_captain": true,
+		"job_show_fleet": true,
+		"job_show_distance": "exact",
+        "job_show_arrow": true,
+
+		"target_rank": "spaceCaptain",
+        "target_post": "fleetCommander",
+
+		"target_personality": "aggressive", 
+        "target_skills": { 
+			
+		    "tactical_drills":1,
+		    "coordinated_maneuvers":1,
+		    "crew_training":1,
+		    "electronic_warfare":1,
+		    "flux_regulation":1,
+			"wolfpack_tactics":1,
+			"cybernetic_augmentation":1,
+
+			"helmsmanship":2,
+			"combat_endurance":2,
+			"gunnery_implants":2,
+			"damage_control":2,
+			"field_modulation":2,
+			"systems_expertise":2,
+			"missile_specialization":2
+			
+        },
+
+		"fleet_name": "速子科技雇佣兵",
+		"fleet_faction": "ML_bounty",
+		"fleet_flagship_variant": "aurora_HSISS_HVB2",
+		"fleet_flagship_autofit": false,
+		"fleet_flagship_recoverable": false,
+
+		"fleet_no_retreat": true,
+		"fleet_scaling_multiplier": 0,
+		"fleet_preset_ships": {
+			"fury_HSISS_HVB2": 3,
+			"afflictor_HSISS_HVB2": 2,
+			"omen_HSISS_HVB2": 5,
+            "brawler_tritachyon_HSISS_HVB2":9
+		},
+		"fleet_preset_autofit": false,
+		"fleet_transponder": false,
+		"fleet_behavior": "PASSIVE",
+        "fleet_composition_faction": "tritachyon",
+        "fleet_composition_quality": 2,
+
+		"location_distance": "CLOSE",
+        "location_entities":["planet"],
+		"location_prioritizeUnexplored": true,
+		"location_defaultToAnyEntity": true
+	},
+
+    "HSI_Stalker_3": {
+		"trigger_marketFaction_any": ["HSI"],
+        "trigger_marketFaction_alliedWith": false,
+
+		"trigger_memKeys_all": {
+			"$HSISS_Start":true,
+            "$HSI_Stalker_2":true
+	    },
+
+		"job_name": "追猎者赏金：无神论者",
+		"job_forFaction": "HSI",
+		"job_description": "一队伪装成卢德逃亡者的左径分子正在集结。摧毁他们。",
+		"job_comm_reply": "……",
+		"job_intel_success": "很不错，新的权限已经向你开放。",
+		"job_intel_expired": "你失败了。",
+        "job_deadline":180,
+		"job_pick_option":"……",
+		"job_credit_reward": 180000,
+		"job_reputation_reward":8,
+		"job_reward_scaling": 0,
+		"job_item_reward": {
+		},
+		"job_type":"neutralisation",
+		"job_show_type":true,
+		"job_show_captain": true,
+		"job_show_fleet": true,
+		"job_show_distance": "exact",
+        "job_show_arrow": true,
+
+		"target_rank": "spaceCaptain",
+        "target_post": "fleetCommander",
+
+		"target_personality": "aggressive",
+		"target_skills": { 
+			
+		    "tactical_drills":1,
+		    "coordinated_maneuvers":1,
+		    "crew_training":1,
+			"wolfpack_tactics":1,
+
+			"helmsmanship":2,
+			"combat_endurance":2,
+			"gunnery_implants":2,
+			"damage_control":2,
+			"field_modulation":2,
+			"systems_expertise":2,
+			"missile_specialization":2
+        },
+
+		"fleet_name": "可疑的卢德逃亡者舰队",
+		"fleet_faction": "ML_bounty",
+		"fleet_flagship_variant": "enforcer_HSISS_HVB3",
+		"fleet_flagship_autofit": false,
+		"fleet_flagship_recoverable": true,
+
+		"fleet_no_retreat": true,
+		"fleet_scaling_multiplier": 1.2,
+		"fleet_preset_ships": {
+			"enforcer_HSISS_HVB3": 7,
+			"gremlin_luddic_path_HSISS_HVB3": 8,
+			"afflictor_d_pirates_HSISS_HVB3": 6,
+            "brawler_pather_HSISS_HVB3":6,
+			"vanguard_HSISS_HVB3":10,
+			"vanguard_pirates_HSISS_HVB3":10
+		},
+		"fleet_preset_autofit": false,
+		"fleet_transponder": false,
+		"fleet_behavior": "PASSIVE",
+        "fleet_composition_faction": "luddic_church",
+        "fleet_composition_quality": 1,
+
+		"location_distance": "CLOSE",
+        "location_entities":["planet"],
+		"location_prioritizeUnexplored": true,
+		"location_defaultToAnyEntity": true
+	},
+
+    "HSI_Stalker_4": {
+		"trigger_marketFaction_any": ["HSI"],
+        "trigger_marketFaction_alliedWith": false,
+
+		"trigger_memKeys_all": {
+			"$HSISS_Start":true,
+            "$HSI_Stalker_3":true
+	    },
+
+		"job_name": "追猎者赏金：实地勘测",
+		"job_forFaction": "HSI",
+		"job_description": "据说辛达强权正在测试他们的新型主力舰。干扰他们的测试，尽可能摧毁实验舰。",
+		"job_comm_reply": "……",
+		"job_intel_success": "很不错，新的权限已经向你开放。",
+		"job_intel_expired": "你失败了。",
+        "job_deadline":180,
+		"job_pick_option":"……",
+		"job_credit_reward": 400000,
+		"job_reputation_reward":15,
+		"job_reward_scaling": 0.7,
+		"job_item_reward": {
+		},
+		"job_type":"neutralisation",
+		"job_show_type":true,
+		"job_show_captain": true,
+		"job_show_fleet": true,
+		"job_show_distance": "exact",
+        "job_show_arrow": true,
+
+		"target_rank": "spaceCaptain",
+        "target_post": "fleetCommander",
+
+		"target_personality": "aggressive",
+		"target_skills": { 
+			
+		    "tactical_drills":1,
+		    "coordinated_maneuvers":1,
+		    "crew_training":1,
+		    "electronic_warfare":1,
+		    "flux_regulation":1,
+			"wolfpack_tactics":1,
+			"cybernetic_augmentation":1,
+
+			"helmsmanship":2,
+			"combat_endurance":2,
+			"gunnery_implants":2,
+			"damage_control":2,
+			"field_modulation":2,
+			"systems_expertise":2,
+			"missile_specialization":2,
+			"energy_weapon_mastery":2,
+			"ordnance_expert":2
+        },
+
+		"fleet_name": "狮心实验舰队",
+		"fleet_faction": "ML_bounty",
+		"fleet_flagship_variant": "executor_HSISS_HVB4",
+		"fleet_flagship_autofit": false,
+		"fleet_flagship_recoverable": true,
+
+		"fleet_no_retreat": true,
+		"fleet_scaling_multiplier": 1.2,
+		"fleet_preset_ships": {
+			"executor_HSISS_HVB4": 1,
+			"falcon_LG_HSISS_HVB4": 5,
+			"sunder_LG_HSISS_HVB4": 8,
+            "brawler_LG_HSISS_HVB4":16,
+			"centurion_LG_HSISS_HVB4":20
+		},
+		"fleet_preset_autofit": false,
+		"fleet_transponder": false,
+		"fleet_behavior": "PASSIVE",
+        "fleet_composition_faction": "lions_guard",
+        "fleet_composition_quality": 2,
+
+		"location_distance": "CLOSE",
+		"location_prioritizeUnexplored": true,
+		"location_defaultToAnyEntity": true,
+		"location_entities":[
+		"wreck",
+		"debris",
+		"stable_location",
+		"comm_relay",
+		"nav_buoy",
+		"sensor_array"
+		]
+	},
+
+    "HSI_Stalker_5": {
+		"trigger_marketFaction_any": ["HSI"],
+        "trigger_marketFaction_alliedWith": false,
+
+		"trigger_memKeys_all": {
+			"$HSISS_Start":true,
+            "$HSI_Stalker_4":true
+	    },
+
+		"job_name": "追猎者赏金：全息投影",
+		"job_forFaction": "HSI",
+		"job_description": "在全息战场中战胜这支后勤官小姐配置的投影舰队。模拟结束后请自行申请补偿。警告：有安全风险。",
+		"job_comm_reply": "……",
+		"job_intel_success": "你向猎人们证明了自己。",
+		"job_intel_expired": "你失败了。",
+		"job_pick_option":"……",
+		"job_credit_reward": 600000,
+		"job_reputation_reward":15,
+		"job_reward_scaling": 0,
+		"job_item_reward": {
+		},
+		"job_type":"obliteration",
+		"job_show_type":true,
+		"job_show_captain": true,
+		"job_show_fleet": true,
+		"job_show_distance": "exact",
+        "job_show_arrow": true,
+
+		"target_rank": "spaceCaptain",
+        "target_post": "fleetCommander",
+
+		"target_personality": "aggressive",
+		"target_skills": { 
+			
+		    "tactical_drills":1,
+		    "coordinated_maneuvers":1,
+		    "crew_training":1,
+		    "electronic_warfare":1,
+		    "flux_regulation":1,
+			"wolfpack_tactics":1,
+			"cybernetic_augmentation":1,
+			"support_doctrine":1,
+			"best_of_the_best":1,
+
+			"helmsmanship":2,
+			"combat_endurance":2,
+			"gunnery_implants":2,
+			"damage_control":2,
+			"field_modulation":2,
+			"systems_expertise":2,
+			"missile_specialization":2,
+			"energy_weapon_mastery":2,
+			"ordnance_expert":2
+        },
+
+		"fleet_name": "全息投影舰队",
+		"fleet_faction": "ML_bounty",
+		"fleet_flagship_variant": "HSI_Citadel_HSISS_HVB5",
+		"fleet_flagship_autofit": false,
+		"fleet_flagship_recoverable": true,
+
+		"fleet_no_retreat": true,
+		"fleet_scaling_multiplier": 1.2,
+		"fleet_preset_ships": {
+			"HSI_FengYue_HSISS_HVB5": 1,
+			"HSI_Elegy_HSISS_HVB5": 3,
+			"HSI_Weaver_HSISS_HVB5": 5,
+            "HSI_Sunder_HSISS_HVB5":4,
+			"HSI_Shrike_HSISS_HVB5":7,
+			"HSI_ZhiYuan_HSISS_HVB5":8,
+			"HSI_DengHuo_HSISS_HVB5":12
+		},
+		"fleet_preset_autofit": false,
+		"fleet_transponder": false,
+		"fleet_behavior": "PASSIVE",
+        "fleet_composition_faction": "HSI",
+        "fleet_composition_quality": 2,
+
+		"location_distance": "CLOSE",
+		"location_prioritizeUnexplored": true,
+		"location_defaultToAnyEntity": true,
+		"location_entities":[
+		"wreck",
+		"debris",
+		"stable_location",
+		"comm_relay",
+		"nav_buoy",
+		"sensor_array"
+		]
+	}
+}

@@ -1,0 +1,44 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 6,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "SCY_lamiaA",
+    "hullMods": [
+        "escort_package",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_lamiaA_Close_Support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_kacc2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_kacc2",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"WW1MULTI": "SCY_lamiaAF_Close_Support"},
+        {"WW2MULTI": "SCY_lamiaAL_Close_Support"},
+        {"WW3MULTI": "SCY_lamiaAR_Close_Support"},
+    ],
+}

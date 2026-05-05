@@ -1,0 +1,32 @@
+{
+	"id":"SCY_Frotary",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"displayArcRadius":550,
+	"turretSprite":"graphics/SCY/ships/fighters/SCY_erisG_00.png",
+	"hardpointSprite":"graphics/SCY/ships/fighters/SCY_erisG_00.png",
+	"numFrames":3,	
+	"frameRate":0,
+	"turretOffsets":[5, -4, 5, 4],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[10, -4, 10, 4],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"SMOKE",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"smokeSpec":{"particleSizeMin":3.0,   # only used if animationType = SMOKE
+                    "particleSizeRange":10.0,
+                    "cloudParticleCount":1,
+                    "cloudDuration":0.5,
+                    "cloudRadius":5.0,
+                    "blowbackParticleCount":3,
+                    "blowbackDuration":0.2,
+                    "blowbackLength":-10.0,
+                    "blowbackSpread":5.0,
+                    "particleColor":[255,200,180,50]},
+	"autocharge":false,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held	
+	"interruptibleBurst":true,
+	"projectileSpecId":"vulcan_shot",  # projectile that will be fired
+	"fireSoundTwo":"vulcan_cannon_fire",	
+        "everyFrameEffect":"org.scy.weapons.SCY_minigunAnimation",
+}

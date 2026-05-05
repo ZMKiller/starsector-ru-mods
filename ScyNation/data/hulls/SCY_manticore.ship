@@ -1,0 +1,202 @@
+{
+  "hullName": "Manticore",
+  "hullId": "SCY_manticore",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/SCY/ships/SCY_manticore.png",
+  "style": "SCYHULL",
+  "height": 343,
+  "width": 94,
+  "center": [46, 192],
+  "collisionRadius": 198.106659,
+  "shieldCenter": [-11, -0],
+  "shieldRadius": 182.248459,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering",
+    "hiressensors"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame3",
+    "BLINKER1": "SCY_ZblinkerB",
+    "BLINKER2": "SCY_ZblinkerB",
+    "BLINKER5": "SCY_ZblinkerB",
+    "BLINKER6": "SCY_ZblinkerB",
+    "D_HEAT_CENTER": "SCY_XcruiserHeat",
+    "Z_DISH": "SCY_Zdish1"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-108, -0]
+    },
+    {
+      "id": "D_HEAT_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-133, -0]
+    },
+    {
+      "id": "Z_DISH",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 45,
+      "locations": [84, -0]
+    },
+    {
+      "id": "BLINKER2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-56.5, -24.5]
+    },
+    {
+      "id": "BLINKER1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-56.5, 24.5]
+    },
+    {
+      "id": "BLINKER5",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [141.5, 7.5]
+    },
+    {
+      "id": "BLINKER6",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [141.5, -7.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -60,
+      "locations": [-19, -13]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 135,
+      "locations": [-46, 24]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -135,
+      "locations": [-46, -24]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 0,
+      "locations": [124, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": -45,
+      "locations": [50.5, -20]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        47, -17,
+        55.5, -24.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        98.5, -17,
+        112, -24.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-108.5, -0],
+      "length": 35.5,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    -70.5, 27.5,
+    -116, 26.5,
+    -139.5, 19.5,
+    -136.5, 15.5,
+    -110.5, 15.5,
+    -110.5, -15.5,
+    -136.5, -15.5,
+    -139.5, -19.5,
+    -116, -26.5,
+    -70.5, -27.5,
+    -65, -33.5,
+    0.5, -39.5,
+    32.5, -39.5,
+    38.5, -44.5,
+    78.5, -44.5,
+    98.5, -34.5,
+    140.5, -33.5,
+    140.5, -15.5,
+    130, -10,
+    145, -9.5,
+    145, 8.5,
+    136.5, 24.5,
+    126.5, 26,
+    120.5, 41.5,
+    8.5, 41.5,
+    7.5, 31.5,
+    -2, 36.5,
+    -48.5, 36.5
+  ]
+}

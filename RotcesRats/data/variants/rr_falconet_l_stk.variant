@@ -1,0 +1,46 @@
+{
+  "variantId": "rr_falconet_l_stk",
+  "hullId": "rr_falconet_l",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 20,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "rr_c_typhoon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavymg",
+        "WS0002": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,261 @@
+{
+  "id":"GF3",
+  "color": [120, 90, 255, 255],
+  #"baseUIColor": [75, 200, 0, 255],
+  #"darkUIColor": [32, 85, 0, 175],
+  #"gridUIColor": [95, 255, 0, 75],
+  "displayName": "近卫第三舰队",
+  "displayNameWithArticle": "近卫第三舰队",
+  "logo": "graphics/factions/HSI.png",
+  "crest": "graphics/factions/crest_HSI.png",
+  "shipNamePrefix": "HPS",
+  "shipNameSources": {
+    "BRITISH_NAVY":1,
+		"ROMAN":1,
+		"SPACE":1,
+		"GENERAL":1,
+  },
+  "names": {
+    "fringe": 1,
+    "modern": 1,
+    "world": 1,
+    "future": 1,
+  },
+  "showInIntelTab":false,
+  # variantOverrides restricts hulls to listed variants and adjusts their probability
+  "variantOverrides": {
+  },
+  # multiplier for how often hulls show up in the faction's fleets
+  "hullFrequency": {
+    "tags": {
+      "rare_bp":0.0,
+      "lowtech_bp":0.0
+    },
+    "hulls": {
+    },
+  },
+  # ships the faction gets access to when importing S&W out-of-faction
+  "shipsWhenImporting": {
+    "tags": ["rare_bp"],
+    "hulls": [
+    ],
+  },
+  "knownShips": {
+    "tags": ["HSI_bp","GF3_bp","HSI_Elite_bp"],
+    "hulls": [
+      "atlas",
+      "prometheus"
+    ],
+  },
+  # listing ships here will make the faction mostly use them even if other hulls become available
+  "priorityShips": {
+    "tags": ["GF3_bp"],
+    "hulls": [
+    ],
+  },
+  "knownFighters": {
+    "tags": ["base_bp", "HSI_bp","HSI_Elite_bp"],
+    "fighters": [
+      "HSI_Maid_wing",
+      "HSI_Thor_wing",
+      "HSI_Apocalyse_wing",
+      "HSI_Mayfly_wing",
+      "HSI_Flanker_wing"
+    ],
+  },
+  "priorityFighters": {
+    "tags": [],
+    "fighters": [
+      "HSI_Maid_wing",
+      "HSI_Thor_wing",
+      "HSI_Apocalyse_wing",
+      "HSI_Mayfly_wing"
+    ],
+  },
+  "knownWeapons": {
+    "tags": ["HSI_bp","hightech_bp","HSI_Elite_bp"],
+    "weapons": [
+      "lightneedler",
+      "heavyneedler",
+      "devastator",
+      "mjolnir",
+      "sabot",
+      "phasecl",
+      "reaper",
+    ],
+  },
+  "priorityWeapons": {
+    "tags": ["HSI_bp"],
+    "weapons": [
+      "HWI_FocusLance",
+      "HWI_TurbocannonL",
+      "HWI_TurbocannonM",
+      "HWI_TurbocannonS",
+      "HWI_Arbiter",
+      "HWI_Duality",
+      "lightneedler",
+      "heavyneedler",
+      "devastator",
+      "HWI_Fireworks_S",
+      "HWI_Fireworks_M",
+      "HWI_Fireworks_L",
+      "HWI_Counter",
+      "HWI_Duality",
+      "HWI_IonLance",
+      "HWI_IonLanceM",
+    ],
+  },
+  "knownHullMods": {
+    "tags": ["base_bp","standard"],
+    "hullMods": [
+      "turretgyros",
+      "armoredweapons",
+      "augmentedengines",
+      "converted_hangar",
+      "expanded_deck_crew",
+      "magazines",
+      "missleracks",
+      "heavyarmor",
+      "insulatedengine",
+      "nav_relay",
+      "operations_center",
+      "recovery_shuttles",
+      "fluxbreakers",
+      "surveying_equipment",
+      "efficiency_overhaul",
+      "eccm",
+	    "ecm",
+    ],
+  },
+  "factionDoctrine": {
+    "warships": 5,
+    "carriers": 1,
+    "phaseShips": 1,
+    "officerQuality": 5,
+    "shipQuality": 5,
+    "numShips": 2,
+    "shipSize": 5,
+    "aggression": 4,
+    "combatFreighterProbability": 0.1, # instead of some portion of the freighters in a fleet
+    "combatFreighterCombatUseFraction": 0, # as part of the normal combat lineup
+    "combatFreighterCombatUseFractionWhenPriority": 0.5, # as part of normal combat lineup, when marked as priority ship
+    "autofitRandomizeProbability":0,
+    "commanderSkillsShuffleProbability": 1,
+    "commanderSkills": [
+      #"crew_training",
+		"officer_training",
+		"cybernetic_augmentation",
+      #"support_doctrine"
+    ],
+  },
+  "illegalCommodities": [
+    "drugs",
+    "ai_cores",
+  ],
+  "music": {
+    "theme":"music_tritach_encounter_neutral",
+		"market_neutral":"music_tritach_market_neutral",
+		"market_hostile":"music_tritach_market_hostile",
+		"market_friendly":"music_tritach_market_friendly",
+		"encounter_neutral":"music_tritach_encounter_neutral",
+		"encounter_hostile":"music_tritach_encounter_hostile",
+		"encounter_friendly":"music_tritach_encounter_friendly",
+  },
+  "portraits":{
+		"standard_male":[
+			"graphics/portraits/portraits_HSI_01.png",
+            "graphics/portraits/portraits_HSI_03.png",
+            "graphics/portraits/portraits_HSI_05.png",
+            "graphics/portraits/portraits_HSI_07.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portraits_HSI_02.png",
+            "graphics/portraits/portraits_HSI_04.png",
+		],
+	},
+  "ranks": {
+    "ranks":{	
+		    "factionLeader":{"name":"元帅"},
+		        
+		    "spaceSailor":{"name":"海军学员"},
+			"spaceChief":{"name":"海军准尉"},
+			"spaceCommander":{"name":"海军中校"},
+		    "spaceEnsign":{"name":"海军少尉"},
+		    "spaceLieutenant":{"name":"海军中尉"},
+		    "spaceCaptain":{"name":"海军上尉"},
+			"spaceAdmiral":{"name":"海军上将"},
+			"spaceMarshal":{"name":"海军元帅"},
+		
+			"groundPrivate":{"name":"陆战队员"},
+			"groundSergeant":{"name":"陆战队中士"},
+			"groundLieutenant":{"name":"陆战队中尉"},
+			"groundCaptain":{"name":"陆战队指挥官"},
+			"groundMajor":{"name":" 陆战队将军"},
+			"groundColonel":{"name":"陆军指挥官"},
+			"groundGeneral":{"name":"陆军将军"},
+			
+			"citizen":{"name":"公民"},
+			"agent":{"name":"特工"},
+
+
+      "HSI_TheCommisioner":{"name":"理事长"},
+		},
+		"posts":{
+			"factionLeader":{"name":"元帅"},
+				
+			"patrolCommander":{"name":"巡逻队指挥官"},
+			"fleetCommander":{"name":"舰队指挥官"},
+			
+			"baseCommander":{"name":"基地指挥官"},
+			"stationCommander":{"name":"轨道站指挥官"},
+			"outpostCommander":{"name":"前哨站指挥官"},
+			"portmaster":{"name":"港口管理员"},
+			
+			"supplyOfficer":{"name":"后勤专员"},
+			"supplyManager":{"name":"后勤主管"},
+			
+			"administrator":{"name":"总督"},
+			"freeAdmin":{"name":"自由总督"},
+		},
+  },
+  "custom": {
+    "offersCommissions": false,
+    "engagesInHostilities": true,
+    "buysAICores": true,
+    "AICoreValueMult": 1.5f,
+    "AICoreRepMult": 1f,
+    "buysSurveyData": true,
+    "hostilityImpactOnGrowth": true,
+    "offerMissionsWhenHostile":true,
+    "caresAboutAtrocities": false,
+    "fightToTheLast":true,
+    "punitiveExpeditionData": {
+      "vsCompetitors": true,
+      "vsFreePort": false,
+      "canBombard": true,
+      "territorial": true,
+    },
+  },
+  "voices":{
+  		"LOW":{
+  			"soldier":10,
+  			"official":5,
+  			"spacer":5,
+  		},
+  		"MEDIUM":{
+  			"soldier":10,
+  			"official":10,
+  		},
+  		"HIGH":{
+  			"soldier":5,
+  			"official":10,
+  			"aristo":3,
+  		},
+  	},
+  	"fleetTypeNames":{
+  		"patrolSmall":"小型分队",
+  		"patrolMedium":"分队",
+  		"patrolLarge":"分舰队",
+  	},
+},
+

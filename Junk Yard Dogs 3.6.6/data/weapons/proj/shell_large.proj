@@ -1,0 +1,22 @@
+{
+	"id":"shell_large",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":50.0,
+	"hitGlowRadius":150,	
+	"width":12,
+	"fadeTime":0.20,
+	#"fringeColor":[255,255,100,255],
+	#"coreColor":[255,255,200,150],
+	"fringeColor":[235,255,215,235],
+	"coreColor":[225,255,205,200],	
+	"glowRadius":60,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,	
+	"bulletSprite":"graphics/JYD/missiles/shell_large.png"
+}

@@ -1,0 +1,57 @@
+{
+  "variantId": "HIVER_caelifera_standard",
+  "hullId": "HIVER_caelifera",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "HIVER_spitter",
+        "WS0015": "HIVER_spitter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "HIVER_mirv",
+        "WS0007": "HIVER_mirv"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "HIVER_irpulse",
+        "WS0003": "HIVER_irpulse",
+        "WS0004": "HIVER_irpulse",
+        "WS0005": "HIVER_irpulse",
+        "WS0010": "HIVER_twinpd",
+        "WS0011": "HIVER_twinpd",
+        "WS0012": "HIVER_twinpd",
+        "WS0013": "HIVER_twinpd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "Hiver_eyeball",
+        "WS0008": "Hiver_eyeball",
+        "WS0009": "Hiver_eyeball"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

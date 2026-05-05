@@ -1,0 +1,26 @@
+{
+	"id":"edshipyard_BIGGUN",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"DECORATIVE",
+	"size":"LARGE",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/weapons/deco/biggun/edshipyard_GS_00.png",
+	"hardpointSprite":"graphics/weapons/deco/biggun/edshipyard_GS_00.png",
+	"numFrames":54,
+	"frameRate":1,
+	"turretOffsets":[35, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[50, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":65.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":15.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":35.0,
+					   "particleDuration":0.75,
+					   "particleCount":50,
+					   "particleColor":[175,120,75,175]},
+	"projectileSpecId":"edshipyard_hellborn",  # projectile that will be fired
+	"fireSoundTwo":"hellbore_fire",
+}

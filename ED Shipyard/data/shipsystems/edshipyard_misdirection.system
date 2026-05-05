@@ -1,0 +1,14 @@
+{
+    "id":"edshipyard_misdirection",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.edshipyard.shipsystems.ai.MisdirectionAI",
+
+    "statsScript":"data.scripts.edshipyard.shipsystems.MisdirectionStats",
+	#"runScriptWhilePaused":true, # only for the player's ship
+    "runScriptWhileIdle":true,  # this means unapply() never gets called
+
+	#"fadeActivationSoundOnChargedown":true,
+	"useSound":"ui_sensor_burst_on",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

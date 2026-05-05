@@ -1,0 +1,44 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 20,
+    "fluxVents": 3,
+    "goalVariant": true,
+    "hullId": "HSI_Weaver_GF3",
+    "hullMods": [
+        "safetyoverrides",
+        "HSI_EnhancedShield",
+        "HSI_ProtocalAssault"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Weaver_GF3_Strike",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "HWI_Fireworks_S",
+                "WS0002": "HWI_Fireworks_S",
+                "WS0003": "HWI_Fireworks_M",
+                "WS0004": "HWI_Fireworks_M",
+                "WS0005": "HWI_Fireworks_S",
+                "WS0006": "HWI_Fireworks_S"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0010": "HWI_ionpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0009": "HWI_hveldriver"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "HWI_ionpulser"}
+        }
+    ]
+}

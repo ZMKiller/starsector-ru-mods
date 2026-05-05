@@ -1,0 +1,72 @@
+{
+  "variantId": "CFT_bolster_standard",
+  "hullId": "CFT_bolster",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "expanded_cargo_holds",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "CFT_basilisk",
+        "WS0007": "CFT_basilisk"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "CFT_pdwburst",
+        "WS0011": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "railgun",
+        "WS0008": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_pointmissiles",
+        "WS0002": "CFT_pointmissiles"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "CFT_pmb",
+        "WS0012": "CFT_pmb"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "flak",
+        "WS0004": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_tender_standard_wing",
+    "CFT_tender_standard_wing",
+    "CFT_tender_standard_wing",
+    "CFT_tender_standard_wing"
+  ]
+}

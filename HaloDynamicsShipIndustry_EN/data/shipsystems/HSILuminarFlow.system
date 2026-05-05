@@ -1,0 +1,18 @@
+{
+	"id":"HSI_LuminarFlow",
+	"type":"STAT_MOD",
+	"statsScript":"data.shipsystems.scripts.HSILuminarFlow",
+	#"aiType":"DAMPER_FIELD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.ai.HSILuminarFlowAI",
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.75,
+	"soundFilterGainHF":0.25,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_damper",
+	"loopSound":"system_damper_loop",
+	"deactivateSound":"system_damper_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

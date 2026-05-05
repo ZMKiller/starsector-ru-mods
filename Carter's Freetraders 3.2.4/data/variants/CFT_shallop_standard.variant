@@ -1,0 +1,49 @@
+{
+  "variantId": "CFT_shallop_standard",
+  "hullId": "CFT_shallop",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxcoil"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "CFT_wavepulse",
+        "WS0006": "CFT_wavepulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_dartgun",
+        "WS0004": "CFT_dartgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_culverin",
+        "WS0002": "CFT_culverin"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "CFT_hellfirerockets"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

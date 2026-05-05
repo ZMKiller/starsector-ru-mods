@@ -1,0 +1,181 @@
+{
+  "hullName": "Gloom",
+  "hullId": "drg_gloom",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/gloom/drg_gloom.png",
+  "style": "HIGH_TECH",
+  "height": 200,
+  "width": 198,
+  "center": [99, 106.5],
+  "collisionRadius": 119.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 121,
+  "viewOffset": 0,
+  "builtInMods": [
+    "phasefield",
+    "delicate",
+    "drg_drivefield",
+    "high_maintenance",
+    "repair_gantry"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 135,
+      "locations": [-54, 88.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -135,
+      "locations": [-54, -87.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 47,
+      "locations": [54.5, 88.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -47,
+      "locations": [54.5, -88.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-94.5, 13],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-94.5, -13],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-93.5, 66.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-93.5, -66.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-99.5, 56],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-99.5, -56],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-103.5, 46.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-103.5, -46.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-103, 36.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-103, -36.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-103, 27.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-103, -27.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -72.5, 4,
+    -101.5, 24.5,
+    -98, 60,
+    -77, 72,
+    -64.5, 85.5,
+    -11.5, 97,
+    1, 90,
+    16.5, 98,
+    67, 85,
+    88, 45.5,
+    69, 16,
+    69, -16,
+    88, -45.5,
+    67, -85,
+    16.5, -98,
+    1, -90,
+    -11.5, -97,
+    -64.5, -85.5,
+    -77, -72,
+    -98, -60,
+    -101.5, -24.5,
+    -72.5, -4
+  ]
+}

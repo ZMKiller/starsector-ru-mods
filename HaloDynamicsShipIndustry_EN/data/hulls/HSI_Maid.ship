@@ -1,0 +1,50 @@
+{
+  "hullName": "Maid",
+  "hullId": "HSI_Maid",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/HSI_Maid.png",
+  "style": "HSI_TECH",
+  "height": 19,
+  "width": 20,
+  "center": [10, 8],
+  "collisionRadius": 19,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 16,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [8.5, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [8.5, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-5, -0],
+      "length": 89,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    -7.5, -10.5,
+    10.5, -2.5,
+    10.5, 2,
+    -7.5, 9.5
+  ]
+}

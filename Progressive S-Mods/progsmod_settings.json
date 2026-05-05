@@ -1,0 +1,122 @@
+{
+    # Maximum size of recently-built-in list
+    "recentlyBuiltInListSize": 20,
+
+    # Deployment cost increase per additional s-mod,
+    # as fraction of base DP cost
+    "deploymentCostPenalty": 0.06,
+
+    # How many story points it costs to raise a ship's maximum number of built-in hull mods
+    # the first time. If the cost is not a whole number, it will be rounded up with the excess
+    # granted as bonus XP.
+    # E.g. a cost of 0.25 will cost 1 SP, but refund 0.75 SP over time by granting 75% bonus XP.
+    # In vanilla, building in a hull mod gives 75% / 50% / 25% / 0% bonus XP based on size
+    "baseExtraSModSPCost": {
+        "frigate": 0.5,
+        "destroyer": 1,
+        "cruiser": 1.5,
+        "capital": 2
+    },
+
+    # How much XP (in addition to the SP) it costs to
+    # raise a ship's maximum number of built-in hull mods
+    # the first time.
+    # This is modified by the ship's DP cost.
+    "baseExtraSModXPCost": {
+        "frigate": 800,
+        "destroyer": 1600,
+        "cruiser": 3200,
+        "capital": 6400
+    },
+    
+    # Determines how the story point cost grows as
+    # a ship's build-in limit grows.
+    
+    "extraSModSPCostGrowthType": 1, # 0 for linear, 1 for exponential
+    # story point cost is base * fac^n OR base + n*fac
+    "extraSModSPCostGrowthFactor": 1,
+    # XP cost is base * fac^n OR base + base*n*fac 
+    "extraSModXPCostGrowthType": 1,
+    "extraSModXPCostGrowthFactor": 2.25,
+
+    # Whether or not to allow increasing max S-Mods
+    # with story points
+    "allowIncreaseSModLimit": true,
+
+    # Coefficients for a polynomial that maps hull mods' OP cost to their
+    # base build-in XP cost, listed in ascending order (constant term first)
+    "xpCostCoeff": {
+        "frigate": [-455, 325, -12.35, 0.1625],
+        "destroyer": [-880, 392, -17.12, 0.376],
+        "cruiser": [-1600, 410, -6.78, 0.077],
+        "capital": [-2590, 450, -7.15, 0.0994]
+    },
+
+    # The above functions assume that the ship in question has the base 
+    # DP cost for its ship class. Otherwise an additional multiplicative
+    # factor is assessed.
+    "baseDPFrigate": 5,
+    "baseDPDestroyer": 10,
+    "baseDPCruiser": 20,
+    "baseDPCapital": 40, 
+
+    # XP cost for a hull mod that costs x OP on a ship that takes y DP
+    # to deploy is (y / baseDP) * p(x)
+    # where p is the polynomial defined by the coefficients in xpCostCoeff
+
+    # Fraction of spent XP that will be refunded
+    # when a built-in hull mod is removed
+    # If less than 0, removing built-in hull mods is disabled
+    "xpRefundFactor": 0.8,
+
+    # When the player loses a ship with XP, this fraction of XP lost is added to
+    # a reserve pool that can be used by any ship with the same hull type.
+    "reserveXPFraction": 0.8,
+
+    # Ignore the "no_build_in" tag, allowing building in
+    # normally prohibited hull mods (specifically Safety Overrides)
+    "ignoreNoBuildIn": false,
+
+    "combat": {
+        "giveXPToDisabledShips": false, # Whether player ships that are disabled in battle should still receive XP
+        "onlyGiveXPForKills": false, # Whether enemy ships that get away shouldn't give XP
+
+        # All XP gained by ships in combat is multiplied by this amount
+        "xpGainMultiplier": 45,
+
+        # Enemy ships with d-mods give less XP than pristine ships;
+        # however, regardless of the number of D-mods, they will always
+        # give at least this fraction of a pristine ship's XP. 
+        "targetDModLowerBound": 0.6, 
+
+        # All ships gain this fraction of the total XP
+        # gain as additional XP per combat
+        "postBattleXPFraction": 0.025,
+
+        # Civilian ships gain increased post-battle XP,
+        # by this much.
+        "postBattleCivilianMultiplier": 2,
+
+        # Combat ships gain increased post-battle XP for auto-resolve
+        # pursuits, by this much.
+        "postBattleAutoPursuitMultiplier": 4,
+
+        # After each combat interval (in seconds), the contribution
+        # for each player ship is tallied and added to that ship's
+        # total contribution.
+        "combatUpdateInterval": 3,
+
+        # Fraction of enemy ships' total XP worth that goes toward
+        # each of the three roles. Does not have to add up to 1.
+        "xpFractionAttack": 0.34,
+        "xpFractionDefense": 0.33,
+        "xpFractionSupport": 0.33,
+
+        "condenseXPGainMessages":false
+    },
+
+    # Set this to true in order to disable this mod's features
+    # and go back to building in S-Mods with story points.
+    # S-mods that have been built in with XP are not removed.
+    "disableMod": false,
+}

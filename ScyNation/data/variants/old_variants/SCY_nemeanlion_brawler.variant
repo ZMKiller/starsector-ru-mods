@@ -1,0 +1,53 @@
+{
+    "displayName": "Brawler",
+    "fluxCapacitors": 0,
+    "fluxVents": 50,
+    "goalVariant": false,
+    "hullId": "SCY_nemeanlion",
+    "hullMods": ["targetingunit"],
+    "modules": [
+        {"M_FL": "SCY_lionFL_standard"},
+        {"M_FR": "SCY_lionFR_standard"},
+        {"M_RL": "SCY_lionRL_standard"},
+        {"M_RR": "SCY_lionRR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_nemeanlion_brawler",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "SCY_cluster2",
+                "WS0002": "SCY_cluster2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "MAW1": "SCY_uheb",
+                "MAW2": "SCY_uheb",
+                "MAW3": "SCY_uheb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_teb",
+                "WS0004": "SCY_teb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SCY_intercept",
+                "WS0006": "SCY_intercept",
+                "WS0007": "SCY_intercept",
+                "WS0008": "SCY_intercept"
+            }
+        }
+    ]
+}

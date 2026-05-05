@@ -1,0 +1,65 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 26,
+    "fluxVents": 50,
+    "hullId": "drg_equality",
+    "hullMods": [
+        "targetingunit",
+        "magazines",
+        "stabilizedshieldemitter",
+        "hardenedshieldemitter",
+        "advancedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "drg_equality_assault",
+        "goalVariant": true,
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "drg_flamer_heavy",
+                "WS0014": "drg_flamer_heavy"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "phasecl",
+                "WS0016": "phasecl"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "drg_tpr_l",
+                "WS0012": "drg_tpr_l"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "guardian",
+                "WS0010": "guardian"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "pdburst",
+                "WS0002": "pdburst",
+                "WS0003": "pdburst",
+                "WS0004": "pdburst",
+                "WS0005": "pdburst",
+                "WS0006": "pdburst",
+                "WS0007": "pdlaser",
+                "WS0008": "pdlaser"
+            }
+        }
+    ]
+}

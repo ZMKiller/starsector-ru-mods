@@ -1,0 +1,135 @@
+{
+  "hullName": "Ascension",
+  "hullId": "ora_ascension",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ORA/ships/ora_ascension.png",
+  "style": "HIGH_TECH",
+  "height": 89,
+  "width": 114,
+  "center": [57, 50],
+  "collisionRadius": 76.5,
+  "shieldCenter": [-1.5, -0],
+  "shieldRadius": 74.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ora_design"
+  ],
+  "builtInWeapons": {
+    "WS0005": "ora_ZascensionSystem"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": 0,
+      "locations": [21, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-10, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [23, 26]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [23, -26]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-2, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-35, 16],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35, -16],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35.5, -10],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35.5, 10],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35, -0],
+      "length": 45,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    27.5, 9.5,
+    32.5, 15.5,
+    25.5, 21.5,
+    25.5, 39.5,
+    36.5, 46.5,
+    16.5, 55.5,
+    -19.5, 55.5,
+    -18.5, 49.5,
+    -32, 42.5,
+    -43.5, 42.5,
+    -48.5, 30.5,
+    -33.5, 21.5,
+    -33.5, -21.5,
+    -48.5, -30.5,
+    -43.5, -42.5,
+    -32, -42.5,
+    -18.5, -49.5,
+    -19.5, -55.5,
+    16.5, -55.5,
+    36.5, -46.5,
+    25.5, -39.5,
+    25.5, -21.5,
+    32.5, -15.5,
+    27.5, -9.5
+  ]
+}

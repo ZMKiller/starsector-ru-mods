@@ -1,0 +1,89 @@
+{
+  "displayName": "Пиратский",
+  "fluxCapacitors": 9,
+  "fluxVents": 31,
+  "goalVariant": true,
+  "hullId": "edshipyard_retriever_p",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "ballistic_rangefinder"
+  ],
+  "modules": [
+	{
+      "DRONER": "edshipyard_suicide_control_detonator"
+    },
+    {
+      "DRONEL": "edshipyard_suicide_control_detonator"
+    }
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_retriever_pirate",
+  "weaponGroups": [
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {"WS0014": "hephag"}
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0003": "heavyac",
+              "WS0004": "heavyac"
+          }
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0009": "lightac",
+              "WS0010": "lightac",
+              "WS0011": "lightac",
+              "WS0012": "heavyneedler",
+              "WS0013": "heavyneedler"
+          }
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0007": "heavymortar",
+              "WS0008": "heavymortar"
+          }
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0005": "edshipyard_GS2",
+              "WS0006": "edshipyard_GS2"
+          }
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0001": "edshipyard_SC2",
+              "WS0002": "edshipyard_SC2"
+          }
+      },
+      {
+          "autofire": true,
+          "mode": "LINKED",
+          "weapons": {
+              "WS0015": "vulcan",
+              "WS0016": "vulcan",
+              "WS0017": "vulcan"
+          }
+      }
+  ],
+  "wings": [
+    "edshipyard_affenpinscher_wing",
+    "edshipyard_affenpinscher_wing",
+    "edshipyard_affenpinscher_wing",
+    "edshipyard_affenpinscher_wing",
+    "edshipyard_affenpinscher_wing",
+    "edshipyard_affenpinscher_wing"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+    "baseHullId":"radiant",
+    "skinHullId":"wpnxt_mod_radiant",
+    "hullDesignation":"Линкор",
+    "hullName":"Radiant(?)",
+    "tags":["restricted", "invisible_in_codex"],
+    "removeHints":["UNBOARDABLE"],
+    "descriptionPrefix": "Этот корабль автоматизирован почти начисто. В нём не найти ни кают для экипажа, ни коридоров, и уж точно нет какого-либо командного пункта. Зато все его системы переделаны для дистанционного управления - через передачу зашифрованных сигналов на интерфейс, который не назвать иначе как «нарочито неудобным». Типичный образец, вышедший из глубин корпорации Три-Тахион.",
+    "tech":"Unknown",
+    "spriteName":"graphics/ships/wpnxt_mod_radiant.png",
+    "baseValueMult":2,
+    "removeBuiltInMods":["automated"],
+    "builtInMods":["wpnxt_cohererOverride"],
+    "systemId":"wpnxt_reshaper",
+    "weaponSlotChanges": {
+        "WS 002": {
+            "type": "ENERGY"
+        },
+        "WS 004": {
+            "type": "ENERGY"
+        },
+        "WS 005": {
+            "type": "HYBRID"
+        },
+        "WS 006": {
+            "type": "HYBRID"
+        },
+        "WS 007": {
+            "type": "HYBRID"
+        },
+        "WS 008": {
+            "type": "HYBRID"
+        }
+    },
+    "maxSpeed":50,
+    "ordnancePoints":400,
+    "engineSlotChanges": {
+        "0": {
+            "length": 50,
+            "width": 18
+        },
+        "1": {
+            "length": 50,
+            "width": 18
+        },
+        "2": {
+            "length": 54,
+            "width": 8
+        },
+        "3": {
+            "length": 54,
+            "width": 8
+        },
+        "4": {
+            "length": 115,
+            "width": 32
+        },
+        "5": {
+            "length":120,
+            "width":38
+        },
+        "6": {
+            "length":120,
+            "width":38
+        },
+        "7": {
+            "length": 115,
+            "width": 32
+        },
+        "8": {
+            "length": 54,
+            "width": 8
+        },
+        "9": {
+            "length": 54,
+            "width": 8
+        }
+    }
+
+}

@@ -1,0 +1,111 @@
+{
+  "hullName": "Balius (T)",
+  "hullId": "SCY_baliusT",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/SCY/ships/SCY_baliusT.png",
+  "style": "SCYHULL",
+  "height": 234,
+  "width": 102,
+  "center": [51, 129],
+  "collisionRadius": 132.712097,
+  "shieldCenter": [-10, -0],
+  "shieldRadius": 122.262016,
+  "viewOffset": 0,
+  "builtInMods": [
+    "SCY_engineering",
+    #"civgrade",
+    #"SCY_militarized"
+  ],
+  "builtInWeapons": {
+    "A_FLAME_CENTER": "SCY_Zflame2",
+    "BLINKER1": "SCY_ZblinkerA",
+    "BLINKER2": "SCY_ZblinkerA",
+    "D_HEAT_CENTER": "SCY_YdestroyerHeat"
+  },
+  "weaponSlots": [
+    {
+      "id": "A_FLAME_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-73, -0]
+    },
+    {
+      "id": "D_HEAT_CENTER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-85, -0]
+    },
+    {
+      "id": "BLINKER1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-13.5, 2.5]
+    },
+    {
+      "id": "BLINKER2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-13.5, -2.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [61, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-73, -0],
+      "length": 32.5,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "CUSTOM",
+      "styleId": "SCYENGINE"
+    }
+  ],
+  "bounds": [
+    80.5, 11.5,
+    80.5, 28.5,
+    63.5, 37.5,
+    41.5, 37.5,
+    32.5, 48.5,
+    13.5, 48.5,
+    4.5, 39.5,
+    -19.5, 37.5,
+    -34.5, 21.5,
+    -83, 19.5,
+    -99.5, 12.5,
+    -75.5, 12.5,
+    -75.5, -12.5,
+    -99.5, -12.5,
+    -83, -19.5,
+    -34.5, -21.5,
+    -19.5, -37.5,
+    4.5, -39.5,
+    13.5, -48.5,
+    32.5, -48.5,
+    41.5, -37.5,
+    63.5, -37.5,
+    80.5, -28.5,
+    80.5, -11.5,
+    86.5, -11.5,
+    91.5, 8.5
+  ]
+}

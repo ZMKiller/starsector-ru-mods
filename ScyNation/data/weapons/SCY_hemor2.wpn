@@ -1,0 +1,42 @@
+{
+	"id":"SCY_hemor2",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"displayArcRadius":450,
+	"turretSprite":"graphics/SCY/weapons/SCY_hemor2T.png",
+	"turretGunSprite":"graphics/SCY/weapons/SCY_hemor2TB.png",	
+	"hardpointSprite":"graphics/SCY/weapons/SCY_hemor2H.png",
+	"hardpointGunSprite":"graphics/SCY/weapons/SCY_hemor2HB.png",	
+	"visualRecoil":6,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[25, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[32, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	#"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+        "muzzleFlashSpec":{"length":20.0,   
+                            "spread":5.0,
+                            "particleSizeMin":20.0,
+                            "particleSizeRange":40.0,
+                            "particleDuration":0.3,
+                            "particleCount":8,
+                            "particleColor":[255,75,50,100]},
+	"animationType":"SMOKE",
+	"smokeSpec":{"particleSizeMin":10.0,
+                    "particleSizeRange":20.0,
+                    "cloudParticleCount":15,
+                    "cloudDuration":0.5,
+                    "cloudRadius":20.0;
+                    "blowbackParticleCount":15,
+                    "blowbackDuration":1,
+                    "blowbackLength":-30.0,
+                    "blowbackSpread":2.0,
+                    "particleColor":[100,75,75,50]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	"projectileSpecId":"SCY_hemor2S",  # projectile that will be fired	
+        #"everyFrameEffect":"org.scy.weapons.SCY_hemorMuzzle",
+        "everyFrameEffect":"org.scy.weapons.SCY_addToMuzzlePlugin",
+	"fireSoundTwo":"SCY_hemor2",
+}

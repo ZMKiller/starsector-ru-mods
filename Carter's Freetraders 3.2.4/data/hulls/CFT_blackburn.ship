@@ -1,0 +1,61 @@
+{
+  "hullName": "Blackburn",
+  "hullId": "CFT_blackburn",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_blackburn.png",
+  "style": "MIDLINE",
+  "height": 29,
+  "width": 36,
+  "center": [18, 14.5],
+  "collisionRadius": 26,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 25,
+  "viewOffset": 0,
+  "builtInMods": [
+    "eccm"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [7, -11]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [7, 11]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12.5, 8.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-12.5, -8.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    17, -16.5,
+    -15.5, -23,
+    -15.5, 23,
+    17, 16.5
+  ]
+}

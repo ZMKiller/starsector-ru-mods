@@ -1,0 +1,148 @@
+{
+	# Special ships that are too powerful to be common, or just too plain weird, so lets make them into bounties!
+
+	"rr_phaeton_eq": {
+		"trigger_marketFaction_none": ["pirates"],
+		"trigger_marketFaction_enemyWith": true,
+		"trigger_player_minLevel": 5,
+		"trigger_min_days_elapsed": 90,
+		"trigger_min_fleet_size": 100,
+		"trigger_weight_mult": 0.5,
+
+		"job_name": "Kill Pirate Murderer",
+		"job_description": "$name has been responsible for slaughtering significant quantities of civilian trade convoys and indiscriminate bombardment of settlements and other outposts, you'll be doing the sector a favor by putting $himHerThem down.",
+		"job_comm_reply": "$heSheThey glares at you briefly and offers a dismissive grunt before shutting down the comm link.",
+		"job_intel_success": "That's one less pirate murderer out there, The Diktat thanks you for your service.",
+		
+		"job_forFaction": "sindrian_diktat",
+		"job_deadline": 150,
+		"job_credit_reward": 160000,
+		"job_reward_scaling": 0.35,
+		"job_reputation_reward": 5,
+		
+		"job_type": "assassination",
+		"job_show_type": true,
+		"job_show_captain": true,
+		"job_show_fleet": "vanilla",
+		"job_show_distance": "vanillaDistance",
+		"job_difficultyDescription": "auto",
+		"job_memKey": "$rr_phaeton_eq",
+
+		"target_first_name": "Atlov",
+		"target_last_name": "Nam",
+		"target_portrait": "graphics/portraits/characters/volta.png",
+		"target_gender": "MALE",
+		"target_rank": "spaceCommander",
+		"target_post": "terrorist",
+		"target_personality": "reckless",
+		"target_level": 5,
+		"target_skill_preference": "NO_ENERGY_YES_BALLISTIC_NO_MISSILE_YES_DEFENSE",
+		
+		"fleet_name": "Terror Fleet",
+		"fleet_faction": "pirates",
+		"fleet_flagship_variant": "rr_phaeton_eq_custom",
+		"fleet_flagship_recoverable": true,
+		"fleet_preset_ships": {
+			"rr_falconet_l_stk":1,
+			"rr_falconet_r_stk":1,
+			"rr_buffaloeq_assault":1,
+			"rr_dram_eq_ass":2,
+			"rr_dram_eq_od":2,
+			"rr_hooligan_ass":2,
+			"rr_hooligan_od":2,
+			"rr_concierge_p_od":2,
+			"rr_ox_2_hrd":2,
+		},
+		"fleet_preset_autofit": true,
+		"fleet_scaling_multiplier": 0.4,
+		"fleet_min_FP": 130,
+		"fleet_composition_faction": "pirates",
+		"fleet_composition_quality": 0.3,
+		"fleet_transponder": false,
+		"fleet_behavior": "AGGRESSIVE",
+
+		"location_distance": "CLOSE",
+		"location_themes": [
+			"theme_interesting_minor",
+			"theme_ruins_secondary",
+			"theme_derelict_survey_ship",
+			"theme_derelict_probes",
+			"procgen_no_theme_pulsar_blackhole"
+		],
+		"location_themes_blacklist":[
+			"theme_already_occupied",
+			"theme_already_colonized",
+			"theme_hidden"
+		],
+		"location_prioritizeUnexplored": false,
+		"location_defaultToAnyEntity": true
+	},
+
+
+	"rr_conslaught": {
+		"trigger_marketFaction_none": ["independent"],
+		"trigger_marketFaction_enemyWith": true,
+		"trigger_player_minLevel": 7,
+		"trigger_min_days_elapsed": 150,
+		"trigger_min_fleet_size": 200,
+		"trigger_weight_mult": 0.5,
+
+		"job_name": "Unhinged Scavenger",
+		"job_description": "Recent intelligence reports suggest that $name a scavenger captain has been amassing war materiel and appears to be preparing for some sort of hostile operation, attempts at negotiating with them have broken down after they destroyed several patrols before making off with the remains of several capital-grade vessels. We request that you follow the hyperwave tracking beacons installed the stolen vessels and prevent $himHerThem from making use of them.",
+		"job_comm_reply": "No! This is MY Salvage! Mine! You won't take it from me!",
+		"job_intel_success": "You have our thanks for preventing whatever operation $name was planning with their ill gotten gains.",
+		
+		"job_forFaction": "hegemony",
+		"job_deadline": 200,
+		"job_credit_reward": 200000,
+		"job_reward_scaling": 0.25,
+		"job_reputation_reward": 10,
+		
+		"job_type": "neutralisation",
+		"job_show_type": true,
+		"job_show_captain": true,
+		"job_show_fleet": "text",
+		"job_show_distance": "exact",
+		"job_difficultyDescription": "auto",
+		"job_memKey": "$rr_conslaught",
+
+		"target_rank": "spaceCaptain",
+		"target_post": "fleetCommander",
+		"target_personality": "aggressive",
+		"target_level": 8,
+		"target_elite_skills":4,
+		"target_skill_preference": "YES_ENERGY_YES_BALLISTIC_YES_MISSILE_YES_DEFENSE",
+		
+		"fleet_name": "Scavenger Fleet",
+		"fleet_faction": "scavengers",
+		"fleet_flagship_variant": "rr_conslaught_scv",
+		"fleet_flagship_recoverable": true,
+		"fleet_preset_ships": {
+			"rr_onquest_elt":1,
+			"rr_onquest_std":1,
+		},
+		"fleet_preset_autofit": true,
+		"fleet_scaling_multiplier": 0.3,
+		"fleet_min_FP": 200,
+		"fleet_composition_faction": "mercenary",
+		"fleet_transponder": false,
+		"fleet_behavior": "AGGRESSIVE",
+
+		"location_distance": "CLOSE",
+		"location_themes": [
+			"theme_interesting_minor",
+			"theme_ruins_secondary",
+			"theme_derelict_survey_ship",
+			"theme_derelict_probes",
+			"procgen_no_theme_pulsar_blackhole"
+		],
+		"location_themes_blacklist":[
+			"theme_already_occupied",
+			"theme_already_colonized",
+			"theme_hidden"
+		],
+		"location_prioritizeUnexplored": true,
+		"location_defaultToAnyEntity": true
+	}
+
+}

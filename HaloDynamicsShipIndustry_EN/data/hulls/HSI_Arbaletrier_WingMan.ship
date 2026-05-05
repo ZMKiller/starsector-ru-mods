@@ -1,0 +1,95 @@
+{
+  "hullName": "Arbaletrier",
+  "hullId": "HSI_Arbaletrier_WingMan",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/Arbaletrier/HSI_TheHaloSquad_BodyB.png",
+  "style": "HSI_TECH",
+  "height": 38,
+  "width": 22,
+  "center": [11.5, 17.5],
+  "collisionRadius": 28,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 23.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Arbaletrier"
+  ],
+  "builtInWeapons": {
+    "WS0001": "HSI_Arbaletrier_Head",
+    "WS0002": "HSI_Arbaletrier_L",
+    "WS0003": "HSI_Arbaletrier_Shoulder",
+    "WS0004": "HSI_Arbaletrier_R"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-0.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 0,
+      "locations": [8.5, 13]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-1, -8]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [16.5, -15.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-7.5, -0.5],
+      "length": 37,
+      "width": 42,
+      "angle": 180,
+      "contrailSize": 42,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-17, 2.5],
+      "length": 69,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-17, -2.5],
+      "length": 69,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    19.5, -3,
+    -1, -9,
+    -15.5, -4.5,
+    -15.5, 5.5,
+    -1, 9,
+    19.5, 2.5
+  ]
+}

@@ -1,0 +1,56 @@
+{
+    "hullName": "Armor",
+    "hullId": "SCY_corAR",
+    "hullSize": "FRIGATE",
+    "style": "SCYHULL",
+    "spriteName": "graphics/SCY/ships/SCY_corocottaA_armorRight.png",
+    "height": 117,
+    "width": 35,
+    "center": [
+        17.5, 58.5
+    ],
+    "collisionRadius": 63,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 63,
+    "viewOffset": 0,
+    "builtInMods": [
+        "reduced_explosion",
+        "always_detaches",
+        "SCY_armorChild"
+    ],
+    "builtInWeapons": {
+        "WS0001": "SCY_anti1"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS0001",
+            "size": "MEDIUM",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": -90,
+            "locations": [
+                      43,        3
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+              41,       12,
+              54,       12,
+              52,       -2,
+              46,       -8,
+              31,       -8,
+        
+              23,      -16,
+             -54,      -16,
+             -52,       -8,
+             -15,        1,
+               4,       -5
+    ]
+}

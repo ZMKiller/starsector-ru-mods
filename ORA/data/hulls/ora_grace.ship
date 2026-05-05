@@ -1,0 +1,157 @@
+{
+  "hullName": "Grace",
+  "hullId": "ora_grace",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ORA/ships/ora_grace.png",
+  "style": "HIGH_TECH",
+  "height": 146,
+  "width": 148,
+  "center": [74, 72],
+  "collisionRadius": 91.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 90.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ora_design"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [29, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 255,
+      "angle": 180,
+      "locations": [-29, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 90,
+      "locations": [0, 29]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -90.010002,
+      "locations": [0, -29]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [27, 27]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [27, -27]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 135,
+      "locations": [-27, 27]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -135,
+      "locations": [-27, -27]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-67, 16],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67, -16],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67, 10],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67, -10],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67, 4],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-67, -4],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    72.5, 8.5,
+    8.5, 72.5,
+    -8.5, 72.5,
+    -44.5, 36.5,
+    -61.5, 36.5,
+    -70.5, 27.5,
+    -66.5, 24.5,
+    -66.5, -24.5,
+    -70.5, -27.5,
+    -61.5, -36.5,
+    -44.5, -36.5,
+    -8.5, -72.5,
+    8.5, -72.5,
+    72.5, -8.5
+  ]
+}

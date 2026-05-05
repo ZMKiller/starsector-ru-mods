@@ -1,0 +1,43 @@
+{
+  "variantId": "rr_inimeg_sup2",
+  "hullId": "rr_inimeg",
+  "displayName": "Support",
+  "goalVariant": false,
+  "fluxCapacitors": 2,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "turretgyros",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "gazer",
+        "WS0002": "gazer",
+        "WS0003": "gazer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "heavymauler",
+        "WS 002": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

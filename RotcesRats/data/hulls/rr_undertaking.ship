@@ -1,0 +1,237 @@
+{
+  "hullName": "Undertaking",
+  "hullId": "rr_undertaking",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/rr_undertaking.png",
+  "style": "LOW_TECH",
+  "height": 214,
+  "width": 196,
+  "center": [98, 113],
+  "collisionRadius": 140,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 137,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade",
+    "surveying_equipment"
+  ],
+  "builtInWings": [
+    "borer_wing"
+  ],
+  "builtInWeapons": {
+    "WS0009": "rr_mini_mblast"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 90,
+      "locations": [24, 68]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 180,
+      "locations": [-43, -0]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -90,
+      "locations": [24, -68]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [76, 59]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [74, 81]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [74, -81]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -60,
+      "locations": [41, -85]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        54, -51,
+        65, -51
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": 0,
+      "locations": [67, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [83, 26]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [83, -26]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-30, 76],
+      "length": 64,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-30, -75],
+      "length": 64,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-30, 84],
+      "length": 48,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-30, -83],
+      "length": 48,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-56, 60],
+      "length": 96,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-55, -60],
+      "length": 96,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-112, 19],
+      "length": 64,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-112, -19],
+      "length": 64,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-110, 26],
+      "length": 38,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-110, -26],
+      "length": 38,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    62, -38,
+    75, -51,
+    75, -90,
+    21, -96,
+    -26, -88,
+    -28, -68,
+    -52, -68,
+    -55, -35,
+    -106, -32,
+    -110, -13,
+    -101, -11,
+    -101, 11,
+    -110, 13,
+    -106, 32,
+    -55, 35,
+    -52, 68,
+    -28, 68,
+    -26, 88,
+    21, 96,
+    75, 90,
+    78, 53,
+    25, 39,
+    82, 34,
+    99, -0,
+    82, -34
+  ]
+}

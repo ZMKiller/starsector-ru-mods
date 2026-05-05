@@ -1,0 +1,33 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 1,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "SCY_megaera",
+    "hullMods": ["heavyarmor"],
+    "permaMods": [],
+    "variantId": "SCY_megaera_combat",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_hemor1",
+                "WS0002": "SCY_hemor1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_kacc1",
+                "WS0004": "SCY_kacc1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "vulcan"}
+        }
+    ]
+}

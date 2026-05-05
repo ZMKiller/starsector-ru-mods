@@ -1,0 +1,144 @@
+{
+  "hullName": "Scarabaeidae",
+  "hullId": "HIVER_scarabaeidae",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HIVER_scarabaeidae.png",
+  "style": "HIGH_TECH",
+  "height": 140,
+  "width": 180,
+  "center": [90.5, 66],
+  "collisionRadius": 125,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 121,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "builtInWings": [
+    "HIVER_meloidae_standard_wing",
+    "HIVER_meloidae_standard_wing",
+    "HIVER_meloidae_standard_wing",
+    "HIVER_meloidae_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [6.5, 21]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": -0,
+      "locations": [6.5, -20]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [25.5, 9.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [25.5, -8.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -25.5, 6.5,
+        -22.5, 9.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -15.5, 5.5,
+        -12, 8.5
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -26, -5,
+        -23, -8
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -15, -4.5,
+        -12, -7.5
+      ]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 0,
+      "locations": [46.5, 0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-60, 7],
+      "length": 44.5,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-60, -6],
+      "length": 44.5,
+      "width": 17,
+      "angle": -180,
+      "contrailSize": 17,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    82.5, -65,
+    -12.5, -100,
+    -75.5, -85.5,
+    -75.5, 86.5,
+    -12.5, 101,
+    82.5, 66
+  ]
+}

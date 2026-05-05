@@ -1,0 +1,31 @@
+{
+  "variantId": "rr_pd_platform_std",
+  "hullId": "rr_pd_platform",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "rr_gyro",
+        "WS0004": "rr_gyro"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

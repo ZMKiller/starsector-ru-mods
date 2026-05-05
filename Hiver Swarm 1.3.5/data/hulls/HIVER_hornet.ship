@@ -1,0 +1,137 @@
+{
+  "hullName": "Hornet",
+  "hullId": "HIVER_hornet",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HIVER_hornet.png",
+  "style": "HIGH_TECH",
+  "height": 233,
+  "width": 148,
+  "center": [74, 108.5],
+  "collisionRadius": 137,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 135.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull",
+    "heavyarmor",
+    "advanced_ground_support"
+  ],
+  "builtInWings": [
+    "HIVER_katydid_standard_wing",
+    "HIVER_katydid_standard_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [17, 25]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [17, -25]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [67.5, -34]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [67.5, 34]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        20.5, 55.5,
+        26.5, 56.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        21.5, -55.5,
+        28.5, -56
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-94.5, -27.5],
+      "length": 35.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-94, -16.5],
+      "length": 35.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-94, 16],
+      "length": 35.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-94, 27],
+      "length": 35.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-105.5, -0],
+      "length": 49,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -113, 53,
+    -56, 83.5,
+    44, 76,
+    125.5, 37,
+    125, -32,
+    44, -78.5,
+    -62.5, -80,
+    -113, -34.5
+  ]
+}

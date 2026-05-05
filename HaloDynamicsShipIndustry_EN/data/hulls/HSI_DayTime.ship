@@ -1,0 +1,52 @@
+{
+  "hullName": "DayTime",
+  "hullId": "HSI_DayTime",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/HSI_DayTime.png",
+  "style": "HSI_TECH",
+  "height": 52,
+  "width": 34,
+  "center": [17, 26],
+  "collisionRadius": 32,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 30,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo",
+    "HSI_Mirage",
+    "HSI_DayTime_Core"
+  ],
+  "builtInWeapons": {
+      "BODY": "HSI_DayTimeBody"
+    },
+  "weaponSlots": [
+    {
+      "id": "BODY",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [0, -0],
+      "renderOrderMod": 100
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [0, 0]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    12.5, -6.5,
+    -0.5, -15,
+    -13, -6,
+    -13, 6,
+    -0.5, 15,
+    12.5, 6.5
+  ]
+}

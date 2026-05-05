@@ -1,0 +1,238 @@
+{
+  "hullName": "Вургандаль",
+  "hullId": "edshipyard_wurgandal",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/edshipyard_wurg_main.png",
+  "style": "HIGH_TECH",
+  "height": 700,
+  "width": 500,
+  "center": [250, 355],
+  "collisionRadius": 465.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 438.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "delicate",
+    "operations_center",
+    "edshipyard_small_drone_hangar",
+    "edshipyard_tyrantmaw_bombardment",
+    "edshipyard_wurgandal_massivehull"
+  ],
+  "builtInWeapons": {
+    "EYE01": "edshipyard_EYE",
+    "MAW": "edshipyard_MAW",
+    "WURGBAR": "edshipyard_WURGBAR"
+  },
+  "weaponSlots": [
+    {
+      "id": "MAW",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0.25,
+      "angle": 0,
+      "locations": [13.5, -0.5]
+    },
+    {
+      "id": "WEAPON_LEFT",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-37.5, 76.5]
+    },
+    {
+      "id": "WEAPON_RIGHT",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-37.5, -76.5]
+    },
+    {
+      "id": "JAW_LEFT",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [125.5, 54.5]
+    },
+    {
+      "id": "JAW_RIGHT",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [125.5, -54.5]
+    },
+    {
+      "id": "HANGAR_LEFT",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-138, 85.5]
+    },
+    {
+      "id": "HANGAR_RIGHT",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-138, -85.5]
+    },
+    {
+      "id": "EYE01",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-49, -0]
+    },
+    {
+      "id": "WURGBAR",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-169.5, -0]
+    },
+    {
+      "id": "BACK",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-254, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -276.5, -0,
+        -243, -0,
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-320, 114.5],
+      "length": 67.5,
+      "width": 33,
+      "angle": 180,
+      "contrailSize": 33,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-320, -114.5],
+      "length": 67.5,
+      "width": 33,
+      "angle": -180,
+      "contrailSize": 33,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-341.5, 13],
+      "length": 64.5,
+      "width": 34,
+      "angle": 180,
+      "contrailSize": 34,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-341.5, -13],
+      "length": 64.5,
+      "width": 34,
+      "angle": -180,
+      "contrailSize": 34,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-329, 83],
+      "length": 99.5,
+      "width": 45,
+      "angle": 180,
+      "contrailSize": 45,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-329, -83],
+      "length": 99.5,
+      "width": 45,
+      "angle": -180,
+      "contrailSize": 45,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-337, 46.5],
+      "length": 104,
+      "width": 51,
+      "angle": 180,
+      "contrailSize": 51,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [-336, -43],
+      "length": 104,
+      "width": 51,
+      "angle": -180,
+      "contrailSize": 51,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    }
+  ],
+  "bounds": [
+    4, -29.5,
+    -18.5, -87.5,
+    -52, -80,
+    -68.5, -92,
+    -85, -130,
+    -113, -166.5,
+    -160.5, -166,
+    -178.5, -140,
+    -196.5, -123.5,
+    -210.5, -139.5,
+    -235.5, -145,
+    -259.5, -140.5,
+    -284, -131,
+    -318.5, -121.5,
+    -337.5, -58.5,
+    -341.5, -23,
+    -341.5, 23,
+    -337.5, 58.5,
+    -318.5, 121.5,
+    -284, 131,
+    -259.5, 140.5,
+    -235.5, 145,
+    -210.5, 139.5,
+    -196.5, 123.5,
+    -178.5, 140,
+    -160.5, 166,
+    -113, 166.5,
+    -85, 130,
+    -68.5, 92,
+    -52, 80,
+    -18.5, 87.5,
+    4, 29.5
+  ]
+}

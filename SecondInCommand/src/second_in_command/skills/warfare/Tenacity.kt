@@ -18,8 +18,7 @@ class Tenacity : SCBaseSkillPlugin() {
 
     override fun addTooltip(data: SCData, tooltip: TooltipMakerAPI) {
 
-        tooltip.addPara("+50 armor for damage reduction calculations only", 0f, Misc.getHighlightColor(), Misc.getHighlightColor())
-        tooltip.addPara("+10%% hull ", 0f, Misc.getHighlightColor(), Misc.getHighlightColor())
+        tooltip.addPara("+75 armor for damage reduction calculations only", 0f, Misc.getHighlightColor(), Misc.getHighlightColor())
 
     }
 
@@ -31,9 +30,7 @@ class Tenacity : SCBaseSkillPlugin() {
             ShipAPI.HullSize.CAPITAL_SHIP -> stats!!.effectiveArmorBonus.modifyFlat(id, 150f)
             else -> null
         }*/
-        stats!!.effectiveArmorBonus.modifyFlat(id, 50f)
-        stats!!.hullBonus.modifyPercent(id, 10f)
-
+        stats!!.effectiveArmorBonus.modifyFlat(id, 75f)
     }
 
     override fun applyEffectsAfterShipCreation(data: SCData, ship: ShipAPI?, variant: ShipVariantAPI, id: String?) {

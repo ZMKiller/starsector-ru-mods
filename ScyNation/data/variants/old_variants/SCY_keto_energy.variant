@@ -1,0 +1,52 @@
+{
+    "displayName": "Energy",
+    "fluxCapacitors": 0,
+    "fluxVents": 50,
+    "goalVariant": false,
+    "hullId": "SCY_keto",
+    "hullMods": [],
+    "modules": [
+        {"A1_MULTI": "SCY_ketoAL_standard"},
+        {"A2_MULTI": "SCY_ketoAR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_keto_energy",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"ASTRAPIOS": "SCY_ketoMain"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_laser3"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_scatter",
+                "WS0003": "SCY_scatter",
+                "WS0004": "SCY_teb",
+                "WS0005": "SCY_teb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "SCY_intercept",
+                "WS0007": "SCY_intercept",
+                "WS0008": "SCY_intercept",
+                "WS0009": "SCY_intercept"
+            }
+        }
+    ],
+    "wings": [
+        "SCY_stygere_wing",
+        "SCY_stygere_wing",
+        "SCY_nosos_wing",
+        "SCY_nosos_wing"
+    ]
+}

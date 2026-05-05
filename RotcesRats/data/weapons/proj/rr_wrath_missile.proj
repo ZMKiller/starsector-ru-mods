@@ -1,0 +1,105 @@
+{
+	"id":"rr_wrath_missile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+
+	"onHitEffect":"data.scripts.rr_WrathOnHitEffect",
+
+	"sprite":"graphics/missiles/rr_wrath.png",
+	"size":[18,50],	
+	"center":[9,25],
+	"collisionRadius":24,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,100,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":450, # 350 purely visual
+	"engineSpec":{"turnAcc":60, #150
+				  "turnRate":60, #50
+				  "acc":300, #400
+				  "dec":200}, #100
+
+	"flameoutTime":1, # total time from flameout to full fadeout
+	"armingTime":0.5,
+	"noEngineGlowTime":0.1, # time spent without the engine glow being rendered
+	"fadeTime":0.75, # fadeout duration
+
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":225, #175
+					 "coreRadius":125, # 75 full damage within core radius
+					 "collisionClass":PROJECTILE_FF,	 # HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":PROJECTILE_FF,	 # HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":3.0,
+					 "particleSizeRange":5.0,
+					 "particleDuration":1,
+					 "particleCount":250,
+					 "particleColor":[255,155,155,255],
+					 "useDetailedExplosion":true,
+					 "useDetailedExplosionColorAlpha":true,
+					 "detailedExplosionRadius":180,
+					 "detailedExplosionFlashRadius":375,
+					 "detailedExplosionFlashDuration":0.5,
+					 "detailedExplosionFlashColorFringe":[255,100,100,255],
+					 "detailedExplosionFlashColorCore":[155,155,155,255]},
+
+	"engineSlots":[{"id":"ES1",
+					"loc":[-24, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,100,100,255],
+						"contrailDuration":2,
+						"contrailWidthMult":1.5,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[255,100,100,50],
+						"glowSizeMult":2.5,
+						"glowAlternateColor":[255,0,0,255],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":80.0,
+				    "angle":180.0},
+
+
+			{"id":"ES2",
+					"loc":[-21, -7],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,110,90,255],
+						"contrailDuration":1.5, #1
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":0.5,  # 1.5 can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[200,40,20,75],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":5.0,
+				    "length":40.0, #20
+				    "angle":190.0},
+
+			{"id":"ES3",
+					"loc":[-21, 7],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,110,90,255],
+						"contrailDuration":1.5, #1
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":0.5,  # 1.5 can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[200,40,20,75],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":5.0,
+				    "length":40.0, #20
+				    "angle":170.0},
+
+				    ]
+}

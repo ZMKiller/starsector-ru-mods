@@ -1,0 +1,57 @@
+{
+  "hullName": "Rumbler",
+  "hullId": "rr_rumbler",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/rr_rumbler.png",
+  "style": "MIDLINE",
+  "height": 43,
+  "width": 26,
+  "center": [13, 13],
+  "collisionRadius": 35,
+  "shieldCenter": [8, 0],
+  "shieldRadius": 28,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 0,
+      "locations": [25, -5]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 20,
+      "angle": 0,
+      "locations": [18, 6]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12, 6],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-12, -6],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    25, -5,
+    -1, 10,
+    -9, -7
+  ]
+}

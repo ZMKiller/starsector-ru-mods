@@ -1,0 +1,62 @@
+{
+  "hullName": "Fusta",
+  "hullId": "CFT_fusta",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/CFT_fusta.png",
+  "style": "MIDLINE",
+  "height": 92,
+  "width": 66,
+  "center": [33, 46],
+  "collisionRadius": 59,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 57,
+  "viewOffset": 0,
+  "builtInMods": [
+    "shielded_holds",
+    "civgrade"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": 0,
+      "locations": [-23, 18]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": -0,
+      "locations": [-23, -18]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44.5, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-44.5, 0],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    49, -31.5,
+    -49, -42,
+    -49, 42,
+    49, 31.5
+  ]
+}

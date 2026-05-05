@@ -1,0 +1,32 @@
+{
+	"id":"SCY_hack",  # this id must match what's in the spreadsheet
+	"specClass":"beam",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"beamEffect":"org.scy.weapons.SCY_hackEffect",
+	"displayArcRadius":400,
+	"turretSprite":"graphics/SCY/weapons/SCY_hackT.png",
+	"turretGlowSprite":"graphics/SCY/weapons/SCY_hackTG.png",
+	"hardpointSprite":"graphics/SCY/weapons/SCY_hackH.png",
+	"hardpointGlowSprite":"graphics/SCY/weapons/SCY_hackHG.png",
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[10, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[15, 0],
+	"hardpointAngleOffsets":[0],
+        "fringeColor":[200,60,220,25],
+	"coreColor":[40,10,50,35],
+	"glowColor":[200,60,220,255],
+	"darkCore":false,
+	"width":30.0,
+	"textureType":ROUGH,
+	"textureScrollSpeed":100.0,
+	"pixelsPerTexel":2.0,
+        "pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"autocharge":true,
+	"fireSoundOne":"laser_intro",
+	"fireSoundTwo":"SCY_hack_loop",
+}

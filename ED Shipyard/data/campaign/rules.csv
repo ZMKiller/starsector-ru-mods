@@ -1,0 +1,27 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME EDShipyards,,,,,,
+edshipyard_DestroyTheWurg_rule,edshipyard_DestroyTheWurg_completion_trigger,,WurgandalRevengeFleetBountyCommand,,,
+edshipyard_Chupacabra_HVB_rule,edshipyard_Chupacabra_HVB_completion_trigger,,ChupacabraAmbushFleetsBountyCommand,,,
+edshipyard_DestroyTradeFleet_rule,edshipyard_DestroyTradeFleet_trigger,,DestroyTradeFleetBountyCommand,,,
+,,,,,,
+# Distress Call,,,,,,
+edshipyard_dstr_normalStart,BeginFleetEncounter,"!$isHostile
+$edshipyard_distress score:1000
+!$edshipyard_distressNoHail","AddText ""Вас вызывают."" $faction.baseColor
+$hailing = true 0
+$edshipyard_distressNoHail = true",,,
+edshipyard_dstr_openComms,OpenCommLink,"!$isHostile
+!$entity.ignorePlayerCommRequests
+$entity.edshipyard_distress score:1000","$entity.ignorePlayerCommRequests = true
+AddText """"Слава звездам, дружественное лицо.""""
+AddText ""Мы возвращались домой и приняли сигнал бедствия, вероятно тот же, что видели вы. После прыжка в систему стало ясно, что сигнал идет от этого дрейфующего судна. Мы шли с опережением графика и решили рискнуть, разобрав его на лом: если бы на сенсорах что-то появилось, мы бы просто ушли, ведь точка прыжка совсем рядом. Но мы не учли, что судно заминировано ловушкой интердикции. Ловушка вывела из строя наш прыжковый компьютер, и пока он перезапускается, мы застряли здесь.""
+AddText ""Из-за спины капитана слышны приглушенные крики, и его взгляд метается к другому экрану. Капитан поворачивается к офицеру, что-то говорит, и освещение на мостике становится красным. Снова повернувшись к вам, капитан произносит: ""Мы видим приближающийся вражеский флот. Прыжковый компьютер еще не в сети, так что придется сражаться. Если сделаем это вместе, у нас есть шанс выжить. Передаем коды IFF, пожалуйста, помогите нам.""""
+eds_SpawnDistressAmbushFleetCommand
+EndConversation",,,
+edshipyard_dstr_aidOptions,edshipyard_DCallShowAidOptions,,,,"edshipyard_dstr_goodLuck:Вы сами по себе. Удачи.
+edshipyard_dstr_help:Мы готовы помочь!",
+edshipyard_dstr_goodLuck,DialogOptionSelected,$option == edshipyard_dstr_goodLuck,"FireAll PopulateOptions
+EndConversation NO_CONTINUE",,,
+edshipyard_dstr_help,DialogOptionSelected,$option == edshipyard_dstr_help,"FireAll PopulateOptions
+EndConversation NO_CONTINUE",,,
+#END Distress Call,,,,,,

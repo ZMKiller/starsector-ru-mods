@@ -1,0 +1,55 @@
+{
+    "ora_godunovStar":{
+        "name":"Unstable Star",
+        "tilt":-25,
+        "pitch":25,
+        "rotation":-3,
+        "atmosphereThickness":0.25,
+        "atmosphereThicknessMin":0,
+        "atmosphereColor":[255,200,150,255],
+        "texture":"graphics/planets/US_star_textureCustomRed.jpg",
+        "icon":"graphics/warroom/icon_star.png",
+        "iconColor":[255,100,100,255],
+        "starCoronaSprite":"graphics/fx/US_star_halo_unstable.png",
+        "starCoronaColor":[255,225,200,60],
+        "starCoronaSizeMult":5.12,
+        "isStar":true,
+        "lightPosition":[0,0,10],
+    },
+    "ora_lava":{
+            "name":"Molten",
+            "tilt":-10, # left-right (>0 tilts to the left)
+            "pitch":70, # towards-away from the viewer (>0 pitches towards)
+            "rotation":-3.6, # degrees/second
+            "planetColor":[255,255,255,255],
+            "atmosphereThickness":0.1, # as fraction of radius.  Set to 0 for no atmosphere
+            "atmosphereThicknessMin":20, #  minimum thickness in pixels
+            "atmosphereColor":[215,50,15,60],
+            "texture":"graphics/planets/lava_tidaly_locked.jpg",
+            "icon":"graphics/warroom/icon_planet.png",
+            "iconColor":[215,115,55,255],
+            "isStar":false,
+            "lightPosition":[0,0,1], # in planet radii.  Not used for stars.  z > 0 is above the playing field.
+            "glowTexture":"graphics/planets/lava_tidaly_locked_glow.png", # omit for no glow layer
+            "glowColor":[255,255,255,255],
+            "useReverseLightForGlow":false,
+    },
+    "ora_water":{
+            "name":"Water",
+            "tilt":-15, # left-right (>0 tilts to the left)
+            "pitch":25, # towards-away from the viewer (>0 pitches towards)
+            "rotation":-3, # degrees/second
+            "planetColor":[255,255,255,255],
+            "atmosphereThickness":0.2, # as fraction of radius.  Set to 0 for no atmosphere
+            "atmosphereThicknessMin":62, #  minimum thickness in pixels - used when radius * atmosphereThickness is really low
+            "atmosphereColor":[40,90,140,130],
+            "texture":"graphics/planets/US_planet_textureCimmerian.jpg",
+            "icon":"graphics/warroom/icon_planet.png",
+            "iconColor":[98,40,174,255],
+            "isStar":false,
+            "lightPosition":[0,0,10], # in planet radii.  Not used for stars.  z > 0 is above the playing field.
+            "cloudTexture":"graphics/planets/US_clouds_textureSoft.png", # omit for no cloud layer
+            "cloudColor":[240,225,255,200],
+            "cloudRotation":-5, # degrees/second, optional
+    },
+}

@@ -1,0 +1,35 @@
+{
+	"id":"HSI_FengYue_LED2",  # this id must match what's in the spreadsheet
+	"specClass":"beam",
+	"type":"DECORATIVE",
+	"size":"SMALL",
+	"showDamageWhenDecorative":false,
+	"renderBelowAllWeapons":true,
+	"renderHints":["RENDER_ADDITIVE"],
+	"everyFrameEffect":"data.weapons.scripts.HSIDecorationAlwaysAnimate",
+	"turretSprite":"graphics/weapons/LED_HSI_FengYue/LED_HSI_FengYue00.png",
+
+	"hardpointSprite":"graphics/weapons/LED_HSI_FengYue/LED_HSI_FengYue00.png",	
+	"numFrames":8,	
+	"frameRate":12,
+	"turretOffsets":[0, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],	
+	"fringeColor":[255,255,255,255],
+	"coreColor":[255,255,255,255],
+	"glowColor":[125,255,125,255],
+	"width":1.0,
+	"textureType":ROUGH,
+	"textureScrollSpeed":1.0,
+	"pixelsPerTexel":1.0,	
+	"alwayAnimate":"true",
+	"muzzleFlashSpec":{"length":35.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":14.0,
+					   "particleDuration":0.15,
+					   "particleCount":11,
+					   "particleColor":[255,240,165,200]},	
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE	
+}

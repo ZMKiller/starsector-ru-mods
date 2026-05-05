@@ -1,0 +1,103 @@
+{
+  "hullName": "Tamerlane",
+  "hullId": "rr_tamerlane",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/rr_tamerlane.png",
+  "style": "MIDLINE",
+  "height": 100,
+  "width": 66,
+  "center": [34, 47],
+  "collisionRadius": 80,
+  "shieldCenter": [-1, -0],
+  "shieldRadius": 80,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 230,
+      "angle": 105,
+      "locations": [-7, 15]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [30, -21]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -110,
+      "locations": [1, -16]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [47, -9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44, 0.5],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-46, 18],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-46, -17],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-44, -10],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-44, 11],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -9, 31,
+    13, 19,
+    38, 19,
+    47, 2,
+    22, -28,
+    -43, -20,
+    -43, 21
+  ]
+}

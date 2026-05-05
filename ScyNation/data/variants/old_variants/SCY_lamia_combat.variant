@@ -1,0 +1,38 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 7,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "SCY_lamia",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "SCY_lamia_combat",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_hemor2"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "SCY_grenade",
+                "WS0006": "SCY_grenade"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "SCY_kacc2"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_intercept",
+                "WS0004": "SCY_intercept"
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+	"id":"SCY_Fseb",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"displayArcRadius":450,
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[0,0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0,0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"SMOKE",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"smokeSpec":{"particleSizeMin":5.0,   # only used if animationType = SMOKE
+                    "particleSizeRange":15.0,
+                    "cloudParticleCount":0,
+                    "cloudDuration":1.0,
+                    "cloudRadius":7.0,
+                    "blowbackParticleCount":7,
+                    "blowbackDuration":0.2,
+                    "blowbackLength":-15.0,
+                    "blowbackSpread":10.0,
+                    "particleColor":[200,200,255,50]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	"projectileSpecId":"SCY_tebS",  # projectile that will be fired	
+        #"everyFrameEffect":"org.scy.weapons.SCY_addToMuzzlePlugin",
+	"fireSoundTwo":"SCY_seb",
+}

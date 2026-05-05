@@ -1,0 +1,67 @@
+{
+	"id":"HWI_Thunder",
+	"specClass":"missile",	
+	"missileType":"MIRV",
+	"sprite":"graphics/missiles/HWI_AsteriaDEM.png",
+	"size":[10,19],	
+	"center":[5, 9.5],
+	"collisionRadius":6,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,165,0,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":125, # purely visual
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":150,
+				  "acc":100,
+				  "dec":100},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						#"engineColor":[75,145,255,255],
+						"engineColor":[100,175,255,255],
+						"contrailDuration":2,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":7, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[100,100,100,150],
+				    	"glowSizeMult":1.5,
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":8.0,
+				    "length":20.0,
+				    "angle":180.0}],
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":500,
+					"splitRangeRange":100,
+					"minTimeToSplit":2,
+					"canSplitEarly":true,
+					"splitSound":"mjolnir_fire",
+					"numShots":8,
+					"damage":400,
+					"emp":400, # needs to match highlight in weapon_data.csv
+					"damageType":ENERGY,
+					"hitpoints":500,
+					"arc":20,
+					"spreadInaccuracy":5,
+					"spreadSpeed":1000,
+					"spreadSpeedRange":700,
+					"projectileRange":800, # only needed if not a missile
+					"projectileSpec":"HWI_mjolnir_shot",
+					"smokeSpec":{"particleSizeMin":0.0,
+								 "particleSizeRange":0.0,
+								 "cloudParticleCount":0,
+								 "cloudDuration":1.0,
+								 "cloudRadius":20.0,
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[100,100,100,200]}
+					}				    
+}
+

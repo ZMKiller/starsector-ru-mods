@@ -1,0 +1,100 @@
+{
+  "hullName": "Naruebet",
+  "hullId": "CFT_naruebet",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/CFT_naruebet.png",
+  "style": "MIDLINE",
+  "height": 103,
+  "width": 78,
+  "center": [39, 56],
+  "collisionRadius": 72.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 69.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 0,
+      "locations": [-10, 19]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 0,
+      "locations": [-10, -19]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-38, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [35.5, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        22, 15.5,
+        37, 16
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        22, -16,
+        36, -16
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-51, -15.5],
+      "length": 32,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-51, 15.5],
+      "length": 32,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    51, 42,
+    -59.5, 42,
+    -59.5, -42,
+    51, -42
+  ]
+}

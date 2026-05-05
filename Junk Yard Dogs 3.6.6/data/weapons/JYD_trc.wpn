@@ -1,0 +1,53 @@
+{
+  "id": "JYD_trc",
+  "specClass": "projectile",
+  "projectileSpecId": "mark9_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/JYD_twc_turret_base.png",
+  "turretGunSprite": "graphics/weapons/JYD_twc_turret_barrel.png",
+  "hardpointSprite": "graphics/weapons/JYD_twc_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/weapons/JYD_twc_hardpoint_barrel.png",
+  "visualRecoil": 10,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    15,
+    6,
+    15,
+    -6
+  ],
+  "turretAngleOffsets": [
+    -0.3,
+    0.3
+  ],
+  "hardpointOffsets": [
+    25,
+    6,
+    25,
+    -6
+  ],
+  "hardpointAngleOffsets": [
+    -0.3,
+    0.3
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 60,
+    "spread": 12,
+    "particleSizeMin": 6,
+    "particleSizeRange": 12,
+    "particleDuration": 0.7,
+    "particleCount": 14,
+    "particleColor": [
+      255,
+      200,
+      200,
+      255
+    ]
+  },
+  "fireSoundTwo": "hellbore_fire"
+}

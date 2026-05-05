@@ -1,0 +1,55 @@
+{
+    "displayName": "Warden",
+    "fluxCapacitors": 11,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "ora_revelation",
+    "hullMods": [
+        "unstable_injector",
+        "missleracks",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_revelation_pestcontrol",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "sabot",
+                "WS0008": "sabot",
+                "WS0009": "sabot",
+                "WS0010": "sabot"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "ora_animus"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_sempiternal"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "ora_choir",
+                "WS0006": "ora_choir",
+                "WS0011": "ora_choir",
+                "WS0012": "ora_choir"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_echoes",
+                "WS0004": "ora_echoes"
+            }
+        }
+    ]
+}

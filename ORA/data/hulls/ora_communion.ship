@@ -1,0 +1,152 @@
+{
+  "hullName": "Communion",
+  "hullId": "ora_communion",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ORA/ships/ora_communion.png",
+  "style": "HIGH_TECH",
+  "height": 114,
+  "width": 136,
+  "center": [68, 57],
+  "collisionRadius": 84,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 84,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ora_design",
+  ],
+  "builtInWings": [
+    "ora_wisdom_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -23, 16.5,
+        25, 16.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -23.5, -16.5,
+        24.5, -16
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 45.009998,
+      "locations": [29, 46]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -45,
+      "locations": [29, -46]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 135.009995,
+      "locations": [-34, 46]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -135,
+      "locations": [-34, -46]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [40, 48]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [40, -48]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-51, 34.5],
+      "length": 40.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-51, -34.5],
+      "length": 40.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-51, -42.5],
+      "length": 40.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-51, 42.5],
+      "length": 40.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    55.5, 47,
+    35.5, 66.5,
+    -40.5, 66.5,
+    -55.5, 51.5,
+    -50.5, 46.5,
+    -49, 28.5,
+    -40.5, 20.5,
+    -40.5, -20.5,
+    -49, -28.5,
+    -50.5, -46.5,
+    -55.5, -51.5,
+    -40.5, -66.5,
+    35.5, -66.5,
+    55.5, -47,
+    43.5, -30.5,
+    43.5, 30.5
+  ]
+}

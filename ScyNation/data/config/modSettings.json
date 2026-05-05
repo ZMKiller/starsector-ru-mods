@@ -1,0 +1,116 @@
+{
+	#SCY NATION SETTINGS FILE
+	"SCY":{
+		"amity_factionWhitelist":[
+			# Lists factions that should have their known ships and weapons sold in Amity's Freeport discount trader.
+			"SCY",
+			"hegemony",
+			"tritachyon",
+			"sindrian_diktat",
+			"persean_league",
+			"independent",
+			"luddic_church",
+		],
+		"amity_blacklist":[
+			# Lists ships, weapons and wing ids that should be culled from Amity's Freeport discount trader.
+			# Consider that tier 3 weapons/wings and ships above 5/10/14/23 FP are already culled from that store.
+		],
+		
+		#amity default settings
+		"amity_maxWeaponStacks":30,
+		"amity_maxShips":20,
+		"amity_dynamicTarrif":true,
+
+		"engineering_noncompatible":[
+			# Lists hullmods modifying engines that should be non compatible with Scy's built-in hullmod
+			"augmentedengines",
+			"auxiliarythrusters",
+			"unstable_injector",
+			"drive_shunt",
+		],
+	},
+	
+	#MODS INTEGRATION
+	
+    "diableavionics":{
+		#"missile_resist_derecho": [
+		#	# Lists missiles id that should loose guidance but not get flamed out by the Derecho ECM system
+		#],
+		"missile_immune_derecho": [
+			# Lists missiles id that should not get affected at all by the Derecho ECM system
+			# please be mindful to not break player expectations, only very special projectiles should be immune
+			# Such as phased missiles or "smart" bullets
+			"SCY_phasedS",
+		],
+    },
+	
+    "nexerelin":{
+		#"agent_steal_ship_mults":{
+		#    #increases the "cost" of stealing a given ship
+		#	#"my_fancy_ship":1.5,
+		#	#"do_not_steal":-1,
+		#},
+		"mining_ship_strengths":{
+			#"mining_wing": 0.5,
+			#"dedicated_mining_frigate": 5,
+			#"dedicated_mining_destroyer": 20,
+			"SCY_telchine": 30,
+		},
+		#"mining_weapon_strengths":{
+		#    #"small_mining_weapon":2,
+		#    #"medium_mining_weapon":10,
+		#    #"large_mining_weapon":20,
+		#},
+		#"mining_hidden_ships_and_weapons":[
+		#    #??????
+		#],
+    },
+	
+	"PerseanChronicles": {
+		  # Controls what systems/markets may be used as quest starting/mid/ending locations.
+		  # Valid for v1.0.1 and later
+		#"entity_tags_to_blacklist": [
+		#	# SectorEntityTokens containing a tag listed here will be blacklisted.
+		#],
+		#"system_ids_to_blacklist": [
+		#	# Star systems with an id listed here will be blacklisted.
+		#],
+		#"market_ids_to_blacklist": [
+		#	# Markets with an id listed here will be blacklisted.
+		#],
+		"faction_ids_to_whitelist": [
+			# Markets whose controlling faction's id is listed here will be *whitelisted*.
+			# Vanilla factions are whitelisted by default.
+			"SCY",
+		]
+	},
+	
+	"the_vass":{
+		#"do_not_clone_projs":[
+		#	# A list of projectiles which will not be cloned by the Isochronal Field under any circumstances
+		#	# Can be practical for some very-heavily scripted weapons, but do check if it works without this 
+		#	# setting first; the code has some built-in attempts to be compatible with many scripted projectiles
+		#	#   Example:
+		#    # mySuperCoolScriptedMissile,
+		#],
+		"clone_despite_nonoriginal_projs": {
+		#	# A map of projectiles which will be cloned despite being the non-original projectile of a weapon (this
+		#	# could for example be shrapnel from a shotgun). To work, the projectile needs to list the "fake" weapon
+		#	# that spawns the projectile to be cloned. Be careful about adding stuff here, your script needs to make 
+		#	# sure no infinite looping happens (such as only ever splitting the original projectile, for a shotgun)
+		#	#   Example:
+		#    # myShotgunProj1 : myShotGunFakeWeapon1,
+			"SCY_teleporterSS":"SCY_sirenSuper",
+			"SCY_teleporterS":"SCY_sirenMain",
+			"SCY_spearSS":"SCY_stymphalianSuper",
+			"SCY_spearS":"SCY_stymphalianMain",
+		},
+    },
+	
+	"armaarmatura":{
+		"missile_resist_karma":[
+		    #list of missiles that cannot be hacked and switch to the ship using
+			"SCY_phasedS",
+		],
+	},
+}

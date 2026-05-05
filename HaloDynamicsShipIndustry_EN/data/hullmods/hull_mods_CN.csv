@@ -1,0 +1,213 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+#unique bulitin#,,,,,,,,,,,,,,,,,,,
+轻型炮塔套件,HSI_LightTurret,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,TRUE,0,0,0,0,data.hullmods.HSILightTurret,,,,
+重型炮塔套件,HSI_HeavyTurret,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,TRUE,0,0,0,0,data.hullmods.HSIHeavyTurret,,,,
+涡轮聚焦,HSI_TurboFocus,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSITurboFocus,涡轮炮射程增加 %s 。征服者涡轮炮的射程与舰船上射程最长的非导弹武器保持一致，此效果无法超过1000。,,,graphics/icons/hullmods/HSI_TurboFocus.png
+协调机动,HSI_CoordManuvers,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSICoordManuvers,战机在出动时进行弹射。返航和集结时，战机最大航速提高 %s。每有一个联队，战机的机动性提高 %s。,,,graphics/icons/hullmods/HSI_CoordManuvers.png
+柔性机库,HSI_FlexibleHangar,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIFlexibleHangarN,机库全满时，具有额外的整备速度和后备甲板储备。,,,graphics/icons/hullmods/HSI_FlexibleHangar.png
+雷击设计,HSI_TorpedoDesign,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSITorpedoDesign,导弹武器弹药上限降低 %s ，依据能量武器射程加成的一半提高导弹飞行速度和加速度。导弹武器装配点降低 %s 。,,,graphics/icons/hullmods/HSI_TorpedoDesign.png
+时间锚点,HSI_TimeAnchor,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSITimeAnchor,峰值时间不受时流影响。峰值时间结束后的战备消耗速度降低 %s 。,,,graphics/icons/hullmods/HSI_TimeAnchor.png
+袖珍主力舰,HSI_PocketCapital,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIPocketCapital,安装在中型槽位的非导弹武器提高 %s 伤害。非导弹武器的弹药装填速度提高 %s 。,,,graphics/icons/hullmods/HSI_PocketCapital.png
+无畏机器,HSI_Apocalypse,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIApocalypse,大幅缩短战斗中武器和引擎的修理时间。最近的敌人位于800su外时提高速度。,,,graphics/icons/hullmods/HSI_DGS.png
+逐流系统,HSI_Drift,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIDrift,"处于天象的电弧云附近时，最高提高 %s 航速, %s 机动性, %s 能量武器开火速度并降低 %s 能量武器开火幅能。",,,graphics/icons/hullmods/HSI_Drift.png
+魔弹,HSI_Freischutz,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIFreischutz,武器用于选择魔弹类型，所有武器共用冷却时间和弹药，弹药只能通过相位恢复。每第7发魔弹会随机指定目标。,,,
+侧卫战术,HSI_FlankerStrategy,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIFlankerStrategy,命令侧卫与目标保持一定距离。,,,graphics/icons/hullmods/HSI_DGS.png
+灵,HSI_ElegySystem,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIElegySystem,"""听，它们在唱歌。""",,,graphics/icons/hullmods/HSI_ElegySystem.png
+备件生产,HSI_SparePartProduction,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.LogisticsMod.HSISparePartProduction,"舰队进入战斗消耗的战备值减少 %s ，最多累计至 %s 。
+舰队""战斗自动护理系统""可用数量 %s 。",,,graphics/icons/hullmods/HSI_SparePartProduction.png
+巨兽猎手,HSI_LeviathanHunter,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSILeviathanHunter,"战术系统完全启动时，射程提高到 %s 。
+对主力舰和巡洋舰的伤害提高 %s 。
+安装 %s 时，战术系统无法启动，舰船进入机动模式，获得 %s 的最大航速和 %s 的机动性加成。",,,graphics/icons/hullmods/HSI_LeviathanHunter.png
+轻型雷击设计,HSI_LightTorpDesign,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSILightTorpDesign,"制导导弹武器的装配点提高 %s 。可装填导弹无法再装填，获得相当于 %s 秒的备弹。
+
+与扩展发射架不兼容。
+",,,graphics/icons/hullmods/HSI_TorpedoDesign.png
+弩手,HSI_Arbaletrier,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIArbaletrier,大幅缩短战斗中武器和引擎的修理时间。,,,
+熵反馈幅能网,HSI_EntrophyFeedbackSystem,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIEntrophyFeedbackSystem,,,,graphics/icons/hullmods/HSI_EntrophyFeedback.png
+阵列火控,HSI_MatrixTargeting,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIMatrixTargeting,"附近大约 %s 范围内的友军获得最多 %s 射程加成。自身获得 %s 。
+具有较为均衡的射程。",,,graphics/icons/hullmods/HSI_MatrixTargeting.png
+增强传感器,HSI_EnhancedSensor,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIEnhancedSensor,视野扩大。,,,
+深渊潜伏者,HSI_DeepTorpDesign,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIDeepTorpDesign,"导弹的最大速度和加速度提高等于能量武器射程增益的数值，射程提高到能量武器射程增益的 %s 。
+
+制导导弹武器的装配点提高 %s 。
+",,,graphics/icons/hullmods/HSI_TorpedoDesign.png
+梦幻泡影,HSI_Mirage,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.ShieldMod.HSIMirage,"每承受减伤前的 %s 伤害，获得 %s 无敌和 %s 额外屏障。
+
+每损失 %s 结构值，获得 %s 上述效果。
+
+屏障容量变为 %s 。
+
+",,,graphics/icons/hullmods/HSI_Mirage.png
+白日核心,HSI_DayTime_Core,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIDayTimeCore,大幅提高对战机和导弹的伤害。大幅提高维修速度和过载恢复速度。内嵌有未知来源的智能。,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+#universal builtin#,,,,,,,,,,,,,,,,,,,
+光环系统,HSI_Halo,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIHaloV2,结合了大量新型技术的通用式全船框架。非原生的幅能改造效果降低 %s 。,,,graphics/icons/hullmods/HSI_Halo.png
+E.G.O,HSI_EGO,2,0,光环动力L部门,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIEGO,[数据删除],,,graphics/icons/hullmods/HSI_Halo.png
+纠缠系统,HSI_Entanglement,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIEntanglement,舰船的模块在战斗中作为独立舰船入场，并与本体有某种联系。模块不占用部署点，本体摧毁或撤退后模块会继续战斗。,,,graphics/icons/hullmods/HSI_Halo.png
+轨迹,HSI_ContrailMod,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,TRUE,0,0,0,0,data.hullmods.HSIContrailMod,标记此船需要轨迹。无其他用途。,,,graphics/icons/hullmods/HSI_Halo.png
+无人单元地面支援,HSI_DGS,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIDroneGroundSupport,本舰的无人单元会加入地面作战，每队增加 %s 地面战强度，无法超过舰队中的陆战队员总数。 ,,,graphics/icons/hullmods/HSI_DGS.png
+链路屏障架构,HSI_ShieldLinkFrame,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,TRUE,0,0,0,0,data.hullmods.ShieldMod.HSIShieldLinkFrame,为小型舰船设计的链接屏障架构。允许周围约 %s 范围内的携带此架构的友方舰船相互补充屏障，此速度为较低一方恢复速度的 %s。,,,graphics/icons/hullmods/HSI_ShieldLinkFrame.png
+近卫第三舰队,HSI_GuardFleet3,2,0,,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIGuardFleet3,免受日冕造成的效果影响。超空间航速提高 %s 。,,,graphics/icons/hullmods/HSI_GuardFleet3.png
+追猎者,HSI_Stalker,2,0,,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIAvangers,"安装了特别设置的子系统，武器射程超过 %s 的部分大幅度降低，提高 %s 屏障恢复率，幅能耗散变为 %s 倍，可以在任何情况下激活零幅能加速。
+副作用导致屏障容量降低 %s ，峰值时间降低 %s ，无法进行主动排幅。
+不与 %s 兼容。",,,graphics/icons/hullmods/HSI_Avangers.png
+精锐铸造,HSI_EliteForge,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,TRUE,0,0,0,0,data.hullmods.ShieldMod.HSIEliteForge,"使用新锐技术生产的精锐舰船。配有更好的屏障系统，提高 %s 屏障容量和 %s 屏障恢复速度。
+
+这艘舰船的屏障可以如同护盾般控制，并在过载或排幅时自动激活。其减伤仅依据护盾减伤计算。如果护盾不存在，屏障则会一直激活。",,,graphics/icons/hullmods/HSI_ShieldLinkFrame.png
+近卫第一舰队,HSI_GuardFleet1,2,0,,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIGuardFleet1,最大航速提高 %s ，机动性提高 %s 。,,,graphics/icons/hullmods/HSI_GuardFleet3.png
+虚空盾,VoidShield,2,0,未知科技,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIDeflectionShieldHullMod,没什么好看的。它只是椭圆而已。,,,graphics/icons/hullmods/HSI_HardenShield.png
+超分流透孔装甲,HSI_HyperShuntArmor,2,0,光环动力科学技术部,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIHyperShuntArmor,"一种先进但是负面效果严重的装甲。装甲的最大减伤提高 %s。降低 %s 受到的光束伤害。
+允许反应堆通过装甲进行缓慢的排散，能自然耗散 %s 的硬幅能。
+复杂的结构占用了武器系统的空间，降低 %s 对舰船的伤害。此外，这种复杂材料不易维护，战后的修复速度降低 %s 。",,,graphics/icons/hullmods/HSI_TurboFocus.png
+战术中心,HSI_TacCenter,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSITacCenter,"自身受到的电子战影响降低 %s 。
+电子战强度提高 %s 。
+视野扩大 %s 。",,,graphics/icons/hullmods/HSI_MatrixTargeting.png
+力量投射,HSI_PowerProjection,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIPowerProjection,"所有友军的战机出击距离提高 %s 。
+本舰的战机获得本舰的全部战斗技能。",,,graphics/icons/hullmods/HSI_DGS.png
+纳米力场,HSI_NanoRepairField,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSINanoRepairField,%s 范围内的友军每秒恢复 %s 已损失的装甲和结构。自身的修复速度提高到 %s 。,,,graphics/icons/hullmods/HSI_CombatAutomateRepairSystem.png
+主宰定位核心,HSI_JuggernautTargetingCore,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,,0,0,0,0,data.hullmods.HSIJuggernautTargetingCore,武器射程提高 %s 。PD武器只提高 %s 。,,,graphics/icons/hullmods/HSI_MatrixTargeting.png
+主宰核心,HSI_JuggernautCore,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,,,TRUE,TRUE,0,0,0,0,data.hullmods.HSIJuggernautCore,无法零幅能加速。,,,graphics/icons/hullmods/HSI_PowerOverwhelming.png
+装甲屏障,HSI_ArmoredShield,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.ShieldMod.HSIArmoredShield,屏障具有额外的 %s 装甲值。,,,graphics/icons/hullmods/HSI_HardenShield.png
+机动侧重,HSI_ManuverTransfer,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.ShieldMod.HSIManuverTransfer,由于推进系统占用的大量空间和能量，屏障承受的伤害提升 %s 。,,,graphics/icons/hullmods/HSI_ManuverTransfer.png
+,,,,,,,,,,,,,,,,,,,
+#normal#,,,,,,,,,,,,,,,,,,,
+势不可挡,HSI_PowerOverwhelming,2,,光环动力舰船工业,"defensive,offensive",,15000,,TRUE,,5,10,15,25,data.hullmods.ShieldMod.HSIPowerOverwhelming,提高 %s 屏障容量，降低 %s 屏障恢复率。,,,graphics/icons/hullmods/HSI_PowerOverwhelming.png
+武器工业适配套件,HSI_WeaponIndAdaption,3,,光环动力舰船工业,"special, no_drop, no_drop_salvage",武器,25000,TRUE,,,0,0,0,0,data.hullmods.HSIWeaponIndAdaption,"将部分武器改装为武器工业提供的改造型号。
+#改造型号无法安全移除，请移除此插件后再卸载。
+##武器工业不对您因不按流程操作造成的任何损失负责。",,,graphics/icons/hullmods/HSI_WeaponIndAdaption.png
+武器工业升级套件,HSI_WeaponIndUpgrades,3,,光环动力舰船工业,"special,req_spaceport,no_drop, no_drop_salvage",,35000,,TRUE,,5,8,14,20,data.hullmods.HSIWeaponIndUpgrades,激活武器的 %s 效果。,,,graphics/icons/hullmods/HSI_WeaponIndUpgrades.png
+硬化屏障,HSI_HardenShield,2,,光环动力舰船工业,"defensive,HSI_bp",护盾,12000,,,,5,10,15,25,data.hullmods.ShieldMod.HSIHardenShield,"提高 %s 屏障强度。
+屏障承受的伤害中，超过 %s 的部分降低 %s 。
+",,,graphics/icons/hullmods/HSI_HardenShield.png
+扩展屏障,HSI_EnhancedShield,2,,光环动力舰船工业,"defensive,HSI_bp",护盾,12000,,,,5,10,15,25,data.hullmods.ShieldMod.HSIEnhancedShield,提高 %s 最大容量。提高 %s 屏障恢复率。,,,graphics/icons/hullmods/HSI_PowerOverwhelming.png
+,,,,,,,,,,,,,,,,,,,graphics/icons/hullmods/HSI_WeaponIndUpgrades.png
+熔毁升级,HSI_ProtocalMeltDown,2,,光环动力舰船工业,"offensive,req_spaceport,HSI_bp",武器,12000,,,,4,8,12,20,data.hullmods.WeaponMod.HSIProtocalMeltDown,"根据光环动力光束武器占用的武器装配点，提高最多 %s 的光束武器伤害。
+光环动力光束武器的附加效果提高 %s 。
+
+当前装配点比例 %s 。",,,graphics/icons/hullmods/HSI_ProtocalMeltdown.png
+突击升级,HSI_ProtocalAssault,2,,光环动力舰船工业,"offensive,req_spaceport,HSI_bp",武器,12000,,,,2,4,6,10,data.hullmods.WeaponMod.HSIProtocalAssault,"随幅能水平提高，实弹和能量武器射速最多提高 %s ，在幅能水平 %s 时达到最大值。
+",,还会同时以相同比例降低武器 %s 的幅能消耗。,graphics/icons/hullmods/HSI_WeaponIndUpgrades.png
+压迫升级,HSI_ProtocalSuppression,2,,光环动力舰船工业,"offensive,req_spaceport,HSI_bp",武器,12000,,,,2,4,6,10,data.hullmods.WeaponMod.HSIProtocalSuppression,"造成伤害时，如果目标处于 %s su之外，在一定时间内目标获得[协同压制]的效果。
+每层[协同压制]按照来源的船体等级，提高目标 %s 所有受到的伤害。可以刷新持续时间，来自不同来源的[协同压制]最多生效 %s 层，取最高者。
+",,还能为目标额外附加一层不计入上限但是效果为 %s 的[协同压制]。,graphics/icons/hullmods/HSI_ProtocalSuppression.png
+净空升级,,,,,,,,,,,,,,,,,,,
+蔽日升级,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+梯度转向系统,,,,,,,,,,,,,,,,,,,
+微型滑流发生器,,,,,,,,,,,,,,,,,,,
+压差感应电场,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+#limit#,,,,,,,,,,,,,,,,,,,
+战斗自动护理系统,HSI_CombatAutomateRepairSystem,2,0,光环动力舰船工业,"special, no_drop, no_drop_salvage,req_spaceport,no_build_in",,0,TRUE,,,5,10,15,20,data.hullmods.LogisticsMod.HSICombatAutomateRepairSystem,"战斗中自动修复已损失的装甲，累计可修复约 %s 装甲值的装甲。总额不会低于 %s ，不会高于 %s 。
+修理会在装甲损失后立刻开始，以每秒 %s 额度的效率从左至右，从下至上逐个修理装甲格。
+战斗中武器和引擎的修复速度提高 %s 。",,,graphics/icons/hullmods/HSI_CombatAutomateRepairSystem.png
+,,,,,,,,,,,,,,,,,,,
+#special,,,,,,,,,,,,,,,,,,,
+隐藏式挂载点,HSI_HiddenHardpoint,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,TRUE,0,0,0,0,data.hullmods.HSIHiddenHardpoints,挂载点隐藏在船体结构内部。,,,
+传送效果,HSI_DisplacerExtendFx,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,TRUE,0,0,0,0,data.hullmods.HSIDisplacerExtendFx,渲染特效。,,,
+V排效果,HSI_SpecialVent,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,TRUE,0,0,0,0,data.hullmods.FxMod.HSISpecialVentMod,渲染特效。,,,
+返航,HSI_ReturnFighter,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,TRUE,0,0,0,0,data.hullmods.HSIReturnFighter,无弹药时返航。,,,
+长生久视,HSI_InfiniteSync,2,,??,"special, no_drop, no_drop_salvage",,0,,TRUE,,0,0,0,0,data.hullmods.HSIInfiniteSync,"""收起你毫无新意的小把戏.""",,,
+模块化无畏舰,HSI_ModularDreadnought,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,TRUE,0,0,0,0,data.hullmods.ShieldMod.HSIModularDreadnought,浮世-级 是一种先进的模块化无畏舰，能在任何标准船坞进行改装。位于船坞中时，可以通过安装三个特殊插件中的一个来指定切换为三种不同的战术模式。任何切换都会卸载所有子系统改装、战机和不适配的武器。,,,graphics/icons/hullmods/HSI_PowerOverwhelming.png
+取消殉爆,HSI_ModularArmorSpecial,2,,光环动力舰船工业,"special, no_drop, no_drop_salvage",,0,,TRUE,TRUE,0,0,0,0,data.hullmods.HSIModularArmorSpecial,几乎没有殉爆。,,,
+浮世-强袭,HSI_Ukiyo_TypeA,2,,光环动力舰船工业,"special,req_spaceport,no_drop, no_drop_salvage",,0,TRUE,,,0,0,0,0,data.hullmods.HSIUkiyoSig,将 浮世-级 改造为强袭模式。这是一种以电子战和舰队火力增幅为主的设计，能增幅友军在常规武器交火上的性能。,,,graphics/icons/hullmods/HSI_MatrixTargeting.png
+浮世-航空,HSI_Ukiyo_TypeB,2,,光环动力舰船工业,"special,req_spaceport,no_drop, no_drop_salvage",,0,TRUE,,,0,0,0,0,data.hullmods.HSIUkiyoSig,将 浮世-级 改造为航空模式。这是一种以扩展舰队感知和发动全甲板突击为主要目的的设计，但是需要其他以同类思路设计的友军航母支援。,,,graphics/icons/hullmods/HSI_DGS.png
+浮世-重装,HSI_Ukiyo_TypeC,2,,光环动力舰船工业,"special,req_spaceport,no_drop, no_drop_salvage",,0,TRUE,,,0,0,0,0,data.hullmods.HSIUkiyoSig,将 浮世-级 改造为重装模式。这是一种以长时战斗和防御为目的的设计。,,,graphics/icons/hullmods/HSI_CombatAutomateRepairSystem.png
+冒险模式投影,HSI_AdventureEnemy,2,0,群星竞技场,"special, no_drop, no_drop_salvage",,0,,TRUE,TRUE,0,0,0,0,data.hullmods.HSIAdventureEnemy,猎杀时刻？,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,

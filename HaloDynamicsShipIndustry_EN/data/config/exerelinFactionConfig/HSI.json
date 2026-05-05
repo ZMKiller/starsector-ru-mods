@@ -1,0 +1,94 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "directoryUseShortName":true,
+    
+    "rebelFleetSuffix":"Divider",
+    
+    "marketSpawnWeight":2,
+
+    "startRelationships":{
+        "hegemony":0.3,
+        "independent":-0.1,
+        "tritachyon":-0.5,			
+        "persean": -0.1,		
+        "sindrian_diktat": -0.1
+    },
+	"diplomacyPositiveChance":{ "hegemony":1.5 },
+    "diplomacyNegativeChance":{ 
+        "tritachyon":1.2,
+    },
+     
+    "alignments":{
+        "corporate":-0.5,	
+        "technocratic":1,
+        "hierarchial":0.5,
+        "militarist":-0.25,
+        "diplomatic":0.5,
+        "ideological":0.5
+    },
+    "diplomacyTraits":["law_and_order","stalwart","helps_allies","lowprofile","devious"],
+    
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":0.5
+    },
+	
+	"factionsLiked":[
+        "hegemony"  	
+    ],
+
+    "factionsDisliked":[
+        "luddic_path",
+        "tritachyon"
+    ],	
+    
+    "vengeanceLevelNames":["Pursuit", "Reprisal", "Vendetta"],
+    "vengeanceFleetNames":["Hunter-Killers", "Task Force", "Consortium Fleet"],
+    "vengeanceFleetNamesSingle":["a Hunter-Killer Fleet", "a Task Force", "a Consortium Termination Fleet"],
+    
+    "vengeanceFleetSizeMult":2,
+	
+	"invasionSupportFleetName":"Attack Force",
+    "responseFleetName":"Defense Fleet",
+    "defenceFleetName":"Protect Fleet",	
+
+    "freeMarket":true,
+    
+    "startShipsSolo":[["HSI_TianGuang_Dash"]],
+    "startShipsCombatSmall":[
+      ["HSI_Comet_Aribiter", "HSI_ZhiYuan_Assault","HSI_YunYan_Assault"],
+    ],
+    "startShipsCombatLarge":[
+      ["HSI_Spade_Support", "HSI_YunYan_Assault","HSI_DengHuo_variant"],
+    ],
+    "startShipsTradeSmall":[
+        ["HSI_DengHuo_variant", "HSI_YunYan_Assault", "HSI_ZhiYuan_Assault"],
+        ["HSI_DengHuo_variant", "HSI_YunYan_Assault", "HSI_Weaver_Strike"],
+      ],
+      "startShipsCarrierSmall":[["HSI_Qiming_Strike", "HSI_YunYan_Assault", "HSI_DengHuo_variant"]],
+      "startShipsCarrierLarge":[["HSI_Xianfeng_Strike", "HSI_Qiming_Strike", "HSI_YunYan_Assault"]],
+      "startShipsSuper":[["HSI_Elegy_Support"]],
+
+    "startSpecialItems":[
+        [["HSI_BP",""]],
+    ],
+   
+    "defenceStations":[
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+    ],
+	
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1}
+    ],
+    
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1},
+        {"id":"aiCore_station", "count":2, "mult":1},
+        {"id":"aiCore_military", "mult":2},
+        {"id":"aiCore_heavyindustry", "count":2},
+        {"id":"aiCore_any", "mult":1}
+    ]
+}

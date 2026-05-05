@@ -1,0 +1,51 @@
+{
+	"id":"SCY_phase_mine",
+	"specClass":"missile",	
+	"missileType":"PHASE_MINE",
+	"sprite":"graphics/SCY/missiles/SCY_phase_mine.png",
+	"glowSprite":"graphics/SCY/missiles/SCY_phase_mineGlow.png",
+	"glowColor":[255,100,100,255],
+	"size":[45,45],	
+	"center":[22.5,22.5],	
+	"collisionRadius":15,
+	
+	"collisionClass":"MISSILE_NO_FF",
+	"flameoutTime":0.1, # total time from flameout to full fadeout
+	"fadeTime":0.1, # fadeout duration
+	"noEngineGlowTime":0.05, # time spent without the engine glow being rendered
+	"explosionColor":[148,100,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":500, # purely visual	
+	"engineSpec":{
+                    "turnAcc":500,
+                    "turnRate":150,
+                    "acc":50,
+                    "dec":50},
+	"behaviorSpec":{
+                    "behavior":"PROXIMITY_FUSE",
+                    "range":150,
+                    "slowToMaxSpeed":true,
+                    "delay":2f,
+                    "pingSound":"mine_ping",
+                    "pingColor":[255,50,50,255],
+                    "pingRadius":450,
+                    "pingDuration":0.25,
+                    "windupSound":"mine_windup_heavy",
+                    "windupDelay":1,
+                    "explosionSpec":{
+                        "duration":0.25f,
+                        "radius":400,
+                        "coreRadius":100, # full damage within core radius
+                        "collisionClass":MISSILE_FF,
+                        "collisionClassByFighter":MISSILE_FF,
+                        "particleSizeMin":3.0,
+                        "particleSizeRange":3.0,
+                        "particleDuration":1,
+                        "particleCount":100,
+                        "particleColor":[255,50,50,255],
+                        "explosionColor":[255,100,50,255],
+                        "useDetailedExplosion":true,
+                        "sound":"mine_explosion"},
+                    }	
+}
+
+

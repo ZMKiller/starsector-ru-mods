@@ -1,0 +1,36 @@
+{
+	"id":"edshipyard_CR",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":1200,
+	"turretSprite":"graphics/weapons/edshipyard_CR_base.png",
+	"turretGunSprite":"graphics/weapons/edshipyard_CR_barrel.png",
+	"turretGlowSprite":"graphics/weapons/edshipyard_CR_glow.png",
+	"hardpointSprite":"graphics/weapons/edshipyard_CR_base.png",
+	"hardpointGunSprite":"graphics/weapons/edshipyard_CR_barrel.png",
+	"hardpointGlowSprite":"graphics/weapons/edshipyard_CR_glow.png",
+	"visualRecoil":50.0,  # the gun sprites are only used if this is non-0	
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[35, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[50, 0],
+	"hardpointAngleOffsets":[0],
+	"fringeColor":[130,85,15,75],
+	"coreColor":[255,175,75,225],
+	"glowColor":[170,70,20,175],
+	"darkCore":false,
+	"autocharge":true,
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":150.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":10.0,
+					   "particleSizeMin":5.0,
+					   "particleSizeRange":25.0,
+					   "particleDuration":0.75,
+					   "particleCount":60,
+					   "particleColor":[255,200,100,245]},
+	"projectileSpecId":"hellbore_shot",  # projectile that will be fired
+	"fireSoundOne":"carolina_trigger",
+	"fireSoundTwo":"carolina_fire",
+}

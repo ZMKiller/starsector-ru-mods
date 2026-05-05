@@ -1,0 +1,46 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 16,
+    "fluxVents": 15,
+    "goalVariant": true,
+    "hullId": "SCY_siren",
+    "hullMods": [
+        "eccm",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_siren_Support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_sirenMain",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_arcSmall",
+                "WS0003": "SCY_arcSmall",
+                "WS0004": "swarmer",
+                "WS0005": "swarmer",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "SCY_minigun1",
+                "WS0007": "SCY_minigun1",
+            }
+        },
+    ],
+    "wings": [
+        "SCY_stygere_wing",
+    ],
+    "modules": [],
+}

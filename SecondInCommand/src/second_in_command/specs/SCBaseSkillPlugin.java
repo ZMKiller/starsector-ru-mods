@@ -1,25 +1,12 @@
 package second_in_command.specs;
 
-import com.fs.starfarer.api.GameState;
-import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.AICoreOfficerPlugin;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
-import com.fs.starfarer.api.campaign.FleetDataAPI;
-import com.fs.starfarer.api.characters.MutableCharacterStatsAPI;
-import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
-import com.fs.starfarer.api.combat.ShipHullSpecAPI.ShipTypeHints;
 import com.fs.starfarer.api.combat.ShipVariantAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
-import com.fs.starfarer.api.impl.campaign.ids.HullMods;
-import com.fs.starfarer.api.impl.campaign.intel.BaseIntelPlugin;
-import com.fs.starfarer.api.impl.hullmods.Automated;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
-import com.fs.starfarer.api.util.Misc;
 import second_in_command.SCData;
-
-import java.awt.Color;
 
 /**Base Plugin for Skills.
  * Handles similar to hullmod plugins.
@@ -104,6 +91,4 @@ public abstract class SCBaseSkillPlugin {
      * */
     @Deprecated()
     public void advanceInCampaign(SCData data, FleetMemberAPI member, Float amount) { }
-
-
 }

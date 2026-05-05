@@ -1,0 +1,95 @@
+{
+  "hullName": "Allsup",
+  "hullId": "HIVER_allsup",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/HIVER_allsup.png",
+  "style": "HIGH_TECH",
+  "height": 22,
+  "width": 16,
+  "center": [8, 11],
+  "collisionRadius": 18.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 18,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HIDDEN",
+      "arc": 45,
+      "angle": 0,
+      "locations": [2.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 45,
+      "angle": 0,
+      "locations": [8, 5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 45,
+      "angle": 0,
+      "locations": [8.5, -5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-7, -0],
+      "length": 11,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-10.5, 4.5],
+      "length": 5,
+      "width": 1,
+      "angle": 180,
+      "contrailSize": 1,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-6.5, 7.5],
+      "length": 5,
+      "width": 1,
+      "angle": 180,
+      "contrailSize": 1,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-6.5, -7.5],
+      "length": 5,
+      "width": 1,
+      "angle": 180,
+      "contrailSize": 1,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-10.5, -4.5],
+      "length": 5,
+      "width": 1,
+      "angle": -180,
+      "contrailSize": 1,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -11, -10.5,
+    14, -8.5,
+    13.5, 9,
+    -11, 11,
+    -14, 0.5
+  ]
+}

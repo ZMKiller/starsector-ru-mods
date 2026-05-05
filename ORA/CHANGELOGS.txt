@@ -1,0 +1,739 @@
+ORA
+1.0.0
+  -Increased replacement time for fighters to be more in line with vanilla
+  -Nerfed CR recovery rate, CR battle usage, and peak performance time for Elevation to not overshadow Aurora
+  -Changed ship variants to use stabilized shields when appropriate
+
+0.99
+
+  - Reduced number of random planets in Malachite, Godunov, and Groom systems
+  - Random planets generated in Malachite, Godunov, and Groom now use a name list rather than generic procedural names
+  - Bliss, Harmony, Beatitude, and Enlightenmentnow have Energy Bolt Coherer
+  - Sanctuary lost inbuilt wisdom wing but now has one free fighter bay
+  - Replaced a number of synergy slots with energy slots slots on Bliss, Sanctuary, Harmony, Elevation, and Beatitude to more closely reflect the number of missle compatable mounts a vanilla ship of equivilent weight class has (2 small for frigates, 4 small for destroyers, and 8 small for cruisers) (mediums count as 2 smalls)
+  - Reduced Litany Thrower, Eschewal Projecter, Incantation Horn, Calling Scatterer, and Invocation Launcher by 100 due to energy bolt coherer added to some ORA ships
+  - Litany Throwers flux reduced to 135 from 150
+  - Eschewal Projector damage increased to 500 from 400
+  - Invocation Launcher flux reduced to 3550 from 3750
+  - Calling Scatterer emp Damage increased to 400 per shot from 0
+  - Incantation Horn Refire rate decreased to 2 seconds from 3
+  - Wisdom Fighter now has full flare launcher system to better supress enemy PD and OP reduced to 4
+  - all other strikecraft have had a reduction to op cost to make them more competative with vanilla strikecraft
+  - Ship varients have been altered to accommodate these balance changes
+
+
+0.98
+
+  - Neodymium takes over maintaining the mode
+  - Paint jobs added
+
+0.97
+
+ - No changes, just a recompile of JAR and moving project to github
+
+0.96
+
+ - MnHebi takes over updating the mod
+
+BUGFIXES/IMPROVEMENTS:
+ - Fixed Invocation Launcher missing EMP damage values.
+ - Replaced deprecated colony administrator skills with ones from IndEvo if that mod is active, otherwise only Industrial Planning is given to ORA administrators.
+ - Adjusted faction hull chances to match current Starsector standard.
+
+0.95
+
+BALANCING:
+
+ - All ships with maneuvering systems now have reduced base acceleration.
+
+ - Sempiternal Repeater: Range increased to 700su from 600.
+
+BUGFIXES/IMPROVEMENTS:
+
+ - Eschewal Projector / Invocation Launcher:
+   . Fixed a typo that made the slowing effect much more pronounced that it should have,
+   . Added a multiplier that increase the effect with skills and systems that increase Energy weapon damage.
+ - Prayer Sender missiles are now much smaller, more in line with their damage potential.
+ - Fixed an error with the Xeno-Warfare Design hullmod that always gave the max debuff for asymmetric loadouts.
+ - The Xeno-Warfare Design hullmod now displays the current engine debuff when using an asymmetric loadout.
+
+0.94
+
+NEW CONTENT:
+
+ - New star system ambience musics courtesy of Mesotronik.
+
+BALANCING:
+
+ - Attitude Jets system:
+   . Duration reduced to 3s from 4, added a 2s charge-down,
+   . Speed boost increased to 100 from 50, but only applies during the fully active time,
+   . turn rate boost applies during the entire charge-up + active + charge-down duration.
+
+ - Ships:
+   . Many sideways energy turrets are now synergy,
+   . Many spinal synergy turrets are now energy.
+ > Ships have more missile-capable mounts overall.
+ > Given that having projectile weapons in spinal mounts is important to make the AI broadside properly, this should eliminate pitfalls new users fall into.
+   . All broadsider ships' Omni shields now have variable arcs, they get wider when pointed to the side and narrower to the front to catch fewer unnecessary shots.
+
+ - Harmony destroyer:
+   . System switched to Plasma Jets from Plasma Burn.
+
+ - Grace destroyer:
+   . Speed increased to 90 from 70.
+   . Deployment/Maintenance cost increased to 13 supplies from 11.
+
+ - Communion carrier:
+   . Speed increased to 50 from 35.
+
+ - Beatitude cruiser:
+   . Speed increased to 65 from 50.
+
+ - Elevation cruiser:
+   . Speed increased to 75 from 65.
+
+ - Revelation cruiser:
+   . Shield changed to a Front bubble, from a 300 degrees Omni.
+   . Now has built-in Accelerated Shields.
+
+ - Discernment super-carrier:
+   . System switched to Coordinated Engagement (+30CR to nearby ships) from Acausal Disruptor,
+   . Deployment/Maintenance cost increased to 60 supplies from 50.
+
+ - Choir Emitter:
+   . Damage per shot increased to 25 from 10 (125 dps from 50)
+   . EMP per shot increased to 80 from 40 (400 dps from 200)
+ > This won't change much it's efficiency against missiles since most of the effect is scripted, but it might make it better than soaked porridge vs fighters.
+
+ - Recital Deliverer:
+   . Base fire-rate increased to 240 rpm from 120. Maximum fire-rate unchanged.
+
+ - Litany Thrower:
+   . Proj speed increased to 400 from 300.
+   . Fires in bursts of 3 instead of having 6 ammo with regen.
+ > Might be worse in player hands, but should work a lot better with the AI.
+
+ - Eschewal Projector:
+   . Now has a constant turn rate while firing or not.
+   . Proj speed increased to 450 from 400.
+
+ - Echoes Caster:
+   . No longer affects friendly missiles.
+ > Kind of necessary now with all the new missile mounts.
+
+ - Calling Scatterer:
+   . Proj speed increased to 350 from 300.
+
+ - Incantation Horn:
+   . Proj speed increased to 300 from 225.
+
+BUGFIXES/IMPROVEMENTS:
+
+ - Xeno-warfare hullmod is now displayed to the top of all built-in hullmods
+
+
+0.93
+
+BALANCING:
+
+[RC3] Recital Delivere: fixed last minute test that was not reverted properly
+
+ - Recital Deliverer:
+   . Damage per shot decreased to 45 Energy damage from 60, flux reduced accordingly.
+   . Rate of fire increases more rapidly to reach its full potential in 10 shots from 20. (4.5s of sustained fire from 5.6s)
+   . Stat-card clarified.
+
+ - Litany Thrower:
+   . Burst firepower lowered to 600dps from 750.
+   . Sustained firepower raised to 150dps from 75.
+
+ - Eschewal Projector:
+   . Range increased to 900 from 850.
+   . Now fires in bursts of two shots.
+   . Speed dampening effect now fixed to 25% from 0/20/40/60/80% depending on target size. (similar to cruiser effect if both projectiles connect)
+
+ - Incantation Horn:
+   . Range increased to 1000 from 900.
+   . Firerate increased to 20 rpm from 17.
+
+ - Sempiternal Repeater: Turn rate increased by 50% but added tag to not benefit from the idle turn boost.
+
+ - Echoes Caster: Turn rate increased by 100% but added tag to not benefit from the idle turn boost.
+
+ - Fervor-wing gunship:
+   . Now only has a single Recital Repeater on a 360deg turret instead of two in 180deg turrets.
+   . The fighters will now try to maintain some range off of their target's PD weapons instead of rushing in.
+
+ - Communion-class carrier: System changed to Active flares from Long Range Fighters.
+
+ - Felicity-class carrier: System changed to Sensor Drones from Entropy Amplifier.
+
+ - Discernment-class carrier: System changed to Quantum Disruptor from Interdictor Array.
+
+ - Attitude Jets system: Increased the speed boost to 50 from 25.
+
+ - Commisioned Crew:
+   . Removed the drawback of Alliance Conservation Methods.
+   . Effect is now -15% or -4 supplies per month (whichever is smaller) instead of -25% or -2.
+
+BUGFIXES/IMPROVEMENTS:
+
+ - Fixed ORA system spawning in Nexerelin random mode.
+ - Calling Scatterer no longer uses its secondary PD function while phased.
+ - Added the new Fury-class to ORA's spawn tables.
+ - System's blue giant stars are now proper blue giants.
+ - Solid State Capacitor system description adjusted to better reflect the effect.
+ - Externalized a couple of strings that were missing.
+ - Added missing fighter weapons descriptions.
+
+0.92
+
+Barebone compatibility update for 0.95a
+
+0.91
+
+NEW CONTENT:
+ - Added Incantation Horn large artillery:
+   . 900 range energy weapon that packs a massive punch,
+   . Abysmal fire-rate,
+   . Laughable projectile speed,
+   . Storm-trooper level of accuracy.
+
+BALANCING:
+ - Sanctuary-class destroyer:
+   . Flux capacity reduced to 6000 from 6500,
+   . Flux dissipation reduced to 300 from 350,
+   . Supplies/month - supplies/deploy raised to 11 from 10.
+ - Litany Thrower flux efficiency improved to 1.0 f/dmg from 1.2.
+ - Harmony-class destroyer:
+   . Mount types shuffled around,
+   . OPs raised to 110 from 100.
+
+BUGFIXES/IMPROVEMENTS:
+ - FINALLY fixed the weapon availability issue in ORA markets.
+ - Valis' binary star now properly show up in the planet list.
+ - Fixed Bliss-class frigate miss-aligned mounts.
+ - Fixed Discernment-class carrier weapon render order.
+
+0.90 pre tournament version
+
+NEW CONTENT:
+ - New interaction music courtesy of Mesotronik.
+ - Many new skin packs available as stand-alone downloads.
+
+BALANCING:
+ - Sempiternal Repeater chargeup shortened to 0.5s from 1.2.
+ - Awareness fighter speed increased to 130 from 120.
+ - Fervor fighter speed increased to 140 from 130.
+
+BUGFIXES/IMPROVEMENTS:
+ - Elevation-class' troublesome COMBAT CARRIER tags removed.
+ - Eschewal (slow) is now a medium fighter weapon (no longer affected by the built-in IPDAI).
+ - Fixed some outdated weapon stat cards information.
+ - Solid State Capacitors system now has a proper custom AI and is no longer tied to shields.
+ - Fixed Harmony-class' miss-placed ship center.
+
+0.89 post tournament patch
+
+Added support for Industrial Evolution
+
+NEW CONTENT:
+ - Awareness-wing:
+   . Assault bomber.
+   . 2 crafts per wing.
+   . Launches 5 Calling shots each, for 5x500 Energy damage.
+
+BALANCING:
+ - Choir emitter no longer creates EMP arcs on hits, firerate and raw EMP damage slightly increased.
+ - Fervor-wing gunship:
+   . Choir emitters replaced with Recital Deliverers + IPDAI.
+   . Litany Thrower replaced with Eschewal Projector (half firerate)
+ - Enlightenment-class deployment/maintenance costs raised to 55 from 45.
+ - Invocation Launcher:
+   . Tracking weakened.
+   . Shockwave propagates to the front of the projectile instead of directly toward the target.
+ - Allure bomber wing:
+   . OP cost raised to 30 from 25.
+   . Bomb payload doubled.
+ - Ascension-class frigate:
+   . System is now a proximity-based time dilation, has a higher ceiling but scale more linearly with the number of enemies in range.
+   . Weapon arcs and types tweaked.
+   . OP reduced to 50 from 55.
+   . Deployment cost increased to 12 from 8.
+ - Commissioned Crew hullmod now reduces the maintenance cost by 25% from 10, but is capped at 2 supplies per month per ship.
+
+BUGFIXES/IMPROVEMENTS:
+ - ORA markets should provide a lot more of their weapons and fighters.
+ - All normal maps have been redone, some maps that had minimal benefits have been removed to very slightly lower the VRAM load.
+ - Minor description tweaks.
+
+0.88
+
+BALANCING:
+ - Prayer Sender:
+   . Range reduced to 800 from 1000.
+
+ - Invocation Launcher:
+   . Reduced armor penetration.
+
+ - Newtonian Slinging:
+   . Buffed duration, range and effect by 25%
+
+BUGFIXES/IMPROVEMENTS:
+ - Calling Scatterer:
+   . Hopefully fixed a very rare crash when the target gets destroyed the same frame as the weapon is firing.
+
+ - Alternate skin pack now provided as an Addon mod, and now includes weapons.
+
+ - Externalized all strings to facilitate the work of translators
+
+0.87
+
+ - Added Starship Legend compatibility.
+ - Added Ruthless Sector compatibility.
+ - Added New Beginnings compatibility.
+ - Added Vayra Sector compatibility.
+ - Added Commissioned Crew compatibility.
+ - Improved Nexerelin integration.
+ - Added market music, courtesy of Tomatopaste.
+
+BUGFIXES/IMPROVEMENTS:
+ - Economy slightly reduced in regard to other larger factions.
+ - Added a few custom portraits.
+
+0.86
+
+BALANCING:
+ - ORA blueprint packages prices lowered to vanilla levels.
+ - Ascension-class Newton Slinger system effect significantly stronger.
+ - Invocation Launcher EMP damage raised to 2500 from 1000.
+ - Eschewal Projector flux to fire lowered to 360 from 500 (0.9 f/dmg from 1.25).
+ - Calling Scatterer:
+   . Range increased to 900 from 700.
+   . Projectiles slightly faster.
+   . Projectiles slightly harder to shoot down.
+   . Sustained fire-rate doubled (1000 dps from 500).
+ - Sempiternal Repeater:
+   . Initial flux/shot reduced to 66 from 75, maximum flux  per shot now 200 (1 f/dmg).
+   . Accuracy slightly improved
+ - Elevation-class cruiser system changed to Micro Burn from High Energy Focus.
+ - Revelation-class cruiser OP amount raised to 170 from 150.
+ - Beatitude-class cruiser OP amount raised to 195 from 180.
+ - Enlightenment-class battleship:
+   . Hull points raised to 20000 from 16000.
+   . Flux dissipation raised to 1400 from 1200.
+   . Flux capacity raised to 30000 from 22500.
+ - Recital Deliverer now less accurate during sustained bursts.
+
+BUGFIXES/IMPROVEMENTS:
+ - Added New Beginnings compatibility.
+ - Shuffled around the systems, added a bit more content to them for a more dynamic experience.
+
+0.85
+
+BALANCING:
+ - Ship prices raised to 0.9.1 levels, some fleet points and deployment costs reductions.
+ - Choir Emitter flux per shot lowered to 15 (83 fps) from 25 (139 fps).
+ - Solid State capacitors:
+   . Conversion rate improved to 1/3 soft flux to hard flux, from 1/2.
+   . Cooldown raised to 18s from 15.
+ - Recital Deliverer:
+   . Ammo limitation removed.
+   . Firerate increases slightly faster.
+   . Damage per shot reduced to 60 from 67.
+ - Prayer Sender:
+   . Range reduced to 1000 from 1500.
+   . No longer collides with allies but the autofire AI won't use it that way.
+   . Minimal salvo set to 5.
+ - Changed many mounts to Synergy from Energy.
+
+BUGFIXES/IMPROVEMENTS:
+ - Variants optimized for AI use.
+ - Fleet compositions adjusted for a tougher end-game challenge.
+ - Ascension frigate now much more available for everyone.
+ - Adjusted Industries.
+
+0.84
+
+ - Added Vesperon Combine compatibility
+ - Added Prayer Sender medium missile: A reloading Energy rocket launcher.
+
+BALANCING:
+ - All weapons prices adjusted to match 0.9 vanilla values.
+
+0.83
+
+ - Updated compatibility with Nexerelin.
+
+BALANCING:
+ - Fighter changes:
+   . All fighters get the "no_weapon_flux" hullmod like vanilla, flux stats adjusted accordingly.
+   . Fervor gunship shield nerf.
+   . Wisdom interceptor hull buff.
+
+BUGFIXES/IMPROVEMENTS:
+ - Added spaceport to Lu'men station.
+ - Downgraded Marble's nanoforge to corrupted from pristine.
+ - Added missing turn rate information to the Calling Scatterer.
+ - Shuffled some blueprints, neither BP package contains any capital ship like vanilla.
+ - Deactivated the "material maps" for GraphicLib, that had only a minor visual impact but significantly increased VRam usage.
+
+0.82
+
+BUGFIXES/IMPROVEMENTS:
+
+ - Changed the faction colors for something farther from the League's gold.
+ - Fixed Calling Scatterer secondary PD firing at nothing.
+
+0.81
+
+rc2: Removed Lu'men trade restrictions entirely due to infrequent bug
+
+BUGFIXES/IMPROVEMENTS:
+
+ - Proper running economy and planet conditions.
+ - Updated interaction dialogs.
+ - Added proper Commission dialog.
+ - Added second and rarer blueprint package.
+ - Added individual ship wing and weapon blueprints.
+
+0.80
+
+rc2: Fixed AM bomber CTD.
+rc3: Fixed Calling Scatterer flux issue.
+rc4: Fixed Lu'men interaction.
+
+   Barebone 0.9.0 compatibility update.
+
+0.79
+
+NEW CONTENT:
+
+ - Ascension-class advanced frigate:
+   . Crowd-control.
+   . Leech maneuverability from nearby enemies.
+   . Expensive and fragile.
+
+BALANCING:
+
+ - Calling Scatterer:
+   . Fires in bursts.
+
+ - Frigates:
+   . Maneuverability slightly increased overall.
+
+ - Communion-class carrier:
+   . Speed reduced by 15 to 35.
+
+ - Harmony-class destroyer:
+   . Shield efficiency lowered to 0.7 from 0.6.
+
+ - Beatitude-class cruiser:
+   . Shield efficiency lowered to 0.7 from 0.6.
+   . OP reduced by 10 to 180.
+
+ - Revelation-class cruiser:
+   . OP reduced by 20 to 150.
+   . Flux dissipation increased to 800 from 700.
+
+
+BUGFIXES/IMPROVEMENTS:
+
+ - Added new Nexerelin starts.
+
+0.78
+
+BALANCING:
+
+ - Wisdom Interceptor wing:
+   . Now armed with a Choir Emitter and a fighter Swarmer,
+   . Fighter count raised to 4 from 3.
+
+BUGFIXES/IMPROVEMENTS:
+
+ - Allure AM Bomber wing ordinance now waits to be aligned to fire.
+
+0.77
+
+BALANCING:
+
+ - OP changes:
+   . Bliss, -5op to 60,
+   . Mirth, -5op to 55,
+   . Communion, -5op to 70,
+   . Sanctuary, -25op to 110,
+   . Grace, -25op to 100,
+   . Harmony, -5op to 100,
+   . Felicity, -20op to 135,
+   . Elevation, unchanged,
+   . Revelation, unchanged,
+   . Beatitude, -25op to 190,
+   . Discernment, -50op to 300,
+   . Enlightenment, unchanged.
+
+ - Sanctuary now has built-in Wisdom wing.
+
+0.76
+
+NEW CONTENT:
+
+ - Discernment-class strategic carrier:
+   . 11 medium turrets of awesomeness,
+   . 14 small mounts of triumph,
+   . 8 flight decks of glory.
+
+ - Wisdom-class interceptor:
+   . Fast and well armed,
+   . Unshielded and somewhat bulky.
+   . Replace the Wasps as built-in wings on all ORA carrier.
+
+ - Allure-class bomber:
+   . Wing of one shielded bomber,
+   . Equipped with two antimatter bombs.
+
+ - Recital Deliverer:
+   . Small assault energy weapon,
+   . Low fire-rate and bad flux efficiency that both rise with longer bursts.
+
+ - Calling Scatterer:
+   . Large assault energy weapon,
+   . Throws a bunch of highly damaging plasma orbs in the general direction of the enemy,
+   . Very flux efficient but can be blocked by PD,
+   . Doubles-up as a flux-free makeshift PD weapon when not in active use.
+
+BALANCING:
+
+ - Harmony-class destroyer:
+   . Reduced OP to 105 from 125.
+
+ - Fervor fighter:
+   . Removed Flare launcher,
+   . Flux capacity reduced to 1000 from 1500.
+
+BUGFIXES/IMPROVEMENTS:
+
+ - Fixed missing flavor text in one of the hidden refuges.
+ - Added a console command to check the content of the sector for debugging purposes (doesn't belong to this mod in particular but a useful tool).
+ - Ship bounds optimization pass.
+
+0.75
+
+BALANCING:
+
+ - Sempiternal Repeater:
+   . Turn rate vastly increased.
+
+ - Echoes Caster:
+   . EMP arching range and damage slightly increased.
+
+ - Eschewal Projector:
+   . Flux per shot reduced to 500 from 600 (1.25 flux/dmg from 1.5).
+
+ - Frigates/Destroyers:
+   . Small flux stats buff.
+
+ - Cruisers:
+   . Small shield efficiency buff.
+
+0.74
+
+BUGFIXES/IMPROVEMENTS:
+
+ - (finally) Fixed a mod incompatibility regarding some visual effects.
+
+0.73
+
+NEW CONTENT:
+
+ - Echoes Caster:
+   . Medium sized EMP shockwave caster.
+
+BALANCING:
+
+ - Litany Thrower:
+   . Reworked as a decent damage burst fire weapon with slow ammo regen and slightly unreliable medium range.
+
+ - Invocation Launcher:
+   . On hit effect now slows down the target instead of pushing it away,
+   . Effect triggers on hull hit too instead of only shield impacts.
+
+ - Eschewal Projector:
+   . Added same on hit effect as the Invocation Launcher.
+
+ - Bliss:
+   . Shield arc raised to 300 from 240,
+   . Flux capacity increased to 4000 from 3000,
+   . Most logistic stats slightly improved.
+
+ - Grace:
+   . Ship system changed to Solid State Capacitors from Heavy Teleporter.
+
+ - Communion:
+   . Ship system changed to Long Range Wings Coordination from Interdictor Array.
+
+ - Sanctuary:
+   . Weapon slots types shuffled,
+   . Added built-in ECM Package and Nav Relay hullmods,
+   . Ship system changed to Arc Emitter from Solid State Capacitors.
+
+ - Elevation:
+   . System changed to High Energy Focus from Reserve Deployment.
+
+ - Fervor:
+   . Now equipped with a Litany Thrower instead of a Calling.
+
+
+0.72
+
+BALANCING:
+
+ - Choir Emitter:
+   . Slightly raised the probability of disabling a missile,
+   . Better chance to destroy a missile outright.
+   . Effect significantly compounded by the ECCM hullmod.
+   . Slightly raised the projectile's hit radius.
+   . Doubled EMP damage against ships at 70 per shot.
+   . Doubled flux requirements.
+   . Random AOE removed.
+
+ - Invocation:
+   . Second stage reworked as a shockwave AOE.
+   . Fire-rate reduced to 10rpm from 15.
+   . Damage per shot raised to 2500 from 3x500. (417dps from 300)
+   . Flux per shot raised to 3750 from 1500. (625fps from 300)
+
+BUGFIXES/IMPROVEMENTS:
+
+ - RC3 fixed intel tab crash
+ - RC3 somehow added back Lum'en's coriolis ring with a fix for the vanishing upon loading a save.
+ - RC2 fixed targeting bug.
+ - Changed some of the smaller market to non-economy ones.
+ - Baked Lum'en's coriolis ring into the station sprite since it was vanishing upon loading a save.
+
+0.71
+
+BALANCING:
+
+ - Bliss:
+   . Fortress Shield now has a cool-down and limited charges that regenerate slowly.
+   . OP reduced to 65 from 75.
+
+ - Mirth:
+   . Shield efficiency reverted to 0.7 f/dmg from 0.6.
+   . Shield arc reduced to 120 deg from 180.
+
+ - Sanctuary:
+   . Speed reverted to 60 from 80.
+
+BUGFIXES/IMPROVEMENTS:
+
+ - RC2: fixed Nexerelin generation.
+ - RC2: Shufffled around the systems.
+ - Reduced most ships' FP, should make them available at lower reputation levels.
+
+V0.7
+
+NEW CONTENT:
+
+ - Grace-class heavy destroyer.
+   . Artillery destroyer taking an intermediary role between the Harmony and Sanctuary before re-balance.
+
+ - Elevation-class recon cruiser.
+   . Versatile cruiser able to face any type of enemy thanks to a very permissive weapon layout.
+
+BALANCING:
+ - Xeno-Warfare hullmod:
+   . No longer affect beams range.
+   . Now raises the cost of beam weapons by a flat 3 OP.
+   . Reduces the cost of PD weapons by a flat 2 OP.
+
+ - Choir Emitter:
+   . OP cost raised to 7 OP from 6.
+
+ - All ships:
+   . Removed built-in ITU.
+   . Available OP raised accordingly.
+
+ - Attitude Thrusters:
+   . Charges reduced to 3 from 4.
+   . Regen rate halved to 20s.
+   . Duration tripled to 6s.
+
+ - Heavy Teleporter:
+   . Range reduced to 500 from 1000.
+   . Charges regeneration halved to 20s.
+
+ - Bliss:
+   . Shield arc raised to 240 deg from 180.
+   . Speed increased to 130 from 120.
+
+ - Mirth:
+   . Shield efficiency raised to 0.6 f/dmg from 0.7.
+   . Speed raised to 170 from 160.
+
+ - Harmony:
+   . Ship system switched to Plasma Jets from Heavy Teleport
+   . Hull reduced to 3000 from 3250.
+   . Flux capacity reduced to 5500 from 7000.
+   . Shield arc increased to 180deg from 120.
+   . Shield efficiency increased to 0.6 from 0.8.
+
+ - Sanctuary:
+   . Ship-system switched to Solid State Capacitors from Sensor Drones.
+   . Added a flight deck.
+   . Armor reduced to 400 from 425.
+   . Hull reduced to 3250 from 3500.
+   . Flux capacity reduced to 6500 from 7000.
+   . Speed raised to 80 from 60
+
+ - Beatitude:
+   . Hull reduced to 6000 from 8500.
+   . Armor reduced to 750 from 900.
+   . Shield arc raised to 180 deg from 120.
+
+ - Revelation:
+   . Hull raised to 8000 from 6000.
+   . Armor raised to 950 from 750.
+   . Speed raised to 55 from 40.
+
+ - Enlightenment:
+   . Flux dissipation raised to 1200 from 1000.
+
+
+BUGFIXES/IMPROVEMENTS:
+ - Fixed break-apart bug.
+ - Fixed lootable Xeno-Warfare hullmod.
+ - Improved systems with more exploration related content.
+
+V0.6
+
+BASIC 0.8a compatibility
+
+NEW CONTENT:
+
+BALANCING:
+ - Eschewal Projector:
+   . Raised damage per shot to 400 from 200.
+   . Raised flux per shot to 600 from 300.
+   . Halved fire-rate to 30 round per minute from 60.
+
+ - Mirth frigate:
+   . Speed increased to 160 from 140.
+   . Ship system changed to High Energy Focus from Phase Skimmer.
+
+ - Harmony destroyer:
+   . Ship system changed to Heavy Phase Teleporter (limited charges, long regen, lower range) from High Energy Focus.
+   . Flux capacity raised to 7000 from 5000.
+
+ - Choir Emitter:
+   . Projectile speed increased to 1000 from 500.
+   . Minimum spread raised to 5 degrees from 0.
+
+ - Carriers:
+   . Got one extra deck with built-in Wasp wing.
+
+BUGFIXES/IMPROVEMENTS:
+ - Corrected Cureus being tidally locked sideways.
+ - Corrected Lum'en sometimes missing its coriolis ring.
+ - Added missing hints to the ship systems that screwed the AI.

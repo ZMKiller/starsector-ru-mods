@@ -1,0 +1,29 @@
+{
+  "displayName": "AM Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": false,
+  "hullId": "ora_allure",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.6,
+  "variantId": "ora_allure_variant",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "ora_AMbomb",
+        "WS0003": "ora_AMbomb"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ora_choir"
+      }
+    }
+  ],
+  "wings": []
+}

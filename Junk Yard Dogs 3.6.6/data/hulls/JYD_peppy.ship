@@ -1,0 +1,140 @@
+{
+  "hullName": "Peppy",
+  "hullId": "JYD_peppy",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/JYD_peppy.png",
+  "style": "MIDLINE",
+  "height": 270,
+  "width": 234,
+  "center": [116, 126.5],
+  "collisionRadius": 184.5,
+  "shieldCenter": [0.5, -0],
+  "shieldRadius": 177,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade",
+    "hiressensors",
+    "nav_relay",
+    "repair_gantry",
+    "surveying_equipment",
+    "drive_field_stabilizer",
+    "increased_maintenance",
+    "ground_support"
+  ],
+  "builtInWings": [
+    "JYD_malinois_wing",
+    "JYD_malinois_wing"
+  ],
+  "builtInWeapons": {
+    "WS0001": "JYD_hab",
+    "WS0002": "JYD_ab",
+    "WS0003": "JYD_ab"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [104.5, -1]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-56.5, -37]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-56, 34]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        53.5, 9,
+        76.5, 8.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        53.5, -11,
+        77, -10
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-124, -31.5],
+      "length": 46,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-124.5, 29],
+      "length": 46,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-124, -14],
+      "length": 63.5,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-124.5, 11.5],
+      "length": 63.5,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    141.5, -7.5,
+    111, -61.5,
+    51, -69.5,
+    13.5, -63,
+    -51, -131,
+    -54, -101,
+    -113, -109,
+    -108, -45.5,
+    -126, -43,
+    -126, 43,
+    -108, 45.5,
+    -113, 109,
+    -54, 101,
+    -51, 131,
+    13.5, 63,
+    51, 69.5,
+    111, 61.5,
+    141.5, 7.5
+  ]
+}

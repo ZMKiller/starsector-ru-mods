@@ -1,0 +1,44 @@
+{
+  "variantId": "CFT_naruebet_standard",
+  "hullId": "CFT_naruebet",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "armoredweapons",
+    "advancedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_pdwburst",
+        "WS0002": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_fogger"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "CFT_pointmissiles"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_skiff_standard_wing",
+    "CFT_brig_standard_wing"
+  ]
+}

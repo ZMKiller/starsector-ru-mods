@@ -1,0 +1,101 @@
+{
+  "hullName": "Concierge (P)",
+  "hullId": "rr_concierge_p",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/rr_concierge_p.png",
+  "style": "MIDLINE",
+  "height": 114,
+  "width": 46,
+  "center": [24, 63],
+  "collisionRadius": 74,
+  "shieldCenter": [0, 2],
+  "shieldRadius": 70,
+  "viewOffset": 0,
+  "builtInMods": [
+    "missleracks"
+  ],
+  "builtInWeapons": {
+    "WS0001": "rr_conc_gyro_array"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [32, 12]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 280,
+      "angle": 140,
+      "locations": [-29, 9]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -10,
+      "locations": [4, -3]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-62, -0],
+      "length": 52,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-6, 22],
+      "length": 16,
+      "width": 8,
+      "angle": 150,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [14, -17],
+      "length": 16,
+      "width": 8,
+      "angle": 210,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-62, 7],
+      "length": 32,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-62, -7],
+      "length": 32,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -60, 9,
+    -32, 17,
+    -12, 15,
+    0, 22,
+    48, 15,
+    46, -10,
+    -32, -17,
+    -60, -9
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
+    "goalVariant": false,
+    "hullId": "SCY_pyraemon",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "SCY_pyraemon_blaster",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_uheb"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "SCY_seb"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_intercept",
+                "WS0004": "SCY_intercept"
+            }
+        }
+    ]
+}

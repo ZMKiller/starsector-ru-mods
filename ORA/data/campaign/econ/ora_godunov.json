@@ -1,0 +1,76 @@
+{
+    "starSystem":"ORA_godunov",
+    "markets":[
+        {
+            "entities":["ora_poincare", "ora_devaney"],
+            "faction":"ORA",
+            "size":7,
+            "startingConditions":[
+                "population_7",
+                "terran",
+		"hot",
+		"ruins_widespread",
+		#"farmland_rich",
+		"farmland_adequate",
+		"habitable",
+                "extreme_weather",
+                #"organics_common",
+                #"organics_trace",
+            ],
+            "industries":[
+                "population",
+                "highcommand",
+                "heavybatteries",
+                "farming",
+		#"techmining",
+                "mining",
+		#["orbitalworks", "corrupted_nanoforge"],
+                ["heavyindustry", "corrupted_nanoforge"],
+                "starfortress_high",
+		#"megaport",
+                "spaceport",
+                #"waystation",
+            ],
+        },
+
+        {
+            "entities":["ora_pendulum"],
+            "faction":"ORA",
+            "size":5,
+            "startingConditions":[
+		"volatiles_plentiful",
+                "population_5",
+            ],
+            "industries":[
+                "population",
+                "spaceport",
+                "mining",
+                #"militarybase",
+                "patrolhq",
+                "heavybatteries",
+                "battlestation_high",
+                "commerce",
+                #"waystation",
+            ],
+        },
+
+        {
+            "entities":["ora_3bodies"],
+            "faction":"independent",
+            "size":3,
+            "startingConditions":[
+                "cryovolcanic",
+                "tectonic_activity",
+                "very_cold",
+                "thin_atmosphere",
+                "ruins_extensive",
+                "population_3",
+            ],
+            "industries":[
+                "population",
+		"techmining",
+                "spaceport",
+            ],
+        },
+    ],
+}

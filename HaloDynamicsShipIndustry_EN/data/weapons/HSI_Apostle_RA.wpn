@@ -1,0 +1,40 @@
+{
+  "id": "HSI_Apostle_RA",
+  "specClass": "projectile",
+  "projectileSpecId": "HSI_Apostle_MG_Shot",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "turretSprite": "graphics/ships/Apostle/HSI_Apostle_RA.png",
+  "hardpointSprite": "graphics/ships/Apostle/HSI_Apostle_RA.png",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    29.5,
+    -15.5
+  ],
+  "turretAngleOffsets": [
+    1
+  ],
+  "hardpointOffsets": [
+    45,
+    -16
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 15,
+    "particleSizeMin": 12,
+    "particleSizeRange": 9,
+    "particleDuration": 0.04,
+    "particleCount": 13,
+    "particleColor": [
+      0,0,255,255
+    ]
+  },
+  "fireSoundTwo": "heavy_machinegun_fire"
+}

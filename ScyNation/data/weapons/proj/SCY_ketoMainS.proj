@@ -1,0 +1,19 @@
+{
+	"id":"SCY_ketoMainS",
+	"specClass":"projectile",
+	"onHitEffect":"org.scy.weapons.SCY_ketoMainGunEffect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"NONE",
+	"length":128.0,
+	"width":30.0,
+	"fadeTime":0.25,
+	"fringeColor":[200,75,25,200],
+	"coreColor":[255,225,200,200],
+	"textureType":"ROUGH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+    "passThroughFightersOnlyWhenDestroyed":true,
+}

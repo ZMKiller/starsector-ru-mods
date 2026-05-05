@@ -1,0 +1,18 @@
+{
+	"id":"HaloDynamicsShipIndustry", # internal id
+	"name":"光环动力舰船工业", # displayed to the player
+	"author":"Ajimu,\n 知足, 提供了海量精美的贴图和特效\nScythe,提供了li解和部分建议\n",
+	"version":"1.7.0",
+	"description":"跨越星区抵达英仙座的巨型企业,尽管声称其目的是追查速子科技的技术下落和重启星门,不少行为仍令人起疑。",
+	"gameVersion":"0.98a-RC5",
+	"jars": [
+		"jars/HaloDynamicsShipIndustry.jar"
+	  ],	
+	  "dependencies": [
+		{"id": "lw_lazylib", "name": "LazyLib"},
+		{"id": "MagicLib", "name": "MagicLib"},
+		{"id": "shaderLib", "name": "GraphicsLib"},
+		{"id":"lunalib","name":"LunaLib"}
+	  ],
+	  "modPlugin": "data.scripts.HSIModPlugin"
+}

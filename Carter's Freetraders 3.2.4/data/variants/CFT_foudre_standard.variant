@@ -1,0 +1,44 @@
+{
+  "variantId": "CFT_foudre_standard",
+  "hullId": "CFT_foudre",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_pdwburst",
+        "WS0002": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "CFT_pdwburst",
+        "WS0006": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_fogger",
+        "WS0004": "CFT_fogger"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_apollo_standard_wing",
+    "CFT_centurion_standard_wing",
+    "CFT_cutter_standard_wing",
+    "CFT_skjold_standard_wing"
+  ]
+}

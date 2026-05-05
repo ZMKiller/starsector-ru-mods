@@ -1,0 +1,36 @@
+{
+    "displayName": "Saturation",
+    "fluxCapacitors": 0,
+    "fluxVents": 8,
+    "hullId": "SCY_talos",
+    "hullMods": [
+        "pointdefenseai",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "SCY_talos_saturation",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_minigun2"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "swarmer",
+                "WS0003": "swarmer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_minigun1",
+                "WS0005": "SCY_minigun1"
+            }
+        }
+    ]
+}

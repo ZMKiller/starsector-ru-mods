@@ -8,6 +8,7 @@ import com.fs.starfarer.api.impl.campaign.ids.Stats
 import com.fs.starfarer.api.ui.TooltipMakerAPI
 import com.fs.starfarer.api.util.Misc
 import second_in_command.SCData
+import second_in_command.misc.addPara
 import second_in_command.specs.SCBaseSkillPlugin
 import second_in_command.ui.elements.ScrapWidget
 
@@ -30,7 +31,7 @@ class AnotherMansTreasure : SCBaseSkillPlugin() {
         tooltip.addPara("On average, different sources return the following amount of Scrap: ", 0f, Misc.getHighlightColor(), Misc.getHighlightColor())
         tooltip.addPara("   - 20%%-40%% from post-battle salvage, based on battle size", 0f, Misc.getTextColor(), Misc.getHighlightColor(), "20%", "40%")
         tooltip.addPara("   - 20%% from salvaging abandoned stations", 0f, Misc.getTextColor(), Misc.getHighlightColor(), "20%")
-        tooltip.addPara("   - 5%% from salvaging debris fields", 0f, Misc.getTextColor(), Misc.getHighlightColor(), "5%")
+        tooltip.addPara("   - 10%% from salvaging debris fields", 0f, Misc.getTextColor(), Misc.getHighlightColor(), "10%")
         tooltip.addPara("   - 5%% from salvaging derelict ships", 0f, Misc.getTextColor(), Misc.getHighlightColor(), "5%")
 
         tooltip.addSpacer(10f)

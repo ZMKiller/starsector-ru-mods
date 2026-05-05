@@ -1,0 +1,38 @@
+{
+	"id":"HWI_MGSystem_M",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/missile_sabot.png",
+	"size":[9,18],	
+	"center":[4.5,9],
+	"collisionRadius":16,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[0,255,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":1, # purely visual
+	"onFireEffect":"data.weapons.scripts.proj.HWIMGSystem",
+	"engineSpec":{"turnAcc":1280,
+				  "turnRate":360,
+				  "acc":500,
+				  "dec":440},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    #"style":"MISSILE_LOW_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[100,165,255,255],
+						"contrailDuration":0,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[100,165,255,75],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":7.0,
+				    "length":40.0,
+				    "angle":180.0},
+				    ]
+					
+}

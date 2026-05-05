@@ -1,0 +1,31 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 18,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "SCY_lamiaA",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.2,
+    "variantId": "SCY_lamiaA_combat",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_hemor2"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_kacc2",
+                "WS0003": "SCY_kacc2"
+            }
+        },
+    ],
+        "modules": [
+                {"WW1MULTI": "SCY_lamiaAF_standard"},
+                {"WW2MULTI": "SCY_lamiaAL_standard"},
+                {"WW3MULTI": "SCY_lamiaAR_standard"},
+        ],
+}

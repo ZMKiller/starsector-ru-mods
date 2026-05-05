@@ -1,0 +1,50 @@
+{
+  "hullName": "Vicious Front",
+  "hullId": "JYD_vicious_front",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/JYD_viciousfront.png",
+  "style": "LOW_TECH",
+  "height": 52,
+  "width": 122,
+  "center": [61.5, 25],
+  "collisionRadius": 74,
+  "shieldCenter": [1, 0.5],
+  "shieldRadius": 69.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "heavyarmor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [18, 22.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [18, -22.5]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    33.5, -16,
+    26, -41.5,
+    14.5, -55.5,
+    -21, -62,
+    -30, -43,
+    -30, 43,
+    -21, 62,
+    14.5, 55.5,
+    26, 41.5,
+    33.5, 16
+  ]
+}

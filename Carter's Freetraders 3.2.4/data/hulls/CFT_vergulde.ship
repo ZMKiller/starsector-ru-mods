@@ -1,0 +1,112 @@
+{
+  "hullName": "Vergulde",
+  "hullId": "CFT_vergulde",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/CFT_vergulde.png",
+  "style": "MIDLINE",
+  "height": 175,
+  "width": 94,
+  "center": [45.5, 88.5],
+  "collisionRadius": 101.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 98.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "shielded_holds",
+    "insulatedengine",
+    "civgrade"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 90,
+      "locations": [-59.5, 28.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-58.5, -30.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [56, -1.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-86.5, -29],
+      "length": 38.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-85, -0.5],
+      "length": 38.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-86.5, 28.5],
+      "length": 38.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-87, 19.5],
+      "length": 20.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-86.5, 13.5],
+      "length": 18.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-87.5, -20],
+      "length": 20.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-85.5, -13],
+      "length": 18.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    91, -53,
+    -92.5, -51,
+    -93, 52,
+    91, 50
+  ]
+}

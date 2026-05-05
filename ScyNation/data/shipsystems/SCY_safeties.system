@@ -1,0 +1,19 @@
+{
+    "id":"SCY_safeties",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"org.scy.shipsystems.ai.SCY_safetiesAI",
+    "statsScript":"org.scy.shipsystems.SCY_safetiesStats",
+
+    "weaponGlowColor":[50,200,255,155],
+    "weaponTypes":[BALLISTIC, ENERGY],
+
+    "useSound":"SCY_safeties",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

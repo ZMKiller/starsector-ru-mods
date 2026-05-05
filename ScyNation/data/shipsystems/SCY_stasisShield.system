@@ -1,0 +1,26 @@
+{
+    "id":"SCY_stasisShield",
+    "type":"SHIELD_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"org.scy.shipsystems.ai.SCY_stasisShieldAI",
+
+    "statsScript":"org.scy.shipsystems.SCY_stasisShieldStats",
+
+    "shieldRingColor":[100,200,250,255],
+    "shieldInnerColor":[25,75,100,120],
+    "shieldThicknessMult":1,
+    "shieldFluctuationMult":0,
+
+    "soundFilterType":"LOWPASS",
+    "soundFilterGain":0.75,
+    "soundFilterGainHF":0.0,
+
+    "loopSound":"system_fortress_shield_loop",
+    "outOfUsesSound":"gun_out_of_ammo",	
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

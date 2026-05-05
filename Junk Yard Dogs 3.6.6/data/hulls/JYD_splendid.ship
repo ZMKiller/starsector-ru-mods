@@ -1,0 +1,63 @@
+{
+  "hullName": "Splendid",
+  "hullId": "JYD_splendid",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/JYD_splendid.png",
+  "style": "LOW_TECH",
+  "height": 77,
+  "width": 60,
+  "center": [30, 38.5],
+  "collisionRadius": 60,
+  "shieldCenter": [-0.5, 0.5],
+  "shieldRadius": 52,
+  "viewOffset": 0,
+  "builtInMods": [
+    "shielded_holds"
+  ],
+  "builtInWings": [
+    "JYD_Termite_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-11.5, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        24.5, 0.5,
+        32.5, 1
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-36, 0.5],
+      "length": 36.5,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    41, -27,
+    3.5, -30,
+    -44.5, -32.5,
+    -40.5, -15,
+    -40.5, 15,
+    -44.5, 32.5,
+    3.5, 30,
+    41, 27
+  ]
+}

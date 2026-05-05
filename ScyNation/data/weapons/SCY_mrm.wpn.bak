@@ -1,0 +1,90 @@
+{
+	"id":"SCY_mrm",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"LARGE",
+	"turretSprite":"graphics/SCY/weapons/SCY_boarMainCodex.png",
+	"hardpointSprite":"",
+	"hardpointOffsets":[
+13, -12,
+13, -6, 
+13, 0, 
+13, 6, 
+13, 12, 
+
+9, -9, 
+9, -3, 
+9, 3, 
+9, 9, 
+
+5, -6, 
+5, -0, 
+5, 6
+],
+	"turretOffsets":[
+13, -12,
+13, -6, 
+13, 0, 
+13, 6, 
+13, 12, 
+
+9, -9, 
+9, -3, 
+9, 3, 
+9, 9, 
+
+5, -6, 
+5, -0, 
+5, 6
+],
+	"hardpointAngleOffsets":[
+-2,
+-1,
+0,
+1,
+2,
+
+-1.5,
+-0.5,
+0.5,
+1.5,
+
+-1,
+0,
+1,
+],
+	"turretAngleOffsets":[
+-2,
+-1,
+0,
+1,
+2,
+
+-1.5,
+-0.5,
+0.5,
+1.5,
+
+-1,
+0,
+1,
+],
+	"barrelMode":"ALTERNATING",	
+	"animationType":"SMOKE",
+	"interruptibleBurst":false,
+	"autocharge":true,
+	"displayArcRadius":10,
+	"smokeSpec":{"particleSizeMin":10.0,
+                     "particleSizeRange":14.0,
+                     "cloudParticleCount":3,
+                     "cloudDuration":1.5,
+                     "cloudRadius":12.0;
+                     "blowbackParticleCount":3,
+                     "blowbackDuration":0.45,
+                     "blowbackLength":20.0,
+                     "blowbackSpread":6.0,
+                     "particleColor":[190,180,160,95]},
+	"projectileSpecId":"SCY_mrmS",
+	#"everyFrameEffect":"org.scy.weapons.SCY_manticoreSwarmAnimation",
+	"fireSoundTwo":"SCY_mrm_fire",
+}

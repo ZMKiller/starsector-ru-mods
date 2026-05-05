@@ -1,0 +1,68 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "module_midline_broadside",
+    "hullMods": [
+        "heavyarmor",
+        #"SCY_reactiveArmor",
+        "reinforcedhull",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_module_midline_broadside_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "SCY_kacc3",
+                "WS 003": "SCY_kacc3",
+                "WS 005": "SCY_kacc3",
+                "WS 007": "SCY_kacc3"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "SCY_hemor3",
+                "WS 006": "SCY_hemor3"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "SCY_scatter",
+                "WS 011": "SCY_scatter",
+                "WS 012": "SCY_scatter",
+                "WS 013": "SCY_scatter",
+                "WS 014": "SCY_scatter",
+                "WS 015": "SCY_scatter"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "SCY_scorcher",
+                "WS 004": "SCY_scorcher",
+                "WS 008": "SCY_scorcher"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 016": "SCY_intercept",
+                "WS 017": "SCY_intercept",
+                "WS 018": "SCY_intercept",
+                "WS 019": "SCY_intercept",
+                "WS 020": "SCY_intercept",
+                "WS 021": "SCY_intercept",
+                "WS 022": "SCY_intercept"
+            }
+        }
+    ]
+}

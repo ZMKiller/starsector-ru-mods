@@ -1,0 +1,62 @@
+{
+	"id":"HSI_DancingButterFly",
+	"specClass":"missile",	
+	#"missileType":"MISSILE",
+	#"missileType":"HEATSEEKER",
+	"missileType":"CIRCLE_TARGET",
+	"onFireEffect":"data.weapons.scripts.proj.HSIDancingButterflyOnfire",
+	"behaviorSpec":{"behavior":"CUSTOM",
+		"circleRadius":[0,50],
+		"angledApproachDist":[900,1200],
+		"minDelayBeforeTriggering":5,
+		"triggerAngle":[60,120], # fast-tracks the trigger delay if this much angle offset from facing of target
+		"triggerDistance":[600,700],
+		"preferredMinFireDistance":250,
+		"preferredMaxFireDistance":400,
+		"allowedDriftFraction":0.33,
+		"turnRateBoost":200,
+		"targetingTime":0,
+		"firingTime":2,
+		"targetingLaserId":"targetinglaser1",
+		"targetingLaserRange":0,
+		"payloadWeaponId":"HSI_DancingButterFlyPayload",
+		"targetingLaserArc":10,
+		#"randomStrafe":true,
+		#"bombPumped":true,
+		#"fadeOutEngineWhenFiring":false;
+		#"destroyMissleWhenDoneFiring":true,
+		"destroyedExplosionColor":[150,255,150,255],
+	},
+	#"maxFlightTime":10,
+	"sprite":"graphics/ships/HSI_Butterfly.png",
+	"size":[28,23],	
+	"center":[14, 11.5],
+	"collisionRadius":12,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,255,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual	
+	"engineSpec":{"turnAcc":800,
+				  "turnRate":200,
+				  "maxSpeed":200,
+				  "acc":400,
+				  "dec":200},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-7, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,255,255,0],
+						"contrailDuration":0,
+						"contrailWidthMult":0,
+						"contrailWidthAddedFractionAtEnd":0,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[255,255,255,0],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":0.0,
+				    "length":0.0,
+				    "angle":180.0},
+				    ]
+}

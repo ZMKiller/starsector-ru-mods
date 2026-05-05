@@ -1,0 +1,36 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 11,
+    "fluxVents": 7,
+    "goalVariant": true,
+    "hullId": "ora_communion",
+    "hullMods": [
+        "expanded_deck_crew",
+        "recovery_shuttles"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_communion_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_choir",
+                "WS0004": "ora_choir"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "heatseeker",
+                "WS0002": "heatseeker"
+            }
+        }
+    ],
+    "wings": [
+        "ora_fervor_wing",
+        "ora_fervor_wing"
+    ]
+}

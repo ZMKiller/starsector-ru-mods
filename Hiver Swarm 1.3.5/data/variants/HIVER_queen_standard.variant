@@ -1,0 +1,96 @@
+{
+  "variantId": "HIVER_queen_standard",
+  "hullId": "HIVER_queen",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 48,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "fluxbreakers",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "HIVER_irpulse",
+        "WS0002": "HIVER_irpulse",
+        "WS0007": "HIVER_irpulse",
+        "WS0009": "HIVER_irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "HIVER_mirv",
+        "WS0004": "HIVER_mirv",
+        "WS0005": "HIVER_mirv",
+        "WS0006": "HIVER_mirv",
+        "WS0008": "HIVER_mirv",
+        "WS0010": "HIVER_mirv",
+        "WS0019": "HIVER_mirv",
+        "WS0020": "HIVER_mirv"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0021": "HIVER_launcher",
+        "WS0022": "HIVER_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0023": "HIVER_lrblaster",
+        "WS0024": "HIVER_lrblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0025": "HIVER_spitter",
+        "WS0026": "HIVER_spitter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "HIVER_twinpd",
+        "WS0012": "HIVER_twinpd",
+        "WS0013": "HIVER_twinpd",
+        "WS0014": "HIVER_twinpd",
+        "WS0015": "HIVER_twinpd",
+        "WS0016": "HIVER_twinpd",
+        "WS0017": "HIVER_twinpd",
+        "WS0018": "HIVER_twinpd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0027": "Hiver_eyeball",
+        "WS0028": "Hiver_eyeball"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "HIVER_allsup_standard_wing",
+    "HIVER_flyter_standard_wing",
+    "HIVER_gnawler_standard_wing",
+    "HIVER_gnawler_standard_wing",
+    "HIVER_katydid_standard_wing",
+    "HIVER_katydid_standard_wing"
+  ]
+}

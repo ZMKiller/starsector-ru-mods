@@ -1,0 +1,53 @@
+{
+    "displayName": "波奇",
+    "fluxCapacitors": 21,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "HSI_Aurora",
+    "hullMods": [
+        "safetyoverrides",
+        "HSI_HardenShield"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Aurora_Assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "HWI_amblaster",
+                "WS0003": "HWI_amblaster"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "HWI_ionpulser",
+                "WS0007": "HWI_ionpulser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "HWI_amblaster",
+                "WS0005": "HWI_amblaster"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "HWI_amblaster",
+                "WS0013": "HWI_amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0009": "HWI_lightneedler"}
+        }
+    ]
+}

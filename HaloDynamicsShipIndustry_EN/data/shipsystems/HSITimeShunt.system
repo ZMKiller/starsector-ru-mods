@@ -1,0 +1,18 @@
+{
+	"id":"HSI_TimeShunt",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.ai.HSITimeShuntAI",
+	
+	"statsScript":"data.shipsystems.scripts.HSITimeShunt",
+	
+	"runScriptWhilePaused":true, # only for the player's ship
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	
+	"effectColor1":[255,175,255,255],
+	"effectColor2":[255,0,255,150],
+	
+	"useSound":"system_temporalshell",
+	"deactivateSound":"system_temporalshell_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

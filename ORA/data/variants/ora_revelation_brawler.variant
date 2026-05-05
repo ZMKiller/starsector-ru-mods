@@ -1,0 +1,55 @@
+{
+    "displayName": "Brawler",
+    "fluxCapacitors": 30,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "ora_revelation",
+    "hullMods": [
+        "magazines",
+        "unstable_injector",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_revelation_brawler",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_calling"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "ionpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ionpulser",
+                "WS0004": "ionpulser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "swarmer",
+                "WS0008": "swarmer",
+                "WS0009": "swarmer",
+                "WS0010": "swarmer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "ora_choir",
+                "WS0006": "ora_choir",
+                "WS0011": "ora_choir",
+                "WS0012": "ora_choir"
+            }
+        }
+    ]
+}

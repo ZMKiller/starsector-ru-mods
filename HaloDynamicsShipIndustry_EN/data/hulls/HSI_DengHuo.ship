@@ -1,0 +1,183 @@
+{
+  "hullName": "DengHuo",
+  "hullId": "HSI_DengHuo",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HSI_DengHuo.png",
+  "style": "HSI_TECH",
+  "height": 204,
+  "width": 122,
+  "center": [61, 101],
+  "collisionRadius": 140.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 129.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo",
+    "advancedcore",
+    "civgrade"
+  ],
+  "builtInWings": [
+    "terminator_wing"
+  ],
+  "builtInWeapons": {
+    "WS00A": "HSI_LED"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 163,
+      "angle": 68.5,
+      "locations": [47.5, 19.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 163,
+      "angle": -68.5,
+      "locations": [47.5, -19]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 187,
+      "angle": -178.5,
+      "locations": [-52.5, 24]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 187,
+      "angle": 178.5,
+      "locations": [-53.5, -23.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        9, 3,
+        13.5, 5.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        14.5, -8,
+        9, -4.5
+      ]
+    },
+    {
+      "id": "WS00A",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 163,
+      "angle": 1,
+      "locations": [6, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-73.5, -1],
+      "length": 32,
+      "width": 24,
+      "angle": -180,
+      "contrailSize": 24,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-80, 20.5],
+      "length": 54.554645,
+      "width": 12.048312,
+      "angle": 179.5,
+      "contrailSize": 12.048312,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-80, -20.5],
+      "length": 54.554645,
+      "width": 12.048312,
+      "angle": -179.5,
+      "contrailSize": 12.048312,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-80, 19.5],
+      "length": 37.620743,
+      "width": 27.344444,
+      "angle": 179.5,
+      "contrailSize": 27.344444,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-80, -19.5],
+      "length": 37.620743,
+      "width": 27.344444,
+      "angle": -179.5,
+      "contrailSize": 27.344444,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-82, 20],
+      "length": 6.822634,
+      "width": 73.883736,
+      "angle": 179.5,
+      "contrailSize": 73.883736,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-82, -20],
+      "length": 6.822634,
+      "width": 73.883736,
+      "angle": -179.5,
+      "contrailSize": 73.883736,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    60.5, -10,
+    82.5, -11.5,
+    83, -22,
+    53.5, -33,
+    69, -36,
+    69.5, -43,
+    43.5, -42.5,
+    41, -34.5,
+    25, -38,
+    20.5, -43,
+    -23, -45.5,
+    -25.5, -50.5,
+    -43.5, -51,
+    -53, -45,
+    -53, -41.5,
+    -79, -27,
+    -79, 27,
+    -53, 41.5,
+    -53, 45,
+    -43.5, 51,
+    -25.5, 50.5,
+    -23, 45.5,
+    20.5, 43,
+    25, 38,
+    83, 22,
+    82.5, 11.5,
+    60.5, 10
+  ]
+}

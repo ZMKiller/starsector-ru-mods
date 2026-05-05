@@ -1,0 +1,46 @@
+{
+    "displayName": "brawler",
+    "fluxCapacitors": 5,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "ora_grace",
+    "hullMods": [
+        "missleracks",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_grace_brawler",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_animus"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "sabotpod",
+                "WS0004": "sabotpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "ora_recital",
+                "WS0008": "ora_recital"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ora_choir",
+                "WS0005": "ora_choir",
+                "WS0006": "ora_choir"
+            }
+        }
+    ]
+}

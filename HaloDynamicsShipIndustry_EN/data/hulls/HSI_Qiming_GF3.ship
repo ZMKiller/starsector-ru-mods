@@ -1,0 +1,242 @@
+{
+  "hullName": "Qiming",
+  "hullId": "HSI_Qiming_GF3",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HSI_Qiming_J.png",
+  "style": "HSI_TECH",
+  "height": 166,
+  "width": 140,
+  "center": [70, 76],
+  "collisionRadius": 117,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 102,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo",
+    "HSI_GuardFleet3",
+    "HSI_EliteForge"
+  ],
+  "builtInWeapons": {
+    "WS00A": "HSI_LED"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 161,
+      "angle": 42.5,
+      "locations": [21, 25.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 161,
+      "angle": -42.5,
+      "locations": [21, -25.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 137,
+      "angle": 50,
+      "locations": [-16.5, 23]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 137,
+      "angle": -50,
+      "locations": [-16.5, -23]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        25, -0,
+        31.5, -0,
+        28.5, -5.5,
+        28.5, 7
+      ]
+    },
+    {
+      "id": "WS00A",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 137,
+      "angle": 0,
+      "locations": [0.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-69, 29],
+      "length": 23.414123,
+      "width": 23.347702,
+      "angle": 180,
+      "contrailSize": 23.347702,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-69, -29],
+      "length": 23.414123,
+      "width": 23.347702,
+      "angle": -180,
+      "contrailSize": 23.347702,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-39, 54],
+      "length": 30.5,
+      "width": 13,
+      "angle": 137.5,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-39, -54],
+      "length": 30.5,
+      "width": 13,
+      "angle": -137.5,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-32.5, 58.5],
+      "length": 30.5,
+      "width": 13,
+      "angle": 136.5,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-32.5, -58.5],
+      "length": 30.5,
+      "width": 13,
+      "angle": -136.5,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-62, -0.5],
+      "length": 43.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-62, 0.5],
+      "length": 43.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-68.5, 28.5],
+      "length": 47.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-68.5, -28.5],
+      "length": 47.5,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-68.5, 28.5],
+      "length": 47.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-68.5, -28.5],
+      "length": 47.5,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-74.5, 29],
+      "length": 9.5,
+      "width": 81,
+      "angle": 180,
+      "contrailSize": 81,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-74.5, -29],
+      "length": 9.5,
+      "width": 81,
+      "angle": -180,
+      "contrailSize": 81,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    56, -14,
+    88, -15.5,
+    88.5, -22.5,
+    53, -37.5,
+    28.5, -42,
+    34, -45.5,
+    34.5, -51,
+    32, -54.5,
+    12.5, -54.5,
+    9, -50,
+    2.5, -50.5,
+    -1.5, -57,
+    -29, -57,
+    -43.5, -47,
+    -53, -47.5,
+    -63.5, -38.5,
+    -65, -38.5,
+    -69, -34.5,
+    -69, -21,
+    -65, -18.5,
+    -65, -10.5,
+    -62, -6,
+    -62, 6,
+    -65, 10.5,
+    -65, 18.5,
+    -69, 21,
+    -69, 34.5,
+    -65, 38.5,
+    -63.5, 38.5,
+    -53, 47.5,
+    -43.5, 47,
+    -29, 57,
+    -1.5, 57,
+    2.5, 50.5,
+    9, 50,
+    13, 56,
+    24.5, 56.5,
+    28, 52.5,
+    28.5, 42,
+    53, 37.5,
+    88.5, 22.5,
+    88, 15.5,
+    56, 14
+  ]
+}

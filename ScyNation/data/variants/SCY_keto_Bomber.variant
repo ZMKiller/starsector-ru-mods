@@ -1,0 +1,55 @@
+{
+    "displayName": "Bomber",
+    "fluxCapacitors": 0,
+    "fluxVents": 19,
+    "goalVariant": true,
+    "hullId": "SCY_keto",
+    "hullMods": [
+        "eccm",
+        "expanded_deck_crew",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_keto_Bomber",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "ASTRAPIOS": "SCY_ketoMain",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_laser3",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "flak",
+                "WS0003": "flak",
+                "WS0004": "flak",
+                "WS0005": "flak",
+                "WS0009": "vulcan",
+                "WS0008": "vulcan",
+                "WS0007": "vulcan",
+                "WS0006": "vulcan",
+            }
+        },
+    ],
+    "wings": [
+        "SCY_ker_wing",
+        "SCY_ker_wing",
+        "SCY_stygere_wing",
+        "SCY_stygere_wing",
+    ],
+    "modules": [
+        {"A1_MULTI": "SCY_ketoAL_Bomber"},
+        {"A2_MULTI": "SCY_ketoAR_Bomber"},
+    ],
+}

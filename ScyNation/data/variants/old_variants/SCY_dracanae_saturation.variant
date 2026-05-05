@@ -1,0 +1,43 @@
+{
+    "displayName": "Saturation",
+    "fluxCapacitors": 0,
+    "fluxVents": 25,
+    "goalVariant": false,
+    "hullId": "SCY_dracanae",
+    "hullMods": [
+        "advancedoptics",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "quality": 0.6,
+    "variantId": "SCY_dracanae_saturation",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_minigun2",
+                "WS0002": "SCY_minigun2",
+                "WS0003": "SCY_minigun2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_minigun2",
+                "WS0005": "SCY_minigun2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "SCY_lvds"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "SCY_lvds"}
+        }
+    ]
+}

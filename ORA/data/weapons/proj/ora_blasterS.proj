@@ -1,0 +1,21 @@
+{
+	"id":"ora_blasterS",
+	"specClass":"projectile",
+        "spawnType":"BALLISTIC_AS_BEAM",
+        "collisionClass":"RAY",
+        "collisionClassByFighter":"RAY_FIGHTER",
+	"onHitEffect":"data.scripts.weapons.ORA_invoked_effect",
+	"length":40.0,
+	"width":10,
+	"fadeTime":0.1,
+	"fringeColor":[100,100,255,255],
+	"coreColor":[150,200,255,255],
+	"glowColor":[10,15,30,255],
+	"darkCore":false,
+	"glowRadius":75,
+	"hitGlowRadius":75,
+        "textureType":"CHUNKY",	
+	"textureScrollSpeed":2,
+	"pixelsPerTexel":2.0,	
+	"bulletSprite":"graphics/ORA/missiles/ora_blasterS.png"
+}

@@ -1,0 +1,46 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+		"rr_cephalofoil_ass2":2,
+		"rr_cephalofoil_stk2":1,
+		"rr_cephalofoil_sup2":2,
+		"rr_inimeg_stk2":2,
+		"rr_inimeg_sup2":2,
+		"rr_lily_ass2":3,
+		"rr_lily_sup2":2.5,
+		"rr_rednus_ass2": 2.5,
+		"rr_rednus_sup2": 2.5,
+		"rr_vexilla_ass2": 2.5,
+		"rr_vexilla_sup2": 2.5,
+	},
+
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"hulls":{
+			"rr_cephalofoil":0.5,
+			"rr_rednus":0.5,
+		},
+	},
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "hulls":[
+            "rr_cephalofoil",
+            "rr_inimeg",
+            "rr_lily",
+            "rr_rednus",
+            "rr_vexilla",
+        ],
+    },
+
+    "knownShips":{
+        "hulls":[
+            "rr_cephalofoil",
+            "rr_inimeg",
+            "rr_lily",
+            "rr_rednus",
+            "rr_vexilla",
+        ],
+    },
+
+},

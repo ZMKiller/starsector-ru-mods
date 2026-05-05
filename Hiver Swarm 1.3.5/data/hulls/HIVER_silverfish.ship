@@ -1,0 +1,102 @@
+{
+  "hullName": "Silverfish",
+  "hullId": "HIVER_silverfish",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/HIVER_silverfish.png",
+  "style": "HIGH_TECH",
+  "height": 151,
+  "width": 97,
+  "center": [49, 69.5],
+  "collisionRadius": 103.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 101.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-10.5, -31.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-10.5, 32.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -0,
+      "locations": [15, -21.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [14.5, 21]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 95,
+      "angle": 0,
+      "locations": [-34.5, 0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42.5, 15.5],
+      "length": 38.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-42.5, -21.5],
+      "length": 38.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    81.5, -13.5,
+    88, -40.5,
+    56, -42,
+    27, -58,
+    17, -43.5,
+    -13, -58.5,
+    -29, -47,
+    -75.5, -53.5,
+    -73.5, -11,
+    -73.5, 11,
+    -75.5, 53.5,
+    -29, 47,
+    -13, 58.5,
+    17, 43.5,
+    27, 58,
+    56, 42,
+    88, 40.5,
+    81.5, 13.5
+  ]
+}

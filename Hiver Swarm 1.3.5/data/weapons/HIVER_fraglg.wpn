@@ -1,0 +1,64 @@
+{
+  "id": "HIVER_fraglg",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/HIVER_fraglg_turret.png",
+  "turretGlowSprite": "graphics/weapons/HIVER_fraglg_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/HIVER_fraglg_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/HIVER_fraglg_hardpoint_glow.png",
+  "glowColor": [
+    76,
+    155,
+    0,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    20,
+    6.5,
+    20.5,
+    -6.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    28,
+    6.5,
+    28,
+    -6.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "beamFireOnlyOnFullCharge": true,
+  "fringeColor": [
+    76,
+    100,
+    0,
+    255
+  ],
+  "coreColor": [
+    76,
+    100,
+    0,
+    255
+  ],
+  "width": 30,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 20,
+  "pixelsPerTexel": 15,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "high_intensity_laser_loop"
+}

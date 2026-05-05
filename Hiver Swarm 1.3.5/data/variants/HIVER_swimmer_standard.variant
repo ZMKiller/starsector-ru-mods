@@ -1,0 +1,32 @@
+{
+  "variantId": "HIVER_swimmer_standard",
+  "hullId": "HIVER_swimmer",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliary_fuel_tanks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "HIVER_plascannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "Hiver_eyeball",
+        "WS0005": "Hiver_eyeball"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

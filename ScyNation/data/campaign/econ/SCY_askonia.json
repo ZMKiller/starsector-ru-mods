@@ -1,0 +1,22 @@
+{
+	"starSystem":"askonia",
+	"markets":[
+		{
+			"entities":["SCY_askoniaOutpost"],
+			"faction":"SCY",
+			"size":3,
+            "freePort":false,
+			"startingConditions":[
+				"population_3"
+			],
+			"industries":[
+				["population"],
+				["spaceport"],
+				["patrolhq"],
+                #["militarybase"],
+				["orbitalstation"],
+                ["waystation"]
+			]
+		}
+	]
+}

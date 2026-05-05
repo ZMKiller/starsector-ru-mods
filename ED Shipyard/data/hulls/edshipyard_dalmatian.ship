@@ -1,0 +1,350 @@
+{
+  "bounds": [
+    191.5,
+    -17.5,
+    174,
+    -30,
+    132.5,
+    -68.5,
+    64,
+    -68,
+    52.5,
+    -74,
+    38.5,
+    -66.5,
+    6,
+    -65.5,
+    -6,
+    -72.5,
+    -30,
+    -68,
+    -40,
+    -78,
+    -66,
+    -78,
+    -79,
+    -82,
+    -107.5,
+    -75.5,
+    -119.5,
+    -62,
+    -142,
+    -82,
+    -148,
+    -86,
+    -169.5,
+    -80,
+    -188.5,
+    -67,
+    -189.5,
+    -42.5,
+    -184,
+    -40.5,
+    -187,
+    -27.5,
+    -196,
+    -27.5,
+    -195.5,
+    -10.5,
+    -187,
+    -10,
+    -187,
+    10,
+    -195.5,
+    10.5,
+    -196,
+    27.5,
+    -187,
+    27.5,
+    -184,
+    40.5,
+    -189.5,
+    42.5,
+    -188.5,
+    67,
+    -169.5,
+    80,
+    -148,
+    86,
+    -142,
+    82,
+    -119.5,
+    62,
+    -107.5,
+    75.5,
+    -79,
+    82,
+    -66,
+    78,
+    -40,
+    78,
+    -30,
+    68,
+    -6,
+    72.5,
+    6,
+    65.5,
+    38.5,
+    66.5,
+    52.5,
+    74,
+    64,
+    68,
+    132.5,
+    68.5,
+    174,
+    30,
+    191.5,
+    17.5
+  ],
+  "builtInMods": [
+    "shielded_holds",
+    "delicate",
+    "phasefield",
+    "edshipyard_pd_only_weapons"
+  ],
+  "builtInWeapons": {
+    "Thruster01": "edshipyard_thruster",
+    "Thruster02": "edshipyard_thruster",
+    "Thruster03": "edshipyard_thruster",
+    "Thruster04": "edshipyard_thruster"
+  },
+  "center": [
+    100,
+    200
+  ],
+  "collisionRadius": 214,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 53,
+      "location": [
+        -188,
+        63
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 53,
+      "location": [
+        -188,
+        -63
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 81,
+      "location": [
+        -189.5,
+        46.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 16
+    },
+    {
+      "angle": -180,
+      "contrailSize": 16,
+      "length": 81,
+      "location": [
+        -189.5,
+        -46.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 31,
+      "length": 138,
+      "location": [
+        -196,
+        19
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 31
+    },
+    {
+      "angle": -180,
+      "contrailSize": 31,
+      "length": 138,
+      "location": [
+        -196,
+        -19
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 31
+    }
+  ],
+  "height": 400,
+  "hullId": "edshipyard_dalmatian",
+  "hullName": "Далматин",
+  "hullSize": "CAPITAL_SHIP",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 206.5,
+  "spriteName": "graphics/ships/edshipyard_dalmatian.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 180,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        -16,
+        36
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -180,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        -16,
+        -36
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        -18,
+        56
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        -18,
+        -56
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 240,
+      "id": "WS0005",
+      "locations": [
+        125.5,
+        42.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 240,
+      "id": "WS0006",
+      "locations": [
+        125.5,
+        -42.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 10,
+      "id": "Thruster01",
+      "locations": [
+        119.5,
+        -65.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 90,
+      "arc": 10,
+      "id": "Thruster02",
+      "locations": [
+        119.5,
+        65.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -90,
+      "arc": 10,
+      "id": "Thruster03",
+      "locations": [
+        -142,
+        -82
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 90,
+      "arc": 10,
+      "id": "Thruster04",
+      "locations": [
+        -142,
+        82
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0007",
+      "locations": [
+        92,
+        56
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0008",
+      "locations": [
+        92,
+        -56
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 200
+}

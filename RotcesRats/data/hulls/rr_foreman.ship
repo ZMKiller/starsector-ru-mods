@@ -1,0 +1,160 @@
+{
+  "hullName": "Foreman",
+  "hullId": "rr_foreman",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/rr_Foreman.png",
+  "style": "LOW_TECH",
+  "height": 138,
+  "width": 134,
+  "center": [67, 68],
+  "collisionRadius": 105,
+  "shieldCenter": [-3, -0],
+  "shieldRadius": 101,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS 002": "miningblaster",
+    "WS 006": "mininglaser",
+    "WS 007": "mininglaser"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [-15, 44]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 30,
+      "locations": [12, 29]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [19, 0]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": -35,
+      "locations": [15, -29]
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-15, -44]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 40,
+      "locations": [37, 39]
+    },
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [39, -46]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-66, 29],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-66, -28],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-66, 39],
+      "length": 38,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-65, 20],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-65, -20],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-66, -39],
+      "length": 38,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    62, 20,
+    37, 16,
+    44, 31,
+    45, 45,
+    16, 62,
+    -25, 64,
+    -35, 54,
+    -61, 50,
+    -63, 17,
+    -45, 14,
+    -39, -0,
+    -45, -14,
+    -63, -18,
+    -61, -50,
+    -35, -54,
+    -25, -64,
+    10, -64,
+    21, -54,
+    46, -54,
+    46, -38,
+    33, -29,
+    36, -16,
+    62, -20,
+    66, -0
+  ]
+}

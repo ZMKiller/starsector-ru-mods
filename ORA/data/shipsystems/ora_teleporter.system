@@ -1,0 +1,36 @@
+{
+	"id":"ora_teleporter",
+	"type":"TELEPORTER",
+	"aiType":"PHASE_TELEPORTER",
+	
+	"jitterColor":[100,165,255,100],
+	"jitterCopies":10,
+	"jitterRange":35,
+	"jitterRangeRadiusFraction":0,
+	
+	"weaponGlowColor":[100,165,255,0],
+	"weaponTypes":[ENERGY],
+	
+	"engineGlowLengthMult":0,
+	"engineGlowWidthMult":0,
+	"engineGlowGlowMult":0,
+	
+	"range":600,
+	"randomRange":150,
+	
+	"vulnerableChargeup":true,
+	"vulnerableChargedown":true,
+	"renderCopyDuringTeleport":true,
+	
+	"fadeActivationSoundOnChargedown":false,
+	
+	"useSound":"system_phase_teleporter",	
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,
+		"burstMovementPotential":600,
+		"averageSpeedIncrease":750,
+	}
+}

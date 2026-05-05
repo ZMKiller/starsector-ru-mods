@@ -1,0 +1,16 @@
+{
+	"id":"CFT_wavepulse_shot",
+	"specClass":"projectile",
+	#"spawnType":"BEAM",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":90.0,
+	"width":15.0,
+	"fadeTime":0.25,
+	"fringeColor":[0,0,155,255],
+	"coreColor":[255,125,60,125],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0	
+}

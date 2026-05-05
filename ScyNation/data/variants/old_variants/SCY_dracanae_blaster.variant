@@ -1,0 +1,37 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 5,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "SCY_dracanae",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "SCY_dracanae_blaster",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_teb",
+                "WS0002": "SCY_teb",
+                "WS0003": "SCY_teb",
+                "WS0004": "SCY_teb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "SCY_teb"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "SCY_anti2"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "SCY_anti2"}
+        }
+    ]
+}

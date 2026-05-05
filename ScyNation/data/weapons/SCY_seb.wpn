@@ -1,0 +1,41 @@
+{
+	"id":"SCY_seb",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"displayArcRadius":450,
+	"turretSprite":"graphics/SCY/weapons/SCY_sebT.png",
+	"hardpointSprite":"graphics/SCY/weapons/SCY_sebH.png",
+	"turretGlowSprite":"graphics/SCY/weapons/SCY_sebTG.png",
+	"hardpointGlowSprite":"graphics/SCY/weapons/SCY_sebHG.png",
+	"glowColor":[60,150,220,255],
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[7, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[11, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"smokeSpec":{"particleSizeMin":5.0,   # only used if animationType = SMOKE
+                    "particleSizeRange":15.0,
+                    "cloudParticleCount":0,
+                    "cloudDuration":1.0,
+                    "cloudRadius":7.0,
+                    "blowbackParticleCount":7,
+                    "blowbackDuration":0.2,
+                    "blowbackLength":-15.0,
+                    "blowbackSpread":10.0,
+                    "particleColor":[200,200,255,50]},
+	"muzzleFlashSpec":{"length":30.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":5.0,
+					   "particleSizeRange":30.0,
+					   "particleDuration":0.1,
+					   "particleCount":25,
+					   "particleColor":[200,200,255,150]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	"projectileSpecId":"SCY_tebS",  # projectile that will be fired	
+        #"everyFrameEffect":"org.scy.weapons.SCY_addToMuzzlePlugin",
+	"fireSoundTwo":"SCY_seb",
+}

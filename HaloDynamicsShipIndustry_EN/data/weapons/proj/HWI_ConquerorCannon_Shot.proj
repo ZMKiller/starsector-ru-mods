@@ -1,0 +1,17 @@
+{
+	"id":"HWI_ConquerorCannon_Shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"onFireEffect":"data.weapons.scripts.proj.HWIConquerorProjectile",
+	"length":60.0,
+	"width":10,
+	"fadeTime":0.3,
+	"fringeColor":[200,100,100,255],
+	"coreColor":[255,255,255,255],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

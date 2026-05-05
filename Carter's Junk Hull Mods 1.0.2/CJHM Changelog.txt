@@ -1,0 +1,132 @@
+v1.02  Save game compatible Note: If you had Exploration Refit and Militarized Subsystems stacked, the game will auto remove one
+	-Renamed several of the hull mods to be more clear on what they do - TY loboto for supplying the new names
+	-Exploration Refit - Reclassified it as logistical and it can no longer stack with Militarized Subsystems - TY Kromgart for the suggestion
+	-Sensor Cloak: Changed the multi from modifyPercent to modifyMult - Still 60% but it will stack better with other sensor hullmods - TY Kherae for the note
+	-Updated the gameVersion to the current "0.98a-RC8"
+
+v1.01 Save game compatible
+	-Changed the OP cost of Adaptive Dampening to 1/1/1/1 - TY madbadger2 for noting it was such a niche mod it was too costly previously to be worthwhile
+	-Removed the code to effect beams with the Energy Integration hull mod - With the .98 update it was double dipping with the energy code 
+	-Add a new 2 OP hull mod, Mount Stabilizer - Grants a turret turn speed bonus at the cost of reducing ship turn acceleration - Suggested by Madbadger 2
+	-Updated the gameVersion to "0.98a-RC7"
+	-Updated the forum Image to show the new hull mod icon and short description
+	
+v1.0 -Not Compatible with game version .97a saves
+	-Updated code to work with version .98a of Starsector
+
+v0.9.4 Save game compatible
+	-Added the CJHM Engineering Icon to the LunaLib & TriOS menus
+	-Fixed multiple spelling errors in the descriptions of the hull mods - TY EnigmaniteZ for pointing out these long standing errors
+
+v0.9.3 Save game compatible
+	-Added High Scatter Amplifier and Advanced Optics incompatibility to Brawler Energy - It is intended for energy projectiles - TY hidefreek for your commentary
+	-Changed the OP needed for Flux Swap to 1 OP for all sizes - Gives another option for larger ships with 1 OP leftover
+	-Added a new Hull Mod, Scatter Amplifiers - Lowers beam range by 20% and damage by 10%, allows beams to deal hard flux - Had the idea while changing Brawler Energy
+
+v0.9.2 Save game compatible
+	-Changed the effect of Brawler Energy from +damage to +rate of fire & projectile speed - TY hidefreek for noting that +damage affected beams which was unintended
+
+v0.9.1 Save game compatible
+	-Fixed an oopsie with the version checker mistakenly having JYD's forum page - TY Resetium for letting me know
+	-Changed the crew adjustment on Arsenal Lockers from a flat 20% to a scaling by ship size 20/15/10/5 - TY Seamus Donohue for pointing out that 20% was a bit outrageous for any size above frigate
+
+v0.9 Save game compatible
+	-Added dock needed requirements for the following logistics hull mods: Cargo Carver, Cargo Pods, Internal Tank, External Tank, Auxiliary Tank, Auxiliary Cargo
+	-Added a new category listing (CJHML) and UI tag (Logistics+) for the hull mods that now require a dock - Having their own tab makes them easily identifiable when refitting
+	-Added Exploration Refit and Booster Rockets to the CJHML tab as they already require a dock
+	-Added a new hull mod, Arsenal Lockers, that adds 10 ground support by reducing crew berthing by 20% - The reduction in ability to carry marines balances the support - Let me know your opinion
+		-TY CV514 for the ideas for the above changes
+	-Added a new hull mod, Ballistic Integration, that reduces the OP of large ballistic weapons by 5 through removing 10% of a ship's hull and armor
+	-Added a new hull mod, Energy Integration, that reduces the OP of large energy and beam weapons by 5 through removing 10% of a ship's hull and armor
+	-Added a new hull mod, Missile Integration, that reduces the OP of large missile weapons by 5 through removing 10% of a ship's hull and armor
+		-TY Tesser for the donated icons for all the new hull mods
+	-Updated the image on the forum OP and discord post with the new hull mods		
+
+v0.8 Save game compatible
+	-Added a new low OP hull mod, Auxiliary Tanks - Reduces 25% crew and adds 15% fuel storage. Does not stack with Additional Berthing
+	-Added a new low OP hull mod, Auxiliary Cargo - Reduces 25% crew and adds 15% cargo storage. Does not stack with Additional Berthing - TY SableDrake for the idea for both
+		-Note there is a 10% disparity in these two to balance the 1/2/3/4 low OP and crew counts as a % are much lower than cargo/fuel on cargo ships and tankers 
+	-Updated the image on the forum OP and discord post with the new hull mods 
+
+v0.7 Save game compatible
+	-Added a new hull mod, Internal Tanks - Essentially a fuel analog for cargo carver - has the same exclusions but it is stackable with cargo carver 
+	-Added a new hull mod, External Tanks - Essentially a fuel analog for cargo pods - stackable with cargo pods - same deductions so it really makes a ship unwieldy if stacked
+	-Adjusted Faraday cage by raising the hull deduction from 5% to 10% but increasing the flux from 50% to 60% - 5 was too low in retrospect but added 10% to help offset the increase
+	-Adjusted PD Pep by increasing the Cr loss from 7% to 10% - 7 was a bit low and after testing 10 does have an effect but not so much it makes it useless to put on a ship
+	-TY to SpiralMatai for bringing the above two hull mods in need of adjustment to my attention 
+	-Updated the image on the forum OP and discord post with the new hull mods and edited it to be more even
+	-Fixed an oversight with the faction's "known hull mods" for those that want the hull mods unlearned at start, it is now updated to include all CJHM hull mods
+
+v0.6 Save game compatible
+	-Added a new hull mod, Armor Swap that swaps 1 percent hull for 1 percent armor for 1 OP - While fitting out ships I realized there wasn't anything for 1 OP
+	-Added a new hull mod, Hull Swap that swaps 1 percent armor for 1 percent hull for 1 OP - Same as above but not compatible for players that would rather have hull
+		-Big Thank you to Tesser who made the icons that I used for the above new hull mods 
+	-Added a new hull mod, Brawler Energy that works the same as Brawler Ballistics but for energy bolt weapons. Note: does not effect beams
+	-Added the images and descriptions of the new hull mods to the picture on discord and the forum OP
+	-Updated the game version to RC-7 to alleviate your OCD triggering mod manager yellow warning :)
+		
+v0.5.1 Save Game compatible
+	-Updated to 0.97a	
+
+v0.5 Save Game compatible* - Note before installing the update uninstall cargo carver, cargo filler or belt armor if you have them stacked on your ships
+	-Added a block to prevent Cargo Carver, Cargo Filler or Belt Armor on at the same time - They all take from the cargo of a ship, making them mutually exclusive made sense
+	-Increased the % that Flux swap modifies from 5% to 10% - TY Aran1 for your comments regarding this and the above change	
+	-Updated the game version compatibility to the current version (0.96a-RC10) - Minor QOL change so the version checker will stop giving you a warning
+	-Moved the Exploration Refit hull mod from JYD to CJHM - They will both exist if you have both mods installed until I can get around to updating JYD
+		-It removes the penalties from a civilian-grade hull, increases the maximum burn level,sensor and sight range,cargo space and reduces CR loss from corona and similar conditions 
+		-In order to maintain these upgrades the ship requires more crew and uses more supplies per month - Essentially an exploration version of Militarized Subsystems
+	- Added the image and description of the new hull mod to the picture on the forum OP
+	
+v0.4.1 Quick Hotfix - Save game compatible with v0.4
+	-Fixed a tooltip error with Magiclib - TY Soviet Tom Bombadil for finding it and letting me know
+	-Converted the compression from RAR to ZIP - Received some "requests" and it is a more widely used format
+
+v0.4 - Save game compatible with v0.3
+	-Adjusted the code to be compliant with the 0.96a MagicLib changes
+	-Adjusted the code compatibility to work with 0.96a
+	-Changed the options for the hull mods to be unlocked by default and the unlearned version to be the optional
+	-Added instructions on how to enable the optional "unlearned" file to the forum op
+
+v 0.3 - Save game compatible with v0.2
+	-Fixed an error in the Weapon Overclock hull mod - TY to Madbadger2 for noticing and helping me fix it and helping me beta test the following changes
+	-Changed the description of Reflected Armor to clarify that it works on shields as well as hull and armor
+	-Changed the description of Fetch Deck to better describe what it does
+	-Changed the wording of Brawler Missiles from acceleration to speed - more clarity
+	-Lowered the hull penalty to Stripped hull from 20% to 15% and changed to description to clarify that the bonus effects all types on ammo, not just missiles
+	-Added five new hull mods:
+		-Nano Hull Repair - Regenerates hull by decreasing overall hull HP - Had some requests from players to make a version similar to the Hiver one
+		-Belt Armor - Fills in a ship's cargo with more hull and armor, reduces cargo space and ship maneuverability - Based on R/L navy belt armor
+		-Brawler Ballistics - Increases the damage of ballistic weapons, decreases flux use at the cost of weapon range -Inspired by my Brawler Missiles hull mod
+		-Flux Swap - Increases flux venting by reducing flux capacity - A personal preference of mine 
+		-Adaptive Damping - Increases ballistic weapon range, reduces ROF - Designed to help LMGs and other short range cheap weapons like the Vulcan - Madbadger2 requested and designed 
+	-Added an optional hull_mods.csv that if enabled will make all CJHM hull mods unlocked and learned - JYD and CFT were originally this way and I have received requests for a revert
+		-To enable: Navigate to data\hullmods located in the CJHM mod folder and either move,rename or delete hull_mods.csv. Now rename the file learned_hull_mods.csv to hull_mods.csv
+	-Updated the forum OP image with the new hull mods
+	-Added a direct download link to the Version file that mod managers can use to auto-update - Ty Timid for showing me how
+	-Added a direct download link to the forum d/l link that bypasses the google drive preview - one less step to get to the good stuff :)
+	
+v0.2 - Save game compatible with v0.1
+	-Changed the description to Fetch Deck to better reflect what it does 
+	-Increased the decay of CR for PD Pep from 5% to 7% - better balances it 
+	-Increased the added CR decay on the Cargo Pod mod by 10% - Balance tweak that deters using it on combat ships
+	-Decreased the OP requirement for Brawler Missiles from 3/6/9/12 to 2/4/6/8 - makes it more attractive when stacking missile mods
+	-- TY Madbadger2 for the above ideas
+	-Removed some unneeded code on Shield Overclock - a tiny bit less memory load freed up
+	-Reduced the Op requirement for Salvaged Shield on capital ships from 25 to 20 - Puts it in line with other base 5 incremented hull mods
+	-Added three new Hull mods to the lineup:
+		-Weapon Overlock - Increases ballistic and energy weapon rate of fire for increased flux use
+		-Sprint Missiles - Increases the speed and maneuverability of missiles at the cost of missile hull HP
+		-Projectile Accelerator - Increases ballistic and energy projectile speed at the cost of turret turn rate - Note: it will slow down beam and missile turn rate to no benefit 
+	-Updated the image on the forum OP with the new hull mods 
+
+v0.1.a - Quick hotfix - save game compatible with v0.1
+	-Wrote a clearer description for the Missile Storage Expansion hull mod - Ty Zoro89 for your kind words and letting me know!
+
+v0.1 - Initial release for review, testing and constructive criticism - Not compatible with JYD 2.2 or CFT 1.0 or lower
+	-Ported over all but the commissioned crews hull mods from JYD and CFT and the combat engineers mod from CFT as that is integral to two of their ships
+	-Changed the hull mods from unlocked at start to standard
+	-Added the hull mods as known only to Independents, Pirates, CFT and JYD
+	-Changed the Combat adjustment hull mod from giving a flat +50 armor to all to a variable amount depending on hull size	
+	-Changed the OP for Combat Adjustment from 1,2,3,4 to 2,3,4,5 - Minimal increase but they are junk hull mods after all
+	-Fixed the description of the Stripped Hull hullmod - added it's missing short description	
+	-Fixed some spelling mistakes in hull_mods.csv from CFT and JYD- I'm dyslexic and apparently did not use spellcheck when I wrote them whoops :)

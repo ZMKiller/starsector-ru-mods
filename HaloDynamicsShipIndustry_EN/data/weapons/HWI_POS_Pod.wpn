@@ -1,0 +1,47 @@
+{
+  "id": "HWI_POS_Pod",
+  "specClass": "projectile",
+  "projectileSpecId": "HWI_POS_Shot2",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/weapons/HWI_POS_Pod_turret.png",
+  "hardpointSprite": "graphics/weapons/HWI_POS_Pod_hardpoint.png",
+  "turretOffsets": [
+    -6,
+    -12,
+    -6,
+    12
+  ],
+  "turretAngleOffsets": [
+    -149,
+    149
+  ],
+  "hardpointOffsets": [
+    13,
+    -12,
+    13,
+    12
+  ],
+  "hardpointAngleOffsets": [
+    -29,
+    29
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 10,
+    "spread": 6,
+    "particleSizeMin": 10,
+    "particleSizeRange": 35,
+    "particleDuration": 0.12,
+    "particleCount": 25,
+    "particleColor": [
+      255,
+      75,
+      255,
+      245
+    ]
+  },
+  "fireSoundTwo": "sabot_srm_fire"
+}

@@ -1,0 +1,108 @@
+{
+  "hullName": "PD Platform",
+  "hullId": "rr_pd_platform",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/rr_pd_platform.png",
+  "style": "HIGH_TECH",
+  "height": 44,
+  "width": 86,
+  "center": [43, 19],
+  "collisionRadius": 47,
+  "shieldCenter": [-3, -0],
+  "shieldRadius": 44,
+  "viewOffset": 0,
+  "builtInMods": [
+    "advancedoptics",
+    "pointdefenseai",
+    "turretgyros"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 65,
+      "locations": [1, 15]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -65,
+      "locations": [1, -15]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 20,
+      "locations": [14, 16]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -20,
+      "locations": [14, -16]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [18, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-13.5, 3.5],
+      "length": 17,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-13.5, -3.5],
+      "length": 17,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-18.5, 18.5],
+      "length": 25,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-18.5, -18.5],
+      "length": 25,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -16, -23,
+    5, -35,
+    22, -0,
+    5, 35,
+    -16, 23,
+    -10, -0
+  ]
+}

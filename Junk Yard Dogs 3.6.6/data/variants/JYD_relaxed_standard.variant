@@ -1,0 +1,34 @@
+{
+  "variantId": "JYD_relaxed_standard",
+  "hullId": "JYD_relaxed",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliary_fuel_tanks",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "JYD_af"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "JYD_ab",
+        "WS0003": "JYD_ab",
+        "WS0004": "JYD_ab"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

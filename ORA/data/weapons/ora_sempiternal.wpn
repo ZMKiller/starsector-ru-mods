@@ -1,0 +1,31 @@
+{
+	"id":"ora_sempiternal",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretUnderSprite":"graphics/ORA/weapons/ora_sempiternalTB.png",
+	"turretSprite":"graphics/ORA/weapons/ora_sempiternalT.png",
+	"turretGlowSprite":"graphics/ORA/weapons/ora_sempiternalTG.png",
+	"hardpointUnderSprite":"graphics/ORA/weapons/ora_sempiternalHB.png",	
+	"hardpointSprite":"graphics/ORA/weapons/ora_sempiternalH.png",
+	"hardpointGlowSprite":"graphics/ORA/weapons/ora_sempiternalHG.png",
+	"glowColor":[200,100,200,255],
+	"turretOffsets":[0, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":10.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":80.0,
+					   "particleDuration":0.15,
+					   "particleCount":3,
+					   "particleColor":[200,100,200,255]},
+	"interruptibleBurst":true,
+	"autocharge":false,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"ora_sempiternalS",  # projectile that will be fired
+	"fireSoundTwo":"ora_sempiternal_fire",
+        "everyFrameEffect":"data.scripts.weapons.ORA_sempiternalEffect",
+}

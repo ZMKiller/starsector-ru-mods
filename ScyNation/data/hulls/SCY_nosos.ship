@@ -1,0 +1,106 @@
+{
+  "bounds": [
+    -3.5,
+    12.5,
+    -9.5,
+    8.5,
+    -9.5,
+    -8.5,
+    -3.5,
+    -12.5,
+    20.5,
+    -0
+  ],
+  "builtInMods": [
+    "no_weapon_flux",
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SCY_Fbeam",
+    "WS0002": "SCY_Fbeam",
+    "WS0003": "SCY_Fswarmer"
+  },
+  "builtInWings": [],
+  "center": [
+    14,
+    14
+  ],
+  "collisionRadius": 25,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 16,
+      "location": [
+        -13,
+        4
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 16,
+      "location": [
+        -13,
+        -4
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES",
+      "width": 8
+    }
+  ],
+  "height": 37,
+  "hullId": "SCY_nosos",
+  "hullName": "Nosos",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    3,
+    -0
+  ],
+  "shieldRadius": 22,
+  "spriteName": "graphics/SCY/ships/fighters/SCY_nosos.png",
+  "style": "SCYHULL",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0001",
+      "locations": [
+        6.5,
+        5.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0002",
+      "locations": [
+        6.5,
+        -5.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0003",
+      "locations": [
+        16.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 28
+}

@@ -1,17 +1,17 @@
 id,trigger,conditions,script,text,options,notes
 ,,,,,,
 sc_hire_officerStart,PickGreeting,$sc_hireable score:1000,"ShowPersonVisual
-SCOfficerHireDialog","После короткого ожидания ваш запрос на связь принимают.
+SCOfficerHireDialog","После недолгого ожидания ваш запрос на связь принимают.
 
-$personName оценивающе осматривает вас.
+$personName оценивающе оглядывает вас.
 
-""Слышал, вам может понадобиться дополнительная помощь.""",,
-,,,,,,
-"#Set Skillpoints to 0, skipping the skill screen. Make sure to restore them somewhere else",,,,,,
+«Слышал, вы, возможно, ищете помощь.»",,
+,,,,,
+"#Установить очки навыков в 0, пропуская экран навыков. Не забудьте восстановить их где-нибудь ещё",,,,,,
 sc_nex_NGCDone,NewGameOptionSelected,"$option == nex_NGCDone score:100000
 !$sc_do_not_trigger_again","SCStoreSkillpoints true
 ",,,
-"Override Vanilla Start for now, hopefully no conflicts, but cant skip the screen otherwise",,,,,,
+"Переопределение ванильного старта на время, надеюсь без конфликтов, но иначе не пропустить экран навыков",,,,,,
 ngcTutorialPicked,NewGameOptionSelected,$option == ngcTutorial,"NGCSetStartingLocation Galatia 1000 -15000
 NGCAddStandardStartingScript
 #NGCSetWithTimePass false
@@ -25,7 +25,7 @@ NGCAddStandardStartingScript
 SCStoreSkillpoints false
 NGCDone",,,
 ,,,,,,
-#Encounter,,,,,,
+#Столкновения,,,,,,
 sc_FleetEncounter,BeginFleetEncounter,"!SCCheckForEncounterTag
 !$player.sc_fleet_encountered score:1000000","$player.sc_fleet_encountered = true 0
 FireBest BeginFleetEncounter
@@ -39,11 +39,11 @@ FireAll SCFleetEncounterScript
 sc_FleetEncounterScript,SCFleetEncounterScript,,SCAddOfficersToFleetInteraction,,,
 ,,,,,,
 #sc_fleet_info,DialogOptionSelected,"SCIsFleetInteraction 
-$option == INIT score:10000000",,Тестовый текст SC 2,,
+$option == INIT score:10000000",,Test SC Text 2,,
 ,,,,,,
 ,,,,,,
 sc_startingBarEvent,AddBarEvents,"!$market.isHidden
 !$global.sc_selectedStart
 ShouldShowSiCBarEvent
-","AddBarEvent scBarStart ""Поговорить с человеком, продающим офицерские контракты"" ""Кто-то пытается продать несколько контрактов на офицеров"" highlight",,,
+","AddBarEvent scBarStart ""Поговорить с человеком, продающим контракты офицеров"" ""Кто-то пытается продать несколько контрактов на каких-то офицеров"" highlight",,,
 sc_startingBarEventStart,DialogOptionSelected,$option == scBarStart,SCStartBarEventDialog,,,

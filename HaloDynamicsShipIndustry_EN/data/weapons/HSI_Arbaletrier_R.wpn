@@ -1,0 +1,41 @@
+{
+  "id": "HSI_Arbaletrier_R",
+  "specClass": "projectile",
+  "projectileSpecId": "HSI_Arbaletrier_R_Shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/Arbaletrier/HSI_TheHaloSquad_R.png",
+  "hardpointSprite": "graphics/weapons/Arbaletrier/HSI_TheHaloSquad_R.png",
+  "turretOffsets": [
+    20.5,
+    3.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    33,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 75,
+    "spread": 15,
+    "particleSizeMin": 15,
+    "particleSizeRange": 17,
+    "particleDuration": 0.12,
+    "particleCount": 7,
+    "particleColor": [
+      249,
+      231,
+      160,
+      255
+    ]
+  },
+  "fireSoundTwo": "ion_pulser_fire"
+}

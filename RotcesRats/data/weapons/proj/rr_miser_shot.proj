@@ -1,0 +1,22 @@
+{
+	"id":"rr_miser_shot",
+	"specClass":"projectile",
+
+	"onHitEffect":"data.scripts.rr_miserOnHitEffect",
+
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	#"spawnType":"BALLISTIC_AS_BEAM",
+	#"collisionClass":"RAY",
+	#"collisionClassByFighter":"RAY_FIGHTER",
+	"length":90.0,
+	"width":8,
+	"fadeTime":0.3,
+	"fringeColor":[255,210,190,255],
+	"coreColor":[255,240,230,255],
+	"hitGlowRadius":86,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

@@ -1,0 +1,30 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 0,
+    "fluxVents": 4,
+    "goalVariant": false,
+    "hullId": "SCY_geryon",
+    "hullMods": [
+        "eccm",
+        "converted_hangar"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_geryon_escort",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "SCY_anti2",
+                "WS0002": "SCY_anti2",
+                "WS0003": "SCY_anti2"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "SCY_hack"}
+        }
+    ],
+    "wings": ["SCY_akhlys_wing"]
+}

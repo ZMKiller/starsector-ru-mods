@@ -1,0 +1,54 @@
+id,trigger,conditions,script,text,options,notes
+# cft_smuggling mission,,,,,,
+cft_smugBlurb,cft_smug_blurb,,,"""Мне нужно доставить немного $cft_smug_commodityName на $cft_smug_marketName в рамках операции свободной торговли.""
+OR
+""Мне нужно перевезти немного $cft_smug_commodityName на $cft_smug_marketName - без участия властей. Они могут задушить нашу операцию.""",,
+cft_smugOfferOption,cft_smug_option,,,,cft_smug_start:Спросить об операции свободной торговли,
+cft_smugBlurbBar,cft_smug_blurbBar,,,В баре фритрейдер $cft_smug_manOrWoman предлагает капитанам звездолетов возможность свободной торговли.,,
+cft_smugOfferOptionBar,cft_smug_optionBar,,,,"cft_smug_startBar:Узнать, что предлагает $cft_smug_manOrWoman с датападом",
+cft_smugOfferTextBar,DialogOptionSelected,$option == cft_smug_startBar,"$missionId = cft_smug
+SetTextHighlights $cft_smug_quantity $cft_smug_dist $cft_smug_reward
+ShowRemainingCapacity $cft_smug_commodityId
+Call $cft_smug_ref showMap ""Destination: $cft_smug_marketName""","Когда вы подходите, $cft_smug_manOrWoman бросает текущего собеседника на полуслове и переключает внимание на вас.
+
+""Вы, капитан. Да, вы ведь узнаете честное лицо, когда видите!"" $HeOrShe криво улыбается. ""Только взгляните"", - $heOrShe сует вам в руки мерцающий экран датапада: грузовой манифест, в основном низкосортные строительные материалы, лежащие на складе в совсем другой системе.
+
+$HeOrShe наклоняется ближе и говорит тише, делая вид, будто объясняет содержимое датапада: ""Поможете мне перевезти $cft_smug_quantity единиц $cft_smug_commodityName на $cft_smug_marketName, всего $cft_smug_dist световых лет. Потом я заплачу вам $cft_smug_reward кредитов. Без властей, без инспекций, без тарифов. Легкие деньги, верно?""","contact_acceptBar:Принять
+contact_declineBarNoContinue:Отказаться",
+cft_smugOfferTextContact,DialogOptionSelected,$option == cft_smug_start,"$missionId = cft_smug
+SetTextHighlights $cft_smug_quantity $cft_smug_dist $cft_smug_reward
+ShowRemainingCapacity $cft_smug_commodityId
+Call $cft_smug_ref showMap ""Destination: $cft_smug_marketName""","""Мне нужно перевезти $cft_smug_quantity единиц $cft_smug_commodityName на $cft_smug_marketName, это в $cft_smug_dist световых годах отсюда. Ваша осторожность ключевая: местные власти не должны узнать о партии. При доставке вы получите $cft_smug_reward кредитов.""","contact_accept:Принять
+contact_decline:Отказаться",
+cft_smugPostAccept,ContactPostAccept,$missionId == cft_smug,AddCommodity $cft_smug_commodityId $cft_smug_quantity,,,
+# arrived at destination,,,,,,
+cft_smug_checkCompletion,MarketPostDock,"$market.cft_smug_target score:1000
+$tradeMode == SNEAK
+Call $market.cft_smug_ref updateData
+$cft_smug_playerHasEnough",,,cft_smug_deliverContinue:Продолжить,
+cft_smug_checkCompletionCont,DialogOptionSelected,$option == cft_smug_deliverContinue,"RemoveCommodity $cft_smug_commodityId $cft_smug_quantity
+$market.cft_smug_completed = true 0
+Call $market.cft_smug_ref updateStage","Вы приказываете выгрузить груз $cft_smug_commodityName в заброшенном космодоке, подальше от лишних глаз. Вскоре ваш флагман получает подтверждение доставки с одноразового ретранслятора.
+OR
+Переданный под грузовые нужды орбитальный пассажирский транспорт подходит к орбите вашего $fleetOrShip после условного сигнала. Груз $cft_smug_commodityName быстро перегружают роботизированные дроны без навигационных транспондеров, после чего транспорт уходит прочь.",marketCmd_checkDebtContinue:Продолжить,
+cft_smug_checkCompletionNotSneaking,MarketPostDock,"$market.cft_smug_target score:1000
+$tradeMode != SNEAK
+Call $market.cft_smug_ref updateData
+$cft_smug_playerHasEnough","$cft_smug_noCompleteShown = true 0
+SetTextHighlightColors bad bad
+Highlight ""coming in with your transponder turned off"" ""without attracting the attention of patrols""
+FireBest MarketPostDock",Для доставки $cft_smug_commodityName нужно подойти с выключенным транспондером и не привлечь внимание патрулей.,,
+cft_smug_notEnough,MarketPostDock,"$market.cft_smug_target score:1000
+!$cft_smug_noCompleteShown
+Call $market.cft_smug_ref updateData
+!$cft_smug_playerHasEnough score:1000","$cft_smug_noCompleteShown = true 0
+FireBest MarketPostDock",У вас недостаточно $cft_smug_commodityName для завершения доставки.,,
+,,,,,,
+cft_nex_NGCPickStartingShips,ExerelinNGCStep3,"$playerFaction == CFT
+!$cft_ChangeMind","AddText ""CFT - торговая фракция, сосредоточенная на контрабанде и спасательных работах. Они живут чуть вне законов большинства фракций, но известны честными сделками. Их отношения со всеми игровыми фракциями, включая пиратов и пиратские мод-фракции, выставлены от нейтральных до чуть ниже нейтральных, за некоторыми исключениями вроде Hiver Swarm.""
+
+AddText ""Игрок может решить, хочет ли играть другом пиратов или теневым торговцем с хорошей репутацией, исходя из своих действий в игре. У вас будет время принять это решение, но со временем игра начнет подталкивать вас сама: дружба с одной фракцией будет стоить репутации у другой. Поэтому заранее подумайте, как хотите играть, и действуйте соответственно.""
+
+AddText ""Каперское свидетельство CFT от commissioned crews увеличивает дальность сенсоров, снижает заметность и расширяет грузовое пространство.""
+$cft_ChangeMind = true",,,
+,,,,,,

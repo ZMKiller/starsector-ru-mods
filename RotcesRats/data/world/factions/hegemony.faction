@@ -1,0 +1,42 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+		"rr_gryphon_b_ass":1.5,
+		"rr_gryphon_b_std":2,
+		"rr_gryphon_b_sup":3, # we're blocking the OD variant!
+	},
+
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "hulls":[
+            "rr_shkiper",
+            "rr_surebrec",
+            "rr_undertaking",
+        ],
+    },
+    "knownShips":{
+        "hulls":[
+            "rr_dominatrix",
+            "rr_gryphon_b",
+            "rr_shkiper",
+            "rr_surebrec",
+            "rr_undertaking",
+            "rr_valkyrie_m2",
+        ],
+    },
+
+	"knownFighters":{
+		"fighters":[
+			"rr_urumi_wing",
+			"rr_khanda_wing",
+			"rr_kirpan_wing",
+		],
+	},
+
+	"knownWeapons":{
+		"weapons":[
+			"rr_axle",
+		],
+	},
+},

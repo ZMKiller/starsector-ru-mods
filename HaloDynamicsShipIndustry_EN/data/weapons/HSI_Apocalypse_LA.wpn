@@ -1,0 +1,43 @@
+{
+  "id": "HSI_Apocalypse_LA",
+  "specClass": "projectile",
+  "projectileSpecId": "canister_flak_proj",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "everyFrameEffect": "data.weapons.scripts.HSIApocalypseLA",
+  "turretSprite": "graphics/weapons/Apocalypse/HSI_Apocalypse_LA.png",
+  "hardpointSprite": "graphics/weapons/Apocalypse/HSI_Apocalypse_LA.png",
+  "turretOffsets": [
+    17,
+    -10
+  ],
+  "turretAngleOffsets": [
+    -90
+  ],
+  "hardpointOffsets": [
+    34,
+    -11
+  ],
+  "hardpointAngleOffsets": [
+    -90
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 0,
+    "particleSizeRange": 0,
+    "cloudParticleCount": 0,
+    "cloudDuration": 0,
+    "cloudRadius": 0,
+    "blowbackParticleCount": 0,
+    "blowbackDuration": 0,
+    "blowbackLength": 0,
+    "blowbackSpread": 0,
+    "particleColor": [
+      190,
+      180,
+      160,
+      95
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "displayName": "Штурм",
+  "fluxCapacitors": 14,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "edshipyard_redbone",
+  "hullMods": [
+    "hardened_subsystems",
+    "adaptive_coils",
+    "unstable_injector"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_redbone_assault",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BuiltIn": "edshipyard_BARKS"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "edshipyard_FL1",
+        "WS0002": "edshipyard_FL1",
+        "WS0003": "edshipyard_FL1"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "edshipyard_Wisp_Launcher"
+      }
+    }
+  ],
+  "wings": []
+}

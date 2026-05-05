@@ -1,0 +1,247 @@
+{
+    "hullName": "J01-主引擎",
+    "hullId": "HSI_J01_Engine",
+    "hullSize": "CAPITAL_SHIP",
+    "style": "HSI_TECH",
+    "spriteName": "graphics/ships/J01/HSI_J01_Engine.png",
+    "height": 422,
+    "width": 352,
+    "center": [
+        176, 579
+    ],
+    "collisionRadius": 611.5,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 585.5,
+    "viewOffset": 0,
+    "builtInMods": [
+        "HSI_Halo",
+        "HSI_ModularArmorSpecial",
+        "never_detaches",
+        "HSI_JuggernautTargetingCore",
+        "HSI_JuggernautCore"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 180,
+            "locations": [
+                  -332.5,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 180,
+            "locations": [
+                  -396.5,        0
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 165,
+            "locations": [
+                  -453.5,       20
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 195,
+            "locations": [
+                  -453.5,      -20
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 165,
+            "locations": [
+                  -484.5,       21
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 195,
+            "locations": [
+                  -484.5,      -21
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -444, -96
+            ],
+            "length": 123.5,
+            "width": 48,
+            "angle": 198.5,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -444, 96
+            ],
+            "length": 123.5,
+            "width": 48,
+            "angle": 161.5,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -399.5, 133
+            ],
+            "length": 112,
+            "width": 43,
+            "angle": 157.5,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -399.5, -133
+            ],
+            "length": 112,
+            "width": 43,
+            "angle": 202.5,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -458.5, -81.5
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -458.5, 81.5
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -434, -102
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 223.5,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -434, 102
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 136.5,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -393.5, -144.5
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 223.5,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -393.5, 144.5
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 136.5,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -404.5, -123
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        },
+        {
+            "location": [
+                -404.5, 123
+            ],
+            "length": 42,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "HSI_TECH_PARTICLE"
+        }
+    ],
+    "bounds": [
+          -577.5,    -11.5,
+          -557.5,    -38.5,
+          -414.5,    -90.5,
+          -379.5,   -115.5,
+          -334.5,     -173,
+        
+            -291,   -173.5,
+            -272,     -137,
+          -218.5,    -77.5,
+          -160.5,    -54.5,
+            -158,    -34.5,
+        
+          -258.5,    -35.5,
+          -258.5,     35.5,
+            -158,     34.5,
+          -160.5,     54.5,
+          -218.5,     77.5,
+        
+            -272,      137,
+            -291,    173.5,
+          -334.5,      173,
+          -379.5,    115.5,
+          -414.5,     90.5,
+        
+          -557.5,     38.5,
+          -577.5,     11.5
+    # 22 points total.
+    ]
+}

@@ -1,0 +1,80 @@
+{
+  "variantId": "rr_onquest_std",
+  "hullId": "rr_onquest",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 40,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "turretgyros",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "rr_d-tpc"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "hurricane"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "sabotpod",
+        "WS 020": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 013": "mark9",
+        "WS 014": "hephag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 023": "gravitonbeam",
+        "WS0006": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 017": "flak",
+        "WS 018": "flak",
+        "WS0002": "flak",
+        "WS0003": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "pdlaser",
+        "WS 007": "pdlaser",
+        "WS 008": "pdlaser",
+        "WS 009": "vulcan",
+        "WS 010": "pdlaser",
+        "WS0004": "vulcan",
+        "WS0005": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

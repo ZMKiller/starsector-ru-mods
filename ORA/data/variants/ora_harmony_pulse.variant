@@ -1,0 +1,43 @@
+{
+    "displayName": "Pulse",
+    "fluxCapacitors": 6,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "ora_harmony",
+    "hullMods": [
+        "safetyoverrides",
+        "hardened_subsystems",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_harmony_pulse",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_recital"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ora_recital",
+                "WS0005": "ora_recital",
+                "WS0006": "ora_recital",
+                "WS0007": "ora_recital",
+                "WS0008": "ora_recital",
+                "WS0009": "ora_recital",
+                "WS0010": "ora_recital"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_choir",
+                "WS0004": "ora_choir"
+            }
+        }
+    ]
+}

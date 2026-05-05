@@ -1,0 +1,57 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 22,
+    "fluxVents": 22,
+    "goalVariant": true,
+    "hullId": "SCY_corocotta",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_corocotta_Escort",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_minigun3",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "swarmer",
+                "WS0004": "swarmer",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_minigun2",
+                "WS0002": "SCY_minigun2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "vulcan",
+                "WS0008": "vulcan",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "SCY_intercept",
+                "WS0006": "SCY_intercept",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

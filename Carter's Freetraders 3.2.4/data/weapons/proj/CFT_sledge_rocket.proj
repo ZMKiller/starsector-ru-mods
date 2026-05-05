@@ -1,0 +1,22 @@
+{
+	"id":"CFT_sledge_rocket",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/CFT/missiles/CFT_missile_sledge.png",
+	"size":[18,42],	
+	"center":[9,21],
+	"collisionRadius":20,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,255,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":1200, # purely visual
+	"engineSpec":{"turnAcc":50,
+				  "turnRate":35,
+				  "acc":150,
+				  "dec":125},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-12, 0],
+				    "style":"MISSILE_MIDLINE",
+				    "width":6.0,
+				    "length":30.0,
+				    "angle":180.0}]
+}

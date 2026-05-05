@@ -1,0 +1,27 @@
+id,trigger,conditions,script,text,options,notes,,
+progsmod_Start,PopulateOptions,"$global.progsmodEnabled
+$menuState == main","SetShortcut progsmod_OptionManage ""Q""",,17:progsmod_OptionManage:Управление встроенными модификациями корпуса,,,
+progsmod_Manage,DialogOptionSelected,$option == progsmod_OptionManage,PSM_PickFleetMember $selectedShip $selectedVariant $firstTimeOpened progsmod_SelectShip progsmodMain,,,,,
+progsmod_ShipSelected1,progsmod_SelectShip,"$menuState == progsmodMain
+$selectedShip != null",PSM_CreateOptionsList $selectedShip $selectedVariant $firstTimeOpened progsmod_OptionBuildIn progsmod_OptionRemove progsmod_OptionSelectModule progsmod_OptionReserveXP progsmod_OptionAugment progsmod_OptionManage progsmod_OptionBackMain,,,,,
+progsmod_BackToStart,DialogOptionSelected,$option == progsmod_OptionBackMain,"$menuState = main 0
+unset $selectedShip
+unset $selectedVariant
+unset $firstTimeOpened
+ShowDefaultVisual
+FireAll PopulateOptions",,,,,
+progsmod_ShipAugment,DialogOptionSelected,"$option == progsmod_OptionAugment
+$selectedShip != null","PSM_IncreaseSModLimit $selectedShip
+FireAll progsmod_SelectShip",,,,,
+progsmod_ShipBuildIn,DialogOptionSelected,"$option == progsmod_OptionBuildIn
+$selectedShip != null
+$selectedVariant != null",PSM_BuildInHullMod $selectedShip $selectedVariant progsmod_SelectShip,,,,,
+progsmod_ShipRemove,DialogOptionSelected,"$option == progsmod_OptionRemove
+$selectedShip != null
+$selectedVariant != null",PSM_RemoveSMod $selectedShip $selectedVariant progsmod_SelectShip,,,,,
+progsmod_SelectModule,DialogOptionSelected,"$option == progsmod_OptionSelectModule
+$selectedShip != null
+$selectedVariant != null",PSM_SelectModule $selectedShip $selectedVariant progsmod_SelectShip,,,,,
+progsmod_UseReserveXP,DialogOptionSelected,"$option == progsmod_OptionReserveXP
+$selectedShip != null","PSM_UseReserveXP $selectedShip
+FireAll progsmod_SelectShip",,,,,

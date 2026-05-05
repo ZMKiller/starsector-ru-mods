@@ -1,0 +1,23 @@
+{
+	"id":"HSI_TimeWarp",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.ai.HSIThreatAnalysisAI",
+	"statsScript":"data.shipsystems.scripts.HSITimeWarp",
+
+	"canUseWhileRightClickSystemOn":true,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_interdictor",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"activeSpeedIncrease":500,
+		"burstMovementPotential":300,
+		"averageSpeedIncrease":200,
+	}
+}
+
+
+
+

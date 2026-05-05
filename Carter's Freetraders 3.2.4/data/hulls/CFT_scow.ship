@@ -1,0 +1,80 @@
+{
+  "hullName": "Scow",
+  "hullId": "CFT_scow",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/CFT_scow.png",
+  "style": "MIDLINE",
+  "height": 141,
+  "width": 106,
+  "center": [53, 70.5],
+  "collisionRadius": 97,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 91.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "shielded_holds",
+    "repair_gantry"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [27.5, 44]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [27.5, -44]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [62.5, 35]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [62.5, -35]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-68.5, -9],
+      "length": 44,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-68.5, 9],
+      "length": 44,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    79.5, -56,
+    -73, -55.5,
+    -73, 55.5,
+    79.5, 56
+  ]
+}

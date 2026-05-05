@@ -1,0 +1,40 @@
+{
+  "displayName": "Форсированный",
+  "fluxCapacitors": 7,
+  "fluxVents": 3,
+  "goalVariant": true,
+  "hullId": "edshipyard_bischon",
+  "hullMods": [
+    "adaptive_coils",
+    "safetyoverrides"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_bischon_so",
+  "weaponGroups": [
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0004": "edshipyard_SB2",
+            "WS0005": "edshipyard_SB1",
+            "WS0006": "edshipyard_SB1"
+        }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {"WS0001": "chaingun"}
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0002": "edshipyard_SC0",
+            "WS0003": "edshipyard_SC0"
+        }
+    }
+  ],
+  "wings": []
+}

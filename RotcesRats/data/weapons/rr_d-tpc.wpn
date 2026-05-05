@@ -1,0 +1,31 @@
+{
+	"id":"rr_d-tpc",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+
+	"everyFrameEffect":"data.scripts.rr_dtpc_OnFire",
+
+	"size":"LARGE",
+	"turretSprite":"graphics/weapons/onslaught_thermal_turret_base.png",
+	"turretGlowSprite":"",
+	"hardpointSprite":"",
+	"hardpointGlowSprite":"graphics/weapons/onslaught_thermal_glow.png",
+	"turretOffsets":[21,1, 21,0.5, 21,0, 21,0, 21,-0.5, 21,-1],
+	"turretAngleOffsets":[3, 1.5, 0.5, -0.5, -1.5, -3],
+	"hardpointOffsets":[9,1, 9,0.5, 9,0, 9,0, 9,-0.5, 9,-1],
+	"hardpointAngleOffsets":[3, 1.5, 0.5, -0.5, -1.5, -3],
+	"barrelMode":"LINKED",
+        "separateRecoilForLinkedBarrels":"TRUE",
+	"animationType":"GLOW_AND_FLASH",
+	"glowColor":[255,100,100,255],
+	"muzzleFlashSpec":{"length":35.0,
+					   "spread":10.0, # 5.0
+					   "particleSizeMin":15.0,
+					   "particleSizeRange":20.0,
+					   "particleDuration":0.39,  # 0.12
+					   "particleCount":3, # 10
+					   "particleColor":[255,100,100,255]},		
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"rr_d-tpc_shot",  # projectile that will be fired
+	"fireSoundTwo":"thermal_pulse_cannon_fire",
+}

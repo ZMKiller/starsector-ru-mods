@@ -1,0 +1,204 @@
+{
+    "hullName": "Lamia (Armored)",
+    "hullId": "SCY_lamiaA",
+    "hullSize": "DESTROYER",
+    "style": "SCYHULL",
+    "spriteName": "graphics/SCY/ships/SCY_lamiaA.png",
+    "height": 196,
+    "width": 82,
+    "center": [
+        41, 98
+    ],
+    "collisionRadius": 135,
+    "coversColor": "",
+    "shieldCenter": [
+        12, 0
+    ],
+    "shieldRadius": 110,
+    "viewOffset": 0,
+    "builtInMods": [
+        "SCY_engineering",
+        "SCY_armorplating"
+    ],
+    "builtInWeapons": {
+        "A_FLAME_CENTER": "SCY_Zflame2",
+        "BLINKER1": "SCY_ZblinkerB",
+        "BLINKER2": "SCY_ZblinkerB",
+        "D_HEAT_CENTER": "SCY_YdestroyerHeat",
+        "SYSTEM": "SCY_YlamiaSystem"
+    },
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "SYSTEM",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      35,        0
+            ]
+        },
+        {
+            "id": "A_FLAME_CENTER",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -42,        0
+            ]
+        },
+        {
+            "id": "D_HEAT_CENTER",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   -53.5,        0
+            ]
+        },
+        {
+            "id": "BLINKER2",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    44.5,     -6.5
+            ]
+        },
+        {
+            "id": "BLINKER1",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    44.5,      6.5
+            ]
+        },
+        {
+            "id": "WS0003",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": -60.009998,
+            "locations": [
+                      41,      -23
+            ]
+        },
+        {
+            "id": "WS0002",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": 60,
+            "locations": [
+                      41,       23
+            ]
+        },
+        {
+            "id": "WS0001",
+            "size": "MEDIUM",
+            "type": "UNIVERSAL",
+            "mount": "TURRET",
+            "arc": 225,
+            "angle": 0,
+            "locations": [
+                      65,        0
+            ]
+        },
+        {
+            "id": "WW0MULTI",
+            "size": "SMALL",
+            "type": "DECORATIVE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      35,        0
+            ]
+        },
+        {
+            "id": "WW1MULTI",
+            "size": "SMALL",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      84,        0
+            ]
+        },
+        {
+            "id": "WW2MULTI",
+            "size": "SMALL",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    44.5,       29
+            ]
+        },
+        {
+            "id": "WW3MULTI",
+            "size": "SMALL",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    44.5,      -29
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -42, 0
+            ],
+            "length": 38,
+            "width": 20,
+            "angle": 180,
+            "contrailSize": 20,
+            "style": "SCYENGINE"
+        }
+    ],
+    "bounds": [
+              90,     13.5,
+            74.5,     25.5,
+            52.5,     33.5,
+             8.5,     33.5,
+            -0.5,     14.5,
+        
+           -19.5,       24,
+             -55,       23,
+           -77.5,     15.5,
+           -49.5,     15.5,
+           -44.5,      9.5,
+        
+           -44.5,     -9.5,
+           -49.5,    -15.5,
+           -77.5,    -15.5,
+             -55,      -23,
+           -19.5,      -24,
+        
+            -0.5,    -14.5,
+             8.5,    -33.5,
+            52.5,    -33.5,
+            74.5,    -25.5,
+              90,    -13.5
+    # 20 points total.
+    ]
+}

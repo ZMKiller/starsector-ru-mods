@@ -1,0 +1,109 @@
+{
+  "hullName": "Stygere",
+  "hullId": "SCY_stygere",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/SCY/ships/fighters/SCY_stygere.png",
+  "style": "SCYHULL",
+  "height": 40,
+  "width": 38,
+  "center": [19, 17],
+  "collisionRadius": 28,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 25,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux",
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SCY_seb",
+    "WS0002": "SCY_seb",
+    "WS0003": "SCY_Frocket",
+    "WS0004": "SCY_Frocket"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 0,
+      "locations": [16.5, 6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": -0,
+      "locations": [16.5, -6]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -0,
+      "locations": [5, -12.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [5, 12.5]
+    },
+    {
+      "id": "SYSTEM1",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 170,
+      "locations": [-10, -12.5]
+    },
+    {
+      "id": "SYSTEM2",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 190,
+      "locations": [-10, 12.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, -8.5],
+      "length": 20.5,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES"
+    },
+    {
+      "location": [-16, 8.5],
+      "length": 20.5,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES"
+    }
+  ],
+  "bounds": [
+    10.5, 9.5,
+    -8, 18,
+    -12.5, 10.5,
+    -12.5, -10.5,
+    -8, -18,
+    10.5, -9.5,
+    16.5, -0
+  ]
+}

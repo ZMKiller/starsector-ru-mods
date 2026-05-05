@@ -1,0 +1,88 @@
+{
+  "hullName": "Eager",
+  "hullId": "JYD_eager",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/JYD_eager.png",
+  "style": "LOW_TECH",
+  "height": 117,
+  "width": 68,
+  "center": [34, 58.5],
+  "collisionRadius": 75,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 71,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-23, 8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-23, -9]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        9, -10.5,
+        8, 10.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-54.5, -20.5],
+      "length": 34,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-54.5, 20.5],
+      "length": 34,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-55, -0],
+      "length": 34,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    38, -14,
+    58, -18,
+    58.5, -25.5,
+    37, -26,
+    1, -33,
+    -42.5, -34,
+    -60, -26,
+    -60, 26,
+    -42.5, 34,
+    1, 33,
+    37, 26,
+    58.5, 25.5,
+    58, 18,
+    38, 14
+  ]
+}

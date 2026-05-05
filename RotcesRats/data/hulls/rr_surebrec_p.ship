@@ -1,0 +1,119 @@
+{
+  "hullName": "Surebrec MK.II",
+  "hullId": "rr_surebrec_p",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/rr_Surebrec_p.png",
+  "style": "LOW_TECH",
+  "height": 124,
+  "width": 84,
+  "center": [42, 59],
+  "collisionRadius": 98,
+  "shieldCenter": [8, -0],
+  "shieldRadius": 87,
+  "viewOffset": 0,
+  "builtInMods": [
+    "unstable_injector",
+    "rugged"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [16, 20]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [16, -20]
+    },
+    {
+      "id": "WS 003",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [45, -0]
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 290,
+      "angle": 150,
+      "locations": [-31.5, 17]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [35, -30]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-56, 25],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-51, 32],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-41, -26],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-53, -14],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-58, -0],
+      "length": 55.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -56, -0,
+    -47, 37,
+    -25, 37,
+    -14, 30,
+    6, 37,
+    43, 36,
+    59, 16,
+    59, -15,
+    29, -38,
+    -37, -31
+  ]
+}

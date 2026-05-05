@@ -1,0 +1,54 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 24,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "ora_revelation",
+    "hullMods": [
+        "targetingunit",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_revelation_artillery",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_invocation"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "ora_eschewal"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_eschewal",
+                "WS0004": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "heatseeker",
+                "WS0008": "heatseeker",
+                "WS0009": "heatseeker",
+                "WS0010": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "ora_choir",
+                "WS0006": "ora_choir",
+                "WS0011": "ora_choir",
+                "WS0012": "ora_choir"
+            }
+        }
+    ]
+}

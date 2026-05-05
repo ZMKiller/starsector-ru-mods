@@ -1,0 +1,50 @@
+{
+  "variantId": "rr_buffaloeq_assault",
+  "hullId": "rr_buffaloeq",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 15,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "frontshield",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "irpulse",
+        "WS 005": "lightag"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "swarmer",
+        "WS 007": "swarmer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "mininglaser",
+        "WS 002": "lightdualmg",
+        "WS 003": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

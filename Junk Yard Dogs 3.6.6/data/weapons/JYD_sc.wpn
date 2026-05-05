@@ -1,0 +1,53 @@
+{
+  "id": "JYD_sc",
+  "specClass": "projectile",
+  "projectileSpecId": "hveldriver_shot",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "turretSprite": "graphics/weapons/JYD_sc_turret_base.png",
+  "turretGunSprite": "graphics/weapons/JYD_sc_turret_barrel.png",
+  "hardpointSprite": "graphics/weapons/JYD_sc_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/weapons/JYD_sc_hardpoint_barrel.png",
+  "glowColor": [
+    190,
+    194,
+    203,
+    255
+  ],
+  "visualRecoil": 5,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    10.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    15,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 38,
+    "spread": 6,
+    "particleSizeMin": 5,
+    "particleSizeRange": 9,
+    "particleDuration": 0.55,
+    "particleCount": 7,
+    "particleColor": [
+      190,
+      194,
+      203,
+      255
+    ]
+  },
+  "fireSoundTwo": "hephaestus_fire"
+}

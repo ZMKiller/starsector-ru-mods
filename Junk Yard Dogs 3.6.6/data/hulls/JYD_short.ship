@@ -1,0 +1,176 @@
+{
+  "hullName": "Short",
+  "hullId": "JYD_short",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/JYD_short.png",
+  "style": "LOW_TECH",
+  "height": 86,
+  "width": 68,
+  "center": [33.5, 45],
+  "collisionRadius": 60.5,
+  "shieldCenter": [0.5, -0],
+  "shieldRadius": 57,
+  "viewOffset": 0,
+  "builtInMods": [
+    "repair_gantry"
+  ],
+  "builtInWings": [
+    "JYD_Termite_wing",
+    "JYD_Termite_wing",
+    "JYD_gnat_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 203,
+      "angle": 0,
+      "locations": [-8, 0.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [33, -19.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -12, 21,
+        14, 20
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -12, 17.5,
+        14, 17
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -12, 14.5,
+        14, 15
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-43, 19],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-43, -20],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-34.5, -32],
+      "length": 12.321676,
+      "width": 5.718844,
+      "angle": -148.5,
+      "contrailSize": 5.718844,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-34.5, 30.5],
+      "length": 12.321676,
+      "width": 5.718844,
+      "angle": 148.5,
+      "contrailSize": 5.718844,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-21.5, 31],
+      "length": 5.5,
+      "width": 3,
+      "angle": 90,
+      "contrailSize": 3,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-27, -33.5],
+      "length": 12.321676,
+      "width": 5.718844,
+      "angle": -148.5,
+      "contrailSize": 5.718844,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-26.5, 31.5],
+      "length": 12.321676,
+      "width": 5.718844,
+      "angle": 148.5,
+      "contrailSize": 5.718844,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-21.5, -32],
+      "length": 5.5,
+      "width": 3,
+      "angle": -90,
+      "contrailSize": 3,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-17.5, 31],
+      "length": 5.5,
+      "width": 3,
+      "angle": 90,
+      "contrailSize": 3,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-17.5, -32],
+      "length": 5.5,
+      "width": 3,
+      "angle": -90,
+      "contrailSize": 3,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    40, -8,
+    36.5, -32.5,
+    6, -33.5,
+    -27.5, -35.5,
+    -44, -31.5,
+    -49.5, -17,
+    -42.5, -8,
+    -42.5, 8,
+    -49.5, 17,
+    -44, 31.5,
+    -27.5, 35.5,
+    6, 33.5,
+    36.5, 32.5,
+    40, 8
+  ]
+}

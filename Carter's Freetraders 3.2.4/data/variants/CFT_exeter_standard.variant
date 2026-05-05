@@ -1,0 +1,45 @@
+{
+  "variantId": "CFT_exeter_standard",
+  "hullId": "CFT_exeter",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_cargo_holds",
+    "fluxdistributor",
+    "hiressensors",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_pdwburst",
+        "WS0002": "CFT_pdwburst",
+        "WS0003": "CFT_pdwburst",
+        "WS0004": "CFT_pdwburst",
+        "WS0005": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "CFT_culverin",
+        "WS0007": "CFT_culverin",
+        "WS0008": "CFT_culverin",
+        "WS0009": "CFT_culverin",
+        "WS0010": "CFT_culverin"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "mining_drone_wing",
+    "mining_drone_wing"
+  ]
+}

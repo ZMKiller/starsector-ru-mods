@@ -1,0 +1,17 @@
+{
+    "id":"SCY_targeting",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"org.scy.shipsystems.ai.SCY_targetingAI",
+    "statsScript":"org.scy.shipsystems.SCY_targetingStats",
+
+    "runScriptWhileIdle":true,
+    "useSound":"SCY_ping",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+        "activeSpeedIncrease":0,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":0,
+    }
+}

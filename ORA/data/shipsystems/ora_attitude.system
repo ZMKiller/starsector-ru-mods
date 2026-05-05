@@ -1,0 +1,27 @@
+{
+	"id":"ora_attitude",
+	"type":"ENGINE_MOD",
+	"aiType":"MANEUVERING_JETS",
+	#"aiType":"BURN_DRIVE_TOGGLE",
+	
+	"statsScript":"data.shipsystems.scripts.ORA_attitudeStats",
+	
+	"engineGlowLengthMult":1,
+	"engineGlowWidthMult":1.5,
+	"engineGlowGlowMult":1.5,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":false,
+	"clampMaxSpeedAfter":false,
+
+	"useSound":"system_maneuvering_jets",
+	"loopSound":"system_maneuvering_jets_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":100,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":100,
+	}
+}

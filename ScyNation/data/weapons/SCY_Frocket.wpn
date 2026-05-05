@@ -1,0 +1,39 @@
+{
+	"id":"SCY_Frocket",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"SMALL",
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"hardpointOffsets":[
+21, -2.5,
+21, 2.5, 
+18, -1.5,
+18, 1.5
+],
+	"turretOffsets":[
+15, -2.5,
+15, 2.5,
+12, -1.5,
+12, 1.5
+],
+	"hardpointAngleOffsets":[-5, 2, -2, 5],
+	"turretAngleOffsets":[-5, 2, -2, 5],
+	"barrelMode":"ALTERNATING",	
+	"animationType":"SMOKE",
+	"interruptibleBurst":false,
+	"autocharge":true,
+	"displayArcRadius":500,
+	"smokeSpec":{"particleSizeMin":10.0,
+                    "particleSizeRange":14.0,
+                    "cloudParticleCount":2,
+                    "cloudDuration":0.5,
+                    "cloudRadius":12.0;
+                    "blowbackParticleCount":4,
+                    "blowbackDuration":1.5,
+                    "blowbackLength":-20.0,
+                    "blowbackSpread":6.0,
+                    "particleColor":[190,180,160,60]},
+	"projectileSpecId":"SCY_rocketS",	
+	"fireSoundTwo":"SCY_rocket",
+}

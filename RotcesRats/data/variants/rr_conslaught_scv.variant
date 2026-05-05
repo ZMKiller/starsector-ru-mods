@@ -1,0 +1,82 @@
+{
+  "variantId": "rr_conslaught_scv",
+  "hullId": "rr_conslaught",
+  "displayName": "Scavenged",
+  "goalVariant": true,
+  "fluxCapacitors": 23,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "rr_d-tpc"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "squall"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "hurricane",
+        "WS 006": "harpoonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "hephag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "heavyac",
+        "WS 009": "ionbeam",
+        "WS 010": "hveldriver",
+        "WS 014": "taclaser",
+        "WS 018": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "devastator",
+        "WS 011": "flak",
+        "WS 012": "flak",
+        "WS 013": "dualflak",
+        "WS 015": "vulcan",
+        "WS 016": "lightdualmg",
+        "WS 017": "lrpdlaser",
+        "WS 019": "lightdualmg",
+        "WS 020": "lrpdlaser",
+        "WS 021": "vulcan",
+        "WS 022": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,132 @@
+{
+  "bounds": [
+    29.5,
+    -6.5,
+    16.5,
+    -21.5,
+    -20.5,
+    -25.5,
+    -31,
+    -15.5,
+    -31,
+    15.5,
+    -20.5,
+    25.5,
+    16.5,
+    21.5,
+    29.5,
+    6.5
+  ],
+  "builtInMods": ["auxiliarythrusters"],
+  "builtInWeapons": {
+    "Thruster01": "edshipyard_thruster",
+    "Thruster02": "edshipyard_thruster",
+    "WS0001": "edshipyard_Plink"
+  },
+  "center": [
+    27,
+    33
+  ],
+  "collisionRadius": 38.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 29,
+      "location": [
+        -26,
+        20
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 29,
+      "location": [
+        -26,
+        -20
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 29,
+      "location": [
+        -31.5,
+        14
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 29,
+      "location": [
+        -31.5,
+        -14
+      ],
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD",
+      "width": 8
+    }
+  ],
+  "height": 66,
+  "hullId": "edshipyard_chihuahua_doppel",
+  "hullName": "Чихуахуа",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 37.5,
+  "spriteName": "graphics/ships/edshipyard_chihuahua.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "Thruster01",
+      "locations": [
+        18,
+        -17
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "Thruster02",
+      "locations": [
+        18,
+        17
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        27,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 54
+}

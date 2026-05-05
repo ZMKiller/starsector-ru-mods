@@ -1,0 +1,19 @@
+{
+	"id":"HWI_FlameThrower_Shot",
+	"specClass":"projectile",
+	"onFireEffect":"data.weapons.scripts.proj.HWIFlameThrowerEffect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":11.0,
+	"width":1.0,
+	"hitGlowRadius":0,
+	"fadeTime":0.01,
+	"fringeColor":[255,211,0,100],
+	"coreColor":[255,255,0,100],
+	#"coreColor":[255,255,255,50],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0
+	
+}

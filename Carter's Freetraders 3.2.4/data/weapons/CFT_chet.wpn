@@ -1,0 +1,53 @@
+{
+  "id": "CFT_chet",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_chet_missile",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "displayArcRadius": 1000,
+  "turretSprite": "graphics/CFT/weapons/CFT_chet_turret_base.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_chet_hardpoint_base.png",
+  "turretOffsets": [
+    11.5,
+    0,
+    11.5,
+    -3.5,
+    11.5,
+    3.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    -5,
+    5
+  ],
+  "hardpointOffsets": [
+    15.5,
+    3.5,
+    15.5,
+    0,
+    15.5,
+    -3.5
+  ],
+  "hardpointAngleOffsets": [
+    5,
+    0,
+    -5
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 5,
+    "spread": 10,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [
+      255,
+      155,
+      55,
+      255
+    ]
+  },
+  "fireSoundTwo": "harpoon_fire"
+}

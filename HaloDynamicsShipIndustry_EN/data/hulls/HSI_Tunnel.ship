@@ -1,0 +1,55 @@
+{
+    "hullName": "Tunnel",
+    "hullId": "HSI_Tunnel",
+    "hullSize": "FIGHTER",
+    "style": "HSI_TECH",
+    "spriteName": "graphics/missiles/HWI_Wingman_M.png",
+    "height": 44,
+    "width": 44,
+    "center": [
+        22, 22
+    ],
+    "collisionRadius": 15.5,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 14.5,
+    "viewOffset": 0,
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS0001",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      -1,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -12.5, 0
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "OMEGA"
+        }
+    ],
+    "bounds": [
+              14,       -1,
+              -4,       -4,
+             -12,       -1,
+             -12,        1,
+              -4,        4,
+        
+              14,        1
+    ]
+}

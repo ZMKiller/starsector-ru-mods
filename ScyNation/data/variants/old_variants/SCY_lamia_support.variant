@@ -1,0 +1,37 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "SCY_lamia",
+    "hullMods": ["hardenedshieldemitter"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "SCY_lamia_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_lvds",
+                "WS0002": "SCY_lvds"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "SCY_arcSmall",
+                "WS0006": "SCY_arcSmall"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SCY_hack",
+                "WS0004": "SCY_hack"
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+  "variantId": "CFT_jacht_standard",
+  "hullId": "CFT_jacht",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "additional_berthing",
+    "fluxdistributor",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_pdwburst",
+        "WS0002": "CFT_pdwburst",
+        "WS0007": "CFT_pdwburst",
+        "WS0008": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "CFT_fogger",
+        "WS0004": "CFT_fogger",
+        "WS0005": "CFT_fogger",
+        "WS0006": "CFT_fogger"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

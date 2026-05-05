@@ -1,0 +1,60 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "module_midline_support",
+    "hullMods": [
+        "heavyarmor",
+        "hardenedshieldemitter",
+        #"SCY_reactiveArmor",
+        "eccm",
+        "reinforcedhull",
+        "stabilizedshieldemitter",
+        "fluxcoil",
+        "fluxdistributor",
+        "armoredweapons",
+        "autorepair",
+        "blast_doors",
+        "turretgyros",
+        "magazines",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_module_midline_support_battlestation",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "SCY_kacc2",
+                "WS 002": "SCY_kacc2"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "SCY_arc",
+                "WS 003": "SCY_arc"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "SCY_intercept",
+                "WS 005": "SCY_intercept",
+                "WS 006": "SCY_intercept",
+                "WS 007": "SCY_intercept",
+                "WS 008": "SCY_intercept",
+                "WS 009": "SCY_intercept"
+            }
+        }
+    ],
+    "wings": [
+        "SCY_ker_wing",
+        "SCY_ker_wing",
+        "SCY_nosos_wing",
+        "SCY_nosos_wing"
+    ]
+}

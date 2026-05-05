@@ -1,0 +1,431 @@
+{
+    id:"ORA",
+
+    #"color":[75,50,200,255],
+    "color":[75,60,150,255],
+    #"baseUIColor":[255,200,10,255],
+    "baseUIColor":[105,90,180,255],
+    "darkUIColor":[60,30,5,255],
+    "gridUIColor":[75,50,10,155],
+
+    "secondaryUIColor":[255,150,10,255],
+    "secondarySegments":8,
+
+    "displayName":"O.R.A.",
+    "displayNameWithArticle":"the Alliance",
+
+    "displayNameLong":"Outer Rim Alliance",
+    "displayNameLongWithArticle":"the Outer Rim Alliance",
+    "personNamePrefixAOrAn":"an",
+    "displayNameIsOrAre":"is",
+	
+    "logo":"graphics/ORA/factions/ora_flag.png",	
+    "crest":"graphics/ORA/factions/ora_crest.png",
+
+    "shipNamePrefix":"ANS",	
+    "shipNameSources":{
+                "ORA":10,
+		"MERCANTILE":1,
+		"SPACE":1,
+		"GENERAL":1,
+    },	
+
+    "names":{
+            "modern":1,
+            "world":1,
+            "future":1,
+            "myth":1,
+    },    
+
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+    "variantOverrides":{
+    },
+
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "tags":{"ora_bp":1,"ora_adv_bp":0.5
+        },
+        "hulls":{
+            "gremlin":0,
+            "ora_enlightenment":1,
+            "ora_discernment":0.5,
+
+            "ora_beatitude":1,
+            "ora_revelation":0.5,
+            "ora_elevation":1,
+            "ora_felicity":1,
+
+            "ora_harmony":1,
+            "ora_grace":0.5,
+            "ora_sanctuary":1,
+            "ora_communion":1,
+
+            "ora_bliss":1,
+            "ora_mirth":1,
+            "ora_ascension":0.5,
+
+            "aurora":0.20,
+            "fury":0.20,
+            "astral":0.20,
+            "atlas":0.20,
+            "scarab":0.20,
+            "odyssey":0.20,
+            "doom":0.20,
+            "afflictor":0.20,
+            "prometheus":0.20,
+            "buffalo_tritachyon":0.20,
+            "hyperion":0.20,
+            "brawler_tritachyon":0.20,
+            "omen":0.20,
+            "shade":0.20,
+            "medusa":0.20,
+            "paragon":0.20,
+            "tempest":0.20,
+            "harbinger":0.20,
+        },
+    },
+	
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":[],
+        "hulls":[
+		],
+    },
+
+    "knownShips":{
+        "tags":[
+            #"base_bp", 
+            #"hightech_bp", 
+            #"tritachyon", 
+            "ora_bp", 
+            "ora_adv_bp"],
+        "hulls":[
+            "ora_enlightenment",
+            "ora_discernment",
+
+            "ora_beatitude",
+            "ora_revelation",
+            "ora_elevation",
+            "ora_felicity",
+
+            "ora_harmony",
+            "ora_grace",
+            "ora_sanctuary",
+            "ora_communion",
+
+            "ora_bliss",
+            "ora_mirth",
+            "ora_ascension",
+
+
+            "aurora",
+            "astral",
+            "atlas",
+            "scarab",
+            "odyssey",
+            "doom",
+            "afflictor",
+            "prometheus",
+            "buffalo_tritachyon",
+            "hyperion",
+            "brawler_tritachyon",
+            "omen",
+            "shade",
+            "medusa",
+            "paragon",
+            "tempest",
+            "harbinger",
+        ],
+    },
+
+    # listing ships here will make the faction mostly use them even if other hulls become available
+    "priorityShips":{
+        "tags":["ora_bp", "ora_adv_bp"],
+        "hulls":[
+            "ora_enlightenment",
+            "ora_discernment",
+
+            "ora_beatitude",
+            "ora_revelation",
+            "ora_elevation",
+            "ora_felicity",
+
+            "ora_harmony",
+            "ora_grace",
+            "ora_sanctuary",
+            "ora_communion",
+
+            "ora_bliss",
+            "ora_mirth",
+            "ora_ascension",
+        ],
+    },
+
+    "knownFighters":{
+        "tags":[
+            #"hightech_bp", 
+            "ora_wep_bp"],
+        "fighters":[
+            "ora_fervor_wing",
+            "ora_allure_wing",
+            "ora_wisdom_wing",
+            "ora_awareness_wing",
+
+            "xyphos_wing",
+            "claw_wing",
+            "trident_wing",
+            "cobra_wing",
+            "dagger_wing",
+        ],
+    },
+
+    "priorityFighters":{
+        "tags":["ora_wep_bp"],
+        "fighters":[
+            "ora_fervor_wing",
+            "ora_allure_wing",
+            "ora_wisdom_wing",
+            "ora_awareness_wing",
+        ],
+    },
+
+    "knownWeapons":{
+        "tags":[
+            #"base_bp",
+            #"missile_bp",
+            #"tritachyon",
+            #"hightech_bp",
+            "ora_wep_bp"],
+        "weapons":[
+            "ora_choir",
+            "ora_litany",
+            "ora_recital",
+            "ora_animus",
+            "ora_eschewal",
+            "ora_echoes",
+            "ora_prayer",
+            "ora_invocation",
+            "ora_sempiternal",
+            "ora_calling",
+            "ora_incantation",
+
+            "reaper",
+            "atropos",
+            "swarmer",
+            "heatseeker",
+            "harpoon",
+            "sabot",
+            "harpoonpod",
+            "sabotpod",
+            "salamanderpod",
+            "annihilatorpod",
+            "pilum",
+            "phasecl",
+            "typhoon",
+            "cyclone",
+            "hurricane",
+            "squall",
+            "locust",
+            "pdlaser",
+            "taclaser",
+            "ioncannon",
+            "irpulse",
+            "lrpdlaser",
+            "pdburst",
+            "amblaster",
+            "phasebeam",
+            "gravitonbeam",
+            "pulselaser",
+            "heavyblaster",
+            "heavyburst",
+            "ionpulser",
+            "ionbeam",
+            "plasma",
+            "hil",
+            "autopulse",
+            "guardian",
+            "tachyonlance",
+        ],
+    },
+
+    "priorityWeapons":{
+        "tags":["ora_wep_bp"],
+        "weapons":[
+            "ora_choir",
+            "ora_litany",
+            "ora_recital",
+            "ora_animus",
+            "ora_eschewal",
+            "ora_echoes",
+            "ora_prayer",
+            "ora_invocation",
+            "ora_sempiternal",
+            "ora_calling",
+            "ora_incantation",
+        ],
+    },
+
+    "knownHullMods":{
+        "tags":["base_bp", "tritachyon"],
+        "hullMods":[
+            "advancedshieldemitter", # accelerated
+            "advancedoptics",
+            "turretgyros",
+            "augmentedengines",
+            "eccm",
+            "ecm",
+            "expanded_deck_crew",
+            "magazines",
+            "missleracks",
+            "extendedshieldemitter",
+            "frontemitter",
+            "frontshield",  # makeshift
+            "hardenedshieldemitter",
+            "insulatedengine",
+            "pointdefenseai",
+            "targetingunit",
+            "nav_relay",
+            "adaptiveshields", # omni
+            "operations_center",
+            "fluxbreakers",
+            "stabilizedshieldemitter",
+            "hiressensors",
+            "efficiency_overhaul",
+        ],
+    },
+
+    "factionDoctrine":{
+        "warships":4,
+        "carriers":2,
+        "phaseShips":0,
+
+        "officerQuality":2,
+        "shipQuality":2,
+        "numShips":3,
+
+        "shipSize":4,
+        "aggression":2,
+
+        "combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
+        "combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+        "combatFreighterCombatUseFractionWhenPriority":0.33,# as part of normal combat lineup, when marked as priority ship
+        "autofitRandomizeProbability":0.1,
+
+        "commanderSkillsShuffleProbability":0.5,
+        "commanderSkills":[
+			"coordinated_maneuvers",
+			"electronic_warfare",
+			"fighter_uplink",
+			"carrier_group",
+			"flux_regulation",
+        ],
+    },
+
+
+    "illegalCommodities":[
+        "organs",
+        "hand_weapons",
+        "ai_cores",	
+    ],	
+	
+	"portraits":{
+        "standard_male":[
+                    "graphics/ORA/portraits/ora_male1.png",
+                    "graphics/ORA/portraits/ora_male2.png",
+                    "graphics/ORA/portraits/ora_male3.png",
+                    "graphics/ORA/portraits/ora_male4.png",
+                    "graphics/portraits/portrait12.png",
+                    "graphics/portraits/portrait13.png",
+                    "graphics/portraits/portrait15.png",
+                    "graphics/portraits/portrait17.png",
+                    "graphics/portraits/portrait18.png",
+                    "graphics/portraits/portrait20.png",
+                    "graphics/portraits/portrait23.png",
+                    "graphics/portraits/portrait25.png",
+                    "graphics/portraits/portrait26.png",
+                    "graphics/portraits/portrait30.png",
+                    "graphics/portraits/portrait31.png",
+                    "graphics/portraits/portrait33.png",
+                    "graphics/portraits/portrait34.png",
+                    "graphics/portraits/portrait35.png",
+                    "graphics/portraits/portrait36.png",
+                    "graphics/portraits/portrait38.png",
+                    "graphics/portraits/portrait40.png",
+		],
+		"standard_female":[
+                    "graphics/ORA/portraits/ora_female1.png",
+                    "graphics/ORA/portraits/ora_female2.png",
+                    "graphics/ORA/portraits/ora_female3.png",
+                    "graphics/ORA/portraits/ora_female4.png",
+                    "graphics/portraits/portrait16.png",
+                    "graphics/portraits/portrait21.png",
+                    "graphics/portraits/portrait22.png",
+                    "graphics/portraits/portrait24.png",
+                    "graphics/portraits/portrait27.png",
+                    "graphics/portraits/portrait28.png",
+                    "graphics/portraits/portrait29.png",
+                    "graphics/portraits/portrait32.png",
+                    "graphics/portraits/portrait34.png",
+                    "graphics/portraits/portrait37.png",
+                    "graphics/portraits/portrait39.png",
+		],
+    },
+	
+    "music":{
+            "theme":"ora_market_interaction_neutral",
+
+            "market_neutral":"ora_market_interaction_neutral",
+            "market_hostile":"ora_market_interaction_hostile",
+            "market_friendly":"ora_market_interaction_friendly",
+
+            "encounter_neutral":"ora_market_interaction_neutral",
+            "encounter_hostile":"ora_market_interaction_hostile",
+            "encounter_friendly":"ora_market_interaction_friendly",
+    },
+	
+    "internalComms":"ora_internal",
+
+    "ranks":{
+        "ranks":{
+            "spaceCommander":{"name":"Chief Supervisor"},
+        },
+        "posts":{
+            "patrolCommander":{"name":"Patrol Supervisor"},
+            "fleetCommander":{"name":"Fleet Supervisor"},
+            "baseCommander":{"name":"Base Supervisor"},
+        },
+    },
+
+    "custom":{
+        "offersCommissions":true,
+        "engagesInHostilities":true,
+        "buysAICores":true,
+        "AICoreValueMult":2,
+        "AICoreRepMult":1,
+        "buysSurveyData":true,
+        "hostilityImpactOnGrowth":true,
+        "punitiveExpeditionData":{
+            "vsCompetitors":false,
+            "vsFreePort":false,
+            "canBombard":false,
+            "territorial":true,
+        },
+    },
+
+    "fleetTypeNames":{
+        "trade":"Commerce Fleet",
+
+        "tradeLiner":"Edges Tours Flight",
+        "tradeSmuggler":"Unlicensed Convoy",
+        "smallTrader":"Logistic Convoy",
+
+        "patrolSmall":"Peacekeeping Patrol",
+        "patrolMedium":"Task Force",
+        "patrolLarge":"Retaliation Fleet",
+
+        "inspectionFleet":"Reconstruction Inspector",
+        "taskForce":"Operation Fleet",
+
+        "foodReliefFleet":"Relief Convoy",
+    },
+},

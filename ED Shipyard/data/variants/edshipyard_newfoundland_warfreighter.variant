@@ -1,0 +1,72 @@
+{
+  "displayName": "Боевой грузовик",
+  "fluxCapacitors": 12,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "edshipyard_newfoundland",
+  "hullMods": [
+    "reinforcedhull",
+    "heavyarmor",
+    "missleracks",
+  ],
+  "modules": [
+    {
+      "SEGMENT5": "edshipyard_newfoundland_combatfreighter_standard"
+    },
+    {
+      "SEGMENT4": "edshipyard_newfoundland_combatfreighter_standard"
+    },
+    {
+      "SEGMENT3": "edshipyard_newfoundland_combatfreighter_standard"
+    },
+    {
+      "SEGMENT2": "edshipyard_newfoundland_combatfreighter_standard"
+    },
+    {
+      "SEGMENT1": "edshipyard_newfoundland_combatfreighter_standard"
+    }
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "edshipyard_newfoundland_warfreighter",
+  "weaponGroups": [
+    {
+        "autofire": false,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0007": "edshipyard_4_Dust",
+            "WS0005": "edshipyard_2_Dust",
+            "WS0006": "edshipyard_2_Dust"
+        }
+    },
+    {
+        "autofire": false,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0008": "edshipyard_1_Dust",
+            "WS0009": "edshipyard_1_Dust",
+            "WS0010": "edshipyard_1_Dust",
+            "WS0011": "edshipyard_1_Dust"
+        }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0002": "edshipyard_GS3",
+            "WS0003": "edshipyard_GS3"
+        }
+    },
+    {
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "edshipyard_SC2",
+            "WS0004": "edshipyard_SC2"
+        }
+    }
+  ],
+  "wings": [
+    "edshipyard_affenpinscher_wing"
+  ]
+}

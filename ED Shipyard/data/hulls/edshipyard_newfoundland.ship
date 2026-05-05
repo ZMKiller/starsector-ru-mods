@@ -1,0 +1,313 @@
+{
+  "hullName": "Ньюфаундленд",
+  "hullId": "edshipyard_newfoundland",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/edshipyard_newfoundland.png",
+  "style": "HIGH_TECH",
+  "height": 350,
+  "width": 176,
+  "center": [88, 31],
+  "collisionRadius": 1000,
+  "shieldCenter": [236, -0],
+  "shieldRadius": 148,
+  "viewOffset": 0,
+  "builtInMods": [
+    "edshipyard_train_locomotive",
+    "advancedcore",
+    "edshipyard_small_drone_hangar"
+  ],
+  "builtInWeapons": {
+    "Stage1A": "edshipyard_steam",
+    "Stage1B": "edshipyard_steam",
+    "Stage2A": "edshipyard_steam",
+    "Stage2B": "edshipyard_steam"
+  },
+  "weaponSlots": [
+    {
+      "id": "SEGMENT1",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-11, -0]
+    },
+    {
+      "id": "SEGMENT2",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-233, -0]
+    },
+    {
+      "id": "SEGMENT3",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-455, -0]
+    },
+    {
+      "id": "SEGMENT4",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-677, -0]
+    },
+    {
+      "id": "SEGMENT5",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-899, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": 90,
+      "locations": [27, 53]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": -90,
+      "locations": [27, -53]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": 90,
+      "locations": [82.5, 46.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 112,
+      "angle": -90,
+      "locations": [82.5, -46.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 0,
+      "locations": [205.5, 42.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": -0,
+      "locations": [205.5, -42.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [299.5, -0]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 135,
+      "locations": [114, 20]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -135,
+      "locations": [114, -20]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -135,
+      "locations": [158, -20]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 135,
+      "locations": [158, 20]
+    },
+    {
+      "id": "Stage1B",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -119.5,
+      "locations": [85.5, -84.5]
+    },
+    {
+      "id": "Stage1A",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 119.5,
+      "locations": [85.5, 84.5]
+    },
+    {
+      "id": "Stage2B",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -120,
+      "locations": [17.5, -86]
+    },
+    {
+      "id": "Stage2A",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 120,
+      "locations": [17.5, 86]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        60.5, -0,
+        82, -0
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [249, 78],
+      "length": 50,
+      "width": 30,
+      "angle": 145,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [249, -78],
+      "length": 50,
+      "width": 30,
+      "angle": -145,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [205, 78],
+      "length": 50,
+      "width": 30,
+      "angle": 145,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [205, -78],
+      "length": 50,
+      "width": 30,
+      "angle": -145,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [161, 78],
+      "length": 50,
+      "width": 30,
+      "angle": 145,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    },
+    {
+      "location": [161, -78],
+      "length": 50,
+      "width": 30,
+      "angle": -145,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "ED_SHIPYARD"
+    }
+  ],
+  "bounds": [
+    316.5, -21,
+    316, -37.5,
+    302, -57.5,
+    263.5, -83.5,
+    251.5, -84,
+    244.5, -72,
+    220, -83,
+    207.5, -85.5,
+    201, -72.5,
+    175.5, -82,
+    166.5, -84,
+    159, -73.5,
+    163, -64,
+    133, -67,
+    88.5, -83.5,
+    47.5, -86.5,
+    -18.5, -82,
+    -27.5, -49.5,
+    -27.5, 49.5,
+    -18.5, 82,
+    47.5, 86.5,
+    88.5, 83.5,
+    133, 67,
+    163, 64,
+    159, 73.5,
+    166.5, 84,
+    175.5, 82,
+    201, 72.5,
+    207.5, 85.5,
+    220, 83,
+    244.5, 72,
+    251.5, 84,
+    263.5, 83.5,
+    302, 57.5,
+    316, 37.5,
+    316.5, 21
+  ]
+}

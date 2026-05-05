@@ -1,0 +1,638 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME HSI,,,,,,
+,,,,,,
+# greetings,,,,,,
+greetingHSIFriendly,OpenCommLink,"$faction.id == HSI
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","«$personRank приветствует вас, друг.»
+OR
+«Не ожидал встретить вас здесь, друг.»",,
+greetingHSIHostileWeaker,OpenCommLink,"$faction.id == HSI
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"«Продолжение враждебности к Halo Dynamics плохо закончится, капитан. Надеюсь, вы все обдумали.» $personRank обрывает связь, и флот, похоже, намерен отступить.
+OR
+«От имени Halo Dynamics я требую прекратить боевые действия, капитан.» Вы замечаете, что флот $heOrShe пытается отойти.",cutCommLink:Оборвать связь,
+greetingHSIHostileWeakerDefiant,OpenCommLink,"$faction.id == HSI
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"«Флот поддержки уже в пути. Теперь мы задержим вас любой ценой.» $personRank обрывает связь, оружие начинает заряжаться.
+OR
+«Мы не дрогнем.» $personRank обрывает канал связи. Вы фиксируете переход другой стороны в боевой режим.",cutCommLink:Оборвать связь,
+greetingHSIHostileStronger,OpenCommLink,"$faction.id == HSI
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"«Мы сокрушим все сущности, враждебные Совету.»
+OR
+«Совет санкционировал применение смертельной силы. Немедленно сдавайтесь.»",cutCommLink:Оборвать связь,
+greetingHSINeutral,OpenCommLink,"$faction.id == HSI
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","«Приветствую, звездоплаватель. Если больше ничего нет, у меня есть другие задачи.»
+",,
+relLevelNeutralHSI,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == HSI",,"Aura Dynamics не считает, что у вас есть что-то достойное их внимания.",,
+relLevelFavorableHSI,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == HSI",,Корабельная и оружейная промышленность предлагает вам некоторые обычные образцы.,,
+relLevelWelcomingHSI,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == HSI",,"Ваше имя появляется в отчете Совета, и корабельная и оружейная промышленность продаст вам часть слегка ограниченного вооружения.",,
+relLevelFriendlyHSI,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == HSI",,"Совет предоставил вам статус временного сотрудника, и вы пользуетесь большинством преимуществ работников Halo Dynamics.",,
+relLevelCooperativeHSI,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == HSI",,"Вы имеете право встретиться с Директором по предварительной записи. Это означает, что Совет принял вас - в Персейском секторе.",,
+relLevelSuspiciousHSI,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == HSI",,Слегка раздражающий наемник еще не повод для Halo Dynamics принимать меры.,,
+relLevelInhospitableHSI,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == HSI",,Корабельная и оружейная промышленность отказывается торговать с вами.,,
+relLevelHostileHSI,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == HSI",,Совет санкционировал применение против вас смертельной силы. Работать на территории Halo Dynamics будет сложно.,,
+relLevelVengefulHSI,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == HSI",,"Совет поручил Военному департаменту внести вас в список разыскиваемых. Похоже, для охоты на вас также выделен особый флот.",,
+flavorTextMarketHSINormal,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == HSI
+$market.id != HSI_SpaceBridge_Market","AddText ""The widespread leisure facilities, unknown energy networks and luxurious interior decor gives this place the ambiance of a vacation resort, but the scurrying starship cadets and captains shatter this facade."" marketFlavorTextColor
+AddText ""Heavily armed guards check your identification before escorting you to the market hall."" marketFlavorTextColor",,,
+flavorTextMarketHSISpaceBridge,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market","AddText ""The facility is almost entirely populated by scientists and guards, with the occasional visitor hoping to find good collaborators."" marketFlavorTextColor
+",,,
+convCommissionerGreetingRefuse,PickGreeting,"HSIPersonIdentityCheck PersonIsTheCommissioner
+!$global.HSITC0Finished
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowDefaultVisual","Попасть на прием к Директору непросто, и секретарь вежливо отклоняет вашу просьбу.",cutCommLink:Уйти,
+convCommissionerGreetingAccept,PickGreeting,"HSIPersonIdentityCheck PersonIsTheCommissioner
+$global.HSITC0Finished
+!$faction.HSIisTraitor
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowPersonVisual
+FireAll PopulateOptions","«Приветствую, капитан $playerName.»",,
+convCommissionerGreetingTraitor,PickGreeting,"HSIPersonIdentityCheck PersonIsTheCommissioner
+$global.HSITC0Finished
+$faction.HSIisTraitor
+!$faction.HSIforgiven
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowPersonVisual
+FireBest HSITraitor","«Приветствую, капитан $playerName. После устроенного вами беспорядка я думал, что вы не вернетесь.»",cutCommLink:Уйти,
+convCommissionerGreetingTraitor2,PickGreeting,"HSIPersonIdentityCheck PersonIsTheCommissioner
+$global.HSITC0Finished
+$faction.HSIisTraitor
+$faction.HSIforgiven
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowDefaultVisual","Никто не простит предательство дважды. Лучше уйдите сами, пока не пришли патрули.",cutCommLink:Уйти,
+barDesc_HSI,BarPrintDesc,$faction.id == HSI,ShowImageVisual space_bar,"Неизвестные энергетические сети сплетают на стенах бара различные узоры, явно декоративные. Освежители воздуха подавляют множество странных запахов, а сам бар выполнен неброско, но роскошно. Здесь есть и люди, похожие на руководителей, и космонавты с офицерами, говорящие вполголоса.",,
+,,,,,,
+#END greetings,,,,,,
+#Traitor,,,,,,
+HSITraitor0,HSITraitor,,,,"HSITraitorTryToDeal1:«Я тоже не хотел, чтобы все стало настолько уродливо.»",
+HSITraitor1_1,DialogOptionSelected,"$option == HSITraitorTryToDeal1
+!$faction.HSIFLLostToPlayer",,"«Что вы имеете в виду под тем, что не хотели доводить до уродства, капитан $playerName? Нападение на активы Halo Dynamics - серьезное преступление, особенно для партнера, которому мы предоставляли привилегии.»","HSITraitorTryToDeal2:«Возможно, я могу принести еще больше прибыли.»",
+HSITraitor1_2,DialogOptionSelected,"$option == HSITraitorTryToDeal1
+$faction.HSIFLLostToPlayer",,"«Что вы имеете в виду под тем, что не хотели доводить до уродства, капитан $playerName? Нападение на активы Halo Dynamics - серьезное преступление, особенно для партнера, которому мы предоставляли привилегии, не говоря уже о потоплении дредноута.»","HSITraitorTryToDeal2:«Возможно, я могу принести еще больше прибыли.»",
+HSITraitor2,DialogOptionSelected,$option == HSITraitorTryToDeal2,FireAll HSITraitorDealTurnOffOptions,"Вам почти кажется, что вы слышите смех, но, возможно, это лишь воображение. «Насколько больше прибыли?»","HSITraitorDeal1:«1 000 000 кредитов.»
+HSITraitorDeal2:«5 000 000 кредитов.»
+HSITraitorDeal3:«10 000 000 кредитов.»
+cutCommLink:Уйти",
+HSITraitor3_1,DialogOptionSelected,$option == HSITraitorDeal1,FireAll HSITraitorDealTurnOffOptions,"«Вам стоит быть искреннее, капитан $playerName.»","HSITraitorDeal2:«5 000 000 кредитов.»
+HSITraitorDeal3:«10 000 000 кредитов.»
+cutCommLink:Уйти",
+HSITraitor3_2,DialogOptionSelected,"$option == HSITraitorDeal2
+!$faction.HSIFLLostToPlayer",HSISetPerson RemoveTraitor,«5 000 000 кредитов. Сделка.»,cutCommLink:Уйти,
+HSITraitor3_3,DialogOptionSelected,"$option == HSITraitorDeal2
+$faction.HSIFLLostToPlayer",FireAll HSITraitorDealTurnOffOptions,"«Этого могло бы хватить. Но этого недостаточно, чтобы покрыть дредноут. Капитан $playerName, это отдельная цена.»","HSITraitorDeal3:«10 000 000 кредитов.»
+cutCommLink:Уйти",
+HSITraitor3_4,DialogOptionSelected,$option == HSITraitorDeal3,HSISetPerson RemoveTraitor,«10 000 000 кредитов. Сделка.»,cutCommLink:Уйти,
+,,,,,,
+,,,,,,
+HSITraitorTurnOff1M,HSITraitorDealTurnOffOptions,$player.credits < 1000000,SetEnabled HSITraitorDeal1 false,,,
+HSITraitorTurnOff5M,HSITraitorDealTurnOffOptions,$player.credits < 5000000,SetEnabled HSITraitorDeal2 false,,,
+HSITraitorTurnOff10M,HSITraitorDealTurnOffOptions,$player.credits < 10000000,SetEnabled HSITraitorDeal3 false,,,
+,,,,,,
+#StellaArena,,,,,,
+HSISA_First,PopulateOptions,"$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$global.HSITC0Finished
+!$global.HSISA_FCFinished
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner",,,HSISA_FC:Спросить Директора о природе этого подробного симуляционного дисплея.,
+HSISA_FC0,DialogOptionSelected,$option == HSISA_FC,ShowPersonVisual,"«Он работает на тех же принципах, что и система в Академии Sagitta, позволяя пользователям сражаться с симулированными врагами.»",HSISA_FC1:Можно мне им воспользоваться?,
+HSISA_FC1,DialogOptionSelected,$option == HSISA_FC1,,«Разумеется. Считайте это одним из преимуществ работы с нами. Покажете хороший результат - я даже добавлю забавные награды.»,HSISA_FC3:Интересно.,
+HSISA_FC3,DialogOptionSelected,$option == HSISA_FC3,"$global.HSISA_FCFinished = true
+$global.HSISACredits = 0
+$global.HSISALevelTraining = 1
+$global.HSISALevelHard = 1",«Почему бы мне не начать прямо сейчас?»,HSISA_Join:Посетить арену Stella,
+HSISA_Greetings,PopulateOptions,"$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$global.HSISA_FCFinished
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner
+",,,HSISA_Join:Посетить арену Stella,
+HSISA_Main,DialogOptionSelected,$option == HSISA_Join,FireAll HSISAOptions,,,
+HSISA_Shop,HSISAOptions,,,,3:HSISA_ShopOpen:Посетить магазин арены (у вас сейчас $global.HSISACredits очков),
+HSISA_Battle,HSISAOptions,,,,1:HSISA_BattleOpen:Принять вызов тренировочного режима ($global.HSISALevelTraining уровень),
+HSISA_BattleHard,HSISAOptions,,,,2:HSISA_BattleOpenHard:Принять вызов сложного режима ($global.HSISALevelHard уровень),
+HSISA_BattleAdventure,HSISAOptionsNN,,,,4:HSISA_BattleOpenAdventure:Посмотреть испытания режима приключения!,
+HSISA_Leave,HSISAOptions,,,,6:HSISA_LeaveOpen:Покинуть арену,
+HSISA_ModeExplain,HSISAOptions,,,,5:HSISA_Explain:Об арене Stella,
+HSISA_ShopPage,DialogOptionSelected,$option == HSISA_ShopOpen,HSISAShop,«Посмотрите на свои награды.»,,
+HSISA_BattlePage,DialogOptionSelected,$option == HSISA_BattleOpen,HSISABattle Training,,,
+HSISA_BattlePageHard,DialogOptionSelected,$option == HSISA_BattleOpenHard,HSISABattle Hard,,,
+HSISA_LeavePage,DialogOptionSelected,$option == HSISA_LeaveOpen,FireAll PopulateOptions,"Вы вспоминаете, что у вас есть другие дела, и покидаете арену.",,
+HSISA_Explain,DialogOptionSelected,$option == HSISA_Explain,FireAll HSISAOptions,"Тренировочный режим: этот режим выставляет против вас постепенно растущие флоты по обычным правилам подбора. Вы получаете 1 очко каждые 3 уровня.
+Сложный режим: в этом режиме вражеские флоты значительно выше качеством. Вы получаете 1 очко за уровень.",,
+HSISA_AdventureStatus,DialogOptionSelected,$option == HSISA_BattleOpenAdventure,HSISABattle ShowAdventureStatus,,,
+HSISA_StartBattleAdventure,DialogOptionSelected,$option == HSISA_BattleStartAdventure,HSISABattle Adventure,,,
+HSISA_PickedBuffAdventure,DialogOptionSelected,HSISABattle PickedBuffOption,HSISABattle AddBuff,,,
+,,,,,,
+,,,,,,
+#HPSID,,,,,,
+HSI_startTurnIn,PopulateOptions,"$isPerson
+HSIPersonIdentityCheck PersonIsHPSIDOperator
+!$faction.HSIisTraitor
+$faction.id == HSI",,«Здравствуйте. Полевой оператор Департамента безопасности. Чем могу быть полезен?»,"10:HSI_aiCores_startTurnIn:«У меня есть эти ИИ-ядра...»
+11:HSI_specialShip_startTurnIn:«У меня есть эти редкие корабли...»
+13:HSI_surveyData_startTurnIn:«У меня есть некоторые разведданные...»",
+HSI_startTurnInDenied,PopulateOptions,"$isPerson
+HSIPersonIdentityCheck PersonIsHPSIDOperator
+$faction.HSIisTraitor
+$faction.id == HSI",FireAll PopulateOptions,"«Никто не доверяет тому, кто ударил его в спину, $PlayerSirOrMadam.»",,
+HSI_aiCores_disableTurnInOption,DisableTurnInCoresOptionIfNeeded,"$isPerson
+AICores personCanAcceptCores
+$faction.id == HSI score:1000","SetTooltip aiCores_startTurnIn ""You should find someone else who can take these. Regulations forbid me from handling them.""
+SetEnabled aiCores_startTurnIn false",,,
+HSI_aiCores_turnInOptionSel,DialogOptionSelected,"$option == HSI_aiCores_startTurnIn
+$faction.id == HSI",FireAll HSICoresTurnInOptions,«Вы пришли к нужному человеку. Мы с радостью заберем у вас эти опасные предметы.»,,
+HSI_aiCores_playerHasOption,HSICoresTurnInOptions,,,"ИИ-ядра преобразуются в 5/10/20/40 очков прогресса в зависимости от уровня, а также влияют на отношения.",0:HSI_aiCores_selectCores:Выбрать ИИ-ядра для сдачи,
+HSI_aiCores_neverMindOption,HSICoresTurnInOptions,,,,"100:aiCores_neverMind:«Неважно, на самом деле у меня ничего нет.»",
+HSI_aiCores_turnInOptionSelected,DialogOptionSelected,$option == HSI_aiCores_selectCores,HPSIDTurnIn AI_CORE selectCores,,,
+HSI_aiCores_turnInResponse,HSIAICoresTurnedIn,,FireAll PopulateOptions,"Оператор $personLastName молча принимает вашу сдачу. «Отлично, я доложу о вашем вкладе начальству.»",,
+HSI_ships_turnInOptionSelected,DialogOptionSelected,$option == HSI_specialShip_startTurnIn,,«Эти корабли будут преобразованы в 15/30/45/60 очков прогресса в зависимости от класса и выкуплены по базовой цене с немедленным зачислением средств на ваш счет.»,"HSI_specialShip_startTurnInContinue:Продолжить
+HSI_specialShip_startTurnInBreak:Сменить тему",
+HSI_ships_turnInOptionSelectedContinue,DialogOptionSelected,$option == HSI_specialShip_startTurnInContinue,HPSIDTurnIn SPECIAL_SHIP selectRareship,,,
+HSI_ships_turnInOptionSelectedBreak,DialogOptionSelected,$option == HSI_specialShip_startTurnInBreak,FireAll PopulateOptions,,,
+HSI_ships_turnInResponse,HSITurnedInRareShip,,FireAll PopulateOptions,Оператор $personLastName проверяет состояние корабля на Tripad. «Отлично. Вы не пожалеете об этом.»,,
+HSI_surveydata_turnInOptionSelectedContinue,DialogOptionSelected,$option == HSI_surveyData_startTurnInContinue,HPSIDTurnIn SURVEY_DATA selectSurveyData,,,
+HSI_surveydata_turnInOptionSelectedBreak,DialogOptionSelected,$option == HSI_surveyData_startTurnInBreak,FireAll PopulateOptions,,,
+HSI_surveydata_turnInOptionSelected,DialogOptionSelected,$option == HSI_surveyData_startTurnIn,,"Данные разведки преобразуются в 2/4/7/11/15 очков прогресса в зависимости от уровня, а также влияют на отношения.","HSI_surveyData_startTurnInContinue:Продолжить
+HSI_surveyData_startTurnInBreak:Сменить тему",
+HSI_surveydata_turnInResponse,HSISurveyDataTurnedIn,,FireAll PopulateOptions,Оператор $personLastName несколько раз нажимает на Tripad. «Отлично. Halo Dynamics благодарит вас за разведку.»,,
+,,,,,,
+#HSIContractForge,,,,,,
+HSI_Forge_Start,PopulateOptions,"$isPerson
+HSIPersonIdentityCheck PersonIsHSIForgeContact
+!$faction.HSIisTraitor
+$faction.id == HSI",,"«Здравствуйте, наша корабельная и оружейная промышленность способна производить широкий спектр кораблей и оружия. Можете свободно просмотреть каталог продукции.»",HSI_Forge_Pick:Просмотреть каталог продукции,
+HSI_Forge_Pick,DialogOptionSelected,$option == HSI_Forge_Pick,HSIContactForge,,,
+HSI_Forge_Picked,HSIForgePicked,,"$option = HSI_Forge_out 0
+FireBest DialogOptionSelected",,,
+HSI_Forge_Out,DialogOptionSelected,$option == HSI_Forge_out,FireAll PopulateOptions,"«Спасибо за заказ. Производство обычно завершается в течение 60 дней. Доставка не включена, пожалуйста, получите заказ лично или через представителя с действительным сертификатом на Космическом мосту.»",,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+#HSI_TCEvent0,,,,,,
+HSI_TC0Start,AddBarEvents,"!$global.HSITC0Started
+!$global.HSITC0Finished
+!$market.isHidden
+RepIsAtWorst HSI COOPERATIVE","AddBarEvent HSI_TC0_BarEvent ""A young girl sat in a corner, looking out of place in a bar. No one seemed to notice her."" ""In the crowded bar, for some reason, a quiet corner abruptly appeared."" 255,140,200,255",,,
+HSI_TC0Event1,DialogOptionSelected,$option == HSI_TC0_BarEvent,"AddText ""Your approach manages to divert her gaze from her Tripad. \""How do you do, Captain $playerName. It seems like you've finally noticed me.\"""" 255,140,200,255
+HSISetPerson TheCommissioner
+ShowPersonVisual
+$global.HSITC0Started = true",,"HSI_TC0_1_1:Промолчать
+HSI_TC0_1_2:«Трудно представить, что столь ослепительную леди могут игнорировать.»",
+HSI_TC0Event2_1,DialogOptionSelected,$option == HSI_TC0_1_1,"AddText ""\""Have a seat, Captain $playerName. There's no need for reservations.\"""" 255,140,200,255",,HSI_TC0_2:Сесть,
+HSI_TC0Event2_2,DialogOptionSelected,$option == HSI_TC0_1_2,"AddText ""\""I didn't expect you to be such a sweet talker.\"" You seem to see her smile, but it is gone as soon as it appeared. \""Have a seat, Captain $playerName, there's no need to be so... I believe you'd dislike formality.\"""" 255,140,200,255",,HSI_TC0_2:Сесть,
+HSI_TC0Event3,DialogOptionSelected,$option == HSI_TC0_2,"AddText ""Her invitation seemed to have some kind of charm, and you ease into a seat opposite her. She taps her Tripad a few times. \""I looked for you purely out of curiosity. To be honest, you are very interesting.\"""" 255,140,200,255",,"HSI_TC0_3_1:«Я не нахожу себя интересным.»
+HSI_TC0_3_2:«Ну... вообще-то я действительно очень интересен.»",
+HSI_TC0Event4_1,DialogOptionSelected,$option == HSI_TC0_3_2,"AddText ""\""Then I could have praised you more. However, I'd still like a test of your abilities.\"" She pushes a chip towards you. \""This is a little greeting gift.\"" She pauses and pushes the glass of wine that was by her hand to you, \""I hope you are as strong as you are eloquent.\"""" 255,140,200,255",,"HSI_TC0_4_1:Взять чип
+HSI_TC0_4_2:«Не думаю, что меня это действительно интересует.»",
+HSI_TC0Event_2,DialogOptionSelected,$option == HSI_TC0_3_1,"AddText ""\""If you would like, we can talk about it at length. However, I'd still like a test of your abilities.\"" She pushes a chip towards you. \""This is a little greeting gift.\"" She pours the wine by her hand into two empty glasses, takes a sip from one, and pushes the other to you. \""I hope you that next time we meet, you won't be so guarded.\"""" 255,140,200,255",,"HSI_TC0_4_1:Взять чип
+HSI_TC0_4_2:«Не думаю, что меня это действительно интересует.»",
+HSI_TC0Fight,DialogOptionSelected,$option == HSI_TC0_4_1,HSITCEventFight TC0,,,
+HSI_TC0Leave,DialogOptionSelected,$option == HSI_TC0_4_2,"AddText ""The other party said nothing more."" 255,140,200,255
+BarCMD returnFromEvent false",,,
+HSI_TC0End,DialogOptionSelected,$option == HSI_TC0_End,"AddText ""Your senses slip away for a moment, and when you snap out of it, the other person is gone. Your Tripad prompts you of a credit transfer, and an odd unread message. Strange..."" 255,140,200,255
+$global.HSITC0Finished = true",,"backToBar:«Пожалуйста, приходите на Космический мост поговорить... Что это значит?»",
+,,,,,,
+#HSI_TCEvent1,,,,,,
+HSI_TC1_Start,PopulateOptions,"$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$global.HSITC0Finished
+!$global.HSITC1Accepted
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner",,,HSI_TC1_1:Директор ждет вас.,
+HSI_TC1_1,DialogOptionSelected,$option == HSI_TC1_1,"AddText ""\""Greetings, Captain $playerName.\"" The Director sat by the window, in a cabin with what may be one of the best views on the space bridge. Behind her lay the yawning gulf of Intrustion. Your eyes meet its unending blackness, unsettling even for the most seasoned spacefarers.\n\""I wouldn't recommend staring at it for too long. The event horizon truly is a fascinating phenomenon, but prolonged observation might trigger a fear of black holes.\"" You hear the Director's voice behind you. Startled, you turn, surprised to find her no longer in her seat. \""Sorry to keep you waiting.\"""" 255,140,200,255
+$global.HSITC1Accepted = true",,HSI_TC1_2:Покачать головой.,
+HSI_TC1_2,DialogOptionSelected,$option == HSI_TC1_2,"AddText ""\""You did a good job last time, so this time, I'd like you to help me with something.\"" She takes a look at you, \""The previous test had no effect on you, which is very rare.\"""" 255,140,200,255",,"HSI_TC1_3_1:«Проверка?»
+HSI_TC1_4_1:«Хорошо, расскажите.»
+HSI_TC1_4_2:«Мне нужно ясное объяснение, прежде чем я приму такое расплывчатое поручение.»",
+HSI_TC1_3_1,DialogOptionSelected,$option == HSI_TC1_3_1,"AddText ""\""It's not a big deal... Captain $playerName, it's better not to ask.\"""" 255,140,200,255",,"HSI_TC1_4_1:«Хорошо, продолжайте и расскажите.»
+HSI_TC1_3_2:«Я не намерен брать расплывчатые поручения.»",
+HSI_TC1_3_2,DialogOptionSelected,$option == HSI_TC1_3_2,"AddText ""The Director frowned slightly. \""You're not making this easy, Captain $playerName.\"" She points towards Intrustion outside the window, \""As we've spoken of before, certain phenomena can influence the human mind. You looked at it, yet remained unaffected, and you won't be affected by similar phenomena either. This isn't an aptitude everyone possesses.\"""" 255,140,200,255",,"HSI_TC1_4_1:«Расскажите о вашем поручении.»
+HSI_TC1_4_2:«Я не люблю загадки.»",
+HSI_TC1_4_1,DialogOptionSelected,$option == HSI_TC1_4_1,"AddText ""\""Recover a special entity. I don't know exactly what it looks like.\"" the Director says, \""I only know it's very weak — you should be capable enough to control it. I cannot spare the time, so I can only ask this of you. The coordinates will be sent to your Tripad. It does not seem to be able to move from its location.\"""" 255,140,200,255",,"HSI_TC1_5_1:«Хорошо, я съезжу туда для вас.»",
+HSI_TC1_4_2,DialogOptionSelected,$option == HSI_TC1_4_2,"AddText ""After a long pause, the Director finally said: \""I was being presumptuous. Please return, Captain $playerName.\"""" 255,140,200,255",,cutCommLink:Покинуть ее кабинет,
+HSI_TC1_5_1,DialogOptionSelected,$option == HSI_TC1_5_1,"AddText ""\""Thank you, Captain $playerName. However... as you have seen, most special existences highly sensitive and peculiar. Although presumptuous of me, I hope for your safety.\"" She takes out a small communicator: \""Should an unexpected situation occur, contact me immediately.\"""" 255,140,200,255
+HSITC1Orders ShowMap",,cutCommLink:Взять коммуникатор,
+HSI_TC1_6,OpenInteractionDialog,"$HSI_TC1_MeetTheKnight score:1000
+!$global.HSITC1Finished","ShowDefaultVisual
+FireBest HSITC1MeetTheKnight
+$HSI_TC1_MeetTheKnight = false","Ваш $shipOrFleet приближается к полю обломков.
+
+Дредноут класса Invictus и несколько меньших кораблей бессильно дрейфуют в космическом вакууме.",,
+HSI_TC1_6_MeetTheKnight,HSITC1MeetTheKnight,,,,HSI_TC1_7:Приказать техникам сенсоров проанализировать обломки,
+HSI_TC1_7,DialogOptionSelected,$option == HSI_TC1_7,,"Техник сенсоров наконец докладывает вам с озадаченным выражением лица. Он говорит, явно с трудом убеждая самого себя: «Окраска, знаки отличия и состав флота указывают, что все это корабли одного флота луддитских рыцарей.»
+
+Дредноуты Луддитской церкви обычно не бросают без причины; окружающие обломки указывают на крупное сражение. Техники сенсоров не обнаружили энергетических показаний, а Invictus полностью пуст. Непонятно, что могло заставить флот луддитских рыцарей такого размера понести столь тяжелые потери в бою.",HSI_TC1_8:Приблизиться к дредноуту,
+HSI_TC1_8,DialogOptionSelected,$option == HSI_TC1_8,,"Вы осторожно приближаетесь к заброшенному мегакораблю. При ближайшем осмотре вы и техник сенсоров обмениваетесь тревожными взглядами: в повреждениях явно что-то не так. На мостике повисает жуткая тишина. Наконец руководитель операций говорит: «Капитан, это не очень похоже на следы энергетического оружия, верно?»
+
+Вы согласно киваете. Следы ожогов на броне кораблей явно оставлены фугасным оружием. Техники сенсоров начинают тщательно анализировать рисунок повреждений этих обломков. Учитывая обстоятельства, у вас есть основания подозревать, что обломки связаны с самим флотом.
+
+После нескольких часов кружения по орбите техник сенсоров возвращается с окончательным выводом: дредноут и остальные корабли флота обратились друг против друга, что привело к взаимному уничтожению.",HSI_TC1_9:Подготовиться к абордажу,
+HSI_TC1_9,DialogOptionSelected,$option == HSI_TC1_9,"HSISetPerson Knight
+ShowPersonVisual","Вы решаете сесть рядом с мостиком и направиться прямо туда, надеясь реактивировать любые сенсоры, которые еще могут работать.
+
+Войдя на мостик, вы замечаете фигуру. Хотя никто из офицеров и морпехов, кажется, ее не видит, вы все равно останавливаете их.",HSI_TC1_10:Достать коммуникатор,
+HSI_TC1_10,DialogOptionSelected,$option == HSI_TC1_10,,"Коммуникатор подключается почти мгновенно. Вы поднимаете его, наполовину ожидая, что он способен на большее, чем просто связь. «Вы это видите?»
+
+«Да. Похоже на... рыцаря.» Вы чувствуете, что собеседница необычно спокойна. «Это немного неожиданно, но ничего неуправляемого. Я уверена, что ваше красноречие поможет вам пройти через это, капитан $playerName.»",HSI_TC1_11:Попытаться установить контакт,
+HSI_TC1_11,DialogOptionSelected,$option == HSI_TC1_11,,"Луддитский рыцарь, поклявшийся хранить учение Лудда. Послушный приказам Церкви, истребитель творений Молоха и защитник духа Лудда мечом и молотом.
+
+Стойкий страж верующих Лудда и очиститель еретиков и мерзостей. За десятилетия, даже на фоне великих побед, сомнения росли. Все ли злые творения уничтожают человеческий дух? За долгие годы войны не все еретики лишились душ из-за машин, как утверждали епископы. В секторе на грани краха смерть таилась во многих местах, независимо от машин.
+
+Чем глубже были вопросы, тем больше всплывало неопределенности и сомнений. Вера сталкивалась с реальностью, и она так и не смогла быть такой же гибкой, как ее товарищи, в отношении фактов, с которыми столкнулась.
+
+Отчаяние поглотило рыцаря.
+
+«Не думала, что в наше время кто-то еще держится таких убеждений.» Коммуникатор снова звучит. «И не думала, что существует такой рыцарь. Возможно, когда вы вернетесь, я поделюсь с вами старой земной литературой, где такие персонажи иногда встречаются.»","HSI_TC1_12:«Думаю, главный вопрос сейчас - решить, что делать дальше.»",
+HSI_TC1_12,DialogOptionSelected,$option == HSI_TC1_12,"SetStoryOption HSI_TC1_13_1 general ""Convince the knight that there are still people to protect.""","«Самый простой способ - убедить ее стать вашим стражем.»
+
+«Лучше бы вам быть уверенной, что побочных эффектов нет.»
+
+«В общем... побочные эффекты не то, о чем вам стоит думать. Но чтобы избежать непредвиденных проблем, постарайтесь в будущем не умирать.» Вы улавливаете нотку сарказма, но сейчас пора принять решение.
+","HSI_TC1_13_1:Убедить рыцаря, что еще есть люди, которых нужно защищать.
+HSI_TC1_13_2:Убедить рыцаря, что ее обманули.",
+HSI_TC1_13_1,DialogOptionSelected,$option == HSI_TC1_13_1,,"Вы снова и снова заверяете рыцаря, что ее действия были справедливы. Вина лежала не на ней, а на епископах; в отличие от своих товарищей, она была истинным рыцарем.
+
+Только когда вы напомнили, что кому-то все еще нужна защита, рыцарь наконец подняла голову. «Имя.» Вы слышите ее голос.
+
+Вы колеблетесь, но не можете придумать способ решить это иначе. Вы слышите жужжание коммуникатора и в этот момент решаетесь рискнуть.",HSI_TC1_14_1:«Меня зовут $playerName.»,
+HSI_TC1_13_2,DialogOptionSelected,$option == HSI_TC1_13_2,,"Вы снова и снова заверяете рыцаря, что ее действия были справедливы. Вина лежала не на ней, а на епископах; в отличие от своих товарищей, она была истинным рыцарем.
+
+Только когда вы сказали, что ее ввели в заблуждение, рыцарь наконец подняла голову. «Имя.» Вы слышите ее голос.
+
+Вы колеблетесь, но не можете придумать способ решить это иначе. Вы слышите жужжание коммуникатора и в этот момент решаетесь рискнуть.",HSI_TC1_14_2:«Меня зовут $playerName.»,
+HSI_TC1_14_1,DialogOptionSelected,$option == HSI_TC1_14_1,"AddText ""\""I will protect you.\"" the knight says to you."" 110,110,250,255
+HSITC1Orders GenKnight_SP
+AddText ""\""So... all's well that ends well?\"" The communicator that had been silent for a long time buzzed again, and you realized that you had never turned it off. You can only guess what kind of expression the Director was wearing while listening to your performance. You quickly switch it off."" 110,110,250,255
+$global.HSITC1Finished = true
+HSITC1Orders ClearImportant HSI_TC1_MeetTheKnight
+$player.KnownByTheCommissioner = true",,defaultLeave:Пора уходить,
+HSI_TC1_14_2,DialogOptionSelected,$option == HSI_TC1_14_2,"AddText ""\""I will protect you.\"" the knight says to you."" 110,110,250,255
+HSITC1Orders GenKnight
+AddText ""\""So... all's well that ends well?\"" The communicator that had been silent for a long time buzzed again, and you realized that you had never turned it off. You can only guess what kind of expression the Director was wearing while listening to your performance. You quickly switch it off."" 110,110,250,255
+$global.HSITC1Finished = true
+HSITC1Orders ClearImportant HSI_TC1_MeetTheKnight
+$player.KnownByTheCommissioner = true",,defaultLeave:Пора уходить,
+,,,,,,
+#HSITC1_Debriefing,,,,,,
+HSI_TC1_A_0,PopulateOptions,"$global.HSITC1Finished
+!$global.HSITC1AFinished
+$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner",,,"HSI_TC1_A_1:Вы смутно вспоминаете, что это не тот секретарь, который забирал вас в прошлый раз...",
+HSI_TC1_A_1,DialogOptionSelected,$option == HSI_TC1_A_1,,"«$playerName $PlayerSirOrMadam, будьте добры, возьмите с собой восстановленную сущность и следуйте за мной.»
+Вам требуется несколько секунд, чтобы понять: «сущность» - это рыцарь. Вы приказываете рыцарю следовать за вами, затем идете за секретарем.",HSI_TC1_A_2:Оглядеться...,
+HSI_TC1_A_2,DialogOptionSelected,$option == HSI_TC1_A_2,,"Хотя с вашего последнего визита прошло уже некоторое время, вам все равно кажется, что сегодня вас ведут слишком тихим маршрутом.
+
+Секретарь проводит вас по слегка извилистому коридору, и что-то в вашей памяти кажется неправильным.",HSI_TC1_A_3:Вы проходили этот поворот в прошлый раз?,
+HSI_TC1_A_3,DialogOptionSelected,$option == HSI_TC1_A_3,,В конце концов вы останавливаетесь перед знакомой дверью. Вместо стука секретарь открывает ее и жестом предлагает вам войти.,"HSI_TC1_A_4:Может, я просто плохо знаком с делами...",
+HSI_TC1_A_4,DialogOptionSelected,$option == HSI_TC1_A_4,,"Когда вы входите, что-то меняется. Вы проходите сквозь нечто похожее на иллюзию и видите Директора у стола, спиной к вам.
+
+Интуиция подсказывает, что сегодня Директор кажется холоднее, хотя вы не видите ее выражения. Рыцарь начинает беспокоиться, ее рука касается рукояти меча, пока она осторожно перемещается к вам.
+
+Директор молчит.",HSI_TC1_A_5:Стоит что-то сказать и спросить?,
+HSI_TC1_A_5,DialogOptionSelected,$option == HSI_TC1_A_5,,"Пока вы все еще погружены в мысли, размытое лицо «Директора» внезапно бросается на вас. Только тогда вы наконец понимаете, насколько странна вся ситуация. Без колебаний рыцарь обнажает меч. В тот миг, когда «Директор» касается его острия, все вокруг нее словно растворяется, мгновенно превращаясь во что-то совсем иное. Вы даже начинаете сомневаться, не ошиблись ли в том, что только что увидели.
+
+Директор сидит за столом, возясь с кристаллической безделушкой.",HSI_TC1_A_6:«Мне нужно объяснение.»,
+HSI_TC1_A_6,DialogOptionSelected,$option == HSI_TC1_A_6,$global.HSITC1AFinished = true,"«Это была проверка безопасности. И для вас, и для нее.» Директор бросает вам безделушку, и вы ловите ее в панике. Рыцарь не опустила меч, пока Директор не убедила ее «опустить оружие» ласковым тоном. У вас возникает ощущение, будто рука рыцаря внезапно обрела собственную волю, вкладывая меч в ножны вопреки ее глубоко неохотному взгляду.
+
+«В любом случае результаты удовлетворительные. Капитан $playerName, вы получили надежного союзника.» Она делает паузу. «И, возможно, я тоже. До следующей встречи, ассистент.»
+
+Вы все еще чувствуете, что объяснения так и не получили, но почему-то следуете за секретарем обратно в зал Космического моста.
+","cutCommLink:Может, есть еще что-то, чем стоит заняться",
+,,,,,,
+#HSI_TCEvent2,,,,,,
+HSI_TC2_0,AddBarEvents,"$global.HSITC1AFinished
+!$market.isHidden
+RepIsAtWorst HSI COOPERATIVE
+$global.HSILifeSentBack","AddBarEvent HSI_TC2_BarEvent ""Drink with him."" ""A man, looking deeply depressed and desperate, sits drinking alone."" 255,40,40,255",,,
+HSI_TC2_1,DialogOptionSelected,$option == HSI_TC2_BarEvent,"HSISetPerson Salvation
+ShowPersonVisual","Мужчина сидит в баре, пьян и пьет в одиночестве. Усевшись рядом, вы просите бармена налить еще по кругу всем в баре. Услышав звон вашего бокала, мужчина поднимает свой в ответ.",HSI_TC2_1:Поднять бокал в ответ,
+HSI_TC2_2,DialogOptionSelected,$option == HSI_TC2_1,,"Вы поднимаете бокал в ответ. Пока вы оба пьете, вы решаете заговорить, чтобы снять напряжение - и удовлетворить свое любопытство.","HSI_TC2_2_1:«Что тебя так угнетает, брат?»
+HSI_TC2_2_2:«Жизнь в последнее время была тяжелой, приятель.»",
+HSI_TC2_3_1,DialogOptionSelected,$option == HSI_TC2_2_1,,"Мужчина бросает на вас взгляд, затем возвращается к выпивке. Вы решаете, что лучше не давить.
+
+Спустя некоторое время мужчина допивает стакан и тянется к тому, который вы только что предложили. «Что бы вы сделали, если бы однажды проснулись в совершенно чужом мире, за десятки тысяч световых лет от всего, что когда-то знали?»","HSI_TC2_3_1:«Хм... ходил бы с кислой миной?»
+HSI_TC2_3_2:«Разве это не просто начало с нуля?»",
+HSI_TC2_3_2,DialogOptionSelected,$option == HSI_TC2_2_2,,"Мужчина бросает на вас взгляд, затем возвращается к выпивке. Вы решаете, что лучше не давить.
+
+Спустя некоторое время мужчина допивает стакан и тянется к тому, который вы только что предложили. «Что бы вы сделали, если бы однажды проснулись в совершенно чужом мире, за десятки тысяч световых лет от всего, что когда-то знали?»","HSI_TC2_3_1:«Хм... ходил бы с кислой миной?»
+HSI_TC2_3_2:«Разве это не просто начало с нуля?»",
+HSI_TC2_4_1,DialogOptionSelected,$option == HSI_TC2_3_1,,«Вот поэтому я и в таком состоянии.»,HSI_TC2_4:Предложить ему поговорить в другом месте,
+HSI_TC2_4_2,DialogOptionSelected,$option == HSI_TC2_3_2,,"На мгновение мужчина заметно ошеломлен, затем качает головой. «Я не это имел в виду, $PlayerSirOrMadam.»",HSI_TC2_4:Предложить ему поговорить в другом месте,
+HSI_TC2_5,DialogOptionSelected,$option == HSI_TC2_4,,"Мужчина, похоже, не хочет говорить о случившемся в баре, поэтому вы приглашаете его в более приватный ресторан поблизости. Он соглашается.",HSI_TC2_5:«Ты правда проснулся вдали от дома?»,
+HSI_TC2_6,DialogOptionSelected,$option == HSI_TC2_5,,"Мужчина горько улыбается и начинает рассказывать свою историю.
+
+Он участвовал в эксперименте с путешествием во времени; экспериментатор уверял, что он сможет вернуться, даже если что-то пойдет не так. В итоге последние три месяца он скитался по этому миру, и никто не желал верить его рассказу.
+
+На случай, если вы тоже ему не верите, он достает два предмета, похожих на карманные часы. Он объясняет, что они называются трехфазными стабилизирующими якорями Времени-Пространства-Реальности - технологией, обнаруженной на неизвестном корабле, появившемся из ниоткуда, как и эксперимент, который привел его сюда.
+
+Вы невольно думаете, что он может быть слегка безумен, но уверенности нет.",HSI_TC2_6:«Как насчет поговорить о чем-нибудь другом?»,
+HSI_TC2_7,DialogOptionSelected,$option == HSI_TC2_6,,"«Когда я впервые прибыл, я решил, что попал в какой-то нецивилизованный захолустный мир, ведь даже новые освоенные звездные системы были лучше этого. Когда я был здесь новичком, я спросил о Домене, и начальник сказал мне, что он исчез два века назад.»
+
+«Я сделал все возможное, чтобы проверить дату, и обнаружил, что переместился на десять тысяч лет в прошлое. Десять тысяч лет! Коллапс, причину которого никто не знает, был поистине неслыханным.»
+
+«Хуже того, я оказался на двести лет раньше момента, когда, по словам директора, легендарная предшественница исчезла в эксперименте. Почему нельзя было выставить время чуть раньше, хоть немного раньше было бы лучше.»","HSI_TC2_7:Возможно, он немного перебрал.",
+HSI_TC2_8,DialogOptionSelected,$option == HSI_TC2_7,,"«Застрять здесь было бы не так плохо, если бы у меня был шанс встретить легендарного директора Тамамо.» Он заканчивает на этих словах. Вы смутно вспоминаете... контакт, занимавший пост директора до Коллапса, и ее публичное имя, настоящее или нет, было Тамамо.",HSI_TC2_8:Расспросить еще немного,
+HSI_TC2_9,DialogOptionSelected,$option == HSI_TC2_8,,"Через некоторое время мужчина, похоже, трезвеет. Вы осторожно направляете разговор, чтобы проверить, была ли легендарная бывшая директор, о которой он говорил, той самой Директором, но он утверждает, что она исчезла в экспериментальной аварии за 27 лет до Коллапса.","HSI_TC2_9:Можно помочь ему исполнить мечту и встретить своего кумира
+cutCommLink:В любом случае, он выглядит оживленным и в хорошем расположении духа, так что причин для беспокойства вроде больше нет.",
+,,,,,,
+,,,,,,
+,,,,,,
+#HSI_PickSkye,,,,,,
+HSI_Skye_Planet,OpenInteractionDialog,"$market.isPlanetConditionMarketOnly
+$tag:HSI_Perureino
+$global.HSITC0Finished
+!$global.HSI_Scythe_Saved",ShowDefaultVisual,"Ваш $shipOrFleet приближается к $entityName.
+
+Похоже, кто-то пытается установить контакт с чем-то на орбите, но там, кажется, ничего нет.","HSI_Skye_TryContact:Спросить офицера связи, можно ли определить источник",
+HSI_Skye_1,DialogOptionSelected,$option == HSI_Skye_TryContact,,"«Этот режим связи...» Ваш офицер связи возится с консолью. «Почти... готово!»
+
+«Алооо, алооо - там кто-нибудь есть...» Вы и ваши офицеры обмениваетесь озадаченными взглядами, потому что на мониторе виден только рыбий хвост.","HSI_Skye_1:«Вы уверены, что это правильный видеоканал?»",
+HSI_Skye_2,DialogOptionSelected,$option == HSI_Skye_1,"HSISetPerson Skye
+ShowPersonVisual","Ваш офицер связи срочно жестом показывает, что канал все еще открыт. Ясно, что другая сторона услышала ваши слова: изображение с камеры начинает яростно трястись.
+
+Мгновение спустя на экране появляется девушка. «Уууух. Эта коробка правда говоритшш.»",HSI_Skye_2:«Алло?»,
+HSI_Skye_3,DialogOptionSelected,$option == HSI_Skye_2,,"«Нууу, тот, кто дал нам эту коробку, сказал, что однажды кто-то с неба заговорит через неешш.» Девушка серьезно смотрит в камеру. «Я все спрашивала, и наконец она заговорилашш.»
+
+Вы видите, как ваш офицер связи просматривает недавние записи, пытаясь подтвердить, правда ли он видел рыбий хвост, а ваш оперативный офицер тихо интересуется, не слишком ли много галлюцинаций случилось в последнее время. Ясно, что ни один из них сейчас не в состоянии дать полезный совет.",HSI_Skye_3:«Ты из экипажа разбившегося корабля? С тобой есть кто-нибудь еще?»,
+HSI_Skye_4,DialogOptionSelected,$option == HSI_Skye_3,,"«Экипаж разбившегося корабля? Вы про тех людей? Они давно вернулисьшш.» Похоже, собеседница нашла место, куда поставить «коробку». «Я только слышала историю коробкишш, поэтому спрашивала ее что-нибудь каждый деньшш.»
+
+У вас возникает ощущение, что собеседнице трудно общаться, а ваш оперативный офицер приподнимает бровь в вашу сторону, и вы понимаете намек. Вскоре небольшая группа спускается на поверхность планеты на шаттле. Офицер связи ведет вас к источнику сигнала, неохотно поддерживая контакт с другой стороной.
+
+На планете мало подходящих мест для посадки, поэтому вы садитесь рядом с цепью островов. Вскоре вы замечаете коммуникатор, лежащий на камне, и «человека», который им пользуется.",HSI_Skye_4:«Записи можно не пересматривать. Это реально.»,
+HSI_Skye_5,DialogOptionSelected,$option == HSI_Skye_4,,"«А, это человек с неба.» Собеседница взмахивает хвостом за спиной. «Ониии спустилисьшш.»
+
+Собеседница цепляется к группе и начинает забрасывать ее вопросами о том, как там дела в «небе». Когда шквал вопросов стихает и у вас появляется мгновение собраться с мыслями, вы наконец задаете вопрос, который с самого начала был у вас на уме: «Кто ты?»
+
+«Хмм? Дашш, и еще...»
+
+Чтобы избавить себя от очередного приступа неутолимого любопытства, вы говорите: «У меня есть предложение.» Вы передаете «замолчи» почти всеми возможными формами языка тела.","HSI_Skye_5:«Почему бы тебе не пойти с нами? Возможно, будет проще понять, когда увидишь все своими глазами.»",
+HSI_Skye_6,DialogOptionSelected,$option == HSI_Skye_5,,"«Но мои сестры говорят, что внешний мир очень страшныйшш, люди всегда сражаютсяшш, а некоторые могут попытаться поймать меняшш.»
+
+Это правда. «Но я все равно хочу увидеть егошш.» Собеседница бережно убирает коммуникатор. «Когда мы можем уходитьшш.»
+
+Вам кажется, что вы и оперативный офицер сегодня слишком часто обмениваетесь взглядами. Отойдя в сторону, вы начинаете обсуждать, правильно ли брать ее с собой: она кажется совершенно наивной относительно внешнего мира, и вы опасаетесь, что даже малейшая ошибка может стать для нее концом.
+
+Внезапная искра вдохновения озаряет вашего оперативного офицера: «Она не похожа на человека, так вы ведь случайно знаете как раз нужную персону...» Вы чувствуете волну облегчения и быстро достаете коммуникатор, данный Директором.
+
+«... Дайте я правильно пойму. Вы нашли где-то девушку-русалку, она хочет пойти с вами посмотреть внешний мир, но вы считаете это слишком опасным и хотите оставить ее у меня?» В голосе Директора будто слышится нотка беспомощности. «Ладно, ладно. Капитан $playername, у вас правда врожденный талант к такой работе.»",HSI_Skye_6:«Я нашел вам источник содержания.»,
+HSI_Skye_7,DialogOptionSelected,$option == HSI_Skye_6,"ShowDefaultVisual
+$global.HSI_Scythe_Saved = true
+HSITC1Orders ClearImportant HSI_Skye","«Что такое источник содержанияшш?»
+
+Вы чувствуете, что сами навлекли на себя эту проблему. И так разговор бесцельно тянулся, пока наконец не пришла пора возвращаться.",defaultLeave:Пора продолжать,
+,,,,,,
+HSI_Skye_Random1_Start,PopulateOptions,"$global.HSI_Scythe_Saved
+$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+HSIPersonIdentityCheck SkyeRandom1
+!$isPerson
+!$global.HSI_ScytheRandomHappened
+!$global.HSI_ScytheNotInSpaceBridge",,,HSI_Skye_Random1:Это что-то плывет за окном...,
+HSI_Skye_Random1,DialogOptionSelected,$option == HSI_Skye_Random1,"HSISetPerson Skye
+ShowPersonVisual
+$global.HSI_ScytheRandomHappened = true 3","Синяя фигура приближается, пока мягко не ударяется в окно. Тогда вы узнаете Skye, парящую в космосе. Она парит? Или плывет?
+
+Вы решаете не думать об этом слишком много.","cutCommLink:В любом случае она выглядит бодро, так что причин для беспокойства быть не должно.",
+,,,,,,
+,,,,,,
+#HSI_Stalker,,,,,,
+HSI_Stalker_GreetingTraitor,PickGreeting,"HSIPersonIdentityCheck PersonIsStalkerContact
+$faction.HSIisTraitor
+$isPerson",,"«Все еще живы? Похоже, старые клинки уже не так остры, как прежде.»",defaultLeave:Уйти,
+HSI_Stalker_GreetingTooLowLevel,PickGreeting,"HSIPersonIdentityCheck PersonIsStalkerContact
+HSIPersonIdentityCheck PlayerLevelBelow5
+!$global.HSISS_Start
+$isPerson",ShowDefaultVisual,"Другая сторона, похоже, не заинтересована отвечать на ваш вызов.",,
+HSI_Stalker_Greeting_Not_Joined,PickGreeting,"HSIPersonIdentityCheck PersonIsStalkerContact
+HSIPersonIdentityCheck PlayerLevelAbove5
+!$global.HSISS_Start
+$isPerson","$contact_printedFirstReturnGreeting = true 0
+ShowPersonVisual
+",«Вы пришли зарегистрироваться?»,"HSI_SS_Ask:«Для чего?»
+cutCommLink:Уйти",
+HSI_Stalker_Ask,DialogOptionSelected,$option == HSI_SS_Ask,,"На другой стороне ненадолго повисает тишина. «Сталкеры. Мы ищем наемников. Мы платим вам за уже выполненную работу, а еще позволяем купить кое-какое снаряжение.»","HSI_SS_Join:«Я в деле.»
+defaultLeave:Не интересует",
+HSI_Stalker_Join,DialogOptionSelected,$option == HSI_SS_Join,"$global.HSISS_Start = true
+$global.HSI_Traitor_Base = true","«Добро пожаловать, сталкер. Я внесу ваши данные в систему. Когда заглянете в следующий раз, может появиться новый ассортимент.»",defaultLeave:Уйти,
+HSI_Stalker_Contact,PopulateOptions,"$isPerson
+HSIPersonIdentityCheck PersonIsStalkerContact
+$faction.id == HSI
+!$faction.HSIisTraitor",,"«Здравствуйте, сталкер.»","HSI_Stalker_OpenShop:«Посмотреть, что нового.»",
+HSI_Stalker_Shop,DialogOptionSelected,$option == HSI_Stalker_OpenShop,HSIStalkerShop,,,
+,,,,,,
+#TTMission,,,,,,
+HSI_TTMission_Start,DialogOptionSelected,"$option == marketVisitBar
+$faction.id == tritachyon
+$hasMarket
+$market.id == culann
+!$global.HSI_TTMission_Finished
+!$global.HSI_TTMission_Combat_Finished
+$global.HSI_TTMission_Start
+$player.KnownByTheCommissioner
+!HSIPersonIdentityCheck isTraitor","FireBest BarShuttleDownPrintDesc
+FireBest BarPrintDesc
+$option = HSITTMissionMet 0
+FireBest DialogOptionSelected",,,
+HSI_TTMission_Met0,DialogOptionSelected,$option == HSITTMissionMet,,"Несмотря на то, что вы находитесь в оживленном развлекательном районе $marketName, дневная толпа всегда кажется куда более редкой, чем ночная. Вы планируете выпить перед тем, как осмотреть город дальше. Видно, что Tri-Tachyon усилила безопасность на время визита: на основных дорогах стоят морпехи и агенты Tri-Tachyon в боевом снаряжении, явно в том самом «высококлассном снаряжении», о котором оружейник говорил несколько дней назад.
+
+Словно ведомые чем-то, вы входите в третий бар. По сравнению с первыми двумя он тише: лишь несколько людей разбросаны по кабинкам. Бармен бросает на вас короткий взгляд и продолжает вытирать стаканы, опустив голову.
+
+Вы на мгновение встречаетесь взглядом со знакомым по новостям лицом, которое не должно быть в этом месте, и быстро отводите глаза.",HSI_TTMission_Met1:Подойти и сесть напротив нее,
+HSI_TTMission_Met1,DialogOptionSelected,$option == HSI_TTMission_Met1,"HSISetPerson TheCommissioner
+HSISetPerson ShowCommissionerTTMissionBar","Вы открываете рот, чтобы заговорить, но Директор заставляет вас замолчать одним взглядом. Она встает, садится рядом с вами и поворачивается спиной, закрывая вас от взгляда бармена. Делая вид, что поправляет вам волосы, она незаметно передает крошечный наушник.
+
+Она наклоняется ближе и тихо говорит вам на ухо: «Здесь повсюду глаза. Будьте осторожны. Звуковой глушитель не дает им нас слышать, пока мы шепчем, так что говорите тише.»
+
+Вы чувствуете, как ее дыхание у вашего уха отдаляется.","HSI_TTMission_Met2:«Похоже, я ввязался во что-то крупное?»",
+HSI_TTMission_Met2,DialogOptionSelected,$option == HSI_TTMission_Met2,,"Едва заметно кивнув, она поворачивается и опирается на ваше плечо. Несколько касаний Tripad открывают крошечный файл с должностью «заместитель начальника» полевого подразделения Департамента безопасности, назначенного в Персейский сектор 3, должностью с незаметной, но значительной важностью. Вы быстро понимаете ситуацию, заказываете напиток для прикрытия и используете шанс незаметно осмотреть всех в баре.
+
+Вы подозреваете одного из посетителей в агентурной работе, и хотя бармен кажется ничем не примечательным, вы ощущаете в нем нечто нестыкующееся, что не можете объяснить. Вы гадаете, что они планируют. Взгляд посетителя достаточно острый, чтобы держать вас в напряжении. Вы смотрите вниз на Директора, надеясь, что она скажет больше.
+
+«Не пытайтесь слишком глубоко анализировать безумца, капитан $playerName...»",HSI_TTMission_Met3:«... ЛОЖИСЬ!»,
+HSI_TTMission_Met3,DialogOptionSelected,$option == HSI_TTMission_Met3,ShowPersonVisual,"Прежде чем вы успеваете отреагировать, Директор толкает вас под стол, и очередь оглушающих зарядов прошивает место, где вы только что сидели. Вы начинаете жалеть, что поверили болтовне чиновников Tri-Tachyon о временном запрете огнестрельного оружия, оказавшись зажатыми в угловой кабинке без средств ответного удара. Вы даже не пытаетесь говорить тише: «Ладно, что теперь?»
+
+Директор чрезмерно театрально изображает обдумывание плана, и ее преувеличенная игра ясно дает понять, что она на самом деле не обеспокоена. «Вы думаете, почему я выбрала место без пути отхода, хотя знала, что мы раскрыты, верно?»
+
+«Потому что только если затянуть это достаточно долго, все перерастет в нечто слишком крупное, чтобы эти костюмы Tri-Tachyon смогли скрыть это от делегации.»
+
+",HSI_TTMission_Met4:Молча осмотреть окружение,
+HSI_TTMission_Met4,DialogOptionSelected,$option == HSI_TTMission_Met4,,"Вы осматриваете помещение, пытаясь найти путь отхода или хоть что-то, что можно превратить в оружие. Несмотря на ее ореол загадочности, инстинкты подсказывают вам, что человек рядом с вами не обладает настоящими боевыми навыками. Возможно, здесь есть ловушка, которую можно использовать...
+
+«Сосредоточьтесь, капитан $playerName.» Директор тычет в вас чем-то твердым, похожим на складной веер. «Посмотрите, что там.»
+
+В тот миг, когда вы выглядываете, один из них целится и стреляет. Вы ныряете обратно за кабинку и обнаруживаете, что Директор исчезла.
+",HSI_TTMission_Met5:Так я все это время был приманкой?,
+HSI_TTMission_Met5,DialogOptionSelected,$option == HSI_TTMission_Met5,,"Вы слышите болезненный стон и снова выглядываете как раз вовремя, чтобы увидеть, как Директор ударяет бармена складным веером в горло, и бармен - точнее, один из агентов - падает на пол. Второй уже лежит, вероятно, именно он был источником предыдущего стона.
+
+Остальные посетители разбежались. Вы решаете...","HSI_TTMission_Met6_1:Схватить Директора и бежать
+HSI_TTMission_Met6_1_pickWeapon:Подобрать оружие одного из агентов Tri-Tachyon",
+HSI_TTMission_Met6,DialogOptionSelected,$option == HSI_TTMission_Met6_1,,"Вы хватаете Директора и бросаетесь из бара, но обнаруживаете, что глушитель сигнала все еще активен, а ближайшие морпехи и агенты Tri-Tachyon уже стягиваются к месту. К счастью, запаниковавшие гражданские, бегущие со сцены, нарушают их движение, позволяя вам следовать за Директором между зданиями.
+
+Как вы и подозревали, они не были дружелюбны, и заряды свистят совсем рядом. Воспользовавшись моментом, Директор ныряет в переулок и дергает вас за собой. Преследователи, похоже, не уверены, в какой переулок вы свернули, и это дает вам короткую передышку.
+
+Тишина переулка и шум снаружи кажутся разными мирами. Пока вы останавливаетесь перевести дух, складной веер Директора внезапно сталкивается почти у вас перед глазами с почти невидимым мономолекулярным клинком. Клинок не может рассечь ребра веера из неизвестного материала, заставляя агента быстро отступить; резкое движение отключает его оптическую маскировку.","HSI_TTMission_Met7:«Осторожно, капитан $playerName, есть еще один.»",
+HSI_TTMission_Met6_pickWeapon,DialogOptionSelected,$option == HSI_TTMission_Met6_1_pickWeapon,,"Агент Tri-Tachyon все еще жив, а в пистолете вы находите только оглушающие заряды. Похоже, агенты Tri-Tachyon внутри знали, как проявлять сдержанность, но морпехи снаружи могут оказаться не столь понимающими.
+
+Разумнее остаться без оружия.",HSI_TTMission_Met6_1:Схватить Директора и бежать,
+HSI_TTMission_Met7,DialogOptionSelected,$option == HSI_TTMission_Met7,,"Слова командира корпуса морпехов всплывают в памяти, и вы уклоняетесь от атаки другого скрытого агента, ведомые смесью интуиции и мышечной памяти. Агент, потерявший маскировку, все еще парирует атаки Директора и явно уступает. Бой сравнительно тихий, но преследователи вскоре обязательно найдут это место. Если быстро вывести этого агента из строя, можно окончательно уйти от текущей волны преследования.
+
+После трех серий ударов агент Tri-Tachyon меняет тактику, и вы начинаете терять его позицию. Он ушел или...?
+
+Синтезированный голос звучит позади, почти накладываясь на приглушенный стон: «Шаг вперед, $playerName $PlayerSirOrMadam, и следите за ножом за спиной.»","HSI_TTMission_Met8:Осторожно сделать, как сказано",
+HSI_TTMission_Met8,DialogOptionSelected,$option == HSI_TTMission_Met8,,"Вы делаете несколько шагов, прежде чем обернуться. Агент Tri-Tachyon пронзен в сердце, его безжизненное тело утаскивают из поля зрения за укрытие. В этот момент Директор выводит из строя агента, появившегося первым, и бежит к вам.
+
+Директор сначала осматривает вас и, убедившись, что вы не ранены, переводит взгляд на воздух перед вами. «Мастер Фарис, это и была вся ваша подготовка?»
+
+Синтезированный голос возвращается: «Насколько я помню, именно вы предупреждали, что раскрытие может привести к серьезным дипломатическим последствиям, Директор.» Фигура снимает маскировку, открывая нечто похожее на Dancer, хотя и в отличающейся от виденной вами стандартной модели вариации. Она поворачивается к вам. «Фарис.»","HSI_TTMission_Met9_1:«$playerName.»
+HSI_TTMission_Met9_2:«Можете звать меня $playerName.»",
+HSI_TTMission_Met9_1,DialogOptionSelected,$option == HSI_TTMission_Met9_1,"HSISetPerson ShowCommissionerTTMissionDepartment
+FireAll HSITTMissionNewsBrief","Вам удается оторваться от преследования Tri-Tachyon и наконец добраться до убежища. После короткого отдыха вы узнаете, что Tri-Tachyon ввела военное положение, сославшись на охоту за «левыми террористами, пытающимися сорвать мирные переговоры».
+
+Вы смотрите на тактическую сводку в руках Директора.",,
+HSI_TTMission_Met9_2,DialogOptionSelected,$option == HSI_TTMission_Met9_2,"HSISetPerson ShowCommissionerTTMissionDepartment
+FireAll HSITTMissionNewsBrief","Вам удается оторваться от преследования Tri-Tachyon и наконец добраться до убежища. После короткого отдыха вы узнаете, что Tri-Tachyon ввела военное положение, сославшись на охоту за «левыми террористами, пытающимися сорвать мирные переговоры».
+
+Вы смотрите на тактическую сводку в руках Директора.",,
+HSI_TTMission_Ambassadar,HSITTMissionNewsBrief,!$AskedAmbassadar,,,"HSI_TTMission_NewsBrief_Ambassadar:Спросить, возможна ли помощь делегации",
+HSI_TTMission_Fleet,HSITTMissionNewsBrief,!$AskedFleet,,,"HSI_TTMission_NewsBrief_Fleet:Спросить, возможна ли помощь прибывшего флота",
+HSI_TTMission_Plan,HSITTMissionNewsBrief,,,,"HSI_TTMission_NewsBrief_Plan:Спросить, что дальше",
+HSI_TTMission_Ambassadar_Answer,DialogOptionSelected,$option == HSI_TTMission_NewsBrief_Ambassadar,"$AskedAmbassadar = true 0
+FireAll HSITTMissionNewsBrief","«Реакция Tri-Tachyon была быстрой. Сославшись на угрозу со стороны левых элементов, они усилили охрану делегации, чтобы утвердить контроль. Советник Бородинов не дурак, и боюсь, вскоре он сможет связаться с Экспедиционными силами, что может обернуться бедой для всего Персейского сектора.»",,
+HSI_TTMission_Fleet_Answer,DialogOptionSelected,$option == HSI_TTMission_NewsBrief_Fleet,"$AskedFleet = true 0
+FireAll HSITTMissionNewsBrief","«Связь полностью разорвана. Поскольку это столица Tri-Tachyon, любая попытка передать сообщение в итоге приведет к обнаружению нашего местоположения, каким бы методом мы ни воспользовались.»",,
+HSI_TTMission_Plan_Answer0,DialogOptionSelected,"$option == HSI_TTMission_NewsBrief_Plan
+!$AskedFleet
+!$AskedAmbassadar",,"«Боюсь, у нас есть только один путь, капитан $playerName. Например... обойти наблюдение Tri-Tachyon и установить прямой контакт с флотом.»
+
+Учитывая невозможность этого, вы начинаете думать, нет ли в этих словах более глубокого смысла.
+
+«Передать сообщение с поверхности в космос незаметно невозможно, но из космоса в космос - возможно.»
+
+Эта идея кажется вам страшнее всех предыдущих вместе взятых.","HSI_TTMission_BattleBrief_0:«Почему мне кажется, что выбора у меня нет?»",
+HSI_TTMission_Plan_Answer1,DialogOptionSelected,"$option == HSI_TTMission_NewsBrief_Plan
+!$AskedFleet
+$AskedAmbassadar",,"«Боюсь, у нас есть только один путь, капитан $playerName. Установить прямой контакт с флотом.»
+
+Поскольку Tri-Tachyon следит за делегацией, любое сообщение, уходящее в космос, вряд ли останется незамеченным. Вы начинаете думать, нет ли в этих словах более глубокого смысла.
+
+«Передать сообщение с поверхности в космос незаметно невозможно, но из космоса в космос - возможно.»
+
+Эта идея кажется вам страшнее всех предыдущих вместе взятых.","HSI_TTMission_BattleBrief_0:«Почему мне кажется, что выбора у меня нет?»",
+HSI_TTMission_Plan_Answer2,DialogOptionSelected,"$option == HSI_TTMission_NewsBrief_Plan
+$AskedFleet
+!$AskedAmbassadar",,"«Боюсь, у нас есть только один путь, капитан $playerName. Обойти Tri-Tachyon и установить прямой контакт с флотом.»
+
+Учитывая только что обсужденное, вы начинаете думать, нет ли в этих словах более глубокого смысла. «Возможно, нам стоит связаться с делегацией.»
+
+«За делегацией тоже следят, и хотя передать сообщение с поверхности в космос незаметно невозможно, из космоса в космос - возможно.»
+
+Эта идея кажется вам страшнее всех предыдущих вместе взятых.","HSI_TTMission_BattleBrief_0:«Почему мне кажется, что выбора у меня нет?»",
+HSI_TTMission_Plan_Answer3,DialogOptionSelected,"$option == HSI_TTMission_NewsBrief_Plan
+$AskedFleet
+$AskedAmbassadar",,"«Боюсь, у нас есть только один путь, капитан $playerName. Нам нужно установить прямой контакт с флотом.»
+
+Учитывая невозможность этого, вы начинаете думать, нет ли в этих словах более глубокого смысла.
+
+«Передать сообщение с поверхности в космос незаметно невозможно, но из космоса в космос - возможно.»
+
+Эта идея кажется вам страшнее всех предыдущих вместе взятых.","HSI_TTMission_BattleBrief_0:«Почему мне кажется, что выбора у меня нет?»",
+HSI_TTMission_BattleBrief_0,DialogOptionSelected,$option == HSI_TTMission_BattleBrief_0,,"«Не обязательно, капитан $playerName.» Директор сжимает губы.
+
+«Однако советник Бородинов наверняка сообщит Экспедиционным силам о моем исчезновении, а связаться с ним, не раскрыв себя, невозможно. Как только новости выйдут наружу, 3-й флот немедленно начнет действовать, и в тот момент, когда он выйдет из червоточины, весь Персейский сектор окажется на грани.»
+
+«Если это произойдет, не только мы потеряем сон. Именно поэтому...» Она растягивает голос.
+
+«Судьба Персейского сектора в ваших руках, мой дорогой ас-сис-тент.»
+
+Вы начинаете придумывать план.
+",HSI_TTMission_BattleBrief_1:«Тогда первый шаг - добыть корабль.»,
+HSI_TTMission_BattleBrief_1,DialogOptionSelected,$option == HSI_TTMission_BattleBrief_1,,"«Я знаю кое-что подходящее... собственно, это и был первоначальный план. Тайные операции контролируют здесь засекреченный объект разработки оружия, где хранится гуманоидный мех неизвестного технологического происхождения. Он достаточно силен, чтобы справиться со всем, что может встретиться на низкой орбите, но на высокой орбите остается только надеяться, что они не смогут нас догнать.»
+
+«К счастью для нас, он еще и двухместный, хотя требует только одного оператора. Изначально планировалось забрать его другими средствами, но операцию приостановили из-за мирных переговоров - как раз тогда, когда он нам понадобился.»
+
+Вам внезапно кажется, что она давно это режиссировала, словно автор, пишущий клишированную историю о герое и с нетерпением расставляющий декорации именно для такого поворота, но сейчас другого пути нет.","HSI_TTMission_StartBattle:Что ж, это должно как-то закончиться",
+HSI_TTMission_StartBattle,DialogOptionSelected,$option == HSI_TTMission_StartBattle,"ShowLargePlanet
+HSITCEventFight TTMission",,,
+HSI_TTMission_AfterBattle_0,DialogOptionSelected,$option == HSI_TTMission_CombatEnd,"$global.HSI_TTMission_Combat_Finished = true
+$global.HSI_TTMission_JustFinished = true 20","Преследователи Tri-Tachyon все еще висят у вас на хвосте. Как только вы проходите линию Кармана, к погоне присоединяются несколько низкоорбитальных патрулей. При таких обстоятельствах шансы прорвать блокаду и выйти на дистанцию связи с флотом Halo Dynamics практически равны нулю. Вы держитесь курса, проложенного бортовым компьютером, пытаясь пройти через блокаду.
+
+Вы слышите, как Директор возится со своей панелью. Внезапно маршрут на HUD меняется, указывая на пустую точку над планетой. Без союзников и укрытий никому бы не пришло в голову считать ее путем отхода.","HSI_TTMission_AfterBattle_0:Задать вопросы
+HSI_TTMission_AfterBattle_1:Сосредоточиться на пилотировании",
+HSI_TTMission_AfterBattle_0_1,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_0,,"Вы кричите сквозь вой тревоги: «Вы уверены в этом маршруте?»
+
+«Сосредоточьтесь на пилотировании, ассистент. Это путь отхода, который я рассчитала.»","HSI_TTMission_AfterBattle_1:Вы ведь правда не можете выбирать, да?",
+HSI_TTMission_AfterBattle_1,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_1,,"Резкий левый поворот, возможно, стряхнул часть патрулей, пытавшихся вас окружить, но без поддержки быть пойманными - лишь вопрос времени. То, что флот Tri-Tachyon ранее зарядил оружие, не сулило ничего хорошего.
+
+«Достаточно, ассистент, передайте мне управление.»
+
+Напряжение ломается, когда нагрузка от нейросвязи быстро спадает. Преследователи приближаются, а вы по необъяснимой причине начинаете замедляться. Вы не отрываете глаз от радара, залитого сигналами. Сейчас вам остается только верить, что ваш временный оружейный офицер действительно нашла путь к безопасности.","HSI_TTMission_AfterBattle_2_1:Молиться
+HSI_TTMission_AfterBattle_2_2:Бога нет",
+HSI_TTMission_AfterBattle_2_1,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_2_1,,"Внезапно рев главной тревоги заполняет тесную кабину, а HUD предупреждает о сильной энергетической сигнатуре впереди. Никогда прежде не виденный фазовый капитальный корабль выходит из фазового пространства опасно близко к вам, развернув к вам створки челночного ангара.
+
+Через пять секунд вы влетаете в открытый ангар и благополучно садитесь при помощи системы посадки. После рывка - вы не уверены, от шасси он или от движения корабля, - тревоги смолкают.",HSI_TTMission_AfterBattle_3:«Именно на это вы рассчитывали?»,
+HSI_TTMission_AfterBattle_2_2,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_2_2,,"Внезапно рев главной тревоги заполняет тесную кабину, а HUD предупреждает о сильной энергетической сигнатуре впереди. Никогда прежде не виденный фазовый капитальный корабль выходит из фазового пространства опасно близко к вам, развернув к вам створки челночного ангара.
+
+Через пять секунд вы влетаете в открытый ангар и благополучно садитесь при помощи системы посадки. После рывка - вы не уверены, от шасси он или от движения корабля, - тревоги смолкают.",HSI_TTMission_AfterBattle_3:«Именно на это вы рассчитывали?»,
+HSI_TTMission_AfterBattle_3,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_3,,"«Да.»
+
+«Как насчет сегодня полюбоваться персейским рассветом?»","HSI_TTMission_AfterBattle_4_1:«Меня не трогают рассветы так, как людей на земле.»
+
+HSI_TTMission_AfterBattle_4_2:«Но этот я не забуду.»",
+HSI_TTMission_AfterBattle_4_1,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_4_1,$global.HSI_TTMission_Finished = true,"Ошеломленные усталостью после едва пережитой смерти, вы больше ничего не говорите. Директор молчит, уважая вашу потребность в покое.
+
+Вы проводите несколько минут в тишине, затем открываете люк меха. Несколько офицеров замирают, увидев вас, но их лица быстро становятся серьезными, когда они узнают Директора позади вас. Младший офицер помогает вам выбраться из меха, а рядом медик начинает базовое сканирование здоровья. Убедившись, что с вами все в порядке, офицер вежливо приглашает вас пройти в подготовленную каюту. Вы долго идете за ним по кораблю, пока наконец не прибываете.
+
+Через два часа тот же офицер возвращается и звонит в вашу дверь, сообщая, что шаттл готов вернуть вас к вашему флоту.",cutCommLink:Сесть в шаттл и завершить этот день,
+HSI_TTMission_AfterBattle_4_2,DialogOptionSelected,$option == HSI_TTMission_AfterBattle_4_2,$global.HSI_TTMission_Finished = true,"Ошеломленные усталостью после едва пережитой смерти, вы больше ничего не говорите. Директор молчит, уважая вашу потребность в покое.
+
+Вы проводите несколько минут в тишине, затем открываете люк меха. Несколько офицеров замирают, увидев вас, но их лица быстро становятся серьезными, когда они узнают Директора позади вас. Младший офицер помогает вам выбраться из меха, а рядом медик начинает базовое сканирование здоровья. Убедившись, что с вами все в порядке, офицер вежливо приглашает вас пройти в подготовленную каюту. Вы долго идете за ним по кораблю, пока наконец не прибываете.
+
+Через два часа тот же офицер возвращается и звонит в вашу дверь, сообщая, что шаттл готов вернуть вас к вашему флоту.",cutCommLink:Сесть в шаттл и завершить этот день,
+,,,,,,
+HSI_TTMission_After_0,PopulateOptions,"$faction.id == HSI
+$market.id == HSI_SpaceBridge_Market
+$isPerson
+HSIPersonIdentityCheck PersonIsTheCommissioner
+$global.HSI_TTMission_Combat_Finished
+!$global.HSI_TTMission_JustFinished
+!$global.HSI_TTMission_Apostle_Got",,,HSI_TTMission_After_0:«В следующий раз постараюсь держаться от вас подальше.»,
+HSI_TTMission_After_1,DialogOptionSelected,$option == HSI_TTMission_After_0,,"«По крайней мере день был интересным, капитан $playerName. Ну каково это - быть невоспетым героем всего сектора?»",HSI_TTMission_After_1:«Не сильно отличается.»,
+HSI_TTMission_After_2,DialogOptionSelected,$option == HSI_TTMission_After_1,,"«Жаль.» В ее голосе слышится что угодно, кроме разочарования. «Технический отдел уже проанализировал мех и признал его слегка технологически устаревшим, так что критически важным активом он не считается.»
+
+«Я планировала передать его одному невоспетому герою.»","HSI_TTMission_After_2_1:«С другой стороны, время от времени полезно немного приключений.»
+HSI_TTMission_After_2_2:«Мне все еще кажется, что это было слишком волнительно.»",
+HSI_TTMission_After_3_1,DialogOptionSelected,$option == HSI_TTMission_After_2_1,,"«Вам стоит прочитать эту книгу. Дайте посмотрю, куда я ее положила.»
+
+Директор подходит к огромному книжному шкафу в своем кабинете. Вы смотрите, как она лениво проводит пальцами по корешкам книг, будто просматривает сборник исторических трудов. Вам не хватает исторических знаний, чтобы узнать сущности, написанные на корешках, такие как «United Earth Directorate» или «Scyldari Confederacy». Вскоре она доходит до раздела литературы и достает с полки красиво напечатанную книгу.",HSI_TTMission_After_3:«<<Хамелеон>>?»,
+HSI_TTMission_After_3_2,DialogOptionSelected,$option == HSI_TTMission_After_2_2,$global.HSI_TTMission_Apostle_Got = true,"«Ну хорошо.» Директор возвращает взгляд к Tripad перед собой. «Горите ярко, капитан $playerName.»","cutCommLink:Может, есть еще что-то, чем стоит заняться",
+HSI_TTMission_After_4,DialogOptionSelected,$option == HSI_TTMission_After_3,"HSITCEventFight AddShipTTMission
+$global.HSI_TTMission_Apostle_Got = true","«Она окажется полезной, капитан $playerName.» Директор говорит с усмешкой в голосе. «Но это не обязательно плохо.»
+
+Она несколько раз нажимает на Tripad, затем переводит внимание на безделушки на столе, словно ищет, какую отдать вам. Вы не особенно стремитесь пополнять свою коллекцию безделушек, особенно тех, чье происхождение и назначение неизвестны, но которые явно не просто украшения.
+
+К счастью, она быстро отказывается от этой идеи. «Идите в док, капитан $playerName.»",cutCommLink:Направиться в док,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

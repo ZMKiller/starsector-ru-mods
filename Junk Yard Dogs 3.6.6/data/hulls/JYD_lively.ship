@@ -1,0 +1,63 @@
+{
+  "hullName": "Lively",
+  "hullId": "JYD_lively",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/JYD_lively.png",
+  "style": "LOW_TECH",
+  "height": 69,
+  "width": 60,
+  "center": [31, 33],
+  "collisionRadius": 50,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 46.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade",
+    "drive_field_stabilizer",
+    "high_maintenance",
+    "repair_gantry"
+  ],
+  "builtInWings": [
+    "JYD_Mosquito_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        5, 1,
+        12.5, 1
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-31.5, -3],
+      "length": 23,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-31.5, 4.5],
+      "length": 23,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -37, -24.5,
+    -0.5, -32.5,
+    38, -21.5,
+    35.5, 27.5,
+    -1.5, 34,
+    -37, 27.5
+  ]
+}

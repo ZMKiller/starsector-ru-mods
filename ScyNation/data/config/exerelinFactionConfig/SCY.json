@@ -1,0 +1,83 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+
+    "startRelationships":{
+        "ORA":0.25,
+        "luddic_church":-0.3
+    },
+
+    "morality":"amoral",
+    "alignments":{
+            "corporate":-0.5,
+            "technocratic":0.5,
+            "militarist":0,
+            "diplomatic":0.5,
+            "ideological":-1
+    },
+    "diplomacyTraits":["pacifist", "stalwart", "neutralist", "helps_allies"],
+    "colonyExpeditionChance":0.75,
+
+    "rebelFleetSuffix":"Turncoats",
+    "vengeanceLevelNames":["Assassination", "Sabotage", "Destabilization"],
+    "vengeanceFleetNames":["Killer", "Sabotage", "Instigator"],
+    "vengeanceFleetNamesSingle":["a Kill Fleet", "a Sabotage Task Force", "a Destabilization Force"],
+
+
+
+    "miningVariantsOrWings":["SCY_telchine_Standard"],
+
+
+
+    "startShipsSolo":[
+        ["SCY_talos_Brawler"]
+    ],
+    "startShipsCombatSmall":[
+        ["SCY_pyraemon_Brawler", "SCY_talos_Assault", "SCY_alecto_Escort"],
+        ["SCY_hydra_Brawler", "SCY_lealaps_Strike", "SCY_centaur_Standalone"]
+    ],
+    "startShipsCombatLarge":[
+        ["SCY_corocotta_Brawler", "SCY_lamiaA_Brawler", "SCY_tisiphone_Assault"],
+        ["SCY_dracanae_Assault", "SCY_geryon_Bomber", "SCY_megaera_Brawler"],
+        ["SCY_khalkotauroi_Close_Support", "SCY_alecto_Escort", "SCY_alecto_Close_Support"]
+    ],
+    "startShipsTradeSmall":[
+        ["SCY_telchine_Standard", "SCY_tisiphone_Brawler", "SCY_centaur_Standalone"]
+    ],
+    "startShipsTradeLarge":[
+        ["SCY_xanthus_Standard", "SCY_lamia_Brawler", "SCY_alecto_Brawler"]
+    ],
+    "startShipsCarrierSmall":[
+        ["SCY_argus_Bomber", "SCY_lealaps_Strike", "SCY_megaera_Brawler"]
+    ],
+    "startShipsCarrierLarge":[
+        ["SCY_manticore_Fighter", "SCY_geryon_Cluster", "SCY_talos_Brawler"]
+    ],
+    "startShipsSuper":[
+        ["SCY_stymphalianbird_Combat", "SCY_centaur_Standard"],
+        ["SCY_siren_Hunter"]
+    ],
+
+
+
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"], "weight":0.2},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"]},
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"], "weight":0.2}
+    ],
+
+    "startSpecialItems":[
+        [["SCY_basic_package", ""]],
+        #[["SCY_tech_package", ""]],
+        [["SCY_weapon_package", ""]]
+    ],
+
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.2},
+        {"id":"fuelprod", "mult":0.1}
+    ],
+
+    "bonusSeeds":[
+        {"id":"nanoforge_corrupted", "count":1}
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+
+    "directoryUseShortName":true,
+
+    "startRelationships":{ 
+        "pirates": -0.75,
+        "diableavionics":-0.6, 
+        "shadow_industry":0.4,
+        "SCY":0.25
+    },
+
+    "morality":"good",
+    "alignments":{
+        "corporate":-0.25,
+        "technocratic":0.25,
+        "militarist":-0.5,
+        "diplomatic":0.5,
+        "ideological":1,
+    },
+	
+	"diplomacyTraits":["pacifist", "monopolist", "envious", "helps_allies"],
+    "colonyExpeditionChance":1.5,
+	
+	
+    "rebelFleetSuffix":"Dissidents",
+    "vengeanceLevelNames":["Peacekeeping", "Retaliation", "Demilitarization"],
+    "vengeanceFleetNames":["Peacekeeper", "Retaliation", "Occupation"],
+    "vengeanceFleetNamesSingle":["a Peacekeeping fleet", "a Retaliation fleet", "an Occupation force"],
+
+
+
+    "startShipsSolo":[
+        ["ora_mirth_blaster"],
+    ],
+    "startShipsCombatSmall":[
+        ["ora_harmony_pulse", "ora_bliss_pulse"],
+        ["ora_grace_brawler", "ora_mirth_pulse", "mercury_Attack"],
+    ],
+    "startShipsTradeSmall":[
+        ["mule_Starting", "ora_bliss_beamer", "mercury_Standard"],
+    ],
+    "startShipsCombatLarge":[
+        ["ora_beatitude_blaster", "ora_harmony_pulse"],
+        ["ora_elevation_brawler", "ora_sanctuary_support"],
+    ],
+    "startShipsTradeLarge":[
+        ["starliner_Standard", "buffalo_tritachyon_Standard", "ora_mirth_support"],
+    ],
+    "startShipsCarrierSmall":[
+        ["ora_communion_support", "ora_grace_assault"],
+    ],
+    "startShipsCarrierLarge":[
+        ["ora_felicity_support", "ora_sanctuary_support", "ora_bliss_beamer"],
+    ],
+    "startShipsSuper":[
+        ["ora_ascension_combat", "mercury_Attack"],
+        ["ora_elevation_pulse"],
+    ],
+	
+    "startSpecialItems":[
+        [["ora_standard_package", ""]],
+        [["ora_weapon_package", ""]],
+    ],
+
+    "defenceStations":[
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+    ],
+
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"fuelprod", "mult":0.1},
+    ],
+
+    "bonusSeeds":[
+        {"id":"population_upsize", "count":2},
+        {"id":"nanoforge_corrupted", "count":1},
+    ],    
+}

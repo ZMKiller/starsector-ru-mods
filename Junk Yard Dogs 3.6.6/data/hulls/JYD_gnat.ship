@@ -1,0 +1,56 @@
+{
+  "hullName": "Gnat",
+  "hullId": "JYD_gnat",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/JYD_gnat.png",
+  "style": "MIDLINE",
+  "height": 21,
+  "width": 20,
+  "center": [10, 10.5],
+  "collisionRadius": 18,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 16,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [6.5, 5.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [6, -5.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-8.5, -0],
+      "length": 8.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "OMEGA"
+    }
+  ],
+  "bounds": [
+    10.5, -2,
+    6, -9,
+    0.5, -10.5,
+    -1, -5.5,
+    -10, -3.5,
+    -10, 3.5,
+    -1, 5.5,
+    0.5, 10.5,
+    6, 9,
+    10.5, 2
+  ]
+}

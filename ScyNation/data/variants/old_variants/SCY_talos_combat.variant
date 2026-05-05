@@ -1,0 +1,33 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 0,
+    "fluxVents": 7,
+    "goalVariant": false,
+    "hullId": "SCY_talos",
+    "hullMods": ["hardened_subsystems"],
+    "permaMods": [],
+    "variantId": "SCY_talos_combat",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_kacc2"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "SCY_grenade",
+                "WS0003": "SCY_grenade"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_intercept",
+                "WS0005": "SCY_intercept"
+            }
+        }
+    ]
+}

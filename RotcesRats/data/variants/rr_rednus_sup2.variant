@@ -1,0 +1,52 @@
+{
+  "variantId": "rr_rednus_sup2",
+  "hullId": "rr_rednus",
+  "displayName": "Support",
+  "goalVariant": false,
+  "fluxCapacitors": 19,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "missleracks",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "gazer",
+        "WS 005": "gazer",
+        "WS0001": "gazer",
+        "WS0002": "gazer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "irautolance",
+        "WS 004": "ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "lightmg",
+        "WS 007": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

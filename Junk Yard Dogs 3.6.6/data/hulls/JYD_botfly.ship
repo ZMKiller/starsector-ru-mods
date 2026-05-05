@@ -1,0 +1,64 @@
+{
+  "hullName": "Botfly",
+  "hullId": "JYD_botfly",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/dog_botfly.png",
+  "style": "LOW_TECH",
+  "height": 26,
+  "width": 23,
+  "center": [11.5, 13],
+  "collisionRadius": 22.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 20.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "JYD_labc",
+    "WS0002": "JYD_labc"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": 0,
+      "locations": [2.5, 6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": 0,
+      "locations": [2, -5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12, -3],
+      "length": 10.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH_FIGHTER"
+    },
+    {
+      "location": [-12.5, 4],
+      "length": 10.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH_FIGHTER"
+    }
+  ],
+  "bounds": [
+    13, -6.5,
+    13, 6.5,
+    -4, 13,
+    -13, 7,
+    -13, -6.5,
+    -4, -13
+  ]
+}

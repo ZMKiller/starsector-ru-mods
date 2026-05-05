@@ -1,0 +1,94 @@
+{
+	"id":"HWI_POS_Shot",
+	"specClass":"missile",	
+	"missileType":"MIRV",
+	"sprite":"graphics/missiles/rift_torpedo.png",
+	"size":[14,16],	
+	"center":[7,8],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[75,15,110,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":70, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":55,
+					 "coreRadius":45, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":5.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":0,
+					 "particleColor":[255,145,165,255]},
+	#"alwaysAccelerate":true,
+	#"reduceDamageWhileFading":true,
+	"noCollisionWhileFading":true,
+	"useHitGlowWhenDealingDamage":false, # using the scripted rift explosion instead
+	"useHitGlowWhenDestroyed":true, # instead of the default explosion
+	"dudProbabilityOnFlameout":0,
+	"fizzleOnReachingWeaponRange":true,					 
+	"armingTime":0,
+	"flameoutTime":0.2, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.2, # time spent without the engine glow being rendered
+	"fadeTime":0.2, # fadeout duration			
+	"glowColor":[100,10,255,75],
+	"glowRadius":25,
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":360,
+				  "acc":500,
+				  "dec":500},
+	"engineSlots":[{"id":"ES1",
+					#"loc":[-7, 0],
+					"loc":[0, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[45,0,255,20],
+						"glowSizeMult":1,
+						"glowAlternateColor":[100,10,255,255],
+						"contrailDuration":0.75,
+						"contrailWidthMult":0.7,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[100,10,255,75],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":50.0,
+				    "angle":180.0}],
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":1200,
+					"splitRangeRange":100,
+					"minTimeToSplit":0.66,
+					"canSplitEarly":false,
+					"splitSound":"",
+					"numShots":1,
+					"damage":300,
+					"emp":800, # needs to match highlight in weapon_data.csv
+					"damageType":ENERGY,
+					"hitpoints":300,
+					"evenSpread":false,
+					"arc":360,
+					"debrisSmall":0,
+					"debrisMedium":0,
+					"debrisLarge":0,
+					"spreadInaccuracy":360,
+					#"spreadSpeed":300,
+					"spreadSpeed":150,
+					"spreadSpeedRange":150,
+					"projectileSpec":"HWI_POS_Shot",
+					"smokeSpec":{"particleSizeMin":0.0,
+								 "particleSizeRange":0.0,
+								 "cloudParticleCount":0,
+								 "cloudDuration":0.0,
+								 "cloudRadius":0.0,
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[100,100,100,200]}
+					}				    
+}
+			

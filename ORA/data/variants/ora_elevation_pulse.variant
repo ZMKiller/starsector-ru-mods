@@ -1,0 +1,52 @@
+{
+    "displayName": "Pulse",
+    "fluxCapacitors": 7,
+    "fluxVents": 28,
+    "goalVariant": true,
+    "hullId": "ora_elevation",
+    "hullMods": [
+        "targetingunit",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_elevation_pulse",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_calling"}
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "ora_prayer",
+                "WS0003": "ora_prayer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "ora_recital",
+                "WS0005": "ora_recital"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "ora_choir",
+                "WS0007": "ora_choir",
+                "WS0008": "ora_choir",
+                "WS0009": "ora_choir",
+                "WS0010": "ora_choir",
+                "WS0011": "ora_choir",
+                "WS0012": "ora_choir",
+                "WS0013": "ora_choir"
+            }
+        }
+    ],
+    "wings": ["ora_awareness_wing"]
+}

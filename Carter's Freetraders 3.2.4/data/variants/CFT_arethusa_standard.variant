@@ -1,0 +1,85 @@
+{
+  "variantId": "CFT_arethusa_standard",
+  "hullId": "CFT_arethusa",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_mpmb",
+        "WS0002": "CFT_mpmb",
+        "WS0003": "CFT_mpmb",
+        "WS0004": "CFT_mpmb"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "CFT_pdwburst",
+        "WS0006": "CFT_pdwburst",
+        "WS0007": "CFT_pdwburst",
+        "WS0008": "CFT_pdwburst",
+        "WS0013": "CFT_pdwburst",
+        "WS0014": "CFT_pdwburst",
+        "WS0015": "CFT_pdwburst",
+        "WS0016": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "CFT_pmb",
+        "WS0010": "CFT_pmb",
+        "WS0011": "CFT_pmb",
+        "WS0012": "CFT_pmb"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0017": "CFT_infernorockets",
+        "WS0018": "CFT_infernorockets"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0021": "CFT_lpmb"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "CFT_katyusha",
+        "WS0020": "CFT_katyusha"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_tender_standard_wing",
+    "CFT_tender_standard_wing",
+    "CFT_tender_standard_wing",
+    "CFT_tender_standard_wing"
+  ]
+}

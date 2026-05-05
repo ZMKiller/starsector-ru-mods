@@ -1,0 +1,93 @@
+{
+  "bounds": [
+    -16.5,
+    8.5,
+    -16.5,
+    -8.5,
+    5.5,
+    -13.5,
+    14.5,
+    -4.5,
+    8.5,
+    15.5
+  ],
+  "builtInMods": [
+    "no_weapon_flux",
+    "SCY_engineering",
+    "pointdefenseai"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SCY_minigun1"
+  },
+  "builtInWings": [],
+  "center": [
+    18,
+    20
+  ],
+  "collisionRadius": 25,
+  "engineSlots": [
+    {
+      "angle": 170.869827,
+      "contrailSize": 8.744928,
+      "length": 16.908032,
+      "location": [
+        -19,
+        6.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES",
+      "width": 8.744928
+    },
+    {
+      "angle": -170.869827,
+      "contrailSize": 8.744928,
+      "length": 16.908032,
+      "location": [
+        -19,
+        -6.5
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES",
+      "width": 8.744928
+    }
+  ],
+  "height": 37,
+  "hullId": "SCY_akhlys",
+  "hullName": "Akhlys",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0.5,
+    -0
+  ],
+  "shieldRadius": 23.584953,
+  "spriteName": "graphics/SCY/ships/fighters/SCY_akhlys.png",
+  "style": "SCYHULL",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0001",
+      "locations": [
+        1,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        10,
+        -8.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 34
+}

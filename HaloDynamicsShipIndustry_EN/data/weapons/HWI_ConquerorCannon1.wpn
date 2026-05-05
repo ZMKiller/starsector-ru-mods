@@ -1,0 +1,44 @@
+{
+  "id": "HWI_ConquerorCannon1",
+  "specClass": "projectile",
+  "projectileSpecId": "HWI_ConquerorCannon_Shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "everyFrameEffect": "data.weapons.scripts.HWITurboChargerWeapon",
+  "turretSprite": "",
+  "hardpointSprite": "graphics/weapons/HWI_ConquerorTurboCannon_hardpoint_base1.png",
+  "hardpointGunSprite": "graphics/weapons/HWI_ConquerorTurboCannon_hardpoint_recoil1.png",
+  "visualRecoil": 3,
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    24,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "renderHints":[RENDER_BARREL_BELOW],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 20,
+    "spread": 15,
+    "particleSizeMin": 5,
+    "particleSizeRange": 5,
+    "particleDuration": 0.8,
+    "particleCount": 12,
+    "particleColor": [
+      100,
+      100,
+      255,
+      255
+    ]
+  },
+  "fireSoundTwo": "mining_blaster_fire"
+}

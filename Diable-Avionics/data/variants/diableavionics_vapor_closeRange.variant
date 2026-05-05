@@ -1,0 +1,39 @@
+{
+  "variantId": "diableavionics_vapor_closeRange",
+  "hullId": "diableavionics_vapor",
+  "displayName": "Close Support",
+  "goalVariant": false,
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "reinforcedhull",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "diableavionics_gravemg",
+        "WS0002": "diableavionics_glowtusk",
+        "WS0003": "diableavionics_banishsmall",
+        "WS0004": "diableavionics_banishsmall"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

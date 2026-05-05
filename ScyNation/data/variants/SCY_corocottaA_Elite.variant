@@ -1,0 +1,55 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 20,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "SCY_corocottaA",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "SCY_corocottaA_Elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_scpb",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_kacc2",
+                "WS0003": "SCY_kacc2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_cluster2",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "vulcan",
+                "WS0007": "vulcan",
+                "WS0006": "vulcan",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"WW1_MULTI": "SCY_corAF_Elite"},
+        {"WW2_MULTI": "SCY_corAFL_Elite"},
+        {"WW3_MULTI": "SCY_corAFR_Elite"},
+        {"WW4_MULTI": "SCY_corAL_Elite"},
+        {"WW5_MULTI": "SCY_corAR_Elite"},
+    ],
+}

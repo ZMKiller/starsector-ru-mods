@@ -1,0 +1,48 @@
+{
+  "variantId": "rr_surebrec_hrd",
+  "hullId": "rr_surebrec",
+  "displayName": "EMP Hardened",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 13,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "insulatedengine",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightmg",
+        "WS 002": "lightmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

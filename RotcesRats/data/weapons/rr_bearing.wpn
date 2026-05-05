@@ -1,0 +1,36 @@
+{
+  "id": "rr_bearing",
+  "specClass": "projectile",
+  "projectileSpecId": "rr_bearing_rkt",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "displayArcRadius": 500,
+	"turretSprite":"graphics/weapons/rr_launcher_bearing_turret.png",
+	"hardpointSprite":"graphics/weapons/rr_launcher_bearing_hardpoint.png",
+
+	"hardpointOffsets":[9, 0, 8, -3, 8, 3],
+	"turretOffsets":[7, 0, 6, -3, 6, 3],
+	"hardpointAngleOffsets":[0, -3, 3],
+	"turretAngleOffsets":[0, -3, 3],
+
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 8,
+    "particleSizeRange": 14,
+    "cloudParticleCount": 3,
+    "cloudDuration": 0.8,
+    "cloudRadius": 7,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 1,
+    "blowbackLength": 18,
+    "blowbackSpread": 9,
+    "particleColor": [
+      170,
+      160,
+      150,
+      130
+    ]
+  },
+  "fireSoundTwo": "annihilator_fire"
+}

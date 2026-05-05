@@ -1,0 +1,28 @@
+{
+    "displayName": "Saturation",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "hullId": "SCY_tisiphone",
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.6,
+    "variantId": "SCY_tisiphone_saturation",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_minigun2",
+                "WS0002": "SCY_minigun2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "ANTIMISSILE1": "SCY_anti1",
+                "ANTIMISSILE2": "SCY_anti1"
+            }
+        }
+    ]
+}

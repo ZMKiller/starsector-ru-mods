@@ -1,0 +1,26 @@
+{
+    "displayName": "Saturation",
+    "fluxCapacitors": 1,
+    "fluxVents": 10,
+    "hullId": "SCY_megaera",
+    "hullMods": ["hardenedshieldemitter"],
+    "permaMods": [],
+    "variantId": "SCY_megaera_saturation",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SCY_minigun1",
+                "WS0002": "SCY_minigun1",
+                "WS0003": "SCY_minigun1",
+                "WS0004": "SCY_minigun1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "vulcan"}
+        }
+    ]
+}

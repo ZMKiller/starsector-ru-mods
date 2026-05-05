@@ -1,0 +1,37 @@
+{
+	"id":"rr_gyro_missile",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/rr_missile_gyro.png",
+	"size":[7,16],	
+	"center":[3.5,7],
+	"collisionRadius":12,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,125,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+
+	"engineSpec":{"turnAcc":2400,
+				  "turnRate":320,
+				  "acc":3000,
+				  "dec":3000},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-8, 0],
+
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[235,115,45,255],
+						"contrailDuration":.5,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":12, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[110,100,90,130],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":3.5,
+				    "length":18.0,
+				    "angle":180.0}]
+}

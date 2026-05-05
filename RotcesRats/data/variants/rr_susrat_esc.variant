@@ -1,0 +1,41 @@
+{
+  "variantId": "rr_susrat_esc",
+  "hullId": "rr_susrat",
+  "displayName": "Escort",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 8,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "rr_gyro",
+        "WS0002": "rr_gyro"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightdualmg",
+        "WS 002": "lightdualmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "vulcan",
+        "WS 004": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "rr_heckler_wing"
+  ]
+}

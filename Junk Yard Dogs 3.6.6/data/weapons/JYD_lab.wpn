@@ -1,0 +1,43 @@
+{
+  "id": "JYD_lab",
+  "specClass": "projectile",
+  "projectileSpecId": "shell_large",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "displayArcRadius": 600,
+  "turretSprite": "graphics/weapons/JYD_lab_turret.png",
+  "turretGlowSprite": "graphics/weapons/JYD_lab_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/JYD_lab.png",
+  "hardpointGlowSprite": "graphics/weapons/JYD_lab_hardpoint_glow.png",
+  "turretOffsets": [
+    30.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    47.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING_BURST",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 45,
+    "spread": 15,
+    "particleSizeMin": 10,
+    "particleSizeRange": 35,
+    "particleDuration": 0.75,
+    "particleCount": 50,
+    "particleColor": [
+      255,
+      120,
+      50,
+      245
+    ]
+  },
+  "fireSoundTwo": "hellbore_fire"
+}

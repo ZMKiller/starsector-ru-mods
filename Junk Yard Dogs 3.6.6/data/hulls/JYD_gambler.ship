@@ -1,0 +1,142 @@
+{
+  "hullName": "Gambler",
+  "hullId": "JYD_gambler",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/pirates/JYD_gambler.png",
+  "style": "LOW_TECH",
+  "height": 145,
+  "width": 90,
+  "center": [43.5, 64.5],
+  "collisionRadius": 89.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 84.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "operations_center"
+  ],
+  "builtInWeapons": {
+    "WS0004": "JYD_af",
+    "WS0005": "JYD_af"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-5.5, 10.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-18.5, -14.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [57.5, 10.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 90,
+      "locations": [-19, 32.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -90,
+      "locations": [-19.5, -36.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        10, -0,
+        13.5, -5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        10, -27,
+        14.5, -20
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-62.5, -13],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-62.5, 9.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-62.5, -1.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-60, 18],
+      "length": 11.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-59.5, -21],
+      "length": 11.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -20.5, -58.5,
+    81.5, -35.5,
+    81, 15.5,
+    -19, 54,
+    -65.5, 37.5,
+    -66.5, -27
+  ]
+}

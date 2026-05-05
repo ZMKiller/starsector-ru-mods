@@ -1,0 +1,30 @@
+{
+    "id":"SCY_ricochet",  # this id must match what's in the spreadsheet
+    "specClass":"projectile",
+    "type":"BALLISTIC",
+    "size":"LARGE",
+    "displayArcRadius":750,
+    "turretSprite":"graphics/SCY/weapons/SCY_ricochetT.png",
+    "turretGunSprite":"graphics/SCY/weapons/SCY_ricochetTB.png",	
+    "hardpointSprite":"graphics/SCY/weapons/SCY_ricochetH.png",
+    "hardpointGunSprite":"graphics/SCY/weapons/SCY_ricochetHB.png",
+    "visualRecoil":6,
+    "renderHints":[RENDER_BARREL_BELOW],
+    "turretOffsets":[34, 0],
+    "turretAngleOffsets":[0],
+    "hardpointOffsets":[42, 0],
+    "hardpointAngleOffsets":[0],
+    "barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+    "animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+    "muzzleFlashSpec":{"length":20.0,   
+                       "spread":5.0,
+                       "particleSizeMin":30.0,
+                       "particleSizeRange":60.0,
+                       "particleDuration":0.2,
+                       "particleCount":10,
+                       "particleColor":[255,75,50,100]},
+    "autocharge":true,  	
+    "projectileSpecId":"SCY_ricochetS",  # projectile that will be fired
+    "everyFrameEffect":"org.scy.weapons.SCY_addToMuzzlePlugin",
+    "fireSoundTwo":"SCY_ricochet",
+}

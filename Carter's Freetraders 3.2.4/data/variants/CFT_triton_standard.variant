@@ -1,0 +1,88 @@
+{
+  "variantId": "CFT_triton_standard",
+  "hullId": "CFT_triton",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "fluxdistributor",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "CFT_wavemotion",
+        "WS0014": "CFT_wavemotion",
+        "WS0015": "CFT_wavemotion",
+        "WS0021": "CFT_wavemotion"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "CFT_shredder",
+        "WS0011": "CFT_shredder",
+        "WS0013": "CFT_shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "CFT_dartgun",
+        "WS0006": "CFT_dartgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "CFT_pdwburst",
+        "WS0002": "CFT_pdwburst",
+        "WS0003": "CFT_pdwburst",
+        "WS0004": "CFT_pdwburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "CFT_fogger",
+        "WS0008": "CFT_fogger"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0016": "CFT_volleyrocket",
+        "WS0017": "CFT_volleyrocket",
+        "WS0018": "CFT_volleyrocket",
+        "WS0019": "CFT_volleyrocket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0020": "CFT_infernorockets"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "CFT_skiff_standard_wing",
+    "CFT_skiff_standard_wing",
+    "CFT_dingy_standard_wing",
+    "CFT_dingy_standard_wing",
+    "CFT_cutter_standard_wing",
+    "CFT_cutter_standard_wing"
+  ]
+}

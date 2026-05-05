@@ -1,0 +1,127 @@
+{
+  "hullName": "Mirth",
+  "hullId": "ora_mirth",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ORA/ships/ora_mirth.png",
+  "style": "HIGH_TECH",
+  "height": 73,
+  "width": 96,
+  "center": [48, 37],
+  "collisionRadius": 66,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 65.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ora_design"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [13, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-18, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 60.010002,
+      "locations": [11, 33]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -60,
+      "locations": [11, -33]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 120.010002,
+      "locations": [-12, 33]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -120,
+      "locations": [-12, -33]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-32, -23],
+      "length": 49,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, 23],
+      "length": 49,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, 28.5],
+      "length": 29,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, -28.5],
+      "length": 29,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    28.5, 29.5,
+    34.5, 36.5,
+    24.5, 46.5,
+    -25.5, 46.5,
+    -35.5, 36.5,
+    -31.5, 31.5,
+    -31.5, 20.5,
+    -24.5, 17.5,
+    -29.5, 12.5,
+    -29.5, -12.5,
+    -24.5, -17.5,
+    -31.5, -20.5,
+    -31.5, -31.5,
+    -35.5, -36.5,
+    -25.5, -46.5,
+    24.5, -46.5,
+    34.5, -36.5,
+    28.5, -29.5
+  ]
+}

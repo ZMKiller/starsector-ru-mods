@@ -1,0 +1,41 @@
+{
+  "variantId": "rr_surebrec_od",
+  "hullId": "rr_surebrec",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 1,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightmortar",
+        "WS 002": "lightmortar",
+        "WS 003": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

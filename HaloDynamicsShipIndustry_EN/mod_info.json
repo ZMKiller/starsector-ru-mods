@@ -1,0 +1,18 @@
+{
+	"id":"HaloDynamicsShipIndustry", # internal id
+	"name":"Halo Dynamics Ship Industry", # displayed to the player
+	"author":"Ajimu,\n Contentment, provided a large number of beautiful textures and special effects\nScythe, provided solutions and some suggestions\npersocom01 for translation\n",
+	"version":"1.7.0",
+	"description":"A Megacorporation that crossed the stars to reach the Persean Sector. Despite their claim that their purpose is to track down Tri-Tachyon technology and reopen the Gates, many of their actions have aroused suspicion.",
+	"gameVersion":"0.98a-RC8",
+	"jars": [
+		"jars/HaloDynamicsShipIndustry.jar"
+	  ],	
+	  "dependencies": [
+		{"id": "lw_lazylib", "name": "LazyLib"},
+		{"id": "MagicLib", "name": "MagicLib"},
+		{"id": "shaderLib", "name": "GraphicsLib"},
+		{"id":"lunalib","name":"LunaLib"}
+	  ],
+	  "modPlugin": "data.scripts.HSIModPlugin"
+}

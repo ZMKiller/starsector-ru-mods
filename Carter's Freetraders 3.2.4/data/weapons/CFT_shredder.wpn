@@ -1,0 +1,53 @@
+{
+  "id": "CFT_shredder",
+  "specClass": "projectile",
+  "projectileSpecId": "CFT_shredder_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/CFT/weapons/CFT_shredder_turret_base.png",
+  "turretGunSprite": "graphics/CFT/weapons/CFT_shredder_turret_recoil.png",
+  "hardpointSprite": "graphics/CFT/weapons/CFT_shredder_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/CFT/weapons/CFT_shredder_hardpoint_recoil.png",
+  "visualRecoil": 3,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    20,
+    -4.5,
+    20,
+    4.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    24,
+    -4.5,
+    24,
+    4.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 3,
+    "particleSizeMin": 5,
+    "particleSizeRange": 5,
+    "particleDuration": 0.15,
+    "particleCount": 9,
+    "particleColor": [
+      255,
+      120,
+      105,
+      250
+    ]
+  },
+  "fireSoundTwo": "vulcan_cannon_fire"
+}

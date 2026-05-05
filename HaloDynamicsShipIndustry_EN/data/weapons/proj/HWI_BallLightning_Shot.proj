@@ -1,0 +1,38 @@
+{
+	"id":"HWI_BallLightning_Shot",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	#"missileType":"HEATSEEKER",
+	#"missileType":"CIRCLE_TARGET",
+	"onFireEffect":"data.weapons.scripts.proj.HSIThorWeaponProjEffect",
+	"sprite":"graphics/fx/shields64ring.png",
+	"size":[20,20],	
+	"center":[10, 10],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,100,225,225],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual	
+	"engineSpec":{"turnAcc":300,
+				  "turnRate":270,
+				  "acc":250,
+				  "dec":200},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,255,255,255],
+						"contrailDuration":0,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[255,255,255,75],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":0.0,
+				    "length":0.0,
+				    "angle":180.0},
+				    ]
+}

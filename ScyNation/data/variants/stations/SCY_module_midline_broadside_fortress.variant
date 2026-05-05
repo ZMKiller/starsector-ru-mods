@@ -1,0 +1,77 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "module_midline_broadside",
+    "hullMods": [
+        "heavyarmor",
+        #"SCY_reactiveArmor",
+        "reinforcedhull",
+        "hardenedshieldemitter",
+        "magazines",
+        "fluxcoil",
+        "fluxdistributor",
+        "stabilizedshieldemitter",
+        "fluxbreakers",
+        "autorepair",
+        "turretgyros",
+        "armoredweapons",
+        "pointdefenseai"
+    ],
+    "permaMods": [],
+    "variantId": "SCY_module_midline_broadside_fortress",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "SCY_orion",
+                "WS 008": "SCY_orion"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "SCY_uheb",
+                "WS 004": "SCY_uheb",
+                "WS 005": "SCY_uheb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "SCY_scpb",
+                "WS 002": "SCY_scpb",
+                "WS 006": "SCY_scpb",
+                "WS 007": "SCY_scpb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "SCY_kacc2",
+                "WS 011": "SCY_kacc2",
+                "WS 012": "SCY_kacc2",
+                "WS 013": "SCY_kacc2",
+                "WS 014": "SCY_kacc2",
+                "WS 015": "SCY_kacc2"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 016": "SCY_minigun1",
+                "WS 017": "SCY_minigun1",
+                "WS 018": "SCY_minigun1",
+                "WS 019": "SCY_minigun1",
+                "WS 020": "SCY_minigun1",
+                "WS 021": "SCY_minigun1",
+                "WS 022": "SCY_minigun1"
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+	"id":"SCY_antiS",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/SCY/missiles/SCY_anti.png",
+	"size":[7,10],	
+	"center":[3.5,5],
+	"collisionRadius":6,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[173,252,251,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+	"engineSpec":{"turnAcc":1440,
+                      "turnRate":720,
+                      "maxSpeed":400,
+                      "acc":800,
+                      "dec":400},
+	"engineSlots":[             				    
+			{"id":"ES1",
+				"loc":[-4,0],
+				"style":"CUSTOM",
+				"styleSpec":{
+					"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+					"engineColor":[100,165,255,255],
+					"contrailDuration":1,
+					"contrailWidthMult":1,
+					"contrailWidthAddedFractionAtEnd":-1,  # can be negative. makes trail spread out/narrow at the end
+					"contrailMinSeg":15, # min segment length, in pixels
+					"contrailMaxSpeedMult":0.1f,
+					"contrailAngularVelocityMult":0.1f,
+					"contrailColor":[100,165,255,75],
+					"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+                        "width":7.0,
+			"length":40.0,
+			"angle":180.0
+                        }],
+        "onHitEffect":"org.scy.weapons.SCY_flakEffect",
+        "renderTargetIndicator":false,
+}

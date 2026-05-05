@@ -1,0 +1,19 @@
+{
+    "id":"edshipyard_doppel_glitch",
+    "type":"STAT_MOD",
+	"aiType":"CUSTOM",
+    "aiScript":"data.scripts.edshipyard.shipsystems.ai.DummySystemAI",
+
+    "statsScript":"data.scripts.edshipyard.shipsystems.IllusionStats",
+
+	"canUseWhileRightClickSystemOn":true,
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	
+	#"shipAlpha":0,
+
+    #"fadeActivationSoundOnChargedown":true,
+    #"outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{        
+    }
+}

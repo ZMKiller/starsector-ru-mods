@@ -1,0 +1,90 @@
+{
+  "bounds": [
+    9.5,
+    14.5,
+    -10.5,
+    14.5,
+    -10.5,
+    -14.5,
+    9.5,
+    -13.5
+  ],
+  "builtInMods": [
+    "no_weapon_flux",
+    "SCY_engineering"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SCY_Fcluster"
+  },
+  "center": [
+    18,
+    14
+  ],
+  "collisionRadius": 23,
+  "coversColor": "",
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 16.5,
+      "location": [
+        -13,
+        12
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 16.5,
+      "location": [
+        -13,
+        -12
+      ],
+      "style": "CUSTOM",
+      "styleId": "SCYMISSILES",
+      "width": 8
+    }
+  ],
+  "height": 28,
+  "hullId": "SCY_ker",
+  "hullName": "Ker",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 23,
+  "spriteName": "graphics/SCY/ships/fighters/SCY_ker.png",
+  "style": "SCYHULL",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        4,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 360,
+      "id": "WS0002",
+      "locations": [
+        6,
+        -10
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 36
+}

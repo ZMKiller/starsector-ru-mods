@@ -1,0 +1,82 @@
+{
+    "displayName": "Pulser",
+    "fluxCapacitors": 49,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "ora_enlightenment",
+    "hullMods": [
+        "magazines",
+        "fluxbreakers",
+        "targetingunit",
+        "advancedshieldemitter",
+        "unstable_injector"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_enlightenment_pulse",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "autopulse",
+                "WS0005": "pulselaser",
+                "WS0006": "ionpulser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "autopulse",
+                "WS0007": "pulselaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "autopulse",
+                "WS0008": "pulselaser",
+                "WS0010": "pulselaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "autopulse",
+                "WS0009": "pulselaser",
+                "WS0011": "pulselaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "irpulse",
+                "WS0017": "irpulse",
+                "WS0019": "irpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0016": "irpulse",
+                "WS0018": "irpulse",
+                "WS0020": "irpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "ora_choir",
+                "WS0014": "ora_choir",
+                "WS0021": "ora_choir",
+                "WS0022": "ora_choir"
+            }
+        }
+    ]
+}

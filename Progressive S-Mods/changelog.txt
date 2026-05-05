@@ -1,0 +1,30 @@
+1.2.0
+----------
+WARNING: NOT SAVE COMPATIBLE WITH PREVIOUS VERSIONS
+
+- No longer does shenanigans with setting and unsetting every hullmod's NO_BUILD_IN.
+- Now deletes the "Build-in" button from the refit screen.
+- Moved util into the progsmod package.
+
+1.1.0
+----------
+- Handled "stations" with no tradeMode
+- Recompiled for Java 17
+- Updated game version to 0.98
+
+1.0.3
+----------
+- Handled possible (but which should never happen) cyclic base ship chain.
+
+1.0.2
+----------
+- Hotfix for persistence issue when adding S-mods/increasing limit from LunaLib refit button on ships that didn't already have the XP tracker hullmod.
+
+1.0.1
+----------
+- Disabled and removed the legacy UI.
+- Added LunaLib refit button to manage S-mods, if you have LunaLib. (Note: due to weirdness with stacking interfaces, clicking the increase S-mod limit button will close the S-mod interface when accessed directly from refit screen).
+- No longer checks hullmod getUnapplicableReason for hullmods that are already installed on the variant.
+- Fixed reserve XP not working correctly with Lunalib.
+- Fixed increasing S-mod limit not working with the exact number of story points needed.
+- Reserve XP can now be used to increase S-mod limit.

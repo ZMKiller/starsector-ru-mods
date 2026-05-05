@@ -1,0 +1,38 @@
+{
+	"id":"SCY_phaseS",
+	"specClass":"missile",	
+	"missileType":"MISSILE",	
+	"sprite":"graphics/SCY/missiles/SCY_phase.png",
+	"size":[13,36],	
+	"center":[6.5,14],
+	"collisionRadius":19,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,180,240,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual
+	"maxFlightTime":8,
+	"engineSpec":{"turnAcc":90,
+                      "turnRate":45,
+                      "maxSpeed":200,
+                      "acc":50,
+		      "dec":50},
+	"engineSlots":[{"id":"ES1",
+			"loc":[-12, 0],
+			"style":"CUSTOM",
+                        "styleSpec":{
+                            "mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+                            "engineColor":[100,165,255,255],
+                            "contrailDuration":1,
+                            "contrailWidthMult":1,
+                            "contrailWidthAddedFractionAtEnd":-0.5,  # can be negative. makes trail spread out/narrow at the end
+                            "contrailMinSeg":10, # min segment length, in pixels
+                            "contrailMaxSpeedMult":0.5f,
+                            "contrailAngularVelocityMult":0.5f,
+                            "contrailColor":[100,165,255,75],
+                            "type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+			},
+			"width":8.0,
+			"length":50.0,
+			"angle":180.0},
+                      ],
+	
+}

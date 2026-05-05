@@ -1,0 +1,119 @@
+{
+    "nexerelin":{
+		"mining_ship_strengths":{
+			"JYD_short":4,
+			"JYD_spirited":18,
+			"JYD_lively":3,
+			"JYD_lean":3,
+			"JYD_obedient": 6,
+			"JYD_happy": 3,
+			"JYD_loyal":10,
+			"JYD_exuberant":3,
+			"JYD_empathetic":1,
+			"JYD_irksome":6,		
+			"JYD_intelligent":6,
+			"JYD_smart":20,
+			"JYD_tick": 1,
+			"JYD_mite": 1,			
+			"JYD_flea": 1,
+			"JYD_midge": 1,	
+			"JYD_manticore": 1,					
+			"JYD_relaxed": 3,
+			"JYD_splendid": 5,
+			"JYD_botfly": 2,
+			"JYD_courageous": 5,
+			"JYD_knowledgeable": 20,
+			"JYD_intense": 8,
+			"JYD_gnat": 0.5,
+			"JYD_malinois": 1,
+			"JYD_heavydrone":5,
+			"JYD_industrious": 35,
+			"JYD_commanding": 20,
+			"JYD_cute": 8,
+			"JYD_fluffy": 9,
+			"JYD_muscular": 8,
+			"JYD_troublesome": 5,
+			"JYD_adorable": 3,
+			"JYD_sharp": 12,
+			"JYD_mosquito": 0.5,
+			"JYD_termite":0.1,
+			"JYD_fetching": 10,
+			"JYD_peppy": 50,
+			"JYD_cordelia": 10,
+			"JYD_eager": 5,
+			"JYD_confident": 20,
+			"JYD_intelligentmkq": 6,
+			"JYD_stalwart": 30,
+			"JYD_rambunctious": 10,
+			"JYD_energetic": 5,
+			"JYD_adaw": 0.5,	
+			"JYD_protective": 5,
+			"JYD_endurance": 3,	
+			"JYD_reliable": 8,
+			"JYD_rugged": 5,	
+			"JYD_curious":3,
+			"JYD_hardy":5,				
+			"JYD_tsetse": 2,				
+		},
+		"mining_weapon_strengths":{
+			"JYD_ab": 3,
+			"JYD_abf": 2,
+			"JYD_af": 3,
+			"JYD_lrk": 12,
+			"JYD_lrm": 9,
+			"JYD_mrb": 9,
+			"JYD_mrm": 9,
+			"JYD_srm": 4,
+			"JYD_pbtorp": 10,
+			"JYD_hab": 9,
+			"JYD_hdml":16,
+			"JYD_hbl": 25,
+			"JYD_mbl": 17,
+			"JYD_lbl": 8,
+			"JYD_abc": 4,
+			"JYD_labc": 3,			
+			"JYD_mabc": 6,
+			"JYD_lab": 14,	
+			"JYD_lpbtorp": 20,	
+			"JYD_pe": 9,
+			"JYD_spe": 3,
+			"JYD_ionburst": 13,	
+			"JYD_beb": 3,
+			"JYD_bea": 6,
+			"JYD_trc": 25,	
+			"JYD_sc": 8,	
+			"JYD_mp": 1.5,			
+		},
+		"mining_hidden_ships_and_weapons":["JYD_botfly", "JYD_gnat", "JYD_heavydrone", "JYD_termite", "JYD_mosquito, JYD_adaw"],
+    },
+	
+   "SCY":{
+        "amity_factionWhitelist":[
+            # Lists factions that should have their known ships and weapons sold in Amity's Freeport discount trader.
+            "JYD",
+        ],
+        #"amity_blacklist":[
+        #    # Lists ships, weapons and wings ids that should be culled from Amity's Freeport discount trader.
+        #    # Consider that tier 3 weapons/wings and ships above 5/10/14/23 FP are already culled from that store automatically.
+        #],
+    },	
+
+	"PerseanChronicles": {
+		  # Controls what systems/markets may be used as quest starting/mid/ending locations.
+		  # Valid for v1.0.1 and later
+		#"entity_tags_to_blacklist": [
+		#	# SectorEntityTokens containing a tag listed here will be blacklisted.
+		#],
+		#"system_ids_to_blacklist": [
+		#	# Star systems with an id listed here will be blacklisted.
+		#],
+		#"market_ids_to_blacklist": [
+		#	# Markets with an id listed here will be blacklisted.
+		#],
+		"faction_ids_to_whitelist": [
+			# Markets whose controlling faction's id is listed here will be *whitelisted*.
+			# Vanilla factions are whitelisted by default.
+			"JYD",
+		]
+	},	
+}

@@ -1,0 +1,67 @@
+{
+  "hullName": "Cutter",
+  "hullId": "CFT_cutter",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_cutter.png",
+  "style": "MIDLINE",
+  "height": 46,
+  "width": 42,
+  "center": [20.5, 23],
+  "collisionRadius": 35,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 32,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 35,
+      "angle": 0,
+      "locations": [5, 9.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 35,
+      "angle": 0,
+      "locations": [5, -10.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": 180,
+      "locations": [-8, -0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-18.5, -4.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH_FIGHTER"
+    },
+    {
+      "location": [-18.5, 4.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH_FIGHTER"
+    }
+  ],
+  "bounds": [
+    26, 27.5,
+    -26, 23.5,
+    -26, -23.5,
+    26, -27.5
+  ]
+}

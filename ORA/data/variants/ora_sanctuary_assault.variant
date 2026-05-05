@@ -1,0 +1,57 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 5,
+    "fluxVents": 1,
+    "goalVariant": true,
+    "hullId": "ora_sanctuary",
+    "hullMods": [
+        "safetyoverrides",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_sanctuary_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0011": "harpoon_single",
+                "WS0012": "harpoon_single",
+                "WS0013": "harpoon_single",
+                "WS0014": "harpoon_single"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ora_choir",
+                "WS0002": "ora_choir",
+                "WS0003": "ora_choir",
+                "WS0004": "ora_choir",
+                "WS0005": "ora_recital"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "ora_recital",
+                "WS0009": "ora_recital",
+                "WS0015": "ora_recital"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "mininglaser",
+                "WS0008": "mininglaser",
+                "WS0010": "mininglaser",
+                "WS0016": "mininglaser"
+            }
+        }
+    ],
+    "wings": ["ora_wisdom_wing"]
+}

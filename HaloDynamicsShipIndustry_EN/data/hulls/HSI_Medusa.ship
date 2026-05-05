@@ -1,0 +1,218 @@
+{
+  "hullName": "Medusa (HSI)",
+  "hullId": "HSI_Medusa",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HSI_medusa.png",
+  "style": "HSI_TECH",
+  "height": 111,
+  "width": 140,
+  "center": [70, 58],
+  "collisionRadius": 106.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 84.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HSI_Halo"
+  ],
+  "builtInWeapons": {
+    "WS00A": "HSI_LED"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 116,
+      "angle": 19.5,
+      "locations": [0, 23.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 116,
+      "angle": -19.5,
+      "locations": [0, -23.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -52.5,
+      "locations": [18.5, -45.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 52.5,
+      "locations": [18.5, 45.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 116,
+      "angle": 122,
+      "locations": [-16.5, 48.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 116,
+      "angle": -122,
+      "locations": [-16.5, -48.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 116,
+      "angle": 180,
+      "locations": [-27.5, -0]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 1,
+      "angle": 0,
+      "locations": [42, 29]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 1,
+      "angle": -0,
+      "locations": [42, -29]
+    },
+    {
+      "id": "WS00A",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 1,
+      "angle": -0,
+      "locations": [-0.5, 0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-54.5, 14.5],
+      "length": 91,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-54.5, -14.5],
+      "length": 91,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-61.5, -0.5],
+      "length": 69.5,
+      "width": 40,
+      "angle": -180,
+      "contrailSize": 40,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-71.5, -0.5],
+      "length": 7,
+      "width": 112,
+      "angle": 180,
+      "contrailSize": 112,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-54.5, 40.5],
+      "length": 35.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-54.5, -40.5],
+      "length": 35.5,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-14.5, 65],
+      "length": 37.5,
+      "width": 15,
+      "angle": 130.5,
+      "contrailSize": 15,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-14.5, -65],
+      "length": 37.5,
+      "width": 15,
+      "angle": -130.5,
+      "contrailSize": 15,
+      "style": "HSI_TECH_PARTICLE"
+    },
+    {
+      "location": [-61.5, -0],
+      "length": 58.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HSI_TECH_PARTICLE"
+    }
+  ],
+  "bounds": [
+    34.5, -14.5,
+    26.5, -21,
+    51, -21,
+    51.5, -35,
+    2, -70.5,
+    -6, -70.5,
+    -46.5, -45.5,
+    -48, -47,
+    -52, -43.5,
+    -52, -37,
+    -56.5, -33.5,
+    -56, -25,
+    -52.5, -22,
+    -53, -11.5,
+    -57.5, -6.5,
+    -57.5, 6.5,
+    -53, 11.5,
+    -52.5, 22,
+    -56, 25,
+    -56.5, 33.5,
+    -52, 37,
+    -52, 43.5,
+    -48, 47,
+    -46.5, 45.5,
+    -6, 70.5,
+    2, 70.5,
+    51.5, 35,
+    51, 21,
+    26.5, 21,
+    34.5, 14.5
+  ]
+}

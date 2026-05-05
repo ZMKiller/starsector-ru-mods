@@ -1,0 +1,105 @@
+{
+    "hullName": "DarkTide",
+    "hullId": "HSI_DarkTide",
+    "hullSize": "DESTROYER",
+    "style": "HSI_TECH",
+    "spriteName": "graphics/ships/HSI_HB2.png",
+    "height": 84,
+    "width": 240,
+    "center": [
+        120, 42
+    ],
+    "collisionRadius": 161,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 133.5,
+    "viewOffset": 0,
+    "builtInMods": [
+        "HSI_Halo",
+        "HSI_HiddenHardpoint"
+    ],
+    "builtInWings": [],
+     
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      12,        0
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      21,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -26.5, 39
+            ],
+            "length": 23.5,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "HSI_TECH"
+        },
+        {
+            "location": [
+                -26.5, -39
+            ],
+            "length": 23.5,
+            "width": 10,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "HSI_TECH"
+        }
+    ],
+    "bounds": [
+              18,       -7,
+            41.5,     -8.5,
+              21,    -33.5,
+             -28,   -118.5,
+           -29.5,     -106,
+        
+              -8,    -48.5,
+             -18,    -48.5,
+             -26,    -43.5,
+             -25,      -30,
+             -31,    -23.5,
+        
+             -31,      -14,
+             -22,     -8.5,
+           -39.5,     -1.5,
+           -39.5,      1.5,
+             -22,      8.5,
+        
+             -31,       14,
+             -31,     23.5,
+             -25,       30,
+             -26,     43.5,
+             -18,     48.5,
+        
+              -8,     48.5,
+           -29.5,      106,
+             -28,    118.5,
+              21,     33.5,
+            41.5,      8.5,
+        
+              18,        7
+    # 26 points total.
+    ]
+}

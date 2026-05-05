@@ -1,0 +1,30 @@
+{
+	"id":"edshipyard_SB3",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":450,
+	"turretSprite":"graphics/weapons/edshipyard_sb_l_turret_base.png",
+	"turretGunSprite":"graphics/weapons/edshipyard_sb_l_turret_barrel.png",	
+	"hardpointSprite":"graphics/weapons/edshipyard_sb_l_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/edshipyard_sb_l_hardpoint_barrel.png",	
+	"visualRecoil":15.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"glowColor":[255,185,215,215],
+	"turretOffsets":[25, -4.5, 25, 4.5,25, -4.5, 25, 4.5,25, -4.5, 25, 4.5,25, -4.5, 25, 4.5,25, -4.5, 25, 4.5,25, -4.5, 25, 4.5,25, -4.5, 25, 4.5,25, -4.5, 25, 4.5,25, -4.5, 25, 4.5,25, -4.5, 25, 4.5],
+	"turretAngleOffsets":[-20,-20,-15,-15,-10, -10, -7, -7,-4, -4,4, 4,7, 7, 10, 10,15,15,20,20],
+	"hardpointOffsets":[37, -4.5, 37, 4.5,37, -4.5, 37, 4.5,37, -4.5, 37, 4.5,37, -4.5, 37, 4.5,37, -4.5, 37, 4.5,37, -4.5, 37, 4.5,37, -4.5, 37, 4.5,37, -4.5, 37, 4.5,37, -4.5, 37, 4.5,37, -4.5, 37, 4.5],
+	"hardpointAngleOffsets":[-20,-20,-15,-15,-10, -10, -7, -7,-4, -4,4, 4,7, 7, 10, 10,15,15,20,20],
+	"separateRecoilForLinkedBarrels":"TRUE",
+	"barrelMode":"LINKED", # LINKED or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":44.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":30.0,
+					   "particleSizeMin":2.0,
+					   "particleSizeRange":4.0,
+					   "particleDuration":0.25,
+					   "particleCount":20,
+					   "particleColor":[225,125,225,175]},
+	"projectileSpecId":"edshipyard_sb_p",  # projectile that will be fired
+	"fireSoundTwo":"ed_shotgun_l",	
+}

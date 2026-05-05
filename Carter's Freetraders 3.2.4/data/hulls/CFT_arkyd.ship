@@ -1,0 +1,61 @@
+{
+  "hullName": "Arkyd",
+  "hullId": "CFT_arkyd",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/CFT_arkyd.png",
+  "style": "MIDLINE",
+  "height": 41,
+  "width": 43,
+  "center": [21.5, 20.5],
+  "collisionRadius": 37.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 35,
+  "viewOffset": 0,
+  "builtInMods": [
+    "armoredweapons"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [18.5, 13.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [18.5, -13.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-19, 9],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-19, -9],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    23.5, -26,
+    -22.5, -23.5,
+    -22.5, 23.5,
+    23.5, 26
+  ]
+}

@@ -1,0 +1,36 @@
+{
+	"id":"edshipyard_Dust_m",
+	"specClass":"missile",	
+	"missileType":"HEATSEEKER",
+	"sprite":"graphics/missiles/edshipyard_dust_missile.png",
+	"size":[8,8],	
+	"center":[4,4],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,200,125,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":80, # purely visual
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":600,
+				  "acc":3500,
+				  "dec":3500},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-4, 0],
+				    #"style":"MISSILE_LOW_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,225,135,255],
+						"contrailDuration":3,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":20, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[150,125,75,150],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":20.0,
+				    "angle":180.0}]
+}

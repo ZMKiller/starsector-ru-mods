@@ -1,0 +1,52 @@
+{
+  "variantId": "rr_vexilla_esc",
+  "hullId": "rr_vexilla",
+  "displayName": "Escort",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 8,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "blast_doors",
+    "pointdefenseai",
+    "turretgyros",
+    "solar_shielding",
+    "extendedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "swarmer",
+        "WS0001": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "swarmer",
+        "WS 007": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "lightdualac",
+        "WS 005": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

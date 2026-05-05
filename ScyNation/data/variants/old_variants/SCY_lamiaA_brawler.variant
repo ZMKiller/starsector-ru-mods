@@ -1,0 +1,33 @@
+{
+    "displayName": "Brawler",
+    "fluxCapacitors": 3,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "SCY_lamiaA",
+    "hullMods": [
+        "magazines",
+        "targetingunit"
+    ],
+    "modules": [
+        {"WW1MULTI": "SCY_lamiaAF_standard"},
+        {"WW2MULTI": "SCY_lamiaAL_standard"},
+        {"WW3MULTI": "SCY_lamiaAR_standard"}
+    ],
+    "permaMods": [],
+    "variantId": "SCY_lamiaA_brawler",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_teb",
+                "WS0003": "SCY_teb"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dualflak"}
+        }
+    ]
+}

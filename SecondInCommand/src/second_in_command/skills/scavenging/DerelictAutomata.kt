@@ -11,6 +11,7 @@ import com.fs.starfarer.api.ui.TooltipMakerAPI
 import com.fs.starfarer.api.util.Misc
 import second_in_command.SCData
 import second_in_command.SCUtils
+import second_in_command.misc.addPara
 import second_in_command.scripts.AutomatedShipsManager
 import second_in_command.skills.automated.SCBaseAutoPointsSkillPlugin
 import second_in_command.specs.SCBaseSkillPlugin
@@ -38,7 +39,7 @@ class DerelictAutomata : SCBaseAutoPointsSkillPlugin() {
         var maximum = manager.getMaximumDP()
         var used = manager.getUsedDP()
         tooltip.addPara("+$provided automated ship points", 0f, Misc.getHighlightColor(), Misc.getHighlightColor())
-        tooltip.addPara("Ships with the \"Rugged Construction\" hullmod use 25%% less automated ship points", 0f, Misc.getHighlightColor(), Misc.getHighlightColor())
+        tooltip.addPara("Ships with the \"Rugged Construction\" hullmod use 25%% less automated ship points.", 0f, Misc.getHighlightColor(), Misc.getHighlightColor())
 
         tooltip.addSpacer(10f)
 

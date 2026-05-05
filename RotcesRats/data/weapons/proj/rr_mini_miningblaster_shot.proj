@@ -1,0 +1,21 @@
+{
+	"id":"rr_mini_miningblaster_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+
+	"onHitEffect":"data.scripts.rr_miniMiningBlasterOnHitEffect",
+
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":25.0,
+	"width":5,
+	"fadeTime":0.3,
+	"fringeColor":[255,100,100,255],
+	"coreColor":[255,255,255,255],
+	"glowColor":[255,0,0,125],
+	"glowRadius":25,
+	"hitGlowRadius":45,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

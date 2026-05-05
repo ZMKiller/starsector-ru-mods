@@ -1,0 +1,46 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 4,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "SCY_siren",
+    "hullMods": [
+        "recovery_shuttles",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "SCY_siren_combat",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "SCY_sirenMain"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SCY_kacc1",
+                "WS0005": "SCY_kacc1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "SCY_hemor1",
+                "WS0003": "SCY_hemor1"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "SCY_intercept",
+                "WS0007": "SCY_intercept"
+            }
+        }
+    ],
+    "wings": ["SCY_panotti_wing"]
+}

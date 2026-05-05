@@ -1,0 +1,24 @@
+{
+	"id":"edshipyard_mine_teleport",
+	"type":"STAT_MOD",
+	"aiType":"MINE_STRIKE",
+	
+	"statsScript":"com.fs.starfarer.api.impl.combat.MineStrikeStationStats",
+
+	"canUseWhileRightClickSystemOn":true,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"carolina_trigger",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":3500,
+		"threatAmount":50,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

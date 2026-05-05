@@ -12,6 +12,7 @@ import com.fs.starfarer.api.ui.UIComponentAPI;
 import com.fs.starfarer.api.util.Misc;
 
 import java.awt.*;
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -72,21 +73,11 @@ public class VanillaSkillTooltip extends BaseTooltipCreator {
         for (int i = 0; i < effects.size(); i++) {
             List<Object> effectGroup = effects.get(i);
 
-            boolean isEliteGroup = i > 0;
-            boolean skillActive = level >= 1f;
-            boolean eliteActive = level >= 2f;
-            // Only dim when the skill is acquired but not yet elite; leave full colour when inactive
-            boolean dimElite = isEliteGroup && skillActive && !eliteActive;
-
-            if (isEliteGroup && !eliteLabel) {
-                eliteLabel = true;
+            if (i > 0 && !eliteLabel) {
+             /*   eliteLabel = true;
+                tooltip.addTitle("Elite", Misc.getStoryOptionColor()).getPosition().belowLeft(prev, 3);
+                prev = tooltip.getPrev();*/
                 prev = tooltip.addSpacer(10f);
-                Color base = Misc.getStoryOptionColor();
-                Color eliteLabelColor = dimElite
-                        ? new Color(base.getRed(), base.getGreen(), base.getBlue(), (int)(base.getAlpha() * 0.60f))
-                        : base;
-                tooltip.addPara("Elite", eliteLabelColor, 0).getPosition().belowLeft(prev, 0);
-                prev = tooltip.addSpacer(5f);
             }
 
             for (Object effect : effectGroup) {
@@ -98,14 +89,6 @@ public class VanillaSkillTooltip extends BaseTooltipCreator {
                     if (desc.hasCustomDescription()) {
                         desc.createCustomDescription(person.getStats(), skill, tooltip, getTooltipWidth(null));
 
-                        if (dimElite) {
-                            UIComponentAPI comp = tooltip.getPrev();
-                            if (comp instanceof LabelAPI) {
-                                Color c = Misc.getTextColor();
-                                ((LabelAPI) comp).setColor(new Color(c.getRed(), c.getGreen(), c.getBlue(), (int)(c.getAlpha() * 0.60f)));
-                            }
-                        }
-
                         prev = tooltip.getPrev();
                         continue;
                     }
@@ -113,32 +96,13 @@ public class VanillaSkillTooltip extends BaseTooltipCreator {
 
                 if (effect instanceof LevelBasedEffect) {
                     LevelBasedEffect levelEff = ((LevelBasedEffect) effect);
-                    float effectLevel = dimElite ? 0f : level;
-                    Color base = Misc.getHighlightColor();
-                    Color textColor = dimElite
-                            ? new Color(base.getRed(), base.getGreen(), base.getBlue(), (int)(base.getAlpha() * 0.60f))
-                            : base;
-                    tooltip.addPara(levelEff.getEffectDescription(effectLevel), textColor, 0).getPosition().belowLeft(prev, 0);
+                    tooltip.addPara(levelEff.getEffectDescription(level), Misc.getHighlightColor(), 0).getPosition().belowLeft(prev, 1);
                 } else if (effect instanceof DescriptionSkillEffect) {
                     DescriptionSkillEffect desc = ((DescriptionSkillEffect) effect);
-                    Color base = desc.getTextColor();
-                    Color textColor = dimElite
-                            ? new Color(base.getRed(), base.getGreen(), base.getBlue(), (int)(base.getAlpha() * 0.60f))
-                            : base;
-                    LabelAPI label = tooltip.addPara(desc.getString(), textColor, 0);
+                    LabelAPI label = tooltip.addPara(desc.getString(), desc.getTextColor(), 0);
                     label.setHighlight(desc.getHighlights());
-                    if (dimElite) {
-                        Color[] highlightColors = desc.getHighlightColors();
-                        Color[] dimColors = new Color[highlightColors.length];
-                        for (int j = 0; j < dimColors.length; j++) {
-                            Color hc = highlightColors[j];
-                            dimColors[j] = new Color(hc.getRed(), hc.getGreen(), hc.getBlue(), (int)(hc.getAlpha() * 0.60f));
-                        }
-                        label.setHighlightColors(dimColors);
-                    } else {
-                        label.setHighlightColors(desc.getHighlightColors());
-                    }
-                    label.getPosition().belowLeft(prev, 0);
+                    label.setHighlightColors(desc.getHighlightColors());
+                    label.getPosition().belowLeft(prev, 1);
                 } else {
                     throw new RuntimeException("Unexpected effect class " + effect + " " + effect.getClass());
                 }
@@ -154,7 +118,7 @@ public class VanillaSkillTooltip extends BaseTooltipCreator {
         }
 
         for (HullModSpecAPI hullmodSpec: hullmodSpecs) {
-            tooltip.addPara("Hull mod: " + hullmodSpec.getDisplayName() + " - " + ReflectionUtils.invoke("getShortDesc", hullmodSpec, new Object[0], null, null) , 0f,
+            tooltip.addPara("Hull mod: " + hullmodSpec.getDisplayName() + " - " + ReflectionUtils.invoke("getShortDesc", hullmodSpec, new Array[]{}, null, null) , 0f,
                     Misc.getTextColor(), Misc.getHighlightColor(), hullmodSpec.getDisplayName());
         }
 
@@ -168,13 +132,7 @@ public class VanillaSkillTooltip extends BaseTooltipCreator {
             tooltip.addPara("Requires " + requiredSkillPoints + " skill points.", 0f, Misc.getNegativeHighlightColor(), Misc.getNegativeHighlightColor());
         }
 
-        if (level == 1f) {
-            tooltip.addSpacer(10f);
-            tooltip.addPara("Requires a story point to make elite", 0f, Misc.getNegativeHighlightColor(), Misc.getNegativeHighlightColor());
-        }
-
-
-        tooltip.addSpacer(3f);
+        tooltip.addSpacer(2f);
     }
 
     public static VanillaSkillTooltip addToTooltip(TooltipMakerAPI tooltip, PersonAPI person, SkillSpecAPI skillSpec, int requiredSkillPoints) {

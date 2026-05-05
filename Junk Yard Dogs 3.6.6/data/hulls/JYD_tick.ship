@@ -1,0 +1,82 @@
+{
+  "hullName": "Tick",
+  "hullId": "JYD_tick",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/dog_tick.png",
+  "style": "LOW_TECH",
+  "height": 28,
+  "width": 36,
+  "center": [18, 14],
+  "collisionRadius": 25.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 22,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 20,
+      "angle": 0,
+      "locations": [-2, 10.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 20,
+      "angle": 0,
+      "locations": [-2, -10.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 35,
+      "angle": 0,
+      "locations": [5.5, -4.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 35,
+      "angle": -0,
+      "locations": [5.5, 4.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11.5, -7],
+      "length": 13.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-11.5, 7],
+      "length": 13.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    12.5, -5.5,
+    4, -9.5,
+    -1.5, -15,
+    -9.5, -15.5,
+    -13, -8,
+    -13, 8,
+    -9.5, 15.5,
+    -1.5, 15,
+    4, 9.5,
+    12.5, 5.5
+  ]
+}

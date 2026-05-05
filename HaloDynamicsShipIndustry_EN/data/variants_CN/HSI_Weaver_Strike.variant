@@ -1,0 +1,48 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 20,
+    "fluxVents": 12,
+    "goalVariant": true,
+    "hullId": "HSI_Weaver",
+    "hullMods": [
+        "HSI_EnhancedShield",
+        "targetingunit",
+        "HSI_ProtocalAssault"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "HSI_Weaver_Strike",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "HWI_TingYu_M",
+                "WS0004": "HWI_TingYu_M"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "hammer_single",
+                "WS0002": "hammer_single",
+                "WS0005": "hammer_single",
+                "WS0006": "hammer_single"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "HWI_hveldriver",
+                "WS0009": "HWI_hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0010": "HWI_heavymauler"}
+        }
+    ]
+}

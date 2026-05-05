@@ -1,0 +1,35 @@
+{
+  "ruleCommandPackages":[
+    "unthemedweapons.campaign.rulecmd"
+  ],
+
+  "graphics": {
+    "misc": {
+      "wpnxt_explosion_ring": "graphics/fx/wpnxt_explosion_ring.png",
+      "wpnxt_energyball": "graphics/missiles/wpnxt_energyball.png",
+      "wpnxt_glow": "graphics/fx/particlealpha64sq.png"
+    },
+
+    "weaponSkinsPlayerAndNPC":{
+      "wpnxt_miniblaster:LOW_TECH:HARDPOINT":"graphics/weapons/energy/wpnxt_miniblaster_hardpoint.png",
+      "wpnxt_miniblaster:LOW_TECH:TURRET":"graphics/weapons/energy/wpnxt_miniblaster_turret.png",
+      "wpnxt_miniblaster:MIDLINE:HARDPOINT":"graphics/weapons/energy/wpnxt_miniblaster_hardpoint.png",
+      "wpnxt_miniblaster:MIDLINE:TURRET":"graphics/weapons/energy/wpnxt_miniblaster_turret.png",
+      "wpnxt_miniblaster:HIGH_TECH:HARDPOINT":"graphics/weapons/energy/wpnxt_miniblaster_hardpoint_ht.png",
+      "wpnxt_miniblaster:HIGH_TECH:TURRET":"graphics/weapons/energy/wpnxt_miniblaster_turret_ht.png",
+
+      "wpnxt_mininglasermk2:LOW_TECH:HARDPOINT":"graphics/weapons/energy/wpnxt_mininglasermk2_hardpoint.png",
+      "wpnxt_mininglasermk2:LOW_TECH:TURRET":"graphics/weapons/energy/wpnxt_mininglasermk2_turret.png",
+      "wpnxt_mininglasermk2:MIDLINE:HARDPOINT":"graphics/weapons/energy/wpnxt_mininglasermk2_hardpoint.png",
+      "wpnxt_mininglasermk2:MIDLINE:TURRET":"graphics/weapons/energy/wpnxt_mininglasermk2_turret.png",
+      "wpnxt_mininglasermk2:HIGH_TECH:HARDPOINT":"graphics/weapons/energy/wpnxt_mininglasermk2_hardpoint_ht.png",
+      "wpnxt_mininglasermk2:HIGH_TECH:TURRET":"graphics/weapons/energy/wpnxt_mininglasermk2_turret_ht.png"
+    }
+  },
+
+  "plugins": {
+    "wpnxt_refit_script":  "unthemedweapons.campaign.RefitTabListenerAndScript",
+    "wpnxt_needledriver_plugin": "unthemedweapons.combat.plugins.NeedleDriverPlugin",
+    "wpnxt_combat_plugin": "unthemedweapons.combat.plugins.ActionPlugin"
+  }
+}

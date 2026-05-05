@@ -1,0 +1,115 @@
+{
+  "hullName": "Lennox",
+  "hullId": "CFT_lennox",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/CFT_lennox.png",
+  "style": "MIDLINE",
+  "height": 124,
+  "width": 132,
+  "center": [66, 62],
+  "collisionRadius": 100,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 96,
+  "viewOffset": 0,
+  "builtInMods": [
+    "operations_center",
+    "hiressensors",
+    "nav_relay"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-5, 36]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-5, -36]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [22, 37]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [21, -37]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [4, 49]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [5, -49]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -1, 7.5,
+        -1.5, -6.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-58.5, -23],
+      "length": 56,
+      "width": 23,
+      "angle": 180,
+      "contrailSize": 23,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-58.5, 23],
+      "length": 56,
+      "width": 23,
+      "angle": -180,
+      "contrailSize": 23,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -68, -53.5,
+    -38.5, -75,
+    24.5, -57,
+    71.5, -21.5,
+    69.5, 20.5,
+    1, 72,
+    -54.5, 68.5,
+    -75.5, 24
+  ]
+}

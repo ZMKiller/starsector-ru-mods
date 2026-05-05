@@ -1,0 +1,36 @@
+{
+	"id":"CFT_chet_missile",
+	"specClass":"missile",	
+	"missileType":"ROCKET",
+	"sprite":"graphics/CFT/missiles/CFT_missile_chet.png",
+	"size":[7,12],	
+	"center":[3.5,6],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,75,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":80, # purely visual
+	"engineSpec":{"turnAcc":300,
+				  "turnRate":120,
+				  "acc":500,
+				  "dec":500},				  
+	"engineSlots":[{"id":"ES1",
+					"loc":[-5, 0],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,69,0,255],
+						"contrailDuration":.3,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":15, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[226,88,34,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":3.0,
+				    "length":15.0,
+				    "angle":180.0}]
+}

@@ -1,0 +1,35 @@
+{
+	"id":"SCY_swarmS",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/SCY/missiles/SCY_swarm.png",
+	"size":[5,7],	
+	"center":[2,3],
+	"collisionRadius":7,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,100,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":35, # purely visual
+	"engineSpec":{"turnAcc":720,
+                        "turnRate":360,
+                        "maxSpeed":300,
+                        "acc":1000,
+                        "dec":1000},
+	"engineSlots":[{"id":"ES1",
+			"loc":[0, -1.5],
+			"style":"CUSTOM",
+                        "styleSpec":{
+                            "mode":"QUAD_STRIP",
+                            "engineColor":[100,165,255,255],
+                            "contrailDuration":2,
+                            "contrailWidthMult":2,
+                            "contrailWidthAddedFractionAtEnd":-1,
+                            "contrailMinSeg":20,
+                            "contrailMaxSpeedMult":0f,
+                            "contrailAngularVelocityMult":0f,
+                            "contrailColor":[100,165,255,75],
+                            "type":"SMOKE"
+			},
+                        "width":4.0,
+                        "length":7.0,
+                        "angle":180.0}]
+}

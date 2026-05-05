@@ -1,0 +1,49 @@
+{
+    "displayName": "Pulse",
+    "fluxCapacitors": 3,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "ora_revelation",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "targetingunit",
+        "stabilizedshieldemitter",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "ora_revelation_pulse",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ora_incantation"}
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0002": "ora_prayer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ora_eschewal",
+                "WS0004": "ora_eschewal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "ora_choir",
+                "WS0006": "ora_choir",
+                "WS0007": "ora_choir",
+                "WS0008": "ora_choir",
+                "WS0009": "ora_choir",
+                "WS0010": "ora_choir",
+                "WS0011": "ora_choir",
+                "WS0012": "ora_choir"
+            }
+        }
+    ]
+}

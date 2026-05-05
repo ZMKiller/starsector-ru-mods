@@ -1,0 +1,14 @@
+{
+    "id":"edshipyard_commit_sudoku",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.scripts.edshipyard.shipsystems.ai.SelfDestructAI",
+    "statsScript":"data.scripts.edshipyard.shipsystems.SelfDestructStats",
+
+	#"runScriptWhilePaused":true, # only for the player's ship
+    #"runScriptWhileIdle":true,  # this means unapply() never gets called
+
+	#"fadeActivationSoundOnChargedown":true,
+	"useSound":"carolina_trigger",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

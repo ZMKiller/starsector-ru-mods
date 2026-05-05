@@ -1,0 +1,30 @@
+{
+	"id":"SCY_uheb",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"displayArcRadius":750,
+	"turretSprite":"graphics/SCY/weapons/SCY_uhebT.png",
+	"turretGunSprite":"graphics/SCY/weapons/SCY_uhebTB.png",
+	"hardpointSprite":"graphics/SCY/weapons/SCY_uhebH.png",
+	"hardpointGunSprite":"graphics/SCY/weapons/SCY_uhebHB.png",
+	"visualRecoil":7,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+        "turretOffsets":[15, 11, 15, 0, 15, -11],
+	"turretAngleOffsets":[0, 0, 0],
+	"hardpointOffsets":[25, 11, 31, 0, 25, -11],
+	"hardpointAngleOffsets":[0, 0, 0],
+	"barrelMode":"LINKED",
+        "separateRecoilForLinkedBarrels":"TRUE",
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":15.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":25.0,
+					   "particleSizeMin":5.0,
+					   "particleSizeRange":50.0,
+					   "particleDuration":0.5,
+					   "particleCount":5,
+					   "particleColor":[100,125,255,200]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held		
+	"projectileSpecId":"SCY_uhebS",  # projectile that will be fired		
+	"fireSoundTwo":"SCY_uheb",
+}
