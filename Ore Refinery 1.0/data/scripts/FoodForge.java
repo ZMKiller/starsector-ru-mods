@@ -73,23 +73,23 @@ public class FoodForge extends BaseToggleAbility {
         title.setHighlightColor(highlight);
 
         float pad = 10f;
-        tooltip.addPara("Refine Food using Heavy Machinery processing it into Famine Wafer crates.", pad);
+        tooltip.addPara("\u041f\u0435\u0440\u0435\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442 \u043f\u0438\u0449\u0443 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0442\u044f\u0436\u0435\u043b\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0438, \u043f\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u044f \u0435\u0435 \u0432 \u044f\u0449\u0438\u043a\u0438 \u043f\u0438\u0442\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u043f\u043b\u0430\u0441\u0442\u0438\u043d Famine Wafer.", pad);
             String Supply = Misc.getRoundedValueMaxOneAfterDecimal(getFAMINEWPerFOOD());
             float iCoom = iCalculateBonus();
             if (iCoom > 1) {Supply = Misc.getRoundedValueMaxOneAfterDecimal(getFAMINEWPerFOOD()*iCoom);}
             String canOrIs = isActive() ? "are processing" : "can process";
             String Based = iCoom > 1 ? "Nanoforges in your inventory and ships with Salvage Gantry are improving the process of processing Famine Wafer crates by": "You do not possess a nanoforge or a ship with Salvage Gantry that can hasten the process.";
             String Based2 = iCoom > 1 ? Misc.getRoundedValue((iCoom-1)*100) + "%." : "";
-            tooltip.addPara("Your fleet's autoforges " + canOrIs + " %s units of FOOD with %s units of Heavy Machinery to create %s Famine Wafer crates on a daily basis.",
+            tooltip.addPara("\u0410\u0432\u0442\u043e\u0444\u0430\u0431\u0440\u0438\u043a\u0438 \u0432\u0430\u0448\u0435\u0433\u043e \u0444\u043b\u043e\u0442\u0430 " + canOrIs + " %s \u0435\u0434. \u043f\u0438\u0449\u0438 \u0441 %s \u0435\u0434. \u0442\u044f\u0436\u0435\u043b\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0438, \u0441\u043e\u0437\u0434\u0430\u0432\u0430\u044f %s \u044f\u0449\u0438\u043a\u043e\u0432 Famine Wafer \u0435\u0436\u0435\u0434\u043d\u0435\u0432\u043d\u043e.",
                         pad, Misc.getTextColor(), Misc.getRoundedValueMaxOneAfterDecimal(FOODCost*iCoom), Misc.getRoundedValueMaxOneAfterDecimal(HeavyMachineryCost*iCoom), Supply);
             if (MFOODCoom() > 0) {
                 for (int i = 0; i < MFOODCoom(); i++) {
-                    tooltip.addPara("Additionally using %s " + Global.getSettings().getCommoditySpec(Global.getSettings().getString("ExtraCommodities" + i)).getName() + ".",
+                    tooltip.addPara("\u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f %s " + Global.getSettings().getCommoditySpec(Global.getSettings().getString("ExtraCommodities" + i)).getName() + ".",
                     pad*0.2f, Misc.getTextColor(), Misc.getRoundedValueMaxOneAfterDecimal((Global.getSettings().getFloat("ExtraCommoditiesCost" + i))*iCoom));
                 }
             };
             tooltip.addPara("%s %s", pad, highlight, Based, Based2);
-            tooltip.addPara("Increases the range at which the fleet can be detected by %s.",
+            tooltip.addPara("\u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u044c, \u0441 \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u0444\u043b\u043e\u0442 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0435\u043d, \u043d\u0430 %s.",
                         pad, Misc.getNegativeHighlightColor(), (int)JYDRPlugin.SENSOR_PROFILE_INCREASE_PERCENT + "%");
 
 
