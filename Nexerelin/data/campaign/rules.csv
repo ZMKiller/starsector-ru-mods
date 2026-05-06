@@ -1570,7 +1570,7 @@ $faction.id == nex_derelict score:1000",SetEnabled marketCommDir false,,,
 nex_relLevelDerelict,RelationshipLevelDesc,$faction.id == nex_derelict score:5,,...,,
 ,,,,,,
 ExerelinFlavorTextMarketPrismFreeport,TradePanelFlavorText,"$global.tradePanelMode == MARKET
-$market.id == nex_prismFreeport","AddText ""Bright, slick, overusing chrome and opal ornaments, the concourse is quite the unusual sight for a station out here by its lonesome. Wherever the eye looks, every detail spells luxury. On the sides, behind extravagant transparent promenades, the source of all this wealth is offered to the observation of all potential buyers: the menacing and yet reassuring silhouettes of ships from all origins, all pristine looking and advantageously lit. A bit further it's the weapons that are exposed in the same fashion. Holo displays and simulators are available everywhere to help clients to find the perfect tool to fit their needs."" marketFlavorTextColor",,,
+$market.id == nex_prismFreeport","AddText ""Яркий, гладкий, перегруженный хромом и опаловыми украшениями зал выглядит необычно для одинокой станции в такой глуши. Куда ни посмотри, каждая деталь говорит о роскоши. По бокам, за роскошными прозрачными галереями, источник всего этого богатства выставлен на обозрение потенциальных покупателей: грозные и вместе с тем обнадеживающие силуэты кораблей самого разного происхождения, все в безупречном виде и выгодно подсвеченные. Чуть дальше таким же образом выставлено оружие. Повсюду доступны голографические дисплеи и симуляторы, помогающие клиентам найти идеальный инструмент под их нужды."" marketFlavorTextColor",,,
 ExerelinFlavorTextMarketFollowers,TradePanelFlavorText,"$global.tradePanelMode == MARKET
 $faction.id == ""player""","AddText ""The port concourse is filled with trader starcraft of every size. Speculators crowd offloading ship captains with deals and peddlers call out to crew, holding wares and projecting personal ad-holos. Guards salute you in recognition as you pass by them."" marketFlavorTextColor",,,
 ExerelinMarketOptionIntel,DialogOptionSelected,$option == exerelinMarketIntel,OpenCoreTab INTEL $tradeMode,,,
@@ -4658,16 +4658,16 @@ FireBest DialogOptionSelected","Командир компании выражае
 ""Нет? Возможно, вам просто не понравилось их лицо?""
 
 Вы возвращаетесь к списку доступных для найма компаний.",,
-nex_mercViewHelp,DialogOptionSelected,$option == nex_mercViewHelp,"AddTextSmall "" - Hiring a mercenary company requires 1 story point. Only one company may be under contract at a time to a single employer.""
+nex_mercViewHelp,DialogOptionSelected,$option == nex_mercViewHelp,"AddTextSmall "" - Наем наемной компании требует 1 очко истории. Только одна компания может одновременно находиться по контракту у одного работодателя.""
 SetTextHighlightColors story
 Highlight 1
-AddTextSmall "" - Contracts run for 365 days and are non-renewable. The employer pays an upfront fee (50% of which is refunded on contract completion) and a monthly fee.""
+AddTextSmall "" - Контракты действуют 365 дней и не продлеваются. Работодатель платит авансом вступительный взнос (50% возвращается при завершении контракта) и ежемесячную плату.""
 Highlight 365 50%
-AddTextSmall "" - The employer is responsible for upkeep, maintenance and crewing of the provided ships. The skeleton crew for the provided ships will be supplied via AIM at the start of the contract, and removed when it ends.""
-AddTextSmall "" - Acceptance of an employment offer is entirely at the discretion of the mercenary company. The company may define prerequisites for being shown to a prospective client, such as the employer's experience level and relationship with the relevant faction(s).""
-Highlight ""experience level"" ""relationship with the relevant faction(s)""
-AddTextSmall "" - Ships that come with an officer may not have their officer changed. The employer may place their own officers on other ships at their discretion.""
-AddTextSmall "" - When the company is returned to AIM, if the value of the remaining ships is less than their value at the time of contract signing (due to losses, battle damage, or any other cause), the employer will pay 80% of the difference.""
+AddTextSmall "" - Работодатель отвечает за содержание, обслуживание и укомплектование экипажами предоставленных кораблей. Минимальный экипаж для этих кораблей будет предоставлен через AIM в начале контракта и отозван по его окончании.""
+AddTextSmall "" - Принятие предложения о найме полностью остается на усмотрение наемной компании. Компания может задавать условия показа потенциальному клиенту, например уровень опыта работодателя и отношения с соответствующими фракциями.""
+Highlight ""уровень опыта"" ""отношения с соответствующими фракциями""
+AddTextSmall "" - На кораблях, поставляемых с офицером, нельзя заменить этого офицера. На другие корабли работодатель может назначать собственных офицеров по своему усмотрению.""
+AddTextSmall "" - Когда компания возвращается в AIM, если стоимость оставшихся кораблей ниже их стоимости на момент подписания контракта (из-за потерь, боевых повреждений или любой другой причины), работодатель выплачивает 80% разницы.""
 Highlight 80%
 FireAll Nex_MercRepOptionsCheck","""Конечно. Сейчас отправлю...""
 
@@ -5187,7 +5187,7 @@ nex_HA_policeHassleReason:Что происходит - офицер?
 nex_HA_policeHassleObject:Скан груза? Это моя территория.
 cargoScan_refuse:Отказаться",
 nex_HA_policeHassleReason,DialogOptionSelected,$option == nex_HA_policeHassleReason,"SetTextHighlightColors h bad
-Highlight ""$entity.nex_HA_police_marketName"" ""free port""
+Highlight ""$entity.nex_HA_police_marketName"" ""свободного порта""
 RemoveOption nex_HA_policeHassleReason","""Мятежная юрисдикция $entity.nex_HA_police_marketName - известное убежище пиратов, контрабандистов, террористов и прочих преступных элементов под видом так называемого 'свободного порта'."" $personPost произносит эти слова как проклятие. ""Все лица, входящие или выходящие из этого рассадника порока, подлежат остановке и досмотру, чтобы исключить содействие преступной мрази.""",,
 nex_HA_policeHassleObject,DialogOptionSelected,"$option == nex_HA_policeHassleObject
 $entity.relativeStrength >= 0",RemoveOption nex_HA_policeHassleObject,"$PersonRank $personLastName ухмыляется, живое воплощение канцелярской надменности. ""Весь Сектор находится под юрисдикцией Комиссии уголовной полиции Персейского Сектора, как определено Соглашением Нова Максиос 145 года,"" $heOrShe произносит это медленно, словно объясняет особенно тупому курсанту. ""Следовательно, понятие 'вашей территории' не имеет ни значения, ни правовой силы, когда ведется расследование Секторпола.
