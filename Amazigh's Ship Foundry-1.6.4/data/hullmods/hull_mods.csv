@@ -57,7 +57,7 @@ name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hid
 Ангар дронов Clavata,A_S-F_clavataDummy,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_clavataDummy,"На корабле есть ангар, автоматически выпускающий восемь фазовых дронов Clavata.
 
 Дроны медленно пополняются при уничтожении, вращаются вокруг корабля и вооружены защитным ПВО-лазером.",Информационная модификация корпуса дронов Jorogumo.,,graphics/hullmods/A_S-F_clavataBay.png
-Вторичный потоковый банк,A_S-F_initoneBank,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_initoneBank,"<Модификация Initone, дающая вторичное хранилище мягкого потока>","<Модификация Initone, дающая вторичное хранилище мягкого потока>",,graphics/hullmods/A_S-F_initoneBank.png
+Вторичный потоковый банк,A_S-F_initoneBank,,,,,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_initoneBank,"<Модификация Initone, дающая вторичное хранилище мягкой нагрузки>","<Модификация Initone, дающая вторичное хранилище мягкой нагрузки>",,graphics/hullmods/A_S-F_initoneBank.png
 Сходитель энергетических болтов,A_S-F_energyBoltConverger,,,,codex_require_related,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_energyBoltConverger,"<""Энергетический BRF"">","<""Энергетический BRF"">",,graphics/hullmods/A_S-F_converger.png
 Модификация Ammon,A_S-F_ammonHullmod,,,,,,,,TRUE,TRUE,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ammonHullmod,"<Модификация Ammon, мем масштаба времени>","<Модификация Ammon, мем масштаба времени>",,graphics/hullmods/insulated_engine_assembly.png
 Ядро наведения Servant,A_S-F_ServantHullmod,,,,invisible_in_codex,,,,TRUE,,0,0,0,0,org.amazigh.foundry.hullmods.ASF_ServantHullmod,"Продвинутый блок наведения, значительно увеличивающий дальность оружия.","Продвинутый блок наведения, значительно увеличивающий дальность оружия.",,graphics/hullmods/advanced_targeting_core.png
@@ -86,8 +86,8 @@ name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hid
 Перегружатель энергетических каналов,A_S-F_anarchyEnergy,1,,Системы анархии,"offensive, merc",Оружие,10000,,,,1,1,1,1,org.amazigh.foundry.hullmods.ASF_AnarchyEnergy,Модификация энергетики MinMaxer,Модификация энергетики MinMaxer,"Бонус урона энергетического оружия увеличен до %s.
 
 Штраф длительности перегрузки снижен до %s.
-Штраф емкости потока снижен до %s.",graphics/hullmods/A_S-F_anarchyEnergy.png
-Открытые потоковые радиаторы,A_S-F_anarchyFlux,1,,Системы анархии,"special, merc",Особое,10000,,,,1,1,1,1,org.amazigh.foundry.hullmods.ASF_AnarchyFlux,Потоковая модификация MinMaxer,Потоковая модификация MinMaxer,"Бонус рассеивания потока увеличен до %s.
+Штраф ёмкости нагрузки снижен до %s.",graphics/hullmods/A_S-F_anarchyEnergy.png
+Открытые потоковые радиаторы,A_S-F_anarchyFlux,1,,Системы анархии,"special, merc",Особое,10000,,,,1,1,1,1,org.amazigh.foundry.hullmods.ASF_AnarchyFlux,Потоковая модификация MinMaxer,Потоковая модификация MinMaxer,"Бонус рассеивания нагрузки увеличен до %s.
 
 Штраф рейтинга брони снижен до %s.
 Штраф получаемого ЭМИ-урона снижен до %s.",graphics/hullmods/A_S-F_anarchyFlux.png
@@ -97,10 +97,10 @@ name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hid
 Штраф скорости поворота и развертывания щита снижен до %s.",graphics/hullmods/A_S-F_anarchyShields.png
 Разогнанный блок наведения,A_S-F_anarchyTargeting,1,,Системы анархии,"offensive, merc",Оружие,10000,,,,1,1,1,1,org.amazigh.foundry.hullmods.ASF_AnarchyTargeting,Дальнобойная модификация MinMaxer,Дальнобойная модификация MinMaxer,"Бонус дальности оружия увеличен до %s.
 
-Штраф рассеивания потока снижен до %s.
+Штраф рассеивания нагрузки снижен до %s.
 Штраф времени пиковых характеристик снижен до %s.",graphics/hullmods/A_S-F_anarchyTargeting.png
 ,,,,,,,,,,,,,,,,,,,
 # Standard Modular,,,,,,,,,,,,,,,,,,,
-Электромагнитный стабилизатор потока,A_S-F_ElectroVent,1,,,"special, merc",Особое,8000,,,,3,6,9,16,org.amazigh.foundry.hullmods.ASF_ElectroVent,Искрящая быстрая перегрузка,Искрящая быстрая перегрузка,Увеличивает емкость потока на %s/%s/%s/%s.,graphics/hullmods/A_S-F_electroVent.png
+Электромагнитный стабилизатор потока,A_S-F_ElectroVent,1,,,"special, merc",Особое,8000,,,,3,6,9,16,org.amazigh.foundry.hullmods.ASF_ElectroVent,Искрящая быстрая перегрузка,Искрящая быстрая перегрузка,Увеличивает ёмкость нагрузки на %s/%s/%s/%s.,graphics/hullmods/A_S-F_electroVent.png
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,

@@ -1035,14 +1035,14 @@ UW_UpgradeAvailable U4
 UW_UpgradeEnoughCredits U4","SetTooltip uwMarketUpgradeU4 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeU4CostStr кредитов. Доступно $player.creditsStr кредитов. Улучшения оружейных слотов: один средний слот увеличен до большого, а три малых слота увеличены до средних.""
 SetTooltipHighlightColors uwMarketUpgradeU4 buttonShortcut buttonShortcut buttonShortcut
 SetTooltipHighlights uwMarketUpgradeU4 $global.uwUpgradeShip $global.uwUpgradeU4CostStr $player.creditsStr
-UW_AddConfirmation uwMarketUpgradeU4 ""Upgrading modular weapon slots and increasing maximum ordnance points by 25 for $global.uwUpgradeShip requires $global.uwUpgradeU4CostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,5:uwMarketUpgradeU4:Улучшить модульные слоты оружия (+25 OP),
+UW_AddConfirmation uwMarketUpgradeU4 ""Upgrading modular weapon slots and increasing maximum ordnance points by 25 for $global.uwUpgradeShip requires $global.uwUpgradeU4CostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,5:uwMarketUpgradeU4:Улучшить модульные слоты оружия (+25 очки оснащения),
 uwMarketAddOptionUpgradeU4_2,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable U4
 !UW_UpgradeEnoughCredits U4","SetTooltip uwMarketUpgradeU4 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeU4CostStr кредитов. Доступно только $player.creditsStr кредитов. Улучшения оружейных слотов: один средний слот увеличен до большого, а три малых слота увеличены до средних.""
 SetTooltipHighlightColors uwMarketUpgradeU4 buttonShortcut buttonShortcut bad
 SetTooltipHighlights uwMarketUpgradeU4 $global.uwUpgradeShip $global.uwUpgradeU4CostStr $player.creditsStr
-SetEnabled uwMarketUpgradeU4 false",,5:uwMarketUpgradeU4:Улучшить модульные слоты оружия (+25 OP),
+SetEnabled uwMarketUpgradeU4 false",,5:uwMarketUpgradeU4:Улучшить модульные слоты оружия (+25 очки оснащения),
 uwMarketOptionUpgradeU4,DialogOptionSelected,$option == uwMarketUpgradeU4,"UW_UpgradeShip U4
 AddText ""Модульные оружейные слоты улучшены, а максимум очков оснащения для $global.uwUpgradeShip увеличен на 25, стоимость - $global.uwUpgradeU4CostStr кредитов.""
 SetTextHighlightColors hColor hColor
@@ -1077,7 +1077,7 @@ UW_UpgradeInstalled F2
 UW_UpgradeEnoughCredits F1","SetTooltip uwMarketSwapF1 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeF1SwapCostStr кредитов. Доступно $player.creditsStr кредитов.""
 SetTooltipHighlightColors uwMarketSwapF1 buttonShortcut buttonShortcut buttonShortcut
 SetTooltipHighlights uwMarketSwapF1 $global.uwUpgradeShip $global.uwUpgradeF1SwapCostStr $player.creditsStr
-UW_AddConfirmation uwMarketSwapF1 ""Replacing the fighter bays with a pair of built-in Terminator Drone wings and decreasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeF1SwapCostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,6:uwMarketSwapF1:Заменить истребительные ангары на встроенную пару крыльев Terminator Drone (-20 OP),
+UW_AddConfirmation uwMarketSwapF1 ""Replacing the fighter bays with a pair of built-in Terminator Drone wings and decreasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeF1SwapCostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,6:uwMarketSwapF1:Заменить истребительные ангары на встроенную пару крыльев Terminator Drone (-20 очки оснащения),
 uwMarketAddOptionSwapF1_2,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable F1
@@ -1085,7 +1085,7 @@ UW_UpgradeInstalled F2
 !UW_UpgradeEnoughCredits F1","SetTooltip uwMarketSwapF1 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeF1SwapCostStr кредитов. Доступно только $player.creditsStr кредитов.""
 SetTooltipHighlightColors uwMarketSwapF1 buttonShortcut buttonShortcut bad
 SetTooltipHighlights uwMarketSwapF1 $global.uwUpgradeShip $global.uwUpgradeF1SwapCostStr $player.creditsStr
-SetEnabled uwMarketSwapF1 false",,6:uwMarketSwapF1:Заменить истребительные ангары на встроенную пару крыльев Terminator Drone (-20 OP),
+SetEnabled uwMarketSwapF1 false",,6:uwMarketSwapF1:Заменить истребительные ангары на встроенную пару крыльев Terminator Drone (-20 очки оснащения),
 uwMarketOptionSwapF1,DialogOptionSelected,"UW_UpgradeInstalled F2
 $option == uwMarketSwapF1","UW_UpgradeShip F1
 AddText ""Ангары истребителей заменены парой встроенных звеньев Terminator Drone, максимум очков оснащения для $global.uwUpgradeShip снижен на 20, стоимость - $global.uwUpgradeF1SwapCostStr кредитов.""
@@ -1099,7 +1099,7 @@ UW_UpgradeAvailable F2
 UW_UpgradeEnoughCredits F2","SetTooltip uwMarketUpgradeF2 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeF2CostStr кредитов. Доступно $player.creditsStr кредитов.""
 SetTooltipHighlightColors uwMarketUpgradeF2 buttonShortcut buttonShortcut buttonShortcut
 SetTooltipHighlights uwMarketUpgradeF2 $global.uwUpgradeShip $global.uwUpgradeF2CostStr $player.creditsStr
-UW_AddConfirmation uwMarketUpgradeF2 ""Replacing the built-in Borer Drone wings with a pair of fighter bays and increasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeF2CostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,7:uwMarketUpgradeF2:Заменить встроенную пару крыльев Borer Drone на пару истребительных ангаров (+20 OP),
+UW_AddConfirmation uwMarketUpgradeF2 ""Replacing the built-in Borer Drone wings with a pair of fighter bays and increasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeF2CostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,7:uwMarketUpgradeF2:Заменить встроенную пару крыльев Borer Drone на пару истребительных ангаров (+20 очки оснащения),
 uwMarketAddOptionUpgradeF2_2,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable F2
@@ -1107,7 +1107,7 @@ UW_UpgradeAvailable F2
 !UW_UpgradeEnoughCredits F2","SetTooltip uwMarketUpgradeF2 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeF2CostStr кредитов. Доступно только $player.creditsStr кредитов.""
 SetTooltipHighlightColors uwMarketUpgradeF2 buttonShortcut buttonShortcut bad
 SetTooltipHighlights uwMarketUpgradeF2 $global.uwUpgradeShip $global.uwUpgradeF2CostStr $player.creditsStr
-SetEnabled uwMarketUpgradeF2 false",,7:uwMarketUpgradeF2:Заменить встроенную пару крыльев Borer Drone на пару истребительных ангаров (+20 OP),
+SetEnabled uwMarketUpgradeF2 false",,7:uwMarketUpgradeF2:Заменить встроенную пару крыльев Borer Drone на пару истребительных ангаров (+20 очки оснащения),
 uwMarketOptionUpgradeF2,DialogOptionSelected,"!UW_UpgradeInstalled F1
 $option == uwMarketUpgradeF2","UW_UpgradeShip F2
 AddText ""Встроенные звенья Borer Drone заменены парой ангаров истребителей, максимум очков оснащения для $global.uwUpgradeShip увеличен на 20, стоимость - $global.uwUpgradeF2CostStr кредитов.""
@@ -1121,7 +1121,7 @@ UW_UpgradeInstalled F1
 UW_UpgradeEnoughCredits F2","SetTooltip uwMarketSwapF2 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeF2SwapCostStr кредитов. Доступно $player.creditsStr кредитов.""
 SetTooltipHighlightColors uwMarketSwapF2 buttonShortcut buttonShortcut buttonShortcut
 SetTooltipHighlights uwMarketSwapF2 $global.uwUpgradeShip $global.uwUpgradeF2SwapCostStr $player.creditsStr
-UW_AddConfirmation uwMarketSwapF2 ""Replacing the built-in Terminator Drone wings with a pair of fighter bays and increasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeF2SwapCostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,7:uwMarketSwapF2:Заменить встроенную пару крыльев Terminator Drone на пару истребительных ангаров (+20 OP),
+UW_AddConfirmation uwMarketSwapF2 ""Replacing the built-in Terminator Drone wings with a pair of fighter bays and increasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeF2SwapCostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,7:uwMarketSwapF2:Заменить встроенную пару крыльев Terminator Drone на пару истребительных ангаров (+20 очки оснащения),
 uwMarketAddOptionSwapF2_2,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable F2
@@ -1129,7 +1129,7 @@ UW_UpgradeInstalled F1
 !UW_UpgradeEnoughCredits F2","SetTooltip uwMarketSwapF2 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeF2SwapCostStr кредитов. Доступно только $player.creditsStr кредитов.""
 SetTooltipHighlightColors uwMarketSwapF2 buttonShortcut buttonShortcut bad
 SetTooltipHighlights uwMarketSwapF2 $global.uwUpgradeShip $global.uwUpgradeF2SwapCostStr $player.creditsStr
-SetEnabled uwMarketSwapF2 false",,7:uwMarketSwapF2:Заменить встроенную пару крыльев Terminator Drone на пару истребительных ангаров (+20 OP),
+SetEnabled uwMarketSwapF2 false",,7:uwMarketSwapF2:Заменить встроенную пару крыльев Terminator Drone на пару истребительных ангаров (+20 очки оснащения),
 uwMarketOptionSwapF2,DialogOptionSelected,"UW_UpgradeInstalled F1
 $option == uwMarketSwapF2","UW_UpgradeShip F2
 AddText ""Встроенные звенья Terminator Drone заменены парой ангаров истребителей, максимум очков оснащения для $global.uwUpgradeShip увеличен на 20, стоимость - $global.uwUpgradeF2SwapCostStr кредитов.""
@@ -1253,7 +1253,7 @@ UW_UpgradeInstalled W2
 UW_UpgradeEnoughCredits W1","SetTooltip uwMarketSwapW1 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeW1SwapCostStr кредитов. Доступно $player.creditsStr кредитов. Diablo Cannon имеет такой же длительный урон, но в пять раз больший залповый урон, чем Hellfire Cannon.""
 SetTooltipHighlightColors uwMarketSwapW1 buttonShortcut buttonShortcut buttonShortcut
 SetTooltipHighlights uwMarketSwapW1 $global.uwUpgradeShip $global.uwUpgradeW1SwapCostStr $player.creditsStr
-UW_AddConfirmation uwMarketSwapW1 ""Reverting modular weapon slot upgrades, decreasing maximum ordnance points by 20, and upgrading the built-in Hellfire Cannon to the Diablo Cannon for $global.uwUpgradeShip requires $global.uwUpgradeW1SwapCostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,10:uwMarketSwapW1:Откатить модульные слоты оружия и улучшить встроенную Hellfire Cannon до Diablo Cannon (-20 OP),
+UW_AddConfirmation uwMarketSwapW1 ""Reverting modular weapon slot upgrades, decreasing maximum ordnance points by 20, and upgrading the built-in Hellfire Cannon to the Diablo Cannon for $global.uwUpgradeShip requires $global.uwUpgradeW1SwapCostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,10:uwMarketSwapW1:Откатить модульные слоты оружия и улучшить встроенную Hellfire Cannon до Diablo Cannon (-20 очки оснащения),
 uwMarketAddOptionSwapW1_2,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable W1
@@ -1261,7 +1261,7 @@ UW_UpgradeInstalled W2
 !UW_UpgradeEnoughCredits W1","SetTooltip uwMarketSwapW1 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeW1SwapCostStr кредитов. Доступно только $player.creditsStr кредитов. Diablo Cannon имеет такой же длительный урон, но в пять раз больший залповый урон, чем Hellfire Cannon.""
 SetTooltipHighlightColors uwMarketSwapW1 buttonShortcut buttonShortcut bad
 SetTooltipHighlights uwMarketSwapW1 $global.uwUpgradeShip $global.uwUpgradeW1SwapCostStr $player.creditsStr
-SetEnabled uwMarketSwapW1 false",,10:uwMarketSwapW1:Откатить модульные слоты оружия и улучшить встроенную Hellfire Cannon до Diablo Cannon (-20 OP),
+SetEnabled uwMarketSwapW1 false",,10:uwMarketSwapW1:Откатить модульные слоты оружия и улучшить встроенную Hellfire Cannon до Diablo Cannon (-20 очки оснащения),
 uwMarketOptionSwapW1,DialogOptionSelected,"UW_UpgradeInstalled W2
 $option == uwMarketSwapW1","UW_UpgradeShip W1
 AddText ""Улучшения модульных оружейных слотов отменены, максимум очков оснащения снижен на 20, а встроенная Hellfire Cannon улучшена до Diablo Cannon для $global.uwUpgradeShip, стоимость - $global.uwUpgradeW1SwapCostStr кредитов.""
@@ -1275,7 +1275,7 @@ UW_UpgradeAvailable W2
 UW_UpgradeEnoughCredits W2","SetTooltip uwMarketUpgradeW2 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeW2CostStr кредитов. Доступно $player.creditsStr кредитов. Улучшения оружейных слотов: два средних слота увеличены до больших, двенадцать баллистических слотов заменены на hybrid/composite/universal, а сектор обстрела Hellfire Cannon увеличен до 360 градусов.""
 SetTooltipHighlightColors uwMarketUpgradeW2 buttonShortcut buttonShortcut buttonShortcut
 SetTooltipHighlights uwMarketUpgradeW2 $global.uwUpgradeShip $global.uwUpgradeW2CostStr $player.creditsStr
-UW_AddConfirmation uwMarketUpgradeW2 ""Further upgrading modular weapon slots and increasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeW2CostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,11:uwMarketUpgradeW2:Дополнительно улучшить модульные слоты оружия (+20 OP),
+UW_AddConfirmation uwMarketUpgradeW2 ""Further upgrading modular weapon slots and increasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeW2CostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,11:uwMarketUpgradeW2:Дополнительно улучшить модульные слоты оружия (+20 очки оснащения),
 uwMarketAddOptionUpgradeW2_2,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable W2
@@ -1283,7 +1283,7 @@ UW_UpgradeAvailable W2
 !UW_UpgradeEnoughCredits W2","SetTooltip uwMarketUpgradeW2 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeW2CostStr кредитов. Доступно только $player.creditsStr кредитов. Улучшения оружейных слотов: два средних слота увеличены до больших, двенадцать баллистических слотов заменены на hybrid/composite/universal, а сектор обстрела Hellfire Cannon увеличен до 360 градусов.""
 SetTooltipHighlightColors uwMarketUpgradeW2 buttonShortcut buttonShortcut bad
 SetTooltipHighlights uwMarketUpgradeW2 $global.uwUpgradeShip $global.uwUpgradeW2CostStr $player.creditsStr
-SetEnabled uwMarketUpgradeW2 false",,11:uwMarketUpgradeW2:Дополнительно улучшить модульные слоты оружия (+20 OP),
+SetEnabled uwMarketUpgradeW2 false",,11:uwMarketUpgradeW2:Дополнительно улучшить модульные слоты оружия (+20 очки оснащения),
 uwMarketOptionUpgradeW2,DialogOptionSelected,"!UW_UpgradeInstalled W1
 $option == uwMarketUpgradeW2","UW_UpgradeShip W2
 AddText ""Модульные оружейные слоты дополнительно улучшены, а максимум очков оснащения для $global.uwUpgradeShip увеличен на 20, стоимость - $global.uwUpgradeW2CostStr кредитов.""
@@ -1297,7 +1297,7 @@ UW_UpgradeInstalled W1
 UW_UpgradeEnoughCredits W2","SetTooltip uwMarketSwapW2 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeW2SwapCostStr кредитов. Доступно $player.creditsStr кредитов. Улучшения оружейных слотов: два средних слота увеличены до больших, двенадцать баллистических слотов заменены на hybrid/composite/universal, а сектор обстрела Hellfire Cannon увеличен до 360 градусов.""
 SetTooltipHighlightColors uwMarketSwapW2 buttonShortcut buttonShortcut buttonShortcut
 SetTooltipHighlights uwMarketSwapW2 $global.uwUpgradeShip $global.uwUpgradeW2SwapCostStr $player.creditsStr
-UW_AddConfirmation uwMarketSwapW2 ""Reverting the built-in Diablo Cannon to a Hellfire Cannon, further upgrading modular weapon slots, and increasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeW2SwapCostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,11:uwMarketSwapW2:Откатить встроенную Diablo Cannon до Hellfire Cannon и дополнительно улучшить модульные слоты оружия (+20 OP),
+UW_AddConfirmation uwMarketSwapW2 ""Reverting the built-in Diablo Cannon to a Hellfire Cannon, further upgrading modular weapon slots, and increasing maximum ordnance points by 20 for $global.uwUpgradeShip requires $global.uwUpgradeW2SwapCostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,11:uwMarketSwapW2:Откатить встроенную Diablo Cannon до Hellfire Cannon и дополнительно улучшить модульные слоты оружия (+20 очки оснащения),
 uwMarketAddOptionSwapW2_2,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable W2
@@ -1305,7 +1305,7 @@ UW_UpgradeInstalled W1
 !UW_UpgradeEnoughCredits W2","SetTooltip uwMarketSwapW2 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeW2SwapCostStr кредитов. Доступно только $player.creditsStr кредитов. Улучшения оружейных слотов: два средних слота увеличены до больших, двенадцать баллистических слотов заменены на hybrid/composite/universal, а сектор обстрела Hellfire Cannon увеличен до 360 градусов.""
 SetTooltipHighlightColors uwMarketSwapW2 buttonShortcut buttonShortcut bad
 SetTooltipHighlights uwMarketSwapW2 $global.uwUpgradeShip $global.uwUpgradeW2SwapCostStr $player.creditsStr
-SetEnabled uwMarketSwapW2 false",,11:uwMarketSwapW2:Откатить встроенную Diablo Cannon до Hellfire Cannon и дополнительно улучшить модульные слоты оружия (+20 OP),
+SetEnabled uwMarketSwapW2 false",,11:uwMarketSwapW2:Откатить встроенную Diablo Cannon до Hellfire Cannon и дополнительно улучшить модульные слоты оружия (+20 очки оснащения),
 uwMarketOptionSwapW2,DialogOptionSelected,"UW_UpgradeInstalled W1
 $option == uwMarketSwapW2","UW_UpgradeShip W2
 AddText ""Встроенная Diablo Cannon возвращена к Hellfire Cannon, модульные оружейные слоты дополнительно улучшены, максимум очков оснащения для $global.uwUpgradeShip увеличен на 20, стоимость - $global.uwUpgradeW2SwapCostStr кредитов.""
@@ -1360,7 +1360,7 @@ uwMarketAddOptionUpgradeA2_1,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable A2
 !UW_UpgradeInstalled A1
-UW_UpgradeEnoughCredits A2","SetTooltip uwMarketUpgradeA2 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeA2CostStr кредитов. Доступно $player.creditsStr кредитов. Infernal Shield позволяет рассеивать жесткий поток при поднятых щитах, превращает щит в 360-градусный omni, повышает скорость поворота и разворачивания щита, а также снижает получаемый щитами урон.""
+UW_UpgradeEnoughCredits A2","SetTooltip uwMarketUpgradeA2 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeA2CostStr кредитов. Доступно $player.creditsStr кредитов. Infernal Shield позволяет рассеивать жёсткую нагрузку при поднятых щитах, превращает щит в 360-градусный omni, повышает скорость поворота и разворачивания щита, а также снижает получаемый щитами урон.""
 SetTooltipHighlightColors uwMarketUpgradeA2 buttonShortcut buttonShortcut buttonShortcut
 SetTooltipHighlights uwMarketUpgradeA2 $global.uwUpgradeShip $global.uwUpgradeA2CostStr $player.creditsStr
 UW_AddConfirmation uwMarketUpgradeA2 ""Installing built-in Infernal Shield for $global.uwUpgradeShip requires $global.uwUpgradeA2CostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,13:uwMarketUpgradeA2:Установить встроенный Infernal Shield,
@@ -1368,7 +1368,7 @@ uwMarketAddOptionUpgradeA2_2,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable A2
 !UW_UpgradeInstalled A1
-!UW_UpgradeEnoughCredits A2","SetTooltip uwMarketUpgradeA2 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeA2CostStr кредитов. Доступно только $player.creditsStr кредитов. Infernal Shield позволяет рассеивать жесткий поток при поднятых щитах, превращает щит в 360-градусный omni, повышает скорость поворота и разворачивания щита, а также снижает получаемый щитами урон.""
+!UW_UpgradeEnoughCredits A2","SetTooltip uwMarketUpgradeA2 ""Установка этого улучшения на $global.uwUpgradeShip требует $global.uwUpgradeA2CostStr кредитов. Доступно только $player.creditsStr кредитов. Infernal Shield позволяет рассеивать жёсткую нагрузку при поднятых щитах, превращает щит в 360-градусный omni, повышает скорость поворота и разворачивания щита, а также снижает получаемый щитами урон.""
 SetTooltipHighlightColors uwMarketUpgradeA2 buttonShortcut buttonShortcut bad
 SetTooltipHighlights uwMarketUpgradeA2 $global.uwUpgradeShip $global.uwUpgradeA2CostStr $player.creditsStr
 SetEnabled uwMarketUpgradeA2 false",,13:uwMarketUpgradeA2:Установить встроенный Infernal Shield,
@@ -1382,7 +1382,7 @@ uwMarketAddOptionSwapA2_1,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable A2
 UW_UpgradeInstalled A1
-UW_UpgradeEnoughCredits A2","SetTooltip uwMarketSwapA2 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeA2SwapCostStr кредитов. Доступно $player.creditsStr кредитов. Infernal Shield позволяет рассеивать жесткий поток при поднятых щитах, превращает щит в 360-градусный omni, повышает скорость поворота и разворачивания щита, а также снижает получаемый щитами урон.""
+UW_UpgradeEnoughCredits A2","SetTooltip uwMarketSwapA2 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeA2SwapCostStr кредитов. Доступно $player.creditsStr кредитов. Infernal Shield позволяет рассеивать жёсткую нагрузку при поднятых щитах, превращает щит в 360-градусный omni, повышает скорость поворота и разворачивания щита, а также снижает получаемый щитами урон.""
 SetTooltipHighlightColors uwMarketSwapA2 buttonShortcut buttonShortcut buttonShortcut
 SetTooltipHighlights uwMarketSwapA2 $global.uwUpgradeShip $global.uwUpgradeA2SwapCostStr $player.creditsStr
 UW_AddConfirmation uwMarketSwapA2 ""Replacing the built-in Infernal Minefield with Infernal Shield for $global.uwUpgradeShip requires $global.uwUpgradeA2SwapCostStr credits. $player.creditsStr credits are available. Do you want to proceed?""",,13:uwMarketSwapA2:Заменить встроенный Infernal Minefield на Infernal Shield,
@@ -1390,7 +1390,7 @@ uwMarketAddOptionSwapA2_2,UWPopulateRestoreOrUpgradeOptions,"$hasMarket
 $menuState == uwRestoreOrUpgrade
 UW_UpgradeAvailable A2
 UW_UpgradeInstalled A1
-!UW_UpgradeEnoughCredits A2","SetTooltip uwMarketSwapA2 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeA2SwapCostStr кредитов. Доступно только $player.creditsStr кредитов. Infernal Shield позволяет рассеивать жесткий поток при поднятых щитах, превращает щит в 360-градусный omni, повышает скорость поворота и разворачивания щита, а также снижает получаемый щитами урон.""
+!UW_UpgradeEnoughCredits A2","SetTooltip uwMarketSwapA2 ""Переход на это улучшение для $global.uwUpgradeShip требует $global.uwUpgradeA2SwapCostStr кредитов. Доступно только $player.creditsStr кредитов. Infernal Shield позволяет рассеивать жёсткую нагрузку при поднятых щитах, превращает щит в 360-градусный omni, повышает скорость поворота и разворачивания щита, а также снижает получаемый щитами урон.""
 SetTooltipHighlightColors uwMarketSwapA2 buttonShortcut buttonShortcut bad
 SetTooltipHighlights uwMarketSwapA2 $global.uwUpgradeShip $global.uwUpgradeA2SwapCostStr $player.creditsStr
 SetEnabled uwMarketSwapA2 false",,13:uwMarketSwapA2:Заменить встроенный Infernal Minefield на Infernal Shield,
