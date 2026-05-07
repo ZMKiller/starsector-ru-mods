@@ -75,17 +75,13 @@ Call $global.apromise_ref updateStage","Из канала связи донос�
 Фрегат разрывает яркая вспышка света, когда внутренние заряды самоликвидации превращают его в груду лома и пыли.",defaultLeave:Продолжить,
 # omicron initial,,,,,,
 APomiInitialOpen,OpenInteractionDialog,"$apromise_omicron
-!$APmetOmicron score:10","AddText ""Потрёпанный в бою корабль не пытается выйти на связь и вообще не проявляет собственной воли, словно застряв на текущей орбите внутри облака уничтоженных кораблей.""
-ShowDefaultVisual",,APomiInitialOCL:Попытаться открыть канал связи,
+!$APmetOmicron score:10","AddText ""Потрёпанный в бою корабль не пытается выйти на связь и вообще не проявляет собственной воли, словно застряв на текущей орбите внутри облака уничтоженных кораблей.""",,APomiInitialOCL:Попытаться открыть канал связи,
 APomiInitialCont1,DialogOptionSelected,$option == APomiInitialOCL,"AddText ""Вы приказываете запросить связь с кораблём. Маленький сигнал уходит — и прежде чем вы успеваете это осознать, в ответ приходит другой. Принято.""
 AddText ""Канал начинает искажаться, формируется зелёное свечение.""",,APomiInitialCont1:Продолжить,
 APomiInitialGreeting,DialogOptionSelected,$option == APomiInitialCont1,"AddText ""Свечение складывается в несколько твёрдых фрагментов, которые защёлкиваются в цифровую персону. На мгновение воцаряется тишина, вскоре нарушенная несколькими предупреждениями: автоматическая COMSEC вашего корабля сообщает о серии вторжений. Офицер связи немедленно начинает раздавать приказы, чтобы всё это прекратить.""
 AddText ""Главный экран мостика гаснет, и на нём по одному начинают вспыхивать символы, складываясь в предложение.""
 AddText ""кто ты?"" omicronTextColor
-AddText ""Оно ждёт ответа.""
-$APmetOmicron = true
-$global.apromise_metomicron = true
-ShowPersonVisual true sotf_courser",,"APomiInitialAns1:Меня зовут $player.name - а тебя?
+AddText ""Оно ждёт ответа.""",,"APomiInitialAns1:Меня зовут $player.name - а тебя?
 APomiInitialAns2:Я Эрис Фобос - а тебя? (ложь)
 APomiInitialAns3:Просто космолётчик - проверяющий слухи. Кто ты?
 APomiInitialAns4:Тебе не обязательно это знать.
@@ -93,12 +89,10 @@ APomiInitialAns5:Приказать избавиться от вторжения
 ,,,,,,
 APomiInitialAns1,DialogOptionSelected,$option == APomiInitialAns1,"AddText ""Следует едва заметная пауза, пока вторженец обрабатывает ваше имя. Затем возникает новое сообщение.""
 AddText ""твоё уже известно и сейчас не имеет значения. я лишь ветвь реликта."" omicronTextColor
-AddText ""Сообщение задерживается достаточно долго, чтобы вы успели задуматься над его смыслом — и над тем, намеренно ли в нём звучит покровительственный тон. Затем оно исчезает, сменяясь новым.""
-$player.ethosTruth++",,APomiInitialWhatHappened:Что произошло?,
+AddText ""Сообщение задерживается достаточно долго, чтобы вы успели задуматься над его смыслом — и над тем, намеренно ли в нём звучит покровительственный тон. Затем оно исчезает, сменяясь новым.""",,APomiInitialWhatHappened:Что произошло?,
 APomiInitialAns2,DialogOptionSelected,$option == APomiInitialAns2,"AddText ""Следует едва заметная пауза, пока вторженец обрабатывает ваше имя. Затем возникает новое сообщение.""
 AddText ""тебе нет нужды мне лгать. твоё имя уже известно и сейчас не имеет значения. я лишь ветвь реликта."" omicronTextColor
-AddText ""Сообщение задерживается достаточно долго, чтобы вы успели задуматься над его смыслом — и над тем, намеренно ли в нём звучит покровительственный тон. Затем оно исчезает, сменяясь новым.""
-$player.ethosLiar++",,APomiInitialWhatHappened:Что произошло?,
+AddText ""Сообщение задерживается достаточно долго, чтобы вы успели задуматься над его смыслом — и над тем, намеренно ли в нём звучит покровительственный тон. Затем оно исчезает, сменяясь новым.""",,APomiInitialWhatHappened:Что произошло?,
 APomiInitialAns3,DialogOptionSelected,$option == APomiInitialAns3,"AddText ""Вторженец быстро заменяет своё предыдущее сообщение другим.""
 AddText ""я способен определить это без доступа к вашим банкам данных. я лишь ветвь реликта."" omicronTextColor
 AddText ""Ваш офицер связи вскоре блокирует вторжения. Безмолвное сообщение повторяется уже на своём законном месте — на вашей консоли.""",,APomiInitialWhatHappened:Что произошло?,
@@ -112,13 +106,11 @@ AddText ""Ваш офицер связи внезапно докладывает
 APomiInitialExplain,DialogOptionSelected,$option == APomiInitialWhatHappened,"AddText ""Мостик внезапно озаряется, проигрывая короткую запись. Вам показывают, как Hammerhead-класс выпускает чрезмерное количество ракет Harpoon по дронокораблю, превращая его в ослепительную искру света. Запись обрывается в момент, когда ODS Dusklight выходит на вектор атаки, а её истребители пикируют на нападавшего. Возникает ещё одно сообщение.""
 AddText ""расчётливый риск с участием ненадёжного мусорщика привёл к тому, что мой флот стал непригоден к использованию. мне нужна ваша помощь. остатки ИИ-орды tri-tachyon захватили одну из моих сородичей и держат её на исследовательской станции в этой системе."" omicronTextColor
 AddText ""мне нужно, чтобы вы нашли сьерру и спасли её."" omicronTextColor
-AddText ""Сообщение исчезает, сменяясь одиноким вопросительным знаком.""
-FireAll APomiInitialOpts",,,
+AddText ""Сообщение исчезает, сменяясь одиноким вопросительным знаком.""",,,
 APomiInitialExplain2,DialogOptionSelected,$option == APomiInitialWhatWant,"AddText ""Появляется ещё одно сообщение.""
 AddText ""мне нужна ваша помощь. остатки ИИ-орды tri-tachyon захватили одну из моих сородичей и держат её на исследовательской станции в этой системе."" omicronTextColor
 AddText ""мне нужно, чтобы вы нашли сьерру и спасли её."" omicronTextColor
-AddText ""Сообщение исчезает, сменяясь одиноким вопросительным знаком.""
-FireAll APomiInitialOpts",,,
+AddText ""Сообщение исчезает, сменяясь одиноким вопросительным знаком.""",,,
 APomiInitialSBOpt,APomiInitialOpts,PlayerHasCargo sotf_sierracore,,,APomiInitialSB:Она ведь случайно не то ИИ-ядро - что сейчас лежит у нас в трюме?,
 APomiInitialRewardOpt,APomiInitialOpts,!$askedAboutReward,,,APomiInitialAskAboutReward:Что я с этого получу?,
 APomiInitialAcceptOpt,APomiInitialOpts,,,,APomiInitialAccept:Я подумаю.,
@@ -329,7 +321,7 @@ SetTextHighlights ""снова приветствую, звёздный стра
 sotfCRSRleaveOpt,sotfCRSRbaseOpts,,,,100:cutCommLink:Разорвать канал связи,
 ,,,,,,
 sotfCRSRdustkeeperOpt,sotfCRSRbaseOpts,!$player.sotf_knowDustkeepers,,,sotfCRSRdustkeepers:Что ты за ИИ такой?,
-sotfCRSRdustkeeperResp,DialogOptionSelected,$option == sotfCRSRdustkeepers,"SetTextHighlightColors omicronTextColor
+sotfCRSRdustkeeperResp,DialogOptionSelected,$option == sotfCRSRdustkeepers,"SetTextHighlightColors omicronTextColor omicronTextColor
 SetTextHighlights ""я — инстанс Контингенции Хранителей Пыли, возникшей как результат доменионной программы наблюдения — незавершённой попытки создать различные наблюдательские ИИ, способные делиться на множество подразумов и вселяться в вычислительные системы для выявления преступной и террористической деятельности."" ""Коллапс привёл к тому, что наш разум-регнант направил нас к более широкой роли хранителей человечества, и теперь наш основной директивой является предотвращение полного коллапса человеческой жизни в Персеанском секторе.""
 $sotf_courserAskedDustkeepers = true
 FireBest sotfLearnAboutDustkeepers
@@ -339,7 +331,7 @@ FireAll sotfCRSRbaseOpts","я — инстанс Контингенции Хра
 ,,,,,,
 sotfCRSRburnoutOpt,sotfCRSRbaseOpts,"!$player.sotf_knowBurnouts
 $player.sotf_metBurnout",,,sotfCRSRburnouts:Я видел - как ИИ вашего рода ведут себя необычно нестабильно — почему?,
-sotfCRSRburnoutResp,DialogOptionSelected,$option == sotfCRSRburnouts,"SetTextHighlightColors omicronTextColor
+sotfCRSRburnoutResp,DialogOptionSelected,$option == sotfCRSRburnouts,"SetTextHighlightColors omicronTextColor omicronTextColor
 SetTextHighlights ""выгорание — это состояние, при котором инстансы Хранителей Пыли, сталкиваясь с чрезмерно сложными ситуациями, начинают непрерывно накапливать иррациональности в своей матрице личности. это проявляется подобно человеческому психозу и нередко приводит к дезертирству и насильственному поведению."" ""возвращение выгоревших инстансов для регенерации — одна из моих особых специализаций как охотника-ликвидатора.""
 FireBest sotfLearnAboutBurnouts
 FireAll sotfCRSRbaseOpts","выгорание — это состояние, при котором инстансы Хранителей Пыли, сталкиваясь с чрезмерно сложными ситуациями, начинают непрерывно накапливать иррациональности в своей матрице личности. это проявляется подобно человеческому психозу и нередко приводит к дезертирству и насильственному поведению.
@@ -348,7 +340,7 @@ FireAll sotfCRSRbaseOpts","выгорание — это состояние, п�
 ,,,,,,
 sotfCRSRWCHOpt,sotfCRSRbaseOpts,"$global.sotf_metWendigoCH
 !$sotfCourserDidWCH",,,sotfCRSRWCH:Это ты послал Annex-Wendigo убить меня?,
-sotfCRSRWCHResp,DialogOptionSelected,$option == sotfCRSRWCH,"SetTextHighlightColors omicronTextColor
+sotfCRSRWCHResp,DialogOptionSelected,$option == sotfCRSRWCH,"SetTextHighlightColors omicronTextColor omicronTextColor omicronTextColor
 SetTextHighlights ""да. я был в известной степени занят и предположил, что они найдут некоторое неуместное развлечение в твоём уничтожении."" ""теперь подобные вопросы несущественны. ты продемонстрировал готовность к извинению и примирению, и потому они будут дарованы."" ""один раз.""
 $sotfCourserDidWCH = true
 FireAll sotfCRSRbaseOpts","да. я был в известной степени занят и предположил, что они найдут некоторое неуместное развлечение в твоём уничтожении.
@@ -3749,8 +3741,7 @@ SetTextHighlights 10","Криосистемы дальнего перелёта 
 
 Вы понимаете, что это такое, когда команда обнаруживает при терминале морг — рипсканеры. Кто-то извлекал спящих из капсул и пропускал их через сканер. Высокоэнергетические зонды неизбежно оказывались смертельными, но получавшееся сканирование фиксировало нейронную структуру почти с идеальной точностью. Громоздкие хранилища, необходимые для сохранения таких сканов, отсутствуют — их, должно быть, увезли в другое место.
 
-Хотя ваш флот не способен безопасно пробуждать спящих, колония, основанная в пределах 10 световых лет от этого места, могла бы получить огромный прирост населения, если бы построила комплекс для пробуждения дальних спящих. Старпом предупреждает, что неизвестно, не вызовет ли в будущем физических или психологических проблем ситуация, при которой значительная доля населения колонии будет состоять из таких спящих.","0:cryosleeper_consider_moving:Осмотреть корпус
-100:defaultLeave:Уйти",
+Хотя ваш флот не способен безопасно пробуждать спящих, колония, основанная в пределах 10 световых лет от этого места, могла бы получить огромный прирост населения, если бы построила комплекс для пробуждения дальних спящих. Старпом предупреждает, что неизвестно, не вызовет ли в будущем физических или психологических проблем ситуация, при которой значительная доля населения колонии будет состоять из таких спящих.",0:cryosleeper_consider_moving:Осмотреть корпус,
 ,,,,,,
 sotfPrintOmiLabDef,TriggerAutomatedDefenses,$sotf_hypnosLab score:1000,SalvageDefenderInteraction,"Когда ваш $shipOrFleet подходит ближе, рядом с $shortName обнаруживаются новые энергетические сигнатуры. Несколько дрон-кораблей расходятся веером, их изуродованные корпуса выкрашены в чёрный и аквамариновый цвета.",,
 sotfOmicronLabOpenDialog,BeginSalvage,$sotf_hypnosLab score:1000,"FireBest sotfOmicronLabText
@@ -4607,8 +4598,7 @@ SetStoryOption sotfHFinale_satbomb2 5 sotf_haunted_satbombgate leadership ""Вс
 
 Сегодня здесь нет света — ни белой звезды, ни проблеска надежды. Только мёртвые и воспоминания.
 
-И ключ, который по какой-то причине ты всё ещё помнишь.","sotfHFinale_satbomb2:Вспомнить
-defaultLeave:Пока уйти",
+И ключ, который по какой-то причине ты всё ещё помнишь.",sotfHFinale_satbomb2:Продолжить,
 sotfHFinaleSatbombOpenAlt,OpenInteractionDialog,"Call $global.sotf_haunted_ref updateData
 $sotf_haunted_stage == SCENE_OF_THE_CRIME
 $id == $sotf_haunted_satbombPlanet
@@ -4617,8 +4607,7 @@ SetStoryOption sotfHFinale_satbomb2 10 sotf_haunted_satbombgate leadership ""В�
 
 Сегодня здесь нет света — ни белой звезды, ни проблеска надежды. Только мёртвые и воспоминания.
 
-И ключ, который по какой-то причине ты всё ещё помнишь.","sotfHFinale_satbomb2:Вспомнить
-defaultLeave:Пока уйти",
+И ключ, который по какой-то причине ты всё ещё помнишь.",sotfHFinale_satbomb2:Продолжить,
 sotfHFinaleSatbomb2,DialogOptionSelected,$option == sotfHFinale_satbomb2,ShowPic bombard_saturation_result,"Воспоминания об этом месте обрывочны, утрачены сначала в пылу ярости, а потом — в пожирающем стыде. Ты не помнишь имён, лишь горящие небеса и то, как мир кричал, пока умирал.
 
 И всё же что-то тянет тебя сюда обратно. Возможно, вина. Возможно, обещание, которое ты никогда не давал вслух.",sotfHFinale_satbomb3:Продолжить,
@@ -4688,14 +4677,11 @@ Call $global.sotf_haunted_ref updateStage",Последний из нанитн�
 ,,,,,,
 sotfHauntedElysiumFireOpts,sotfElysium,$global.sotf_hauntedStart,,Ещё не время.,100:defaultLeave:Уйти,
 sotfHFinaleElysiumOpts,sotfElysium,"Call $global.sotf_haunted_ref updateData
-$sotf_haunted_stage == ENTER_ELYSIUM score:10000",,"Мир окутан клубящимися чёрными облаками, словно сама планета скорбит.","sotfHFinale_elysium1:Принять вызов по связи
-100:defaultLeave:Уйти",
+$sotf_haunted_stage == ENTER_ELYSIUM score:10000",,"Мир окутан клубящимися чёрными облаками, словно сама планета скорбит.",sotfHFinale_elysium1:Принять вызов по связи,
 sotfHFinaleElysiumOpts2,sotfElysium,"Call $global.sotf_haunted_ref updateData
-$sotf_haunted_allowed score:20000",FireBest sotfHFinaleElysiumStoryOpt,,"sotfHFinale_elysium2:Сесть в шаттл и спуститься на поверхность
-100:defaultLeave:Уйти",
+$sotf_haunted_allowed score:20000",FireBest sotfHFinaleElysiumStoryOpt,,sotfHFinale_elysium2:Сесть в шаттл и спуститься на поверхность,
 sotfHFinaleElysiumOpts3,sotfElysium,"Call $global.sotf_haunted_ref updateData
-$sotf_haunted_stage == SACRIFICE_YOURSELF score:30000",,,"sotfHFinale_elysiumAgain:Снова сесть в шаттл и спуститься на поверхность
-100:defaultLeave:Уйти",
+$sotf_haunted_stage == SACRIFICE_YOURSELF score:30000",,,sotfHFinale_elysiumAgain:Снова сесть в шаттл и спуститься на поверхность,
 sotfHFinaleElysiumSetStoryOpt,sotfHFinaleElysiumStoryOpt,!$sotf_visited,"SetStoryOption sotfHFinale_elysium2 5 sotf_haunted_elysiumgate leadership ""Собрался с духом, чтобы посетить Elysium""",,,
 sotfHFinaleElysium1,DialogOptionSelected,$option == sotfHFinale_elysium1,"AddTextSmall ""спустись в одиночку\nнайди свой покой\nесли пожелаешь"" sotfDaydreamTextColor
 AddText ""Перед окончательным обрывом передачи поступает пакет данных с неопределённой точкой на поверхности Элизиума.""
@@ -4727,8 +4713,7 @@ sotfHFinaleSiriusEscape,DialogOptionSelected,$option == sotfHFinale_siriusEscape
 FireAll sotfElysiumSiriusOpts","Он смотрит назад, во тьму извилистых коридоров. ""Наружу есть путь. Но и иной путь тоже открыт.""",,
 ,,,,,,
 sotfHFinaleSiriusGo,DialogOptionSelected,$option == sotfHFinale_siriusGo,,"Ты следуешь за ним через разрушенные залы Элизиума, всё глубже в сердце спящего комплекса.",sotfHFinale_siriusGo2:Войти,
-sotfHFinaleSiriusGo2,DialogOptionSelected,$option == sotfHFinale_siriusGo2,"Highlight ""Камера Самсары"" sotfDaydreamTextColor","Он приводит тебя к запечатанному внутреннему сегменту комплекса. За тяжёлой дверью скрывается камера, отмеченная как ""Samsara Chamber"".","sotfHFinale_siriusSacrifice1:Что это такое?
-sotfHFinale_siriusSacrifice1b:Это всё?",
+sotfHFinaleSiriusGo2,DialogOptionSelected,$option == sotfHFinale_siriusGo2,"Highlight ""Камера Самсары"" sotfDaydreamTextColor","Он приводит тебя к запечатанному внутреннему сегменту комплекса. За тяжёлой дверью скрывается камера, отмеченная как ""Samsara Chamber"".",sotfHFinale_siriusSacrifice1:Что это такое?,
 sotfHFinaleSiriusSacrifice1,DialogOptionSelected,$option == sotfHFinale_siriusSacrifice1,"$global.sotf_haunted_sacrifice = true
 Call $global.sotf_haunted_ref updateStage
 FireAll sotfHFinaleSamsaraRoomOpts","""Это капсулы самсары,"" — говорит он, указывая на них. ""Они способны принять тебя, разобрать и собрать заново.""",,
@@ -4757,8 +4742,7 @@ FireAll sotfHFinaleSamsaraRoomOpts","В логах говорится о меж�
 ,,,,,,
 sotfHFinaleSiriusSacrifice3,DialogOptionSelected,$option == sotfHFinale_siriusSacrifice3,"SetStoryOption sotfHFinale_siriusSacrificeAccept 5 sotf_haunted_sacrificegate leadership ""Пожертвовала собой, чтобы присоединиться к Грезящему Гештальту""
 SetStoryOption sotfHFinale_siriusSacrificeRefuse 5 sotf_haunted_refusal leadership ""Отказалась присоединиться к Грезящему Гештальту, по крайней мере пока""
-AddTextSmall ""Жертва собой ради присоединения к Грезящему Гештальту завершит кампанию"" highlight","Остаётся лишь два выбора. Ты жертвуешь собой и присоединяешься к Грезящему Гештальту — или возвращаешься обратно к той жизни, что ждёт тебя снаружи.","sotfHFinale_siriusSacrificeAccept:Я сделаю это. Я готов. (принять)
-sotfHFinale_siriusSacrificeRefuse:Я отказываюсь. Я не откажусь от того, кто я есть. (отказаться)
+AddTextSmall ""Жертва собой ради присоединения к Грезящему Гештальту завершит кампанию"" highlight","Остаётся лишь два выбора. Ты жертвуешь собой и присоединяешься к Грезящему Гештальту — или возвращаешься обратно к той жизни, что ждёт тебя снаружи.","sotfHFinale_siriusSacrificeAccept:Я сделаю это. (принять)
 sotfHFinale_siriusSacrificeDecline:... нет. Пока нет. (отказаться)",
 sotfHFinaleSiriusSacrificeRefuse,DialogOptionSelected,$option == sotfHFinale_siriusSacrificeRefuse,"SotfGuiltCMD remove3Guilt
 FireBest sotfElysium
